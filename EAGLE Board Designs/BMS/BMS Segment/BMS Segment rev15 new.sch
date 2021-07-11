@@ -717,9 +717,6 @@ Source: http://www.molex.com</description>
 <text x="1.397" y="0.889" size="0.3048" layer="27" align="bottom-center">&gt;VALUE</text>
 <text x="0" y="0.3302" size="0.635" layer="25" align="top-center">&gt;NAME</text>
 </package>
-<package name="KEYSTONE5222">
-<smd name="P$1" x="0" y="0" dx="11.303" dy="13.208" layer="1"/>
-</package>
 <package name="NANO-FIT_RIGHT_ANGLE-2">
 <pad name="2" x="-1.25" y="0" drill="1.2" shape="square"/>
 <pad name="1" x="1.25" y="0" drill="1.2" shape="square"/>
@@ -994,9 +991,6 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="KEYSTONE5203">
-<smd name="P$1" x="0" y="0" dx="9" dy="9" layer="1"/>
-</package>
 <package name="1206">
 <description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;
@@ -1014,12 +1008,6 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-<package name="CONTACT_SPRING">
-<pad name="P$1" x="0" y="0" drill="0.7366" diameter="1.8288" rot="R90"/>
-<circle x="0" y="0" radius="1.1938" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="1.3208" width="0.127" layer="40"/>
-<circle x="0" y="0" radius="1.3208" width="0.127" layer="39"/>
 </package>
 <package name="PWR163">
 <description>PWR163 Resistor
@@ -1834,44 +1822,6 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MOPN" value="576-08851.25DR"/>
 <attribute name="MPN" value="08851.25DR"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BATTERY_SPRING">
-<description>&lt;b&gt; Keystone Electronics Battery Spring Contact &lt;/b&gt;
-&lt;br&gt;
-&lt;a href="http://keyelco.com/userAssets/file/M65p17.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt; 
-&lt;b&gt; Mill-Max Pogo Pins &lt;/b&gt;
-&lt;br&gt;
-&lt;a href="https://www.mill-max.com/catalog/download/2019-08%3A019.6M.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="MV" x="0" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="_KEYSTONE5222" package="KEYSTONE5222">
-<connects>
-<connect gate="G$1" pin="S" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="" package="KEYSTONE5203">
-<connects>
-<connect gate="G$1" pin="S" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SPRING_CONTACT" package="CONTACT_SPRING">
-<connects>
-<connect gate="G$1" pin="S" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4976,6 +4926,24 @@ Layer: 94 Symbol</description>
 <text x="0" y="1.27" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
 </package>
+<package name="KEYSTONE5222">
+<description>Keystone 5222 Battery Spring
+&lt;br&gt;
+&lt;a href="https://www.keyelco.com/userAssets/file/M65p17.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="0" y="0" dx="11.303" dy="13.208" layer="1"/>
+<rectangle x1="-6.35" y1="-7.366" x2="6.35" y2="7.366" layer="39"/>
+<text x="0" y="7.62" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="807-22-001-10-02X101">
+<description>807-22-001-10-02X101 Pogo-Pin
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/273/Mill-Max_03212019_807-22-001-10-020101-1545127.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="0" y="0" drill="0.7366" diameter="1.8288"/>
+<circle x="0" y="0" radius="1.1938" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.3208" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="1.3208" width="0.127" layer="39"/>
+<text x="0" y="1.524" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TEST_POINT">
@@ -4983,6 +4951,12 @@ Layer: 94 Symbol</description>
 <pin name="P$1" x="2.54" y="0" visible="off" length="short" rot="R180"/>
 <text x="-2.54" y="1.778" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-1.778" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="MV">
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<pin name="S" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-1.27" y="1.27" size="1.27" layer="95">&gt;NAME</text>
+<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4995,6 +4969,36 @@ Layer: 94 Symbol</description>
 <device name="MICRO_MINIATURE" package="MICRO_MINIATURE">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATTERY_SPRING">
+<description>&lt;b&gt; Keystone Electronics Battery Spring Contact &lt;/b&gt;
+&lt;br&gt;
+&lt;a href="http://keyelco.com/userAssets/file/M65p17.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;b&gt; Mill-Max Pogo Pins &lt;/b&gt;
+&lt;br&gt;
+&lt;a href="https://www.mill-max.com/catalog/download/2019-08%3A019.6M.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MV" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="_KEYSTONE5222" package="KEYSTONE5222">
+<connects>
+<connect gate="G$1" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SPRING_CONTACT" package="807-22-001-10-02X101">
+<connects>
+<connect gate="G$1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5343,16 +5347,16 @@ Layer: 94 Symbol</description>
 <part name="F0" library="HyTechDevices" deviceset="FUSE" device="0885" value="0001.2704.11">
 <attribute name="RATING" value="1A"/>
 </part>
-<part name="CELL9" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL8" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL7" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL6" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL4" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL5" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL3" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL2" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL1" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL0" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
+<part name="CELL9" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL8" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL7" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL6" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL4" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL5" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL3" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL2" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL1" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL0" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
 <part name="RU2_B" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="100R">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
@@ -5490,15 +5494,15 @@ Layer: 94 Symbol</description>
 <part name="F10" library="HyTechDevices" deviceset="FUSE" device="0885" value="0001.2704.11">
 <attribute name="RATING" value="1A"/>
 </part>
-<part name="CELL18" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL17" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL16" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL15" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL13" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL14" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL12" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL11" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
-<part name="CELL10" library="HyTechDevices" deviceset="BATTERY_SPRING" device="_SPRING_CONTACT" value="BATTERY_SPRING_SPRING_CONTACT"/>
+<part name="CELL18" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL17" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL16" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL15" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL13" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL14" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL12" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL11" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
+<part name="CELL10" library="HyTechDevices - Copy" deviceset="BATTERY_SPRING" device="_KEYSTONE5222" value="BATTERY_SPRING_KEYSTONE5222"/>
 <part name="RU2_A" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="100R">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
@@ -6125,12 +6129,12 @@ Layer: 94 Symbol</description>
 <pinref part="F18" gate="G$1" pin="1"/>
 <pinref part="CELL18" gate="G$1" pin="S"/>
 <label x="-353.06" y="167.64" size="1.778" layer="95"/>
-<wire x1="-360.68" y1="167.64" x2="-340.36" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="167.64" x2="-340.36" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CC17" class="1">
 <segment>
-<wire x1="-360.68" y1="165.1" x2="-340.36" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="165.1" x2="-340.36" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="F17" gate="G$1" pin="1"/>
 <pinref part="CELL17" gate="G$1" pin="S"/>
 <label x="-353.06" y="165.1" size="1.778" layer="95"/>
@@ -6138,7 +6142,7 @@ Layer: 94 Symbol</description>
 </net>
 <net name="CC16" class="1">
 <segment>
-<wire x1="-360.68" y1="162.56" x2="-340.36" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="162.56" x2="-340.36" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="F16" gate="G$1" pin="1"/>
 <pinref part="CELL16" gate="G$1" pin="S"/>
 <label x="-353.06" y="162.56" size="1.778" layer="95"/>
@@ -6146,7 +6150,7 @@ Layer: 94 Symbol</description>
 </net>
 <net name="CC15" class="1">
 <segment>
-<wire x1="-360.68" y1="160.02" x2="-340.36" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="160.02" x2="-340.36" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="F15" gate="G$1" pin="1"/>
 <pinref part="CELL15" gate="G$1" pin="S"/>
 <label x="-353.06" y="160.02" size="1.778" layer="95"/>
@@ -6154,7 +6158,7 @@ Layer: 94 Symbol</description>
 </net>
 <net name="CC14" class="1">
 <segment>
-<wire x1="-360.68" y1="157.48" x2="-340.36" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="157.48" x2="-340.36" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="F14" gate="G$1" pin="1"/>
 <pinref part="CELL14" gate="G$1" pin="S"/>
 <label x="-353.06" y="157.48" size="1.778" layer="95"/>
@@ -6162,7 +6166,7 @@ Layer: 94 Symbol</description>
 </net>
 <net name="CC13" class="1">
 <segment>
-<wire x1="-360.68" y1="154.94" x2="-340.36" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="154.94" x2="-340.36" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="F13" gate="G$1" pin="1"/>
 <pinref part="CELL13" gate="G$1" pin="S"/>
 <label x="-353.06" y="154.94" size="1.778" layer="95"/>
@@ -6170,7 +6174,7 @@ Layer: 94 Symbol</description>
 </net>
 <net name="CC12" class="1">
 <segment>
-<wire x1="-360.68" y1="152.4" x2="-340.36" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="152.4" x2="-340.36" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="F12" gate="G$1" pin="1"/>
 <pinref part="CELL12" gate="G$1" pin="S"/>
 <label x="-353.06" y="152.4" size="1.778" layer="95"/>
@@ -6178,7 +6182,7 @@ Layer: 94 Symbol</description>
 </net>
 <net name="CC11" class="1">
 <segment>
-<wire x1="-360.68" y1="149.86" x2="-340.36" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="149.86" x2="-340.36" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="F11" gate="G$1" pin="1"/>
 <pinref part="CELL11" gate="G$1" pin="S"/>
 <label x="-353.06" y="149.86" size="1.778" layer="95"/>
@@ -6186,7 +6190,7 @@ Layer: 94 Symbol</description>
 </net>
 <net name="CC10" class="1">
 <segment>
-<wire x1="-360.68" y1="147.32" x2="-340.36" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-365.76" y1="147.32" x2="-340.36" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="F10" gate="G$1" pin="1"/>
 <pinref part="CELL10" gate="G$1" pin="S"/>
 <label x="-353.06" y="147.32" size="1.778" layer="95"/>
@@ -6684,12 +6688,12 @@ CIRCUIT A AND CIRCUIT B</text>
 <pinref part="F9" gate="G$1" pin="1"/>
 <pinref part="CELL9" gate="G$1" pin="S"/>
 <label x="-335.28" y="256.54" size="1.778" layer="95"/>
-<wire x1="-342.9" y1="256.54" x2="-322.58" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="256.54" x2="-322.58" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CC8" class="1">
 <segment>
-<wire x1="-342.9" y1="157.48" x2="-322.58" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="157.48" x2="-322.58" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="F8" gate="G$1" pin="1"/>
 <pinref part="CELL8" gate="G$1" pin="S"/>
 <label x="-335.28" y="157.48" size="1.778" layer="95"/>
@@ -6697,7 +6701,7 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="CC7" class="1">
 <segment>
-<wire x1="-342.9" y1="154.94" x2="-322.58" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="154.94" x2="-322.58" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="F7" gate="G$1" pin="1"/>
 <pinref part="CELL7" gate="G$1" pin="S"/>
 <label x="-335.28" y="154.94" size="1.778" layer="95"/>
@@ -6705,7 +6709,7 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="CC6" class="1">
 <segment>
-<wire x1="-342.9" y1="152.4" x2="-322.58" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="152.4" x2="-322.58" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="F6" gate="G$1" pin="1"/>
 <pinref part="CELL6" gate="G$1" pin="S"/>
 <label x="-335.28" y="152.4" size="1.778" layer="95"/>
@@ -6713,7 +6717,7 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="CC5" class="1">
 <segment>
-<wire x1="-342.9" y1="149.86" x2="-322.58" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="149.86" x2="-322.58" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="F5" gate="G$1" pin="1"/>
 <pinref part="CELL5" gate="G$1" pin="S"/>
 <label x="-335.28" y="149.86" size="1.778" layer="95"/>
@@ -6721,7 +6725,7 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="CC4" class="1">
 <segment>
-<wire x1="-342.9" y1="147.32" x2="-322.58" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="147.32" x2="-322.58" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="F4" gate="G$1" pin="1"/>
 <pinref part="CELL4" gate="G$1" pin="S"/>
 <label x="-335.28" y="147.32" size="1.778" layer="95"/>
@@ -6729,7 +6733,7 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="CC3" class="1">
 <segment>
-<wire x1="-342.9" y1="144.78" x2="-322.58" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="144.78" x2="-322.58" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="F3" gate="G$1" pin="1"/>
 <pinref part="CELL3" gate="G$1" pin="S"/>
 <label x="-335.28" y="144.78" size="1.778" layer="95"/>
@@ -6737,7 +6741,7 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="CC2" class="1">
 <segment>
-<wire x1="-342.9" y1="142.24" x2="-322.58" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="142.24" x2="-322.58" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="F2" gate="G$1" pin="1"/>
 <pinref part="CELL2" gate="G$1" pin="S"/>
 <label x="-335.28" y="142.24" size="1.778" layer="95"/>
@@ -6745,7 +6749,7 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="CC1" class="1">
 <segment>
-<wire x1="-342.9" y1="139.7" x2="-322.58" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="139.7" x2="-322.58" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="1"/>
 <pinref part="CELL1" gate="G$1" pin="S"/>
 <label x="-335.28" y="139.7" size="1.778" layer="95"/>
@@ -6753,7 +6757,7 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="CC0" class="1">
 <segment>
-<wire x1="-342.9" y1="137.16" x2="-322.58" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="137.16" x2="-322.58" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="F0" gate="G$1" pin="1"/>
 <pinref part="CELL0" gate="G$1" pin="S"/>
 <label x="-335.28" y="137.16" size="1.778" layer="95"/>
