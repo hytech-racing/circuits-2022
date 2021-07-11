@@ -5019,7 +5019,7 @@ Layer: 94 Symbol</description>
 </class>
 </classes>
 <modules>
-<module name="CELL_VOLTAGE_FILTER+DRAIN" prefix="" dx="20.32" dy="15.24">
+<module name="CV_FIL+DC" prefix="" dx="20.32" dy="15.24">
 <ports>
 <port name="CELL+" side="left" coord="5.08" direction="in"/>
 <port name="CELL-" side="left" coord="-5.08" direction="pas"/>
@@ -5030,26 +5030,26 @@ Layer: 94 Symbol</description>
 <variantdefs>
 </variantdefs>
 <parts>
-<part name="GATE" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="3K3">
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="3K3">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
 <part name="PFET" library="HyTechDevices" deviceset="P-CHANNEL_MOSFET_DMP3099L-7" device=""/>
-<part name="R" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="100R">
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="100R">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="C" library="HyTechDevices" deviceset="CAP" device="0603-CAP" value="10nF">
+<part name="C1" library="HyTechDevices" deviceset="CAP" device="0603-CAP" value="10nF">
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="SUPPLY1" library="supply2" deviceset="V-" device=""/>
-<part name="LED1" library="HyTechDevices" deviceset="LED" device="-0603" value="RED">
+<part name="D1" library="HyTechDevices" deviceset="LED" device="-0603" value="RED">
 <attribute name="DKPN" value="350-2038-1-ND"/>
 </part>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="806R">
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="806R">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
 <part name="U$1" library="HyTechFrames" deviceset="FRAME_A" device=""/>
-<part name="DISCHARGE" library="HyTechDevices" deviceset="RESISTOR_?_*" device="PWR263"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="PWR263"/>
 </parts>
 <sheets>
 <sheet>
@@ -5062,7 +5062,7 @@ Layer: 94 Symbol</description>
 <text x="95.25" y="-86.36" size="2.54" layer="94">Cell Voltage Filter and Discharge Circuit</text>
 </plain>
 <instances>
-<instance part="GATE" gate="G$1" x="55.88" y="17.78" smashed="yes">
+<instance part="R2" gate="G$1" x="55.88" y="17.78" smashed="yes">
 <attribute name="NAME" x="52.07" y="19.2786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.07" y="14.478" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="55.88" y="17.78" size="0.127" layer="96" display="off"/>
@@ -5070,12 +5070,12 @@ Layer: 94 Symbol</description>
 <instance part="PFET" gate="G$1" x="43.18" y="15.24" smashed="yes" rot="MR0">
 <attribute name="NAME" x="39.37" y="10.16" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="R" gate="G$1" x="55.88" y="43.18" smashed="yes">
+<instance part="R1" gate="G$1" x="55.88" y="43.18" smashed="yes">
 <attribute name="NAME" x="52.07" y="44.6786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.07" y="39.878" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="55.88" y="43.18" size="0.127" layer="96" display="off"/>
 </instance>
-<instance part="C" gate="G$1" x="68.58" y="35.56" smashed="yes">
+<instance part="C1" gate="G$1" x="68.58" y="35.56" smashed="yes">
 <attribute name="NAME" x="70.104" y="38.481" size="1.778" layer="95"/>
 <attribute name="VALUE" x="70.104" y="33.401" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="68.58" y="35.56" size="0.127" layer="96" display="off"/>
@@ -5084,12 +5084,12 @@ Layer: 94 Symbol</description>
 <instance part="SUPPLY1" gate="1" x="68.58" y="27.94" smashed="yes">
 <attribute name="VALUE" x="68.58" y="27.94" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED1" gate="LED" x="15.24" y="5.08" smashed="yes">
+<instance part="D1" gate="LED" x="15.24" y="5.08" smashed="yes">
 <attribute name="NAME" x="18.796" y="0.508" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="20.955" y="0.508" size="1.778" layer="96" rot="R90"/>
 <attribute name="DKPN" x="15.24" y="5.08" size="0.127" layer="96" display="off"/>
 </instance>
-<instance part="R1" gate="G$1" x="15.24" y="-7.62" smashed="yes" rot="R90">
+<instance part="R4" gate="G$1" x="15.24" y="-7.62" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.7414" y="-11.43" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="18.542" y="-11.43" size="1.778" layer="96" rot="R90"/>
 <attribute name="TOLERANCE" x="15.24" y="-7.62" size="0.127" layer="96" rot="R90" display="off"/>
@@ -5100,7 +5100,7 @@ Layer: 94 Symbol</description>
 <attribute name="DRAWING_NAME" x="124.46" y="-73.66" size="2.54" layer="94"/>
 <attribute name="SHEET" x="177.8" y="-93.98" size="2.54" layer="94"/>
 </instance>
-<instance part="DISCHARGE" gate="G$1" x="27.94" y="-3.302" smashed="yes" rot="R270">
+<instance part="R3" gate="G$1" x="27.94" y="-3.302" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.21" y="-2.032" size="1.27" layer="95" rot="R270" align="bottom-center"/>
 <attribute name="RESISTANCE" x="26.67" y="-2.032" size="1.27" layer="96" rot="R270" align="top-center"/>
 </instance>
@@ -5113,7 +5113,7 @@ Layer: 94 Symbol</description>
 <wire x1="30.48" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="PFET" gate="G$1" pin="S"/>
 <label x="27.94" y="43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 <junction x="30.48" y="43.18"/>
 <wire x1="38.1" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
@@ -5122,14 +5122,14 @@ Layer: 94 Symbol</description>
 </net>
 <net name="GATE" class="0">
 <segment>
-<pinref part="GATE" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="17.78" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="PFET" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="S(N)" class="0">
 <segment>
-<pinref part="GATE" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="17.78" x2="78.74" y2="17.78" width="0.1524" layer="91"/>
 <label x="78.74" y="17.78" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -5137,17 +5137,17 @@ Layer: 94 Symbol</description>
 <net name="CELL-" class="0">
 <segment>
 <wire x1="27.94" y1="-5.842" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="-12.7" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
 <label x="15.24" y="-17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="27.94" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="DISCHARGE" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="C(N)" class="0">
 <segment>
-<pinref part="R" gate="G$1" pin="2"/>
-<pinref part="C" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="43.18" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="43.18" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="43.18" x2="78.74" y2="43.18" width="0.1524" layer="91"/>
@@ -5157,35 +5157,35 @@ Layer: 94 Symbol</description>
 </net>
 <net name="V-" class="0">
 <segment>
-<pinref part="C" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="33.02" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="1" pin="V-"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="LED" pin="C"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="D1" gate="LED" pin="C"/>
 <wire x1="15.24" y1="-2.54" x2="15.24" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="LED1" gate="LED" pin="A"/>
+<pinref part="D1" gate="LED" pin="A"/>
 <pinref part="PFET" gate="G$1" pin="D"/>
 <wire x1="15.24" y1="7.62" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="12.7" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="1.778" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
 <junction x="27.94" y="12.7"/>
-<pinref part="DISCHARGE" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 </module>
-<module name="CELL_THERM_FILTER" prefix="" dx="22.86" dy="15.24">
+<module name="CT_FIL" prefix="" dx="22.86" dy="15.24">
 <ports>
 <port name="VREF" side="left" coord="5.08" direction="pwr"/>
 <port name="GPIO" side="left" coord="-5.08" direction="out"/>
@@ -5198,10 +5198,10 @@ Layer: 94 Symbol</description>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="10K">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="R" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="100R">
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="100R">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="C" library="HyTechDevices" deviceset="CAP" device="0603-CAP" value="10nF">
+<part name="C1" library="HyTechDevices" deviceset="CAP" device="0603-CAP" value="10nF">
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
@@ -5221,12 +5221,12 @@ Layer: 94 Symbol</description>
 <attribute name="VALUE" x="6.858" y="13.97" size="1.778" layer="96" rot="R270"/>
 <attribute name="TOLERANCE" x="10.16" y="10.16" size="0.127" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="R" gate="G$1" x="0" y="0" smashed="yes">
+<instance part="R2" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="NAME" x="-3.81" y="1.4986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-3.81" y="-3.302" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="0" y="0" size="0.127" layer="96" display="off"/>
 </instance>
-<instance part="C" gate="G$1" x="-10.16" y="-7.62" smashed="yes">
+<instance part="C1" gate="G$1" x="-10.16" y="-7.62" smashed="yes">
 <attribute name="NAME" x="-8.636" y="-4.699" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-8.636" y="-9.779" size="1.778" layer="96"/>
 <attribute name="VOLTAGE" x="-10.16" y="-7.62" size="0.127" layer="96" display="off"/>
@@ -5249,7 +5249,7 @@ Layer: 94 Symbol</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="0" width="0.1524" layer="91"/>
-<pinref part="R" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="0" x2="10.16" y2="0" width="0.1524" layer="91"/>
 <junction x="10.16" y="0"/>
@@ -5258,8 +5258,8 @@ Layer: 94 Symbol</description>
 </net>
 <net name="GPIO" class="0">
 <segment>
-<pinref part="R" gate="G$1" pin="1"/>
-<pinref part="C" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="-2.54" x2="-10.16" y2="0" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="0" x2="-17.78" y2="0" width="0.1524" layer="91"/>
@@ -5277,7 +5277,7 @@ Layer: 94 Symbol</description>
 <net name="V-" class="0">
 <segment>
 <pinref part="SUPPLY27" gate="1" pin="V-"/>
-<pinref part="C" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="-10.16" y1="-12.7" x2="-10.16" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5665,32 +5665,32 @@ Layer: 94 Symbol</description>
 <text x="-391.668" y="226.06" size="6.4516" layer="97">Circuit A (Upper 9 Cells)</text>
 </plain>
 <moduleinsts>
-<moduleinst name="DRAIN10" module="CELL_VOLTAGE_FILTER+DRAIN" x="-236.22" y="50.8">
-<attribute name="NAME" x="-236.22" y="50.8" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC10" module="CV_FIL+DC" x="-236.22" y="50.8">
+<attribute name="NAME" value="DC10" x="-236.22" y="50.8" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN11" module="CELL_VOLTAGE_FILTER+DRAIN" x="-236.22" y="68.58">
-<attribute name="NAME" x="-236.22" y="68.58" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC11" module="CV_FIL+DC" x="-236.22" y="68.58">
+<attribute name="NAME" value="DC11" x="-236.22" y="68.58" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN12" module="CELL_VOLTAGE_FILTER+DRAIN" x="-236.22" y="86.36">
-<attribute name="NAME" x="-236.22" y="86.36" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC12" module="CV_FIL+DC" x="-236.22" y="86.36">
+<attribute name="NAME" value="DC12" x="-236.22" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN13" module="CELL_VOLTAGE_FILTER+DRAIN" x="-236.22" y="104.14">
-<attribute name="NAME" x="-236.22" y="104.14" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC13" module="CV_FIL+DC" x="-236.22" y="104.14">
+<attribute name="NAME" value="DC13" x="-236.22" y="104.14" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN14" module="CELL_VOLTAGE_FILTER+DRAIN" x="-236.22" y="121.92">
-<attribute name="NAME" x="-236.22" y="121.92" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC14" module="CV_FIL+DC" x="-236.22" y="121.92">
+<attribute name="NAME" value="DC14" x="-236.22" y="121.92" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN15" module="CELL_VOLTAGE_FILTER+DRAIN" x="-236.22" y="147.32">
-<attribute name="NAME" x="-236.22" y="147.32" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC15" module="CV_FIL+DC" x="-236.22" y="147.32">
+<attribute name="NAME" value="DC15" x="-236.22" y="147.32" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN16" module="CELL_VOLTAGE_FILTER+DRAIN" x="-236.22" y="165.1">
-<attribute name="NAME" x="-236.22" y="165.1" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC16" module="CV_FIL+DC" x="-236.22" y="165.1">
+<attribute name="NAME" value="DC16" x="-236.22" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN17" module="CELL_VOLTAGE_FILTER+DRAIN" x="-236.22" y="182.88">
-<attribute name="NAME" x="-236.22" y="182.88" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC17" module="CV_FIL+DC" x="-236.22" y="182.88">
+<attribute name="NAME" value="DC17" x="-236.22" y="182.88" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN18" module="CELL_VOLTAGE_FILTER+DRAIN" x="-236.22" y="200.66">
-<attribute name="NAME" x="-236.22" y="200.66" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC18" module="CV_FIL+DC" x="-236.22" y="200.66">
+<attribute name="NAME" value="DC18" x="-236.22" y="200.66" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
@@ -5871,7 +5871,7 @@ Layer: 94 Symbol</description>
 <wire x1="-332.74" y1="167.64" x2="-287.02" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="-287.02" y1="213.36" x2="-287.02" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="-287.02" y1="205.74" x2="-287.02" y2="167.64" width="0.1524" layer="91"/>
-<portref moduleinst="DRAIN18" port="CELL+"/>
+<portref moduleinst="DC18" port="CELL+"/>
 <wire x1="-251.46" y1="205.74" x2="-287.02" y2="205.74" width="0.1524" layer="91"/>
 <junction x="-287.02" y="205.74"/>
 <label x="-264.16" y="205.74" size="1.778" layer="95"/>
@@ -5902,47 +5902,47 @@ Layer: 94 Symbol</description>
 <wire x1="-233.68" y1="218.44" x2="-233.68" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN18" port="V-"/>
+<portref moduleinst="DC18" port="V-"/>
 <pinref part="SUPPLY50" gate="1" pin="V-"/>
 <wire x1="-215.9" y1="200.66" x2="-220.98" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN17" port="V-"/>
+<portref moduleinst="DC17" port="V-"/>
 <pinref part="SUPPLY51" gate="1" pin="V-"/>
 <wire x1="-215.9" y1="182.88" x2="-220.98" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN16" port="V-"/>
+<portref moduleinst="DC16" port="V-"/>
 <pinref part="SUPPLY52" gate="1" pin="V-"/>
 <wire x1="-215.9" y1="165.1" x2="-220.98" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN15" port="V-"/>
+<portref moduleinst="DC15" port="V-"/>
 <pinref part="SUPPLY53" gate="1" pin="V-"/>
 <wire x1="-215.9" y1="147.32" x2="-220.98" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN14" port="V-"/>
+<portref moduleinst="DC14" port="V-"/>
 <pinref part="SUPPLY54" gate="1" pin="V-"/>
 <wire x1="-215.9" y1="121.92" x2="-220.98" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN13" port="V-"/>
+<portref moduleinst="DC13" port="V-"/>
 <pinref part="SUPPLY55" gate="1" pin="V-"/>
 <wire x1="-215.9" y1="104.14" x2="-220.98" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN12" port="V-"/>
+<portref moduleinst="DC12" port="V-"/>
 <pinref part="SUPPLY56" gate="1" pin="V-"/>
 <wire x1="-215.9" y1="86.36" x2="-220.98" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN11" port="V-"/>
+<portref moduleinst="DC11" port="V-"/>
 <pinref part="SUPPLY57" gate="1" pin="V-"/>
 <wire x1="-215.9" y1="68.58" x2="-220.98" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN10" port="V-"/>
+<portref moduleinst="DC10" port="V-"/>
 <pinref part="SUPPLY58" gate="1" pin="V-"/>
 <wire x1="-215.9" y1="50.8" x2="-220.98" y2="50.8" width="0.1524" layer="91"/>
 </segment>
@@ -5954,7 +5954,7 @@ Layer: 94 Symbol</description>
 <segment>
 <pinref part="R2_A" gate="G$1" pin="1"/>
 <pinref part="SUPPLY30" gate="1" pin="V-"/>
-<portref moduleinst="DRAIN10" port="CELL-"/>
+<portref moduleinst="DC10" port="CELL-"/>
 <wire x1="-251.46" y1="45.72" x2="-251.46" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-251.46" y="38.1"/>
 <wire x1="-251.46" y1="38.1" x2="-251.46" y2="25.4" width="0.1524" layer="91"/>
@@ -5980,12 +5980,12 @@ Layer: 94 Symbol</description>
 <segment>
 <wire x1="-220.98" y1="205.74" x2="-218.44" y2="205.74" width="0.1524" layer="91"/>
 <label x="-218.44" y="205.74" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN18" port="C(N)"/>
+<portref moduleinst="DC18" port="C(N)"/>
 </segment>
 </net>
 <net name="S10_A" class="0">
 <segment>
-<portref moduleinst="DRAIN18" port="S(N)"/>
+<portref moduleinst="DC18" port="S(N)"/>
 <wire x1="-220.98" y1="195.58" x2="-218.44" y2="195.58" width="0.1524" layer="91"/>
 <label x="-218.44" y="195.58" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -5993,13 +5993,13 @@ Layer: 94 Symbol</description>
 <net name="C9_A" class="0">
 <segment>
 <label x="-218.44" y="187.96" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN17" port="C(N)"/>
+<portref moduleinst="DC17" port="C(N)"/>
 <wire x1="-218.44" y1="187.96" x2="-220.98" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S9_A" class="0">
 <segment>
-<portref moduleinst="DRAIN17" port="S(N)"/>
+<portref moduleinst="DC17" port="S(N)"/>
 <wire x1="-220.98" y1="177.8" x2="-218.44" y2="177.8" width="0.1524" layer="91"/>
 <label x="-218.44" y="177.8" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6007,13 +6007,13 @@ Layer: 94 Symbol</description>
 <net name="C8_A" class="0">
 <segment>
 <label x="-218.44" y="170.18" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN16" port="C(N)"/>
+<portref moduleinst="DC16" port="C(N)"/>
 <wire x1="-218.44" y1="170.18" x2="-220.98" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S8_A" class="0">
 <segment>
-<portref moduleinst="DRAIN16" port="S(N)"/>
+<portref moduleinst="DC16" port="S(N)"/>
 <wire x1="-220.98" y1="160.02" x2="-218.44" y2="160.02" width="0.1524" layer="91"/>
 <label x="-218.44" y="160.02" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6021,13 +6021,13 @@ Layer: 94 Symbol</description>
 <net name="C7_A" class="0">
 <segment>
 <label x="-218.44" y="152.4" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN15" port="C(N)"/>
+<portref moduleinst="DC15" port="C(N)"/>
 <wire x1="-218.44" y1="152.4" x2="-220.98" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S7_A" class="0">
 <segment>
-<portref moduleinst="DRAIN15" port="S(N)"/>
+<portref moduleinst="DC15" port="S(N)"/>
 <wire x1="-220.98" y1="142.24" x2="-218.44" y2="142.24" width="0.1524" layer="91"/>
 <label x="-218.44" y="142.24" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6035,20 +6035,20 @@ Layer: 94 Symbol</description>
 <net name="C5_A" class="0">
 <segment>
 <label x="-218.44" y="127" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN14" port="C(N)"/>
+<portref moduleinst="DC14" port="C(N)"/>
 <wire x1="-218.44" y1="127" x2="-220.98" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C4_A" class="0">
 <segment>
 <label x="-218.44" y="109.22" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN13" port="C(N)"/>
+<portref moduleinst="DC13" port="C(N)"/>
 <wire x1="-218.44" y1="109.22" x2="-220.98" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S4_A" class="0">
 <segment>
-<portref moduleinst="DRAIN13" port="S(N)"/>
+<portref moduleinst="DC13" port="S(N)"/>
 <wire x1="-220.98" y1="99.06" x2="-218.44" y2="99.06" width="0.1524" layer="91"/>
 <label x="-218.44" y="99.06" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6056,13 +6056,13 @@ Layer: 94 Symbol</description>
 <net name="C3_A" class="0">
 <segment>
 <label x="-218.44" y="91.44" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN12" port="C(N)"/>
+<portref moduleinst="DC12" port="C(N)"/>
 <wire x1="-218.44" y1="91.44" x2="-220.98" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S3_A" class="0">
 <segment>
-<portref moduleinst="DRAIN12" port="S(N)"/>
+<portref moduleinst="DC12" port="S(N)"/>
 <wire x1="-220.98" y1="81.28" x2="-218.44" y2="81.28" width="0.1524" layer="91"/>
 <label x="-218.44" y="81.28" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6070,13 +6070,13 @@ Layer: 94 Symbol</description>
 <net name="C2_A" class="0">
 <segment>
 <label x="-218.44" y="73.66" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN11" port="C(N)"/>
+<portref moduleinst="DC11" port="C(N)"/>
 <wire x1="-218.44" y1="73.66" x2="-220.98" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S2_A" class="0">
 <segment>
-<portref moduleinst="DRAIN11" port="S(N)"/>
+<portref moduleinst="DC11" port="S(N)"/>
 <wire x1="-220.98" y1="63.5" x2="-218.44" y2="63.5" width="0.1524" layer="91"/>
 <label x="-218.44" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6084,13 +6084,13 @@ Layer: 94 Symbol</description>
 <net name="C1_A" class="0">
 <segment>
 <label x="-218.44" y="55.88" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN10" port="C(N)"/>
+<portref moduleinst="DC10" port="C(N)"/>
 <wire x1="-218.44" y1="55.88" x2="-220.98" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S1_A" class="0">
 <segment>
-<portref moduleinst="DRAIN10" port="S(N)"/>
+<portref moduleinst="DC10" port="S(N)"/>
 <wire x1="-220.98" y1="45.72" x2="-218.44" y2="45.72" width="0.1524" layer="91"/>
 <label x="-218.44" y="45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6194,16 +6194,16 @@ Layer: 94 Symbol</description>
 </net>
 <net name="S5_A" class="0">
 <segment>
-<portref moduleinst="DRAIN14" port="S(N)"/>
+<portref moduleinst="DC14" port="S(N)"/>
 <wire x1="-220.98" y1="116.84" x2="-218.44" y2="116.84" width="0.1524" layer="91"/>
 <label x="-218.44" y="116.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SENSE17_POST" class="0">
 <segment>
-<portref moduleinst="DRAIN17" port="CELL+"/>
+<portref moduleinst="DC17" port="CELL+"/>
 <junction x="-251.46" y="187.96"/>
-<portref moduleinst="DRAIN18" port="CELL-"/>
+<portref moduleinst="DC18" port="CELL-"/>
 <wire x1="-251.46" y1="195.58" x2="-251.46" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="-251.46" y1="187.96" x2="-284.48" y2="187.96" width="0.1524" layer="91"/>
 <label x="-264.16" y="187.96" size="1.778" layer="95"/>
@@ -6220,13 +6220,13 @@ Layer: 94 Symbol</description>
 <segment>
 <pinref part="F16" gate="G$1" pin="2"/>
 <label x="-322.58" y="162.56" size="1.778" layer="95"/>
-<portref moduleinst="DRAIN16" port="CELL+"/>
+<portref moduleinst="DC16" port="CELL+"/>
 <wire x1="-251.46" y1="170.18" x2="-281.94" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="-281.94" y1="170.18" x2="-281.94" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="-281.94" y1="162.56" x2="-332.74" y2="162.56" width="0.1524" layer="91"/>
 <label x="-264.16" y="170.18" size="1.778" layer="95"/>
 <junction x="-251.46" y="170.18"/>
-<portref moduleinst="DRAIN17" port="CELL-"/>
+<portref moduleinst="DC17" port="CELL-"/>
 <wire x1="-251.46" y1="177.8" x2="-251.46" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6235,12 +6235,12 @@ Layer: 94 Symbol</description>
 <wire x1="-281.94" y1="160.02" x2="-332.74" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="F15" gate="G$1" pin="2"/>
 <label x="-322.58" y="160.02" size="1.778" layer="95" font="vector"/>
-<portref moduleinst="DRAIN15" port="CELL+"/>
+<portref moduleinst="DC15" port="CELL+"/>
 <wire x1="-281.94" y1="160.02" x2="-281.94" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="-281.94" y1="152.4" x2="-251.46" y2="152.4" width="0.1524" layer="91"/>
 <label x="-264.16" y="152.4" size="1.778" layer="95"/>
 <junction x="-251.46" y="152.4"/>
-<portref moduleinst="DRAIN16" port="CELL-"/>
+<portref moduleinst="DC16" port="CELL-"/>
 <wire x1="-251.46" y1="160.02" x2="-251.46" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6251,14 +6251,14 @@ Layer: 94 Symbol</description>
 <label x="-322.58" y="157.48" size="1.778" layer="95" font="vector"/>
 <wire x1="-284.48" y1="157.48" x2="-284.48" y2="127" width="0.1524" layer="91"/>
 <wire x1="-284.48" y1="127" x2="-251.46" y2="127" width="0.1524" layer="91"/>
-<portref moduleinst="DRAIN14" port="CELL+"/>
+<portref moduleinst="DC14" port="CELL+"/>
 <label x="-264.16" y="127" size="1.778" layer="95"/>
 <pinref part="RU2_A" gate="G$1" pin="1"/>
 <wire x1="-251.46" y1="127" x2="-251.46" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="-251.46" y1="134.62" x2="-241.3" y2="134.62" width="0.1524" layer="91"/>
 <junction x="-251.46" y="127"/>
 <junction x="-251.46" y="134.62"/>
-<portref moduleinst="DRAIN15" port="CELL-"/>
+<portref moduleinst="DC15" port="CELL-"/>
 <wire x1="-251.46" y1="142.24" x2="-251.46" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6266,13 +6266,13 @@ Layer: 94 Symbol</description>
 <segment>
 <pinref part="F13" gate="G$1" pin="2"/>
 <label x="-322.58" y="154.94" size="1.778" layer="95" font="vector"/>
-<portref moduleinst="DRAIN13" port="CELL+"/>
+<portref moduleinst="DC13" port="CELL+"/>
 <wire x1="-287.02" y1="154.94" x2="-332.74" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="-287.02" y1="154.94" x2="-287.02" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-287.02" y1="109.22" x2="-251.46" y2="109.22" width="0.1524" layer="91"/>
 <label x="-264.16" y="109.22" size="1.778" layer="95"/>
 <junction x="-251.46" y="109.22"/>
-<portref moduleinst="DRAIN14" port="CELL-"/>
+<portref moduleinst="DC14" port="CELL-"/>
 <wire x1="-251.46" y1="116.84" x2="-251.46" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6281,11 +6281,11 @@ Layer: 94 Symbol</description>
 <wire x1="-289.56" y1="152.4" x2="-332.74" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="F12" gate="G$1" pin="2"/>
 <label x="-322.58" y="152.4" size="1.778" layer="95" font="vector"/>
-<portref moduleinst="DRAIN12" port="CELL+"/>
+<portref moduleinst="DC12" port="CELL+"/>
 <wire x1="-289.56" y1="152.4" x2="-289.56" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-289.56" y1="91.44" x2="-251.46" y2="91.44" width="0.1524" layer="91"/>
 <label x="-264.16" y="91.44" size="1.778" layer="95"/>
-<portref moduleinst="DRAIN13" port="CELL-"/>
+<portref moduleinst="DC13" port="CELL-"/>
 <junction x="-251.46" y="91.44"/>
 <wire x1="-251.46" y1="99.06" x2="-251.46" y2="91.44" width="0.1524" layer="91"/>
 </segment>
@@ -6296,19 +6296,19 @@ Layer: 94 Symbol</description>
 <wire x1="-292.1" y1="149.86" x2="-332.74" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="F11" gate="G$1" pin="2"/>
 <label x="-322.58" y="149.86" size="1.778" layer="95" font="vector"/>
-<portref moduleinst="DRAIN11" port="CELL+"/>
+<portref moduleinst="DC11" port="CELL+"/>
 <wire x1="-292.1" y1="73.66" x2="-251.46" y2="73.66" width="0.1524" layer="91"/>
 <label x="-264.16" y="73.66" size="1.778" layer="95"/>
-<portref moduleinst="DRAIN12" port="CELL-"/>
+<portref moduleinst="DC12" port="CELL-"/>
 <junction x="-251.46" y="73.66"/>
 <wire x1="-251.46" y1="81.28" x2="-251.46" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSE10" class="0">
 <segment>
-<portref moduleinst="DRAIN10" port="CELL+"/>
+<portref moduleinst="DC10" port="CELL+"/>
 <junction x="-251.46" y="55.88"/>
-<portref moduleinst="DRAIN11" port="CELL-"/>
+<portref moduleinst="DC11" port="CELL-"/>
 <wire x1="-251.46" y1="63.5" x2="-251.46" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-294.64" y1="55.88" x2="-251.46" y2="55.88" width="0.1524" layer="91"/>
 <label x="-264.16" y="55.88" size="1.778" layer="95"/>
@@ -6354,32 +6354,32 @@ Layer: 94 Symbol</description>
 CIRCUIT A AND CIRCUIT B</text>
 </plain>
 <moduleinsts>
-<moduleinst name="DRAIN1" module="CELL_VOLTAGE_FILTER+DRAIN" x="-218.44" y="43.18">
-<attribute name="NAME" x="-218.44" y="43.18" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC1" module="CV_FIL+DC" x="-218.44" y="43.18">
+<attribute name="NAME" value="DC1" x="-218.44" y="43.18" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN2" module="CELL_VOLTAGE_FILTER+DRAIN" x="-218.44" y="60.96">
-<attribute name="NAME" x="-218.44" y="60.96" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC2" module="CV_FIL+DC" x="-218.44" y="60.96">
+<attribute name="NAME" value="DC2" x="-218.44" y="60.96" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN3" module="CELL_VOLTAGE_FILTER+DRAIN" x="-218.44" y="78.74">
-<attribute name="NAME" x="-218.44" y="78.74" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC3" module="CV_FIL+DC" x="-218.44" y="78.74">
+<attribute name="NAME" value="DC3" x="-218.44" y="78.74" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN4" module="CELL_VOLTAGE_FILTER+DRAIN" x="-218.44" y="96.52">
-<attribute name="NAME" x="-218.44" y="96.52" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC4" module="CV_FIL+DC" x="-218.44" y="96.52">
+<attribute name="NAME" value="DC4" x="-218.44" y="96.52" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN5" module="CELL_VOLTAGE_FILTER+DRAIN" x="-218.44" y="114.3">
-<attribute name="NAME" x="-218.44" y="114.3" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC5" module="CV_FIL+DC" x="-218.44" y="114.3">
+<attribute name="NAME" value="DC5" x="-218.44" y="114.3" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN6" module="CELL_VOLTAGE_FILTER+DRAIN" x="-218.44" y="139.7">
-<attribute name="NAME" x="-218.44" y="139.7" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC6" module="CV_FIL+DC" x="-218.44" y="139.7">
+<attribute name="NAME" value="DC6" x="-218.44" y="139.7" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN7" module="CELL_VOLTAGE_FILTER+DRAIN" x="-218.44" y="157.48">
-<attribute name="NAME" x="-218.44" y="157.48" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC7" module="CV_FIL+DC" x="-218.44" y="157.48">
+<attribute name="NAME" value="DC7" x="-218.44" y="157.48" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN8" module="CELL_VOLTAGE_FILTER+DRAIN" x="-218.44" y="175.26">
-<attribute name="NAME" x="-218.44" y="175.26" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC8" module="CV_FIL+DC" x="-218.44" y="175.26">
+<attribute name="NAME" value="DC8" x="-218.44" y="175.26" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DRAIN9" module="CELL_VOLTAGE_FILTER+DRAIN" x="-218.44" y="193.04">
-<attribute name="NAME" x="-218.44" y="193.04" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DC9" module="CV_FIL+DC" x="-218.44" y="193.04">
+<attribute name="NAME" value="DC9" x="-218.44" y="193.04" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
@@ -6564,13 +6564,13 @@ CIRCUIT A AND CIRCUIT B</text>
 <segment>
 <pinref part="F7" gate="G$1" pin="2"/>
 <label x="-304.8" y="154.94" size="1.778" layer="95" font="vector"/>
-<portref moduleinst="DRAIN7" port="CELL+"/>
+<portref moduleinst="DC7" port="CELL+"/>
 <wire x1="-233.68" y1="162.56" x2="-264.16" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="-264.16" y1="162.56" x2="-264.16" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="-264.16" y1="154.94" x2="-314.96" y2="154.94" width="0.1524" layer="91"/>
 <label x="-246.38" y="162.56" size="1.778" layer="95"/>
 <junction x="-233.68" y="162.56"/>
-<portref moduleinst="DRAIN8" port="CELL-"/>
+<portref moduleinst="DC8" port="CELL-"/>
 <wire x1="-233.68" y1="170.18" x2="-233.68" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6579,12 +6579,12 @@ CIRCUIT A AND CIRCUIT B</text>
 <wire x1="-264.16" y1="152.4" x2="-314.96" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="F6" gate="G$1" pin="2"/>
 <label x="-304.8" y="152.4" size="1.778" layer="95" font="vector"/>
-<portref moduleinst="DRAIN6" port="CELL+"/>
+<portref moduleinst="DC6" port="CELL+"/>
 <wire x1="-264.16" y1="152.4" x2="-264.16" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-264.16" y1="144.78" x2="-233.68" y2="144.78" width="0.1524" layer="91"/>
 <label x="-246.38" y="144.78" size="1.778" layer="95"/>
 <junction x="-233.68" y="144.78"/>
-<portref moduleinst="DRAIN7" port="CELL-"/>
+<portref moduleinst="DC7" port="CELL-"/>
 <wire x1="-233.68" y1="152.4" x2="-233.68" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6592,26 +6592,26 @@ CIRCUIT A AND CIRCUIT B</text>
 <segment>
 <pinref part="F4" gate="G$1" pin="2"/>
 <label x="-304.8" y="147.32" size="1.778" layer="95" font="vector"/>
-<portref moduleinst="DRAIN4" port="CELL+"/>
+<portref moduleinst="DC4" port="CELL+"/>
 <wire x1="-269.24" y1="147.32" x2="-314.96" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="-269.24" y1="147.32" x2="-269.24" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="-269.24" y1="101.6" x2="-233.68" y2="101.6" width="0.1524" layer="91"/>
 <label x="-246.38" y="101.6" size="1.778" layer="95"/>
 <junction x="-233.68" y="101.6"/>
-<portref moduleinst="DRAIN5" port="CELL-"/>
+<portref moduleinst="DC5" port="CELL-"/>
 <wire x1="-233.68" y1="109.22" x2="-233.68" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C4_B" class="0">
 <segment>
 <label x="-200.66" y="101.6" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN4" port="C(N)"/>
+<portref moduleinst="DC4" port="C(N)"/>
 <wire x1="-200.66" y1="101.6" x2="-203.2" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S4_B" class="0">
 <segment>
-<portref moduleinst="DRAIN4" port="S(N)"/>
+<portref moduleinst="DC4" port="S(N)"/>
 <wire x1="-203.2" y1="91.44" x2="-200.66" y2="91.44" width="0.1524" layer="91"/>
 <label x="-200.66" y="91.44" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6621,11 +6621,11 @@ CIRCUIT A AND CIRCUIT B</text>
 <wire x1="-271.78" y1="144.78" x2="-314.96" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="F3" gate="G$1" pin="2"/>
 <label x="-304.8" y="144.78" size="1.778" layer="95" font="vector"/>
-<portref moduleinst="DRAIN3" port="CELL+"/>
+<portref moduleinst="DC3" port="CELL+"/>
 <wire x1="-271.78" y1="144.78" x2="-271.78" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="83.82" x2="-233.68" y2="83.82" width="0.1524" layer="91"/>
 <label x="-246.38" y="83.82" size="1.778" layer="95"/>
-<portref moduleinst="DRAIN4" port="CELL-"/>
+<portref moduleinst="DC4" port="CELL-"/>
 <junction x="-233.68" y="83.82"/>
 <wire x1="-233.68" y1="91.44" x2="-233.68" y2="83.82" width="0.1524" layer="91"/>
 </segment>
@@ -6633,13 +6633,13 @@ CIRCUIT A AND CIRCUIT B</text>
 <net name="C3_B" class="0">
 <segment>
 <label x="-200.66" y="83.82" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN3" port="C(N)"/>
+<portref moduleinst="DC3" port="C(N)"/>
 <wire x1="-200.66" y1="83.82" x2="-203.2" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S3_B" class="0">
 <segment>
-<portref moduleinst="DRAIN3" port="S(N)"/>
+<portref moduleinst="DC3" port="S(N)"/>
 <wire x1="-203.2" y1="73.66" x2="-200.66" y2="73.66" width="0.1524" layer="91"/>
 <label x="-200.66" y="73.66" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6647,13 +6647,13 @@ CIRCUIT A AND CIRCUIT B</text>
 <net name="C2_B" class="0">
 <segment>
 <label x="-200.66" y="66.04" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN2" port="C(N)"/>
+<portref moduleinst="DC2" port="C(N)"/>
 <wire x1="-200.66" y1="66.04" x2="-203.2" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S2_B" class="0">
 <segment>
-<portref moduleinst="DRAIN2" port="S(N)"/>
+<portref moduleinst="DC2" port="S(N)"/>
 <wire x1="-203.2" y1="55.88" x2="-200.66" y2="55.88" width="0.1524" layer="91"/>
 <label x="-200.66" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6664,17 +6664,17 @@ CIRCUIT A AND CIRCUIT B</text>
 <wire x1="-274.32" y1="142.24" x2="-314.96" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="F2" gate="G$1" pin="2"/>
 <label x="-304.8" y="142.24" size="1.778" layer="95" font="vector"/>
-<portref moduleinst="DRAIN2" port="CELL+"/>
+<portref moduleinst="DC2" port="CELL+"/>
 <wire x1="-274.32" y1="66.04" x2="-233.68" y2="66.04" width="0.1524" layer="91"/>
 <label x="-246.38" y="66.04" size="1.778" layer="95"/>
-<portref moduleinst="DRAIN3" port="CELL-"/>
+<portref moduleinst="DC3" port="CELL-"/>
 <junction x="-233.68" y="66.04"/>
 <wire x1="-233.68" y1="73.66" x2="-233.68" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S1_B" class="0">
 <segment>
-<portref moduleinst="DRAIN1" port="S(N)"/>
+<portref moduleinst="DC1" port="S(N)"/>
 <wire x1="-203.2" y1="38.1" x2="-200.66" y2="38.1" width="0.1524" layer="91"/>
 <label x="-200.66" y="38.1" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6765,11 +6765,11 @@ CIRCUIT A AND CIRCUIT B</text>
 <wire x1="-266.7" y1="157.48" x2="-314.96" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="-266.7" y1="157.48" x2="-266.7" y2="180.34" width="0.1524" layer="91"/>
 <label x="-304.8" y="157.48" size="1.778" layer="95" font="vector"/>
-<portref moduleinst="DRAIN8" port="CELL+"/>
+<portref moduleinst="DC8" port="CELL+"/>
 <wire x1="-233.68" y1="180.34" x2="-266.7" y2="180.34" width="0.1524" layer="91"/>
 <label x="-246.38" y="180.34" size="1.778" layer="95"/>
 <junction x="-233.68" y="180.34"/>
-<portref moduleinst="DRAIN9" port="CELL-"/>
+<portref moduleinst="DC9" port="CELL-"/>
 <wire x1="-233.68" y1="187.96" x2="-233.68" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6787,7 +6787,7 @@ CIRCUIT A AND CIRCUIT B</text>
 <net name="C1_B" class="0">
 <segment>
 <label x="-200.66" y="48.26" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN1" port="C(N)"/>
+<portref moduleinst="DC1" port="C(N)"/>
 <wire x1="-200.66" y1="48.26" x2="-203.2" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6798,20 +6798,20 @@ CIRCUIT A AND CIRCUIT B</text>
 <label x="-304.8" y="149.86" size="1.778" layer="95" font="vector"/>
 <wire x1="-266.7" y1="149.86" x2="-266.7" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-266.7" y1="119.38" x2="-233.68" y2="119.38" width="0.1524" layer="91"/>
-<portref moduleinst="DRAIN5" port="CELL+"/>
+<portref moduleinst="DC5" port="CELL+"/>
 <label x="-246.38" y="119.38" size="1.778" layer="95"/>
 <pinref part="RU2_B" gate="G$1" pin="1"/>
 <wire x1="-233.68" y1="119.38" x2="-233.68" y2="127" width="0.1524" layer="91"/>
 <wire x1="-233.68" y1="127" x2="-223.52" y2="127" width="0.1524" layer="91"/>
 <junction x="-233.68" y="119.38"/>
 <junction x="-233.68" y="127"/>
-<portref moduleinst="DRAIN6" port="CELL-"/>
+<portref moduleinst="DC6" port="CELL-"/>
 <wire x1="-233.68" y1="134.62" x2="-233.68" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S5_B" class="0">
 <segment>
-<portref moduleinst="DRAIN5" port="S(N)"/>
+<portref moduleinst="DC5" port="S(N)"/>
 <wire x1="-203.2" y1="109.22" x2="-200.66" y2="109.22" width="0.1524" layer="91"/>
 <label x="-200.66" y="109.22" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6819,7 +6819,7 @@ CIRCUIT A AND CIRCUIT B</text>
 <net name="C5_B" class="0">
 <segment>
 <label x="-200.66" y="119.38" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN5" port="C(N)"/>
+<portref moduleinst="DC5" port="C(N)"/>
 <wire x1="-200.66" y1="119.38" x2="-203.2" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6832,7 +6832,7 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="S7_B" class="0">
 <segment>
-<portref moduleinst="DRAIN6" port="S(N)"/>
+<portref moduleinst="DC6" port="S(N)"/>
 <wire x1="-203.2" y1="134.62" x2="-200.66" y2="134.62" width="0.1524" layer="91"/>
 <label x="-200.66" y="134.62" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6840,13 +6840,13 @@ CIRCUIT A AND CIRCUIT B</text>
 <net name="C7_B" class="0">
 <segment>
 <label x="-200.66" y="144.78" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN6" port="C(N)"/>
+<portref moduleinst="DC6" port="C(N)"/>
 <wire x1="-200.66" y1="144.78" x2="-203.2" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S8_B" class="0">
 <segment>
-<portref moduleinst="DRAIN7" port="S(N)"/>
+<portref moduleinst="DC7" port="S(N)"/>
 <wire x1="-203.2" y1="152.4" x2="-200.66" y2="152.4" width="0.1524" layer="91"/>
 <label x="-200.66" y="152.4" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6854,13 +6854,13 @@ CIRCUIT A AND CIRCUIT B</text>
 <net name="C8_B" class="0">
 <segment>
 <label x="-200.66" y="162.56" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN7" port="C(N)"/>
+<portref moduleinst="DC7" port="C(N)"/>
 <wire x1="-200.66" y1="162.56" x2="-203.2" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S9_B" class="0">
 <segment>
-<portref moduleinst="DRAIN8" port="S(N)"/>
+<portref moduleinst="DC8" port="S(N)"/>
 <wire x1="-203.2" y1="170.18" x2="-200.66" y2="170.18" width="0.1524" layer="91"/>
 <label x="-200.66" y="170.18" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6868,7 +6868,7 @@ CIRCUIT A AND CIRCUIT B</text>
 <net name="C9_B" class="0">
 <segment>
 <label x="-200.66" y="180.34" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN8" port="C(N)"/>
+<portref moduleinst="DC8" port="C(N)"/>
 <wire x1="-200.66" y1="180.34" x2="-203.2" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6876,12 +6876,12 @@ CIRCUIT A AND CIRCUIT B</text>
 <segment>
 <wire x1="-203.2" y1="198.12" x2="-200.66" y2="198.12" width="0.1524" layer="91"/>
 <label x="-200.66" y="198.12" size="1.778" layer="95" xref="yes"/>
-<portref moduleinst="DRAIN9" port="C(N)"/>
+<portref moduleinst="DC9" port="C(N)"/>
 </segment>
 </net>
 <net name="V-_B" class="0">
 <segment>
-<portref moduleinst="DRAIN1" port="CELL-"/>
+<portref moduleinst="DC1" port="CELL-"/>
 <wire x1="-233.68" y1="38.1" x2="-233.68" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-233.68" y="30.48"/>
 <pinref part="SUPPLY1" gate="1" pin="V-"/>
@@ -6909,47 +6909,47 @@ CIRCUIT A AND CIRCUIT B</text>
 <pinref part="SUPPLY6" gate="1" pin="V-"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN9" port="V-"/>
+<portref moduleinst="DC9" port="V-"/>
 <pinref part="SUPPLY18" gate="1" pin="V-"/>
 <wire x1="-198.12" y1="193.04" x2="-203.2" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN8" port="V-"/>
+<portref moduleinst="DC8" port="V-"/>
 <pinref part="SUPPLY20" gate="1" pin="V-"/>
 <wire x1="-198.12" y1="175.26" x2="-203.2" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN7" port="V-"/>
+<portref moduleinst="DC7" port="V-"/>
 <pinref part="SUPPLY21" gate="1" pin="V-"/>
 <wire x1="-198.12" y1="157.48" x2="-203.2" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN6" port="V-"/>
+<portref moduleinst="DC6" port="V-"/>
 <pinref part="SUPPLY22" gate="1" pin="V-"/>
 <wire x1="-198.12" y1="139.7" x2="-203.2" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN5" port="V-"/>
+<portref moduleinst="DC5" port="V-"/>
 <pinref part="SUPPLY23" gate="1" pin="V-"/>
 <wire x1="-198.12" y1="114.3" x2="-203.2" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN4" port="V-"/>
+<portref moduleinst="DC4" port="V-"/>
 <pinref part="SUPPLY26" gate="1" pin="V-"/>
 <wire x1="-198.12" y1="96.52" x2="-203.2" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN3" port="V-"/>
+<portref moduleinst="DC3" port="V-"/>
 <pinref part="SUPPLY27" gate="1" pin="V-"/>
 <wire x1="-198.12" y1="78.74" x2="-203.2" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN2" port="V-"/>
+<portref moduleinst="DC2" port="V-"/>
 <pinref part="SUPPLY28" gate="1" pin="V-"/>
 <wire x1="-198.12" y1="60.96" x2="-203.2" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DRAIN1" port="V-"/>
+<portref moduleinst="DC1" port="V-"/>
 <pinref part="SUPPLY29" gate="1" pin="V-"/>
 <wire x1="-198.12" y1="43.18" x2="-203.2" y2="43.18" width="0.1524" layer="91"/>
 </segment>
@@ -6961,7 +6961,7 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="S10_B" class="0">
 <segment>
-<portref moduleinst="DRAIN9" port="S(N)"/>
+<portref moduleinst="DC9" port="S(N)"/>
 <wire x1="-203.2" y1="187.96" x2="-200.66" y2="187.96" width="0.1524" layer="91"/>
 <label x="-200.66" y="187.96" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6975,9 +6975,9 @@ CIRCUIT A AND CIRCUIT B</text>
 </net>
 <net name="SENSE1" class="0">
 <segment>
-<portref moduleinst="DRAIN1" port="CELL+"/>
+<portref moduleinst="DC1" port="CELL+"/>
 <junction x="-233.68" y="48.26"/>
-<portref moduleinst="DRAIN2" port="CELL-"/>
+<portref moduleinst="DC2" port="CELL-"/>
 <wire x1="-233.68" y1="55.88" x2="-233.68" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-276.86" y1="48.26" x2="-233.68" y2="48.26" width="0.1524" layer="91"/>
 <label x="-246.38" y="48.26" size="1.778" layer="95"/>
@@ -6991,7 +6991,7 @@ CIRCUIT A AND CIRCUIT B</text>
 <segment>
 <wire x1="-269.24" y1="226.06" x2="-269.24" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="-269.24" y1="205.74" x2="-269.24" y2="198.12" width="0.1524" layer="91"/>
-<portref moduleinst="DRAIN9" port="CELL+"/>
+<portref moduleinst="DC9" port="CELL+"/>
 <wire x1="-269.24" y1="226.06" x2="-269.24" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="-269.24" y1="246.38" x2="-269.24" y2="256.54" width="0.1524" layer="91"/>
 <wire x1="-233.68" y1="198.12" x2="-269.24" y2="198.12" width="0.1524" layer="91"/>
@@ -7037,20 +7037,20 @@ set chip address</text>
 <text x="-302.26" y="162.56" size="1.778" layer="95">LTC6811-2</text>
 </plain>
 <moduleinsts>
-<moduleinst name="THERM_FILTER1" module="CELL_THERM_FILTER" x="-149.86" y="167.64">
-<attribute name="NAME" x="-149.86" y="167.64" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="T_FIL1" module="CT_FIL" x="-149.86" y="167.64">
+<attribute name="NAME" value="T_FIL1" x="-149.86" y="167.64" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="THERM_FILTER2" module="CELL_THERM_FILTER" x="-149.86" y="147.32">
-<attribute name="NAME" x="-149.86" y="147.32" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="T_FIL2" module="CT_FIL" x="-149.86" y="147.32">
+<attribute name="NAME" value="T_FIL2" x="-149.86" y="147.32" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="THERM_FILTER3" module="CELL_THERM_FILTER" x="-149.86" y="127">
-<attribute name="NAME" x="-149.86" y="127" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="T_FIL3" module="CT_FIL" x="-149.86" y="127">
+<attribute name="NAME" value="T_FIL3" x="-149.86" y="127" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="THERM_FILTER4" module="CELL_THERM_FILTER" x="-149.86" y="106.68">
-<attribute name="NAME" x="-149.86" y="106.68" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="T_FIL4" module="CT_FIL" x="-149.86" y="106.68">
+<attribute name="NAME" value="T_FIL4" x="-149.86" y="106.68" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="THERM_FILTER5" module="CELL_THERM_FILTER" x="-149.86" y="86.36">
-<attribute name="NAME" x="-149.86" y="86.36" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="T_FIL5" module="CT_FIL" x="-149.86" y="86.36">
+<attribute name="NAME" value="T_FIL5" x="-149.86" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
@@ -7287,27 +7287,27 @@ set chip address</text>
 <segment>
 <wire x1="-166.37" y1="111.76" x2="-167.64" y2="111.76" width="0.1524" layer="91"/>
 <label x="-167.64" y="111.76" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER4" port="VREF"/>
+<portref moduleinst="T_FIL4" port="VREF"/>
 </segment>
 <segment>
 <wire x1="-166.37" y1="91.44" x2="-167.64" y2="91.44" width="0.1524" layer="91"/>
 <label x="-167.64" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER5" port="VREF"/>
+<portref moduleinst="T_FIL5" port="VREF"/>
 </segment>
 <segment>
 <wire x1="-166.37" y1="132.08" x2="-167.64" y2="132.08" width="0.1524" layer="91"/>
 <label x="-167.64" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER3" port="VREF"/>
+<portref moduleinst="T_FIL3" port="VREF"/>
 </segment>
 <segment>
 <wire x1="-166.37" y1="152.4" x2="-167.64" y2="152.4" width="0.1524" layer="91"/>
 <label x="-167.64" y="152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER2" port="VREF"/>
+<portref moduleinst="T_FIL2" port="VREF"/>
 </segment>
 <segment>
 <wire x1="-166.37" y1="172.72" x2="-167.64" y2="172.72" width="0.1524" layer="91"/>
 <label x="-167.64" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER1" port="VREF"/>
+<portref moduleinst="T_FIL1" port="VREF"/>
 </segment>
 </net>
 <net name="VREG_B" class="0">
@@ -7389,7 +7389,7 @@ set chip address</text>
 <label x="-251.46" y="111.76" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<portref moduleinst="THERM_FILTER3" port="GPIO"/>
+<portref moduleinst="T_FIL3" port="GPIO"/>
 <wire x1="-166.37" y1="121.92" x2="-167.64" y2="121.92" width="0.1524" layer="91"/>
 <label x="-167.64" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7665,27 +7665,27 @@ set chip address</text>
 </segment>
 <segment>
 <pinref part="SUPPLY63" gate="1" pin="V-"/>
-<portref moduleinst="THERM_FILTER1" port="V-"/>
+<portref moduleinst="T_FIL1" port="V-"/>
 <wire x1="-133.35" y1="172.72" x2="-124.46" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY62" gate="1" pin="V-"/>
-<portref moduleinst="THERM_FILTER2" port="V-"/>
+<portref moduleinst="T_FIL2" port="V-"/>
 <wire x1="-133.35" y1="152.4" x2="-124.46" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY61" gate="1" pin="V-"/>
-<portref moduleinst="THERM_FILTER3" port="V-"/>
+<portref moduleinst="T_FIL3" port="V-"/>
 <wire x1="-133.35" y1="132.08" x2="-124.46" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY60" gate="1" pin="V-"/>
-<portref moduleinst="THERM_FILTER4" port="V-"/>
+<portref moduleinst="T_FIL4" port="V-"/>
 <wire x1="-133.35" y1="111.76" x2="-116.84" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY59" gate="1" pin="V-"/>
-<portref moduleinst="THERM_FILTER5" port="V-"/>
+<portref moduleinst="T_FIL5" port="V-"/>
 <wire x1="-133.35" y1="91.44" x2="-116.84" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7727,7 +7727,7 @@ set chip address</text>
 <segment>
 <wire x1="-166.37" y1="101.6" x2="-167.64" y2="101.6" width="0.1524" layer="91"/>
 <label x="-167.64" y="101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER4" port="GPIO"/>
+<portref moduleinst="T_FIL4" port="GPIO"/>
 </segment>
 </net>
 <net name="GPIO5_B" class="0">
@@ -7739,7 +7739,7 @@ set chip address</text>
 <segment>
 <wire x1="-166.37" y1="81.28" x2="-167.64" y2="81.28" width="0.1524" layer="91"/>
 <label x="-167.64" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER5" port="GPIO"/>
+<portref moduleinst="T_FIL5" port="GPIO"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -7876,7 +7876,7 @@ set chip address</text>
 <segment>
 <pinref part="THERM2" gate="G$1" pin="2"/>
 <wire x1="-132.08" y1="101.6" x2="-133.35" y2="101.6" width="0.1524" layer="91"/>
-<portref moduleinst="THERM_FILTER4" port="THERM"/>
+<portref moduleinst="T_FIL4" port="THERM"/>
 </segment>
 </net>
 <net name="GPIO2_B" class="0">
@@ -7886,7 +7886,7 @@ set chip address</text>
 <label x="-264.16" y="109.22" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<portref moduleinst="THERM_FILTER2" port="GPIO"/>
+<portref moduleinst="T_FIL2" port="GPIO"/>
 <wire x1="-166.37" y1="142.24" x2="-167.64" y2="142.24" width="0.1524" layer="91"/>
 <label x="-167.64" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7898,7 +7898,7 @@ set chip address</text>
 <label x="-276.86" y="106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<portref moduleinst="THERM_FILTER1" port="GPIO"/>
+<portref moduleinst="T_FIL1" port="GPIO"/>
 <wire x1="-166.37" y1="162.56" x2="-167.64" y2="162.56" width="0.1524" layer="91"/>
 <label x="-167.64" y="162.56" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7906,27 +7906,27 @@ set chip address</text>
 <net name="N$26" class="0">
 <segment>
 <wire x1="-133.35" y1="121.92" x2="-132.08" y2="121.92" width="0.1524" layer="91"/>
-<portref moduleinst="THERM_FILTER3" port="THERM"/>
+<portref moduleinst="T_FIL3" port="THERM"/>
 <pinref part="THERM3_B" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<portref moduleinst="THERM_FILTER5" port="THERM"/>
+<portref moduleinst="T_FIL5" port="THERM"/>
 <pinref part="THERM1" gate="G$1" pin="2"/>
 <wire x1="-132.08" y1="81.28" x2="-133.35" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<portref moduleinst="THERM_FILTER2" port="THERM"/>
+<portref moduleinst="T_FIL2" port="THERM"/>
 <wire x1="-132.08" y1="142.24" x2="-133.35" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="THERM2_B" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<portref moduleinst="THERM_FILTER1" port="THERM"/>
+<portref moduleinst="T_FIL1" port="THERM"/>
 <wire x1="-132.08" y1="162.56" x2="-133.35" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="THERM1_B" gate="-1" pin="S"/>
 </segment>
@@ -7979,20 +7979,20 @@ set chip address</text>
 <text x="-304.8" y="162.56" size="1.778" layer="95">LTC6811-2</text>
 </plain>
 <moduleinsts>
-<moduleinst name="THERM_FILTER6" module="CELL_THERM_FILTER" x="-160.02" y="165.1">
-<attribute name="NAME" x="-160.02" y="165.1" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="T_FIL6" module="CT_FIL" x="-160.02" y="165.1">
+<attribute name="NAME" value="T_FIL6" x="-160.02" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="THERM_FILTER7" module="CELL_THERM_FILTER" x="-160.02" y="144.78">
-<attribute name="NAME" x="-160.02" y="144.78" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="T_FIL7" module="CT_FIL" x="-160.02" y="144.78">
+<attribute name="NAME" value="T_FIL7" x="-160.02" y="144.78" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="THERM_FILTER8" module="CELL_THERM_FILTER" x="-160.02" y="124.46">
-<attribute name="NAME" x="-160.02" y="124.46" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="T_FIL8" module="CT_FIL" x="-160.02" y="124.46">
+<attribute name="NAME" value="T_FIL8" x="-160.02" y="124.46" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="THERM_FILTER9" module="CELL_THERM_FILTER" x="-160.02" y="104.14">
-<attribute name="NAME" x="-160.02" y="104.14" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="T_FIL9" module="CT_FIL" x="-160.02" y="104.14">
+<attribute name="NAME" value="T_FIL9" x="-160.02" y="104.14" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="THERM_FILTER10" module="CELL_THERM_FILTER" x="-160.02" y="83.82">
-<attribute name="NAME" x="-160.02" y="83.82" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="T_FIL10" module="CT_FIL" x="-160.02" y="83.82">
+<attribute name="NAME" value="T_FIL10" x="-160.02" y="83.82" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
@@ -8317,33 +8317,33 @@ set chip address</text>
 <segment>
 <pinref part="THERM4" gate="G$1" pin="2"/>
 <wire x1="-142.24" y1="99.06" x2="-143.51" y2="99.06" width="0.1524" layer="91"/>
-<portref moduleinst="THERM_FILTER9" port="THERM"/>
+<portref moduleinst="T_FIL9" port="THERM"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <wire x1="-143.51" y1="119.38" x2="-142.24" y2="119.38" width="0.1524" layer="91"/>
-<portref moduleinst="THERM_FILTER8" port="THERM"/>
+<portref moduleinst="T_FIL8" port="THERM"/>
 <pinref part="THERM3_A" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
-<portref moduleinst="THERM_FILTER10" port="THERM"/>
+<portref moduleinst="T_FIL10" port="THERM"/>
 <pinref part="THERM3" gate="G$1" pin="2"/>
 <wire x1="-142.24" y1="78.74" x2="-143.51" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
-<portref moduleinst="THERM_FILTER7" port="THERM"/>
+<portref moduleinst="T_FIL7" port="THERM"/>
 <wire x1="-142.24" y1="139.7" x2="-143.51" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="THERM2_A" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
-<portref moduleinst="THERM_FILTER6" port="THERM"/>
+<portref moduleinst="T_FIL6" port="THERM"/>
 <wire x1="-142.24" y1="160.02" x2="-143.51" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="THERM1_A" gate="-1" pin="S"/>
 </segment>
@@ -8429,27 +8429,27 @@ set chip address</text>
 </segment>
 <segment>
 <pinref part="SUPPLY68" gate="1" pin="V-"/>
-<portref moduleinst="THERM_FILTER6" port="V-"/>
+<portref moduleinst="T_FIL6" port="V-"/>
 <wire x1="-137.16" y1="170.18" x2="-143.51" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY67" gate="1" pin="V-"/>
-<portref moduleinst="THERM_FILTER7" port="V-"/>
+<portref moduleinst="T_FIL7" port="V-"/>
 <wire x1="-137.16" y1="149.86" x2="-143.51" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY66" gate="1" pin="V-"/>
-<portref moduleinst="THERM_FILTER8" port="V-"/>
+<portref moduleinst="T_FIL8" port="V-"/>
 <wire x1="-143.51" y1="129.54" x2="-137.16" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY65" gate="1" pin="V-"/>
-<portref moduleinst="THERM_FILTER9" port="V-"/>
+<portref moduleinst="T_FIL9" port="V-"/>
 <wire x1="-143.51" y1="109.22" x2="-137.16" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY64" gate="1" pin="V-"/>
-<portref moduleinst="THERM_FILTER10" port="V-"/>
+<portref moduleinst="T_FIL10" port="V-"/>
 <wire x1="-143.51" y1="88.9" x2="-137.16" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8748,27 +8748,27 @@ set chip address</text>
 <segment>
 <wire x1="-176.53" y1="170.18" x2="-177.8" y2="170.18" width="0.1524" layer="91"/>
 <label x="-177.8" y="170.18" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER6" port="VREF"/>
+<portref moduleinst="T_FIL6" port="VREF"/>
 </segment>
 <segment>
 <wire x1="-176.53" y1="149.86" x2="-177.8" y2="149.86" width="0.1524" layer="91"/>
 <label x="-177.8" y="149.86" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER7" port="VREF"/>
+<portref moduleinst="T_FIL7" port="VREF"/>
 </segment>
 <segment>
 <wire x1="-176.53" y1="129.54" x2="-177.8" y2="129.54" width="0.1524" layer="91"/>
 <label x="-177.8" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER8" port="VREF"/>
+<portref moduleinst="T_FIL8" port="VREF"/>
 </segment>
 <segment>
 <wire x1="-176.53" y1="109.22" x2="-177.8" y2="109.22" width="0.1524" layer="91"/>
 <label x="-177.8" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER9" port="VREF"/>
+<portref moduleinst="T_FIL9" port="VREF"/>
 </segment>
 <segment>
 <wire x1="-176.53" y1="88.9" x2="-177.8" y2="88.9" width="0.1524" layer="91"/>
 <label x="-177.8" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER10" port="VREF"/>
+<portref moduleinst="T_FIL10" port="VREF"/>
 </segment>
 </net>
 <net name="GPIO5_A" class="0">
@@ -8780,7 +8780,7 @@ set chip address</text>
 <segment>
 <wire x1="-176.53" y1="78.74" x2="-177.8" y2="78.74" width="0.1524" layer="91"/>
 <label x="-177.8" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER10" port="GPIO"/>
+<portref moduleinst="T_FIL10" port="GPIO"/>
 </segment>
 </net>
 <net name="GPIO4_A" class="0">
@@ -8792,7 +8792,7 @@ set chip address</text>
 <segment>
 <wire x1="-176.53" y1="99.06" x2="-177.8" y2="99.06" width="0.1524" layer="91"/>
 <label x="-177.8" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
-<portref moduleinst="THERM_FILTER9" port="GPIO"/>
+<portref moduleinst="T_FIL9" port="GPIO"/>
 </segment>
 </net>
 <net name="GPIO3_A_POST" class="0">
@@ -8813,7 +8813,7 @@ set chip address</text>
 <label x="-266.7" y="109.22" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<portref moduleinst="THERM_FILTER7" port="GPIO"/>
+<portref moduleinst="T_FIL7" port="GPIO"/>
 <wire x1="-176.53" y1="139.7" x2="-177.8" y2="139.7" width="0.1524" layer="91"/>
 <label x="-177.8" y="139.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8861,7 +8861,7 @@ set chip address</text>
 <label x="-279.4" y="106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<portref moduleinst="THERM_FILTER6" port="GPIO"/>
+<portref moduleinst="T_FIL6" port="GPIO"/>
 <wire x1="-176.53" y1="160.02" x2="-177.8" y2="160.02" width="0.1524" layer="91"/>
 <label x="-177.8" y="160.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8930,7 +8930,7 @@ set chip address</text>
 <label x="-233.68" y="111.76" size="1.778" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<portref moduleinst="THERM_FILTER8" port="GPIO"/>
+<portref moduleinst="T_FIL8" port="GPIO"/>
 <wire x1="-176.53" y1="119.38" x2="-177.8" y2="119.38" width="0.1524" layer="91"/>
 <label x="-177.8" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
