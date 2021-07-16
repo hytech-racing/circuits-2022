@@ -1362,6 +1362,25 @@ visible on the PCB.</text>
 <vertex x="-2.032" y="-1.016" curve="90"/>
 </polygon>
 </package>
+<package name="ABM3B">
+<description>Crystal Footprint
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-1774998.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Note: Do not know if this is a specific crystal package.</description>
+<wire x1="-2.54" y1="1.651" x2="-2.54" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.651" x2="2.54" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.651" x2="2.54" y2="1.651" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.651" x2="-2.54" y2="1.651" width="0.127" layer="21"/>
+<smd name="4" x="-2.032" y="1.1938" dx="1.8034" dy="1.1938" layer="1" thermals="no"/>
+<smd name="3" x="2.032" y="1.1938" dx="1.8034" dy="1.1938" layer="1"/>
+<smd name="1" x="-2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
+<smd name="2" x="2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="39"/>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="40"/>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="43"/>
+</package>
 <package name="ACSA56-51CGKWA">
 <wire x1="-6.2484" y1="9.9949" x2="-6.2484" y2="8.4963" width="0.127" layer="21"/>
 <wire x1="-6.2484" y1="8.4963" x2="-6.2484" y2="-8.4963" width="0.127" layer="21"/>
@@ -1491,25 +1510,6 @@ visible on the PCB.</text>
 </polygon>
 <text x="-7.35" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;ACSA56</text>
 <circle x="-7.62" y="-10.16" radius="0.635" width="0" layer="21"/>
-</package>
-<package name="ABM3B">
-<description>Crystal Footprint
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-1774998.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-Note: Do not know if this is a specific crystal package.</description>
-<wire x1="-2.54" y1="1.651" x2="-2.54" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-1.651" x2="2.54" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-1.651" x2="2.54" y2="1.651" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.651" x2="-2.54" y2="1.651" width="0.127" layer="21"/>
-<smd name="4" x="-2.032" y="1.1938" dx="1.8034" dy="1.1938" layer="1" thermals="no"/>
-<smd name="3" x="2.032" y="1.1938" dx="1.8034" dy="1.1938" layer="1"/>
-<smd name="1" x="-2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
-<smd name="2" x="2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
-<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="39"/>
-<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="40"/>
-<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="43"/>
 </package>
 </packages>
 <symbols>
@@ -1728,79 +1728,6 @@ Note: Do not know if this is a specific crystal package.</description>
 <text x="13.97" y="6.35" size="1.27" layer="94" rot="R180">CANH</text>
 <text x="1.27" y="5.08" size="1.27" layer="94">VSS</text>
 </symbol>
-<symbol name="ACSA56-51CGKWA">
-<pin name="A" x="-20.32" y="12.7" length="middle"/>
-<pin name="B" x="-20.32" y="10.16" length="middle"/>
-<pin name="C" x="-20.32" y="7.62" length="middle"/>
-<pin name="D" x="-20.32" y="5.08" length="middle"/>
-<pin name="E" x="-20.32" y="2.54" length="middle"/>
-<pin name="F" x="-20.32" y="0" length="middle"/>
-<pin name="G1" x="-20.32" y="-2.54" length="middle"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-4.826" y="12.7"/>
-<vertex x="-3.556" y="13.97"/>
-<vertex x="4.064" y="13.97"/>
-<vertex x="5.334" y="12.7"/>
-<vertex x="4.064" y="11.43"/>
-<vertex x="-3.556" y="11.43"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-6.096" y="1.27"/>
-<vertex x="-7.366" y="2.54"/>
-<vertex x="-7.366" y="10.16"/>
-<vertex x="-6.096" y="11.43"/>
-<vertex x="-4.826" y="10.16"/>
-<vertex x="-4.826" y="2.54"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="6.604" y="1.27"/>
-<vertex x="5.334" y="2.54"/>
-<vertex x="5.334" y="10.16"/>
-<vertex x="6.604" y="11.43"/>
-<vertex x="7.874" y="10.16"/>
-<vertex x="7.874" y="2.54"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-4.826" y="0"/>
-<vertex x="-3.556" y="1.27"/>
-<vertex x="4.064" y="1.27"/>
-<vertex x="5.334" y="0"/>
-<vertex x="4.064" y="-1.27"/>
-<vertex x="-3.556" y="-1.27"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-6.096" y="-11.43"/>
-<vertex x="-7.366" y="-10.16"/>
-<vertex x="-7.366" y="-2.54"/>
-<vertex x="-6.096" y="-1.27"/>
-<vertex x="-4.826" y="-2.54"/>
-<vertex x="-4.826" y="-10.16"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-4.826" y="-12.7"/>
-<vertex x="-3.556" y="-11.43"/>
-<vertex x="4.064" y="-11.43"/>
-<vertex x="5.334" y="-12.7"/>
-<vertex x="4.064" y="-13.97"/>
-<vertex x="-3.556" y="-13.97"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="6.604" y="-11.43"/>
-<vertex x="5.334" y="-10.16"/>
-<vertex x="5.334" y="-2.54"/>
-<vertex x="6.604" y="-1.27"/>
-<vertex x="7.874" y="-2.54"/>
-<vertex x="7.874" y="-10.16"/>
-</polygon>
-<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="-15.24" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.1524" layer="94"/>
-<pin name="G2" x="-20.32" y="-5.08" length="middle"/>
-<pin name="VDD1" x="-20.32" y="-10.16" length="middle"/>
-<pin name="VDD2" x="-20.32" y="-12.7" length="middle"/>
-<text x="-15.24" y="16.002" size="1.778" layer="94">ACSA56</text>
-</symbol>
 <symbol name="CRYSTAL">
 <wire x1="-0.254" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-2.286" y2="0" width="0.1524" layer="94"/>
@@ -1823,6 +1750,81 @@ Note: Do not know if this is a specific crystal package.</description>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="GND" x="-2.54" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
 <text x="-1.27" y="-3.175" size="1.27" layer="96" align="top-left">&gt;FREQUENCY</text>
+</symbol>
+<symbol name="ACSA56-51CGKWA">
+<pin name="A" x="-2.54" y="-2.54" length="short" direction="in"/>
+<pin name="B" x="-2.54" y="-5.08" length="short" direction="in"/>
+<pin name="C" x="-2.54" y="-7.62" length="short" direction="in"/>
+<pin name="D" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="E" x="-2.54" y="-12.7" length="short" direction="in"/>
+<pin name="F" x="-2.54" y="-15.24" length="short" direction="in"/>
+<pin name="G1" x="-2.54" y="-17.78" length="short" direction="in"/>
+<polygon width="0.1524" layer="94">
+<vertex x="10.414" y="-2.54"/>
+<vertex x="11.684" y="-1.27"/>
+<vertex x="19.304" y="-1.27"/>
+<vertex x="20.574" y="-2.54"/>
+<vertex x="19.304" y="-3.81"/>
+<vertex x="11.684" y="-3.81"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="9.144" y="-13.97"/>
+<vertex x="7.874" y="-12.7"/>
+<vertex x="7.874" y="-5.08"/>
+<vertex x="9.144" y="-3.81"/>
+<vertex x="10.414" y="-5.08"/>
+<vertex x="10.414" y="-12.7"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="21.844" y="-13.97"/>
+<vertex x="20.574" y="-12.7"/>
+<vertex x="20.574" y="-5.08"/>
+<vertex x="21.844" y="-3.81"/>
+<vertex x="23.114" y="-5.08"/>
+<vertex x="23.114" y="-12.7"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="10.414" y="-15.24"/>
+<vertex x="11.684" y="-13.97"/>
+<vertex x="19.304" y="-13.97"/>
+<vertex x="20.574" y="-15.24"/>
+<vertex x="19.304" y="-16.51"/>
+<vertex x="11.684" y="-16.51"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="9.144" y="-26.67"/>
+<vertex x="7.874" y="-25.4"/>
+<vertex x="7.874" y="-17.78"/>
+<vertex x="9.144" y="-16.51"/>
+<vertex x="10.414" y="-17.78"/>
+<vertex x="10.414" y="-25.4"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="10.414" y="-27.94"/>
+<vertex x="11.684" y="-26.67"/>
+<vertex x="19.304" y="-26.67"/>
+<vertex x="20.574" y="-27.94"/>
+<vertex x="19.304" y="-29.21"/>
+<vertex x="11.684" y="-29.21"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="21.844" y="-26.67"/>
+<vertex x="20.574" y="-25.4"/>
+<vertex x="20.574" y="-17.78"/>
+<vertex x="21.844" y="-16.51"/>
+<vertex x="23.114" y="-17.78"/>
+<vertex x="23.114" y="-25.4"/>
+</polygon>
+<wire x1="0" y1="-30.48" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-30.48" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-30.48" x2="27.94" y2="0" width="0.254" layer="94"/>
+<pin name="G2" x="-2.54" y="-20.32" length="short" direction="in"/>
+<pin name="VDD1" x="-2.54" y="-25.4" length="short" direction="pwr"/>
+<pin name="VDD2" x="-2.54" y="-27.94" length="short" direction="pwr"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;ACSA56</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;ACSA56</text>
+<text x="0" y="-31.242" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2818,6 +2820,36 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CRYSTAL" prefix="X">
+<description>Crystal
+&lt;br&gt;
+&lt;a href="http://www.txccrystal.com/images/pdf/7b-accuracy.pdf"&gt;7B-16-000MEEQ-T Datasheet&lt;/a&gt;
+&lt;br&gt;
+7B-16-000MEEQ-T should be used with the following capcaitor: VJ0603A150FXQPW1BC</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABM3B">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name="16MHZ">
+<attribute name="DKPN" value="887-1298-1-ND"/>
+<attribute name="FREQUENCY" value="16 MHz"/>
+<attribute name="LOAD_CAPACITANCE" value="10pF"/>
+<attribute name="MANUFACTURER" value="TXC CORPORATION"/>
+<attribute name="MOPN" value="717-7B-16.000MEEQ-T"/>
+<attribute name="MPN" value="7B-16.000MEEQ-T"/>
+<attribute name="SHUNT_CAPACITANCE" value="2 - 5 pF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="ACSA56-51CGKWA">
 <description>Green, Low-Profile 7-Segment Display
  &lt;a href=https://www.kingbrightusa.com/images/catalog/SPEC/ACSA56-51CGKWA.pdf&gt;ACSA56-51CGKWA Datasheet&lt;/a&gt;&lt;p&gt;
@@ -2845,32 +2877,29 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYSTAL" prefix="X">
-<description>Crystal
-&lt;br&gt;
-&lt;a href="http://www.txccrystal.com/images/pdf/7b-accuracy.pdf"&gt;7B-16-000MEEQ-T Datasheet&lt;/a&gt;
-&lt;br&gt;
-7B-16-000MEEQ-T should be used with the following capcaitor: VJ0603A150FXQPW1BC</description>
+<deviceset name="ACSA56-51SYKWA">
+<description>Yellow, Low-Profile 7-Segment Display
+ &lt;a href=https://www.kingbrightusa.com/images/catalog/SPEC/ACSA56-51SYKWA.pdf&gt;ACSA56-51CGKWA Datasheet&lt;/a&gt;&lt;p&gt;
+ &lt;&gt;</description>
 <gates>
-<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+<gate name="G$1" symbol="ACSA56-51CGKWA" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ABM3B">
+<device name="" package="ACSA56-51CGKWA">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="A" pad="P$7"/>
+<connect gate="G$1" pin="B" pad="P$6"/>
+<connect gate="G$1" pin="C" pad="P$4"/>
+<connect gate="G$1" pin="D" pad="P$2"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="F" pad="P$9"/>
+<connect gate="G$1" pin="G1" pad="P$5"/>
+<connect gate="G$1" pin="G2" pad="P$10"/>
+<connect gate="G$1" pin="VDD1" pad="P$3"/>
+<connect gate="G$1" pin="VDD2" pad="P$8"/>
 </connects>
 <technologies>
-<technology name="16MHZ">
-<attribute name="DKPN" value="887-1298-1-ND"/>
-<attribute name="FREQUENCY" value="16 MHz"/>
-<attribute name="LOAD_CAPACITANCE" value="10pF"/>
-<attribute name="MANUFACTURER" value="TXC CORPORATION"/>
-<attribute name="MOPN" value="717-7B-16.000MEEQ-T"/>
-<attribute name="MPN" value="7B-16.000MEEQ-T"/>
-<attribute name="SHUNT_CAPACITANCE" value="2 - 5 pF"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -5862,7 +5891,6 @@ Source: http://www.molex.com</description>
 <part name="U$9" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
 <part name="X1" library="HyTechDevices" deviceset="CONNECTOR-6" device="NANO"/>
 <part name="MODE2" library="HyTechDevices" deviceset="XP-E2" device="XP-E2" value="Green"/>
-<part name="U$1" library="HyTechDevices" deviceset="ACSA56-51CGKWA" device=""/>
 <part name="U1" library="HyTechDevices - Copy" deviceset="ATMEGA328P-AU" device=""/>
 <part name="C17" library="HyTechDevices" deviceset="CAP" device="0603-CAP" value="15pF"/>
 <part name="C18" library="HyTechDevices" deviceset="CAP" device="0603-CAP" value="15pF"/>
@@ -5871,13 +5899,15 @@ Source: http://www.molex.com</description>
 <part name="X4" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
 <part name="U$2" library="HyTechDevices - Copy" deviceset="MMBZ5245BTS-7-F" device=""/>
 <part name="U$3" library="HyTechDevices - Copy" deviceset="MMBZ5245BTS-7-F" device=""/>
+<part name="U$1" library="HyTechDevices" deviceset="ACSA56-51CGKWA" device=""/>
+<part name="U$6" library="HyTechDevices" deviceset="ACSA56-51SYKWA" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="127" y="22.86" size="2.54" layer="97">Ethan Weinstock</text>
 <text x="195.58" y="15.24" size="2.54" layer="97">Schematic of the Dashboard PCB for HT05</text>
-<text x="170.18" y="121.92" size="1.778" layer="97">Voltage regulation for the buzzer.</text>
+<text x="236.22" y="50.8" size="1.778" layer="97">Voltage regulation for the buzzer.</text>
 <text x="157.48" y="205.74" size="1.778" layer="97">CAN Termination for testing.</text>
 <text x="35.56" y="139.7" size="1.27" layer="91">Gate resistor here -&gt;</text>
 </plain>
@@ -6028,11 +6058,11 @@ Source: http://www.molex.com</description>
 <attribute name="VALUE" x="246.888" y="185.801" size="1.778" layer="96"/>
 </instance>
 <instance part="GND29" gate="1" x="238.76" y="180.34" smashed="yes"/>
-<instance part="GND30" gate="1" x="236.22" y="86.36" smashed="yes">
-<attribute name="VALUE" x="233.68" y="83.82" size="1.778" layer="96"/>
+<instance part="GND30" gate="1" x="241.3" y="71.12" smashed="yes">
+<attribute name="VALUE" x="238.76" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="P+21" gate="1" x="231.14" y="81.28" smashed="yes">
-<attribute name="VALUE" x="228.854" y="82.042" size="1.778" layer="96"/>
+<instance part="P+21" gate="1" x="236.22" y="66.04" smashed="yes">
+<attribute name="VALUE" x="233.934" y="66.802" size="1.778" layer="96"/>
 </instance>
 <instance part="D4" gate="G$1" x="259.08" y="40.64" smashed="yes">
 <attribute name="NAME" x="255.27" y="42.3926" size="1.778" layer="95"/>
@@ -6241,30 +6271,29 @@ Source: http://www.molex.com</description>
 <instance part="U$9" gate="G$1" x="124.46" y="167.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="121.285" y="155.575" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-1" x="259.08" y="76.2" smashed="yes">
-<attribute name="NAME" x="261.62" y="75.438" size="1.524" layer="95"/>
-<attribute name="VALUE" x="253.238" y="72.517" size="1.778" layer="96"/>
+<instance part="X1" gate="-1" x="264.16" y="60.96" smashed="yes">
+<attribute name="NAME" x="266.7" y="60.198" size="1.524" layer="95"/>
+<attribute name="VALUE" x="258.318" y="57.277" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="-2" x="259.08" y="78.74" smashed="yes">
-<attribute name="NAME" x="261.62" y="77.978" size="1.524" layer="95"/>
+<instance part="X1" gate="-2" x="264.16" y="63.5" smashed="yes">
+<attribute name="NAME" x="266.7" y="62.738" size="1.524" layer="95"/>
 </instance>
-<instance part="X1" gate="-3" x="259.08" y="81.28" smashed="yes">
-<attribute name="NAME" x="261.62" y="80.518" size="1.524" layer="95"/>
+<instance part="X1" gate="-3" x="264.16" y="66.04" smashed="yes">
+<attribute name="NAME" x="266.7" y="65.278" size="1.524" layer="95"/>
 </instance>
-<instance part="X1" gate="-4" x="259.08" y="83.82" smashed="yes">
-<attribute name="NAME" x="261.62" y="83.058" size="1.524" layer="95"/>
+<instance part="X1" gate="-4" x="264.16" y="68.58" smashed="yes">
+<attribute name="NAME" x="266.7" y="67.818" size="1.524" layer="95"/>
 </instance>
-<instance part="X1" gate="-5" x="259.08" y="86.36" smashed="yes">
-<attribute name="NAME" x="261.62" y="85.598" size="1.524" layer="95"/>
+<instance part="X1" gate="-5" x="264.16" y="71.12" smashed="yes">
+<attribute name="NAME" x="266.7" y="70.358" size="1.524" layer="95"/>
 </instance>
-<instance part="X1" gate="-6" x="259.08" y="88.9" smashed="yes">
-<attribute name="NAME" x="261.62" y="88.138" size="1.524" layer="95"/>
+<instance part="X1" gate="-6" x="264.16" y="73.66" smashed="yes">
+<attribute name="NAME" x="266.7" y="72.898" size="1.524" layer="95"/>
 </instance>
 <instance part="MODE2" gate="G$1" x="25.4" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.972" y="115.316" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="29.972" y="117.475" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$1" gate="G$1" x="251.46" y="114.3" smashed="yes"/>
 <instance part="U1" gate="G$1" x="200.66" y="185.42" smashed="yes">
 <attribute name="NAME" x="200.66" y="186.182" size="1.27" layer="95"/>
 </instance>
@@ -6311,6 +6340,8 @@ Source: http://www.molex.com</description>
 <attribute name="NAME" x="44.45" y="51.435" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="VOLTAGE" x="44.45" y="55.245" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
+<instance part="U$1" gate="G$1" x="226.06" y="127" smashed="yes"/>
+<instance part="U$6" gate="G$1" x="190.5" y="93.98" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -6470,7 +6501,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="X1" gate="-6" pin="S"/>
 <pinref part="GND30" gate="1" pin="GND"/>
-<wire x1="256.54" y1="88.9" x2="236.22" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="73.66" x2="241.3" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND23" gate="1" pin="GND"/>
@@ -6541,7 +6572,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="P+21" gate="1" pin="+5V"/>
 <pinref part="X1" gate="-2" pin="S"/>
-<wire x1="256.54" y1="78.74" x2="231.14" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="63.5" x2="236.22" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="162.56" y1="167.64" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
@@ -6566,8 +6597,8 @@ Source: http://www.molex.com</description>
 <wire x1="226.06" y1="170.18" x2="228.6" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="256.54" y1="81.28" x2="248.92" y2="81.28" width="0.1524" layer="91"/>
-<label x="248.92" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="261.62" y1="66.04" x2="254" y2="66.04" width="0.1524" layer="91"/>
+<label x="254" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="X1" gate="-3" pin="S"/>
 </segment>
 <segment>
@@ -6583,8 +6614,8 @@ Source: http://www.molex.com</description>
 <wire x1="228.6" y1="167.64" x2="226.06" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="256.54" y1="76.2" x2="248.92" y2="76.2" width="0.1524" layer="91"/>
-<label x="248.92" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="261.62" y1="60.96" x2="254" y2="60.96" width="0.1524" layer="91"/>
+<label x="254" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="X1" gate="-1" pin="S"/>
 </segment>
 <segment>
@@ -6600,8 +6631,8 @@ Source: http://www.molex.com</description>
 <wire x1="226.06" y1="165.1" x2="228.6" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="256.54" y1="83.82" x2="248.92" y2="83.82" width="0.1524" layer="91"/>
-<label x="248.92" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="261.62" y1="68.58" x2="254" y2="68.58" width="0.1524" layer="91"/>
+<label x="254" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="X1" gate="-4" pin="S"/>
 </segment>
 <segment>
@@ -6706,8 +6737,8 @@ Source: http://www.molex.com</description>
 <pinref part="U1" gate="G$1" pin="PC5(ADC5)"/>
 </segment>
 <segment>
-<wire x1="256.54" y1="86.36" x2="248.92" y2="86.36" width="0.1524" layer="91"/>
-<label x="248.92" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="261.62" y1="71.12" x2="254" y2="71.12" width="0.1524" layer="91"/>
+<label x="254" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="X1" gate="-5" pin="S"/>
 </segment>
 </net>

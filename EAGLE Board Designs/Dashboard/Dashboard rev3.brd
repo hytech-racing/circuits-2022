@@ -1161,6 +1161,25 @@ visible on the PCB.</text>
 <vertex x="-2.032" y="-1.016" curve="90"/>
 </polygon>
 </package>
+<package name="ABM3B">
+<description>Crystal Footprint
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-1774998.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Note: Do not know if this is a specific crystal package.</description>
+<wire x1="-2.54" y1="1.651" x2="-2.54" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.651" x2="2.54" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.651" x2="2.54" y2="1.651" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.651" x2="-2.54" y2="1.651" width="0.127" layer="21"/>
+<smd name="4" x="-2.032" y="1.1938" dx="1.8034" dy="1.1938" layer="1" thermals="no"/>
+<smd name="3" x="2.032" y="1.1938" dx="1.8034" dy="1.1938" layer="1"/>
+<smd name="1" x="-2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
+<smd name="2" x="2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="39"/>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="40"/>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="43"/>
+</package>
 <package name="ACSA56-51CGKWA">
 <wire x1="-6.2484" y1="9.9949" x2="-6.2484" y2="8.4963" width="0.127" layer="21"/>
 <wire x1="-6.2484" y1="8.4963" x2="-6.2484" y2="-8.4963" width="0.127" layer="21"/>
@@ -1290,25 +1309,6 @@ visible on the PCB.</text>
 </polygon>
 <text x="-7.35" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;ACSA56</text>
 <circle x="-7.62" y="-10.16" radius="0.635" width="0" layer="21"/>
-</package>
-<package name="ABM3B">
-<description>Crystal Footprint
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-1774998.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-Note: Do not know if this is a specific crystal package.</description>
-<wire x1="-2.54" y1="1.651" x2="-2.54" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-1.651" x2="2.54" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-1.651" x2="2.54" y2="1.651" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.651" x2="-2.54" y2="1.651" width="0.127" layer="21"/>
-<smd name="4" x="-2.032" y="1.1938" dx="1.8034" dy="1.1938" layer="1" thermals="no"/>
-<smd name="3" x="2.032" y="1.1938" dx="1.8034" dy="1.1938" layer="1"/>
-<smd name="1" x="-2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
-<smd name="2" x="2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
-<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="39"/>
-<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="40"/>
-<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="43"/>
 </package>
 </packages>
 </library>
@@ -1777,7 +1777,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="-120.904" y="-62.738" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="-120.904" y="-56.388" size="1.27" layer="27" font="vector"/>
 </element>
-<element name="U$1" library="HyTechDevices" package="ACSA56-51CGKWA" value="ACSA56-51CGKWA" x="-119.38" y="-42.672" smashed="yes"/>
 <element name="U1" library="HyTechDevices - Copy" package="TQFP-32" value="ATMEGA328P-AU" x="-106.68" y="-38.1" smashed="yes">
 <attribute name="AVAILABILITY" value="Unavailable" x="-285.496" y="-119.888" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" AVR AVR® ATmega Microcontroller IC 8-Bit 20MHz 32KB _16K x 16_ FLASH 32-TQFP _7x7_ " x="-285.496" y="-119.888" size="1.778" layer="27" display="off"/>
@@ -1823,6 +1822,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="-79.756" y="-65.024" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="15V" x="-297.18" y="-140.716" size="1.778" layer="27" display="off"/>
 </element>
+<element name="U$1" library="HyTechDevices" package="ACSA56-51CGKWA" value="ACSA56-51CGKWA" x="-135.128" y="-64.008" smashed="yes"/>
+<element name="U$6" library="HyTechDevices" package="ACSA56-51CGKWA" value="ACSA56-51SYKWA" x="-150.368" y="-64.008" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2668,6 +2669,16 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$10">
 <contactref element="U$3" pad="4"/>
+</signal>
+<signal name="VDD1">
+<contactref element="U$1" pad="P$3"/>
+<contactref element="U$6" pad="P$3"/>
+<wire x1="-135.128" y1="-74.008" x2="-150.368" y2="-74.008" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VDD2">
+<contactref element="U$1" pad="P$8"/>
+<contactref element="U$6" pad="P$8"/>
+<wire x1="-135.128" y1="-54.008" x2="-150.368" y2="-54.008" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
