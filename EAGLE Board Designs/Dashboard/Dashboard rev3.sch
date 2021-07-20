@@ -1381,135 +1381,46 @@ Note: Do not know if this is a specific crystal package.</description>
 <rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="40"/>
 <rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="43"/>
 </package>
-<package name="ACSA56-51CGKWA">
-<wire x1="-6.2484" y1="9.9949" x2="-6.2484" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="8.4963" x2="-6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="6.2484" y1="9.9949" x2="6.2484" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="6.2484" y1="8.4963" x2="6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="9.9949" x2="-5.8801" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="-4.2799" y1="9.9949" x2="-3.3401" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="-1.7399" y1="9.9949" x2="-0.8001" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="0.8001" y1="9.9949" x2="1.7399" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="9.9949" x2="4.2799" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="9.9949" x2="6.2484" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="8.4963" x2="-5.8801" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="8.4963" x2="-4.2799" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-4.2799" y1="8.4963" x2="-3.3401" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="8.4963" x2="-1.7399" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-1.7399" y1="8.4963" x2="-0.8001" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-0.8001" y1="8.4963" x2="0.8001" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="0.8001" y1="8.4963" x2="1.7399" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="1.7399" y1="8.4963" x2="3.3401" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="8.4963" x2="4.2799" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="4.2799" y1="8.4963" x2="5.8801" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="8.4963" x2="6.2484" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="-8.4963" x2="6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="9.9949" x2="-5.8801" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="9.9949" x2="-4.2799" y2="9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="-4.2799" y1="9.9949" x2="-4.2799" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="9.9949" x2="-3.3401" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-1.7399" y1="9.9949" x2="-1.7399" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-0.8001" y1="9.9949" x2="-0.8001" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="0.8001" y1="9.9949" x2="0.8001" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="1.7399" y1="9.9949" x2="1.7399" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="9.9949" x2="3.3401" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="4.2799" y1="9.9949" x2="4.2799" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="9.9949" x2="5.8801" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="9.9949" x2="-1.7399" y2="9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="-0.8001" y1="9.9949" x2="0.8001" y2="9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="1.7399" y1="9.9949" x2="3.3401" y2="9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="4.2799" y1="9.9949" x2="5.8801" y2="9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="6.2484" y1="-9.9949" x2="6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="-9.9949" x2="-6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="6.2484" y1="-9.9949" x2="5.8801" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="4.2799" y1="-9.9949" x2="3.3401" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="1.7399" y1="-9.9949" x2="0.8001" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="-0.8001" y1="-9.9949" x2="-1.7399" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="-9.9949" x2="-4.2799" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="-9.9949" x2="-6.2484" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="-9.9949" x2="5.8801" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="-9.9949" x2="4.2799" y2="-9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="4.2799" y1="-9.9949" x2="4.2799" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="-9.9949" x2="3.3401" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="1.7399" y1="-9.9949" x2="1.7399" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="0.8001" y1="-9.9949" x2="0.8001" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-0.8001" y1="-9.9949" x2="-0.8001" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-1.7399" y1="-9.9949" x2="-1.7399" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="-9.9949" x2="-3.3401" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-4.2799" y1="-9.9949" x2="-4.2799" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="-9.9949" x2="-5.8801" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="-9.9949" x2="1.7399" y2="-9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="0.8001" y1="-9.9949" x2="-0.8001" y2="-9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="-1.7399" y1="-9.9949" x2="-3.3401" y2="-9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="-4.2799" y1="-9.9949" x2="-5.8801" y2="-9.9949" width="0.127" layer="21" curve="180"/>
-<smd name="P$1" x="-5.08" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$2" x="-2.54" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$3" x="0" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$4" x="2.54" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$5" x="5.08" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$6" x="5.08" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$7" x="2.54" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$8" x="0" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$9" x="-2.54" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$10" x="-5.08" y="10" dx="1.9" dy="3" layer="1"/>
-<polygon width="0.127" layer="21">
-<vertex x="-1.905" y="5.08"/>
-<vertex x="-1.27" y="5.715"/>
-<vertex x="1.27" y="5.715"/>
-<vertex x="1.905" y="5.08"/>
-<vertex x="1.27" y="4.445"/>
-<vertex x="-1.27" y="4.445"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="-2.54" y="0.635"/>
-<vertex x="-3.175" y="1.27"/>
-<vertex x="-3.175" y="3.81"/>
-<vertex x="-2.54" y="4.445"/>
-<vertex x="-1.905" y="3.81"/>
-<vertex x="-1.905" y="1.27"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="2.54" y="0.635"/>
-<vertex x="1.905" y="1.27"/>
-<vertex x="1.905" y="3.81"/>
-<vertex x="2.54" y="4.445"/>
-<vertex x="3.175" y="3.81"/>
-<vertex x="3.175" y="1.27"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="-1.905" y="0"/>
-<vertex x="-1.27" y="0.635"/>
-<vertex x="1.27" y="0.635"/>
-<vertex x="1.905" y="0"/>
-<vertex x="1.27" y="-0.635"/>
-<vertex x="-1.27" y="-0.635"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="-2.54" y="-0.635"/>
-<vertex x="-1.905" y="-1.27"/>
-<vertex x="-1.905" y="-3.81"/>
-<vertex x="-2.54" y="-4.445"/>
-<vertex x="-3.175" y="-3.81"/>
-<vertex x="-3.175" y="-1.27"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="2.54" y="-4.445"/>
-<vertex x="1.905" y="-3.81"/>
-<vertex x="1.905" y="-1.27"/>
-<vertex x="2.54" y="-0.635"/>
-<vertex x="3.175" y="-1.27"/>
-<vertex x="3.175" y="-3.81"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="1.905" y="-5.08"/>
-<vertex x="1.27" y="-5.715"/>
-<vertex x="-1.27" y="-5.715"/>
-<vertex x="-1.905" y="-5.08"/>
-<vertex x="-1.27" y="-4.445"/>
-<vertex x="1.27" y="-4.445"/>
-</polygon>
-<text x="-7.35" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;ACSA56</text>
+<package name="ACSA56-51">
+<description>ACSA56-51 LED 7 Segment Display
+&lt;br&gt;
+&lt;a href="https://mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="-6.25" y1="10" x2="-6.25" y2="-10" width="0.127" layer="21"/>
+<wire x1="6.25" y1="10" x2="6.25" y2="-10" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-10" x2="6.25" y2="-10" width="0.127" layer="21"/>
+<smd name="1" x="-5.08" y="-10" dx="1.9" dy="3" layer="1"/>
+<smd name="2" x="-2.54" y="-10" dx="1.9" dy="3" layer="1"/>
+<smd name="3" x="0" y="-10" dx="1.9" dy="3" layer="1"/>
+<smd name="4" x="2.54" y="-10" dx="1.9" dy="3" layer="1"/>
+<smd name="5" x="5.08" y="-10" dx="1.9" dy="3" layer="1"/>
+<smd name="6" x="5.08" y="10" dx="1.9" dy="3" layer="1"/>
+<smd name="7" x="2.54" y="10" dx="1.9" dy="3" layer="1"/>
+<smd name="8" x="0" y="10" dx="1.9" dy="3" layer="1"/>
+<smd name="9" x="-2.54" y="10" dx="1.9" dy="3" layer="1"/>
+<smd name="10" x="-5.08" y="10" dx="1.9" dy="3" layer="1"/>
+<text x="-6.858" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <circle x="-7.62" y="-10.16" radius="0.635" width="0" layer="21"/>
+<rectangle x1="-6.858" y1="-12.192" x2="6.858" y2="12.192" layer="39"/>
+<wire x1="-6.25" y1="10" x2="6.25" y2="10" width="0.127" layer="21"/>
+</package>
+<package name="DSM7T">
+<wire x1="-6.25" y1="9.5" x2="-6.25" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="6.25" y1="9.5" x2="6.25" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="9.5" x2="6.25" y2="9.5" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-9.5" x2="6.25" y2="-9.5" width="0.127" layer="21"/>
+<smd name="1" x="-5.08" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="3" x="0" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="4" x="2.54" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="5" x="5.08" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="10" x="-5.08" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="9" x="-2.54" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="8" x="0" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="7" x="2.54" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="6" x="5.08" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<text x="-6.858" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-7.493" y="-9.017" radius="0.635" width="0" layer="21"/>
+<rectangle x1="-6.858" y1="-11.176" x2="6.858" y2="11.176" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -1751,80 +1662,80 @@ Note: Do not know if this is a specific crystal package.</description>
 <pin name="GND" x="-2.54" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
 <text x="-1.27" y="-3.175" size="1.27" layer="96" align="top-left">&gt;FREQUENCY</text>
 </symbol>
-<symbol name="ACSA56-51CGKWA">
-<pin name="A" x="-2.54" y="-2.54" length="short" direction="in"/>
-<pin name="B" x="-2.54" y="-5.08" length="short" direction="in"/>
-<pin name="C" x="-2.54" y="-7.62" length="short" direction="in"/>
-<pin name="D" x="-2.54" y="-10.16" length="short" direction="in"/>
-<pin name="E" x="-2.54" y="-12.7" length="short" direction="in"/>
-<pin name="F" x="-2.54" y="-15.24" length="short" direction="in"/>
-<pin name="G1" x="-2.54" y="-17.78" length="short" direction="in"/>
+<symbol name="DIODE_LED_7_SEGMENT">
+<description>LED 7 Segment Display
+&lt;br&gt;
+&lt;a href="https://mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="A" x="-2.54" y="-2.54" length="short" direction="in" function="dot"/>
+<pin name="B" x="27.94" y="-7.62" length="short" direction="in" function="dot" rot="R180"/>
+<pin name="C" x="27.94" y="-22.86" length="short" direction="in" function="dot" rot="R180"/>
+<pin name="D" x="-2.54" y="-27.94" length="short" direction="in" function="dot"/>
+<pin name="E" x="-2.54" y="-22.86" length="short" direction="in" function="dot"/>
+<pin name="F" x="-2.54" y="-7.62" length="short" direction="in" function="dot"/>
+<pin name="G" x="-2.54" y="-15.24" length="short" direction="in" function="dot"/>
 <polygon width="0.1524" layer="94">
-<vertex x="10.414" y="-2.54"/>
-<vertex x="11.684" y="-1.27"/>
-<vertex x="19.304" y="-1.27"/>
-<vertex x="20.574" y="-2.54"/>
-<vertex x="19.304" y="-3.81"/>
-<vertex x="11.684" y="-3.81"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="9.144" y="-13.97"/>
-<vertex x="7.874" y="-12.7"/>
-<vertex x="7.874" y="-5.08"/>
+<vertex x="7.874" y="-2.54"/>
+<vertex x="9.144" y="-1.27"/>
+<vertex x="16.764" y="-1.27"/>
+<vertex x="18.034" y="-2.54"/>
+<vertex x="16.764" y="-3.81"/>
 <vertex x="9.144" y="-3.81"/>
-<vertex x="10.414" y="-5.08"/>
-<vertex x="10.414" y="-12.7"/>
 </polygon>
 <polygon width="0.1524" layer="94">
-<vertex x="21.844" y="-13.97"/>
-<vertex x="20.574" y="-12.7"/>
-<vertex x="20.574" y="-5.08"/>
-<vertex x="21.844" y="-3.81"/>
-<vertex x="23.114" y="-5.08"/>
-<vertex x="23.114" y="-12.7"/>
+<vertex x="6.604" y="-13.97"/>
+<vertex x="5.334" y="-12.7"/>
+<vertex x="5.334" y="-5.08"/>
+<vertex x="6.604" y="-3.81"/>
+<vertex x="7.874" y="-5.08"/>
+<vertex x="7.874" y="-12.7"/>
 </polygon>
 <polygon width="0.1524" layer="94">
-<vertex x="10.414" y="-15.24"/>
-<vertex x="11.684" y="-13.97"/>
 <vertex x="19.304" y="-13.97"/>
-<vertex x="20.574" y="-15.24"/>
-<vertex x="19.304" y="-16.51"/>
-<vertex x="11.684" y="-16.51"/>
+<vertex x="18.034" y="-12.7"/>
+<vertex x="18.034" y="-5.08"/>
+<vertex x="19.304" y="-3.81"/>
+<vertex x="20.574" y="-5.08"/>
+<vertex x="20.574" y="-12.7"/>
 </polygon>
 <polygon width="0.1524" layer="94">
-<vertex x="9.144" y="-26.67"/>
-<vertex x="7.874" y="-25.4"/>
-<vertex x="7.874" y="-17.78"/>
+<vertex x="7.874" y="-15.24"/>
+<vertex x="9.144" y="-13.97"/>
+<vertex x="16.764" y="-13.97"/>
+<vertex x="18.034" y="-15.24"/>
+<vertex x="16.764" y="-16.51"/>
 <vertex x="9.144" y="-16.51"/>
-<vertex x="10.414" y="-17.78"/>
-<vertex x="10.414" y="-25.4"/>
 </polygon>
 <polygon width="0.1524" layer="94">
-<vertex x="10.414" y="-27.94"/>
-<vertex x="11.684" y="-26.67"/>
+<vertex x="6.604" y="-26.67"/>
+<vertex x="5.334" y="-25.4"/>
+<vertex x="5.334" y="-17.78"/>
+<vertex x="6.604" y="-16.51"/>
+<vertex x="7.874" y="-17.78"/>
+<vertex x="7.874" y="-25.4"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="7.874" y="-27.94"/>
+<vertex x="9.144" y="-26.67"/>
+<vertex x="16.764" y="-26.67"/>
+<vertex x="18.034" y="-27.94"/>
+<vertex x="16.764" y="-29.21"/>
+<vertex x="9.144" y="-29.21"/>
+</polygon>
+<polygon width="0.1524" layer="94">
 <vertex x="19.304" y="-26.67"/>
-<vertex x="20.574" y="-27.94"/>
-<vertex x="19.304" y="-29.21"/>
-<vertex x="11.684" y="-29.21"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="21.844" y="-26.67"/>
-<vertex x="20.574" y="-25.4"/>
+<vertex x="18.034" y="-25.4"/>
+<vertex x="18.034" y="-17.78"/>
+<vertex x="19.304" y="-16.51"/>
 <vertex x="20.574" y="-17.78"/>
-<vertex x="21.844" y="-16.51"/>
-<vertex x="23.114" y="-17.78"/>
-<vertex x="23.114" y="-25.4"/>
+<vertex x="20.574" y="-25.4"/>
 </polygon>
 <wire x1="0" y1="-30.48" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="27.94" y2="0" width="0.254" layer="94"/>
-<wire x1="27.94" y1="-30.48" x2="0" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="27.94" y1="-30.48" x2="27.94" y2="0" width="0.254" layer="94"/>
-<pin name="G2" x="-2.54" y="-20.32" length="short" direction="in"/>
-<pin name="VDD1" x="-2.54" y="-25.4" length="short" direction="pwr"/>
-<pin name="VDD2" x="-2.54" y="-27.94" length="short" direction="pwr"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;ACSA56</text>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;ACSA56</text>
-<text x="0" y="-31.242" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="0" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-30.48" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-30.48" x2="25.4" y2="0" width="0.254" layer="94"/>
+<pin name="VDD" x="27.94" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-31.242" size="1.27" layer="96" align="top-left">&gt;COLOR</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2850,56 +2761,79 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ACSA56-51CGKWA">
-<description>Green, Low-Profile 7-Segment Display
- &lt;a href=https://www.kingbrightusa.com/images/catalog/SPEC/ACSA56-51CGKWA.pdf&gt;ACSA56-51CGKWA Datasheet&lt;/a&gt;&lt;p&gt;
- &lt;&gt;</description>
+<deviceset name="LED_7_SEGMENT_" prefix="D">
+<description>Low-Profile 7-Segment Display
+&lt;br&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51CGKWA-245492.pdf"&gt;ACSA56-51 Green&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href="https://eu.mouser.com/datasheet/2/216/ACSA56-51SYKWA-245353.pdf"&gt;ACSA56-51 Yellow&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href="https://vcclite.com/wp-content/uploads/wpallimport/files/files/DSM7TA56106T.pdf"&gt;DSM7T  Blue&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href="https://vcclite.com/wp-content/uploads/wpallimport/files/files/DSM7TA56105T.pdf"&gt;DSM7T  Green&lt;/a&gt;&lt;/li&gt;
+
+&lt;\ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="ACSA56-51CGKWA" x="0" y="0"/>
+<gate name="G$1" symbol="DIODE_LED_7_SEGMENT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ACSA56-51CGKWA">
+<device name="" package="ACSA56-51">
 <connects>
-<connect gate="G$1" pin="A" pad="P$7"/>
-<connect gate="G$1" pin="B" pad="P$6"/>
-<connect gate="G$1" pin="C" pad="P$4"/>
-<connect gate="G$1" pin="D" pad="P$2"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="F" pad="P$9"/>
-<connect gate="G$1" pin="G1" pad="P$5"/>
-<connect gate="G$1" pin="G2" pad="P$10"/>
-<connect gate="G$1" pin="VDD1" pad="P$3"/>
-<connect gate="G$1" pin="VDD2" pad="P$8"/>
+<connect gate="G$1" pin="A" pad="7"/>
+<connect gate="G$1" pin="B" pad="6"/>
+<connect gate="G$1" pin="C" pad="4"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="F" pad="9"/>
+<connect gate="G$1" pin="G" pad="5 10"/>
+<connect gate="G$1" pin="VDD" pad="3 8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="GREEN">
+<attribute name="COLOR" value="Green" constant="no"/>
+<attribute name="DKPN" value="754-1621-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
+<attribute name="MOPN" value="604-ACSA56-51CGKWA " constant="no"/>
+<attribute name="MPN" value="ACSA56-51CGKWA" constant="no"/>
+</technology>
+<technology name="YELLOW">
+<attribute name="COLOR" value="Yellow" constant="no"/>
+<attribute name="DKPN" value="754-1624-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Kingbright" constant="no"/>
+<attribute name="MOPN" value="604-ACSA56-51SYKWA " constant="no"/>
+<attribute name="MPN" value="ACSA56-51SYKWA" constant="no"/>
+</technology>
 </technologies>
 </device>
-</devices>
-</deviceset>
-<deviceset name="ACSA56-51SYKWA">
-<description>Yellow, Low-Profile 7-Segment Display
- &lt;a href=https://www.kingbrightusa.com/images/catalog/SPEC/ACSA56-51SYKWA.pdf&gt;ACSA56-51CGKWA Datasheet&lt;/a&gt;&lt;p&gt;
- &lt;&gt;</description>
-<gates>
-<gate name="G$1" symbol="ACSA56-51CGKWA" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ACSA56-51CGKWA">
+<device name="DSM7TA" package="DSM7T">
 <connects>
-<connect gate="G$1" pin="A" pad="P$7"/>
-<connect gate="G$1" pin="B" pad="P$6"/>
-<connect gate="G$1" pin="C" pad="P$4"/>
-<connect gate="G$1" pin="D" pad="P$2"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="F" pad="P$9"/>
-<connect gate="G$1" pin="G1" pad="P$5"/>
-<connect gate="G$1" pin="G2" pad="P$10"/>
-<connect gate="G$1" pin="VDD1" pad="P$3"/>
-<connect gate="G$1" pin="VDD2" pad="P$8"/>
+<connect gate="G$1" pin="A" pad="7"/>
+<connect gate="G$1" pin="B" pad="6"/>
+<connect gate="G$1" pin="C" pad="4"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="F" pad="9"/>
+<connect gate="G$1" pin="G" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="3 8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="BLUE_">
+<attribute name="COLOR" value="Blue" constant="no"/>
+<attribute name="DKPN" value="DSM7TA56106TTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Visual Communications Company" constant="no"/>
+<attribute name="MOPN" value="593-DSM7TA56106T " constant="no"/>
+<attribute name="MPN" value="DSM7TA56106T" constant="no"/>
+</technology>
+<technology name="GREEN_">
+<attribute name="COLOR" value="Green" constant="no"/>
+<attribute name="DKPN" value="DSM7TA56105TTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Visual Communications Company" constant="no"/>
+<attribute name="MOPN" value="593-DSM7TA56105T " constant="no"/>
+<attribute name="MPN" value="DSM7TA56105T" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5899,8 +5833,8 @@ Source: http://www.molex.com</description>
 <part name="X4" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
 <part name="U$2" library="HyTechDevices - Copy" deviceset="MMBZ5245BTS-7-F" device=""/>
 <part name="U$3" library="HyTechDevices - Copy" deviceset="MMBZ5245BTS-7-F" device=""/>
-<part name="U$1" library="HyTechDevices" deviceset="ACSA56-51CGKWA" device=""/>
-<part name="U$6" library="HyTechDevices" deviceset="ACSA56-51SYKWA" device=""/>
+<part name="D1" library="HyTechDevices" deviceset="LED_7_SEGMENT_" device="DSM7TA" technology="BLUE_"/>
+<part name="D2" library="HyTechDevices" deviceset="LED_7_SEGMENT_" device="DSM7TA" technology="GREEN_"/>
 </parts>
 <sheets>
 <sheet>
@@ -6340,8 +6274,14 @@ Source: http://www.molex.com</description>
 <attribute name="NAME" x="44.45" y="51.435" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="VOLTAGE" x="44.45" y="55.245" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="U$1" gate="G$1" x="226.06" y="127" smashed="yes"/>
-<instance part="U$6" gate="G$1" x="190.5" y="93.98" smashed="yes"/>
+<instance part="D1" gate="G$1" x="195.58" y="116.84" smashed="yes">
+<attribute name="NAME" x="195.58" y="117.602" size="1.27" layer="95"/>
+<attribute name="COLOR" x="195.58" y="85.598" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="D2" gate="G$1" x="147.32" y="96.52" smashed="yes">
+<attribute name="NAME" x="147.32" y="97.282" size="1.27" layer="95"/>
+<attribute name="COLOR" x="147.32" y="65.278" size="1.27" layer="96" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>

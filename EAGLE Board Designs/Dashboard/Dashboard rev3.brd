@@ -1180,135 +1180,24 @@ Note: Do not know if this is a specific crystal package.</description>
 <rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="40"/>
 <rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="43"/>
 </package>
-<package name="ACSA56-51CGKWA">
-<wire x1="-6.2484" y1="9.9949" x2="-6.2484" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="8.4963" x2="-6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="6.2484" y1="9.9949" x2="6.2484" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="6.2484" y1="8.4963" x2="6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="9.9949" x2="-5.8801" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="-4.2799" y1="9.9949" x2="-3.3401" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="-1.7399" y1="9.9949" x2="-0.8001" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="0.8001" y1="9.9949" x2="1.7399" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="9.9949" x2="4.2799" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="9.9949" x2="6.2484" y2="9.9949" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="8.4963" x2="-5.8801" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="8.4963" x2="-4.2799" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-4.2799" y1="8.4963" x2="-3.3401" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="8.4963" x2="-1.7399" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-1.7399" y1="8.4963" x2="-0.8001" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-0.8001" y1="8.4963" x2="0.8001" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="0.8001" y1="8.4963" x2="1.7399" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="1.7399" y1="8.4963" x2="3.3401" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="8.4963" x2="4.2799" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="4.2799" y1="8.4963" x2="5.8801" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="8.4963" x2="6.2484" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="-8.4963" x2="6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="9.9949" x2="-5.8801" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="9.9949" x2="-4.2799" y2="9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="-4.2799" y1="9.9949" x2="-4.2799" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="9.9949" x2="-3.3401" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-1.7399" y1="9.9949" x2="-1.7399" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-0.8001" y1="9.9949" x2="-0.8001" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="0.8001" y1="9.9949" x2="0.8001" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="1.7399" y1="9.9949" x2="1.7399" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="9.9949" x2="3.3401" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="4.2799" y1="9.9949" x2="4.2799" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="9.9949" x2="5.8801" y2="8.4963" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="9.9949" x2="-1.7399" y2="9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="-0.8001" y1="9.9949" x2="0.8001" y2="9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="1.7399" y1="9.9949" x2="3.3401" y2="9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="4.2799" y1="9.9949" x2="5.8801" y2="9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="6.2484" y1="-9.9949" x2="6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-6.2484" y1="-9.9949" x2="-6.2484" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="6.2484" y1="-9.9949" x2="5.8801" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="4.2799" y1="-9.9949" x2="3.3401" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="1.7399" y1="-9.9949" x2="0.8001" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="-0.8001" y1="-9.9949" x2="-1.7399" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="-9.9949" x2="-4.2799" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="-9.9949" x2="-6.2484" y2="-9.9949" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="-9.9949" x2="5.8801" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="5.8801" y1="-9.9949" x2="4.2799" y2="-9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="4.2799" y1="-9.9949" x2="4.2799" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="-9.9949" x2="3.3401" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="1.7399" y1="-9.9949" x2="1.7399" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="0.8001" y1="-9.9949" x2="0.8001" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-0.8001" y1="-9.9949" x2="-0.8001" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-1.7399" y1="-9.9949" x2="-1.7399" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-3.3401" y1="-9.9949" x2="-3.3401" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-4.2799" y1="-9.9949" x2="-4.2799" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="-5.8801" y1="-9.9949" x2="-5.8801" y2="-8.4963" width="0.127" layer="21"/>
-<wire x1="3.3401" y1="-9.9949" x2="1.7399" y2="-9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="0.8001" y1="-9.9949" x2="-0.8001" y2="-9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="-1.7399" y1="-9.9949" x2="-3.3401" y2="-9.9949" width="0.127" layer="21" curve="180"/>
-<wire x1="-4.2799" y1="-9.9949" x2="-5.8801" y2="-9.9949" width="0.127" layer="21" curve="180"/>
-<smd name="P$1" x="-5.08" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$2" x="-2.54" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$3" x="0" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$4" x="2.54" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$5" x="5.08" y="-10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$6" x="5.08" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$7" x="2.54" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$8" x="0" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$9" x="-2.54" y="10" dx="1.9" dy="3" layer="1"/>
-<smd name="P$10" x="-5.08" y="10" dx="1.9" dy="3" layer="1"/>
-<polygon width="0.127" layer="21">
-<vertex x="-1.905" y="5.08"/>
-<vertex x="-1.27" y="5.715"/>
-<vertex x="1.27" y="5.715"/>
-<vertex x="1.905" y="5.08"/>
-<vertex x="1.27" y="4.445"/>
-<vertex x="-1.27" y="4.445"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="-2.54" y="0.635"/>
-<vertex x="-3.175" y="1.27"/>
-<vertex x="-3.175" y="3.81"/>
-<vertex x="-2.54" y="4.445"/>
-<vertex x="-1.905" y="3.81"/>
-<vertex x="-1.905" y="1.27"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="2.54" y="0.635"/>
-<vertex x="1.905" y="1.27"/>
-<vertex x="1.905" y="3.81"/>
-<vertex x="2.54" y="4.445"/>
-<vertex x="3.175" y="3.81"/>
-<vertex x="3.175" y="1.27"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="-1.905" y="0"/>
-<vertex x="-1.27" y="0.635"/>
-<vertex x="1.27" y="0.635"/>
-<vertex x="1.905" y="0"/>
-<vertex x="1.27" y="-0.635"/>
-<vertex x="-1.27" y="-0.635"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="-2.54" y="-0.635"/>
-<vertex x="-1.905" y="-1.27"/>
-<vertex x="-1.905" y="-3.81"/>
-<vertex x="-2.54" y="-4.445"/>
-<vertex x="-3.175" y="-3.81"/>
-<vertex x="-3.175" y="-1.27"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="2.54" y="-4.445"/>
-<vertex x="1.905" y="-3.81"/>
-<vertex x="1.905" y="-1.27"/>
-<vertex x="2.54" y="-0.635"/>
-<vertex x="3.175" y="-1.27"/>
-<vertex x="3.175" y="-3.81"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="1.905" y="-5.08"/>
-<vertex x="1.27" y="-5.715"/>
-<vertex x="-1.27" y="-5.715"/>
-<vertex x="-1.905" y="-5.08"/>
-<vertex x="-1.27" y="-4.445"/>
-<vertex x="1.27" y="-4.445"/>
-</polygon>
-<text x="-7.35" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;ACSA56</text>
-<circle x="-7.62" y="-10.16" radius="0.635" width="0" layer="21"/>
+<package name="DSM7T">
+<wire x1="-6.25" y1="9.5" x2="-6.25" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="6.25" y1="9.5" x2="6.25" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="9.5" x2="6.25" y2="9.5" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-9.5" x2="6.25" y2="-9.5" width="0.127" layer="21"/>
+<smd name="1" x="-5.08" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="3" x="0" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="4" x="2.54" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="5" x="5.08" y="-9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="10" x="-5.08" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="9" x="-2.54" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="8" x="0" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="7" x="2.54" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<smd name="6" x="5.08" y="9" dx="3" dy="1.7" layer="1" rot="R90"/>
+<text x="-6.858" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-7.493" y="-9.017" radius="0.635" width="0" layer="21"/>
+<rectangle x1="-6.858" y1="-11.176" x2="6.858" y2="11.176" layer="39"/>
 </package>
 </packages>
 </library>
@@ -1822,8 +1711,22 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="-79.756" y="-65.024" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="15V" x="-297.18" y="-140.716" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$1" library="HyTechDevices" package="ACSA56-51CGKWA" value="ACSA56-51CGKWA" x="-135.128" y="-64.008" smashed="yes"/>
-<element name="U$6" library="HyTechDevices" package="ACSA56-51CGKWA" value="ACSA56-51SYKWA" x="-150.368" y="-64.008" smashed="yes"/>
+<element name="D1" library="HyTechDevices" package="DSM7T" value="LED_7_SEGMENT_BLUE_DSM7TA" x="-166.116" y="-64.516" smashed="yes">
+<attribute name="COLOR" value="Blue" x="-166.116" y="-64.516" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="DSM7TA56106TTR-ND" x="-166.116" y="-64.516" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Visual Communications Company" x="-166.116" y="-64.516" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="593-DSM7TA56106T " x="-166.116" y="-64.516" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="DSM7TA56106T" x="-166.116" y="-64.516" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-172.974" y="-64.516" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+</element>
+<element name="D2" library="HyTechDevices" package="DSM7T" value="LED_7_SEGMENT_GREEN_DSM7TA" x="-181.356" y="-64.516" smashed="yes">
+<attribute name="COLOR" value="Green" x="-181.356" y="-64.516" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="DSM7TA56105TTR-ND" x="-181.356" y="-64.516" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Visual Communications Company" x="-181.356" y="-64.516" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="593-DSM7TA56105T " x="-181.356" y="-64.516" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="DSM7TA56105T" x="-181.356" y="-64.516" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-188.214" y="-64.516" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2670,15 +2573,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="N$10">
 <contactref element="U$3" pad="4"/>
 </signal>
-<signal name="VDD1">
-<contactref element="U$1" pad="P$3"/>
-<contactref element="U$6" pad="P$3"/>
-<wire x1="-135.128" y1="-74.008" x2="-150.368" y2="-74.008" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="VDD2">
-<contactref element="U$1" pad="P$8"/>
-<contactref element="U$6" pad="P$8"/>
-<wire x1="-135.128" y1="-54.008" x2="-150.368" y2="-54.008" width="0" layer="19" extent="1-1"/>
+<signal name="VDD">
+<contactref element="D2" pad="8"/>
+<contactref element="D2" pad="3"/>
+<contactref element="D1" pad="3"/>
+<contactref element="D1" pad="8"/>
+<wire x1="-166.116" y1="-73.516" x2="-181.356" y2="-73.516" width="0" layer="19" extent="1-1"/>
+<wire x1="-181.356" y1="-55.516" x2="-181.356" y2="-73.516" width="0" layer="19" extent="1-1"/>
+<wire x1="-166.116" y1="-55.516" x2="-181.356" y2="-55.516" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
