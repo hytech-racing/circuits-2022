@@ -9,34 +9,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="3" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="14" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="3" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="14" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -45,8 +45,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -54,19 +54,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -560,6 +560,27 @@
 <text x="-7.62" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="center">&gt;NAME</text>
 <rectangle x1="-6.985" y1="-4.445" x2="6.985" y2="4.445" layer="39"/>
 </package>
+<package name="DFN-8">
+<description>DFN-8
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/682/Sensirion_Humidity_Sensors_SHT3x_Datasheet_analog-2001011.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.175" y="0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="2" x="-1.175" y="0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="3" x="-1.175" y="-0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="4" x="-1.175" y="-0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="5" x="1.175" y="-0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="6" x="1.175" y="-0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="7" x="1.175" y="0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="8" x="1.175" y="0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="1" dy="1.7" layer="1"/>
+<wire x1="-1.25" y1="1.25" x2="-1.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1.25" x2="1.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1.25" x2="1.25" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.25" y1="1.25" x2="-1.25" y2="1.25" width="0.127" layer="21"/>
+<text x="0" y="1.524" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-1.905" y="1.27" radius="0.127" width="0" layer="21"/>
+<rectangle x1="-1.778" y1="-1.524" x2="1.778" y2="1.524" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -821,6 +842,21 @@ Pins tied to VREG: ISOMD, DTEN
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-89.662" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="SENSOR_HUMIDITY_TEMPERATURE">
+<description>Humidity and Temperature Sensor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/682/Sensirion_Humidity_Sensors_SHT3x_Datasheet_analog-2001011.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="10.16" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short" direction="pwr"/>
+<pin name="RH" x="-2.54" y="-10.16" visible="pin" length="short" direction="out"/>
+<pin name="T" x="-2.54" y="-5.08" visible="pin" length="short" direction="out"/>
+<pin name="VDD" x="12.7" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<text x="0" y="-15.875" size="1.778" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CAPACITOR_?_*" prefix="C">
@@ -908,6 +944,15 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="MOPN" value="81-GRM188R61A226ME5D"/>
 <attribute name="MPN" value="GRM188R61A226ME15D"/>
 <attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
+<technology name="10V_3.3NF">
+<attribute name="CAPACITANCE" value="3.3nF"/>
+<attribute name="DKPN" value="732-7759-1-ND"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MOPN" value="710-885012006016"/>
+<attribute name="MPN" value="885012006016"/>
+<attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
 <technology name="10V_4.7NF">
@@ -1954,6 +1999,38 @@ Variant 2: Addressable/Multi-Drop Configuration
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-6811IG-2#3ZZPB"/>
 <attribute name="MPN" value="LTC6811IG-2#3ZZPBF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SHT3*-ARP-B" prefix="U">
+<description>Humidity and Temperature Sensor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/682/Sensirion_Humidity_Sensors_SHT3x_Datasheet_analog-2001011.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SENSOR_HUMIDITY_TEMPERATURE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DFN-8">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 3 7 8 PAD"/>
+<connect gate="G$1" pin="RH" pad="1"/>
+<connect gate="G$1" pin="T" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="0">
+<attribute name="DKPN" value="1649-1010-1-ND"/>
+<attribute name="MANUFACTUER" value="Sensirion AG"/>
+<attribute name="MOPN" value="403-SHT30-ARP-B"/>
+<attribute name="MPN" value="SHT30-ARP-B"/>
+</technology>
+<technology name="1">
+<attribute name="DKPN" value="1649-1012-1-ND"/>
+<attribute name="MANUFACTUER" value="Sensirion AG"/>
+<attribute name="MOPN" value="403-SHT31-ARP-B"/>
+<attribute name="MPN" value="SHT31-ARP-B"/>
 </technology>
 </technologies>
 </device>
@@ -7270,6 +7347,24 @@ Layer: 94 Symbol</description>
 <vertex x="0.889" y="1.27"/>
 </polygon>
 </symbol>
+<symbol name="V-L">
+<text x="0" y="-1.27" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
+<pin name="V-L" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<polygon width="0.254" layer="94">
+<vertex x="0" y="-0.127"/>
+<vertex x="-0.889" y="1.27"/>
+<vertex x="0.889" y="1.27"/>
+</polygon>
+</symbol>
+<symbol name="VREF2L">
+<text x="0" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="VREF2L" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<polygon width="0.254" layer="94">
+<vertex x="0.889" y="-1.27"/>
+<vertex x="-0.889" y="-1.27"/>
+<vertex x="0" y="0.127"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="V-" prefix="P">
@@ -7395,6 +7490,30 @@ Layer: 94 Symbol</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="V-L" prefix="P">
+<gates>
+<gate name="G$1" symbol="V-L" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREF2L" prefix="P">
+<gates>
+<gate name="G$1" symbol="VREF2L" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -7436,6 +7555,8 @@ Layer: 94 Symbol</description>
 <sheets>
 <sheet>
 <plain>
+<text x="109.22" y="144.78" size="1.778" layer="91">page 70 rc filter
+1k gate resister ltc6811-2 demo circuit</text>
 </plain>
 <instances>
 <instance part="U$1" gate="O" x="0" y="0" smashed="yes"/>
@@ -7771,8 +7892,6 @@ Layer: 94 Symbol</description>
 <part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R31" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R32" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
-<part name="R33" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
-<part name="R44" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R45" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R46" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R47" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
@@ -7781,17 +7900,14 @@ Layer: 94 Symbol</description>
 <part name="C16" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
 <part name="C17" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
 <part name="C18" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
-<part name="C19" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
 <part name="P37" library="HyTechSupplies" deviceset="V-B" device=""/>
 <part name="P38" library="HyTechSupplies" deviceset="V-B" device=""/>
 <part name="P39" library="HyTechSupplies" deviceset="V-B" device=""/>
 <part name="P40" library="HyTechSupplies" deviceset="V-B" device=""/>
-<part name="P41" library="HyTechSupplies" deviceset="V-B" device=""/>
 <part name="P42" library="HyTechSupplies" deviceset="VREF2" device=""/>
 <part name="P43" library="HyTechSupplies" deviceset="VREF2" device=""/>
 <part name="P44" library="HyTechSupplies" deviceset="VREF2" device=""/>
 <part name="P45" library="HyTechSupplies" deviceset="VREF2" device=""/>
-<part name="P46" library="HyTechSupplies" deviceset="VREF2" device=""/>
 <part name="J27" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="NANOFIT_SMD_VERTICAL" technology="BLACK"/>
 <part name="J28" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="NANOFIT_SMD_VERTICAL" technology="BLACK"/>
 <part name="J32" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="NANOFIT_SMD_VERTICAL" technology="BLACK"/>
@@ -7804,9 +7920,7 @@ Layer: 94 Symbol</description>
 <part name="R35" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R36" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R37" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
-<part name="R38" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R39" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
-<part name="R40" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R41" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R42" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R43" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
@@ -7814,13 +7928,10 @@ Layer: 94 Symbol</description>
 <part name="C21" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
 <part name="C22" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
 <part name="C23" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
-<part name="C24" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
-<part name="P52" library="HyTechSupplies" deviceset="VREF2B" device=""/>
 <part name="P53" library="HyTechSupplies" deviceset="VREF2B" device=""/>
 <part name="P54" library="HyTechSupplies" deviceset="VREF2B" device=""/>
 <part name="P55" library="HyTechSupplies" deviceset="VREF2B" device=""/>
 <part name="P56" library="HyTechSupplies" deviceset="VREF2B" device=""/>
-<part name="P57" library="HyTechSupplies" deviceset="V-" device=""/>
 <part name="P58" library="HyTechSupplies" deviceset="V-" device=""/>
 <part name="P59" library="HyTechSupplies" deviceset="V-" device=""/>
 <part name="P60" library="HyTechSupplies" deviceset="V-" device=""/>
@@ -7861,6 +7972,19 @@ Layer: 94 Symbol</description>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
 </part>
+<part name="R33" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
+<part name="R51" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
+<part name="R38" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
+<part name="R40" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
+<part name="C8" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_3.3NF"/>
+<part name="C19" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_3.3NF"/>
+<part name="U3" library="HyTechDevices" deviceset="SHT3*-ARP-B" device="" technology="1"/>
+<part name="U4" library="HyTechDevices" deviceset="SHT3*-ARP-B" device="" technology="1"/>
+<part name="P36" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P41" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="C24" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
+<part name="P46" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P52" library="HyTechSupplies" deviceset="VREF2L" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8382,14 +8506,6 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="257.81" y="163.83" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="260.35" y="163.83" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R33" gate="G$1" x="259.08" y="152.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="257.81" y="151.13" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="260.35" y="151.13" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R44" gate="G$1" x="254" y="147.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="255.27" y="146.05" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="255.27" y="148.59" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
 <instance part="R45" gate="G$1" x="254" y="160.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="255.27" y="158.75" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="255.27" y="161.29" size="1.27" layer="96" rot="R180" align="top-center"/>
@@ -8426,11 +8542,6 @@ Layer: 94 Symbol</description>
 <attribute name="VOLTAGE" x="248.92" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="250.698" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="C19" gate="G$1" x="246.38" y="144.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="243.84" y="143.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="248.92" y="143.51" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="250.698" y="143.51" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
 <instance part="P37" gate="G$1" x="246.38" y="187.96" smashed="yes">
 <attribute name="VALUE" x="244.094" y="188.722" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -8443,9 +8554,6 @@ Layer: 94 Symbol</description>
 <instance part="P40" gate="G$1" x="246.38" y="149.86" smashed="yes">
 <attribute name="VALUE" x="244.856" y="149.86" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P41" gate="G$1" x="246.38" y="137.16" smashed="yes">
-<attribute name="VALUE" x="246.38" y="135.89" size="1.27" layer="96" align="top-center"/>
-</instance>
 <instance part="P42" gate="G$1" x="259.08" y="208.28" smashed="yes">
 <attribute name="VALUE" x="259.08" y="209.55" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -8457,9 +8565,6 @@ Layer: 94 Symbol</description>
 </instance>
 <instance part="P45" gate="G$1" x="259.08" y="170.18" smashed="yes">
 <attribute name="VALUE" x="260.858" y="170.688" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="P46" gate="G$1" x="259.08" y="157.48" smashed="yes">
-<attribute name="VALUE" x="260.858" y="157.734" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="J27" gate="G$1" x="274.32" y="193.04" smashed="yes" rot="R180">
 <attribute name="MODEL" x="274.32" y="201.295" size="1.4224" layer="96" rot="R180" align="top-left"/>
@@ -8505,17 +8610,9 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="257.81" y="90.17" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="260.35" y="90.17" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R38" gate="G$1" x="259.08" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="257.81" y="77.47" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="260.35" y="77.47" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
 <instance part="R39" gate="G$1" x="254" y="86.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="255.27" y="85.09" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="255.27" y="87.63" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
-<instance part="R40" gate="G$1" x="254" y="73.66" smashed="yes" rot="R180">
-<attribute name="NAME" x="255.27" y="72.39" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="255.27" y="74.93" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
 <instance part="R41" gate="G$1" x="254" y="99.06" smashed="yes" rot="R180">
 <attribute name="NAME" x="255.27" y="97.79" size="1.27" layer="95" rot="R180" align="bottom-center"/>
@@ -8549,14 +8646,6 @@ Layer: 94 Symbol</description>
 <attribute name="VOLTAGE" x="248.92" y="82.55" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="250.698" y="82.55" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="C24" gate="G$1" x="246.38" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="243.84" y="69.85" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="248.92" y="69.85" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="250.698" y="69.85" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P52" gate="G$1" x="259.08" y="83.82" smashed="yes">
-<attribute name="VALUE" x="260.858" y="84.074" size="1.27" layer="96" align="bottom-center"/>
-</instance>
 <instance part="P53" gate="G$1" x="259.08" y="96.52" smashed="yes">
 <attribute name="VALUE" x="260.604" y="96.774" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -8568,9 +8657,6 @@ Layer: 94 Symbol</description>
 </instance>
 <instance part="P56" gate="G$1" x="259.08" y="134.62" smashed="yes">
 <attribute name="VALUE" x="259.08" y="135.89" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="P57" gate="G$1" x="246.38" y="63.5" smashed="yes">
-<attribute name="VALUE" x="246.38" y="62.23" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P58" gate="G$1" x="246.38" y="76.2" smashed="yes">
 <attribute name="VALUE" x="245.364" y="75.438" size="1.27" layer="96" align="top-center"/>
@@ -8725,6 +8811,57 @@ Layer: 94 Symbol</description>
 <attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
 </instance>
+<instance part="R33" gate="G$1" x="256.54" y="147.32" smashed="yes">
+<attribute name="NAME" x="255.27" y="148.59" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="255.27" y="146.05" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R51" gate="G$1" x="256.54" y="142.24" smashed="yes">
+<attribute name="NAME" x="255.27" y="143.51" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="255.27" y="140.97" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R38" gate="G$1" x="254" y="71.12" smashed="yes">
+<attribute name="NAME" x="252.73" y="72.39" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="252.73" y="69.85" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R40" gate="G$1" x="254" y="66.04" smashed="yes">
+<attribute name="NAME" x="252.73" y="67.31" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="252.73" y="64.77" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="C8" gate="G$1" x="243.84" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="241.3" y="143.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="246.38" y="143.51" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="248.158" y="143.51" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="C19" gate="G$1" x="241.3" y="68.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="238.76" y="67.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="243.84" y="67.31" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="245.618" y="67.31" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="U3" gate="G$1" x="259.08" y="76.2" smashed="yes">
+<attribute name="NAME" x="259.08" y="76.835" size="1.778" layer="95"/>
+<attribute name="MPN" x="259.08" y="60.325" size="1.778" layer="96" align="top-left"/>
+</instance>
+<instance part="U4" gate="G$1" x="261.62" y="149.86" smashed="yes">
+<attribute name="NAME" x="261.62" y="150.495" size="1.778" layer="95"/>
+<attribute name="MPN" x="261.62" y="133.985" size="1.778" layer="96" align="top-left"/>
+</instance>
+<instance part="P36" gate="G$1" x="241.3" y="60.96" smashed="yes">
+<attribute name="VALUE" x="241.3" y="59.69" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P41" gate="G$1" x="256.54" y="60.96" smashed="yes">
+<attribute name="VALUE" x="256.54" y="59.69" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="C24" gate="G$1" x="271.78" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="269.24" y="69.85" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="274.32" y="69.85" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="276.098" y="69.85" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P46" gate="G$1" x="271.78" y="63.5" smashed="yes">
+<attribute name="VALUE" x="271.78" y="62.23" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P52" gate="G$1" x="271.78" y="76.2" smashed="yes">
+<attribute name="VALUE" x="271.78" y="77.47" size="1.27" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8753,10 +8890,6 @@ Layer: 94 Symbol</description>
 <segment>
 <pinref part="P45" gate="G$1" pin="VREF2"/>
 <pinref part="R32" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P46" gate="G$1" pin="VREF2"/>
-<pinref part="R33" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="V-" class="0">
@@ -8870,10 +9003,6 @@ Layer: 94 Symbol</description>
 <segment>
 <pinref part="P58" gate="G$1" pin="V-"/>
 <pinref part="C23" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P57" gate="G$1" pin="V-"/>
-<pinref part="C24" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="P63" gate="G$1" pin="V-"/>
@@ -9419,10 +9548,6 @@ Layer: 94 Symbol</description>
 <pinref part="C18" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="P41" gate="G$1" pin="V-B"/>
-<pinref part="C19" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="P47" gate="G$1" pin="V-B"/>
 <pinref part="J27" gate="G$1" pin="1"/>
 </segment>
@@ -9709,10 +9834,6 @@ Layer: 94 Symbol</description>
 <pinref part="P53" gate="G$1" pin="VREF2B"/>
 <pinref part="R37" gate="G$1" pin="2"/>
 </segment>
-<segment>
-<pinref part="P52" gate="G$1" pin="VREF2B"/>
-<pinref part="R38" gate="G$1" pin="2"/>
-</segment>
 </net>
 <net name="N$65" class="0">
 <segment>
@@ -9767,7 +9888,6 @@ Layer: 94 Symbol</description>
 <wire x1="71.12" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
 <junction x="76.2" y="111.76"/>
 <wire x1="76.2" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="V+"/>
 <pinref part="U2" gate="G$1" pin="V+"/>
 <wire x1="81.28" y1="111.76" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
@@ -9916,24 +10036,18 @@ Layer: 94 Symbol</description>
 <pinref part="J33" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$81" class="0">
-<segment>
-<wire x1="259.08" y1="147.32" x2="264.16" y2="147.32" width="0.1524" layer="91"/>
-<junction x="259.08" y="147.32"/>
-<pinref part="R33" gate="G$1" pin="1"/>
-<pinref part="R44" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$82" class="0">
 <segment>
-<wire x1="243.84" y1="147.32" x2="246.38" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="147.32" x2="251.46" y2="147.32" width="0.1524" layer="91"/>
-<junction x="246.38" y="147.32"/>
-<pinref part="R44" gate="G$1" pin="2"/>
-<pinref part="C19" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="147.32" x2="251.46" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GPI05"/>
 <wire x1="243.84" y1="147.32" x2="231.14" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="182.88" x2="104.14" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="R33" gate="G$1" pin="1"/>
+<pinref part="R51" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="147.32" x2="251.46" y2="142.24" width="0.1524" layer="91"/>
+<junction x="251.46" y="147.32"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<junction x="243.84" y="147.32"/>
 </segment>
 </net>
 <net name="N$64" class="0">
@@ -9946,14 +10060,6 @@ Layer: 94 Symbol</description>
 <pinref part="U1" gate="G$1" pin="GPI02"/>
 <wire x1="104.14" y1="190.5" x2="238.76" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="190.5" x2="243.84" y2="185.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$83" class="0">
-<segment>
-<wire x1="259.08" y1="73.66" x2="264.16" y2="73.66" width="0.1524" layer="91"/>
-<junction x="259.08" y="73.66"/>
-<pinref part="R38" gate="G$1" pin="1"/>
-<pinref part="R40" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$84" class="0">
@@ -10041,13 +10147,16 @@ Layer: 94 Symbol</description>
 </net>
 <net name="N$75" class="0">
 <segment>
-<wire x1="246.38" y1="73.66" x2="251.46" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="R40" gate="G$1" pin="2"/>
-<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="71.12" x2="248.92" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="GPI05"/>
 <wire x1="104.14" y1="78.74" x2="236.22" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="78.74" x2="246.38" y2="73.66" width="0.1524" layer="91"/>
-<junction x="246.38" y="73.66"/>
+<wire x1="236.22" y1="78.74" x2="241.3" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R38" gate="G$1" pin="1"/>
+<pinref part="R40" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="66.04" x2="248.92" y2="71.12" width="0.1524" layer="91"/>
+<junction x="248.92" y="71.12"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+<junction x="241.3" y="71.12"/>
 </segment>
 </net>
 <net name="N$98" class="0">
@@ -10422,9 +10531,50 @@ Layer: 94 Symbol</description>
 <junction x="68.58" y="121.92"/>
 </segment>
 </net>
+<net name="N$81" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="RH"/>
+<pinref part="R40" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$83" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="T"/>
+<pinref part="R38" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="V-L" class="0">
+<segment>
+<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="P36" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="P41" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<pinref part="C24" gate="G$1" pin="2"/>
+<pinref part="P46" gate="G$1" pin="V-L"/>
+</segment>
+</net>
+<net name="VREF2L" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<pinref part="P52" gate="G$1" pin="VREF2L"/>
+<junction x="271.78" y="73.66"/>
+<pinref part="P52" gate="G$1" pin="VREF2L"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
