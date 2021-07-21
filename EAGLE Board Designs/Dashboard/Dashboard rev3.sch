@@ -1091,6 +1091,17 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="49.8V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="120">
+<attribute name="DKPN" value="311-120HRTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Yageo" constant="no"/>
+<attribute name="MOPN" value="603-RC0603FR-07120RL " constant="no"/>
+<attribute name="MPN" value="RC0603FR-07120RL " constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="RESISTANCE" value="120" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.46V" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
+</technology>
 <technology name="12K">
 <attribute name="DKPN" value="311-12.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -5929,7 +5940,6 @@ general purpose rectifier</description>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="200"/>
 <part name="RN1" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10K"/>
 <part name="RN2" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10K"/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="43K"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="43K"/>
@@ -6008,6 +6018,7 @@ general purpose rectifier</description>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U2" library="HyTechDevices" deviceset="TCAN1051*V-Q1" device="" technology="HQ"/>
 <part name="P22" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="120"/>
 </parts>
 <sheets>
 <sheet>
@@ -6167,10 +6178,6 @@ general purpose rectifier</description>
 <instance part="RN2" gate="C" x="58.42" y="15.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="57.15" y="13.97" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="59.69" y="13.97" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R1" gate="G$1" x="167.64" y="200.66" smashed="yes">
-<attribute name="NAME" x="166.37" y="201.93" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="166.37" y="199.39" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="R9" gate="G$1" x="190.5" y="157.48" smashed="yes">
 <attribute name="NAME" x="189.23" y="158.75" size="1.27" layer="95" align="bottom-center"/>
@@ -6520,6 +6527,10 @@ general purpose rectifier</description>
 </instance>
 <instance part="P22" gate="1" x="68.58" y="144.78" smashed="yes">
 <attribute name="VALUE" x="68.58" y="143.51" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R14" gate="G$1" x="167.64" y="200.66" smashed="yes">
+<attribute name="NAME" x="166.37" y="201.93" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="166.37" y="199.39" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -6977,7 +6988,7 @@ general purpose rectifier</description>
 <segment>
 <wire x1="162.56" y1="200.66" x2="160.02" y2="200.66" width="0.1524" layer="91"/>
 <label x="160.02" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="177.8" x2="35.56" y2="177.8" width="0.1524" layer="91"/>
@@ -7453,8 +7464,8 @@ general purpose rectifier</description>
 <net name="N$39" class="0">
 <segment>
 <wire x1="170.18" y1="200.66" x2="177.8" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="J1" gate="G$1" pin="P$1"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND2" class="0">
