@@ -3139,61 +3139,54 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="G">
 <contactref element="RN4" pad="3"/>
 </signal>
-<signal name="N$51">
-<contactref element="U$1" pad="28"/>
-<contactref element="RN4" pad="4"/>
-<wire x1="-186.563" y1="-77.089" x2="-324.428" y2="-239.152" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="A2">
 <contactref element="RN4" pad="5"/>
-</signal>
-<signal name="N$52">
-<contactref element="U$1" pad="27"/>
-<contactref element="RN5" pad="1"/>
-<wire x1="-185.293" y1="-77.089" x2="-326.828" y2="-243.216" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="28"/>
+<contactref element="RN4" pad="4"/>
+<wire x1="-324.428" y1="-237.352" x2="-324.428" y2="-239.152" width="0" layer="19" extent="1-1"/>
+<wire x1="-186.563" y1="-77.089" x2="-324.428" y2="-237.352" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B2">
 <contactref element="RN5" pad="8"/>
+<contactref element="U$1" pad="27"/>
+<contactref element="RN5" pad="1"/>
+<wire x1="-326.828" y1="-243.216" x2="-326.828" y2="-241.416" width="0" layer="19" extent="1-1"/>
+<wire x1="-185.293" y1="-77.089" x2="-326.828" y2="-241.416" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$53">
+<signal name="C2">
+<contactref element="RN5" pad="7"/>
 <contactref element="U$1" pad="26"/>
 <contactref element="RN5" pad="2"/>
-<wire x1="-184.023" y1="-77.089" x2="-326.028" y2="-243.216" width="0" layer="19" extent="1-1"/>
+<wire x1="-326.028" y1="-243.216" x2="-326.028" y2="-241.416" width="0" layer="19" extent="1-1"/>
+<wire x1="-184.023" y1="-77.089" x2="-326.028" y2="-241.416" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="C3">
-<contactref element="RN5" pad="7"/>
-</signal>
-<signal name="N$54">
+<signal name="D2">
+<contactref element="RN5" pad="6"/>
 <contactref element="U$1" pad="25"/>
 <contactref element="RN5" pad="3"/>
-<wire x1="-182.753" y1="-77.089" x2="-325.228" y2="-243.216" width="0" layer="19" extent="1-1"/>
+<wire x1="-325.228" y1="-243.216" x2="-325.228" y2="-241.416" width="0" layer="19" extent="1-1"/>
+<wire x1="-182.753" y1="-77.089" x2="-325.228" y2="-241.416" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="D4">
-<contactref element="RN5" pad="6"/>
-</signal>
-<signal name="N$55">
+<signal name="E2">
+<contactref element="RN5" pad="5"/>
 <contactref element="U$1" pad="24"/>
 <contactref element="RN5" pad="4"/>
-<wire x1="-181.483" y1="-77.089" x2="-324.428" y2="-243.216" width="0" layer="19" extent="1-1"/>
+<wire x1="-324.428" y1="-243.216" x2="-324.428" y2="-241.416" width="0" layer="19" extent="1-1"/>
+<wire x1="-181.483" y1="-77.089" x2="-324.428" y2="-241.416" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="E5">
-<contactref element="RN5" pad="5"/>
-</signal>
-<signal name="N$56">
+<signal name="F2">
 <contactref element="U$1" pad="23"/>
 <contactref element="RN6" pad="1"/>
-<wire x1="-180.213" y1="-77.089" x2="-326.828" y2="-247.28" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="F5">
 <contactref element="RN6" pad="8"/>
+<wire x1="-326.828" y1="-245.48" x2="-326.828" y2="-247.28" width="0" layer="19" extent="1-1"/>
+<wire x1="-180.213" y1="-77.089" x2="-326.828" y2="-245.48" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$57">
+<signal name="G2">
 <contactref element="U$1" pad="22"/>
 <contactref element="RN6" pad="2"/>
-<wire x1="-178.943" y1="-77.089" x2="-326.028" y2="-247.28" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="G5">
 <contactref element="RN6" pad="7"/>
+<wire x1="-326.028" y1="-245.48" x2="-326.028" y2="-247.28" width="0" layer="19" extent="1-1"/>
+<wire x1="-178.943" y1="-77.089" x2="-326.028" y2="-245.48" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
