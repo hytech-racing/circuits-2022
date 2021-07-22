@@ -9,34 +9,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="3" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="14" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="3" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="14" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -45,8 +45,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -54,19 +54,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -7774,99 +7774,9 @@ Layer: 94 Symbol</description>
 </sheet>
 </sheets>
 </module>
-<module name="THERM" prefix="" dx="20.32" dy="7.62">
-<ports>
-<port name="GPIO" side="left" coord="2.54" direction="out"/>
-<port name="V-" side="left" coord="-2.54" direction="pwr"/>
-<port name="VREF2" side="right" coord="2.54" direction="pwr"/>
-<port name="THERM" side="right" coord="-2.54" direction="io"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="U$1" library="HyTechFrames" deviceset="FRAME_A" device=""/>
-<part name="P-1" library="HyTechSupplies" deviceset="V-" device=""/>
-<part name="U$2" library="HyTechSupplies" deviceset="VREF2" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
-<part name="C1" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="U$1" gate="O" x="0" y="0" smashed="yes"/>
-<instance part="U$1" gate="DF" x="110.49" y="0" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="186.69" y="2.54" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="205.74" y="22.86" size="2.54" layer="94"/>
-<attribute name="SHEET" x="259.08" y="2.54" size="2.54" layer="94"/>
-</instance>
-<instance part="P-1" gate="G$1" x="127" y="101.6" smashed="yes">
-<attribute name="VALUE" x="127" y="100.33" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="U$2" gate="G$1" x="147.32" y="127" smashed="yes">
-<attribute name="VALUE" x="147.32" y="128.27" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="R1" gate="G$1" x="134.62" y="114.3" smashed="yes">
-<attribute name="NAME" x="133.35" y="115.57" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="133.35" y="113.03" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R2" gate="G$1" x="147.32" y="119.38" smashed="yes" rot="R90">
-<attribute name="NAME" x="146.05" y="118.11" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="148.59" y="118.11" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="C1" gate="G$1" x="127" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="124.46" y="107.95" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="129.54" y="107.442" size="1.27" layer="96" rot="R90" align="top-right"/>
-<attribute name="CAPACITANCE" x="129.54" y="108.458" size="1.27" layer="96" rot="R90" align="top-left"/>
-</instance>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="GPIO" class="0">
-<segment>
-<wire x1="127" y1="111.76" x2="127" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="127" y1="114.3" x2="129.54" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="127" y1="114.3" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
-<junction x="127" y="114.3"/>
-<label x="119.38" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="VREF2" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="U$2" gate="G$1" pin="VREF2"/>
-<wire x1="147.32" y1="121.92" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="THERM" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="114.3" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
-<junction x="147.32" y="114.3"/>
-<label x="147.32" y="106.68" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="V-" class="0">
-<segment>
-<pinref part="P-1" gate="G$1" pin="V-"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-</segment>
-</net>
-</nets>
-</sheet>
-</sheets>
-</module>
 </modules>
 <parts>
 <part name="P-4" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P-7" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P+1" library="HyTechSupplies" deviceset="V+U" device=""/>
 <part name="F0" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
 <part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
@@ -7987,7 +7897,6 @@ Layer: 94 Symbol</description>
 <part name="P37" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P38" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P39" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P40" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="J27" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="MICROFIT_SMD_RIGHTANGLE_02_SINGLE" technology="BLACK" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK"/>
 <part name="J28" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="MICROFIT_SMD_RIGHTANGLE_02_SINGLE" technology="BLACK" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK"/>
 <part name="J32" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="MICROFIT_SMD_RIGHTANGLE_02_SINGLE" technology="BLACK" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK"/>
@@ -8040,7 +7949,6 @@ Layer: 94 Symbol</description>
 <attribute name="DESCRIPTION_2" value=" temperatures of 8 cells, and two humidity/temperature sensors."/>
 <attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
-<attribute name="REVIEWER_SCHEMATIC" value="Arvind Srinivasan"/>
 </part>
 <part name="R33" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R38" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
@@ -8097,6 +8005,8 @@ Layer: 94 Symbol</description>
 <part name="TP13" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP14" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="P76" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P22" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P40" library="HyTechSupplies" deviceset="V-U" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8192,9 +8102,6 @@ of the given LTC6811 chip.</text>
 <instances>
 <instance part="P-4" gate="G$1" x="33.02" y="10.16" smashed="yes">
 <attribute name="VALUE" x="33.02" y="8.89" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="P-7" gate="G$1" x="66.04" y="17.78" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="17.78" size="1.27" layer="96" align="top-left"/>
 </instance>
 <instance part="P+1" gate="G$1" x="71.12" y="208.28" smashed="yes">
 <attribute name="VALUE" x="71.12" y="209.55" size="1.27" layer="96" align="bottom-center"/>
@@ -8586,9 +8493,9 @@ of the given LTC6811 chip.</text>
 <attribute name="NAME" x="255.27" y="156.21" size="1.27" layer="95" rot="R270" align="bottom-center"/>
 <attribute name="RESISTANCE" x="252.73" y="156.21" size="1.27" layer="96" rot="R270" align="top-center"/>
 </instance>
-<instance part="R45" gate="G$1" x="248.92" y="160.02" smashed="yes" rot="R180">
-<attribute name="NAME" x="250.19" y="158.75" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="250.19" y="161.29" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R45" gate="G$1" x="246.38" y="160.02" smashed="yes" rot="R180">
+<attribute name="NAME" x="247.65" y="158.75" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="161.29" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
 <instance part="R46" gate="G$1" x="248.92" y="172.72" smashed="yes" rot="R180">
 <attribute name="NAME" x="250.19" y="171.45" size="1.27" layer="95" rot="R180" align="bottom-center"/>
@@ -8617,10 +8524,10 @@ of the given LTC6811 chip.</text>
 <attribute name="VOLTAGE" x="243.84" y="168.91" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="245.618" y="168.91" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="C18" gate="G$1" x="241.3" y="157.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="238.76" y="156.21" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="243.84" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="245.618" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C18" gate="G$1" x="238.76" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.22" y="156.21" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="241.3" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="243.078" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="P37" gate="G$1" x="241.3" y="187.96" smashed="yes">
 <attribute name="VALUE" x="239.014" y="188.722" size="1.27" layer="96" align="top-center"/>
@@ -8630,9 +8537,6 @@ of the given LTC6811 chip.</text>
 </instance>
 <instance part="P39" gate="G$1" x="241.3" y="162.56" smashed="yes">
 <attribute name="VALUE" x="239.522" y="162.814" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="P40" gate="G$1" x="241.3" y="149.86" smashed="yes">
-<attribute name="VALUE" x="239.776" y="149.86" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="J27" gate="G$1" x="274.32" y="203.2" smashed="yes" rot="MR0">
 <attribute name="MODEL" x="275.082" y="194.691" size="1.4224" layer="96" rot="MR0" align="top-left"/>
@@ -9036,15 +8940,17 @@ of the given LTC6811 chip.</text>
 <instance part="P76" gate="G$1" x="132.08" y="124.46" smashed="yes">
 <attribute name="VALUE" x="132.08" y="123.19" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="P22" gate="G$1" x="66.04" y="17.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="17.78" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P40" gate="G$1" x="238.76" y="149.86" smashed="yes">
+<attribute name="VALUE" x="238.76" y="148.59" size="1.27" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="V-" class="0">
-<segment>
-<pinref part="P-7" gate="G$1" pin="V-L"/>
-<portref moduleinst="CELL1" port="V-"/>
-</segment>
 <segment>
 <portref moduleinst="CELL2" port="V-"/>
 <pinref part="P1" gate="G$1" pin="V-L"/>
@@ -9635,10 +9541,6 @@ of the given LTC6811 chip.</text>
 <pinref part="C17" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="P40" gate="G$1" pin="V-U"/>
-<pinref part="C18" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="C26" gate="G$1" pin="1"/>
 <pinref part="P67" gate="G$1" pin="V-U"/>
 </segment>
@@ -9970,9 +9872,9 @@ of the given LTC6811 chip.</text>
 </net>
 <net name="GPIO4U" class="0">
 <segment>
-<wire x1="241.3" y1="160.02" x2="246.38" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="160.02" x2="241.3" y2="160.02" width="0.1524" layer="91"/>
-<junction x="241.3" y="160.02"/>
+<wire x1="238.76" y1="160.02" x2="243.84" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="160.02" x2="238.76" y2="160.02" width="0.1524" layer="91"/>
+<junction x="238.76" y="160.02"/>
 <pinref part="R45" gate="G$1" pin="2"/>
 <pinref part="C18" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="GPI04"/>
@@ -9986,8 +9888,9 @@ of the given LTC6811 chip.</text>
 <pinref part="R32" gate="G$1" pin="1"/>
 <pinref part="R45" gate="G$1" pin="1"/>
 <pinref part="J33" gate="G$1" pin="2"/>
-<wire x1="254" y1="160.02" x2="264.16" y2="160.02" width="0.1524" layer="91"/>
-<junction x="254" y="160.02"/>
+<wire x1="251.46" y1="160.02" x2="264.16" y2="160.02" width="0.1524" layer="91"/>
+<junction x="251.46" y="160.02"/>
+<wire x1="251.46" y1="160.02" x2="254" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO5U" class="0">
@@ -10481,6 +10384,10 @@ of the given LTC6811 chip.</text>
 <wire x1="104.14" y1="93.98" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="P29" gate="G$1" pin="V-L"/>
 </segment>
+<segment>
+<portref moduleinst="CELL1" port="V-"/>
+<pinref part="P22" gate="G$1" pin="V-L"/>
+</segment>
 </net>
 <net name="VREF2L" class="0">
 <segment>
@@ -10660,6 +10567,10 @@ of the given LTC6811 chip.</text>
 <pinref part="TP10" gate="G$1" pin="P$1"/>
 <wire x1="124.46" y1="127" x2="132.08" y2="127" width="0.1524" layer="91"/>
 <pinref part="P76" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<pinref part="P40" gate="G$1" pin="V-U"/>
+<pinref part="C18" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SENSE0" class="0">
