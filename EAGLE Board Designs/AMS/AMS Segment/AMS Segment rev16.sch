@@ -8041,6 +8041,8 @@ Layer: 94 Symbol</description>
 <part name="C7" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESCRIPTION_1" value="Aquires measurements of all cell voltages,"/>
+<attribute name="DESCRIPTION_2" value=" temperatures of 8 cells, and two humidity/temperature sensors."/>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
 </part>
 <part name="R33" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
@@ -8116,7 +8118,7 @@ expand.</text>
 <text x="157.48" y="170.18" size="1.27" layer="97">These transformers are chosen based on a list in the LTC6811
 datasheet and because they are common mode choke with
 centertap.</text>
-<text x="5.08" y="0" size="1.27" layer="97">These 1.6A fuses are chosen because we have a peak current
+<text x="5.08" y="0.762" size="1.27" layer="97">These 1.6A fuses are chosen because we have a peak current
 around 0.8A and it was recommended in the datasheet that the
 fuse be 1.5 times the peak current. With durating due to higher
 temperatures the 1.6A fuse fits perfectly.</text>
@@ -9562,13 +9564,6 @@ not decide to solder in.</text>
 <label x="15.24" y="177.8" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE_21" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="172.72" x2="114.3" y2="172.72" width="0.1524" layer="91"/>
-<label x="114.3" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="SENSE20" class="0">
 <segment>
 <pinref part="F20" gate="G$1" pin="2"/>
@@ -10747,18 +10742,6 @@ not decide to solder in.</text>
 <pinref part="R53" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="SENSE21" class="0">
-<segment>
-<pinref part="F21" gate="G$1" pin="2"/>
-<portref moduleinst="CELL21" port="CELL+"/>
-<wire x1="33.02" y1="193.04" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="205.74" x2="33.02" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="205.74" x2="33.02" y2="193.04" width="0.1524" layer="91"/>
-<junction x="33.02" y="193.04"/>
-<label x="25.4" y="193.04" size="1.27" layer="95"/>
-<pinref part="R44" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="GPIO4L" class="0">
 <segment>
 <pinref part="R39" gate="G$1" pin="2"/>
@@ -10998,6 +10981,23 @@ not decide to solder in.</text>
 <pinref part="TP9" gate="G$1" pin="P$1"/>
 <wire x1="50.8" y1="200.66" x2="53.34" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="P27" gate="G$1" pin="V+U"/>
+</segment>
+</net>
+<net name="SENSE21" class="0">
+<segment>
+<pinref part="F21" gate="G$1" pin="2"/>
+<portref moduleinst="CELL21" port="CELL+"/>
+<wire x1="33.02" y1="193.04" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
+<label x="25.4" y="193.04" size="1.27" layer="95"/>
+<wire x1="33.02" y1="193.04" x2="45.72" y2="205.74" width="0.1524" layer="91"/>
+<junction x="33.02" y="193.04"/>
+<pinref part="R44" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="205.74" x2="58.42" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="172.72" x2="114.3" y2="172.72" width="0.1524" layer="91"/>
+<label x="114.3" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

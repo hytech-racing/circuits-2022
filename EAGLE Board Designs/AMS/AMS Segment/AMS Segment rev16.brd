@@ -3977,9 +3977,6 @@ design rules under a new name.
 <contactref element="F19" pad="1"/>
 <wire x1="-133.52" y1="264.16" x2="-19.05" y2="240.03" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="SENSE_21">
-<contactref element="R16" pad="1"/>
-</signal>
 <signal name="SENSE20">
 <contactref element="F20" pad="2"/>
 <contactref element="CELL20:R1" pad="1"/>
@@ -4702,15 +4699,6 @@ design rules under a new name.
 <wire x1="-72.39" y1="134.62" x2="-69.68" y2="237.49" width="0" layer="19" extent="1-1"/>
 <wire x1="-110.07" y1="132.08" x2="-72.39" y2="134.62" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="SENSE21">
-<contactref element="F21" pad="2"/>
-<contactref element="R44" pad="1"/>
-<contactref element="CELL21:R1" pad="1"/>
-<contactref element="CELL21:Q1" pad="2"/>
-<wire x1="-16.34" y1="274.32" x2="-35.14" y2="285.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.0002" y1="132.3467" x2="-16.34" y2="274.32" width="0" layer="19" extent="1-1"/>
-<wire x1="-47.84" y1="132.08" x2="-27.0002" y2="132.3467" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="GPIO4L">
 <contactref element="R39" pad="2"/>
 <contactref element="C23" pad="1"/>
@@ -5278,6 +5266,17 @@ design rules under a new name.
 </signal>
 <signal name="V+U">
 <contactref element="TP9" pad="1"/>
+</signal>
+<signal name="SENSE21">
+<contactref element="F21" pad="2"/>
+<contactref element="CELL21:R1" pad="1"/>
+<contactref element="CELL21:Q1" pad="2"/>
+<contactref element="R44" pad="1"/>
+<contactref element="R16" pad="1"/>
+<wire x1="-16.34" y1="274.32" x2="-35.14" y2="285.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-92.29" y1="281.94" x2="-35.14" y2="285.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-27.0002" y1="132.3467" x2="-16.34" y2="274.32" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.84" y1="132.08" x2="-27.0002" y2="132.3467" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
