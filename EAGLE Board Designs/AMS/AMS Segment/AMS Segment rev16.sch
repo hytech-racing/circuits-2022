@@ -7932,13 +7932,10 @@ Layer: 94 Symbol</description>
 <part name="P18" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P19" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P21" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
-<part name="P22" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P23" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P24" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P25" library="HyTechSupplies" deviceset="V-U" device=""/>
@@ -7952,8 +7949,6 @@ Layer: 94 Symbol</description>
 <part name="C12" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_0.1UF"/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_NPN" device=""/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
-<part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R18" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R20" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
@@ -8041,9 +8036,11 @@ Layer: 94 Symbol</description>
 <part name="C7" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
-<attribute name="DESCRIPTION_1" value="Aquires measurements of all cell voltages,"/>
+<attribute name="DESCRIPTION_1" value="Uses two LTC6811s to measure 21 cell voltages,"/>
 <attribute name="DESCRIPTION_2" value=" temperatures of 8 cells, and two humidity/temperature sensors."/>
+<attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
+<attribute name="REVIEWER_SCHEMATIC" value="Arvind Srinivasan"/>
 </part>
 <part name="R33" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R38" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
@@ -8086,10 +8083,8 @@ Layer: 94 Symbol</description>
 <part name="F22" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
 <part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP3" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP5" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP6" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP7" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP8" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP9" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
@@ -8112,9 +8107,10 @@ such that all of the unused cell reading pins
 are shorted on the pins 10 through 12
 which decreases the amount of ISOSPI
 transactions.</text>
-<text x="116.84" y="101.6" size="1.27" layer="97">Address pin 4 is pulled down to V- because we only have 4
+<text x="116.84" y="101.6" size="1.27" layer="97">Address pin 3 is pulled down to V- because we only have 4
 segments which means 8 ICs. There is no need for the option to
-expand.</text>
+expand. Address pin 0 of the top ic is pulled
+up because it will always be odd and thebottom one down to be even</text>
 <text x="157.48" y="170.18" size="1.27" layer="97">These transformers are chosen based on a list in the LTC6811
 datasheet and because they are common mode choke with
 centertap.</text>
@@ -8124,8 +8120,9 @@ fuse be 1.5 times the peak current. With durating due to higher
 temperatures the 1.6A fuse fits perfectly.</text>
 <text x="223.52" y="205.74" size="1.27" layer="97">The 5.9kOhm resister selection was done in order to maximize the
 coverage on our ADC.</text>
-<text x="119.38" y="205.74" size="1.27" layer="97">DNP means do not place. These are resisters that we may or may
-not decide to solder in.</text>
+<text x="119.38" y="205.74" size="1.27" layer="97">These are 0 Ohm resisters that we may or 
+may not decide to solder in based on the address
+of the given LTC6811 chip.</text>
 </plain>
 <moduleinsts>
 <moduleinst name="CELL1" module="CELL" x="48.26" y="20.32">
@@ -8416,14 +8413,6 @@ not decide to solder in.</text>
 <instance part="P21" gate="G$1" x="66.04" y="101.6" smashed="yes" rot="R90">
 <attribute name="VALUE" x="67.31" y="101.6" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R8" gate="G$1" x="114.3" y="195.58" smashed="yes" rot="R180">
-<attribute name="NAME" x="115.57" y="194.31" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="115.57" y="196.85" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
-<instance part="R9" gate="G$1" x="109.22" y="198.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="110.49" y="196.85" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="110.49" y="199.39" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
 <instance part="R10" gate="G$1" x="134.62" y="198.12" smashed="yes" rot="R180">
 <attribute name="NAME" x="135.89" y="196.85" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="135.89" y="199.39" size="1.27" layer="96" rot="R180" align="top-center"/>
@@ -8439,9 +8428,6 @@ not decide to solder in.</text>
 <instance part="R13" gate="G$1" x="149.86" y="203.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="151.13" y="201.93" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="151.13" y="204.47" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
-<instance part="P22" gate="G$1" x="121.92" y="195.58" smashed="yes" rot="R90">
-<attribute name="VALUE" x="123.19" y="195.58" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="P23" gate="G$1" x="142.24" y="198.12" smashed="yes" rot="R90">
 <attribute name="VALUE" x="143.51" y="198.12" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -8494,14 +8480,6 @@ not decide to solder in.</text>
 <attribute name="NAME" x="125.476" y="66.548" size="1.27" layer="95" align="bottom-right"/>
 <attribute name="MPN" x="127.508" y="59.944" size="1.27" layer="96" align="top-right"/>
 </instance>
-<instance part="R2" gate="G$1" x="114.3" y="91.44" smashed="yes" rot="R180">
-<attribute name="NAME" x="115.57" y="90.17" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="115.57" y="92.71" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
-<instance part="R17" gate="G$1" x="109.22" y="93.98" smashed="yes" rot="R180">
-<attribute name="NAME" x="110.49" y="92.71" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="110.49" y="95.25" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
 <instance part="R18" gate="G$1" x="134.62" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="135.89" y="92.71" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="135.89" y="95.25" size="1.27" layer="96" rot="R180" align="top-center"/>
@@ -8518,8 +8496,8 @@ not decide to solder in.</text>
 <attribute name="NAME" x="151.13" y="97.79" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="151.13" y="100.33" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="P29" gate="G$1" x="121.92" y="91.44" smashed="yes" rot="R90">
-<attribute name="VALUE" x="123.19" y="91.44" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P29" gate="G$1" x="109.22" y="93.98" smashed="yes" rot="R90">
+<attribute name="VALUE" x="110.49" y="93.98" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="P30" gate="G$1" x="142.24" y="93.98" smashed="yes" rot="R90">
 <attribute name="VALUE" x="143.51" y="93.98" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -9006,10 +8984,6 @@ not decide to solder in.</text>
 <attribute name="NAME" x="119.38" y="136.398" size="1.27" layer="95"/>
 <attribute name="MPN" x="119.38" y="132.842" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP3" gate="G$1" x="121.92" y="127" smashed="yes">
-<attribute name="NAME" x="119.38" y="128.778" size="1.27" layer="95"/>
-<attribute name="MPN" x="119.38" y="125.222" size="1.27" layer="95" align="top-left"/>
-</instance>
 <instance part="TP4" gate="G$1" x="142.24" y="73.66" smashed="yes">
 <attribute name="NAME" x="139.7" y="75.438" size="1.27" layer="95"/>
 <attribute name="MPN" x="139.7" y="71.882" size="1.27" layer="95" align="top-left"/>
@@ -9018,13 +8992,9 @@ not decide to solder in.</text>
 <attribute name="NAME" x="139.7" y="67.818" size="1.27" layer="95"/>
 <attribute name="MPN" x="139.7" y="64.262" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP6" gate="G$1" x="142.24" y="58.42" smashed="yes">
-<attribute name="NAME" x="139.7" y="60.198" size="1.27" layer="95"/>
-<attribute name="MPN" x="139.7" y="56.642" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP7" gate="G$1" x="121.92" y="111.76" smashed="yes">
-<attribute name="NAME" x="119.38" y="113.538" size="1.27" layer="95"/>
-<attribute name="MPN" x="119.38" y="109.982" size="1.27" layer="95" align="top-left"/>
+<instance part="TP7" gate="G$1" x="121.92" y="119.38" smashed="yes">
+<attribute name="NAME" x="119.38" y="121.158" size="1.27" layer="95"/>
+<attribute name="MPN" x="119.38" y="117.602" size="1.27" layer="95" align="top-left"/>
 </instance>
 <instance part="TP8" gate="G$1" x="88.9" y="7.62" smashed="yes">
 <attribute name="NAME" x="86.36" y="9.398" size="1.27" layer="95"/>
@@ -9037,15 +9007,15 @@ not decide to solder in.</text>
 <instance part="P27" gate="G$1" x="53.34" y="203.2" smashed="yes">
 <attribute name="VALUE" x="53.34" y="204.47" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P51" gate="G$1" x="127" y="114.3" smashed="yes">
-<attribute name="VALUE" x="127" y="115.57" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P51" gate="G$1" x="127" y="121.92" smashed="yes">
+<attribute name="VALUE" x="127" y="123.19" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="P75" gate="G$1" x="93.98" y="5.08" smashed="yes">
 <attribute name="VALUE" x="93.98" y="3.81" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TP10" gate="G$1" x="121.92" y="119.38" smashed="yes">
-<attribute name="NAME" x="119.38" y="121.158" size="1.27" layer="95"/>
-<attribute name="MPN" x="119.38" y="117.602" size="1.27" layer="95" align="top-left"/>
+<instance part="TP10" gate="G$1" x="121.92" y="127" smashed="yes">
+<attribute name="NAME" x="119.38" y="128.778" size="1.27" layer="95"/>
+<attribute name="MPN" x="119.38" y="125.222" size="1.27" layer="95" align="top-left"/>
 </instance>
 <instance part="TP11" gate="G$1" x="182.88" y="111.76" smashed="yes">
 <attribute name="NAME" x="180.34" y="113.538" size="1.27" layer="95"/>
@@ -9063,8 +9033,8 @@ not decide to solder in.</text>
 <attribute name="NAME" x="198.12" y="105.918" size="1.27" layer="95"/>
 <attribute name="MPN" x="198.12" y="102.362" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="P76" gate="G$1" x="132.08" y="116.84" smashed="yes">
-<attribute name="VALUE" x="132.08" y="115.57" size="1.27" layer="96" align="top-center"/>
+<instance part="P76" gate="G$1" x="132.08" y="124.46" smashed="yes">
+<attribute name="VALUE" x="132.08" y="123.19" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -9118,10 +9088,6 @@ not decide to solder in.</text>
 <segment>
 <portref moduleinst="CELL12" port="V-"/>
 <pinref part="P21" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="P29" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
@@ -9633,10 +9599,6 @@ not decide to solder in.</text>
 <segment>
 <portref moduleinst="CELL19" port="V-"/>
 <pinref part="P19" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="P22" gate="G$1" pin="V-U"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
@@ -10319,17 +10281,6 @@ not decide to solder in.</text>
 <label x="78.74" y="147.32" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="A0"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="198.12" x2="106.68" y2="195.58" width="0.1524" layer="91"/>
-<junction x="106.68" y="198.12"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="195.58" x2="111.76" y2="195.58" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -10389,17 +10340,6 @@ not decide to solder in.</text>
 <pinref part="U1" gate="G$1" pin="IBIAS"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="129.54" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$66" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="A0"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="93.98" x2="106.68" y2="91.44" width="0.1524" layer="91"/>
-<junction x="106.68" y="93.98"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$67" class="0">
@@ -10536,6 +10476,11 @@ not decide to solder in.</text>
 <wire x1="91.44" y1="7.62" x2="93.98" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="P75" gate="G$1" pin="V-L"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="A0"/>
+<wire x1="104.14" y1="93.98" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="P29" gate="G$1" pin="V-L"/>
+</segment>
 </net>
 <net name="VREF2L" class="0">
 <segment>
@@ -10551,11 +10496,6 @@ not decide to solder in.</text>
 <pinref part="U2" gate="G$1" pin="VREF2"/>
 <wire x1="111.76" y1="50.8" x2="104.14" y2="50.8" width="0.1524" layer="91"/>
 <label x="106.68" y="50.8" size="1.27" layer="95"/>
-</segment>
-<segment>
-<pinref part="TP6" gate="G$1" pin="P$1"/>
-<wire x1="144.78" y1="58.42" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
-<label x="147.32" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="C6L" class="0">
@@ -10676,11 +10616,6 @@ not decide to solder in.</text>
 <wire x1="104.14" y1="154.94" x2="111.76" y2="154.94" width="0.1524" layer="91"/>
 <label x="106.68" y="154.94" size="1.27" layer="95"/>
 </segment>
-<segment>
-<pinref part="TP3" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="127" x2="127" y2="127" width="0.1524" layer="91"/>
-<label x="127" y="127" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="V-U" class="0">
 <segment>
@@ -10723,7 +10658,7 @@ not decide to solder in.</text>
 </segment>
 <segment>
 <pinref part="TP10" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="119.38" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="127" x2="132.08" y2="127" width="0.1524" layer="91"/>
 <pinref part="P76" gate="G$1" pin="V-U"/>
 </segment>
 </net>
@@ -10863,11 +10798,6 @@ not decide to solder in.</text>
 <pinref part="U2" gate="G$1" pin="VREG"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
-<label x="116.84" y="93.98" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
 <label x="137.16" y="96.52" size="1.27" layer="95" xref="yes"/>
@@ -10901,11 +10831,6 @@ not decide to solder in.</text>
 <pinref part="P66" gate="G$1" pin="VREGU"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="198.12" x2="116.84" y2="198.12" width="0.1524" layer="91"/>
-<label x="116.84" y="198.12" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <wire x1="127" y1="162.56" x2="127" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="EMITTER"/>
 <pinref part="C10" gate="G$1" pin="1"/>
@@ -10928,6 +10853,11 @@ not decide to solder in.</text>
 <pinref part="TP2" gate="G$1" pin="P$1"/>
 <wire x1="124.46" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
 <label x="127" y="134.62" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="104.14" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="A0"/>
+<label x="106.68" y="198.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CC12" class="0">
@@ -10972,7 +10902,7 @@ not decide to solder in.</text>
 <net name="V+L" class="0">
 <segment>
 <pinref part="TP7" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="111.76" x2="127" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="P51" gate="G$1" pin="V+L"/>
 </segment>
 </net>
