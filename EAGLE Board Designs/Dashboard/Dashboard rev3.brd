@@ -3276,12 +3276,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-360.0958" y1="-285.9913" x2="-378.06" y2="-300.852" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
-<contactref element="J1" pad="3"/>
-</signal>
-<signal name="N$58">
 <contactref element="R9" pad="2"/>
-<contactref element="U1" pad="28"/>
-<wire x1="-186.094" y1="-143.764" x2="-106.28" y2="-33.9" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="29"/>
+<contactref element="J1" pad="3"/>
+<wire x1="-186.094" y1="-143.764" x2="-107.08" y2="-33.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-377.912" y1="-271.654" x2="-186.094" y2="-143.764" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

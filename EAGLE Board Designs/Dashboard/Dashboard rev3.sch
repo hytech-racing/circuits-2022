@@ -6257,9 +6257,9 @@ general purpose rectifier</description>
 <attribute name="NAME" x="34.29" y="6.35" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="36.83" y="6.35" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R9" gate="G$1" x="93.98" y="134.62" smashed="yes">
-<attribute name="NAME" x="92.71" y="135.89" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="92.71" y="133.35" size="1.27" layer="96" align="top-center"/>
+<instance part="R9" gate="G$1" x="91.44" y="132.08" smashed="yes">
+<attribute name="NAME" x="90.17" y="133.35" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="90.17" y="130.81" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="R10" gate="G$1" x="177.8" y="63.5" smashed="yes">
 <attribute name="NAME" x="176.53" y="64.77" size="1.27" layer="95" align="bottom-center"/>
@@ -6959,7 +6959,7 @@ general purpose rectifier</description>
 </segment>
 <segment>
 <pinref part="P+15" gate="1" pin="+5V"/>
-<wire x1="86.36" y1="134.62" x2="88.9" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="134.62" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -8012,16 +8012,15 @@ general purpose rectifier</description>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="RESET"/>
-<wire x1="167.64" y1="193.04" x2="180.34" y2="193.04" width="0.1524" layer="91"/>
-<label x="167.64" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$58" class="0">
-<segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="PC5(ADC5)"/>
-<wire x1="96.52" y1="134.62" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PC6(!RESET!)"/>
+<wire x1="93.98" y1="132.08" x2="106.68" y2="132.08" width="0.1524" layer="91"/>
+<label x="101.6" y="132.08" size="1.27" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="RESET"/>
+<wire x1="180.34" y1="193.04" x2="167.64" y2="193.04" width="0.1524" layer="91"/>
+<label x="167.64" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
