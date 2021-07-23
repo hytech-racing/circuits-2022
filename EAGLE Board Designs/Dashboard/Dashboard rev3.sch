@@ -5076,30 +5076,6 @@ Layer: 94 Symbol</description>
 <wire x1="-3.275" y1="-1.775" x2="-3.275" y2="1.775" width="0.127" layer="21"/>
 <rectangle x1="-3.81" y1="-4.445" x2="3.81" y2="4.445" layer="39"/>
 </package>
-<package name="1X02">
-<description>0.1" Pitch Pin Header</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.127" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.127" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" first="yes"/>
-<pad name="2" x="1.27" y="0" drill="1.016"/>
-<text x="0" y="1.397" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="-2.54" y="1.27" radius="0.254" width="0" layer="21"/>
-<rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="39"/>
-<rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="40"/>
-</package>
 <package name="MOLEX_MINIFIT_PTH_06">
 <description>6 Pin Mini-Fit Vertical Header, Through Hole, Dual Row
 &lt;br&gt;
@@ -5442,14 +5418,6 @@ visible on the PCB.</text>
 <text x="9.525" y="-2.54" size="1.524" layer="95" align="center-right">OUT</text>
 <text x="6.35" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="JUMPER">
-<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<pin name="P$1" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="P$2" x="5.08" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<text x="0" y="0.508" size="1.27" layer="94">JUMP</text>
-<text x="0" y="2.54" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-3.302" size="1.27" layer="96" align="top-left">&gt;MODEL</text>
-</symbol>
 <symbol name="CONNECTOR_06">
 <wire x1="7.62" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
@@ -5621,23 +5589,6 @@ visible on the PCB.</text>
 <connect gate="G$1" pin="GND" pad="2 4"/>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMPER" prefix="J">
-<description>Jumper for changing operation of a device</description>
-<gates>
-<gate name="G$1" symbol="JUMPER" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name=".1" package="1X02">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5978,7 +5929,6 @@ general purpose rectifier</description>
 <part name="D12" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="YELLOW"/>
 <part name="D14" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
 <part name="U$6" library="HyTechDevices - Copy" deviceset="LM340" device=""/>
-<part name="J1" library="HyTechDevices - Copy" deviceset="JUMPER" device=".1"/>
 <part name="X5" library="HyTechDevices - Copy" deviceset="CONNECTOR-6" device="NANO-FIT_RIGHT_ANGLE-6-SURFACE"/>
 <part name="X8" library="HyTechDevices - Copy" deviceset="CONNECTOR-6" device="NANO-FIT_RIGHT_ANGLE-6-SURFACE"/>
 <part name="X7" library="HyTechDevices - Copy" deviceset="CONNECTOR-8" device="NANO-FIT_RIGHT_ANGLE-8-SURFACE"/>
@@ -6011,7 +5961,6 @@ general purpose rectifier</description>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U2" library="HyTechDevices" deviceset="TCAN1051*V-Q1" device="" technology="HQ"/>
 <part name="P22" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="120"/>
 <part name="X2" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
 <part name="C3" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_15PF"/>
 <part name="C7" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_15PF"/>
@@ -6044,7 +5993,6 @@ general purpose rectifier</description>
 <text x="127" y="22.86" size="2.54" layer="97">Ethan Weinstock</text>
 <text x="195.58" y="15.24" size="2.54" layer="97">Schematic of the Dashboard PCB for HT05</text>
 <text x="198.12" y="73.66" size="1.778" layer="97">Voltage regulation for the buzzer.</text>
-<text x="215.9" y="208.28" size="1.778" layer="97">CAN Termination for testing.</text>
 </plain>
 <instances>
 <instance part="P+3" gate="1" x="137.16" y="193.04" smashed="yes">
@@ -6296,9 +6244,6 @@ general purpose rectifier</description>
 <instance part="U$6" gate="G$1" x="109.22" y="203.2" smashed="yes">
 <attribute name="NAME" x="114.3" y="203.835" size="1.27" layer="95" align="bottom-center"/>
 </instance>
-<instance part="J1" gate="G$1" x="236.22" y="205.74" smashed="yes">
-<attribute name="NAME" x="236.22" y="208.28" size="1.27" layer="95"/>
-</instance>
 <instance part="X5" gate="G$1" x="17.78" y="187.96" smashed="yes">
 <attribute name="NAME" x="17.78" y="188.722" size="1.778" layer="95"/>
 </instance>
@@ -6452,10 +6397,6 @@ general purpose rectifier</description>
 </instance>
 <instance part="P22" gate="1" x="236.22" y="165.1" smashed="yes">
 <attribute name="VALUE" x="236.22" y="163.83" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R14" gate="G$1" x="226.06" y="203.2" smashed="yes">
-<attribute name="NAME" x="224.79" y="204.47" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="224.79" y="201.93" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="X2" gate="G$1" x="218.44" y="149.86" smashed="yes">
 <attribute name="NAME" x="217.17" y="153.035" size="1.27" layer="95" align="bottom-center"/>
@@ -6992,11 +6933,6 @@ general purpose rectifier</description>
 <pinref part="J3" gate="G$1" pin="CANL"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="203.2" x2="218.44" y2="203.2" width="0.1524" layer="91"/>
-<label x="218.44" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <wire x1="27.94" y1="177.8" x2="35.56" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="177.8" x2="35.56" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="172.72" x2="45.72" y2="172.72" width="0.1524" layer="91"/>
@@ -7014,11 +6950,6 @@ general purpose rectifier</description>
 <wire x1="30.48" y1="203.2" x2="33.02" y2="203.2" width="0.1524" layer="91"/>
 <label x="33.02" y="203.2" size="1.27" layer="95" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="CANH"/>
-</segment>
-<segment>
-<label x="248.92" y="203.2" size="1.27" layer="95" xref="yes"/>
-<wire x1="241.3" y1="203.2" x2="248.92" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
@@ -7411,13 +7342,6 @@ general purpose rectifier</description>
 <wire x1="165.1" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="D16" gate="1" pin="C"/>
-</segment>
-</net>
-<net name="N$39" class="0">
-<segment>
-<wire x1="228.6" y1="203.2" x2="236.22" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="P$1"/>
-<pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$40" class="0">
