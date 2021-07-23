@@ -1486,6 +1486,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE_CONTINUOUS" value="15.97V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="2.74K">
+<attribute name="DKPN" value="P20020CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B2741V"/>
+<attribute name="MPN" value="ERJ-PB3B2741V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="2.74k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="23.41V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="215K">
 <attribute name="DKPN" value="P215KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -7403,13 +7414,6 @@ Layer: 94 Symbol</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="V-">
-<wire x1="-0.889" y1="1.27" x2="0" y2="-0.127" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.127" x2="0.889" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-0.889" y1="1.27" x2="0.889" y2="1.27" width="0.254" layer="94"/>
-<text x="0" y="-1.27" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
-<pin name="V-" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="VREF2">
 <text x="0" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VREF2" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
@@ -7442,22 +7446,6 @@ Layer: 94 Symbol</description>
 <vertex x="0.889" y="1.27"/>
 </polygon>
 </symbol>
-<symbol name="VREF2L">
-<text x="0" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
-<pin name="VREF2L" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-<polygon width="0.254" layer="94">
-<vertex x="0.889" y="-1.27"/>
-<vertex x="-0.889" y="-1.27"/>
-<vertex x="0" y="0.127"/>
-</polygon>
-</symbol>
-<symbol name="VREF2U">
-<text x="0" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
-<pin name="VREF2U" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-<wire x1="0.889" y1="-1.27" x2="-0.889" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-0.889" y1="-1.27" x2="0" y2="0.127" width="0.254" layer="94"/>
-<wire x1="0" y1="0.127" x2="0.889" y2="-1.27" width="0.254" layer="94"/>
-</symbol>
 <symbol name="V-U">
 <wire x1="-0.889" y1="1.27" x2="0" y2="-0.127" width="0.254" layer="94"/>
 <wire x1="0" y1="-0.127" x2="0.889" y2="1.27" width="0.254" layer="94"/>
@@ -7483,19 +7471,6 @@ Layer: 94 Symbol</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="V-" prefix="P">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="V-" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="VREF2" prefix="P">
 <gates>
 <gate name="G$1" symbol="VREF2" x="0" y="0"/>
@@ -7536,30 +7511,6 @@ Layer: 94 Symbol</description>
 <deviceset name="V-L" prefix="P">
 <gates>
 <gate name="G$1" symbol="V-L" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VREF2L" prefix="P">
-<gates>
-<gate name="G$1" symbol="VREF2L" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VREF2U" prefix="P">
-<gates>
-<gate name="G$1" symbol="VREF2U" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7641,6 +7592,8 @@ Layer: 94 Symbol</description>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="C1" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESCRIPTION_1" value="This module is responsible for filtering the cell "/>
+<attribute name="DESCRIPTION_2" value="reading as well as discharging the cell when necessary."/>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
 </part>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_P_MOS_?_*" device="SOT23" technology="SI2369DS-T1-GE3"/>
@@ -7763,7 +7716,7 @@ Layer: 94 Symbol</description>
 <pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="V-(N)" class="0">
+<net name="V-" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="127" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
@@ -7822,26 +7775,6 @@ Layer: 94 Symbol</description>
 <part name="F19" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
 <part name="F20" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
 <part name="F21" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
-<part name="P1" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P2" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P3" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P4" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P5" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P6" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P7" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P8" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P9" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P10" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P11" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P12" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P13" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P14" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P15" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P16" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P17" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P18" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P19" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P21" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
@@ -7882,10 +7815,10 @@ Layer: 94 Symbol</description>
 <part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_0.1UF"/>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="P20" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.9K" value="RESISTOR_0603_5.9K"/>
-<part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.9K" value="RESISTOR_0603_5.9K"/>
-<part name="R31" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.9K" value="RESISTOR_0603_5.9K"/>
-<part name="R32" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.9K" value="RESISTOR_0603_5.9K"/>
+<part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2.74K" value="RESISTOR_0603_2.74K"/>
+<part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2.74K" value="RESISTOR_0603_2.74K"/>
+<part name="R31" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2.74K" value="RESISTOR_0603_2.74K"/>
+<part name="R32" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2.74K" value="RESISTOR_0603_2.74K"/>
 <part name="R45" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R46" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R47" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
@@ -7901,10 +7834,10 @@ Layer: 94 Symbol</description>
 <part name="J28" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="MICROFIT_SMD_RIGHTANGLE_02_SINGLE" technology="BLACK" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK"/>
 <part name="J32" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="MICROFIT_SMD_RIGHTANGLE_02_SINGLE" technology="BLACK" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK"/>
 <part name="J33" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="MICROFIT_SMD_RIGHTANGLE_02_SINGLE" technology="BLACK" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK"/>
-<part name="R34" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.9K" value="RESISTOR_0603_5.9K"/>
-<part name="R35" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.9K" value="RESISTOR_0603_5.9K"/>
-<part name="R36" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.9K" value="RESISTOR_0603_5.9K"/>
-<part name="R37" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.9K" value="RESISTOR_0603_5.9K"/>
+<part name="R34" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2.74K" value="RESISTOR_0603_2.74K"/>
+<part name="R35" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2.74K" value="RESISTOR_0603_2.74K"/>
+<part name="R36" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2.74K" value="RESISTOR_0603_2.74K"/>
+<part name="R37" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2.74K" value="RESISTOR_0603_2.74K"/>
 <part name="R39" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R41" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="R42" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
@@ -7934,7 +7867,7 @@ Layer: 94 Symbol</description>
 <part name="R52" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="C5" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_15PF"/>
 <part name="C6" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_15PF"/>
-<part name="P62" library="HyTechSupplies" deviceset="V-" device=""/>
+<part name="P62" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P67" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="U1" library="HyTechDevices" deviceset="LTC6811-2" device=""/>
 <part name="U2" library="HyTechDevices" deviceset="LTC6811-2" device=""/>
@@ -7961,8 +7894,8 @@ Layer: 94 Symbol</description>
 <part name="P41" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="C24" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P46" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="P52" library="HyTechSupplies" deviceset="VREF2L" device=""/>
-<part name="P57" library="HyTechSupplies" deviceset="VREF2U" device=""/>
+<part name="P52" library="HyTechSupplies" deviceset="VREGL" device=""/>
+<part name="P57" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="P72" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="C25" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P73" library="HyTechSupplies" deviceset="V-U" device=""/>
@@ -8002,11 +7935,36 @@ Layer: 94 Symbol</description>
 <part name="TP10" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP11" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP12" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP13" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP14" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="P76" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="P22" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P40" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P1" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P2" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P3" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P4" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P5" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P6" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P7" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P8" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P9" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P10" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P21" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P22" library="HyTechSupplies" deviceset="V-L" device=""/>
+<part name="P11" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P12" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P13" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P14" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P15" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P16" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P17" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P18" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P19" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P77" library="HyTechSupplies" deviceset="VREGL" device=""/>
+<part name="P78" library="HyTechSupplies" deviceset="VREGL" device=""/>
+<part name="P79" library="HyTechSupplies" deviceset="VREGL" device=""/>
+<part name="P80" library="HyTechSupplies" deviceset="VREGU" device=""/>
+<part name="P81" library="HyTechSupplies" deviceset="VREGU" device=""/>
+<part name="P82" library="HyTechSupplies" deviceset="VREGU" device=""/>
+<part name="P83" library="HyTechSupplies" deviceset="VREGU" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8260,66 +8218,6 @@ of the given LTC6811 chip.</text>
 <attribute name="NAME" x="21.59" y="194.31" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="21.59" y="191.77" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P1" gate="G$1" x="66.04" y="25.4" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="25.4" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P2" gate="G$1" x="66.04" y="33.02" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="33.02" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P3" gate="G$1" x="66.04" y="40.64" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="40.64" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P4" gate="G$1" x="66.04" y="48.26" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="48.26" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P5" gate="G$1" x="66.04" y="55.88" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="55.88" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P6" gate="G$1" x="66.04" y="63.5" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="63.5" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P7" gate="G$1" x="66.04" y="71.12" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="71.12" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P8" gate="G$1" x="66.04" y="78.74" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="78.74" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P9" gate="G$1" x="66.04" y="86.36" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="86.36" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P10" gate="G$1" x="66.04" y="93.98" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="93.98" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P11" gate="G$1" x="66.04" y="187.96" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="187.96" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P12" gate="G$1" x="66.04" y="180.34" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="180.34" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P13" gate="G$1" x="66.04" y="165.1" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="165.1" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P14" gate="G$1" x="66.04" y="157.48" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="157.48" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P15" gate="G$1" x="66.04" y="149.86" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="149.86" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P16" gate="G$1" x="66.04" y="142.24" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="142.24" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P17" gate="G$1" x="66.04" y="134.62" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="134.62" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P18" gate="G$1" x="66.04" y="127" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="127" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P19" gate="G$1" x="66.04" y="172.72" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="172.72" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P21" gate="G$1" x="66.04" y="101.6" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="101.6" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
 <instance part="R10" gate="G$1" x="134.62" y="198.12" smashed="yes" rot="R180">
 <attribute name="NAME" x="135.89" y="196.85" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="135.89" y="199.39" size="1.27" layer="96" rot="R180" align="top-center"/>
@@ -8497,46 +8395,46 @@ of the given LTC6811 chip.</text>
 <attribute name="NAME" x="247.65" y="158.75" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="247.65" y="161.29" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="R46" gate="G$1" x="248.92" y="172.72" smashed="yes" rot="R180">
-<attribute name="NAME" x="250.19" y="171.45" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="250.19" y="173.99" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R46" gate="G$1" x="246.38" y="172.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="247.65" y="171.45" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="173.99" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="R47" gate="G$1" x="248.92" y="185.42" smashed="yes" rot="R180">
-<attribute name="NAME" x="250.19" y="184.15" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="250.19" y="186.69" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R47" gate="G$1" x="246.38" y="185.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="247.65" y="184.15" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="186.69" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="R48" gate="G$1" x="248.92" y="198.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="250.19" y="196.85" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="250.19" y="199.39" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R48" gate="G$1" x="246.38" y="198.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="247.65" y="196.85" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="199.39" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="C15" gate="G$1" x="241.3" y="195.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="238.76" y="194.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="243.84" y="194.31" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="245.618" y="194.31" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C15" gate="G$1" x="238.76" y="195.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.22" y="194.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="241.3" y="194.31" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="243.078" y="194.31" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="C16" gate="G$1" x="241.3" y="182.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="238.76" y="181.61" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="243.84" y="181.61" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="245.618" y="181.61" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C16" gate="G$1" x="238.76" y="182.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.22" y="181.61" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="241.3" y="181.61" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="243.078" y="181.61" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="C17" gate="G$1" x="241.3" y="170.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="238.76" y="168.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="243.84" y="168.91" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="245.618" y="168.91" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C17" gate="G$1" x="238.76" y="170.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.22" y="168.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="241.3" y="168.91" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="243.078" y="168.91" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="C18" gate="G$1" x="238.76" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="236.22" y="156.21" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="241.3" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="243.078" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P37" gate="G$1" x="241.3" y="187.96" smashed="yes">
-<attribute name="VALUE" x="239.014" y="188.722" size="1.27" layer="96" align="top-center"/>
+<instance part="P37" gate="G$1" x="238.76" y="187.96" smashed="yes">
+<attribute name="VALUE" x="238.76" y="186.69" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P38" gate="G$1" x="241.3" y="175.26" smashed="yes">
-<attribute name="VALUE" x="239.268" y="175.768" size="1.27" layer="96" align="top-center"/>
+<instance part="P38" gate="G$1" x="238.76" y="175.26" smashed="yes">
+<attribute name="VALUE" x="238.76" y="173.99" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P39" gate="G$1" x="241.3" y="162.56" smashed="yes">
-<attribute name="VALUE" x="239.522" y="162.814" size="1.27" layer="96" align="top-center"/>
+<instance part="P39" gate="G$1" x="238.76" y="162.56" smashed="yes">
+<attribute name="VALUE" x="238.76" y="161.29" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="J27" gate="G$1" x="274.32" y="203.2" smashed="yes" rot="MR0">
 <attribute name="MODEL" x="275.082" y="194.691" size="1.4224" layer="96" rot="MR0" align="top-left"/>
@@ -8570,53 +8468,53 @@ of the given LTC6811 chip.</text>
 <attribute name="NAME" x="255.27" y="82.55" size="1.27" layer="95" rot="R270" align="bottom-center"/>
 <attribute name="RESISTANCE" x="252.73" y="82.55" size="1.27" layer="96" rot="R270" align="top-center"/>
 </instance>
-<instance part="R39" gate="G$1" x="248.92" y="86.36" smashed="yes" rot="R180">
-<attribute name="NAME" x="250.19" y="85.09" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="250.19" y="87.63" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R39" gate="G$1" x="246.38" y="86.36" smashed="yes" rot="R180">
+<attribute name="NAME" x="247.65" y="85.09" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="87.63" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="R41" gate="G$1" x="248.92" y="99.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="250.19" y="97.79" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="250.19" y="100.33" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R41" gate="G$1" x="246.38" y="99.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="247.65" y="97.79" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="100.33" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="R42" gate="G$1" x="248.92" y="111.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="250.19" y="110.49" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="250.19" y="113.03" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R42" gate="G$1" x="246.38" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="247.65" y="110.49" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="113.03" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="R43" gate="G$1" x="248.92" y="124.46" smashed="yes" rot="R180">
-<attribute name="NAME" x="250.19" y="123.19" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="250.19" y="125.73" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R43" gate="G$1" x="246.38" y="124.46" smashed="yes" rot="R180">
+<attribute name="NAME" x="247.65" y="123.19" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="125.73" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="C20" gate="G$1" x="241.3" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="238.76" y="120.65" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="243.84" y="120.65" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="245.618" y="120.65" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C20" gate="G$1" x="238.76" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.22" y="120.65" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="241.3" y="120.65" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="243.078" y="120.65" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="C21" gate="G$1" x="241.3" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="238.76" y="107.95" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="243.84" y="107.95" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="245.618" y="107.95" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C21" gate="G$1" x="238.76" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.22" y="107.95" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="241.3" y="107.95" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="243.078" y="107.95" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="C22" gate="G$1" x="241.3" y="96.52" smashed="yes" rot="R90">
-<attribute name="NAME" x="238.76" y="95.25" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="243.84" y="95.25" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="245.618" y="95.25" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C22" gate="G$1" x="238.76" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.22" y="95.25" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="241.3" y="95.25" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="243.078" y="95.25" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="C23" gate="G$1" x="241.3" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="238.76" y="82.55" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="243.84" y="82.55" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="245.618" y="82.55" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C23" gate="G$1" x="238.76" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.22" y="82.55" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="241.3" y="82.55" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="243.078" y="82.55" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P58" gate="G$1" x="241.3" y="76.2" smashed="yes">
-<attribute name="VALUE" x="240.284" y="75.438" size="1.27" layer="96" align="top-center"/>
+<instance part="P58" gate="G$1" x="238.76" y="76.2" smashed="yes">
+<attribute name="VALUE" x="238.76" y="74.93" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P59" gate="G$1" x="241.3" y="88.9" smashed="yes">
-<attribute name="VALUE" x="240.284" y="88.392" size="1.27" layer="96" align="top-center"/>
+<instance part="P59" gate="G$1" x="238.76" y="88.9" smashed="yes">
+<attribute name="VALUE" x="238.76" y="87.63" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P60" gate="G$1" x="241.3" y="101.6" smashed="yes">
-<attribute name="VALUE" x="240.03" y="101.092" size="1.27" layer="96" align="top-center"/>
+<instance part="P60" gate="G$1" x="238.76" y="101.6" smashed="yes">
+<attribute name="VALUE" x="238.76" y="100.33" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P61" gate="G$1" x="241.3" y="114.3" smashed="yes">
-<attribute name="VALUE" x="239.776" y="114.046" size="1.27" layer="96" align="top-center"/>
+<instance part="P61" gate="G$1" x="238.76" y="114.3" smashed="yes">
+<attribute name="VALUE" x="238.76" y="113.03" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="J37" gate="G$1" x="274.32" y="129.54" smashed="yes" rot="MR0">
 <attribute name="MODEL" x="274.32" y="121.285" size="1.4224" layer="96" rot="MR0" align="top-left"/>
@@ -8789,8 +8687,8 @@ of the given LTC6811 chip.</text>
 <instance part="P57" gate="G$1" x="271.78" y="149.86" smashed="yes">
 <attribute name="VALUE" x="271.78" y="151.13" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P72" gate="G$1" x="248.92" y="134.62" smashed="yes">
-<attribute name="VALUE" x="248.92" y="133.35" size="1.27" layer="96" align="top-center"/>
+<instance part="P72" gate="G$1" x="254" y="134.62" smashed="yes">
+<attribute name="VALUE" x="254" y="133.35" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="C25" gate="G$1" x="271.78" y="144.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="269.24" y="143.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -8921,80 +8819,109 @@ of the given LTC6811 chip.</text>
 <attribute name="NAME" x="119.38" y="128.778" size="1.27" layer="95"/>
 <attribute name="MPN" x="119.38" y="125.222" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP11" gate="G$1" x="182.88" y="111.76" smashed="yes">
-<attribute name="NAME" x="180.34" y="113.538" size="1.27" layer="95"/>
-<attribute name="MPN" x="180.34" y="109.982" size="1.27" layer="95" align="top-left"/>
+<instance part="TP11" gate="G$1" x="210.82" y="175.26" smashed="yes">
+<attribute name="NAME" x="208.28" y="177.038" size="1.27" layer="95"/>
+<attribute name="MPN" x="208.28" y="173.482" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP12" gate="G$1" x="182.88" y="104.14" smashed="yes">
-<attribute name="NAME" x="180.34" y="105.918" size="1.27" layer="95"/>
-<attribute name="MPN" x="180.34" y="102.362" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP13" gate="G$1" x="200.66" y="111.76" smashed="yes">
-<attribute name="NAME" x="198.12" y="113.538" size="1.27" layer="95"/>
-<attribute name="MPN" x="198.12" y="109.982" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP14" gate="G$1" x="200.66" y="104.14" smashed="yes">
-<attribute name="NAME" x="198.12" y="105.918" size="1.27" layer="95"/>
-<attribute name="MPN" x="198.12" y="102.362" size="1.27" layer="95" align="top-left"/>
+<instance part="TP12" gate="G$1" x="210.82" y="114.3" smashed="yes">
+<attribute name="NAME" x="208.28" y="116.078" size="1.27" layer="95"/>
+<attribute name="MPN" x="208.28" y="112.522" size="1.27" layer="95" align="top-left"/>
 </instance>
 <instance part="P76" gate="G$1" x="132.08" y="124.46" smashed="yes">
 <attribute name="VALUE" x="132.08" y="123.19" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="P40" gate="G$1" x="238.76" y="149.86" smashed="yes">
+<attribute name="VALUE" x="238.76" y="148.59" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P1" gate="G$1" x="66.04" y="101.6" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="101.6" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P2" gate="G$1" x="66.04" y="93.98" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="93.98" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P3" gate="G$1" x="66.04" y="86.36" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="86.36" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P4" gate="G$1" x="66.04" y="78.74" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="78.74" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P5" gate="G$1" x="66.04" y="71.12" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="71.12" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P6" gate="G$1" x="66.04" y="63.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="63.5" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P7" gate="G$1" x="66.04" y="55.88" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="55.88" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P8" gate="G$1" x="66.04" y="48.26" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="48.26" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P9" gate="G$1" x="66.04" y="40.64" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="40.64" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P10" gate="G$1" x="66.04" y="33.02" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="33.02" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P21" gate="G$1" x="66.04" y="25.4" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="25.4" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
 <instance part="P22" gate="G$1" x="66.04" y="17.78" smashed="yes" rot="R90">
 <attribute name="VALUE" x="67.31" y="17.78" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P40" gate="G$1" x="238.76" y="149.86" smashed="yes">
-<attribute name="VALUE" x="238.76" y="148.59" size="1.27" layer="96" align="top-center"/>
+<instance part="P11" gate="G$1" x="66.04" y="187.96" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="187.96" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P12" gate="G$1" x="66.04" y="180.34" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="180.34" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P13" gate="G$1" x="66.04" y="172.72" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="172.72" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P14" gate="G$1" x="66.04" y="165.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="165.1" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P15" gate="G$1" x="66.04" y="157.48" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="157.48" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P16" gate="G$1" x="66.04" y="149.86" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="149.86" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P17" gate="G$1" x="66.04" y="142.24" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="142.24" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P18" gate="G$1" x="66.04" y="134.62" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="134.62" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P19" gate="G$1" x="66.04" y="127" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.31" y="127" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P77" gate="G$1" x="111.76" y="60.96" smashed="yes">
+<attribute name="VALUE" x="111.76" y="62.23" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P78" gate="G$1" x="139.7" y="96.52" smashed="yes" rot="R270">
+<attribute name="VALUE" x="143.256" y="96.012" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P79" gate="G$1" x="160.02" y="99.06" smashed="yes" rot="R270">
+<attribute name="VALUE" x="163.83" y="98.552" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P80" gate="G$1" x="109.22" y="198.12" smashed="yes" rot="R270">
+<attribute name="VALUE" x="110.49" y="198.12" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="P81" gate="G$1" x="139.7" y="200.66" smashed="yes" rot="R270">
+<attribute name="VALUE" x="143.256" y="200.152" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P82" gate="G$1" x="160.02" y="203.2" smashed="yes" rot="R270">
+<attribute name="VALUE" x="163.83" y="202.692" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P83" gate="G$1" x="109.22" y="165.1" smashed="yes">
+<attribute name="VALUE" x="109.22" y="166.37" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="V-" class="0">
-<segment>
-<portref moduleinst="CELL2" port="V-"/>
-<pinref part="P1" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<portref moduleinst="CELL3" port="V-"/>
-<pinref part="P2" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<portref moduleinst="CELL4" port="V-"/>
-<pinref part="P3" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<portref moduleinst="CELL5" port="V-"/>
-<pinref part="P4" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<portref moduleinst="CELL6" port="V-"/>
-<pinref part="P5" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<portref moduleinst="CELL7" port="V-"/>
-<pinref part="P6" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<portref moduleinst="CELL8" port="V-"/>
-<pinref part="P7" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<portref moduleinst="CELL9" port="V-"/>
-<pinref part="P8" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<portref moduleinst="CELL10" port="V-"/>
-<pinref part="P9" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<portref moduleinst="CELL11" port="V-"/>
-<pinref part="P10" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<portref moduleinst="CELL12" port="V-"/>
-<pinref part="P21" gate="G$1" pin="V-L"/>
-</segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="P30" gate="G$1" pin="V-L"/>
@@ -9040,7 +8967,7 @@ of the given LTC6811 chip.</text>
 </segment>
 <segment>
 <pinref part="C28" gate="G$1" pin="1"/>
-<pinref part="P62" gate="G$1" pin="V-"/>
+<pinref part="P62" gate="G$1" pin="V-L"/>
 </segment>
 </net>
 <net name="IMU" class="0">
@@ -9055,11 +8982,6 @@ of the given LTC6811 chip.</text>
 <pinref part="U1" gate="G$1" pin="IM"/>
 <wire x1="104.14" y1="134.62" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
 <label x="106.68" y="134.62" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="TP12" gate="G$1" pin="P$1"/>
-<wire x1="185.42" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
-<label x="187.96" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SENSE18" class="0">
@@ -9406,11 +9328,6 @@ of the given LTC6811 chip.</text>
 <wire x1="104.14" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
 <label x="106.68" y="30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="TP14" gate="G$1" pin="P$1"/>
-<wire x1="203.2" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
-<label x="205.74" y="104.14" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="CC21" class="0">
 <segment>
@@ -9471,42 +9388,6 @@ of the given LTC6811 chip.</text>
 </net>
 <net name="V-B" class="0">
 <segment>
-<portref moduleinst="CELL21" port="V-"/>
-<pinref part="P11" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<portref moduleinst="CELL20" port="V-"/>
-<pinref part="P12" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<portref moduleinst="CELL18" port="V-"/>
-<pinref part="P13" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<portref moduleinst="CELL17" port="V-"/>
-<pinref part="P14" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<portref moduleinst="CELL16" port="V-"/>
-<pinref part="P15" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<portref moduleinst="CELL15" port="V-"/>
-<pinref part="P16" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<portref moduleinst="CELL14" port="V-"/>
-<pinref part="P17" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<portref moduleinst="CELL13" port="V-"/>
-<pinref part="P18" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<portref moduleinst="CELL19" port="V-"/>
-<pinref part="P19" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="P23" gate="G$1" pin="V-U"/>
 </segment>
@@ -9549,20 +9430,20 @@ of the given LTC6811 chip.</text>
 <segment>
 <portref moduleinst="CELL1" port="C(N)"/>
 <wire x1="63.5" y1="22.86" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="22.86" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="22.86" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C1"/>
-<wire x1="78.74" y1="30.48" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
-<label x="78.74" y="30.48" size="1.27" layer="95"/>
+<wire x1="76.2" y1="30.48" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
+<label x="81.28" y="30.48" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S1L" class="0">
 <segment>
 <portref moduleinst="CELL1" port="S(N)"/>
 <wire x1="63.5" y1="20.32" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="20.32" x2="78.74" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="20.32" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S1"/>
-<wire x1="78.74" y1="27.94" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
-<label x="81.28" y="27.94" size="1.27" layer="95" rot="MR0"/>
+<wire x1="76.2" y1="27.94" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
+<label x="81.28" y="27.94" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C7L" class="0">
@@ -9570,9 +9451,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL7" port="C(N)"/>
 <wire x1="63.5" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C7"/>
-<wire x1="81.28" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="60.96" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
-<label x="78.74" y="60.96" size="1.27" layer="95"/>
+<wire x1="81.28" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="60.96" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
+<label x="81.28" y="60.96" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C8L" class="0">
@@ -9580,8 +9461,8 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL8" port="C(N)"/>
 <wire x1="63.5" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C8"/>
-<wire x1="81.28" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="66.04" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="66.04" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
 <label x="78.74" y="66.04" size="1.27" layer="95"/>
 </segment>
 </net>
@@ -9590,9 +9471,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL9" port="C(N)"/>
 <wire x1="63.5" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C9"/>
-<wire x1="81.28" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="71.12" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
-<label x="78.74" y="71.12" size="1.27" layer="95"/>
+<wire x1="81.28" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="71.12" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
+<label x="81.28" y="71.12" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C10L" class="0">
@@ -9600,9 +9481,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL10" port="C(N)"/>
 <wire x1="63.5" y1="91.44" x2="68.58" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C10"/>
-<wire x1="81.28" y1="76.2" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="76.2" x2="68.58" y2="91.44" width="0.1524" layer="91"/>
-<label x="78.74" y="76.2" size="1.27" layer="95"/>
+<wire x1="81.28" y1="76.2" x2="76.2" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="76.2" x2="68.58" y2="91.44" width="0.1524" layer="91"/>
+<label x="81.28" y="76.2" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C11L" class="0">
@@ -9610,9 +9491,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL11" port="C(N)"/>
 <wire x1="63.5" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C11"/>
-<wire x1="81.28" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="81.28" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
-<label x="78.74" y="81.28" size="1.27" layer="95"/>
+<wire x1="81.28" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="81.28" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
+<label x="81.28" y="81.28" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S7L" class="0">
@@ -9620,9 +9501,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL7" port="S(N)"/>
 <wire x1="63.5" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S7"/>
-<wire x1="81.28" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="58.42" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
-<label x="78.74" y="58.42" size="1.27" layer="95"/>
+<wire x1="81.28" y1="58.42" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="58.42" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
+<label x="81.28" y="58.42" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S8L" class="0">
@@ -9630,9 +9511,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL8" port="S(N)"/>
 <wire x1="63.5" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S8"/>
-<wire x1="81.28" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="63.5" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
-<label x="78.74" y="63.5" size="1.27" layer="95"/>
+<wire x1="81.28" y1="63.5" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="63.5" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
+<label x="81.28" y="63.5" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S9L" class="0">
@@ -9640,9 +9521,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL9" port="S(N)"/>
 <wire x1="63.5" y1="81.28" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S9"/>
-<wire x1="81.28" y1="68.58" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="68.58" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
-<label x="78.74" y="68.58" size="1.27" layer="95"/>
+<wire x1="81.28" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="68.58" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
+<label x="81.28" y="68.58" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S10L" class="0">
@@ -9650,9 +9531,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL10" port="S(N)"/>
 <wire x1="63.5" y1="88.9" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S10"/>
-<wire x1="81.28" y1="73.66" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="73.66" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
-<label x="78.74" y="73.66" size="1.27" layer="95"/>
+<wire x1="81.28" y1="73.66" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="73.66" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
+<label x="81.28" y="73.66" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S11L" class="0">
@@ -9660,9 +9541,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL11" port="S(N)"/>
 <wire x1="63.5" y1="96.52" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S11"/>
-<wire x1="81.28" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="78.74" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
-<label x="78.74" y="78.74" size="1.27" layer="95"/>
+<wire x1="81.28" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="78.74" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
+<label x="81.28" y="78.74" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C12L" class="0">
@@ -9670,19 +9551,19 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL12" port="C(N)"/>
 <wire x1="63.5" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C12"/>
-<wire x1="81.28" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="86.36" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
-<label x="78.74" y="86.36" size="1.27" layer="95"/>
+<wire x1="81.28" y1="86.36" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="86.36" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
+<label x="81.28" y="86.36" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S12L" class="0">
 <segment>
 <portref moduleinst="CELL12" port="S(N)"/>
 <wire x1="63.5" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="104.14" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="104.14" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S12"/>
-<wire x1="78.74" y1="83.82" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
-<label x="78.74" y="83.82" size="1.27" layer="95"/>
+<wire x1="76.2" y1="83.82" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
+<label x="81.28" y="83.82" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="N$62" class="0">
@@ -9754,9 +9635,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL18" port="C(N)"/>
 <wire x1="63.5" y1="170.18" x2="68.58" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="C6"/>
-<wire x1="81.28" y1="160.02" x2="78.74" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="160.02" x2="68.58" y2="170.18" width="0.1524" layer="91"/>
-<label x="78.74" y="160.02" size="1.27" layer="95"/>
+<wire x1="81.28" y1="160.02" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="160.02" x2="68.58" y2="170.18" width="0.1524" layer="91"/>
+<label x="81.28" y="160.02" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S6U" class="0">
@@ -9764,9 +9645,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL18" port="S(N)"/>
 <wire x1="63.5" y1="167.64" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="S6"/>
-<wire x1="81.28" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="157.48" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
-<label x="78.74" y="157.48" size="1.27" layer="95"/>
+<wire x1="81.28" y1="157.48" x2="76.2" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="157.48" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
+<label x="81.28" y="157.48" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C3U" class="0">
@@ -9774,9 +9655,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL15" port="C(N)"/>
 <wire x1="63.5" y1="147.32" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="C3"/>
-<wire x1="68.58" y1="147.32" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
-<label x="78.74" y="144.78" size="1.27" layer="95"/>
+<wire x1="68.58" y1="147.32" x2="76.2" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
+<label x="81.28" y="144.78" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S3U" class="0">
@@ -9784,9 +9665,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL15" port="S(N)"/>
 <wire x1="63.5" y1="144.78" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="S3"/>
-<wire x1="68.58" y1="144.78" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="142.24" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
-<label x="78.74" y="142.24" size="1.27" layer="95"/>
+<wire x1="68.58" y1="144.78" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="142.24" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
+<label x="81.28" y="142.24" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C5U" class="0">
@@ -9794,9 +9675,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL17" port="C(N)"/>
 <wire x1="63.5" y1="162.56" x2="68.58" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="C5"/>
-<wire x1="81.28" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="154.94" x2="68.58" y2="162.56" width="0.1524" layer="91"/>
-<label x="78.74" y="154.94" size="1.27" layer="95"/>
+<wire x1="81.28" y1="154.94" x2="76.2" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="154.94" x2="68.58" y2="162.56" width="0.1524" layer="91"/>
+<label x="81.28" y="154.94" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S5U" class="0">
@@ -9804,9 +9685,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL17" port="S(N)"/>
 <wire x1="63.5" y1="160.02" x2="68.58" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="S5"/>
-<wire x1="81.28" y1="152.4" x2="78.74" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="152.4" x2="68.58" y2="160.02" width="0.1524" layer="91"/>
-<label x="78.74" y="152.4" size="1.27" layer="95"/>
+<wire x1="81.28" y1="152.4" x2="76.2" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="152.4" x2="68.58" y2="160.02" width="0.1524" layer="91"/>
+<label x="81.28" y="152.4" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S2U" class="0">
@@ -9814,7 +9695,7 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL14" port="S(N)"/>
 <pinref part="U1" gate="G$1" pin="S2"/>
 <wire x1="63.5" y1="137.16" x2="81.28" y2="137.16" width="0.1524" layer="91"/>
-<label x="78.74" y="137.16" size="1.27" layer="95"/>
+<label x="81.28" y="137.16" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="N$71" class="0">
@@ -9822,20 +9703,21 @@ of the given LTC6811 chip.</text>
 <pinref part="R25" gate="G$1" pin="1"/>
 <pinref part="R48" gate="G$1" pin="1"/>
 <pinref part="J27" gate="G$1" pin="2"/>
-<wire x1="254" y1="198.12" x2="264.16" y2="198.12" width="0.1524" layer="91"/>
-<junction x="254" y="198.12"/>
+<wire x1="251.46" y1="198.12" x2="264.16" y2="198.12" width="0.1524" layer="91"/>
+<junction x="251.46" y="198.12"/>
+<wire x1="251.46" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO1U" class="0">
 <segment>
-<wire x1="241.3" y1="198.12" x2="246.38" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="198.12" x2="241.3" y2="198.12" width="0.1524" layer="91"/>
-<junction x="241.3" y="198.12"/>
+<wire x1="238.76" y1="198.12" x2="243.84" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="198.12" x2="238.76" y2="198.12" width="0.1524" layer="91"/>
+<junction x="238.76" y="198.12"/>
 <pinref part="R48" gate="G$1" pin="2"/>
 <pinref part="C15" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="GPI01"/>
 <wire x1="104.14" y1="193.04" x2="231.14" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="193.04" x2="236.22" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="193.04" x2="233.68" y2="198.12" width="0.1524" layer="91"/>
 <label x="106.68" y="193.04" size="1.27" layer="95"/>
 </segment>
 </net>
@@ -9844,20 +9726,21 @@ of the given LTC6811 chip.</text>
 <pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="R47" gate="G$1" pin="1"/>
 <pinref part="J28" gate="G$1" pin="2"/>
-<wire x1="254" y1="185.42" x2="264.16" y2="185.42" width="0.1524" layer="91"/>
-<junction x="254" y="185.42"/>
+<wire x1="251.46" y1="185.42" x2="264.16" y2="185.42" width="0.1524" layer="91"/>
+<junction x="251.46" y="185.42"/>
+<wire x1="251.46" y1="185.42" x2="254" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO3U" class="0">
 <segment>
-<wire x1="241.3" y1="172.72" x2="246.38" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="172.72" x2="241.3" y2="172.72" width="0.1524" layer="91"/>
-<junction x="241.3" y="172.72"/>
+<wire x1="238.76" y1="172.72" x2="243.84" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="172.72" x2="238.76" y2="172.72" width="0.1524" layer="91"/>
+<junction x="238.76" y="172.72"/>
 <pinref part="R46" gate="G$1" pin="2"/>
 <pinref part="C17" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="GPI03"/>
 <wire x1="104.14" y1="187.96" x2="228.6" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="187.96" x2="236.22" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="187.96" x2="233.68" y2="172.72" width="0.1524" layer="91"/>
 <label x="106.68" y="187.96" size="1.27" layer="95"/>
 </segment>
 </net>
@@ -9866,21 +9749,21 @@ of the given LTC6811 chip.</text>
 <pinref part="R31" gate="G$1" pin="1"/>
 <pinref part="R46" gate="G$1" pin="1"/>
 <pinref part="J32" gate="G$1" pin="2"/>
-<wire x1="254" y1="172.72" x2="264.16" y2="172.72" width="0.1524" layer="91"/>
-<junction x="254" y="172.72"/>
+<wire x1="251.46" y1="172.72" x2="264.16" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="172.72" x2="254" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO4U" class="0">
 <segment>
-<wire x1="238.76" y1="160.02" x2="243.84" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="160.02" x2="238.76" y2="160.02" width="0.1524" layer="91"/>
-<junction x="238.76" y="160.02"/>
-<pinref part="R45" gate="G$1" pin="2"/>
-<pinref part="C18" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="GPI04"/>
 <wire x1="104.14" y1="185.42" x2="226.06" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="185.42" x2="236.22" y2="160.02" width="0.1524" layer="91"/>
 <label x="106.68" y="185.42" size="1.27" layer="95"/>
+<wire x1="226.06" y1="185.42" x2="233.68" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="R45" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="160.02" x2="243.84" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="160.02" x2="238.76" y2="160.02" width="0.1524" layer="91"/>
+<junction x="238.76" y="160.02"/>
 </segment>
 </net>
 <net name="N$80" class="0">
@@ -9896,28 +9779,29 @@ of the given LTC6811 chip.</text>
 <net name="GPIO5U" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPI05"/>
-<wire x1="236.22" y1="144.78" x2="223.52" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="182.88" x2="104.14" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="R51" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="144.78" x2="243.84" y2="144.78" width="0.1524" layer="91"/>
-<junction x="236.22" y="144.78"/>
+<label x="106.68" y="182.88" size="1.27" layer="95"/>
 <pinref part="R33" gate="G$1" pin="1"/>
+<pinref part="R51" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="144.78" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
 <junction x="243.84" y="144.78"/>
-<label x="106.68" y="182.88" size="1.27" layer="95"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="144.78" x2="243.84" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
+<junction x="236.22" y="144.78"/>
+<wire x1="233.68" y1="144.78" x2="223.52" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO2U" class="0">
 <segment>
-<wire x1="241.3" y1="185.42" x2="246.38" y2="185.42" width="0.1524" layer="91"/>
-<junction x="241.3" y="185.42"/>
-<wire x1="241.3" y1="185.42" x2="236.22" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="185.42" x2="243.84" y2="185.42" width="0.1524" layer="91"/>
+<junction x="238.76" y="185.42"/>
+<wire x1="238.76" y1="185.42" x2="233.68" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="R47" gate="G$1" pin="2"/>
 <pinref part="C16" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="GPI02"/>
 <wire x1="104.14" y1="190.5" x2="231.14" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="190.5" x2="236.22" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="190.5" x2="233.68" y2="185.42" width="0.1524" layer="91"/>
 <label x="106.68" y="190.5" size="1.27" layer="95"/>
 </segment>
 </net>
@@ -9926,20 +9810,21 @@ of the given LTC6811 chip.</text>
 <pinref part="R34" gate="G$1" pin="1"/>
 <pinref part="R43" gate="G$1" pin="1"/>
 <pinref part="J37" gate="G$1" pin="2"/>
-<wire x1="254" y1="124.46" x2="264.16" y2="124.46" width="0.1524" layer="91"/>
-<junction x="254" y="124.46"/>
+<wire x1="251.46" y1="124.46" x2="264.16" y2="124.46" width="0.1524" layer="91"/>
+<junction x="251.46" y="124.46"/>
+<wire x1="251.46" y1="124.46" x2="254" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO1L" class="0">
 <segment>
-<wire x1="241.3" y1="124.46" x2="246.38" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="124.46" x2="241.3" y2="124.46" width="0.1524" layer="91"/>
-<junction x="241.3" y="124.46"/>
+<wire x1="238.76" y1="124.46" x2="243.84" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="124.46" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
+<junction x="238.76" y="124.46"/>
 <pinref part="R43" gate="G$1" pin="2"/>
 <pinref part="C20" gate="G$1" pin="1"/>
 <pinref part="U2" gate="G$1" pin="GPI01"/>
 <wire x1="104.14" y1="88.9" x2="223.52" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="88.9" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="88.9" x2="233.68" y2="124.46" width="0.1524" layer="91"/>
 <label x="106.68" y="88.9" size="1.27" layer="95"/>
 </segment>
 </net>
@@ -9948,20 +9833,21 @@ of the given LTC6811 chip.</text>
 <pinref part="R35" gate="G$1" pin="1"/>
 <pinref part="R42" gate="G$1" pin="1"/>
 <pinref part="J38" gate="G$1" pin="2"/>
-<wire x1="254" y1="111.76" x2="264.16" y2="111.76" width="0.1524" layer="91"/>
-<junction x="254" y="111.76"/>
+<wire x1="251.46" y1="111.76" x2="264.16" y2="111.76" width="0.1524" layer="91"/>
+<junction x="251.46" y="111.76"/>
+<wire x1="251.46" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO2L" class="0">
 <segment>
-<wire x1="241.3" y1="111.76" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
-<junction x="241.3" y="111.76"/>
+<wire x1="238.76" y1="111.76" x2="243.84" y2="111.76" width="0.1524" layer="91"/>
+<junction x="238.76" y="111.76"/>
 <pinref part="R42" gate="G$1" pin="2"/>
 <pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="111.76" x2="241.3" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="111.76" x2="238.76" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="GPI02"/>
 <wire x1="104.14" y1="86.36" x2="226.06" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="86.36" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="86.36" x2="233.68" y2="111.76" width="0.1524" layer="91"/>
 <label x="106.68" y="86.36" size="1.27" layer="95"/>
 </segment>
 </net>
@@ -9970,20 +9856,21 @@ of the given LTC6811 chip.</text>
 <pinref part="R36" gate="G$1" pin="1"/>
 <pinref part="R41" gate="G$1" pin="1"/>
 <pinref part="J39" gate="G$1" pin="2"/>
-<wire x1="254" y1="99.06" x2="264.16" y2="99.06" width="0.1524" layer="91"/>
-<junction x="254" y="99.06"/>
+<wire x1="251.46" y1="99.06" x2="264.16" y2="99.06" width="0.1524" layer="91"/>
+<junction x="251.46" y="99.06"/>
+<wire x1="251.46" y1="99.06" x2="254" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO3L" class="0">
 <segment>
-<wire x1="241.3" y1="99.06" x2="246.38" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="99.06" x2="241.3" y2="99.06" width="0.1524" layer="91"/>
-<junction x="241.3" y="99.06"/>
+<wire x1="238.76" y1="99.06" x2="243.84" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="99.06" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
+<junction x="238.76" y="99.06"/>
 <pinref part="R41" gate="G$1" pin="2"/>
 <pinref part="C22" gate="G$1" pin="1"/>
 <pinref part="U2" gate="G$1" pin="GPI03"/>
 <wire x1="104.14" y1="83.82" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="83.82" x2="236.22" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="83.82" x2="233.68" y2="99.06" width="0.1524" layer="91"/>
 <label x="106.68" y="83.82" size="1.27" layer="95"/>
 </segment>
 </net>
@@ -9992,65 +9879,25 @@ of the given LTC6811 chip.</text>
 <pinref part="R37" gate="G$1" pin="1"/>
 <pinref part="R39" gate="G$1" pin="1"/>
 <pinref part="J40" gate="G$1" pin="2"/>
-<wire x1="254" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
-<junction x="254" y="86.36"/>
+<wire x1="251.46" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
+<junction x="251.46" y="86.36"/>
+<wire x1="251.46" y1="86.36" x2="254" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO5L" class="0">
 <segment>
-<wire x1="236.22" y1="71.12" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="GPI05"/>
 <wire x1="104.14" y1="78.74" x2="231.14" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="78.74" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
+<label x="106.68" y="78.74" size="1.27" layer="95"/>
 <pinref part="R38" gate="G$1" pin="1"/>
 <pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="66.04" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
 <junction x="243.84" y="71.12"/>
+<wire x1="236.22" y1="71.12" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="C19" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="71.12" x2="233.68" y2="71.12" width="0.1524" layer="91"/>
 <junction x="236.22" y="71.12"/>
-<label x="106.68" y="78.74" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="TIO1N" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="147.32" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="R52" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="147.32" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
-<junction x="205.74" y="147.32"/>
-<pinref part="J34" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="157.48" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
-<label x="205.74" y="147.32" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="TIO2N" class="0">
-<segment>
-<pinref part="R49" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="J35" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="132.08" x2="210.82" y2="121.92" width="0.1524" layer="91"/>
-<label x="205.74" y="121.92" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="TIO2P" class="0">
-<segment>
-<pinref part="R50" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="142.24" x2="210.82" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="J35" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="142.24" x2="210.82" y2="134.62" width="0.1524" layer="91"/>
-<label x="205.74" y="142.24" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="TIO1P" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="R52" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="167.64" x2="205.74" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="167.64" x2="210.82" y2="167.64" width="0.1524" layer="91"/>
-<junction x="205.74" y="167.64"/>
-<pinref part="J34" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="167.64" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
-<label x="205.74" y="167.64" size="1.27" layer="95"/>
+<wire x1="233.68" y1="71.12" x2="231.14" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$97" class="0">
@@ -10070,9 +9917,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL19" port="S(N)"/>
 <wire x1="63.5" y1="175.26" x2="68.58" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="S7"/>
-<wire x1="81.28" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="162.56" x2="68.58" y2="175.26" width="0.1524" layer="91"/>
-<label x="78.74" y="162.56" size="1.27" layer="95"/>
+<wire x1="81.28" y1="162.56" x2="76.2" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="162.56" x2="68.58" y2="175.26" width="0.1524" layer="91"/>
+<label x="81.28" y="162.56" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C2U" class="0">
@@ -10080,48 +9927,48 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL14" port="C(N)"/>
 <pinref part="U1" gate="G$1" pin="C2"/>
 <wire x1="63.5" y1="139.7" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
-<label x="78.74" y="139.7" size="1.27" layer="95"/>
+<label x="81.28" y="139.7" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C1U" class="0">
 <segment>
 <portref moduleinst="CELL13" port="C(N)"/>
 <wire x1="63.5" y1="132.08" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="132.08" x2="78.74" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="132.08" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="C1"/>
-<wire x1="78.74" y1="134.62" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
-<label x="78.74" y="134.62" size="1.27" layer="95"/>
+<wire x1="76.2" y1="134.62" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
+<label x="81.28" y="134.62" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S1U" class="0">
 <segment>
 <portref moduleinst="CELL13" port="S(N)"/>
 <wire x1="63.5" y1="129.54" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="129.54" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="129.54" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="S1"/>
-<wire x1="78.74" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
-<label x="78.74" y="132.08" size="1.27" layer="95"/>
+<wire x1="76.2" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
+<label x="81.28" y="132.08" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C9U" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="C12"/>
-<wire x1="81.28" y1="190.5" x2="78.74" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="190.5" x2="78.74" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="190.5" x2="76.2" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="190.5" x2="76.2" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="C11"/>
-<wire x1="78.74" y1="185.42" x2="81.28" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="185.42" x2="78.74" y2="180.34" width="0.1524" layer="91"/>
-<junction x="78.74" y="185.42"/>
+<wire x1="76.2" y1="185.42" x2="81.28" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="185.42" x2="76.2" y2="180.34" width="0.1524" layer="91"/>
+<junction x="76.2" y="185.42"/>
 <pinref part="U1" gate="G$1" pin="C10"/>
-<wire x1="78.74" y1="180.34" x2="81.28" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="180.34" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
-<junction x="78.74" y="180.34"/>
+<wire x1="76.2" y1="180.34" x2="81.28" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="180.34" x2="76.2" y2="175.26" width="0.1524" layer="91"/>
+<junction x="76.2" y="180.34"/>
 <pinref part="U1" gate="G$1" pin="C9"/>
-<wire x1="78.74" y1="175.26" x2="81.28" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="175.26" x2="81.28" y2="175.26" width="0.1524" layer="91"/>
 <portref moduleinst="CELL21" port="C(N)"/>
 <wire x1="63.5" y1="193.04" x2="68.58" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="193.04" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
-<label x="78.74" y="175.26" size="1.27" layer="95"/>
+<wire x1="68.58" y1="193.04" x2="76.2" y2="175.26" width="0.1524" layer="91"/>
+<label x="81.28" y="175.26" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S9U" class="0">
@@ -10129,39 +9976,39 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL21" port="S(N)"/>
 <wire x1="63.5" y1="190.5" x2="68.58" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="S9"/>
-<wire x1="81.28" y1="172.72" x2="78.74" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="172.72" x2="68.58" y2="190.5" width="0.1524" layer="91"/>
-<label x="78.74" y="172.72" size="1.27" layer="95"/>
+<wire x1="81.28" y1="172.72" x2="76.2" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="172.72" x2="68.58" y2="190.5" width="0.1524" layer="91"/>
+<label x="81.28" y="172.72" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C8U" class="0">
 <segment>
 <portref moduleinst="CELL20" port="C(N)"/>
 <wire x1="63.5" y1="185.42" x2="68.58" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="185.42" x2="78.74" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="185.42" x2="76.2" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="C8"/>
-<wire x1="78.74" y1="170.18" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
-<label x="78.74" y="170.18" size="1.27" layer="95"/>
+<wire x1="76.2" y1="170.18" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
+<label x="81.28" y="170.18" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S8U" class="0">
 <segment>
 <portref moduleinst="CELL20" port="S(N)"/>
 <wire x1="63.5" y1="182.88" x2="68.58" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="182.88" x2="78.74" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="182.88" x2="76.2" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="S8"/>
-<wire x1="78.74" y1="167.64" x2="81.28" y2="167.64" width="0.1524" layer="91"/>
-<label x="78.74" y="167.64" size="1.27" layer="95"/>
+<wire x1="76.2" y1="167.64" x2="81.28" y2="167.64" width="0.1524" layer="91"/>
+<label x="81.28" y="167.64" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C7U" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="C7"/>
-<wire x1="81.28" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="165.1" x2="76.2" y2="165.1" width="0.1524" layer="91"/>
 <portref moduleinst="CELL19" port="C(N)"/>
 <wire x1="63.5" y1="177.8" x2="68.58" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="177.8" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
-<label x="78.74" y="165.1" size="1.27" layer="95"/>
+<wire x1="68.58" y1="177.8" x2="76.2" y2="165.1" width="0.1524" layer="91"/>
+<label x="81.28" y="165.1" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C4U" class="0">
@@ -10169,9 +10016,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL16" port="C(N)"/>
 <wire x1="63.5" y1="154.94" x2="68.58" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="C4"/>
-<wire x1="68.58" y1="154.94" x2="78.74" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
-<label x="78.74" y="149.86" size="1.27" layer="95"/>
+<wire x1="68.58" y1="154.94" x2="76.2" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
+<label x="81.28" y="149.86" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S4U" class="0">
@@ -10179,9 +10026,9 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL16" port="S(N)"/>
 <wire x1="63.5" y1="152.4" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="S4"/>
-<wire x1="68.58" y1="152.4" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
-<label x="78.74" y="147.32" size="1.27" layer="95"/>
+<wire x1="68.58" y1="152.4" x2="76.2" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
+<label x="81.28" y="147.32" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -10306,11 +10153,11 @@ of the given LTC6811 chip.</text>
 <wire x1="71.12" y1="17.78" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="12.7" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C0"/>
-<wire x1="81.28" y1="25.4" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="25.4" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="25.4" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
 <junction x="71.12" y="17.78"/>
 <pinref part="R53" gate="G$1" pin="2"/>
-<label x="81.28" y="25.4" size="1.27" layer="95" rot="MR0"/>
+<label x="81.28" y="25.4" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C0U" class="0">
@@ -10323,7 +10170,7 @@ of the given LTC6811 chip.</text>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
 <junction x="68.58" y="121.92"/>
-<label x="78.74" y="129.54" size="1.27" layer="95"/>
+<label x="81.28" y="129.54" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="N$81" class="0">
@@ -10385,6 +10232,50 @@ of the given LTC6811 chip.</text>
 <pinref part="P29" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
+<portref moduleinst="CELL12" port="V-"/>
+<pinref part="P1" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<portref moduleinst="CELL11" port="V-"/>
+<pinref part="P2" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<portref moduleinst="CELL10" port="V-"/>
+<pinref part="P3" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<portref moduleinst="CELL9" port="V-"/>
+<pinref part="P4" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<portref moduleinst="CELL8" port="V-"/>
+<pinref part="P5" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<portref moduleinst="CELL7" port="V-"/>
+<pinref part="P6" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<portref moduleinst="CELL6" port="V-"/>
+<pinref part="P7" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<portref moduleinst="CELL5" port="V-"/>
+<pinref part="P8" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<portref moduleinst="CELL4" port="V-"/>
+<pinref part="P9" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<portref moduleinst="CELL3" port="V-"/>
+<pinref part="P10" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<portref moduleinst="CELL2" port="V-"/>
+<pinref part="P21" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
 <portref moduleinst="CELL1" port="V-"/>
 <pinref part="P22" gate="G$1" pin="V-L"/>
 </segment>
@@ -10393,7 +10284,7 @@ of the given LTC6811 chip.</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="VDD"/>
 <pinref part="C24" gate="G$1" pin="1"/>
-<pinref part="P52" gate="G$1" pin="VREF2L"/>
+<pinref part="P52" gate="G$1" pin="VREGL"/>
 <junction x="271.78" y="73.66"/>
 <junction x="271.78" y="73.66"/>
 <wire x1="271.78" y1="73.66" x2="269.24" y2="73.66" width="0.1524" layer="91"/>
@@ -10409,40 +10300,40 @@ of the given LTC6811 chip.</text>
 <segment>
 <portref moduleinst="CELL6" port="C(N)"/>
 <wire x1="63.5" y1="60.96" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="60.96" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="60.96" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C6"/>
-<wire x1="78.74" y1="55.88" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
-<label x="78.74" y="55.88" size="1.27" layer="95"/>
+<wire x1="76.2" y1="55.88" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+<label x="81.28" y="55.88" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S6L" class="0">
 <segment>
 <portref moduleinst="CELL6" port="S(N)"/>
 <wire x1="63.5" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="58.42" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="58.42" x2="76.2" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S6"/>
-<wire x1="78.74" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
-<label x="78.74" y="53.34" size="1.27" layer="95"/>
+<wire x1="76.2" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<label x="81.28" y="53.34" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C5L" class="0">
 <segment>
 <portref moduleinst="CELL5" port="C(N)"/>
 <wire x1="63.5" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="53.34" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="53.34" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C5"/>
-<wire x1="78.74" y1="50.8" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
-<label x="78.74" y="50.8" size="1.27" layer="95"/>
+<wire x1="76.2" y1="50.8" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
+<label x="81.28" y="50.8" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S5L" class="0">
 <segment>
 <portref moduleinst="CELL5" port="S(N)"/>
 <wire x1="63.5" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="50.8" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="50.8" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S5"/>
-<wire x1="78.74" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
-<label x="78.74" y="48.26" size="1.27" layer="95"/>
+<wire x1="76.2" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
+<label x="81.28" y="48.26" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C4L" class="0">
@@ -10450,7 +10341,7 @@ of the given LTC6811 chip.</text>
 <pinref part="U2" gate="G$1" pin="C4"/>
 <portref moduleinst="CELL4" port="C(N)"/>
 <wire x1="63.5" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
-<label x="78.74" y="45.72" size="1.27" layer="95"/>
+<label x="81.28" y="45.72" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S4L" class="0">
@@ -10458,47 +10349,47 @@ of the given LTC6811 chip.</text>
 <pinref part="U2" gate="G$1" pin="S4"/>
 <portref moduleinst="CELL4" port="S(N)"/>
 <wire x1="63.5" y1="43.18" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
-<label x="78.74" y="43.18" size="1.27" layer="95"/>
+<label x="81.28" y="43.18" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C3L" class="0">
 <segment>
 <portref moduleinst="CELL3" port="C(N)"/>
 <wire x1="63.5" y1="38.1" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="38.1" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="38.1" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C3"/>
-<wire x1="78.74" y1="40.64" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
-<label x="78.74" y="40.64" size="1.27" layer="95"/>
+<wire x1="76.2" y1="40.64" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
+<label x="81.28" y="40.64" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S3L" class="0">
 <segment>
 <portref moduleinst="CELL3" port="S(N)"/>
 <wire x1="63.5" y1="35.56" x2="68.58" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="35.56" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="35.56" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S3"/>
-<wire x1="78.74" y1="38.1" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
-<label x="78.74" y="38.1" size="1.27" layer="95"/>
+<wire x1="76.2" y1="38.1" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
+<label x="81.28" y="38.1" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="C2L" class="0">
 <segment>
 <portref moduleinst="CELL2" port="C(N)"/>
 <wire x1="63.5" y1="30.48" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="30.48" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="30.48" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="C2"/>
-<wire x1="78.74" y1="35.56" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
-<label x="78.74" y="35.56" size="1.27" layer="95"/>
+<wire x1="76.2" y1="35.56" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
+<label x="81.28" y="35.56" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="S2L" class="0">
 <segment>
 <portref moduleinst="CELL2" port="S(N)"/>
 <wire x1="63.5" y1="27.94" x2="68.58" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="27.94" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="27.94" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="S2"/>
-<wire x1="78.74" y1="33.02" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
-<label x="78.74" y="33.02" size="1.27" layer="95"/>
+<wire x1="76.2" y1="33.02" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
+<label x="81.28" y="33.02" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -10511,7 +10402,7 @@ of the given LTC6811 chip.</text>
 <net name="VREF2U" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="VDD"/>
-<pinref part="P57" gate="G$1" pin="VREF2U"/>
+<pinref part="P57" gate="G$1" pin="VREGU"/>
 <pinref part="C25" gate="G$1" pin="1"/>
 <junction x="271.78" y="147.32"/>
 <junction x="271.78" y="147.32"/>
@@ -10528,7 +10419,6 @@ of the given LTC6811 chip.</text>
 <segment>
 <pinref part="P72" gate="G$1" pin="V-U"/>
 <pinref part="U4" gate="G$1" pin="GND"/>
-<wire x1="248.92" y1="137.16" x2="254" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
@@ -10572,6 +10462,42 @@ of the given LTC6811 chip.</text>
 <pinref part="P40" gate="G$1" pin="V-U"/>
 <pinref part="C18" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<portref moduleinst="CELL21" port="V-"/>
+<pinref part="P11" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<portref moduleinst="CELL20" port="V-"/>
+<pinref part="P12" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<portref moduleinst="CELL19" port="V-"/>
+<pinref part="P13" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<portref moduleinst="CELL18" port="V-"/>
+<pinref part="P14" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<portref moduleinst="CELL17" port="V-"/>
+<pinref part="P15" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<portref moduleinst="CELL16" port="V-"/>
+<pinref part="P16" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<portref moduleinst="CELL15" port="V-"/>
+<pinref part="P17" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<portref moduleinst="CELL14" port="V-"/>
+<pinref part="P18" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<portref moduleinst="CELL13" port="V-"/>
+<pinref part="P19" gate="G$1" pin="V-U"/>
+</segment>
 </net>
 <net name="SENSE0" class="0">
 <segment>
@@ -10591,13 +10517,13 @@ of the given LTC6811 chip.</text>
 <net name="GPIO4L" class="0">
 <segment>
 <pinref part="R39" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="86.36" x2="246.38" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="86.36" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C23" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="86.36" x2="236.22" y2="86.36" width="0.1524" layer="91"/>
-<junction x="241.3" y="86.36"/>
+<wire x1="238.76" y1="86.36" x2="233.68" y2="86.36" width="0.1524" layer="91"/>
+<junction x="238.76" y="86.36"/>
 <pinref part="U2" gate="G$1" pin="GPI04"/>
 <wire x1="104.14" y1="81.28" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="86.36" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="86.36" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
 <label x="106.68" y="81.28" size="1.27" layer="95"/>
 </segment>
 </net>
@@ -10614,11 +10540,6 @@ of the given LTC6811 chip.</text>
 <pinref part="T1" gate="A" pin="TD-"/>
 <junction x="152.4" y="165.1"/>
 </segment>
-<segment>
-<pinref part="TP11" gate="G$1" pin="P$1"/>
-<wire x1="185.42" y1="111.76" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
-<label x="187.96" y="111.76" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="IPL" class="0">
 <segment>
@@ -10632,11 +10553,6 @@ of the given LTC6811 chip.</text>
 <pinref part="U2" gate="G$1" pin="IP"/>
 <wire x1="104.14" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
 <label x="106.68" y="33.02" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="TP13" gate="G$1" pin="P$1"/>
-<wire x1="203.2" y1="111.76" x2="205.74" y2="111.76" width="0.1524" layer="91"/>
-<label x="205.74" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -10703,20 +10619,22 @@ of the given LTC6811 chip.</text>
 <pinref part="Q1" gate="G$1" pin="EMITTER"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="127" y1="58.42" x2="127" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="58.42" x2="127" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="58.42" x2="111.76" y2="58.42" width="0.1524" layer="91"/>
 <junction x="127" y="58.42"/>
-<label x="106.68" y="58.42" size="1.27" layer="95"/>
 <pinref part="U2" gate="G$1" pin="VREG"/>
+<pinref part="P77" gate="G$1" pin="VREGL"/>
+<wire x1="111.76" y1="58.42" x2="127" y2="58.42" width="0.1524" layer="91"/>
+<junction x="111.76" y="58.42"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
-<label x="137.16" y="96.52" size="1.27" layer="95" xref="yes"/>
+<pinref part="P78" gate="G$1" pin="VREGL"/>
 </segment>
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="99.06" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
-<label x="157.48" y="99.06" size="1.27" layer="95" xref="yes"/>
+<pinref part="P79" gate="G$1" pin="VREGL"/>
 </segment>
 <segment>
 <pinref part="TP5" gate="G$1" pin="P$1"/>
@@ -10745,20 +10663,22 @@ of the given LTC6811 chip.</text>
 <wire x1="127" y1="162.56" x2="127" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="EMITTER"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<label x="106.68" y="162.56" size="1.27" layer="95"/>
 <pinref part="U1" gate="G$1" pin="VREG"/>
-<wire x1="104.14" y1="162.56" x2="127" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="162.56" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
 <junction x="127" y="162.56"/>
+<pinref part="P83" gate="G$1" pin="VREGU"/>
+<wire x1="109.22" y1="162.56" x2="127" y2="162.56" width="0.1524" layer="91"/>
+<junction x="109.22" y="162.56"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="200.66" x2="137.16" y2="200.66" width="0.1524" layer="91"/>
-<label x="137.16" y="200.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="P81" gate="G$1" pin="VREGU"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="203.2" x2="157.48" y2="203.2" width="0.1524" layer="91"/>
-<label x="157.48" y="203.2" size="1.27" layer="95" xref="yes"/>
+<pinref part="P82" gate="G$1" pin="VREGU"/>
 </segment>
 <segment>
 <pinref part="TP2" gate="G$1" pin="P$1"/>
@@ -10768,7 +10688,7 @@ of the given LTC6811 chip.</text>
 <segment>
 <wire x1="104.14" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="A0"/>
-<label x="106.68" y="198.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="P80" gate="G$1" pin="VREGU"/>
 </segment>
 </net>
 <net name="CC12" class="0">
@@ -10787,8 +10707,12 @@ of the given LTC6811 chip.</text>
 <segment>
 <pinref part="F22" gate="G$1" pin="2"/>
 <pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
 <label x="33.02" y="111.76" size="1.27" layer="95"/>
+<portref moduleinst="CELL12" port="CELL+"/>
+<wire x1="33.02" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="106.68" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
+<junction x="33.02" y="111.76"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -10801,13 +10725,13 @@ of the given LTC6811 chip.</text>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="P20" gate="G$1" pin="V-U"/>
 <pinref part="F12" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="121.92" x2="30.48" y2="127" width="0.1524" layer="91"/>
-<portref moduleinst="CELL13" port="CELL-"/>
-<wire x1="30.48" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
-<junction x="30.48" y="121.92"/>
+<wire x1="30.48" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
 <junction x="58.42" y="121.92"/>
 <label x="33.02" y="121.92" size="1.27" layer="95"/>
+<portref moduleinst="CELL13" port="CELL-"/>
+<wire x1="33.02" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="127" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
+<junction x="33.02" y="121.92"/>
 </segment>
 </net>
 <net name="V+L" class="0">
@@ -10841,6 +10765,54 @@ of the given LTC6811 chip.</text>
 <label x="114.3" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="IM" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R52" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="147.32" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="J34" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="157.48" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
+<junction x="205.74" y="147.32"/>
+<label x="208.28" y="147.32" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="R49" gate="G$1" pin="1"/>
+<pinref part="J35" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="121.92" x2="210.82" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="121.92" x2="210.82" y2="132.08" width="0.1524" layer="91"/>
+<label x="208.28" y="121.92" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="TP12" gate="G$1" pin="P$1"/>
+<wire x1="213.36" y1="114.3" x2="215.9" y2="114.3" width="0.1524" layer="91"/>
+<label x="215.9" y="114.3" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="IP" class="0">
+<segment>
+<pinref part="R52" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="162.56" x2="205.74" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="J34" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="167.64" x2="210.82" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="167.64" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
+<junction x="205.74" y="167.64"/>
+<label x="208.28" y="167.64" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="J35" gate="G$1" pin="1"/>
+<pinref part="R50" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="134.62" x2="210.82" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
+<label x="208.28" y="142.24" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="TP11" gate="G$1" pin="P$1"/>
+<wire x1="213.36" y1="175.26" x2="215.9" y2="175.26" width="0.1524" layer="91"/>
+<label x="215.9" y="175.26" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -10850,6 +10822,11 @@ of the given LTC6811 chip.</text>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="9.0" severity="warning">
+Since Version 9.0, EAGLE supports the align property for labels. 
+Labels in schematic will not be understood with this version. Update EAGLE to the latest version 
+for full support of labels. 
 </note>
 </compatibility>
 </eagle>
