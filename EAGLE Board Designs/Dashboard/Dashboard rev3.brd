@@ -2208,6 +2208,28 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="-367.792" y="-284.48" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="5V" x="-366.268" y="-284.48" size="1.778" layer="27" display="off"/>
 </element>
+<element name="RN7" library="HyTechDevices" package="1206-RES-ARRAY" value="RESISTOR_NETWORK_4_10" x="-365.76" y="-289.56" smashed="yes">
+<attribute name="DKPN" value="CAT16-100J4LFCT-ND" x="-365.76" y="-289.56" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Bourns Inc." x="-365.76" y="-289.56" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="652-CAT16-100J4LF" x="-365.76" y="-289.56" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CAT16-100J4LF" x="-365.76" y="-289.56" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-367.665" y="-289.56" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="POWER" value="1/16W" x="-365.76" y="-289.56" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="10" x="-365.76" y="-289.56" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="5%" x="-365.76" y="-289.56" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-365.76" y="-289.56" size="1.778" layer="27" display="off"/>
+</element>
+<element name="RN8" library="HyTechDevices" package="1206-RES-ARRAY" value="RESISTOR_NETWORK_4_10" x="-365.76" y="-293.624" smashed="yes">
+<attribute name="DKPN" value="CAT16-100J4LFCT-ND" x="-365.76" y="-293.624" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Bourns Inc." x="-365.76" y="-293.624" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="652-CAT16-100J4LF" x="-365.76" y="-293.624" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CAT16-100J4LF" x="-365.76" y="-293.624" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-367.665" y="-293.624" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="POWER" value="1/16W" x="-365.76" y="-293.624" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="10" x="-365.76" y="-293.624" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="5%" x="-365.76" y="-293.624" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-365.76" y="-293.624" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2825,9 +2847,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="Q1" pad="1"/>
 <contactref element="RN1" pad="8"/>
 <contactref element="DN1" pad="1"/>
+<contactref element="RN7" pad="8"/>
 <wire x1="-187.128" y1="-131.688" x2="-192.4558" y2="-213.8553" width="0" layer="19" extent="1-1"/>
 <wire x1="-110.88" y1="-36.1" x2="-187.128" y2="-131.688" width="0" layer="19" extent="1-1"/>
 <wire x1="-362.8771" y1="-285.43" x2="-192.4558" y2="-213.8553" width="0" layer="19" extent="1-1"/>
+<wire x1="-366.96" y1="-288.66" x2="-362.8771" y2="-285.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BTN_MARK_READ">
 <contactref element="U1" pad="10"/>
@@ -3252,6 +3276,45 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="R7" pad="2"/>
 <contactref element="Q6" pad="3"/>
 <wire x1="-186.094" y1="-125.984" x2="-355.6" y2="-283.9847" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$10">
+<contactref element="RN7" pad="1"/>
+</signal>
+<signal name="LED_START_CTRL1">
+<contactref element="RN7" pad="7"/>
+</signal>
+<signal name="N$35">
+<contactref element="RN7" pad="2"/>
+</signal>
+<signal name="LED_START_CTRL2">
+<contactref element="RN7" pad="6"/>
+</signal>
+<signal name="N$36">
+<contactref element="RN7" pad="3"/>
+</signal>
+<signal name="LED_START_CTRL3">
+<contactref element="RN7" pad="5"/>
+</signal>
+<signal name="N$37">
+<contactref element="RN7" pad="4"/>
+</signal>
+<signal name="LED_START_CTRL4">
+<contactref element="RN8" pad="8"/>
+</signal>
+<signal name="N$38">
+<contactref element="RN8" pad="1"/>
+</signal>
+<signal name="LED_START_CTRL5">
+<contactref element="RN8" pad="7"/>
+</signal>
+<signal name="N$41">
+<contactref element="RN8" pad="2"/>
+</signal>
+<signal name="LED_START_CTRL6">
+<contactref element="RN8" pad="6"/>
+</signal>
+<signal name="N$55">
+<contactref element="RN8" pad="3"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
