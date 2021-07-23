@@ -732,6 +732,24 @@ visible on the PCB.</text>
 <rectangle x1="-6.35" y1="-19.43" x2="6.35" y2="3.81" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="CLP1608-2L">
+<description>CLP1608-2L Yageo 0603 VSKY Diode Package
+&lt;br&gt;
+&lt;a href="https://www.vishay.com/docs/85917/soldrecclp.pdf"&gt;Landing Pattern&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.vishay.com/docs/85892/vsky20401608.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-0.295" y="0" dx="0.88" dy="0.62" layer="1"/>
+<smd name="2" x="0.595" y="0" dx="0.28" dy="0.62" layer="1"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="0.5" x2="0.9" y2="0.5" width="0.0508" layer="39"/>
+<wire x1="0.9" y1="0.5" x2="0.9" y2="-0.5" width="0.0508" layer="39"/>
+<wire x1="0.9" y1="-0.5" x2="-0.9" y2="-0.5" width="0.0508" layer="39"/>
+<wire x1="-0.9" y1="-0.5" x2="-0.9" y2="0.5" width="0.0508" layer="39"/>
+<text x="0" y="0.508" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP2518FD">
@@ -1033,6 +1051,23 @@ Note: No sure about SDO/SDI accuracy</description>
 <pin name="CLK" x="-2.54" y="-5.08" visible="pin" length="short" function="clk"/>
 <pin name="SDO" x="-2.54" y="-7.62" visible="pin" length="short" direction="out"/>
 <text x="0" y="-18.415" size="1.27" layer="96" align="top-left">&gt;MODEL</text>
+</symbol>
+<symbol name="DIODE_SCHOTTKY">
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-1.27" y="1.905" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="1.27" layer="96" align="top-center">&gt;MPN</text>
+<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
+<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="-0.508" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="1.27" x2="-0.508" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0.508" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="-1.27" x2="0.508" y2="-1.016" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2385,6 +2420,30 @@ Note: No sure about SDO/SDI accuracy</description>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MODEL" value="NF_S_RA_B"/>
 <attribute name="MPN" value="105405-1304"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCHOTTKY" prefix="D">
+<description>Schottky Rectifier Diode
+&lt;br&gt;
+&lt;a href="https://www.vishay.com/docs/85892/vsky20401608.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CLP1608-2L">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="112-VSKY20401608-G4-08CT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
+<attribute name="MOPN" value="78-VSKY20401608G408"/>
+<attribute name="MPN" value="VSKY20401608-G4-08"/>
 </technology>
 </technologies>
 </device>
@@ -5893,119 +5952,6 @@ visible on the PCB.</text>
 </deviceset>
 </devicesets>
 </library>
-<library name="HyTechDevices- dcdc">
-<packages>
-<package name="DO-41">
-<description>DO-41
-&lt;br&gt;
-&lt;br&gt;
-DIODE
-&lt;br&gt;
-diameter 2.54 mm, horizontal, grid 10.16 mm</description>
-<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="0" x2="4.064" y2="0" width="0.762" layer="51"/>
-<wire x1="-5.08" y1="0" x2="-4.064" y2="0" width="0.762" layer="51"/>
-<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
-<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
-<rectangle x1="2.032" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
-<rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
-<pad name="A" x="5.08" y="0" drill="1.1176"/>
-<pad name="C" x="-5.08" y="0" drill="1.1176"/>
-<text x="-2.032" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.032" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="0805_D">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="A" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="C" x="0.9" y="0" dx="0.8" dy="1.2" layer="1" roundness="30"/>
-<text x="0" y="0.7239" size="0.3048" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.7112" size="0.3048" layer="27" align="top-center">&gt;VALUE</text>
-<wire x1="-0.3048" y1="0" x2="0.3048" y2="0" width="0.127" layer="21"/>
-<wire x1="0.3048" y1="0" x2="0" y2="-0.2032" width="0.127" layer="21"/>
-<wire x1="0" y1="-0.2032" x2="0" y2="0.2032" width="0.127" layer="21"/>
-<wire x1="0" y1="0.2032" x2="0.3048" y2="0" width="0.127" layer="21"/>
-</package>
-<package name="SOD-123FL">
-<wire x1="-0.808" y1="0.6" x2="0.808" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.808" y1="-0.6" x2="0.808" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="A" x="-1.6383" y="0" dx="0.9144" dy="1.2192" layer="1"/>
-<smd name="C" x="1.6383" y="0" dx="0.9144" dy="1.2192" layer="1"/>
-<text x="0" y="0.7239" size="0.3048" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.7112" size="0.3048" layer="27" align="top-center">&gt;VALUE</text>
-<wire x1="-0.5588" y1="0" x2="0.5588" y2="0" width="0.127" layer="21"/>
-<polygon width="0.127" layer="21">
-<vertex x="0" y="0.3302"/>
-<vertex x="0" y="-0.3302"/>
-<vertex x="0.5588" y="0"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="DIODE">
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="-3.81" y="1.7526" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.5814" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
-<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
-<polygon width="0.254" layer="94">
-<vertex x="-2.54" y="1.27"/>
-<vertex x="-2.54" y="-1.27"/>
-<vertex x="0" y="0"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DIODE" prefix="D">
-<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
-general purpose rectifier</description>
-<gates>
-<gate name="1" symbol="DIODE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="DO-41" package="DO-41">
-<connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0805" package="0805_D">
-<connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SOD123FL" package="SOD-123FL">
-<connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6095,8 +6041,6 @@ general purpose rectifier</description>
 <part name="P19" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P20" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
-<part name="D15" library="HyTechDevices- dcdc" deviceset="DIODE" device="0805"/>
-<part name="D16" library="HyTechDevices- dcdc" deviceset="DIODE" device="0805"/>
 <part name="RN3" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="160"/>
 <part name="RN4" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="160"/>
 <part name="RN5" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="160"/>
@@ -6132,6 +6076,8 @@ general purpose rectifier</description>
 <part name="RN8" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10"/>
 <part name="P11" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="D5" library="HyTechDevices" deviceset="SCHOTTKY" device=""/>
+<part name="D6" library="HyTechDevices" deviceset="SCHOTTKY" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6461,14 +6407,6 @@ general purpose rectifier</description>
 <attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
 </instance>
-<instance part="D15" gate="1" x="93.98" y="63.5" smashed="yes">
-<attribute name="NAME" x="90.17" y="65.2526" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.17" y="59.9186" size="1.778" layer="96"/>
-</instance>
-<instance part="D16" gate="1" x="162.56" y="63.5" smashed="yes">
-<attribute name="NAME" x="158.75" y="65.2526" size="1.778" layer="95"/>
-<attribute name="VALUE" x="158.75" y="59.9186" size="1.778" layer="96"/>
-</instance>
 <instance part="RN3" gate="A" x="198.12" y="124.46" smashed="yes">
 <attribute name="NAME" x="196.85" y="125.73" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="196.85" y="123.19" size="1.27" layer="96" align="top-center"/>
@@ -6685,6 +6623,14 @@ general purpose rectifier</description>
 </instance>
 <instance part="P+6" gate="1" x="177.8" y="206.502" smashed="yes">
 <attribute name="VALUE" x="177.8" y="209.042" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D5" gate="G$1" x="93.98" y="63.5" smashed="yes">
+<attribute name="NAME" x="92.71" y="65.405" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="92.71" y="61.595" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D6" gate="G$1" x="162.56" y="63.5" smashed="yes">
+<attribute name="NAME" x="161.29" y="65.405" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="161.29" y="61.595" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -7216,7 +7162,7 @@ general purpose rectifier</description>
 <segment>
 <wire x1="88.9" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
 <label x="86.36" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="D15" gate="1" pin="A"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="180.34" x2="38.1" y2="180.34" width="0.1524" layer="91"/>
@@ -7344,7 +7290,7 @@ general purpose rectifier</description>
 <segment>
 <wire x1="157.48" y1="63.5" x2="154.94" y2="63.5" width="0.1524" layer="91"/>
 <label x="154.94" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="D16" gate="1" pin="A"/>
+<pinref part="D6" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="172.72" x2="30.48" y2="172.72" width="0.1524" layer="91"/>
@@ -7454,14 +7400,14 @@ general purpose rectifier</description>
 <segment>
 <wire x1="96.52" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="D15" gate="1" pin="C"/>
+<pinref part="D5" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
 <wire x1="165.1" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="D16" gate="1" pin="C"/>
+<pinref part="D6" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$40" class="0">

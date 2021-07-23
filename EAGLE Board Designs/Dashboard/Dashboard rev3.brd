@@ -1157,6 +1157,24 @@ visible on the PCB.</text>
 <rectangle x1="-6.35" y1="-19.43" x2="6.35" y2="3.81" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="CLP1608-2L">
+<description>CLP1608-2L Yageo 0603 VSKY Diode Package
+&lt;br&gt;
+&lt;a href="https://www.vishay.com/docs/85917/soldrecclp.pdf"&gt;Landing Pattern&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.vishay.com/docs/85892/vsky20401608.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-0.295" y="0" dx="0.88" dy="0.62" layer="1"/>
+<smd name="2" x="0.595" y="0" dx="0.28" dy="0.62" layer="1"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="0.5" x2="0.9" y2="0.5" width="0.0508" layer="39"/>
+<wire x1="0.9" y1="0.5" x2="0.9" y2="-0.5" width="0.0508" layer="39"/>
+<wire x1="0.9" y1="-0.5" x2="-0.9" y2="-0.5" width="0.0508" layer="39"/>
+<wire x1="-0.9" y1="-0.5" x2="-0.9" y2="0.5" width="0.0508" layer="39"/>
+<text x="0" y="0.508" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="HyTechDevices - Copy">
@@ -1331,22 +1349,6 @@ visible on the PCB.</text>
 visible on the PCB.</text>
 <rectangle x1="-7.62" y1="-19.43" x2="7.62" y2="3.81" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
-</packages>
-</library>
-<library name="HyTechDevices- dcdc">
-<packages>
-<package name="0805_D">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="A" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="C" x="0.9" y="0" dx="0.8" dy="1.2" layer="1" roundness="30"/>
-<text x="0" y="0.7239" size="0.3048" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.7112" size="0.3048" layer="27" align="top-center">&gt;VALUE</text>
-<wire x1="-0.3048" y1="0" x2="0.3048" y2="0" width="0.127" layer="21"/>
-<wire x1="0.3048" y1="0" x2="0" y2="-0.2032" width="0.127" layer="21"/>
-<wire x1="0" y1="-0.2032" x2="0" y2="0.2032" width="0.127" layer="21"/>
-<wire x1="0" y1="0.2032" x2="0.3048" y2="0" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1974,14 +1976,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="X7" library="HyTechDevices - Copy" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_08" value="CONNECTOR-8NANO-FIT_RIGHT_ANGLE-8-SURFACE" x="-321.564" y="-197.104" smashed="yes">
 <attribute name="NAME" x="-321.564" y="-193.294" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="D15" library="HyTechDevices- dcdc" package="0805_D" value="DIODE0805" x="-327.66" y="-228.092" smashed="yes">
-<attribute name="NAME" x="-327.66" y="-227.3681" size="0.3048" layer="25" align="bottom-center"/>
-<attribute name="VALUE" x="-327.66" y="-228.8032" size="0.3048" layer="27" align="top-center"/>
-</element>
-<element name="D16" library="HyTechDevices- dcdc" package="0805_D" value="DIODE0805" x="-327.66" y="-230.632" smashed="yes">
-<attribute name="NAME" x="-327.66" y="-229.9081" size="0.3048" layer="25" align="bottom-center"/>
-<attribute name="VALUE" x="-327.66" y="-231.3432" size="0.3048" layer="27" align="top-center"/>
-</element>
 <element name="RN3" library="HyTechDevices" package="1206-RES-ARRAY" value="RESISTOR_NETWORK_4_160" x="-325.628" y="-234.188" smashed="yes">
 <attribute name="DKPN" value="YC164J-160CT-ND" x="-325.628" y="-234.188" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="-325.628" y="-234.188" size="1.778" layer="27" display="off"/>
@@ -2221,6 +2215,20 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="RESISTANCE" value="10" x="-378.46" y="-301.752" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="-378.46" y="-301.752" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="50V" x="-378.46" y="-301.752" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D5" library="HyTechDevices" package="CLP1608-2L" value="SCHOTTKY" x="-379.476" y="-305.308" smashed="yes">
+<attribute name="DKPN" value="112-VSKY20401608-G4-08CT-ND" x="-379.476" y="-305.308" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division" x="-379.476" y="-305.308" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="78-VSKY20401608G408" x="-379.476" y="-305.308" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="VSKY20401608-G4-08" x="-379.476" y="-305.308" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-379.476" y="-304.8" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+</element>
+<element name="D6" library="HyTechDevices" package="CLP1608-2L" value="SCHOTTKY" x="-379.476" y="-308.356" smashed="yes">
+<attribute name="DKPN" value="112-VSKY20401608-G4-08CT-ND" x="-379.476" y="-308.356" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division" x="-379.476" y="-308.356" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="78-VSKY20401608G408" x="-379.476" y="-308.356" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="VSKY20401608-G4-08" x="-379.476" y="-308.356" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-379.476" y="-307.848" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 </elements>
 <signals>
@@ -2829,9 +2837,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="SSOK">
 <contactref element="D12" pad="ANODE"/>
 <contactref element="X5" pad="3"/>
-<contactref element="D15" pad="A"/>
+<contactref element="D5" pad="1"/>
 <wire x1="-246.504" y1="-212.852" x2="-284.44" y2="-195.454" width="0" layer="19" extent="1-1"/>
-<wire x1="-328.56" y1="-228.092" x2="-284.44" y2="-195.454" width="0" layer="19" extent="1-1"/>
+<wire x1="-379.771" y1="-305.308" x2="-284.44" y2="-195.454" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUZZER_OUT">
 <contactref element="D3" pad="1"/>
@@ -2890,8 +2898,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="SHUTDOWN_H">
 <contactref element="X5" pad="6"/>
-<contactref element="D16" pad="A"/>
-<wire x1="-328.56" y1="-230.632" x2="-284.44" y2="-198.754" width="0" layer="19" extent="1-1"/>
+<contactref element="D6" pad="1"/>
+<wire x1="-379.771" y1="-308.356" x2="-284.44" y2="-198.754" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SHUTDOWN_H_READ">
 <contactref element="U1" pad="22"/>
@@ -2949,13 +2957,13 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$32">
 <contactref element="R11" pad="1"/>
-<contactref element="D15" pad="C"/>
-<wire x1="-326.76" y1="-228.092" x2="-187.794" y2="-149.86" width="0" layer="19" extent="1-1"/>
+<contactref element="D5" pad="2"/>
+<wire x1="-187.794" y1="-149.86" x2="-378.881" y2="-305.308" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$33">
 <contactref element="R10" pad="1"/>
-<contactref element="D16" pad="C"/>
-<wire x1="-326.76" y1="-230.632" x2="-187.794" y2="-146.812" width="0" layer="19" extent="1-1"/>
+<contactref element="D6" pad="2"/>
+<wire x1="-187.794" y1="-146.812" x2="-378.881" y2="-308.356" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$40">
 <contactref element="R7" pad="1"/>
