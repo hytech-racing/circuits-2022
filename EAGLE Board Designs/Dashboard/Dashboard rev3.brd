@@ -1085,6 +1085,32 @@ Note: Also works for CAT/CAY16 Series.
 <rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="39"/>
 <rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="40"/>
 </package>
+<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
+<description>4 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051204"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054051204_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="2" x="-1.25" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="3" x="1.25" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="1" x="1.25" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="4" x="-1.25" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="PAD1" x="-3.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD@1" x="3.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-1.27" y1="2.6" x2="1.27" y2="2.6" width="0.127" layer="21"/>
+<wire x1="1.27" y1="2.6" x2="1.27" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.99" x2="4.37" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="4.37" y1="-1.99" x2="4.37" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="4.37" y1="-10.68" x2="-4.37" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-10.68" x2="-4.37" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-1.99" x2="-1.27" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.99" x2="-1.27" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-19.48" x2="4.37" y2="-19.48" width="0.1524" layer="21"/>
+<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
+visible on the PCB.</text>
+<rectangle x1="-5.08" y1="-19.43" x2="5.08" y2="3.81" layer="39"/>
+<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="HyTechDevices - Copy">
@@ -1243,32 +1269,6 @@ Note: Also works for CAT/CAY16 Series.
 <circle x="-2.54" y="1.27" radius="0.254" width="0" layer="21"/>
 <rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="39"/>
 <rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="40"/>
-</package>
-<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
-<description>4 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051204"&gt;Part&lt;\a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/1054051204_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
-<smd name="2" x="-1.25" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="3" x="1.25" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="1" x="1.25" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="4" x="-1.25" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="PAD1" x="-3.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
-<smd name="PAD@1" x="3.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
-<wire x1="-1.27" y1="2.6" x2="1.27" y2="2.6" width="0.127" layer="21"/>
-<wire x1="1.27" y1="2.6" x2="1.27" y2="-1.99" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-1.99" x2="4.37" y2="-1.99" width="0.127" layer="21"/>
-<wire x1="4.37" y1="-1.99" x2="4.37" y2="-10.68" width="0.127" layer="21"/>
-<wire x1="4.37" y1="-10.68" x2="-4.37" y2="-10.68" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-10.68" x2="-4.37" y2="-1.99" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-1.99" x2="-1.27" y2="-1.99" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.99" x2="-1.27" y2="2.6" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-19.48" x2="4.37" y2="-19.48" width="0.1524" layer="21"/>
-<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
-visible on the PCB.</text>
-<rectangle x1="-5.08" y1="-19.43" x2="5.08" y2="3.81" layer="39"/>
-<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_06">
 <description>6 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
@@ -2025,9 +2025,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="J1" library="HyTechDevices - Copy" package="1X02" value="JUMPER.1" x="-262.128" y="-217.932" smashed="yes">
 <attribute name="NAME" x="-262.128" y="-216.535" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="J2" library="HyTechDevices - Copy" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04" value="" x="-270.256" y="-197.104" smashed="yes">
-<attribute name="NAME" x="-270.256" y="-193.294" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-</element>
 <element name="X5" library="HyTechDevices - Copy" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_06" value="CONNECTOR-6NANO-FIT_RIGHT_ANGLE-6-SURFACE" x="-281.94" y="-197.104" smashed="yes">
 <attribute name="NAME" x="-281.94" y="-193.294" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
@@ -2204,6 +2201,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="-327.66" y="-285.254" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="TOLERANCE" value="5%" x="-326.644" y="-286.004" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="-326.644" y="-286.004" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J3" library="HyTechDevices" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04" value="CONNECTOR-CAN_NF_S_RA_BLACK" x="-334.264" y="-265.176" smashed="yes">
+<attribute name="MANUFACTURER" value="Molex" x="-334.264" y="-265.176" size="1.778" layer="27" display="off"/>
+<attribute name="MODEL" value="NF_S_RA_B" x="-334.264" y="-265.176" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="105405-1304" x="-334.264" y="-265.176" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-334.264" y="-261.366" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 </elements>
 <signals>
@@ -2417,7 +2420,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="D13" pad="1"/>
 <contactref element="D14" pad="1"/>
 <contactref element="X5" pad="2"/>
-<contactref element="J2" pad="4"/>
 <contactref element="X7" pad="1"/>
 <contactref element="C10" pad="2"/>
 <contactref element="C16" pad="2"/>
@@ -2437,10 +2439,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C20" pad="2"/>
 <contactref element="C13" pad="2"/>
 <contactref element="C14" pad="2"/>
+<contactref element="J3" pad="2"/>
 <wire x1="-317.814" y1="-195.454" x2="-309.84" y2="-198.754" width="0" layer="19" extent="1-1"/>
 <wire x1="-281.94" y1="-195.454" x2="-309.84" y2="-198.754" width="0" layer="19" extent="1-1"/>
-<wire x1="-271.506" y1="-198.754" x2="-281.94" y2="-195.454" width="0" layer="19" extent="1-1"/>
-<wire x1="-261.112" y1="-207.112" x2="-271.506" y2="-198.754" width="0" layer="19" extent="1-1"/>
+<wire x1="-261.112" y1="-207.112" x2="-281.94" y2="-195.454" width="0" layer="19" extent="1-1"/>
 <wire x1="-261.112" y1="-213.512" x2="-261.112" y2="-207.112" width="0" layer="19" extent="1-1"/>
 <wire x1="-256.4638" y1="-213.8553" x2="-261.112" y2="-213.512" width="0" layer="19" extent="1-1"/>
 <wire x1="-252.9078" y1="-213.8553" x2="-256.4638" y2="-213.8553" width="0" layer="19" extent="1-1"/>
@@ -2635,6 +2637,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-325.894" y1="-279.908" x2="-326.91" y2="-273.812" width="0" layer="19" extent="1-1"/>
 <wire x1="-326.91" y1="-282.956" x2="-325.894" y2="-279.908" width="0" layer="19" extent="1-1"/>
 <wire x1="-326.91" y1="-286.004" x2="-326.91" y2="-282.956" width="0" layer="19" extent="1-1"/>
+<wire x1="-335.514" y1="-263.526" x2="-327.66" y2="-260.9342" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="THERMAL">
 <polygon width="0.3048" layer="16">
@@ -2763,22 +2766,22 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-85.852" y1="-55.3085" x2="-105.48" y2="-42.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CANL">
-<contactref element="J2" pad="1"/>
 <contactref element="X5" pad="4"/>
 <contactref element="U2" pad="6"/>
 <contactref element="R14" pad="1"/>
-<wire x1="-269.006" y1="-195.454" x2="-279.44" y2="-198.754" width="0" layer="19" extent="1-1"/>
+<contactref element="J3" pad="3"/>
 <wire x1="-323.977" y1="-249.3645" x2="-279.44" y2="-198.754" width="0" layer="19" extent="1-1"/>
 <wire x1="-327.494" y1="-257.556" x2="-323.977" y2="-249.3645" width="0" layer="19" extent="1-1"/>
+<wire x1="-333.014" y1="-266.826" x2="-327.494" y2="-257.556" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CANH">
 <contactref element="J1" pad="2"/>
-<contactref element="J2" pad="2"/>
 <contactref element="X5" pad="5"/>
 <contactref element="U2" pad="7"/>
-<wire x1="-271.506" y1="-195.454" x2="-281.94" y2="-198.754" width="0" layer="19" extent="1-1"/>
-<wire x1="-260.858" y1="-217.932" x2="-271.506" y2="-195.454" width="0" layer="19" extent="1-1"/>
+<contactref element="J3" pad="4"/>
+<wire x1="-260.858" y1="-217.932" x2="-281.94" y2="-198.754" width="0" layer="19" extent="1-1"/>
 <wire x1="-325.247" y1="-249.3645" x2="-281.94" y2="-198.754" width="0" layer="19" extent="1-1"/>
+<wire x1="-335.514" y1="-266.826" x2="-325.247" y2="-249.3645" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="U1" pad="28"/>
@@ -2792,15 +2795,15 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="D14" pad="3"/>
 <contactref element="D3" pad="3"/>
 <contactref element="U$6" pad="1"/>
-<contactref element="J2" pad="3"/>
 <contactref element="X7" pad="8"/>
 <contactref element="X5" pad="1"/>
+<contactref element="J3" pad="1"/>
 <wire x1="-255.524" y1="-211.8487" x2="-263.412" y2="-213.512" width="0" layer="19" extent="1-1"/>
-<wire x1="-269.006" y1="-198.754" x2="-263.412" y2="-213.512" width="0" layer="19" extent="1-1"/>
-<wire x1="-279.44" y1="-195.454" x2="-269.006" y2="-198.754" width="0" layer="19" extent="1-1"/>
+<wire x1="-279.44" y1="-195.454" x2="-263.412" y2="-213.512" width="0" layer="19" extent="1-1"/>
 <wire x1="-216.408" y1="-211.8487" x2="-255.524" y2="-211.8487" width="0" layer="19" extent="1-1"/>
 <wire x1="-187.694" y1="-204.724" x2="-216.408" y2="-211.8487" width="0" layer="19" extent="1-1"/>
 <wire x1="-325.314" y1="-198.754" x2="-279.44" y2="-195.454" width="0" layer="19" extent="1-1"/>
+<wire x1="-333.014" y1="-263.526" x2="-325.314" y2="-198.754" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUZZER_CTRL">
 <contactref element="U1" pad="27"/>
