@@ -259,11 +259,10 @@
 <wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="0.75" x2="1.35" y2="0.75" width="0.0508" layer="39"/>
-<wire x1="1.35" y1="0.75" x2="1.35" y2="-0.75" width="0.0508" layer="39"/>
-<wire x1="1.35" y1="-0.75" x2="-1.35" y2="-0.75" width="0.0508" layer="39"/>
-<wire x1="-1.35" y1="-0.75" x2="-1.35" y2="0.75" width="0.0508" layer="39"/>
 <text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
+<rectangle x1="-1.025" y1="0.5" x2="-0.625" y2="0.75" layer="21"/>
+<rectangle x1="-1.025" y1="-0.75" x2="-0.625" y2="-0.5" layer="21"/>
 </package>
 <package name="0885">
 <description>0885 Fuse
@@ -275,7 +274,7 @@
 <wire x1="-5.43" y1="-2.39" x2="5.43" y2="-2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="2.39" x2="-5.43" y2="2.39" width="0.127" layer="21"/>
-<text x="0" y="4.318" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="4.318" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-8.382" y1="-4.318" x2="8.382" y2="4.318" layer="39"/>
 <rectangle x1="-2.45" y1="-4.318" x2="2.45" y2="4.318" layer="43"/>
 </package>
@@ -470,27 +469,6 @@
 <text x="-7.62" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="center">&gt;NAME</text>
 <rectangle x1="-6.985" y1="-4.445" x2="6.985" y2="4.445" layer="39"/>
 </package>
-<package name="DFN-8">
-<description>DFN-8
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/682/Sensirion_Humidity_Sensors_SHT3x_Datasheet_analog-2001011.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-1.175" y="0.75" dx="0.55" dy="0.25" layer="1"/>
-<smd name="2" x="-1.175" y="0.25" dx="0.55" dy="0.25" layer="1"/>
-<smd name="3" x="-1.175" y="-0.25" dx="0.55" dy="0.25" layer="1"/>
-<smd name="4" x="-1.175" y="-0.75" dx="0.55" dy="0.25" layer="1"/>
-<smd name="5" x="1.175" y="-0.75" dx="0.55" dy="0.25" layer="1"/>
-<smd name="6" x="1.175" y="-0.25" dx="0.55" dy="0.25" layer="1"/>
-<smd name="7" x="1.175" y="0.25" dx="0.55" dy="0.25" layer="1"/>
-<smd name="8" x="1.175" y="0.75" dx="0.55" dy="0.25" layer="1"/>
-<smd name="PAD" x="0" y="0" dx="1" dy="1.7" layer="1"/>
-<wire x1="-1.25" y1="1.25" x2="-1.25" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-1.25" y1="-1.25" x2="1.25" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="1.25" y1="-1.25" x2="1.25" y2="1.25" width="0.127" layer="21"/>
-<wire x1="1.25" y1="1.25" x2="-1.25" y2="1.25" width="0.127" layer="21"/>
-<text x="0" y="1.524" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="-1.905" y="1.27" radius="0.127" width="0" layer="21"/>
-<rectangle x1="-1.778" y1="-1.524" x2="1.778" y2="1.524" layer="39"/>
-</package>
 <package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_DUAL">
 <description>2 Pin Micro-Fit Right Angle Header, SMD, Dual Row
 &lt;br&gt;
@@ -656,8 +634,29 @@ Dashed line is edge of mated connector.</description>
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/015-744075.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
-<text x="0" y="1.27" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
+</package>
+<package name="DFN-8">
+<description>DFN-8
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/682/Sensirion_Humidity_Sensors_SHT3x_Datasheet_analog-2001011.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.175" y="0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="2" x="-1.175" y="0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="3" x="-1.175" y="-0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="4" x="-1.175" y="-0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="5" x="1.175" y="-0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="6" x="1.175" y="-0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="7" x="1.175" y="0.25" dx="0.55" dy="0.25" layer="1"/>
+<smd name="8" x="1.175" y="0.75" dx="0.55" dy="0.25" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="1" dy="1.7" layer="1"/>
+<wire x1="-1.25" y1="1.25" x2="-1.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1.25" x2="1.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1.25" x2="1.25" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.25" y1="1.25" x2="-1.25" y2="1.25" width="0.127" layer="21"/>
+<text x="0" y="1.524" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-1.905" y="1.27" radius="0.127" width="0" layer="21"/>
+<rectangle x1="-1.778" y1="-1.524" x2="1.778" y2="1.524" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -819,21 +818,6 @@ Pins tied to VREG: ISOMD, DTEN
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-89.662" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="SENSOR_HUMIDITY_TEMPERATURE">
-<description>Humidity and Temperature Sensor
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/682/Sensirion_Humidity_Sensors_SHT3x_Datasheet_analog-2001011.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="10.16" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
-<text x="0" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short" direction="pwr"/>
-<pin name="RH" x="-2.54" y="-10.16" visible="pin" length="short" direction="out"/>
-<pin name="T" x="-2.54" y="-5.08" visible="pin" length="short" direction="out"/>
-<pin name="VDD" x="12.7" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<text x="0" y="-15.875" size="1.778" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
 <symbol name="TRANSFORMER">
 <description>Transformer</description>
 <wire x1="-2.5146" y1="0" x2="-1.2446" y2="1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
@@ -953,6 +937,21 @@ Pins tied to VREG: ISOMD, DTEN
 <pin name="P$1" x="2.54" y="0" visible="off" length="short" rot="R180"/>
 <text x="-2.54" y="1.778" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-1.778" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="SENSOR_HUMIDITY_TEMPERATURE">
+<description>Humidity and Temperature Sensor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/682/Sensirion_Humidity_Sensors_SHT3x_Datasheet_analog-2001011.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="10.16" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.635" size="1.27" layer="95">&gt;NAME</text>
+<pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short" direction="pwr"/>
+<pin name="RH" x="-2.54" y="-10.16" visible="pin" length="short" direction="out"/>
+<pin name="T" x="-2.54" y="-5.08" visible="pin" length="short" direction="out"/>
+<pin name="VDD" x="12.7" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<text x="0" y="-15.875" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1767,8 +1766,17 @@ Pins tied to VREG: ISOMD, DTEN
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED_?_*" prefix="D" uservalue="yes">
-<description>LED</description>
+<deviceset name="LED_?_*" prefix="D">
+<description>LED
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608VBC_D-246010.pdf"&gt;Blue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608ZGCK-1173388.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-6197.pdf"&gt;Orange&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-J3-PRV-1173336.pdf"&gt;Red&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/SM0603UWC-880813.pdf"&gt;White&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SYCK-J3-PRV-1173311.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
+&lt;\ul&gt;</description>
 <gates>
 <gate name="LED" symbol="DIODE_LED" x="0" y="0"/>
 </gates>
@@ -1779,12 +1787,47 @@ Pins tied to VREG: ISOMD, DTEN
 <connect gate="LED" pin="C" pad="1"/>
 </connects>
 <technologies>
+<technology name="BLUE">
+<attribute name="COLOR" value="Blue"/>
+<attribute name="DKPN" value="754-1789-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608VBC/D"/>
+<attribute name="MPN" value="APT1608VBC/D"/>
+</technology>
+<technology name="GREEN">
+<attribute name="COLOR" value="Green"/>
+<attribute name="DKPN" value="754-1790-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608ZGCK"/>
+<attribute name="MPN" value="APT1608ZGCK"/>
+</technology>
+<technology name="ORANGE">
+<attribute name="COLOR" value="Orange"/>
+<attribute name="DKPN" value="754-1120-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608SECK"/>
+<attribute name="MPN" value="APT1608SECK"/>
+</technology>
 <technology name="RED">
-<attribute name="COLOR" value="RED"/>
+<attribute name="COLOR" value="Red"/>
 <attribute name="DKPN" value="754-1786-1-ND"/>
 <attribute name="MANUFACTURER" value="Kingbright"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV"/>
 <attribute name="MPN" value="APT1608SECK/J3-PRV"/>
+</technology>
+<technology name="WHITE">
+<attribute name="COLOR" value="White"/>
+<attribute name="DKPN" value="SM0603UWC-ND"/>
+<attribute name="MANUFACTURER" value="Bivar Inc."/>
+<attribute name="MOPN" value="749-SM0603UWC"/>
+<attribute name="MPN" value="SM0603UWC"/>
+</technology>
+<technology name="YELLOW">
+<attribute name="COLOR" value="Yellow"/>
+<attribute name="DKPN" value="754-1788-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608SYCK/J3-PRV"/>
+<attribute name="MPN" value="APT1608SYCK/J3-PRV"/>
 </technology>
 </technologies>
 </device>
@@ -1939,8 +1982,10 @@ MAX voltage: 100V</description>
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="436500214"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MODEL" value="µF_S_RA_2_S"/>
+<attribute name="MOPN" value="538-43650-0214"/>
 <attribute name="MPN" value="436500214"/>
 </technology>
 </technologies>
@@ -2011,38 +2056,6 @@ Variant 2: Addressable/Multi-Drop Configuration
 <attribute name="MANUFACTURER" value="Analog Devices Inc."/>
 <attribute name="MOPN" value="584-6811IG-2#3ZZPB"/>
 <attribute name="MPN" value="LTC6811IG-2#3ZZPBF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SHT3*-ARP-B" prefix="U">
-<description>Humidity and Temperature Sensor
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/682/Sensirion_Humidity_Sensors_SHT3x_Datasheet_analog-2001011.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SENSOR_HUMIDITY_TEMPERATURE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DFN-8">
-<connects>
-<connect gate="G$1" pin="GND" pad="2 3 7 8 PAD"/>
-<connect gate="G$1" pin="RH" pad="1"/>
-<connect gate="G$1" pin="T" pad="4"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-</connects>
-<technologies>
-<technology name="0">
-<attribute name="DKPN" value="1649-1010-1-ND"/>
-<attribute name="MANUFACTUER" value="Sensirion AG"/>
-<attribute name="MOPN" value="403-SHT30-ARP-B"/>
-<attribute name="MPN" value="SHT30-ARP-B"/>
-</technology>
-<technology name="1">
-<attribute name="DKPN" value="1649-1012-1-ND"/>
-<attribute name="MANUFACTUER" value="Sensirion AG"/>
-<attribute name="MOPN" value="403-SHT31-ARP-B"/>
-<attribute name="MPN" value="SHT31-ARP-B"/>
 </technology>
 </technologies>
 </device>
@@ -2178,6 +2191,42 @@ Leakage Inductance: 0.50 uH max
 <attribute name="MANUFACTURER" value="Keystone Electronics"/>
 <attribute name="MOPN" value="534-5015"/>
 <attribute name="MPN" value="5015"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SHT3*-ARP-B" prefix="U">
+<description>Humidity and Temperature Sensor
+&lt;br&gt;
+SHT30: Low Grade
+&lt;br&gt;
+SHT31: High Grade
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/682/Sensirion_Humidity_Sensors_SHT3x_Datasheet_analog-2001011.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SENSOR_HUMIDITY_TEMPERATURE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DFN-8">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 3 7 8 PAD"/>
+<connect gate="G$1" pin="RH" pad="1"/>
+<connect gate="G$1" pin="T" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="0">
+<attribute name="DKPN" value="1649-1010-1-ND"/>
+<attribute name="MANUFACTURER" value="Sensirion AG"/>
+<attribute name="MOPN" value="403-SHT30-ARP-B"/>
+<attribute name="MPN" value="SHT30-ARP-B"/>
+</technology>
+<technology name="1">
+<attribute name="DKPN" value="1649-1012-1-ND"/>
+<attribute name="MANUFACTURER" value="Sensirion AG"/>
+<attribute name="MOPN" value="403-SHT31-ARP-B"/>
+<attribute name="MPN" value="SHT31-ARP-B"/>
 </technology>
 </technologies>
 </device>
@@ -7888,8 +7937,6 @@ Layer: 94 Symbol</description>
 <part name="R40" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
 <part name="C8" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_3.3NF"/>
 <part name="C19" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_3.3NF"/>
-<part name="U3" library="HyTechDevices" deviceset="SHT3*-ARP-B" device="" technology="1"/>
-<part name="U4" library="HyTechDevices" deviceset="SHT3*-ARP-B" device="" technology="1"/>
 <part name="P36" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P41" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="C24" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
@@ -7965,6 +8012,8 @@ Layer: 94 Symbol</description>
 <part name="P81" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="P82" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="P83" library="HyTechSupplies" deviceset="VREGU" device=""/>
+<part name="U3" library="HyTechDevices" deviceset="SHT3*-ARP-B" device="" technology="1"/>
+<part name="U4" library="HyTechDevices" deviceset="SHT3*-ARP-B" device="" technology="1"/>
 </parts>
 <sheets>
 <sheet>
@@ -7977,20 +8026,32 @@ which decreases the amount of ISOSPI
 transactions.</text>
 <text x="116.84" y="101.6" size="1.27" layer="97">Address pin 3 is pulled down to V- because we only have 4
 segments which means 8 ICs. There is no need for the option to
-expand. Address pin 0 of the top ic is pulled
-up because it will always be odd and thebottom one down to be even</text>
-<text x="157.48" y="170.18" size="1.27" layer="97">These transformers are chosen based on a list in the LTC6811
+expand. Address pin 0 of the top ic is pulled up because it will 
+always be an odd address and the bottom one down because
+ it will always be an even address.</text>
+<text x="157.48" y="172.72" size="1.27" layer="97">These transformers are chosen based on a list in the LTC6811
 datasheet and because they are common mode choke with
 centertap.</text>
 <text x="5.08" y="0.762" size="1.27" layer="97">These 1.6A fuses are chosen because we have a peak current
 around 0.8A and it was recommended in the datasheet that the
 fuse be 1.5 times the peak current. With durating due to higher
 temperatures the 1.6A fuse fits perfectly.</text>
-<text x="223.52" y="205.74" size="1.27" layer="97">The 5.9kOhm resister selection was done in order to maximize the
+<text x="223.52" y="205.74" size="1.27" layer="97">The 2.74kOhm resister selection was done in order to maximize the
 coverage on our ADC.</text>
 <text x="119.38" y="205.74" size="1.27" layer="97">These are 0 Ohm resisters that we may or 
 may not decide to solder in based on the address
 of the given LTC6811 chip.</text>
+<text x="30.48" y="114.3" size="1.27" layer="97">We chose to have two fuses here 
+instead of one to isolate the top 
+ic from the bottom in a situation 
+where a fuse blows.</text>
+<wire x1="185.42" y1="172.72" x2="185.42" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="185.42" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="226.06" y1="116.84" x2="226.06" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="226.06" y1="172.72" x2="185.42" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
+<text x="172.72" y="104.14" size="1.27" layer="97">The parts inside the dotted line box are galvanically isolated from the 
+cell voltages, but is still considered tractive system because the 
+spacing requirements are not met for the footprint.</text>
 </plain>
 <moduleinsts>
 <moduleinst name="CELL1" module="CELL" x="48.26" y="20.32">
@@ -8218,21 +8279,21 @@ of the given LTC6811 chip.</text>
 <attribute name="NAME" x="21.59" y="194.31" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="21.59" y="191.77" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R10" gate="G$1" x="134.62" y="198.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="135.89" y="196.85" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="135.89" y="199.39" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R10" gate="G$1" x="134.62" y="198.12" smashed="yes" rot="MR0">
+<attribute name="NAME" x="135.89" y="199.39" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="135.89" y="196.85" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R11" gate="G$1" x="129.54" y="200.66" smashed="yes" rot="R180">
-<attribute name="NAME" x="130.81" y="199.39" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="130.81" y="201.93" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R11" gate="G$1" x="129.54" y="200.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="130.81" y="201.93" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="130.81" y="199.39" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R12" gate="G$1" x="154.94" y="200.66" smashed="yes" rot="R180">
-<attribute name="NAME" x="156.21" y="199.39" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="156.21" y="201.93" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R12" gate="G$1" x="154.94" y="200.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="156.21" y="201.93" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="156.21" y="199.39" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R13" gate="G$1" x="149.86" y="203.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="151.13" y="201.93" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="151.13" y="204.47" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R13" gate="G$1" x="149.86" y="203.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="151.13" y="204.47" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="151.13" y="201.93" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="P23" gate="G$1" x="142.24" y="198.12" smashed="yes" rot="R90">
 <attribute name="VALUE" x="143.51" y="198.12" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -8277,29 +8338,29 @@ of the given LTC6811 chip.</text>
 <attribute name="VOLTAGE" x="134.874" y="63.246" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="134.874" y="67.818" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R1" gate="G$1" x="119.38" y="68.58" smashed="yes" rot="R180">
-<attribute name="NAME" x="120.65" y="67.31" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="120.65" y="69.85" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R1" gate="G$1" x="119.38" y="68.58" smashed="yes" rot="MR0">
+<attribute name="NAME" x="120.65" y="69.85" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="120.65" y="67.31" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="Q1" gate="G$1" x="124.46" y="63.5" smashed="yes">
 <attribute name="NAME" x="125.476" y="66.548" size="1.27" layer="95" align="bottom-right"/>
 <attribute name="MPN" x="127.508" y="59.944" size="1.27" layer="96" align="top-right"/>
 </instance>
-<instance part="R18" gate="G$1" x="134.62" y="93.98" smashed="yes" rot="R180">
-<attribute name="NAME" x="135.89" y="92.71" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="135.89" y="95.25" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R18" gate="G$1" x="134.62" y="93.98" smashed="yes" rot="MR0">
+<attribute name="NAME" x="135.89" y="95.25" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="135.89" y="92.71" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R19" gate="G$1" x="129.54" y="96.52" smashed="yes" rot="R180">
-<attribute name="NAME" x="130.81" y="95.25" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="130.81" y="97.79" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R19" gate="G$1" x="129.54" y="96.52" smashed="yes" rot="MR0">
+<attribute name="NAME" x="130.81" y="97.79" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="130.81" y="95.25" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R20" gate="G$1" x="154.94" y="96.52" smashed="yes" rot="R180">
-<attribute name="NAME" x="156.21" y="95.25" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="156.21" y="97.79" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R20" gate="G$1" x="154.94" y="96.52" smashed="yes" rot="MR0">
+<attribute name="NAME" x="156.21" y="97.79" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="156.21" y="95.25" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R21" gate="G$1" x="149.86" y="99.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="151.13" y="97.79" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="151.13" y="100.33" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R21" gate="G$1" x="149.86" y="99.06" smashed="yes" rot="MR0">
+<attribute name="NAME" x="151.13" y="100.33" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="151.13" y="97.79" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="P29" gate="G$1" x="109.22" y="93.98" smashed="yes" rot="R90">
 <attribute name="VALUE" x="110.49" y="93.98" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -8336,9 +8397,9 @@ of the given LTC6811 chip.</text>
 <attribute name="NAME" x="105.41" y="118.11" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="107.95" y="118.11" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R28" gate="G$1" x="106.68" y="124.46" smashed="yes" rot="R270">
-<attribute name="NAME" x="107.95" y="125.73" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="105.41" y="125.73" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="R28" gate="G$1" x="106.68" y="124.46" smashed="yes" rot="MR270">
+<attribute name="NAME" x="105.41" y="125.73" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="RESISTANCE" x="107.95" y="125.73" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
 <instance part="R29" gate="G$1" x="106.68" y="15.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="105.41" y="13.97" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -8375,37 +8436,37 @@ of the given LTC6811 chip.</text>
 <instance part="P20" gate="G$1" x="58.42" y="119.38" smashed="yes">
 <attribute name="VALUE" x="58.42" y="118.11" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R25" gate="G$1" x="254" y="193.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="255.27" y="194.31" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="252.73" y="194.31" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="R25" gate="G$1" x="254" y="193.04" smashed="yes" rot="MR270">
+<attribute name="NAME" x="252.73" y="194.31" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="RESISTANCE" x="255.27" y="194.31" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="R26" gate="G$1" x="254" y="180.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="255.27" y="181.61" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="252.73" y="181.61" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="R26" gate="G$1" x="254" y="180.34" smashed="yes" rot="MR270">
+<attribute name="NAME" x="252.73" y="181.61" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="RESISTANCE" x="255.27" y="181.61" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="R31" gate="G$1" x="254" y="167.64" smashed="yes" rot="R270">
-<attribute name="NAME" x="255.27" y="168.91" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="252.73" y="168.91" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="R31" gate="G$1" x="254" y="167.64" smashed="yes" rot="MR270">
+<attribute name="NAME" x="252.73" y="168.91" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="RESISTANCE" x="255.27" y="168.91" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="R32" gate="G$1" x="254" y="154.94" smashed="yes" rot="R270">
-<attribute name="NAME" x="255.27" y="156.21" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="252.73" y="156.21" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="R32" gate="G$1" x="254" y="154.94" smashed="yes" rot="MR270">
+<attribute name="NAME" x="252.73" y="156.21" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="RESISTANCE" x="255.27" y="156.21" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="R45" gate="G$1" x="246.38" y="160.02" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.65" y="158.75" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="247.65" y="161.29" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R45" gate="G$1" x="246.38" y="160.02" smashed="yes" rot="MR0">
+<attribute name="NAME" x="247.65" y="161.29" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="158.75" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R46" gate="G$1" x="246.38" y="172.72" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.65" y="171.45" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="247.65" y="173.99" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R46" gate="G$1" x="246.38" y="172.72" smashed="yes" rot="MR0">
+<attribute name="NAME" x="247.65" y="173.99" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="171.45" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R47" gate="G$1" x="246.38" y="185.42" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.65" y="184.15" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="247.65" y="186.69" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R47" gate="G$1" x="246.38" y="185.42" smashed="yes" rot="MR0">
+<attribute name="NAME" x="247.65" y="186.69" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="184.15" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R48" gate="G$1" x="246.38" y="198.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.65" y="196.85" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="247.65" y="199.39" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R48" gate="G$1" x="246.38" y="198.12" smashed="yes" rot="MR0">
+<attribute name="NAME" x="247.65" y="199.39" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="196.85" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="C15" gate="G$1" x="238.76" y="195.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="236.22" y="194.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -8452,37 +8513,37 @@ of the given LTC6811 chip.</text>
 <attribute name="MODEL" x="275.59" y="156.591" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="274.32" y="165.862" size="1.27" layer="95" rot="MR0"/>
 </instance>
-<instance part="R34" gate="G$1" x="254" y="119.38" smashed="yes" rot="R270">
-<attribute name="NAME" x="255.27" y="120.65" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="252.73" y="120.65" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="R34" gate="G$1" x="254" y="119.38" smashed="yes" rot="MR270">
+<attribute name="NAME" x="252.73" y="120.65" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="RESISTANCE" x="255.27" y="120.65" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="R35" gate="G$1" x="254" y="106.68" smashed="yes" rot="R270">
-<attribute name="NAME" x="255.27" y="107.95" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="252.73" y="107.95" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="R35" gate="G$1" x="254" y="106.68" smashed="yes" rot="MR270">
+<attribute name="NAME" x="252.73" y="107.95" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="RESISTANCE" x="255.27" y="107.95" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="R36" gate="G$1" x="254" y="93.98" smashed="yes" rot="R270">
-<attribute name="NAME" x="255.27" y="95.25" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="252.73" y="95.25" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="R36" gate="G$1" x="254" y="93.98" smashed="yes" rot="MR270">
+<attribute name="NAME" x="252.73" y="95.25" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="RESISTANCE" x="255.27" y="95.25" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="R37" gate="G$1" x="254" y="81.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="255.27" y="82.55" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="252.73" y="82.55" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="R37" gate="G$1" x="254" y="81.28" smashed="yes" rot="MR270">
+<attribute name="NAME" x="252.73" y="82.55" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="RESISTANCE" x="255.27" y="82.55" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="R39" gate="G$1" x="246.38" y="86.36" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.65" y="85.09" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="247.65" y="87.63" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R39" gate="G$1" x="246.38" y="86.36" smashed="yes" rot="MR0">
+<attribute name="NAME" x="247.65" y="87.63" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="85.09" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R41" gate="G$1" x="246.38" y="99.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.65" y="97.79" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="247.65" y="100.33" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R41" gate="G$1" x="246.38" y="99.06" smashed="yes" rot="MR0">
+<attribute name="NAME" x="247.65" y="100.33" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="97.79" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R42" gate="G$1" x="246.38" y="111.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.65" y="110.49" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="247.65" y="113.03" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R42" gate="G$1" x="246.38" y="111.76" smashed="yes" rot="MR0">
+<attribute name="NAME" x="247.65" y="113.03" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="110.49" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R43" gate="G$1" x="246.38" y="124.46" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.65" y="123.19" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="247.65" y="125.73" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R43" gate="G$1" x="246.38" y="124.46" smashed="yes" rot="MR0">
+<attribute name="NAME" x="247.65" y="125.73" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="123.19" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="C20" gate="G$1" x="238.76" y="121.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="236.22" y="120.65" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -8558,21 +8619,21 @@ of the given LTC6811 chip.</text>
 <attribute name="NAME" x="151.13" y="135.89" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="153.67" y="135.89" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R6" gate="G$1" x="200.66" y="147.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="201.93" y="146.05" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="201.93" y="148.59" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R6" gate="G$1" x="200.66" y="147.32" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="148.59" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="201.93" y="146.05" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R7" gate="G$1" x="200.66" y="167.64" smashed="yes" rot="R180">
-<attribute name="NAME" x="201.93" y="166.37" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="201.93" y="168.91" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R7" gate="G$1" x="200.66" y="167.64" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="168.91" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="201.93" y="166.37" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R49" gate="G$1" x="200.66" y="121.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="201.93" y="120.65" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="201.93" y="123.19" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R49" gate="G$1" x="200.66" y="121.92" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="123.19" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="201.93" y="120.65" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R50" gate="G$1" x="200.66" y="142.24" smashed="yes" rot="R180">
-<attribute name="NAME" x="201.93" y="140.97" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="201.93" y="143.51" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R50" gate="G$1" x="200.66" y="142.24" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="143.51" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="201.93" y="140.97" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="R52" gate="G$1" x="205.74" y="160.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="204.47" y="158.75" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -8658,14 +8719,6 @@ of the given LTC6811 chip.</text>
 <attribute name="NAME" x="233.68" y="67.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="238.76" y="67.31" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="240.538" y="67.31" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="U3" gate="G$1" x="256.54" y="76.2" smashed="yes">
-<attribute name="NAME" x="256.54" y="76.835" size="1.778" layer="95"/>
-<attribute name="MPN" x="256.54" y="60.325" size="1.778" layer="96" align="top-left"/>
-</instance>
-<instance part="U4" gate="G$1" x="256.54" y="149.86" smashed="yes">
-<attribute name="NAME" x="256.54" y="150.495" size="1.778" layer="95"/>
-<attribute name="MPN" x="256.54" y="133.985" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="P36" gate="G$1" x="236.22" y="60.96" smashed="yes">
 <attribute name="VALUE" x="236.22" y="59.69" size="1.27" layer="96" align="top-center"/>
@@ -8778,57 +8831,57 @@ of the given LTC6811 chip.</text>
 <attribute name="NAME" x="26.67" y="113.03" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="26.67" y="110.49" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TP1" gate="G$1" x="121.92" y="142.24" smashed="yes">
-<attribute name="NAME" x="119.38" y="144.018" size="1.27" layer="95"/>
-<attribute name="MPN" x="119.38" y="140.462" size="1.27" layer="95" align="top-left"/>
+<instance part="TP1" gate="G$1" x="121.92" y="132.08" smashed="yes">
+<attribute name="NAME" x="119.38" y="133.858" size="1.27" layer="95"/>
+<attribute name="MPN" x="119.38" y="130.302" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP2" gate="G$1" x="121.92" y="134.62" smashed="yes">
-<attribute name="NAME" x="119.38" y="136.398" size="1.27" layer="95"/>
-<attribute name="MPN" x="119.38" y="132.842" size="1.27" layer="95" align="top-left"/>
+<instance part="TP2" gate="G$1" x="121.92" y="124.46" smashed="yes">
+<attribute name="NAME" x="119.38" y="126.238" size="1.27" layer="95"/>
+<attribute name="MPN" x="119.38" y="122.682" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP4" gate="G$1" x="142.24" y="73.66" smashed="yes">
-<attribute name="NAME" x="139.7" y="75.438" size="1.27" layer="95"/>
-<attribute name="MPN" x="139.7" y="71.882" size="1.27" layer="95" align="top-left"/>
+<instance part="TP4" gate="G$1" x="160.02" y="63.5" smashed="yes">
+<attribute name="NAME" x="157.48" y="65.278" size="1.27" layer="95"/>
+<attribute name="MPN" x="157.48" y="61.722" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP5" gate="G$1" x="142.24" y="66.04" smashed="yes">
-<attribute name="NAME" x="139.7" y="67.818" size="1.27" layer="95"/>
-<attribute name="MPN" x="139.7" y="64.262" size="1.27" layer="95" align="top-left"/>
+<instance part="TP5" gate="G$1" x="142.24" y="63.5" smashed="yes">
+<attribute name="NAME" x="139.7" y="65.278" size="1.27" layer="95"/>
+<attribute name="MPN" x="139.7" y="61.722" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP7" gate="G$1" x="121.92" y="119.38" smashed="yes">
-<attribute name="NAME" x="119.38" y="121.158" size="1.27" layer="95"/>
-<attribute name="MPN" x="119.38" y="117.602" size="1.27" layer="95" align="top-left"/>
+<instance part="TP7" gate="G$1" x="142.24" y="71.12" smashed="yes">
+<attribute name="NAME" x="139.7" y="72.898" size="1.27" layer="95"/>
+<attribute name="MPN" x="139.7" y="69.342" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP8" gate="G$1" x="88.9" y="7.62" smashed="yes">
-<attribute name="NAME" x="86.36" y="9.398" size="1.27" layer="95"/>
-<attribute name="MPN" x="86.36" y="5.842" size="1.27" layer="95" align="top-left"/>
+<instance part="TP8" gate="G$1" x="142.24" y="55.88" smashed="yes">
+<attribute name="NAME" x="139.7" y="57.658" size="1.27" layer="95"/>
+<attribute name="MPN" x="139.7" y="54.102" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP9" gate="G$1" x="48.26" y="200.66" smashed="yes">
-<attribute name="NAME" x="45.72" y="202.438" size="1.27" layer="95"/>
-<attribute name="MPN" x="45.72" y="198.882" size="1.27" layer="95" align="top-left"/>
+<instance part="TP9" gate="G$1" x="121.92" y="139.7" smashed="yes">
+<attribute name="NAME" x="119.38" y="141.478" size="1.27" layer="95"/>
+<attribute name="MPN" x="119.38" y="137.922" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="P27" gate="G$1" x="53.34" y="203.2" smashed="yes">
-<attribute name="VALUE" x="53.34" y="204.47" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P27" gate="G$1" x="127" y="142.24" smashed="yes">
+<attribute name="VALUE" x="127" y="143.51" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P51" gate="G$1" x="127" y="121.92" smashed="yes">
-<attribute name="VALUE" x="127" y="123.19" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P51" gate="G$1" x="147.32" y="73.66" smashed="yes">
+<attribute name="VALUE" x="147.32" y="74.93" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P75" gate="G$1" x="93.98" y="5.08" smashed="yes">
-<attribute name="VALUE" x="93.98" y="3.81" size="1.27" layer="96" align="top-center"/>
+<instance part="P75" gate="G$1" x="147.32" y="53.34" smashed="yes">
+<attribute name="VALUE" x="147.32" y="52.07" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TP10" gate="G$1" x="121.92" y="127" smashed="yes">
-<attribute name="NAME" x="119.38" y="128.778" size="1.27" layer="95"/>
-<attribute name="MPN" x="119.38" y="125.222" size="1.27" layer="95" align="top-left"/>
+<instance part="TP10" gate="G$1" x="121.92" y="116.84" smashed="yes">
+<attribute name="NAME" x="119.38" y="118.618" size="1.27" layer="95"/>
+<attribute name="MPN" x="119.38" y="115.062" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP11" gate="G$1" x="210.82" y="175.26" smashed="yes">
-<attribute name="NAME" x="208.28" y="177.038" size="1.27" layer="95"/>
-<attribute name="MPN" x="208.28" y="173.482" size="1.27" layer="95" align="top-left"/>
+<instance part="TP11" gate="G$1" x="215.9" y="167.64" smashed="yes">
+<attribute name="NAME" x="213.36" y="169.418" size="1.27" layer="95"/>
+<attribute name="MPN" x="213.36" y="165.862" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP12" gate="G$1" x="210.82" y="114.3" smashed="yes">
-<attribute name="NAME" x="208.28" y="116.078" size="1.27" layer="95"/>
-<attribute name="MPN" x="208.28" y="112.522" size="1.27" layer="95" align="top-left"/>
+<instance part="TP12" gate="G$1" x="215.9" y="121.92" smashed="yes">
+<attribute name="NAME" x="213.36" y="123.698" size="1.27" layer="95"/>
+<attribute name="MPN" x="213.36" y="120.142" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="P76" gate="G$1" x="132.08" y="124.46" smashed="yes">
-<attribute name="VALUE" x="132.08" y="123.19" size="1.27" layer="96" align="top-center"/>
+<instance part="P76" gate="G$1" x="132.08" y="114.3" smashed="yes">
+<attribute name="VALUE" x="132.08" y="113.03" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P40" gate="G$1" x="238.76" y="149.86" smashed="yes">
 <attribute name="VALUE" x="238.76" y="148.59" size="1.27" layer="96" align="top-center"/>
@@ -8916,6 +8969,14 @@ of the given LTC6811 chip.</text>
 </instance>
 <instance part="P83" gate="G$1" x="109.22" y="165.1" smashed="yes">
 <attribute name="VALUE" x="109.22" y="166.37" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="U3" gate="G$1" x="256.54" y="149.86" smashed="yes">
+<attribute name="NAME" x="256.54" y="150.495" size="1.27" layer="95"/>
+<attribute name="MPN" x="256.54" y="133.985" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="U4" gate="G$1" x="256.54" y="76.2" smashed="yes">
+<attribute name="NAME" x="256.54" y="76.835" size="1.27" layer="95"/>
+<attribute name="MPN" x="256.54" y="60.325" size="1.27" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -9595,8 +9656,8 @@ of the given LTC6811 chip.</text>
 </segment>
 <segment>
 <pinref part="TP4" gate="G$1" pin="P$1"/>
-<wire x1="144.78" y1="73.66" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
-<label x="147.32" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="63.5" x2="165.1" y2="63.5" width="0.1524" layer="91"/>
+<label x="165.1" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VREF1L" class="0">
@@ -10071,8 +10132,8 @@ of the given LTC6811 chip.</text>
 </segment>
 <segment>
 <pinref part="TP1" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
-<label x="127" y="142.24" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="132.08" x2="127" y2="132.08" width="0.1524" layer="91"/>
+<label x="127" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$61" class="0">
@@ -10175,26 +10236,22 @@ of the given LTC6811 chip.</text>
 </net>
 <net name="N$81" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="RH"/>
 <pinref part="R40" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="66.04" x2="254" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="RH"/>
 </segment>
 </net>
 <net name="N$83" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="T"/>
 <pinref part="R38" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="71.12" x2="254" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="T"/>
 </segment>
 </net>
 <net name="V-L" class="0">
 <segment>
 <pinref part="C19" gate="G$1" pin="2"/>
 <pinref part="P36" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="GND"/>
-<pinref part="P41" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="2"/>
@@ -10223,7 +10280,7 @@ of the given LTC6811 chip.</text>
 </segment>
 <segment>
 <pinref part="TP8" gate="G$1" pin="P$1"/>
-<wire x1="91.44" y1="7.62" x2="93.98" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="P75" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
@@ -10279,15 +10336,32 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL1" port="V-"/>
 <pinref part="P22" gate="G$1" pin="V-L"/>
 </segment>
+<segment>
+<pinref part="F0" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="CELL1" port="CELL-"/>
+<wire x1="33.02" y1="15.24" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="P-4" gate="G$1" pin="V-L"/>
+<wire x1="33.02" y1="15.24" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
+<junction x="33.02" y="15.24"/>
+<pinref part="R53" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="12.7" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
+<junction x="33.02" y="12.7"/>
+<label x="25.4" y="15.24" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="P41" gate="G$1" pin="V-L"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="VREF2L" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="VDD"/>
 <pinref part="C24" gate="G$1" pin="1"/>
 <pinref part="P52" gate="G$1" pin="VREGL"/>
 <junction x="271.78" y="73.66"/>
 <junction x="271.78" y="73.66"/>
 <wire x1="271.78" y1="73.66" x2="269.24" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -10394,19 +10468,19 @@ of the given LTC6811 chip.</text>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="RH"/>
 <wire x1="251.46" y1="139.7" x2="254" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R33" gate="G$1" pin="2"/>
+<pinref part="U3" gate="G$1" pin="RH"/>
 </segment>
 </net>
 <net name="VREF2U" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="VDD"/>
 <pinref part="P57" gate="G$1" pin="VREGU"/>
 <pinref part="C25" gate="G$1" pin="1"/>
 <junction x="271.78" y="147.32"/>
 <junction x="271.78" y="147.32"/>
 <wire x1="271.78" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -10416,10 +10490,6 @@ of the given LTC6811 chip.</text>
 </segment>
 </net>
 <net name="V-U" class="0">
-<segment>
-<pinref part="P72" gate="G$1" pin="V-U"/>
-<pinref part="U4" gate="G$1" pin="GND"/>
-</segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="P73" gate="G$1" pin="V-U"/>
@@ -10455,7 +10525,7 @@ of the given LTC6811 chip.</text>
 </segment>
 <segment>
 <pinref part="TP10" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="127" x2="132.08" y2="127" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="116.84" x2="132.08" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="P76" gate="G$1" pin="V-U"/>
 </segment>
 <segment>
@@ -10498,20 +10568,21 @@ of the given LTC6811 chip.</text>
 <portref moduleinst="CELL13" port="V-"/>
 <pinref part="P19" gate="G$1" pin="V-U"/>
 </segment>
-</net>
-<net name="SENSE0" class="0">
 <segment>
-<pinref part="P-4" gate="G$1" pin="V-L"/>
-<wire x1="33.02" y1="12.7" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="F0" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="15.24" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
-<junction x="33.02" y="12.7"/>
-<portref moduleinst="CELL1" port="CELL-"/>
-<wire x1="33.02" y1="15.24" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
-<junction x="33.02" y="15.24"/>
-<label x="25.4" y="15.24" size="1.27" layer="95"/>
-<pinref part="R53" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="P20" gate="G$1" pin="V-U"/>
+<pinref part="F12" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
+<portref moduleinst="CELL13" port="CELL-"/>
+<wire x1="33.02" y1="121.92" x2="33.02" y2="127" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
+<junction x="33.02" y="121.92"/>
+<junction x="58.42" y="121.92"/>
+<label x="33.02" y="121.92" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="P72" gate="G$1" pin="V-U"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="GPIO4L" class="0">
@@ -10594,8 +10665,8 @@ of the given LTC6811 chip.</text>
 <net name="N$30" class="0">
 <segment>
 <pinref part="R51" gate="G$1" pin="2"/>
-<pinref part="U4" gate="G$1" pin="T"/>
 <wire x1="251.46" y1="144.78" x2="254" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="T"/>
 </segment>
 </net>
 <net name="VREGL" class="0">
@@ -10638,8 +10709,8 @@ of the given LTC6811 chip.</text>
 </segment>
 <segment>
 <pinref part="TP5" gate="G$1" pin="P$1"/>
-<wire x1="144.78" y1="66.04" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
-<label x="147.32" y="66.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="144.78" y1="63.5" x2="147.32" y2="63.5" width="0.1524" layer="91"/>
+<label x="147.32" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VREGU" class="0">
@@ -10682,8 +10753,8 @@ of the given LTC6811 chip.</text>
 </segment>
 <segment>
 <pinref part="TP2" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
-<label x="127" y="134.62" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="124.46" x2="127" y2="124.46" width="0.1524" layer="91"/>
+<label x="127" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
@@ -10703,48 +10774,17 @@ of the given LTC6811 chip.</text>
 <label x="15.24" y="116.84" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE12L" class="0">
-<segment>
-<pinref part="F22" gate="G$1" pin="2"/>
-<pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
-<label x="33.02" y="111.76" size="1.27" layer="95"/>
-<portref moduleinst="CELL12" port="CELL+"/>
-<wire x1="33.02" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="106.68" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
-<junction x="33.02" y="111.76"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
-<label x="114.3" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="SENSE12U" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="P20" gate="G$1" pin="V-U"/>
-<pinref part="F12" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
-<junction x="58.42" y="121.92"/>
-<label x="33.02" y="121.92" size="1.27" layer="95"/>
-<portref moduleinst="CELL13" port="CELL-"/>
-<wire x1="33.02" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="127" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
-<junction x="33.02" y="121.92"/>
-</segment>
-</net>
 <net name="V+L" class="0">
 <segment>
 <pinref part="TP7" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="P51" gate="G$1" pin="V+L"/>
 </segment>
 </net>
 <net name="V+U" class="0">
 <segment>
 <pinref part="TP9" gate="G$1" pin="P$1"/>
-<wire x1="50.8" y1="200.66" x2="53.34" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="139.7" x2="127" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="P27" gate="G$1" pin="V+U"/>
 </segment>
 </net>
@@ -10785,8 +10825,8 @@ of the given LTC6811 chip.</text>
 </segment>
 <segment>
 <pinref part="TP12" gate="G$1" pin="P$1"/>
-<wire x1="213.36" y1="114.3" x2="215.9" y2="114.3" width="0.1524" layer="91"/>
-<label x="215.9" y="114.3" size="1.27" layer="95" xref="yes"/>
+<wire x1="218.44" y1="121.92" x2="220.98" y2="121.92" width="0.1524" layer="91"/>
+<label x="220.98" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IP" class="0">
@@ -10809,8 +10849,25 @@ of the given LTC6811 chip.</text>
 </segment>
 <segment>
 <pinref part="TP11" gate="G$1" pin="P$1"/>
-<wire x1="213.36" y1="175.26" x2="215.9" y2="175.26" width="0.1524" layer="91"/>
-<label x="215.9" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="218.44" y1="167.64" x2="220.98" y2="167.64" width="0.1524" layer="91"/>
+<label x="220.98" y="167.64" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SENSE12" class="0">
+<segment>
+<pinref part="F22" gate="G$1" pin="2"/>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
+<label x="33.02" y="111.76" size="1.27" layer="95"/>
+<portref moduleinst="CELL12" port="CELL+"/>
+<wire x1="33.02" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="106.68" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
+<junction x="33.02" y="111.76"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+<label x="114.3" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

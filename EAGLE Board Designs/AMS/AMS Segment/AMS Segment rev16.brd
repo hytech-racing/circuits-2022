@@ -222,11 +222,10 @@
 <wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="0.75" x2="1.35" y2="0.75" width="0.0508" layer="39"/>
-<wire x1="1.35" y1="0.75" x2="1.35" y2="-0.75" width="0.0508" layer="39"/>
-<wire x1="1.35" y1="-0.75" x2="-1.35" y2="-0.75" width="0.0508" layer="39"/>
-<wire x1="-1.35" y1="-0.75" x2="-1.35" y2="0.75" width="0.0508" layer="39"/>
 <text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
+<rectangle x1="-1.025" y1="0.5" x2="-0.625" y2="0.75" layer="21"/>
+<rectangle x1="-1.025" y1="-0.75" x2="-0.625" y2="-0.5" layer="21"/>
 </package>
 <package name="SOT-23">
 <description>SOT-23
@@ -282,7 +281,7 @@
 <wire x1="-5.43" y1="-2.39" x2="5.43" y2="-2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="2.39" x2="-5.43" y2="2.39" width="0.127" layer="21"/>
-<text x="0" y="4.318" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="4.318" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-8.382" y1="-4.318" x2="8.382" y2="4.318" layer="39"/>
 <rectangle x1="-2.45" y1="-4.318" x2="2.45" y2="4.318" layer="43"/>
 </package>
@@ -429,6 +428,14 @@ Dashed line is edge of mated connector.</description>
 <text x="-7.62" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="center">&gt;NAME</text>
 <rectangle x1="-6.985" y1="-4.445" x2="6.985" y2="4.445" layer="39"/>
 </package>
+<package name="MICRO_MINIATURE">
+<description>Keystone Micro-Miniature SMD Test Point
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/215/015-744075.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
+</package>
 <package name="DFN-8">
 <description>DFN-8
 &lt;br&gt;
@@ -449,14 +456,6 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="1.524" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="-1.905" y="1.27" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-1.778" y1="-1.524" x2="1.778" y2="1.524" layer="39"/>
-</package>
-<package name="MICRO_MINIATURE">
-<description>Keystone Micro-Miniature SMD Test Point
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/215/015-744075.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
-<text x="0" y="1.27" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
 </package>
 </packages>
 </library>
@@ -941,8 +940,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-58.42" y="34.29" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-58.42" y="34.29" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL10:D1" library="HyTechDevices" package="0603-LED" value="" x="-52.07" y="34.29" smashed="yes">
-<attribute name="COLOR" value="RED" x="-52.07" y="34.29" size="1.778" layer="27" display="off"/>
+<element name="CELL10:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-52.07" y="34.29" smashed="yes">
+<attribute name="COLOR" value="Red" x="-52.07" y="34.29" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-52.07" y="34.29" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-52.07" y="34.29" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-52.07" y="34.29" size="1.778" layer="27" display="off"/>
@@ -1014,8 +1013,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-109.22" y="34.29" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-109.22" y="34.29" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL11:D1" library="HyTechDevices" package="0603-LED" value="" x="-102.87" y="34.29" smashed="yes">
-<attribute name="COLOR" value="RED" x="-102.87" y="34.29" size="1.778" layer="27" display="off"/>
+<element name="CELL11:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-102.87" y="34.29" smashed="yes">
+<attribute name="COLOR" value="Red" x="-102.87" y="34.29" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-102.87" y="34.29" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-102.87" y="34.29" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-102.87" y="34.29" size="1.778" layer="27" display="off"/>
@@ -1087,8 +1086,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-40.64" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-40.64" y="67.31" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL12:D1" library="HyTechDevices" package="0603-LED" value="" x="-34.29" y="67.31" smashed="yes">
-<attribute name="COLOR" value="RED" x="-34.29" y="67.31" size="1.778" layer="27" display="off"/>
+<element name="CELL12:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-34.29" y="67.31" smashed="yes">
+<attribute name="COLOR" value="Red" x="-34.29" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-34.29" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-34.29" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-34.29" y="67.31" size="1.778" layer="27" display="off"/>
@@ -1160,8 +1159,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-91.44" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-91.44" y="67.31" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL13:D1" library="HyTechDevices" package="0603-LED" value="" x="-85.09" y="67.31" smashed="yes">
-<attribute name="COLOR" value="RED" x="-85.09" y="67.31" size="1.778" layer="27" display="off"/>
+<element name="CELL13:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-85.09" y="67.31" smashed="yes">
+<attribute name="COLOR" value="Red" x="-85.09" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-85.09" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-85.09" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-85.09" y="67.31" size="1.778" layer="27" display="off"/>
@@ -1233,8 +1232,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-142.24" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-142.24" y="67.31" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL14:D1" library="HyTechDevices" package="0603-LED" value="" x="-135.89" y="67.31" smashed="yes">
-<attribute name="COLOR" value="RED" x="-135.89" y="67.31" size="1.778" layer="27" display="off"/>
+<element name="CELL14:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-135.89" y="67.31" smashed="yes">
+<attribute name="COLOR" value="Red" x="-135.89" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-135.89" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-135.89" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-135.89" y="67.31" size="1.778" layer="27" display="off"/>
@@ -1306,8 +1305,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-40.64" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-40.64" y="88.9" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL15:D1" library="HyTechDevices" package="0603-LED" value="" x="-34.29" y="88.9" smashed="yes">
-<attribute name="COLOR" value="RED" x="-34.29" y="88.9" size="1.778" layer="27" display="off"/>
+<element name="CELL15:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-34.29" y="88.9" smashed="yes">
+<attribute name="COLOR" value="Red" x="-34.29" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-34.29" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-34.29" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-34.29" y="88.9" size="1.778" layer="27" display="off"/>
@@ -1379,8 +1378,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-91.44" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-91.44" y="88.9" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL16:D1" library="HyTechDevices" package="0603-LED" value="" x="-85.09" y="88.9" smashed="yes">
-<attribute name="COLOR" value="RED" x="-85.09" y="88.9" size="1.778" layer="27" display="off"/>
+<element name="CELL16:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-85.09" y="88.9" smashed="yes">
+<attribute name="COLOR" value="Red" x="-85.09" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-85.09" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-85.09" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-85.09" y="88.9" size="1.778" layer="27" display="off"/>
@@ -1452,8 +1451,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-142.24" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-142.24" y="88.9" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL17:D1" library="HyTechDevices" package="0603-LED" value="" x="-135.89" y="88.9" smashed="yes">
-<attribute name="COLOR" value="RED" x="-135.89" y="88.9" size="1.778" layer="27" display="off"/>
+<element name="CELL17:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-135.89" y="88.9" smashed="yes">
+<attribute name="COLOR" value="Red" x="-135.89" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-135.89" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-135.89" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-135.89" y="88.9" size="1.778" layer="27" display="off"/>
@@ -1525,8 +1524,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-40.64" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-40.64" y="110.49" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL18:D1" library="HyTechDevices" package="0603-LED" value="" x="-34.29" y="110.49" smashed="yes">
-<attribute name="COLOR" value="RED" x="-34.29" y="110.49" size="1.778" layer="27" display="off"/>
+<element name="CELL18:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-34.29" y="110.49" smashed="yes">
+<attribute name="COLOR" value="Red" x="-34.29" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-34.29" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-34.29" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-34.29" y="110.49" size="1.778" layer="27" display="off"/>
@@ -1598,8 +1597,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-91.44" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-91.44" y="110.49" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL19:D1" library="HyTechDevices" package="0603-LED" value="" x="-85.09" y="110.49" smashed="yes">
-<attribute name="COLOR" value="RED" x="-85.09" y="110.49" size="1.778" layer="27" display="off"/>
+<element name="CELL19:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-85.09" y="110.49" smashed="yes">
+<attribute name="COLOR" value="Red" x="-85.09" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-85.09" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-85.09" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-85.09" y="110.49" size="1.778" layer="27" display="off"/>
@@ -1671,8 +1670,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-90.17" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-90.17" y="132.08" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL1:D1" library="HyTechDevices" package="0603-LED" value="" x="-83.82" y="132.08" smashed="yes">
-<attribute name="COLOR" value="RED" x="-83.82" y="132.08" size="1.778" layer="27" display="off"/>
+<element name="CELL1:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-83.82" y="132.08" smashed="yes">
+<attribute name="COLOR" value="Red" x="-83.82" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-83.82" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-83.82" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-83.82" y="132.08" size="1.778" layer="27" display="off"/>
@@ -1744,8 +1743,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-142.24" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-142.24" y="110.49" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL20:D1" library="HyTechDevices" package="0603-LED" value="" x="-135.89" y="110.49" smashed="yes">
-<attribute name="COLOR" value="RED" x="-135.89" y="110.49" size="1.778" layer="27" display="off"/>
+<element name="CELL20:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-135.89" y="110.49" smashed="yes">
+<attribute name="COLOR" value="Red" x="-135.89" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-135.89" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-135.89" y="110.49" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-135.89" y="110.49" size="1.778" layer="27" display="off"/>
@@ -1817,8 +1816,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-40.64" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-40.64" y="132.08" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL21:D1" library="HyTechDevices" package="0603-LED" value="" x="-34.29" y="132.08" smashed="yes">
-<attribute name="COLOR" value="RED" x="-34.29" y="132.08" size="1.778" layer="27" display="off"/>
+<element name="CELL21:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-34.29" y="132.08" smashed="yes">
+<attribute name="COLOR" value="Red" x="-34.29" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-34.29" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-34.29" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-34.29" y="132.08" size="1.778" layer="27" display="off"/>
@@ -1890,8 +1889,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-139.7" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-139.7" y="132.08" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL2:D1" library="HyTechDevices" package="0603-LED" value="" x="-133.35" y="132.08" smashed="yes">
-<attribute name="COLOR" value="RED" x="-133.35" y="132.08" size="1.778" layer="27" display="off"/>
+<element name="CELL2:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-133.35" y="132.08" smashed="yes">
+<attribute name="COLOR" value="Red" x="-133.35" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-133.35" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-133.35" y="132.08" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-133.35" y="132.08" size="1.778" layer="27" display="off"/>
@@ -1963,8 +1962,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-39.37" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-39.37" y="153.67" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL3:D1" library="HyTechDevices" package="0603-LED" value="" x="-33.02" y="153.67" smashed="yes">
-<attribute name="COLOR" value="RED" x="-33.02" y="153.67" size="1.778" layer="27" display="off"/>
+<element name="CELL3:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-33.02" y="153.67" smashed="yes">
+<attribute name="COLOR" value="Red" x="-33.02" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-33.02" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-33.02" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-33.02" y="153.67" size="1.778" layer="27" display="off"/>
@@ -2036,8 +2035,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-88.9" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-88.9" y="153.67" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL4:D1" library="HyTechDevices" package="0603-LED" value="" x="-82.55" y="153.67" smashed="yes">
-<attribute name="COLOR" value="RED" x="-82.55" y="153.67" size="1.778" layer="27" display="off"/>
+<element name="CELL4:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-82.55" y="153.67" smashed="yes">
+<attribute name="COLOR" value="Red" x="-82.55" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-82.55" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-82.55" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-82.55" y="153.67" size="1.778" layer="27" display="off"/>
@@ -2109,8 +2108,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-138.43" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-138.43" y="153.67" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL5:D1" library="HyTechDevices" package="0603-LED" value="" x="-132.08" y="153.67" smashed="yes">
-<attribute name="COLOR" value="RED" x="-132.08" y="153.67" size="1.778" layer="27" display="off"/>
+<element name="CELL5:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-132.08" y="153.67" smashed="yes">
+<attribute name="COLOR" value="Red" x="-132.08" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-132.08" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-132.08" y="153.67" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-132.08" y="153.67" size="1.778" layer="27" display="off"/>
@@ -2182,8 +2181,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-39.37" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-39.37" y="175.26" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL6:D1" library="HyTechDevices" package="0603-LED" value="" x="-33.02" y="175.26" smashed="yes">
-<attribute name="COLOR" value="RED" x="-33.02" y="175.26" size="1.778" layer="27" display="off"/>
+<element name="CELL6:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-33.02" y="175.26" smashed="yes">
+<attribute name="COLOR" value="Red" x="-33.02" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-33.02" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-33.02" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-33.02" y="175.26" size="1.778" layer="27" display="off"/>
@@ -2255,8 +2254,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-88.9" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-88.9" y="175.26" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL7:D1" library="HyTechDevices" package="0603-LED" value="" x="-82.55" y="175.26" smashed="yes">
-<attribute name="COLOR" value="RED" x="-82.55" y="175.26" size="1.778" layer="27" display="off"/>
+<element name="CELL7:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-82.55" y="175.26" smashed="yes">
+<attribute name="COLOR" value="Red" x="-82.55" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-82.55" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-82.55" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-82.55" y="175.26" size="1.778" layer="27" display="off"/>
@@ -2328,8 +2327,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-138.43" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-138.43" y="175.26" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL8:D1" library="HyTechDevices" package="0603-LED" value="" x="-132.08" y="175.26" smashed="yes">
-<attribute name="COLOR" value="RED" x="-132.08" y="175.26" size="1.778" layer="27" display="off"/>
+<element name="CELL8:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-132.08" y="175.26" smashed="yes">
+<attribute name="COLOR" value="Red" x="-132.08" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-132.08" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-132.08" y="175.26" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-132.08" y="175.26" size="1.778" layer="27" display="off"/>
@@ -2401,8 +2400,8 @@ design rules under a new name.
 <attribute name="TOLERANCE" value="10%" x="-39.37" y="196.85" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="100V" x="-39.37" y="196.85" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CELL9:D1" library="HyTechDevices" package="0603-LED" value="" x="-33.02" y="196.85" smashed="yes">
-<attribute name="COLOR" value="RED" x="-33.02" y="196.85" size="1.778" layer="27" display="off"/>
+<element name="CELL9:D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="-33.02" y="196.85" smashed="yes">
+<attribute name="COLOR" value="Red" x="-33.02" y="196.85" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="-33.02" y="196.85" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="-33.02" y="196.85" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="-33.02" y="196.85" size="1.778" layer="27" display="off"/>
@@ -2768,14 +2767,18 @@ design rules under a new name.
 <attribute name="NAME" x="-110.49" y="201.93" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="J27" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK" x="-21.59" y="25.4" smashed="yes">
+<attribute name="DKPN" value="436500214" x="-21.59" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Molex" x="-21.59" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MODEL" value="µF_S_RA_2_S" x="-21.59" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-43650-0214" x="-21.59" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="436500214" x="-21.59" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-21.59" y="25.4" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="J28" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK" x="-38.1" y="25.4" smashed="yes">
+<attribute name="DKPN" value="436500214" x="-38.1" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Molex" x="-38.1" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MODEL" value="µF_S_RA_2_S" x="-38.1" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-43650-0214" x="-38.1" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="436500214" x="-38.1" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-38.1" y="25.4" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
@@ -2812,44 +2815,58 @@ design rules under a new name.
 <attribute name="NAME" x="-44.45" y="240.03" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="J32" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK" x="-54.61" y="25.4" smashed="yes">
+<attribute name="DKPN" value="436500214" x="-54.61" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Molex" x="-54.61" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MODEL" value="µF_S_RA_2_S" x="-54.61" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-43650-0214" x="-54.61" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="436500214" x="-54.61" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-54.61" y="25.4" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="J33" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK" x="-71.12" y="25.4" smashed="yes">
+<attribute name="DKPN" value="436500214" x="-71.12" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Molex" x="-71.12" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MODEL" value="µF_S_RA_2_S" x="-71.12" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-43650-0214" x="-71.12" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="436500214" x="-71.12" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-71.12" y="25.4" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="J34" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK" x="-87.63" y="25.4" smashed="yes">
+<attribute name="DKPN" value="436500214" x="-87.63" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Molex" x="-87.63" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MODEL" value="µF_S_RA_2_S" x="-87.63" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-43650-0214" x="-87.63" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="436500214" x="-87.63" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-87.63" y="25.4" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="J35" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK" x="-104.14" y="25.4" smashed="yes">
+<attribute name="DKPN" value="436500214" x="-104.14" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Molex" x="-104.14" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MODEL" value="µF_S_RA_2_S" x="-104.14" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-43650-0214" x="-104.14" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="436500214" x="-104.14" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-104.14" y="25.4" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="J37" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK" x="-120.65" y="25.4" smashed="yes">
+<attribute name="DKPN" value="436500214" x="-120.65" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Molex" x="-120.65" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MODEL" value="µF_S_RA_2_S" x="-120.65" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-43650-0214" x="-120.65" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="436500214" x="-120.65" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-120.65" y="25.4" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="J38" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK" x="-137.16" y="25.4" smashed="yes">
+<attribute name="DKPN" value="436500214" x="-137.16" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Molex" x="-137.16" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MODEL" value="µF_S_RA_2_S" x="-137.16" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-43650-0214" x="-137.16" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="436500214" x="-137.16" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-137.16" y="25.4" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="J39" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK" x="-153.67" y="25.4" smashed="yes">
+<attribute name="DKPN" value="436500214" x="-153.67" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Molex" x="-153.67" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MODEL" value="µF_S_RA_2_S" x="-153.67" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-43650-0214" x="-153.67" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="436500214" x="-153.67" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-153.67" y="25.4" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
@@ -2862,8 +2879,10 @@ design rules under a new name.
 <attribute name="NAME" x="-135.89" y="201.93" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="J40" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE" value="CONNECTOR-2_MICROFIT_SMD_RIGHTANGLE_02_SINGLE_BLACK" x="-21.59" y="58.42" smashed="yes">
+<attribute name="DKPN" value="436500214" x="-21.59" y="58.42" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Molex" x="-21.59" y="58.42" size="1.778" layer="27" display="off"/>
 <attribute name="MODEL" value="µF_S_RA_2_S" x="-21.59" y="58.42" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-43650-0214" x="-21.59" y="58.42" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="436500214" x="-21.59" y="58.42" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-21.59" y="58.42" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
@@ -3482,20 +3501,6 @@ design rules under a new name.
 <attribute name="MPN" value="LTC6811IG-2#3ZZPBF" x="-72.39" y="274.32" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-72.39" y="274.32" size="0.8128" layer="21" font="vector" rot="R90" align="center"/>
 </element>
-<element name="U3" library="HyTechDevices" package="DFN-8" value="SHT31-ARP-B" x="-83.82" y="271.78" smashed="yes">
-<attribute name="DKPN" value="1649-1012-1-ND" x="-83.82" y="271.78" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTUER" value="Sensirion AG" x="-83.82" y="271.78" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="403-SHT31-ARP-B" x="-83.82" y="271.78" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="SHT31-ARP-B" x="-83.82" y="271.78" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-83.82" y="271.78" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-</element>
-<element name="U4" library="HyTechDevices" package="DFN-8" value="SHT31-ARP-B" x="-87.63" y="271.78" smashed="yes">
-<attribute name="DKPN" value="1649-1012-1-ND" x="-87.63" y="271.78" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTUER" value="Sensirion AG" x="-87.63" y="271.78" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="403-SHT31-ARP-B" x="-87.63" y="271.78" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="SHT31-ARP-B" x="-87.63" y="271.78" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-87.63" y="271.78" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-</element>
 <element name="TP1" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="-166.37" y="-2.54" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="-166.37" y="-2.54" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="-166.37" y="-2.54" size="1.778" layer="27" display="off"/>
@@ -3565,6 +3570,20 @@ design rules under a new name.
 <attribute name="MOPN" value="534-5015" x="-166.37" y="-44.45" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="-166.37" y="-44.45" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-166.37" y="-43.18" size="0.8128" layer="21" font="vector" align="bottom-center"/>
+</element>
+<element name="U3" library="HyTechDevices" package="DFN-8" value="SHT31-ARP-B" x="-171.45" y="-43.18" smashed="yes">
+<attribute name="DKPN" value="1649-1012-1-ND" x="-171.45" y="-43.18" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Sensirion AG" x="-171.45" y="-43.18" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="403-SHT31-ARP-B" x="-171.45" y="-43.18" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SHT31-ARP-B" x="-171.45" y="-43.18" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-171.45" y="-41.656" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+</element>
+<element name="U4" library="HyTechDevices" package="DFN-8" value="SHT31-ARP-B" x="-176.53" y="-43.18" smashed="yes">
+<attribute name="DKPN" value="1649-1012-1-ND" x="-176.53" y="-43.18" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Sensirion AG" x="-176.53" y="-43.18" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="403-SHT31-ARP-B" x="-176.53" y="-43.18" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SHT31-ARP-B" x="-176.53" y="-43.18" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-176.53" y="-41.656" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 </elements>
 <signals>
@@ -4414,22 +4433,17 @@ design rules under a new name.
 <wire x1="-141.72" y1="271.78" x2="-50.63" y2="277.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$81">
-<contactref element="U3" pad="1"/>
 <contactref element="R40" pad="2"/>
-<wire x1="-18.2" y1="285.75" x2="-84.995" y2="272.53" width="0" layer="19" extent="1-1"/>
+<contactref element="U4" pad="1"/>
+<wire x1="-18.2" y1="285.75" x2="-177.705" y2="-42.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$83">
-<contactref element="U3" pad="4"/>
 <contactref element="R38" pad="2"/>
-<wire x1="-166.79" y1="281.94" x2="-84.995" y2="271.03" width="0" layer="19" extent="1-1"/>
+<contactref element="U4" pad="4"/>
+<wire x1="-166.79" y1="281.94" x2="-177.705" y2="-43.93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V-L">
 <contactref element="C19" pad="2"/>
-<contactref element="U3" pad="2"/>
-<contactref element="U3" pad="3"/>
-<contactref element="U3" pad="7"/>
-<contactref element="U3" pad="8"/>
-<contactref element="U3" pad="PAD"/>
 <contactref element="C24" pad="2"/>
 <contactref element="U2" pad="48"/>
 <contactref element="R37" pad="2"/>
@@ -4450,39 +4464,52 @@ design rules under a new name.
 <contactref element="CELL7:C1" pad="2"/>
 <contactref element="CELL8:C1" pad="2"/>
 <contactref element="CELL9:C1" pad="2"/>
-<wire x1="-76.64" y1="277.7" x2="-78.14" y2="277.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-82.645" y1="272.53" x2="-78.14" y2="277.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-82.645" y1="272.03" x2="-82.645" y2="272.53" width="0" layer="19" extent="1-1"/>
-<wire x1="-83.82" y1="271.78" x2="-82.645" y2="272.03" width="0" layer="19" extent="1-1"/>
-<wire x1="-84.995" y1="272.03" x2="-83.82" y2="271.78" width="0" layer="19" extent="1-1"/>
-<wire x1="-84.995" y1="271.53" x2="-84.995" y2="272.03" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.11" y1="281.94" x2="-76.64" y2="277.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-151.55" y1="281.94" x2="-84.995" y2="272.03" width="0" layer="19" extent="1-1"/>
+<contactref element="F0" pad="2"/>
+<contactref element="CELL1:R3" pad="1"/>
+<contactref element="CELL1:R4" pad="1"/>
+<contactref element="R53" pad="1"/>
+<contactref element="U4" pad="8"/>
+<contactref element="U4" pad="7"/>
+<contactref element="U4" pad="3"/>
+<contactref element="U4" pad="2"/>
+<contactref element="U4" pad="PAD"/>
+<wire x1="-177.705" y1="-42.93" x2="-177.705" y2="-43.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-176.53" y1="-43.18" x2="-177.705" y2="-43.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-175.355" y1="-42.93" x2="-176.53" y2="-43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="-175.355" y1="-42.43" x2="-175.355" y2="-42.93" width="0" layer="19" extent="1-1"/>
+<wire x1="-166.37" y1="-29.21" x2="-175.355" y2="-42.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-108.47" y1="34.29" x2="-166.37" y2="-29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.67" y1="34.29" x2="-108.47" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.89" y1="67.31" x2="-57.67" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-72.39" y1="134.62" x2="-39.89" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-89.42" y1="132.08" x2="-72.39" y2="134.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-110.07" y1="132.08" x2="-89.42" y2="132.08" width="0" layer="19" extent="1-1"/>
+<wire x1="-88.15" y1="153.67" x2="-89.42" y2="132.08" width="0" layer="19" extent="1-1"/>
+<wire x1="-88.15" y1="175.26" x2="-88.15" y2="153.67" width="0" layer="19" extent="1-1"/>
+<wire x1="-138.95" y1="132.08" x2="-110.07" y2="132.08" width="0" layer="19" extent="1-1"/>
+<wire x1="-137.68" y1="153.67" x2="-138.95" y2="132.08" width="0" layer="19" extent="1-1"/>
+<wire x1="-137.68" y1="175.26" x2="-137.68" y2="153.67" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.62" y1="153.67" x2="-72.39" y2="134.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.62" y1="175.26" x2="-38.62" y2="153.67" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.62" y1="196.85" x2="-38.62" y2="175.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.68" y1="237.49" x2="-38.62" y2="196.85" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.64" y1="277.7" x2="-69.68" y2="237.49" width="0" layer="19" extent="1-1"/>
+<wire x1="-78.14" y1="277.7" x2="-76.64" y2="277.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.43" y1="285.75" x2="-76.64" y2="277.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.11" y1="281.94" x2="-69.43" y2="285.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-151.55" y1="281.94" x2="-78.14" y2="277.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-155.36" y1="281.94" x2="-151.55" y2="281.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-159.17" y1="281.94" x2="-155.36" y2="281.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-162.98" y1="281.94" x2="-159.17" y2="281.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-159.27" y1="271.78" x2="-159.17" y2="281.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.62" y1="196.85" x2="-22.11" y2="281.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.62" y1="175.26" x2="-38.62" y2="196.85" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.62" y1="153.67" x2="-38.62" y2="175.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-88.15" y1="175.26" x2="-38.62" y2="175.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-88.15" y1="153.67" x2="-88.15" y2="175.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-89.42" y1="132.08" x2="-88.15" y2="153.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-137.68" y1="175.26" x2="-88.15" y2="175.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-137.68" y1="153.67" x2="-137.68" y2="175.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-138.95" y1="132.08" x2="-137.68" y2="153.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.89" y1="67.31" x2="-89.42" y2="132.08" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.67" y1="34.29" x2="-39.89" y2="67.31" width="0" layer="19" extent="1-1"/>
-<wire x1="-108.47" y1="34.29" x2="-57.67" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-166.37" y1="-29.21" x2="-108.47" y2="34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF2L">
-<contactref element="U3" pad="5"/>
 <contactref element="C24" pad="1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="U2" pad="34"/>
-<wire x1="-82.645" y1="271.03" x2="-71.14" y2="277.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-92.19" y1="271.78" x2="-82.645" y2="271.03" width="0" layer="19" extent="1-1"/>
+<contactref element="U4" pad="5"/>
+<wire x1="-92.19" y1="271.78" x2="-175.355" y2="-43.93" width="0" layer="19" extent="1-1"/>
+<wire x1="-71.14" y1="277.7" x2="-92.19" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="-23.61" y1="281.94" x2="-71.14" y2="277.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="C6L">
@@ -4546,25 +4573,20 @@ design rules under a new name.
 <wire x1="-151.55" y1="132.08" x2="-67.14" y2="270.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
-<contactref element="U4" pad="1"/>
 <contactref element="R33" pad="2"/>
-<wire x1="-147.74" y1="281.94" x2="-88.805" y2="272.53" width="0" layer="19" extent="1-1"/>
+<contactref element="U3" pad="1"/>
+<wire x1="-147.74" y1="281.94" x2="-172.625" y2="-42.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF2U">
-<contactref element="U4" pad="5"/>
 <contactref element="C25" pad="1"/>
 <contactref element="C4" pad="1"/>
 <contactref element="U1" pad="34"/>
+<contactref element="U3" pad="5"/>
 <wire x1="-27.42" y1="281.94" x2="-54.63" y2="277.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-86.455" y1="271.03" x2="-54.63" y2="277.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-103.62" y1="271.78" x2="-86.455" y2="271.03" width="0" layer="19" extent="1-1"/>
+<wire x1="-103.62" y1="271.78" x2="-54.63" y2="277.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-170.275" y1="-43.93" x2="-103.62" y2="271.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V-U">
-<contactref element="U4" pad="2"/>
-<contactref element="U4" pad="3"/>
-<contactref element="U4" pad="7"/>
-<contactref element="U4" pad="8"/>
-<contactref element="U4" pad="PAD"/>
 <contactref element="C8" pad="2"/>
 <contactref element="C25" pad="2"/>
 <contactref element="C27" pad="2"/>
@@ -4584,38 +4606,42 @@ design rules under a new name.
 <contactref element="CELL19:C1" pad="2"/>
 <contactref element="CELL20:C1" pad="2"/>
 <contactref element="CELL21:C1" pad="2"/>
+<contactref element="R3" pad="1"/>
+<contactref element="F12" pad="2"/>
+<contactref element="CELL13:R3" pad="1"/>
+<contactref element="CELL13:R4" pad="1"/>
+<contactref element="U3" pad="8"/>
+<contactref element="U3" pad="7"/>
+<contactref element="U3" pad="3"/>
+<contactref element="U3" pad="2"/>
+<contactref element="U3" pad="PAD"/>
 <wire x1="-25.92" y1="281.94" x2="-33.54" y2="281.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-61.63" y1="277.7" x2="-33.54" y2="281.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-86.455" y1="272.53" x2="-61.63" y2="277.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-86.455" y1="272.03" x2="-86.455" y2="272.53" width="0" layer="19" extent="1-1"/>
-<wire x1="-87.63" y1="271.78" x2="-86.455" y2="272.03" width="0" layer="19" extent="1-1"/>
-<wire x1="-88.805" y1="272.03" x2="-87.63" y2="271.78" width="0" layer="19" extent="1-1"/>
-<wire x1="-88.805" y1="271.53" x2="-88.805" y2="272.03" width="0" layer="19" extent="1-1"/>
-<wire x1="-117.36" y1="271.78" x2="-88.805" y2="272.03" width="0" layer="19" extent="1-1"/>
-<wire x1="-117.26" y1="281.94" x2="-117.36" y2="271.78" width="0" layer="19" extent="1-1"/>
+<wire x1="-50.38" y1="281.94" x2="-33.54" y2="281.94" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.63" y1="277.7" x2="-50.38" y2="281.94" width="0" layer="19" extent="1-1"/>
+<wire x1="-117.26" y1="281.94" x2="-61.63" y2="277.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-121.07" y1="281.94" x2="-117.26" y2="281.94" width="0" layer="19" extent="1-1"/>
+<wire x1="-117.36" y1="271.78" x2="-117.26" y2="281.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-140.12" y1="281.94" x2="-121.07" y2="281.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-143.93" y1="281.94" x2="-140.12" y2="281.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-155.46" y1="271.78" x2="-143.93" y2="281.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.89" y1="132.08" x2="-61.63" y2="277.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.89" y1="110.49" x2="-39.89" y2="132.08" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.89" y1="88.9" x2="-39.89" y2="110.49" width="0" layer="19" extent="1-1"/>
-<wire x1="-90.69" y1="110.49" x2="-39.89" y2="110.49" width="0" layer="19" extent="1-1"/>
-<wire x1="-90.69" y1="88.9" x2="-90.69" y2="110.49" width="0" layer="19" extent="1-1"/>
-<wire x1="-90.69" y1="67.31" x2="-90.69" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-141.49" y1="67.31" x2="-90.69" y2="67.31" width="0" layer="19" extent="1-1"/>
-<wire x1="-141.49" y1="88.9" x2="-141.49" y2="67.31" width="0" layer="19" extent="1-1"/>
-<wire x1="-141.49" y1="110.49" x2="-141.49" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-140.8" y1="254" x2="-155.46" y2="271.78" width="0" layer="19" extent="1-1"/>
+<wire x1="-141.49" y1="110.49" x2="-140.8" y2="254" width="0" layer="19" extent="1-1"/>
+<wire x1="-141.49" y1="88.9" x2="-141.49" y2="110.49" width="0" layer="19" extent="1-1"/>
+<wire x1="-141.49" y1="67.31" x2="-141.49" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-111.34" y1="67.31" x2="-141.49" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-90.69" y1="67.31" x2="-111.34" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-72.39" y1="69.85" x2="-90.69" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-90.69" y1="88.9" x2="-90.69" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-90.69" y1="110.49" x2="-90.69" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.89" y1="88.9" x2="-72.39" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.89" y1="110.49" x2="-39.89" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.89" y1="132.08" x2="-39.89" y2="110.49" width="0" layer="19" extent="1-1"/>
 <wire x1="-166.37" y1="-36.83" x2="-141.49" y2="67.31" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SENSE0">
-<contactref element="F0" pad="2"/>
-<contactref element="R53" pad="1"/>
-<contactref element="CELL1:R3" pad="1"/>
-<contactref element="CELL1:R4" pad="1"/>
-<wire x1="-69.68" y1="237.49" x2="-69.43" y2="285.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-72.39" y1="134.62" x2="-69.68" y2="237.49" width="0" layer="19" extent="1-1"/>
-<wire x1="-110.07" y1="132.08" x2="-72.39" y2="134.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-170.275" y1="-42.43" x2="-166.37" y2="-36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-170.275" y1="-42.93" x2="-170.275" y2="-42.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-171.45" y1="-43.18" x2="-170.275" y2="-42.93" width="0" layer="19" extent="1-1"/>
+<wire x1="-172.625" y1="-43.43" x2="-171.45" y2="-43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="-172.625" y1="-42.93" x2="-172.625" y2="-43.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO4L">
 <contactref element="R39" pad="2"/>
@@ -4670,8 +4696,8 @@ design rules under a new name.
 </signal>
 <signal name="N$30">
 <contactref element="R51" pad="2"/>
-<contactref element="U4" pad="4"/>
-<wire x1="-88.805" y1="271.03" x2="-60.11" y2="285.75" width="0" layer="19" extent="1-1"/>
+<contactref element="U3" pad="4"/>
+<wire x1="-172.625" y1="-43.93" x2="-60.11" y2="285.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREGL">
 <contactref element="J40" pad="1"/>
@@ -4731,26 +4757,6 @@ design rules under a new name.
 <contactref element="F22" pad="1"/>
 <wire x1="-82.55" y1="223.52" x2="-44.62" y2="274.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-151.3" y1="254" x2="-82.55" y2="223.52" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SENSE12L">
-<contactref element="F22" pad="2"/>
-<contactref element="R24" pad="2"/>
-<contactref element="R1" pad="2"/>
-<contactref element="CELL12:R1" pad="1"/>
-<contactref element="CELL12:Q1" pad="2"/>
-<wire x1="-41.06" y1="281.94" x2="-34.12" y2="274.32" width="0" layer="19" extent="1-1"/>
-<wire x1="-113.45" y1="281.94" x2="-41.06" y2="281.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.0002" y1="67.5767" x2="-34.12" y2="274.32" width="0" layer="19" extent="1-1"/>
-<wire x1="-47.84" y1="67.31" x2="-27.0002" y2="67.5767" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SENSE12U">
-<contactref element="R3" pad="1"/>
-<contactref element="F12" pad="2"/>
-<contactref element="CELL13:R3" pad="1"/>
-<contactref element="CELL13:R4" pad="1"/>
-<wire x1="-140.8" y1="254" x2="-50.38" y2="281.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-111.34" y1="67.31" x2="-140.8" y2="254" width="0" layer="19" extent="1-1"/>
-<wire x1="-72.39" y1="69.85" x2="-111.34" y2="67.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CELL1:N$5">
 <contactref element="CELL1:R2" pad="1"/>
@@ -5151,6 +5157,17 @@ design rules under a new name.
 <wire x1="-86.1314" y1="30.8737" x2="-65.62" y2="281.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-102.6414" y1="30.8737" x2="-86.1314" y2="30.8737" width="0" layer="19" extent="1-1"/>
 <wire x1="-166.37" y1="-40.64" x2="-102.6414" y2="30.8737" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SENSE12">
+<contactref element="F22" pad="2"/>
+<contactref element="R24" pad="2"/>
+<contactref element="CELL12:R1" pad="1"/>
+<contactref element="CELL12:Q1" pad="2"/>
+<contactref element="R1" pad="2"/>
+<wire x1="-41.06" y1="281.94" x2="-34.12" y2="274.32" width="0" layer="19" extent="1-1"/>
+<wire x1="-113.45" y1="281.94" x2="-41.06" y2="281.94" width="0" layer="19" extent="1-1"/>
+<wire x1="-27.0002" y1="67.5767" x2="-34.12" y2="274.32" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.84" y1="67.31" x2="-27.0002" y2="67.5767" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
