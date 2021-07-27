@@ -15,8 +15,8 @@ Repository for all of the circuits for the 2021-2022 car.
     * You may want to keep a copy of [GitHub's Git Cheat Sheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf) as a reference.
 4. Talk to your subteam lead to be added to the team within the GitHub organization.
 5. Clone this repository to your computer using the URLs:
-    * SSH: `git@github.com:hytech-racing/circuits-2020.git`
-    * HTTPS: `https://github.com/hytech-racing/circuits-2020.git`
+    * SSH: `git@github.com:hytech-racing/circuits-2022.git`
+    * HTTPS: `https://github.com/hytech-racing/circuits-2022.git`
 
 ## Getting Started with EAGLE
 1. Follow HyTech's [Software Guide](https://github.com/hytech-racing/training/tree/master/Resources).
