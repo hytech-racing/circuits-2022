@@ -751,11 +751,9 @@ visible on the PCB.</text>
 <text x="0" y="0.508" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="0603-INDUCTOR">
-<description>0603 Cap
-&lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
+<description>&lt;br&gt;
+&lt;a href="https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-9127.pdf"&gt;LQM18DH□□□□70□ Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
 <smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
 <smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
 <text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
@@ -1098,7 +1096,6 @@ Note: No sure about SDO/SDI accuracy</description>
 <wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
 <wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-center">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2480,7 +2477,11 @@ Note: No sure about SDO/SDI accuracy</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="INDUCTOR_POWER_">
+<deviceset name="INDUCTOR_POWER_" prefix="L">
+<description>&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-9127.pdf"&gt;LQM18DH□□□□70□ Datasheet&lt;/a&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
