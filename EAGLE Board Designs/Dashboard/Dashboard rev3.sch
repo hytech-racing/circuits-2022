@@ -750,6 +750,21 @@ visible on the PCB.</text>
 <wire x1="-0.9" y1="-0.5" x2="-0.9" y2="0.5" width="0.0508" layer="39"/>
 <text x="0" y="0.508" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="0603-INDUCTOR">
+<description>0603 Cap
+&lt;br&gt;
+&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
+<smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
+<text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
+<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP2518FD">
@@ -1068,6 +1083,22 @@ Note: No sure about SDO/SDI accuracy</description>
 <wire x1="-0.508" y1="1.27" x2="-0.508" y2="1.016" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1.27" x2="0.508" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="0.508" y1="-1.27" x2="0.508" y2="-1.016" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="INDUCTOR">
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<pin name="P$1" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
+<pin name="P$2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-1.27" y="-0.635" size="1.27" layer="96" align="top-center">&gt;INDUCTANCE</text>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-center">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2444,6 +2475,29 @@ Note: No sure about SDO/SDI accuracy</description>
 <attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division"/>
 <attribute name="MOPN" value="78-VSKY20401608G408"/>
 <attribute name="MPN" value="VSKY20401608-G4-08"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INDUCTOR_POWER_">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603-INDUCTOR">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name="10U">
+<attribute name="DKPN" value="490-LQM18DH100M70LTR-ND" constant="no"/>
+<attribute name="INDUCTANCE" value="10µH" constant="no"/>
+<attribute name="MANUFACTURER" value="Murata Electronics" constant="no"/>
+<attribute name="MOPN" value="81-LQM18DH100M70L " constant="no"/>
+<attribute name="MPN" value="LQM18DH100M70L" constant="no"/>
+<attribute name="TOLERANCE" value="20%" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6002,8 +6056,6 @@ visible on the PCB.</text>
 <part name="C5" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C6" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
-<part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
-<part name="C12" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C15" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C16" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.22UF"/>
 <part name="C17" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_15PF"/>
@@ -6057,7 +6109,6 @@ visible on the PCB.</text>
 <part name="CAN" library="HyTechDevices" deviceset="JUMPER_?_*" device="1X02"/>
 <part name="C8" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_4.7NF" value="CAPACITOR_0603_10V_4.7NF"/>
 <part name="GND12" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="C20" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="C13" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C14" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
@@ -6078,6 +6129,8 @@ visible on the PCB.</text>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="D5" library="HyTechDevices" deviceset="SCHOTTKY" device=""/>
 <part name="D6" library="HyTechDevices" deviceset="SCHOTTKY" device=""/>
+<part name="U$2" library="HyTechDevices" deviceset="INDUCTOR_POWER_" device="" technology="10U"/>
+<part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 </parts>
 <sheets>
 <sheet>
@@ -6258,16 +6311,6 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE" x="127" y="193.802" size="1.27" layer="96" rot="R90" align="top-right"/>
 <attribute name="CAPACITANCE" x="127" y="194.818" size="1.27" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="C11" gate="G$1" x="139.7" y="187.96" smashed="yes" rot="R180">
-<attribute name="NAME" x="140.97" y="185.42" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="VOLTAGE" x="141.478" y="190.5" size="1.27" layer="96" rot="R180" align="top-right"/>
-<attribute name="CAPACITANCE" x="140.462" y="190.5" size="1.27" layer="96" rot="R180" align="top-left"/>
-</instance>
-<instance part="C12" gate="G$1" x="139.7" y="172.72" smashed="yes" rot="R180">
-<attribute name="NAME" x="140.97" y="170.18" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="VOLTAGE" x="141.478" y="175.26" size="1.27" layer="96" rot="R180" align="top-right"/>
-<attribute name="CAPACITANCE" x="140.462" y="175.26" size="1.27" layer="96" rot="R180" align="top-left"/>
-</instance>
 <instance part="C15" gate="G$1" x="129.54" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="127" y="113.03" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="132.08" y="112.522" size="1.27" layer="96" rot="R90" align="top-right"/>
@@ -6360,8 +6403,8 @@ visible on the PCB.</text>
 <instance part="P8" gate="1" x="160.02" y="162.56" smashed="yes">
 <attribute name="VALUE" x="160.02" y="161.29" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P9" gate="1" x="144.78" y="167.64" smashed="yes">
-<attribute name="VALUE" x="144.78" y="166.37" size="1.27" layer="96" align="top-center"/>
+<instance part="P9" gate="1" x="144.78" y="170.18" smashed="yes">
+<attribute name="VALUE" x="144.78" y="168.91" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P10" gate="1" x="220.98" y="180.34" smashed="yes">
 <attribute name="VALUE" x="220.98" y="179.07" size="1.27" layer="96" align="top-center"/>
@@ -6509,11 +6552,6 @@ visible on the PCB.</text>
 <instance part="GND12" gate="1" x="231.14" y="139.7" smashed="yes">
 <attribute name="VALUE" x="231.14" y="138.43" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="C20" gate="G$1" x="139.7" y="180.086" smashed="yes" rot="R180">
-<attribute name="NAME" x="140.97" y="177.546" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="VOLTAGE" x="141.478" y="182.626" size="1.27" layer="96" rot="R180" align="top-right"/>
-<attribute name="CAPACITANCE" x="140.462" y="182.626" size="1.27" layer="96" rot="R180" align="top-left"/>
-</instance>
 <instance part="P+1" gate="1" x="256.54" y="147.32" smashed="yes">
 <attribute name="VALUE" x="259.08" y="149.86" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -6632,6 +6670,15 @@ visible on the PCB.</text>
 <attribute name="NAME" x="161.29" y="65.405" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="161.29" y="61.595" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="U$2" gate="G$1" x="139.7" y="167.64" smashed="yes" rot="MR270">
+<attribute name="NAME" x="138.43" y="168.91" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="INDUCTANCE" x="140.335" y="168.91" size="1.27" layer="96" rot="MR270" align="top-center"/>
+</instance>
+<instance part="C11" gate="G$1" x="139.7" y="177.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="142.24" y="179.07" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VOLTAGE" x="137.16" y="179.07" size="1.27" layer="96" rot="R270" align="top-center"/>
+<attribute name="CAPACITANCE" x="135.382" y="179.07" size="1.27" layer="96" rot="R270" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6689,17 +6736,6 @@ visible on the PCB.</text>
 <wire x1="160.02" y1="167.64" x2="160.02" y2="177.8" width="0.1524" layer="91"/>
 <junction x="160.02" y="167.64"/>
 <junction x="160.02" y="177.8"/>
-</segment>
-<segment>
-<wire x1="144.78" y1="172.72" x2="144.78" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="2"/>
-<pinref part="P9" gate="1" pin="GND"/>
-<pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="172.72" x2="144.78" y2="180.086" width="0.1524" layer="91"/>
-<junction x="144.78" y="172.72"/>
-<pinref part="C20" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="180.086" x2="144.78" y2="187.96" width="0.1524" layer="91"/>
-<junction x="144.78" y="180.086"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="152.4" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
@@ -6882,27 +6918,15 @@ visible on the PCB.</text>
 <pinref part="J1" gate="G$1" pin="GND"/>
 <wire x1="177.8" y1="190.5" x2="180.34" y2="190.5" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="P9" gate="1" pin="GND"/>
+<wire x1="139.7" y1="182.88" x2="144.78" y2="182.88" width="0.1524" layer="91"/>
+<junction x="144.78" y="182.88"/>
+<wire x1="144.78" y1="182.88" x2="144.78" y2="172.72" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
-<segment>
-<wire x1="134.62" y1="167.64" x2="137.16" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="137.16" y1="167.64" x2="137.16" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="170.18" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="172.72" x2="137.16" y2="180.086" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="180.086" x2="137.16" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="187.96" x2="137.16" y2="190.5" width="0.1524" layer="91"/>
-<junction x="137.16" y="172.72"/>
-<pinref part="U1" gate="G$1" pin="VDD"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<junction x="137.16" y="187.96"/>
-<pinref part="C20" gate="G$1" pin="1"/>
-<junction x="137.16" y="180.086"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="AVDD"/>
-<wire x1="134.62" y1="170.18" x2="137.16" y2="170.18" width="0.1524" layer="91"/>
-<junction x="137.16" y="170.18"/>
-</segment>
 <segment>
 <pinref part="P+15" gate="1" pin="+5V"/>
 <wire x1="86.36" y1="134.62" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
@@ -7967,6 +7991,25 @@ visible on the PCB.</text>
 <pinref part="J1" gate="G$1" pin="RESET"/>
 <wire x1="180.34" y1="193.04" x2="167.64" y2="193.04" width="0.1524" layer="91"/>
 <label x="167.64" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="AVDD"/>
+<pinref part="U$2" gate="G$1" pin="P$1"/>
+<wire x1="134.62" y1="170.18" x2="134.62" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="172.72" x2="139.7" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="172.72" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
+<junction x="139.7" y="172.72"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+<wire x1="134.62" y1="167.64" x2="134.62" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$2"/>
+<wire x1="134.62" y1="165.1" x2="139.7" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
