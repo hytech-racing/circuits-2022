@@ -1,6 +1,10 @@
-# Pull Request (PR) into Circuits-2020
+# Pull Request (PR) into Circuits-2022
 
-***Your PR should not cause any merge conflicts, so please merge the `master` branch into your branch before submitting. It is your responsibility to ensure that the merge does not break something before submitting. [Here](https://guides.github.com/features/mastering-markdown/) is a good resource for markdown formatting as you fill out this template. See this [example](https://github.com/hytech-racing/circuits-2020/pull/47). Feel free to ask any electrical lead if you have any questions! Delete this block when actually making your PR!***
+***Before making a pull request, you muest:
+Follow HyTech's [Github Software Guidelines](https://gtvault.sharepoint.com/:w:/r/sites/HyTechRacing2/Shared%20Documents/Electrical%20-%20All/HT06/Guidelines%20Rules%20and%20Procedures/Github%20Software%20Guidelines.docx?d=w7e0d7e36afeb47b5a935bd7a4851bceb&csf=1&web=1&e=sudzjV) to understand our development flow and pull request procedure.
+Follow HyTech's [Electrical Designs Rules Review Process](https://gtvault.sharepoint.com/:w:/r/sites/HyTechRacing2/Shared%20Documents/Electrical%20-%20All/HT06/Guidelines%20Rules%20and%20Procedures/Electrical%20Designs%20Rules%20Review%20Process.docx?d=w0277498dfb4b4b9fbfad0e5db8a187c8&csf=1&web=1&e=LDFCNz) to understand circuit design flow and relevant Github procedures.***
+
+***Your PR should not cause any merge conflicts, so please merge the `main` branch into your branch before submitting. It is your responsibility to ensure that the merge does not break something before submitting. [Here](https://guides.github.com/features/mastering-markdown/) is a good resource for markdown formatting as you fill out this template. See this [example](https://github.com/hytech-racing/circuits-2022/pull/47). Feel free to ask any electrical lead if you have any questions! Delete this block when actually making your PR!***
 
 ## Board Description
 *Describe the contents of the pull request. If it's a new board, what is its purpose and features. If it's a revision, what are the changes?*
@@ -16,9 +20,9 @@
 
 ## Checklist
 - [ ] Did you create any new parts in our library?
-- - [ ] Did you *make a PR* for them in `circuits-support-2020`
+- - [ ] Did you *make a PR* for them in `circuits-support-2022`
 - - [ ] Did that PR get *approved* yet?
-- [ ] Did you pull `master` into your branch?
+- [ ] Did you pull `main` into your branch?
 - - [ ] Did you *check for merge conflicts*?
 - - [ ] Did you *resolve* any that occurred? ***If you are having trouble or are confused, contact a lead!***
 - [ ] Did you fill out the above template?
