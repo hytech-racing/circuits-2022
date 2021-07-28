@@ -763,6 +763,41 @@ visible on the PCB.</text>
 <wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
 <rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
 </package>
+<package name="OKL-T/1-W12">
+<description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
+<wire x1="-6.35" y1="6.35" x2="-6.35" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="6.35" y1="6.35" x2="6.35" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="6.35" x2="6.35" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-6.35" x2="6.35" y2="-6.35" width="0.127" layer="21"/>
+<smd name="2" x="-3.429" y="4.572" dx="2.032" dy="4.318" layer="1" rot="R90"/>
+<smd name="3" x="1.143" y="4.572" dx="2.032" dy="4.318" layer="1" rot="R90"/>
+<smd name="4" x="4.572" y="3.429" dx="2.032" dy="4.318" layer="1" rot="R180"/>
+<smd name="1" x="-4.572" y="0" dx="1.27" dy="1.27" layer="1"/>
+<smd name="10" x="-4.572" y="-2.286" dx="1.27" dy="1.27" layer="1"/>
+<smd name="9" x="-4.572" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
+<smd name="5" x="4.572" y="0" dx="1.27" dy="1.27" layer="1"/>
+<smd name="11" x="4.572" y="-2.286" dx="1.27" dy="1.27" layer="1"/>
+<smd name="6" x="4.572" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
+<smd name="7" x="0" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
+<smd name="8" x="-2.286" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
+<smd name="12" x="2.286" y="-4.572" dx="1.27" dy="1.27" layer="1"/>
+<rectangle x1="-6.604" y1="-6.604" x2="6.604" y2="6.604" layer="39"/>
+<text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="0885">
+<description>0885 Fuse
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
+<smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
+<wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
+<wire x1="-5.43" y1="-2.39" x2="5.43" y2="-2.39" width="0.127" layer="21"/>
+<wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>
+<wire x1="5.43" y1="2.39" x2="-5.43" y2="2.39" width="0.127" layer="21"/>
+<text x="0" y="4.318" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-8.382" y1="-4.318" x2="8.382" y2="4.318" layer="39"/>
+<rectangle x1="-2.45" y1="-4.318" x2="2.45" y2="4.318" layer="43"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP2518FD">
@@ -1096,6 +1131,30 @@ Note: No sure about SDO/SDI accuracy</description>
 <wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
 <wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
+</symbol>
+<symbol name="CONVERTER_DC/DC">
+<description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="GND" x="20.32" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="IN" x="-2.54" y="-2.54" length="short" direction="in"/>
+<pin name="EN" x="-2.54" y="-5.08" length="short"/>
+<pin name="OUT" x="20.32" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="TRIM" x="20.32" y="-5.08" length="short" rot="R180"/>
+</symbol>
+<symbol name="FUSE">
+<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;CURRENT</text>
+<wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2499,6 +2558,88 @@ Note: No sure about SDO/SDI accuracy</description>
 <attribute name="MOPN" value="81-LQM18DH100M70L " constant="no"/>
 <attribute name="MPN" value="LQM18DH100M70L" constant="no"/>
 <attribute name="TOLERANCE" value="20%" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONVERTER_DC/DC_">
+<description>&lt;a href = "https://www.murata.com/products/productdata/8807038124062/okl-t1-w12.pdf?1583754815000"&gt;OKL-T/1-W12 Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONVERTER_DC/DC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OKL-T/1-W12">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3 7 11"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="TRIM" pad="6"/>
+</connects>
+<technologies>
+<technology name="12V-5V">
+<attribute name="DPN" value="811-2260-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc." constant="no"/>
+<attribute name="MOPN" value="580-OKL-T/1-W12N-C " constant="no"/>
+<attribute name="MPN" value="OKL-T/1-W12N-C " constant="no"/>
+<attribute name="VIN" value="12V" constant="no"/>
+<attribute name="VOUT" value="5V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE" prefix="F">
+<description>Ceramic Surface Mount Fuse
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/358/typ_SMD_SPT-1276028.pdf"&gt;Datasheet&lt;/a&gt;
+
+Fuse/Fuseclips
+&lt;br&gt;
+Keystone Electronics 3568 Fuse
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ProductDetail/Keystone-Electronics/3568"&gt;Mouser Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/215/568-742601.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Bussman/Eaton Midget Fuse Clip
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ProductDetail/Bussmann-Eaton/BK-1A3400-09-R/?qs=sGAEpiMZZMuG%252bgnN5hGYGzzlAelq2OxnKqVSMVjq8I4%3d"&gt;1A3400&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Schurter 0751.0110 Brass Fuse Clip
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/358/typ_OG__Clip__5x20-2553.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Bel Fuse 0ZCF Series Surface Mount PTC (resettable) Fuse
+&lt;br&gt;
+&lt;a href="https://belfuse.com/resources/CircuitProtection/datasheets/0ZCF%20Nov2016.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
+&lt;br&gt;
+&lt;a href="https://m.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_1812l_datasheet.pdf.pdf"&gt;Datasheet&lt;/a&gt;
+
+Ceramic SMD Surface Mount Fuse
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0885" package="0885">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="1.25A"/>
+<attribute name="DKPN" value="F10986CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-08851.25DR"/>
+<attribute name="MPN" value="08851.25DR"/>
 </technology>
 </technologies>
 </device>
@@ -5321,21 +5462,6 @@ Layer: 94 Symbol</description>
 <text x="0" y="1.778" size="0.635" layer="25" font="vector" rot="R180" align="top-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
 </package>
-<package name="SOT223">
-<description>SOT223
-&lt;br&gt;
-&lt;a href="https://www.diodes.com/assets/Package-Files/SOT223.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
-<smd name="2" x="0" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
-<smd name="3" x="2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
-<smd name="4" x="0" y="3.2" dx="3.3" dy="1.6" layer="1"/>
-<text x="0" y="4.445" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-3.275" y1="1.775" x2="3.275" y2="1.775" width="0.127" layer="21"/>
-<wire x1="3.275" y1="1.775" x2="3.275" y2="-1.775" width="0.127" layer="21"/>
-<wire x1="3.275" y1="-1.775" x2="-3.275" y2="-1.775" width="0.127" layer="21"/>
-<wire x1="-3.275" y1="-1.775" x2="-3.275" y2="1.775" width="0.127" layer="21"/>
-<rectangle x1="-3.81" y1="-4.445" x2="3.81" y2="4.445" layer="39"/>
-</package>
 <package name="MOLEX_MINIFIT_PTH_06">
 <description>6 Pin Mini-Fit Vertical Header, Through Hole, Dual Row
 &lt;br&gt;
@@ -5664,20 +5790,6 @@ visible on the PCB.</text>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-43.942" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="VOLTAGE_REGULATOR">
-<wire x1="0" y1="-7.62" x2="10.16" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="0" width="0.4064" layer="94"/>
-<wire x1="10.16" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-7.62" width="0.4064" layer="94"/>
-<pin name="GND" x="5.08" y="-10.16" visible="off" length="short" direction="pwr" rot="R90"/>
-<pin name="IN" x="-2.54" y="-2.54" visible="off" length="short" direction="pwr"/>
-<pin name="OUT" x="12.7" y="-2.54" visible="off" length="short" direction="pwr" rot="R180"/>
-<text x="5.08" y="0.635" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="5.08" y="-6.858" size="1.524" layer="95" align="bottom-center">GND</text>
-<text x="0.635" y="-2.54" size="1.524" layer="95" align="center-left">IN</text>
-<text x="9.525" y="-2.54" size="1.524" layer="95" align="center-right">OUT</text>
-<text x="6.35" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
 <symbol name="CONNECTOR_06">
 <wire x1="7.62" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
@@ -5827,28 +5939,6 @@ visible on the PCB.</text>
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LM340">
-<description>LM340
-&lt;br&gt;&lt;br&gt;
-7.5-35V to 5V SMD regulator
-&lt;br&gt;&lt;br&gt;
-&lt;a href="https://www.mouser.com/ProductDetail/Texas-Instruments/LM340MPX-50-NOPB?qs=sGAEpiMZZMvu8NZDyZ4K0cQiG3JqdhEW"&gt;Mouser link&lt;\a&gt;</description>
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="5.08" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6056,9 +6146,7 @@ visible on the PCB.</text>
 <part name="C4" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C5" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C6" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
-<part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C15" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
-<part name="C16" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.22UF"/>
 <part name="C17" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_15PF"/>
 <part name="C18" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_15PF"/>
 <part name="C19" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
@@ -6072,7 +6160,6 @@ visible on the PCB.</text>
 <part name="D11" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="RED"/>
 <part name="D12" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="YELLOW"/>
 <part name="D14" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
-<part name="U$6" library="HyTechDevices - Copy" deviceset="LM340" device=""/>
 <part name="X5" library="HyTechDevices - Copy" deviceset="CONNECTOR-6" device="NANO-FIT_RIGHT_ANGLE-6-SURFACE"/>
 <part name="X7" library="HyTechDevices - Copy" deviceset="CONNECTOR-8" device="NANO-FIT_RIGHT_ANGLE-8-SURFACE"/>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -6091,7 +6178,6 @@ visible on the PCB.</text>
 <part name="P16" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P17" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P18" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="P19" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P20" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
 <part name="RN3" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="160"/>
@@ -6132,6 +6218,12 @@ visible on the PCB.</text>
 <part name="D6" library="HyTechDevices" deviceset="SCHOTTKY" device=""/>
 <part name="U$2" library="HyTechDevices" deviceset="INDUCTOR_POWER_" device="" technology="10U"/>
 <part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
+<part name="U$3" library="HyTechDevices" deviceset="CONVERTER_DC/DC_" device="" technology="12V-5V"/>
+<part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
+<part name="C12" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="180"/>
+<part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
+<part name="F1" library="HyTechDevices" deviceset="FUSE" device="0885"/>
 </parts>
 <sheets>
 <sheet>
@@ -6141,8 +6233,8 @@ visible on the PCB.</text>
 <text x="198.12" y="73.66" size="1.778" layer="97">Voltage regulation for the buzzer.</text>
 </plain>
 <instances>
-<instance part="P+3" gate="1" x="137.16" y="193.04" smashed="yes">
-<attribute name="VALUE" x="137.16" y="195.58" size="1.778" layer="96" rot="R180"/>
+<instance part="P+3" gate="1" x="139.7" y="205.74" smashed="yes">
+<attribute name="VALUE" x="139.7" y="208.28" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+13" gate="1" x="264.16" y="200.66" smashed="yes">
 <attribute name="VALUE" x="266.7" y="203.2" size="1.778" layer="96" rot="R180"/>
@@ -6150,11 +6242,11 @@ visible on the PCB.</text>
 <instance part="P+15" gate="1" x="86.36" y="137.16" smashed="yes">
 <attribute name="VALUE" x="83.82" y="137.16" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+16" gate="1" x="104.14" y="205.74" smashed="yes">
-<attribute name="VALUE" x="101.6" y="208.28" size="1.778" layer="96"/>
+<instance part="P+16" gate="1" x="200.66" y="205.74" smashed="yes">
+<attribute name="VALUE" x="198.12" y="208.28" size="1.778" layer="96"/>
 </instance>
-<instance part="P+17" gate="1" x="124.46" y="205.74" smashed="yes">
-<attribute name="VALUE" x="127" y="208.28" size="1.778" layer="96" rot="R180"/>
+<instance part="P+17" gate="1" x="236.22" y="205.74" smashed="yes">
+<attribute name="VALUE" x="238.76" y="208.28" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+18" gate="1" x="35.56" y="208.28" smashed="yes">
 <attribute name="VALUE" x="38.1" y="211.582" size="1.778" layer="96" rot="R180"/>
@@ -6174,15 +6266,15 @@ visible on the PCB.</text>
 <instance part="U$5" gate="G$1" x="182.88" y="180.34" smashed="yes">
 <attribute name="NAME" x="182.88" y="181.102" size="1.27" layer="95"/>
 </instance>
-<instance part="P+24" gate="1" x="208.28" y="191.262" smashed="yes">
-<attribute name="VALUE" x="208.28" y="193.802" size="1.778" layer="96" rot="R180"/>
+<instance part="P+24" gate="1" x="208.28" y="183.642" smashed="yes">
+<attribute name="VALUE" x="208.28" y="186.182" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U1" gate="G$1" x="109.22" y="172.72" smashed="yes">
 <attribute name="NAME" x="109.22" y="173.482" size="1.27" layer="95"/>
 </instance>
-<instance part="X3" gate="G$1" x="152.4" y="180.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="149.225" y="179.07" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="FREQUENCY" x="155.575" y="179.07" size="1.27" layer="96" rot="R90" align="top-left"/>
+<instance part="X3" gate="G$1" x="157.48" y="177.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="154.305" y="176.53" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="FREQUENCY" x="160.655" y="176.53" size="1.27" layer="96" rot="R90" align="top-left"/>
 </instance>
 <instance part="D1" gate="G$1" x="88.9" y="104.14" smashed="yes">
 <attribute name="NAME" x="88.9" y="104.902" size="1.27" layer="95"/>
@@ -6292,10 +6384,10 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE" x="154.94" y="112.522" size="1.27" layer="96" rot="MR90" align="top-right"/>
 <attribute name="CAPACITANCE" x="154.94" y="113.538" size="1.27" layer="96" rot="MR90" align="top-left"/>
 </instance>
-<instance part="C4" gate="G$1" x="210.82" y="182.88" smashed="yes" rot="R180">
-<attribute name="NAME" x="212.09" y="180.34" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="VOLTAGE" x="212.598" y="185.42" size="1.27" layer="96" rot="R180" align="top-right"/>
-<attribute name="CAPACITANCE" x="211.582" y="185.42" size="1.27" layer="96" rot="R180" align="top-left"/>
+<instance part="C4" gate="G$1" x="213.36" y="177.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="214.63" y="175.26" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VOLTAGE" x="215.138" y="180.34" size="1.27" layer="96" rot="R180" align="top-right"/>
+<attribute name="CAPACITANCE" x="214.122" y="180.34" size="1.27" layer="96" rot="R180" align="top-left"/>
 </instance>
 <instance part="C5" gate="G$1" x="266.7" y="193.04" smashed="yes" rot="R180">
 <attribute name="NAME" x="267.97" y="190.5" size="1.27" layer="95" rot="R180" align="bottom-center"/>
@@ -6307,30 +6399,20 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE" x="268.478" y="187.706" size="1.27" layer="96" rot="R180" align="top-right"/>
 <attribute name="CAPACITANCE" x="267.462" y="187.706" size="1.27" layer="96" rot="R180" align="top-left"/>
 </instance>
-<instance part="C10" gate="G$1" x="124.46" y="195.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="121.92" y="194.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="127" y="193.802" size="1.27" layer="96" rot="R90" align="top-right"/>
-<attribute name="CAPACITANCE" x="127" y="194.818" size="1.27" layer="96" rot="R90" align="top-left"/>
-</instance>
 <instance part="C15" gate="G$1" x="129.54" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="127" y="113.03" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="132.08" y="112.522" size="1.27" layer="96" rot="R90" align="top-right"/>
 <attribute name="CAPACITANCE" x="132.08" y="113.538" size="1.27" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="C16" gate="G$1" x="104.14" y="195.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="101.6" y="194.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="106.68" y="193.802" size="1.27" layer="96" rot="R90" align="top-right"/>
-<attribute name="CAPACITANCE" x="106.68" y="194.818" size="1.27" layer="96" rot="R90" align="top-left"/>
+<instance part="C17" gate="G$1" x="160.02" y="187.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="161.29" y="185.42" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VOLTAGE" x="161.798" y="190.5" size="1.27" layer="96" rot="R180" align="top-right"/>
+<attribute name="CAPACITANCE" x="160.782" y="190.5" size="1.27" layer="96" rot="R180" align="top-left"/>
 </instance>
-<instance part="C17" gate="G$1" x="154.94" y="190.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="156.21" y="187.96" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="VOLTAGE" x="156.718" y="193.04" size="1.27" layer="96" rot="R180" align="top-right"/>
-<attribute name="CAPACITANCE" x="155.702" y="193.04" size="1.27" layer="96" rot="R180" align="top-left"/>
-</instance>
-<instance part="C18" gate="G$1" x="154.94" y="167.64" smashed="yes" rot="R180">
-<attribute name="NAME" x="156.21" y="165.1" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="VOLTAGE" x="156.718" y="170.18" size="1.27" layer="96" rot="R180" align="top-right"/>
-<attribute name="CAPACITANCE" x="155.702" y="170.18" size="1.27" layer="96" rot="R180" align="top-left"/>
+<instance part="C18" gate="G$1" x="160.02" y="165.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="161.29" y="162.56" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VOLTAGE" x="161.798" y="167.64" size="1.27" layer="96" rot="R180" align="top-right"/>
+<attribute name="CAPACITANCE" x="160.782" y="167.64" size="1.27" layer="96" rot="R180" align="top-left"/>
 </instance>
 <instance part="C19" gate="G$1" x="137.16" y="132.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="134.62" y="130.81" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -6374,9 +6456,6 @@ visible on the PCB.</text>
 <attribute name="NAME" x="48.895" y="184.15" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="52.705" y="184.15" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="U$6" gate="G$1" x="109.22" y="203.2" smashed="yes">
-<attribute name="NAME" x="114.3" y="203.835" size="1.27" layer="95" align="bottom-center"/>
-</instance>
 <instance part="X5" gate="G$1" x="17.78" y="187.96" smashed="yes">
 <attribute name="NAME" x="17.78" y="188.722" size="1.778" layer="95"/>
 </instance>
@@ -6401,14 +6480,14 @@ visible on the PCB.</text>
 <instance part="P7" gate="1" x="104.14" y="124.46" smashed="yes">
 <attribute name="VALUE" x="104.14" y="123.19" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P8" gate="1" x="160.02" y="162.56" smashed="yes">
-<attribute name="VALUE" x="160.02" y="161.29" size="1.27" layer="96" align="top-center"/>
+<instance part="P8" gate="1" x="165.1" y="160.02" smashed="yes">
+<attribute name="VALUE" x="165.1" y="158.75" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P9" gate="1" x="144.78" y="170.18" smashed="yes">
-<attribute name="VALUE" x="144.78" y="168.91" size="1.27" layer="96" align="top-center"/>
+<instance part="P9" gate="1" x="147.32" y="170.18" smashed="yes">
+<attribute name="VALUE" x="147.32" y="168.91" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P10" gate="1" x="220.98" y="180.34" smashed="yes">
-<attribute name="VALUE" x="220.98" y="179.07" size="1.27" layer="96" align="top-center"/>
+<instance part="P10" gate="1" x="220.98" y="175.26" smashed="yes">
+<attribute name="VALUE" x="220.98" y="173.99" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P12" gate="1" x="180.34" y="147.32" smashed="yes">
 <attribute name="VALUE" x="180.34" y="146.05" size="1.27" layer="96" align="top-center"/>
@@ -6430,9 +6509,6 @@ visible on the PCB.</text>
 </instance>
 <instance part="P18" gate="1" x="78.74" y="172.72" smashed="yes">
 <attribute name="VALUE" x="78.74" y="171.45" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="P19" gate="1" x="114.3" y="182.88" smashed="yes">
-<attribute name="VALUE" x="114.3" y="181.61" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P20" gate="1" x="271.78" y="180.34" smashed="yes">
 <attribute name="VALUE" x="271.78" y="179.07" size="1.27" layer="96" align="top-center"/>
@@ -6671,14 +6747,40 @@ visible on the PCB.</text>
 <attribute name="NAME" x="161.29" y="65.405" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="161.29" y="61.595" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="U$2" gate="G$1" x="139.7" y="167.64" smashed="yes" rot="MR270">
-<attribute name="NAME" x="138.43" y="168.91" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
-<attribute name="INDUCTANCE" x="140.335" y="168.91" size="1.27" layer="96" rot="MR270" align="top-center"/>
+<instance part="U$2" gate="G$1" x="139.7" y="182.88" smashed="yes" rot="MR270">
+<attribute name="NAME" x="138.43" y="184.15" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="INDUCTANCE" x="140.335" y="184.15" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="C11" gate="G$1" x="139.7" y="177.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="142.24" y="179.07" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="VOLTAGE" x="137.16" y="179.07" size="1.27" layer="96" rot="R270" align="top-center"/>
-<attribute name="CAPACITANCE" x="135.382" y="179.07" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="C11" gate="G$1" x="142.24" y="175.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="143.51" y="172.72" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VOLTAGE" x="143.51" y="177.8" size="1.27" layer="96" rot="R180" align="top-center"/>
+<attribute name="CAPACITANCE" x="143.51" y="179.578" size="1.27" layer="96" rot="R180" align="top-center"/>
+</instance>
+<instance part="U$3" gate="G$1" x="213.36" y="200.66" smashed="yes">
+<attribute name="NAME" x="213.36" y="201.422" size="1.27" layer="95"/>
+<attribute name="MPN" x="213.36" y="189.738" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="C10" gate="G$1" x="142.24" y="187.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="143.51" y="185.42" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VOLTAGE" x="143.51" y="190.5" size="1.27" layer="96" rot="R180" align="top-center"/>
+<attribute name="CAPACITANCE" x="143.51" y="192.278" size="1.27" layer="96" rot="R180" align="top-center"/>
+</instance>
+<instance part="C12" gate="G$1" x="142.24" y="198.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="143.51" y="195.58" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VOLTAGE" x="143.51" y="200.66" size="1.27" layer="96" rot="R180" align="top-center"/>
+<attribute name="CAPACITANCE" x="143.51" y="202.438" size="1.27" layer="96" rot="R180" align="top-center"/>
+</instance>
+<instance part="R14" gate="G$1" x="246.38" y="195.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="245.11" y="194.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="194.31" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R16" gate="G$1" x="246.38" y="205.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="245.11" y="204.47" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="204.47" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="F1" gate="G$1" x="205.74" y="198.12" smashed="yes">
+<attribute name="NAME" x="204.47" y="199.39" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="CURRENT" x="204.47" y="196.85" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -6728,15 +6830,15 @@ visible on the PCB.</text>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="167.64" x2="160.02" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="165.1" x2="165.1" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="P8" gate="1" pin="GND"/>
 <pinref part="X3" gate="G$1" pin="GND"/>
 <pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="190.5" x2="160.02" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="177.8" x2="157.48" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="167.64" x2="160.02" y2="177.8" width="0.1524" layer="91"/>
-<junction x="160.02" y="167.64"/>
-<junction x="160.02" y="177.8"/>
+<wire x1="165.1" y1="187.96" x2="165.1" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="165.1" x2="165.1" y2="175.26" width="0.1524" layer="91"/>
+<junction x="165.1" y="165.1"/>
+<junction x="165.1" y="175.26"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="152.4" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
@@ -6860,19 +6962,6 @@ visible on the PCB.</text>
 <pinref part="P18" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="193.04" x2="114.3" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="187.96" x2="114.3" y2="185.42" width="0.1524" layer="91"/>
-<junction x="114.3" y="187.96"/>
-<wire x1="104.14" y1="190.5" x2="104.14" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="187.96" x2="114.3" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="190.5" x2="124.46" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="187.96" x2="114.3" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="2"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-<pinref part="U$6" gate="G$1" pin="GND"/>
-<pinref part="P19" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="P22" gate="1" pin="GND"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="236.22" y1="167.64" x2="241.3" y2="167.64" width="0.1524" layer="91"/>
@@ -6890,7 +6979,7 @@ visible on the PCB.</text>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="P10" gate="1" pin="GND"/>
-<wire x1="215.9" y1="182.88" x2="220.98" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="177.8" x2="220.98" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
@@ -6920,11 +7009,15 @@ visible on the PCB.</text>
 <wire x1="177.8" y1="190.5" x2="180.34" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="P9" gate="1" pin="GND"/>
-<wire x1="139.7" y1="182.88" x2="144.78" y2="182.88" width="0.1524" layer="91"/>
-<junction x="144.78" y="182.88"/>
-<wire x1="144.78" y1="182.88" x2="144.78" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="198.12" x2="147.32" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="187.96" x2="147.32" y2="175.26" width="0.1524" layer="91"/>
+<junction x="147.32" y="187.96"/>
+<wire x1="147.32" y1="172.72" x2="147.32" y2="175.26" width="0.1524" layer="91"/>
+<junction x="147.32" y="175.26"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -6932,15 +7025,6 @@ visible on the PCB.</text>
 <pinref part="P+15" gate="1" pin="+5V"/>
 <wire x1="86.36" y1="134.62" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="200.66" x2="124.46" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="P+17" gate="1" pin="+5V"/>
-<wire x1="124.46" y1="200.66" x2="124.46" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="200.66" x2="124.46" y2="198.12" width="0.1524" layer="91"/>
-<junction x="124.46" y="200.66"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<pinref part="U$6" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
 <pinref part="P+13" gate="1" pin="+5V"/>
@@ -6990,14 +7074,6 @@ visible on the PCB.</text>
 <wire x1="231.14" y1="99.06" x2="236.22" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="VDD"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="177.8" x2="208.28" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="P+24" gate="1" pin="+5V"/>
-<wire x1="208.28" y1="188.722" x2="208.28" y2="182.88" width="0.1524" layer="91"/>
-<junction x="208.28" y="182.88"/>
-</segment>
-<segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <junction x="256.54" y="139.7"/>
 <wire x1="256.54" y1="139.7" x2="256.54" y2="144.78" width="0.1524" layer="91"/>
@@ -7017,6 +7093,34 @@ visible on the PCB.</text>
 <wire x1="180.34" y1="203.2" x2="177.8" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="177.8" y1="203.2" x2="177.8" y2="203.962" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="OUT"/>
+<wire x1="233.68" y1="198.12" x2="236.22" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="P+17" gate="1" pin="+5V"/>
+<wire x1="236.22" y1="198.12" x2="236.22" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="U$2" gate="G$1" pin="P$1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="187.96" x2="139.7" y2="198.12" width="0.1524" layer="91"/>
+<junction x="139.7" y="187.96"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="139.7" y1="198.12" x2="139.7" y2="203.2" width="0.1524" layer="91"/>
+<junction x="139.7" y="198.12"/>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+<wire x1="134.62" y1="167.64" x2="137.16" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="167.64" x2="137.16" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="198.12" x2="139.7" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VDD"/>
+<pinref part="P+24" gate="1" pin="+5V"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="208.28" y1="177.8" x2="208.28" y2="181.102" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="177.8" x2="208.28" y2="177.8" width="0.1524" layer="91"/>
+<junction x="208.28" y="177.8"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -7059,15 +7163,6 @@ visible on the PCB.</text>
 </net>
 <net name="+12V" class="0">
 <segment>
-<wire x1="106.68" y1="200.66" x2="104.14" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="P+16" gate="1" pin="+12V"/>
-<wire x1="104.14" y1="200.66" x2="104.14" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="198.12" x2="104.14" y2="200.66" width="0.1524" layer="91"/>
-<junction x="104.14" y="200.66"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<pinref part="U$6" gate="G$1" pin="IN"/>
-</segment>
-<segment>
 <wire x1="81.28" y1="195.58" x2="78.74" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="P+20" gate="1" pin="+12V"/>
 <wire x1="78.74" y1="195.58" x2="78.74" y2="198.12" width="0.1524" layer="91"/>
@@ -7093,6 +7188,11 @@ visible on the PCB.</text>
 <wire x1="45.72" y1="187.96" x2="50.8" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="D14" gate="G$1" pin="C"/>
 <pinref part="X5" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<pinref part="P+16" gate="1" pin="+12V"/>
+<wire x1="200.66" y1="198.12" x2="200.66" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BUZZER_CTRL" class="0">
@@ -7452,13 +7552,13 @@ visible on the PCB.</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(XTAL2)PB7"/>
-<wire x1="134.62" y1="162.56" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="162.56" x2="147.32" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="162.56" x2="152.4" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="1"/>
 <pinref part="X3" gate="G$1" pin="3"/>
-<wire x1="152.4" y1="182.88" x2="152.4" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="182.88" x2="152.4" y2="182.88" width="0.1524" layer="91"/>
-<junction x="152.4" y="182.88"/>
+<wire x1="157.48" y1="180.34" x2="157.48" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="180.34" x2="157.48" y2="180.34" width="0.1524" layer="91"/>
+<junction x="157.48" y="180.34"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -7854,13 +7954,13 @@ visible on the PCB.</text>
 <net name="N$11" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(XTAL1)PB6"/>
-<wire x1="134.62" y1="160.02" x2="149.86" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="160.02" x2="154.94" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="X3" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="175.26" x2="152.4" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="172.72" x2="157.48" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="160.02" x2="149.86" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="175.26" x2="152.4" y2="175.26" width="0.1524" layer="91"/>
-<junction x="152.4" y="175.26"/>
+<wire x1="154.94" y1="160.02" x2="154.94" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="172.72" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
+<junction x="157.48" y="172.72"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -7994,23 +8094,47 @@ visible on the PCB.</text>
 <label x="167.64" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$58" class="0">
+<net name="N$60" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="AVDD"/>
-<pinref part="U$2" gate="G$1" pin="P$1"/>
-<wire x1="134.62" y1="170.18" x2="134.62" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="172.72" x2="139.7" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$2"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="172.72" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
-<junction x="139.7" y="172.72"/>
+<wire x1="139.7" y1="175.26" x2="139.7" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="AVDD"/>
+<wire x1="134.62" y1="170.18" x2="139.7" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="170.18" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
+<junction x="139.7" y="175.26"/>
 </segment>
 </net>
 <net name="N$55" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="VDD"/>
-<wire x1="134.62" y1="167.64" x2="134.62" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$2"/>
-<wire x1="134.62" y1="165.1" x2="139.7" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="TRIM"/>
+<wire x1="233.68" y1="195.58" x2="241.3" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="195.58" x2="241.3" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="208.28" x2="246.38" y2="208.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="246.38" y1="200.66" x2="246.38" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="246.38" y1="190.5" x2="241.3" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="241.3" y1="190.5" x2="241.3" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="193.04" x2="233.68" y2="193.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="IN"/>
+<wire x1="210.82" y1="198.12" x2="208.28" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
