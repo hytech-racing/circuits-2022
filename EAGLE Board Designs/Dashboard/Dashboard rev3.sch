@@ -190,32 +190,6 @@
 <libraries>
 <library name="HyTechDevices">
 <packages>
-<package name="SOIC-14">
-<description>SOIC-14
-&lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/05081610_G_S14.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-3.81" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="2" x="-2.54" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="3" x="-1.27" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="4" x="0" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="5" x="1.27" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="6" x="2.54" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="7" x="3.81" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="8" x="3.81" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="9" x="2.54" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="10" x="1.27" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="11" x="0" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="12" x="-1.27" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="13" x="-2.54" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="14" x="-3.81" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<text x="-5.08" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
-<wire x1="-4.3688" y1="1.9939" x2="4.3688" y2="1.9939" width="0.127" layer="21"/>
-<wire x1="4.3688" y1="1.9939" x2="4.3688" y2="-1.9939" width="0.127" layer="21"/>
-<wire x1="4.3688" y1="-1.9939" x2="-4.3688" y2="-1.9939" width="0.127" layer="21"/>
-<wire x1="-4.3688" y1="-1.9939" x2="-4.3688" y2="1.9939" width="0.127" layer="21"/>
-<circle x="-5.08" y="-2.54" radius="0.254" width="0" layer="21"/>
-<rectangle x1="-4.572" y1="-3.556" x2="4.572" y2="3.556" layer="39"/>
-</package>
 <package name="ABM3B">
 <description>Crystal Footprint
 &lt;br&gt;
@@ -798,33 +772,40 @@ visible on the PCB.</text>
 <rectangle x1="-8.382" y1="-4.318" x2="8.382" y2="4.318" layer="39"/>
 <rectangle x1="-2.45" y1="-4.318" x2="2.45" y2="4.318" layer="43"/>
 </package>
+<package name="TSSOP-20">
+<description>TSSOP 20
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tssop/TSSOP_20_05-08-1650.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-2.925" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="2" x="-2.275" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="3" x="-1.625" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="4" x="-0.975" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="5" x="-0.325" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="6" x="0.325" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="7" x="0.975" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="8" x="1.625" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="9" x="2.275" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="10" x="2.925" y="-2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="11" x="2.925" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="12" x="2.275" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="13" x="1.625" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="14" x="0.975" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="15" x="0.325" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="16" x="-0.325" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="17" x="-0.975" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="18" x="-1.625" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="19" x="-2.275" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<smd name="20" x="-2.925" y="2.775" dx="0.45" dy="1.05" layer="1"/>
+<wire x1="-3.3" y1="2.25" x2="3.3" y2="2.25" width="0.127" layer="21"/>
+<wire x1="3.3" y1="2.25" x2="3.3" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-2.25" x2="-3.3" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-2.25" x2="-3.3" y2="2.25" width="0.127" layer="21"/>
+<text x="-3.81" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-3.81" y="-2.794" radius="0.254" width="0" layer="21"/>
+<rectangle x1="-3.556" y1="-3.556" x2="3.556" y2="3.556" layer="39"/>
+</package>
 </packages>
 <symbols>
-<symbol name="MCP2518FD">
-<description>MCP2518FD Can Controller
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/268/External_CAN_FD_Controller_with_SPI_Interface_DS20-1947957.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="CLK" x="-2.54" y="-2.54" length="short" direction="in" function="clk"/>
-<pin name="SDO" x="-2.54" y="-5.08" length="short" direction="out"/>
-<pin name="SDI" x="-2.54" y="-7.62" length="short" direction="in"/>
-<pin name="!CS" x="-2.54" y="-10.16" length="short" direction="in" function="dot"/>
-<pin name="RX" x="25.4" y="-10.16" length="short" direction="in" rot="R180"/>
-<pin name="TX" x="25.4" y="-7.62" length="short" direction="out" rot="R180"/>
-<pin name="OSC1" x="25.4" y="-17.78" length="short" direction="in" rot="R180"/>
-<pin name="OSC2" x="25.4" y="-15.24" length="short" direction="out" rot="R180"/>
-<pin name="VDD" x="25.4" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="GND" x="-2.54" y="-27.94" length="short" direction="pwr"/>
-<pin name="CLKO/SOF" x="-2.54" y="-15.24" length="short" direction="out"/>
-<pin name="!INT" x="-2.54" y="-17.78" length="short" direction="out"/>
-<pin name="!INT1!/GPIO1" x="-2.54" y="-20.32" length="short"/>
-<pin name="!INT0!/GPIO0/XSTBY" x="-2.54" y="-22.86" length="short"/>
-<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.3048" layer="94"/>
-<wire x1="0" y1="-30.48" x2="22.86" y2="-30.48" width="0.3048" layer="94"/>
-<wire x1="22.86" y1="-30.48" x2="22.86" y2="0" width="0.3048" layer="94"/>
-<wire x1="22.86" y1="0" x2="0" y2="0" width="0.3048" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-31.242" size="1.27" layer="95" align="top-left">&gt;MPN</text>
-</symbol>
 <symbol name="CRYSTAL">
 <wire x1="-0.254" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-2.286" y2="0" width="0.1524" layer="94"/>
@@ -1156,44 +1137,37 @@ Note: No sure about SDO/SDI accuracy</description>
 <wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="MCP2515">
+<description>MCP2515 Can Controller
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/MCP2515-Stand-Alone-CAN-Controller-with-SPI-200018-708845.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="CLK" x="-2.54" y="-2.54" length="short" direction="in" function="clk"/>
+<pin name="SDO" x="-2.54" y="-5.08" length="short" direction="out"/>
+<pin name="SDI" x="-2.54" y="-7.62" length="short" direction="in"/>
+<pin name="!CS" x="-2.54" y="-10.16" length="short" direction="in" function="dot"/>
+<pin name="RX" x="25.4" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="TX" x="25.4" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="OSC1" x="25.4" y="-17.78" length="short" rot="R180"/>
+<pin name="OSC2" x="25.4" y="-15.24" length="short" rot="R180"/>
+<pin name="VDD" x="25.4" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="-2.54" y="-27.94" length="short" direction="pwr"/>
+<pin name="CLKOUT" x="-2.54" y="-17.78" length="short" direction="out"/>
+<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.3048" layer="94"/>
+<wire x1="0" y1="-30.48" x2="22.86" y2="-30.48" width="0.3048" layer="94"/>
+<wire x1="22.86" y1="-30.48" x2="22.86" y2="0" width="0.3048" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.3048" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-31.242" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+<pin name="!TX0RTS" x="-2.54" y="-20.32" length="short" direction="in" function="dot"/>
+<pin name="!TX1RTS" x="-2.54" y="-22.86" length="short" direction="in" function="dot"/>
+<pin name="!TX2RTS" x="-2.54" y="-25.4" length="short" direction="in" function="dot"/>
+<pin name="!RX0BF" x="25.4" y="-22.86" length="short" direction="out" function="dot" rot="R180"/>
+<pin name="!RX1BF" x="25.4" y="-25.4" length="short" direction="out" function="dot" rot="R180"/>
+<pin name="!INT" x="25.4" y="-27.94" length="short" direction="out" function="dot" rot="R180"/>
+<pin name="!RESET" x="-2.54" y="-12.7" length="short" direction="in" function="dot"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP2518FD" prefix="U">
-<description>MCP2518FD Can Controller
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/268/External_CAN_FD_Controller_with_SPI_Interface_DS20-1947957.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="MCP2518FD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC-14">
-<connects>
-<connect gate="G$1" pin="!CS" pad="13"/>
-<connect gate="G$1" pin="!INT" pad="4"/>
-<connect gate="G$1" pin="!INT0!/GPIO0/XSTBY" pad="9"/>
-<connect gate="G$1" pin="!INT1!/GPIO1" pad="8"/>
-<connect gate="G$1" pin="CLK" pad="10"/>
-<connect gate="G$1" pin="CLKO/SOF" pad="3"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="OSC1" pad="6"/>
-<connect gate="G$1" pin="OSC2" pad="5"/>
-<connect gate="G$1" pin="RX" pad="2"/>
-<connect gate="G$1" pin="SDI" pad="11"/>
-<connect gate="G$1" pin="SDO" pad="12"/>
-<connect gate="G$1" pin="TX" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="14"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="MCP2518FDT-E/SLCT-ND"/>
-<attribute name="MANUFACTURER" value="Microchip Technology"/>
-<attribute name="MOPN" value="579-MCP2518FDT-E/SL"/>
-<attribute name="MPN" value="MCP2518FDT-E/SL"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CRYSTAL" prefix="X">
 <description>Crystal
 &lt;br&gt;
@@ -2640,6 +2614,46 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-08851.25DR"/>
 <attribute name="MPN" value="08851.25DR"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP2515" prefix="U">
+<description>MCP2515 Can Controller
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/MCP2515-Stand-Alone-CAN-Controller-with-SPI-200018-708845.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP2515" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-20">
+<connects>
+<connect gate="G$1" pin="!CS" pad="18"/>
+<connect gate="G$1" pin="!INT" pad="13"/>
+<connect gate="G$1" pin="!RESET" pad="19"/>
+<connect gate="G$1" pin="!RX0BF" pad="12"/>
+<connect gate="G$1" pin="!RX1BF" pad="11"/>
+<connect gate="G$1" pin="!TX0RTS" pad="4"/>
+<connect gate="G$1" pin="!TX1RTS" pad="5"/>
+<connect gate="G$1" pin="!TX2RTS" pad="7"/>
+<connect gate="G$1" pin="CLK" pad="14"/>
+<connect gate="G$1" pin="CLKOUT" pad="3"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="OSC1" pad="9"/>
+<connect gate="G$1" pin="OSC2" pad="8"/>
+<connect gate="G$1" pin="RX" pad="2"/>
+<connect gate="G$1" pin="SDI" pad="16"/>
+<connect gate="G$1" pin="SDO" pad="17"/>
+<connect gate="G$1" pin="TX" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MCP2515-E/ST-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP2515-E/ST"/>
+<attribute name="MPN" value="MCP2515-E/ST"/>
 </technology>
 </technologies>
 </device>
@@ -6117,10 +6131,8 @@ visible on the PCB.</text>
 <part name="P+20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+23" library="supply1" deviceset="+12V" device=""/>
-<part name="U$5" library="HyTechDevices" deviceset="MCP2518FD" device=""/>
 <part name="P+24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U1" library="HyTechDevices - Copy" deviceset="ATMEGA328P-AU" device=""/>
-<part name="X3" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
 <part name="D1" library="HyTechDevices" deviceset="LED_7_SEGMENT_" device="DSM7TA" technology="BLUE_"/>
 <part name="D2" library="HyTechDevices" deviceset="LED_7_SEGMENT_" device="DSM7TA" technology="GREEN_"/>
 <part name="U$1" library="HyTechDevices - Copy" deviceset="MCP23S17" device="SOIC_WIDE"/>
@@ -6187,7 +6199,6 @@ visible on the PCB.</text>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U2" library="HyTechDevices" deviceset="TCAN1051*V-Q1" device="" technology="HQ"/>
 <part name="P22" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="X2" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
 <part name="C3" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_15PF"/>
 <part name="C7" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_15PF"/>
 <part name="GND33" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -6224,6 +6235,9 @@ visible on the PCB.</text>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="180"/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
 <part name="F1" library="HyTechDevices" deviceset="FUSE" device="0885"/>
+<part name="X1" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
+<part name="X2" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
+<part name="U3" library="HyTechDevices" deviceset="MCP2515" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6263,18 +6277,11 @@ visible on the PCB.</text>
 <instance part="P+23" gate="1" x="43.18" y="187.96" smashed="yes">
 <attribute name="VALUE" x="45.72" y="191.262" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$5" gate="G$1" x="182.88" y="180.34" smashed="yes">
-<attribute name="NAME" x="182.88" y="181.102" size="1.27" layer="95"/>
-</instance>
 <instance part="P+24" gate="1" x="208.28" y="183.642" smashed="yes">
 <attribute name="VALUE" x="208.28" y="186.182" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U1" gate="G$1" x="109.22" y="172.72" smashed="yes">
 <attribute name="NAME" x="109.22" y="173.482" size="1.27" layer="95"/>
-</instance>
-<instance part="X3" gate="G$1" x="157.48" y="177.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="154.305" y="176.53" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="FREQUENCY" x="160.655" y="176.53" size="1.27" layer="96" rot="R90" align="top-left"/>
 </instance>
 <instance part="D1" gate="G$1" x="88.9" y="104.14" smashed="yes">
 <attribute name="NAME" x="88.9" y="104.902" size="1.27" layer="95"/>
@@ -6590,25 +6597,21 @@ visible on the PCB.</text>
 <attribute name="NAME" x="243.84" y="183.642" size="1.27" layer="95"/>
 <attribute name="MPN" x="243.84" y="164.338" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="P22" gate="1" x="236.22" y="165.1" smashed="yes">
-<attribute name="VALUE" x="236.22" y="163.83" size="1.27" layer="96" align="top-center"/>
+<instance part="P22" gate="1" x="238.76" y="165.1" smashed="yes">
+<attribute name="VALUE" x="238.76" y="163.83" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="X2" gate="G$1" x="218.44" y="149.86" smashed="yes">
-<attribute name="NAME" x="217.17" y="153.035" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="FREQUENCY" x="217.17" y="146.685" size="1.27" layer="96" align="top-left"/>
+<instance part="C3" gate="G$1" x="210.82" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="208.28" y="143.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="213.36" y="143.002" size="1.27" layer="96" rot="R90" align="top-right"/>
+<attribute name="CAPACITANCE" x="213.36" y="144.018" size="1.27" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="C3" gate="G$1" x="208.28" y="147.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="205.74" y="146.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="210.82" y="145.542" size="1.27" layer="96" rot="R90" align="top-right"/>
-<attribute name="CAPACITANCE" x="210.82" y="146.558" size="1.27" layer="96" rot="R90" align="top-left"/>
+<instance part="C7" gate="G$1" x="220.98" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="218.44" y="143.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="223.52" y="143.002" size="1.27" layer="96" rot="R90" align="top-right"/>
+<attribute name="CAPACITANCE" x="223.52" y="144.018" size="1.27" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="C7" gate="G$1" x="223.52" y="147.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="220.98" y="146.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="226.06" y="145.542" size="1.27" layer="96" rot="R90" align="top-right"/>
-<attribute name="CAPACITANCE" x="226.06" y="146.558" size="1.27" layer="96" rot="R90" align="top-left"/>
-</instance>
-<instance part="GND33" gate="1" x="215.9" y="139.7" smashed="yes">
-<attribute name="VALUE" x="215.9" y="138.43" size="1.27" layer="96" align="top-center"/>
+<instance part="GND33" gate="1" x="215.9" y="137.16" smashed="yes">
+<attribute name="VALUE" x="215.9" y="135.89" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="R1" gate="G$1" x="228.6" y="160.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="227.33" y="158.75" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -6782,6 +6785,18 @@ visible on the PCB.</text>
 <attribute name="NAME" x="204.47" y="199.39" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="204.47" y="196.85" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="X1" gate="G$1" x="218.44" y="152.4" smashed="yes">
+<attribute name="NAME" x="217.17" y="155.575" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="FREQUENCY" x="217.17" y="149.225" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="X2" gate="G$1" x="157.48" y="177.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="154.305" y="176.53" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="FREQUENCY" x="160.655" y="176.53" size="1.27" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="U3" gate="G$1" x="182.88" y="180.34" smashed="yes">
+<attribute name="NAME" x="182.88" y="181.102" size="1.27" layer="95"/>
+<attribute name="MPN" x="182.88" y="149.098" size="1.27" layer="95" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6832,18 +6847,18 @@ visible on the PCB.</text>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="165.1" x2="165.1" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="P8" gate="1" pin="GND"/>
-<pinref part="X3" gate="G$1" pin="GND"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="187.96" x2="165.1" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="165.1" x2="165.1" y2="175.26" width="0.1524" layer="91"/>
 <junction x="165.1" y="165.1"/>
 <junction x="165.1" y="175.26"/>
+<pinref part="X2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="152.4" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="GND"/>
 <pinref part="P12" gate="1" pin="GND"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="121.92" y1="109.22" x2="129.54" y2="109.22" width="0.1524" layer="91"/>
@@ -6964,17 +6979,17 @@ visible on the PCB.</text>
 <segment>
 <pinref part="P22" gate="1" pin="GND"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="236.22" y1="167.64" x2="241.3" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="167.64" x2="241.3" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="GND"/>
-<wire x1="215.9" y1="144.78" x2="215.9" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="147.32" x2="215.9" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="215.9" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="139.7" x2="210.82" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="215.9" y1="142.24" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
-<junction x="215.9" y="142.24"/>
+<wire x1="215.9" y1="139.7" x2="220.98" y2="139.7" width="0.1524" layer="91"/>
+<junction x="215.9" y="139.7"/>
 <pinref part="GND33" gate="1" pin="GND"/>
+<pinref part="X1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -7115,11 +7130,11 @@ visible on the PCB.</text>
 <wire x1="137.16" y1="198.12" x2="139.7" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="VDD"/>
 <pinref part="P+24" gate="1" pin="+5V"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="177.8" x2="208.28" y2="181.102" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="177.8" x2="208.28" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VDD"/>
 <junction x="208.28" y="177.8"/>
 </segment>
 </net>
@@ -7555,9 +7570,9 @@ visible on the PCB.</text>
 <wire x1="134.62" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="162.56" x2="152.4" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="1"/>
-<pinref part="X3" gate="G$1" pin="3"/>
 <wire x1="157.48" y1="180.34" x2="157.48" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="180.34" x2="157.48" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="3"/>
 <junction x="157.48" y="180.34"/>
 </segment>
 </net>
@@ -7851,23 +7866,25 @@ visible on the PCB.</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="X2" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="149.86" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="149.86" x2="208.28" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="U3" gate="G$1" pin="OSC1"/>
+<wire x1="208.28" y1="162.56" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="162.56" x2="213.36" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<junction x="208.28" y="149.86"/>
-<pinref part="U$5" gate="G$1" pin="OSC1"/>
+<wire x1="213.36" y1="152.4" x2="210.82" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="152.4" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
+<junction x="213.36" y="152.4"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
 <wire x1="208.28" y1="165.1" x2="220.98" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="3"/>
-<wire x1="220.98" y1="165.1" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="149.86" x2="223.52" y2="149.86" width="0.1524" layer="91"/>
-<junction x="220.98" y="149.86"/>
+<wire x1="220.98" y1="165.1" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="3"/>
+<pinref part="U3" gate="G$1" pin="OSC2"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-<pinref part="U$5" gate="G$1" pin="OSC2"/>
+<wire x1="220.98" y1="152.4" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
+<junction x="220.98" y="152.4"/>
 </segment>
 </net>
 <net name="N$51" class="0">
@@ -7891,22 +7908,22 @@ visible on the PCB.</text>
 </net>
 <net name="N$53" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="TX"/>
 <pinref part="U2" gate="G$1" pin="TXD"/>
 <wire x1="208.28" y1="172.72" x2="233.68" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="233.68" y1="172.72" x2="241.3" y2="172.72" width="0.1524" layer="91"/>
 <junction x="233.68" y="172.72"/>
+<pinref part="U3" gate="G$1" pin="TX"/>
 </segment>
 </net>
 <net name="N$54" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="RX"/>
 <pinref part="U2" gate="G$1" pin="RXD"/>
 <wire x1="208.28" y1="170.18" x2="228.6" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="CAN" gate="G$1" pin="P$2"/>
 <wire x1="228.6" y1="170.18" x2="241.3" y2="170.18" width="0.1524" layer="91"/>
 <junction x="228.6" y="170.18"/>
+<pinref part="U3" gate="G$1" pin="RX"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -7955,11 +7972,11 @@ visible on the PCB.</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="(XTAL1)PB6"/>
 <wire x1="134.62" y1="160.02" x2="154.94" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="X3" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="172.72" x2="157.48" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="160.02" x2="154.94" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="172.72" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="1"/>
 <junction x="157.48" y="172.72"/>
 </segment>
 </net>
@@ -7968,7 +7985,6 @@ visible on the PCB.</text>
 <pinref part="U1" gate="G$1" pin="(CLK)PB5"/>
 <wire x1="134.62" y1="157.48" x2="170.18" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="157.48" x2="170.18" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="CLK"/>
 <wire x1="170.18" y1="177.8" x2="180.34" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="CLK"/>
 <wire x1="205.74" y1="99.06" x2="170.18" y2="99.06" width="0.1524" layer="91"/>
@@ -7978,11 +7994,11 @@ visible on the PCB.</text>
 <wire x1="170.18" y1="177.8" x2="170.18" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="200.66" x2="180.34" y2="200.66" width="0.1524" layer="91"/>
 <junction x="170.18" y="177.8"/>
+<pinref part="U3" gate="G$1" pin="CLK"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="SDO"/>
 <wire x1="180.34" y1="175.26" x2="172.72" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="175.26" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(SDI)PB4"/>
@@ -7995,6 +8011,7 @@ visible on the PCB.</text>
 <wire x1="172.72" y1="175.26" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="198.12" x2="180.34" y2="198.12" width="0.1524" layer="91"/>
 <junction x="172.72" y="175.26"/>
+<pinref part="U3" gate="G$1" pin="SDO"/>
 </segment>
 </net>
 <net name="N$56" class="0">
@@ -8002,7 +8019,6 @@ visible on the PCB.</text>
 <pinref part="U1" gate="G$1" pin="(SDO)PB3"/>
 <wire x1="134.62" y1="152.4" x2="175.26" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="152.4" x2="175.26" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="SDI"/>
 <wire x1="175.26" y1="172.72" x2="180.34" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SDI"/>
 <wire x1="205.74" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
@@ -8012,6 +8028,7 @@ visible on the PCB.</text>
 <wire x1="175.26" y1="172.72" x2="175.26" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="195.58" x2="180.34" y2="195.58" width="0.1524" layer="91"/>
 <junction x="175.26" y="172.72"/>
+<pinref part="U3" gate="G$1" pin="SDI"/>
 </segment>
 </net>
 <net name="N$57" class="0">
@@ -8019,8 +8036,8 @@ visible on the PCB.</text>
 <pinref part="U1" gate="G$1" pin="(CS)PB2"/>
 <wire x1="134.62" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="149.86" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="!CS"/>
 <wire x1="177.8" y1="170.18" x2="180.34" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="!CS"/>
 </segment>
 </net>
 <net name="N$59" class="0">
