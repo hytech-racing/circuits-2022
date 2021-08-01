@@ -863,6 +863,22 @@ visible on the PCB.</text>
 <rectangle x1="-5.715" y1="-4.445" x2="5.715" y2="1.905" layer="39" rot="R180"/>
 <text x="0" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="0603-LED">
+<description>0603 LED
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SURCK-41133.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-0.825" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="2" x="0.825" y="0" dx="0.8" dy="0.8" layer="1"/>
+<rectangle x1="-0.45" y1="-0.2" x2="-0.05" y2="0.2" layer="21"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
+<text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
+<rectangle x1="-1.025" y1="0.5" x2="-0.625" y2="0.75" layer="21"/>
+<rectangle x1="-1.025" y1="-0.75" x2="-0.625" y2="-0.5" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -1279,6 +1295,28 @@ Note: No sure about SDO/SDI accuracy</description>
 <wire x1="3.81" y1="-17.78" x2="5.08" y2="-17.78" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="-20.32" x2="5.08" y2="-20.32" width="0.6096" layer="94"/>
 <text x="0" y="-23.495" size="1.778" layer="96" align="top-left">&gt;MODEL</text>
+</symbol>
+<symbol name="DIODE_LED">
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="1.778" x2="-0.127" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.651" x2="1.016" y2="3.048" width="0.1524" layer="94"/>
+<text x="-1.27" y="-1.778" size="1.27" layer="95" align="top-center">&gt;COLOR</text>
+<text x="-1.27" y="3.556" size="1.27" layer="96" align="bottom-center">&gt;NAME</text>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.127" y="3.175"/>
+<vertex x="-1.016" y="2.794"/>
+<vertex x="-0.508" y="2.286"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.016" y="3.048"/>
+<vertex x="0.127" y="2.667"/>
+<vertex x="0.635" y="2.159"/>
+</polygon>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2844,6 +2882,73 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MODEL" value="NF_T_V_N"/>
 <attribute name="MPN" value="105310-2308"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_?_*" prefix="D">
+<description>LED
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608VBC_D-246010.pdf"&gt;Blue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608ZGCK-1173388.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-6197.pdf"&gt;Orange&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-J3-PRV-1173336.pdf"&gt;Red&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/SM0603UWC-880813.pdf"&gt;White&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SYCK-J3-PRV-1173311.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
+&lt;\ul&gt;</description>
+<gates>
+<gate name="LED" symbol="DIODE_LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="0603-LED">
+<connects>
+<connect gate="LED" pin="A" pad="2"/>
+<connect gate="LED" pin="C" pad="1"/>
+</connects>
+<technologies>
+<technology name="BLUE">
+<attribute name="COLOR" value="Blue"/>
+<attribute name="DKPN" value="754-1789-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608VBC/D"/>
+<attribute name="MPN" value="APT1608VBC/D"/>
+</technology>
+<technology name="GREEN">
+<attribute name="COLOR" value="Green"/>
+<attribute name="DKPN" value="754-1790-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608ZGCK"/>
+<attribute name="MPN" value="APT1608ZGCK"/>
+</technology>
+<technology name="ORANGE">
+<attribute name="COLOR" value="Orange"/>
+<attribute name="DKPN" value="754-1120-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608SECK"/>
+<attribute name="MPN" value="APT1608SECK"/>
+</technology>
+<technology name="RED">
+<attribute name="COLOR" value="Red"/>
+<attribute name="DKPN" value="754-1786-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608SECKJ3PRV"/>
+<attribute name="MPN" value="APT1608SECK/J3-PRV"/>
+</technology>
+<technology name="WHITE">
+<attribute name="COLOR" value="White"/>
+<attribute name="DKPN" value="SM0603UWC-ND"/>
+<attribute name="MANUFACTURER" value="Bivar Inc."/>
+<attribute name="MOPN" value="749-SM0603UWC"/>
+<attribute name="MPN" value="SM0603UWC"/>
+</technology>
+<technology name="YELLOW">
+<attribute name="COLOR" value="Yellow"/>
+<attribute name="DKPN" value="754-1788-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608SYCK/J3-PRV"/>
+<attribute name="MPN" value="APT1608SYCK/J3-PRV"/>
 </technology>
 </technologies>
 </device>
@@ -6152,13 +6257,7 @@ visible on the PCB.</text>
 <part name="X2" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
 <part name="U3" library="HyTechDevices" deviceset="MCP2515" device=""/>
 <part name="Q8" library="HyTechDevices" deviceset="TRANSISTOR_P_MOS_?_*" device="SOT23" technology="SI2369DS-T1-GE3"/>
-<part name="D13" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="BLUE"/>
-<part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="180"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="D15" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="GREEN"/>
-<part name="R18" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="402"/>
-<part name="D16" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="BLUE"/>
-<part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="180"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="C16" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P21" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -6173,6 +6272,10 @@ visible on the PCB.</text>
 <part name="P19" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="D3" library="HyTechDevices" deviceset="SCHOTTKY" device=""/>
 <part name="J2" library="HyTechDevices" deviceset="CONNECTOR-8_?_*" device="NF_S_RA" technology="BLACK"/>
+<part name="D17" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
+<part name="D18" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
+<part name="D19" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
+<part name="RN11" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="1K"/>
 </parts>
 <sheets>
 <sheet>
@@ -6724,32 +6827,8 @@ visible on the PCB.</text>
 <attribute name="NAME" x="-23.368" y="17.78" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="-10.668" y="17.78" size="1.27" layer="95" align="top-center"/>
 </instance>
-<instance part="D13" gate="G$1" x="33.02" y="144.78" smashed="yes">
-<attribute name="COLOR" x="33.02" y="143.002" size="1.27" layer="95" align="top-left"/>
-<attribute name="NAME" x="31.75" y="148.336" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="R17" gate="G$1" x="43.18" y="144.78" smashed="yes">
-<attribute name="NAME" x="41.91" y="146.05" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="41.91" y="143.51" size="1.27" layer="96" align="top-center"/>
-</instance>
 <instance part="P+8" gate="1" x="25.4" y="162.56" smashed="yes">
 <attribute name="VALUE" x="22.86" y="165.1" size="1.778" layer="96"/>
-</instance>
-<instance part="D15" gate="G$1" x="33.02" y="157.48" smashed="yes">
-<attribute name="COLOR" x="33.02" y="155.702" size="1.27" layer="95" align="top-left"/>
-<attribute name="NAME" x="31.75" y="161.036" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="R18" gate="G$1" x="43.18" y="157.48" smashed="yes">
-<attribute name="NAME" x="41.91" y="158.75" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="41.91" y="156.21" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D16" gate="G$1" x="96.52" y="147.32" smashed="yes" rot="MR0">
-<attribute name="COLOR" x="96.52" y="145.542" size="1.27" layer="95" rot="MR0" align="top-left"/>
-<attribute name="NAME" x="97.79" y="150.876" size="1.27" layer="96" rot="MR0" align="bottom-center"/>
-</instance>
-<instance part="R19" gate="G$1" x="88.9" y="147.32" smashed="yes">
-<attribute name="NAME" x="87.63" y="148.59" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="87.63" y="146.05" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P+7" gate="1" x="-18.288" y="19.812" smashed="yes">
 <attribute name="VALUE" x="-16.002" y="23.368" size="1.778" layer="96" rot="R180"/>
@@ -6804,6 +6883,30 @@ visible on the PCB.</text>
 <instance part="J2" gate="G$1" x="10.16" y="190.5" smashed="yes">
 <attribute name="NAME" x="10.16" y="191.262" size="1.778" layer="95"/>
 <attribute name="MODEL" x="7.62" y="167.005" size="1.778" layer="96" align="top-left"/>
+</instance>
+<instance part="D17" gate="LED" x="33.02" y="157.48" smashed="yes">
+<attribute name="COLOR" x="31.75" y="155.702" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="31.75" y="161.036" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D18" gate="LED" x="33.02" y="144.78" smashed="yes">
+<attribute name="COLOR" x="31.75" y="143.002" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="31.75" y="148.336" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D19" gate="LED" x="81.28" y="147.32" smashed="yes" rot="R180">
+<attribute name="COLOR" x="82.55" y="149.098" size="1.27" layer="95" rot="R180" align="top-center"/>
+<attribute name="NAME" x="82.55" y="143.764" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="RN11" gate="A" x="43.18" y="157.48" smashed="yes">
+<attribute name="NAME" x="41.91" y="158.75" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="41.91" y="156.21" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="RN11" gate="B" x="43.18" y="144.78" smashed="yes">
+<attribute name="NAME" x="41.91" y="146.05" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="41.91" y="143.51" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="RN11" gate="C" x="101.6" y="147.32" smashed="yes">
+<attribute name="NAME" x="100.33" y="148.59" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="100.33" y="146.05" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -6953,17 +7056,17 @@ visible on the PCB.</text>
 <junction x="45.72" y="86.36"/>
 <wire x1="45.72" y1="104.14" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
 <junction x="45.72" y="104.14"/>
-<pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="144.78" x2="73.66" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="144.78" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
 <junction x="73.66" y="121.92"/>
-<pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="157.48" x2="73.66" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="157.48" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
 <junction x="73.66" y="144.78"/>
-<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="RN11" gate="A" pin="2"/>
+<pinref part="RN11" gate="B" pin="2"/>
+<pinref part="D19" gate="LED" pin="C"/>
 <wire x1="73.66" y1="147.32" x2="73.66" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="147.32" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="147.32" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
 <junction x="73.66" y="147.32"/>
 </segment>
 <segment>
@@ -7239,8 +7342,8 @@ visible on the PCB.</text>
 <segment>
 <pinref part="P+8" gate="1" pin="+12V"/>
 <wire x1="25.4" y1="160.02" x2="25.4" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="D15" gate="G$1" pin="A"/>
 <wire x1="25.4" y1="157.48" x2="27.94" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="D17" gate="LED" pin="A"/>
 </segment>
 </net>
 <net name="BUZZER_CTRL" class="0">
@@ -7528,9 +7631,9 @@ visible on the PCB.</text>
 <pinref part="D9" gate="G$1" pin="A"/>
 <pinref part="D10" gate="G$1" pin="A"/>
 <pinref part="D11" gate="G$1" pin="A"/>
-<pinref part="D13" gate="G$1" pin="A"/>
 <wire x1="25.4" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
 <junction x="25.4" y="144.78"/>
+<pinref part="D18" gate="LED" pin="A"/>
 </segment>
 </net>
 <net name="LED_LAUNCH_CTRL" class="0">
@@ -8230,30 +8333,16 @@ visible on the PCB.</text>
 </net>
 <net name="N$65" class="0">
 <segment>
-<pinref part="D13" gate="G$1" pin="C"/>
-<pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="144.78" x2="38.1" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="D18" gate="LED" pin="C"/>
+<pinref part="RN11" gate="B" pin="1"/>
 </segment>
 </net>
 <net name="N$66" class="0">
 <segment>
-<pinref part="D15" gate="G$1" pin="C"/>
-<pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$64" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PC0(ADC0)"/>
-<pinref part="D16" gate="G$1" pin="A"/>
-<wire x1="106.68" y1="147.32" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$67" class="0">
-<segment>
-<pinref part="D16" gate="G$1" pin="C"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="147.32" x2="91.44" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="D17" gate="LED" pin="C"/>
+<pinref part="RN11" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -8293,7 +8382,27 @@ visible on the PCB.</text>
 <pinref part="R21" gate="G$1" pin="1"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <label x="246.38" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-<label x="101.6" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="104.14" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PC0(ADC0)"/>
+<pinref part="RN11" gate="C" pin="2"/>
+<wire x1="106.68" y1="147.32" x2="104.14" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$67" class="0">
+<segment>
+<pinref part="RN11" gate="C" pin="1"/>
+<pinref part="D19" gate="LED" pin="A"/>
+<wire x1="96.52" y1="147.32" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$70" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
+<wire x1="106.68" y1="144.78" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
