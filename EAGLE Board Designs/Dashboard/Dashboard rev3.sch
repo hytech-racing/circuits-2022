@@ -7462,7 +7462,7 @@ Note: Based on Page 6.</description>
 <wire x1="49.53" y1="12.7" x2="49.53" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="K1" gate="G$1" pin="DC-"/>
-<wire x1="46.99" y1="7.62" x2="49.53" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="49.53" y1="7.62" x2="46.99" y2="7.62" width="0.1524" layer="91"/>
 <junction x="49.53" y="7.62"/>
 </segment>
 </net>
@@ -8374,7 +8374,7 @@ Note: Based on Page 6.</description>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="57.15" y1="12.7" x2="57.15" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="57.15" y1="7.62" x2="58.928" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="58.928" y1="7.62" x2="57.15" y2="7.62" width="0.1524" layer="91"/>
 <junction x="57.15" y="7.62"/>
 </segment>
 </net>
