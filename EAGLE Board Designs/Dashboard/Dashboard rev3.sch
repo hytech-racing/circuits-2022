@@ -6895,14 +6895,14 @@ Note: Based on Page 6.</description>
 <instance part="P+9" gate="1" x="46.99" y="20.32" smashed="yes">
 <attribute name="VALUE" x="49.276" y="23.876" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C21" gate="G$1" x="52.07" y="12.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="54.61" y="10.922" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="VOLTAGE" x="53.848" y="15.24" size="1.27" layer="96" rot="R180" align="top-right"/>
-<attribute name="CAPACITANCE" x="52.832" y="15.24" size="1.27" layer="96" rot="R180" align="top-left"/>
+<instance part="C21" gate="G$1" x="52.07" y="7.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="54.61" y="5.842" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VOLTAGE" x="53.848" y="10.16" size="1.27" layer="96" rot="R180" align="top-right"/>
+<attribute name="CAPACITANCE" x="52.832" y="10.16" size="1.27" layer="96" rot="R180" align="top-left"/>
 </instance>
-<instance part="R17" gate="G$1" x="54.61" y="7.62" smashed="yes">
-<attribute name="NAME" x="53.34" y="8.89" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="53.34" y="6.35" size="1.27" layer="96" align="top-center"/>
+<instance part="R17" gate="G$1" x="54.61" y="2.54" smashed="yes">
+<attribute name="NAME" x="53.34" y="3.81" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="53.34" y="1.27" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="R18" gate="G$1" x="21.59" y="7.62" smashed="yes">
 <attribute name="NAME" x="20.32" y="8.89" size="1.27" layer="95" align="bottom-center"/>
@@ -7086,6 +7086,12 @@ Note: Based on Page 6.</description>
 <wire x1="73.66" y1="147.32" x2="73.66" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="147.32" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
 <junction x="73.66" y="147.32"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="57.15" y1="7.62" x2="57.15" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="7.62" x2="57.15" y2="7.62" width="0.1524" layer="91"/>
+<junction x="73.66" y="7.62"/>
+<junction x="57.15" y="7.62"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="185.42" x2="40.64" y2="185.42" width="0.1524" layer="91"/>
@@ -7457,13 +7463,14 @@ Note: Based on Page 6.</description>
 <pinref part="X7" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<label x="58.928" y="7.62" size="1.27" layer="95" xref="yes"/>
+<label x="49.53" y="12.954" size="1.27" layer="95" xref="yes"/>
 <pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="49.53" y1="12.7" x2="49.53" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="49.53" y1="7.62" x2="49.53" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="K1" gate="G$1" pin="DC-"/>
-<wire x1="49.53" y1="7.62" x2="46.99" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="7.62" x2="49.53" y2="7.62" width="0.1524" layer="91"/>
 <junction x="49.53" y="7.62"/>
+<wire x1="49.53" y1="7.62" x2="49.53" y2="12.954" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_MC_ERR_CTRL" class="0">
@@ -8367,15 +8374,6 @@ Note: Based on Page 6.</description>
 <segment>
 <pinref part="RN4" gate="B" pin="2"/>
 <pinref part="U4" gate="G$1" pin="GPB5"/>
-</segment>
-</net>
-<net name="N$63" class="0">
-<segment>
-<pinref part="C21" gate="G$1" pin="2"/>
-<wire x1="57.15" y1="12.7" x2="57.15" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="58.928" y1="7.62" x2="57.15" y2="7.62" width="0.1524" layer="91"/>
-<junction x="57.15" y="7.62"/>
 </segment>
 </net>
 <net name="N$68" class="0">

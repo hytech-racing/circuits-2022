@@ -2663,6 +2663,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="U4" pad="16"/>
 <contactref element="U4" pad="15"/>
 <contactref element="R18" pad="1"/>
+<contactref element="C21" pad="2"/>
+<contactref element="R17" pad="2"/>
 <wire x1="-376.428" y1="-361.3658" x2="-373.503" y2="-368.535" width="0" layer="19" extent="1-1"/>
 <wire x1="-380.492" y1="-358.9782" x2="-376.428" y2="-361.3658" width="0" layer="19" extent="1-1"/>
 <wire x1="-376.428" y1="-355.7778" x2="-380.492" y2="-358.9782" width="0" layer="19" extent="1-1"/>
@@ -2676,7 +2678,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-416.369" y1="-416.56" x2="-399.962" y2="-404.368" width="0" layer="19" extent="1-1"/>
 <wire x1="-415.728" y1="-419.216" x2="-416.369" y2="-416.56" width="0" layer="19" extent="1-1"/>
 <wire x1="-414.928" y1="-419.216" x2="-415.728" y2="-419.216" width="0" layer="19" extent="1-1"/>
-<wire x1="-422.998" y1="-436.372" x2="-415.728" y2="-419.216" width="0" layer="19" extent="1-1"/>
+<wire x1="-421.398" y1="-430.276" x2="-415.728" y2="-419.216" width="0" layer="19" extent="1-1"/>
+<wire x1="-421.298" y1="-433.324" x2="-421.398" y2="-430.276" width="0" layer="19" extent="1-1"/>
+<wire x1="-422.998" y1="-436.372" x2="-421.298" y2="-433.324" width="0" layer="19" extent="1-1"/>
 <wire x1="-420.239" y1="-438.585" x2="-422.998" y2="-436.372" width="0" layer="19" extent="1-1"/>
 <wire x1="-419.589" y1="-438.585" x2="-420.239" y2="-438.585" width="0" layer="19" extent="1-1"/>
 <wire x1="-418.939" y1="-438.585" x2="-419.589" y2="-438.585" width="0" layer="19" extent="1-1"/>
@@ -3550,11 +3554,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="RN4" pad="7"/>
 <contactref element="U4" pad="6"/>
 <wire x1="-326.028" y1="-237.352" x2="-424.139" y2="-445.335" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$63">
-<contactref element="C21" pad="2"/>
-<contactref element="R17" pad="2"/>
-<wire x1="-421.398" y1="-430.276" x2="-421.298" y2="-433.324" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$68">
 <contactref element="K1" pad="2"/>
