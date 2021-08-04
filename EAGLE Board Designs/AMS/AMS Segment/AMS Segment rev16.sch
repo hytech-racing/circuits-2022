@@ -8601,8 +8601,8 @@ spacing requirements are not met for the footprint.</text>
 <attribute name="VOLTAGE" x="152.4" y="128.27" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="154.178" y="128.27" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P62" gate="G$1" x="160.02" y="116.84" smashed="yes">
-<attribute name="VALUE" x="160.02" y="115.57" size="1.27" layer="96" align="top-center"/>
+<instance part="P62" gate="G$1" x="157.48" y="116.84" smashed="yes">
+<attribute name="VALUE" x="157.48" y="115.57" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P67" gate="G$1" x="160.02" y="142.24" smashed="yes">
 <attribute name="VALUE" x="160.02" y="140.97" size="1.27" layer="96" align="top-center"/>
@@ -8934,55 +8934,6 @@ spacing requirements are not met for the footprint.</text>
 <busses>
 </busses>
 <nets>
-<net name="V-" class="0">
-<segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="P30" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<pinref part="R20" gate="G$1" pin="1"/>
-<pinref part="P31" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="43.18" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
-<junction x="111.76" y="43.18"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
-<junction x="119.38" y="43.18"/>
-<pinref part="P33" gate="G$1" pin="V-L"/>
-<junction x="111.76" y="43.18"/>
-<wire x1="127" y1="43.18" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
-<junction x="127" y="43.18"/>
-<pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="43.18" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C13" gate="G$1" pin="2"/>
-<pinref part="P34" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<pinref part="P61" gate="G$1" pin="V-L"/>
-<pinref part="C20" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P60" gate="G$1" pin="V-L"/>
-<pinref part="C21" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P59" gate="G$1" pin="V-L"/>
-<pinref part="C22" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P58" gate="G$1" pin="V-L"/>
-<pinref part="C23" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="C28" gate="G$1" pin="1"/>
-<pinref part="P62" gate="G$1" pin="V-L"/>
-</segment>
-</net>
 <net name="IMU" class="0">
 <segment>
 <wire x1="149.86" y1="149.86" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
@@ -9317,17 +9268,6 @@ spacing requirements are not met for the footprint.</text>
 <label x="25.4" y="22.86" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="V+" class="0">
-<segment>
-<pinref part="P+1" gate="G$1" pin="V+U"/>
-<wire x1="66.04" y1="205.74" x2="71.12" y2="205.74" width="0.1524" layer="91"/>
-<junction x="71.12" y="205.74"/>
-<pinref part="U1" gate="G$1" pin="V+"/>
-<wire x1="71.12" y1="205.74" x2="81.28" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="R44" gate="G$1" pin="2"/>
-<pinref part="C27" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="IML" class="0">
 <segment>
 <wire x1="149.86" y1="124.46" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
@@ -9397,46 +9337,6 @@ spacing requirements are not met for the footprint.</text>
 <portref moduleinst="CELL18" port="CELL-"/>
 <wire x1="33.02" y1="162.56" x2="25.4" y2="162.56" width="0.1524" layer="91"/>
 <label x="25.4" y="162.56" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="V-B" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="P23" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<pinref part="R12" gate="G$1" pin="1"/>
-<pinref part="P24" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<pinref part="P28" gate="G$1" pin="V-U"/>
-<wire x1="111.76" y1="147.32" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="147.32" x2="127" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<junction x="111.76" y="147.32"/>
-<pinref part="C9" gate="G$1" pin="2"/>
-<junction x="119.38" y="147.32"/>
-<pinref part="C10" gate="G$1" pin="2"/>
-<pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="127" y1="147.32" x2="134.62" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="147.32" x2="134.62" y2="165.1" width="0.1524" layer="91"/>
-<junction x="127" y="147.32"/>
-</segment>
-<segment>
-<pinref part="P37" gate="G$1" pin="V-U"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P38" gate="G$1" pin="V-U"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P39" gate="G$1" pin="V-U"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="C26" gate="G$1" pin="1"/>
-<pinref part="P67" gate="G$1" pin="V-U"/>
 </segment>
 </net>
 <net name="C1L" class="0">
@@ -9621,18 +9521,6 @@ spacing requirements are not met for the footprint.</text>
 <label x="106.68" y="55.88" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="V+B" class="0">
-<segment>
-<pinref part="P35" gate="G$1" pin="V+L"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
-<junction x="76.2" y="111.76"/>
-<wire x1="76.2" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="V+"/>
-<wire x1="81.28" y1="111.76" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$72" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
@@ -9711,16 +9599,6 @@ spacing requirements are not met for the footprint.</text>
 <label x="81.28" y="137.16" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="N$71" class="0">
-<segment>
-<pinref part="R25" gate="G$1" pin="1"/>
-<pinref part="R48" gate="G$1" pin="1"/>
-<pinref part="J27" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="198.12" x2="264.16" y2="198.12" width="0.1524" layer="91"/>
-<junction x="251.46" y="198.12"/>
-<wire x1="251.46" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GPIO1U" class="0">
 <segment>
 <wire x1="238.76" y1="198.12" x2="243.84" y2="198.12" width="0.1524" layer="91"/>
@@ -9738,10 +9616,10 @@ spacing requirements are not met for the footprint.</text>
 <segment>
 <pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="R47" gate="G$1" pin="1"/>
-<pinref part="J28" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="185.42" x2="264.16" y2="185.42" width="0.1524" layer="91"/>
-<junction x="251.46" y="185.42"/>
+<junction x="254" y="185.42"/>
 <wire x1="251.46" y1="185.42" x2="254" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="J28" gate="G$1" pin="2"/>
+<wire x1="254" y1="185.42" x2="264.16" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO3U" class="0">
@@ -9762,8 +9640,9 @@ spacing requirements are not met for the footprint.</text>
 <pinref part="R31" gate="G$1" pin="1"/>
 <pinref part="R46" gate="G$1" pin="1"/>
 <pinref part="J32" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="172.72" x2="264.16" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="254" y1="172.72" x2="264.16" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="172.72" x2="254" y2="172.72" width="0.1524" layer="91"/>
+<junction x="254" y="172.72"/>
 </segment>
 </net>
 <net name="GPIO4U" class="0">
@@ -9783,10 +9662,10 @@ spacing requirements are not met for the footprint.</text>
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
 <pinref part="R45" gate="G$1" pin="1"/>
-<pinref part="J33" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="160.02" x2="264.16" y2="160.02" width="0.1524" layer="91"/>
-<junction x="251.46" y="160.02"/>
+<junction x="254" y="160.02"/>
 <wire x1="251.46" y1="160.02" x2="254" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="J33" gate="G$1" pin="2"/>
+<wire x1="254" y1="160.02" x2="264.16" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO5U" class="0">
@@ -9822,10 +9701,10 @@ spacing requirements are not met for the footprint.</text>
 <segment>
 <pinref part="R34" gate="G$1" pin="1"/>
 <pinref part="R43" gate="G$1" pin="1"/>
-<pinref part="J37" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="124.46" x2="264.16" y2="124.46" width="0.1524" layer="91"/>
-<junction x="251.46" y="124.46"/>
+<junction x="254" y="124.46"/>
 <wire x1="251.46" y1="124.46" x2="254" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="J37" gate="G$1" pin="2"/>
+<wire x1="254" y1="124.46" x2="264.16" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO1L" class="0">
@@ -9845,10 +9724,10 @@ spacing requirements are not met for the footprint.</text>
 <segment>
 <pinref part="R35" gate="G$1" pin="1"/>
 <pinref part="R42" gate="G$1" pin="1"/>
-<pinref part="J38" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="111.76" x2="264.16" y2="111.76" width="0.1524" layer="91"/>
-<junction x="251.46" y="111.76"/>
+<junction x="254" y="111.76"/>
 <wire x1="251.46" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="J38" gate="G$1" pin="2"/>
+<wire x1="254" y1="111.76" x2="264.16" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO2L" class="0">
@@ -9868,10 +9747,10 @@ spacing requirements are not met for the footprint.</text>
 <segment>
 <pinref part="R36" gate="G$1" pin="1"/>
 <pinref part="R41" gate="G$1" pin="1"/>
-<pinref part="J39" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="99.06" x2="264.16" y2="99.06" width="0.1524" layer="91"/>
-<junction x="251.46" y="99.06"/>
+<junction x="254" y="99.06"/>
 <wire x1="251.46" y1="99.06" x2="254" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="J39" gate="G$1" pin="2"/>
+<wire x1="254" y1="99.06" x2="264.16" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO3L" class="0">
@@ -9891,10 +9770,10 @@ spacing requirements are not met for the footprint.</text>
 <segment>
 <pinref part="R37" gate="G$1" pin="1"/>
 <pinref part="R39" gate="G$1" pin="1"/>
-<pinref part="J40" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
-<junction x="251.46" y="86.36"/>
+<junction x="254" y="86.36"/>
 <wire x1="251.46" y1="86.36" x2="254" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="J40" gate="G$1" pin="2"/>
+<wire x1="254" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO5L" class="0">
@@ -9982,6 +9861,7 @@ spacing requirements are not met for the footprint.</text>
 <wire x1="63.5" y1="193.04" x2="68.58" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="193.04" x2="76.2" y2="175.26" width="0.1524" layer="91"/>
 <label x="81.28" y="175.26" size="1.27" layer="95" align="bottom-right"/>
+<junction x="76.2" y="175.26"/>
 </segment>
 </net>
 <net name="S9U" class="0">
@@ -10134,31 +10014,6 @@ spacing requirements are not met for the footprint.</text>
 <wire x1="106.68" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="V-_U" class="0">
-<segment>
-<pinref part="R27" gate="G$1" pin="1"/>
-<pinref part="P68" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="V-"/>
-<pinref part="P69" gate="G$1" pin="V-U"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<junction x="81.28" y="121.92"/>
-<wire x1="78.74" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="V-_L" class="0">
-<segment>
-<pinref part="R29" gate="G$1" pin="1"/>
-<pinref part="P70" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="V-"/>
-<pinref part="P71" gate="G$1" pin="V-L"/>
-<junction x="81.28" y="17.78"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="C0L" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -10305,16 +10160,66 @@ spacing requirements are not met for the footprint.</text>
 <pinref part="P41" gate="G$1" pin="V-L"/>
 <pinref part="U4" gate="G$1" pin="GND"/>
 </segment>
-</net>
-<net name="VREF2L" class="0">
 <segment>
-<pinref part="C24" gate="G$1" pin="1"/>
-<pinref part="P52" gate="G$1" pin="VREGL"/>
-<junction x="271.78" y="73.66"/>
-<junction x="271.78" y="73.66"/>
-<wire x1="271.78" y1="73.66" x2="269.24" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="VDD"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<pinref part="P70" gate="G$1" pin="V-L"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="V-"/>
+<pinref part="P71" gate="G$1" pin="V-L"/>
+<junction x="81.28" y="17.78"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="P30" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="P31" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="43.18" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
+<junction x="111.76" y="43.18"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
+<junction x="119.38" y="43.18"/>
+<pinref part="P33" gate="G$1" pin="V-L"/>
+<junction x="111.76" y="43.18"/>
+<wire x1="127" y1="43.18" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
+<junction x="127" y="43.18"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="43.18" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C13" gate="G$1" pin="2"/>
+<pinref part="P34" gate="G$1" pin="V-L"/>
+</segment>
+<segment>
+<pinref part="P61" gate="G$1" pin="V-L"/>
+<pinref part="C20" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P60" gate="G$1" pin="V-L"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P59" gate="G$1" pin="V-L"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P58" gate="G$1" pin="V-L"/>
+<pinref part="C23" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="C28" gate="G$1" pin="1"/>
+<pinref part="P62" gate="G$1" pin="V-L"/>
+<wire x1="157.48" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VREFL" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="U2" gate="G$1" pin="VREF2"/>
@@ -10425,22 +10330,6 @@ spacing requirements are not met for the footprint.</text>
 <pinref part="U3" gate="G$1" pin="RH"/>
 </segment>
 </net>
-<net name="VREF2U" class="0">
-<segment>
-<pinref part="P57" gate="G$1" pin="VREGU"/>
-<pinref part="C25" gate="G$1" pin="1"/>
-<junction x="271.78" y="147.32"/>
-<junction x="271.78" y="147.32"/>
-<wire x1="271.78" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="C4" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="VREF2"/>
-<wire x1="104.14" y1="154.94" x2="111.76" y2="154.94" width="0.1524" layer="91"/>
-<label x="106.68" y="154.94" size="1.27" layer="95"/>
-</segment>
-</net>
 <net name="V-U" class="0">
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
@@ -10535,6 +10424,55 @@ spacing requirements are not met for the footprint.</text>
 <segment>
 <pinref part="P72" gate="G$1" pin="V-U"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="P68" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="V-"/>
+<pinref part="P69" gate="G$1" pin="V-U"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<junction x="81.28" y="121.92"/>
+<wire x1="78.74" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="P23" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="P24" gate="G$1" pin="V-U"/>
+</segment>
+<segment>
+<pinref part="P28" gate="G$1" pin="V-U"/>
+<wire x1="111.76" y1="147.32" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="147.32" x2="127" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<junction x="111.76" y="147.32"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<junction x="119.38" y="147.32"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="127" y1="147.32" x2="134.62" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="147.32" x2="134.62" y2="165.1" width="0.1524" layer="91"/>
+<junction x="127" y="147.32"/>
+</segment>
+<segment>
+<pinref part="P37" gate="G$1" pin="V-U"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P38" gate="G$1" pin="V-U"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P39" gate="G$1" pin="V-U"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="C26" gate="G$1" pin="1"/>
+<pinref part="P67" gate="G$1" pin="V-U"/>
 </segment>
 </net>
 <net name="GPIO4L" class="0">
@@ -10664,6 +10602,14 @@ spacing requirements are not met for the footprint.</text>
 <wire x1="144.78" y1="63.5" x2="147.32" y2="63.5" width="0.1524" layer="91"/>
 <label x="147.32" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="C24" gate="G$1" pin="1"/>
+<pinref part="P52" gate="G$1" pin="VREGL"/>
+<junction x="271.78" y="73.66"/>
+<junction x="271.78" y="73.66"/>
+<wire x1="271.78" y1="73.66" x2="269.24" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="VDD"/>
+</segment>
 </net>
 <net name="VREGU" class="0">
 <segment>
@@ -10713,6 +10659,20 @@ spacing requirements are not met for the footprint.</text>
 <pinref part="U1" gate="G$1" pin="A0"/>
 <pinref part="P80" gate="G$1" pin="VREGU"/>
 </segment>
+<segment>
+<pinref part="P57" gate="G$1" pin="VREGU"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<junction x="271.78" y="147.32"/>
+<junction x="271.78" y="147.32"/>
+<wire x1="271.78" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="VREF2"/>
+<wire x1="104.14" y1="154.94" x2="111.76" y2="154.94" width="0.1524" layer="91"/>
+<label x="106.68" y="154.94" size="1.27" layer="95"/>
+</segment>
 </net>
 <net name="CC12" class="0">
 <segment>
@@ -10732,12 +10692,31 @@ spacing requirements are not met for the footprint.</text>
 <wire x1="144.78" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="P51" gate="G$1" pin="V+L"/>
 </segment>
+<segment>
+<pinref part="P35" gate="G$1" pin="V+L"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
+<junction x="76.2" y="111.76"/>
+<wire x1="76.2" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="U2" gate="G$1" pin="V+"/>
+<wire x1="81.28" y1="111.76" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="V+U" class="0">
 <segment>
 <pinref part="TP9" gate="G$1" pin="P$1"/>
 <wire x1="124.46" y1="139.7" x2="127" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="P27" gate="G$1" pin="V+U"/>
+</segment>
+<segment>
+<pinref part="P+1" gate="G$1" pin="V+U"/>
+<wire x1="66.04" y1="205.74" x2="71.12" y2="205.74" width="0.1524" layer="91"/>
+<junction x="71.12" y="205.74"/>
+<pinref part="U1" gate="G$1" pin="V+"/>
+<wire x1="71.12" y1="205.74" x2="81.28" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="R44" gate="G$1" pin="2"/>
+<pinref part="C27" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SENSE21" class="0">
@@ -10822,9 +10801,95 @@ spacing requirements are not met for the footprint.</text>
 <label x="114.3" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R48" gate="G$1" pin="1"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="J27" gate="G$1" pin="2"/>
+<wire x1="264.16" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="91"/>
+<junction x="254" y="198.12"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,81.28,121.92,U1,V-,V-U,,,"/>
+<approved hash="104,1,81.28,205.74,U1,V+,V+U,,,"/>
+<approved hash="104,1,81.28,17.78,U2,V-,V-L,,,"/>
+<approved hash="104,1,81.28,101.6,U2,V+,V+L,,,"/>
+<approved hash="104,1,254,137.16,U3,GND,V-U,,,"/>
+<approved hash="104,1,269.24,147.32,U3,VDD,VREGU,,,"/>
+<approved hash="104,1,254,63.5,U4,GND,V-L,,,"/>
+<approved hash="104,1,269.24,73.66,U4,VDD,VREGL,,,"/>
+<approved hash="208,1,236.22,63.5,V-L,sup,,,,"/>
+<approved hash="208,1,271.78,66.04,V-L,sup,,,,"/>
+<approved hash="208,1,106.68,101.6,V-L,sup,,,,"/>
+<approved hash="208,1,254,78.74,V-L,sup,,,,"/>
+<approved hash="208,1,254,91.44,V-L,sup,,,,"/>
+<approved hash="208,1,254,104.14,V-L,sup,,,,"/>
+<approved hash="208,1,254,116.84,V-L,sup,,,,"/>
+<approved hash="208,1,147.32,55.88,V-L,sup,,,,"/>
+<approved hash="208,1,106.68,93.98,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,101.6,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,93.98,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,86.36,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,78.74,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,71.12,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,63.5,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,55.88,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,48.26,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,40.64,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,33.02,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,25.4,V-L,sup,,,,"/>
+<approved hash="208,1,63.5,17.78,V-L,sup,,,,"/>
+<approved hash="208,1,33.02,17.78,V-L,out,,,,"/>
+<approved hash="208,1,33.02,12.7,V-L,sup,,,,"/>
+<approved hash="208,1,254,63.5,V-L,sup,,,,"/>
+<approved hash="208,1,106.68,10.16,V-L,sup,,,,"/>
+<approved hash="208,1,81.28,17.78,V-L,sup,,,,"/>
+<approved hash="208,1,139.7,93.98,V-L,sup,,,,"/>
+<approved hash="208,1,160.02,96.52,V-L,sup,,,,"/>
+<approved hash="208,1,111.76,43.18,V-L,sup,,,,"/>
+<approved hash="208,1,76.2,104.14,V-L,sup,,,,"/>
+<approved hash="208,1,238.76,116.84,V-L,sup,,,,"/>
+<approved hash="208,1,238.76,104.14,V-L,sup,,,,"/>
+<approved hash="208,1,238.76,91.44,V-L,sup,,,,"/>
+<approved hash="208,1,238.76,78.74,V-L,sup,,,,"/>
+<approved hash="208,1,157.48,119.38,V-L,sup,,,,"/>
+<approved hash="208,1,236.22,137.16,V-U,sup,,,,"/>
+<approved hash="208,1,271.78,139.7,V-U,sup,,,,"/>
+<approved hash="208,1,71.12,198.12,V-U,sup,,,,"/>
+<approved hash="208,1,106.68,205.74,V-U,sup,,,,"/>
+<approved hash="208,1,254,152.4,V-U,sup,,,,"/>
+<approved hash="208,1,254,165.1,V-U,sup,,,,"/>
+<approved hash="208,1,254,177.8,V-U,sup,,,,"/>
+<approved hash="208,1,254,190.5,V-U,sup,,,,"/>
+<approved hash="208,1,132.08,116.84,V-U,sup,,,,"/>
+<approved hash="208,1,238.76,152.4,V-U,sup,,,,"/>
+<approved hash="208,1,63.5,187.96,V-U,sup,,,,"/>
+<approved hash="208,1,63.5,180.34,V-U,sup,,,,"/>
+<approved hash="208,1,63.5,172.72,V-U,sup,,,,"/>
+<approved hash="208,1,63.5,165.1,V-U,sup,,,,"/>
+<approved hash="208,1,63.5,157.48,V-U,sup,,,,"/>
+<approved hash="208,1,63.5,149.86,V-U,sup,,,,"/>
+<approved hash="208,1,63.5,142.24,V-U,sup,,,,"/>
+<approved hash="208,1,63.5,134.62,V-U,sup,,,,"/>
+<approved hash="208,1,63.5,127,V-U,sup,,,,"/>
+<approved hash="208,1,58.42,121.92,V-U,sup,,,,"/>
+<approved hash="208,1,33.02,127,V-U,out,,,,"/>
+<approved hash="208,1,254,137.16,V-U,sup,,,,"/>
+<approved hash="208,1,106.68,114.3,V-U,sup,,,,"/>
+<approved hash="208,1,81.28,121.92,V-U,sup,,,,"/>
+<approved hash="208,1,139.7,198.12,V-U,sup,,,,"/>
+<approved hash="208,1,160.02,200.66,V-U,sup,,,,"/>
+<approved hash="208,1,111.76,147.32,V-U,sup,,,,"/>
+<approved hash="208,1,238.76,190.5,V-U,sup,,,,"/>
+<approved hash="208,1,238.76,177.8,V-U,sup,,,,"/>
+<approved hash="208,1,238.76,165.1,V-U,sup,,,,"/>
+<approved hash="208,1,160.02,144.78,V-U,sup,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
