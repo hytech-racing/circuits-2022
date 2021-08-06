@@ -7563,9 +7563,15 @@ Layer: 94 Symbol</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="unfused_hv" width="0" drill="0">
-<clearance class="0" value="0.0254"/>
-<clearance class="1" value="3.2004"/>
+<class number="1" name="Upper_Unfused" width="0" drill="0">
+</class>
+<class number="2" name="Lower_Unfused" width="0" drill="0">
+</class>
+<class number="3" name="Upper" width="0" drill="0">
+</class>
+<class number="4" name="Lower" width="0" drill="0">
+</class>
+<class number="5" name="IsoSPI" width="0" drill="0">
 </class>
 </classes>
 <modules>
@@ -9110,7 +9116,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="25.4" y="30.48" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC0" class="0">
+<net name="CC0" class="2">
 <segment>
 <pinref part="F0" gate="G$1" pin="1"/>
 <pinref part="J0" gate="G$1" pin="1"/>
@@ -9118,7 +9124,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="15.24" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC2" class="0">
+<net name="CC2" class="2">
 <segment>
 <pinref part="F2" gate="G$1" pin="1"/>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -9126,7 +9132,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="30.48" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC3" class="0">
+<net name="CC3" class="2">
 <segment>
 <pinref part="F3" gate="G$1" pin="1"/>
 <pinref part="J3" gate="G$1" pin="1"/>
@@ -9134,7 +9140,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="38.1" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC4" class="0">
+<net name="CC4" class="2">
 <segment>
 <pinref part="F4" gate="G$1" pin="1"/>
 <pinref part="J4" gate="G$1" pin="1"/>
@@ -9142,7 +9148,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="45.72" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC5" class="0">
+<net name="CC5" class="2">
 <segment>
 <pinref part="F5" gate="G$1" pin="1"/>
 <pinref part="J5" gate="G$1" pin="1"/>
@@ -9150,7 +9156,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="53.34" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC6" class="0">
+<net name="CC6" class="2">
 <segment>
 <pinref part="F6" gate="G$1" pin="1"/>
 <pinref part="J6" gate="G$1" pin="1"/>
@@ -9158,7 +9164,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="60.96" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC7" class="0">
+<net name="CC7" class="2">
 <segment>
 <pinref part="F7" gate="G$1" pin="1"/>
 <pinref part="J7" gate="G$1" pin="1"/>
@@ -9166,7 +9172,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="68.58" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC8" class="0">
+<net name="CC8" class="2">
 <segment>
 <pinref part="F8" gate="G$1" pin="1"/>
 <pinref part="J8" gate="G$1" pin="1"/>
@@ -9174,7 +9180,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="76.2" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC9" class="0">
+<net name="CC9" class="2">
 <segment>
 <pinref part="F9" gate="G$1" pin="1"/>
 <pinref part="J9" gate="G$1" pin="1"/>
@@ -9182,7 +9188,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="83.82" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC10" class="0">
+<net name="CC10" class="2">
 <segment>
 <pinref part="F10" gate="G$1" pin="1"/>
 <pinref part="J10" gate="G$1" pin="1"/>
@@ -9190,7 +9196,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="91.44" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC11" class="0">
+<net name="CC11" class="2">
 <segment>
 <pinref part="F11" gate="G$1" pin="1"/>
 <pinref part="J11" gate="G$1" pin="1"/>
@@ -9198,7 +9204,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="99.06" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC13" class="0">
+<net name="CC13" class="1">
 <segment>
 <pinref part="F13" gate="G$1" pin="1"/>
 <pinref part="J13" gate="G$1" pin="1"/>
@@ -9206,7 +9212,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="132.08" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC14" class="0">
+<net name="CC14" class="1">
 <segment>
 <pinref part="F14" gate="G$1" pin="1"/>
 <pinref part="J14" gate="G$1" pin="1"/>
@@ -9214,7 +9220,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="139.7" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC15" class="0">
+<net name="CC15" class="1">
 <segment>
 <pinref part="F15" gate="G$1" pin="1"/>
 <pinref part="J15" gate="G$1" pin="1"/>
@@ -9222,7 +9228,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="147.32" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC16" class="0">
+<net name="CC16" class="1">
 <segment>
 <pinref part="F16" gate="G$1" pin="1"/>
 <pinref part="J16" gate="G$1" pin="1"/>
@@ -9230,7 +9236,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="154.94" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC17" class="0">
+<net name="CC17" class="1">
 <segment>
 <pinref part="F17" gate="G$1" pin="1"/>
 <pinref part="J17" gate="G$1" pin="1"/>
@@ -9238,7 +9244,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="162.56" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC18" class="0">
+<net name="CC18" class="1">
 <segment>
 <pinref part="F18" gate="G$1" pin="1"/>
 <pinref part="J18" gate="G$1" pin="1"/>
@@ -9246,7 +9252,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="170.18" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC1" class="0">
+<net name="CC1" class="2">
 <segment>
 <pinref part="F1" gate="G$1" pin="1"/>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -9279,7 +9285,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="106.68" y="30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="CC21" class="0">
+<net name="CC21" class="1">
 <segment>
 <pinref part="J31" gate="G$1" pin="1"/>
 <pinref part="F21" gate="G$1" pin="1"/>
@@ -9287,7 +9293,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="193.04" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC20" class="0">
+<net name="CC20" class="1">
 <segment>
 <pinref part="J30" gate="G$1" pin="1"/>
 <pinref part="F20" gate="G$1" pin="1"/>
@@ -9295,7 +9301,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="15.24" y="185.42" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="CC19" class="0">
+<net name="CC19" class="1">
 <segment>
 <pinref part="J29" gate="G$1" pin="1"/>
 <pinref part="F19" gate="G$1" pin="1"/>
@@ -10680,7 +10686,7 @@ spacing requirements are not met for the footprint.</text>
 <pinref part="U3" gate="G$1" pin="VDD"/>
 </segment>
 </net>
-<net name="CC12" class="0">
+<net name="CC12" class="1">
 <segment>
 <pinref part="J12" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="116.84" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
@@ -10766,7 +10772,7 @@ spacing requirements are not met for the footprint.</text>
 <label x="218.44" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IP" class="0">
+<net name="IP" class="5">
 <segment>
 <pinref part="R52" gate="G$1" pin="2"/>
 <pinref part="R7" gate="G$1" pin="1"/>
