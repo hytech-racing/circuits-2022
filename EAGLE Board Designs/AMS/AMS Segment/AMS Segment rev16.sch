@@ -469,41 +469,6 @@
 <text x="-7.62" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="center">&gt;NAME</text>
 <rectangle x1="-6.985" y1="-4.445" x2="6.985" y2="4.445" layer="39"/>
 </package>
-<package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_DUAL">
-<description>2 Pin Micro-Fit Right Angle Header, SMD, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430450211"&gt;Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/0430450211_sd.pdf"&gt;Footprint&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430250200_sd.pdf"&gt;Plug Size&lt;/a&gt;
-&lt;br&gt;
-Solid line must not be visible on PCB.
-&lt;br&gt;
-Dashed line is edge of mated connector.</description>
-<smd name="PAD" x="3.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
-<smd name="PAD2" x="-3.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
-<smd name="1" x="0" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
-<smd name="2" x="0" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
-<rectangle x1="2.1717" y1="1.8034" x2="4.6101" y2="3.4036" layer="43"/>
-<rectangle x1="-4.6101" y1="1.8034" x2="-2.1717" y2="3.4036" layer="43"/>
-<wire x1="-3.3274" y1="5.4737" x2="3.3274" y2="5.4737" width="0.127" layer="21"/>
-<wire x1="1.4986" y1="-4.4323" x2="-1.4986" y2="-4.4323" width="0.127" layer="21"/>
-<wire x1="-3.3274" y1="-2.6035" x2="-3.3274" y2="5.4737" width="0.127" layer="21"/>
-<wire x1="-1.4986" y1="-4.4323" x2="-3.3274" y2="-2.6035" width="0.127" layer="21"/>
-<wire x1="1.4986" y1="-4.4323" x2="3.3274" y2="-2.6035" width="0.127" layer="21"/>
-<wire x1="3.3274" y1="-2.6035" x2="3.3274" y2="5.4737" width="0.127" layer="21"/>
-<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="12.7" layer="39"/>
-<wire x1="-6.35" y1="-10.16" x2="6.35" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="-25.4" width="0" layer="20"/>
-<wire x1="-2.54" y1="-25.4" x2="2.54" y2="-25.4" width="0" layer="20"/>
-<wire x1="2.54" y1="-25.4" x2="2.54" y2="-10.16" width="0" layer="20"/>
-<wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0" layer="20"/>
-<wire x1="-6.35" y1="-12.2428" x2="6.35" y2="-12.2428" width="0.127" layer="21" style="shortdash"/>
-<text x="0" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-4.6101" y1="1.8034" x2="-2.1717" y2="3.4036" layer="41"/>
-<rectangle x1="2.1717" y1="1.8034" x2="4.6101" y2="3.4036" layer="41"/>
-</package>
 <package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_SINGLE">
 <description>2 Pin Micro-Fit Right Angle Header, SMD, Single Row
 &lt;br&gt;
@@ -513,7 +478,7 @@ Dashed line is edge of mated connector.</description>
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/436450200_sd.pdf"&gt;Plug Size&lt;/a&gt;
 &lt;br&gt;
-Solid line must not be visible on PCB.
+Solid line must not be visible on PCB if no cutout is desired.
 &lt;br&gt;
 Dashed line is edge of mated connector.</description>
 <smd name="PAD" x="5.3721" y="0" dx="3.429" dy="1.651" layer="1"/>
@@ -529,12 +494,17 @@ Dashed line is edge of mated connector.</description>
 <wire x1="2.9972" y1="-4.4323" x2="4.826" y2="-2.6035" width="0.127" layer="21"/>
 <wire x1="4.826" y1="-2.6035" x2="4.826" y2="5.4737" width="0.127" layer="21"/>
 <rectangle x1="-7.8486" y1="-5.08" x2="7.8486" y2="7.62" layer="39"/>
-<wire x1="-6.35" y1="-10.16" x2="6.35" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-12.2428" x2="6.35" y2="-12.2428" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="49"/>
+<wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="49" style="shortdash"/>
 <text x="0.2286" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-5.588" y1="1.8034" x2="-3.1496" y2="3.4036" layer="41"/>
 <rectangle x1="3.1496" y1="1.8034" x2="5.588" y2="3.4036" layer="41"/>
-<rectangle x1="-4.4704" y1="-25.4" x2="4.4704" y2="-10.16" layer="46"/>
+<rectangle x1="-4.4704" y1="-25.527" x2="4.4704" y2="-10.033" layer="41"/>
+<wire x1="-4.4704" y1="-10.033" x2="4.4704" y2="-10.033" width="0" layer="46"/>
+<wire x1="4.4704" y1="-10.033" x2="4.4704" y2="-25.527" width="0" layer="46"/>
+<wire x1="4.4704" y1="-25.527" x2="-4.4704" y2="-25.527" width="0" layer="46"/>
+<wire x1="-4.4704" y1="-25.527" x2="-4.4704" y2="-10.033" width="0" layer="46"/>
+<rectangle x1="-4.4704" y1="-25.527" x2="4.4704" y2="-10.033" layer="42"/>
 </package>
 <package name="HM2102NLT">
 <description>HM2102NL Transformer
@@ -584,34 +554,6 @@ Dashed line is edge of mated connector.</description>
 <text x="-7.62" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-8.382" y1="-8.382" x2="8.382" y2="8.382" layer="39"/>
 </package>
-<package name="HM2112ZNLT_AIRGAP">
-<description>HM2112ZNL Transformer
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="12" x="-4.77951875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="11" x="-2.889759375" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="10" x="-0.999996875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="9" x="0.999996875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="8" x="2.889759375" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="7" x="4.77951875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="1" x="-4.77951875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="2" x="-2.889759375" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="3" x="-0.999996875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="4" x="0.999996875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="5" x="2.87451875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="6" x="4.77951875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<wire x1="-7.35" y1="6.075" x2="7.35" y2="6.075" width="0.1524" layer="21"/>
-<wire x1="7.35" y1="6.075" x2="7.35" y2="-6.075" width="0.1524" layer="21"/>
-<wire x1="7.35" y1="-6.075" x2="-7.35" y2="-6.075" width="0.1524" layer="21"/>
-<wire x1="-7.35" y1="-6.075" x2="-7.35" y2="6.075" width="0.1524" layer="21"/>
-<circle x="-6.477" y="-7.14501875" radius="0.635" width="0.1524" layer="21"/>
-<text x="-8.382" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-8.382" y1="-8.382" x2="8.382" y2="8.382" layer="39"/>
-<wire x1="-8.382" y1="-5.76" x2="8.382" y2="-5.76" width="0" layer="20"/>
-<wire x1="8.382" y1="-5.76" x2="8.382" y2="5.76" width="0" layer="20"/>
-<wire x1="8.382" y1="5.76" x2="-8.382" y2="5.76" width="0" layer="20"/>
-<wire x1="-8.382" y1="5.76" x2="-8.382" y2="-5.76" width="0" layer="20"/>
-</package>
 <package name="SOT-23">
 <description>SOT-23
 &lt;br&gt;
@@ -654,6 +596,71 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="1.524" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="-1.905" y="1.27" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-1.778" y1="-1.524" x2="1.778" y2="1.524" layer="39"/>
+</package>
+<package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_DUAL">
+<description>2 Pin Micro-Fit Right Angle Header, SMD, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430450211"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/0430450211_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430250200_sd.pdf"&gt;Plug Size&lt;/a&gt;
+&lt;br&gt;
+Solid line must not be visible on PCB if no cutout is desired.
+&lt;br&gt;
+Dashed line is edge of mated connector.</description>
+<smd name="PAD" x="3.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="PAD2" x="-3.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="1" x="0" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<smd name="2" x="0" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
+<rectangle x1="2.1717" y1="1.8034" x2="4.6101" y2="3.4036" layer="43"/>
+<rectangle x1="-4.6101" y1="1.8034" x2="-2.1717" y2="3.4036" layer="43"/>
+<wire x1="-3.3274" y1="5.4737" x2="3.3274" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="1.4986" y1="-4.4323" x2="-1.4986" y2="-4.4323" width="0.127" layer="21"/>
+<wire x1="-3.3274" y1="-2.6035" x2="-3.3274" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="-1.4986" y1="-4.4323" x2="-3.3274" y2="-2.6035" width="0.127" layer="21"/>
+<wire x1="1.4986" y1="-4.4323" x2="3.3274" y2="-2.6035" width="0.127" layer="21"/>
+<wire x1="3.3274" y1="-2.6035" x2="3.3274" y2="5.4737" width="0.127" layer="21"/>
+<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="12.7" layer="39"/>
+<text x="0" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-4.6101" y1="1.8034" x2="-2.1717" y2="3.4036" layer="41"/>
+<rectangle x1="2.1717" y1="1.8034" x2="4.6101" y2="3.4036" layer="41"/>
+<wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="49"/>
+<wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="49" style="shortdash"/>
+<rectangle x1="-2.54" y1="-25.527" x2="2.54" y2="-10.033" layer="41"/>
+<wire x1="-2.54" y1="-10.033" x2="2.54" y2="-10.033" width="0" layer="46"/>
+<wire x1="2.54" y1="-10.033" x2="2.54" y2="-25.527" width="0" layer="46"/>
+<wire x1="2.54" y1="-25.527" x2="-2.54" y2="-25.527" width="0" layer="46"/>
+<wire x1="-2.54" y1="-25.527" x2="-2.54" y2="-10.033" width="0" layer="46"/>
+<rectangle x1="-2.54" y1="-25.527" x2="2.54" y2="-10.033" layer="42"/>
+</package>
+<package name="HM2112ZNLT_AIRGAP">
+<description>HM2112ZNL Transformer
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="12" x="-4.77951875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="11" x="-2.889759375" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="10" x="-0.999996875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="9" x="0.999996875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="8" x="2.889759375" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="7" x="4.77951875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="1" x="-4.77951875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="2" x="-2.889759375" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="3" x="-0.999996875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="4" x="0.999996875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="5" x="2.87451875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<smd name="6" x="4.77951875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
+<wire x1="-7.35" y1="6.075" x2="7.35" y2="6.075" width="0.1524" layer="21"/>
+<wire x1="7.35" y1="6.075" x2="7.35" y2="-6.075" width="0.1524" layer="21"/>
+<wire x1="7.35" y1="-6.075" x2="-7.35" y2="-6.075" width="0.1524" layer="21"/>
+<wire x1="-7.35" y1="-6.075" x2="-7.35" y2="6.075" width="0.1524" layer="21"/>
+<circle x="-6.477" y="-7.14501875" radius="0.635" width="0.1524" layer="21"/>
+<text x="-8.382" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-8.382" y1="-8.382" x2="8.382" y2="8.382" layer="39"/>
+<wire x1="-8.382" y1="-5.76" x2="8.382" y2="-5.76" width="0" layer="46"/>
+<wire x1="8.382" y1="-5.76" x2="8.382" y2="5.76" width="0" layer="46"/>
+<wire x1="8.382" y1="5.76" x2="-8.382" y2="5.76" width="0" layer="46"/>
+<wire x1="-8.382" y1="5.76" x2="-8.382" y2="-5.76" width="0" layer="46"/>
 </package>
 </packages>
 <symbols>
