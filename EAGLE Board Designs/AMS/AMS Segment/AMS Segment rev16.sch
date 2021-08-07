@@ -509,6 +509,7 @@ Dashed line is edge of mated connector.</description>
 <wire x1="-4.4704" y1="-25.527" x2="-4.4704" y2="-10.033" width="0" layer="46"/>
 <rectangle x1="-4.4704" y1="-25.527" x2="4.4704" y2="-10.033" layer="42"/>
 <rectangle x1="-5.08" y1="-26.035" x2="5.08" y2="-5.08" layer="39"/>
+<rectangle x1="-5.08" y1="-26.035" x2="5.08" y2="-9.398" layer="40"/>
 </package>
 <package name="HM2102NLT">
 <description>HM2102NL Transformer
@@ -8017,7 +8018,10 @@ where a fuse blows.</text>
 <wire x1="223.52" y1="172.72" x2="182.88" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
 <text x="172.72" y="104.14" size="1.27" layer="97">The parts inside the dotted line box are galvanically isolated from the 
 cell voltages, but is still considered tractive system because the 
-spacing requirements are not met for the footprint.</text>
+spacing requirements are not met for the footprint.
+
+The transformer is used to meet the galvanic isolation
+requirement of EV.8.3.2.</text>
 </plain>
 <moduleinsts>
 <moduleinst name="CELL1" module="CELL" x="48.26" y="20.32">
