@@ -269,17 +269,17 @@
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-Keepout is 1 mm around fuse to get 2 mm between fuses.</description>
+Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
 <wire x1="-5.43" y1="-2.39" x2="5.43" y2="-2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="2.39" x2="-5.43" y2="2.39" width="0.127" layer="21"/>
-<text x="0" y="4.615" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
-<rectangle x1="-9.05" y1="-4.615" x2="9.05" y2="4.615" layer="39"/>
-<rectangle x1="-2.45" y1="-4.615" x2="2.45" y2="4.615" layer="43"/>
-<rectangle x1="-2.45" y1="-4.615" x2="2.45" y2="4.615" layer="41"/>
+<text x="0" y="3.65" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-8.85" y1="-4.415" x2="8.85" y2="4.415" layer="39"/>
+<rectangle x1="-2.45" y1="-4.415" x2="2.45" y2="4.415" layer="43"/>
+<rectangle x1="-2.45" y1="-4.415" x2="2.45" y2="4.415" layer="41"/>
 </package>
 <package name="5222">
 <description>5222 Spring
@@ -364,8 +364,20 @@ Keepout is 1 mm around fuse to get 2 mm between fuses.</description>
 <wire x1="-5.05" y1="3.365" x2="-5.05" y2="13.765" width="0.127" layer="21"/>
 <text x="0" y="15.494" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-6.35" y1="-2.794" x2="6.35" y2="15.494" layer="39"/>
-<smd name="PAD2" x="0" y="12.875" dx="11" dy="4.02" layer="1"/>
-<smd name="PAD1" x="0" y="7.615" dx="8" dy="6.5" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="-5.5" y="14.885"/>
+<vertex x="-5.5" y="10.865"/>
+<vertex x="-4" y="10.865"/>
+<vertex x="-4" y="4.365"/>
+<vertex x="4" y="4.365"/>
+<vertex x="4" y="10.865"/>
+<vertex x="5.5" y="10.865"/>
+<vertex x="5.5" y="14.885"/>
+</polygon>
+<rectangle x1="-5.5" y1="10.865" x2="5.5" y2="14.885" layer="31"/>
+<rectangle x1="-4" y1="4.365" x2="4" y2="10.865" layer="31"/>
+<rectangle x1="-5.6025" y1="10.7625" x2="5.6025" y2="14.9875" layer="29"/>
+<rectangle x1="-4.1025" y1="4.2625" x2="4.1025" y2="10.865" layer="29"/>
 </package>
 <package name="2220-CAP">
 <description>2220 Cap
@@ -7575,15 +7587,29 @@ Layer: 94 Symbol</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="Upper_Unfused" width="0" drill="0">
+<class number="1" name="Upper_Unfused" width="0.508" drill="0.6858">
+<clearance class="0" value="1.6"/>
+<clearance class="1" value="1.6"/>
 </class>
-<class number="2" name="Lower_Unfused" width="0" drill="0">
+<class number="2" name="Lower_Unfused" width="0.508" drill="0.6858">
+<clearance class="0" value="1.6"/>
+<clearance class="1" value="1.6"/>
+<clearance class="2" value="1.6"/>
 </class>
-<class number="3" name="Upper" width="0" drill="0">
+<class number="3" name="Upper Power" width="0" drill="0">
+<clearance class="1" value="1.6"/>
+<clearance class="2" value="1.6"/>
 </class>
-<class number="4" name="Lower" width="0" drill="0">
+<class number="4" name="Lower Power" width="0" drill="0">
+<clearance class="1" value="1.6"/>
+<clearance class="2" value="1.6"/>
+<clearance class="3" value="1.6"/>
 </class>
 <class number="5" name="IsoSPI" width="0" drill="0">
+<clearance class="1" value="1.6"/>
+<clearance class="2" value="1.6"/>
+<clearance class="3" value="1.6"/>
+<clearance class="4" value="1.6"/>
 </class>
 </classes>
 <modules>
@@ -8589,25 +8615,25 @@ requirement of EV.8.3.2.</text>
 <attribute name="NAME" x="148.59" y="135.89" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="151.13" y="135.89" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R6" gate="G$1" x="198.12" y="147.32" smashed="yes" rot="MR0">
-<attribute name="NAME" x="199.39" y="148.59" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="199.39" y="146.05" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R6" gate="G$1" x="200.66" y="147.32" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="148.59" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="201.93" y="146.05" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R7" gate="G$1" x="198.12" y="167.64" smashed="yes" rot="MR0">
-<attribute name="NAME" x="199.39" y="168.91" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="199.39" y="166.37" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R7" gate="G$1" x="200.66" y="167.64" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="168.91" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="201.93" y="166.37" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R49" gate="G$1" x="198.12" y="121.92" smashed="yes" rot="MR0">
-<attribute name="NAME" x="199.39" y="123.19" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="199.39" y="120.65" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R49" gate="G$1" x="200.66" y="121.92" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="123.19" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="201.93" y="120.65" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R50" gate="G$1" x="198.12" y="142.24" smashed="yes" rot="MR0">
-<attribute name="NAME" x="199.39" y="143.51" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="199.39" y="140.97" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R50" gate="G$1" x="200.66" y="142.24" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="143.51" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="201.93" y="140.97" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R52" gate="G$1" x="203.2" y="160.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="201.93" y="158.75" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="204.47" y="158.75" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="R52" gate="G$1" x="205.74" y="160.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="204.47" y="158.75" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="207.01" y="158.75" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="C5" gate="G$1" x="149.86" y="154.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="147.32" y="153.67" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -8966,7 +8992,7 @@ requirement of EV.8.3.2.</text>
 <label x="106.68" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SENSE18" class="0">
+<net name="SENSE18" class="3">
 <segment>
 <portref moduleinst="CELL18" port="CELL+"/>
 <pinref part="F18" gate="G$1" pin="2"/>
@@ -8977,7 +9003,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="170.18" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE16" class="0">
+<net name="SENSE16" class="3">
 <segment>
 <wire x1="33.02" y1="157.48" x2="33.02" y2="154.94" width="0.1524" layer="91"/>
 <portref moduleinst="CELL16" port="CELL+"/>
@@ -8988,7 +9014,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="154.94" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE15" class="0">
+<net name="SENSE15" class="3">
 <segment>
 <wire x1="33.02" y1="149.86" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
 <portref moduleinst="CELL15" port="CELL+"/>
@@ -8999,7 +9025,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="147.32" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE14" class="0">
+<net name="SENSE14" class="3">
 <segment>
 <wire x1="33.02" y1="142.24" x2="33.02" y2="139.7" width="0.1524" layer="91"/>
 <portref moduleinst="CELL14" port="CELL+"/>
@@ -9010,7 +9036,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="139.7" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE13" class="0">
+<net name="SENSE13" class="3">
 <segment>
 <wire x1="33.02" y1="134.62" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
 <portref moduleinst="CELL13" port="CELL+"/>
@@ -9021,7 +9047,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="132.08" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE11" class="0">
+<net name="SENSE11" class="4">
 <segment>
 <wire x1="33.02" y1="101.6" x2="33.02" y2="99.06" width="0.1524" layer="91"/>
 <portref moduleinst="CELL11" port="CELL+"/>
@@ -9032,7 +9058,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="99.06" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE10" class="0">
+<net name="SENSE10" class="4">
 <segment>
 <wire x1="33.02" y1="93.98" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
 <portref moduleinst="CELL10" port="CELL+"/>
@@ -9043,7 +9069,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="91.44" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE9" class="0">
+<net name="SENSE9" class="4">
 <segment>
 <wire x1="33.02" y1="86.36" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
 <portref moduleinst="CELL9" port="CELL+"/>
@@ -9054,7 +9080,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="83.82" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE8" class="0">
+<net name="SENSE8" class="4">
 <segment>
 <wire x1="33.02" y1="78.74" x2="33.02" y2="76.2" width="0.1524" layer="91"/>
 <portref moduleinst="CELL8" port="CELL+"/>
@@ -9065,7 +9091,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="76.2" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE7" class="0">
+<net name="SENSE7" class="4">
 <segment>
 <wire x1="33.02" y1="71.12" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
 <portref moduleinst="CELL7" port="CELL+"/>
@@ -9076,7 +9102,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="68.58" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE6" class="0">
+<net name="SENSE6" class="4">
 <segment>
 <wire x1="33.02" y1="63.5" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
 <portref moduleinst="CELL6" port="CELL+"/>
@@ -9087,7 +9113,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="60.96" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE5" class="0">
+<net name="SENSE5" class="4">
 <segment>
 <wire x1="33.02" y1="55.88" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
 <portref moduleinst="CELL5" port="CELL+"/>
@@ -9098,7 +9124,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="53.34" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE4" class="0">
+<net name="SENSE4" class="4">
 <segment>
 <wire x1="33.02" y1="48.26" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
 <portref moduleinst="CELL4" port="CELL+"/>
@@ -9109,7 +9135,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="45.72" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE3" class="0">
+<net name="SENSE3" class="4">
 <segment>
 <wire x1="33.02" y1="40.64" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
 <portref moduleinst="CELL3" port="CELL+"/>
@@ -9120,7 +9146,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="38.1" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE2" class="0">
+<net name="SENSE2" class="4">
 <segment>
 <wire x1="33.02" y1="33.02" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <portref moduleinst="CELL2" port="CELL+"/>
@@ -9275,7 +9301,7 @@ requirement of EV.8.3.2.</text>
 <label x="15.24" y="22.86" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE1" class="0">
+<net name="SENSE1" class="4">
 <segment>
 <wire x1="33.02" y1="25.4" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
 <portref moduleinst="CELL1" port="CELL+"/>
@@ -9324,7 +9350,7 @@ requirement of EV.8.3.2.</text>
 <label x="15.24" y="177.8" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE20" class="0">
+<net name="SENSE20" class="3">
 <segment>
 <pinref part="F20" gate="G$1" pin="2"/>
 <portref moduleinst="CELL20" port="CELL+"/>
@@ -9335,7 +9361,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="185.42" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE19" class="0">
+<net name="SENSE19" class="3">
 <segment>
 <pinref part="F19" gate="G$1" pin="2"/>
 <portref moduleinst="CELL19" port="CELL+"/>
@@ -9346,7 +9372,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="177.8" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="SENSE17" class="0">
+<net name="SENSE17" class="3">
 <segment>
 <pinref part="F17" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="165.1" x2="33.02" y2="162.56" width="0.1524" layer="91"/>
@@ -9357,7 +9383,7 @@ requirement of EV.8.3.2.</text>
 <label x="25.4" y="162.56" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="C1L" class="0">
+<net name="C1L" class="4">
 <segment>
 <portref moduleinst="CELL1" port="C(N)"/>
 <wire x1="63.5" y1="22.86" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
@@ -9367,7 +9393,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="30.48" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S1L" class="0">
+<net name="S1L" class="4">
 <segment>
 <portref moduleinst="CELL1" port="S(N)"/>
 <wire x1="63.5" y1="20.32" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
@@ -9377,7 +9403,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="27.94" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C7L" class="0">
+<net name="C7L" class="4">
 <segment>
 <portref moduleinst="CELL7" port="C(N)"/>
 <wire x1="63.5" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
@@ -9387,7 +9413,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="60.96" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C8L" class="0">
+<net name="C8L" class="4">
 <segment>
 <portref moduleinst="CELL8" port="C(N)"/>
 <wire x1="63.5" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
@@ -9397,7 +9423,7 @@ requirement of EV.8.3.2.</text>
 <label x="78.74" y="66.04" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="C9L" class="0">
+<net name="C9L" class="4">
 <segment>
 <portref moduleinst="CELL9" port="C(N)"/>
 <wire x1="63.5" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
@@ -9407,7 +9433,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="71.12" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C10L" class="0">
+<net name="C10L" class="4">
 <segment>
 <portref moduleinst="CELL10" port="C(N)"/>
 <wire x1="63.5" y1="91.44" x2="68.58" y2="91.44" width="0.1524" layer="91"/>
@@ -9417,7 +9443,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="76.2" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C11L" class="0">
+<net name="C11L" class="4">
 <segment>
 <portref moduleinst="CELL11" port="C(N)"/>
 <wire x1="63.5" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
@@ -9427,7 +9453,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="81.28" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S7L" class="0">
+<net name="S7L" class="4">
 <segment>
 <portref moduleinst="CELL7" port="S(N)"/>
 <wire x1="63.5" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
@@ -9437,7 +9463,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="58.42" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S8L" class="0">
+<net name="S8L" class="4">
 <segment>
 <portref moduleinst="CELL8" port="S(N)"/>
 <wire x1="63.5" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
@@ -9447,7 +9473,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="63.5" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S9L" class="0">
+<net name="S9L" class="4">
 <segment>
 <portref moduleinst="CELL9" port="S(N)"/>
 <wire x1="63.5" y1="81.28" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
@@ -9457,7 +9483,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="68.58" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S10L" class="0">
+<net name="S10L" class="4">
 <segment>
 <portref moduleinst="CELL10" port="S(N)"/>
 <wire x1="63.5" y1="88.9" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
@@ -9467,7 +9493,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="73.66" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S11L" class="0">
+<net name="S11L" class="4">
 <segment>
 <portref moduleinst="CELL11" port="S(N)"/>
 <wire x1="63.5" y1="96.52" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
@@ -9477,7 +9503,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="78.74" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C12L" class="0">
+<net name="C12L" class="4">
 <segment>
 <portref moduleinst="CELL12" port="C(N)"/>
 <wire x1="63.5" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
@@ -9487,7 +9513,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="86.36" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S12L" class="0">
+<net name="S12L" class="4">
 <segment>
 <portref moduleinst="CELL12" port="S(N)"/>
 <wire x1="63.5" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
@@ -9517,7 +9543,7 @@ requirement of EV.8.3.2.</text>
 <junction x="127" y="68.58"/>
 </segment>
 </net>
-<net name="DRVL" class="0">
+<net name="DRVL" class="4">
 <segment>
 <pinref part="Q1" gate="G$1" pin="BASE"/>
 <wire x1="104.14" y1="63.5" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
@@ -9530,7 +9556,7 @@ requirement of EV.8.3.2.</text>
 <label x="165.1" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VREF1L" class="0">
+<net name="VREF1L" class="4">
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="55.88" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
@@ -9549,7 +9575,7 @@ requirement of EV.8.3.2.</text>
 <wire x1="106.68" y1="17.78" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="C6U" class="0">
+<net name="C6U" class="3">
 <segment>
 <portref moduleinst="CELL18" port="C(N)"/>
 <wire x1="63.5" y1="170.18" x2="68.58" y2="170.18" width="0.1524" layer="91"/>
@@ -9559,7 +9585,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="160.02" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S6U" class="0">
+<net name="S6U" class="3">
 <segment>
 <portref moduleinst="CELL18" port="S(N)"/>
 <wire x1="63.5" y1="167.64" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
@@ -9569,7 +9595,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="157.48" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C3U" class="0">
+<net name="C3U" class="3">
 <segment>
 <portref moduleinst="CELL15" port="C(N)"/>
 <wire x1="63.5" y1="147.32" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
@@ -9579,7 +9605,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="144.78" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S3U" class="0">
+<net name="S3U" class="3">
 <segment>
 <portref moduleinst="CELL15" port="S(N)"/>
 <wire x1="63.5" y1="144.78" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
@@ -9589,7 +9615,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="142.24" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C5U" class="0">
+<net name="C5U" class="3">
 <segment>
 <portref moduleinst="CELL17" port="C(N)"/>
 <wire x1="63.5" y1="162.56" x2="68.58" y2="162.56" width="0.1524" layer="91"/>
@@ -9599,7 +9625,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="154.94" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S5U" class="0">
+<net name="S5U" class="3">
 <segment>
 <portref moduleinst="CELL17" port="S(N)"/>
 <wire x1="63.5" y1="160.02" x2="68.58" y2="160.02" width="0.1524" layer="91"/>
@@ -9609,7 +9635,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="152.4" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S2U" class="0">
+<net name="S2U" class="3">
 <segment>
 <portref moduleinst="CELL14" port="S(N)"/>
 <pinref part="U1" gate="G$1" pin="S2"/>
@@ -9832,7 +9858,7 @@ requirement of EV.8.3.2.</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="S7U" class="0">
+<net name="S7U" class="3">
 <segment>
 <portref moduleinst="CELL19" port="S(N)"/>
 <wire x1="63.5" y1="175.26" x2="68.58" y2="175.26" width="0.1524" layer="91"/>
@@ -9842,7 +9868,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="162.56" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C2U" class="0">
+<net name="C2U" class="3">
 <segment>
 <portref moduleinst="CELL14" port="C(N)"/>
 <pinref part="U1" gate="G$1" pin="C2"/>
@@ -9850,7 +9876,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="139.7" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C1U" class="0">
+<net name="C1U" class="3">
 <segment>
 <portref moduleinst="CELL13" port="C(N)"/>
 <wire x1="63.5" y1="132.08" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
@@ -9860,7 +9886,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="134.62" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S1U" class="0">
+<net name="S1U" class="3">
 <segment>
 <portref moduleinst="CELL13" port="S(N)"/>
 <wire x1="63.5" y1="129.54" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
@@ -9870,7 +9896,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="132.08" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C9U" class="0">
+<net name="C9U" class="3">
 <segment>
 <pinref part="U1" gate="G$1" pin="C12"/>
 <wire x1="81.28" y1="190.5" x2="76.2" y2="190.5" width="0.1524" layer="91"/>
@@ -9892,7 +9918,7 @@ requirement of EV.8.3.2.</text>
 <junction x="76.2" y="175.26"/>
 </segment>
 </net>
-<net name="S9U" class="0">
+<net name="S9U" class="3">
 <segment>
 <portref moduleinst="CELL21" port="S(N)"/>
 <wire x1="63.5" y1="190.5" x2="68.58" y2="190.5" width="0.1524" layer="91"/>
@@ -9902,7 +9928,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="172.72" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C8U" class="0">
+<net name="C8U" class="3">
 <segment>
 <portref moduleinst="CELL20" port="C(N)"/>
 <wire x1="63.5" y1="185.42" x2="68.58" y2="185.42" width="0.1524" layer="91"/>
@@ -9912,7 +9938,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="170.18" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S8U" class="0">
+<net name="S8U" class="3">
 <segment>
 <portref moduleinst="CELL20" port="S(N)"/>
 <wire x1="63.5" y1="182.88" x2="68.58" y2="182.88" width="0.1524" layer="91"/>
@@ -9922,7 +9948,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="167.64" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C7U" class="0">
+<net name="C7U" class="3">
 <segment>
 <pinref part="U1" gate="G$1" pin="C7"/>
 <wire x1="81.28" y1="165.1" x2="76.2" y2="165.1" width="0.1524" layer="91"/>
@@ -9932,7 +9958,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="165.1" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C4U" class="0">
+<net name="C4U" class="3">
 <segment>
 <portref moduleinst="CELL16" port="C(N)"/>
 <wire x1="63.5" y1="154.94" x2="68.58" y2="154.94" width="0.1524" layer="91"/>
@@ -9942,7 +9968,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="149.86" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S4U" class="0">
+<net name="S4U" class="3">
 <segment>
 <portref moduleinst="CELL16" port="S(N)"/>
 <wire x1="63.5" y1="152.4" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
@@ -9974,7 +10000,7 @@ requirement of EV.8.3.2.</text>
 <wire x1="147.32" y1="200.66" x2="152.4" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VREF1U" class="0">
+<net name="VREF1U" class="3">
 <segment>
 <pinref part="U1" gate="G$1" pin="VREF1"/>
 <wire x1="104.14" y1="160.02" x2="119.38" y2="160.02" width="0.1524" layer="91"/>
@@ -9983,7 +10009,7 @@ requirement of EV.8.3.2.</text>
 <label x="106.68" y="160.02" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="DRVU" class="0">
+<net name="DRVU" class="3">
 <segment>
 <pinref part="U1" gate="G$1" pin="DRIVE"/>
 <pinref part="Q2" gate="G$1" pin="BASE"/>
@@ -10042,7 +10068,7 @@ requirement of EV.8.3.2.</text>
 <wire x1="106.68" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="C0L" class="0">
+<net name="C0L" class="4">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="17.78" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
@@ -10056,7 +10082,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="25.4" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C0U" class="0">
+<net name="C0U" class="3">
 <segment>
 <pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="121.92" x2="71.12" y2="121.92" width="0.1524" layer="91"/>
@@ -10083,7 +10109,7 @@ requirement of EV.8.3.2.</text>
 <pinref part="U4" gate="G$1" pin="T"/>
 </segment>
 </net>
-<net name="V-L" class="0">
+<net name="V-L" class="4">
 <segment>
 <pinref part="C19" gate="G$1" pin="2"/>
 <pinref part="P36" gate="G$1" pin="V-L"/>
@@ -10246,7 +10272,7 @@ requirement of EV.8.3.2.</text>
 <pinref part="P62" gate="G$1" pin="V-L"/>
 </segment>
 </net>
-<net name="C6L" class="0">
+<net name="C6L" class="4">
 <segment>
 <portref moduleinst="CELL6" port="C(N)"/>
 <wire x1="63.5" y1="60.96" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
@@ -10256,7 +10282,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="55.88" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S6L" class="0">
+<net name="S6L" class="4">
 <segment>
 <portref moduleinst="CELL6" port="S(N)"/>
 <wire x1="63.5" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
@@ -10266,7 +10292,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="53.34" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C5L" class="0">
+<net name="C5L" class="4">
 <segment>
 <portref moduleinst="CELL5" port="C(N)"/>
 <wire x1="63.5" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
@@ -10276,7 +10302,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="50.8" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S5L" class="0">
+<net name="S5L" class="4">
 <segment>
 <portref moduleinst="CELL5" port="S(N)"/>
 <wire x1="63.5" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
@@ -10286,7 +10312,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="48.26" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C4L" class="0">
+<net name="C4L" class="4">
 <segment>
 <pinref part="U2" gate="G$1" pin="C4"/>
 <portref moduleinst="CELL4" port="C(N)"/>
@@ -10294,7 +10320,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="45.72" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S4L" class="0">
+<net name="S4L" class="4">
 <segment>
 <pinref part="U2" gate="G$1" pin="S4"/>
 <portref moduleinst="CELL4" port="S(N)"/>
@@ -10302,7 +10328,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="43.18" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C3L" class="0">
+<net name="C3L" class="4">
 <segment>
 <portref moduleinst="CELL3" port="C(N)"/>
 <wire x1="63.5" y1="38.1" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
@@ -10312,7 +10338,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="40.64" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S3L" class="0">
+<net name="S3L" class="4">
 <segment>
 <portref moduleinst="CELL3" port="S(N)"/>
 <wire x1="63.5" y1="35.56" x2="68.58" y2="35.56" width="0.1524" layer="91"/>
@@ -10322,7 +10348,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="38.1" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="C2L" class="0">
+<net name="C2L" class="4">
 <segment>
 <portref moduleinst="CELL2" port="C(N)"/>
 <wire x1="63.5" y1="30.48" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
@@ -10332,7 +10358,7 @@ requirement of EV.8.3.2.</text>
 <label x="81.28" y="35.56" size="1.27" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="S2L" class="0">
+<net name="S2L" class="4">
 <segment>
 <portref moduleinst="CELL2" port="S(N)"/>
 <wire x1="63.5" y1="27.94" x2="68.58" y2="27.94" width="0.1524" layer="91"/>
@@ -10349,7 +10375,7 @@ requirement of EV.8.3.2.</text>
 <pinref part="U3" gate="G$1" pin="RH"/>
 </segment>
 </net>
-<net name="VREF2U" class="0">
+<net name="VREF2U" class="3">
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="VREF2"/>
@@ -10357,7 +10383,7 @@ requirement of EV.8.3.2.</text>
 <label x="106.68" y="154.94" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="V-U" class="0">
+<net name="V-U" class="3">
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="P73" gate="G$1" pin="V-U"/>
@@ -10549,16 +10575,18 @@ requirement of EV.8.3.2.</text>
 <pinref part="T1" gate="A" pin="TCT"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="N$22" class="5">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="T1" gate="A" pin="MX+"/>
+<wire x1="198.12" y1="147.32" x2="195.58" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="N$27" class="5">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="T1" gate="A" pin="MX-"/>
+<wire x1="198.12" y1="167.64" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -10567,16 +10595,18 @@ requirement of EV.8.3.2.</text>
 <pinref part="T1" gate="B" pin="TCT"/>
 </segment>
 </net>
-<net name="N$32" class="0">
+<net name="N$32" class="5">
 <segment>
 <pinref part="R49" gate="G$1" pin="2"/>
 <pinref part="T1" gate="B" pin="MX+"/>
+<wire x1="198.12" y1="121.92" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="N$33" class="5">
 <segment>
 <pinref part="R50" gate="G$1" pin="2"/>
 <pinref part="T1" gate="B" pin="MX-"/>
+<wire x1="198.12" y1="142.24" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -10586,7 +10616,7 @@ requirement of EV.8.3.2.</text>
 <pinref part="U3" gate="G$1" pin="T"/>
 </segment>
 </net>
-<net name="VREGL" class="0">
+<net name="VREGL" class="4">
 <segment>
 <pinref part="J40" gate="G$1" pin="1"/>
 <pinref part="P47" gate="G$1" pin="VREGL"/>
@@ -10637,14 +10667,8 @@ requirement of EV.8.3.2.</text>
 <wire x1="271.78" y1="73.66" x2="269.24" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="VDD"/>
 </segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="VREF2"/>
-<wire x1="111.76" y1="50.8" x2="104.14" y2="50.8" width="0.1524" layer="91"/>
-<label x="106.68" y="50.8" size="1.27" layer="95"/>
-</segment>
 </net>
-<net name="VREGU" class="0">
+<net name="VREGU" class="3">
 <segment>
 <pinref part="J27" gate="G$1" pin="1"/>
 <pinref part="P63" gate="G$1" pin="VREGU"/>
@@ -10713,7 +10737,7 @@ requirement of EV.8.3.2.</text>
 <label x="15.24" y="116.84" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="V+L" class="0">
+<net name="V+L" class="4">
 <segment>
 <pinref part="TP7" gate="G$1" pin="P$1"/>
 <wire x1="144.78" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
@@ -10730,7 +10754,7 @@ requirement of EV.8.3.2.</text>
 <wire x1="81.28" y1="111.76" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="V+U" class="0">
+<net name="V+U" class="3">
 <segment>
 <pinref part="TP9" gate="G$1" pin="P$1"/>
 <wire x1="124.46" y1="139.7" x2="127" y2="139.7" width="0.1524" layer="91"/>
@@ -10746,7 +10770,7 @@ requirement of EV.8.3.2.</text>
 <pinref part="C27" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="SENSE21" class="0">
+<net name="SENSE21" class="3">
 <segment>
 <pinref part="F21" gate="G$1" pin="2"/>
 <portref moduleinst="CELL21" port="CELL+"/>
@@ -10763,21 +10787,21 @@ requirement of EV.8.3.2.</text>
 <label x="114.3" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IM" class="0">
+<net name="IM" class="5">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="R52" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="147.32" x2="203.2" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="147.32" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="J34" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="157.48" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="147.32" x2="203.2" y2="147.32" width="0.1524" layer="91"/>
-<junction x="203.2" y="147.32"/>
+<wire x1="208.28" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
+<junction x="205.74" y="147.32"/>
 <label x="205.74" y="147.32" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="R49" gate="G$1" pin="1"/>
 <pinref part="J35" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="121.92" x2="208.28" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="121.92" x2="208.28" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="121.92" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
 <label x="205.74" y="121.92" size="1.27" layer="95"/>
 </segment>
@@ -10791,18 +10815,18 @@ requirement of EV.8.3.2.</text>
 <segment>
 <pinref part="R52" gate="G$1" pin="2"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="162.56" x2="203.2" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="162.56" x2="205.74" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="J34" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="167.64" x2="208.28" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="167.64" x2="208.28" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="167.64" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
-<junction x="203.2" y="167.64"/>
+<junction x="205.74" y="167.64"/>
 <label x="205.74" y="167.64" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="J35" gate="G$1" pin="1"/>
 <pinref part="R50" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="134.62" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="142.24" x2="203.2" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
 <label x="205.74" y="142.24" size="1.27" layer="95"/>
 </segment>
 <segment>
@@ -10811,7 +10835,7 @@ requirement of EV.8.3.2.</text>
 <label x="218.44" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SENSE12" class="0">
+<net name="SENSE12" class="4">
 <segment>
 <pinref part="F22" gate="G$1" pin="2"/>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -10826,6 +10850,14 @@ requirement of EV.8.3.2.</text>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
 <label x="114.3" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="VREF2L" class="4">
+<segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U2" gate="G$1" pin="VREF2"/>
+<wire x1="111.76" y1="50.8" x2="104.14" y2="50.8" width="0.1524" layer="91"/>
+<label x="106.68" y="50.8" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>
