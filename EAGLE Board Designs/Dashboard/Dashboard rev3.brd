@@ -2213,30 +2213,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="-379.476" y="-333.756" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="-379.476" y="-333.756" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R14" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_180" x="-379.476" y="-336.804" smashed="yes">
-<attribute name="DKPN" value="311-180HRCT-ND" x="-379.476" y="-336.804" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="-379.476" y="-336.804" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="603-RC0603FR-07180RL" x="-379.476" y="-336.804" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603FR-07180RL" x="-379.476" y="-336.804" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-379.476" y="-336.169" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="0.1W" x="-379.476" y="-336.804" size="1.778" layer="27" display="off"/>
-<attribute name="RESISTANCE" value="180" x="-379.476" y="-336.804" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="1%" x="-379.476" y="-336.804" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="4.24V" x="-379.476" y="-336.804" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_MAX" value="75V" x="-379.476" y="-336.804" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R16" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_2K" x="-379.476" y="-339.852" smashed="yes">
-<attribute name="DKPN" value="P2.0KBDCT-ND" x="-379.476" y="-339.852" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="-379.476" y="-339.852" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="667-ERA-3ARB202V" x="-379.476" y="-339.852" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="ERA-3ARB202V" x="-379.476" y="-339.852" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-379.476" y="-339.217" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="0.1W" x="-379.476" y="-339.852" size="1.778" layer="27" display="off"/>
-<attribute name="RESISTANCE" value="2k" x="-379.476" y="-339.852" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="0.1%" x="-379.476" y="-339.852" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="14.14V" x="-379.476" y="-339.852" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_MAX" value="75V" x="-379.476" y="-339.852" size="1.778" layer="27" display="off"/>
-</element>
 <element name="F1" library="HyTechDevices" package="0885" value="FUSE0885" x="-373.38" y="-346.456" smashed="yes">
 <attribute name="CURRENT" value="1.25A" x="-373.38" y="-346.456" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="F10986CT-ND" x="-373.38" y="-346.456" size="1.778" layer="27" display="off"/>
@@ -2421,6 +2397,18 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="MODEL" value="GBC05DABN-M30" x="-422.148" y="-468.884" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="GBC05DABN-M30" x="-422.148" y="-468.884" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-428.752" y="-468.884" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+</element>
+<element name="R14" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_2.18K" x="-428.244" y="-477.012" smashed="yes">
+<attribute name="DKPN" value="13-RT0805BRD072K18LTR-ND" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="YAGEO" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="603-RT0805BRD072K18L " x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RT0805BRD072K18L" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-428.244" y="-476.162" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="POWER" value="0.125W" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="2.18k" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="0.1%" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="16.51V" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="150V" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -3474,23 +3462,18 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-102.48" y1="-40.1" x2="-380.226" y2="-314.452" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$55">
-<contactref element="R16" pad="2"/>
 <contactref element="U5" pad="6"/>
-<wire x1="-418.084" y1="-457.708" x2="-378.626" y2="-339.852" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$58">
-<contactref element="R16" pad="1"/>
 <contactref element="R14" pad="2"/>
-<wire x1="-378.626" y1="-336.804" x2="-380.326" y2="-339.852" width="0" layer="19" extent="1-1"/>
+<wire x1="-418.084" y1="-457.708" x2="-427.194" y2="-477.012" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$61">
-<contactref element="R14" pad="1"/>
 <contactref element="U5" pad="3"/>
 <contactref element="U5" pad="7"/>
 <contactref element="U5" pad="11"/>
-<wire x1="-421.513" y1="-448.564" x2="-380.326" y2="-336.804" width="0" layer="19" extent="1-1"/>
-<wire x1="-418.084" y1="-455.422" x2="-421.513" y2="-448.564" width="0" layer="19" extent="1-1"/>
-<wire x1="-422.656" y1="-457.708" x2="-418.084" y2="-455.422" width="0" layer="19" extent="1-1"/>
+<contactref element="R14" pad="1"/>
+<wire x1="-422.656" y1="-457.708" x2="-429.294" y2="-477.012" width="0" layer="19" extent="1-1"/>
+<wire x1="-418.084" y1="-455.422" x2="-422.656" y2="-457.708" width="0" layer="19" extent="1-1"/>
+<wire x1="-421.513" y1="-448.564" x2="-418.084" y2="-455.422" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$62">
 <contactref element="F1" pad="2"/>

@@ -1993,6 +1993,17 @@ Note: No sure about SDO/SDI accuracy</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="55.68V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="2.18K">
+<attribute name="DKPN" value="13-RT0805BRD072K18LTR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="YAGEO" constant="no"/>
+<attribute name="MOPN" value="603-RT0805BRD072K18L " constant="no"/>
+<attribute name="MPN" value="RT0805BRD072K18L" constant="no"/>
+<attribute name="POWER" value="0.125W" constant="no"/>
+<attribute name="RESISTANCE" value="2.18k" constant="no"/>
+<attribute name="TOLERANCE" value="0.1%" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="16.51V" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+</technology>
 <technology name="200">
 <attribute name="DKPN" value="311-200CRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -6325,8 +6336,6 @@ Note: Based on Page 6.</description>
 <part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C12" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
-<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="180"/>
-<part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
 <part name="F1" library="HyTechDevices" deviceset="FUSE" device="0885"/>
 <part name="X1" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
 <part name="X2" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
@@ -6353,6 +6362,7 @@ Note: Based on Page 6.</description>
 <part name="L1" library="HyTechDevices" deviceset="INDUCTOR_POWER_" device="" technology="10U"/>
 <part name="P23" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="J4" library="HyTechDevices" deviceset="CONNECTOR-AVR-ISP_?_*" device="2X05_SMD"/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="2.18K"/>
 </parts>
 <sheets>
 <sheet>
@@ -6849,14 +6859,6 @@ Note: Based on Page 6.</description>
 <attribute name="VOLTAGE" x="143.51" y="200.66" size="1.27" layer="96" rot="R180" align="top-center"/>
 <attribute name="CAPACITANCE" x="143.51" y="202.438" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="R14" gate="G$1" x="241.3" y="190.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="240.03" y="189.23" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="242.57" y="189.23" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R16" gate="G$1" x="241.3" y="200.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="240.03" y="199.39" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="242.57" y="199.39" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
 <instance part="F1" gate="G$1" x="205.74" y="198.12" smashed="yes">
 <attribute name="NAME" x="204.47" y="199.39" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="204.47" y="196.85" size="1.27" layer="96" align="top-center"/>
@@ -6964,6 +6966,10 @@ Note: Based on Page 6.</description>
 <instance part="J4" gate="G$1" x="182.88" y="205.74" smashed="yes">
 <attribute name="NAME" x="182.88" y="206.375" size="1.27" layer="95"/>
 <attribute name="MODEL" x="182.88" y="187.325" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="R14" gate="G$1" x="241.3" y="195.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="240.03" y="194.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="242.57" y="194.31" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -8287,26 +8293,19 @@ Note: Based on Page 6.</description>
 <net name="N$55" class="0">
 <segment>
 <wire x1="233.68" y1="195.58" x2="238.76" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="195.58" x2="238.76" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="238.76" y1="203.2" x2="241.3" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="195.58" x2="238.76" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="198.12" x2="241.3" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="TRIM"/>
-</segment>
-</net>
-<net name="N$58" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="1"/>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="195.58" x2="241.3" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$61" class="0">
 <segment>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="185.42" x2="238.76" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="185.42" x2="238.76" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="190.5" x2="238.76" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="190.5" x2="238.76" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="193.04" x2="233.68" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="GND"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$62" class="0">
