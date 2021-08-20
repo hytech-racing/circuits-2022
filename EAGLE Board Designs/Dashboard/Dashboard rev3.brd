@@ -1903,14 +1903,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="MPN" value="XPEBBL-L1-0000-00305" x="-220.472" y="-212.852" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-220.472" y="-210.312" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="D7" library="HyTechDevices" package="XP-E2" value="LED_THERMAL_XPE2_GREEN" x="-225.044" y="-212.852" smashed="yes">
-<attribute name="COLOR" value="Green" x="-225.044" y="-212.852" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="XPEBGR-L1-0000-00F02CT-ND" x="-225.044" y="-212.852" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Cree Inc." x="-225.044" y="-212.852" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="941-XPEBGRL10000F02" x="-225.044" y="-212.852" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="XPEBGR-L1-0000-00F02" x="-225.044" y="-212.852" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-225.044" y="-210.312" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-</element>
 <element name="D8" library="HyTechDevices" package="XP-E2" value="LED_THERMAL_XPE2_GREEN" x="-229.616" y="-212.852" smashed="yes">
 <attribute name="COLOR" value="Green" x="-229.616" y="-212.852" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="XPEBGR-L1-0000-00F02CT-ND" x="-229.616" y="-212.852" size="1.778" layer="27" display="off"/>
@@ -2409,6 +2401,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="0.1%" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="16.51V" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_MAX" value="150V" x="-428.244" y="-477.012" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D13" library="HyTechDevices" package="XP-E2" value="LED_THERMAL_XPE2_YELLOW" x="-432.816" y="-475.996" smashed="yes">
+<attribute name="COLOR" value="Yellow" x="-432.816" y="-475.996" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="XPEBAM-L1-0000-00903CT-ND" x="-432.816" y="-475.996" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Cree Inc." x="-432.816" y="-475.996" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="941-XPEBAML10000903" x="-432.816" y="-475.996" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="XPEBAM-L1-0000-00903" x="-432.816" y="-475.996" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-432.816" y="-473.456" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 </elements>
 <signals>
@@ -3092,20 +3092,20 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="+5V1">
 <contactref element="D4" pad="ANODE"/>
-<contactref element="D7" pad="ANODE"/>
 <contactref element="D8" pad="ANODE"/>
 <contactref element="D9" pad="ANODE"/>
 <contactref element="D10" pad="ANODE"/>
 <contactref element="D11" pad="ANODE"/>
 <contactref element="D18" pad="2"/>
+<contactref element="D13" pad="ANODE"/>
 <wire x1="-237.36" y1="-212.852" x2="-241.932" y2="-212.852" width="0" layer="19" extent="1-1"/>
 <wire x1="-232.788" y1="-212.852" x2="-237.36" y2="-212.852" width="0" layer="19" extent="1-1"/>
 <wire x1="-228.216" y1="-212.852" x2="-232.788" y2="-212.852" width="0" layer="19" extent="1-1"/>
-<wire x1="-223.644" y1="-212.852" x2="-228.216" y2="-212.852" width="0" layer="19" extent="1-1"/>
-<wire x1="-219.072" y1="-212.852" x2="-223.644" y2="-212.852" width="0" layer="19" extent="1-1"/>
+<wire x1="-219.072" y1="-212.852" x2="-228.216" y2="-212.852" width="0" layer="19" extent="1-1"/>
 <wire x1="-414.719" y1="-413.512" x2="-241.932" y2="-212.852" width="0" layer="19" extent="1-1"/>
+<wire x1="-431.416" y1="-475.996" x2="-414.719" y2="-413.512" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="LED_LAUNCH_CTRL">
+<signal name="TEST_LED">
 <contactref element="U1" pad="9"/>
 <contactref element="RN2" pad="7"/>
 <contactref element="DN2" pad="1"/>
@@ -3156,8 +3156,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$2">
 <contactref element="R3" pad="1"/>
-<contactref element="D7" pad="CATHODE"/>
-<wire x1="-187.794" y1="-113.792" x2="-226.444" y2="-212.852" width="0" layer="19" extent="1-1"/>
+<contactref element="D13" pad="CATHODE"/>
+<wire x1="-187.794" y1="-113.792" x2="-434.216" y2="-475.996" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="U1" pad="8"/>
@@ -3323,18 +3323,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-323.762" y1="-273.812" x2="-327.406" y2="-270.256" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$52">
-<contactref element="R15" pad="1"/>
 <contactref element="R1" pad="1"/>
 <contactref element="C8" pad="1"/>
+<contactref element="R15" pad="1"/>
 <wire x1="-328.41" y1="-273.812" x2="-328.51" y2="-276.86" width="0" layer="19" extent="1-1"/>
 <wire x1="-325.462" y1="-273.812" x2="-328.41" y2="-273.812" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$53">
-<contactref element="U2" pad="1"/>
-<contactref element="R15" pad="2"/>
-<contactref element="U3" pad="1"/>
-<wire x1="-326.81" y1="-276.86" x2="-379.353" y2="-368.535" width="0" layer="19" extent="1-1"/>
-<wire x1="-326.517" y1="-254.5715" x2="-326.81" y2="-276.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$54">
 <contactref element="U2" pad="4"/>
@@ -3542,6 +3535,13 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="K1" pad="2"/>
 <contactref element="R18" pad="2"/>
 <wire x1="-421.298" y1="-436.372" x2="-425.45" y2="-436.12435" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$53">
+<contactref element="U3" pad="1"/>
+<contactref element="U2" pad="1"/>
+<contactref element="R15" pad="2"/>
+<wire x1="-326.81" y1="-276.86" x2="-379.353" y2="-368.535" width="0" layer="19" extent="1-1"/>
+<wire x1="-326.517" y1="-254.5715" x2="-326.81" y2="-276.86" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
