@@ -7609,7 +7609,7 @@ Note: Based on Page 6.</description>
 <pinref part="D13" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="TEST_LED" class="0">
+<net name="SOC" class="0">
 <segment>
 <label x="24.384" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="RN2" gate="B" pin="2"/>

@@ -3055,7 +3055,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-414.719" y1="-413.512" x2="-241.932" y2="-212.852" width="0" layer="19" extent="1-1"/>
 <wire x1="-431.416" y1="-475.996" x2="-414.719" y2="-413.512" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="TEST_LED">
+<signal name="SOC">
 <contactref element="U1" pad="9"/>
 <contactref element="RN2" pad="7"/>
 <contactref element="DN2" pad="1"/>
