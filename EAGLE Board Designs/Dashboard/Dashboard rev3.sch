@@ -6977,9 +6977,9 @@ Note: Based on Page 6.</description>
 <instance part="P1" gate="1" x="198.12" y="124.46" smashed="yes">
 <attribute name="VALUE" x="198.12" y="123.19" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="U$1" gate="G$1" x="99.06" y="52.07" smashed="yes">
-<attribute name="NAME" x="99.06" y="52.832" size="1.27" layer="95"/>
-<attribute name="MPN" x="99.06" y="41.148" size="1.27" layer="96" align="top-left"/>
+<instance part="U$1" gate="G$1" x="116.84" y="51.562" smashed="yes">
+<attribute name="NAME" x="116.84" y="52.324" size="1.27" layer="95"/>
+<attribute name="MPN" x="116.84" y="40.64" size="1.27" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -7405,6 +7405,8 @@ Note: Based on Page 6.</description>
 <label x="24.13" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="K1" gate="G$1" pin="CONTROL+"/>
 <wire x1="26.67" y1="12.7" x2="24.13" y2="12.7" width="0.1524" layer="91"/>
+<label x="94.234" y="50.292" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="94.234" y="50.292" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED_START_CTRL" class="0">
