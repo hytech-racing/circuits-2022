@@ -1306,6 +1306,21 @@ visible on the PCB.</text>
 <circle x="-7.366" y="-3.175" radius="0.635" width="0" layer="21"/>
 <text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="CPT-3011C-120">
+<description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
+<circle x="0" y="0" radius="18.3" width="0" layer="39"/>
+<circle x="0" y="0" radius="16.27" width="0.127" layer="51"/>
+<wire x1="-12.82" y1="10" x2="13.1" y2="9.7" width="0.127" layer="21" curve="-106"/>
+<wire x1="15.03" y1="6.22" x2="2.11" y2="-16.14" width="0.127" layer="21" curve="-105"/>
+<wire x1="-2.07" y1="-16.13" x2="-15.06" y2="6.16" width="0.127" layer="21" curve="-105"/>
+<pad name="GND" x="-14.162" y="8.051" drill="2.5"/>
+<pad name="F" x="14.162" y="8.051" drill="2.5"/>
+<pad name="VDD" x="0" y="-16.29" drill="2.5"/>
+<text x="0" y="18.796" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-14.162" y="8.051" radius="2.2" width="0" layer="40"/>
+<circle x="14.162" y="8.051" radius="2.2" width="0" layer="40"/>
+<circle x="0" y="-16.29" radius="2.2" width="0" layer="40"/>
+</package>
 </packages>
 </library>
 <library name="HyTechDevices - Copy">
@@ -2368,6 +2383,16 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="-432.308" y="-483.108" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="-432.308" y="-483.108" size="1.778" layer="27" display="off"/>
 </element>
+<element name="U$1" library="HyTechDevices" package="CPT-3011C-120" value="BUZZER_3_PIN_CPT-3011C-120" x="-453.644" y="-465.328" smashed="yes">
+<attribute name="DPN" value="102-3762-ND" x="-453.644" y="-465.328" size="1.778" layer="27" display="off"/>
+<attribute name="FREQUENCY" value="3kHz" x="-453.644" y="-465.328" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="CUI Devices" x="-453.644" y="-465.328" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="490-CPT-3011C-120 " x="-453.644" y="-465.328" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CPT-3011C-120" x="-453.644" y="-465.328" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-453.644" y="-446.532" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="VOLTAGE" value="12V" x="-453.644" y="-465.328" size="1.778" layer="27" display="off"/>
+<attribute name="VOLUME" value="85dB" x="-453.644" y="-465.328" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2606,6 +2631,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="U4" pad="10"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
+<contactref element="U$1" pad="GND"/>
 <wire x1="-376.428" y1="-361.3658" x2="-373.503" y2="-368.535" width="0" layer="19" extent="1-1"/>
 <wire x1="-380.492" y1="-358.9782" x2="-376.428" y2="-361.3658" width="0" layer="19" extent="1-1"/>
 <wire x1="-376.428" y1="-355.7778" x2="-380.492" y2="-358.9782" width="0" layer="19" extent="1-1"/>
@@ -2644,6 +2670,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-323.862" y1="-266.192" x2="-326.91" y2="-266.192" width="0" layer="19" extent="1-1"/>
 <wire x1="-335.514" y1="-263.526" x2="-326.91" y2="-266.192" width="0" layer="19" extent="1-1"/>
 <wire x1="-325.247" y1="-254.5715" x2="-323.862" y2="-266.192" width="0" layer="19" extent="1-1"/>
+<wire x1="-467.806" y1="-457.277" x2="-432.574" y2="-480.06" width="0" layer="19" extent="1-1"/>
 <wire x1="-317.814" y1="-195.454" x2="-325.247" y2="-254.5715" width="0" layer="19" extent="1-1"/>
 <wire x1="-256.4638" y1="-213.8553" x2="-317.814" y2="-195.454" width="0" layer="19" extent="1-1"/>
 <wire x1="-190.5762" y1="-213.8553" x2="-256.4638" y2="-213.8553" width="0" layer="19" extent="1-1"/>
@@ -3411,6 +3438,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$21">
 <contactref element="U4" pad="9"/>
+</signal>
+<signal name="VDD">
+<contactref element="U$1" pad="VDD"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

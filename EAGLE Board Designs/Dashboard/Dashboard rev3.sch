@@ -941,6 +941,21 @@ visible on the PCB.</text>
 <circle x="-7.366" y="-3.175" radius="0.635" width="0" layer="21"/>
 <text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="CPT-3011C-120">
+<description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
+<circle x="0" y="0" radius="18.3" width="0" layer="39"/>
+<circle x="0" y="0" radius="16.27" width="0.127" layer="51"/>
+<wire x1="-12.82" y1="10" x2="13.1" y2="9.7" width="0.127" layer="21" curve="-106"/>
+<wire x1="15.03" y1="6.22" x2="2.11" y2="-16.14" width="0.127" layer="21" curve="-105"/>
+<wire x1="-2.07" y1="-16.13" x2="-15.06" y2="6.16" width="0.127" layer="21" curve="-105"/>
+<pad name="GND" x="-14.162" y="8.051" drill="2.5"/>
+<pad name="F" x="14.162" y="8.051" drill="2.5"/>
+<pad name="VDD" x="0" y="-16.29" drill="2.5"/>
+<text x="0" y="18.796" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-14.162" y="8.051" radius="2.2" width="0" layer="40"/>
+<circle x="14.162" y="8.051" radius="2.2" width="0" layer="40"/>
+<circle x="0" y="-16.29" radius="2.2" width="0" layer="40"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -1387,6 +1402,23 @@ Note: No sure about SDO/SDI accuracy</description>
 <pin name="SDO" x="-2.54" y="-33.02" length="short" direction="out"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-43.942" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="BUZZER_3_PIN">
+<description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<wire x1="7.62" y1="0" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="0.508" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0.508" x2="8.636" y2="0.508" width="0.254" layer="94"/>
+<wire x1="8.636" y1="0.508" x2="8.636" y2="-10.668" width="0.254" layer="94"/>
+<wire x1="8.636" y1="-10.668" x2="7.62" y2="-10.668" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.668" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<pin name="F" x="-2.54" y="-5.08" length="short"/>
+<pin name="VDD" x="-2.54" y="-1.27" length="short" direction="pwr"/>
+<pin name="GND" x="-2.54" y="-8.89" length="short" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3072,6 +3104,32 @@ Ceramic SMD Surface Mount Fuse
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="579-MCP23S17T-E/SS"/>
 <attribute name="MPN" value="MCP23S17T-E/SS"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUZZER_3_PIN_">
+<description>&lt;a href = "https://www.cuidevices.com/product/resource/cpt-3011c-120.pdf"&gt; CPT-3011C-120 Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BUZZER_3_PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CPT-3011C-120">
+<connects>
+<connect gate="G$1" pin="F" pad="F"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name="CPT-3011C-120">
+<attribute name="DPN" value="102-3762-ND" constant="no"/>
+<attribute name="FREQUENCY" value="3kHz" constant="no"/>
+<attribute name="MANUFACTURER" value="CUI Devices" constant="no"/>
+<attribute name="MOPN" value="490-CPT-3011C-120 " constant="no"/>
+<attribute name="MPN" value="CPT-3011C-120" constant="no"/>
+<attribute name="VOLTAGE" value="12V" constant="no"/>
+<attribute name="VOLUME" value="85dB" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6357,6 +6415,7 @@ Note: Based on Page 6.</description>
 <part name="C1" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C2" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P1" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="U$1" library="HyTechDevices" deviceset="BUZZER_3_PIN_" device="" technology="CPT-3011C-120"/>
 </parts>
 <sheets>
 <sheet>
@@ -6917,6 +6976,10 @@ Note: Based on Page 6.</description>
 </instance>
 <instance part="P1" gate="1" x="198.12" y="124.46" smashed="yes">
 <attribute name="VALUE" x="198.12" y="123.19" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="U$1" gate="G$1" x="99.06" y="52.07" smashed="yes">
+<attribute name="NAME" x="99.06" y="52.832" size="1.27" layer="95"/>
+<attribute name="MPN" x="99.06" y="41.148" size="1.27" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
