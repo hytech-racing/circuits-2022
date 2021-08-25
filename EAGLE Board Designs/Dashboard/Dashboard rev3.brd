@@ -2393,6 +2393,30 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE" value="12V" x="-453.644" y="-465.328" size="1.778" layer="27" display="off"/>
 <attribute name="VOLUME" value="85dB" x="-453.644" y="-465.328" size="1.778" layer="27" display="off"/>
 </element>
+<element name="R16" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_154K" x="-469.392" y="-486.156" smashed="yes">
+<attribute name="DKPN" value="P154KDBCT-ND" x="-469.392" y="-486.156" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="-469.392" y="-486.156" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="667-ERA-3AEB1543V" x="-469.392" y="-486.156" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ERA-3AEB1543V" x="-469.392" y="-486.156" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-469.392" y="-485.521" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="POWER" value="0.1W" x="-469.392" y="-486.156" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="154k" x="-469.392" y="-486.156" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="0.1%" x="-469.392" y="-486.156" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V" x="-469.392" y="-486.156" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="-469.392" y="-486.156" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R19" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_4.12K" x="-469.392" y="-489.204" smashed="yes">
+<attribute name="DKPN" value="P4.12KDBCT-ND" x="-469.392" y="-489.204" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="-469.392" y="-489.204" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="667-ERA-3AEB4121V" x="-469.392" y="-489.204" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ERA-3AEB4121V" x="-469.392" y="-489.204" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-469.392" y="-488.569" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="POWER" value="0.1W" x="-469.392" y="-489.204" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="4.12k" x="-469.392" y="-489.204" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="0.1%" x="-469.392" y="-489.204" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="20.30V" x="-469.392" y="-489.204" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="-469.392" y="-489.204" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">

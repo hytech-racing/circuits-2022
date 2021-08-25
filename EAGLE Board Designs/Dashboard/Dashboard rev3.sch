@@ -6416,6 +6416,8 @@ Note: Based on Page 6.</description>
 <part name="C2" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P1" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="U$1" library="HyTechDevices" deviceset="BUZZER_3_PIN_" device="" technology="CPT-3011C-120"/>
+<part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="154K"/>
+<part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="4.12K"/>
 </parts>
 <sheets>
 <sheet>
@@ -6980,6 +6982,14 @@ Note: Based on Page 6.</description>
 <instance part="U$1" gate="G$1" x="116.84" y="51.562" smashed="yes">
 <attribute name="NAME" x="116.84" y="52.324" size="1.27" layer="95"/>
 <attribute name="MPN" x="116.84" y="40.64" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="R16" gate="G$1" x="88.9" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="87.63" y="34.29" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="90.17" y="34.29" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R19" gate="G$1" x="99.06" y="38.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.33" y="36.83" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="100.33" y="39.37" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
 </instances>
 <busses>
