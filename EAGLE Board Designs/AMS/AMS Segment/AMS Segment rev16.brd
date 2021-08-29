@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -202,7 +202,6 @@
 <wire x1="256.3368" y1="-57.0992" x2="257.6322" y2="-58.3946" width="0.1524" layer="20"/>
 <wire x1="257.6322" y1="-58.3946" x2="257.6322" y2="-85.979" width="0.1524" layer="20" locked="yes"/>
 <wire x1="257.6322" y1="-85.979" x2="16.637" y2="-85.979" width="0.1524" layer="20" locked="yes"/>
-<dimension x1="13.7414" y1="-41.9862" x2="0" y2="-41.9862" x3="6.8707" y3="-45.593" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -3651,12 +3650,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="SHT31-ARP-B" x="50.1142" y="-46.6344" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="50.0888" y="-47.9806" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="U$1" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="20.828" y="-4.064" locked="yes" smashed="yes"/>
+<element name="U$1" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="20.6248" y="-4.064" locked="yes" smashed="yes"/>
 <element name="U$2" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="38.354" y="-82.042" locked="yes" smashed="yes"/>
 <element name="U$3" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="41.402" y="-42.926" locked="yes" smashed="yes"/>
 <element name="U$4" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="92.964" y="-4.064" smashed="yes"/>
 <element name="U$5" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="193.548" y="-4.064" smashed="yes"/>
-<element name="U$6" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="263.652" y="-4.064" locked="yes" smashed="yes"/>
+<element name="U$6" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="263.1948" y="-4.064" smashed="yes"/>
 <element name="U$7" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="140.208" y="-42.926" locked="yes" smashed="yes"/>
 <element name="U$8" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="238.76" y="-42.926" locked="yes" smashed="yes"/>
 <element name="U$9" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="136.906" y="-82.042" locked="yes" smashed="yes"/>
