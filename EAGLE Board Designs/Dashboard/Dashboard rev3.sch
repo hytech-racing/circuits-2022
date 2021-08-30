@@ -6507,7 +6507,6 @@ Note: Based on Page 6.</description>
 <part name="U$1" library="HyTechDevices" deviceset="BUZZER_3_PIN_" device="" technology="CPT-3011C-120"/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="150K"/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="620"/>
-<part name="P14" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R22" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="3.9K"/>
 <part name="Q7" library="HyTechDevices" deviceset="TRANSISTOR_P_MOS_?_*" device="SOT23" technology="SI2369DS-T1-GE3"/>
 <part name="P24" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -7083,9 +7082,6 @@ Note: Based on Page 6.</description>
 <instance part="R19" gate="G$1" x="101.6" y="35.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="100.33" y="34.29" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="102.87" y="34.29" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P14" gate="1" x="83.82" y="15.24" smashed="yes">
-<attribute name="VALUE" x="83.82" y="13.97" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="R22" gate="G$1" x="116.84" y="50.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="118.11" y="49.53" size="1.27" layer="95" rot="R180" align="bottom-center"/>
