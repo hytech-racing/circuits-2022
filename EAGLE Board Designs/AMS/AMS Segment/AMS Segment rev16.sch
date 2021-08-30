@@ -8171,6 +8171,8 @@ Layer: 94 Symbol</description>
 <part name="P88" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_22UF" value="CAPACITOR_0603_10V_22UF"/>
 <part name="P89" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="C31" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
+<part name="C32" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
 </parts>
 <sheets>
 <sheet>
@@ -8475,8 +8477,8 @@ requirement of EV.8.3.2.</text>
 <instance part="P26" gate="G$1" x="71.12" y="195.58" smashed="yes">
 <attribute name="VALUE" x="71.12" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P28" gate="G$1" x="114.3" y="139.7" smashed="yes">
-<attribute name="VALUE" x="114.3" y="138.43" size="1.27" layer="96" align="top-center"/>
+<instance part="P28" gate="G$1" x="116.84" y="139.7" smashed="yes">
+<attribute name="VALUE" x="116.84" y="138.43" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="C1" gate="G$1" x="111.76" y="43.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="109.22" y="41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -9189,6 +9191,16 @@ requirement of EV.8.3.2.</text>
 </instance>
 <instance part="P89" gate="G$1" x="213.36" y="91.44" smashed="yes">
 <attribute name="VALUE" x="213.36" y="90.17" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="C31" gate="G$1" x="127" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="124.46" y="41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="129.286" y="40.386" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="129.286" y="43.688" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="C32" gate="G$1" x="127" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="124.46" y="146.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="129.286" y="144.526" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="129.286" y="147.828" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -10445,6 +10457,9 @@ requirement of EV.8.3.2.</text>
 <junction x="116.84" y="38.1"/>
 <wire x1="116.84" y1="38.1" x2="111.76" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="38.1" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C31" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="91"/>
+<junction x="119.38" y="38.1"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
@@ -10713,11 +10728,14 @@ requirement of EV.8.3.2.</text>
 <segment>
 <pinref part="P28" gate="G$1" pin="V-U"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<junction x="114.3" y="142.24"/>
+<junction x="116.84" y="142.24"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<junction x="114.3" y="142.24"/>
-<wire x1="114.3" y1="142.24" x2="111.76" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="142.24" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
+<junction x="116.84" y="142.24"/>
+<wire x1="116.84" y1="142.24" x2="111.76" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="142.24" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="C32" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
+<junction x="119.38" y="142.24"/>
 </segment>
 <segment>
 <pinref part="P37" gate="G$1" pin="V-U"/>
@@ -10859,6 +10877,10 @@ requirement of EV.8.3.2.</text>
 <wire x1="104.14" y1="53.34" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="VREG"/>
 <pinref part="P77" gate="G$1" pin="VREGL"/>
+<pinref part="C31" gate="G$1" pin="1"/>
+<wire x1="127" y1="45.72" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="127" y1="53.34" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
+<junction x="119.38" y="53.34"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -10921,6 +10943,10 @@ requirement of EV.8.3.2.</text>
 <pinref part="U1" gate="G$1" pin="VREG"/>
 <wire x1="104.14" y1="157.48" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="P83" gate="G$1" pin="VREGU"/>
+<pinref part="C32" gate="G$1" pin="1"/>
+<wire x1="127" y1="149.86" x2="127" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="127" y1="157.48" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
+<junction x="121.92" y="157.48"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>

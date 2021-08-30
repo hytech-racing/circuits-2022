@@ -3782,6 +3782,26 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="TOLERANCE" value="20%" x="1.524" y="-131.953" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="1.524" y="-131.953" size="1.778" layer="27" display="off"/>
 </element>
+<element name="C31" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="0.889" y="-135.001" smashed="yes">
+<attribute name="CAPACITANCE" value="1µF" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="311-1796-1-ND" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="603-CC603KRX7R6BB105" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CC0603KRX7R6BB105" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="0.889" y="-134.251" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="10V" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C32" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="0.889" y="-138.049" smashed="yes">
+<attribute name="CAPACITANCE" value="1µF" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="311-1796-1-ND" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="603-CC603KRX7R6BB105" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CC0603KRX7R6BB105" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="0.889" y="-137.299" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="10V" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="IMU">
@@ -4595,6 +4615,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="R8" pad="1"/>
 <contactref element="C30" pad="2"/>
 <contactref element="C3" pad="2"/>
+<contactref element="C31" pad="2"/>
 <wire x1="264.3886" y1="-34.1002" x2="268.8336" y2="-24.3762" width="0" layer="19" extent="1-1"/>
 <wire x1="258.9648" y1="-36.2966" x2="264.3886" y2="-34.1002" width="0" layer="19" extent="1-1"/>
 <wire x1="247.2182" y1="-44.8564" x2="258.9648" y2="-36.2966" width="0" layer="19" extent="1-1"/>
@@ -4643,6 +4664,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="3.175" y1="-120.777" x2="4.925" y2="-122.8825" width="0" layer="19" extent="1-1"/>
 <wire x1="3.341" y1="-125.476" x2="4.925" y2="-122.8825" width="0" layer="19" extent="1-1"/>
 <wire x1="1.639" y1="-128.905" x2="3.341" y2="-125.476" width="0" layer="19" extent="1-1"/>
+<wire x1="1.639" y1="-135.001" x2="1.639" y2="-128.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="C6L" class="4">
 <contactref element="U2" pad="14"/>
@@ -4760,6 +4782,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="R1" pad="1"/>
 <contactref element="C12" pad="2"/>
 <contactref element="C10" pad="2"/>
+<contactref element="C32" pad="2"/>
 <wire x1="269.9378" y1="-37.4396" x2="271.4752" y2="-34.3154" width="0" layer="19" extent="1-1"/>
 <wire x1="269.5382" y1="-39.5264" x2="269.9378" y2="-37.4396" width="0" layer="19" extent="1-1"/>
 <wire x1="269.5382" y1="-40.0264" x2="269.5382" y2="-39.5264" width="0" layer="19" extent="1-1"/>
@@ -4804,6 +4827,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="3.151" y1="-97.663" x2="4.925" y2="-91.1325" width="0" layer="19" extent="1-1"/>
 <wire x1="0.674" y1="-100.838" x2="3.151" y2="-97.663" width="0" layer="19" extent="1-1"/>
 <wire x1="1.639" y1="-131.953" x2="0.674" y2="-100.838" width="0" layer="19" extent="1-1"/>
+<wire x1="1.639" y1="-138.049" x2="1.639" y2="-131.953" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO4L">
 <contactref element="R39" pad="2"/>
@@ -4879,6 +4903,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U6" pad="2"/>
 <contactref element="U6" pad="1"/>
 <contactref element="U6" pad="13"/>
+<contactref element="C31" pad="1"/>
 <wire x1="218.754321875" y1="-22.9997" x2="253.0856" y2="-22.9997" width="0" layer="19" extent="1-1"/>
 <wire x1="199.767" y1="-50.372396875" x2="218.754321875" y2="-22.9997" width="0" layer="19" extent="1-1"/>
 <wire x1="199.267" y1="-50.372396875" x2="199.767" y2="-50.372396875" width="0" layer="19" extent="1-1"/>
@@ -4895,6 +4920,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="1.925" y1="-122.8825" x2="2.925" y2="-118.6715" width="0" layer="19" extent="1-1"/>
 <wire x1="1.425" y1="-122.8825" x2="1.925" y2="-122.8825" width="0" layer="19" extent="1-1"/>
 <wire x1="0.139" y1="-128.905" x2="1.425" y2="-122.8825" width="0" layer="19" extent="1-1"/>
+<wire x1="0.139" y1="-135.001" x2="0.139" y2="-128.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREGU" class="3">
 <contactref element="J27" pad="1"/>
@@ -4915,6 +4941,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U5" pad="1"/>
 <contactref element="U5" pad="13"/>
 <contactref element="C10" pad="1"/>
+<contactref element="C32" pad="1"/>
 <wire x1="271.4378" y1="-37.4396" x2="271.4752" y2="-30.7594" width="0" layer="19" extent="1-1"/>
 <wire x1="271.8882" y1="-40.5264" x2="271.4378" y2="-37.4396" width="0" layer="19" extent="1-1"/>
 <wire x1="124.6378" y1="-23.09495" x2="271.4752" y2="-30.7594" width="0" layer="19" extent="1-1"/>
@@ -4932,6 +4959,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="1.425" y1="-91.1325" x2="1.925" y2="-91.1325" width="0" layer="19" extent="1-1"/>
 <wire x1="6.002" y1="-105.918" x2="1.925" y2="-91.1325" width="0" layer="19" extent="1-1"/>
 <wire x1="0.139" y1="-131.953" x2="6.002" y2="-105.918" width="0" layer="19" extent="1-1"/>
+<wire x1="0.139" y1="-138.049" x2="0.139" y2="-131.953" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CC12" class="1">
 <contactref element="J12" pad="1"/>
