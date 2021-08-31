@@ -69,6 +69,7 @@
 **/CAMOutput
 
 # LTspice
+*.plt
 
 # Logfile
 *.log
