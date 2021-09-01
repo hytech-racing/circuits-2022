@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -3640,167 +3640,167 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <element name="U$14" library="HyTechDevices" package="MOUNTING_M4" value="" x="235.077" y="-82.042" smashed="yes"/>
 <element name="U$15" library="HyTechDevices" package="MOUNTING_M4" value="" x="136.906" y="-82.042" locked="yes" smashed="yes"/>
 <element name="U$16" library="HyTechDevices" package="MOUNTING_M4" value="" x="38.989" y="-82.042" smashed="yes"/>
-<element name="U5" library="HyTechDevices" package="MSOP-16(MSE)" value="LT3990-5" x="3.175" y="-89.027" smashed="yes">
-<attribute name="DKPN" value="LT3990EMSE-5#PBF-ND" x="3.175" y="-89.027" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Analog Devices Inc." x="3.175" y="-89.027" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="584-LT3990EMSE-5#PBF" x="3.175" y="-89.027" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="LT3990EMSE-5#PBF" x="3.175" y="-89.027" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="0.635" y="-89.027" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<element name="U5" library="HyTechDevices" package="MSOP-16(MSE)" value="LT3990-5" x="93.98" y="-31.496" smashed="yes" rot="R270">
+<attribute name="DKPN" value="LT3990EMSE-5#PBF-ND" x="93.98" y="-31.496" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc." x="93.98" y="-31.496" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="584-LT3990EMSE-5#PBF" x="93.98" y="-31.496" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LT3990EMSE-5#PBF" x="93.98" y="-31.496" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="93.98" y="-28.956" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="C11" library="HyTechDevices" package="0805-CAP" value="CAPACITOR_0805_100V_0.22UF" x="1.524" y="-94.107" smashed="yes">
-<attribute name="CAPACITANCE" value="0.22µF" x="1.524" y="-94.107" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="399-8049-1-ND" x="1.524" y="-94.107" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="1.524" y="-94.107" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="80-C0805C224K1R" x="1.524" y="-94.107" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0805C224K1RACTU" x="1.524" y="-94.107" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="1.524" y="-93.057" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="TOLERANCE" value="10%" x="1.524" y="-94.107" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="100V" x="1.524" y="-94.107" size="1.778" layer="27" display="off"/>
+<element name="C11" library="HyTechDevices" package="0805-CAP" value="CAPACITOR_0805_100V_0.22UF" x="97.917" y="-32.131" smashed="yes" rot="R270">
+<attribute name="CAPACITANCE" value="0.22µF" x="97.917" y="-32.131" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DKPN" value="399-8049-1-ND" x="97.917" y="-32.131" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="97.917" y="-32.131" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="80-C0805C224K1R" x="97.917" y="-32.131" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="C0805C224K1RACTU" x="97.917" y="-32.131" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="98.967" y="-32.131" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="97.917" y="-32.131" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE" value="100V" x="97.917" y="-32.131" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C12" library="HyTechDevices" package="1206-CAP" value="CAPACITOR_1206_100V_2.2UF" x="1.651" y="-97.663" smashed="yes">
-<attribute name="CAPACITANCE" value="2.2µF" x="1.651" y="-97.663" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="478-12144-1-ND" x="1.651" y="-97.663" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="AVX Corporation" x="1.651" y="-97.663" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="581-12061C225K4T2A" x="1.651" y="-97.663" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="12061C225K4T2A" x="1.651" y="-97.663" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="1.651" y="-96.413" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="TOLERANCE" value="10%" x="1.651" y="-97.663" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="100V" x="1.651" y="-97.663" size="1.778" layer="27" display="off"/>
+<element name="C12" library="HyTechDevices" package="1206-CAP" value="CAPACITOR_1206_100V_2.2UF" x="89.789" y="-31.623" smashed="yes" rot="R270">
+<attribute name="CAPACITANCE" value="2.2µF" x="89.789" y="-31.623" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DKPN" value="478-12144-1-ND" x="89.789" y="-31.623" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="AVX Corporation" x="89.789" y="-31.623" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="581-12061C225K4T2A" x="89.789" y="-31.623" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="12061C225K4T2A" x="89.789" y="-31.623" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="89.789" y="-29.357" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="89.789" y="-31.623" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE" value="100V" x="89.789" y="-31.623" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R1" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_374K" x="1.524" y="-100.838" smashed="yes">
-<attribute name="DKPN" value="311-374KHRCT-ND" x="1.524" y="-100.838" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="1.524" y="-100.838" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="603-RC0603FR-07374KL" x="1.524" y="-100.838" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603FR-07374KL" x="1.524" y="-100.838" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="1.524" y="-100.203" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="0.1W" x="1.524" y="-100.838" size="1.778" layer="27" display="off"/>
-<attribute name="RESISTANCE" value="374k" x="1.524" y="-100.838" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="1%" x="1.524" y="-100.838" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V" x="1.524" y="-100.838" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_MAX" value="75V" x="1.524" y="-100.838" size="1.778" layer="27" display="off"/>
+<element name="R1" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_374K" x="88.773" y="-34.925" smashed="yes">
+<attribute name="DKPN" value="311-374KHRCT-ND" x="88.773" y="-34.925" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="88.773" y="-34.925" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-07374KL" x="88.773" y="-34.925" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0603FR-07374KL" x="88.773" y="-34.925" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="87.249" y="-34.925" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="POWER" value="0.1W" x="88.773" y="-34.925" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="374k" x="88.773" y="-34.925" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="88.773" y="-34.925" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V" x="88.773" y="-34.925" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="88.773" y="-34.925" size="1.778" layer="27" display="off"/>
 </element>
-<element name="L1" library="HyTechDevices" package="74451133" value="INDUCTOR_74451133_33UH" x="3.302" y="-105.918" smashed="yes">
-<attribute name="CURRENT_RATED" value="0.6" x="3.302" y="-105.918" size="1.778" layer="27" display="off"/>
-<attribute name="CURRENT_SATURATION" value="0.15" x="3.302" y="-105.918" size="1.778" layer="27" display="off"/>
-<attribute name="DCR" value="0.114" x="3.302" y="-105.918" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="732-1410-1-ND" x="3.302" y="-105.918" size="1.778" layer="27" display="off"/>
-<attribute name="INDUCTANCE" value="33µH" x="3.302" y="-105.918" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Würth Elektronik" x="3.302" y="-105.918" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="74451133" x="3.302" y="-105.918" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="3.302" y="-103.124" size="0.8128" layer="25" align="bottom-center"/>
+<element name="L1" library="HyTechDevices" package="74451133" value="INDUCTOR_74451133_33UH" x="94.107" y="-36.449" smashed="yes" rot="R180">
+<attribute name="CURRENT_RATED" value="0.6" x="94.107" y="-36.449" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="CURRENT_SATURATION" value="0.15" x="94.107" y="-36.449" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DCR" value="0.114" x="94.107" y="-36.449" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DKPN" value="732-1410-1-ND" x="94.107" y="-36.449" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="INDUCTANCE" value="33µH" x="94.107" y="-36.449" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik" x="94.107" y="-36.449" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="74451133" x="94.107" y="-36.449" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="94.107" y="-39.243" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
-<element name="R2" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_470" x="1.524" y="-110.363" smashed="yes">
-<attribute name="DKPN" value="P470BYCT-ND" x="1.524" y="-110.363" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="1.524" y="-110.363" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="667-ERJ-PA3F4700V" x="1.524" y="-110.363" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="ERJ-PA3F4700V" x="1.524" y="-110.363" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="1.524" y="-109.728" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="0.25W" x="1.524" y="-110.363" size="1.778" layer="27" display="off"/>
-<attribute name="RESISTANCE" value="470" x="1.524" y="-110.363" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="1%" x="1.524" y="-110.363" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="10.84V" x="1.524" y="-110.363" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_MAX" value="150V" x="1.524" y="-110.363" size="1.778" layer="27" display="off"/>
+<element name="R2" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_470" x="87.63" y="-32.385" smashed="yes" rot="R270">
+<attribute name="DKPN" value="P470BYCT-ND" x="87.63" y="-32.385" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="87.63" y="-32.385" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="667-ERJ-PA3F4700V" x="87.63" y="-32.385" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="ERJ-PA3F4700V" x="87.63" y="-32.385" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="86.868" y="-32.385" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="POWER" value="0.25W" x="87.63" y="-32.385" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="RESISTANCE" value="470" x="87.63" y="-32.385" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="87.63" y="-32.385" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="10.84V" x="87.63" y="-32.385" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_MAX" value="150V" x="87.63" y="-32.385" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U6" library="HyTechDevices" package="MSOP-16(MSE)" value="LT3990-5" x="3.175" y="-120.777" smashed="yes">
-<attribute name="DKPN" value="LT3990EMSE-5#PBF-ND" x="3.175" y="-114.173" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Analog Devices Inc." x="3.175" y="-114.173" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="584-LT3990EMSE-5#PBF" x="3.175" y="-114.173" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="LT3990EMSE-5#PBF" x="3.175" y="-114.173" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="0.635" y="-120.777" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<element name="U6" library="HyTechDevices" package="MSOP-16(MSE)" value="LT3990-5" x="189.992" y="-38.227" smashed="yes" rot="R90">
+<attribute name="DKPN" value="LT3990EMSE-5#PBF-ND" x="183.388" y="-38.227" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Analog Devices Inc." x="183.388" y="-38.227" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOPN" value="584-LT3990EMSE-5#PBF" x="183.388" y="-38.227" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="LT3990EMSE-5#PBF" x="183.388" y="-38.227" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="189.992" y="-40.767" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="C29" library="HyTechDevices" package="0805-CAP" value="CAPACITOR_0805_100V_0.22UF" x="1.016" y="-125.857" smashed="yes">
-<attribute name="CAPACITANCE" value="0.22µF" x="1.524" y="-119.253" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="399-8049-1-ND" x="1.524" y="-119.253" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="1.524" y="-119.253" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="80-C0805C224K1R" x="1.524" y="-119.253" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0805C224K1RACTU" x="1.524" y="-119.253" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="1.016" y="-124.807" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="TOLERANCE" value="10%" x="1.524" y="-119.253" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="100V" x="1.524" y="-119.253" size="1.778" layer="27" display="off"/>
+<element name="C29" library="HyTechDevices" package="0805-CAP" value="CAPACITOR_0805_100V_0.22UF" x="186.055" y="-37.592" smashed="yes" rot="R90">
+<attribute name="CAPACITANCE" value="0.22µF" x="179.451" y="-37.084" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DKPN" value="399-8049-1-ND" x="179.451" y="-37.084" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="179.451" y="-37.084" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOPN" value="80-C0805C224K1R" x="179.451" y="-37.084" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="C0805C224K1RACTU" x="179.451" y="-37.084" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="185.005" y="-37.592" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="179.451" y="-37.084" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOLTAGE" value="100V" x="179.451" y="-37.084" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C30" library="HyTechDevices" package="1206-CAP" value="CAPACITOR_1206_100V_2.2UF" x="7.747" y="-120.523" smashed="yes">
-<attribute name="CAPACITANCE" value="2.2µF" x="1.651" y="-122.809" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="478-12144-1-ND" x="1.651" y="-122.809" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="AVX Corporation" x="1.651" y="-122.809" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="581-12061C225K4T2A" x="1.651" y="-122.809" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="12061C225K4T2A" x="1.651" y="-122.809" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="7.747" y="-119.273" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="TOLERANCE" value="10%" x="1.651" y="-122.809" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="100V" x="1.651" y="-122.809" size="1.778" layer="27" display="off"/>
+<element name="C30" library="HyTechDevices" package="1206-CAP" value="CAPACITOR_1206_100V_2.2UF" x="194.183" y="-38.1" smashed="yes" rot="R90">
+<attribute name="CAPACITANCE" value="2.2µF" x="196.469" y="-44.196" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DKPN" value="478-12144-1-ND" x="196.469" y="-44.196" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="AVX Corporation" x="196.469" y="-44.196" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOPN" value="581-12061C225K4T2A" x="196.469" y="-44.196" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="12061C225K4T2A" x="196.469" y="-44.196" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="194.183" y="-40.366" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="196.469" y="-44.196" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOLTAGE" value="100V" x="196.469" y="-44.196" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R8" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_374K" x="4.191" y="-125.476" smashed="yes">
-<attribute name="DKPN" value="311-374KHRCT-ND" x="1.524" y="-125.984" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="1.524" y="-125.984" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="603-RC0603FR-07374KL" x="1.524" y="-125.984" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603FR-07374KL" x="1.524" y="-125.984" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="4.191" y="-124.841" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="0.1W" x="1.524" y="-125.984" size="1.778" layer="27" display="off"/>
-<attribute name="RESISTANCE" value="374k" x="1.524" y="-125.984" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="1%" x="1.524" y="-125.984" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V" x="1.524" y="-125.984" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_MAX" value="75V" x="1.524" y="-125.984" size="1.778" layer="27" display="off"/>
+<element name="R8" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_374K" x="195.199" y="-34.798" smashed="yes" rot="R180">
+<attribute name="DKPN" value="311-374KHRCT-ND" x="197.866" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="197.866" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-07374KL" x="197.866" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="RC0603FR-07374KL" x="197.866" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="196.596" y="-34.798" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="POWER" value="0.1W" x="197.866" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RESISTANCE" value="374k" x="197.866" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="197.866" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V" x="197.866" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="197.866" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="L2" library="HyTechDevices" package="74451133" value="INDUCTOR_74451133_33UH" x="3.302" y="-115.443" smashed="yes">
-<attribute name="CURRENT_RATED" value="0.6" x="3.302" y="-131.064" size="1.778" layer="27" display="off"/>
-<attribute name="CURRENT_SATURATION" value="0.15" x="3.302" y="-131.064" size="1.778" layer="27" display="off"/>
-<attribute name="DCR" value="0.114" x="3.302" y="-131.064" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="732-1410-1-ND" x="3.302" y="-131.064" size="1.778" layer="27" display="off"/>
-<attribute name="INDUCTANCE" value="33µH" x="3.302" y="-131.064" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Würth Elektronik" x="3.302" y="-131.064" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="74451133" x="3.302" y="-131.064" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="3.302" y="-112.649" size="0.8128" layer="25" align="bottom-center"/>
+<element name="L2" library="HyTechDevices" package="74451133" value="INDUCTOR_74451133_33UH" x="189.865" y="-33.274" smashed="yes">
+<attribute name="CURRENT_RATED" value="0.6" x="189.865" y="-48.895" size="1.778" layer="27" display="off"/>
+<attribute name="CURRENT_SATURATION" value="0.15" x="189.865" y="-48.895" size="1.778" layer="27" display="off"/>
+<attribute name="DCR" value="0.114" x="189.865" y="-48.895" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="732-1410-1-ND" x="189.865" y="-48.895" size="1.778" layer="27" display="off"/>
+<attribute name="INDUCTANCE" value="33µH" x="189.865" y="-48.895" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik" x="189.865" y="-48.895" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="74451133" x="189.865" y="-48.895" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="189.865" y="-30.48" size="0.8128" layer="25" align="bottom-center"/>
 </element>
-<element name="R9" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_470" x="7.112" y="-125.476" smashed="yes">
-<attribute name="DKPN" value="P470BYCT-ND" x="1.524" y="-135.509" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="1.524" y="-135.509" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="667-ERJ-PA3F4700V" x="1.524" y="-135.509" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="ERJ-PA3F4700V" x="1.524" y="-135.509" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="7.112" y="-124.841" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="0.25W" x="1.524" y="-135.509" size="1.778" layer="27" display="off"/>
-<attribute name="RESISTANCE" value="470" x="1.524" y="-135.509" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="1%" x="1.524" y="-135.509" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="10.84V" x="1.524" y="-135.509" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_MAX" value="150V" x="1.524" y="-135.509" size="1.778" layer="27" display="off"/>
+<element name="R9" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_470" x="196.342" y="-37.338" smashed="yes" rot="R270">
+<attribute name="DKPN" value="P470BYCT-ND" x="186.309" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="186.309" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="667-ERJ-PA3F4700V" x="186.309" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="ERJ-PA3F4700V" x="186.309" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="196.977" y="-37.338" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="POWER" value="0.25W" x="186.309" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="RESISTANCE" value="470" x="186.309" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="186.309" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="10.84V" x="186.309" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_MAX" value="150V" x="186.309" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C3" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_22UF" x="0.889" y="-128.905" smashed="yes">
-<attribute name="CAPACITANCE" value="22µF" x="1.524" y="-128.905" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="490-10476-1-ND" x="1.524" y="-128.905" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Murata Electronics" x="1.524" y="-128.905" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="81-GRM188R61A226ME5D" x="1.524" y="-128.905" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="GRM188R61A226ME15D" x="1.524" y="-128.905" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="0.889" y="-128.155" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="TOLERANCE" value="20%" x="1.524" y="-128.905" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="10V" x="1.524" y="-128.905" size="1.778" layer="27" display="off"/>
+<element name="C3" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_22UF" x="195.072" y="-31.496" smashed="yes">
+<attribute name="CAPACITANCE" value="22µF" x="195.707" y="-31.496" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="490-10476-1-ND" x="195.707" y="-31.496" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Murata Electronics" x="195.707" y="-31.496" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="81-GRM188R61A226ME5D" x="195.707" y="-31.496" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM188R61A226ME15D" x="195.707" y="-31.496" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="195.072" y="-30.746" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="TOLERANCE" value="20%" x="195.707" y="-31.496" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="10V" x="195.707" y="-31.496" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C10" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_22UF" x="0.889" y="-131.953" smashed="yes">
-<attribute name="CAPACITANCE" value="22µF" x="1.524" y="-131.953" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="490-10476-1-ND" x="1.524" y="-131.953" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Murata Electronics" x="1.524" y="-131.953" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="81-GRM188R61A226ME5D" x="1.524" y="-131.953" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="GRM188R61A226ME15D" x="1.524" y="-131.953" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="0.889" y="-131.203" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="TOLERANCE" value="20%" x="1.524" y="-131.953" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="10V" x="1.524" y="-131.953" size="1.778" layer="27" display="off"/>
+<element name="C10" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_22UF" x="88.9" y="-38.227" smashed="yes" rot="R180">
+<attribute name="CAPACITANCE" value="22µF" x="88.265" y="-38.227" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DKPN" value="490-10476-1-ND" x="88.265" y="-38.227" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="Murata Electronics" x="88.265" y="-38.227" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="81-GRM188R61A226ME5D" x="88.265" y="-38.227" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="GRM188R61A226ME15D" x="88.265" y="-38.227" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="88.9" y="-38.977" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="TOLERANCE" value="20%" x="88.265" y="-38.227" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="10V" x="88.265" y="-38.227" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C31" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="0.889" y="-135.001" smashed="yes">
-<attribute name="CAPACITANCE" value="1µF" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="311-1796-1-ND" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="603-CC603KRX7R6BB105" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CC0603KRX7R6BB105" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="0.889" y="-134.251" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="TOLERANCE" value="10%" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="10V" x="1.524" y="-135.001" size="1.778" layer="27" display="off"/>
+<element name="C31" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="195.072" y="-33.147" smashed="yes">
+<attribute name="CAPACITANCE" value="1µF" x="195.707" y="-33.147" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="311-1796-1-ND" x="195.707" y="-33.147" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="195.707" y="-33.147" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="603-CC603KRX7R6BB105" x="195.707" y="-33.147" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CC0603KRX7R6BB105" x="195.707" y="-33.147" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="196.457" y="-33.147" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="195.707" y="-33.147" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="10V" x="195.707" y="-33.147" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C32" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="0.889" y="-138.049" smashed="yes">
-<attribute name="CAPACITANCE" value="1µF" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="311-1796-1-ND" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="603-CC603KRX7R6BB105" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CC0603KRX7R6BB105" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="0.889" y="-137.299" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="TOLERANCE" value="10%" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="10V" x="1.524" y="-138.049" size="1.778" layer="27" display="off"/>
+<element name="C32" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="88.9" y="-36.576" smashed="yes" rot="R180">
+<attribute name="CAPACITANCE" value="1µF" x="88.265" y="-36.576" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DKPN" value="311-1796-1-ND" x="88.265" y="-36.576" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="88.265" y="-36.576" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="603-CC603KRX7R6BB105" x="88.265" y="-36.576" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="CC0603KRX7R6BB105" x="88.265" y="-36.576" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="87.388" y="-36.576" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="88.265" y="-36.576" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="10V" x="88.265" y="-36.576" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 </elements>
 <signals>
@@ -4223,7 +4223,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="TP4" pad="1"/>
 <contactref element="U6" pad="4"/>
 <wire x1="205.3336" y1="-60.5282" x2="198.767" y2="-50.372396875" width="0" layer="19" extent="1-1"/>
-<wire x1="2.925" y1="-122.8825" x2="198.767" y2="-50.372396875" width="0" layer="19" extent="1-1"/>
+<wire x1="192.0975" y1="-38.477" x2="198.767" y2="-50.372396875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF1L" class="4">
 <contactref element="C2" pad="1"/>
@@ -4507,7 +4507,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U1" pad="38"/>
 <contactref element="TP1" pad="1"/>
 <contactref element="U5" pad="4"/>
-<wire x1="76.5182" y1="-57.1264" x2="2.925" y2="-91.1325" width="0" layer="19" extent="1-1"/>
+<wire x1="76.5182" y1="-57.1264" x2="91.8745" y2="-31.246" width="0" layer="19" extent="1-1"/>
 <wire x1="78.5368" y1="-44.8056" x2="76.5182" y2="-57.1264" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$61">
@@ -4659,12 +4659,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="48.9392" y1="-46.3844" x2="48.9392" y2="-46.8844" width="0" layer="19" extent="1-1"/>
 <wire x1="50.8642" y1="-44.3484" x2="51.2892" y2="-45.8844" width="0" layer="19" extent="1-1"/>
 <wire x1="47.3456" y1="-40.1948" x2="50.8642" y2="-44.3484" width="0" layer="19" extent="1-1"/>
-<wire x1="9.247" y1="-120.523" x2="48.9392" y2="-46.8844" width="0" layer="19" extent="1-1"/>
-<wire x1="4.925" y1="-122.8825" x2="9.247" y2="-120.523" width="0" layer="19" extent="1-1"/>
-<wire x1="3.175" y1="-120.777" x2="4.925" y2="-122.8825" width="0" layer="19" extent="1-1"/>
-<wire x1="3.341" y1="-125.476" x2="4.925" y2="-122.8825" width="0" layer="19" extent="1-1"/>
-<wire x1="1.639" y1="-128.905" x2="3.341" y2="-125.476" width="0" layer="19" extent="1-1"/>
-<wire x1="1.639" y1="-135.001" x2="1.639" y2="-128.905" width="0" layer="19" extent="1-1"/>
+<wire x1="194.183" y1="-36.6" x2="48.9392" y2="-46.8844" width="0" layer="19" extent="1-1"/>
+<wire x1="192.0975" y1="-36.477" x2="194.183" y2="-36.6" width="0" layer="19" extent="1-1"/>
+<wire x1="189.992" y1="-38.227" x2="192.0975" y2="-36.477" width="0" layer="19" extent="1-1"/>
+<wire x1="196.049" y1="-34.798" x2="192.0975" y2="-36.477" width="0" layer="19" extent="1-1"/>
+<wire x1="195.822" y1="-31.496" x2="196.049" y2="-34.798" width="0" layer="19" extent="1-1"/>
+<wire x1="195.822" y1="-33.147" x2="195.822" y2="-31.496" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="C6L" class="4">
 <contactref element="U2" pad="14"/>
@@ -4822,12 +4822,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="3.6202" y1="-20.0914" x2="20.3828" y2="-40.4876" width="0" layer="19" extent="1-1"/>
 <wire x1="69.9135" y1="-7.4415" x2="75.7682" y2="-34.1884" width="0" layer="19" extent="1-1"/>
 <wire x1="69.9135" y1="-6.1332" x2="69.9135" y2="-7.4415" width="0" layer="19" extent="1-1"/>
-<wire x1="3.175" y1="-89.027" x2="21.6542" y2="-54.2544" width="0" layer="19" extent="1-1"/>
-<wire x1="4.925" y1="-91.1325" x2="3.175" y2="-89.027" width="0" layer="19" extent="1-1"/>
-<wire x1="3.151" y1="-97.663" x2="4.925" y2="-91.1325" width="0" layer="19" extent="1-1"/>
-<wire x1="0.674" y1="-100.838" x2="3.151" y2="-97.663" width="0" layer="19" extent="1-1"/>
-<wire x1="1.639" y1="-131.953" x2="0.674" y2="-100.838" width="0" layer="19" extent="1-1"/>
-<wire x1="1.639" y1="-138.049" x2="1.639" y2="-131.953" width="0" layer="19" extent="1-1"/>
+<wire x1="93.98" y1="-31.496" x2="21.6542" y2="-54.2544" width="0" layer="19" extent="1-1"/>
+<wire x1="91.8745" y1="-33.246" x2="93.98" y2="-31.496" width="0" layer="19" extent="1-1"/>
+<wire x1="89.789" y1="-33.123" x2="91.8745" y2="-33.246" width="0" layer="19" extent="1-1"/>
+<wire x1="87.923" y1="-34.925" x2="89.789" y2="-33.123" width="0" layer="19" extent="1-1"/>
+<wire x1="88.15" y1="-38.227" x2="87.923" y2="-34.925" width="0" layer="19" extent="1-1"/>
+<wire x1="88.15" y1="-36.576" x2="88.15" y2="-38.227" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO4L">
 <contactref element="R39" pad="2"/>
@@ -4915,12 +4915,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="53.5686" y1="-50.4952" x2="158.7246" y2="-23.09495" width="0" layer="19" extent="1-1"/>
 <wire x1="51.2892" y1="-47.3844" x2="53.5686" y2="-50.4952" width="0" layer="19" extent="1-1"/>
 <wire x1="49.3642" y1="-44.3484" x2="51.2892" y2="-47.3844" width="0" layer="19" extent="1-1"/>
-<wire x1="6.002" y1="-115.443" x2="53.5686" y2="-50.4952" width="0" layer="19" extent="1-1"/>
-<wire x1="2.925" y1="-118.6715" x2="6.002" y2="-115.443" width="0" layer="19" extent="1-1"/>
-<wire x1="1.925" y1="-122.8825" x2="2.925" y2="-118.6715" width="0" layer="19" extent="1-1"/>
-<wire x1="1.425" y1="-122.8825" x2="1.925" y2="-122.8825" width="0" layer="19" extent="1-1"/>
-<wire x1="0.139" y1="-128.905" x2="1.425" y2="-122.8825" width="0" layer="19" extent="1-1"/>
-<wire x1="0.139" y1="-135.001" x2="0.139" y2="-128.905" width="0" layer="19" extent="1-1"/>
+<wire x1="192.565" y1="-33.274" x2="53.5686" y2="-50.4952" width="0" layer="19" extent="1-1"/>
+<wire x1="187.8865" y1="-38.477" x2="192.565" y2="-33.274" width="0" layer="19" extent="1-1"/>
+<wire x1="192.0975" y1="-39.477" x2="187.8865" y2="-38.477" width="0" layer="19" extent="1-1"/>
+<wire x1="192.0975" y1="-39.977" x2="192.0975" y2="-39.477" width="0" layer="19" extent="1-1"/>
+<wire x1="194.322" y1="-31.496" x2="192.0975" y2="-39.977" width="0" layer="19" extent="1-1"/>
+<wire x1="194.322" y1="-33.147" x2="194.322" y2="-31.496" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREGU" class="3">
 <contactref element="J27" pad="1"/>
@@ -4954,12 +4954,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="80.0182" y1="-57.1264" x2="77.5182" y2="-57.1264" width="0" layer="19" extent="1-1"/>
 <wire x1="106.6258625" y1="-84.44865" x2="80.0182" y2="-57.1264" width="0" layer="19" extent="1-1"/>
 <wire x1="110.09719375" y1="-84.44865" x2="106.6258625" y2="-84.44865" width="0" layer="19" extent="1-1"/>
-<wire x1="2.925" y1="-86.9215" x2="28.2448" y2="-23.1267" width="0" layer="19" extent="1-1"/>
-<wire x1="1.925" y1="-91.1325" x2="2.925" y2="-86.9215" width="0" layer="19" extent="1-1"/>
-<wire x1="1.425" y1="-91.1325" x2="1.925" y2="-91.1325" width="0" layer="19" extent="1-1"/>
-<wire x1="6.002" y1="-105.918" x2="1.925" y2="-91.1325" width="0" layer="19" extent="1-1"/>
-<wire x1="0.139" y1="-131.953" x2="6.002" y2="-105.918" width="0" layer="19" extent="1-1"/>
-<wire x1="0.139" y1="-138.049" x2="0.139" y2="-131.953" width="0" layer="19" extent="1-1"/>
+<wire x1="96.0855" y1="-31.246" x2="28.2448" y2="-23.1267" width="0" layer="19" extent="1-1"/>
+<wire x1="91.8745" y1="-30.246" x2="96.0855" y2="-31.246" width="0" layer="19" extent="1-1"/>
+<wire x1="91.8745" y1="-29.746" x2="91.8745" y2="-30.246" width="0" layer="19" extent="1-1"/>
+<wire x1="91.407" y1="-36.449" x2="91.8745" y2="-30.246" width="0" layer="19" extent="1-1"/>
+<wire x1="89.65" y1="-38.227" x2="91.407" y2="-36.449" width="0" layer="19" extent="1-1"/>
+<wire x1="89.65" y1="-36.576" x2="89.65" y2="-38.227" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CC12" class="1">
 <contactref element="J12" pad="1"/>
@@ -5349,7 +5349,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="CELL21:Q1" pad="2"/>
 <contactref element="R44" pad="1"/>
 <contactref element="R2" pad="1"/>
-<wire x1="1.905" y1="-25.0063" x2="0.674" y2="-110.363" width="0" layer="19" extent="1-1"/>
+<wire x1="1.905" y1="-25.0063" x2="87.63" y2="-31.535" width="0" layer="19" extent="1-1"/>
 <wire x1="1.9304" y1="-23.3798" x2="1.905" y2="-25.0063" width="0" layer="19" extent="1-1"/>
 <wire x1="9.7536" y1="-14.7242" x2="1.9304" y2="-23.3798" width="0" layer="19" extent="1-1"/>
 <wire x1="82.0166" y1="-46.8512" x2="9.7536" y2="-14.7242" width="0" layer="19" extent="1-1"/>
@@ -5389,7 +5389,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="90.6653" y1="-65.024" x2="194.7926" y2="-60.6162" width="0" layer="19" extent="1-1"/>
 <wire x1="89.0388" y1="-64.9986" x2="90.6653" y2="-65.024" width="0" layer="19" extent="1-1"/>
 <wire x1="65.8678375" y1="-70.8103" x2="89.0388" y2="-64.9986" width="0" layer="19" extent="1-1"/>
-<wire x1="6.262" y1="-125.476" x2="65.8678375" y2="-70.8103" width="0" layer="19" extent="1-1"/>
+<wire x1="196.342" y1="-36.488" x2="65.8678375" y2="-70.8103" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF2L" class="4">
 <contactref element="C1" pad="1"/>
@@ -5399,50 +5399,50 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <signal name="N$1">
 <contactref element="R1" pad="2"/>
 <contactref element="U5" pad="16"/>
-<wire x1="1.425" y1="-86.9215" x2="2.374" y2="-100.838" width="0" layer="19" extent="1-1"/>
+<wire x1="96.0855" y1="-29.746" x2="89.623" y2="-34.925" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="C11" pad="2"/>
 <contactref element="U5" pad="9"/>
 <contactref element="L1" pad="1"/>
-<wire x1="2.449" y1="-94.107" x2="0.602" y2="-105.918" width="0" layer="19" extent="1-1"/>
-<wire x1="4.925" y1="-86.9215" x2="2.449" y2="-94.107" width="0" layer="19" extent="1-1"/>
+<wire x1="97.917" y1="-33.056" x2="96.807" y2="-36.449" width="0" layer="19" extent="1-1"/>
+<wire x1="96.0855" y1="-33.246" x2="97.917" y2="-33.056" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="C11" pad="1"/>
 <contactref element="U5" pad="11"/>
-<wire x1="3.925" y1="-86.9215" x2="0.599" y2="-94.107" width="0" layer="19" extent="1-1"/>
+<wire x1="96.0855" y1="-32.246" x2="97.917" y2="-31.206" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="U5" pad="6"/>
 <contactref element="C12" pad="1"/>
 <contactref element="R2" pad="2"/>
-<wire x1="0.151" y1="-97.663" x2="2.374" y2="-110.363" width="0" layer="19" extent="1-1"/>
-<wire x1="3.925" y1="-91.1325" x2="0.151" y2="-97.663" width="0" layer="19" extent="1-1"/>
+<wire x1="89.789" y1="-30.123" x2="87.63" y2="-33.235" width="0" layer="19" extent="1-1"/>
+<wire x1="91.8745" y1="-32.246" x2="89.789" y2="-30.123" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R8" pad="2"/>
 <contactref element="U6" pad="16"/>
-<wire x1="1.425" y1="-118.6715" x2="5.041" y2="-125.476" width="0" layer="19" extent="1-1"/>
+<wire x1="187.8865" y1="-39.977" x2="194.349" y2="-34.798" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="C29" pad="2"/>
 <contactref element="U6" pad="9"/>
 <contactref element="L2" pad="1"/>
-<wire x1="4.925" y1="-118.6715" x2="1.941" y2="-125.857" width="0" layer="19" extent="1-1"/>
-<wire x1="0.602" y1="-115.443" x2="4.925" y2="-118.6715" width="0" layer="19" extent="1-1"/>
+<wire x1="187.8865" y1="-36.477" x2="186.055" y2="-36.667" width="0" layer="19" extent="1-1"/>
+<wire x1="187.165" y1="-33.274" x2="187.8865" y2="-36.477" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="C29" pad="1"/>
 <contactref element="U6" pad="11"/>
-<wire x1="3.925" y1="-118.6715" x2="0.091" y2="-125.857" width="0" layer="19" extent="1-1"/>
+<wire x1="187.8865" y1="-37.477" x2="186.055" y2="-38.517" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="U6" pad="6"/>
 <contactref element="C30" pad="1"/>
 <contactref element="R9" pad="2"/>
-<wire x1="6.247" y1="-120.523" x2="3.925" y2="-122.8825" width="0" layer="19" extent="1-1"/>
-<wire x1="7.962" y1="-125.476" x2="3.925" y2="-122.8825" width="0" layer="19" extent="1-1"/>
+<wire x1="194.183" y1="-39.6" x2="192.0975" y2="-37.477" width="0" layer="19" extent="1-1"/>
+<wire x1="196.342" y1="-38.188" x2="192.0975" y2="-37.477" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
