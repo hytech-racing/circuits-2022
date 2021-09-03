@@ -11151,7 +11151,7 @@ requirement of EV.8.3.2.</text>
 <wire x1="208.28" y1="111.76" x2="205.74" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="VINU" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="VIN"/>
 <wire x1="180.34" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
@@ -11185,7 +11185,7 @@ requirement of EV.8.3.2.</text>
 <wire x1="165.1" y1="73.66" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="VINL" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="VIN"/>
 <wire x1="137.16" y1="73.66" x2="127" y2="73.66" width="0.1524" layer="91"/>
