@@ -4526,7 +4526,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="44.45" y="46.99" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RESISTANCE" value="10k" x="44.45" y="46.99" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="44.45" y="46.99" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="44.45" y="46.99" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="44.45" y="46.99" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="44.45" y="46.99" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C15" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_0.1UF" x="68.834" y="47.625" smashed="yes" rot="R270">
 <attribute name="CAPACITANCE" value="0.1µF" x="68.834" y="47.625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4710,7 +4711,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="36.83" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RESISTANCE" value="10k" x="36.83" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="36.83" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="36.83" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="36.83" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="36.83" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R14" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_10K" x="25.908" y="35.56" smashed="yes">
 <attribute name="DKPN" value="311-10.0KHRCT-ND" x="25.908" y="35.56" size="1.778" layer="27" display="off"/>
@@ -4721,7 +4723,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="25.908" y="35.56" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="10k" x="25.908" y="35.56" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="25.908" y="35.56" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="25.908" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="25.908" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="25.908" y="35.56" size="1.778" layer="27" display="off"/>
 </element>
 <element name="S1PU" library="HyTechDevices" package="1X02" value="JUMPER_1X02_" x="36.83" y="31.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="35.433" y="31.75" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
@@ -4795,7 +4798,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="73.66" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RESISTANCE" value="10k" x="73.66" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="73.66" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="73.66" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="52.07" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="52.07" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R8" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_10K" x="41.656" y="35.941" smashed="yes">
 <attribute name="DKPN" value="311-10.0KHRCT-ND" x="16.256" y="41.021" size="1.778" layer="27" display="off"/>
@@ -4806,7 +4810,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="16.256" y="41.021" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="10k" x="16.256" y="41.021" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="16.256" y="41.021" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="16.256" y="41.021" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="41.656" y="35.941" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="41.656" y="35.941" size="1.778" layer="27" display="off"/>
 </element>
 <element name="S2PU" library="HyTechDevices" package="1X02" value="JUMPER_1X02_" x="52.07" y="31.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="50.673" y="31.75" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
@@ -4880,7 +4885,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="90.17" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RESISTANCE" value="10k" x="90.17" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="90.17" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="90.17" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="68.58" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="68.58" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R10" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_10K" x="58.166" y="35.941" smashed="yes">
 <attribute name="DKPN" value="311-10.0KHRCT-ND" x="32.766" y="41.021" size="1.778" layer="27" display="off"/>
@@ -4891,7 +4897,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="32.766" y="41.021" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="10k" x="32.766" y="41.021" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="32.766" y="41.021" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="32.766" y="41.021" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="58.166" y="35.941" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="58.166" y="35.941" size="1.778" layer="27" display="off"/>
 </element>
 <element name="S3PU" library="HyTechDevices" package="1X02" value="JUMPER_1X02_" x="68.58" y="31.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="67.183" y="31.75" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
@@ -4965,7 +4972,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="106.68" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RESISTANCE" value="10k" x="106.68" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="106.68" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="106.68" y="27.051" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="85.09" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="85.09" y="35.941" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R12" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_10K" x="74.676" y="35.941" smashed="yes">
 <attribute name="DKPN" value="311-10.0KHRCT-ND" x="49.276" y="41.021" size="1.778" layer="27" display="off"/>
@@ -4976,7 +4984,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="49.276" y="41.021" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="10k" x="49.276" y="41.021" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="49.276" y="41.021" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="49.276" y="41.021" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="74.676" y="35.941" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="74.676" y="35.941" size="1.778" layer="27" display="off"/>
 </element>
 <element name="S4PU" library="HyTechDevices" package="1X02" value="JUMPER_1X02_" x="85.09" y="31.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="83.693" y="31.75" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
@@ -5009,7 +5018,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="96.52" y="48.26" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="1k" x="96.52" y="48.26" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="96.52" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="96.52" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="10.00V" x="96.52" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="96.52" y="48.26" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R2" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_1K" x="96.52" y="50.8" smashed="yes">
 <attribute name="DKPN" value="311-1.00KHRCT-ND" x="96.52" y="50.8" size="1.778" layer="27" display="off"/>
@@ -5020,7 +5030,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="96.52" y="50.8" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="1k" x="96.52" y="50.8" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="96.52" y="50.8" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="96.52" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="10.00V" x="96.52" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="96.52" y="50.8" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="92.71" y="53.34" smashed="yes" rot="R180">
 <attribute name="COLOR" value="RED" x="92.71" y="53.34" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5039,7 +5050,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="96.52" y="53.34" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="1k" x="96.52" y="53.34" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="96.52" y="53.34" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="96.52" y="53.34" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="10.00V" x="96.52" y="53.34" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="96.52" y="53.34" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C14" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="67.31" y="47.625" smashed="yes" rot="R270">
 <attribute name="CAPACITANCE" value="1µF" x="67.31" y="47.625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -5064,7 +5076,8 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="57.15" y="46.99" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="60.4" x="57.15" y="46.99" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="57.15" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="57.15" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="2.48V" x="55.88" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="55.88" y="46.99" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R6" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_60.4" x="55.88" y="45.339" smashed="yes">
 <attribute name="DKPN" value="311-60.4HRCT-ND" x="57.15" y="45.339" size="1.778" layer="27" display="off"/>
@@ -5075,10 +5088,11 @@ design rules under a new name.</description>
 <attribute name="POWER" value="0.1W" x="57.15" y="45.339" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="60.4" x="57.15" y="45.339" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="57.15" y="45.339" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="75V" x="57.15" y="45.339" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="2.48V" x="55.88" y="45.339" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="55.88" y="45.339" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CAN" library="HyTechDevices" package="1X02" value="JUMPER_1X02_" x="60.96" y="45.72" smashed="yes">
-<attribute name="NAME" x="60.96" y="44.323" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<element name="CAN" library="HyTechDevices" package="1X02" value="JUMPER_1X02_" x="60.706" y="45.339" smashed="yes">
+<attribute name="NAME" x="60.706" y="43.942" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="C16" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_4.7NF" x="52.578" y="45.974" smashed="yes" rot="R180">
 <attribute name="CAPACITANCE" value="4.7nF" x="51.308" y="45.974" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5092,6 +5106,18 @@ design rules under a new name.</description>
 </element>
 <element name="U$3" library="HyTechAesthetics" package="LOGO_HYTECH_0.5&quot;" value="" x="109.22" y="19.05" smashed="yes" rot="R90"/>
 <element name="U$6" library="HyTechAesthetics" package="LOGO_GT_0.25&quot;" value="" x="97.79" y="43.18" smashed="yes"/>
+<element name="R15" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_10K" x="59.944" y="47.498" smashed="yes">
+<attribute name="DKPN" value="311-10.0KHRCT-ND" x="59.944" y="47.498" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="59.944" y="47.498" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-0710KL" x="59.944" y="47.498" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0603FR-0710KL" x="59.944" y="47.498" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="59.944" y="48.133" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="POWER" value="0.1W" x="59.944" y="47.498" size="1.778" layer="27" display="off"/>
+<attribute name="RESISTANCE" value="10k" x="59.944" y="47.498" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="59.944" y="47.498" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="59.944" y="47.498" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="59.944" y="47.498" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -5554,6 +5580,9 @@ design rules under a new name.</description>
 <wire x1="75.8825" y1="45.593" x2="75.7509875" y2="45.593" width="0.381" layer="1"/>
 <wire x1="75.7509875" y1="45.593" x2="74.93" y2="46.4139875" width="0.381" layer="1"/>
 <wire x1="74.93" y1="46.4139875" x2="74.93" y2="50.8" width="0.381" layer="1"/>
+<contactref element="R15" pad="1"/>
+<wire x1="59.094" y1="47.498" x2="58.185" y2="48.407" width="0.381" layer="1"/>
+<wire x1="58.185" y1="49.145" x2="58.185" y2="48.407" width="0.381" layer="1"/>
 </signal>
 <signal name="RESET">
 <contactref element="R4" pad="2"/>
@@ -5668,12 +5697,12 @@ design rules under a new name.</description>
 <wire x1="71.38903125" y1="44.8691" x2="65.7517625" y2="44.8691" width="0.381" layer="1"/>
 <wire x1="65.7517625" y1="44.8691" x2="64.0695" y2="46.5513625" width="0.381" layer="1"/>
 <contactref element="R6" pad="2"/>
-<wire x1="62.68766875" y1="44.6151" x2="63.3349" y2="45.26233125" width="0.381" layer="1"/>
-<wire x1="63.3349" y1="45.26233125" x2="63.3349" y2="45.8167625" width="0.381" layer="1"/>
+<wire x1="62.81466875" y1="43.8531" x2="63.3349" y2="44.37333125" width="0.381" layer="1"/>
+<wire x1="63.3349" y1="44.37333125" x2="63.3349" y2="45.8167625" width="0.381" layer="1"/>
 <wire x1="63.3349" y1="45.8167625" x2="64.0695" y2="46.5513625" width="0.381" layer="1"/>
-<wire x1="56.73" y1="45.339" x2="58.00043125" y2="45.339" width="0.381" layer="1"/>
-<wire x1="58.72433125" y1="44.6151" x2="58.00043125" y2="45.339" width="0.381" layer="1"/>
-<wire x1="58.72433125" y1="44.6151" x2="62.68766875" y2="44.6151" width="0.381" layer="1"/>
+<wire x1="56.73" y1="45.339" x2="57.11143125" y2="45.339" width="0.381" layer="1"/>
+<wire x1="58.59733125" y1="43.8531" x2="57.11143125" y2="45.339" width="0.381" layer="1"/>
+<wire x1="58.59733125" y1="43.8531" x2="62.81466875" y2="43.8531" width="0.381" layer="1"/>
 </signal>
 <signal name="CANRX">
 <contactref element="U5" pad="4"/>
@@ -5687,8 +5716,8 @@ design rules under a new name.</description>
 <contactref element="CAN" pad="2"/>
 <wire x1="63.06796875" y1="49.7129" x2="63.6529" y2="49.7129" width="0.381" layer="1"/>
 <wire x1="63.6529" y1="49.7129" x2="63.735" y2="49.795" width="0.381" layer="1"/>
-<wire x1="62.23" y1="45.72" x2="62.23" y2="48.87493125" width="0.381" layer="1"/>
-<wire x1="62.23" y1="48.87493125" x2="63.06796875" y2="49.7129" width="0.381" layer="1"/>
+<wire x1="61.976" y1="45.339" x2="61.976" y2="48.62093125" width="0.381" layer="1"/>
+<wire x1="61.976" y1="48.62093125" x2="63.06796875" y2="49.7129" width="0.381" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U2" pad="23"/>
@@ -6105,8 +6134,8 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="CAN" pad="1"/>
 <contactref element="R5" pad="2"/>
-<wire x1="56.73" y1="46.99" x2="58.42" y2="46.99" width="0.381" layer="1"/>
-<wire x1="58.42" y1="46.99" x2="59.69" y2="45.72" width="0.381" layer="1"/>
+<wire x1="56.73" y1="46.99" x2="57.785" y2="46.99" width="0.381" layer="1"/>
+<wire x1="57.785" y1="46.99" x2="59.436" y2="45.339" width="0.381" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R6" pad="1"/>
@@ -6115,6 +6144,14 @@ design rules under a new name.</description>
 <wire x1="55.03" y1="45.339" x2="55.03" y2="46.99" width="0.381" layer="1"/>
 <wire x1="53.328" y1="45.974" x2="53.963" y2="45.339" width="0.381" layer="1"/>
 <wire x1="53.963" y1="45.339" x2="55.03" y2="45.339" width="0.381" layer="1"/>
+</signal>
+<signal name="N$5">
+<contactref element="U3" pad="19"/>
+<contactref element="R15" pad="2"/>
+<wire x1="58.185" y1="49.795" x2="60.7636" y2="49.795" width="0.381" layer="1"/>
+<wire x1="60.96" y1="49.5986" x2="60.7636" y2="49.795" width="0.381" layer="1"/>
+<wire x1="60.96" y1="49.5986" x2="60.96" y2="47.664" width="0.381" layer="1"/>
+<wire x1="60.96" y1="47.664" x2="60.794" y2="47.498" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
