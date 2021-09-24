@@ -6052,9 +6052,7 @@ Layer: 94 Symbol</description>
 <segment>
 <pinref part="U2" gate="G$1" pin="(PWM/SDO)11"/>
 <wire x1="71.12" y1="147.32" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="SDI"/>
-<wire x1="137.16" y1="119.38" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="119.38" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="121.92" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="SDI"/>
 <wire x1="119.38" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
 <junction x="119.38" y="147.32"/>
@@ -6062,6 +6060,8 @@ Layer: 94 Symbol</description>
 <pinref part="U3" gate="G$1" pin="SDI"/>
 <wire x1="119.38" y1="147.32" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="198.12" x2="137.16" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="SDO"/>
+<wire x1="119.38" y1="121.92" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ATMEGA_SDI" class="0">
@@ -6069,10 +6069,8 @@ Layer: 94 Symbol</description>
 <pinref part="U2" gate="G$1" pin="(SDI)12"/>
 <wire x1="121.92" y1="149.86" x2="116.84" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="149.86" x2="71.12" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="149.86" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="149.86" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
 <junction x="121.92" y="149.86"/>
-<pinref part="J1" gate="G$1" pin="SDO"/>
-<wire x1="121.92" y1="121.92" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="SDO"/>
 <wire x1="137.16" y1="149.86" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
 <label x="71.12" y="149.86" size="1.27" layer="95"/>
@@ -6080,6 +6078,8 @@ Layer: 94 Symbol</description>
 <wire x1="116.84" y1="149.86" x2="116.84" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="200.66" x2="137.16" y2="200.66" width="0.1524" layer="91"/>
 <junction x="116.84" y="149.86"/>
+<pinref part="J1" gate="G$1" pin="SDI"/>
+<wire x1="121.92" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CLK" class="0">
