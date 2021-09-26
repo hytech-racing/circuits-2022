@@ -191,9 +191,9 @@
 <wire x1="111.43" y1="11.43" x2="111.43" y2="63.49" width="0" layer="20"/>
 <wire x1="111.43" y1="63.49" x2="16.51" y2="63.49" width="0" layer="20"/>
 <wire x1="16.51" y1="63.49" x2="16.51" y2="11.43" width="0" layer="20"/>
-<text x="109.22" y="33.02" size="1.016" layer="51" font="vector" rot="R90">Hytech 2021
-Sensor Acquistion Board rev2
-Designed by Noah Bruckner</text>
+<text x="109.22" y="33.02" size="1.016" layer="51" font="vector" rot="R90">HyTech Racing 2022
+Sensor Acquistion Board rev3
+Designed by Bo Han Zhu</text>
 <text x="98.933" y="50.8" size="1.016" layer="51" font="vector" align="center-left">CAN</text>
 <text x="98.933" y="53.34" size="1.016" layer="51" font="vector" align="center-left">PULSE</text>
 <text x="98.933" y="48.26" size="1.016" layer="51" font="vector" align="center-left">+5V</text>
@@ -369,6 +369,26 @@ Designed by Noah Bruckner</text>
 <wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
 <rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
 </package>
+<package name="SOIC-08(NARROW,0.15&quot;)">
+<description>SOIC-8
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/05081610_G_SO8.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="2" x="-0.635" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="7" x="-0.635" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="3" x="0.635" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="4" x="1.905" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="8" x="-1.905" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="6" x="0.635" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="5" x="1.905" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<text x="-3.175" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<wire x1="-2.5019" y1="1.9939" x2="2.5019" y2="1.9939" width="0.127" layer="21"/>
+<wire x1="2.5019" y1="1.9939" x2="2.5019" y2="-1.9939" width="0.127" layer="21"/>
+<wire x1="2.5019" y1="-1.9939" x2="-2.5019" y2="-1.9939" width="0.127" layer="21"/>
+<wire x1="-2.5019" y1="-1.9939" x2="-2.5019" y2="1.9939" width="0.127" layer="21"/>
+<rectangle x1="-2.794" y1="-3.556" x2="2.794" y2="3.556" layer="39"/>
+<circle x="-3.175" y="-2.54" radius="0.254" width="0" layer="21"/>
+</package>
 <package name="SOIC-08">
 <description>SOIC-8
 &lt;br&gt;
@@ -536,6 +556,8 @@ Notes: See page 47</description>
 <wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
 <text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
+<rectangle x1="-1.025" y1="0.5" x2="-0.625" y2="0.75" layer="21"/>
+<rectangle x1="-1.025" y1="-0.75" x2="-0.625" y2="-0.5" layer="21"/>
 </package>
 <package name="MOUNTING_M3">
 <description>M3 Mounting Hole
@@ -4558,7 +4580,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </element>
 <element name="J6" library="HyTechDevices" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04" value="CONNECTOR-CAN_NF_S_RA_BLACK" x="96.52" y="24.13" smashed="yes">
 <attribute name="MANUFACTURER" value="Molex" x="96.52" y="24.13" size="1.778" layer="27" display="off"/>
-<attribute name="MODEL" value="NF_S_RA_B" x="96.52" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="105405-1304" x="96.52" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="96.52" y="27.94" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
@@ -4642,7 +4663,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="82.296" y="57.658" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="82.296" y="57.658" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U6" library="HyTechDevices" package="SOIC-08" value="MAX7400" x="31.75" y="39.37" smashed="yes" rot="R270">
+<element name="U6" library="HyTechDevices" package="SOIC-08(NARROW,0.15&quot;)" value="MAX7400" x="31.75" y="39.37" smashed="yes" rot="R270">
 <attribute name="DKPN" value="MAX7400CSA+-ND" x="31.75" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Maxim Integrated" x="31.75" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="700-MAX7400CSA" x="31.75" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4695,7 +4716,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </element>
 <element name="J2" library="HyTechDevices" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04" value="CONNECTOR-SENSOR_NF_S_RA_BLACK" x="31.75" y="24.13" smashed="yes">
 <attribute name="MANUFACTURER" value="Molex" x="31.75" y="24.13" size="1.778" layer="27" display="off"/>
-<attribute name="MODEL" value="NF_S_RA_B" x="31.75" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="105405-1304" x="31.75" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="31.75" y="27.94" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
@@ -4739,7 +4759,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="S1PD" library="HyTechDevices" package="1X02" value="JUMPER_1X02_" x="26.67" y="31.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="28.067" y="31.75" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="U7" library="HyTechDevices" package="SOIC-08" value="MAX7400" x="46.99" y="39.37" smashed="yes" rot="R270">
+<element name="U7" library="HyTechDevices" package="SOIC-08(NARROW,0.15&quot;)" value="MAX7400" x="46.99" y="39.37" smashed="yes" rot="R270">
 <attribute name="DKPN" value="MAX7400CSA+-ND" x="46.99" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Maxim Integrated" x="46.99" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="700-MAX7400CSA" x="46.99" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4792,7 +4812,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </element>
 <element name="J3" library="HyTechDevices" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04" value="CONNECTOR-SENSOR_NF_S_RA_BLACK" x="46.99" y="24.13" smashed="yes">
 <attribute name="MANUFACTURER" value="Molex" x="33.02" y="29.21" size="1.778" layer="27" display="off"/>
-<attribute name="MODEL" value="NF_S_RA_B" x="33.02" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="105405-1304" x="33.02" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="46.99" y="27.94" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
@@ -4826,7 +4845,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="S2PD" library="HyTechDevices" package="1X02" value="JUMPER_1X02_" x="41.91" y="31.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="43.307" y="31.75" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="U8" library="HyTechDevices" package="SOIC-08" value="MAX7400" x="63.5" y="39.37" smashed="yes" rot="R270">
+<element name="U8" library="HyTechDevices" package="SOIC-08(NARROW,0.15&quot;)" value="MAX7400" x="63.5" y="39.37" smashed="yes" rot="R270">
 <attribute name="DKPN" value="MAX7400CSA+-ND" x="63.5" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Maxim Integrated" x="63.5" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="700-MAX7400CSA" x="63.5" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4879,7 +4898,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </element>
 <element name="J4" library="HyTechDevices" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04" value="CONNECTOR-SENSOR_NF_S_RA_BLACK" x="63.5" y="24.13" smashed="yes">
 <attribute name="MANUFACTURER" value="Molex" x="49.53" y="29.21" size="1.778" layer="27" display="off"/>
-<attribute name="MODEL" value="NF_S_RA_B" x="49.53" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="105405-1304" x="49.53" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="63.5" y="27.94" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
@@ -4913,7 +4931,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="S3PD" library="HyTechDevices" package="1X02" value="JUMPER_1X02_" x="58.42" y="31.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="59.817" y="31.75" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="U9" library="HyTechDevices" package="SOIC-08" value="MAX7400" x="80.01" y="39.37" smashed="yes" rot="R270">
+<element name="U9" library="HyTechDevices" package="SOIC-08(NARROW,0.15&quot;)" value="MAX7400" x="80.01" y="39.37" smashed="yes" rot="R270">
 <attribute name="DKPN" value="MAX7400CSA+-ND" x="80.01" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Maxim Integrated" x="80.01" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="700-MAX7400CSA" x="80.01" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4966,7 +4984,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </element>
 <element name="J5" library="HyTechDevices" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04" value="CONNECTOR-SENSOR_NF_S_RA_BLACK" x="80.01" y="24.13" smashed="yes">
 <attribute name="MANUFACTURER" value="Molex" x="66.04" y="29.21" size="1.778" layer="27" display="off"/>
-<attribute name="MODEL" value="NF_S_RA_B" x="66.04" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="105405-1304" x="66.04" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="80.01" y="27.94" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
@@ -5001,7 +5018,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="76.327" y="31.75" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
 <element name="D3" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="92.71" y="48.26" smashed="yes" rot="R180">
-<attribute name="COLOR" value="RED" x="92.71" y="48.26" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="COLOR" value="Red" x="92.71" y="48.26" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="92.71" y="48.26" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="92.71" y="48.26" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="92.71" y="48.26" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5009,7 +5026,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="92.71" y="49.796" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="D2" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="92.71" y="50.8" smashed="yes" rot="R180">
-<attribute name="COLOR" value="RED" x="92.71" y="50.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="COLOR" value="Red" x="92.71" y="50.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="92.71" y="50.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="92.71" y="50.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="92.71" y="50.8" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5041,7 +5058,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_MAX" value="75V" x="96.52" y="50.8" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D1" library="HyTechDevices" package="0603-LED" value="LED_0603_RED" x="92.71" y="53.34" smashed="yes" rot="R180">
-<attribute name="COLOR" value="RED" x="92.71" y="53.34" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="COLOR" value="Red" x="92.71" y="53.34" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DKPN" value="754-1786-1-ND" x="92.71" y="53.34" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="92.71" y="53.34" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECKJ3PRV" x="92.71" y="53.34" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5578,18 +5595,18 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="55.372" y1="52.451" x2="52.20079375" y2="52.451" width="0.381" layer="16"/>
 <wire x1="58.185" y1="51.745" x2="56.078" y2="51.745" width="0.381" layer="1"/>
 <wire x1="56.078" y1="51.745" x2="55.372" y2="52.451" width="0.381" layer="1"/>
-<contactref element="J1" pad="4"/>
 <wire x1="48.77179375" y1="55.88" x2="41.91" y2="55.88" width="0.381" layer="16"/>
 <via x="41.91" y="55.88" extent="1-16" drill="0.35"/>
 <wire x1="41.91" y1="55.88" x2="41.18" y2="56.61" width="0.381" layer="1"/>
 <wire x1="41.18" y1="56.61" x2="41.18" y2="57.54" width="0.381" layer="1"/>
 <wire x1="52.20079375" y1="52.451" x2="48.77179375" y2="55.88" width="0.381" layer="16"/>
 <wire x1="41.91" y1="55.88" x2="40.64" y2="55.88" width="0.381" layer="16"/>
-<wire x1="33.02" y1="56.007" x2="32.385" y2="56.642" width="0.381" layer="1"/>
 <wire x1="33.02" y1="53.4035" x2="33.02" y2="56.007" width="0.381" layer="1"/>
 <wire x1="38.7731" y1="57.7469" x2="33.4899" y2="57.7469" width="0.381" layer="16"/>
-<wire x1="33.4899" y1="57.7469" x2="32.385" y2="56.642" width="0.381" layer="16"/>
 <wire x1="40.64" y1="55.88" x2="38.7731" y2="57.7469" width="0.381" layer="16"/>
+<contactref element="J1" pad="4"/>
+<wire x1="33.4899" y1="57.7469" x2="32.385" y2="56.642" width="0.381" layer="16"/>
+<wire x1="33.02" y1="56.007" x2="32.385" y2="56.642" width="0.381" layer="1"/>
 </signal>
 <signal name="ATMEGA_SDI">
 <contactref element="U2" pad="16"/>
@@ -5606,11 +5623,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="42.9669" y1="60.2841" x2="42.926" y2="60.325" width="0.381" layer="16"/>
 <wire x1="52.705" y1="53.467" x2="51.9391375" y2="53.467" width="0.381" layer="16"/>
 <wire x1="51.9391375" y1="53.467" x2="45.1220375" y2="60.2841" width="0.381" layer="16"/>
-<wire x1="45.1220375" y1="60.2841" x2="44.45" y2="60.2841" width="0.381" layer="16"/>
-<wire x1="44.45" y1="60.2841" x2="42.9669" y2="60.2841" width="0.381" layer="16"/>
-<contactref element="J1" pad="1"/>
+<wire x1="45.1220375" y1="60.2841" x2="42.9669" y2="60.2841" width="0.381" layer="16"/>
 <wire x1="40.38" y1="57.54" x2="38.738" y2="59.182" width="0.381" layer="1"/>
-<wire x1="38.738" y1="59.182" x2="34.925" y2="59.182" width="0.381" layer="1"/>
 <wire x1="31.75" y1="53.4035" x2="31.75" y2="54.61" width="0.381" layer="1"/>
 <via x="31.75" y="54.61" extent="1-16" drill="0.35"/>
 <wire x1="31.2801" y1="56.18433125" x2="31.2801" y2="57.09966875" width="0.381" layer="16"/>
@@ -5620,6 +5634,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="31.75" y1="55.71443125" x2="31.2801" y2="56.18433125" width="0.381" layer="16"/>
 <wire x1="32.73555625" y1="57.7469" x2="35.27275625" y2="60.2841" width="0.381" layer="16"/>
 <wire x1="35.27275625" y1="60.2841" x2="42.9669" y2="60.2841" width="0.381" layer="16"/>
+<contactref element="J1" pad="1"/>
+<wire x1="38.738" y1="59.182" x2="34.925" y2="59.182" width="0.381" layer="1"/>
 </signal>
 <signal name="CLK">
 <contactref element="U2" pad="17"/>
