@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1646,9 +1646,9 @@
 <instance part="P1" gate="1" x="33.02" y="7.62" smashed="yes">
 <attribute name="VALUE" x="33.02" y="10.16" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R5" gate="G$1" x="15.24" y="5.08" smashed="yes">
-<attribute name="NAME" x="13.97" y="6.35" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="13.97" y="3.81" size="1.27" layer="96" align="top-center"/>
+<instance part="R5" gate="G$1" x="-7.62" y="0" smashed="yes" rot="R90">
+<attribute name="NAME" x="-8.89" y="-1.27" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-6.35" y="-1.27" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="R6" gate="G$1" x="38.1" y="-12.7" smashed="yes">
 <attribute name="NAME" x="36.83" y="-11.43" size="1.27" layer="95" align="bottom-center"/>
@@ -1714,10 +1714,8 @@
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="DISCHARGE"/>
 <wire x1="-7.62" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.1524" layer="91"/>
-<junction x="-7.62" y="-5.08"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="91"/>
+<junction x="-7.62" y="-5.08"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -1726,13 +1724,14 @@
 <pinref part="U1" gate="G$1" pin="!RESET"/>
 <wire x1="30.48" y1="-5.08" x2="33.02" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-5.08" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="-2.54" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="5.08" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
-<junction x="33.02" y="5.08"/>
+<wire x1="33.02" y1="-2.54" x2="33.02" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="33.02" y1="2.54" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-2.54" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="33.02" y="-2.54"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="2.54" x2="33.02" y2="2.54" width="0.1524" layer="91"/>
+<junction x="33.02" y="2.54"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="1" pin="+5V"/>
