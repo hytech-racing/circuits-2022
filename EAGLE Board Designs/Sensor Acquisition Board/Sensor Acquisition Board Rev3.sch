@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -5165,6 +5165,8 @@ Layer: 94 Symbol</description>
 <sheets>
 <sheet>
 <plain>
+<text x="281.94" y="22.86" size="2.54" layer="94" font="vector">Bo Han Zhu</text>
+<text x="330.2" y="10.16" size="2.54" layer="94" font="vector">PCB to convert 4 analog sensor readings into CAN.</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="48.26" y="213.36" smashed="yes">
