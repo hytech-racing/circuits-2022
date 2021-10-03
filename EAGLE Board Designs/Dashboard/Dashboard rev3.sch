@@ -7867,9 +7867,9 @@ Note: Based on Page 6.</description>
 <junction x="35.56" y="40.64"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="157.48" x2="104.14" y2="157.48" width="0.1524" layer="91"/>
-<label x="104.14" y="157.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="PD5"/>
+<label x="104.14" y="134.62" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PC5(ADC5)"/>
+<wire x1="106.68" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
