@@ -6479,8 +6479,8 @@ visible on the PCB.</text>
 <instance part="P+20" gate="1" x="78.74" y="200.66" smashed="yes">
 <attribute name="VALUE" x="81.026" y="204.216" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+23" gate="1" x="38.1" y="190.5" smashed="yes">
-<attribute name="VALUE" x="40.64" y="193.802" size="1.778" layer="96" rot="R180"/>
+<instance part="P+23" gate="1" x="35.56" y="190.5" smashed="yes">
+<attribute name="VALUE" x="38.1" y="193.802" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+24" gate="1" x="208.28" y="183.642" smashed="yes">
 <attribute name="VALUE" x="208.28" y="186.182" size="1.778" layer="96" rot="R180"/>
@@ -6635,9 +6635,9 @@ visible on the PCB.</text>
 <attribute name="COLOR" x="33.02" y="26.162" size="1.27" layer="95" align="top-left"/>
 <attribute name="NAME" x="31.75" y="31.496" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="D14" gate="G$1" x="45.72" y="187.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="43.815" y="186.69" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="47.625" y="186.69" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="D14" gate="G$1" x="30.48" y="170.18" smashed="yes">
+<attribute name="NAME" x="29.21" y="172.085" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VOLTAGE" x="29.21" y="168.275" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="X7" gate="G$1" x="91.44" y="175.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="91.44" y="174.498" size="1.778" layer="95" rot="R180"/>
@@ -6678,8 +6678,8 @@ visible on the PCB.</text>
 <instance part="P15" gate="1" x="73.66" y="7.62" smashed="yes">
 <attribute name="VALUE" x="73.66" y="6.35" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P16" gate="1" x="40.64" y="180.34" smashed="yes">
-<attribute name="VALUE" x="40.64" y="179.07" size="1.27" layer="96" align="top-center"/>
+<instance part="P16" gate="1" x="20.32" y="162.56" smashed="yes">
+<attribute name="VALUE" x="20.32" y="161.29" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P17" gate="1" x="27.94" y="195.58" smashed="yes">
 <attribute name="VALUE" x="27.94" y="194.31" size="1.27" layer="96" align="top-center"/>
@@ -7189,15 +7189,6 @@ visible on the PCB.</text>
 <junction x="73.66" y="144.78"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="185.42" x2="40.64" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="185.42" x2="40.64" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="182.88" x2="45.72" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="D14" gate="G$1" pin="A"/>
-<pinref part="P16" gate="1" pin="GND"/>
-<junction x="40.64" y="182.88"/>
-<pinref part="J2" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <wire x1="81.28" y1="177.8" x2="78.74" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="177.8" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="X7" gate="G$1" pin="1"/>
@@ -7289,6 +7280,14 @@ visible on the PCB.</text>
 <pinref part="P23" gate="1" pin="GND"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="60.96" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P16" gate="1" pin="GND"/>
+<pinref part="J2" gate="G$1" pin="8"/>
+<wire x1="20.32" y1="165.1" x2="20.32" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="D14" gate="G$1" pin="A"/>
+<wire x1="25.4" y1="170.18" x2="20.32" y2="170.18" width="0.1524" layer="91"/>
+<junction x="20.32" y="170.18"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -7420,10 +7419,8 @@ visible on the PCB.</text>
 <pinref part="J3" gate="G$1" pin="CANL"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="180.34" x2="30.48" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="180.34" x2="30.48" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
-<label x="40.64" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="180.34" x2="40.64" y2="180.34" width="0.1524" layer="91"/>
+<label x="40.64" y="180.34" size="1.27" layer="95" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 </segment>
 </net>
@@ -7439,10 +7436,8 @@ visible on the PCB.</text>
 <pinref part="J3" gate="G$1" pin="CANH"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="177.8" x2="27.94" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="177.8" x2="27.94" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="172.72" x2="40.64" y2="172.72" width="0.1524" layer="91"/>
-<label x="40.64" y="172.72" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="177.8" x2="40.64" y2="177.8" width="0.1524" layer="91"/>
+<label x="40.64" y="177.8" size="1.27" layer="95" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="5"/>
 </segment>
 </net>
@@ -7455,13 +7450,12 @@ visible on the PCB.</text>
 </segment>
 <segment>
 <pinref part="P+23" gate="1" pin="+12V"/>
-<wire x1="20.32" y1="187.96" x2="38.1" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="187.96" x2="40.64" y2="187.96" width="0.1524" layer="91"/>
-<junction x="38.1" y="187.96"/>
-<wire x1="40.64" y1="187.96" x2="40.64" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="190.5" x2="45.72" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="D14" gate="G$1" pin="C"/>
+<wire x1="20.32" y1="187.96" x2="35.56" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="D14" gate="G$1" pin="C"/>
+<wire x1="33.02" y1="170.18" x2="35.56" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="170.18" x2="35.56" y2="187.96" width="0.1524" layer="91"/>
+<junction x="35.56" y="187.96"/>
 </segment>
 <segment>
 <pinref part="F1" gate="G$1" pin="1"/>
@@ -7582,10 +7576,8 @@ visible on the PCB.</text>
 <pinref part="D5" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="182.88" x2="33.02" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="182.88" x2="33.02" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="177.8" x2="40.64" y2="177.8" width="0.1524" layer="91"/>
-<label x="40.64" y="177.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="182.88" x2="40.64" y2="182.88" width="0.1524" layer="91"/>
+<label x="40.64" y="182.88" size="1.27" layer="95" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="3"/>
 </segment>
 </net>
@@ -7697,10 +7689,8 @@ visible on the PCB.</text>
 <pinref part="D6" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="175.26" x2="25.4" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="175.26" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="170.18" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
-<label x="40.64" y="170.18" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
+<label x="40.64" y="175.26" size="1.27" layer="95" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="6"/>
 </segment>
 </net>
@@ -8094,10 +8084,8 @@ visible on the PCB.</text>
 <net name="INERTIA" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="7"/>
-<wire x1="20.32" y1="172.72" x2="22.86" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="172.72" x2="22.86" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
-<label x="40.64" y="167.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="172.72" x2="40.64" y2="172.72" width="0.1524" layer="91"/>
+<label x="40.64" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="D3" gate="G$1" pin="A"/>
