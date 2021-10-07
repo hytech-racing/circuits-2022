@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -11213,12 +11213,12 @@ requirement of EV.8.3.2.</text>
 <approved hash="104,1,269.24,147.32,U3,VDD,VREGU,,,"/>
 <approved hash="104,1,254,63.5,U4,GND,V-L,,,"/>
 <approved hash="104,1,269.24,73.66,U4,VDD,VREGL,,,"/>
-<approved hash="104,1,185.42,111.76,U5,VIN,N$6,,,"/>
-<approved hash="104,1,185.42,93.98,U5,GND,V-U,,,"/>
-<approved hash="104,1,210.82,96.52,U5,VOUT,VREGU,,,"/>
-<approved hash="104,1,142.24,73.66,U6,VIN,N$14,,,"/>
-<approved hash="104,1,142.24,55.88,U6,GND,V-L,,,"/>
-<approved hash="104,1,167.64,58.42,U6,VOUT,VREGL,,,"/>
+<approved hash="104,1,180.34,111.76,U5,VIN,VINU,,,"/>
+<approved hash="104,1,180.34,93.98,U5,GND,V-U,,,"/>
+<approved hash="104,1,205.74,96.52,U5,VOUT,VREGU,,,"/>
+<approved hash="104,1,137.16,73.66,U6,VIN,VINL,,,"/>
+<approved hash="104,1,137.16,55.88,U6,GND,V-L,,,"/>
+<approved hash="104,1,162.56,58.42,U6,VOUT,VREGL,,,"/>
 <approved hash="208,1,236.22,63.5,V-L,sup,,,,"/>
 <approved hash="208,1,271.78,66.04,V-L,sup,,,,"/>
 <approved hash="208,1,106.68,101.6,V-L,sup,,,,"/>
@@ -11247,14 +11247,15 @@ requirement of EV.8.3.2.</text>
 <approved hash="208,1,81.28,17.78,V-L,sup,,,,"/>
 <approved hash="208,1,139.7,93.98,V-L,sup,,,,"/>
 <approved hash="208,1,160.02,96.52,V-L,sup,,,,"/>
-<approved hash="208,1,119.38,38.1,V-L,sup,,,,"/>
+<approved hash="208,1,116.84,38.1,V-L,sup,,,,"/>
 <approved hash="208,1,76.2,104.14,V-L,sup,,,,"/>
 <approved hash="208,1,238.76,116.84,V-L,sup,,,,"/>
 <approved hash="208,1,238.76,104.14,V-L,sup,,,,"/>
 <approved hash="208,1,238.76,91.44,V-L,sup,,,,"/>
 <approved hash="208,1,238.76,78.74,V-L,sup,,,,"/>
 <approved hash="208,1,160.02,119.38,V-L,sup,,,,"/>
-<approved hash="208,1,137.16,55.88,V-L,sup,,,,"/>
+<approved hash="208,1,132.08,55.88,V-L,sup,,,,"/>
+<approved hash="208,1,167.64,55.88,V-L,sup,,,,"/>
 <approved hash="208,1,236.22,137.16,V-U,sup,,,,"/>
 <approved hash="208,1,271.78,139.7,V-U,sup,,,,"/>
 <approved hash="208,1,71.12,198.12,V-U,sup,,,,"/>
@@ -11263,7 +11264,7 @@ requirement of EV.8.3.2.</text>
 <approved hash="208,1,254,165.1,V-U,sup,,,,"/>
 <approved hash="208,1,254,177.8,V-U,sup,,,,"/>
 <approved hash="208,1,254,190.5,V-U,sup,,,,"/>
-<approved hash="208,1,139.7,170.18,V-U,sup,,,,"/>
+<approved hash="208,1,139.7,167.64,V-U,sup,,,,"/>
 <approved hash="208,1,238.76,152.4,V-U,sup,,,,"/>
 <approved hash="208,1,63.5,187.96,V-U,sup,,,,"/>
 <approved hash="208,1,63.5,180.34,V-U,sup,,,,"/>
@@ -11281,12 +11282,13 @@ requirement of EV.8.3.2.</text>
 <approved hash="208,1,81.28,121.92,V-U,sup,,,,"/>
 <approved hash="208,1,139.7,198.12,V-U,sup,,,,"/>
 <approved hash="208,1,160.02,200.66,V-U,sup,,,,"/>
-<approved hash="208,1,119.38,142.24,V-U,sup,,,,"/>
+<approved hash="208,1,116.84,142.24,V-U,sup,,,,"/>
 <approved hash="208,1,238.76,190.5,V-U,sup,,,,"/>
 <approved hash="208,1,238.76,177.8,V-U,sup,,,,"/>
 <approved hash="208,1,238.76,165.1,V-U,sup,,,,"/>
 <approved hash="208,1,160.02,144.78,V-U,sup,,,,"/>
-<approved hash="208,1,180.34,93.98,V-U,sup,,,,"/>
+<approved hash="208,1,175.26,93.98,V-U,sup,,,,"/>
+<approved hash="208,1,213.36,93.98,V-U,sup,,,,"/>
 </errors>
 </schematic>
 </drawing>
