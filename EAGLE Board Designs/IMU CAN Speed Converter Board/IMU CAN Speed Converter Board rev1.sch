@@ -4561,8 +4561,10 @@ Based on page 10.</description>
 <parts>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
 <attribute name="DESCRIPTION_1" value="Convert IMU's CAN speed from 1Mbps to 500 kbps"/>
+<attribute name="DESIGNER_BOARD" value="Bo Han Zhu"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Bo Han Zhu"/>
 <attribute name="ENGINEER" value="Bo Han Zhu"/>
+<attribute name="REVIEWER_BOARD" value="Zekun Li"/>
 <attribute name="REVIEWER_FURTHER" value="Joshua Kirshenbaum"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Zekun Li"/>
 </part>
