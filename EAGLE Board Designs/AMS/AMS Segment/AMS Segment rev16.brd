@@ -14,7 +14,7 @@
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
 <layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
-<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="yes"/>
 <layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
 <layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
 <layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
@@ -29,11 +29,11 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -2681,14 +2681,14 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="NAME" x="14.3686" y="-9.4742" size="0.8128" layer="25" font="vector" rot="R270" align="top-center"/>
 <attribute name="VOLTAGE" value="500V" x="9.7536" y="-9.4742" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="F22" library="HyTechDevices" package="0885" value="FUSE_0885_1.6" x="137.1727" y="-32.4668375" smashed="yes">
-<attribute name="CURRENT" value="1.6A" x="137.1727" y="-32.4668375" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="F10987CT-ND" x="137.1727" y="-32.4668375" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc." x="137.1727" y="-32.4668375" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="576-088501.6DR" x="137.1727" y="-32.4668375" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="088501.6DR" x="137.1727" y="-32.4668375" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="137.1727" y="-27.8518375" size="0.8128" layer="25" font="vector" align="top-center"/>
-<attribute name="VOLTAGE" value="500V" x="137.1727" y="-32.4668375" size="1.778" layer="27" display="off"/>
+<element name="F22" library="HyTechDevices" package="0885" value="FUSE_0885_1.6" x="141.7447" y="-31.8318375" smashed="yes">
+<attribute name="CURRENT" value="1.6A" x="141.7447" y="-31.8318375" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="F10987CT-ND" x="141.7447" y="-31.8318375" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc." x="141.7447" y="-31.8318375" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="576-088501.6DR" x="141.7447" y="-31.8318375" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="088501.6DR" x="141.7447" y="-31.8318375" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="141.7447" y="-27.2168375" size="0.8128" layer="25" font="vector" align="top-center"/>
+<attribute name="VOLTAGE" value="500V" x="141.7447" y="-31.8318375" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F3" library="HyTechDevices" package="0885" value="FUSE_0885_1.6" x="232.9434" y="-9.4615" smashed="yes" rot="R270">
 <attribute name="CURRENT" value="1.6A" x="232.9434" y="-9.4615" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3551,7 +3551,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="78.5368" y="-44.8056" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="534-5015" x="78.5368" y="-44.8056" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="78.5368" y="-44.8056" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="78.5368" y="-46.0756" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="78.5622" y="-43.7134" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="TP2" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="86.9442" y="-22.6695" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="86.9442" y="-22.6695" size="1.778" layer="27" display="off"/>
@@ -3574,12 +3574,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5015" x="197.2818" y="-22.5425" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="195.2244" y="-22.4917" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
-<element name="TP7" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="197.6628" y="-60.1726" smashed="yes" rot="R180">
-<attribute name="DKPN" value="36-5015CT-ND" x="197.6628" y="-60.1726" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="Keystone Electronics" x="197.6628" y="-60.1726" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOPN" value="534-5015" x="197.6628" y="-60.1726" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="5015" x="197.6628" y="-60.1726" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="197.6628" y="-61.4426" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<element name="TP7" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="197.5866" y="-60.1726" smashed="yes" rot="R180">
+<attribute name="DKPN" value="36-5015CT-ND" x="197.5866" y="-60.1726" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics" x="197.5866" y="-60.1726" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="534-5015" x="197.5866" y="-60.1726" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="5015" x="197.5866" y="-60.1726" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="197.5866" y="-61.4426" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="TP8" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="197.2818" y="-19.8755" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="197.2818" y="-19.8755" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3782,15 +3782,15 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="TOLERANCE" value="20%" x="79.502" y="-60.325" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="79.502" y="-60.325" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C31" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="196.088" y="-47.117" smashed="yes" rot="R90">
-<attribute name="CAPACITANCE" value="1µF" x="196.088" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DKPN" value="311-1796-1-ND" x="196.088" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="196.088" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOPN" value="603-CC603KRX7R6BB105" x="196.088" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="CC0603KRX7R6BB105" x="196.088" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="196.088" y="-45.732" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="TOLERANCE" value="10%" x="196.088" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VOLTAGE" value="10V" x="196.088" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C31" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="196.1896" y="-47.117" smashed="yes" rot="R90">
+<attribute name="CAPACITANCE" value="1µF" x="196.1896" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DKPN" value="311-1796-1-ND" x="196.1896" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="196.1896" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOPN" value="603-CC603KRX7R6BB105" x="196.1896" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="CC0603KRX7R6BB105" x="196.1896" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="196.1896" y="-45.732" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="196.1896" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOLTAGE" value="10V" x="196.1896" y="-46.482" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C32" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="88.9" y="-36.576" smashed="yes" rot="R180">
 <attribute name="CAPACITANCE" value="1µF" x="88.265" y="-36.576" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3809,10 +3809,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="T1" pad="12"/>
 <contactref element="U1" pad="41"/>
 <via x="81.1276" y="-54.61" extent="1-16" drill="0.2286"/>
-<wire x1="81.1276" y1="-54.61" x2="79.9084" y2="-55.8292" width="0.1524" layer="1"/>
-<wire x1="79.9084" y1="-55.8292" x2="79.50274375" y2="-55.8292" width="0.1524" layer="1"/>
-<wire x1="79.50274375" y1="-55.8292" x2="78.9072" y2="-56.42474375" width="0.1524" layer="1"/>
-<wire x1="78.9072" y1="-56.42474375" x2="78.9072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="79.8576" y1="-55.245" x2="78.9072" y2="-56.1954" width="0.1524" layer="1"/>
+<wire x1="78.9072" y1="-56.1954" x2="78.9072" y2="-56.9994" width="0.1524" layer="1"/>
 <wire x1="82.4738" y1="-53.0098" x2="81.1276" y2="-54.356" width="0.1524" layer="15"/>
 <wire x1="81.1276" y1="-54.61" x2="81.1276" y2="-54.356" width="0.1524" layer="15"/>
 <wire x1="82.4738" y1="-53.0098" x2="84.582" y2="-53.0098" width="0.1524" layer="15"/>
@@ -3829,6 +3827,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="85.318971875" y1="-61.545378125" x2="86.5632" y2="-60.30115" width="0.1524" layer="15"/>
 <wire x1="117.1702" y1="-65.9638" x2="86.10674375" y2="-65.9638" width="0.1524" layer="15"/>
 <wire x1="86.5632" y1="-60.30115" x2="86.5632" y2="-54.991" width="0.1524" layer="15"/>
+<wire x1="81.03034375" y1="-54.61" x2="81.1276" y2="-54.61" width="0.1524" layer="1"/>
+<wire x1="80.39534375" y1="-55.245" x2="81.03034375" y2="-54.61" width="0.1524" layer="1"/>
+<wire x1="79.8576" y1="-55.245" x2="80.39534375" y2="-55.245" width="0.1524" layer="1"/>
 </signal>
 <signal name="SENSE18" class="3">
 <contactref element="F18" pad="2"/>
@@ -3959,19 +3960,18 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="CELL13:Q1" pad="2"/>
 <contactref element="CELL14:R3" pad="1"/>
 <contactref element="CELL14:R4" pad="1"/>
-<wire x1="70.3834" y1="-64.9088" x2="73.5014" y2="-68.0268" width="0.1524" layer="1"/>
-<wire x1="73.5014" y1="-68.0268" x2="73.5014" y2="-71.2722875" width="0.1524" layer="1"/>
-<wire x1="73.5014" y1="-71.2722875" x2="73.6353125" y2="-71.4062" width="0.1524" layer="1"/>
-<wire x1="73.6353125" y1="-71.4062" x2="76.2246875" y2="-71.4062" width="0.1524" layer="1"/>
-<wire x1="78.5682875" y1="-69.0626" x2="80.01" y2="-69.0626" width="0.1524" layer="1"/>
-<wire x1="76.2246875" y1="-71.4062" x2="78.5682875" y2="-69.0626" width="0.1524" layer="1"/>
+<wire x1="70.3834" y1="-64.9088" x2="73.1204" y2="-67.6458" width="0.1524" layer="1"/>
+<wire x1="73.1204" y1="-67.6458" x2="73.1204" y2="-71.3992875" width="0.1524" layer="1"/>
+<wire x1="73.1204" y1="-71.3992875" x2="73.7623125" y2="-72.0412" width="0.1524" layer="1"/>
+<wire x1="73.7623125" y1="-72.0412" x2="76.3516875" y2="-72.0412" width="0.1524" layer="1"/>
+<wire x1="79.3302875" y1="-69.0626" x2="80.01" y2="-69.0626" width="0.1524" layer="1"/>
+<wire x1="76.3516875" y1="-72.0412" x2="79.3302875" y2="-69.0626" width="0.1524" layer="1"/>
 <wire x1="80.01" y1="-69.0626" x2="83.6242" y2="-65.4484" width="0.1524" layer="1"/>
 <wire x1="83.6242" y1="-62.16449375" x2="84.60609375" y2="-61.1826" width="0.1524" layer="1"/>
 <wire x1="84.60609375" y1="-61.1826" x2="85.979" y2="-61.1826" width="0.1524" layer="1"/>
 <wire x1="83.6242" y1="-65.4484" x2="83.6242" y2="-62.16449375" width="0.1524" layer="1"/>
 <wire x1="85.979" y1="-61.1826" x2="86.9454" y2="-60.2162" width="0.1524" layer="1"/>
-<wire x1="88.6206" y1="-56.7759125" x2="88.6206" y2="-56.261" width="0.1524" layer="1"/>
-<wire x1="88.6206" y1="-56.261" x2="88.6206" y2="-56.2492" width="0.1524" layer="1"/>
+<wire x1="88.6206" y1="-56.7759125" x2="88.6206" y2="-56.2492" width="0.1524" layer="1"/>
 <wire x1="89.2492" y1="-57.4045125" x2="88.6206" y2="-56.7759125" width="0.1524" layer="1"/>
 <wire x1="86.9454" y1="-60.2162" x2="88.9754875" y2="-60.2162" width="0.1524" layer="1"/>
 <wire x1="88.9754875" y1="-60.2162" x2="89.2492" y2="-59.9424875" width="0.1524" layer="1"/>
@@ -4000,12 +4000,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="138.5316" y1="-14.7115" x2="141.8307" y2="-18.0106" width="0.1524" layer="1"/>
 <wire x1="141.8307" y1="-18.0106" x2="142.9786" y2="-18.0106" width="0.1524" layer="1"/>
 <wire x1="142.9786" y1="-18.0106" x2="162.433" y2="-37.465" width="0.1524" layer="1"/>
-<wire x1="164.6174" y1="-59.4106" x2="164.6174" y2="-56.82889375" width="0.1524" layer="1"/>
+<wire x1="164.6174" y1="-59.4106" x2="164.6174" y2="-57.33689375" width="0.1524" layer="1"/>
 <wire x1="161.4288" y1="-44.43090625" x2="163.0362" y2="-42.82350625" width="0.1524" layer="1"/>
 <wire x1="163.0362" y1="-42.82350625" x2="163.0362" y2="-39.6058" width="0.1524" layer="1"/>
 <wire x1="163.0362" y1="-39.6058" x2="162.4076" y2="-38.9772" width="0.1524" layer="1"/>
-<wire x1="164.6174" y1="-56.82889375" x2="161.4288" y2="-53.64029375" width="0.1524" layer="1"/>
-<wire x1="161.4288" y1="-53.64029375" x2="161.4288" y2="-44.43090625" width="0.1524" layer="1"/>
+<wire x1="164.6174" y1="-57.33689375" x2="161.4288" y2="-54.14829375" width="0.1524" layer="1"/>
+<wire x1="161.4288" y1="-54.14829375" x2="161.4288" y2="-44.43090625" width="0.1524" layer="1"/>
 <wire x1="160.5598" y1="-64.1344875" x2="160.5598" y2="-63.0451125" width="0.1524" layer="1"/>
 <wire x1="160.5598" y1="-63.0451125" x2="160.6937125" y2="-62.9112" width="0.1524" layer="1"/>
 <wire x1="161.1884" y1="-65.2898" x2="161.1884" y2="-64.7630875" width="0.1524" layer="1"/>
@@ -4028,12 +4028,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="183.1086" y1="-64.8023125" x2="183.7817" y2="-64.1292125" width="0.1524" layer="1"/>
 <wire x1="183.7817" y1="-63.373" x2="183.8071" y2="-63.3984" width="0.1524" layer="1"/>
 <wire x1="183.8071" y1="-63.3984" x2="185.2812" y2="-63.3984" width="0.1524" layer="1"/>
-<wire x1="200.6973875" y1="-71.7872" x2="201.7455875" y2="-70.739" width="0.1524" layer="1"/>
-<wire x1="184.531" y1="-66.167" x2="187.4078125" y2="-66.167" width="0.1524" layer="1"/>
-<wire x1="187.4078125" y1="-66.167" x2="193.0280125" y2="-71.7872" width="0.1524" layer="1"/>
-<wire x1="193.0280125" y1="-71.7872" x2="200.6973875" y2="-71.7872" width="0.1524" layer="1"/>
+<wire x1="201.5863875" y1="-72.1682" x2="203.0155875" y2="-70.739" width="0.1524" layer="1"/>
+<wire x1="184.531" y1="-66.167" x2="186.7728125" y2="-66.167" width="0.1524" layer="1"/>
+<wire x1="186.7728125" y1="-66.167" x2="192.7740125" y2="-72.1682" width="0.1524" layer="1"/>
+<wire x1="192.7740125" y1="-72.1682" x2="201.5863875" y2="-72.1682" width="0.1524" layer="1"/>
 <wire x1="208.241146875" y1="-70.739" x2="208.248946875" y2="-70.7468" width="0.1524" layer="1"/>
-<wire x1="201.7455875" y1="-70.739" x2="208.241146875" y2="-70.739" width="0.1524" layer="1"/>
+<wire x1="203.0155875" y1="-70.739" x2="208.241146875" y2="-70.739" width="0.1524" layer="1"/>
 <wire x1="161.5372" y1="-31.5264" x2="160.5162" y2="-30.5054" width="0.1524" layer="1"/>
 <wire x1="161.5372" y1="-32.6002875" x2="161.5372" y2="-31.5264" width="0.1524" layer="1"/>
 <wire x1="162.7951125" y1="-33.8582" x2="166.8526" y2="-33.8582" width="0.1524" layer="1"/>
@@ -4064,12 +4064,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="184.8358" y1="-66.929" x2="184.8358" y2="-69.4436" width="0.1524" layer="1"/>
 <wire x1="187.706" y1="-57.023" x2="185.9598" y2="-58.7692" width="0.1524" layer="1"/>
 <wire x1="185.9598" y1="-58.7692" x2="185.9598" y2="-62.23" width="0.1524" layer="1"/>
-<wire x1="181.0504875" y1="-71.7872" x2="178.4611125" y2="-71.7872" width="0.1524" layer="1"/>
-<wire x1="178.4611125" y1="-71.7872" x2="178.3272" y2="-71.6532875" width="0.1524" layer="1"/>
-<wire x1="184.8358" y1="-69.4436" x2="183.3940875" y2="-69.4436" width="0.1524" layer="1"/>
-<wire x1="178.3272" y1="-66.9346" x2="176.6824" y2="-65.2898" width="0.1524" layer="1"/>
-<wire x1="183.3940875" y1="-69.4436" x2="181.0504875" y2="-71.7872" width="0.1524" layer="1"/>
-<wire x1="178.3272" y1="-71.6532875" x2="178.3272" y2="-66.9346" width="0.1524" layer="1"/>
+<wire x1="181.1774875" y1="-72.1682" x2="178.5881125" y2="-72.1682" width="0.1524" layer="1"/>
+<wire x1="178.5881125" y1="-72.1682" x2="177.9462" y2="-71.5262875" width="0.1524" layer="1"/>
+<wire x1="184.8358" y1="-69.4436" x2="183.9020875" y2="-69.4436" width="0.1524" layer="1"/>
+<wire x1="177.9462" y1="-66.5536" x2="176.6824" y2="-65.2898" width="0.1524" layer="1"/>
+<wire x1="183.9020875" y1="-69.4436" x2="181.1774875" y2="-72.1682" width="0.1524" layer="1"/>
+<wire x1="177.9462" y1="-71.5262875" x2="177.9462" y2="-66.5536" width="0.1524" layer="1"/>
 <wire x1="185.42" y1="-62.7698" x2="185.9598" y2="-62.23" width="0.1524" layer="1"/>
 <wire x1="183.75125625" y1="-66.7766" x2="184.6834" y2="-66.7766" width="0.1524" layer="1"/>
 <wire x1="183.75125625" y1="-66.7766" x2="182.8038" y2="-65.82914375" width="0.1524" layer="1"/>
@@ -4094,11 +4094,11 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="CELL9:R4" pad="1"/>
 <wire x1="196.5833" y1="-65.278" x2="195.1092" y2="-65.278" width="0.1524" layer="1"/>
 <wire x1="195.1092" y1="-65.278" x2="195.0838" y2="-65.2526" width="0.1524" layer="1"/>
-<wire x1="188.3292" y1="-47.5234" x2="185.2036" y2="-50.649" width="0.1524" layer="1"/>
-<wire x1="185.2036" y1="-55.11489375" x2="185.06969375" y2="-55.2488" width="0.1524" layer="1"/>
-<wire x1="185.2036" y1="-50.649" x2="185.2036" y2="-55.11489375" width="0.1524" layer="1"/>
-<wire x1="185.06969375" y1="-55.2488" x2="182.5714" y2="-55.2488" width="0.1524" layer="1"/>
-<wire x1="182.5714" y1="-55.2488" x2="178.435" y2="-59.3852" width="0.1524" layer="1"/>
+<wire x1="188.3292" y1="-47.5234" x2="185.5846" y2="-50.268" width="0.1524" layer="1"/>
+<wire x1="185.5846" y1="-55.49589375" x2="185.06969375" y2="-56.0108" width="0.1524" layer="1"/>
+<wire x1="185.5846" y1="-50.268" x2="185.5846" y2="-55.49589375" width="0.1524" layer="1"/>
+<wire x1="185.06969375" y1="-56.0108" x2="181.8094" y2="-56.0108" width="0.1524" layer="1"/>
+<wire x1="181.8094" y1="-56.0108" x2="178.435" y2="-59.3852" width="0.1524" layer="1"/>
 <wire x1="217.53405625" y1="-70.7468" x2="212.9868" y2="-70.7468" width="0.1524" layer="1"/>
 <wire x1="212.9868" y1="-70.7468" x2="212.979" y2="-70.739" width="0.1524" layer="1"/>
 <via x="212.979" y="-70.739" extent="1-16" drill="0.2286"/>
@@ -4112,10 +4112,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="174.9298" y1="-73.5838" x2="168.6435" y2="-67.2975" width="0.1524" layer="15"/>
 <wire x1="168.6435" y1="-67.2846" x2="168.6435" y2="-67.2975" width="0.1524" layer="15"/>
 <via x="192.388659375" y="-66.437340625" extent="1-16" drill="0.2286"/>
-<wire x1="193.9284875" y1="-65.8812" x2="192.9448" y2="-65.8812" width="0.1524" layer="1"/>
-<wire x1="192.9448" y1="-65.8812" x2="192.388659375" y2="-66.437340625" width="0.1524" layer="1"/>
-<wire x1="195.0838" y1="-65.2526" x2="194.5570875" y2="-65.2526" width="0.1524" layer="1"/>
-<wire x1="194.5570875" y1="-65.2526" x2="193.9284875" y2="-65.8812" width="0.1524" layer="1"/>
+<wire x1="193.8014875" y1="-66.2622" x2="192.5638" y2="-66.2622" width="0.1524" layer="1"/>
+<wire x1="192.5638" y1="-66.2622" x2="192.388659375" y2="-66.437340625" width="0.1524" layer="1"/>
+<wire x1="195.0838" y1="-65.2526" x2="194.8110875" y2="-65.2526" width="0.1524" layer="1"/>
+<wire x1="194.8110875" y1="-65.2526" x2="193.8014875" y2="-66.2622" width="0.1524" layer="1"/>
 <wire x1="192.388659375" y1="-66.437340625" x2="192.388659375" y2="-69.833659375" width="0.1524" layer="15"/>
 <wire x1="192.388659375" y1="-69.833659375" x2="193.294" y2="-70.739" width="0.1524" layer="15"/>
 <wire x1="168.6435" y1="-67.2846" x2="173.3804" y2="-67.2846" width="0.1524" layer="1"/>
@@ -4130,12 +4130,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="CELL7:Q1" pad="2"/>
 <contactref element="CELL8:R3" pad="1"/>
 <contactref element="CELL8:R4" pad="1"/>
-<wire x1="204.3112" y1="-64.5165125" x2="204.3112" y2="-65.6058875" width="0.1524" layer="1"/>
-<wire x1="204.3112" y1="-65.6058875" x2="204.1772875" y2="-65.7398" width="0.1524" layer="1"/>
-<wire x1="203.6826" y1="-63.8879125" x2="203.6826" y2="-63.3612" width="0.1524" layer="1"/>
-<wire x1="203.1065" y1="-65.7398" x2="199.4027" y2="-69.4436" width="0.1524" layer="1"/>
-<wire x1="204.3112" y1="-64.5165125" x2="203.6826" y2="-63.8879125" width="0.1524" layer="1"/>
-<wire x1="204.1772875" y1="-65.7398" x2="203.1065" y2="-65.7398" width="0.1524" layer="1"/>
+<wire x1="204.4382" y1="-64.5165125" x2="204.4382" y2="-65.6058875" width="0.1524" layer="1"/>
+<wire x1="204.4382" y1="-65.6058875" x2="204.0502875" y2="-65.9938" width="0.1524" layer="1"/>
+<wire x1="203.6826" y1="-63.7609125" x2="203.6826" y2="-63.3612" width="0.1524" layer="1"/>
+<wire x1="202.8525" y1="-65.9938" x2="199.4027" y2="-69.4436" width="0.1524" layer="1"/>
+<wire x1="204.4382" y1="-64.5165125" x2="203.6826" y2="-63.7609125" width="0.1524" layer="1"/>
+<wire x1="204.0502875" y1="-65.9938" x2="202.8525" y2="-65.9938" width="0.1524" layer="1"/>
 <wire x1="208.2918" y1="-41.6306" x2="209.8929" y2="-41.6306" width="0.1524" layer="1"/>
 <wire x1="209.8929" y1="-41.6306" x2="209.9183" y2="-41.656" width="0.1524" layer="1"/>
 <via x="212.44219375" y="-69.75180625" extent="1-16" drill="0.2286"/>
@@ -4195,14 +4195,14 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="221.7674" y1="-58.5539125" x2="220.8344" y2="-57.6209125" width="0.1524" layer="1"/>
 <wire x1="220.8344" y1="-57.6209125" x2="220.8344" y2="-55.2329125" width="0.1524" layer="1"/>
 <wire x1="220.8344" y1="-55.2329125" x2="220.6648875" y2="-55.0634" width="0.1524" layer="1"/>
-<wire x1="211.8676" y1="-51.2186875" x2="211.8676" y2="-46.6076875" width="0.1524" layer="1"/>
-<wire x1="211.8676" y1="-46.6076875" x2="209.5442" y2="-44.2842875" width="0.1524" layer="1"/>
+<wire x1="212.5026" y1="-51.8536875" x2="212.5026" y2="-47.2426875" width="0.1524" layer="1"/>
+<wire x1="212.5026" y1="-47.2426875" x2="209.5442" y2="-44.2842875" width="0.1524" layer="1"/>
 <wire x1="209.5442" y1="-44.2842875" x2="209.5442" y2="-43.1534875" width="0.1524" layer="1"/>
 <wire x1="209.5442" y1="-43.1534875" x2="210.5914" y2="-42.1062875" width="0.1524" layer="1"/>
 <wire x1="209.7462875" y1="-40.3606" x2="207.7535125" y2="-40.3606" width="0.1524" layer="1"/>
 <wire x1="207.7535125" y1="-40.3606" x2="207.6132" y2="-40.2202875" width="0.1524" layer="1"/>
 <wire x1="220.6648875" y1="-55.0634" x2="215.7123125" y2="-55.0634" width="0.1524" layer="1"/>
-<wire x1="215.7123125" y1="-55.0634" x2="211.8676" y2="-51.2186875" width="0.1524" layer="1"/>
+<wire x1="215.7123125" y1="-55.0634" x2="212.5026" y2="-51.8536875" width="0.1524" layer="1"/>
 </signal>
 <signal name="SENSE5" class="4">
 <contactref element="F5" pad="2"/>
@@ -4253,25 +4253,29 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="233.48609375" y1="-68.6708125" x2="233.8431875" y2="-69.02790625" width="0.1524" layer="1"/>
 <wire x1="238.4806" y1="-62.5992" x2="238.4806" y2="-63.1259125" width="0.1524" layer="1"/>
 <wire x1="238.4806" y1="-63.1259125" x2="237.852" y2="-63.7545125" width="0.1524" layer="1"/>
-<wire x1="236.2461125" y1="-65.209" x2="233.48609375" y2="-67.96901875" width="0.1524" layer="1"/>
-<wire x1="233.48609375" y1="-67.96901875" x2="233.48609375" y2="-68.6708125" width="0.1524" layer="1"/>
+<wire x1="233.48609375" y1="-68.6708125" x2="233.48609375" y2="-67.96901875" width="0.1524" layer="1"/>
 <wire x1="241.75138125" y1="-69.02790625" x2="243.470275" y2="-70.7468" width="0.1524" layer="1"/>
 <wire x1="233.8431875" y1="-69.02790625" x2="241.75138125" y2="-69.02790625" width="0.1524" layer="1"/>
-<wire x1="237.852" y1="-63.7545125" x2="237.852" y2="-64.1960875" width="0.1524" layer="1"/>
-<wire x1="237.852" y1="-64.1960875" x2="236.8390875" y2="-65.209" width="0.1524" layer="1"/>
-<wire x1="236.8390875" y1="-65.209" x2="236.2461125" y2="-65.209" width="0.1524" layer="1"/>
+<wire x1="237.852" y1="-63.7545125" x2="237.852" y2="-64.4500875" width="0.1524" layer="1"/>
+<wire x1="237.852" y1="-64.4500875" x2="237.0930875" y2="-65.209" width="0.1524" layer="1"/>
+<wire x1="236.2461125" y1="-65.209" x2="237.0930875" y2="-65.209" width="0.1524" layer="1"/>
 <wire x1="238.506" y1="-61.0997" x2="237.1725" y2="-59.7662" width="0.1524" layer="1"/>
 <wire x1="237.1725" y1="-59.7662" x2="237.1159125" y2="-59.7662" width="0.1524" layer="1"/>
 <wire x1="237.1159125" y1="-59.7662" x2="234.95" y2="-57.6002875" width="0.1524" layer="1"/>
 <wire x1="234.95" y1="-57.6002875" x2="234.95" y2="-55.80305625" width="0.1524" layer="1"/>
-<wire x1="225.4442" y1="-53.4922875" x2="225.4442" y2="-49.0729125" width="0.1524" layer="1"/>
-<wire x1="226.6832" y1="-47.8339125" x2="226.6832" y2="-47.3964" width="0.1524" layer="1"/>
-<wire x1="225.4442" y1="-49.0729125" x2="226.6832" y2="-47.8339125" width="0.1524" layer="1"/>
-<wire x1="233.07794375" y1="-53.931" x2="225.8829125" y2="-53.931" width="0.1524" layer="1"/>
-<wire x1="225.8829125" y1="-53.931" x2="225.4442" y2="-53.4922875" width="0.1524" layer="1"/>
-<wire x1="234.95" y1="-55.80305625" x2="233.07794375" y2="-53.931" width="0.1524" layer="1"/>
+<wire x1="225.1902" y1="-53.4922875" x2="225.1902" y2="-49.0729125" width="0.1524" layer="1"/>
+<wire x1="226.6832" y1="-47.5799125" x2="226.6832" y2="-47.3964" width="0.1524" layer="1"/>
+<wire x1="225.1902" y1="-49.0729125" x2="226.6832" y2="-47.5799125" width="0.1524" layer="1"/>
+<wire x1="233.45894375" y1="-54.312" x2="226.0099125" y2="-54.312" width="0.1524" layer="1"/>
+<wire x1="226.0099125" y1="-54.312" x2="225.1902" y2="-53.4922875" width="0.1524" layer="1"/>
+<wire x1="234.95" y1="-55.80305625" x2="233.45894375" y2="-54.312" width="0.1524" layer="1"/>
 <wire x1="226.6832" y1="-47.3964" x2="222.1992" y2="-47.3964" width="0.1524" layer="1"/>
 <wire x1="222.1992" y1="-47.3964" x2="216.6112" y2="-41.8084" width="0.1524" layer="1"/>
+<wire x1="233.48609375" y1="-67.96901875" x2="233.8911125" y2="-67.564" width="0.1524" layer="1"/>
+<wire x1="233.8911125" y1="-67.564" x2="234.188" y2="-67.564" width="0.1524" layer="1"/>
+<wire x1="234.188" y1="-67.564" x2="236.1122" y2="-65.6398" width="0.1524" layer="1"/>
+<wire x1="236.1122" y1="-65.6398" x2="236.1122" y2="-65.3429125" width="0.1524" layer="1"/>
+<wire x1="236.1122" y1="-65.3429125" x2="236.2461125" y2="-65.209" width="0.1524" layer="1"/>
 </signal>
 <signal name="SENSE3" class="4">
 <contactref element="F3" pad="2"/>
@@ -4284,17 +4288,17 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="236.5892" y1="-54.0004" x2="233.8714" y2="-51.2826" width="0.1524" layer="1"/>
 <wire x1="233.8714" y1="-51.2826" x2="231.9528" y2="-51.2826" width="0.1524" layer="1"/>
 <wire x1="233.8001" y1="-14.7115" x2="232.9434" y2="-14.7115" width="0.1524" layer="1"/>
-<wire x1="242.9764" y1="-23.8878" x2="240.4246" y2="-21.336" width="0.1524" layer="1"/>
-<wire x1="240.4246" y1="-19.13250625" x2="240.29069375" y2="-18.9986" width="0.1524" layer="1"/>
-<wire x1="238.0872" y1="-18.9986" x2="233.8001" y2="-14.7115" width="0.1524" layer="1"/>
-<wire x1="240.4246" y1="-21.336" x2="240.4246" y2="-19.13250625" width="0.1524" layer="1"/>
-<wire x1="240.29069375" y1="-18.9986" x2="238.0872" y2="-18.9986" width="0.1524" layer="1"/>
+<wire x1="242.9764" y1="-23.8878" x2="240.5516" y2="-21.463" width="0.1524" layer="1"/>
+<wire x1="240.5516" y1="-19.00550625" x2="240.41769375" y2="-18.8716" width="0.1524" layer="1"/>
+<wire x1="237.9602" y1="-18.8716" x2="233.8001" y2="-14.7115" width="0.1524" layer="1"/>
+<wire x1="240.5516" y1="-21.463" x2="240.5516" y2="-19.00550625" width="0.1524" layer="1"/>
+<wire x1="240.41769375" y1="-18.8716" x2="237.9602" y2="-18.8716" width="0.1524" layer="1"/>
 <wire x1="230.8613125" y1="-36.4558" x2="230.7274" y2="-36.3218875" width="0.1524" layer="1"/>
 <wire x1="230.7274" y1="-36.3218875" x2="230.7274" y2="-31.9025125" width="0.1524" layer="1"/>
 <wire x1="230.7274" y1="-31.9025125" x2="230.8613125" y2="-31.7686" width="0.1524" layer="1"/>
-<wire x1="230.8613125" y1="-31.7686" x2="236.99789375" y2="-31.7686" width="0.1524" layer="1"/>
-<wire x1="236.99789375" y1="-31.7686" x2="242.951" y2="-25.81549375" width="0.1524" layer="1"/>
-<wire x1="242.951" y1="-25.81549375" x2="242.951" y2="-25.5143" width="0.1524" layer="1"/>
+<wire x1="230.8613125" y1="-31.7686" x2="238.01389375" y2="-31.7686" width="0.1524" layer="1"/>
+<wire x1="238.01389375" y1="-31.7686" x2="242.951" y2="-26.83149375" width="0.1524" layer="1"/>
+<wire x1="242.951" y1="-26.83149375" x2="242.951" y2="-25.5143" width="0.1524" layer="1"/>
 <wire x1="231.9528" y1="-51.2826" x2="231.9528" y2="-37.4221125" width="0.1524" layer="1"/>
 <wire x1="231.9528" y1="-37.4221125" x2="230.9864875" y2="-36.4558" width="0.1524" layer="1"/>
 <wire x1="230.9864875" y1="-36.4558" x2="230.8613125" y2="-36.4558" width="0.1524" layer="1"/>
@@ -4319,10 +4323,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="254.8324125" y1="-61.2267" x2="251.9294" y2="-58.3236875" width="0.1524" layer="1"/>
 <wire x1="251.9294" y1="-58.3236875" x2="251.9294" y2="-55.42590625" width="0.1524" layer="1"/>
 <wire x1="251.9294" y1="-55.42590625" x2="250.43449375" y2="-53.931" width="0.1524" layer="1"/>
-<wire x1="250.43449375" y1="-53.931" x2="242.018" y2="-53.931" width="0.1524" layer="1"/>
-<wire x1="242.018" y1="-53.931" x2="241.808" y2="-53.721" width="0.1524" layer="1"/>
-<wire x1="241.808" y1="-53.721" x2="241.808" y2="-45.16206875" width="0.1524" layer="1"/>
-<wire x1="241.808" y1="-45.16206875" x2="242.4592" y2="-44.51086875" width="0.1524" layer="1"/>
+<wire x1="250.43449375" y1="-53.931" x2="241.637" y2="-53.931" width="0.1524" layer="1"/>
+<wire x1="241.637" y1="-53.931" x2="241.427" y2="-53.721" width="0.1524" layer="1"/>
+<wire x1="241.427" y1="-53.721" x2="241.427" y2="-45.54306875" width="0.1524" layer="1"/>
+<wire x1="241.427" y1="-45.54306875" x2="242.4592" y2="-44.51086875" width="0.1524" layer="1"/>
 <wire x1="242.4592" y1="-44.51086875" x2="242.4592" y2="-41.34113125" width="0.1524" layer="1"/>
 <wire x1="242.4592" y1="-41.34113125" x2="241.8334" y2="-40.71533125" width="0.1524" layer="1"/>
 <wire x1="241.8334" y1="-40.71533125" x2="241.8334" y2="-34.4288" width="0.1524" layer="1"/>
@@ -4539,10 +4543,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="140.318996875" y1="-54.22138125" x2="140.318996875" y2="-52.080896875" width="0.1524" layer="1"/>
 <wire x1="140.318996875" y1="-52.080896875" x2="140.3096" y2="-52.0715" width="0.1524" layer="1"/>
 <via x="196.33041875" y="-52.56641875" extent="1-16" drill="0.2286"/>
-<wire x1="197.267" y1="-49.864396875" x2="197.1206" y2="-50.010796875" width="0.1524" layer="1"/>
-<wire x1="197.1206" y1="-50.010796875" x2="197.1206" y2="-50.58408125" width="0.1524" layer="1"/>
-<wire x1="196.33041875" y1="-51.3742625" x2="196.33041875" y2="-52.56641875" width="0.1524" layer="1"/>
-<wire x1="197.1206" y1="-50.58408125" x2="196.33041875" y2="-51.3742625" width="0.1524" layer="1"/>
+<wire x1="197.267" y1="-49.864396875" x2="197.2476" y2="-49.883796875" width="0.1524" layer="1"/>
+<wire x1="197.2476" y1="-49.883796875" x2="197.2476" y2="-51.6492375" width="0.1524" layer="1"/>
+<wire x1="197.2476" y1="-51.6492375" x2="196.33041875" y2="-52.56641875" width="0.1524" layer="1"/>
 <wire x1="191.86873125" y1="-51.04241875" x2="190.44235" y2="-52.4688" width="0.1524" layer="15"/>
 <wire x1="196.33041875" y1="-52.56641875" x2="196.33041875" y2="-51.86468125" width="0.1524" layer="15"/>
 <wire x1="196.33041875" y1="-51.86468125" x2="195.50815625" y2="-51.04241875" width="0.1524" layer="15"/>
@@ -4743,13 +4746,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="203.4928" y1="-41.4408" x2="205.0034" y2="-41.4408" width="0.1524" layer="1"/>
 <wire x1="205.0034" y1="-41.4408" x2="205.1932" y2="-41.6306" width="0.1524" layer="1"/>
 <wire x1="205.1932" y1="-41.6306" x2="206.5918" y2="-41.6306" width="0.1524" layer="1"/>
-<wire x1="197.2056" y1="-51.75600625" x2="196.93366875" y2="-51.484075" width="0.1524" layer="15"/>
-<wire x1="196.93366875" y1="-51.484075" x2="196.93366875" y2="-48.17633125" width="0.1524" layer="15"/>
-<wire x1="196.93366875" y1="-48.17633125" x2="203.454" y2="-41.656" width="0.1524" layer="15"/>
+<wire x1="203.454" y1="-41.656" x2="196.93366875" y2="-48.17633125" width="0.1524" layer="15"/>
 <wire x1="196.9516" y1="-53.594" x2="196.9516" y2="-53.15423125" width="0.1524" layer="15"/>
 <wire x1="196.9516" y1="-53.15423125" x2="197.19401875" y2="-52.9118125" width="0.1524" layer="15"/>
-<wire x1="197.19401875" y1="-51.7675875" x2="197.2056" y2="-51.75600625" width="0.1524" layer="15"/>
-<wire x1="197.19401875" y1="-52.9118125" x2="197.19401875" y2="-51.7675875" width="0.1524" layer="15"/>
+<wire x1="197.19401875" y1="-51.7675875" x2="197.19401875" y2="-52.9118125" width="0.1524" layer="15"/>
+<wire x1="196.93366875" y1="-51.5072375" x2="197.19401875" y2="-51.7675875" width="0.1524" layer="15"/>
+<wire x1="196.93366875" y1="-48.17633125" x2="196.93366875" y2="-51.5072375" width="0.1524" layer="15"/>
 </signal>
 <signal name="C8L" class="4">
 <contactref element="U2" pad="10"/>
@@ -4759,12 +4761,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="191.9852" y1="-65.2526" x2="191.7954" y2="-65.0628" width="0.1524" layer="1"/>
 <wire x1="193.3838" y1="-65.2526" x2="192.659" y2="-64.5278" width="0.1524" layer="1"/>
 <wire x1="192.659" y1="-62.8991125" x2="192.9471125" y2="-62.611" width="0.1524" layer="1"/>
-<wire x1="200.8759" y1="-61.9182875" x2="200.8759" y2="-58.6809125" width="0.1524" layer="1"/>
-<wire x1="200.8759" y1="-58.6809125" x2="199.9799875" y2="-57.785" width="0.1524" layer="1"/>
-<wire x1="199.9799875" y1="-57.785" x2="198.86431875" y2="-57.785" width="0.1524" layer="1"/>
-<wire x1="198.86431875" y1="-57.785" x2="198.267" y2="-57.18768125" width="0.1524" layer="1"/>
-<wire x1="198.267" y1="-57.18768125" x2="198.267" y2="-56.614396875" width="0.1524" layer="1"/>
-<wire x1="200.1831875" y1="-62.611" x2="200.8759" y2="-61.9182875" width="0.1524" layer="1"/>
+<wire x1="200.7489" y1="-62.0452875" x2="200.7489" y2="-58.6555125" width="0.1524" layer="1"/>
+<wire x1="200.7489" y1="-58.6555125" x2="199.9291875" y2="-57.8358" width="0.1524" layer="1"/>
+<wire x1="199.9291875" y1="-57.8358" x2="198.40711875" y2="-57.8358" width="0.1524" layer="1"/>
+<wire x1="198.40711875" y1="-57.8358" x2="198.267" y2="-57.69568125" width="0.1524" layer="1"/>
+<wire x1="198.267" y1="-57.69568125" x2="198.267" y2="-56.614396875" width="0.1524" layer="1"/>
+<wire x1="200.1831875" y1="-62.611" x2="200.7489" y2="-62.0452875" width="0.1524" layer="1"/>
 <wire x1="192.659" y1="-64.5278" x2="192.659" y2="-62.8991125" width="0.1524" layer="1"/>
 <wire x1="192.9471125" y1="-62.611" x2="200.1831875" y2="-62.611" width="0.1524" layer="1"/>
 </signal>
@@ -4774,11 +4776,11 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="CELL9:C1" pad="1"/>
 <wire x1="190.0936" y1="-57.9492" x2="190.0936" y2="-59.3478" width="0.1524" layer="1"/>
 <wire x1="190.0936" y1="-59.3478" x2="189.9038" y2="-59.5376" width="0.1524" layer="1"/>
-<wire x1="200.2155" y1="-61.5358" x2="199.8469" y2="-61.9044" width="0.1524" layer="1"/>
-<wire x1="198.27071875" y1="-58.4454" x2="197.267" y2="-57.44168125" width="0.1524" layer="1"/>
-<wire x1="198.27071875" y1="-58.4454" x2="199.7245" y2="-58.4454" width="0.1524" layer="1"/>
-<wire x1="199.7245" y1="-58.4454" x2="200.2155" y2="-58.9364" width="0.1524" layer="1"/>
-<wire x1="200.2155" y1="-58.9364" x2="200.2155" y2="-61.5358" width="0.1524" layer="1"/>
+<wire x1="200.1393" y1="-61.612" x2="199.8469" y2="-61.9044" width="0.1524" layer="1"/>
+<wire x1="197.38171875" y1="-58.4454" x2="197.267" y2="-58.33068125" width="0.1524" layer="1"/>
+<wire x1="197.38171875" y1="-58.4454" x2="199.6737" y2="-58.4454" width="0.1524" layer="1"/>
+<wire x1="199.6737" y1="-58.4454" x2="200.1393" y2="-58.911" width="0.1524" layer="1"/>
+<wire x1="200.1393" y1="-58.911" x2="200.1393" y2="-61.612" width="0.1524" layer="1"/>
 <wire x1="190.03023125" y1="-61.9044" x2="189.72543125" y2="-62.2092" width="0.1524" layer="1"/>
 <via x="189.72543125" y="-62.2092" extent="1-16" drill="0.2286"/>
 <wire x1="189.72543125" y1="-62.2092" x2="189.72543125" y2="-60.71856875" width="0.1524" layer="15"/>
@@ -4787,7 +4789,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="189.865" y1="-60.579" x2="189.865" y2="-59.5764" width="0.1524" layer="1"/>
 <wire x1="189.865" y1="-59.5764" x2="189.9038" y2="-59.5376" width="0.1524" layer="1"/>
 <wire x1="199.8469" y1="-61.9044" x2="190.03023125" y2="-61.9044" width="0.1524" layer="1"/>
-<wire x1="197.267" y1="-57.44168125" x2="197.267" y2="-56.614396875" width="0.1524" layer="1"/>
+<wire x1="197.267" y1="-58.33068125" x2="197.267" y2="-56.614396875" width="0.1524" layer="1"/>
 </signal>
 <signal name="C10L" class="4">
 <contactref element="U2" pad="6"/>
@@ -4797,21 +4799,21 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="187.171" y1="-63.5882" x2="188.5696" y2="-63.5882" width="0.1524" layer="1"/>
 <wire x1="189.085" y1="-61.2948" x2="188.5696" y2="-61.8102" width="0.1524" layer="1"/>
 <wire x1="188.5696" y1="-63.5882" x2="188.5696" y2="-61.8102" width="0.1524" layer="1"/>
-<wire x1="197.62631875" y1="-59.055" x2="196.267" y2="-57.69568125" width="0.1524" layer="1"/>
-<wire x1="196.267" y1="-57.69568125" x2="196.267" y2="-56.614396875" width="0.1524" layer="1"/>
-<wire x1="199.4719875" y1="-59.055" x2="197.62631875" y2="-59.055" width="0.1524" layer="1"/>
-<wire x1="199.6059" y1="-61.1562875" x2="199.6059" y2="-59.1889125" width="0.1524" layer="1"/>
-<wire x1="199.6059" y1="-59.1889125" x2="199.4719875" y2="-59.055" width="0.1524" layer="1"/>
+<wire x1="196.99131875" y1="-59.055" x2="196.267" y2="-58.33068125" width="0.1524" layer="1"/>
+<wire x1="196.267" y1="-58.33068125" x2="196.267" y2="-56.614396875" width="0.1524" layer="1"/>
+<wire x1="199.3957875" y1="-59.055" x2="196.99131875" y2="-59.055" width="0.1524" layer="1"/>
+<wire x1="199.5297" y1="-61.2324875" x2="199.5297" y2="-59.1889125" width="0.1524" layer="1"/>
+<wire x1="199.5297" y1="-59.1889125" x2="199.3957875" y2="-59.055" width="0.1524" layer="1"/>
 <wire x1="189.085" y1="-61.2948" x2="199.4673875" y2="-61.2948" width="0.1524" layer="1"/>
-<wire x1="199.4673875" y1="-61.2948" x2="199.6059" y2="-61.1562875" width="0.1524" layer="1"/>
+<wire x1="199.4673875" y1="-61.2948" x2="199.5297" y2="-61.2324875" width="0.1524" layer="1"/>
 </signal>
 <signal name="C11L" class="4">
 <contactref element="U2" pad="4"/>
 <contactref element="CELL11:R1" pad="2"/>
 <contactref element="CELL11:C1" pad="1"/>
-<wire x1="194.80641875" y1="-53.35158125" x2="194.80641875" y2="-55.518815625" width="0.1524" layer="1"/>
-<wire x1="195.267" y1="-56.614396875" x2="195.267" y2="-55.979396875" width="0.1524" layer="1"/>
-<wire x1="195.267" y1="-55.979396875" x2="194.80641875" y2="-55.518815625" width="0.1524" layer="1"/>
+<wire x1="194.80641875" y1="-53.35158125" x2="194.80641875" y2="-55.010815625" width="0.1524" layer="1"/>
+<wire x1="195.267" y1="-56.614396875" x2="195.267" y2="-55.471396875" width="0.1524" layer="1"/>
+<wire x1="195.267" y1="-55.471396875" x2="194.80641875" y2="-55.010815625" width="0.1524" layer="1"/>
 <via x="194.80641875" y="-53.35158125" extent="1-16" drill="0.2286"/>
 <wire x1="162.4076" y1="-40.6772" x2="162.4076" y2="-42.0758" width="0.1524" layer="1"/>
 <wire x1="162.4076" y1="-42.0758" x2="162.2178" y2="-42.2656" width="0.1524" layer="1"/>
@@ -4843,21 +4845,20 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <via x="206.629" y="-38.354" extent="1-16" drill="0.2286"/>
 <wire x1="206.629" y1="-38.354" x2="206.629" y2="-39.116" width="0.1524" layer="15"/>
 <wire x1="198.247" y1="-47.498" x2="206.629" y2="-39.116" width="0.1524" layer="15"/>
-<wire x1="198.501" y1="-53.594" x2="198.501" y2="-53.09630625" width="0.1524" layer="15"/>
-<wire x1="198.501" y1="-53.09630625" x2="198.44496875" y2="-53.040275" width="0.1524" layer="15"/>
-<wire x1="198.44496875" y1="-53.040275" x2="198.44496875" y2="-48.83896875" width="0.1524" layer="15"/>
-<wire x1="198.44496875" y1="-48.83896875" x2="198.247" y2="-48.641" width="0.1524" layer="15"/>
+<wire x1="198.755" y1="-49.149" x2="198.755" y2="-53.34" width="0.1524" layer="15"/>
+<wire x1="198.501" y1="-53.594" x2="198.755" y2="-53.34" width="0.1524" layer="15"/>
+<wire x1="198.755" y1="-49.149" x2="198.247" y2="-48.641" width="0.1524" layer="15"/>
 <wire x1="198.247" y1="-48.641" x2="198.247" y2="-47.498" width="0.1524" layer="15"/>
 </signal>
 <signal name="S8L" class="4">
 <contactref element="U2" pad="11"/>
 <contactref element="CELL8:R2" pad="2"/>
-<wire x1="201.1807" y1="-58.55465625" x2="201.1807" y2="-62.04454375" width="0.1524" layer="1"/>
-<wire x1="200.10624375" y1="-57.4802" x2="201.1807" y2="-58.55465625" width="0.1524" layer="1"/>
-<wire x1="200.16924375" y1="-63.056" x2="201.1807" y2="-62.04454375" width="0.1524" layer="1"/>
-<wire x1="198.767" y1="-56.614396875" x2="198.767" y2="-57.18768125" width="0.1524" layer="1"/>
-<wire x1="198.767" y1="-57.18768125" x2="199.05951875" y2="-57.4802" width="0.1524" layer="1"/>
-<wire x1="199.05951875" y1="-57.4802" x2="200.10624375" y2="-57.4802" width="0.1524" layer="1"/>
+<wire x1="201.0537" y1="-58.52925625" x2="201.0537" y2="-62.17154375" width="0.1524" layer="1"/>
+<wire x1="200.05544375" y1="-57.531" x2="201.0537" y2="-58.52925625" width="0.1524" layer="1"/>
+<wire x1="200.16924375" y1="-63.056" x2="201.0537" y2="-62.17154375" width="0.1524" layer="1"/>
+<wire x1="198.767" y1="-56.614396875" x2="198.767" y2="-57.44168125" width="0.1524" layer="1"/>
+<wire x1="198.767" y1="-57.44168125" x2="198.85631875" y2="-57.531" width="0.1524" layer="1"/>
+<wire x1="198.85631875" y1="-57.531" x2="200.05544375" y2="-57.531" width="0.1524" layer="1"/>
 <wire x1="193.3838" y1="-63.3476" x2="193.9105125" y2="-63.3476" width="0.1524" layer="1"/>
 <wire x1="193.9105125" y1="-63.3476" x2="194.5455125" y2="-63.9826" width="0.1524" layer="1"/>
 <wire x1="197.8221125" y1="-63.9826" x2="198.7487125" y2="-63.056" width="0.1524" layer="1"/>
@@ -4867,13 +4868,13 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <signal name="S9L" class="4">
 <contactref element="U2" pad="9"/>
 <contactref element="CELL9:R2" pad="2"/>
-<wire x1="197.767" y1="-56.614396875" x2="197.9134" y2="-56.760796875" width="0.1524" layer="1"/>
-<wire x1="197.9134" y1="-56.760796875" x2="197.9134" y2="-57.403025" width="0.1524" layer="1"/>
-<wire x1="197.9134" y1="-57.403025" x2="198.650975" y2="-58.1406" width="0.1524" layer="1"/>
-<wire x1="199.85075625" y1="-58.1406" x2="200.5203" y2="-58.81014375" width="0.1524" layer="1"/>
-<wire x1="200.5203" y1="-58.81014375" x2="200.5203" y2="-61.66205625" width="0.1524" layer="1"/>
-<wire x1="198.650975" y1="-58.1406" x2="199.85075625" y2="-58.1406" width="0.1524" layer="1"/>
-<wire x1="200.5203" y1="-61.66205625" x2="199.95235625" y2="-62.23" width="0.1524" layer="1"/>
+<wire x1="197.767" y1="-56.614396875" x2="197.7864" y2="-56.633796875" width="0.1524" layer="1"/>
+<wire x1="197.7864" y1="-56.633796875" x2="197.7864" y2="-58.038025" width="0.1524" layer="1"/>
+<wire x1="197.7864" y1="-58.038025" x2="197.888975" y2="-58.1406" width="0.1524" layer="1"/>
+<wire x1="199.79995625" y1="-58.1406" x2="200.4441" y2="-58.78474375" width="0.1524" layer="1"/>
+<wire x1="200.4441" y1="-58.78474375" x2="200.4441" y2="-61.73825625" width="0.1524" layer="1"/>
+<wire x1="197.888975" y1="-58.1406" x2="199.79995625" y2="-58.1406" width="0.1524" layer="1"/>
+<wire x1="200.4441" y1="-61.73825625" x2="199.95235625" y2="-62.23" width="0.1524" layer="1"/>
 <wire x1="191.262" y1="-62.23" x2="190.373" y2="-63.119" width="0.1524" layer="1"/>
 <via x="190.373" y="-63.119" extent="1-16" drill="0.2286"/>
 <wire x1="190.373" y1="-63.119" x2="192.913" y2="-60.579" width="0.1524" layer="15"/>
@@ -4888,20 +4889,20 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <signal name="S10L" class="4">
 <contactref element="U2" pad="7"/>
 <contactref element="CELL10:R2" pad="2"/>
-<wire x1="186.9812" y1="-65.3034" x2="188.0178" y2="-64.2668" width="0.1524" layer="1"/>
-<wire x1="188.0178" y1="-64.2668" x2="189.1142875" y2="-64.2668" width="0.1524" layer="1"/>
-<wire x1="197.94851875" y1="-58.7502" x2="196.767" y2="-57.56868125" width="0.1524" layer="1"/>
-<wire x1="196.767" y1="-57.56868125" x2="196.767" y2="-56.614396875" width="0.1524" layer="1"/>
+<wire x1="186.9812" y1="-65.3034" x2="187.8908" y2="-64.3938" width="0.1524" layer="1"/>
+<wire x1="187.8908" y1="-64.3938" x2="188.9872875" y2="-64.3938" width="0.1524" layer="1"/>
+<wire x1="197.18651875" y1="-58.7502" x2="196.767" y2="-58.33068125" width="0.1524" layer="1"/>
+<wire x1="196.767" y1="-58.33068125" x2="196.767" y2="-56.614396875" width="0.1524" layer="1"/>
 <wire x1="189.33825625" y1="-61.5996" x2="199.59364375" y2="-61.5996" width="0.1524" layer="1"/>
-<wire x1="199.9107" y1="-61.28254375" x2="199.9107" y2="-59.06265625" width="0.1524" layer="1"/>
-<wire x1="199.59364375" y1="-61.5996" x2="199.9107" y2="-61.28254375" width="0.1524" layer="1"/>
-<wire x1="199.9107" y1="-59.06265625" x2="199.59824375" y2="-58.7502" width="0.1524" layer="1"/>
-<wire x1="199.59824375" y1="-58.7502" x2="197.94851875" y2="-58.7502" width="0.1524" layer="1"/>
+<wire x1="199.8345" y1="-61.35874375" x2="199.8345" y2="-59.06265625" width="0.1524" layer="1"/>
+<wire x1="199.59364375" y1="-61.5996" x2="199.8345" y2="-61.35874375" width="0.1524" layer="1"/>
+<wire x1="199.8345" y1="-59.06265625" x2="199.52204375" y2="-58.7502" width="0.1524" layer="1"/>
+<wire x1="199.52204375" y1="-58.7502" x2="197.18651875" y2="-58.7502" width="0.1524" layer="1"/>
 <wire x1="189.33825625" y1="-61.5996" x2="188.968928125" y2="-61.968928125" width="0.1524" layer="1"/>
-<wire x1="189.2482" y1="-63.0435125" x2="189.2482" y2="-64.1328875" width="0.1524" layer="1"/>
-<wire x1="189.2482" y1="-64.1328875" x2="189.1142875" y2="-64.2668" width="0.1524" layer="1"/>
-<wire x1="188.968928125" y1="-61.968928125" x2="188.968928125" y2="-62.764240625" width="0.1524" layer="1"/>
-<wire x1="188.968928125" y1="-62.764240625" x2="189.2482" y2="-63.0435125" width="0.1524" layer="1"/>
+<wire x1="189.5022" y1="-63.1705125" x2="189.5022" y2="-63.8788875" width="0.1524" layer="1"/>
+<wire x1="189.5022" y1="-63.8788875" x2="188.9872875" y2="-64.3938" width="0.1524" layer="1"/>
+<wire x1="188.968928125" y1="-61.968928125" x2="188.968928125" y2="-62.637240625" width="0.1524" layer="1"/>
+<wire x1="188.968928125" y1="-62.637240625" x2="189.5022" y2="-63.1705125" width="0.1524" layer="1"/>
 </signal>
 <signal name="S11L" class="4">
 <contactref element="U2" pad="5"/>
@@ -4927,10 +4928,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="CELL12:R1" pad="2"/>
 <contactref element="CELL12:C1" pad="1"/>
 <via x="192.32991875" y="-53.41508125" extent="1-16" drill="0.2286"/>
-<wire x1="194.267" y1="-56.614396875" x2="194.1206" y2="-56.467996875" width="0.1524" layer="1"/>
-<wire x1="194.1206" y1="-56.467996875" x2="194.1206" y2="-55.8947125" width="0.1524" layer="1"/>
-<wire x1="192.32991875" y1="-54.10403125" x2="192.32991875" y2="-53.41508125" width="0.1524" layer="1"/>
-<wire x1="194.1206" y1="-55.8947125" x2="192.32991875" y2="-54.10403125" width="0.1524" layer="1"/>
+<wire x1="194.267" y1="-56.614396875" x2="194.2476" y2="-56.594996875" width="0.1524" layer="1"/>
+<wire x1="194.2476" y1="-56.594996875" x2="194.2476" y2="-55.6407125" width="0.1524" layer="1"/>
+<wire x1="192.32991875" y1="-53.72303125" x2="192.32991875" y2="-53.41508125" width="0.1524" layer="1"/>
+<wire x1="194.2476" y1="-55.6407125" x2="192.32991875" y2="-53.72303125" width="0.1524" layer="1"/>
 <wire x1="173.2026" y1="-63.5882" x2="171.804" y2="-63.5882" width="0.1524" layer="1"/>
 <wire x1="171.804" y1="-63.5882" x2="171.6142" y2="-63.3984" width="0.1524" layer="1"/>
 <wire x1="173.2026" y1="-63.5882" x2="173.2026" y2="-54.6864" width="0.1524" layer="1"/>
@@ -4944,10 +4945,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U2" pad="3"/>
 <contactref element="CELL12:R2" pad="2"/>
 <via x="193.21891875" y="-53.41508125" extent="1-16" drill="0.2286"/>
-<wire x1="194.767" y1="-56.614396875" x2="194.6206" y2="-56.467996875" width="0.1524" layer="1"/>
-<wire x1="194.6206" y1="-56.467996875" x2="194.6206" y2="-55.8947125" width="0.1524" layer="1"/>
-<wire x1="193.21891875" y1="-54.49303125" x2="193.21891875" y2="-53.41508125" width="0.1524" layer="1"/>
-<wire x1="194.6206" y1="-55.8947125" x2="193.21891875" y2="-54.49303125" width="0.1524" layer="1"/>
+<wire x1="194.767" y1="-56.614396875" x2="194.7476" y2="-56.594996875" width="0.1524" layer="1"/>
+<wire x1="194.7476" y1="-56.594996875" x2="194.7476" y2="-55.5137125" width="0.1524" layer="1"/>
+<wire x1="193.21891875" y1="-53.98503125" x2="193.21891875" y2="-53.41508125" width="0.1524" layer="1"/>
+<wire x1="194.7476" y1="-55.5137125" x2="193.21891875" y2="-53.98503125" width="0.1524" layer="1"/>
 <via x="174.1424" y="-54.661" extent="1-16" drill="0.2286"/>
 <wire x1="193.21891875" y1="-53.41508125" x2="193.21891875" y2="-54.07548125" width="0.1524" layer="15"/>
 <wire x1="174.72791875" y1="-54.07548125" x2="174.1424" y2="-54.661" width="0.1524" layer="15"/>
@@ -4970,10 +4971,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <via x="208.4195" y="-56.134" extent="1-16" drill="0.2286"/>
 <wire x1="208.4195" y1="-56.134" x2="208.4195" y2="-56.9343" width="0.1524" layer="1"/>
 <wire x1="205.3336" y1="-60.0202" x2="208.4195" y2="-56.9343" width="0.1524" layer="1"/>
-<wire x1="192.0975" y1="-38.477" x2="192.2164" y2="-38.5959" width="0.1524" layer="1"/>
-<wire x1="192.2164" y1="-38.5959" x2="192.6366875" y2="-38.5959" width="0.1524" layer="1"/>
-<wire x1="192.6366875" y1="-38.5959" x2="193.0544" y2="-39.0136125" width="0.1524" layer="1"/>
-<wire x1="193.0544" y1="-39.0136125" x2="193.0544" y2="-40.1946875" width="0.1524" layer="1"/>
+<wire x1="192.7636875" y1="-38.4689" x2="192.1056" y2="-38.4689" width="0.1524" layer="1"/>
+<wire x1="192.0975" y1="-38.477" x2="192.1056" y2="-38.4689" width="0.1524" layer="1"/>
+<wire x1="192.7636875" y1="-38.4689" x2="193.0544" y2="-38.7596125" width="0.1524" layer="1"/>
+<wire x1="193.0544" y1="-38.7596125" x2="193.0544" y2="-40.1946875" width="0.1524" layer="1"/>
 <wire x1="193.0544" y1="-40.1946875" x2="193.6219125" y2="-40.7622" width="0.1524" layer="1"/>
 <wire x1="193.6219125" y1="-40.7622" x2="206.8966875" y2="-40.7622" width="0.1524" layer="1"/>
 <wire x1="206.8966875" y1="-40.7622" x2="207.2704" y2="-41.1359125" width="0.1524" layer="1"/>
@@ -4987,19 +4988,19 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="C2" pad="1"/>
 <contactref element="U2" pad="35"/>
 <wire x1="197.7517" y1="-47.8797" x2="198.578" y2="-48.706" width="0.1524" layer="1"/>
-<wire x1="200.1206" y1="-49.1447125" x2="200.1206" y2="-49.717996875" width="0.1524" layer="1"/>
-<wire x1="200.1206" y1="-49.717996875" x2="200.267" y2="-49.864396875" width="0.1524" layer="1"/>
+<wire x1="200.2476" y1="-49.2717125" x2="200.2476" y2="-49.844996875" width="0.1524" layer="1"/>
+<wire x1="200.2476" y1="-49.844996875" x2="200.267" y2="-49.864396875" width="0.1524" layer="1"/>
 <wire x1="198.578" y1="-48.706" x2="199.6818875" y2="-48.706" width="0.1524" layer="1"/>
-<wire x1="199.6818875" y1="-48.706" x2="200.1206" y2="-49.1447125" width="0.1524" layer="1"/>
+<wire x1="199.6818875" y1="-48.706" x2="200.2476" y2="-49.2717125" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$72">
 <contactref element="R29" pad="2"/>
 <contactref element="R30" pad="1"/>
 <contactref element="U2" pad="43"/>
 <wire x1="194.2075" y1="-46.2534" x2="194.2075" y2="-47.8536" width="0.1524" layer="1"/>
-<wire x1="196.267" y1="-49.864396875" x2="196.1206" y2="-49.717996875" width="0.1524" layer="1"/>
-<wire x1="196.1206" y1="-49.717996875" x2="196.1206" y2="-49.1447125" width="0.1524" layer="1"/>
-<wire x1="196.1206" y1="-49.1447125" x2="194.8294875" y2="-47.8536" width="0.1524" layer="1"/>
+<wire x1="196.267" y1="-49.864396875" x2="196.2476" y2="-49.844996875" width="0.1524" layer="1"/>
+<wire x1="196.2476" y1="-49.844996875" x2="196.2476" y2="-49.2717125" width="0.1524" layer="1"/>
+<wire x1="196.2476" y1="-49.2717125" x2="194.8294875" y2="-47.8536" width="0.1524" layer="1"/>
 <wire x1="194.8294875" y1="-47.8536" x2="194.2075" y2="-47.8536" width="0.1524" layer="1"/>
 </signal>
 <signal name="C6U" class="3">
@@ -5017,9 +5018,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="76.099146875" y1="-55.144146875" x2="74.04249375" y2="-57.2008" width="0.1524" layer="15"/>
 <wire x1="38.0238" y1="-57.2008" x2="74.04249375" y2="-57.2008" width="0.1524" layer="15"/>
 <via x="76.099146875" y="-53.747146875" extent="1-16" drill="0.2286"/>
-<wire x1="75.9072" y1="-50.2494" x2="76.0342" y2="-50.3764" width="0.1524" layer="1"/>
-<wire x1="76.0342" y1="-50.3764" x2="76.0342" y2="-53.6822" width="0.1524" layer="1"/>
-<wire x1="76.099146875" y1="-53.747146875" x2="76.0342" y2="-53.6822" width="0.1524" layer="1"/>
+<wire x1="75.9072" y1="-50.2494" x2="75.9072" y2="-52.7074375" width="0.1524" layer="1"/>
+<wire x1="75.9072" y1="-52.7074375" x2="75.9333" y2="-52.7335375" width="0.1524" layer="1"/>
+<wire x1="75.9333" y1="-53.5813" x2="76.099146875" y2="-53.747146875" width="0.1524" layer="1"/>
+<wire x1="75.9333" y1="-52.7335375" x2="75.9333" y2="-53.5813" width="0.1524" layer="1"/>
 </signal>
 <signal name="S6U" class="3">
 <contactref element="U1" pad="15"/>
@@ -5031,10 +5033,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="73.787" y1="-56.896" x2="75.3872" y2="-55.2958" width="0.1524" layer="15"/>
 <wire x1="75.3872" y1="-55.2958" x2="75.3872" y2="-52.95974375" width="0.1524" layer="15"/>
 <via x="75.3872" y="-52.95974375" extent="1-16" drill="0.2286"/>
-<wire x1="75.4072" y1="-51.9760375" x2="75.3872" y2="-51.9960375" width="0.1524" layer="1"/>
-<wire x1="75.3872" y1="-52.95974375" x2="75.3872" y2="-51.9960375" width="0.1524" layer="1"/>
-<wire x1="75.4072" y1="-51.9760375" x2="75.4072" y2="-50.2494" width="0.1524" layer="1"/>
 <wire x1="40.513" y1="-56.896" x2="73.787" y2="-56.896" width="0.1524" layer="15"/>
+<wire x1="75.3872" y1="-52.95974375" x2="75.3872" y2="-50.2694" width="0.1524" layer="1"/>
+<wire x1="75.3872" y1="-50.2694" x2="75.4072" y2="-50.2494" width="0.1524" layer="1"/>
 </signal>
 <signal name="C3U" class="3">
 <contactref element="U1" pad="20"/>
@@ -5043,10 +5044,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="57.6968" y1="-39.0906" x2="57.6968" y2="-37.692" width="0.1524" layer="1"/>
 <wire x1="57.6968" y1="-37.692" x2="57.8866" y2="-37.5022" width="0.1524" layer="1"/>
 <via x="72.1868" y="-53.721" extent="1-16" drill="0.2286"/>
-<wire x1="72.9072" y1="-50.2494" x2="72.7608" y2="-50.3958" width="0.1524" layer="1"/>
-<wire x1="72.7608" y1="-50.3958" x2="72.7608" y2="-51.3500875" width="0.1524" layer="1"/>
+<wire x1="72.9072" y1="-50.2494" x2="72.8878" y2="-50.2688" width="0.1524" layer="1"/>
+<wire x1="72.8878" y1="-50.2688" x2="72.8878" y2="-51.2230875" width="0.1524" layer="1"/>
 <wire x1="72.1868" y1="-51.9240875" x2="72.1868" y2="-53.721" width="0.1524" layer="1"/>
-<wire x1="72.7608" y1="-51.3500875" x2="72.1868" y2="-51.9240875" width="0.1524" layer="1"/>
+<wire x1="72.8878" y1="-51.2230875" x2="72.1868" y2="-51.9240875" width="0.1524" layer="1"/>
 <wire x1="72.1868" y1="-53.721" x2="72.1868" y2="-54.9402" width="0.1524" layer="15"/>
 <wire x1="71.9328" y1="-55.1942" x2="58.547" y2="-55.1942" width="0.1524" layer="15"/>
 <wire x1="58.547" y1="-55.1942" x2="57.912" y2="-54.5592" width="0.1524" layer="15"/>
@@ -5062,10 +5063,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="CELL15:R2" pad="2"/>
 <via x="71.4502" y="-52.959" extent="1-16" drill="0.2286"/>
 <wire x1="72.4072" y1="-50.2494" x2="72.4072" y2="-50.3376" width="0.1524" layer="1"/>
-<wire x1="72.4072" y1="-50.3376" x2="72.2608" y2="-50.484" width="0.1524" layer="1"/>
-<wire x1="72.2608" y1="-50.484" x2="72.2608" y2="-51.2230875" width="0.1524" layer="1"/>
+<wire x1="72.4072" y1="-50.3376" x2="72.3878" y2="-50.357" width="0.1524" layer="1"/>
+<wire x1="72.3878" y1="-50.357" x2="72.3878" y2="-51.0960875" width="0.1524" layer="1"/>
 <wire x1="71.4502" y1="-52.0336875" x2="71.4502" y2="-52.959" width="0.1524" layer="1"/>
-<wire x1="72.2608" y1="-51.2230875" x2="71.4502" y2="-52.0336875" width="0.1524" layer="1"/>
+<wire x1="72.3878" y1="-51.0960875" x2="71.4502" y2="-52.0336875" width="0.1524" layer="1"/>
 <wire x1="71.4502" y1="-52.959" x2="71.4502" y2="-54.5592" width="0.1524" layer="15"/>
 <wire x1="71.4502" y1="-54.5592" x2="71.12" y2="-54.8894" width="0.1524" layer="15"/>
 <wire x1="71.12" y1="-54.8894" x2="58.6994" y2="-54.8894" width="0.1524" layer="15"/>
@@ -5085,9 +5086,6 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="41.3766" y1="-32.4238" x2="41.2182" y2="-32.5822" width="0.1524" layer="1"/>
 <via x="74.7776" y="-53.721" extent="1-16" drill="0.2286"/>
 <wire x1="41.2182" y1="-32.5822" x2="41.1868" y2="-32.6136" width="0.1524" layer="1"/>
-<wire x1="74.9072" y1="-50.2494" x2="74.7608" y2="-50.3958" width="0.1524" layer="1"/>
-<wire x1="74.7608" y1="-50.3958" x2="74.7608" y2="-53.7042" width="0.1524" layer="1"/>
-<wire x1="74.7776" y1="-53.721" x2="74.7608" y2="-53.7042" width="0.1524" layer="1"/>
 <wire x1="74.7776" y1="-53.721" x2="74.7776" y2="-55.22034375" width="0.1524" layer="15"/>
 <wire x1="74.7776" y1="-55.22034375" x2="73.507971875" y2="-56.489971875" width="0.1524" layer="15"/>
 <wire x1="73.507971875" y1="-56.489971875" x2="42.900971875" y2="-56.489971875" width="0.1524" layer="15"/>
@@ -5098,15 +5096,19 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="42.900971875" y1="-56.489971875" x2="37.211" y2="-50.8" width="0.1524" layer="15"/>
 <wire x1="37.211" y1="-50.8" x2="37.211" y2="-38.989" width="0.1524" layer="15"/>
 <wire x1="37.211" y1="-38.989" x2="41.148" y2="-35.052" width="0.1524" layer="15"/>
+<wire x1="74.9072" y1="-50.2494" x2="74.9072" y2="-52.6674375" width="0.1524" layer="1"/>
+<wire x1="74.9072" y1="-52.6674375" x2="74.8411" y2="-52.7335375" width="0.1524" layer="1"/>
+<wire x1="74.8411" y1="-53.6575" x2="74.7776" y2="-53.721" width="0.1524" layer="1"/>
+<wire x1="74.8411" y1="-52.7335375" x2="74.8411" y2="-53.6575" width="0.1524" layer="1"/>
 </signal>
 <signal name="S5U" class="3">
 <contactref element="U1" pad="17"/>
 <contactref element="CELL17:R2" pad="2"/>
 <via x="74.041" y="-52.959" extent="1-16" drill="0.2286"/>
-<wire x1="74.4072" y1="-50.2494" x2="74.2608" y2="-50.3958" width="0.1524" layer="1"/>
-<wire x1="74.2608" y1="-50.3958" x2="74.2608" y2="-51.7310875" width="0.1524" layer="1"/>
+<wire x1="74.4072" y1="-50.2494" x2="74.3878" y2="-50.2688" width="0.1524" layer="1"/>
+<wire x1="74.3878" y1="-50.2688" x2="74.3878" y2="-51.6040875" width="0.1524" layer="1"/>
 <wire x1="74.041" y1="-51.9508875" x2="74.041" y2="-52.959" width="0.1524" layer="1"/>
-<wire x1="74.2608" y1="-51.7310875" x2="74.041" y2="-51.9508875" width="0.1524" layer="1"/>
+<wire x1="74.3878" y1="-51.6040875" x2="74.041" y2="-51.9508875" width="0.1524" layer="1"/>
 <wire x1="39.4716" y1="-31.0252" x2="40.3534" y2="-31.0252" width="0.1524" layer="1"/>
 <wire x1="40.3534" y1="-31.0252" x2="40.4432" y2="-31.115" width="0.1524" layer="1"/>
 <via x="40.4432" y="-31.115" extent="1-16" drill="0.2286"/>
@@ -5161,12 +5163,11 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="68.23846875" y1="-53.83169375" x2="68.23846875" y2="-42.33046875" width="0.1524" layer="15"/>
 <wire x1="68.23846875" y1="-42.33046875" x2="65.8622" y2="-39.9542" width="0.1524" layer="15"/>
 <via x="68.23846875" y="-53.83169375" extent="1-16" drill="0.2286"/>
-<wire x1="68.23846875" y1="-53.848" x2="68.23846875" y2="-53.83169375" width="0.1524" layer="1"/>
-<wire x1="71.9072" y1="-56.9994" x2="71.7608" y2="-56.853" width="0.1524" layer="1"/>
-<wire x1="71.7608" y1="-56.853" x2="71.7608" y2="-56.2797125" width="0.1524" layer="1"/>
-<wire x1="71.7608" y1="-56.2797125" x2="71.1832875" y2="-55.7022" width="0.1524" layer="1"/>
-<wire x1="71.1832875" y1="-55.7022" x2="70.086175" y2="-55.7022" width="0.1524" layer="1"/>
-<wire x1="68.23846875" y1="-53.85449375" x2="68.23846875" y2="-53.848" width="0.1524" layer="1"/>
+<wire x1="68.23846875" y1="-53.85449375" x2="68.23846875" y2="-53.83169375" width="0.1524" layer="1"/>
+<wire x1="71.9132" y1="-56.0511125" x2="71.9132" y2="-56.9934" width="0.1524" layer="1"/>
+<wire x1="71.9072" y1="-56.9994" x2="71.9132" y2="-56.9934" width="0.1524" layer="1"/>
+<wire x1="71.9132" y1="-56.0511125" x2="71.5642875" y2="-55.7022" width="0.1524" layer="1"/>
+<wire x1="71.5642875" y1="-55.7022" x2="70.086175" y2="-55.7022" width="0.1524" layer="1"/>
 <wire x1="70.086175" y1="-55.7022" x2="68.23846875" y2="-53.85449375" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$76">
@@ -5188,7 +5189,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <via x="69.53386875" y="-53.85673125" extent="1-16" drill="0.2286"/>
 <wire x1="70.47054375" y1="-55.0926" x2="69.53386875" y2="-54.155925" width="0.1524" layer="1"/>
 <wire x1="69.53386875" y1="-54.155925" x2="69.53386875" y2="-53.85673125" width="0.1524" layer="1"/>
-<wire x1="70.47054375" y1="-55.0926" x2="71.5736875" y2="-55.0926" width="0.1524" layer="1"/>
+<wire x1="70.47054375" y1="-55.0926" x2="71.9546875" y2="-55.0926" width="0.1524" layer="1"/>
 <wire x1="69.53386875" y1="-53.85673125" x2="69.5251375" y2="-53.848" width="0.1524" layer="15"/>
 <wire x1="69.5251375" y1="-53.848" x2="69.215" y2="-53.848" width="0.1524" layer="15"/>
 <wire x1="69.215" y1="-53.848" x2="68.707" y2="-53.34" width="0.1524" layer="15"/>
@@ -5208,19 +5209,19 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="98.5395" y1="-28.575" x2="100.4009" y2="-26.7136" width="0.1524" layer="1"/>
 <wire x1="100.4009" y1="-26.7136" x2="101.3311875" y2="-26.7136" width="0.1524" layer="1"/>
 <wire x1="102.2865" y1="-26.035" x2="103.5948" y2="-26.035" width="0.1524" layer="1"/>
-<wire x1="72.9072" y1="-56.4261125" x2="72.9072" y2="-56.9994" width="0.1524" layer="1"/>
-<wire x1="71.5736875" y1="-55.0926" x2="72.9072" y2="-56.4261125" width="0.1524" layer="1"/>
+<wire x1="72.9072" y1="-56.0451125" x2="72.9072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="71.9546875" y1="-55.0926" x2="72.9072" y2="-56.0451125" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$78">
 <contactref element="R31" pad="1"/>
 <contactref element="R46" pad="1"/>
 <contactref element="J32" pad="2"/>
-<wire x1="99.1108" y1="-21.5397625" x2="99.2447125" y2="-21.40585" width="0.1524" layer="1"/>
-<wire x1="99.2447125" y1="-21.40585" x2="100.7040875" y2="-21.40585" width="0.1524" layer="1"/>
-<wire x1="97.7782" y1="-26.035" x2="99.1108" y2="-24.7024" width="0.1524" layer="1"/>
-<wire x1="102.3931875" y1="-23.09495" x2="102.9716" y2="-23.09495" width="0.1524" layer="1"/>
-<wire x1="99.1108" y1="-24.7024" x2="99.1108" y2="-21.5397625" width="0.1524" layer="1"/>
-<wire x1="100.7040875" y1="-21.40585" x2="102.3931875" y2="-23.09495" width="0.1524" layer="1"/>
+<wire x1="98.7298" y1="-21.7937625" x2="99.2447125" y2="-21.27885" width="0.1524" layer="1"/>
+<wire x1="99.2447125" y1="-21.27885" x2="101.2120875" y2="-21.27885" width="0.1524" layer="1"/>
+<wire x1="97.7782" y1="-26.035" x2="98.7298" y2="-25.0834" width="0.1524" layer="1"/>
+<wire x1="98.7298" y1="-25.0834" x2="98.7298" y2="-21.7937625" width="0.1524" layer="1"/>
+<wire x1="102.9716" y1="-23.09495" x2="102.9716" y2="-23.0383625" width="0.1524" layer="1"/>
+<wire x1="102.9716" y1="-23.0383625" x2="101.2120875" y2="-21.27885" width="0.1524" layer="1"/>
 <wire x1="102.9716" y1="-23.09495" x2="105.2948" y2="-25.41815" width="0.1524" layer="1"/>
 <wire x1="105.2948" y1="-25.41815" x2="105.2948" y2="-26.035" width="0.1524" layer="1"/>
 </signal>
@@ -5231,7 +5232,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <via x="70.4088" y="-52.94269375" extent="1-16" drill="0.2286"/>
 <wire x1="70.4088" y1="-52.94269375" x2="70.1726" y2="-53.17889375" width="0.1524" layer="1"/>
 <wire x1="70.1726" y1="-53.17889375" x2="70.1726" y2="-54.2366" width="0.1524" layer="1"/>
-<wire x1="70.7238" y1="-54.7878" x2="72.8958875" y2="-54.7878" width="0.1524" layer="1"/>
+<wire x1="70.7238" y1="-54.7878" x2="73.2768875" y2="-54.7878" width="0.1524" layer="1"/>
 <wire x1="70.7238" y1="-54.7878" x2="70.1726" y2="-54.2366" width="0.1524" layer="1"/>
 <wire x1="70.4088" y1="-52.94269375" x2="71.3235625" y2="-52.02793125" width="0.1524" layer="15"/>
 <wire x1="71.3235625" y1="-52.02793125" x2="83.947" y2="-52.02793125" width="0.1524" layer="15"/>
@@ -5247,17 +5248,17 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="123.4315" y1="-28.194" x2="124.1162" y2="-27.5093" width="0.1524" layer="1"/>
 <wire x1="124.1162" y1="-27.5093" x2="124.1162" y2="-26.0985" width="0.1524" layer="1"/>
 <wire x1="124.1162" y1="-26.0985" x2="125.4245" y2="-26.0985" width="0.1524" layer="1"/>
-<wire x1="74.4072" y1="-56.2991125" x2="74.4072" y2="-56.9994" width="0.1524" layer="1"/>
-<wire x1="72.8958875" y1="-54.7878" x2="74.4072" y2="-56.2991125" width="0.1524" layer="1"/>
+<wire x1="74.4072" y1="-55.9181125" x2="74.4072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="73.2768875" y1="-54.7878" x2="74.4072" y2="-55.9181125" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$80">
 <contactref element="R32" pad="1"/>
 <contactref element="R45" pad="1"/>
 <contactref element="J33" pad="2"/>
-<wire x1="122.4162" y1="-26.0985" x2="123.73065" y2="-24.78405" width="0.1524" layer="1"/>
-<wire x1="127.0565875" y1="-23.09495" x2="127.635" y2="-23.09495" width="0.1524" layer="1"/>
-<wire x1="123.73065" y1="-24.78405" x2="125.3674875" y2="-24.78405" width="0.1524" layer="1"/>
-<wire x1="125.3674875" y1="-24.78405" x2="127.0565875" y2="-23.09495" width="0.1524" layer="1"/>
+<wire x1="122.4162" y1="-26.0985" x2="123.47665" y2="-25.03805" width="0.1524" layer="1"/>
+<wire x1="127.4375875" y1="-23.09495" x2="127.635" y2="-23.09495" width="0.1524" layer="1"/>
+<wire x1="123.47665" y1="-25.03805" x2="125.4944875" y2="-25.03805" width="0.1524" layer="1"/>
+<wire x1="125.4944875" y1="-25.03805" x2="127.4375875" y2="-23.09495" width="0.1524" layer="1"/>
 <wire x1="127.635" y1="-23.09495" x2="129.9328" y2="-25.39275" width="0.1524" layer="1"/>
 <wire x1="129.9328" y1="-25.39275" x2="129.9328" y2="-26.0985" width="0.1524" layer="1"/>
 </signal>
@@ -5281,8 +5282,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="57.7596" y1="-37.4396" x2="58.6105" y2="-38.2905" width="0.1524" layer="15"/>
 <via x="70.7822" y="-53.85709375" extent="1-16" drill="0.2286"/>
 <wire x1="70.7822" y1="-53.85709375" x2="71.40810625" y2="-54.483" width="0.1524" layer="1"/>
-<wire x1="71.40810625" y1="-54.483" x2="73.914" y2="-54.483" width="0.1524" layer="1"/>
-<wire x1="74.9072" y1="-55.4762" x2="73.914" y2="-54.483" width="0.1524" layer="1"/>
+<wire x1="71.40810625" y1="-54.483" x2="73.533" y2="-54.483" width="0.1524" layer="1"/>
+<wire x1="74.9072" y1="-55.8572" x2="73.533" y2="-54.483" width="0.1524" layer="1"/>
 <wire x1="46.7106" y1="-44.704" x2="51.181" y2="-44.704" width="0.1524" layer="15"/>
 <wire x1="51.181" y1="-44.704" x2="56.2356" y2="-39.6494" width="0.1524" layer="15"/>
 <wire x1="56.6006625" y1="-37.4396" x2="57.7596" y2="-37.4396" width="0.1524" layer="15"/>
@@ -5290,7 +5291,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="59.055" y1="-54.5846" x2="58.6105" y2="-54.1401" width="0.1524" layer="15"/>
 <wire x1="58.6105" y1="-54.1401" x2="58.6105" y2="-38.2905" width="0.1524" layer="15"/>
 <wire x1="70.7822" y1="-53.85709375" x2="70.05469375" y2="-54.5846" width="0.1524" layer="15"/>
-<wire x1="74.9072" y1="-56.9994" x2="74.9072" y2="-55.4762" width="0.1524" layer="1"/>
+<wire x1="74.9072" y1="-56.9994" x2="74.9072" y2="-55.8572" width="0.1524" layer="1"/>
 </signal>
 <signal name="GPIO2U">
 <contactref element="R47" pad="2"/>
@@ -5320,20 +5321,20 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="69.27726875" y1="-53.251225" x2="68.92426875" y2="-53.604225" width="0.1524" layer="1"/>
 <wire x1="68.92426875" y1="-53.604225" x2="68.92426875" y2="-54.1092375" width="0.1524" layer="1"/>
 <wire x1="68.92426875" y1="-54.1092375" x2="70.21243125" y2="-55.3974" width="0.1524" layer="1"/>
-<wire x1="72.2608" y1="-56.2797125" x2="72.2608" y2="-56.853" width="0.1524" layer="1"/>
-<wire x1="72.2608" y1="-56.853" x2="72.4072" y2="-56.9994" width="0.1524" layer="1"/>
-<wire x1="71.3784875" y1="-55.3974" x2="72.2608" y2="-56.2797125" width="0.1524" layer="1"/>
-<wire x1="70.21243125" y1="-55.3974" x2="71.3784875" y2="-55.3974" width="0.1524" layer="1"/>
+<wire x1="72.3878" y1="-56.0257125" x2="72.3878" y2="-56.98" width="0.1524" layer="1"/>
+<wire x1="72.3878" y1="-56.98" x2="72.4072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="71.7594875" y1="-55.3974" x2="72.3878" y2="-56.0257125" width="0.1524" layer="1"/>
+<wire x1="70.21243125" y1="-55.3974" x2="71.7594875" y2="-55.3974" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$84">
 <contactref element="R34" pad="1"/>
 <contactref element="R43" pad="1"/>
 <contactref element="J37" pad="2"/>
-<wire x1="156.4522" y1="-26.162" x2="157.83015" y2="-24.78405" width="0.1524" layer="1"/>
-<wire x1="159.4542875" y1="-24.78405" x2="157.83015" y2="-24.78405" width="0.1524" layer="1"/>
+<wire x1="156.4522" y1="-26.162" x2="157.57615" y2="-25.03805" width="0.1524" layer="1"/>
+<wire x1="159.8352875" y1="-25.03805" x2="157.57615" y2="-25.03805" width="0.1524" layer="1"/>
 <wire x1="163.9688" y1="-25.34195" x2="163.9688" y2="-26.162" width="0.1524" layer="1"/>
-<wire x1="161.7218" y1="-23.09495" x2="161.1433875" y2="-23.09495" width="0.1524" layer="1"/>
-<wire x1="161.1433875" y1="-23.09495" x2="159.4542875" y2="-24.78405" width="0.1524" layer="1"/>
+<wire x1="161.7218" y1="-23.09495" x2="161.7218" y2="-23.1515375" width="0.1524" layer="1"/>
+<wire x1="161.7218" y1="-23.1515375" x2="159.8352875" y2="-25.03805" width="0.1524" layer="1"/>
 <wire x1="161.7218" y1="-23.09495" x2="163.9688" y2="-25.34195" width="0.1524" layer="1"/>
 </signal>
 <signal name="GPIO1L">
@@ -5341,10 +5342,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="C20" pad="1"/>
 <contactref element="U2" pad="27"/>
 <via x="203.99898125" y="-52.6034" extent="1-16" drill="0.2286"/>
-<wire x1="204.267" y1="-49.864396875" x2="204.1206" y2="-50.010796875" width="0.1524" layer="1"/>
-<wire x1="204.1206" y1="-50.010796875" x2="204.1206" y2="-50.58408125" width="0.1524" layer="1"/>
-<wire x1="203.99898125" y1="-50.7057" x2="203.99898125" y2="-52.6034" width="0.1524" layer="1"/>
-<wire x1="204.1206" y1="-50.58408125" x2="203.99898125" y2="-50.7057" width="0.1524" layer="1"/>
+<wire x1="204.267" y1="-49.864396875" x2="204.2476" y2="-49.883796875" width="0.1524" layer="1"/>
+<wire x1="204.2476" y1="-49.883796875" x2="204.2476" y2="-52.35478125" width="0.1524" layer="1"/>
+<wire x1="204.2476" y1="-52.35478125" x2="203.99898125" y2="-52.6034" width="0.1524" layer="1"/>
 <wire x1="158.1522" y1="-26.162" x2="159.4605" y2="-26.162" width="0.1524" layer="1"/>
 <wire x1="203.8096" y1="-47.117" x2="203.8096" y2="-52.41401875" width="0.1524" layer="15"/>
 <wire x1="203.99898125" y1="-52.6034" x2="203.8096" y2="-52.41401875" width="0.1524" layer="15"/>
@@ -5377,10 +5377,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="C21" pad="1"/>
 <contactref element="U2" pad="28"/>
 <via x="202.85598125" y="-52.578" extent="1-16" drill="0.2286"/>
-<wire x1="203.767" y1="-49.864396875" x2="203.6206" y2="-50.010796875" width="0.1524" layer="1"/>
-<wire x1="203.6206" y1="-50.010796875" x2="203.6206" y2="-50.58408125" width="0.1524" layer="1"/>
-<wire x1="202.85598125" y1="-51.3487" x2="202.85598125" y2="-52.578" width="0.1524" layer="1"/>
-<wire x1="203.6206" y1="-50.58408125" x2="202.85598125" y2="-51.3487" width="0.1524" layer="1"/>
+<wire x1="203.767" y1="-49.864396875" x2="203.7476" y2="-49.883796875" width="0.1524" layer="1"/>
+<wire x1="203.7476" y1="-49.883796875" x2="203.7476" y2="-50.96508125" width="0.1524" layer="1"/>
+<wire x1="202.85598125" y1="-51.8567" x2="202.85598125" y2="-52.578" width="0.1524" layer="1"/>
+<wire x1="203.7476" y1="-50.96508125" x2="202.85598125" y2="-51.8567" width="0.1524" layer="1"/>
 <wire x1="202.85598125" y1="-52.578" x2="202.85598125" y2="-46.44501875" width="0.1524" layer="15"/>
 <wire x1="202.85598125" y1="-46.44501875" x2="204.343" y2="-44.958" width="0.1524" layer="15"/>
 <via x="204.343" y="-44.958" extent="1-16" drill="0.2286"/>
@@ -5408,10 +5408,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="C22" pad="1"/>
 <contactref element="U2" pad="29"/>
 <via x="202.06858125" y="-52.56641875" extent="1-16" drill="0.2286"/>
-<wire x1="203.267" y1="-49.864396875" x2="203.1206" y2="-50.010796875" width="0.1524" layer="1"/>
-<wire x1="203.1206" y1="-50.010796875" x2="203.1206" y2="-50.58408125" width="0.1524" layer="1"/>
-<wire x1="202.06858125" y1="-51.6361" x2="202.06858125" y2="-52.56641875" width="0.1524" layer="1"/>
-<wire x1="203.1206" y1="-50.58408125" x2="202.06858125" y2="-51.6361" width="0.1524" layer="1"/>
+<wire x1="203.267" y1="-49.864396875" x2="203.2476" y2="-49.883796875" width="0.1524" layer="1"/>
+<wire x1="203.2476" y1="-49.883796875" x2="203.2476" y2="-50.96508125" width="0.1524" layer="1"/>
+<wire x1="202.06858125" y1="-52.1441" x2="202.06858125" y2="-52.56641875" width="0.1524" layer="1"/>
+<wire x1="203.2476" y1="-50.96508125" x2="202.06858125" y2="-52.1441" width="0.1524" layer="1"/>
 <via x="204.688765625" y="-43.883603125" extent="1-16" drill="0.2286"/>
 <wire x1="204.5752125" y1="-43.77005" x2="202.06858125" y2="-46.27668125" width="0.1524" layer="15"/>
 <wire x1="204.5752125" y1="-43.77005" x2="204.688765625" y2="-43.883603125" width="0.1524" layer="15"/>
@@ -5459,10 +5459,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="267.5399" y1="-38.9636" x2="265.1506" y2="-38.9636" width="0.1524" layer="1"/>
 <via x="265.1506" y="-38.9636" extent="1-16" drill="0.2286"/>
 <via x="200.025" y="-52.578" extent="1-16" drill="0.2286"/>
-<wire x1="201.267" y1="-49.864396875" x2="201.1206" y2="-50.010796875" width="0.1524" layer="1"/>
-<wire x1="201.1206" y1="-50.010796875" x2="201.1206" y2="-50.58408125" width="0.1524" layer="1"/>
-<wire x1="200.025" y1="-51.67968125" x2="200.025" y2="-52.578" width="0.1524" layer="1"/>
-<wire x1="201.1206" y1="-50.58408125" x2="200.025" y2="-51.67968125" width="0.1524" layer="1"/>
+<wire x1="201.267" y1="-49.864396875" x2="201.2476" y2="-49.883796875" width="0.1524" layer="1"/>
+<wire x1="201.2476" y1="-49.883796875" x2="201.2476" y2="-51.09208125" width="0.1524" layer="1"/>
+<wire x1="200.025" y1="-52.31468125" x2="200.025" y2="-52.578" width="0.1524" layer="1"/>
+<wire x1="201.2476" y1="-51.09208125" x2="200.025" y2="-52.31468125" width="0.1524" layer="1"/>
 <wire x1="200.025" y1="-52.578" x2="200.025" y2="-46.6598" width="0.1524" layer="15"/>
 <wire x1="200.025" y1="-46.6598" x2="208.3054" y2="-38.3794" width="0.1524" layer="15"/>
 <wire x1="208.3054" y1="-38.3794" x2="264.5664" y2="-38.3794" width="0.1524" layer="15"/>
@@ -5499,11 +5499,11 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="76.7334" y1="-54.991" x2="76.7334" y2="-52.959" width="0.1524" layer="15"/>
 <wire x1="76.7334" y1="-54.991" x2="74.1172" y2="-57.6072" width="0.1524" layer="15"/>
 <via x="76.7334" y="-52.959" extent="1-16" drill="0.2286"/>
-<wire x1="76.4072" y1="-52.6328125" x2="76.4072" y2="-50.2494" width="0.1524" layer="1"/>
 <wire x1="22.225" y1="-40.132" x2="22.733" y2="-40.64" width="0.1524" layer="15"/>
 <wire x1="27.5082" y1="-57.6072" x2="74.1172" y2="-57.6072" width="0.1524" layer="15"/>
 <wire x1="76.7334" y1="-52.959" x2="76.7333875" y2="-52.959" width="0.1524" layer="1"/>
-<wire x1="76.7333875" y1="-52.959" x2="76.4072" y2="-52.6328125" width="0.1524" layer="1"/>
+<wire x1="76.4072" y1="-52.6328125" x2="76.7333875" y2="-52.959" width="0.1524" layer="1"/>
+<wire x1="76.4072" y1="-50.2494" x2="76.4072" y2="-52.6328125" width="0.1524" layer="1"/>
 </signal>
 <signal name="C2U" class="3">
 <contactref element="U1" pad="22"/>
@@ -5546,8 +5546,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <via x="85.3565" y="-57.912" extent="1-16" drill="0.2286"/>
 <via x="70.0915" y="-59.817" extent="1-16" drill="0.2286"/>
 <wire x1="70.0915" y1="-59.817" x2="70.4471" y2="-59.4614" width="0.1524" layer="15"/>
-<wire x1="70.0915" y1="-59.817" x2="70.0915" y2="-57.8151" width="0.1524" layer="1"/>
-<wire x1="70.0915" y1="-57.8151" x2="70.9072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="70.0915" y1="-59.817" x2="70.0915" y2="-58.9581" width="0.1524" layer="1"/>
+<wire x1="70.9072" y1="-58.1424" x2="70.9072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="70.9072" y1="-58.1424" x2="70.0915" y2="-58.9581" width="0.1524" layer="1"/>
 <wire x1="76.4794" y1="-59.4614" x2="94.996" y2="-77.978" width="0.1524" layer="15"/>
 <wire x1="94.996" y1="-77.978" x2="98.044" y2="-77.978" width="0.1524" layer="15"/>
 <wire x1="98.044" y1="-77.978" x2="98.679" y2="-77.343" width="0.1524" layer="15"/>
@@ -5582,17 +5583,13 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="6.0439125" y1="-17.7528" x2="13.9972" y2="-17.7528" width="0.1524" layer="1"/>
 <via x="80.899" y="-52.959" extent="1-16" drill="0.2286"/>
 <wire x1="80.899" y1="-52.959" x2="80.899" y2="-51.435" width="0.1524" layer="1"/>
-<wire x1="79.756" y1="-51.435" x2="79.756" y2="-51.054" width="0.1524" layer="1"/>
-<wire x1="79.883" y1="-50.2736" x2="79.883" y2="-50.927" width="0.1524" layer="1"/>
-<wire x1="79.756" y1="-51.054" x2="79.883" y2="-50.927" width="0.1524" layer="1"/>
-<wire x1="79.883" y1="-50.2736" x2="79.9072" y2="-50.2494" width="0.1524" layer="1"/>
 <wire x1="78.9072" y1="-50.2494" x2="78.9072" y2="-51.3482" width="0.1524" layer="1"/>
-<wire x1="78.994" y1="-51.435" x2="79.756" y2="-51.435" width="0.1524" layer="1"/>
+<wire x1="78.994" y1="-51.435" x2="79.883" y2="-51.435" width="0.1524" layer="1"/>
 <wire x1="78.9072" y1="-51.3482" x2="78.994" y2="-51.435" width="0.1524" layer="1"/>
-<wire x1="80.9072" y1="-50.2494" x2="80.772" y2="-50.3846" width="0.1524" layer="1"/>
-<wire x1="80.772" y1="-50.3846" x2="80.772" y2="-51.308" width="0.1524" layer="1"/>
-<wire x1="80.772" y1="-51.308" x2="80.645" y2="-51.435" width="0.1524" layer="1"/>
-<wire x1="80.645" y1="-51.435" x2="79.756" y2="-51.435" width="0.1524" layer="1"/>
+<wire x1="80.9072" y1="-50.2494" x2="80.899" y2="-50.2576" width="0.1524" layer="1"/>
+<wire x1="80.899" y1="-50.2576" x2="80.899" y2="-51.181" width="0.1524" layer="1"/>
+<wire x1="80.899" y1="-51.181" x2="80.645" y2="-51.435" width="0.1524" layer="1"/>
+<wire x1="80.645" y1="-51.435" x2="79.883" y2="-51.435" width="0.1524" layer="1"/>
 <wire x1="80.899" y1="-51.435" x2="80.645" y2="-51.435" width="0.1524" layer="1"/>
 <wire x1="81.9072" y1="-50.2494" x2="81.9072" y2="-51.1888" width="0.1524" layer="1"/>
 <wire x1="81.9072" y1="-51.1888" x2="81.661" y2="-51.435" width="0.1524" layer="1"/>
@@ -5606,6 +5603,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="80.899" y1="-53.183875" x2="74.926275" y2="-59.1566" width="0.1524" layer="15"/>
 <wire x1="13.6906" y1="-35.83865625" x2="19.1262" y2="-41.27425625" width="0.1524" layer="15"/>
 <wire x1="24.81654375" y1="-59.1566" x2="74.926275" y2="-59.1566" width="0.1524" layer="15"/>
+<wire x1="79.9072" y1="-50.2494" x2="79.9072" y2="-51.4108" width="0.1524" layer="1"/>
+<wire x1="79.9072" y1="-51.4108" x2="79.883" y2="-51.435" width="0.1524" layer="1"/>
 </signal>
 <signal name="S9U" class="3">
 <contactref element="U1" pad="9"/>
@@ -5658,9 +5657,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="78.2066" y1="-54.483" x2="74.4726" y2="-58.217" width="0.1524" layer="15"/>
 <wire x1="78.2066" y1="-54.483" x2="78.2066" y2="-52.959" width="0.1524" layer="15"/>
 <via x="78.2066" y="-52.959" extent="1-16" drill="0.2286"/>
-<wire x1="77.4072" y1="-50.2494" x2="77.3176" y2="-50.339" width="0.1524" layer="1"/>
-<wire x1="77.3176" y1="-50.339" x2="77.3176" y2="-52.07" width="0.1524" layer="1"/>
-<wire x1="77.3176" y1="-52.07" x2="78.2066" y2="-52.959" width="0.1524" layer="1"/>
+<wire x1="77.4072" y1="-50.2494" x2="77.4446" y2="-50.2868" width="0.1524" layer="1"/>
+<wire x1="77.4446" y1="-50.2868" x2="77.4446" y2="-52.197" width="0.1524" layer="1"/>
+<wire x1="77.4446" y1="-52.197" x2="78.2066" y2="-52.959" width="0.1524" layer="1"/>
 </signal>
 <signal name="C7U" class="3">
 <contactref element="U1" pad="12"/>
@@ -5689,10 +5688,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="53.3012" y1="-54.3814" x2="53.3012" y2="-55.78" width="0.1524" layer="1"/>
 <wire x1="53.3012" y1="-55.78" x2="53.1114" y2="-55.9698" width="0.1524" layer="1"/>
 <via x="73.406" y="-53.721" extent="1-16" drill="0.2286"/>
-<wire x1="73.9072" y1="-50.2494" x2="73.7608" y2="-50.3958" width="0.1524" layer="1"/>
-<wire x1="73.7608" y1="-50.3958" x2="73.7608" y2="-51.6040875" width="0.1524" layer="1"/>
+<wire x1="73.9072" y1="-50.2494" x2="73.8878" y2="-50.2688" width="0.1524" layer="1"/>
+<wire x1="73.8878" y1="-50.2688" x2="73.8878" y2="-51.4770875" width="0.1524" layer="1"/>
 <wire x1="73.406" y1="-51.9588875" x2="73.406" y2="-53.721" width="0.1524" layer="1"/>
-<wire x1="73.7608" y1="-51.6040875" x2="73.406" y2="-51.9588875" width="0.1524" layer="1"/>
+<wire x1="73.8878" y1="-51.4770875" x2="73.406" y2="-51.9588875" width="0.1524" layer="1"/>
 <wire x1="73.406" y1="-53.721" x2="73.406" y2="-55.245" width="0.1524" layer="15"/>
 <wire x1="73.406" y1="-55.245" x2="72.771" y2="-55.88" width="0.1524" layer="15"/>
 <wire x1="72.771" y1="-55.88" x2="54.737" y2="-55.88" width="0.1524" layer="15"/>
@@ -5706,10 +5705,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U1" pad="19"/>
 <contactref element="CELL16:R2" pad="2"/>
 <via x="72.7964" y="-52.959" extent="1-16" drill="0.2286"/>
-<wire x1="73.4072" y1="-50.2494" x2="73.2608" y2="-50.3958" width="0.1524" layer="1"/>
-<wire x1="73.2608" y1="-50.3958" x2="73.2608" y2="-51.4770875" width="0.1524" layer="1"/>
+<wire x1="73.4072" y1="-50.2494" x2="73.3878" y2="-50.2688" width="0.1524" layer="1"/>
+<wire x1="73.3878" y1="-50.2688" x2="73.3878" y2="-51.3500875" width="0.1524" layer="1"/>
 <wire x1="72.7964" y1="-51.9414875" x2="72.7964" y2="-52.959" width="0.1524" layer="1"/>
-<wire x1="73.2608" y1="-51.4770875" x2="72.7964" y2="-51.9414875" width="0.1524" layer="1"/>
+<wire x1="73.3878" y1="-51.3500875" x2="72.7964" y2="-51.9414875" width="0.1524" layer="1"/>
 <wire x1="72.7964" y1="-52.959" x2="72.7964" y2="-55.2196" width="0.1524" layer="15"/>
 <wire x1="72.7964" y1="-55.2196" x2="72.517" y2="-55.499" width="0.1524" layer="15"/>
 <wire x1="72.517" y1="-55.499" x2="56.718" y2="-55.499" width="0.1524" layer="15"/>
@@ -5741,9 +5740,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="98.3996" y1="-74.5744" x2="97.79" y2="-75.184" width="0.1524" layer="1"/>
 <wire x1="99.0115125" y1="-70.99305" x2="98.1202" y2="-71.8843625" width="0.1524" layer="1"/>
 <wire x1="98.1202" y1="-71.8843625" x2="98.1202" y2="-73.28049375" width="0.1524" layer="1"/>
-<wire x1="81.4072" y1="-56.9994" x2="81.5536" y2="-56.853" width="0.1524" layer="1"/>
-<wire x1="81.5536" y1="-56.853" x2="81.5536" y2="-56.19134375" width="0.1524" layer="1"/>
-<wire x1="81.5536" y1="-56.19134375" x2="81.91574375" y2="-55.8292" width="0.1524" layer="1"/>
+<wire x1="81.4072" y1="-56.9994" x2="81.4266" y2="-56.98" width="0.1524" layer="1"/>
+<wire x1="81.4266" y1="-56.98" x2="81.4266" y2="-56.31834375" width="0.1524" layer="1"/>
+<wire x1="81.4266" y1="-56.31834375" x2="81.91574375" y2="-55.8292" width="0.1524" layer="1"/>
 <wire x1="82.8804" y1="-55.8292" x2="84.0486" y2="-54.661" width="0.1524" layer="1"/>
 <wire x1="81.91574375" y1="-55.8292" x2="82.8804" y2="-55.8292" width="0.1524" layer="1"/>
 </signal>
@@ -5779,10 +5778,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U1" pad="35"/>
 <contactref element="C9" pad="1"/>
 <wire x1="77.78750625" y1="-58.813" x2="77.3301625" y2="-58.813" width="0.1524" layer="1"/>
-<wire x1="77.3301625" y1="-58.813" x2="76.3701625" y2="-57.853" width="0.1524" layer="1"/>
-<wire x1="76.3701625" y1="-57.853" x2="76.1875125" y2="-57.853" width="0.1524" layer="1"/>
-<wire x1="76.1875125" y1="-57.853" x2="75.9072" y2="-57.5726875" width="0.1524" layer="1"/>
-<wire x1="75.9072" y1="-57.5726875" x2="75.9072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="77.3301625" y1="-58.813" x2="76.6241625" y2="-58.107" width="0.1524" layer="1"/>
+<wire x1="76.6241625" y1="-58.107" x2="76.1875125" y2="-58.107" width="0.1524" layer="1"/>
+<wire x1="76.1875125" y1="-58.107" x2="75.9072" y2="-57.8266875" width="0.1524" layer="1"/>
+<wire x1="75.9072" y1="-57.8266875" x2="75.9072" y2="-56.9994" width="0.1524" layer="1"/>
 </signal>
 <signal name="DRVU" class="3">
 <contactref element="U1" pad="38"/>
@@ -5803,14 +5802,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="83.81925625" y1="-45.6692" x2="81.9912" y2="-45.6692" width="0.1524" layer="15"/>
 <wire x1="86.995" y1="-54.991" x2="86.995" y2="-58.801" width="0.1524" layer="15"/>
 <wire x1="88.265" y1="-51.943" x2="84.7598" y2="-48.4378" width="0.1524" layer="15"/>
-<wire x1="77.4072" y1="-56.9994" x2="77.5536" y2="-56.853" width="0.1524" layer="1"/>
-<wire x1="77.5536" y1="-56.853" x2="77.5536" y2="-56.2797125" width="0.1524" layer="1"/>
-<wire x1="77.5536" y1="-56.2797125" x2="77.6993125" y2="-56.134" width="0.1524" layer="1"/>
-<wire x1="78.7668875" y1="-56.134" x2="79.3764875" y2="-55.5244" width="0.1524" layer="1"/>
-<wire x1="79.3764875" y1="-55.5244" x2="79.78214375" y2="-55.5244" width="0.1524" layer="1"/>
-<wire x1="80.26101875" y1="-55.045525" x2="80.26101875" y2="-54.60701875" width="0.1524" layer="1"/>
-<wire x1="77.6993125" y1="-56.134" x2="78.7668875" y2="-56.134" width="0.1524" layer="1"/>
-<wire x1="79.78214375" y1="-55.5244" x2="80.26101875" y2="-55.045525" width="0.1524" layer="1"/>
+<wire x1="77.4072" y1="-56.9994" x2="77.4266" y2="-56.98" width="0.1524" layer="1"/>
+<wire x1="77.4266" y1="-56.98" x2="77.4266" y2="-56.2797125" width="0.1524" layer="1"/>
+<wire x1="77.4266" y1="-56.2797125" x2="77.8263125" y2="-55.88" width="0.1524" layer="1"/>
+<wire x1="78.79154375" y1="-55.88" x2="80.064525" y2="-54.60701875" width="0.1524" layer="1"/>
+<wire x1="77.8263125" y1="-55.88" x2="78.79154375" y2="-55.88" width="0.1524" layer="1"/>
+<wire x1="80.26101875" y1="-54.60701875" x2="80.064525" y2="-54.60701875" width="0.1524" layer="1"/>
 <wire x1="91.8745" y1="-31.246" x2="90.80831875" y2="-31.246" width="0.1524" layer="1"/>
 <wire x1="90.80831875" y1="-31.246" x2="90.804659375" y2="-31.242340625" width="0.1524" layer="1"/>
 <via x="90.804659375" y="-31.242340625" extent="1-16" drill="0.2286"/>
@@ -5827,18 +5824,18 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="R27" pad="2"/>
 <contactref element="U1" pad="43"/>
 <wire x1="81.6238" y1="-60.5536" x2="81.6238" y2="-59.0296" width="0.1524" layer="1"/>
-<wire x1="81.6238" y1="-59.0296" x2="81.017275" y2="-59.0296" width="0.1524" layer="1"/>
-<wire x1="79.9072" y1="-57.919525" x2="79.9072" y2="-56.9994" width="0.1524" layer="1"/>
-<wire x1="81.017275" y1="-59.0296" x2="79.9072" y2="-57.919525" width="0.1524" layer="1"/>
+<wire x1="81.6238" y1="-59.0296" x2="80.890275" y2="-59.0296" width="0.1524" layer="1"/>
+<wire x1="79.9072" y1="-58.046525" x2="79.9072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="80.890275" y1="-59.0296" x2="79.9072" y2="-58.046525" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$70">
 <contactref element="U1" pad="44"/>
 <contactref element="R28" pad="1"/>
-<wire x1="80.6875125" y1="-57.853" x2="80.5536" y2="-57.7190875" width="0.1524" layer="1"/>
-<wire x1="83.3238" y1="-59.0296" x2="82.1472" y2="-57.853" width="0.1524" layer="1"/>
-<wire x1="80.5536" y1="-57.7190875" x2="80.5536" y2="-57.1458" width="0.1524" layer="1"/>
-<wire x1="80.5536" y1="-57.1458" x2="80.4072" y2="-56.9994" width="0.1524" layer="1"/>
-<wire x1="82.1472" y1="-57.853" x2="80.6875125" y2="-57.853" width="0.1524" layer="1"/>
+<wire x1="80.6875125" y1="-58.234" x2="80.4266" y2="-57.9730875" width="0.1524" layer="1"/>
+<wire x1="83.3238" y1="-59.0296" x2="82.5282" y2="-58.234" width="0.1524" layer="1"/>
+<wire x1="80.4266" y1="-57.9730875" x2="80.4266" y2="-57.0188" width="0.1524" layer="1"/>
+<wire x1="80.4266" y1="-57.0188" x2="80.4072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="82.5282" y1="-58.234" x2="80.6875125" y2="-58.234" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$67">
 <contactref element="U2" pad="46"/>
@@ -5888,10 +5885,11 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="174.408725" y1="-71.74865" x2="174.846875" y2="-72.1868" width="0.1524" layer="1"/>
 <wire x1="174.846875" y1="-72.1868" x2="175.163075" y2="-72.1868" width="0.1524" layer="1"/>
 <via x="192.913" y="-52.451" extent="1-16" drill="0.2286"/>
-<wire x1="194.267" y1="-49.864396875" x2="194.1206" y2="-50.010796875" width="0.1524" layer="1"/>
-<wire x1="194.1206" y1="-50.010796875" x2="194.1206" y2="-50.58408125" width="0.1524" layer="1"/>
-<wire x1="192.913" y1="-51.79168125" x2="192.913" y2="-52.451" width="0.1524" layer="1"/>
-<wire x1="194.1206" y1="-50.58408125" x2="192.913" y2="-51.79168125" width="0.1524" layer="1"/>
+<wire x1="194.267" y1="-49.864396875" x2="194.267" y2="-49.952596875" width="0.1524" layer="1"/>
+<wire x1="194.267" y1="-49.952596875" x2="194.2476" y2="-49.971996875" width="0.1524" layer="1"/>
+<wire x1="194.2476" y1="-49.971996875" x2="194.2476" y2="-50.83808125" width="0.1524" layer="1"/>
+<wire x1="192.913" y1="-52.17268125" x2="192.913" y2="-52.451" width="0.1524" layer="1"/>
+<wire x1="194.2476" y1="-50.83808125" x2="192.913" y2="-52.17268125" width="0.1524" layer="1"/>
 <wire x1="193.87931875" y1="-62.21941875" x2="181.7275375" y2="-74.3712" width="0.1524" layer="15"/>
 <wire x1="176.149" y1="-74.3712" x2="181.7275375" y2="-74.3712" width="0.1524" layer="15"/>
 <wire x1="193.87931875" y1="-53.24674375" x2="193.083575" y2="-52.451" width="0.1524" layer="15"/>
@@ -5902,9 +5900,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U2" pad="44"/>
 <contactref element="R30" pad="2"/>
 <wire x1="192.5075" y1="-47.8536" x2="193.1567" y2="-48.5028" width="0.1524" layer="1"/>
-<wire x1="194.9786875" y1="-48.5028" x2="195.6206" y2="-49.1447125" width="0.1524" layer="1"/>
-<wire x1="195.6206" y1="-49.1447125" x2="195.6206" y2="-49.717996875" width="0.1524" layer="1"/>
-<wire x1="195.6206" y1="-49.717996875" x2="195.767" y2="-49.864396875" width="0.1524" layer="1"/>
+<wire x1="194.9786875" y1="-48.5028" x2="195.7476" y2="-49.2717125" width="0.1524" layer="1"/>
+<wire x1="195.7476" y1="-49.2717125" x2="195.7476" y2="-49.844996875" width="0.1524" layer="1"/>
+<wire x1="195.7476" y1="-49.844996875" x2="195.767" y2="-49.864396875" width="0.1524" layer="1"/>
 <wire x1="193.1567" y1="-48.5028" x2="194.9786875" y2="-48.5028" width="0.1524" layer="1"/>
 </signal>
 <signal name="C0L" class="4">
@@ -5934,10 +5932,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <signal name="N$81">
 <contactref element="R40" pad="2"/>
 <contactref element="U4" pad="1"/>
-<wire x1="267.5636" y1="-37.68" x2="268.66754375" y2="-38.78394375" width="0.1524" layer="1"/>
-<wire x1="268.66754375" y1="-38.78394375" x2="268.74950625" y2="-38.78394375" width="0.1524" layer="1"/>
-<wire x1="268.74950625" y1="-38.78394375" x2="268.8649625" y2="-38.8994" width="0.1524" layer="1"/>
-<wire x1="268.8649625" y1="-38.8994" x2="269.1572" y2="-38.8994" width="0.1524" layer="1"/>
+<wire x1="268.783" y1="-38.8994" x2="267.5636" y2="-37.68" width="0.1524" layer="1"/>
+<wire x1="268.783" y1="-38.8994" x2="269.1572" y2="-38.8994" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$83">
 <contactref element="R38" pad="2"/>
@@ -6000,12 +5996,13 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="142.2146" y1="-49.4284" x2="142.24" y2="-49.403" width="0.1524" layer="1"/>
 <via x="142.24" y="-49.403" extent="1-16" drill="0.2286"/>
 <wire x1="269.1572" y1="-39.8994" x2="269.1572" y2="-39.3994" width="0.1524" layer="1"/>
-<wire x1="269.1572" y1="-39.3994" x2="269.4072" y2="-39.6494" width="0.1524" layer="1"/>
-<wire x1="269.4072" y1="-39.6494" x2="270.3322" y2="-39.6494" width="0.1524" layer="1"/>
-<wire x1="270.3322" y1="-39.6494" x2="271.0339125" y2="-39.6494" width="0.1524" layer="1"/>
-<wire x1="271.0339125" y1="-39.6494" x2="271.1375125" y2="-39.5458" width="0.1524" layer="1"/>
-<wire x1="271.1375125" y1="-39.5458" x2="271.3608" y2="-39.5458" width="0.1524" layer="1"/>
-<wire x1="271.3608" y1="-39.5458" x2="271.5072" y2="-39.3994" width="0.1524" layer="1"/>
+<wire x1="270.0782" y1="-39.3954" x2="269.1612" y2="-39.3954" width="0.1524" layer="1"/>
+<wire x1="269.1572" y1="-39.3994" x2="269.1612" y2="-39.3954" width="0.1524" layer="1"/>
+<wire x1="270.0782" y1="-39.3954" x2="270.3322" y2="-39.6494" width="0.1524" layer="1"/>
+<wire x1="270.3322" y1="-39.6494" x2="270.6529125" y2="-39.6494" width="0.1524" layer="1"/>
+<wire x1="270.6529125" y1="-39.6494" x2="270.8835125" y2="-39.4188" width="0.1524" layer="1"/>
+<wire x1="270.8835125" y1="-39.4188" x2="271.4878" y2="-39.4188" width="0.1524" layer="1"/>
+<wire x1="271.4878" y1="-39.4188" x2="271.5072" y2="-39.3994" width="0.1524" layer="1"/>
 <wire x1="271.5072" y1="-39.3994" x2="271.5072" y2="-38.8994" width="0.1524" layer="1"/>
 <wire x1="271.5072" y1="-38.8994" x2="271.0822" y2="-38.4744" width="0.1524" layer="1"/>
 <wire x1="271.0822" y1="-38.4744" x2="271.0822" y2="-37.3634" width="0.1524" layer="1"/>
@@ -6035,11 +6032,11 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="248.6914" y1="-7.2256" x2="248.4254" y2="-7.2256" width="0.1524" layer="1"/>
 <wire x1="248.4254" y1="-7.2256" x2="247.269" y2="-8.382" width="0.1524" layer="1"/>
 <via x="247.269" y="-8.382" extent="1-16" drill="0.2286"/>
-<wire x1="253.1738" y1="-65.8876" x2="251.89909375" y2="-65.8876" width="0.1524" layer="1"/>
-<wire x1="237.0675125" y1="-65.8876" x2="236.7908" y2="-65.8876" width="0.1524" layer="1"/>
-<wire x1="237.7461125" y1="-66.5662" x2="237.0675125" y2="-65.8876" width="0.1524" layer="1"/>
-<wire x1="251.89909375" y1="-65.8876" x2="251.22049375" y2="-66.5662" width="0.1524" layer="1"/>
-<wire x1="251.22049375" y1="-66.5662" x2="237.7461125" y2="-66.5662" width="0.1524" layer="1"/>
+<wire x1="253.1738" y1="-65.8876" x2="252.15309375" y2="-65.8876" width="0.1524" layer="1"/>
+<wire x1="236.8135125" y1="-65.8876" x2="236.7908" y2="-65.8876" width="0.1524" layer="1"/>
+<wire x1="237.8731125" y1="-66.9472" x2="236.8135125" y2="-65.8876" width="0.1524" layer="1"/>
+<wire x1="252.15309375" y1="-65.8876" x2="251.09349375" y2="-66.9472" width="0.1524" layer="1"/>
+<wire x1="251.09349375" y1="-66.9472" x2="237.8731125" y2="-66.9472" width="0.1524" layer="1"/>
 <wire x1="236.7908" y1="-65.8876" x2="234.26009375" y2="-68.41830625" width="0.1524" layer="1"/>
 <wire x1="234.26009375" y1="-68.41830625" x2="234.09569375" y2="-68.41830625" width="0.1524" layer="1"/>
 <via x="234.09569375" y="-68.41830625" extent="1-16" drill="0.2286"/>
@@ -6050,9 +6047,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="230.9876" y1="-40.4876" x2="231.013" y2="-40.513" width="0.1524" layer="1"/>
 <via x="231.013" y="-40.513" extent="1-16" drill="0.2286"/>
 <wire x1="220.4078" y1="-65.8876" x2="220.4078" y2="-66.5997" width="0.1524" layer="1"/>
-<wire x1="220.4078" y1="-66.5997" x2="219.6975" y2="-67.31" width="0.1524" layer="1"/>
-<wire x1="219.6975" y1="-67.31" x2="217.9195" y2="-67.31" width="0.1524" layer="1"/>
-<via x="217.9195" y="-67.31" extent="1-16" drill="0.2286"/>
+<wire x1="220.4078" y1="-66.5997" x2="219.5705" y2="-67.437" width="0.1524" layer="1"/>
+<wire x1="219.5705" y1="-67.437" x2="217.7925" y2="-67.437" width="0.1524" layer="1"/>
+<via x="217.7925" y="-67.437" extent="1-16" drill="0.2286"/>
 <wire x1="193.2686" y1="-60.3892" x2="191.63980625" y2="-60.3892" width="0.1524" layer="1"/>
 <wire x1="191.63980625" y1="-60.3892" x2="191.610003125" y2="-60.419003125" width="0.1524" layer="1"/>
 <via x="191.610003125" y="-60.419003125" extent="1-16" drill="0.2286"/>
@@ -6063,8 +6060,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="188.4038" y1="-60.5148" x2="188.468" y2="-60.579" width="0.1524" layer="1"/>
 <via x="188.468" y="-60.579" extent="1-16" drill="0.2286"/>
 <wire x1="197.7517" y1="-46.3797" x2="199.4154" y2="-46.3797" width="0.1524" layer="1"/>
-<wire x1="197.7517" y1="-46.3797" x2="196.1007" y2="-46.3797" width="0.1524" layer="1"/>
-<wire x1="196.1007" y1="-46.3797" x2="196.088" y2="-46.367" width="0.1524" layer="1"/>
+<wire x1="197.7517" y1="-46.3797" x2="196.2023" y2="-46.3797" width="0.1524" layer="1"/>
+<wire x1="196.2023" y1="-46.3797" x2="196.1896" y2="-46.367" width="0.1524" layer="1"/>
 <wire x1="192.5075" y1="-46.2534" x2="191.7201" y2="-45.466" width="0.1524" layer="1"/>
 <wire x1="191.7201" y1="-45.466" x2="191.643" y2="-45.466" width="0.1524" layer="1"/>
 <via x="191.643" y="-45.466" extent="1-16" drill="0.2286"/>
@@ -6079,12 +6076,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="202.7936" y1="-47.8543" x2="202.9961" y2="-48.0568" width="0.1524" layer="1"/>
 <wire x1="202.9961" y1="-48.0568" x2="204.4192" y2="-48.0568" width="0.1524" layer="1"/>
 <via x="204.4192" y="-48.0568" extent="1-16" drill="0.2286"/>
-<wire x1="195.1206" y1="-49.1447125" x2="194.9866875" y2="-49.0108" width="0.1524" layer="1"/>
-<wire x1="195.267" y1="-49.864396875" x2="195.1206" y2="-49.717996875" width="0.1524" layer="1"/>
-<wire x1="195.1206" y1="-49.717996875" x2="195.1206" y2="-49.1447125" width="0.1524" layer="1"/>
-<wire x1="194.9866875" y1="-49.0108" x2="194.0473125" y2="-49.0108" width="0.1524" layer="1"/>
+<wire x1="195.2476" y1="-49.2717125" x2="194.8596875" y2="-48.8838" width="0.1524" layer="1"/>
+<wire x1="195.267" y1="-49.864396875" x2="195.2476" y2="-49.844996875" width="0.1524" layer="1"/>
+<wire x1="195.2476" y1="-49.844996875" x2="195.2476" y2="-49.2717125" width="0.1524" layer="1"/>
+<wire x1="194.8596875" y1="-48.8838" x2="194.1743125" y2="-48.8838" width="0.1524" layer="1"/>
 <wire x1="193.767" y1="-49.2911125" x2="193.767" y2="-49.864396875" width="0.1524" layer="1"/>
-<wire x1="194.0473125" y1="-49.0108" x2="193.767" y2="-49.2911125" width="0.1524" layer="1"/>
+<wire x1="194.1743125" y1="-48.8838" x2="193.767" y2="-49.2911125" width="0.1524" layer="1"/>
 <wire x1="193.767" y1="-49.864396875" x2="192.97420625" y2="-49.071603125" width="0.1524" layer="1"/>
 <wire x1="192.97420625" y1="-49.071603125" x2="192.863396875" y2="-49.071603125" width="0.1524" layer="1"/>
 <via x="192.863396875" y="-49.071603125" extent="1-16" drill="0.2286"/>
@@ -6123,7 +6120,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="214.3379" y1="-7.3018" x2="213.9308" y2="-7.3018" width="0.1524" layer="1"/>
 <wire x1="213.9308" y1="-7.3018" x2="213.233" y2="-6.604" width="0.1524" layer="1"/>
 <via x="213.233" y="-6.604" extent="1-16" drill="0.2286"/>
-<wire x1="196.088" y1="-46.367" x2="196.088" y2="-44.704" width="0.1524" layer="1"/>
+<wire x1="196.1896" y1="-44.8056" x2="196.088" y2="-44.704" width="0.1524" layer="1"/>
+<wire x1="196.1896" y1="-44.8056" x2="196.1896" y2="-46.367" width="0.1524" layer="1"/>
 <via x="196.088" y="-44.704" extent="1-16" drill="0.2286"/>
 <wire x1="199.4154" y1="-46.3797" x2="199.4154" y2="-44.704" width="0.1524" layer="1"/>
 <via x="199.4154" y="-44.704" extent="1-16" drill="0.2286"/>
@@ -6182,36 +6180,34 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="222.0976" y1="-64.2992" x2="221.1878" y2="-65.209" width="0.1524" layer="1"/>
 <wire x1="221.1878" y1="-65.209" x2="219.8631125" y2="-65.209" width="0.1524" layer="1"/>
 <wire x1="219.7292" y1="-65.3429125" x2="219.7292" y2="-66.6558" width="0.1524" layer="1"/>
-<wire x1="219.7292" y1="-66.6558" x2="219.583" y2="-66.802" width="0.1524" layer="1"/>
-<wire x1="218.17200625" y1="-66.7004" x2="217.66699375" y2="-66.7004" width="0.1524" layer="1"/>
-<wire x1="217.66699375" y1="-66.7004" x2="217.05739375" y2="-67.31" width="0.1524" layer="1"/>
-<wire x1="219.583" y1="-66.802" x2="218.27360625" y2="-66.802" width="0.1524" layer="1"/>
-<wire x1="218.27360625" y1="-66.802" x2="218.17200625" y2="-66.7004" width="0.1524" layer="1"/>
+<wire x1="219.7292" y1="-66.6558" x2="219.5068" y2="-66.8782" width="0.1524" layer="1"/>
+<wire x1="219.5068" y1="-66.8782" x2="217.48919375" y2="-66.8782" width="0.1524" layer="1"/>
+<wire x1="217.48919375" y1="-66.8782" x2="217.05739375" y2="-67.31" width="0.1524" layer="1"/>
 <wire x1="206.9456" y1="-64.99004375" x2="203.9112" y2="-61.95564375" width="0.1524" layer="1"/>
-<wire x1="206.9456" y1="-66.33775" x2="206.9456" y2="-64.99004375" width="0.1524" layer="1"/>
-<wire x1="203.9112" y1="-60.83188125" x2="203.9112" y2="-61.95564375" width="0.1524" layer="1"/>
-<wire x1="217.05739375" y1="-67.31" x2="207.91785" y2="-67.31" width="0.1524" layer="1"/>
-<wire x1="207.91785" y1="-67.31" x2="206.9456" y2="-66.33775" width="0.1524" layer="1"/>
-<wire x1="200.267" y1="-56.614396875" x2="200.4134" y2="-56.760796875" width="0.1524" layer="1"/>
-<wire x1="200.4134" y1="-56.760796875" x2="200.4134" y2="-57.33408125" width="0.1524" layer="1"/>
-<wire x1="200.4134" y1="-57.33408125" x2="203.9112" y2="-60.83188125" width="0.1524" layer="1"/>
+<wire x1="206.9456" y1="-66.71875" x2="206.9456" y2="-64.99004375" width="0.1524" layer="1"/>
+<wire x1="203.9112" y1="-60.93348125" x2="203.9112" y2="-61.95564375" width="0.1524" layer="1"/>
+<wire x1="217.05739375" y1="-67.31" x2="207.53685" y2="-67.31" width="0.1524" layer="1"/>
+<wire x1="207.53685" y1="-67.31" x2="206.9456" y2="-66.71875" width="0.1524" layer="1"/>
+<wire x1="200.267" y1="-56.614396875" x2="200.2864" y2="-56.633796875" width="0.1524" layer="1"/>
+<wire x1="200.2864" y1="-56.633796875" x2="200.2864" y2="-57.30868125" width="0.1524" layer="1"/>
+<wire x1="200.2864" y1="-57.30868125" x2="203.9112" y2="-60.93348125" width="0.1524" layer="1"/>
 </signal>
 <signal name="S6L" class="4">
 <contactref element="U2" pad="15"/>
 <contactref element="CELL6:R2" pad="2"/>
-<wire x1="218.7076" y1="-66.21149375" x2="218.57369375" y2="-66.3454" width="0.1524" layer="1"/>
-<wire x1="216.2064375" y1="-66.3454" x2="215.853725" y2="-66.6981125" width="0.1524" layer="1"/>
-<wire x1="218.57369375" y1="-66.3454" x2="216.2064375" y2="-66.3454" width="0.1524" layer="1"/>
-<wire x1="220.1926" y1="-64.2992" x2="218.7076" y2="-65.7842" width="0.1524" layer="1"/>
-<wire x1="218.7076" y1="-65.7842" x2="218.7076" y2="-66.21149375" width="0.1524" layer="1"/>
-<wire x1="204.216" y1="-61.8293875" x2="204.216" y2="-60.63668125" width="0.1524" layer="1"/>
-<wire x1="207.2504" y1="-64.8637875" x2="207.2504" y2="-66.21149375" width="0.1524" layer="1"/>
+<wire x1="218.8346" y1="-66.33849375" x2="218.62449375" y2="-66.5486" width="0.1524" layer="1"/>
+<wire x1="216.0032375" y1="-66.5486" x2="215.853725" y2="-66.6981125" width="0.1524" layer="1"/>
+<wire x1="218.62449375" y1="-66.5486" x2="216.0032375" y2="-66.5486" width="0.1524" layer="1"/>
+<wire x1="220.1926" y1="-64.2992" x2="218.8346" y2="-65.6572" width="0.1524" layer="1"/>
+<wire x1="218.8346" y1="-65.6572" x2="218.8346" y2="-66.33849375" width="0.1524" layer="1"/>
+<wire x1="204.216" y1="-61.8293875" x2="204.216" y2="-60.78908125" width="0.1524" layer="1"/>
+<wire x1="207.2504" y1="-64.8637875" x2="207.2504" y2="-66.59249375" width="0.1524" layer="1"/>
 <wire x1="204.216" y1="-61.8293875" x2="207.2504" y2="-64.8637875" width="0.1524" layer="1"/>
-<wire x1="207.2504" y1="-66.21149375" x2="207.73701875" y2="-66.6981125" width="0.1524" layer="1"/>
-<wire x1="207.73701875" y1="-66.6981125" x2="215.853725" y2="-66.6981125" width="0.1524" layer="1"/>
-<wire x1="200.9134" y1="-57.33408125" x2="200.9134" y2="-56.760796875" width="0.1524" layer="1"/>
-<wire x1="200.9134" y1="-56.760796875" x2="200.767" y2="-56.614396875" width="0.1524" layer="1"/>
-<wire x1="204.216" y1="-60.63668125" x2="200.9134" y2="-57.33408125" width="0.1524" layer="1"/>
+<wire x1="207.2504" y1="-66.59249375" x2="207.35601875" y2="-66.6981125" width="0.1524" layer="1"/>
+<wire x1="207.35601875" y1="-66.6981125" x2="215.853725" y2="-66.6981125" width="0.1524" layer="1"/>
+<wire x1="200.7864" y1="-57.35948125" x2="200.7864" y2="-56.633796875" width="0.1524" layer="1"/>
+<wire x1="200.7864" y1="-56.633796875" x2="200.767" y2="-56.614396875" width="0.1524" layer="1"/>
+<wire x1="204.216" y1="-60.78908125" x2="200.7864" y2="-57.35948125" width="0.1524" layer="1"/>
 </signal>
 <signal name="C5L" class="4">
 <contactref element="U2" pad="16"/>
@@ -6293,8 +6289,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="243.1662" y1="-20.5994" x2="243.1662" y2="-21.998" width="0.1524" layer="1"/>
 <wire x1="243.1662" y1="-21.998" x2="242.9764" y2="-22.1878" width="0.1524" layer="1"/>
 <wire x1="242.9764" y1="-22.1878" x2="241.8706" y2="-21.082" width="0.1524" layer="1"/>
-<wire x1="241.8706" y1="-21.082" x2="241.0342" y2="-21.082" width="0.1524" layer="1"/>
-<via x="241.0342" y="-21.082" extent="1-16" drill="0.2286"/>
+<wire x1="241.8706" y1="-21.082" x2="241.1612" y2="-21.082" width="0.1524" layer="1"/>
+<via x="241.1612" y="-21.082" extent="1-16" drill="0.2286"/>
 <wire x1="203.267" y1="-56.614396875" x2="203.267" y2="-53.48319375" width="0.1524" layer="1"/>
 <wire x1="203.267" y1="-53.48319375" x2="203.217375" y2="-53.43356875" width="0.1524" layer="1"/>
 <via x="203.217375" y="-53.43356875" extent="1-16" drill="0.2286"/>
@@ -6311,18 +6307,18 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="265.9634" y1="-39.2843375" x2="265.9634" y2="-38.9476625" width="0.1524" layer="15"/>
 <wire x1="263.6614625" y1="-38.6842" x2="264.4996625" y2="-39.5224" width="0.1524" layer="15"/>
 <wire x1="265.9634" y1="-38.9476625" x2="265.0903375" y2="-38.0746" width="0.1524" layer="15"/>
-<wire x1="258.0268" y1="-38.0746" x2="241.0342" y2="-21.082" width="0.1524" layer="15"/>
+<wire x1="258.1538" y1="-38.0746" x2="241.1612" y2="-21.082" width="0.1524" layer="15"/>
 <wire x1="225.5797375" y1="-38.6842" x2="263.6614625" y2="-38.6842" width="0.1524" layer="15"/>
-<wire x1="265.0903375" y1="-38.0746" x2="258.0268" y2="-38.0746" width="0.1524" layer="15"/>
+<wire x1="265.0903375" y1="-38.0746" x2="258.1538" y2="-38.0746" width="0.1524" layer="15"/>
 </signal>
 <signal name="S3L" class="4">
 <contactref element="U2" pad="21"/>
 <contactref element="CELL3:R2" pad="2"/>
-<via x="241.0342" y="-20.1676" extent="1-16" drill="0.2286"/>
+<via x="241.1612" y="-20.1676" extent="1-16" drill="0.2286"/>
 <wire x1="243.8448" y1="-20.0547125" x2="243.7108875" y2="-19.9208" width="0.1524" layer="1"/>
 <wire x1="243.7108875" y1="-19.9208" x2="242.6215125" y2="-19.9208" width="0.1524" layer="1"/>
 <wire x1="244.8814" y1="-22.1878" x2="243.8448" y2="-21.1512" width="0.1524" layer="1"/>
-<wire x1="242.3747125" y1="-20.1676" x2="241.0342" y2="-20.1676" width="0.1524" layer="1"/>
+<wire x1="242.3747125" y1="-20.1676" x2="241.1612" y2="-20.1676" width="0.1524" layer="1"/>
 <wire x1="243.8448" y1="-21.1512" x2="243.8448" y2="-20.0547125" width="0.1524" layer="1"/>
 <wire x1="242.6215125" y1="-19.9208" x2="242.3747125" y2="-20.1676" width="0.1524" layer="1"/>
 <via x="204.20218125" y="-53.467" extent="1-16" drill="0.2286"/>
@@ -6337,13 +6333,13 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="263.45371875" y1="-38.989" x2="265.1536625" y2="-40.68894375" width="0.1524" layer="15"/>
 <wire x1="265.8713375" y1="-40.68894375" x2="266.2682" y2="-40.29208125" width="0.1524" layer="15"/>
 <wire x1="266.2682" y1="-40.29208125" x2="266.2682" y2="-38.82140625" width="0.1524" layer="15"/>
-<wire x1="265.21659375" y1="-37.7698" x2="258.15305625" y2="-37.7698" width="0.1524" layer="15"/>
-<wire x1="258.15305625" y1="-37.7698" x2="242.462128125" y2="-22.078871875" width="0.1524" layer="15"/>
+<wire x1="265.21659375" y1="-37.7698" x2="258.40705625" y2="-37.7698" width="0.1524" layer="15"/>
+<wire x1="258.40705625" y1="-37.7698" x2="242.462128125" y2="-21.824871875" width="0.1524" layer="15"/>
 <wire x1="205.65396875" y1="-42.91840625" x2="207.971375" y2="-40.601" width="0.1524" layer="15"/>
 <wire x1="207.971375" y1="-40.601" x2="224.09399375" y2="-40.601" width="0.1524" layer="15"/>
 <wire x1="266.2682" y1="-38.82140625" x2="265.21659375" y2="-37.7698" width="0.1524" layer="15"/>
-<wire x1="241.0342" y1="-20.1676" x2="242.462128125" y2="-21.595528125" width="0.1524" layer="15"/>
-<wire x1="242.462128125" y1="-21.595528125" x2="242.462128125" y2="-22.078871875" width="0.1524" layer="15"/>
+<wire x1="241.1612" y1="-20.1676" x2="242.462128125" y2="-21.468528125" width="0.1524" layer="15"/>
+<wire x1="242.462128125" y1="-21.468528125" x2="242.462128125" y2="-21.824871875" width="0.1524" layer="15"/>
 <wire x1="204.7494" y1="-52.68171875" x2="204.7494" y2="-48.49890625" width="0.1524" layer="15"/>
 <wire x1="204.7494" y1="-48.49890625" x2="204.9653" y2="-48.28300625" width="0.1524" layer="15"/>
 <wire x1="204.9653" y1="-48.28300625" x2="204.9653" y2="-47.83059375" width="0.1524" layer="15"/>
@@ -6368,14 +6364,14 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="205.198575" y1="-53.467" x2="205.11210625" y2="-53.467" width="0.1524" layer="1"/>
 <wire x1="205.11210625" y1="-53.467" x2="204.267" y2="-54.31210625" width="0.1524" layer="1"/>
 <wire x1="245.11" y1="-53.467" x2="246.761" y2="-55.118" width="0.1524" layer="15"/>
-<wire x1="206.1224375" y1="-54.1274" x2="206.5861125" y2="-54.1274" width="0.1524" layer="15"/>
+<wire x1="206.1224375" y1="-54.2544" x2="206.5861125" y2="-54.2544" width="0.1524" layer="15"/>
 <wire x1="207.4926" y1="-43.1386625" x2="207.9846625" y2="-42.6466" width="0.1524" layer="15"/>
 <wire x1="207.9846625" y1="-42.6466" x2="208.7023375" y2="-42.6466" width="0.1524" layer="15"/>
-<wire x1="205.198575" y1="-53.467" x2="205.4620375" y2="-53.467" width="0.1524" layer="15"/>
-<wire x1="206.5861125" y1="-54.1274" x2="207.4926" y2="-53.2209125" width="0.1524" layer="15"/>
+<wire x1="205.198575" y1="-53.467" x2="205.3350375" y2="-53.467" width="0.1524" layer="15"/>
+<wire x1="206.5861125" y1="-54.2544" x2="207.4926" y2="-53.3479125" width="0.1524" layer="15"/>
 <wire x1="219.5227375" y1="-53.467" x2="245.11" y2="-53.467" width="0.1524" layer="15"/>
-<wire x1="205.4620375" y1="-53.467" x2="206.1224375" y2="-54.1274" width="0.1524" layer="15"/>
-<wire x1="207.4926" y1="-53.2209125" x2="207.4926" y2="-43.1386625" width="0.1524" layer="15"/>
+<wire x1="205.3350375" y1="-53.467" x2="206.1224375" y2="-54.2544" width="0.1524" layer="15"/>
+<wire x1="207.4926" y1="-53.3479125" x2="207.4926" y2="-43.1386625" width="0.1524" layer="15"/>
 <wire x1="208.7023375" y1="-42.6466" x2="219.5227375" y2="-53.467" width="0.1524" layer="15"/>
 <wire x1="246.761" y1="-55.118" x2="249.6045875" y2="-55.118" width="0.1524" layer="15"/>
 <wire x1="249.6045875" y1="-55.118" x2="250.1819875" y2="-54.5406" width="0.1524" layer="15"/>
@@ -6549,10 +6545,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="80.4164" y1="-47.0528" x2="78.5502" y2="-47.0528" width="0.1524" layer="1"/>
 <wire x1="78.5502" y1="-47.0528" x2="78.486" y2="-47.117" width="0.1524" layer="1"/>
 <via x="78.486" y="-47.117" extent="1-16" drill="0.2286"/>
-<wire x1="89.789" y1="-33.123" x2="91.3312125" y2="-33.123" width="0.1524" layer="1"/>
-<wire x1="91.3312125" y1="-33.123" x2="91.3353125" y2="-33.1271" width="0.1524" layer="1"/>
-<wire x1="91.3353125" y1="-33.1271" x2="91.7556" y2="-33.1271" width="0.1524" layer="1"/>
-<wire x1="91.7556" y1="-33.1271" x2="91.8745" y2="-33.246" width="0.1524" layer="1"/>
+<wire x1="91.8745" y1="-33.246" x2="91.8664" y2="-33.2541" width="0.1524" layer="1"/>
+<wire x1="91.8664" y1="-33.2541" x2="89.7931" y2="-33.2541" width="0.1524" layer="1"/>
+<wire x1="89.789" y1="-33.123" x2="89.789" y2="-33.25" width="0.1524" layer="1"/>
+<wire x1="89.7931" y1="-33.2541" x2="89.789" y2="-33.25" width="0.1524" layer="1"/>
 <wire x1="89.789" y1="-33.123" x2="87.987" y2="-34.925" width="0.1524" layer="1"/>
 <wire x1="87.987" y1="-34.925" x2="87.923" y2="-34.925" width="0.1524" layer="1"/>
 <wire x1="88.15" y1="-36.576" x2="87.923" y2="-36.349" width="0.1524" layer="1"/>
@@ -6565,9 +6561,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="79.502" y1="-60.44" x2="79.5543875" y2="-60.44" width="0.1524" layer="1"/>
 <wire x1="79.5543875" y1="-60.44" x2="80.2965875" y2="-61.1822" width="0.1524" layer="1"/>
 <wire x1="76.106875" y1="-60.313" x2="74.84235625" y2="-59.04848125" width="0.1524" layer="1"/>
-<wire x1="74.84235625" y1="-59.04848125" x2="74.84235625" y2="-58.2683125" width="0.1524" layer="1"/>
-<wire x1="74.42704375" y1="-57.853" x2="74.1875125" y2="-57.853" width="0.1524" layer="1"/>
-<wire x1="74.84235625" y1="-58.2683125" x2="74.42704375" y2="-57.853" width="0.1524" layer="1"/>
+<wire x1="74.84235625" y1="-59.04848125" x2="74.84235625" y2="-58.1413125" width="0.1524" layer="1"/>
+<wire x1="74.80804375" y1="-58.107" x2="74.1875125" y2="-58.107" width="0.1524" layer="1"/>
+<wire x1="74.84235625" y1="-58.1413125" x2="74.80804375" y2="-58.107" width="0.1524" layer="1"/>
 <wire x1="82.4072" y1="-56.9994" x2="82.7804" y2="-56.9994" width="0.1524" layer="1"/>
 <wire x1="82.7804" y1="-56.9994" x2="85.35025" y2="-59.56925" width="0.1524" layer="1"/>
 <wire x1="75.7682" y1="-34.1884" x2="77.6224" y2="-34.1884" width="0.1524" layer="1"/>
@@ -6576,10 +6572,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="88.15" y1="-36.576" x2="88.011" y2="-36.715" width="0.1524" layer="1"/>
 <wire x1="88.011" y1="-36.715" x2="88.011" y2="-37.592" width="0.1524" layer="1"/>
 <via x="88.011" y="-37.592" extent="1-16" drill="0.2286"/>
-<wire x1="93.98" y1="-31.496" x2="92.5476" y2="-32.9284" width="0.1524" layer="1"/>
-<wire x1="92.5476" y1="-32.9284" x2="92.5476" y2="-32.9931875" width="0.1524" layer="1"/>
-<wire x1="92.5476" y1="-32.9931875" x2="92.2947875" y2="-33.246" width="0.1524" layer="1"/>
-<wire x1="92.2947875" y1="-33.246" x2="91.8745" y2="-33.246" width="0.1524" layer="1"/>
+<wire x1="93.98" y1="-31.496" x2="93.98" y2="-32.0687875" width="0.1524" layer="1"/>
+<wire x1="93.98" y1="-32.0687875" x2="92.8027875" y2="-33.246" width="0.1524" layer="1"/>
+<wire x1="92.8027875" y1="-33.246" x2="91.8745" y2="-33.246" width="0.1524" layer="1"/>
 <wire x1="99.4782" y1="-26.035" x2="98.5395" y2="-26.9737" width="0.1524" layer="1"/>
 <wire x1="98.5395" y1="-26.9737" x2="98.5395" y2="-27.6606" width="0.1524" layer="1"/>
 <via x="98.5395" y="-27.6606" extent="1-16" drill="0.2286"/>
@@ -6597,8 +6592,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="86.9308" y1="-59.5376" x2="86.9054" y2="-59.563" width="0.1524" layer="1"/>
 <wire x1="70.6385" y1="-60.413" x2="70.0915" y2="-60.96" width="0.1524" layer="1"/>
 <wire x1="73.9072" y1="-56.9994" x2="73.4072" y2="-56.9994" width="0.1524" layer="1"/>
-<wire x1="74.1875125" y1="-57.853" x2="73.9072" y2="-57.5726875" width="0.1524" layer="1"/>
-<wire x1="73.9072" y1="-57.5726875" x2="73.9072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="74.1875125" y1="-58.107" x2="73.9072" y2="-57.8266875" width="0.1524" layer="1"/>
+<wire x1="73.9072" y1="-57.8266875" x2="73.9072" y2="-56.9994" width="0.1524" layer="1"/>
 <wire x1="90.7034" y1="-70.7468" x2="90.7034" y2="-68.6884125" width="0.1524" layer="1"/>
 <wire x1="90.7034" y1="-68.6884125" x2="88.8931875" y2="-66.8782" width="0.1524" layer="1"/>
 <via x="88.8931875" y="-66.8782" extent="1-16" drill="0.2286"/>
@@ -6630,10 +6625,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U2" pad="32"/>
 <wire x1="248.6914" y1="-10.072" x2="248.6914" y2="-8.7256" width="0.1524" layer="1"/>
 <via x="201.20498125" y="-52.59181875" extent="1-16" drill="0.2286"/>
-<wire x1="201.767" y1="-49.864396875" x2="201.6206" y2="-50.010796875" width="0.1524" layer="1"/>
-<wire x1="201.6206" y1="-50.010796875" x2="201.6206" y2="-50.58408125" width="0.1524" layer="1"/>
-<wire x1="201.20498125" y1="-50.9997" x2="201.20498125" y2="-52.59181875" width="0.1524" layer="1"/>
-<wire x1="201.6206" y1="-50.58408125" x2="201.20498125" y2="-50.9997" width="0.1524" layer="1"/>
+<wire x1="201.767" y1="-49.864396875" x2="201.7476" y2="-49.883796875" width="0.1524" layer="1"/>
+<wire x1="201.7476" y1="-49.883796875" x2="201.7476" y2="-51.34608125" width="0.1524" layer="1"/>
+<wire x1="201.20498125" y1="-51.8887" x2="201.20498125" y2="-52.59181875" width="0.1524" layer="1"/>
+<wire x1="201.7476" y1="-51.34608125" x2="201.20498125" y2="-51.8887" width="0.1524" layer="1"/>
 <via x="251.8408" y="-10.033" extent="1-16" drill="0.2286"/>
 <wire x1="201.20498125" y1="-52.59181875" x2="201.20498125" y2="-46.50528125" width="0.1524" layer="15"/>
 <wire x1="208.3792625" y1="-39.331" x2="201.20498125" y2="-46.50528125" width="0.1524" layer="15"/>
@@ -6642,10 +6637,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="214.1982" y1="-39.331" x2="214.376" y2="-39.5088" width="0.1524" layer="15"/>
 <via x="214.376" y="-39.5088" extent="1-16" drill="0.2286"/>
 <via x="224.79" y="-36.449" extent="1-16" drill="0.2286"/>
-<wire x1="214.376" y1="-39.5088" x2="216.2128" y2="-37.672" width="0.1524" layer="1"/>
-<wire x1="216.2128" y1="-37.672" x2="223.24589375" y2="-37.672" width="0.1524" layer="1"/>
-<wire x1="224.46889375" y1="-36.449" x2="224.79" y2="-36.449" width="0.1524" layer="1"/>
-<wire x1="223.24589375" y1="-37.672" x2="224.46889375" y2="-36.449" width="0.1524" layer="1"/>
+<wire x1="214.376" y1="-39.5088" x2="215.0698" y2="-38.815" width="0.1524" layer="1"/>
+<wire x1="215.0698" y1="-38.815" x2="222.35689375" y2="-38.815" width="0.1524" layer="1"/>
+<wire x1="224.72289375" y1="-36.449" x2="224.79" y2="-36.449" width="0.1524" layer="1"/>
+<wire x1="222.35689375" y1="-38.815" x2="224.72289375" y2="-36.449" width="0.1524" layer="1"/>
 <wire x1="250.317" y1="-10.033" x2="251.8408" y2="-10.033" width="0.1524" layer="15"/>
 <wire x1="250.317" y1="-10.033" x2="224.79" y2="-35.56" width="0.1524" layer="15"/>
 <wire x1="224.79" y1="-36.449" x2="224.79" y2="-35.56" width="0.1524" layer="15"/>
@@ -6656,10 +6651,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="R4" pad="2"/>
 <contactref element="T1" pad="10"/>
 <via x="82.042" y="-54.61" extent="1-16" drill="0.2286"/>
-<wire x1="82.042" y1="-54.61" x2="80.518" y2="-56.134" width="0.1524" layer="1"/>
-<wire x1="80.518" y1="-56.134" x2="79.629" y2="-56.134" width="0.1524" layer="1"/>
-<wire x1="79.629" y1="-56.134" x2="79.4072" y2="-56.3558" width="0.1524" layer="1"/>
-<wire x1="79.4072" y1="-56.3558" x2="79.4072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="79.4072" y1="-56.9994" x2="79.4072" y2="-56.2288" width="0.1524" layer="1"/>
 <wire x1="82.8294" y1="-53.3146" x2="82.042" y2="-54.102" width="0.1524" layer="15"/>
 <wire x1="82.042" y1="-54.61" x2="82.042" y2="-54.102" width="0.1524" layer="15"/>
 <wire x1="82.8294" y1="-53.3146" x2="84.455" y2="-53.3146" width="0.1524" layer="15"/>
@@ -6678,6 +6670,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="86.2584" y1="-60.17489375" x2="86.2584" y2="-55.118" width="0.1524" layer="15"/>
 <wire x1="85.9804875" y1="-66.2686" x2="84.9376" y2="-65.2257125" width="0.1524" layer="15"/>
 <wire x1="84.9376" y1="-65.2257125" x2="84.9376" y2="-61.49569375" width="0.1524" layer="15"/>
+<wire x1="81.89990625" y1="-54.61" x2="82.042" y2="-54.61" width="0.1524" layer="1"/>
+<wire x1="80.0862" y1="-55.5498" x2="80.96010625" y2="-55.5498" width="0.1524" layer="1"/>
+<wire x1="80.96010625" y1="-55.5498" x2="81.89990625" y2="-54.61" width="0.1524" layer="1"/>
+<wire x1="79.4072" y1="-56.2288" x2="80.0862" y2="-55.5498" width="0.1524" layer="1"/>
 </signal>
 <signal name="IPL">
 <contactref element="R5" pad="2"/>
@@ -6686,10 +6682,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="144.09851875" y1="-54.22138125" x2="144.09851875" y2="-52.17581875" width="0.1524" layer="1"/>
 <wire x1="144.09851875" y1="-52.17581875" x2="144.0942" y2="-52.1715" width="0.1524" layer="1"/>
 <via x="195.44141875" y="-52.56641875" extent="1-16" drill="0.2286"/>
-<wire x1="196.767" y1="-49.864396875" x2="196.6206" y2="-50.010796875" width="0.1524" layer="1"/>
-<wire x1="196.6206" y1="-50.010796875" x2="196.6206" y2="-50.58408125" width="0.1524" layer="1"/>
-<wire x1="195.44141875" y1="-51.7632625" x2="195.44141875" y2="-52.56641875" width="0.1524" layer="1"/>
-<wire x1="196.6206" y1="-50.58408125" x2="195.44141875" y2="-51.7632625" width="0.1524" layer="1"/>
+<wire x1="196.767" y1="-49.864396875" x2="196.7476" y2="-49.883796875" width="0.1524" layer="1"/>
+<wire x1="196.7476" y1="-49.883796875" x2="196.7476" y2="-51.21908125" width="0.1524" layer="1"/>
+<wire x1="195.44141875" y1="-52.5252625" x2="195.44141875" y2="-52.56641875" width="0.1524" layer="1"/>
+<wire x1="196.7476" y1="-51.21908125" x2="195.44141875" y2="-52.5252625" width="0.1524" layer="1"/>
 <wire x1="195.2280125" y1="-51.34721875" x2="191.9949875" y2="-51.34721875" width="0.1524" layer="15"/>
 <wire x1="191.9949875" y1="-51.34721875" x2="190.568603125" y2="-52.773603125" width="0.1524" layer="15"/>
 <wire x1="195.44141875" y1="-52.56641875" x2="195.44141875" y2="-51.560625" width="0.1524" layer="15"/>
@@ -6767,13 +6763,13 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U6" pad="1"/>
 <contactref element="U6" pad="13"/>
 <contactref element="C31" pad="1"/>
-<wire x1="271.5072" y1="-40.3994" x2="271.6536" y2="-40.253" width="0.1524" layer="1"/>
-<wire x1="271.6536" y1="-40.253" x2="271.8768875" y2="-40.253" width="0.1524" layer="1"/>
+<wire x1="271.5072" y1="-40.3994" x2="271.5266" y2="-40.38" width="0.1524" layer="1"/>
+<wire x1="271.5266" y1="-40.38" x2="271.7498875" y2="-40.38" width="0.1524" layer="1"/>
 <wire x1="272.7706" y1="-37.21249375" x2="272.24290625" y2="-36.6848" width="0.1524" layer="1"/>
-<wire x1="272.24290625" y1="-36.6848" x2="270.5375125" y2="-36.6848" width="0.1524" layer="1"/>
-<wire x1="269.8589125" y1="-37.3634" x2="269.5822" y2="-37.3634" width="0.1524" layer="1"/>
-<wire x1="270.5375125" y1="-36.6848" x2="269.8589125" y2="-37.3634" width="0.1524" layer="1"/>
-<wire x1="271.8768875" y1="-40.253" x2="272.7706" y2="-39.3592875" width="0.1524" layer="1"/>
+<wire x1="272.24290625" y1="-36.6848" x2="269.9025125" y2="-36.6848" width="0.1524" layer="1"/>
+<wire x1="269.5822" y1="-37.3634" x2="269.5822" y2="-37.0051125" width="0.1524" layer="1"/>
+<wire x1="269.9025125" y1="-36.6848" x2="269.5822" y2="-37.0051125" width="0.1524" layer="1"/>
+<wire x1="271.7498875" y1="-40.38" x2="272.7706" y2="-39.3592875" width="0.1524" layer="1"/>
 <wire x1="272.7706" y1="-39.3592875" x2="272.7706" y2="-37.21249375" width="0.1524" layer="1"/>
 <wire x1="268.2422" y1="-34.1651125" x2="268.1082875" y2="-34.0312" width="0.1524" layer="1"/>
 <wire x1="269.5822" y1="-37.3634" x2="268.2422" y2="-36.0234" width="0.1524" layer="1"/>
@@ -6781,20 +6777,20 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="268.1082875" y1="-34.0312" x2="266.9077125" y2="-34.0312" width="0.1524" layer="1"/>
 <wire x1="266.9077125" y1="-34.0312" x2="266.827" y2="-33.9504875" width="0.1524" layer="1"/>
 <wire x1="266.827" y1="-33.9504875" x2="266.827" y2="-33.655" width="0.1524" layer="1"/>
-<wire x1="266.827" y1="-33.655" x2="257.8608" y2="-24.6888" width="0.1524" layer="1"/>
-<wire x1="253.6640125" y1="-22.9997" x2="253.0856" y2="-22.9997" width="0.1524" layer="1"/>
-<wire x1="257.8608" y1="-24.6888" x2="255.3531125" y2="-24.6888" width="0.1524" layer="1"/>
-<wire x1="255.3531125" y1="-24.6888" x2="253.6640125" y2="-22.9997" width="0.1524" layer="1"/>
+<wire x1="266.827" y1="-33.655" x2="258.1148" y2="-24.9428" width="0.1524" layer="1"/>
+<wire x1="253.4100125" y1="-22.9997" x2="253.0856" y2="-22.9997" width="0.1524" layer="1"/>
+<wire x1="258.1148" y1="-24.9428" x2="255.3531125" y2="-24.9428" width="0.1524" layer="1"/>
+<wire x1="255.3531125" y1="-24.9428" x2="253.4100125" y2="-22.9997" width="0.1524" layer="1"/>
 <wire x1="199.267" y1="-49.864396875" x2="199.767" y2="-49.864396875" width="0.1524" layer="1"/>
-<wire x1="197.2318" y1="-49.0108" x2="197.4866875" y2="-49.0108" width="0.1524" layer="1"/>
+<wire x1="197.3334" y1="-49.0108" x2="197.4866875" y2="-49.0108" width="0.1524" layer="1"/>
 <wire x1="197.4866875" y1="-49.0108" x2="197.767" y2="-49.2911125" width="0.1524" layer="1"/>
 <wire x1="197.767" y1="-49.2911125" x2="197.767" y2="-49.864396875" width="0.1524" layer="1"/>
-<wire x1="197.9134" y1="-49.1447125" x2="198.0473125" y2="-49.0108" width="0.1524" layer="1"/>
-<wire x1="198.9866875" y1="-49.0108" x2="199.1206" y2="-49.1447125" width="0.1524" layer="1"/>
-<wire x1="197.767" y1="-49.864396875" x2="197.9134" y2="-49.717996875" width="0.1524" layer="1"/>
-<wire x1="197.9134" y1="-49.717996875" x2="197.9134" y2="-49.1447125" width="0.1524" layer="1"/>
-<wire x1="199.1206" y1="-49.1447125" x2="199.1206" y2="-49.717996875" width="0.1524" layer="1"/>
-<wire x1="199.1206" y1="-49.717996875" x2="199.267" y2="-49.864396875" width="0.1524" layer="1"/>
+<wire x1="197.7864" y1="-49.2717125" x2="198.0473125" y2="-49.0108" width="0.1524" layer="1"/>
+<wire x1="198.9866875" y1="-49.0108" x2="199.2476" y2="-49.2717125" width="0.1524" layer="1"/>
+<wire x1="197.767" y1="-49.864396875" x2="197.7864" y2="-49.844996875" width="0.1524" layer="1"/>
+<wire x1="197.7864" y1="-49.844996875" x2="197.7864" y2="-49.2717125" width="0.1524" layer="1"/>
+<wire x1="199.2476" y1="-49.2717125" x2="199.2476" y2="-49.844996875" width="0.1524" layer="1"/>
+<wire x1="199.2476" y1="-49.844996875" x2="199.267" y2="-49.864396875" width="0.1524" layer="1"/>
 <wire x1="198.0473125" y1="-49.0108" x2="198.9866875" y2="-49.0108" width="0.1524" layer="1"/>
 <wire x1="171.56678125" y1="-72.37725" x2="170.4774125" y2="-72.37725" width="0.1524" layer="1"/>
 <wire x1="170.00069375" y1="-71.2539625" x2="169.86678125" y2="-71.12005" width="0.1524" layer="1"/>
@@ -6815,17 +6811,17 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="175.03681875" y1="-72.4916" x2="175.387" y2="-72.84178125" width="0.1524" layer="1"/>
 <wire x1="175.387" y1="-72.84178125" x2="175.387" y2="-74.5236" width="0.1524" layer="1"/>
 <wire x1="175.387" y1="-74.5236" x2="176.149" y2="-75.2856" width="0.1524" layer="1"/>
-<via x="197.72741875" y="-51.16941875" extent="1-16" drill="0.5715"/>
-<wire x1="160.9921125" y1="-21.40585" x2="162.4514875" y2="-21.40585" width="0.1524" layer="1"/>
-<wire x1="158.7246" y1="-23.09495" x2="159.3030125" y2="-23.09495" width="0.1524" layer="1"/>
-<wire x1="164.1405875" y1="-23.09495" x2="183.4134" y2="-23.09495" width="0.1524" layer="1"/>
-<wire x1="159.3030125" y1="-23.09495" x2="160.9921125" y2="-21.40585" width="0.1524" layer="1"/>
-<wire x1="162.4514875" y1="-21.40585" x2="164.1405875" y2="-23.09495" width="0.1524" layer="1"/>
-<wire x1="185.6809125" y1="-21.40585" x2="187.1402875" y2="-21.40585" width="0.1524" layer="1"/>
-<wire x1="183.4134" y1="-23.09495" x2="183.9918125" y2="-23.09495" width="0.1524" layer="1"/>
-<wire x1="183.9918125" y1="-23.09495" x2="185.6809125" y2="-21.40585" width="0.1524" layer="1"/>
-<wire x1="187.1402875" y1="-21.40585" x2="188.5944375" y2="-22.86" width="0.1524" layer="1"/>
-<wire x1="188.5944375" y1="-22.86" x2="197.231" y2="-22.86" width="0.1524" layer="1"/>
+<via x="197.98141875" y="-51.16941875" extent="1-16" drill="0.5715"/>
+<wire x1="160.8651125" y1="-21.02485" x2="162.8324875" y2="-21.02485" width="0.1524" layer="1"/>
+<wire x1="158.7246" y1="-23.09495" x2="158.7950125" y2="-23.09495" width="0.1524" layer="1"/>
+<wire x1="164.9025875" y1="-23.09495" x2="183.4134" y2="-23.09495" width="0.1524" layer="1"/>
+<wire x1="158.7950125" y1="-23.09495" x2="160.8651125" y2="-21.02485" width="0.1524" layer="1"/>
+<wire x1="162.8324875" y1="-21.02485" x2="164.9025875" y2="-23.09495" width="0.1524" layer="1"/>
+<wire x1="185.5539125" y1="-21.15185" x2="187.5212875" y2="-21.15185" width="0.1524" layer="1"/>
+<wire x1="183.4134" y1="-23.09495" x2="183.6108125" y2="-23.09495" width="0.1524" layer="1"/>
+<wire x1="183.6108125" y1="-23.09495" x2="185.5539125" y2="-21.15185" width="0.1524" layer="1"/>
+<wire x1="187.5212875" y1="-21.15185" x2="189.2294375" y2="-22.86" width="0.1524" layer="1"/>
+<wire x1="189.2294375" y1="-22.86" x2="197.231" y2="-22.86" width="0.1524" layer="1"/>
 <wire x1="197.231" y1="-22.86" x2="197.739" y2="-22.86" width="0.1524" layer="1"/>
 <wire x1="197.739" y1="-22.86" x2="197.4215" y2="-22.5425" width="0.1524" layer="1"/>
 <wire x1="197.4215" y1="-22.5425" x2="197.2818" y2="-22.5425" width="0.1524" layer="1"/>
@@ -6841,32 +6837,31 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="200.2146" y1="-19.08170625" x2="200.2146" y2="-19.8764" width="0.1524" layer="1"/>
 <wire x1="200.2146" y1="-19.8764" x2="197.231" y2="-22.86" width="0.1524" layer="1"/>
 <wire x1="188.9379" y1="-39.7441875" x2="189.0718125" y2="-39.8781" width="0.1524" layer="1"/>
-<wire x1="187.8865" y1="-38.477" x2="188.3067875" y2="-38.477" width="0.1524" layer="1"/>
-<wire x1="188.3067875" y1="-38.477" x2="188.9379" y2="-39.1081125" width="0.1524" layer="1"/>
-<wire x1="188.9379" y1="-39.1081125" x2="188.9379" y2="-39.7441875" width="0.1524" layer="1"/>
+<wire x1="187.8865" y1="-38.477" x2="188.6877875" y2="-38.477" width="0.1524" layer="1"/>
+<wire x1="188.6877875" y1="-38.477" x2="188.9379" y2="-38.7271125" width="0.1524" layer="1"/>
+<wire x1="188.9379" y1="-38.7271125" x2="188.9379" y2="-39.7441875" width="0.1524" layer="1"/>
 <wire x1="191.9986" y1="-39.8781" x2="192.0975" y2="-39.977" width="0.1524" layer="1"/>
 <wire x1="189.0718125" y1="-39.8781" x2="191.9986" y2="-39.8781" width="0.1524" layer="1"/>
 <wire x1="192.0975" y1="-39.977" x2="192.0975" y2="-39.477" width="0.1524" layer="1"/>
-<wire x1="191.5583125" y1="-39.3581" x2="191.4244" y2="-39.2241875" width="0.1524" layer="1"/>
-<wire x1="192.0975" y1="-39.477" x2="191.9786" y2="-39.3581" width="0.1524" layer="1"/>
-<wire x1="191.9786" y1="-39.3581" x2="191.5583125" y2="-39.3581" width="0.1524" layer="1"/>
-<wire x1="191.4244" y1="-39.2241875" x2="191.4244" y2="-34.3936" width="0.1524" layer="1"/>
-<wire x1="191.4244" y1="-34.3936" x2="192.565" y2="-33.253" width="0.1524" layer="1"/>
+<wire x1="191.6853125" y1="-39.4851" x2="191.1704" y2="-38.9701875" width="0.1524" layer="1"/>
+<wire x1="192.0975" y1="-39.477" x2="192.0894" y2="-39.4851" width="0.1524" layer="1"/>
+<wire x1="192.0894" y1="-39.4851" x2="191.6853125" y2="-39.4851" width="0.1524" layer="1"/>
+<wire x1="191.1704" y1="-38.9701875" x2="191.1704" y2="-34.6476" width="0.1524" layer="1"/>
+<wire x1="191.1704" y1="-34.6476" x2="192.565" y2="-33.253" width="0.1524" layer="1"/>
 <wire x1="192.0975" y1="-39.977" x2="192.0975" y2="-40.7135" width="0.1524" layer="1"/>
 <wire x1="192.0975" y1="-40.7135" x2="194.31" y2="-42.926" width="0.1524" layer="1"/>
 <via x="194.31" y="-42.926" extent="1-16" drill="0.5715"/>
 <via x="194.818" y="-44.831" extent="1-16" drill="0.5715"/>
 <wire x1="194.818" y1="-44.831" x2="195.4094" y2="-45.4224" width="0.1524" layer="1"/>
 <via x="246.661971875" y="-15.267971875" extent="1-16" drill="0.5715"/>
-<wire x1="253.0856" y1="-22.9997" x2="251.0917" y2="-21.0058" width="0.1524" layer="1"/>
-<wire x1="251.0917" y1="-21.0058" x2="248.9646375" y2="-21.0058" width="0.1524" layer="1"/>
-<wire x1="248.9646375" y1="-21.0058" x2="246.661971875" y2="-18.703134375" width="0.1524" layer="1"/>
+<wire x1="253.0856" y1="-22.9997" x2="250.9585375" y2="-22.9997" width="0.1524" layer="1"/>
+<wire x1="250.9585375" y1="-22.9997" x2="246.661971875" y2="-18.703134375" width="0.1524" layer="1"/>
 <wire x1="246.661971875" y1="-18.703134375" x2="246.661971875" y2="-15.267971875" width="0.1524" layer="1"/>
 <via x="218.694" y="-25.273" extent="1-16" drill="0.5715"/>
 <wire x1="218.694" y1="-25.273" x2="218.694" y2="-22.9997" width="0.1524" layer="1"/>
-<wire x1="195.4094" y1="-47.1884" x2="196.088" y2="-47.867" width="0.1524" layer="1"/>
-<wire x1="195.4094" y1="-45.4224" x2="195.4094" y2="-47.1884" width="0.1524" layer="1"/>
-<wire x1="196.088" y1="-47.867" x2="197.2318" y2="-49.0108" width="0.1524" layer="1"/>
+<wire x1="195.4094" y1="-47.0868" x2="196.1896" y2="-47.867" width="0.1524" layer="1"/>
+<wire x1="195.4094" y1="-45.4224" x2="195.4094" y2="-47.0868" width="0.1524" layer="1"/>
+<wire x1="196.1896" y1="-47.867" x2="197.3334" y2="-49.0108" width="0.1524" layer="1"/>
 <wire x1="218.694" y1="-25.273" x2="234.4843" y2="-25.273" width="0.381" layer="15"/>
 <wire x1="252.18348125" y1="-9.2583" x2="252.7425" y2="-9.81731875" width="0.381" layer="15"/>
 <wire x1="252.7425" y1="-9.81731875" x2="252.7425" y2="-10.37568125" width="0.381" layer="15"/>
@@ -6878,10 +6873,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="246.661971875" y1="-15.013971875" x2="246.661971875" y2="-15.267971875" width="0.381" layer="15"/>
 <wire x1="194.31" y1="-42.926" x2="194.818" y2="-43.434" width="0.381" layer="15"/>
 <wire x1="194.818" y1="-43.434" x2="194.818" y2="-44.831" width="0.381" layer="15"/>
-<wire x1="197.767" y1="-49.864396875" x2="197.767" y2="-51.1298375" width="0.1524" layer="1"/>
-<wire x1="197.767" y1="-51.1298375" x2="197.72741875" y2="-51.16941875" width="0.1524" layer="1"/>
-<wire x1="197.72741875" y1="-51.16941875" x2="197.72741875" y2="-53.1232" width="0.381" layer="15"/>
-<wire x1="197.72741875" y1="-53.1232" x2="197.7263" y2="-53.12431875" width="0.381" layer="15"/>
+<wire x1="197.767" y1="-50.955034375" x2="197.767" y2="-49.864396875" width="0.1524" layer="1"/>
+<wire x1="197.98141875" y1="-51.16941875" x2="197.98141875" y2="-52.8692" width="0.381" layer="15"/>
+<wire x1="197.98141875" y1="-52.8692" x2="197.7263" y2="-53.12431875" width="0.381" layer="15"/>
 <wire x1="175.93331875" y1="-78.0161" x2="175.3743" y2="-77.45708125" width="0.381" layer="15"/>
 <wire x1="175.3743" y1="-77.45708125" x2="175.3743" y2="-75.98431875" width="0.381" layer="15"/>
 <wire x1="197.7263" y1="-53.12431875" x2="197.7263" y2="-59.4318" width="0.381" layer="15"/>
@@ -6889,6 +6883,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="179.142" y1="-78.0161" x2="175.93331875" y2="-78.0161" width="0.381" layer="15"/>
 <wire x1="176.149" y1="-75.2856" x2="176.07301875" y2="-75.2856" width="0.381" layer="15"/>
 <wire x1="176.07301875" y1="-75.2856" x2="175.3743" y2="-75.98431875" width="0.381" layer="15"/>
+<wire x1="197.98141875" y1="-51.16941875" x2="197.767034375" y2="-50.955034375" width="0.1524" layer="1"/>
+<wire x1="197.767034375" y1="-50.955034375" x2="197.767" y2="-50.955034375" width="0.1524" layer="1"/>
 </signal>
 <signal name="VREGU" class="3">
 <contactref element="J27" pad="1"/>
@@ -6910,13 +6906,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U5" pad="13"/>
 <contactref element="C10" pad="1"/>
 <contactref element="C32" pad="1"/>
-<wire x1="52.2986" y1="-45.84550625" x2="52.2986" y2="-45.34049375" width="0.1524" layer="1"/>
-<wire x1="52.2986" y1="-45.34049375" x2="51.94150625" y2="-44.9834" width="0.1524" layer="1"/>
-<wire x1="50.7812" y1="-47.1304" x2="50.9276" y2="-46.984" width="0.1524" layer="1"/>
-<wire x1="51.94150625" y1="-44.9834" x2="51.2706" y2="-44.9834" width="0.1524" layer="1"/>
-<wire x1="51.2706" y1="-44.9834" x2="50.3308" y2="-44.0436" width="0.1524" layer="1"/>
-<wire x1="50.9276" y1="-46.984" x2="51.16010625" y2="-46.984" width="0.1524" layer="1"/>
-<wire x1="51.16010625" y1="-46.984" x2="52.2986" y2="-45.84550625" width="0.1524" layer="1"/>
+<wire x1="52.2986" y1="-46.48050625" x2="52.2986" y2="-45.34049375" width="0.1524" layer="1"/>
+<wire x1="50.7812" y1="-47.1304" x2="50.8006" y2="-47.111" width="0.1524" layer="1"/>
+<wire x1="52.2986" y1="-45.34049375" x2="51.00170625" y2="-44.0436" width="0.1524" layer="1"/>
+<wire x1="51.00170625" y1="-44.0436" x2="50.3308" y2="-44.0436" width="0.1524" layer="1"/>
+<wire x1="50.8006" y1="-47.111" x2="51.66810625" y2="-47.111" width="0.1524" layer="1"/>
+<wire x1="51.66810625" y1="-47.111" x2="52.2986" y2="-46.48050625" width="0.1524" layer="1"/>
 <wire x1="50.3308" y1="-44.0436" x2="51.0674" y2="-43.307" width="0.1524" layer="1"/>
 <wire x1="51.0674" y1="-43.307" x2="51.435" y2="-43.307" width="0.1524" layer="1"/>
 <via x="51.435" y="-43.307" extent="1-16" drill="0.5715"/>
@@ -6947,52 +6942,34 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="99.0854" y1="-75.8444" x2="97.79" y2="-77.1398" width="0.1524" layer="1"/>
 <via x="83.0834" y="-54.1276" extent="1-16" drill="0.5715"/>
 <wire x1="91.8745" y1="-29.746" x2="91.8745" y2="-30.246" width="0.1524" layer="1"/>
-<wire x1="93.0598125" y1="-29.8449" x2="94.9001875" y2="-29.8449" width="0.1524" layer="1"/>
-<wire x1="94.9001875" y1="-29.8449" x2="95.0341" y2="-29.9788125" width="0.1524" layer="1"/>
-<wire x1="95.0341" y1="-29.9788125" x2="95.0341" y2="-30.6148875" width="0.1524" layer="1"/>
-<wire x1="95.0341" y1="-30.6148875" x2="95.6652125" y2="-31.246" width="0.1524" layer="1"/>
-<wire x1="95.6652125" y1="-31.246" x2="95.885" y2="-31.246" width="0.1524" layer="1"/>
-<wire x1="95.885" y1="-31.246" x2="96.0855" y2="-31.246" width="0.1524" layer="1"/>
+<wire x1="94.9001875" y1="-29.8449" x2="93.0598125" y2="-29.8449" width="0.1524" layer="1"/>
 <wire x1="91.8745" y1="-30.246" x2="92.6587125" y2="-30.246" width="0.1524" layer="1"/>
 <wire x1="92.6587125" y1="-30.246" x2="93.0598125" y2="-29.8449" width="0.1524" layer="1"/>
 <wire x1="79.502" y1="-58.94" x2="78.415" y2="-57.853" width="0.1524" layer="1"/>
 <wire x1="78.415" y1="-57.853" x2="78.4072" y2="-57.853" width="0.1524" layer="1"/>
 <wire x1="78.4072" y1="-57.853" x2="78.4072" y2="-56.9994" width="0.1524" layer="1"/>
-<wire x1="78.2608" y1="-57.7190875" x2="78.1268875" y2="-57.853" width="0.1524" layer="1"/>
-<wire x1="77.1875125" y1="-57.853" x2="77.0536" y2="-57.7190875" width="0.1524" layer="1"/>
-<wire x1="78.4072" y1="-56.9994" x2="78.2608" y2="-57.1458" width="0.1524" layer="1"/>
-<wire x1="78.2608" y1="-57.1458" x2="78.2608" y2="-57.7190875" width="0.1524" layer="1"/>
-<wire x1="77.0536" y1="-57.7190875" x2="77.0536" y2="-57.218" width="0.1524" layer="1"/>
-<wire x1="77.0536" y1="-57.218" x2="76.835" y2="-56.9994" width="0.1524" layer="1"/>
-<wire x1="78.1268875" y1="-57.853" x2="77.1875125" y2="-57.853" width="0.1524" layer="1"/>
+<wire x1="78.3878" y1="-57.8460875" x2="78.2538875" y2="-57.98" width="0.1524" layer="1"/>
+<wire x1="77.1875125" y1="-57.98" x2="76.9266" y2="-57.7190875" width="0.1524" layer="1"/>
+<wire x1="78.4072" y1="-56.9994" x2="78.3878" y2="-57.0188" width="0.1524" layer="1"/>
+<wire x1="78.3878" y1="-57.0188" x2="78.3878" y2="-57.8460875" width="0.1524" layer="1"/>
+<wire x1="76.9266" y1="-57.7190875" x2="76.9266" y2="-57.091" width="0.1524" layer="1"/>
+<wire x1="76.9266" y1="-57.091" x2="76.835" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="78.2538875" y1="-57.98" x2="77.1875125" y2="-57.98" width="0.1524" layer="1"/>
 <wire x1="82.291525" y1="-53.99741875" x2="82.42170625" y2="-54.1276" width="0.1524" layer="1"/>
-<wire x1="76.9072" y1="-56.4261125" x2="76.9072" y2="-56.9994" width="0.1524" layer="1"/>
+<wire x1="76.9072" y1="-56.0451125" x2="76.9072" y2="-56.9994" width="0.1524" layer="1"/>
 <wire x1="79.8815125" y1="-53.99741875" x2="79.52441875" y2="-54.3545125" width="0.1524" layer="1"/>
 <wire x1="82.291525" y1="-53.99741875" x2="79.8815125" y2="-53.99741875" width="0.1524" layer="1"/>
-<wire x1="79.52441875" y1="-54.3545125" x2="79.52441875" y2="-54.9454125" width="0.1524" layer="1"/>
-<wire x1="78.64063125" y1="-55.8292" x2="77.5041125" y2="-55.8292" width="0.1524" layer="1"/>
-<wire x1="77.5041125" y1="-55.8292" x2="76.9072" y2="-56.4261125" width="0.1524" layer="1"/>
-<wire x1="79.52441875" y1="-54.9454125" x2="78.64063125" y2="-55.8292" width="0.1524" layer="1"/>
+<wire x1="79.52441875" y1="-54.3545125" x2="79.52441875" y2="-54.5644125" width="0.1524" layer="1"/>
+<wire x1="78.51363125" y1="-55.5752" x2="77.3771125" y2="-55.5752" width="0.1524" layer="1"/>
+<wire x1="77.3771125" y1="-55.5752" x2="76.9072" y2="-56.0451125" width="0.1524" layer="1"/>
+<wire x1="79.52441875" y1="-54.5644125" x2="78.51363125" y2="-55.5752" width="0.1524" layer="1"/>
 <wire x1="89.65" y1="-36.576" x2="89.777" y2="-36.449" width="0.1524" layer="1"/>
 <wire x1="89.777" y1="-36.449" x2="91.407" y2="-36.449" width="0.1524" layer="1"/>
-<wire x1="91.407" y1="-36.449" x2="94.7089" y2="-33.1471" width="0.1524" layer="1"/>
-<wire x1="94.7089" y1="-33.1471" x2="94.9001875" y2="-33.1471" width="0.1524" layer="1"/>
-<wire x1="95.4124" y1="-31.4988125" x2="95.5463125" y2="-31.3649" width="0.1524" layer="1"/>
-<wire x1="95.5463125" y1="-31.3649" x2="95.7661" y2="-31.3649" width="0.1524" layer="1"/>
-<wire x1="95.7661" y1="-31.3649" x2="95.885" y2="-31.246" width="0.1524" layer="1"/>
-<wire x1="94.9001875" y1="-33.1471" x2="95.4124" y2="-32.6348875" width="0.1524" layer="1"/>
-<wire x1="95.4124" y1="-32.6348875" x2="95.4124" y2="-31.4988125" width="0.1524" layer="1"/>
-<wire x1="96.0855" y1="-31.246" x2="96.2044" y2="-31.1271" width="0.1524" layer="1"/>
-<wire x1="96.2044" y1="-31.1271" x2="96.6246875" y2="-31.1271" width="0.1524" layer="1"/>
-<wire x1="96.6246875" y1="-31.1271" x2="96.7586" y2="-30.9931875" width="0.1524" layer="1"/>
-<wire x1="98.7996" y1="-25.5403125" x2="100.076" y2="-24.2639125" width="0.1524" layer="1"/>
-<wire x1="96.7586" y1="-30.9931875" x2="96.7586" y2="-27.94" width="0.1524" layer="1"/>
-<wire x1="100.076" y1="-23.19655" x2="99.9744" y2="-23.09495" width="0.1524" layer="1"/>
-<wire x1="100.076" y1="-24.2639125" x2="100.076" y2="-23.19655" width="0.1524" layer="1"/>
-<wire x1="96.7586" y1="-27.94" x2="98.035" y2="-26.6636" width="0.1524" layer="1"/>
+<wire x1="91.407" y1="-36.449" x2="91.5982875" y2="-36.449" width="0.1524" layer="1"/>
+<wire x1="96.8856" y1="-27.813" x2="96.8856" y2="-30.8661875" width="0.1524" layer="1"/>
+<wire x1="96.8856" y1="-27.813" x2="98.035" y2="-26.6636" width="0.1524" layer="1"/>
 <wire x1="98.035" y1="-26.6636" x2="98.3228875" y2="-26.6636" width="0.1524" layer="1"/>
 <wire x1="98.3228875" y1="-26.6636" x2="98.7996" y2="-26.1868875" width="0.1524" layer="1"/>
-<wire x1="98.7996" y1="-26.1868875" x2="98.7996" y2="-25.5403125" width="0.1524" layer="1"/>
 <wire x1="91.8745" y1="-29.746" x2="86.9442" y2="-24.8157" width="0.1524" layer="1"/>
 <wire x1="86.9442" y1="-24.8157" x2="86.9442" y2="-22.6695" width="0.1524" layer="1"/>
 <wire x1="88.1564875" y1="-53.2892" x2="83.9218" y2="-53.2892" width="0.1524" layer="1"/>
@@ -7012,11 +6989,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="104.7501125" y1="-26.6636" x2="104.6162" y2="-26.5296875" width="0.1524" layer="1"/>
 <wire x1="124.6378" y1="-23.09495" x2="109.4081375" y2="-23.09495" width="0.1524" layer="1"/>
 <wire x1="104.6162" y1="-26.5296875" x2="104.6162" y2="-25.8831125" width="0.1524" layer="1"/>
-<wire x1="104.6162" y1="-25.8831125" x2="103.5171375" y2="-24.78405" width="0.1524" layer="1"/>
-<wire x1="103.5171375" y1="-24.78405" x2="102.2419125" y2="-24.78405" width="0.1524" layer="1"/>
-<wire x1="100.5528125" y1="-23.09495" x2="99.9744" y2="-23.09495" width="0.1524" layer="1"/>
+<wire x1="104.6162" y1="-25.8831125" x2="103.7711375" y2="-25.03805" width="0.1524" layer="1"/>
 <wire x1="109.4081375" y1="-23.09495" x2="105.8394875" y2="-26.6636" width="0.1524" layer="1"/>
-<wire x1="102.2419125" y1="-24.78405" x2="100.5528125" y2="-23.09495" width="0.1524" layer="1"/>
 <wire x1="62.474478125" y1="-23.1267" x2="62.474478125" y2="-22.374021875" width="0.1524" layer="1"/>
 <wire x1="62.474478125" y1="-22.374021875" x2="64.6555" y2="-20.193" width="0.1524" layer="1"/>
 <wire x1="51.435" y1="-43.307" x2="51.435" y2="-33.4135" width="0.381" layer="15"/>
@@ -7025,15 +6999,29 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="27.2925" y1="-20.193" x2="64.6555" y2="-20.193" width="0.381" layer="15"/>
 <wire x1="94.8351" y1="-77.1398" x2="83.0834" y2="-65.3881" width="0.381" layer="15"/>
 <wire x1="94.8351" y1="-77.1398" x2="97.79" y2="-77.1398" width="0.381" layer="15"/>
-<wire x1="80.9072" y1="-56.9994" x2="80.9072" y2="-56.4066875" width="0.1524" layer="1"/>
-<wire x1="80.9072" y1="-56.4066875" x2="82.0942875" y2="-55.2196" width="0.1524" layer="1"/>
-<wire x1="82.0942875" y1="-55.2196" x2="82.29450625" y2="-55.2196" width="0.1524" layer="1"/>
+<wire x1="80.9072" y1="-56.9994" x2="80.9072" y2="-56.1526875" width="0.1524" layer="1"/>
+<wire x1="80.9072" y1="-56.1526875" x2="81.8402875" y2="-55.2196" width="0.1524" layer="1"/>
+<wire x1="81.8402875" y1="-55.2196" x2="82.29450625" y2="-55.2196" width="0.1524" layer="1"/>
 <wire x1="82.29450625" y1="-55.2196" x2="82.6516" y2="-54.86250625" width="0.1524" layer="1"/>
 <wire x1="82.6516" y1="-54.5594" x2="83.0834" y2="-54.1276" width="0.1524" layer="1"/>
 <wire x1="82.6516" y1="-54.86250625" x2="82.6516" y2="-54.5594" width="0.1524" layer="1"/>
 <wire x1="82.42170625" y1="-54.1276" x2="83.0834" y2="-54.1276" width="0.1524" layer="1"/>
 <wire x1="83.9218" y1="-53.2892" x2="83.0834" y2="-54.1276" width="0.1524" layer="1"/>
 <wire x1="83.0834" y1="-65.3881" x2="83.0834" y2="-54.1276" width="0.381" layer="15"/>
+<wire x1="96.8856" y1="-30.8661875" x2="96.5057875" y2="-31.246" width="0.1524" layer="1"/>
+<wire x1="96.5057875" y1="-31.246" x2="96.0855" y2="-31.246" width="0.1524" layer="1"/>
+<wire x1="96.0855" y1="-31.246" x2="96.0774" y2="-31.2541" width="0.1524" layer="1"/>
+<wire x1="96.0774" y1="-31.2541" x2="95.2923125" y2="-31.2541" width="0.1524" layer="1"/>
+<wire x1="95.2881" y1="-30.2328125" x2="94.9001875" y2="-29.8449" width="0.1524" layer="1"/>
+<wire x1="95.2923125" y1="-31.2541" x2="95.2881" y2="-31.2498875" width="0.1524" layer="1"/>
+<wire x1="95.2881" y1="-31.2498875" x2="95.2881" y2="-30.2328125" width="0.1524" layer="1"/>
+<wire x1="95.2923125" y1="-32.754975" x2="95.2923125" y2="-31.2541" width="0.1524" layer="1"/>
+<wire x1="91.5982875" y1="-36.449" x2="95.2923125" y2="-32.754975" width="0.1524" layer="1"/>
+<wire x1="98.7996" y1="-26.1868875" x2="98.7996" y2="-25.5403125" width="0.1524" layer="1"/>
+<wire x1="99.9744" y1="-24.3655125" x2="99.9744" y2="-23.09495" width="0.1524" layer="1"/>
+<wire x1="98.7996" y1="-25.5403125" x2="99.9744" y2="-24.3655125" width="0.1524" layer="1"/>
+<wire x1="99.9744" y1="-23.09495" x2="101.9175" y2="-25.03805" width="0.1524" layer="1"/>
+<wire x1="101.9175" y1="-25.03805" x2="103.7711375" y2="-25.03805" width="0.1524" layer="1"/>
 </signal>
 <signal name="CC12" class="1">
 <contactref element="J12" pad="1"/>
@@ -7051,8 +7039,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="95.39625" y1="-80.25745" x2="95.39625" y2="-73.3545375" width="0.6096" layer="16"/>
 <wire x1="95.39625" y1="-73.3545375" x2="96.9959875" y2="-71.7548" width="0.6096" layer="16"/>
 <wire x1="96.9959875" y1="-71.7548" x2="108.80249375" y2="-71.7548" width="0.6096" layer="16"/>
-<wire x1="131.699" y1="-37.465" x2="131.699" y2="-32.6905375" width="0.6096" layer="1"/>
-<wire x1="131.699" y1="-32.6905375" x2="131.9227" y2="-32.4668375" width="0.6096" layer="1"/>
+<wire x1="131.699" y1="-37.465" x2="131.699" y2="-36.6275375" width="0.6096" layer="1"/>
+<wire x1="131.699" y1="-36.6275375" x2="136.4947" y2="-31.8318375" width="0.6096" layer="1"/>
 <wire x1="90.7034" y1="-81.2468" x2="90.805" y2="-81.3484" width="0.6096" layer="1"/>
 <wire x1="90.805" y1="-81.3484" x2="90.805" y2="-84.8487" width="0.6096" layer="1"/>
 </signal>
@@ -7222,9 +7210,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="237.5662" y1="-59.0931" x2="237.5662" y2="-56.705" width="0.1524" layer="1"/>
 <wire x1="237.5662" y1="-56.705" x2="236.5888" y2="-55.7276" width="0.1524" layer="1"/>
 <wire x1="236.5888" y1="-55.7276" x2="235.3056" y2="-55.7276" width="0.1524" layer="1"/>
-<wire x1="235.3056" y1="-55.7276" x2="233.2042" y2="-53.6262" width="0.1524" layer="1"/>
-<wire x1="229.2164" y1="-53.6262" x2="226.8728" y2="-51.2826" width="0.1524" layer="1"/>
-<wire x1="233.2042" y1="-53.6262" x2="229.2164" y2="-53.6262" width="0.1524" layer="1"/>
+<wire x1="235.3056" y1="-55.7276" x2="233.5852" y2="-54.0072" width="0.1524" layer="1"/>
+<wire x1="229.5974" y1="-54.0072" x2="226.8728" y2="-51.2826" width="0.1524" layer="1"/>
+<wire x1="233.5852" y1="-54.0072" x2="229.5974" y2="-54.0072" width="0.1524" layer="1"/>
 </signal>
 <signal name="CELL5:N$6">
 <contactref element="CELL5:D1" pad="2"/>
@@ -7559,7 +7547,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="C13" pad="1"/>
 <contactref element="R24" pad="1"/>
 <contactref element="U2" pad="1"/>
-<wire x1="197.6628" y1="-60.1726" x2="196.049" y2="-60.1726" width="0.1524" layer="1"/>
+<wire x1="197.5866" y1="-60.1726" x2="196.049" y2="-60.1726" width="0.1524" layer="1"/>
 <wire x1="196.049" y1="-60.1726" x2="194.7926" y2="-58.9162" width="0.1524" layer="1"/>
 <wire x1="194.7926" y1="-58.9162" x2="193.2956" y2="-58.9162" width="0.1524" layer="1"/>
 <wire x1="193.2956" y1="-58.9162" x2="193.2686" y2="-58.8892" width="0.1524" layer="1"/>
@@ -7677,9 +7665,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="R9" pad="1"/>
 <via x="192.151" y="-59.5046" extent="1-16" drill="0.2286"/>
 <wire x1="192.151" y1="-59.5046" x2="192.357" y2="-59.7106" width="0.1524" layer="1"/>
-<wire x1="194.7188875" y1="-60.6162" x2="194.7926" y2="-60.6162" width="0.1524" layer="1"/>
-<wire x1="192.357" y1="-59.7106" x2="193.8132875" y2="-59.7106" width="0.1524" layer="1"/>
-<wire x1="193.8132875" y1="-59.7106" x2="194.7188875" y2="-60.6162" width="0.1524" layer="1"/>
+<wire x1="192.357" y1="-59.7106" x2="194.0672875" y2="-59.7106" width="0.1524" layer="1"/>
+<wire x1="194.7926" y1="-60.6162" x2="194.7926" y2="-60.4359125" width="0.1524" layer="1"/>
+<wire x1="194.7926" y1="-60.4359125" x2="194.0672875" y2="-59.7106" width="0.1524" layer="1"/>
 <via x="197.739" y="-36.449" extent="1-16" drill="0.2286"/>
 <wire x1="197.739" y1="-36.449" x2="197.7" y2="-36.488" width="0.1524" layer="1"/>
 <wire x1="197.7" y1="-36.488" x2="196.342" y2="-36.488" width="0.1524" layer="1"/>
@@ -7697,17 +7685,17 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="197.739" y1="-38.4556" x2="197.739" y2="-36.449" width="0.1524" layer="15"/>
 <wire x1="166.9542" y1="-64.7630875" x2="166.9542" y2="-64.5668" width="0.1524" layer="1"/>
 <wire x1="166.9542" y1="-64.5668" x2="167.259" y2="-64.262" width="0.1524" layer="1"/>
-<wire x1="160.255" y1="-50.146" x2="142.5758375" y2="-32.4668375" width="0.1524" layer="1"/>
-<wire x1="142.4227" y1="-32.4668375" x2="142.5758375" y2="-32.4668375" width="0.1524" layer="1"/>
+<wire x1="160.255" y1="-50.146" x2="146.9947" y2="-36.8857" width="0.1524" layer="1"/>
+<wire x1="146.9947" y1="-31.8318375" x2="146.9947" y2="-36.8857" width="0.1524" layer="1"/>
 <wire x1="160.255" y1="-50.146" x2="160.255" y2="-65.5296875" width="0.1524" layer="1"/>
 <wire x1="160.255" y1="-65.5296875" x2="160.6937125" y2="-65.9684" width="0.1524" layer="1"/>
 <wire x1="160.6937125" y1="-65.9684" x2="165.7488875" y2="-65.9684" width="0.1524" layer="1"/>
 <wire x1="165.7488875" y1="-65.9684" x2="166.9542" y2="-64.7630875" width="0.1524" layer="1"/>
-<wire x1="191.8362125" y1="-60.9651" x2="192.15610625" y2="-60.64520625" width="0.1524" layer="15"/>
-<wire x1="192.15610625" y1="-60.64520625" x2="192.15610625" y2="-60.19279375" width="0.1524" layer="15"/>
+<wire x1="191.9632125" y1="-60.9651" x2="192.15610625" y2="-60.77220625" width="0.1524" layer="15"/>
+<wire x1="192.15610625" y1="-60.77220625" x2="192.15610625" y2="-60.19279375" width="0.1524" layer="15"/>
 <wire x1="192.15610625" y1="-60.19279375" x2="192.151" y2="-60.1876875" width="0.1524" layer="15"/>
 <wire x1="192.151" y1="-60.1876875" x2="192.151" y2="-59.5046" width="0.1524" layer="15"/>
-<wire x1="191.7418375" y1="-60.9651" x2="191.8362125" y2="-60.9651" width="0.1524" layer="15"/>
+<wire x1="191.7418375" y1="-60.9651" x2="191.9632125" y2="-60.9651" width="0.1524" layer="15"/>
 <wire x1="188.4449375" y1="-64.262" x2="191.7418375" y2="-60.9651" width="0.1524" layer="15"/>
 <wire x1="167.259" y1="-64.262" x2="188.4449375" y2="-64.262" width="0.1524" layer="15"/>
 </signal>
@@ -7735,9 +7723,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="L1" pad="1"/>
 <wire x1="96.0855" y1="-33.246" x2="97.727" y2="-33.246" width="0.1524" layer="1"/>
 <wire x1="97.727" y1="-33.246" x2="97.917" y2="-33.056" width="0.1524" layer="1"/>
-<wire x1="96.52" y1="-33.6805" x2="96.0855" y2="-33.246" width="0.1524" layer="1"/>
+<wire x1="96.52" y1="-34.1885" x2="96.0855" y2="-33.754" width="0.1524" layer="1"/>
+<wire x1="96.0855" y1="-33.754" x2="96.0855" y2="-33.246" width="0.1524" layer="1"/>
 <wire x1="96.807" y1="-36.449" x2="96.52" y2="-36.162" width="0.1524" layer="1"/>
-<wire x1="96.52" y1="-36.162" x2="96.52" y2="-33.6805" width="0.1524" layer="1"/>
+<wire x1="96.52" y1="-36.162" x2="96.52" y2="-34.1885" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="C11" pad="1"/>
@@ -7788,10 +7777,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="U6" pad="6"/>
 <contactref element="C30" pad="1"/>
 <contactref element="R9" pad="2"/>
-<wire x1="192.0975" y1="-37.477" x2="192.2164" y2="-37.5959" width="0.1524" layer="1"/>
-<wire x1="192.2164" y1="-37.5959" x2="192.6366875" y2="-37.5959" width="0.1524" layer="1"/>
-<wire x1="192.6366875" y1="-37.5959" x2="194.183" y2="-39.1422125" width="0.1524" layer="1"/>
-<wire x1="194.183" y1="-39.1422125" x2="194.183" y2="-39.6" width="0.1524" layer="1"/>
+<wire x1="192.8906875" y1="-37.4689" x2="192.1056" y2="-37.4689" width="0.1524" layer="1"/>
+<wire x1="192.0975" y1="-37.477" x2="192.1056" y2="-37.4689" width="0.1524" layer="1"/>
+<wire x1="192.8906875" y1="-37.4689" x2="194.183" y2="-38.7612125" width="0.1524" layer="1"/>
+<wire x1="194.183" y1="-38.7612125" x2="194.183" y2="-39.6" width="0.1524" layer="1"/>
 <wire x1="194.183" y1="-39.6" x2="195.595" y2="-38.188" width="0.1524" layer="1"/>
 <wire x1="195.595" y1="-38.188" x2="196.342" y2="-38.188" width="0.1524" layer="1"/>
 </signal>
