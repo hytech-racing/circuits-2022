@@ -4528,18 +4528,18 @@ visible on the PCB.</text>
 <part name="P8" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
 <part name="J3" library="HyTechDevices" deviceset="JUMPER_?_*" device="1X02"/>
 <part name="J4" library="HyTechDevices" deviceset="JUMPER_?_*" device="1X02"/>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470" value="RESISTOR_0603_470"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470" value="RESISTOR_0603_470"/>
 <part name="D1" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="D2" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="D3" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="P9" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P10" library="HyTechSupplies" deviceset="+5V" device=""/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
 </parts>
 <sheets>
 <sheet>
@@ -4663,14 +4663,6 @@ visible on the PCB.</text>
 <attribute name="NAME" x="156.21" y="138.43" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="156.21" y="135.89" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R3" gate="G$1" x="157.48" y="88.9" smashed="yes">
-<attribute name="NAME" x="156.21" y="90.17" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="156.21" y="87.63" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R4" gate="G$1" x="157.48" y="81.28" smashed="yes">
-<attribute name="NAME" x="156.21" y="82.55" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="156.21" y="80.01" size="1.27" layer="96" align="top-center"/>
-</instance>
 <instance part="J3" gate="G$1" x="157.48" y="101.6" smashed="yes">
 <attribute name="NAME" x="157.48" y="104.14" size="1.27" layer="95"/>
 </instance>
@@ -4706,6 +4698,14 @@ visible on the PCB.</text>
 </instance>
 <instance part="P10" gate="1" x="38.1" y="68.58" smashed="yes">
 <attribute name="VALUE" x="38.1" y="71.12" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="R3" gate="G$1" x="157.48" y="129.54" smashed="yes">
+<attribute name="NAME" x="156.21" y="130.81" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="156.21" y="128.27" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R4" gate="G$1" x="157.48" y="121.92" smashed="yes">
+<attribute name="NAME" x="156.21" y="123.19" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="156.21" y="120.65" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -4917,6 +4917,14 @@ visible on the PCB.</text>
 <pinref part="J4" gate="G$1" pin="P$1"/>
 <wire x1="157.48" y1="154.94" x2="157.48" y2="152.4" width="0.1524" layer="91"/>
 <junction x="157.48" y="152.4"/>
+<wire x1="149.86" y1="137.16" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
+<junction x="149.86" y="137.16"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="129.54" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="129.54" x2="149.86" y2="121.92" width="0.1524" layer="91"/>
+<junction x="149.86" y="129.54"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="121.92" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CANL1" class="0">
@@ -4940,26 +4948,23 @@ visible on the PCB.</text>
 <pinref part="J4" gate="G$1" pin="P$2"/>
 <wire x1="162.56" y1="154.94" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
 <junction x="162.56" y="149.86"/>
+<wire x1="162.56" y1="137.16" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
+<junction x="162.56" y="137.16"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="129.54" x2="162.56" y2="121.92" width="0.1524" layer="91"/>
+<junction x="162.56" y="129.54"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CANH2" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="CANH"/>
 <pinref part="J2" gate="G$1" pin="CANH"/>
-<wire x1="139.7" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
 <label x="139.7" y="96.52" size="1.778" layer="95"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="96.52" x2="157.48" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="96.52" x2="157.48" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="88.9" x2="149.86" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="86.36" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="81.28" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
-<junction x="149.86" y="86.36"/>
-<wire x1="147.32" y1="86.36" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
-<junction x="147.32" y="96.52"/>
 <pinref part="J3" gate="G$1" pin="P$1"/>
 <wire x1="157.48" y1="99.06" x2="157.48" y2="96.52" width="0.1524" layer="91"/>
 <junction x="157.48" y="96.52"/>
@@ -4971,18 +4976,7 @@ visible on the PCB.</text>
 <pinref part="J2" gate="G$1" pin="CANL"/>
 <wire x1="139.7" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
 <label x="139.7" y="93.98" size="1.778" layer="95"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="93.98" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="88.9" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="86.36" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="81.28" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="86.36" x2="167.64" y2="86.36" width="0.1524" layer="91"/>
-<junction x="162.56" y="86.36"/>
-<wire x1="167.64" y1="86.36" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
-<junction x="167.64" y="93.98"/>
+<wire x1="162.56" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="P$2"/>
 <wire x1="162.56" y1="99.06" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
 <junction x="162.56" y="93.98"/>
