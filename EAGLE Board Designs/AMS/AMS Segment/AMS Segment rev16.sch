@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -194,7 +194,7 @@
 <package name="0603-CAP">
 <description>0603 Cap
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_UPY-C_GEN_26_20092411_950.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
@@ -223,7 +223,7 @@
 <package name="0603-RES">
 <description>0603 Resistor Footprint
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
@@ -322,21 +322,6 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="3.81" y="5.08" radius="0.635" width="0" layer="21"/>
 </package>
-<package name="0805-RES">
-<description>0805 Resistor Footprint
-&lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
-<smd name="1" x="-1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
-<smd name="2" x="1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
-<text x="0" y="0.85" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
-<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
-<rectangle x1="-1.7" y1="-0.85" x2="1.7" y2="0.85" layer="39"/>
-</package>
 <package name="PWR263">
 <description>PWR263 Resistor
 &lt;br&gt;
@@ -364,25 +349,10 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <rectangle x1="-5.6025" y1="10.7625" x2="5.6025" y2="14.9875" layer="29"/>
 <rectangle x1="-4.1025" y1="4.2625" x2="4.1025" y2="10.865" layer="29"/>
 </package>
-<package name="2220-CAP">
-<description>2220 Cap
-&lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.knowlescapacitors.com/getattachment/fe7386b2-d58d-4a83-96e0-cf03dfba634f/Safety-Cap.aspx"&gt;Size&lt;/a&gt;</description>
-<smd name="1" x="-2.775" y="0" dx="1.05" dy="5.3" layer="1"/>
-<smd name="2" x="2.775" y="0" dx="1.05" dy="5.3" layer="1"/>
-<text x="0" y="2.95" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-2.85" y1="2.5" x2="2.85" y2="2.5" width="0.127" layer="21"/>
-<wire x1="2.85" y1="2.5" x2="2.85" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="2.85" y1="-2.5" x2="-2.85" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-2.85" y1="-2.5" x2="-2.85" y2="2.5" width="0.127" layer="21"/>
-<rectangle x1="-3.5" y1="-2.95" x2="3.5" y2="2.95" layer="39"/>
-</package>
 <package name="0805-CAP">
 <description>0805 Cap
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_UPY-C_GEN_26_20092411_950.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-0.925" y="0" dx="0.95" dy="1.4" layer="1"/>
@@ -397,7 +367,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <package name="1206-CAP">
 <description>1206 Cap
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_UPY-C_GEN_26_20092411_950.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-1.5" y="0" dx="1" dy="1.8" layer="1"/>
@@ -712,6 +682,52 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="-3.81" y1="-2.54" x2="3.81" y2="2.54" layer="39"/>
 <text x="0" y="2.794" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="2220-CAP">
+<description>2220 Cap
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_UPY-C_GEN_26_20092411_950.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.knowlescapacitors.com/getattachment/fe7386b2-d58d-4a83-96e0-cf03dfba634f/Safety-Cap.aspx"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-2.775" y="0" dx="1.05" dy="5.3" layer="1"/>
+<smd name="2" x="2.775" y="0" dx="1.05" dy="5.3" layer="1"/>
+<text x="0" y="2.95" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-2.85" y1="2.5" x2="2.85" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.85" y1="2.5" x2="2.85" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.85" y1="-2.5" x2="-2.85" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.85" y1="-2.5" x2="-2.85" y2="2.5" width="0.127" layer="21"/>
+<rectangle x1="-3.5" y1="-2.95" x2="3.5" y2="2.95" layer="39"/>
+</package>
+<package name="0805-RES">
+<description>0805 Resistor Footprint
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
+<smd name="2" x="1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
+<text x="0" y="0.85" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
+<rectangle x1="-1.7" y1="-0.85" x2="1.7" y2="0.85" layer="39"/>
+</package>
+<package name="SRU1048">
+<description>SRU1048&lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-4.5" y="0" dx="1.8" dy="3.6" layer="1" thermals="no"/>
+<smd name="2" x="4.5" y="0" dx="1.8" dy="3.6" layer="1" thermals="no"/>
+<wire x1="-2.075" y1="5" x2="2.075" y2="5" width="0.127" layer="21"/>
+<wire x1="-2.075" y1="-5" x2="2.075" y2="-5" width="0.127" layer="21"/>
+<wire x1="5" y1="2.075" x2="5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="-5" y1="2.075" x2="-5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="-5" y1="2.075" x2="-2.075" y2="5" width="0.127" layer="21"/>
+<wire x1="2.075" y1="-5" x2="5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="-2.075" y1="-5" x2="-5" y2="-2.075" width="0.127" layer="21"/>
+<wire x1="5" y1="2.075" x2="2.075" y2="5" width="0.127" layer="21"/>
+<text x="0" y="5.5908" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-5.842" y1="-5.588" x2="5.842" y2="5.588" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -778,7 +794,7 @@ Dashed line is edge of mated connector.</description>
 <wire x1="0" y1="0" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-5.715" size="1.27" layer="96" align="top-left">&gt;MODEL</text>
+<text x="0" y="-5.715" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
@@ -789,7 +805,7 @@ Dashed line is edge of mated connector.</description>
 <wire x1="0" y1="0" x2="0" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-8.255" size="1.27" layer="96" align="top-left">&gt;MODEL</text>
+<text x="0" y="-8.255" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
@@ -990,7 +1006,7 @@ Pins tied to VREG: ISOMD, DTEN
 <text x="0" y="-15.875" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="LT3990-5">
-<description>LT3990-5 High Voltage DC-DC Converter
+<description>LT3990-5 DC-DC Converter
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/3990fa-1270774.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pin name="VIN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
@@ -999,9 +1015,9 @@ Pins tied to VREG: ISOMD, DTEN
 <pin name="RT" x="-2.54" y="-12.7" length="short" direction="pas"/>
 <pin name="GND" x="-2.54" y="-20.32" length="short" direction="pwr"/>
 <pin name="BOOST" x="22.86" y="-2.54" length="short" direction="pas" rot="R180"/>
-<pin name="SW" x="22.86" y="-10.16" length="short" direction="pas" rot="R180"/>
-<pin name="BD" x="22.86" y="-15.24" length="short" direction="pas" rot="R180"/>
-<pin name="VOUT" x="22.86" y="-17.78" length="short" direction="pwr" rot="R180"/>
+<pin name="SW" x="22.86" y="-10.16" length="short" direction="out" rot="R180"/>
+<pin name="BD" x="22.86" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="VOUT" x="22.86" y="-17.78" length="short" direction="in" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="0" y1="-22.86" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-22.86" x2="20.32" y2="0" width="0.254" layer="94"/>
@@ -1011,8 +1027,8 @@ Pins tied to VREG: ISOMD, DTEN
 </symbol>
 <symbol name="INDUCTOR">
 <wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-<pin name="P$1" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
-<pin name="P$2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
 <text x="-1.27" y="-0.635" size="1.27" layer="96" align="top-center">&gt;INDUCTANCE</text>
 <wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
@@ -1306,7 +1322,7 @@ Pins tied to VREG: ISOMD, DTEN
 </devices>
 </deviceset>
 <deviceset name="RESISTOR_?_*" prefix="R">
-<description>&lt;b&gt;Resistor&lt;/b&gt;
+<description>Resistor
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/54/pwr163-777985.pdf"&gt;PWR163 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/Yageo_PYu_AC_51_RoHS_L_7_1714230-1874691.pdf"&gt;AC Series&lt;/a&gt;&lt;li&gt;
@@ -2033,7 +2049,6 @@ Pins tied to VREG: ISOMD, DTEN
 <technology name="">
 <attribute name="DKPN" value="807-22-001-10-022101-ND"/>
 <attribute name="MANUFACTURER" value="Mill-Max Manufacturing Corp."/>
-<attribute name="MODEL" value="POGO-PIN"/>
 <attribute name="MOPN" value="575-8072200110022101"/>
 <attribute name="MPN" value="807-22-001-10-022101"/>
 </technology>
@@ -2069,12 +2084,10 @@ Pins tied to VREG: ISOMD, DTEN
 <technologies>
 <technology name="BLACK">
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MODEL" value="NF_S_V_B"/>
 <attribute name="MPN" value="1054291304"/>
 </technology>
 <technology name="NATURAL">
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MODEL" value="NF_S_V_N"/>
 <attribute name="MPN" value="1054312302"/>
 </technology>
 </technologies>
@@ -2087,7 +2100,6 @@ Pins tied to VREG: ISOMD, DTEN
 <technologies>
 <technology name="BLACK">
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MODEL" value="µF_S_RA_2_D"/>
 <attribute name="MPN" value="0430450211"/>
 </technology>
 </technologies>
@@ -2101,7 +2113,6 @@ Pins tied to VREG: ISOMD, DTEN
 <technology name="BLACK">
 <attribute name="DKPN" value="436500214"/>
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MODEL" value="µF_S_RA_2_S"/>
 <attribute name="MOPN" value="538-43650-0214"/>
 <attribute name="MPN" value="436500214"/>
 </technology>
@@ -2110,9 +2121,7 @@ Pins tied to VREG: ISOMD, DTEN
 </devices>
 </deviceset>
 <deviceset name="LTC6811-2" prefix="U">
-<description>&lt;b&gt; Linear Technology Multicell Battery Stack Monitor &lt;/b&gt;
-&lt;br&gt;
-Variant 2: Addressable/Multi-Drop Configuration
+<description>LTC6811-2 12 Cell Stackable Battery Monitor
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/LTC6811_1_6811_2-1271909.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
@@ -2350,7 +2359,7 @@ SHT31: High Grade
 </devices>
 </deviceset>
 <deviceset name="LT3990-5" prefix="U">
-<description>LT3990-5 High Voltage DC-DC Converter
+<description>LT3990-5 DC-DC Converter
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/3990fa-1270774.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
@@ -2381,25 +2390,50 @@ SHT31: High Grade
 </devices>
 </deviceset>
 <deviceset name="INDUCTOR_?_*" prefix="L">
-<description>Inductor</description>
+<description>Inductor
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Inductor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="74451133" package="74451133">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="33UH">
-<attribute name="CURRENT_RATED" value="0.6"/>
-<attribute name="CURRENT_SATURATION" value="0.15"/>
-<attribute name="DCR" value="0.114"/>
+<attribute name="CURRENT_RATED" value="0.6A"/>
+<attribute name="CURRENT_SATURATION" value="0.15A"/>
+<attribute name="DCR" value="0.19Ω"/>
 <attribute name="DKPN" value="732-1410-1-ND"/>
 <attribute name="INDUCTANCE" value="33µH"/>
 <attribute name="MANUFACTURER" value="Würth Elektronik"/>
+<attribute name="MOPN" value="710-74451133"/>
 <attribute name="MPN" value="74451133"/>
+<attribute name="TOLERANCE" value="20%"/>
+</technology>
+</technologies>
+</device>
+<device name="SRU1048" package="SRU1048">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="330UH">
+<attribute name="CURRENT_RATED" value="0.65A"/>
+<attribute name="CURRENT_SATURATION" value="0.52A"/>
+<attribute name="DCR" value="0.640Ω"/>
+<attribute name="DKPN" value="SRU1048-331YTR-ND"/>
+<attribute name="INDUCTANCE" value="330µH"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-SRU1048-331Y"/>
+<attribute name="MPN" value="SRU1048-331Y"/>
+<attribute name="TOLERANCE" value="30%"/>
 </technology>
 </technologies>
 </device>
@@ -2407,7 +2441,7 @@ SHT31: High Grade
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2">
+<library name="supply2" urn="urn:adsk.eagle:library:372">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
 GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
 Please keep in mind, that these devices are necessary for the
@@ -2418,7 +2452,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <packages>
 </packages>
 <symbols>
-<symbol name="V-">
+<symbol name="V-" urn="urn:adsk.eagle:symbol:27027/1" library_version="2">
 <wire x1="-1.27" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="1.27" y2="1.905" width="0.254" layer="94"/>
 <text x="-1.27" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
@@ -2426,7 +2460,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="V-" prefix="SUPPLY">
+<deviceset name="V-" urn="urn:adsk.eagle:component:27075/1" prefix="SUPPLY" library_version="2">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="V-" x="0" y="0"/>
@@ -8632,19 +8666,15 @@ requirement of EV.8.3.2.</text>
 <attribute name="VALUE" x="238.76" y="161.29" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="J27" gate="G$1" x="274.32" y="203.2" smashed="yes" rot="MR0">
-<attribute name="MODEL" x="275.082" y="194.691" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="274.32" y="203.962" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="J28" gate="G$1" x="274.32" y="190.5" smashed="yes" rot="MR0">
-<attribute name="MODEL" x="275.082" y="181.991" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="274.32" y="191.262" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="J32" gate="G$1" x="274.32" y="177.8" smashed="yes" rot="MR0">
-<attribute name="MODEL" x="275.082" y="169.545" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="274.32" y="178.562" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="J33" gate="G$1" x="274.32" y="165.1" smashed="yes" rot="MR0">
-<attribute name="MODEL" x="275.59" y="156.591" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="274.32" y="165.862" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="R34" gate="G$1" x="254" y="119.38" smashed="yes" rot="MR270">
@@ -8712,19 +8742,15 @@ requirement of EV.8.3.2.</text>
 <attribute name="VALUE" x="238.76" y="113.03" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="J37" gate="G$1" x="274.32" y="129.54" smashed="yes" rot="MR0">
-<attribute name="MODEL" x="274.32" y="121.285" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="274.32" y="130.302" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="J38" gate="G$1" x="274.32" y="116.84" smashed="yes" rot="MR0">
-<attribute name="MODEL" x="275.336" y="108.585" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="274.32" y="117.602" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="J39" gate="G$1" x="274.32" y="104.14" smashed="yes" rot="MR0">
-<attribute name="MODEL" x="275.336" y="95.885" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="274.32" y="104.902" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="J40" gate="G$1" x="274.32" y="91.44" smashed="yes" rot="MR0">
-<attribute name="MODEL" x="275.336" y="83.185" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="274.32" y="92.202" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="C26" gate="G$1" x="162.56" y="144.78" smashed="yes" rot="R180">
@@ -8733,7 +8759,6 @@ requirement of EV.8.3.2.</text>
 <attribute name="CAPACITANCE" x="163.83" y="149.098" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
 <instance part="J34" gate="G$1" x="218.44" y="162.56" smashed="yes" rot="MR0">
-<attribute name="MODEL" x="218.44" y="154.305" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="218.44" y="163.322" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="C28" gate="G$1" x="162.56" y="119.38" smashed="yes" rot="R180">
@@ -8742,7 +8767,6 @@ requirement of EV.8.3.2.</text>
 <attribute name="CAPACITANCE" x="163.83" y="123.698" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
 <instance part="J35" gate="G$1" x="218.44" y="137.16" smashed="yes" rot="MR0">
-<attribute name="MODEL" x="222.504" y="128.651" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="218.44" y="137.922" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="R4" gate="G$1" x="149.86" y="162.56" smashed="yes" rot="R90">
@@ -10906,7 +10930,7 @@ requirement of EV.8.3.2.</text>
 <pinref part="U4" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
-<pinref part="L2" gate="G$1" pin="P$2"/>
+<pinref part="L2" gate="G$1" pin="2"/>
 <pinref part="P85" gate="G$1" pin="VREGL"/>
 <wire x1="180.34" y1="66.04" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U6" gate="G$1" pin="VOUT"/>
@@ -10977,7 +11001,7 @@ requirement of EV.8.3.2.</text>
 <pinref part="U3" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
-<pinref part="L1" gate="G$1" pin="P$2"/>
+<pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="P87" gate="G$1" pin="VREGU"/>
 <pinref part="U5" gate="G$1" pin="VOUT"/>
 <pinref part="U5" gate="G$1" pin="BD"/>
@@ -11139,7 +11163,7 @@ requirement of EV.8.3.2.</text>
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="SW"/>
 <wire x1="208.28" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="P$1"/>
+<pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="104.14" x2="213.36" y2="104.14" width="0.1524" layer="91"/>
 <junction x="208.28" y="104.14"/>
 </segment>
@@ -11173,7 +11197,7 @@ requirement of EV.8.3.2.</text>
 <pinref part="C29" gate="G$1" pin="2"/>
 <pinref part="U6" gate="G$1" pin="SW"/>
 <wire x1="165.1" y1="66.04" x2="162.56" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="L2" gate="G$1" pin="P$1"/>
+<pinref part="L2" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="66.04" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
 <junction x="165.1" y="66.04"/>
 </segment>
@@ -11296,6 +11320,16 @@ requirement of EV.8.3.2.</text>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
 </note>
 <note version="9.0" severity="warning">
 Since Version 9.0, EAGLE supports the align property for labels. 
