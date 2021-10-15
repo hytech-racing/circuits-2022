@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -3008,7 +3008,7 @@ visible on the PCB.</text>
 <package name="0603-RES">
 <description>0603 Resistor Footprint
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
@@ -3032,21 +3032,6 @@ visible on the PCB.</text>
 <wire x1="-5" y1="-2.6" x2="-5" y2="2.6" width="0.127" layer="21"/>
 <rectangle x1="-6.096" y1="-3.556" x2="6.096" y2="3.556" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
-<package name="0805-RES">
-<description>0805 Resistor Footprint
-&lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
-<smd name="1" x="-1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
-<smd name="2" x="1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
-<text x="0" y="0.85" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
-<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
-<rectangle x1="-1.7" y1="-0.85" x2="1.7" y2="0.85" layer="39"/>
 </package>
 <package name="PWR263">
 <description>PWR263 Resistor
@@ -3182,6 +3167,21 @@ Based on page 10.</description>
 <vertex x="1.1" y="0.714"/>
 <vertex x="1.1" y="3.765"/>
 </polygon>
+</package>
+<package name="0805-RES">
+<description>0805 Resistor Footprint
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
+<smd name="2" x="1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
+<text x="0" y="0.85" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
+<rectangle x1="-1.7" y1="-0.85" x2="1.7" y2="0.85" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -4611,6 +4611,8 @@ Based on page 10.</description>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="J5" library="HyTechDevices" deviceset="JUMPER_?_*" device="1X02"/>
+<part name="J6" library="HyTechDevices" deviceset="JUMPER_?_*" device="1X02"/>
 </parts>
 <sheets>
 <sheet>
@@ -4785,6 +4787,12 @@ Based on page 10.</description>
 <instance part="R9" gate="G$1" x="152.4" y="99.06" smashed="yes">
 <attribute name="NAME" x="151.13" y="100.33" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="151.13" y="97.79" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="J5" gate="G$1" x="86.36" y="132.08" smashed="yes">
+<attribute name="NAME" x="86.36" y="134.62" size="1.27" layer="95"/>
+</instance>
+<instance part="J6" gate="G$1" x="93.98" y="132.08" smashed="yes">
+<attribute name="NAME" x="93.98" y="134.62" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -5120,8 +5128,20 @@ Based on page 10.</description>
 <net name="TEENSY_3.3V" class="0">
 <segment>
 <pinref part="A1" gate="G$1" pin="3.3V"/>
-<wire x1="81.28" y1="129.54" x2="88.9" y2="129.54" width="0.1524" layer="91"/>
-<label x="88.9" y="129.54" size="1.27" layer="95" xref="yes"/>
+<wire x1="81.28" y1="129.54" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
+<label x="101.6" y="129.54" size="1.27" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="P$1"/>
+<junction x="86.36" y="129.54"/>
+<pinref part="J5" gate="G$1" pin="P$2"/>
+<wire x1="86.36" y1="129.54" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="129.54" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
+<junction x="91.44" y="129.54"/>
+<pinref part="J6" gate="G$1" pin="P$1"/>
+<pinref part="J6" gate="G$1" pin="P$2"/>
+<wire x1="99.06" y1="129.54" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
+<junction x="93.98" y="129.54"/>
+<junction x="99.06" y="129.54"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VIO"/>
