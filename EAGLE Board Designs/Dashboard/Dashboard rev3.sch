@@ -758,20 +758,6 @@ visible on the PCB.</text>
 <rectangle x1="-6.604" y1="-6.604" x2="6.604" y2="6.604" layer="39"/>
 <text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="0885">
-<description>0885 Fuse
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
-<smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
-<wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
-<wire x1="-5.43" y1="-2.39" x2="5.43" y2="-2.39" width="0.127" layer="21"/>
-<wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>
-<wire x1="5.43" y1="2.39" x2="-5.43" y2="2.39" width="0.127" layer="21"/>
-<text x="0" y="4.318" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-8.382" y1="-4.318" x2="8.382" y2="4.318" layer="39"/>
-<rectangle x1="-2.45" y1="-4.318" x2="2.45" y2="4.318" layer="43"/>
-</package>
 <package name="TSSOP-20">
 <description>TSSOP 20
 &lt;br&gt;
@@ -1278,16 +1264,6 @@ Note: No sure about SDO/SDI accuracy</description>
 <pin name="EN" x="-2.54" y="-5.08" length="short"/>
 <pin name="OUT" x="20.32" y="-2.54" length="short" direction="out" rot="R180"/>
 <pin name="TRIM" x="20.32" y="-5.08" length="short" rot="R180"/>
-</symbol>
-<symbol name="FUSE">
-<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94" curve="-180"/>
-<wire x1="-1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;CURRENT</text>
-<wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="MCP2515">
 <description>MCP2515 Can Controller
@@ -2885,61 +2861,6 @@ Note: No sure about SDO/SDI accuracy</description>
 <attribute name="MPN" value="OKL-T/1-W12N-C " constant="no"/>
 <attribute name="VIN" value="12V" constant="no"/>
 <attribute name="VOUT" value="5V" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FUSE" prefix="F">
-<description>Ceramic Surface Mount Fuse
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/358/typ_SMD_SPT-1276028.pdf"&gt;Datasheet&lt;/a&gt;
-
-Fuse/Fuseclips
-&lt;br&gt;
-Keystone Electronics 3568 Fuse
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ProductDetail/Keystone-Electronics/3568"&gt;Mouser Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/215/568-742601.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Bussman/Eaton Midget Fuse Clip
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ProductDetail/Bussmann-Eaton/BK-1A3400-09-R/?qs=sGAEpiMZZMuG%252bgnN5hGYGzzlAelq2OxnKqVSMVjq8I4%3d"&gt;1A3400&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Schurter 0751.0110 Brass Fuse Clip
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/358/typ_OG__Clip__5x20-2553.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Bel Fuse 0ZCF Series Surface Mount PTC (resettable) Fuse
-&lt;br&gt;
-&lt;a href="https://belfuse.com/resources/CircuitProtection/datasheets/0ZCF%20Nov2016.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
-&lt;br&gt;
-&lt;a href="https://m.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_1812l_datasheet.pdf.pdf"&gt;Datasheet&lt;/a&gt;
-
-Ceramic SMD Surface Mount Fuse
-&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0885" package="0885">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CURRENT" value="1.25A"/>
-<attribute name="DKPN" value="F10986CT-ND"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
-<attribute name="MOPN" value="576-08851.25DR"/>
-<attribute name="MPN" value="08851.25DR"/>
 </technology>
 </technologies>
 </device>
@@ -6259,6 +6180,21 @@ visible on the PCB.</text>
 <rectangle x1="-2.794" y1="-3.556" x2="2.794" y2="3.556" layer="39"/>
 <circle x="-3.175" y="-2.54" radius="0.254" width="0" layer="21"/>
 </package>
+<package name="0603-FUSE">
+<description>0603 Fuse (Borrowed Cap datasheets)
+&lt;br&gt;
+&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
+<smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
+<text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
+<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RE46C100">
@@ -6277,6 +6213,18 @@ visible on the PCB.</text>
 <pin name="HORNS" x="22.86" y="-7.62" length="short" direction="out" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-16.002" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="FUSE">
+<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-3.81" y="-1.27" size="1.27" layer="96" align="top-right">&gt;CURRENT</text>
+<wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;I2T</text>
+<text x="1.27" y="-1.27" size="1.27" layer="96" align="top-left">&gt;VOLTAGE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -6303,6 +6251,31 @@ visible on the PCB.</text>
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
 <attribute name="MOPN" value="RE46C100S8TF"/>
 <attribute name="MPN" value="579-RE46C100S8TF "/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE0603" prefix="F">
+<description>0603 Surface Mount Fuse
+&lt;br&gt;&lt;a href="https://datasheets.avx.com/AccuGuard2.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603-FUSE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="1.5A" constant="no"/>
+<attribute name="DKPN" value="478-2864-2-ND" constant="no"/>
+<attribute name="I2T" value="0.03" constant="no"/>
+<attribute name="MOPN" value="581-F0603E1R50FSTR " constant="no"/>
+<attribute name="MPN" value="F0603E1R50FSTR" constant="no"/>
+<attribute name="VOLTAGE" value="32V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6406,7 +6379,6 @@ visible on the PCB.</text>
 <part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C12" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
-<part name="F1" library="HyTechDevices" deviceset="FUSE" device="0885"/>
 <part name="X1" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
 <part name="X2" library="HyTechDevices" deviceset="CRYSTAL" device="" technology="16MHZ"/>
 <part name="U3" library="HyTechDevices" deviceset="MCP2515" device=""/>
@@ -6449,6 +6421,7 @@ visible on the PCB.</text>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="P23" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="J1" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603" technology="BRIDGE"/>
+<part name="F1" library="HyTechDevicesTemp" deviceset="FUSE0603" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6799,13 +6772,13 @@ visible on the PCB.</text>
 <attribute name="NAME" x="52.07" y="77.47" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="52.07" y="74.93" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="RN8" gate="A" x="53.34" y="40.64" smashed="yes">
-<attribute name="NAME" x="52.07" y="41.91" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="52.07" y="39.37" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="RN8" gate="B" x="53.34" y="58.42" smashed="yes">
+<instance part="RN8" gate="A" x="53.34" y="58.42" smashed="yes">
 <attribute name="NAME" x="52.07" y="59.69" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="52.07" y="57.15" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="RN8" gate="B" x="53.34" y="40.64" smashed="yes">
+<attribute name="NAME" x="52.07" y="41.91" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="52.07" y="39.37" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P11" gate="1" x="177.8" y="187.96" smashed="yes">
 <attribute name="VALUE" x="177.8" y="186.69" size="1.27" layer="96" align="top-center"/>
@@ -6835,10 +6808,6 @@ visible on the PCB.</text>
 <attribute name="NAME" x="143.51" y="195.58" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="VOLTAGE" x="143.51" y="200.66" size="1.27" layer="96" rot="R180" align="top-center"/>
 <attribute name="CAPACITANCE" x="143.51" y="202.438" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
-<instance part="F1" gate="G$1" x="205.74" y="198.12" smashed="yes">
-<attribute name="NAME" x="204.47" y="199.39" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="CURRENT" x="204.47" y="196.85" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="X1" gate="G$1" x="218.44" y="152.4" smashed="yes">
 <attribute name="NAME" x="217.17" y="155.575" size="1.27" layer="95" align="bottom-center"/>
@@ -7035,6 +7004,12 @@ visible on the PCB.</text>
 <instance part="J1" gate="G$1" x="226.06" y="160.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="223.52" y="160.02" size="1.27" layer="95" rot="R90"/>
 <attribute name="MODEL" x="229.362" y="160.02" size="1.27" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="F1" gate="G$1" x="205.74" y="198.12" smashed="yes">
+<attribute name="NAME" x="204.47" y="199.39" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="CURRENT" x="201.93" y="196.85" size="1.27" layer="96" align="top-right"/>
+<attribute name="I2T" x="204.47" y="196.85" size="1.27" layer="96" align="top-center"/>
+<attribute name="VOLTAGE" x="207.01" y="196.85" size="1.27" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -7458,9 +7433,9 @@ visible on the PCB.</text>
 <junction x="35.56" y="187.96"/>
 </segment>
 <segment>
-<pinref part="F1" gate="G$1" pin="1"/>
 <pinref part="P+16" gate="1" pin="+12V"/>
 <wire x1="200.66" y1="198.12" x2="200.66" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="P+8" gate="1" pin="+12V"/>
@@ -7648,7 +7623,7 @@ visible on the PCB.</text>
 <wire x1="35.56" y1="58.42" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
 <junction x="35.56" y="58.42"/>
 <pinref part="DN2" gate="C" pin="C"/>
-<pinref part="RN8" gate="B" pin="1"/>
+<pinref part="RN8" gate="A" pin="1"/>
 <wire x1="45.72" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 <junction x="45.72" y="58.42"/>
 </segment>
@@ -7719,7 +7694,7 @@ visible on the PCB.</text>
 <wire x1="35.56" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
 <junction x="35.56" y="40.64"/>
 <pinref part="DN2" gate="D" pin="C"/>
-<pinref part="RN8" gate="A" pin="1"/>
+<pinref part="RN8" gate="B" pin="1"/>
 <wire x1="45.72" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
 <junction x="45.72" y="40.64"/>
 </segment>
@@ -8070,8 +8045,8 @@ visible on the PCB.</text>
 <net name="N$62" class="0">
 <segment>
 <wire x1="210.82" y1="198.12" x2="208.28" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="IN"/>
+<pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$69" class="0">
@@ -8262,20 +8237,6 @@ visible on the PCB.</text>
 <wire x1="55.88" y1="93.98" x2="57.912" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$37" class="0">
-<segment>
-<pinref part="RN8" gate="A" pin="2"/>
-<pinref part="Q6" gate="G$1" pin="G"/>
-<wire x1="55.88" y1="40.64" x2="57.912" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$38" class="0">
-<segment>
-<pinref part="RN8" gate="B" pin="2"/>
-<pinref part="Q5" gate="G$1" pin="G"/>
-<wire x1="55.88" y1="58.42" x2="57.912" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="INERTIA_READ" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
@@ -8316,6 +8277,20 @@ visible on the PCB.</text>
 <wire x1="228.6" y1="170.18" x2="241.3" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="165.1" x2="228.6" y2="170.18" width="0.1524" layer="91"/>
 <junction x="228.6" y="170.18"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="RN8" gate="B" pin="2"/>
+<pinref part="Q6" gate="G$1" pin="G"/>
+<wire x1="55.88" y1="40.64" x2="57.912" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="RN8" gate="A" pin="2"/>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<wire x1="55.88" y1="58.42" x2="57.912" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
