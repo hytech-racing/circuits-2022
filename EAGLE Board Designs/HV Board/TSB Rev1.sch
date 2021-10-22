@@ -6234,6 +6234,32 @@ ISO224B: High-Grade
 <sheets>
 <sheet>
 <plain>
+<text x="43.18" y="205.74" size="2.54" layer="97">4 pin connector instead</text>
+<text x="109.22" y="203.2" size="2.54" layer="97">Combine into one</text>
+<text x="25.4" y="170.18" size="2.54" layer="97">0.1 u cap input and output</text>
+<text x="76.2" y="127" size="2.54" layer="97">0.1 u cap input</text>
+<text x="147.32" y="149.86" size="2.54" layer="97">1 u and 0.1 u output</text>
+<text x="119.38" y="93.98" size="2.54" layer="97">10 u cap output</text>
+<text x="35.56" y="93.98" size="2.54" layer="97">0.1 u cap input</text>
+<text x="22.86" y="68.58" size="2.54" layer="97">change part to ethan rec</text>
+<text x="144.78" y="175.26" size="2.54" layer="97">resistor safety shit</text>
+<text x="182.88" y="106.68" size="2.54" layer="97">resistor safety shit</text>
+<text x="193.04" y="129.54" size="2.54" layer="97">do math</text>
+<text x="190.5" y="182.88" size="2.54" layer="97">do math</text>
+<text x="251.46" y="99.06" size="2.54" layer="97">unfuse all</text>
+<text x="246.38" y="104.14" size="2.54" layer="97">imd connector</text>
+<text x="205.74" y="99.06" size="2.54" layer="97">energy meter connector</text>
+<text x="124.46" y="83.82" size="2.54" layer="97">resistor between ts_5v and led+</text>
+<text x="213.36" y="66.04" size="2.54" layer="97">fix parts</text>
+<text x="71.12" y="40.64" size="2.54" layer="97">resistor for opto isolator safety</text>
+<text x="20.32" y="127" size="2.54" layer="97">add info</text>
+<text x="119.38" y="121.92" size="2.54" layer="97">add info</text>
+<text x="81.28" y="152.4" size="2.54" layer="97">add info</text>
+<text x="38.1" y="147.32" size="2.54" layer="97">add info</text>
+<text x="134.62" y="167.64" size="2.54" layer="97">add info</text>
+<text x="185.42" y="157.48" size="2.54" layer="97">add info</text>
+<text x="185.42" y="101.6" size="2.54" layer="97">add info</text>
+<text x="111.76" y="129.54" size="2.54" layer="97">add ovlo shit</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="O" x="0" y="0" smashed="yes">
@@ -6716,8 +6742,6 @@ ISO224B: High-Grade
 <wire x1="128.27" y1="43.18" x2="128.27" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="97.79" y1="135.89" x2="97.79" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -6732,18 +6756,12 @@ ISO224B: High-Grade
 <wire x1="87.63" y1="135.89" x2="87.63" y2="132.08" width="0.1524" layer="91"/>
 <junction x="87.63" y="132.08"/>
 <pinref part="U5" gate="G$1" pin="GND"/>
-<pinref part="U5" gate="G$1" pin="RUN"/>
 <pinref part="U5" gate="G$1" pin="OVLO"/>
-<wire x1="105.41" y1="148.59" x2="105.41" y2="156.21" width="0.1524" layer="91"/>
-<junction x="105.41" y="148.59"/>
 <wire x1="105.41" y1="148.59" x2="105.41" y2="140.97" width="0.1524" layer="91"/>
 <wire x1="97.79" y1="132.08" x2="105.41" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="105.41" y1="132.08" x2="105.41" y2="140.97" width="0.1524" layer="91"/>
 <junction x="97.79" y="132.08"/>
 <junction x="105.41" y="140.97"/>
-<wire x1="74.93" y1="156.21" x2="105.41" y2="156.21" width="0.1524" layer="91"/>
-<junction x="74.93" y="156.21"/>
-<junction x="105.41" y="156.21"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="105.41" y1="132.08" x2="130.81" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="130.81" y1="132.08" x2="135.89" y2="132.08" width="0.1524" layer="91"/>
@@ -7445,10 +7463,28 @@ ISO224B: High-Grade
 <junction x="198.12" y="127"/>
 </segment>
 </net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="RUN"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<junction x="74.93" y="156.21"/>
+<wire x1="74.93" y1="156.21" x2="105.41" y2="156.21" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
 <plain>
+<text x="91.44" y="193.04" size="2.54" layer="97">change to no opto isolator</text>
+<text x="124.46" y="160.02" size="2.54" layer="97">change to pack+fused</text>
+<text x="86.36" y="157.48" size="2.54" layer="97">fuse pack+</text>
+<text x="43.18" y="106.68" size="2.54" layer="97">do math with reisistor on relay</text>
+<text x="149.86" y="106.68" size="2.54" layer="97">add diode for safety</text>
+<text x="152.4" y="101.6" size="2.54" layer="97">fix resistors</text>
+<text x="86.36" y="147.32" size="2.54" layer="97">should be shotky diodes for relays</text>
+<text x="91.44" y="109.22" size="2.54" layer="97">should be shotky diodes for relays</text>
+<text x="40.64" y="129.54" size="2.54" layer="97">thick lines to denote TS</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="O" x="0" y="0" smashed="yes">
