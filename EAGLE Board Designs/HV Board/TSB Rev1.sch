@@ -6230,6 +6230,7 @@ ISO224B: High-Grade
 <part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="60.4"/>
 <part name="C22" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF" value="CAPACITOR_0603_25V_1UF"/>
 <part name="C23" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF" value="CAPACITOR_0603_25V_1UF"/>
+<part name="FRAME3" library="HyTechFrames" deviceset="FRAME" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6260,6 +6261,16 @@ ISO224B: High-Grade
 <text x="185.42" y="157.48" size="2.54" layer="97">add info</text>
 <text x="185.42" y="101.6" size="2.54" layer="97">add info</text>
 <text x="111.76" y="129.54" size="2.54" layer="97">add ovlo shit</text>
+<text x="25.4" y="17.78" size="2.54" layer="97">sheet 1: precharge power shit
+sheet 2: dc dc converter
+sheet 3: relays and connectors</text>
+<text x="81.28" y="38.1" size="2.54" layer="97">do math for resistor</text>
+<text x="38.1" y="223.52" size="25.4" layer="97">ON GRID IT</text>
+<text x="309.88" y="142.24" size="25.4" layer="97">ON GRID IT</text>
+<text x="309.88" y="76.2" size="25.4" layer="97">ON GRID IT</text>
+<text x="-190.5" y="172.72" size="25.4" layer="97">ON GRID IT</text>
+<text x="-187.96" y="88.9" size="25.4" layer="97">ON GRID IT</text>
+<text x="63.5" y="-43.18" size="25.4" layer="97">ON GRID IT</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="O" x="0" y="0" smashed="yes">
@@ -7753,6 +7764,30 @@ ISO224B: High-Grade
 <pinref part="P18" gate="G$1" pin="TS-UNFUSED"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="FRAME3" gate="O" x="0" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="186.69" y="2.54" size="2.54" layer="95"/>
+<attribute name="DRAWING_NAME" x="207.01" y="22.86" size="2.54" layer="95"/>
+<attribute name="SHEET" x="259.08" y="2.54" size="2.54" layer="95"/>
+<attribute name="ENGINEER" x="129.54" y="22.86" size="2.54" layer="95"/>
+<attribute name="DESIGNER_SCHEMATIC" x="176.53" y="45.72" size="2.54" layer="95"/>
+<attribute name="DESIGNER_BOARD" x="176.53" y="38.1" size="2.54" layer="95"/>
+<attribute name="DESIGNER_FURTHER" x="176.53" y="30.48" size="2.54" layer="95"/>
+<attribute name="REVIEWER_SCHEMATIC" x="227.33" y="45.72" size="2.54" layer="95"/>
+<attribute name="REVIEWER_BOARD" x="227.33" y="38.1" size="2.54" layer="95"/>
+<attribute name="REVIEWER_FURTHER" x="227.33" y="30.48" size="2.54" layer="95"/>
+<attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
+<attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
