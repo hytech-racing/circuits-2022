@@ -1882,21 +1882,21 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="MPN" value="XPEBGR-L1-0000-00F02" x="45.72" y="15.875" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="45.72" y="18.415" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="D10" library="HyTechDevices" package="XP-E2" value="LED_THERMAL_XPE2_RED" x="73.66" y="24.765" smashed="yes" rot="MR0">
-<attribute name="COLOR" value="Red" x="73.66" y="24.765" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DKPN" value="XPEBRD-L1-0000-00902CT-ND" x="73.66" y="24.765" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MANUFACTURER" value="Cree Inc." x="73.66" y="24.765" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MOPN" value="941-XPEBRDL100000902" x="73.66" y="24.765" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="XPEBRD-L1-0000-00902" x="73.66" y="24.765" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="73.66" y="27.305" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
+<element name="D10" library="HyTechDevices" package="XP-E2" value="LED_THERMAL_XPE2_RED" x="73.66" y="24.765" smashed="yes" rot="MR180">
+<attribute name="COLOR" value="Red" x="73.66" y="24.765" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DKPN" value="XPEBRD-L1-0000-00902CT-ND" x="73.66" y="24.765" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANUFACTURER" value="Cree Inc." x="73.66" y="24.765" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MOPN" value="941-XPEBRDL100000902" x="73.66" y="24.765" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="XPEBRD-L1-0000-00902" x="73.66" y="24.765" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="73.66" y="22.225" size="0.8128" layer="26" font="vector" rot="MR180" align="bottom-center"/>
 </element>
-<element name="D11" library="HyTechDevices" package="XP-E2" value="LED_THERMAL_XPE2_RED" x="73.66" y="5.715" smashed="yes" rot="MR0">
-<attribute name="COLOR" value="Red" x="73.66" y="5.715" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DKPN" value="XPEBRD-L1-0000-00902CT-ND" x="73.66" y="5.715" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MANUFACTURER" value="Cree Inc." x="73.66" y="5.715" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MOPN" value="941-XPEBRDL100000902" x="73.66" y="5.715" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="XPEBRD-L1-0000-00902" x="73.66" y="5.715" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="73.66" y="8.255" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
+<element name="D11" library="HyTechDevices" package="XP-E2" value="LED_THERMAL_XPE2_RED" x="73.66" y="5.715" smashed="yes" rot="MR180">
+<attribute name="COLOR" value="Red" x="73.66" y="5.715" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DKPN" value="XPEBRD-L1-0000-00902CT-ND" x="73.66" y="5.715" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANUFACTURER" value="Cree Inc." x="73.66" y="5.715" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MOPN" value="941-XPEBRDL100000902" x="73.66" y="5.715" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="XPEBRD-L1-0000-00902" x="73.66" y="5.715" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="73.66" y="3.175" size="0.8128" layer="26" font="vector" rot="MR180" align="bottom-center"/>
 </element>
 <element name="D12" library="HyTechDevices" package="XP-E2" value="LED_THERMAL_XPE2_YELLOW" x="0" y="15.875" smashed="yes" rot="MR0">
 <attribute name="COLOR" value="Yellow" x="0" y="15.875" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -2626,11 +2626,31 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="34.925" y1="32.27" x2="36.83" y2="32.27" width="0.254" layer="1"/>
 <wire x1="36.83" y1="32.27" x2="38.8155" y2="32.27" width="0.254" layer="1"/>
 <wire x1="38.8155" y1="32.27" x2="39.0035" y2="32.082" width="0.254" layer="1"/>
+<wire x1="88.9" y1="24.24" x2="88.9" y2="22.225" width="0.254" layer="16"/>
+<wire x1="88.9" y1="22.225" x2="88.9" y2="12.065" width="0.254" layer="16"/>
+<wire x1="88.9" y1="12.065" x2="92.075" y2="8.89" width="0.254" layer="16"/>
+<wire x1="92.075" y1="8.89" x2="92.71" y2="8.255" width="0.254" layer="16"/>
+<wire x1="92.3952125" y1="4.486" x2="92.116" y2="4.486" width="0.254" layer="16"/>
+<wire x1="92.116" y1="4.486" x2="92.075" y2="4.445" width="0.254" layer="16"/>
+<wire x1="92.71" y1="8.255" x2="92.71" y2="4.8007875" width="0.254" layer="16"/>
+<wire x1="92.71" y1="4.8007875" x2="92.3952125" y2="4.486" width="0.254" layer="16"/>
+<wire x1="92.075" y1="4.445" x2="89.535" y2="4.445" width="0.254" layer="16"/>
+<wire x1="89.535" y1="4.445" x2="88.9" y2="5.08" width="0.254" layer="16"/>
+<wire x1="88.9" y1="5.08" x2="88.9" y2="6.24" width="0.254" layer="16"/>
+<wire x1="75.06" y1="5.715" x2="79.505" y2="1.27" width="0.254" layer="16"/>
+<wire x1="79.505" y1="1.27" x2="94.615" y2="1.27" width="0.254" layer="16"/>
+<wire x1="94.615" y1="1.27" x2="97.79" y2="4.445" width="0.254" layer="16"/>
+<wire x1="97.79" y1="4.445" x2="97.79" y2="6.985" width="0.254" layer="16"/>
+<wire x1="95.885" y1="8.89" x2="92.075" y2="8.89" width="0.254" layer="16"/>
+<wire x1="97.79" y1="6.985" x2="95.885" y2="8.89" width="0.254" layer="16"/>
+<wire x1="75.06" y1="24.765" x2="79.375" y2="24.765" width="0.254" layer="16"/>
+<wire x1="79.375" y1="24.765" x2="82.55" y2="21.59" width="0.254" layer="16"/>
+<wire x1="88.265" y1="21.59" x2="88.9" y2="22.225" width="0.254" layer="16"/>
+<wire x1="82.55" y1="21.59" x2="88.265" y2="21.59" width="0.254" layer="16"/>
 <wire x1="97.155" y1="24.65" x2="99.06" y2="24.65" width="0" layer="19" extent="1-1"/>
 <wire x1="96.976" y1="21.157" x2="97.155" y2="24.65" width="0" layer="19" extent="1-1"/>
 <wire x1="88.9" y1="24.24" x2="97.155" y2="24.65" width="0" layer="19" extent="1-16"/>
-<wire x1="72.26" y1="24.765" x2="88.9" y2="24.24" width="0" layer="19" extent="16-16"/>
-<wire x1="59.56" y1="15.875" x2="72.26" y2="24.765" width="0" layer="19" extent="16-16"/>
+<wire x1="59.56" y1="15.875" x2="75.06" y2="24.765" width="0" layer="19" extent="16-16"/>
 <wire x1="44.32" y1="15.875" x2="59.56" y2="15.875" width="0" layer="19" extent="16-16"/>
 <wire x1="31.75" y1="19.8" x2="44.32" y2="15.875" width="0" layer="19" extent="1-16"/>
 <wire x1="29.41" y1="20.585" x2="31.75" y2="19.8" width="0" layer="19" extent="1-1"/>
@@ -2648,8 +2668,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="31.115" y1="5.08" x2="27.52" y2="15.24" width="0" layer="19" extent="1-1"/>
 <wire x1="34.925" y1="32.27" x2="23.26" y2="31.365" width="0" layer="19" extent="1-1"/>
 <wire x1="44.2105" y1="30.812" x2="39.0035" y2="32.082" width="0" layer="19" extent="1-1"/>
-<wire x1="72.26" y1="5.715" x2="59.56" y2="15.875" width="0" layer="19" extent="16-16"/>
-<wire x1="88.9" y1="6.24" x2="72.26" y2="5.715" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="CANL">
 <contactref element="U2" pad="6"/>
@@ -2891,7 +2909,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="D10" pad="CATHODE"/>
 <wire x1="-17.995" y1="22.86" x2="-19.05" y2="22.86" width="0.254" layer="1"/>
 <via x="-19.05" y="22.86" extent="1-16" drill="0.35"/>
-<wire x1="-17.995" y1="22.86" x2="75.06" y2="24.765" width="0" layer="19" extent="1-16"/>
+<wire x1="72.26" y1="24.765" x2="-17.995" y2="22.86" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$26">
 <contactref element="R8" pad="1"/>
@@ -2903,7 +2921,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="D11" pad="CATHODE"/>
 <wire x1="-17.995" y1="34.29" x2="-19.05" y2="34.29" width="0.254" layer="1"/>
 <via x="-19.05" y="34.29" extent="1-16" drill="0.35"/>
-<wire x1="-17.995" y1="34.29" x2="75.06" y2="5.715" width="0" layer="19" extent="1-16"/>
+<wire x1="-17.995" y1="34.29" x2="72.26" y2="5.715" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$31">
 <contactref element="R2" pad="1"/>
@@ -3222,63 +3240,88 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="N$13">
 <contactref element="D1" pad="7"/>
 <contactref element="RN3" pad="8"/>
-<wire x1="35.825" y1="26.6" x2="39.44" y2="26.6" width="0.254" layer="1"/>
-<wire x1="39.44" y1="26.6" x2="40.005" y2="26.035" width="0.254" layer="1"/>
-<via x="40.005" y="26.035" extent="1-16" drill="0.35"/>
-<wire x1="40.005" y1="26.035" x2="41.91" y2="24.13" width="0.254" layer="16"/>
+<wire x1="35.825" y1="26.6" x2="40.075" y2="26.6" width="0.254" layer="1"/>
+<wire x1="40.075" y1="26.6" x2="41.91" y2="24.765" width="0.254" layer="1"/>
+<via x="41.91" y="24.765" extent="1-16" drill="0.35"/>
+<wire x1="41.91" y1="24.765" x2="42.545" y2="24.13" width="0.254" layer="16"/>
 <wire x1="75.564" y1="22.861" x2="91.44" y2="6.985" width="0.254" layer="16"/>
 <wire x1="70.6357875" y1="24.13" x2="71.9047875" y2="22.861" width="0.254" layer="16"/>
 <wire x1="71.9047875" y1="22.861" x2="75.564" y2="22.861" width="0.254" layer="16"/>
-<wire x1="41.91" y1="24.13" x2="70.6357875" y2="24.13" width="0.254" layer="16"/>
+<wire x1="42.545" y1="24.13" x2="70.6357875" y2="24.13" width="0.254" layer="16"/>
 <wire x1="91.44" y1="6.985" x2="91.44" y2="6.24" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$14">
 <contactref element="D1" pad="6"/>
 <contactref element="RN3" pad="7"/>
-<wire x1="35.825" y1="25.8" x2="38.59555" y2="25.8" width="0.254" layer="1"/>
-<wire x1="38.59555" y1="25.8" x2="39.182775" y2="25.212775" width="0.254" layer="1"/>
-<via x="39.182775" y="25.212775" extent="1-16" drill="0.35"/>
-<wire x1="39.182775" y1="25.212775" x2="93.98" y2="6.24" width="0" layer="19" extent="16-16"/>
+<wire x1="35.825" y1="25.8" x2="38.97" y2="25.8" width="0.254" layer="1"/>
+<wire x1="38.97" y1="25.8" x2="43.18" y2="21.59" width="0.254" layer="1"/>
+<via x="43.18" y="21.59" extent="1-16" drill="0.35"/>
+<wire x1="43.18" y1="21.59" x2="70.485" y2="21.59" width="0.254" layer="16"/>
+<wire x1="70.485" y1="21.59" x2="80.01" y2="12.065" width="0.254" layer="16"/>
+<wire x1="80.01" y1="4.445" x2="81.915" y2="2.54" width="0.254" layer="16"/>
+<wire x1="81.915" y1="2.54" x2="93.345" y2="2.54" width="0.254" layer="16"/>
+<wire x1="93.345" y1="2.54" x2="93.98" y2="3.175" width="0.254" layer="16"/>
+<wire x1="93.98" y1="3.175" x2="93.98" y2="6.24" width="0.254" layer="16"/>
+<wire x1="80.01" y1="12.065" x2="80.01" y2="4.445" width="0.254" layer="16"/>
 </signal>
 <signal name="N$15">
 <contactref element="D1" pad="4"/>
 <contactref element="RN3" pad="6"/>
-<wire x1="35.825" y1="25" x2="37.784975" y2="25" width="0.254" layer="1"/>
-<wire x1="37.784975" y1="25" x2="38.019975" y2="24.765" width="0.254" layer="1"/>
-<via x="38.019975" y="24.765" extent="1-16" drill="0.35"/>
-<wire x1="38.019975" y1="24.765" x2="91.44" y2="24.24" width="0" layer="19" extent="16-16"/>
+<wire x1="37.308775" y1="25.0952" x2="37.245275" y2="25.1587" width="0.254" layer="1"/>
+<wire x1="37.245275" y1="25.1587" x2="37.086575" y2="25" width="0.254" layer="1"/>
+<wire x1="37.086575" y1="25" x2="35.825" y2="25" width="0.254" layer="1"/>
+<via x="37.308775" y="25.0952" extent="1-16" drill="0.35"/>
+<wire x1="91.44" y1="27.305" x2="91.44" y2="24.24" width="0.254" layer="16"/>
+<wire x1="90.17" y1="28.575" x2="91.44" y2="27.305" width="0.254" layer="16"/>
+<wire x1="37.308775" y1="25.0952" x2="37.308775" y2="25.14759375" width="0.254" layer="16"/>
+<wire x1="37.308775" y1="25.14759375" x2="40.73618125" y2="28.575" width="0.254" layer="16"/>
+<wire x1="40.73618125" y1="28.575" x2="90.17" y2="28.575" width="0.254" layer="16"/>
 </signal>
 <signal name="N$16">
 <contactref element="D1" pad="10"/>
 <contactref element="RN4" pad="6"/>
-<wire x1="35.825" y1="19.92" x2="36.4811" y2="19.92" width="0.254" layer="1"/>
-<wire x1="36.4811" y1="19.92" x2="37.09055" y2="19.31055" width="0.254" layer="1"/>
-<via x="37.09055" y="19.31055" extent="1-16" drill="0.35"/>
-<wire x1="37.09055" y1="19.31055" x2="83.82" y2="6.24" width="0" layer="19" extent="16-16"/>
+<wire x1="35.825" y1="19.92" x2="39.605" y2="19.92" width="0.254" layer="1"/>
+<wire x1="39.605" y1="19.92" x2="40.26555" y2="20.58055" width="0.254" layer="1"/>
+<via x="40.26555" y="20.58055" extent="1-16" drill="0.35"/>
+<wire x1="42.9076125" y1="22.2476" x2="70.4624" y2="22.2476" width="0.254" layer="16"/>
+<wire x1="40.26555" y1="20.58055" x2="41.2405625" y2="20.58055" width="0.254" layer="16"/>
+<wire x1="41.2405625" y1="20.58055" x2="42.9076125" y2="22.2476" width="0.254" layer="16"/>
+<wire x1="83.82" y1="8.89" x2="83.82" y2="6.24" width="0.254" layer="16"/>
+<wire x1="70.4624" y1="22.2476" x2="83.82" y2="8.89" width="0.254" layer="16"/>
 </signal>
 <signal name="N$17">
 <contactref element="D1" pad="9"/>
 <contactref element="RN4" pad="7"/>
-<wire x1="35.825" y1="20.72" x2="37.32555" y2="20.72" width="0.254" layer="1"/>
-<wire x1="37.32555" y1="20.72" x2="37.912775" y2="20.132775" width="0.254" layer="1"/>
-<via x="37.912775" y="20.132775" extent="1-16" drill="0.35"/>
-<wire x1="37.912775" y1="20.132775" x2="86.36" y2="6.24" width="0" layer="19" extent="16-16"/>
+<wire x1="35.825" y1="20.72" x2="38.5" y2="20.72" width="0.254" layer="1"/>
+<wire x1="38.5" y1="20.72" x2="39.182775" y2="21.402775" width="0.254" layer="1"/>
+<via x="39.182775" y="21.402775" extent="1-16" drill="0.35"/>
+<wire x1="39.182775" y1="21.402775" x2="41.2976" y2="23.5176" width="0.254" layer="16"/>
+<wire x1="86.36" y1="7.62" x2="86.36" y2="6.24" width="0.254" layer="16"/>
+<wire x1="41.2976" y1="23.5176" x2="70.4624" y2="23.5176" width="0.254" layer="16"/>
+<wire x1="70.4624" y1="23.5176" x2="86.36" y2="7.62" width="0.254" layer="16"/>
 </signal>
 <signal name="N$18">
 <contactref element="D1" pad="1"/>
 <contactref element="RN4" pad="8"/>
-<wire x1="35.825" y1="21.52" x2="38.17" y2="21.52" width="0.254" layer="1"/>
-<wire x1="38.17" y1="21.52" x2="38.735" y2="20.955" width="0.254" layer="1"/>
-<via x="38.735" y="20.955" extent="1-16" drill="0.35"/>
-<wire x1="38.735" y1="20.955" x2="83.82" y2="24.24" width="0" layer="19" extent="16-16"/>
+<wire x1="35.825" y1="21.52" x2="37.395" y2="21.52" width="0.254" layer="1"/>
+<wire x1="37.395" y1="21.52" x2="38.1" y2="22.225" width="0.254" layer="1"/>
+<via x="38.1" y="22.225" extent="1-16" drill="0.35"/>
+<wire x1="38.1" y1="22.225" x2="42.545" y2="26.67" width="0.254" layer="16"/>
+<wire x1="83.82" y1="25.4" x2="83.82" y2="24.24" width="0.254" layer="16"/>
+<wire x1="42.545" y1="26.67" x2="82.55" y2="26.67" width="0.254" layer="16"/>
+<wire x1="82.55" y1="26.67" x2="83.82" y2="25.4" width="0.254" layer="16"/>
 </signal>
 <signal name="N$19">
 <contactref element="D1" pad="2"/>
 <contactref element="RN3" pad="5"/>
-<wire x1="35.825" y1="24.2" x2="36.940525" y2="24.2" width="0.254" layer="1"/>
-<wire x1="36.940525" y1="24.2" x2="37.2377625" y2="23.9027625" width="0.254" layer="1"/>
-<via x="37.2377625" y="23.9027625" extent="1-16" drill="0.35"/>
-<wire x1="37.2377625" y1="23.9027625" x2="86.36" y2="24.24" width="0" layer="19" extent="16-16"/>
+<wire x1="35.825" y1="24.2" x2="38.17" y2="24.2" width="0.254" layer="1"/>
+<wire x1="38.17" y1="24.2" x2="38.735" y2="24.765" width="0.254" layer="1"/>
+<via x="38.735" y="24.765" extent="1-16" drill="0.35"/>
+<wire x1="38.735" y1="24.765" x2="38.7590375" y2="24.7890375" width="0.254" layer="16"/>
+<wire x1="85.09" y1="27.305" x2="41.275" y2="27.305" width="0.254" layer="16"/>
+<wire x1="86.36" y1="24.24" x2="86.36" y2="26.035" width="0.254" layer="16"/>
+<wire x1="86.36" y1="26.035" x2="85.09" y2="27.305" width="0.254" layer="16"/>
+<wire x1="38.735" y1="24.765" x2="41.275" y2="27.305" width="0.254" layer="16"/>
 </signal>
 <signal name="THERMAL1">
 <polygon width="0.3048" layer="16">
