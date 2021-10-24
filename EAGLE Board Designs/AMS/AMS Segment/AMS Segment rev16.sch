@@ -7833,8 +7833,10 @@ Layer: 94 Symbol</description>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
 <attribute name="DESCRIPTION_1" value="This module is responsible for filtering the cell "/>
 <attribute name="DESCRIPTION_2" value="reading as well as discharging the cell when necessary."/>
+<attribute name="DESIGNER_BOARD" value="Noah Bruckner"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
+<attribute name="REVIEWER_BOARD" value="Zekun Li"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Arvind Srinivasan"/>
 </part>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_P_MOS_?_*" device="SOT23" technology="SI2369DS-T1-GE3"/>
@@ -7844,6 +7846,9 @@ Layer: 94 Symbol</description>
 <plain>
 <text x="106.68" y="142.24" size="1.27" layer="97">RC Filter Determined by one shown on page 70 of the datasheet.
 1k gate resister for the mosfet determined by the ltc6811-2 demo circuit.</text>
+<text x="142.24" y="96.52" size="1.27" layer="97">7.5 ohm resistor chosen to optimize power
+during discharge while also meeting resistor
+derating</text>
 </plain>
 <instances>
 <instance part="D1" gate="LED" x="119.38" y="101.6" smashed="yes" rot="MR270">
@@ -8113,8 +8118,10 @@ Layer: 94 Symbol</description>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
 <attribute name="DESCRIPTION_1" value="Uses two LTC6811s to measure 21 cell voltages,"/>
 <attribute name="DESCRIPTION_2" value=" temperatures of 8 cells, and two humidity/temperature sensors."/>
+<attribute name="DESIGNER_BOARD" value="Noah Bruckner"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
+<attribute name="REVIEWER_BOARD" value="Zekun Li"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Ethan Weinstock"/>
 </part>
 <part name="R33" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
@@ -8263,7 +8270,7 @@ where a fuse blows.</text>
 line box are galvanically
 isolated from the cell
 voltages, but is still considered
-tractive system because the 
+tractive system because the FSAE
 spacing requirements are not
 met for the footprint.
 
@@ -11253,10 +11260,8 @@ requirement of EV.8.3.2.</text>
 <approved hash="104,1,269.24,73.66,U4,VDD,VREGL,,,"/>
 <approved hash="104,1,180.34,111.76,U5,VIN,VINU,,,"/>
 <approved hash="104,1,180.34,93.98,U5,GND,V-U,,,"/>
-<approved hash="104,1,205.74,96.52,U5,VOUT,VREGU,,,"/>
 <approved hash="104,1,137.16,73.66,U6,VIN,VINL,,,"/>
 <approved hash="104,1,137.16,55.88,U6,GND,V-L,,,"/>
-<approved hash="104,1,162.56,58.42,U6,VOUT,VREGL,,,"/>
 <approved hash="208,1,236.22,63.5,V-L,sup,,,,"/>
 <approved hash="208,1,271.78,66.04,V-L,sup,,,,"/>
 <approved hash="208,1,106.68,101.6,V-L,sup,,,,"/>
