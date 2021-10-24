@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -849,18 +849,14 @@ Dashboard rev2</text>
 <wire x1="-100.36861875" y1="4.46056875" x2="-95.3978" y2="0" width="0.001" layer="20" curve="83.806522"/>
 <wire x1="100" y1="0" x2="104.9872625" y2="4.64331875" width="0.001" layer="20" curve="85.90926"/>
 <wire x1="106.42481875" y1="24.744059375" x2="102.47673125" y2="29.627440625" width="0.001" layer="20" curve="86.090659" locked="yes"/>
-<wire x1="7.5" y1="42.97555" x2="-7.5" y2="42.97555" width="0.001" layer="20" curve="15.999999"/>
+<wire x1="7.5" y1="42.97555" x2="-7.5" y2="42.97555" width="0.001" layer="20" curve="15.999999" locked="yes"/>
 <wire x1="-7.5" y1="42.97555" x2="-98.67651875" y2="30.16151875" width="0.001" layer="20" locked="yes"/>
 <wire x1="102.47673125" y1="29.627440625" x2="7.5" y2="42.97555" width="0.001" layer="20" locked="yes"/>
 <wire x1="104.9872625" y1="4.64331875" x2="106.42481875" y2="24.744059375" width="0.001" layer="20" locked="yes"/>
 <wire x1="-95.3978" y1="0" x2="100" y2="0" width="0.001" layer="20" locked="yes"/>
 <wire x1="-102.60948125" y1="25.11001875" x2="-100.36861875" y2="4.46056875" width="0.001" layer="20"/>
-<wire x1="7.5" y1="42.97555" x2="-7.5" y2="42.97555" width="0.001" layer="20" curve="15.999999" locked="yes"/>
-<wire x1="100" y1="0" x2="104.9872625" y2="4.64331875" width="0.001" layer="20" curve="85.90926"/>
-<wire x1="100" y1="0" x2="104.9872625" y2="4.64331875" width="0.001" layer="20" curve="85.90926" locked="yes"/>
 <hole x="-98.03631875" y="25.606290625" drill="1.6" locked="yes"/>
 <hole x="101.83653125" y="25.072209375" drill="1.6" locked="yes"/>
-<circle x="115.17153125" y="25.072209375" radius="1.6" width="0.001" layer="20"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -2550,7 +2546,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-68.58" y1="10.795" x2="-69.5972" y2="9.7778" width="0.254" layer="1"/>
 <wire x1="-69.5972" y1="9.7778" x2="-70.0185" y2="9.7778" width="0.254" layer="1"/>
 <wire x1="-70.0185" y1="9.7778" x2="-69.4678" y2="9.7778" width="0.254" layer="1"/>
-<wire x1="-69.4678" y1="9.7778" x2="-61.107" y2="1.417" width="0.254" layer="1"/>
+<wire x1="-69.4678" y1="9.7778" x2="-66.675" y2="6.985" width="0.254" layer="1"/>
+<wire x1="-66.675" y1="6.985" x2="-61.107" y2="1.417" width="0.254" layer="1"/>
 <wire x1="12.7" y1="2.425" x2="18.3" y2="2.425" width="0.254" layer="1"/>
 <wire x1="18.3" y1="2.425" x2="20.955" y2="5.08" width="0.254" layer="1"/>
 <wire x1="-11.0617" y1="12.3698" x2="-14.2748" y2="12.3698" width="0.254" layer="1"/>
@@ -2620,7 +2617,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="21.612" y1="32.956" x2="28.81" y2="37.215" width="0" layer="19" extent="1-1"/>
 <wire x1="19.685" y1="37.985" x2="21.612" y2="32.956" width="0" layer="19" extent="1-1"/>
 <wire x1="29.41" y1="19.935" x2="22.66" y2="21.235" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.805" y1="16.275" x2="-2.805" y2="8.185" width="0" layer="19" extent="1-1"/>
+<wire x1="-66.675" y1="6.985" x2="-2.805" y2="16.275" width="0" layer="19" extent="1-1"/>
+<wire x1="-66.675" y1="6.985" x2="-66.675" y2="6.985" width="0.254" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="R9" pad="1"/>
