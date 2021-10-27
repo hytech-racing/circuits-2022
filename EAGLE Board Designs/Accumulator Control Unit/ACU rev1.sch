@@ -8807,24 +8807,6 @@ Notes: See page 47</description>
 <rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
 <rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
 </package>
-<package name="SOP04">
-<description>&lt;b&gt;SOP 04 - 4.3x4.4mm RM 2.54mm&lt;/b&gt; AQY21, AQY22, AQY61 Series NAiS&lt;p&gt;Source: http://www.mew-europe.com/..  pti_en.pdf</description>
-<wire x1="-2" y1="2.075" x2="2" y2="2.075" width="0.254" layer="21"/>
-<wire x1="2" y1="2.075" x2="2" y2="-2.075" width="0.254" layer="21"/>
-<wire x1="2" y1="-2.075" x2="-2" y2="-2.075" width="0.254" layer="21"/>
-<wire x1="-2" y1="-2.075" x2="-2" y2="2.075" width="0.254" layer="21"/>
-<circle x="-1.27" y="-1.524" radius="0.254" width="0" layer="21"/>
-<smd name="1" x="-1.27" y="-3" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="1.27" y="-3" dx="0.8" dy="1.2" layer="1"/>
-<smd name="3" x="1.27" y="3" dx="0.8" dy="1.2" layer="1"/>
-<smd name="4" x="-1.27" y="3" dx="0.8" dy="1.2" layer="1"/>
-<text x="-2.54" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.81" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.5" y1="-3.35" x2="-1" y2="-2.1" layer="51"/>
-<rectangle x1="1.04" y1="-3.35" x2="1.54" y2="-2.1" layer="51"/>
-<rectangle x1="1" y1="2.1" x2="1.5" y2="3.35" layer="51"/>
-<rectangle x1="-1.54" y1="2.1" x2="-1.04" y2="3.35" layer="51"/>
-</package>
 <package name="TEENSY_SHORT">
 <description>Teensy 3.2/4.0 Footprint
 &lt;br&gt;
@@ -9391,6 +9373,25 @@ Toshiba
 <rectangle x1="-3.556" y1="-2.794" x2="3.556" y2="2.794" layer="39"/>
 <text x="0" y="2.794" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="ABM3B">
+<description>Crystal Footprint
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/3/abm3b-1774998.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Note: Do not know if this is a specific crystal package.</description>
+<wire x1="-2.54" y1="1.651" x2="-2.54" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.651" x2="2.54" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.651" x2="2.54" y2="1.651" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.651" x2="-2.54" y2="1.651" width="0.127" layer="21"/>
+<smd name="4" x="-2.032" y="1.1938" dx="1.8034" dy="1.1938" layer="1" thermals="no"/>
+<smd name="3" x="2.032" y="1.1938" dx="1.8034" dy="1.1938" layer="1"/>
+<smd name="1" x="-2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
+<smd name="2" x="2.032" y="-1.1938" dx="1.8034" dy="1.1938" layer="1"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="39"/>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="40"/>
+<rectangle x1="-3.175" y1="-2.032" x2="3.175" y2="2.032" layer="43"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -9583,57 +9584,6 @@ Toshiba
 <vertex x="1.27" y="0"/>
 <vertex x="0" y="-2.54"/>
 </polygon>
-</symbol>
-<symbol name="RELAY_OPTOCOUPLER">
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="1.016" x2="4.318" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="1.27" x2="4.318" y2="0.762" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="0.254" x2="4.318" y2="0" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="0" x2="4.318" y2="-0.254" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="-0.762" x2="4.318" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="-1.016" x2="4.318" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="4.826" y1="0.254" x2="4.318" y2="0" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="0" x2="4.826" y2="-0.254" width="0.1524" layer="94"/>
-<wire x1="4.826" y1="-0.254" x2="4.826" y2="0.254" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="-1.016" x2="5.08" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-1.016" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-1.016" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="7.874" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-7.62" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0.762" x2="-0.254" y2="-0.508" width="0.2032" layer="94"/>
-<wire x1="-0.254" y1="-0.508" x2="-0.254" y2="1.27" width="0.2032" layer="94"/>
-<wire x1="-0.254" y1="1.27" x2="2.794" y2="-0.762" width="0.2032" layer="94"/>
-<text x="-7.62" y="6.35" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<rectangle x1="-6.35" y1="-1.016" x2="-3.81" y2="-0.762" layer="94"/>
-<pin name="CONTROL+" x="-10.16" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="CONTROL-" x="-10.16" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="DC+" x="10.16" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="DC-" x="10.16" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-6.35" y="1.016"/>
-<vertex x="-3.81" y="1.016"/>
-<vertex x="-5.08" y="-0.762"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="1.778" y="0.508"/>
-<vertex x="1.27" y="-0.254"/>
-<vertex x="2.794" y="-0.762"/>
-</polygon>
-<wire x1="6.35" y1="4.318" x2="6.35" y2="3.048" width="0.127" layer="94"/>
-<wire x1="5.715" y1="3.683" x2="6.985" y2="3.683" width="0.127" layer="94"/>
-<wire x1="5.715" y1="-3.683" x2="6.985" y2="-3.683" width="0.127" layer="94"/>
 </symbol>
 <symbol name="TEENSY_4.0">
 <description>Teensy 4.0 Simple
@@ -10074,6 +10024,51 @@ Toshiba
 <vertex x="6.35" y="-1.27"/>
 <vertex x="8.89" y="-1.27"/>
 </polygon>
+</symbol>
+<symbol name="RELAY_SOLIDSTATE_NO">
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="9.398" y="-5.842"/>
+<vertex x="8.89" y="-6.604"/>
+<vertex x="10.414" y="-7.112"/>
+</polygon>
+<circle x="12.7" y="-8.89" radius="0.635" width="0.1524" layer="94"/>
+<circle x="15.24" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<circle x="10.16" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="-9.525" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="-3.175" width="0.1524" layer="94"/>
+<pin name="CONTACT1" x="20.32" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="CONTACT2" x="20.32" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<wire x1="13.0175" y1="-8.255" x2="14.9225" y2="-4.445" width="0.1524" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="14.986" y="-5.334"/>
+<vertex x="14.224" y="-4.826"/>
+<vertex x="14.986" y="-4.318"/>
+</polygon>
+<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11588,25 +11583,6 @@ MAX7404 uses a 680 pF clock capcitor</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CPC1002N">
-<description>&lt;b&gt;IXYS Solid State Relay .7A&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_OPTOCOUPLER" x="7.62" y="5.08"/>
-</gates>
-<devices>
-<device name="" package="SOP04">
-<connects>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
-<connect gate="G$1" pin="DC+" pad="4"/>
-<connect gate="G$1" pin="DC-" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TEENSY_4.0" prefix="A">
 <description>Teensy 4.0
 &lt;br&gt;
@@ -12227,6 +12203,31 @@ Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
 <attribute name="MANUFACTURER" value="Vishay Siliconix"/>
 <attribute name="MOPN" value="Vishay Siliconix"/>
 <attribute name="MPN" value="SIR638ADP-T1-RE3"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_SOLIDSTATE_NO">
+<description>AQY210EH Normally Open Solid State Relay&lt;br&gt;
+&lt;a href=https://www.datasheetq.com/datasheet-download/287654/1/Panasonic/AQY210EH&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABM3B">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="255-1431-5-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electric Works"/>
+<attribute name="MOPN" value="769-AQY210EHA"/>
+<attribute name="MPN" value="AQY210EHA"/>
 </technology>
 </technologies>
 </device>
@@ -13741,12 +13742,10 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 <part name="FRAME3" library="HyTechFrames" deviceset="FRAME" device=""/>
 <part name="$$U$12" library="HyTechDevices" deviceset="TEST_POINT" device="MICRO_MINIATURE" value="TEST_POINTMICRO_MINIATURE"/>
 <part name="U$13" library="HyTechDevices" deviceset="TEST_POINT" device="MICRO_MINIATURE" value="TEST_POINTMICRO_MINIATURE"/>
-<part name="U20" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="GND67" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+24" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="BMS-OK" library="HyTechDevices" deviceset="LED" device="-0603" value="GREEN"/>
 <part name="GND68" library="supply1" deviceset="GND" device=""/>
-<part name="U21" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="GND33" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+25" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="IMD-OK" library="HyTechDevices" deviceset="LED" device="-0603" value="YELLOW"/>
@@ -13945,6 +13944,8 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 <part name="P13" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P14" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="U$9" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO" device=""/>
+<part name="U$10" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13953,7 +13954,6 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 <text x="147.32" y="137.16" size="2.54" layer="95" font="vector">Power Fusing and Regulation</text>
 <text x="185.42" y="86.36" size="3.81" layer="97">AIR-</text>
 <text x="185.42" y="40.64" size="3.81" layer="97">AIR+</text>
-<text x="-10.16" y="50.8" size="5.08" layer="97">CHANGE TO NEW OPTOCOUPLER NORMALLY OPEN</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="O" x="20.32" y="-66.04" smashed="yes">
@@ -13979,14 +13979,10 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 <instance part="P5" gate="1" x="53.34" y="78.74" smashed="yes">
 <attribute name="VALUE" x="53.34" y="77.47" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="$$U$12" gate="G$1" x="121.92" y="-20.32" smashed="yes" rot="R180"/>
-<instance part="U$13" gate="G$1" x="121.92" y="27.94" smashed="yes" rot="R180"/>
-<instance part="U20" gate="G$1" x="83.82" y="25.4" smashed="yes">
-<attribute name="NAME" x="76.2" y="31.75" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="76.2" y="17.78" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="GND67" gate="1" x="68.58" y="15.24" smashed="yes">
-<attribute name="VALUE" x="66.04" y="12.7" size="1.778" layer="96"/>
+<instance part="$$U$12" gate="G$1" x="111.76" y="-22.86" smashed="yes" rot="R180"/>
+<instance part="U$13" gate="G$1" x="111.76" y="25.4" smashed="yes" rot="R180"/>
+<instance part="GND67" gate="1" x="68.58" y="12.7" smashed="yes">
+<attribute name="VALUE" x="66.04" y="10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="P+24" gate="1" x="99.06" y="35.56" smashed="yes">
 <attribute name="VALUE" x="96.52" y="38.1" size="1.778" layer="96"/>
@@ -13998,15 +13994,11 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 <instance part="GND68" gate="1" x="53.34" y="-7.62" smashed="yes">
 <attribute name="VALUE" x="50.8" y="-10.16" size="1.778" layer="96"/>
 </instance>
-<instance part="U21" gate="G$1" x="83.82" y="-22.86" smashed="yes">
-<attribute name="NAME" x="76.2" y="-16.51" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="76.2" y="-30.48" size="1.778" layer="96" font="vector"/>
+<instance part="GND33" gate="1" x="68.58" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="66.04" y="-38.1" size="1.778" layer="96"/>
 </instance>
-<instance part="GND33" gate="1" x="68.58" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="66.04" y="-35.56" size="1.778" layer="96"/>
-</instance>
-<instance part="P+25" gate="1" x="99.06" y="-12.7" smashed="yes">
-<attribute name="VALUE" x="96.52" y="-10.16" size="1.778" layer="96"/>
+<instance part="P+25" gate="1" x="101.6" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="99.06" y="-10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="IMD-OK" gate="LED" x="53.34" y="-27.94" smashed="yes" rot="MR0">
 <attribute name="NAME" x="49.784" y="-35.052" size="1.778" layer="95" rot="MR90"/>
@@ -14172,6 +14164,14 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 <attribute name="NAME" x="240.03" y="13.97" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="240.03" y="11.43" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="U$9" gate="G$1" x="76.2" y="30.48" smashed="yes">
+<attribute name="NAME" x="76.2" y="31.242" size="1.27" layer="95"/>
+<attribute name="MPN" x="76.2" y="17.018" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="U$10" gate="G$1" x="76.2" y="-17.78" smashed="yes">
+<attribute name="NAME" x="76.2" y="-17.018" size="1.27" layer="95"/>
+<attribute name="MPN" x="76.2" y="-31.242" size="1.27" layer="96" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14213,10 +14213,10 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 <pinref part="J4" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U20" gate="G$1" pin="CONTROL-"/>
-<wire x1="73.66" y1="22.86" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="22.86" x2="68.58" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="20.32" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="20.32" x2="68.58" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND67" gate="1" pin="GND"/>
+<pinref part="U$9" gate="G$1" pin="CONTROL-"/>
 </segment>
 <segment>
 <pinref part="GND68" gate="1" pin="GND"/>
@@ -14224,10 +14224,10 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U21" gate="G$1" pin="CONTROL-"/>
-<wire x1="73.66" y1="-25.4" x2="68.58" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-25.4" x2="68.58" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-27.94" x2="68.58" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-27.94" x2="68.58" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="GND33" gate="1" pin="GND"/>
+<pinref part="U$10" gate="G$1" pin="CONTROL-"/>
 </segment>
 <segment>
 <pinref part="GND36" gate="1" pin="GND"/>
@@ -14303,16 +14303,16 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="U20" gate="G$1" pin="DC+"/>
-<wire x1="93.98" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="27.94" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="P+24" gate="1" pin="+12V"/>
+<pinref part="U$9" gate="G$1" pin="CONTACT2"/>
 </segment>
 <segment>
-<pinref part="U21" gate="G$1" pin="DC+"/>
-<wire x1="93.98" y1="-20.32" x2="99.06" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-20.32" x2="99.06" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-20.32" x2="101.6" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-20.32" x2="101.6" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="P+25" gate="1" pin="+12V"/>
+<pinref part="U$10" gate="G$1" pin="CONTACT2"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="+12V"/>
@@ -14429,25 +14429,25 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 </segment>
 <segment>
 <pinref part="U$13" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
-<label x="129.54" y="27.94" size="1.27" layer="95" xref="yes"/>
+<wire x1="114.3" y1="25.4" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
+<label x="119.38" y="25.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="22.86" x2="129.54" y2="22.86" width="0.1524" layer="91"/>
-<label x="129.54" y="22.86" size="1.27" layer="95" xref="yes"/>
-<pinref part="U20" gate="G$1" pin="DC-"/>
+<wire x1="96.52" y1="20.32" x2="119.38" y2="20.32" width="0.1524" layer="91"/>
+<label x="119.38" y="20.32" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$9" gate="G$1" pin="CONTACT1"/>
 </segment>
 </net>
 <net name="IMD_OK" class="0">
 <segment>
 <pinref part="$$U$12" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="-20.32" x2="129.54" y2="-20.32" width="0.1524" layer="91"/>
-<label x="129.54" y="-20.32" size="1.27" layer="95" xref="yes"/>
+<wire x1="114.3" y1="-22.86" x2="119.38" y2="-22.86" width="0.1524" layer="91"/>
+<label x="119.38" y="-22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="-25.4" x2="129.54" y2="-25.4" width="0.1524" layer="91"/>
-<label x="129.54" y="-25.4" size="1.27" layer="95" xref="yes"/>
-<pinref part="U21" gate="G$1" pin="DC-"/>
+<wire x1="96.52" y1="-27.94" x2="119.38" y2="-27.94" width="0.1524" layer="91"/>
+<label x="119.38" y="-27.94" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$10" gate="G$1" pin="CONTACT1"/>
 </segment>
 </net>
 <net name="CANH" class="0">
@@ -14574,9 +14574,9 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="U20" gate="G$1" pin="CONTROL+"/>
 <wire x1="73.66" y1="27.94" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="RV2" gate="G$1" pin="2"/>
+<pinref part="U$9" gate="G$1" pin="CONTROL+"/>
 </segment>
 </net>
 <net name="IMD_OK_12V" class="0">
@@ -14604,9 +14604,9 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U21" gate="G$1" pin="CONTROL+"/>
 <wire x1="73.66" y1="-20.32" x2="66.04" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="RV3" gate="G$1" pin="2"/>
+<pinref part="U$10" gate="G$1" pin="CONTROL+"/>
 </segment>
 </net>
 <net name="N$9" class="0">
