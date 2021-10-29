@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -12100,8 +12100,8 @@ Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
 </devices>
 </deviceset>
 <deviceset name="RELAY_SOLIDSTATE_NO">
-<description>AQY210EH Normally Open Solid State Relay&lt;br&gt;
-&lt;a href=https://www.datasheetq.com/datasheet-download/287654/1/Panasonic/AQY210EH&gt; Datasheet &lt;/a&gt;</description>
+<description>AQY214EH Normally Open Solid State Relay&lt;br&gt;
+&lt;a href=https://datasheetspdf.com/pdf-file/829078/Panasonic/AQY214EHA/1&gt; Datasheet &lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
 </gates>
@@ -12115,10 +12115,10 @@ Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="255-1431-5-ND"/>
+<attribute name="DKPN" value="255-1436-5-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electric Works"/>
-<attribute name="MOPN" value="769-AQY210EHA"/>
-<attribute name="MPN" value="AQY210EHA"/>
+<attribute name="MOPN" value="769-AQY214EHA"/>
+<attribute name="MPN" value="AQY214EHA"/>
 </technology>
 </technologies>
 </device>
@@ -14640,12 +14640,9 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 when PRECHARGE_OK goes high because current
 is allowed to flow through the transistor from
 Shutdown to ground.</text>
-<text x="71.12" y="86.36" size="1.778" layer="97">IMD_OK_12V or IMD_OK? what's supposed to happen
-to imd ok on this board</text>
 <text x="208.28" y="68.58" size="1.778" layer="97">add leds here?</text>
 <text x="233.68" y="17.78" size="1.778" layer="97">add leds here?</text>
 <text x="86.36" y="139.7" size="2.54" layer="97">D11 bad use new parts and caps</text>
-<text x="60.96" y="35.56" size="2.54" layer="97">switch to aqy214eha</text>
 <text x="12.7" y="142.24" size="2.54" layer="97">switch to microfit</text>
 <text x="50.8" y="137.16" size="2.54" layer="97">connectors missing prefixes</text>
 <text x="58.42" y="142.24" size="2.54" layer="97">drop to 10 pin</text>
