@@ -3030,7 +3030,16 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="J2" pad="3"/>
 <wire x1="55.88" y1="20.555" x2="55.225" y2="21.21" width="0.254" layer="1"/>
 <wire x1="55.88" y1="18.075" x2="55.88" y2="20.555" width="0.254" layer="1"/>
-<wire x1="55.88" y1="18.075" x2="-1.4" y2="15.875" width="0" layer="19" extent="1-16"/>
+<wire x1="55.88" y1="18.075" x2="55.88" y2="17.9942125" width="0.254" layer="1"/>
+<wire x1="55.88" y1="17.9942125" x2="55.226" y2="17.3402125" width="0.254" layer="1"/>
+<wire x1="55.226" y1="17.3402125" x2="55.226" y2="14.586" width="0.254" layer="1"/>
+<wire x1="53.994" y1="11.0897875" x2="53.6992125" y2="10.795" width="0.254" layer="1"/>
+<wire x1="53.6992125" y1="10.795" x2="50.165" y2="10.795" width="0.254" layer="1"/>
+<wire x1="50.165" y1="10.795" x2="48.895" y2="9.525" width="0.254" layer="1"/>
+<wire x1="48.895" y1="9.525" x2="48.895" y2="1.905" width="0.254" layer="1"/>
+<wire x1="55.226" y1="14.586" x2="53.994" y2="13.354" width="0.254" layer="1"/>
+<wire x1="53.994" y1="13.354" x2="53.994" y2="11.0897875" width="0.254" layer="1"/>
+<wire x1="-1.4" y1="15.875" x2="48.895" y2="1.905" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="LED_MC_ERR_CTRL">
 <contactref element="U1" pad="1"/>
