@@ -4610,11 +4610,12 @@ Based on page 10.</description>
 <parts>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
 <attribute name="DESCRIPTION_1" value="Translates 8 Analog Voltage Sensors to CAN"/>
-<attribute name="DESIGNER_BOARD" value=""/>
-<attribute name="DESIGNER_SCHEMATIC" value=""/>
+<attribute name="DESIGNER_BOARD" value="Bo Han Zhu"/>
+<attribute name="DESIGNER_SCHEMATIC" value="Bo Han Zhu"/>
 <attribute name="ENGINEER" value="Bo Han Zhu"/>
+<attribute name="REVIEWER_BOARD" value="Zekun Li"/>
 <attribute name="REVIEWER_FURTHER" value=""/>
-<attribute name="REVIEWER_SCHEMATIC" value=""/>
+<attribute name="REVIEWER_SCHEMATIC" value="Zekun Li"/>
 </part>
 <part name="U1" library="HyTechDevices" deviceset="VOLTAGE_REGULATOR_?_*" device="SOT223" technology="5V"/>
 <part name="GND7" library="HyTechSupplies" deviceset="GND" device=""/>
