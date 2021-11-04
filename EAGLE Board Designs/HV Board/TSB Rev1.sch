@@ -8892,35 +8892,33 @@ Undervoltage: 56V</text>
 <pinref part="P15" gate="G$1" pin="TS-UNFUSED"/>
 </segment>
 <segment>
-<pinref part="F2" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="68.58" x2="233.68" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="68.58" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R41" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="76.2" x2="236.22" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="P16" gate="G$1" pin="TS-UNFUSED"/>
-<junction x="233.68" y="68.58"/>
-</segment>
-<segment>
 <pinref part="J4" gate="G$1" pin="3"/>
 <wire x1="238.76" y1="124.46" x2="241.3" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="P17" gate="G$1" pin="TS-UNFUSED"/>
 </segment>
-</net>
-<net name="TS-FUSED" class="0">
-<segment>
-<pinref part="F2" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="68.58" x2="246.38" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$30" gate="G$1" pin="TS-UNFUSED"/>
-</segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
-<wire x1="238.76" y1="127" x2="251.46" y2="127" width="0.1524" layer="91"/>
 <pinref part="U$26" gate="G$1" pin="TS-UNFUSED"/>
+<wire x1="238.76" y1="127" x2="251.46" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="238.76" y1="177.8" x2="241.3" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="R41" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="76.2" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="P16" gate="G$1" pin="TS-UNFUSED"/>
+<wire x1="233.68" y1="76.2" x2="233.68" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="F2" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="68.58" x2="236.22" y2="68.58" width="0.1524" layer="91"/>
+<junction x="233.68" y="68.58"/>
+</segment>
+<segment>
+<pinref part="F2" gate="G$1" pin="2"/>
+<pinref part="U$30" gate="G$1" pin="TS-UNFUSED"/>
+<wire x1="243.84" y1="68.58" x2="246.38" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="U$3" gate="G$1" pin="TS-UNFUSED"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="241.3" y1="177.8" x2="238.76" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
