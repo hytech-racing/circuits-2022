@@ -6496,9 +6496,9 @@ visible on the PCB.</text>
 <attribute name="NAME" x="41.91" y="49.53" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="41.91" y="46.99" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R8" gate="G$1" x="43.18" y="27.94" smashed="yes">
-<attribute name="NAME" x="41.91" y="29.21" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="41.91" y="26.67" size="1.27" layer="96" align="top-center"/>
+<instance part="R8" gate="G$1" x="43.18" y="22.86" smashed="yes">
+<attribute name="NAME" x="41.91" y="24.13" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="41.91" y="21.59" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="RN1" gate="A" x="35.56" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="34.29" y="72.39" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -6608,9 +6608,9 @@ visible on the PCB.</text>
 <attribute name="COLOR" x="33.02" y="64.262" size="1.27" layer="95" align="top-left"/>
 <attribute name="NAME" x="31.75" y="69.596" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="D12" gate="G$1" x="33.02" y="27.94" smashed="yes">
-<attribute name="COLOR" x="33.02" y="26.162" size="1.27" layer="95" align="top-left"/>
-<attribute name="NAME" x="31.75" y="31.496" size="1.27" layer="96" align="bottom-center"/>
+<instance part="D12" gate="G$1" x="33.02" y="22.86" smashed="yes">
+<attribute name="COLOR" x="33.02" y="21.082" size="1.27" layer="95" align="top-left"/>
+<attribute name="NAME" x="31.75" y="26.416" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="D14" gate="G$1" x="30.48" y="170.18" smashed="yes">
 <attribute name="NAME" x="29.21" y="172.085" size="1.27" layer="95" align="bottom-center"/>
@@ -7099,10 +7099,10 @@ visible on the PCB.</text>
 <junction x="256.54" y="132.08"/>
 </segment>
 <segment>
-<wire x1="45.72" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="10.16" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
-<junction x="73.66" y="27.94"/>
-<wire x1="73.66" y1="27.94" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="10.16" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
+<junction x="73.66" y="22.86"/>
+<wire x1="73.66" y1="22.86" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="33.02" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="50.8" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
@@ -7578,8 +7578,8 @@ visible on the PCB.</text>
 </net>
 <net name="SSOK" class="0">
 <segment>
-<wire x1="27.94" y1="27.94" x2="24.384" y2="27.94" width="0.1524" layer="91"/>
-<label x="24.384" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="27.94" y1="22.86" x2="21.844" y2="22.86" width="0.1524" layer="91"/>
+<label x="21.844" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="D12" gate="G$1" pin="A"/>
 </segment>
 <segment>
@@ -7757,7 +7757,7 @@ visible on the PCB.</text>
 </net>
 <net name="N$26" class="0">
 <segment>
-<wire x1="38.1" y1="27.94" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="D12" gate="G$1" pin="C"/>
 </segment>
