@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.003125" unitdist="mic" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -554,7 +554,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
 <rectangle x1="-1.7" y1="-0.85" x2="1.7" y2="0.85" layer="39"/>
 </package>
-<package name="DIP-4">
+<package name="DIP-4_AIRGAP">
 <smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
 <smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
 <smd name="1" x="-1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
@@ -566,6 +566,10 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <text x="-2.54" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
 <rectangle x1="-3.556" y1="-6.096" x2="3.556" y2="6.096" layer="39"/>
+<wire x1="-2.413" y1="3.048" x2="-2.413" y2="-3.048" width="0.0508" layer="46"/>
+<wire x1="-2.413" y1="-3.048" x2="2.413" y2="-3.048" width="0.0508" layer="46"/>
+<wire x1="2.413" y1="-3.048" x2="2.413" y2="3.048" width="0.0508" layer="46"/>
+<wire x1="2.413" y1="3.048" x2="-2.413" y2="3.048" width="0.0508" layer="46"/>
 </package>
 <package name="SC-70-5">
 <description>SC-70-5
@@ -1073,44 +1077,44 @@ design rules under a new name.</description>
 <attribute name="TOLERANCE" value="10%" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="630V" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C26" library="HyTechDevices" package="EKYC*MM" value="CAPACITOR_POLAR__" x="74.697034375" y="134.480290625" smashed="yes" rot="R180">
-<attribute name="CAPACITANCE" value="3600uF" x="-28.172965625" y="194.170290625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DKPN" value="  565-EKYC250ELL362ML20S-ND" x="-28.172965625" y="194.170290625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="United Chemi-con" x="-28.172965625" y="194.170290625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOPN" value="661-YC250ELL362ML20S" x="-28.172965625" y="194.170290625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="EKYC250ELL362ML20S" x="-28.172965625" y="194.170290625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="74.697034375" y="124.880290625" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="VOLTAGE" value="25V" x="-28.172965625" y="194.170290625" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C26" library="HyTechDevices" package="EKYC*MM" value="CAPACITOR_POLAR__" x="65.809071875" y="134.6734875" smashed="yes" rot="R180">
+<attribute name="CAPACITANCE" value="3600uF" x="-37.060928125" y="194.3634875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DKPN" value="  565-EKYC250ELL362ML20S-ND" x="-37.060928125" y="194.3634875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="United Chemi-con" x="-37.060928125" y="194.3634875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="661-YC250ELL362ML20S" x="-37.060928125" y="194.3634875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="EKYC250ELL362ML20S" x="-37.060928125" y="194.3634875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="65.809071875" y="125.0734875" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VOLTAGE" value="25V" x="-37.060928125" y="194.3634875" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C27" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_25V_10UF" x="74.821153125" y="132.3905875" smashed="yes" rot="MR0">
-<attribute name="CAPACITANCE" value="10µF" x="-14.078846875" y="-31.4394125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DKPN" value="490-7202-1-ND" x="-14.078846875" y="-31.4394125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MANUFACTURER" value="Murata Electronics" x="-14.078846875" y="-31.4394125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MOPN" value="81-GRM188R61E106MA3D" x="-14.078846875" y="-31.4394125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="GRM188R61E106MA73D" x="-14.078846875" y="-31.4394125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="74.821153125" y="133.1405875" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
-<attribute name="TOLERANCE" value="20%" x="-14.078846875" y="-31.4394125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VOLTAGE" value="25V" x="-14.078846875" y="-31.4394125" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="C27" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_25V_10UF" x="65.933190625" y="132.583784375" smashed="yes" rot="MR0">
+<attribute name="CAPACITANCE" value="10µF" x="-22.966809375" y="-31.246215625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DKPN" value="490-7202-1-ND" x="-22.966809375" y="-31.246215625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER" value="Murata Electronics" x="-22.966809375" y="-31.246215625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MOPN" value="81-GRM188R61E106MA3D" x="-22.966809375" y="-31.246215625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="GRM188R61E106MA73D" x="-22.966809375" y="-31.246215625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="65.933190625" y="133.333784375" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
+<attribute name="TOLERANCE" value="20%" x="-22.966809375" y="-31.246215625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VOLTAGE" value="25V" x="-22.966809375" y="-31.246215625" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="C28" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_25V_1UF" x="74.829534375" y="133.94371875" smashed="yes" rot="MR0">
-<attribute name="CAPACITANCE" value="1µF" x="-17.880465625" y="-29.88628125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DKPN" value="1276-1184-1-ND" x="-17.880465625" y="-29.88628125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics" x="-17.880465625" y="-29.88628125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MOPN" value="187-CL10B105KA8NNNC" x="-17.880465625" y="-29.88628125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="CL10B105KA8NNNC" x="-17.880465625" y="-29.88628125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="74.829534375" y="134.69371875" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
-<attribute name="TOLERANCE" value="10%" x="-17.880465625" y="-29.88628125" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VOLTAGE" value="25V" x="-17.880465625" y="-29.88628125" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="C28" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_25V_1UF" x="65.941571875" y="134.136915625" smashed="yes" rot="MR0">
+<attribute name="CAPACITANCE" value="1µF" x="-26.768428125" y="-29.693084375" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DKPN" value="1276-1184-1-ND" x="-26.768428125" y="-29.693084375" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics" x="-26.768428125" y="-29.693084375" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MOPN" value="187-CL10B105KA8NNNC" x="-26.768428125" y="-29.693084375" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="CL10B105KA8NNNC" x="-26.768428125" y="-29.693084375" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="65.941571875" y="134.886915625" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="-26.768428125" y="-29.693084375" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VOLTAGE" value="25V" x="-26.768428125" y="-29.693084375" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="C29" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_35V_0.1UF" x="74.82786875" y="135.493153125" smashed="yes" rot="MR0">
-<attribute name="CAPACITANCE" value="0.1µF" x="-21.69213125" y="-28.336846875" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DKPN" value="587-3354-1-ND" x="-21.69213125" y="-28.336846875" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MANUFACTURER" value="Taiyo Yuden" x="-21.69213125" y="-28.336846875" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MOPN" value="963-GMK107B7104KAHT" x="-21.69213125" y="-28.336846875" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="GMK107B7104KAHT" x="-21.69213125" y="-28.336846875" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="74.82786875" y="136.243153125" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
-<attribute name="TOLERANCE" value="10%" x="-21.69213125" y="-28.336846875" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VOLTAGE" value="35V" x="-21.69213125" y="-28.336846875" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="C29" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_35V_0.1UF" x="65.93990625" y="135.68635" smashed="yes" rot="MR0">
+<attribute name="CAPACITANCE" value="0.1µF" x="-30.58009375" y="-28.14365" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DKPN" value="587-3354-1-ND" x="-30.58009375" y="-28.14365" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER" value="Taiyo Yuden" x="-30.58009375" y="-28.14365" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MOPN" value="963-GMK107B7104KAHT" x="-30.58009375" y="-28.14365" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="GMK107B7104KAHT" x="-30.58009375" y="-28.14365" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="65.93990625" y="136.43635" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="-30.58009375" y="-28.14365" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VOLTAGE" value="35V" x="-30.58009375" y="-28.14365" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C3" library="HyTechDevices" package="1206-CAP" value="CAPACITOR_1206_250V_0.1UF" x="-22.86" y="163.83" smashed="yes">
 <attribute name="CAPACITANCE" value="0.1uF" x="0" y="0" size="1.778" layer="27" display="off"/>
@@ -1361,14 +1365,14 @@ design rules under a new name.</description>
 <attribute name="MPN" value="VSKY20401608-G4-08" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-107.95" y="170.688" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="F1" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="FUSE__" x="56.34886875" y="129.266440625" smashed="yes">
-<attribute name="CURRENT" value="10A" x="77.93886875" y="-28.213559375" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="F991-ND" x="77.93886875" y="-28.213559375" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc." x="77.93886875" y="-28.213559375" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="576-0297010.WXNV" x="77.93886875" y="-28.213559375" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="0297010.WXNV" x="77.93886875" y="-28.213559375" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="56.34886875" y="133.076440625" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="VOLTAGE" value="32V" x="77.93886875" y="-28.213559375" size="1.778" layer="27" display="off"/>
+<element name="F1" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="FUSE__" x="87.339534375" y="134.255296875" smashed="yes" rot="R90">
+<attribute name="CURRENT" value="10A" x="244.819534375" y="155.845296875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DKPN" value="F991-ND" x="244.819534375" y="155.845296875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc." x="244.819534375" y="155.845296875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOPN" value="576-0297010.WXNV" x="244.819534375" y="155.845296875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="0297010.WXNV" x="244.819534375" y="155.845296875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="83.529534375" y="134.255296875" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" value="32V" x="244.819534375" y="155.845296875" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="F6" library="HyTechDevices" package="0885" value="FUSE_0885_1.25" x="-87.63" y="147.32" smashed="yes">
 <attribute name="CURRENT" value="1.25A" x="0" y="0" size="1.778" layer="27" display="off"/>
@@ -1382,15 +1386,15 @@ design rules under a new name.</description>
 <element name="J3" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_08_DUAL" value="CONNECTOR-8_MF_T_V_" x="52.34974375" y="5.055828125" smashed="yes" rot="R180">
 <attribute name="NAME" x="52.34974375" y="11.532828125" size="0.8128" layer="25" align="bottom-center"/>
 </element>
-<element name="J5" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_04_DUAL" value="CONNECTOR-4__" x="46.22820625" y="117.16988125" smashed="yes" rot="R90">
-<attribute name="NAME" x="52.70520625" y="117.16988125" size="0.8128" layer="25" rot="R270" align="bottom-center"/>
+<element name="J5" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_04_DUAL" value="CONNECTOR-4__" x="102.5720125" y="126.159821875" smashed="yes" rot="R270">
+<attribute name="NAME" x="96.0950125" y="126.159821875" size="0.8128" layer="25" rot="R90" align="bottom-center"/>
 </element>
-<element name="K4" library="HyTechDevices" package="335X" value="RELAY_SPST_NC_POLARIZED_3550_12" x="107.8487375" y="41.293953125" smashed="yes">
-<attribute name="DKPN" value="1835-1040-ND" x="198.0187375" y="-5.696046875" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Comus International" x="198.0187375" y="-5.696046875" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="" x="198.0187375" y="-5.696046875" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="3350-4275-126" x="198.0187375" y="-5.696046875" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="145.9487375" y="42.563953125" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<element name="K4" library="HyTechDevices" package="335X" value="RELAY_SPST_NC_POLARIZED_3550_12" x="107.8487375" y="40.42824375" smashed="yes">
+<attribute name="DKPN" value="1835-1040-ND" x="198.0187375" y="-6.56175625" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Comus International" x="198.0187375" y="-6.56175625" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="" x="198.0187375" y="-6.56175625" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="3350-4275-126" x="198.0187375" y="-6.56175625" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="145.9487375" y="41.69824375" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="K5" library="HyTechDevices" package="335X" value="RELAY_SPST_NO_3550_12" x="9.62288125" y="40.1549625" smashed="yes">
 <attribute name="DKPN" value="1835-1037-ND" x="99.79288125" y="-29.6950375" size="1.778" layer="27" display="off"/>
@@ -1614,16 +1618,14 @@ design rules under a new name.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$1" library="HyTechDevices" package="DIP-4" value="RELAY_SOLIDSTATE_NO" x="-113.03" y="156.21" smashed="yes">
-<attribute name="MPN" value="AQY210EHA" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="U$1" library="HyTechDevices" package="DIP-4_AIRGAP" value="RELAY_SOLIDSTATE_NO_AG" x="-113.03" y="156.21" smashed="yes">
 <attribute name="NAME" x="-113.03" y="158.496" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="U10" library="HyTechDevices" package="DCM4623" value="DCM4623TD2J13D0T70" x="74.49091875" y="99.004" smashed="yes" rot="R90">
 <attribute name="NAME" x="62.80691875" y="74.874" size="1.27" layer="21" rot="R90"/>
 </element>
-<element name="U11" library="HyTechDevices" package="DIP-4" value="RELAY_SOLIDSTATE_NC" x="75.135371875" y="69.56965" smashed="yes" rot="R90">
-<attribute name="MPN" value="AQY414EHA" x="231.345371875" y="188.94965" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="72.849371875" y="69.56965" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<element name="U11" library="HyTechDevices" package="DIP-4_AIRGAP" value="RELAY_SOLIDSTATE_NC_AG" x="74.762715625" y="69.2203125" smashed="yes" rot="R90">
+<attribute name="NAME" x="72.476715625" y="69.2203125" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
 <element name="U15" library="HyTechDevices" package="SC-70-5" value="LOGICGATE_INVERTER_DCKR" x="-13.97" y="165.1" smashed="yes">
 <attribute name="DKPN" value="  2156-SN74LVC1G04DCKR-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
@@ -1705,8 +1707,8 @@ design rules under a new name.</description>
 <attribute name="TOLERANCE" value="10%" x="-135.89" y="-10.16" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="-135.89" y="-10.16" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J1" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED" value="CONNECTOR-4_MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED_" x="160.9067875" y="63.422246875" smashed="yes">
-<attribute name="NAME" x="160.9067875" y="60.882246875" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
+<element name="J1" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED" value="CONNECTOR-4_MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED_" x="201.570165625" y="50.720371875" smashed="yes" rot="R270">
+<attribute name="NAME" x="199.030165625" y="50.720371875" size="0.8128" layer="25" rot="R90" align="bottom-center"/>
 </element>
 <element name="J2" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED" value="CONNECTOR-3_MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED" x="129.153828125" y="72.709084375" smashed="yes">
 <attribute name="NAME" x="129.153828125" y="70.296084375" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
@@ -2417,8 +2419,8 @@ design rules under a new name.</description>
 <attribute name="TOLERANCE" value="5%" x="-144.466890625" y="-302.37350625" size="1.778" layer="27" font="vector" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="-144.466890625" y="-302.37350625" size="1.778" layer="27" font="vector" display="off"/>
 </element>
-<element name="J4" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED2" value="CONNECTOR-3_MOLEX_MICROFIT_PTH_VERTICAL_7_DUAL_SPACED2" x="-133.722403125" y="-309.6116625" smashed="yes">
-<attribute name="NAME" x="-133.722403125" y="-312.1516625" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
+<element name="J4" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED2" value="CONNECTOR-3_MOLEX_MICROFIT_PTH_VERTICAL_7_DUAL_SPACED2" x="201.82151875" y="19.481578125" smashed="yes" rot="R270">
+<attribute name="NAME" x="199.28151875" y="19.481578125" size="0.8128" layer="25" rot="R90" align="bottom-center"/>
 </element>
 <element name="F2" library="HyTechDevices" package="0885" value="FUSE_0885_1.25" x="-137.8985" y="-318.27036875" smashed="yes">
 <attribute name="CURRENT" value="1.25A" x="-137.8985" y="-318.27036875" size="1.778" layer="27" font="vector" display="off"/>
@@ -2510,9 +2512,9 @@ design rules under a new name.</description>
 <wire x1="-14.49" y1="170.18" x2="-18.3" y2="170.18" width="0" layer="19" extent="1-1"/>
 <wire x1="-16.8402" y1="164.0967" x2="-18.3" y2="170.18" width="0" layer="19" extent="1-1"/>
 <wire x1="-13.32" y1="164" x2="-16.8402" y2="164.0967" width="0" layer="19" extent="1-1"/>
-<wire x1="79.285371875" y1="70.83965" x2="-13.32" y2="164" width="0" layer="19" extent="1-1"/>
-<wire x1="56.84554375" y1="8.053028125" x2="79.285371875" y2="70.83965" width="0" layer="19" extent="1-1"/>
-<wire x1="133.2487375" y1="26.053953125" x2="79.285371875" y2="70.83965" width="0" layer="19" extent="1-1"/>
+<wire x1="78.912715625" y1="70.4903125" x2="-13.32" y2="164" width="0" layer="19" extent="1-1"/>
+<wire x1="56.84554375" y1="8.053028125" x2="78.912715625" y2="70.4903125" width="0" layer="19" extent="1-1"/>
+<wire x1="133.2487375" y1="25.18824375" x2="78.912715625" y2="70.4903125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$54">
 <contactref element="R43" pad="1"/>
@@ -2660,7 +2662,7 @@ design rules under a new name.</description>
 <signal name="LED+">
 <contactref element="J1" pad="3"/>
 <contactref element="R63" pad="2"/>
-<wire x1="-143.93" y1="-205.74" x2="163.9039875" y2="63.422246875" width="0" layer="19" extent="1-1"/>
+<wire x1="-143.93" y1="-205.74" x2="201.570165625" y2="47.723171875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
 <contactref element="R31" pad="1"/>
@@ -2704,12 +2706,12 @@ design rules under a new name.</description>
 <contactref element="C29" pad="2"/>
 <contactref element="F1" pad="R1"/>
 <contactref element="F1" pad="R2"/>
-<wire x1="61.30186875" y1="127.564640625" x2="61.30186875" y2="130.968240625" width="0" layer="19" extent="1-1"/>
-<wire x1="74.071153125" y1="132.3905875" x2="61.30186875" y2="130.968240625" width="0" layer="19" extent="1-1"/>
-<wire x1="74.079534375" y1="133.94371875" x2="74.071153125" y2="132.3905875" width="0" layer="19" extent="1-1"/>
-<wire x1="74.07786875" y1="135.493153125" x2="74.079534375" y2="133.94371875" width="0" layer="19" extent="1-1"/>
-<wire x1="70.947034375" y1="134.480290625" x2="74.07786875" y2="135.493153125" width="0" layer="19" extent="1-1"/>
-<wire x1="66.24091875" y1="122.194" x2="70.947034375" y2="134.480290625" width="0" layer="19" extent="1-1"/>
+<wire x1="89.041334375" y1="139.208296875" x2="85.637734375" y2="139.208296875" width="0" layer="19" extent="1-1"/>
+<wire x1="65.183190625" y1="132.583784375" x2="85.637734375" y2="139.208296875" width="0" layer="19" extent="1-1"/>
+<wire x1="65.191571875" y1="134.136915625" x2="65.183190625" y2="132.583784375" width="0" layer="19" extent="1-1"/>
+<wire x1="65.18990625" y1="135.68635" x2="65.191571875" y2="134.136915625" width="0" layer="19" extent="1-1"/>
+<wire x1="62.059071875" y1="134.6734875" x2="65.18990625" y2="135.68635" width="0" layer="19" extent="1-1"/>
+<wire x1="66.24091875" y1="122.194" x2="62.059071875" y2="134.6734875" width="0" layer="19" extent="1-1"/>
 <wire x1="77.24091875" y1="122.194" x2="66.24091875" y2="122.194" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC+">
@@ -2719,10 +2721,10 @@ design rules under a new name.</description>
 <contactref element="TP9" pad="1"/>
 <contactref element="R30" pad="2"/>
 <contactref element="J5" pad="3"/>
-<wire x1="51.39586875" y1="127.564640625" x2="51.39586875" y2="130.968240625" width="0" layer="19" extent="1-1"/>
-<wire x1="49.22540625" y1="118.66848125" x2="51.39586875" y2="127.564640625" width="0" layer="19" extent="1-1"/>
-<wire x1="46.22820625" y1="118.66848125" x2="49.22540625" y2="118.66848125" width="0" layer="19" extent="1-1"/>
-<wire x1="-143.51" y1="-163.83" x2="46.22820625" y2="118.66848125" width="0" layer="19" extent="1-1"/>
+<wire x1="89.041334375" y1="129.302296875" x2="85.637734375" y2="129.302296875" width="0" layer="19" extent="1-1"/>
+<wire x1="99.5748125" y1="124.661221875" x2="89.041334375" y2="129.302296875" width="0" layer="19" extent="1-1"/>
+<wire x1="102.5720125" y1="124.661221875" x2="99.5748125" y2="124.661221875" width="0" layer="19" extent="1-1"/>
+<wire x1="-143.51" y1="-163.83" x2="102.5720125" y2="124.661221875" width="0" layer="19" extent="1-1"/>
 <wire x1="-143.93" y1="-190.5" x2="-143.51" y2="-163.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC-">
@@ -2736,22 +2738,22 @@ design rules under a new name.</description>
 <contactref element="TP10" pad="1"/>
 <contactref element="D5" pad="1"/>
 <contactref element="J5" pad="2"/>
-<wire x1="75.579534375" y1="133.94371875" x2="78.447034375" y2="134.480290625" width="0" layer="19" extent="16-16"/>
-<wire x1="75.57786875" y1="135.493153125" x2="75.579534375" y2="133.94371875" width="0" layer="19" extent="16-16"/>
-<wire x1="75.571153125" y1="132.3905875" x2="75.579534375" y2="133.94371875" width="0" layer="19" extent="16-16"/>
-<wire x1="71.74091875" y1="122.194" x2="75.571153125" y2="132.3905875" width="0" layer="19" extent="16-16"/>
+<wire x1="66.691571875" y1="134.136915625" x2="69.559071875" y2="134.6734875" width="0" layer="19" extent="16-16"/>
+<wire x1="66.68990625" y1="135.68635" x2="66.691571875" y2="134.136915625" width="0" layer="19" extent="16-16"/>
+<wire x1="66.683190625" y1="132.583784375" x2="66.691571875" y2="134.136915625" width="0" layer="19" extent="16-16"/>
+<wire x1="71.74091875" y1="122.194" x2="66.683190625" y2="132.583784375" width="0" layer="19" extent="16-16"/>
 <wire x1="82.74091875" y1="122.194" x2="71.74091875" y2="122.194" width="0" layer="19" extent="1-1"/>
-<wire x1="49.22540625" y1="115.67128125" x2="71.74091875" y2="122.194" width="0" layer="19" extent="1-1"/>
-<wire x1="46.22820625" y1="115.67128125" x2="49.22540625" y2="115.67128125" width="0" layer="19" extent="1-1"/>
-<wire x1="-143.51" y1="-167.64" x2="46.22820625" y2="115.67128125" width="0" layer="19" extent="1-1"/>
+<wire x1="99.5748125" y1="127.658421875" x2="71.74091875" y2="122.194" width="0" layer="19" extent="1-1"/>
+<wire x1="102.5720125" y1="127.658421875" x2="99.5748125" y2="127.658421875" width="0" layer="19" extent="1-1"/>
+<wire x1="-143.51" y1="-167.64" x2="102.5720125" y2="127.658421875" width="0" layer="19" extent="1-1"/>
 <wire x1="-144.335" y1="-194.31" x2="-143.51" y2="-167.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENABLE">
 <contactref element="U10" pad="3"/>
 <contactref element="U11" pad="4"/>
 <contactref element="R56" pad="2"/>
-<wire x1="70.985371875" y1="70.83965" x2="-144.478003125" y2="-324.4908" width="0" layer="19" extent="1-1"/>
-<wire x1="75.87091875" y1="75.814" x2="70.985371875" y2="70.83965" width="0" layer="19" extent="1-1"/>
+<wire x1="70.612715625" y1="70.4903125" x2="-144.478003125" y2="-324.4908" width="0" layer="19" extent="1-1"/>
+<wire x1="75.87091875" y1="75.814" x2="70.612715625" y2="70.4903125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PRECHARGE_OK">
 <contactref element="U15" pad="2"/>
@@ -2795,7 +2797,7 @@ design rules under a new name.</description>
 <contactref element="J3" pad="2"/>
 <contactref element="TP11" pad="1"/>
 <contactref element="R54" pad="2"/>
-<wire x1="60.42288125" y1="24.9149625" x2="158.6487375" y2="26.053953125" width="0" layer="19" extent="1-1"/>
+<wire x1="60.42288125" y1="24.9149625" x2="158.6487375" y2="25.18824375" width="0" layer="19" extent="1-1"/>
 <wire x1="50.85114375" y1="8.053028125" x2="60.42288125" y2="24.9149625" width="0" layer="19" extent="1-1"/>
 <wire x1="-63.92" y1="170.18" x2="60.42288125" y2="24.9149625" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.815" y1="170.18" x2="-63.92" y2="170.18" width="0" layer="19" extent="1-1"/>
@@ -2817,18 +2819,18 @@ design rules under a new name.</description>
 <contactref element="TP14" pad="1"/>
 <contactref element="TP16" pad="1"/>
 <contactref element="J4" pad="1"/>
-<wire x1="123.159428125" y1="72.709084375" x2="176.4287375" y2="31.133953125" width="0" layer="19" extent="1-1"/>
+<wire x1="123.159428125" y1="72.709084375" x2="176.4287375" y2="30.26824375" width="0" layer="19" extent="1-1"/>
 <wire x1="12.33289375" y1="50.3859" x2="123.159428125" y2="72.709084375" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.13" y1="134.62" x2="12.33289375" y2="50.3859" width="0" layer="19" extent="1-1"/>
 <wire x1="-92.88" y1="147.32" x2="-14.13" y2="134.62" width="0" layer="19" extent="1-1"/>
 <wire x1="-144.526" y1="-224.03815625" x2="12.33289375" y2="50.3859" width="0" layer="19" extent="1-1"/>
 <wire x1="-144.526" y1="-275.64705625" x2="-144.526" y2="-224.03815625" width="0" layer="19" extent="1-1"/>
-<wire x1="-142.714003125" y1="-309.6116625" x2="-144.526" y2="-275.64705625" width="0" layer="19" extent="1-1"/>
+<wire x1="201.82151875" y1="28.473178125" x2="-144.526" y2="-275.64705625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$51">
 <contactref element="K4" pad="4"/>
 <contactref element="R40" pad="P$1"/>
-<wire x1="115.4687375" y1="31.133953125" x2="181.568065625" y2="51.098725" width="0" layer="19" extent="1-1"/>
+<wire x1="115.4687375" y1="30.26824375" x2="181.568065625" y2="51.098725" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$53">
 <contactref element="R36" pad="1"/>
@@ -2855,14 +2857,14 @@ design rules under a new name.</description>
 <contactref element="R42" pad="P$2"/>
 <contactref element="J1" pad="1"/>
 <contactref element="TP18" pad="1"/>
-<wire x1="-84.93" y1="134.62" x2="151.9151875" y2="63.422246875" width="0" layer="19" extent="1-1"/>
+<wire x1="-84.93" y1="134.62" x2="201.570165625" y2="59.711971875" width="0" layer="19" extent="1-1"/>
 <wire x1="-144.466890625" y1="-283.06791875" x2="-84.93" y2="134.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TSMP-">
 <contactref element="R41" pad="P$2"/>
 <contactref element="J1" pad="2"/>
 <contactref element="TP19" pad="1"/>
-<wire x1="-84.93" y1="120.65" x2="157.9095875" y2="63.422246875" width="0" layer="19" extent="1-1"/>
+<wire x1="-84.93" y1="120.65" x2="201.570165625" y2="53.717571875" width="0" layer="19" extent="1-1"/>
 <wire x1="-144.466890625" y1="-286.77835" x2="-84.93" y2="120.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
@@ -2886,7 +2888,7 @@ design rules under a new name.</description>
 <signal name="N$6">
 <contactref element="U11" pad="1"/>
 <contactref element="R34" pad="2"/>
-<wire x1="-60.11" y1="170.18" x2="79.285371875" y2="68.29965" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.11" y1="170.18" x2="78.912715625" y2="67.9503125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R6" pad="2"/>
@@ -3170,8 +3172,8 @@ design rules under a new name.</description>
 <contactref element="J4" pad="3"/>
 <contactref element="R41" pad="P$1"/>
 <contactref element="F2" pad="1"/>
-<wire x1="-130.725203125" y1="-309.6116625" x2="-143.1485" y2="-318.27036875" width="0" layer="19" extent="1-1"/>
-<wire x1="-144.466890625" y1="-220.327725" x2="-130.725203125" y2="-309.6116625" width="0" layer="19" extent="1-1"/>
+<wire x1="201.82151875" y1="16.484378125" x2="-143.1485" y2="-318.27036875" width="0" layer="19" extent="1-1"/>
+<wire x1="-144.466890625" y1="-220.327725" x2="201.82151875" y2="16.484378125" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.13" y1="120.65" x2="-144.466890625" y2="-220.327725" width="0" layer="19" extent="1-1"/>
 <wire x1="110.768065625" y1="51.098725" x2="-14.13" y2="120.65" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -3223,8 +3225,8 @@ design rules under a new name.</description>
 <wire x1="-145.63" y1="-121.92" x2="-138.01" y2="-118.11" width="0" layer="19" extent="1-1"/>
 <wire x1="-144.36" y1="-60.96" x2="-144.36" y2="-102.87" width="0" layer="19" extent="1-1"/>
 <wire x1="-145.291890625" y1="-292.7902125" x2="-145.63" y2="-121.92" width="0" layer="19" extent="1-1"/>
-<wire x1="-136.719603125" y1="-309.6116625" x2="-145.291890625" y2="-292.7902125" width="0" layer="19" extent="1-1"/>
-<wire x1="-132.6485" y1="-318.27036875" x2="-136.719603125" y2="-309.6116625" width="0" layer="19" extent="1-1"/>
+<wire x1="201.82151875" y1="22.478778125" x2="-145.291890625" y2="-292.7902125" width="0" layer="19" extent="1-1"/>
+<wire x1="-132.6485" y1="-318.27036875" x2="201.82151875" y2="22.478778125" width="0" layer="19" extent="1-1"/>
 <wire x1="-146.253003125" y1="-327.42723125" x2="-132.6485" y2="-318.27036875" width="0" layer="19" extent="1-1"/>
 <wire x1="-98.425" y1="130.44" x2="-144.36" y2="-60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-89.535" y1="130.44" x2="-98.425" y2="130.44" width="0" layer="19" extent="1-1"/>
@@ -3255,10 +3257,10 @@ design rules under a new name.</description>
 <wire x1="-41.16" y1="170.18" x2="-37.35" y2="170.18" width="0" layer="19" extent="1-1"/>
 <wire x1="-84.855" y1="157.48" x2="-77.235" y2="157.48" width="0" layer="19" extent="1-1"/>
 <wire x1="-56.3" y1="170.18" x2="-54.375" y2="157.48" width="0" layer="19" extent="1-1"/>
-<wire x1="70.985371875" y1="68.29965" x2="-21.36" y2="163.83" width="0" layer="19" extent="1-1"/>
-<wire x1="83.471096875" y1="72.3501625" x2="70.985371875" y2="68.29965" width="0" layer="19" extent="1-1"/>
+<wire x1="70.612715625" y1="67.9503125" x2="-21.36" y2="163.83" width="0" layer="19" extent="1-1"/>
+<wire x1="83.471096875" y1="72.3501625" x2="70.612715625" y2="67.9503125" width="0" layer="19" extent="1-1"/>
 <wire x1="82.49091875" y1="75.814" x2="83.471096875" y2="72.3501625" width="0" layer="19" extent="1-1"/>
-<wire x1="169.8983875" y1="63.422246875" x2="83.471096875" y2="72.3501625" width="0" layer="19" extent="1-1"/>
+<wire x1="201.570165625" y1="41.728771875" x2="83.471096875" y2="72.3501625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R56" pad="1"/>
