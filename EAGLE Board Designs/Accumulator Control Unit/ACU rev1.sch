@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -8423,7 +8423,6 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="R57" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470"/>
 <part name="GND8" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="U$2" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO" device=""/>
-<part name="P60" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="R58" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R63" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P61" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -9979,8 +9978,8 @@ current across precharge relay</text>
 <attribute name="NAME" x="208.28" y="132.842" size="1.27" layer="95"/>
 <attribute name="MPN" x="208.28" y="118.618" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="P60" gate="1" x="231.14" y="137.16" smashed="yes">
-<attribute name="VALUE" x="231.14" y="140.97" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P+13" gate="1" x="231.14" y="137.16" smashed="yes">
+<attribute name="VALUE" x="231.14" y="139.7" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -10295,6 +10294,12 @@ current across precharge relay</text>
 <junction x="68.58" y="190.5"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="CONTACT2"/>
+<wire x1="228.6" y1="129.54" x2="231.14" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="129.54" x2="231.14" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="P+13" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="N$22" class="0">
 <segment>
@@ -10584,14 +10589,6 @@ current across precharge relay</text>
 <pinref part="R57" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="129.54" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="CONTROL+"/>
-</segment>
-</net>
-<net name="+12V" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="CONTACT2"/>
-<wire x1="228.6" y1="129.54" x2="231.14" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="129.54" x2="231.14" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="P60" gate="1" pin="+12V"/>
 </segment>
 </net>
 </nets>
