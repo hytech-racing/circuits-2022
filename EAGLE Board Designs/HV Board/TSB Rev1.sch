@@ -3394,14 +3394,26 @@ visible on the PCB.</text>
 <rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="43"/>
 </package>
 <package name="B20">
-<pad name="P$1" x="35.4" y="0" drill="1.35"/>
-<pad name="P$2" x="-35.4" y="0" drill="1.35"/>
+<pad name="P$1" x="32.51" y="0" drill="3.74" diameter="6" stop="no"/>
+<pad name="P$2" x="-32.51" y="0" drill="3.74" diameter="6" stop="no"/>
 <wire x1="-25.4" y1="5.555" x2="-25.4" y2="-5.555" width="0.127" layer="21"/>
 <wire x1="-25.4" y1="-5.555" x2="25.4" y2="-5.555" width="0.127" layer="21"/>
 <wire x1="25.4" y1="-5.555" x2="25.4" y2="5.555" width="0.127" layer="21"/>
 <wire x1="25.4" y1="5.555" x2="-25.4" y2="5.555" width="0.127" layer="21"/>
-<rectangle x1="-38.1" y1="-6.35" x2="36.83" y2="6.35" layer="39"/>
+<rectangle x1="-38.1" y1="-6.35" x2="38.1" y2="6.35" layer="39"/>
 <text x="-25.527" y="5.715" size="1.27" layer="21">&gt;NAME</text>
+<pad name="2" x="-27.94" y="-8.89" drill="1.35"/>
+<pad name="1" x="27.94" y="-8.89" drill="1.35"/>
+<rectangle x1="-30.48" y1="-11.43" x2="-25.4" y2="-6.35" layer="39"/>
+<rectangle x1="25.4" y1="-11.43" x2="30.48" y2="-6.35" layer="39"/>
+<circle x="-32.51" y="0" radius="1.87" width="0" layer="29"/>
+<circle x="-32.51" y="0" radius="1.87" width="0" layer="30"/>
+<circle x="32.51" y="0" radius="1.87" width="0" layer="30"/>
+<circle x="32.51" y="0" radius="1.87" width="0" layer="29"/>
+<circle x="-32.4866" y="0" radius="1.87" width="0" layer="41"/>
+<circle x="-32.4866" y="0" radius="1.87" width="0.0508" layer="42"/>
+<circle x="32.51" y="0" radius="1.87" width="0" layer="42"/>
+<circle x="32.51" y="0" radius="1.87" width="0.0508" layer="41"/>
 </package>
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_08_DUAL">
 <description>8 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
@@ -5084,8 +5096,8 @@ visible on the PCB.</text>
 </device>
 <device name="B20" package="B20">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="1.25K">
