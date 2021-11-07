@@ -8392,7 +8392,6 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P82" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="C43" library="HyTechDevices - Copy" deviceset="CAPACITOR_?_*" device="0603" technology="10V_680PF"/>
 <part name="P86" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R46" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="2.2K"/>
 <part name="D12" library="HyTechDevices" deviceset="SCHOTTKY" device=""/>
 <part name="R52" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P87" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -8479,6 +8478,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P40" library="HyTechSupplies" deviceset="+3V3" device=""/>
 <part name="U5" library="HyTechDevices - Copy" deviceset="LTC6820" device=""/>
 <part name="U6" library="HyTechDevices - Copy" deviceset="ADM823" device=""/>
+<part name="R46" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="2.2K"/>
 </parts>
 <sheets>
 <sheet>
@@ -8546,8 +8546,8 @@ Duty Cycle: 50.57%</text>
 <instance part="P8" gate="1" x="83.82" y="137.16" smashed="yes">
 <attribute name="VALUE" x="83.82" y="140.97" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P9" gate="1" x="76.2" y="114.3" smashed="yes">
-<attribute name="VALUE" x="76.2" y="113.03" size="1.27" layer="96" align="top-center"/>
+<instance part="P9" gate="1" x="88.9" y="119.38" smashed="yes">
+<attribute name="VALUE" x="88.9" y="118.11" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P11" gate="1" x="78.74" y="177.8" smashed="yes">
 <attribute name="VALUE" x="78.74" y="176.53" size="1.27" layer="96" align="top-center"/>
@@ -8724,12 +8724,8 @@ Duty Cycle: 50.57%</text>
 <attribute name="NAME" x="250.19" y="95.25" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="252.73" y="95.25" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P86" gate="1" x="86.36" y="96.52" smashed="yes">
-<attribute name="VALUE" x="86.36" y="95.25" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R46" gate="G$1" x="86.36" y="106.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="85.09" y="105.41" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="87.63" y="105.41" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P86" gate="1" x="86.36" y="99.06" smashed="yes">
+<attribute name="VALUE" x="86.36" y="97.79" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P5" gate="1" x="43.18" y="119.38" smashed="yes">
 <attribute name="VALUE" x="43.18" y="118.11" size="1.27" layer="96" align="top-center"/>
@@ -8753,6 +8749,10 @@ Duty Cycle: 50.57%</text>
 <instance part="J6" gate="G$1" x="10.16" y="99.06" smashed="yes">
 <attribute name="MPN" x="10.16" y="90.805" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="10.16" y="99.822" size="1.27" layer="95"/>
+</instance>
+<instance part="R46" gate="G$1" x="86.36" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="85.09" y="107.95" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="87.63" y="107.95" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -8913,8 +8913,7 @@ Duty Cycle: 50.57%</text>
 <pinref part="P4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="121.92" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="121.92" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="121.92" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="P9" gate="1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="6"/>
 </segment>
@@ -9003,24 +9002,24 @@ Duty Cycle: 50.57%</text>
 <pinref part="R60" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="86.36" y1="101.6" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="P86" gate="1" pin="GND"/>
-<pinref part="R46" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="109.22" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="106.68" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="106.68" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
-<junction x="81.28" y="106.68"/>
-<pinref part="U$1" gate="G$1" pin="11"/>
-<pinref part="U$1" gate="G$1" pin="12"/>
-<wire x1="81.28" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
-<junction x="86.36" y="99.06"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="4"/>
 <pinref part="P5" gate="1" pin="GND"/>
 <wire x1="20.32" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="124.46" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R46" gate="G$1" pin="1"/>
+<pinref part="P86" gate="1" pin="GND"/>
+<wire x1="86.36" y1="101.6" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="10"/>
+<wire x1="81.28" y1="111.76" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="109.22" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="101.6" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
+<junction x="86.36" y="101.6"/>
+<pinref part="U$1" gate="G$1" pin="11"/>
+<wire x1="58.42" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
+<junction x="81.28" y="109.22"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -9257,17 +9256,6 @@ Duty Cycle: 50.57%</text>
 <wire x1="210.82" y1="182.88" x2="210.82" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MHS" class="0">
-<segment>
-<wire x1="58.42" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="111.76" x2="88.9" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="111.76" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
-<junction x="86.36" y="111.76"/>
-<label x="88.9" y="111.76" size="1.27" layer="95" xref="yes"/>
-<pinref part="R46" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="10"/>
-</segment>
-</net>
 <net name="PRECHARGE_OK" class="0">
 <segment>
 <wire x1="20.32" y1="127" x2="22.86" y2="127" width="0.1524" layer="91"/>
@@ -9295,16 +9283,27 @@ Duty Cycle: 50.57%</text>
 <label x="60.96" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="13"/>
-<wire x1="58.42" y1="104.14" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
-<label x="60.96" y="104.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="58.42" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
+<label x="60.96" y="106.68" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="12"/>
+</segment>
+</net>
+<net name="MHS" class="0">
+<segment>
+<wire x1="58.42" y1="114.3" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="114.3" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="114.3" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
+<junction x="86.36" y="114.3"/>
+<label x="88.9" y="114.3" size="1.27" layer="95" xref="yes"/>
+<pinref part="R46" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="9"/>
 </segment>
 </net>
 <net name="ACUMULATOR_GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="14"/>
-<wire x1="58.42" y1="101.6" x2="60.96" y2="101.6" width="0.1524" layer="91"/>
-<label x="60.96" y="101.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="58.42" y1="104.14" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
+<label x="60.96" y="104.14" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="13"/>
 </segment>
 </net>
 </nets>
