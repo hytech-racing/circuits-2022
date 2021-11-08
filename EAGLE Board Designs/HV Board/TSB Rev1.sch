@@ -3541,6 +3541,96 @@ visible on the PCB.</text>
 <wire x1="-3.275" y1="-1.775" x2="-3.275" y2="1.775" width="0.127" layer="21"/>
 <rectangle x1="-3.81" y1="-4.445" x2="3.81" y2="4.445" layer="39"/>
 </package>
+<package name="MICRO_MINIATURE">
+<description>Keystone Micro-Miniature SMD Test Point
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/215/015-744075.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
+</package>
+<package name="SOT-23-6">
+<description>6-Lead Plastic ThinSOT-23
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-sot-23/SOT_6_05-08-1636.pdf"&gt;Footprint Detailing&lt;/a&gt;</description>
+<wire x1="-1.45" y1="0.875" x2="1.45" y2="0.875" width="0.127" layer="21"/>
+<wire x1="1.45" y1="0.875" x2="1.45" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="0.875" x2="-1.45" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="-0.875" x2="1.45" y2="-0.875" width="0.127" layer="21"/>
+<smd name="1" x="-0.95" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="3" x="0.95" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="4" x="-0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="5" x="0" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<smd name="6" x="0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
+<circle x="-1.8" y="-1.31" radius="0.15875" width="0" layer="21"/>
+<text x="-2" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.778" y1="-2.286" x2="1.778" y2="2.286" layer="39"/>
+</package>
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL">
+<description>10 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451014"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430451014_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430251000_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+<hole x="8.9916" y="0.9398" drill="1.0668"/>
+<hole x="-8.9916" y="0.9398" drill="1.0668"/>
+<wire x1="-9.3218" y1="-1.905" x2="9.3218" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="9.3218" y1="-1.905" x2="9.3218" y2="1.905" width="0.127" layer="21"/>
+<wire x1="9.3218" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-9.3218" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-9.3218" y1="1.905" x2="-9.3218" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-10.0584" y1="-2.286" x2="10.0584" y2="2.286" layer="39"/>
+<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
+<rectangle x1="-10.0584" y1="-2.286" x2="10.0584" y2="2.286" layer="40"/>
+<text x="0" y="-2.413" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<pad name="5" x="5.9944" y="0" drill="1.0668"/>
+<pad name="4" x="2.9972" y="0" drill="1.0668"/>
+<pad name="3" x="0" y="0" drill="1.0668"/>
+<pad name="2" x="-2.9972" y="0" drill="1.0668"/>
+<pad name="1" x="-5.9944" y="0" drill="1.0668"/>
+</package>
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED">
+<description>12 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451214"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430451214_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430251200_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+<hole x="10.4902" y="0.9398" drill="1.0668"/>
+<hole x="-10.4902" y="0.9398" drill="1.0668"/>
+<wire x1="-10.8204" y1="-1.905" x2="10.8204" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="10.8204" y1="-1.905" x2="10.8204" y2="1.905" width="0.127" layer="21"/>
+<wire x1="10.8204" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-10.8204" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-10.8204" y1="1.905" x2="-10.8204" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-11.557" y1="-2.286" x2="11.557" y2="2.286" layer="39"/>
+<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
+<rectangle x1="-11.557" y1="-2.286" x2="11.557" y2="2.286" layer="40"/>
+<text x="0" y="-2.286" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<pad name="5" x="7.493" y="0" drill="1.0668"/>
+<pad name="4" x="4.4958" y="0" drill="1.0668"/>
+<pad name="3" x="-1.4986" y="0" drill="1.0668"/>
+<pad name="2" x="-4.4958" y="0" drill="1.0668"/>
+<pad name="1" x="-7.493" y="0" drill="1.0668"/>
+</package>
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
 <description>14 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
@@ -3567,120 +3657,11 @@ visible on the PCB.</text>
 <rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
 <rectangle x1="-13.0556" y1="-2.286" x2="13.0556" y2="2.286" layer="40"/>
 <text x="0" y="-2.54" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<pad name="4" x="8.9916" y="0" drill="1.0668"/>
-<pad name="3" x="2.9972" y="0" drill="1.0668"/>
-<pad name="2" x="-2.9972" y="0" drill="1.0668"/>
+<pad name="5" x="8.9916" y="0" drill="1.0668"/>
+<pad name="4" x="2.9972" y="0" drill="1.0668"/>
+<pad name="3" x="-2.9972" y="0" drill="1.0668"/>
 <pad name="1" x="-8.9916" y="0" drill="1.0668"/>
-</package>
-<package name="SOURIAU_04-35">
-<description>SOURIAU 3 Pin Connector
-&lt;br&gt;
-&lt; a href="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_series_pc_tail_contacts_datasheet_0.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="A" x="1.24" y="0.72" drill="0.7"/>
-<pad name="B" x="0" y="-1.43" drill="0.7"/>
-<pad name="C" x="-1.24" y="0.72" drill="0.7"/>
-<circle x="0" y="0" radius="6" width="0.1524" layer="22"/>
-<circle x="0" y="0" radius="6.6" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="6" width="0" layer="40"/>
-<circle x="0" y="0" radius="6.6" width="0" layer="39"/>
-<hole x="8.1" y="8.1" drill="3.4"/>
-<circle x="8.1" y="8.1" radius="3" width="0" layer="41"/>
-<circle x="8.1" y="8.1" radius="3" width="0" layer="42"/>
-<hole x="-8.1" y="-8.1" drill="3.4"/>
-<circle x="-8.1" y="-8.1" radius="3" width="0" layer="41"/>
-<circle x="-8.1" y="-8.1" radius="3" width="0" layer="42"/>
-<text x="0" y="7" size="0.8128" layer="26" font="vector" rot="MR0" align="top-center">&gt;NAME</text>
-<text x="0" y="8" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
-<circle x="-8.1" y="-8.1" radius="3" width="0" layer="40"/>
-<circle x="-8.1" y="-8.1" radius="3" width="0" layer="39"/>
-<circle x="8.1" y="8.1" radius="3" width="0" layer="40"/>
-<circle x="8.1" y="8.1" radius="3" width="0" layer="39"/>
-</package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED2">
-<description>14 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451414"&gt;Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<hole x="11.9888" y="0.9398" drill="1.0668"/>
-<hole x="-11.9888" y="0.9398" drill="1.0668"/>
-<wire x1="-12.319" y1="-1.905" x2="12.319" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="12.319" y1="-1.905" x2="12.319" y2="1.905" width="0.127" layer="21"/>
-<wire x1="12.319" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-12.319" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-12.319" y1="1.905" x2="-12.319" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-13.0556" y1="-2.286" x2="13.0556" y2="2.286" layer="39"/>
-<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
-<rectangle x1="-13.0556" y1="-2.286" x2="13.0556" y2="2.286" layer="40"/>
-<text x="0" y="-2.54" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<pad name="3" x="2.9972" y="0" drill="1.0668"/>
-<pad name="2" x="-2.9972" y="0" drill="1.0668"/>
-<pad name="1" x="-8.9916" y="0" drill="1.0668"/>
-</package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED">
-<description>10 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451014"&gt;Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430451014_sd.pdf"&gt;Footprint&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430251000_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<hole x="8.9916" y="0.9398" drill="1.0668"/>
-<hole x="-8.9916" y="0.9398" drill="1.0668"/>
-<wire x1="-9.3218" y1="-1.905" x2="9.3218" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="9.3218" y1="-1.905" x2="9.3218" y2="1.905" width="0.127" layer="21"/>
-<wire x1="9.3218" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-9.3218" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-9.3218" y1="1.905" x2="-9.3218" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-10.0584" y1="-2.286" x2="10.0584" y2="2.286" layer="39"/>
-<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
-<rectangle x1="-10.0584" y1="-2.286" x2="10.0584" y2="2.286" layer="40"/>
-<text x="0" y="-2.413" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<pad name="3" x="5.9944" y="0" drill="1.0668"/>
-<pad name="2" x="0" y="0" drill="1.0668"/>
-<pad name="1" x="-5.9944" y="0" drill="1.0668"/>
-</package>
-<package name="MICRO_MINIATURE">
-<description>Keystone Micro-Miniature SMD Test Point
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/215/015-744075.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
-<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
-</package>
-<package name="SOT-23-6">
-<description>6-Lead Plastic ThinSOT-23
-&lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-sot-23/SOT_6_05-08-1636.pdf"&gt;Footprint Detailing&lt;/a&gt;</description>
-<wire x1="-1.45" y1="0.875" x2="1.45" y2="0.875" width="0.127" layer="21"/>
-<wire x1="1.45" y1="0.875" x2="1.45" y2="-0.875" width="0.127" layer="21"/>
-<wire x1="-1.45" y1="0.875" x2="-1.45" y2="-0.875" width="0.127" layer="21"/>
-<wire x1="-1.45" y1="-0.875" x2="1.45" y2="-0.875" width="0.127" layer="21"/>
-<smd name="1" x="-0.95" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
-<smd name="2" x="0" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
-<smd name="3" x="0.95" y="-1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
-<smd name="4" x="-0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
-<smd name="5" x="0" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
-<smd name="6" x="0.95" y="1.31" dx="1.22" dy="0.62" layer="1" rot="R90"/>
-<circle x="-1.8" y="-1.31" radius="0.15875" width="0" layer="21"/>
-<text x="-2" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-1.778" y1="-2.286" x2="1.778" y2="2.286" layer="39"/>
+<pad name="2" x="-5.9944" y="0" drill="1.0668"/>
 </package>
 </packages>
 <symbols>
@@ -4151,20 +4132,6 @@ visible on the PCB.</text>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="8.89" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
-<symbol name="CONNECTOR_03">
-<wire x1="7.62" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-10.795" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
 <symbol name="TEST_POINT">
 <circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
 <pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
@@ -4184,6 +4151,24 @@ visible on the PCB.</text>
 <wire x1="0" y1="-15.24" x2="0" y2="0" width="0.1524" layer="94"/>
 <text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-15.24" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="CONNECTOR_05">
+<wire x1="7.62" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="10.16" y="-12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0" y="-15.875" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -6004,17 +5989,6 @@ ISO224B: High-Grade
 <technology name=""/>
 </technologies>
 </device>
-<device name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 </devices>
 </deviceset>
 <deviceset name="RELAY_SOLIDSTATE_NO_?" prefix="U">
@@ -6144,43 +6118,6 @@ ISO224B: High-Grade
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-3_?" prefix="J">
-<gates>
-<gate name="G$1" symbol="CONNECTOR_03" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOURIAU_04-35">
-<connects>
-<connect gate="G$1" pin="1" pad="A"/>
-<connect gate="G$1" pin="2" pad="B"/>
-<connect gate="G$1" pin="3" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MOLEX_MICROFIT_PTH_VERTICAL_7_DUAL_SPACED2" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TEST_POINT" prefix="TP">
 <description>Test Point
 &lt;br&gt;</description>
@@ -6220,6 +6157,49 @@ ISO224B: High-Grade
 <technologies>
 <technology name="1"/>
 <technology name="2"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-5_?_*" prefix="J">
+<gates>
+<gate name="G$1" symbol="CONNECTOR_05" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="6_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="7_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6504,7 +6484,6 @@ ISO224B: High-Grade
 <part name="P37" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="J3" library="HyTechDevices" deviceset="CONNECTOR-8_?_*" device="MF_T_V"/>
 <part name="P39" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="P41" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
 <part name="U$32" library="HyTechSupplies" deviceset="TS+FUSED" device=""/>
 <part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25"/>
 <part name="R41" library="HyTechDevices" deviceset="RESISTOR_?_*" device="B20" technology="10K"/>
@@ -6568,8 +6547,6 @@ ISO224B: High-Grade
 <part name="P3" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P4" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P5" library="HyTechSupplies" deviceset="+5V" device=""/>
-<part name="J1" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED"/>
-<part name="J2" library="HyTechDevices" deviceset="CONNECTOR-3_?" device="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL_SPACED"/>
 <part name="P6" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="8.66K"/>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="13K"/>
@@ -6653,7 +6630,6 @@ ISO224B: High-Grade
 <part name="C8" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.1UF"/>
 <part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P14" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
-<part name="J4" library="HyTechDevices" deviceset="CONNECTOR-3_?" device="MOLEX_MICROFIT_PTH_VERTICAL_7_DUAL_SPACED2"/>
 <part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25"/>
 <part name="P12" library="HyTechSupplies" deviceset="TS-UNFUSED" device=""/>
 <part name="P15" library="HyTechSupplies" deviceset="TS-UNFUSED" device=""/>
@@ -6669,10 +6645,11 @@ ISO224B: High-Grade
 <part name="U$28" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$29" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$3" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
-<part name="U$26" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$30" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="R56" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="D14" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
+<part name="U$31" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="6_SPACED"/>
+<part name="U$33" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="7_SPACED"/>
 </parts>
 <sheets>
 <sheet>
@@ -8072,7 +8049,6 @@ Undervoltage: 56V</text>
 <wire x1="269.24" y1="60.96" x2="269.24" y2="208.28" width="0.254" layer="97" style="longdash"/>
 <wire x1="269.24" y1="208.28" x2="182.88" y2="208.28" width="0.254" layer="97" style="longdash"/>
 <text x="205.74" y="190.5" size="1.27" layer="97">1 ohm 1/8 W shunt resistor</text>
-<text x="251.46" y="177.8" size="2.54" layer="97">Note about LED-</text>
 <text x="198.12" y="165.1" size="2.54" layer="97">TP</text>
 </plain>
 <instances>
@@ -8162,11 +8138,8 @@ Undervoltage: 56V</text>
 <instance part="P39" gate="1" x="63.5" y="180.34" smashed="yes">
 <attribute name="VALUE" x="63.5" y="179.07" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P41" gate="G$1" x="243.84" y="154.94" smashed="yes">
-<attribute name="VALUE" x="243.84" y="160.02" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="U$32" gate="G$1" x="254" y="152.4" smashed="yes">
-<attribute name="VALUE" x="254" y="157.48" size="1.27" layer="96" align="bottom-center"/>
+<instance part="U$32" gate="G$1" x="256.54" y="172.72" smashed="yes">
+<attribute name="VALUE" x="256.54" y="177.8" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="F6" gate="G$1" x="241.3" y="101.6" smashed="yes">
 <attribute name="NAME" x="240.03" y="102.87" size="1.27" layer="95" align="bottom-center"/>
@@ -8226,12 +8199,6 @@ Undervoltage: 56V</text>
 </instance>
 <instance part="P5" gate="1" x="60.96" y="137.16" smashed="yes">
 <attribute name="VALUE" x="60.96" y="139.7" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="J1" gate="G$1" x="228.6" y="187.96" smashed="yes">
-<attribute name="NAME" x="228.6" y="188.722" size="1.27" layer="95"/>
-</instance>
-<instance part="J2" gate="G$1" x="228.6" y="154.94" smashed="yes">
-<attribute name="NAME" x="228.6" y="155.702" size="1.27" layer="95"/>
 </instance>
 <instance part="P6" gate="1" x="45.72" y="119.38" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="45.72" y="118.11" size="1.27" layer="96" rot="MR0" align="top-center"/>
@@ -8387,11 +8354,8 @@ Undervoltage: 56V</text>
 <attribute name="VOLTAGE" x="73.66" y="128.27" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="75.438" y="128.27" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P14" gate="G$1" x="243.84" y="132.08" smashed="yes">
-<attribute name="VALUE" x="243.84" y="137.16" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="J4" gate="G$1" x="228.6" y="132.08" smashed="yes">
-<attribute name="NAME" x="228.6" y="132.842" size="1.27" layer="95"/>
+<instance part="P14" gate="G$1" x="246.38" y="180.34" smashed="yes">
+<attribute name="VALUE" x="246.38" y="185.42" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="F2" gate="G$1" x="241.3" y="68.58" smashed="yes">
 <attribute name="NAME" x="240.03" y="69.85" size="1.27" layer="95" align="bottom-center"/>
@@ -8406,17 +8370,20 @@ Undervoltage: 56V</text>
 <instance part="P16" gate="G$1" x="233.68" y="66.04" smashed="yes">
 <attribute name="VALUE" x="233.68" y="63.5" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P17" gate="G$1" x="241.3" y="121.92" smashed="yes">
-<attribute name="VALUE" x="241.3" y="119.38" size="1.27" layer="96" align="top-center"/>
+<instance part="P17" gate="G$1" x="243.84" y="139.7" smashed="yes">
+<attribute name="VALUE" x="243.84" y="137.16" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="U$3" gate="G$1" x="246.38" y="66.04" smashed="yes">
 <attribute name="VALUE" x="246.38" y="63.5" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="U$26" gate="G$1" x="251.46" y="121.92" smashed="yes">
-<attribute name="VALUE" x="251.46" y="119.38" size="1.27" layer="96" align="top-center"/>
+<instance part="U$30" gate="G$1" x="256.54" y="149.86" smashed="yes">
+<attribute name="VALUE" x="256.54" y="147.32" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="U$30" gate="G$1" x="241.3" y="175.26" smashed="yes">
-<attribute name="VALUE" x="241.3" y="172.72" size="1.27" layer="96" align="top-center"/>
+<instance part="U$31" gate="G$1" x="231.14" y="154.94" smashed="yes">
+<attribute name="NAME" x="231.14" y="155.702" size="1.27" layer="95"/>
+</instance>
+<instance part="U$33" gate="G$1" x="231.14" y="180.34" smashed="yes">
+<attribute name="NAME" x="231.14" y="181.102" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -8649,11 +8616,6 @@ Undervoltage: 56V</text>
 <wire x1="187.96" y1="101.6" x2="187.96" y2="96.52" width="0.6096" layer="91"/>
 </segment>
 <segment>
-<pinref part="P41" gate="G$1" pin="TS+UNFUSED"/>
-<wire x1="238.76" y1="152.4" x2="243.84" y2="152.4" width="0.6096" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="F6" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="101.6" x2="233.68" y2="101.6" width="0.6096" layer="91"/>
 <wire x1="233.68" y1="101.6" x2="233.68" y2="93.98" width="0.6096" layer="91"/>
@@ -8673,9 +8635,13 @@ Undervoltage: 56V</text>
 <pinref part="P13" gate="G$1" pin="TS+UNFUSED"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="1"/>
 <pinref part="P14" gate="G$1" pin="TS+UNFUSED"/>
-<wire x1="238.76" y1="129.54" x2="243.84" y2="129.54" width="0.6096" layer="91"/>
+<wire x1="241.3" y1="177.8" x2="246.38" y2="177.8" width="0.6096" layer="91"/>
+<pinref part="U$33" gate="G$1" pin="1"/>
+<pinref part="U$33" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="175.26" x2="246.38" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="175.26" x2="246.38" y2="177.8" width="0.1524" layer="91"/>
+<junction x="246.38" y="177.8"/>
 </segment>
 </net>
 <net name="N$51" class="0">
@@ -8711,9 +8677,9 @@ Undervoltage: 56V</text>
 <pinref part="U$1" gate="G$1" pin="CONTACT2"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="147.32" x2="241.3" y2="147.32" width="0.6096" layer="91"/>
-<label x="241.3" y="147.32" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="241.3" y1="167.64" x2="243.84" y2="167.64" width="0.6096" layer="91"/>
+<label x="243.84" y="167.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$33" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="K5" gate="G$1" pin="CONTACT1"/>
@@ -8822,9 +8788,9 @@ Undervoltage: 56V</text>
 </net>
 <net name="TSMP+" class="0">
 <segment>
-<wire x1="238.76" y1="185.42" x2="241.3" y2="185.42" width="0.6096" layer="91"/>
-<label x="241.3" y="185.42" size="1.27" layer="95" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="172.72" x2="243.84" y2="172.72" width="0.6096" layer="91"/>
+<label x="243.84" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$33" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="R42" gate="G$1" pin="2"/>
@@ -8838,9 +8804,9 @@ Undervoltage: 56V</text>
 </net>
 <net name="TSMP-" class="0">
 <segment>
-<wire x1="238.76" y1="182.88" x2="241.3" y2="182.88" width="0.6096" layer="91"/>
-<label x="241.3" y="182.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="144.78" x2="243.84" y2="144.78" width="0.6096" layer="91"/>
+<label x="243.84" y="144.78" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$31" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="R41" gate="G$1" pin="2"/>
@@ -8854,9 +8820,9 @@ Undervoltage: 56V</text>
 </net>
 <net name="LED+" class="0">
 <segment>
-<wire x1="238.76" y1="180.34" x2="241.3" y2="180.34" width="0.6096" layer="91"/>
-<label x="241.3" y="180.34" size="1.27" layer="95" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="241.3" y1="147.32" x2="243.84" y2="147.32" width="0.6096" layer="91"/>
+<label x="243.84" y="147.32" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$31" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="R63" gate="G$1" pin="2"/>
@@ -8941,8 +8907,8 @@ Undervoltage: 56V</text>
 </segment>
 <segment>
 <pinref part="U$32" gate="G$1" pin="TS+"/>
-<wire x1="238.76" y1="149.86" x2="254" y2="149.86" width="0.6096" layer="91"/>
-<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="170.18" x2="256.54" y2="170.18" width="0.6096" layer="91"/>
+<pinref part="U$33" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="TS-UNFUSED" class="0">
@@ -8957,9 +8923,9 @@ Undervoltage: 56V</text>
 <pinref part="P15" gate="G$1" pin="TS-UNFUSED"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="3"/>
-<wire x1="238.76" y1="124.46" x2="241.3" y2="124.46" width="0.6096" layer="91"/>
+<wire x1="241.3" y1="142.24" x2="243.84" y2="142.24" width="0.6096" layer="91"/>
 <pinref part="P17" gate="G$1" pin="TS-UNFUSED"/>
+<pinref part="U$31" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="R41" gate="G$1" pin="1"/>
@@ -8978,15 +8944,14 @@ Undervoltage: 56V</text>
 <pinref part="U$3" gate="G$1" pin="TS-FUSED"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="2"/>
-<wire x1="238.76" y1="127" x2="251.46" y2="127" width="0.6096" layer="91"/>
-<wire x1="251.46" y1="127" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U$26" gate="G$1" pin="TS-FUSED"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="238.76" y1="177.8" x2="241.3" y2="177.8" width="0.6096" layer="91"/>
+<wire x1="241.3" y1="152.4" x2="243.84" y2="152.4" width="0.6096" layer="91"/>
 <pinref part="U$30" gate="G$1" pin="TS-FUSED"/>
+<pinref part="U$31" gate="G$1" pin="1"/>
+<pinref part="U$31" gate="G$1" pin="2"/>
+<wire x1="243.84" y1="152.4" x2="256.54" y2="152.4" width="0.6096" layer="91"/>
+<wire x1="241.3" y1="149.86" x2="243.84" y2="149.86" width="0.6096" layer="91"/>
+<wire x1="243.84" y1="149.86" x2="243.84" y2="152.4" width="0.6096" layer="91"/>
+<junction x="243.84" y="152.4"/>
 </segment>
 </net>
 </nets>
