@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -3498,6 +3498,25 @@ Notes: See page 47</description>
 <text x="0" y="1.905" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.27" y1="-1.778" x2="1.27" y2="1.778" layer="39"/>
 </package>
+<package name="OKI-78SR">
+<description>OKI-78SR Regulator
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/281/oki-78sr-56393.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="-2.54" y="0" drill="0.9906" first="yes"/>
+<pad name="2" x="0" y="0" drill="0.9906"/>
+<pad name="3" x="2.54" y="0" drill="0.9906"/>
+<wire x1="-5.461" y1="5.588" x2="5.461" y2="5.588" width="0.127" layer="21" style="shortdash"/>
+<wire x1="5.461" y1="5.588" x2="5.461" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="5.461" y1="-3.81" x2="-5.461" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-5.461" y1="-3.81" x2="-5.461" y2="5.588" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-5.207" y1="1.27" x2="5.207" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-5.207" y1="2.794" x2="5.207" y2="2.794" width="0.127" layer="21"/>
+<wire x1="-5.207" y1="1.27" x2="-5.207" y2="2.794" width="0.127" layer="21"/>
+<wire x1="5.207" y1="2.794" x2="5.207" y2="1.27" width="0.127" layer="21"/>
+<text x="0" y="5.715" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-5.588" y1="-3.937" x2="5.588" y2="5.715" layer="39"/>
+<rectangle x1="-3.81" y1="-1.27" x2="3.81" y2="1.27" layer="40"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONNECTOR_08">
@@ -3826,6 +3845,17 @@ Pins tied to GND: SLOW
 <wire x1="17.78" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="VOLTAGE_REGULATOR">
+<wire x1="0" y1="-10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<pin name="GND" x="7.62" y="-12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="IN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="OUT" x="17.78" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="8.89" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5363,6 +5393,37 @@ Leakage Inductance: 0.50 uH max
 </device>
 </devices>
 </deviceset>
+<deviceset name="VOLTAGE_REGULATOR_MODULE_?_*" prefix="A">
+<description>Voltage Regulator Modules
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/281/oki-78sr-56393.pdf"&gt;OKI-78SR Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="OKI-78SR" package="OKI-78SR">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="3.3V">
+<attribute name="DKPN" value="811-2195-5-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-OKI78SR3.31.536C"/>
+<attribute name="MPN" value="OKI-78SR-3.3/1.5-W36-C"/>
+</technology>
+<technology name="5V">
+<attribute name="DKPN" value="811-2196-5-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-OKI78SR5/1.5W36C"/>
+<attribute name="MPN" value="OKI-78SR-5/1.5-W36-C"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSupplies">
@@ -5456,67 +5517,6 @@ Leakage Inductance: 0.50 uH max
 </library>
 <library name="HyTechDevices">
 <packages>
-<package name="SOT223">
-<description>SOT223
-&lt;br&gt;
-&lt;a href="https://www.diodes.com/assets/Package-Files/SOT223.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
-<smd name="2" x="0" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
-<smd name="3" x="2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
-<smd name="4" x="0" y="3.2" dx="3.3" dy="1.6" layer="1"/>
-<text x="0" y="4.445" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-3.275" y1="1.775" x2="3.275" y2="1.775" width="0.127" layer="21"/>
-<wire x1="3.275" y1="1.775" x2="3.275" y2="-1.775" width="0.127" layer="21"/>
-<wire x1="3.275" y1="-1.775" x2="-3.275" y2="-1.775" width="0.127" layer="21"/>
-<wire x1="-3.275" y1="-1.775" x2="-3.275" y2="1.775" width="0.127" layer="21"/>
-<rectangle x1="-3.81" y1="-4.445" x2="3.81" y2="4.445" layer="39"/>
-</package>
-<package name="SOT89">
-<description>SOT89
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/308/1/NCP785A_D-2317346.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-Based on page 10.</description>
-<smd name="2" x="0" y="-0.355" dx="0.58" dy="0.86" layer="1"/>
-<smd name="1" x="-1.5" y="0" dx="0.5" dy="1.57" layer="1"/>
-<smd name="3" x="1.5" y="0" dx="0.5" dy="1.57" layer="1"/>
-<wire x1="-2.3" y1="2.7" x2="2.3" y2="2.7" width="0.127" layer="21"/>
-<wire x1="2.3" y1="2.7" x2="2.3" y2="0.1" width="0.127" layer="21"/>
-<wire x1="2.3" y1="0.1" x2="-2.3" y2="0.1" width="0.127" layer="21"/>
-<wire x1="-2.3" y1="0.1" x2="-2.3" y2="2.7" width="0.127" layer="21"/>
-<rectangle x1="-2.54" y1="-1.14" x2="2.54" y2="3.94" layer="39"/>
-<text x="0" y="3.94" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<polygon width="0" layer="1">
-<vertex x="-1" y="3.665"/>
-<vertex x="-1" y="0.785"/>
-<vertex x="-0.29" y="0.075"/>
-<vertex x="-0.29" y="0"/>
-<vertex x="0.29" y="0"/>
-<vertex x="0.29" y="0.075"/>
-<vertex x="1" y="0.785"/>
-<vertex x="1" y="3.665"/>
-</polygon>
-<polygon width="0" layer="31" spacing="0.05" pour="hatch">
-<vertex x="-1" y="3.665"/>
-<vertex x="-1" y="0.785"/>
-<vertex x="-0.29" y="0.075"/>
-<vertex x="-0.29" y="0"/>
-<vertex x="0.29" y="0"/>
-<vertex x="0.29" y="0.075"/>
-<vertex x="1" y="0.785"/>
-<vertex x="1" y="3.665"/>
-</polygon>
-<polygon width="0" layer="29" spacing="0.1" pour="hatch">
-<vertex x="-1.1" y="3.765"/>
-<vertex x="-1.1" y="0.714"/>
-<vertex x="-0.361" y="0.004"/>
-<vertex x="-0.29" y="0"/>
-<vertex x="0.29" y="0"/>
-<vertex x="0.361" y="0.004"/>
-<vertex x="1.1" y="0.714"/>
-<vertex x="1.1" y="3.765"/>
-</polygon>
-</package>
 <package name="0603-CAP">
 <description>0603 Cap
 &lt;br&gt;
@@ -5919,17 +5919,6 @@ Note: Also works for CAT/CAY16 Series.
 </package>
 </packages>
 <symbols>
-<symbol name="VOLTAGE_REGULATOR">
-<wire x1="0" y1="-10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-10.16" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<pin name="GND" x="7.62" y="-12.7" length="short" direction="pwr" rot="R90"/>
-<pin name="IN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
-<pin name="OUT" x="17.78" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="8.89" y="-10.922" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
 <symbol name="CAPACITOR">
 <wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
@@ -6293,54 +6282,6 @@ Note: Also works for CAT/CAY16 Series.
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VOLTAGE_REGULATOR_?_*" prefix="U">
-<description>Voltage Regulators
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/389/dm00366442-1799212.pdf"&gt;LDL1117S50R Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/308/NCP785A_D-1812704.pdf"&gt;NCP785AH120T1G&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOT223" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2 4"/>
-</connects>
-<technologies>
-<technology name="5V">
-<attribute name="DKPN" value="497-17240-1-ND"/>
-<attribute name="MANUFACTURER" value="STMicroelectronics"/>
-<attribute name="MOPN" value="511-LDL1117S50R"/>
-<attribute name="MPN" value="LDL1117S50R"/>
-</technology>
-</technologies>
-</device>
-<device name="SOT89" package="SOT89">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name="12V">
-<attribute name="DKPN" value="NCP785AH120T1GOSCT-ND"/>
-<attribute name="MANUFACTURER" value="ON Semiconductor"/>
-<attribute name="MOPN" value="863-NCP785AH120T1G"/>
-<attribute name="MPN" value="NCP785AH120T1G"/>
-</technology>
-<technology name="15V">
-<attribute name="DKPN" value="NCP785AH150T1GOSTR-ND"/>
-<attribute name="MANUFACTURER" value="ON Semiconductor"/>
-<attribute name="MOPN" value="863-NCP785AH150T1G"/>
-<attribute name="MPN" value="NCP785AH150T1G"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CAPACITOR_?_*" prefix="C">
 <description>Capacitor, Non-Polarized
 
@@ -8013,7 +7954,6 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P6" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P11" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="U1" library="HyTechDevices" deviceset="VOLTAGE_REGULATOR_?_*" device="SOT89" technology="12V"/>
 <part name="C1" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
 <part name="C2" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
 <part name="P12" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -8314,6 +8254,13 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P3" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P4" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="J2" library="HyTechDevices - Copy" deviceset="CONNECTOR-8_?_*" device="MF_T_V"/>
+<part name="A2" library="HyTechDevices - Copy" deviceset="VOLTAGE_REGULATOR_MODULE_?_*" device="OKI-78SR" technology="5V"/>
+<part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
+<part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
+<part name="P41" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="P42" library="HyTechSupplies" deviceset="+12V" device=""/>
+<part name="P43" library="HyTechSupplies" deviceset="+3V3" device=""/>
+<part name="A3" library="HyTechDevices - Copy" deviceset="VOLTAGE_REGULATOR_MODULE_?_*" device="OKI-78SR" technology="3.3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -8367,10 +8314,6 @@ Accumulator GND, both AIR+ and -</text>
 </instance>
 <instance part="P11" gate="1" x="88.9" y="177.8" smashed="yes">
 <attribute name="VALUE" x="88.9" y="176.53" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="U1" gate="G$1" x="154.94" y="195.58" smashed="yes">
-<attribute name="NAME" x="154.94" y="196.342" size="1.27" layer="95"/>
-<attribute name="MPN" x="163.83" y="184.658" size="1.27" layer="96" align="top-left"/>
 </instance>
 <instance part="C1" gate="G$1" x="147.32" y="187.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="144.78" y="186.69" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -8585,6 +8528,33 @@ Accumulator GND, both AIR+ and -</text>
 <attribute name="NAME" x="58.42" y="135.382" size="1.27" layer="95"/>
 <attribute name="MPN" x="58.42" y="111.125" size="1.27" layer="96" align="top-left"/>
 </instance>
+<instance part="A2" gate="G$1" x="154.94" y="195.58" smashed="yes">
+<attribute name="NAME" x="154.94" y="196.342" size="1.27" layer="95"/>
+<attribute name="MPN" x="163.83" y="184.658" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="C9" gate="G$1" x="147.32" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="144.78" y="156.21" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="149.86" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="151.638" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="C10" gate="G$1" x="177.8" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="175.26" y="156.21" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="180.34" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="182.118" y="156.21" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P41" gate="1" x="162.56" y="144.78" smashed="yes">
+<attribute name="VALUE" x="162.56" y="143.51" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P42" gate="1" x="144.78" y="167.64" smashed="yes">
+<attribute name="VALUE" x="144.78" y="171.45" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P43" gate="G$1" x="180.34" y="167.64" smashed="yes">
+<attribute name="VALUE" x="180.34" y="168.91" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="A3" gate="G$1" x="154.94" y="165.1" smashed="yes">
+<attribute name="NAME" x="154.94" y="165.862" size="1.27" layer="95"/>
+<attribute name="MPN" x="163.83" y="154.178" size="1.27" layer="96" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8675,7 +8645,6 @@ Accumulator GND, both AIR+ and -</text>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="OUT"/>
 <wire x1="172.72" y1="193.04" x2="177.8" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="193.04" x2="180.34" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="193.04" x2="180.34" y2="195.58" width="0.1524" layer="91"/>
@@ -8683,6 +8652,7 @@ Accumulator GND, both AIR+ and -</text>
 <wire x1="177.8" y1="190.5" x2="177.8" y2="193.04" width="0.1524" layer="91"/>
 <junction x="177.8" y="193.04"/>
 <pinref part="P14" gate="1" pin="+5V"/>
+<pinref part="A2" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
 <pinref part="TP2" gate="G$1" pin="P$1"/>
@@ -8716,7 +8686,6 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="J5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="162.56" y1="182.88" x2="162.56" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="177.8" x2="162.56" y2="180.34" width="0.1524" layer="91"/>
 <junction x="162.56" y="180.34"/>
@@ -8727,6 +8696,7 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="180.34" x2="177.8" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="P12" gate="1" pin="GND"/>
+<pinref part="A2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -8823,6 +8793,19 @@ Accumulator GND, both AIR+ and -</text>
 <wire x1="20.32" y1="104.14" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="104.14" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="162.56" y1="152.4" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="147.32" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
+<junction x="162.56" y="149.86"/>
+<wire x1="162.56" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="152.4" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="149.86" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="149.86" x2="177.8" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="P41" gate="1" pin="GND"/>
+<pinref part="A3" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -8838,7 +8821,6 @@ Accumulator GND, both AIR+ and -</text>
 <wire x1="20.32" y1="165.1" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="IN"/>
 <wire x1="152.4" y1="193.04" x2="147.32" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="193.04" x2="144.78" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="193.04" x2="144.78" y2="195.58" width="0.1524" layer="91"/>
@@ -8846,6 +8828,7 @@ Accumulator GND, both AIR+ and -</text>
 <wire x1="147.32" y1="190.5" x2="147.32" y2="193.04" width="0.1524" layer="91"/>
 <junction x="147.32" y="193.04"/>
 <pinref part="P13" gate="1" pin="+12V"/>
+<pinref part="A2" gate="G$1" pin="IN"/>
 </segment>
 <segment>
 <wire x1="129.54" y1="193.04" x2="132.08" y2="193.04" width="0.1524" layer="91"/>
@@ -8914,6 +8897,16 @@ Accumulator GND, both AIR+ and -</text>
 <wire x1="20.32" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="P3" gate="1" pin="+12V"/>
 <pinref part="U$1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="152.4" y1="162.56" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="162.56" x2="144.78" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="162.56" x2="144.78" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="160.02" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
+<junction x="147.32" y="162.56"/>
+<pinref part="P42" gate="1" pin="+12V"/>
+<pinref part="A3" gate="G$1" pin="IN"/>
 </segment>
 </net>
 <net name="BSPD_CURRENT" class="0">
@@ -9055,6 +9048,16 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="P19" gate="G$1" pin="+3V3"/>
 <wire x1="198.12" y1="182.88" x2="210.82" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="182.88" x2="210.82" y2="190.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="172.72" y1="162.56" x2="177.8" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="162.56" x2="180.34" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="162.56" x2="180.34" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="160.02" x2="177.8" y2="162.56" width="0.1524" layer="91"/>
+<junction x="177.8" y="162.56"/>
+<pinref part="P43" gate="G$1" pin="+3V3"/>
+<pinref part="A3" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="PRECHARGE_OK" class="0">
