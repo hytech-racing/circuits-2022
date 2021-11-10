@@ -8248,10 +8248,8 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="U6" library="HyTechDevices - Copy" deviceset="ADM823" device=""/>
 <part name="P7" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P8" library="HyTechSupplies" deviceset="+12V" device=""/>
-<part name="P9" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P86" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R46" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="2.2K"/>
-<part name="P3" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P4" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="J2" library="HyTechDevices - Copy" deviceset="CONNECTOR-8_?_*" device="MF_T_V"/>
 <part name="A2" library="HyTechDevices - Copy" deviceset="VOLTAGE_REGULATOR_MODULE_?_*" device="OKI-78SR" technology="5V"/>
@@ -8261,6 +8259,8 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P42" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P43" library="HyTechSupplies" deviceset="+3V3" device=""/>
 <part name="A3" library="HyTechDevices - Copy" deviceset="VOLTAGE_REGULATOR_MODULE_?_*" device="OKI-78SR" technology="3.3V"/>
+<part name="P9" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="P3" library="HyTechSupplies" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8502,14 +8502,9 @@ Accumulator GND, both AIR+ and -</text>
 <attribute name="NAME" x="10.16" y="132.842" size="1.27" layer="95"/>
 <attribute name="MPN" x="10.16" y="93.345" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="P7" gate="1" x="38.1" y="127" smashed="yes">
-<attribute name="VALUE" x="38.1" y="129.54" size="1.27" layer="96" align="bottom-center"/>
-</instance>
+<instance part="P7" gate="1" x="38.1" y="127" smashed="yes"/>
 <instance part="P8" gate="1" x="78.74" y="137.16" smashed="yes">
 <attribute name="VALUE" x="78.74" y="140.97" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="P9" gate="1" x="48.26" y="109.22" smashed="yes">
-<attribute name="VALUE" x="48.26" y="107.95" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P86" gate="1" x="93.98" y="111.76" smashed="yes">
 <attribute name="VALUE" x="93.98" y="110.49" size="1.27" layer="96" align="top-center"/>
@@ -8517,9 +8512,6 @@ Accumulator GND, both AIR+ and -</text>
 <instance part="R46" gate="G$1" x="93.98" y="121.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="92.71" y="120.65" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="95.25" y="120.65" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P3" gate="1" x="48.26" y="132.08" smashed="yes">
-<attribute name="VALUE" x="48.26" y="135.89" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="P4" gate="1" x="43.18" y="119.38" smashed="yes">
 <attribute name="VALUE" x="43.18" y="118.11" size="1.27" layer="96" align="top-center"/>
@@ -8555,6 +8547,12 @@ Accumulator GND, both AIR+ and -</text>
 <attribute name="NAME" x="154.94" y="165.862" size="1.27" layer="95"/>
 <attribute name="MPN" x="163.83" y="154.178" size="1.27" layer="96" align="top-left"/>
 </instance>
+<instance part="P9" gate="1" x="48.26" y="114.3" smashed="yes">
+<attribute name="VALUE" x="48.26" y="113.03" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P3" gate="1" x="53.34" y="116.84" smashed="yes">
+<attribute name="VALUE" x="53.34" y="120.65" size="1.27" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8566,14 +8564,14 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="J1" gate="G$1" pin="CANH"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="167.64" x2="71.12" y2="167.64" width="0.1524" layer="91"/>
-<label x="71.12" y="167.64" size="1.27" layer="95" xref="yes"/>
-<pinref part="J5" gate="G$1" pin="8"/>
+<wire x1="68.58" y1="165.1" x2="71.12" y2="165.1" width="0.1524" layer="91"/>
+<label x="71.12" y="165.1" size="1.27" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="9"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="127" x2="22.86" y2="127" width="0.1524" layer="91"/>
-<label x="22.86" y="127" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="124.46" x2="22.86" y2="124.46" width="0.1524" layer="91"/>
+<label x="22.86" y="124.46" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -8583,14 +8581,14 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="J1" gate="G$1" pin="CANL"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="165.1" x2="71.12" y2="165.1" width="0.1524" layer="91"/>
-<label x="71.12" y="165.1" size="1.27" layer="95" xref="yes"/>
-<pinref part="J5" gate="G$1" pin="9"/>
+<wire x1="68.58" y1="167.64" x2="71.12" y2="167.64" width="0.1524" layer="91"/>
+<label x="71.12" y="167.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="124.46" x2="22.86" y2="124.46" width="0.1524" layer="91"/>
-<label x="22.86" y="124.46" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="3"/>
+<wire x1="20.32" y1="127" x2="22.86" y2="127" width="0.1524" layer="91"/>
+<label x="22.86" y="127" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SHDN" class="0">
@@ -8764,11 +8762,6 @@ Accumulator GND, both AIR+ and -</text>
 <wire x1="43.18" y1="157.48" x2="43.18" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="P9" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="8"/>
-</segment>
-<segment>
 <pinref part="R46" gate="G$1" pin="1"/>
 <pinref part="P86" gate="1" pin="GND"/>
 <wire x1="93.98" y1="114.3" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
@@ -8805,6 +8798,11 @@ Accumulator GND, both AIR+ and -</text>
 <wire x1="177.8" y1="149.86" x2="177.8" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="P41" gate="1" pin="GND"/>
 <pinref part="A3" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="20.32" y1="116.84" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="P9" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -8894,11 +8892,6 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="P3" gate="1" pin="+12V"/>
-<pinref part="U$1" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <wire x1="152.4" y1="162.56" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="162.56" x2="144.78" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="162.56" x2="144.78" y2="165.1" width="0.1524" layer="91"/>
@@ -8907,6 +8900,11 @@ Accumulator GND, both AIR+ and -</text>
 <junction x="147.32" y="162.56"/>
 <pinref part="P42" gate="1" pin="+12V"/>
 <pinref part="A3" gate="G$1" pin="IN"/>
+</segment>
+<segment>
+<wire x1="20.32" y1="114.3" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="P3" gate="1" pin="+12V"/>
+<pinref part="U$1" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="BSPD_CURRENT" class="0">
@@ -9074,9 +9072,9 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="J2" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="9"/>
-<wire x1="20.32" y1="109.22" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
-<label x="22.86" y="109.22" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="96.52" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
+<label x="22.86" y="96.52" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="14"/>
 </segment>
 </net>
 <net name="CHASSIS_GND" class="0">
@@ -9098,20 +9096,6 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="CURRENT_REF" class="0">
-<segment>
-<wire x1="20.32" y1="114.3" x2="22.86" y2="114.3" width="0.1524" layer="91"/>
-<label x="22.86" y="114.3" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="7"/>
-</segment>
-</net>
-<net name="CURRENT" class="0">
-<segment>
-<wire x1="20.32" y1="116.84" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
-<label x="22.86" y="116.84" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="6"/>
-</segment>
-</net>
 <net name="MHS" class="0">
 <segment>
 <wire x1="68.58" y1="127" x2="93.98" y2="127" width="0.1524" layer="91"/>
@@ -9128,6 +9112,20 @@ Accumulator GND, both AIR+ and -</text>
 <wire x1="20.32" y1="99.06" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
 <label x="22.86" y="99.06" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="13"/>
+</segment>
+</net>
+<net name="CURRENT_REF" class="0">
+<segment>
+<wire x1="20.32" y1="109.22" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
+<label x="22.86" y="109.22" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="9"/>
+</segment>
+</net>
+<net name="CURRENT" class="0">
+<segment>
+<wire x1="20.32" y1="111.76" x2="22.86" y2="111.76" width="0.1524" layer="91"/>
+<label x="22.86" y="111.76" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="8"/>
 </segment>
 </net>
 </nets>
@@ -11764,9 +11762,9 @@ current across precharge relay</text>
 <pinref part="R30" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="A1" gate="G$1" pin="A7"/>
-<wire x1="48.26" y1="152.4" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
-<label x="45.72" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="48.26" y1="170.18" x2="45.72" y2="170.18" width="0.1524" layer="91"/>
+<label x="45.72" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="A0"/>
 </segment>
 </net>
 <net name="WATCHDOG_INPUT" class="0">
@@ -11794,20 +11792,6 @@ current across precharge relay</text>
 <wire x1="88.9" y1="165.1" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="RN1" gate="A" pin="2"/>
 <pinref part="U5" gate="G$1" pin="!CS"/>
-</segment>
-</net>
-<net name="CURRENT_FILTERED" class="0">
-<segment>
-<pinref part="A1" gate="G$1" pin="A0"/>
-<wire x1="48.26" y1="170.18" x2="45.72" y2="170.18" width="0.1524" layer="91"/>
-<label x="45.72" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="CURRENT_REF_FILTERED" class="0">
-<segment>
-<pinref part="A1" gate="G$1" pin="A1"/>
-<wire x1="48.26" y1="167.64" x2="45.72" y2="167.64" width="0.1524" layer="91"/>
-<label x="45.72" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BSPD_CURRENT" class="0">
@@ -11864,9 +11848,9 @@ current across precharge relay</text>
 <pinref part="R45" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="A1" gate="G$1" pin="A6"/>
-<wire x1="48.26" y1="154.94" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
-<label x="45.72" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="48.26" y1="149.86" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
+<label x="45.72" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="A8"/>
 </segment>
 </net>
 <net name="PRECHARGE_OK" class="0">
@@ -12011,8 +11995,8 @@ current across precharge relay</text>
 <net name="TS+_OUT_FILTERED" class="0">
 <segment>
 <pinref part="A1" gate="G$1" pin="A2"/>
-<wire x1="48.26" y1="165.1" x2="45.72" y2="165.1" width="0.1524" layer="91"/>
-<label x="45.72" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="48.26" y1="165.1" x2="43.18" y2="165.1" width="0.1524" layer="91"/>
+<label x="43.18" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PACK+_FILTERED" class="0">
@@ -12048,9 +12032,9 @@ current across precharge relay</text>
 <pinref part="R51" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="A1" gate="G$1" pin="A8"/>
-<wire x1="48.26" y1="149.86" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
-<label x="45.72" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="48.26" y1="167.64" x2="45.72" y2="167.64" width="0.1524" layer="91"/>
+<label x="45.72" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -12121,6 +12105,20 @@ current across precharge relay</text>
 <wire x1="104.14" y1="111.76" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="A1" gate="G$1" pin="(CRX1)D0"/>
 <wire x1="104.14" y1="139.7" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CURRENT_FILTERED" class="0">
+<segment>
+<wire x1="48.26" y1="152.4" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
+<label x="45.72" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="A7"/>
+</segment>
+</net>
+<net name="CURRENT_REF_FILTERED" class="0">
+<segment>
+<wire x1="48.26" y1="154.94" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
+<label x="45.72" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="A6"/>
 </segment>
 </net>
 </nets>
