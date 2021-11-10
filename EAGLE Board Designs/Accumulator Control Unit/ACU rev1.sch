@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -11813,9 +11813,9 @@ current across precharge relay</text>
 <pinref part="U6" gate="G$1" pin="WDI"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="152.4" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
-<label x="88.9" y="152.4" size="1.27" layer="95" xref="yes"/>
-<pinref part="A1" gate="G$1" pin="D5"/>
+<wire x1="73.66" y1="149.86" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
+<label x="88.9" y="149.86" size="1.27" layer="95" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="D4"/>
 </segment>
 </net>
 <net name="CS_LTC_6820" class="0">
@@ -12080,9 +12080,9 @@ current across precharge relay</text>
 <label x="190.5" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="149.86" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
-<label x="88.9" y="149.86" size="1.27" layer="95" xref="yes"/>
-<pinref part="A1" gate="G$1" pin="D4"/>
+<wire x1="73.66" y1="152.4" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
+<label x="88.9" y="152.4" size="1.27" layer="95" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="D5"/>
 </segment>
 </net>
 <net name="N$13" class="0">
