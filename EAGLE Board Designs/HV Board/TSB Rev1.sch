@@ -6650,6 +6650,7 @@ ISO224B: High-Grade
 <part name="D14" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="U$31" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="6_SPACED"/>
 <part name="U$33" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="7_SPACED"/>
+<part name="P18" library="HyTechSupplies" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7754,6 +7755,9 @@ Undervoltage: 56V</text>
 <attribute name="COLOR" x="115.57" y="115.062" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="115.57" y="120.396" size="1.27" layer="96" align="bottom-center"/>
 </instance>
+<instance part="P18" gate="1" x="185.42" y="121.92" smashed="yes" rot="R90">
+<attribute name="VALUE" x="182.88" y="121.92" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7921,14 +7925,6 @@ Undervoltage: 56V</text>
 </net>
 <net name="PRECHARGE_OK" class="0">
 <segment>
-<pinref part="R44" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="V+"/>
-<wire x1="190.5" y1="121.92" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
-<junction x="190.5" y="121.92"/>
-<label x="187.96" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="IN"/>
 <wire x1="213.36" y1="124.46" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
 <label x="226.06" y="124.46" size="1.27" layer="95" xref="yes"/>
@@ -8033,6 +8029,16 @@ Undervoltage: 56V</text>
 <pinref part="R56" gate="G$1" pin="1"/>
 <pinref part="D14" gate="LED" pin="A"/>
 <wire x1="109.22" y1="116.84" x2="111.76" y2="116.84" width="0.6096" layer="91"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="V+"/>
+<pinref part="R44" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="121.92" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
+<junction x="190.5" y="121.92"/>
+<pinref part="P18" gate="1" pin="+5V"/>
 </segment>
 </net>
 </nets>
