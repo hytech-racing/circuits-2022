@@ -2691,7 +2691,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="137.16" y="44.45" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="534-5015" x="137.16" y="44.45" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="137.16" y="44.45" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="185.42" y="53.34" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="137.16" y="41.91" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="TS+_OUT_TEST" library="HyTechDevices - Copy" package="MICRO_MINIATURE" value="TEST_POINT" x="137.3075375" y="52.9297875" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="137.3075375" y="52.9297875" size="1.778" layer="27" display="off"/>
