@@ -6619,9 +6619,6 @@ ISO224B: High-Grade
 <part name="R54" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="D12" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="WHITE"/>
 <part name="P7" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="TP16" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP17" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="P13" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
 <part name="TP18" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP19" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="R55" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
@@ -6651,6 +6648,8 @@ ISO224B: High-Grade
 <part name="U$31" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="6_SPACED"/>
 <part name="U$33" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="7_SPACED"/>
 <part name="P18" library="HyTechSupplies" deviceset="+5V" device=""/>
+<part name="TP16" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="U$42" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8327,17 +8326,6 @@ Undervoltage: 56V</text>
 <instance part="P7" gate="1" x="88.9" y="139.7" smashed="yes">
 <attribute name="VALUE" x="88.9" y="138.43" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TP16" gate="G$1" x="203.2" y="139.7" smashed="yes">
-<attribute name="NAME" x="200.66" y="141.478" size="1.27" layer="95"/>
-<attribute name="MPN" x="200.66" y="137.922" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP17" gate="G$1" x="203.2" y="132.08" smashed="yes">
-<attribute name="NAME" x="200.66" y="133.858" size="1.27" layer="95"/>
-<attribute name="MPN" x="200.66" y="130.302" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="P13" gate="G$1" x="213.36" y="142.24" smashed="yes">
-<attribute name="VALUE" x="213.36" y="147.32" size="1.27" layer="96" align="bottom-center"/>
-</instance>
 <instance part="TP18" gate="G$1" x="251.46" y="88.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="254" y="87.122" size="1.27" layer="95" rot="R180"/>
 <attribute name="MPN" x="254" y="90.678" size="1.27" layer="95" rot="R180" align="top-left"/>
@@ -8390,6 +8378,13 @@ Undervoltage: 56V</text>
 </instance>
 <instance part="U$33" gate="G$1" x="231.14" y="180.34" smashed="yes">
 <attribute name="NAME" x="231.14" y="181.102" size="1.27" layer="95"/>
+</instance>
+<instance part="TP16" gate="G$1" x="203.2" y="137.16" smashed="yes">
+<attribute name="NAME" x="200.66" y="138.938" size="1.27" layer="95"/>
+<attribute name="MPN" x="200.66" y="135.382" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="U$42" gate="G$1" x="208.28" y="134.62" smashed="yes">
+<attribute name="VALUE" x="208.28" y="132.08" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -8636,11 +8631,6 @@ Undervoltage: 56V</text>
 <pinref part="P11" gate="G$1" pin="TS+UNFUSED"/>
 </segment>
 <segment>
-<pinref part="TP16" gate="G$1" pin="P$1"/>
-<wire x1="205.74" y1="139.7" x2="213.36" y2="139.7" width="0.6096" layer="91"/>
-<pinref part="P13" gate="G$1" pin="TS+UNFUSED"/>
-</segment>
-<segment>
 <pinref part="P14" gate="G$1" pin="TS+UNFUSED"/>
 <wire x1="241.3" y1="177.8" x2="246.38" y2="177.8" width="0.6096" layer="91"/>
 <pinref part="U$33" gate="G$1" pin="1"/>
@@ -8696,11 +8686,6 @@ Undervoltage: 56V</text>
 <pinref part="TP12" gate="G$1" pin="P$1"/>
 <wire x1="205.74" y1="180.34" x2="208.28" y2="180.34" width="0.6096" layer="91"/>
 <label x="208.28" y="180.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="TP17" gate="G$1" pin="P$1"/>
-<wire x1="205.74" y1="132.08" x2="208.28" y2="132.08" width="0.6096" layer="91"/>
-<label x="208.28" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$57" class="0">
@@ -8958,6 +8943,11 @@ Undervoltage: 56V</text>
 <wire x1="241.3" y1="149.86" x2="243.84" y2="149.86" width="0.6096" layer="91"/>
 <wire x1="243.84" y1="149.86" x2="243.84" y2="152.4" width="0.6096" layer="91"/>
 <junction x="243.84" y="152.4"/>
+</segment>
+<segment>
+<pinref part="TP16" gate="G$1" pin="P$1"/>
+<wire x1="205.74" y1="137.16" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U$42" gate="G$1" pin="TS-FUSED"/>
 </segment>
 </net>
 </nets>
