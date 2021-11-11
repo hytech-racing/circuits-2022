@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -5736,13 +5736,6 @@ Notes: See page 47</description>
 <rectangle x1="-1.025" y1="0.5" x2="-0.625" y2="0.75" layer="21"/>
 <rectangle x1="-1.025" y1="-0.75" x2="-0.625" y2="-0.5" layer="21"/>
 </package>
-<package name="TEST_POINT">
-<circle x="0" y="0" radius="1.5875" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.6002" rot="R90"/>
-</package>
-<package name="MICRO_MINIATURE">
-<smd name="P$1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
-</package>
 <package name="DIP-4">
 <smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
 <smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
@@ -6105,10 +6098,6 @@ Note: Also works for CAT/CAY16 Series.
 <wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
-</symbol>
-<symbol name="TEST_POINT">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
 </symbol>
 <symbol name="RELAY_SOLIDSTATE_NO">
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
@@ -7545,30 +7534,6 @@ Note: OPA991 is also a comparator</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEST_POINT">
-<description>Keystone Electronics Test Point 5005</description>
-<gates>
-<gate name="G$1" symbol="TEST_POINT" x="-5.08" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEST_POINT">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MICRO_MINIATURE" package="MICRO_MINIATURE">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RELAY_SOLIDSTATE_NO">
 <description>AQY214EH Normally Open Solid State Relay&lt;br&gt;
 &lt;a href=https://www.datasheetq.com/datasheet-download/287654/1/Panasonic/AQY214EH&gt; Datasheet &lt;/a&gt;</description>
@@ -7962,10 +7927,10 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="D1" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
 <part name="P15" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P16" library="HyTechSupplies" deviceset="+12V" device=""/>
-<part name="TP1" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
-<part name="TP2" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
-<part name="TP3" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
-<part name="TP4" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="12V_TEST" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="5V_TEST" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="3.3V_TEST" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="GND_TEST" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
 <part name="P17" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P18" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P19" library="HyTechSupplies" deviceset="+3V3" device=""/>
@@ -7974,8 +7939,8 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P22" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
-<part name="D2" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="BLUE"/>
-<part name="D3" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="5V" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="BLUE"/>
+<part name="12V" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="P23" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P24" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P25" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -8062,7 +8027,6 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P30" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R31" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="D6" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
-<part name="TP25" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="C3" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF"/>
 <part name="P32" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P34" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -8074,14 +8038,10 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="C6" library="HyTechDevices - Copy" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF"/>
 <part name="C7" library="HyTechDevices - Copy" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.1UF"/>
 <part name="P35" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="$$U$12" library="HyTechDevices" deviceset="TEST_POINT" device="MICRO_MINIATURE" value="TEST_POINTMICRO_MINIATURE"/>
-<part name="U$13" library="HyTechDevices" deviceset="TEST_POINT" device="MICRO_MINIATURE" value="TEST_POINTMICRO_MINIATURE"/>
 <part name="P+24" library="HyTechSupplies" deviceset="+12V" device=""/>
-<part name="GND68" library="supply1" deviceset="GND" device=""/>
 <part name="GND33" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+25" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="U$9" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO" device=""/>
 <part name="U$10" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO" device=""/>
@@ -8095,7 +8055,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P39" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R10" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R11" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="1.4K"/>
-<part name="TP5" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="BSPD_CURRENT" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
 <part name="A1" library="HyTechDevices" deviceset="TEENSY_4.0" device=""/>
 <part name="P50" library="HyTechSupplies" deviceset="+3V3" device=""/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
@@ -8151,7 +8111,6 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P31" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R60" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="FRAME5" library="HyTechFrames" deviceset="FRAME" device=""/>
-<part name="D10" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="GREEN"/>
 <part name="D11" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="YELLOW"/>
 <part name="U20" library="HyTechDevices" deviceset="OPAMP_1_CHANNEL_*" device="" technology="OPA991"/>
 <part name="P76" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -8263,8 +8222,24 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P3" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P45" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P44" library="HyTechSupplies" deviceset="+3V3" device=""/>
-<part name="D14" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="GREEN"/>
+<part name="3.3V" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="GREEN"/>
 <part name="R71" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="470"/>
+<part name="C14" library="HyTechDevices - Copy" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
+<part name="P46" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="C15" library="HyTechDevices - Copy" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
+<part name="IMD_OK_TEST" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="AMS_OK_TEST" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="PACK+_OUT_TEST" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="TS+_OUT_TEST" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="GND68" library="supply1" deviceset="GND" device=""/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="AMS_OK" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="GREEN"/>
+<part name="P47" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="WATCHDOG_OK" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="CURRENT_SENSE" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="CURRENT_REF" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
+<part name="IMD_OK" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
+<part name="R72" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
 </parts>
 <sheets>
 <sheet>
@@ -8348,19 +8323,19 @@ Accumulator GND, both AIR+ and -</text>
 <instance part="P16" gate="1" x="132.08" y="198.12" smashed="yes">
 <attribute name="VALUE" x="132.08" y="201.93" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="TP1" gate="G$1" x="195.58" y="198.12" smashed="yes">
+<instance part="12V_TEST" gate="G$1" x="195.58" y="198.12" smashed="yes">
 <attribute name="NAME" x="193.04" y="199.898" size="1.27" layer="95"/>
 <attribute name="MPN" x="193.04" y="196.342" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP2" gate="G$1" x="195.58" y="190.5" smashed="yes">
+<instance part="5V_TEST" gate="G$1" x="195.58" y="190.5" smashed="yes">
 <attribute name="NAME" x="193.04" y="192.278" size="1.27" layer="95"/>
 <attribute name="MPN" x="193.04" y="188.722" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP3" gate="G$1" x="195.58" y="182.88" smashed="yes">
+<instance part="3.3V_TEST" gate="G$1" x="195.58" y="182.88" smashed="yes">
 <attribute name="NAME" x="193.04" y="184.658" size="1.27" layer="95"/>
 <attribute name="MPN" x="193.04" y="181.102" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP4" gate="G$1" x="195.58" y="175.26" smashed="yes">
+<instance part="GND_TEST" gate="G$1" x="195.58" y="175.26" smashed="yes">
 <attribute name="NAME" x="193.04" y="177.038" size="1.27" layer="95"/>
 <attribute name="MPN" x="193.04" y="173.482" size="1.27" layer="95" align="top-left"/>
 </instance>
@@ -8390,11 +8365,11 @@ Accumulator GND, both AIR+ and -</text>
 <attribute name="NAME" x="217.17" y="191.77" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="219.71" y="191.77" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="D2" gate="LED" x="228.6" y="177.8" smashed="yes" rot="R270">
+<instance part="5V" gate="LED" x="228.6" y="177.8" smashed="yes" rot="R270">
 <attribute name="COLOR" x="226.822" y="179.07" size="1.27" layer="95" rot="R270" align="top-center"/>
 <attribute name="NAME" x="232.156" y="179.07" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="D3" gate="LED" x="218.44" y="177.8" smashed="yes" rot="R270">
+<instance part="12V" gate="LED" x="218.44" y="177.8" smashed="yes" rot="R270">
 <attribute name="COLOR" x="216.662" y="179.07" size="1.27" layer="95" rot="R270" align="top-center"/>
 <attribute name="NAME" x="221.996" y="179.07" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
@@ -8563,13 +8538,21 @@ Accumulator GND, both AIR+ and -</text>
 <instance part="P44" gate="G$1" x="238.76" y="203.2" smashed="yes">
 <attribute name="VALUE" x="238.76" y="204.47" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="D14" gate="LED" x="238.76" y="177.8" smashed="yes" rot="R270">
+<instance part="3.3V" gate="LED" x="238.76" y="177.8" smashed="yes" rot="R270">
 <attribute name="COLOR" x="236.982" y="179.07" size="1.27" layer="95" rot="R270" align="top-center"/>
 <attribute name="NAME" x="242.316" y="179.07" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
 <instance part="R71" gate="G$1" x="238.76" y="193.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="237.49" y="191.77" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="240.03" y="191.77" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="CURRENT_SENSE" gate="G$1" x="20.32" y="88.9" smashed="yes">
+<attribute name="NAME" x="17.78" y="90.678" size="1.27" layer="95"/>
+<attribute name="MPN" x="17.78" y="87.122" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="CURRENT_REF" gate="G$1" x="20.32" y="81.28" smashed="yes">
+<attribute name="NAME" x="17.78" y="83.058" size="1.27" layer="95"/>
+<attribute name="MPN" x="17.78" y="79.502" size="1.27" layer="95" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -8671,7 +8654,7 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="A2" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
-<pinref part="TP2" gate="G$1" pin="P$1"/>
+<pinref part="5V_TEST" gate="G$1" pin="P$1"/>
 <wire x1="198.12" y1="190.5" x2="205.74" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="190.5" x2="205.74" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="P18" gate="1" pin="+5V"/>
@@ -8720,18 +8703,18 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="P15" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="TP4" gate="G$1" pin="P$1"/>
+<pinref part="GND_TEST" gate="G$1" pin="P$1"/>
 <wire x1="198.12" y1="175.26" x2="200.66" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="175.26" x2="200.66" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="P20" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="D3" gate="LED" pin="C"/>
+<pinref part="12V" gate="LED" pin="C"/>
 <wire x1="218.44" y1="175.26" x2="218.44" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="P23" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="D2" gate="LED" pin="C"/>
+<pinref part="5V" gate="LED" pin="C"/>
 <wire x1="228.6" y1="175.26" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="P24" gate="1" pin="GND"/>
 </segment>
@@ -8825,7 +8808,7 @@ Accumulator GND, both AIR+ and -</text>
 <segment>
 <wire x1="238.76" y1="175.26" x2="238.76" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="P45" gate="1" pin="GND"/>
-<pinref part="D14" gate="LED" pin="C"/>
+<pinref part="3.3V" gate="LED" pin="C"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -8858,7 +8841,7 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TP1" gate="G$1" pin="P$1"/>
+<pinref part="12V_TEST" gate="G$1" pin="P$1"/>
 <wire x1="198.12" y1="198.12" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="198.12" x2="200.66" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="P17" gate="1" pin="+12V"/>
@@ -8995,14 +8978,14 @@ Accumulator GND, both AIR+ and -</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="218.44" y1="187.96" x2="218.44" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="D3" gate="LED" pin="A"/>
+<pinref part="12V" gate="LED" pin="A"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="187.96" x2="228.6" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="D2" gate="LED" pin="A"/>
+<pinref part="5V" gate="LED" pin="A"/>
 </segment>
 </net>
 <net name="TIMER_EN" class="0">
@@ -9065,7 +9048,7 @@ Accumulator GND, both AIR+ and -</text>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="TP3" gate="G$1" pin="P$1"/>
+<pinref part="3.3V_TEST" gate="G$1" pin="P$1"/>
 <pinref part="P19" gate="G$1" pin="+3V3"/>
 <wire x1="198.12" y1="182.88" x2="210.82" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="182.88" x2="210.82" y2="190.5" width="0.1524" layer="91"/>
@@ -9148,6 +9131,11 @@ Accumulator GND, both AIR+ and -</text>
 <label x="22.86" y="109.22" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="9"/>
 </segment>
+<segment>
+<wire x1="22.86" y1="81.28" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
+<label x="25.4" y="81.28" size="1.27" layer="95" xref="yes"/>
+<pinref part="CURRENT_REF" gate="G$1" pin="P$1"/>
+</segment>
 </net>
 <net name="CURRENT" class="0">
 <segment>
@@ -9155,12 +9143,22 @@ Accumulator GND, both AIR+ and -</text>
 <label x="22.86" y="111.76" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="8"/>
 </segment>
+<segment>
+<wire x1="22.86" y1="88.9" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
+<label x="25.4" y="88.9" size="1.27" layer="95" xref="yes"/>
+<pinref part="CURRENT_SENSE" gate="G$1" pin="P$1"/>
+</segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <wire x1="238.76" y1="187.96" x2="238.76" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="D14" gate="LED" pin="A"/>
+<pinref part="3.3V" gate="LED" pin="A"/>
 <pinref part="R71" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<wire x1="22.86" y1="88.9" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -9186,50 +9184,37 @@ Accumulator GND, both AIR+ and -</text>
 <attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
 </instance>
-<instance part="$$U$12" gate="G$1" x="167.64" y="83.82" smashed="yes" rot="R180"/>
-<instance part="U$13" gate="G$1" x="167.64" y="152.4" smashed="yes" rot="R180"/>
 <instance part="P+24" gate="1" x="154.94" y="162.56" smashed="yes">
 <attribute name="VALUE" x="152.4" y="165.1" size="1.778" layer="96"/>
 </instance>
-<instance part="GND68" gate="1" x="81.28" y="99.06" smashed="yes">
-<attribute name="VALUE" x="78.74" y="96.52" size="1.778" layer="96"/>
+<instance part="GND33" gate="1" x="124.46" y="78.74" smashed="yes">
+<attribute name="VALUE" x="121.92" y="76.2" size="1.778" layer="96"/>
 </instance>
-<instance part="GND33" gate="1" x="124.46" y="71.12" smashed="yes">
-<attribute name="VALUE" x="121.92" y="68.58" size="1.778" layer="96"/>
+<instance part="P+25" gate="1" x="157.48" y="101.6" smashed="yes">
+<attribute name="VALUE" x="154.94" y="104.14" size="1.778" layer="96"/>
 </instance>
-<instance part="P+25" gate="1" x="157.48" y="93.98" smashed="yes">
-<attribute name="VALUE" x="154.94" y="96.52" size="1.778" layer="96"/>
+<instance part="GND36" gate="1" x="109.22" y="58.42" smashed="yes">
+<attribute name="VALUE" x="106.68" y="55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="GND36" gate="1" x="109.22" y="50.8" smashed="yes">
-<attribute name="VALUE" x="106.68" y="48.26" size="1.778" layer="96"/>
-</instance>
-<instance part="R7" gate="G$1" x="81.28" y="111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="80.01" y="110.49" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="82.55" y="110.49" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R8" gate="G$1" x="109.22" y="63.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="107.95" y="62.23" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="110.49" y="62.23" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="R8" gate="G$1" x="109.22" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="107.95" y="69.85" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="110.49" y="69.85" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="U$9" gate="G$1" x="132.08" y="157.48" smashed="yes">
 <attribute name="NAME" x="132.08" y="158.242" size="1.27" layer="95"/>
 <attribute name="MPN" x="132.08" y="144.018" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="U$10" gate="G$1" x="132.08" y="88.9" smashed="yes">
-<attribute name="NAME" x="132.08" y="89.662" size="1.27" layer="95"/>
-<attribute name="MPN" x="132.08" y="75.438" size="1.27" layer="96" align="top-left"/>
+<instance part="U$10" gate="G$1" x="132.08" y="96.52" smashed="yes">
+<attribute name="NAME" x="132.08" y="97.282" size="1.27" layer="95"/>
+<attribute name="MPN" x="132.08" y="83.058" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="R34" gate="G$1" x="119.38" y="86.36" smashed="yes">
-<attribute name="NAME" x="118.11" y="87.63" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="118.11" y="85.09" size="1.27" layer="96" align="top-center"/>
+<instance part="R34" gate="G$1" x="119.38" y="93.98" smashed="yes">
+<attribute name="NAME" x="118.11" y="95.25" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="118.11" y="92.71" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="D10" gate="LED" x="81.28" y="124.46" smashed="yes" rot="R270">
-<attribute name="COLOR" x="79.502" y="125.73" size="1.27" layer="95" rot="R270" align="top-center"/>
-<attribute name="NAME" x="84.836" y="125.73" size="1.27" layer="96" rot="R270" align="bottom-center"/>
-</instance>
-<instance part="D11" gate="LED" x="109.22" y="76.2" smashed="yes" rot="R270">
-<attribute name="COLOR" x="107.442" y="77.47" size="1.27" layer="95" rot="R270" align="top-center"/>
-<attribute name="NAME" x="112.776" y="77.47" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+<instance part="D11" gate="LED" x="109.22" y="83.82" smashed="yes" rot="R270">
+<attribute name="COLOR" x="107.442" y="85.09" size="1.27" layer="95" rot="R270" align="top-center"/>
+<attribute name="NAME" x="112.776" y="85.09" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
 <instance part="R61" gate="G$1" x="160.02" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="158.75" y="140.97" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -9238,12 +9223,12 @@ Accumulator GND, both AIR+ and -</text>
 <instance part="GND5" gate="1" x="160.02" y="132.08" smashed="yes">
 <attribute name="VALUE" x="157.48" y="129.54" size="1.778" layer="96"/>
 </instance>
-<instance part="R62" gate="G$1" x="160.02" y="73.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="158.75" y="72.39" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="161.29" y="72.39" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="R62" gate="G$1" x="160.02" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="158.75" y="80.01" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="161.29" y="80.01" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="GND6" gate="1" x="160.02" y="63.5" smashed="yes">
-<attribute name="VALUE" x="157.48" y="60.96" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="160.02" y="71.12" smashed="yes">
+<attribute name="VALUE" x="157.48" y="68.58" size="1.778" layer="96"/>
 </instance>
 <instance part="Q2" gate="G$1" x="119.38" y="137.16" smashed="yes">
 <attribute name="NAME" x="119.38" y="142.24" size="1.27" layer="95" align="bottom-center"/>
@@ -9271,25 +9256,50 @@ Accumulator GND, both AIR+ and -</text>
 <instance part="P+2" gate="1" x="121.92" y="170.18" smashed="yes">
 <attribute name="VALUE" x="119.38" y="172.72" size="1.778" layer="96"/>
 </instance>
+<instance part="IMD_OK_TEST" gate="G$1" x="167.64" y="91.44" smashed="yes">
+<attribute name="NAME" x="165.1" y="93.218" size="1.27" layer="95"/>
+<attribute name="MPN" x="165.1" y="89.662" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="AMS_OK_TEST" gate="G$1" x="167.64" y="152.4" smashed="yes">
+<attribute name="NAME" x="165.1" y="154.178" size="1.27" layer="95"/>
+<attribute name="MPN" x="165.1" y="150.622" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="GND68" gate="1" x="170.18" y="111.76" smashed="yes">
+<attribute name="VALUE" x="167.64" y="109.22" size="1.778" layer="96"/>
+</instance>
+<instance part="R7" gate="G$1" x="170.18" y="124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="168.91" y="123.19" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="171.45" y="123.19" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="AMS_OK" gate="LED" x="170.18" y="137.16" smashed="yes" rot="R270">
+<attribute name="COLOR" x="168.402" y="138.43" size="1.27" layer="95" rot="R270" align="top-center"/>
+<attribute name="NAME" x="173.736" y="138.43" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="P47" gate="1" x="170.18" y="55.88" smashed="yes">
+<attribute name="VALUE" x="170.18" y="54.61" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="IMD_OK" gate="LED" x="170.18" y="76.2" smashed="yes" rot="R270">
+<attribute name="COLOR" x="168.402" y="77.47" size="1.27" layer="95" rot="R270" align="top-center"/>
+<attribute name="NAME" x="173.736" y="77.47" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="R72" gate="G$1" x="170.18" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="168.91" y="64.77" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="171.45" y="64.77" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="GND68" gate="1" pin="GND"/>
-<wire x1="81.28" y1="101.6" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="129.54" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="78.74" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="86.36" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND33" gate="1" pin="GND"/>
 <pinref part="U$10" gate="G$1" pin="CONTROL-"/>
 </segment>
 <segment>
 <pinref part="GND36" gate="1" pin="GND"/>
-<wire x1="109.22" y1="53.34" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="60.96" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -9299,7 +9309,7 @@ Accumulator GND, both AIR+ and -</text>
 </segment>
 <segment>
 <pinref part="R62" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="68.58" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="76.2" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9316,6 +9326,16 @@ Accumulator GND, both AIR+ and -</text>
 <junction x="101.6" y="121.92"/>
 <junction x="124.46" y="121.92"/>
 </segment>
+<segment>
+<pinref part="GND68" gate="1" pin="GND"/>
+<wire x1="170.18" y1="114.3" x2="170.18" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="170.18" y1="60.96" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="P47" gate="1" pin="GND"/>
+<pinref part="R72" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -9325,8 +9345,8 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="U$9" gate="G$1" pin="CONTACT2"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="86.36" x2="157.48" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="86.36" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="93.98" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="93.98" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="P+25" gate="1" pin="+12V"/>
 <pinref part="U$10" gate="G$1" pin="CONTACT2"/>
 </segment>
@@ -9338,30 +9358,43 @@ Accumulator GND, both AIR+ and -</text>
 </net>
 <net name="AMS_OK" class="0">
 <segment>
-<pinref part="U$13" gate="G$1" pin="P$1"/>
 <wire x1="170.18" y1="152.4" x2="175.26" y2="152.4" width="0.1524" layer="91"/>
 <label x="175.26" y="152.4" size="1.27" layer="95" xref="yes"/>
+<pinref part="AMS_OK_TEST" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <wire x1="152.4" y1="147.32" x2="157.48" y2="147.32" width="0.1524" layer="91"/>
 <label x="175.26" y="147.32" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$9" gate="G$1" pin="CONTACT1"/>
-<wire x1="160.02" y1="147.32" x2="175.26" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="147.32" x2="170.18" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="147.32" x2="175.26" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="147.32" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="147.32" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R61" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="142.24" x2="170.18" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="144.78" x2="170.18" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="AMS_OK" gate="LED" pin="A"/>
+<junction x="170.18" y="147.32"/>
 </segment>
 </net>
 <net name="IMD_OK" class="0">
 <segment>
-<pinref part="$$U$12" gate="G$1" pin="P$1"/>
-<wire x1="170.18" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
-<label x="175.26" y="83.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="170.18" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
+<label x="175.26" y="91.44" size="1.27" layer="95" xref="yes"/>
+<pinref part="IMD_OK_TEST" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
-<label x="175.26" y="78.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="152.4" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<label x="175.26" y="86.36" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$10" gate="G$1" pin="CONTACT1"/>
+<pinref part="IMD_OK" gate="LED" pin="A"/>
+<wire x1="160.02" y1="86.36" x2="170.18" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="86.36" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="81.28" x2="170.18" y2="86.36" width="0.1524" layer="91"/>
+<junction x="170.18" y="86.36"/>
+<wire x1="160.02" y1="86.36" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R62" gate="G$1" pin="2"/>
+<junction x="160.02" y="86.36"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -9372,16 +9405,9 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="R56" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<wire x1="81.28" y1="114.3" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="D10" gate="LED" pin="C"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
-<wire x1="129.54" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="93.98" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="CONTROL+"/>
 <pinref part="R34" gate="G$1" pin="2"/>
 </segment>
@@ -9389,25 +9415,19 @@ Accumulator GND, both AIR+ and -</text>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="66.04" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="73.66" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="D11" gate="LED" pin="C"/>
 </segment>
 </net>
 <net name="OKHS" class="0">
 <segment>
-<wire x1="114.3" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="81.28" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
-<junction x="109.22" y="86.36"/>
-<label x="104.14" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="114.3" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="88.9" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
+<junction x="109.22" y="93.98"/>
+<label x="104.14" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R34" gate="G$1" pin="1"/>
 <pinref part="D11" gate="LED" pin="A"/>
-</segment>
-</net>
-<net name="AMS_OK1" class="0">
-<segment>
-<wire x1="160.02" y1="78.74" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R62" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -9439,10 +9459,20 @@ Accumulator GND, both AIR+ and -</text>
 <junction x="93.98" y="134.62"/>
 <wire x1="76.2" y1="134.62" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
 <label x="76.2" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="81.28" y1="129.54" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="132.08" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
-<junction x="81.28" y="134.62"/>
-<pinref part="D10" gate="LED" pin="A"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<wire x1="170.18" y1="127" x2="170.18" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="AMS_OK" gate="LED" pin="C"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<wire x1="170.18" y1="73.66" x2="170.18" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R72" gate="G$1" pin="2"/>
+<pinref part="IMD_OK" gate="LED" pin="C"/>
 </segment>
 </net>
 </nets>
@@ -9789,9 +9819,6 @@ current across precharge relay</text>
 <attribute name="COLOR" x="270.002" y="115.57" size="1.27" layer="95" rot="R270" align="top-center"/>
 <attribute name="NAME" x="275.336" y="115.57" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="TP25" gate="G$1" x="40.64" y="33.02" smashed="yes">
-<attribute name="NAME" x="38.1" y="34.798" size="1.27" layer="95"/>
-</instance>
 <instance part="FRAME5" gate="O" x="0" y="0" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="186.69" y="2.54" size="2.54" layer="95"/>
 <attribute name="DRAWING_NAME" x="204.47" y="22.86" size="2.54" layer="95"/>
@@ -9838,6 +9865,14 @@ current across precharge relay</text>
 </instance>
 <instance part="P60" gate="1" x="231.14" y="137.16" smashed="yes">
 <attribute name="VALUE" x="231.14" y="140.97" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="PACK+_OUT_TEST" gate="G$1" x="35.56" y="33.02" smashed="yes">
+<attribute name="NAME" x="33.02" y="34.798" size="1.27" layer="95"/>
+<attribute name="MPN" x="33.02" y="31.242" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="TS+_OUT_TEST" gate="G$1" x="203.2" y="167.64" smashed="yes">
+<attribute name="NAME" x="200.66" y="169.418" size="1.27" layer="95"/>
+<attribute name="MPN" x="200.66" y="165.862" size="1.27" layer="95" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -9888,6 +9923,11 @@ current across precharge relay</text>
 <pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
 <label x="45.72" y="160.02" size="1.27" layer="95"/>
+</segment>
+<segment>
+<wire x1="205.74" y1="167.64" x2="213.36" y2="167.64" width="0.1524" layer="91"/>
+<label x="213.36" y="167.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="TS+_OUT_TEST" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -10201,9 +10241,9 @@ current across precharge relay</text>
 <label x="73.66" y="81.28" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="TP25" gate="G$1" pin="P$1"/>
 <wire x1="38.1" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
 <label x="45.72" y="33.02" size="1.27" layer="95" xref="yes"/>
+<pinref part="PACK+_OUT_TEST" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="2.5_DIV" class="0">
@@ -10508,7 +10548,7 @@ current across precharge relay</text>
 <attribute name="NAME" x="67.31" y="34.29" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="67.31" y="31.75" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TP5" gate="G$1" x="83.82" y="33.02" smashed="yes">
+<instance part="BSPD_CURRENT" gate="G$1" x="83.82" y="33.02" smashed="yes">
 <attribute name="NAME" x="81.28" y="34.798" size="1.27" layer="95"/>
 <attribute name="MPN" x="81.28" y="31.242" size="1.27" layer="95" align="top-left"/>
 </instance>
@@ -10950,7 +10990,7 @@ current across precharge relay</text>
 <label x="88.9" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TP5" gate="G$1" pin="P$1"/>
+<pinref part="BSPD_CURRENT" gate="G$1" pin="P$1"/>
 <wire x1="86.36" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 <label x="88.9" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -11424,8 +11464,8 @@ current across precharge relay</text>
 <attribute name="NAME" x="52.07" y="52.07" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="52.07" y="49.53" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P71" gate="1" x="160.02" y="182.88" smashed="yes">
-<attribute name="VALUE" x="160.02" y="185.42" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P71" gate="1" x="160.02" y="192.786" smashed="yes">
+<attribute name="VALUE" x="160.02" y="195.326" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="P72" gate="G$1" x="129.54" y="190.5" smashed="yes">
 <attribute name="VALUE" x="129.54" y="191.77" size="1.27" layer="96" align="bottom-center"/>
@@ -11559,6 +11599,23 @@ current across precharge relay</text>
 <attribute name="NAME" x="218.44" y="97.282" size="1.27" layer="95"/>
 <attribute name="MPN" x="218.44" y="77.978" size="1.27" layer="96" align="top-left"/>
 </instance>
+<instance part="C14" gate="G$1" x="154.94" y="185.42" smashed="yes">
+<attribute name="NAME" x="153.67" y="187.96" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VOLTAGE" x="153.67" y="182.88" size="1.27" layer="96" align="top-center"/>
+<attribute name="CAPACITANCE" x="153.67" y="181.102" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P46" gate="1" x="147.32" y="180.34" smashed="yes">
+<attribute name="VALUE" x="147.32" y="179.07" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="C15" gate="G$1" x="137.16" y="185.42" smashed="yes">
+<attribute name="NAME" x="135.89" y="187.96" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VOLTAGE" x="135.89" y="182.88" size="1.27" layer="96" align="top-center"/>
+<attribute name="CAPACITANCE" x="135.89" y="181.102" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="WATCHDOG_OK" gate="G$1" x="78.74" y="147.32" smashed="yes">
+<attribute name="NAME" x="76.2" y="149.098" size="1.27" layer="95"/>
+<attribute name="MPN" x="76.2" y="145.542" size="1.27" layer="95" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11669,6 +11726,15 @@ current across precharge relay</text>
 <wire x1="78.74" y1="35.56" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="P87" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="185.42" x2="147.32" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="185.42" x2="147.32" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="P46" gate="1" pin="GND"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="185.42" x2="147.32" y2="185.42" width="0.1524" layer="91"/>
+<junction x="147.32" y="185.42"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -11693,9 +11759,13 @@ current across precharge relay</text>
 </segment>
 <segment>
 <wire x1="157.48" y1="175.26" x2="160.02" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="175.26" x2="160.02" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="175.26" x2="160.02" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="P71" gate="1" pin="+5V"/>
 <pinref part="U5" gate="G$1" pin="VDD"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="185.42" x2="160.02" y2="190.246" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="185.42" x2="160.02" y2="185.42" width="0.1524" layer="91"/>
+<junction x="160.02" y="185.42"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -11736,6 +11806,8 @@ current across precharge relay</text>
 <wire x1="121.92" y1="185.42" x2="129.54" y2="185.42" width="0.1524" layer="91"/>
 <junction x="129.54" y="185.42"/>
 <pinref part="U5" gate="G$1" pin="VLOGIC"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="185.42" x2="132.08" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R70" gate="G$1" pin="2"/>
@@ -11813,9 +11885,14 @@ current across precharge relay</text>
 <pinref part="U6" gate="G$1" pin="WDI"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="149.86" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="149.86" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
 <label x="88.9" y="149.86" size="1.27" layer="95" xref="yes"/>
 <pinref part="A1" gate="G$1" pin="D4"/>
+<pinref part="WATCHDOG_OK" gate="G$1" pin="P$1"/>
+<wire x1="83.82" y1="149.86" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="149.86" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
+<junction x="83.82" y="149.86"/>
 </segment>
 </net>
 <net name="CS_LTC_6820" class="0">
