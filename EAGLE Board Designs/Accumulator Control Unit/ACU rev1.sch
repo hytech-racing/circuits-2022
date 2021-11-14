@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -3517,6 +3517,31 @@ Notes: See page 47</description>
 <rectangle x1="-5.588" y1="-3.937" x2="5.588" y2="5.715" layer="39"/>
 <rectangle x1="-3.81" y1="-1.27" x2="3.81" y2="1.27" layer="40"/>
 </package>
+<package name="1206-RES-ARRAY">
+<description>YC/TC164
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Landing Pattern&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-YC_TC_group_51_RoHS_L_9.pdf"&gt;Size&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+Note: Also works for CAT/CAY16 Series.
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/54/CATCAY-777361.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.2" y="-0.9" dx="0.9" dy="0.45" layer="1" rot="R90"/>
+<smd name="2" x="-0.4" y="-0.9" dx="0.9" dy="0.45" layer="1" rot="R90"/>
+<smd name="3" x="0.4" y="-0.9" dx="0.9" dy="0.45" layer="1" rot="R90"/>
+<smd name="4" x="1.2" y="-0.9" dx="0.9" dy="0.45" layer="1" rot="R90"/>
+<smd name="5" x="1.2" y="0.9" dx="0.9" dy="0.45" layer="1" rot="R270"/>
+<smd name="6" x="0.4" y="0.9" dx="0.9" dy="0.45" layer="1" rot="R270"/>
+<smd name="7" x="-0.4" y="0.9" dx="0.9" dy="0.45" layer="1" rot="R270"/>
+<smd name="8" x="-1.2" y="0.9" dx="0.9" dy="0.45" layer="1" rot="R270"/>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
+<text x="-1.905" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONNECTOR_08">
@@ -5424,6 +5449,95 @@ Leakage Inductance: 0.50 uH max
 </device>
 </devices>
 </deviceset>
+<deviceset name="RESISTOR_NETWORK_4_*" prefix="RN">
+<description>Resistor Network, 4 Elements
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/yageo_yago_s_a0009164376_1-1991537.pdf"&gt;YC/TC Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/54/CATCAY-777361.pdf"&gt;CAT/CAY 16 Series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="A" symbol="RESISTOR" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="RESISTOR" x="0" y="-10.16" swaplevel="1"/>
+<gate name="C" symbol="RESISTOR" x="0" y="-20.32" swaplevel="1"/>
+<gate name="D" symbol="RESISTOR" x="0" y="-30.48" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="1206-RES-ARRAY">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="8"/>
+<connect gate="B" pin="1" pad="2"/>
+<connect gate="B" pin="2" pad="7"/>
+<connect gate="C" pin="1" pad="3"/>
+<connect gate="C" pin="2" pad="6"/>
+<connect gate="D" pin="1" pad="4"/>
+<connect gate="D" pin="2" pad="5"/>
+</connects>
+<technologies>
+<technology name="10">
+<attribute name="DKPN" value="CAT16-100J4LFCT-ND"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-CAT16-100J4LF"/>
+<attribute name="MPN" value="CAT16-100J4LF"/>
+<attribute name="POWER" value="1/16W"/>
+<attribute name="RESISTANCE" value="10"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="100">
+<attribute name="DKPN" value="CAT16-1000F4LFCT-ND"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-CAT16-1000F4LF"/>
+<attribute name="MPN" value="CAT16-1000F4LF"/>
+<attribute name="POWER" value="1/16W"/>
+<attribute name="RESISTANCE" value="100"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="10K">
+<attribute name="DKPN" value="YAG3410CT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-TC164-FR-0710KL"/>
+<attribute name="MPN" value="TC164-FR-0710KL"/>
+<attribute name="POWER" value="1/16W"/>
+<attribute name="RESISTANCE" value="10K"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="160">
+<attribute name="DKPN" value="YC164J-160CT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-YC164-JR-07160RL"/>
+<attribute name="MPN" value="YC164-JR-07160RL"/>
+<attribute name="POWER" value="1/16W"/>
+<attribute name="RESISTANCE" value="160"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="1K">
+<attribute name="DKPN" value="13-YC164-FR-071KLCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-YC164-FR-071KL"/>
+<attribute name="MPN" value="YC164-FR-071KL"/>
+<attribute name="POWER" value="1/16W"/>
+<attribute name="RESISTANCE" value="1k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="27K">
+<attribute name="DKPN" value="CAT16-2702F4LFCT-ND"/>
+<attribute name="MANUFACTURER" value="Bourns Inc."/>
+<attribute name="MOPN" value="652-CAT16-2702F4LF"/>
+<attribute name="MPN" value="CAT16-2702F4LF"/>
+<attribute name="POWER" value="1/16W"/>
+<attribute name="RESISTANCE" value="27K"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSupplies">
@@ -5859,31 +5973,6 @@ Toshiba
 <wire x1="-3.1242" y1="-2.6289" x2="-3.1242" y2="2.6289" width="0.127" layer="22"/>
 <rectangle x1="-3.556" y1="-2.794" x2="3.556" y2="2.794" layer="39"/>
 <text x="0" y="2.794" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
-<package name="1206-RES-ARRAY">
-<description>YC/TC164
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Landing Pattern&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-YC_TC_group_51_RoHS_L_9.pdf"&gt;Size&lt;/a&gt;
-&lt;br&gt;&lt;br&gt;
-Note: Also works for CAT/CAY16 Series.
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/54/CATCAY-777361.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-1.2" y="-0.9" dx="0.9" dy="0.45" layer="1" rot="R90"/>
-<smd name="2" x="-0.4" y="-0.9" dx="0.9" dy="0.45" layer="1" rot="R90"/>
-<smd name="3" x="0.4" y="-0.9" dx="0.9" dy="0.45" layer="1" rot="R90"/>
-<smd name="4" x="1.2" y="-0.9" dx="0.9" dy="0.45" layer="1" rot="R90"/>
-<smd name="5" x="1.2" y="0.9" dx="0.9" dy="0.45" layer="1" rot="R270"/>
-<smd name="6" x="0.4" y="0.9" dx="0.9" dy="0.45" layer="1" rot="R270"/>
-<smd name="7" x="-0.4" y="0.9" dx="0.9" dy="0.45" layer="1" rot="R270"/>
-<smd name="8" x="-1.2" y="0.9" dx="0.9" dy="0.45" layer="1" rot="R270"/>
-<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.127" layer="21"/>
-<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
-<text x="-1.905" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
 </package>
 <package name="0805-RES">
 <description>0805 Resistor Footprint
@@ -7595,95 +7684,6 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR_NETWORK_4_*" prefix="RN">
-<description>Resistor Network, 4 Elements
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/yageo_yago_s_a0009164376_1-1991537.pdf"&gt;YC/TC Series&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/54/CATCAY-777361.pdf"&gt;CAT/CAY 16 Series&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="A" symbol="RESISTOR" x="0" y="0" swaplevel="1"/>
-<gate name="B" symbol="RESISTOR" x="0" y="-10.16" swaplevel="1"/>
-<gate name="C" symbol="RESISTOR" x="0" y="-20.32" swaplevel="1"/>
-<gate name="D" symbol="RESISTOR" x="0" y="-30.48" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="1206-RES-ARRAY">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="8"/>
-<connect gate="B" pin="1" pad="2"/>
-<connect gate="B" pin="2" pad="7"/>
-<connect gate="C" pin="1" pad="3"/>
-<connect gate="C" pin="2" pad="6"/>
-<connect gate="D" pin="1" pad="4"/>
-<connect gate="D" pin="2" pad="5"/>
-</connects>
-<technologies>
-<technology name="10">
-<attribute name="DKPN" value="CAT16-100J4LFCT-ND"/>
-<attribute name="MANUFACTURER" value="Bourns Inc."/>
-<attribute name="MOPN" value="652-CAT16-100J4LF"/>
-<attribute name="MPN" value="CAT16-100J4LF"/>
-<attribute name="POWER" value="1/16W"/>
-<attribute name="RESISTANCE" value="10"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="100">
-<attribute name="DKPN" value="CAT16-1000F4LFCT-ND"/>
-<attribute name="MANUFACTURER" value="Bourns Inc."/>
-<attribute name="MOPN" value="652-CAT16-1000F4LF"/>
-<attribute name="MPN" value="CAT16-1000F4LF"/>
-<attribute name="POWER" value="1/16W"/>
-<attribute name="RESISTANCE" value="100"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="10K">
-<attribute name="DKPN" value="YAG3410CT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-TC164-FR-0710KL"/>
-<attribute name="MPN" value="TC164-FR-0710KL"/>
-<attribute name="POWER" value="1/16W"/>
-<attribute name="RESISTANCE" value="10K"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="160">
-<attribute name="DKPN" value="YC164J-160CT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-YC164-JR-07160RL"/>
-<attribute name="MPN" value="YC164-JR-07160RL"/>
-<attribute name="POWER" value="1/16W"/>
-<attribute name="RESISTANCE" value="160"/>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="1K">
-<attribute name="DKPN" value="13-YC164-FR-071KLCT-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-YC164-FR-071KL"/>
-<attribute name="MPN" value="YC164-FR-071KL"/>
-<attribute name="POWER" value="1/16W"/>
-<attribute name="RESISTANCE" value="1k"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-<technology name="27K">
-<attribute name="DKPN" value="CAT16-2702F4LFCT-ND"/>
-<attribute name="MANUFACTURER" value="Bourns Inc."/>
-<attribute name="MOPN" value="652-CAT16-2702F4LF"/>
-<attribute name="MPN" value="CAT16-2702F4LF"/>
-<attribute name="POWER" value="1/16W"/>
-<attribute name="RESISTANCE" value="27K"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -7983,7 +7983,6 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R62" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="RN1" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="100"/>
 <part name="Q2" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="" technology="PMV15ENEA"/>
 <part name="P10" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R21" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10"/>
@@ -8090,6 +8089,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="R74" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
 <part name="P48" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P49" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="RN1" library="HyTechDevices - Copy" deviceset="RESISTOR_NETWORK_4_*" device="" technology="100"/>
 </parts>
 <sheets>
 <sheet>
@@ -11466,22 +11466,6 @@ current across precharge relay</text>
 <attribute name="NAME" x="120.65" y="179.07" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="123.19" y="179.07" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="RN1" gate="A" x="86.36" y="165.1" smashed="yes">
-<attribute name="NAME" x="85.09" y="166.37" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="85.09" y="163.83" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="RN1" gate="B" x="91.44" y="167.64" smashed="yes">
-<attribute name="NAME" x="90.17" y="168.91" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="90.17" y="166.37" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="RN1" gate="C" x="96.52" y="170.18" smashed="yes">
-<attribute name="NAME" x="95.25" y="171.45" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="95.25" y="168.91" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="RN1" gate="D" x="101.6" y="172.72" smashed="yes">
-<attribute name="NAME" x="100.33" y="173.99" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="100.33" y="171.45" size="1.27" layer="96" align="top-center"/>
-</instance>
 <instance part="R43" gate="G$1" x="71.12" y="86.36" smashed="yes">
 <attribute name="NAME" x="69.85" y="87.63" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="69.85" y="85.09" size="1.27" layer="96" align="top-center"/>
@@ -11521,6 +11505,22 @@ current across precharge relay</text>
 <instance part="WATCHDOG_OK" gate="G$1" x="91.44" y="147.32" smashed="yes">
 <attribute name="NAME" x="88.9" y="149.098" size="1.27" layer="95"/>
 <attribute name="MPN" x="88.9" y="145.542" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="RN1" gate="A" x="101.6" y="172.72" smashed="yes">
+<attribute name="NAME" x="100.33" y="173.99" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="100.33" y="171.45" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="RN1" gate="B" x="96.52" y="170.18" smashed="yes">
+<attribute name="NAME" x="95.25" y="171.45" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="95.25" y="168.91" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="RN1" gate="C" x="91.44" y="167.64" smashed="yes">
+<attribute name="NAME" x="90.17" y="168.91" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="90.17" y="166.37" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="RN1" gate="D" x="86.36" y="165.1" smashed="yes">
+<attribute name="NAME" x="85.09" y="166.37" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="85.09" y="163.83" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -11775,9 +11775,9 @@ current across precharge relay</text>
 <pinref part="R30" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="170.18" x2="45.72" y2="170.18" width="0.1524" layer="91"/>
-<label x="45.72" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="A1" gate="G$1" pin="A0"/>
+<wire x1="48.26" y1="167.64" x2="45.72" y2="167.64" width="0.1524" layer="91"/>
+<label x="45.72" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="WATCHDOG_INPUT" class="0">
@@ -11808,8 +11808,8 @@ current across precharge relay</text>
 <wire x1="121.92" y1="165.1" x2="121.92" y2="175.26" width="0.1524" layer="91"/>
 <junction x="121.92" y="165.1"/>
 <wire x1="88.9" y1="165.1" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="RN1" gate="A" pin="2"/>
 <pinref part="U5" gate="G$1" pin="!CS"/>
+<pinref part="RN1" gate="D" pin="2"/>
 </segment>
 </net>
 <net name="BSPD_CURRENT" class="0">
@@ -11898,9 +11898,9 @@ current across precharge relay</text>
 <pinref part="R43" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="A1" gate="G$1" pin="A5"/>
 <wire x1="48.26" y1="157.48" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
 <label x="45.72" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="A5"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -11993,21 +11993,21 @@ current across precharge relay</text>
 <segment>
 <pinref part="A1" gate="G$1" pin="(SDO)D11"/>
 <wire x1="73.66" y1="167.64" x2="86.36" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="RN1" gate="B" pin="1"/>
+<pinref part="RN1" gate="C" pin="1"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
 <pinref part="A1" gate="G$1" pin="(SDI)D12"/>
 <wire x1="91.44" y1="170.18" x2="73.66" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="RN1" gate="C" pin="1"/>
+<pinref part="RN1" gate="B" pin="1"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="A1" gate="G$1" pin="(CLK)D13"/>
 <wire x1="73.66" y1="172.72" x2="96.52" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="RN1" gate="D" pin="1"/>
+<pinref part="RN1" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -12036,16 +12036,16 @@ current across precharge relay</text>
 <pinref part="R51" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="167.64" x2="45.72" y2="167.64" width="0.1524" layer="91"/>
-<label x="45.72" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="A1" gate="G$1" pin="A1"/>
+<wire x1="48.26" y1="170.18" x2="45.72" y2="170.18" width="0.1524" layer="91"/>
+<label x="45.72" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="A0"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="A1" gate="G$1" pin="(CS)D10"/>
 <wire x1="73.66" y1="165.1" x2="81.28" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="RN1" gate="A" pin="1"/>
+<pinref part="RN1" gate="D" pin="1"/>
 </segment>
 </net>
 <net name="TEENSY_OK" class="0">
@@ -12070,27 +12070,27 @@ current across precharge relay</text>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="RN1" gate="D" pin="2"/>
 <wire x1="104.14" y1="172.72" x2="132.08" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="CLK"/>
+<pinref part="RN1" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="RN1" gate="C" pin="2"/>
 <wire x1="99.06" y1="170.18" x2="106.68" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="170.18" x2="132.08" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="170.18" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
 <junction x="106.68" y="170.18"/>
 <pinref part="R70" gate="G$1" pin="1"/>
 <pinref part="U5" gate="G$1" pin="SDO"/>
+<pinref part="RN1" gate="B" pin="2"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <wire x1="93.98" y1="167.64" x2="132.08" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="RN1" gate="B" pin="2"/>
 <pinref part="U5" gate="G$1" pin="SDI"/>
+<pinref part="RN1" gate="C" pin="2"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -12121,20 +12121,6 @@ current across precharge relay</text>
 <pinref part="A1" gate="G$1" pin="A6"/>
 </segment>
 </net>
-<net name="TS+_OUT_FILTERED" class="0">
-<segment>
-<wire x1="48.26" y1="162.56" x2="45.72" y2="162.56" width="0.1524" layer="91"/>
-<label x="45.72" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="A1" gate="G$1" pin="A3"/>
-</segment>
-</net>
-<net name="PACK+_FILTERED" class="0">
-<segment>
-<wire x1="48.26" y1="160.02" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
-<label x="45.72" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="A1" gate="G$1" pin="A4"/>
-</segment>
-</net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="A1" gate="G$1" pin="D3"/>
@@ -12147,6 +12133,20 @@ current across precharge relay</text>
 <wire x1="106.68" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="147.32" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
 <junction x="76.2" y="142.24"/>
+</segment>
+</net>
+<net name="TS+_OUT_FILTERED" class="0">
+<segment>
+<wire x1="48.26" y1="160.02" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
+<label x="45.72" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="A4"/>
+</segment>
+</net>
+<net name="PACK+_FILTERED" class="0">
+<segment>
+<wire x1="48.26" y1="162.56" x2="45.72" y2="162.56" width="0.1524" layer="91"/>
+<label x="45.72" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A1" gate="G$1" pin="A3"/>
 </segment>
 </net>
 </nets>
