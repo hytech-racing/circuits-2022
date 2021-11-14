@@ -5708,8 +5708,8 @@ visible on the PCB.</text>
 <devices>
 <device name="" package="CLP1608-2L">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -7555,11 +7555,11 @@ Undervoltage: 56V</text>
 <wire x1="149.86" y1="167.64" x2="160.02" y2="167.64" width="0.6096" layer="91"/>
 <wire x1="160.02" y1="167.64" x2="170.18" y2="167.64" width="0.6096" layer="91"/>
 <wire x1="170.18" y1="167.64" x2="180.34" y2="167.64" width="0.6096" layer="91"/>
-<wire x1="180.34" y1="167.64" x2="208.28" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="167.64" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="167.64" x2="215.9" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="167.64" x2="208.28" y2="167.64" width="0.6096" layer="91"/>
+<wire x1="208.28" y1="167.64" x2="215.9" y2="167.64" width="0.6096" layer="91"/>
+<wire x1="215.9" y1="167.64" x2="215.9" y2="175.26" width="0.6096" layer="91"/>
 <pinref part="U16" gate="G$1" pin="VPRG2"/>
-<wire x1="208.28" y1="177.8" x2="208.28" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="177.8" x2="208.28" y2="167.64" width="0.6096" layer="91"/>
 <junction x="208.28" y="167.64"/>
 <wire x1="180.34" y1="175.26" x2="180.34" y2="167.64" width="0.6096" layer="91"/>
 <junction x="180.34" y="175.26"/>
@@ -7574,20 +7574,20 @@ Undervoltage: 56V</text>
 <wire x1="149.86" y1="175.26" x2="149.86" y2="167.64" width="0.6096" layer="91"/>
 <junction x="149.86" y="167.64"/>
 <pinref part="C34" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="185.42" x2="228.6" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="167.64" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="185.42" x2="228.6" y2="167.64" width="0.6096" layer="91"/>
+<wire x1="228.6" y1="167.64" x2="215.9" y2="167.64" width="0.6096" layer="91"/>
 <junction x="215.9" y="167.64"/>
 <pinref part="C36" gate="G$1" pin="2"/>
-<wire x1="238.76" y1="185.42" x2="238.76" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="167.64" x2="228.6" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="185.42" x2="238.76" y2="167.64" width="0.6096" layer="91"/>
+<wire x1="238.76" y1="167.64" x2="228.6" y2="167.64" width="0.6096" layer="91"/>
 <junction x="228.6" y="167.64"/>
 <pinref part="C37" gate="G$1" pin="2"/>
-<wire x1="248.92" y1="185.42" x2="248.92" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="167.64" x2="238.76" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="185.42" x2="248.92" y2="167.64" width="0.6096" layer="91"/>
+<wire x1="248.92" y1="167.64" x2="238.76" y2="167.64" width="0.6096" layer="91"/>
 <junction x="238.76" y="167.64"/>
 <pinref part="D13" gate="LED" pin="C"/>
-<wire x1="259.08" y1="175.26" x2="259.08" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="167.64" x2="248.92" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="175.26" x2="259.08" y2="167.64" width="0.6096" layer="91"/>
+<wire x1="259.08" y1="167.64" x2="248.92" y2="167.64" width="0.6096" layer="91"/>
 <junction x="248.92" y="167.64"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="185.42" x2="88.9" y2="167.64" width="0.6096" layer="91"/>
@@ -8954,7 +8954,7 @@ Undervoltage: 56V</text>
 <segment>
 <pinref part="P12" gate="G$1" pin="TS-UNFUSED"/>
 <pinref part="R40" gate="G$1" pin="2"/>
-<wire x1="190.5" y1="71.12" x2="190.5" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="71.12" x2="190.5" y2="68.58" width="0.6096" layer="91"/>
 </segment>
 <segment>
 <pinref part="TP15" gate="G$1" pin="P$1"/>
@@ -8982,8 +8982,8 @@ Undervoltage: 56V</text>
 <wire x1="243.84" y1="68.58" x2="246.38" y2="68.58" width="0.6096" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="TS-FUSED"/>
 <pinref part="R41" gate="G$1" pin="3"/>
-<wire x1="238.76" y1="73.66" x2="246.38" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="73.66" x2="246.38" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="73.66" x2="246.38" y2="73.66" width="0.6096" layer="91"/>
+<wire x1="246.38" y1="73.66" x2="246.38" y2="68.58" width="0.6096" layer="91"/>
 <junction x="246.38" y="68.58"/>
 </segment>
 <segment>
@@ -8998,18 +8998,18 @@ Undervoltage: 56V</text>
 </segment>
 <segment>
 <pinref part="TP16" gate="G$1" pin="P$1"/>
-<wire x1="205.74" y1="137.16" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="137.16" x2="208.28" y2="137.16" width="0.6096" layer="91"/>
 <pinref part="U$42" gate="G$1" pin="TS-FUSED"/>
 </segment>
 <segment>
 <pinref part="R39" gate="G$1" pin="3"/>
-<wire x1="195.58" y1="144.78" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="144.78" x2="195.58" y2="142.24" width="0.6096" layer="91"/>
 <pinref part="U$70" gate="G$1" pin="TS-FUSED"/>
 </segment>
 <segment>
 <pinref part="R40" gate="G$1" pin="3"/>
-<wire x1="193.04" y1="76.2" x2="198.12" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="76.2" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="76.2" x2="198.12" y2="76.2" width="0.6096" layer="91"/>
+<wire x1="198.12" y1="76.2" x2="198.12" y2="73.66" width="0.6096" layer="91"/>
 <pinref part="U$71" gate="G$1" pin="TS-FUSED"/>
 </segment>
 <segment>
@@ -9025,7 +9025,7 @@ Undervoltage: 56V</text>
 <approved hash="102,1,17.78,180.34,TS+,TS+FUSED,,,,"/>
 <approved hash="102,1,66.04,198.12,TS+,TS+FUSED,,,,"/>
 <approved hash="102,2,43.18,167.64,TS+,TS+FUSED,,,,"/>
-<approved hash="102,3,254,149.86,TS+,TS+FUSED,,,,"/>
+<approved hash="102,3,256.54,170.18,TS+,TS+FUSED,,,,"/>
 <approved hash="102,3,246.38,101.6,TS+,TS+FUSED,,,,"/>
 <approved hash="104,2,121.92,167.64,U10,+IN,N$39,,,"/>
 <approved hash="104,2,121.92,147.32,U10,-IN,TS-FUSED,,,"/>
@@ -9047,7 +9047,7 @@ Undervoltage: 56V</text>
 <approved hash="104,1,134.62,86.36,U19,VDD2,+5V,,,"/>
 <approved hash="104,3,35.56,134.62,U2,IN,+12V,,,"/>
 <approved hash="104,3,55.88,134.62,U2,OUT,+5V,,,"/>
-<approved hash="104,2,193.04,121.92,U1,V+,PRECHARGE_OK,,,"/>
+<approved hash="104,2,193.04,121.92,U1,V+,+5V,,,"/>
 <approved hash="209,1,208.28,182.88,N$76,,,,,"/>
 <approved hash="209,1,208.28,180.34,N$76,,,,,"/>
 </errors>
