@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -5608,7 +5608,7 @@ Leakage Inductance: 0.50 uH max
 <package name="0603-RES">
 <description>0603 Resistor Footprint
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
@@ -5860,35 +5860,10 @@ Toshiba
 <rectangle x1="-3.556" y1="-2.794" x2="3.556" y2="2.794" layer="39"/>
 <text x="0" y="2.794" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="0805-RES">
-<description>0805 Resistor Footprint
-&lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
-<smd name="1" x="-1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
-<smd name="2" x="1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
-<text x="0" y="0.85" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
-<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
-<rectangle x1="-1.7" y1="-0.85" x2="1.7" y2="0.85" layer="39"/>
-</package>
-<package name="B20">
-<pad name="P$1" x="35.4" y="0" drill="1.35"/>
-<pad name="P$2" x="-35.4" y="0" drill="1.35"/>
-<wire x1="-25.4" y1="5.555" x2="-25.4" y2="-5.555" width="0.127" layer="21"/>
-<wire x1="-25.4" y1="-5.555" x2="25.4" y2="-5.555" width="0.127" layer="21"/>
-<wire x1="25.4" y1="-5.555" x2="25.4" y2="5.555" width="0.127" layer="21"/>
-<wire x1="25.4" y1="5.555" x2="-25.4" y2="5.555" width="0.127" layer="21"/>
-<rectangle x1="-38.1" y1="-6.35" x2="36.83" y2="6.35" layer="39"/>
-<text x="-25.527" y="5.715" size="1.27" layer="21">&gt;NAME</text>
-</package>
 <package name="1206-RES-ARRAY">
 <description>YC/TC164
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Landing Pattern&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Landing Pattern&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-YC_TC_group_51_RoHS_L_9.pdf"&gt;Size&lt;/a&gt;
 &lt;br&gt;&lt;br&gt;
@@ -5909,6 +5884,21 @@ Note: Also works for CAT/CAY16 Series.
 <wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
 <text x="-1.905" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
+</package>
+<package name="0805-RES">
+<description>0805 Resistor Footprint
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
+<smd name="2" x="1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
+<text x="0" y="0.85" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
+<rectangle x1="-1.7" y1="-0.85" x2="1.7" y2="0.85" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -6656,17 +6646,6 @@ Note: Also works for CAT/CAY16 Series.
 <attribute name="VOLTAGE_CONTINUOUS" value="11.53V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-<technology name="1.62">
-<attribute name="DKPN" value="1712-CPF0603B1R62E1TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="TE Conductivity Passive Product" constant="no"/>
-<attribute name="MOPN" value="279-CPF0603B1R62E1" constant="no"/>
-<attribute name="MPN" value="CPF0603B1R62E1" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="1.62" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="0.51V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="50V" constant="no"/>
-</technology>
 <technology name="1.65K">
 <attribute name="DKPN" value="311-1.65KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -6776,17 +6755,6 @@ Note: Also works for CAT/CAY16 Series.
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
-<technology name="13K">
-<attribute name="DKPN" value="P20098TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB3B1302V" constant="no"/>
-<attribute name="MPN" value=" ERJ-PB3B1302V" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="13k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
 </technology>
 <technology name="154K">
 <attribute name="DKPN" value="P154KDBCT-ND"/>
@@ -6953,17 +6921,6 @@ Note: Also works for CAT/CAY16 Series.
 <attribute name="VOLTAGE_CONTINUOUS" value="14.14V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-<technology name="3.32K">
-<attribute name="DKPN" value="YAG1651TR-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-RT0603BRD073K32L"/>
-<attribute name="MPN" value="RT0603BRD073K32L"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="3.32k"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="18.22V"/>
-<attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
 <technology name="3.3K">
 <attribute name="DKPN" value="311-3.30KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -6985,17 +6942,6 @@ Note: Also works for CAT/CAY16 Series.
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="54.77V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
-<technology name="33.2K">
-<attribute name="DKPN" value="P20144TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB3B3322V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB3B3322V" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="33.2k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
 </technology>
 <technology name="330K">
 <attribute name="DKPN" value="P330KDBCT-ND"/>
@@ -7118,39 +7064,6 @@ Note: Also works for CAT/CAY16 Series.
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-<technology name="75K">
-<attribute name="DKPN" value="RT0603BRE0775KL-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-RT0603BRE0775KL"/>
-<attribute name="MPN" value="RT0603BRE0775KL"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="75k"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
-<attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
-<technology name="8.35K">
-<attribute name="DKPN" value="764-1461-2-ND"/>
-<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
-<attribute name="MOPN" value="71-PTN0603E8351BST1"/>
-<attribute name="MPN" value=" PTN0603E8351BST1"/>
-<attribute name="POWER" value="0.15W"/>
-<attribute name="RESISTANCE" value="8.35k"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="28.90W"/>
-<attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
-<technology name="8.66K">
-<attribute name="DKPN" value="YAG4603TR-ND"/>
-<attribute name="MANUFACTURER" value="Yageo"/>
-<attribute name="MOPN" value="603-RT0603BRD078K66L"/>
-<attribute name="MPN" value="RT0603BRD078K66L"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="8.66k"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="29.43V"/>
-<attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
 <technology name="84.5K">
 <attribute name="DKPN" value="P84.5KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -7200,17 +7113,6 @@ Note: Also works for CAT/CAY16 Series.
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="1">
-<attribute name="DKPN" value="P1.0DTR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-6RQF1R0V" constant="no"/>
-<attribute name="MPN" value="ERJ-6RQF1R0V" constant="no"/>
-<attribute name="POWER" value="0.125W" constant="no"/>
-<attribute name="RESISTANCE" value="1" constant="no"/>
-<attribute name="TOLERANCE" value="1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
-</technology>
 <technology name="12.4K">
 <attribute name="DKPN" value="P20718CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -7221,17 +7123,6 @@ Note: Also works for CAT/CAY16 Series.
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="55.68V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
-</technology>
-<technology name="1M">
-<attribute name="DKPN" value="P20936TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB6B1004V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB6B1004V" constant="no"/>
-<attribute name="POWER" value="0.25W" constant="no"/>
-<attribute name="RESISTANCE" value="1M" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
 </technology>
 <technology name="200">
 <attribute name="DKPN" value="311-200CRCT-ND"/>
@@ -7254,39 +7145,6 @@ Note: Also works for CAT/CAY16 Series.
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
-</technology>
-<technology name="5.9K">
-<attribute name="DKPN" value="P20174TR-ND " constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB3B5902V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB3B5902V" constant="no"/>
-<attribute name="POWER" value="0.2W" constant="no"/>
-<attribute name="RESISTANCE" value="5.9k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
-</technology>
-<technology name="523K">
-<attribute name="DKPN" value="P20904TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB6B5233V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB6B5233V" constant="no"/>
-<attribute name="POWER" value="0.25W" constant="no"/>
-<attribute name="RESISTANCE" value="523k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
-</technology>
-<technology name="976K">
-<attribute name="DKPN" value="P20935TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB6B9763V" constant="no"/>
-<attribute name="MPN" value="  ERJ-PB6B9763V" constant="no"/>
-<attribute name="POWER" value="0.25W" constant="no"/>
-<attribute name="RESISTANCE" value="976k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7317,20 +7175,6 @@ Note: Also works for CAT/CAY16 Series.
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="5.123V"/>
 <attribute name="VOLTAGE_MAX" value="5.123V"/>
-</technology>
-</technologies>
-</device>
-<device name="B20" package="B20">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="1.25K">
-<attribute name="RESISTANCE" value="1.25k" constant="no"/>
-</technology>
-<technology name="10K">
-<attribute name="RESISTANCE" value="10k" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -8240,6 +8084,12 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="CURRENT_REF" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
 <part name="IMD_OK" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="R72" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
+<part name="D2" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
+<part name="D3" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="R73" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
+<part name="R74" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
+<part name="P48" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="P49" library="HyTechSupplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8554,6 +8404,28 @@ Accumulator GND, both AIR+ and -</text>
 <attribute name="NAME" x="17.78" y="83.058" size="1.27" layer="95"/>
 <attribute name="MPN" x="17.78" y="79.502" size="1.27" layer="95" align="top-left"/>
 </instance>
+<instance part="D2" gate="LED" x="190.5" y="66.04" smashed="yes">
+<attribute name="COLOR" x="189.23" y="64.262" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="189.23" y="69.596" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D3" gate="LED" x="231.14" y="66.04" smashed="yes">
+<attribute name="COLOR" x="229.87" y="64.262" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="229.87" y="69.596" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="R73" gate="G$1" x="180.34" y="66.04" smashed="yes">
+<attribute name="NAME" x="179.07" y="67.31" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="179.07" y="64.77" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R74" gate="G$1" x="220.98" y="66.04" smashed="yes">
+<attribute name="NAME" x="219.71" y="67.31" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="219.71" y="64.77" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P48" gate="1" x="195.58" y="63.5" smashed="yes">
+<attribute name="VALUE" x="195.58" y="62.23" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P49" gate="1" x="236.22" y="63.5" smashed="yes">
+<attribute name="VALUE" x="236.22" y="62.23" size="1.27" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8810,6 +8682,16 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="P45" gate="1" pin="GND"/>
 <pinref part="3.3V" gate="LED" pin="C"/>
 </segment>
+<segment>
+<pinref part="D2" gate="LED" pin="C"/>
+<wire x1="193.04" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="P48" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="D3" gate="LED" pin="C"/>
+<wire x1="233.68" y1="66.04" x2="236.22" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="P49" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -8945,6 +8827,11 @@ Accumulator GND, both AIR+ and -</text>
 <wire x1="231.14" y1="93.98" x2="233.68" y2="93.98" width="0.1524" layer="91"/>
 <label x="233.68" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R74" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="66.04" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
+<label x="213.36" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="TSAL_GREEN" class="0">
 <segment>
@@ -8956,6 +8843,11 @@ Accumulator GND, both AIR+ and -</text>
 <pinref part="U2" gate="S2" pin="D"/>
 <wire x1="167.64" y1="101.6" x2="170.18" y2="101.6" width="0.1524" layer="91"/>
 <label x="170.18" y="101.6" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R73" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<label x="172.72" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="12VIN" class="0">
@@ -9159,6 +9051,20 @@ Accumulator GND, both AIR+ and -</text>
 <net name="N$28" class="0">
 <segment>
 <wire x1="22.86" y1="88.9" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="D2" gate="LED" pin="A"/>
+<wire x1="185.42" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R73" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="D3" gate="LED" pin="A"/>
+<wire x1="226.06" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R74" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
@@ -11612,9 +11518,9 @@ current across precharge relay</text>
 <attribute name="VOLTAGE" x="135.89" y="182.88" size="1.27" layer="96" align="top-center"/>
 <attribute name="CAPACITANCE" x="135.89" y="181.102" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="WATCHDOG_OK" gate="G$1" x="78.74" y="147.32" smashed="yes">
-<attribute name="NAME" x="76.2" y="149.098" size="1.27" layer="95"/>
-<attribute name="MPN" x="76.2" y="145.542" size="1.27" layer="95" align="top-left"/>
+<instance part="WATCHDOG_OK" gate="G$1" x="91.44" y="147.32" smashed="yes">
+<attribute name="NAME" x="88.9" y="149.098" size="1.27" layer="95"/>
+<attribute name="MPN" x="88.9" y="145.542" size="1.27" layer="95" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -11885,14 +11791,14 @@ current across precharge relay</text>
 <pinref part="U6" gate="G$1" pin="WDI"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="149.86" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
-<label x="88.9" y="149.86" size="1.27" layer="95" xref="yes"/>
-<pinref part="A1" gate="G$1" pin="D4"/>
+<label x="88.9" y="152.4" size="1.27" layer="95" xref="yes"/>
 <pinref part="WATCHDOG_OK" gate="G$1" pin="P$1"/>
-<wire x1="83.82" y1="149.86" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="149.86" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
-<junction x="83.82" y="149.86"/>
+<wire x1="83.82" y1="152.4" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="152.4" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="147.32" x2="93.98" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="A1" gate="G$1" pin="D5"/>
+<wire x1="73.66" y1="152.4" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
+<junction x="83.82" y="152.4"/>
 </segment>
 </net>
 <net name="CS_LTC_6820" class="0">
@@ -12157,9 +12063,9 @@ current across precharge relay</text>
 <label x="190.5" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="152.4" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
-<label x="88.9" y="152.4" size="1.27" layer="95" xref="yes"/>
-<pinref part="A1" gate="G$1" pin="D5"/>
+<pinref part="A1" gate="G$1" pin="D6"/>
+<wire x1="73.66" y1="154.94" x2="88.9" y2="154.94" width="0.1524" layer="91"/>
+<label x="88.9" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -12187,22 +12093,18 @@ current across precharge relay</text>
 <pinref part="U5" gate="G$1" pin="SDI"/>
 </segment>
 </net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="A1" gate="G$1" pin="(CTX1)D1"/>
-<wire x1="73.66" y1="142.24" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="142.24" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="U25" gate="G$1" pin="TXD"/>
-<wire x1="106.68" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="U25" gate="G$1" pin="RXD"/>
 <wire x1="124.46" y1="111.76" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="111.76" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="A1" gate="G$1" pin="(CRX1)D0"/>
-<wire x1="104.14" y1="139.7" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="A1" gate="G$1" pin="D4"/>
+<wire x1="78.74" y1="139.7" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="149.86" x2="78.74" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="149.86" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
+<junction x="78.74" y="139.7"/>
 </segment>
 </net>
 <net name="CURRENT_FILTERED" class="0">
@@ -12231,6 +12133,20 @@ current across precharge relay</text>
 <wire x1="48.26" y1="160.02" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
 <label x="45.72" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="A1" gate="G$1" pin="A4"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="A1" gate="G$1" pin="D3"/>
+<wire x1="73.66" y1="147.32" x2="76.2" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="A1" gate="G$1" pin="(CTX1)D1"/>
+<wire x1="73.66" y1="142.24" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="142.24" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="142.24" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U25" gate="G$1" pin="TXD"/>
+<wire x1="106.68" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="147.32" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
+<junction x="76.2" y="142.24"/>
 </segment>
 </net>
 </nets>
