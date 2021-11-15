@@ -6689,6 +6689,7 @@ ISO224B: High-Grade
 <part name="U$71" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$72" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
+<part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7770,13 +7771,13 @@ Undervoltage: 56V</text>
 <attribute name="COLOR" x="160.782" y="110.49" size="1.27" layer="95" rot="R270" align="top-center"/>
 <attribute name="NAME" x="166.116" y="110.49" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="R29" gate="G$1" x="223.52" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="222.25" y="120.65" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="224.79" y="120.65" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="R29" gate="G$1" x="233.68" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="232.41" y="120.65" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="234.95" y="120.65" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="D3" gate="LED" x="223.52" y="109.22" smashed="yes" rot="R270">
-<attribute name="COLOR" x="221.742" y="110.49" size="1.27" layer="95" rot="R270" align="top-center"/>
-<attribute name="NAME" x="227.076" y="110.49" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+<instance part="D3" gate="LED" x="233.68" y="109.22" smashed="yes" rot="R270">
+<attribute name="COLOR" x="231.902" y="110.49" size="1.27" layer="95" rot="R270" align="top-center"/>
+<attribute name="NAME" x="237.236" y="110.49" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
 <instance part="U$28" gate="G$1" x="43.18" y="144.78" smashed="yes">
 <attribute name="VALUE" x="43.18" y="142.24" size="1.27" layer="96" align="top-center"/>
@@ -7788,6 +7789,11 @@ Undervoltage: 56V</text>
 <attribute name="NAME" x="177.8" y="115.57" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="182.88" y="115.57" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="184.658" y="115.57" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="C11" gate="G$1" x="223.52" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="220.98" y="118.11" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="226.06" y="118.11" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="227.838" y="118.11" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -7954,11 +7960,11 @@ Undervoltage: 56V</text>
 <net name="PRECHARGE_OK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="IN"/>
-<wire x1="213.36" y1="124.46" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
-<label x="226.06" y="124.46" size="1.27" layer="95" xref="yes"/>
+<wire x1="213.36" y1="124.46" x2="233.68" y2="124.46" width="0.1524" layer="91"/>
+<label x="236.22" y="124.46" size="1.27" layer="95" xref="yes"/>
 <pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="124.46" x2="226.06" y2="124.46" width="0.1524" layer="91"/>
-<junction x="223.52" y="124.46"/>
+<wire x1="233.68" y1="124.46" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
+<junction x="233.68" y="124.46"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7981,11 +7987,13 @@ Undervoltage: 56V</text>
 <junction x="162.56" y="106.68"/>
 <pinref part="D3" gate="LED" pin="C"/>
 <wire x1="180.34" y1="106.68" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="106.68" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="106.68" x2="233.68" y2="106.68" width="0.1524" layer="91"/>
 <junction x="215.9" y="106.68"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="111.76" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
 <junction x="180.34" y="106.68"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="114.3" x2="215.9" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -7993,6 +8001,9 @@ Undervoltage: 56V</text>
 <pinref part="U1" gate="G$1" pin="SET"/>
 <pinref part="R51" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="121.92" x2="215.9" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="121.92" x2="223.52" y2="121.92" width="0.1524" layer="91"/>
+<junction x="215.9" y="121.92"/>
+<pinref part="C11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -8016,7 +8027,7 @@ Undervoltage: 56V</text>
 <segment>
 <pinref part="D3" gate="LED" pin="A"/>
 <pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="114.3" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="114.3" x2="233.68" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TS-FUSED" class="0">
