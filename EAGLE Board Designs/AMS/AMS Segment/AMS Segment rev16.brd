@@ -4271,12 +4271,12 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="0.0381" y1="3.70205" x2="1.2827" y2="3.71475" layer="21"/>
 </package>
 <package name="NUMBER">
-<wire x1="0" y1="8.89" x2="0" y2="0" width="0.508" layer="51"/>
-<wire x1="0" y1="0" x2="17.907" y2="0" width="0.508" layer="51"/>
-<wire x1="17.907" y1="0" x2="17.907" y2="8.89" width="0.508" layer="51"/>
-<wire x1="17.907" y1="8.89" x2="0" y2="8.89" width="0.508" layer="51"/>
-<text x="2.667" y="4.445" size="6.096" layer="51" font="vector" align="center">#</text>
-<rectangle x1="5.08" y1="0" x2="17.907" y2="8.89" layer="51"/>
+<wire x1="0" y1="8.89" x2="0" y2="0" width="0.508" layer="21"/>
+<wire x1="0" y1="0" x2="17.907" y2="0" width="0.508" layer="21"/>
+<wire x1="17.907" y1="0" x2="17.907" y2="8.89" width="0.508" layer="21"/>
+<wire x1="17.907" y1="8.89" x2="0" y2="8.89" width="0.508" layer="21"/>
+<text x="2.667" y="4.445" size="6.096" layer="21" font="vector" align="center">#</text>
+<rectangle x1="5.08" y1="0" x2="17.907" y2="8.89" layer="21"/>
 </package>
 <package name="HV_0.50&quot;">
 <rectangle x1="-2.667" y1="-2.31775" x2="2.6162" y2="-2.30505" layer="21"/>
