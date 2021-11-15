@@ -7968,7 +7968,6 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="R52" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P87" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R51" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="30K"/>
-<part name="R55" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="" technology="PMV15ENEA"/>
 <part name="P36" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R49" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10"/>
@@ -7993,7 +7992,6 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="R57" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470"/>
 <part name="GND8" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="U$2" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO" device=""/>
-<part name="P60" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="R58" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R63" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P61" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -8096,6 +8094,7 @@ MAX7400, 7404 uses a 680 pF clock capcitor</description>
 <part name="P79" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R75" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="470"/>
 <part name="R76" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="470"/>
+<part name="P+13" library="HyTechSupplies" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9772,9 +9771,6 @@ current across precharge relay</text>
 <attribute name="NAME" x="208.28" y="132.842" size="1.27" layer="95"/>
 <attribute name="MPN" x="208.28" y="118.618" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="P60" gate="1" x="231.14" y="137.16" smashed="yes">
-<attribute name="VALUE" x="231.14" y="140.97" size="1.27" layer="96" align="bottom-center"/>
-</instance>
 <instance part="PACK+_OUT_TEST" gate="G$1" x="35.56" y="33.02" smashed="yes">
 <attribute name="NAME" x="33.02" y="34.798" size="1.27" layer="95"/>
 <attribute name="MPN" x="33.02" y="31.242" size="1.27" layer="95" align="top-left"/>
@@ -9782,6 +9778,9 @@ current across precharge relay</text>
 <instance part="TS+_OUT_TEST" gate="G$1" x="203.2" y="167.64" smashed="yes">
 <attribute name="NAME" x="200.66" y="169.418" size="1.27" layer="95"/>
 <attribute name="MPN" x="200.66" y="165.862" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="P+13" gate="1" x="231.14" y="137.16" smashed="yes">
+<attribute name="VALUE" x="231.14" y="139.7" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -10101,6 +10100,12 @@ current across precharge relay</text>
 <junction x="68.58" y="190.5"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="CONTACT2"/>
+<wire x1="228.6" y1="129.54" x2="231.14" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="129.54" x2="231.14" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="P+13" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="N$22" class="0">
 <segment>
@@ -10390,14 +10395,6 @@ current across precharge relay</text>
 <pinref part="R57" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="129.54" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="CONTROL+"/>
-</segment>
-</net>
-<net name="+12V" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="CONTACT2"/>
-<wire x1="228.6" y1="129.54" x2="231.14" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="129.54" x2="231.14" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="P60" gate="1" pin="+12V"/>
 </segment>
 </net>
 </nets>
@@ -11465,10 +11462,6 @@ current across precharge relay</text>
 <attribute name="NAME" x="52.07" y="36.83" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="52.07" y="34.29" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R55" gate="G$1" x="121.92" y="180.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="120.65" y="179.07" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="123.19" y="179.07" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
 <instance part="R43" gate="G$1" x="71.12" y="86.36" smashed="yes">
 <attribute name="NAME" x="69.85" y="87.63" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="69.85" y="85.09" size="1.27" layer="96" align="top-center"/>
@@ -11741,10 +11734,7 @@ current across precharge relay</text>
 <wire x1="132.08" y1="175.26" x2="129.54" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="175.26" x2="129.54" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="P72" gate="G$1" pin="+3V3"/>
-<pinref part="R55" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="185.42" x2="129.54" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="182.88" x2="121.92" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="185.42" x2="129.54" y2="185.42" width="0.1524" layer="91"/>
 <junction x="129.54" y="185.42"/>
 <pinref part="U5" gate="G$1" pin="VLOGIC"/>
 <pinref part="C15" gate="G$1" pin="2"/>
@@ -11843,11 +11833,7 @@ current across precharge relay</text>
 </net>
 <net name="CS_LTC_6820" class="0">
 <segment>
-<wire x1="121.92" y1="165.1" x2="132.08" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="R55" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="165.1" x2="121.92" y2="175.26" width="0.1524" layer="91"/>
-<junction x="121.92" y="165.1"/>
-<wire x1="88.9" y1="165.1" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="165.1" x2="132.08" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="!CS"/>
 <pinref part="RN1" gate="D" pin="2"/>
 </segment>
