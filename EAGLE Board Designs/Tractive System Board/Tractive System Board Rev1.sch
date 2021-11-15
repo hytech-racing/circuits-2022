@@ -5008,6 +5008,17 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
 <attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
 </technology>
+<technology name="12.4">
+<attribute name="DKPN" value="P12.4CTR-ND"/>
+<attribute name="MANUFACTURER" value="  Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-6ENF12R4V"/>
+<attribute name="MPN" value="ERJ-6ENF12R4V"/>
+<attribute name="POWER" value=".125W"/>
+<attribute name="RESISTANCE" value="12.4"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1.24V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="12.4K">
 <attribute name="DKPN" value="P20718CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -6610,7 +6621,7 @@ ISO224B: High-Grade
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33.2K"/>
 <part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33.2K"/>
 <part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="1"/>
-<part name="R27" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="1"/>
+<part name="R27" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="12.4" value="RESISTOR_0805_12.4"/>
 <part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP3" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
@@ -6690,6 +6701,7 @@ ISO224B: High-Grade
 <part name="U$72" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
+<part name="U$29" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7795,6 +7807,9 @@ Undervoltage: 56V</text>
 <attribute name="VOLTAGE" x="226.06" y="118.11" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="227.838" y="118.11" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
+<instance part="U$29" gate="G$1" x="121.92" y="114.3" smashed="yes">
+<attribute name="VALUE" x="121.92" y="111.76" size="1.27" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8055,6 +8070,11 @@ Undervoltage: 56V</text>
 <pinref part="D6" gate="LED" pin="C"/>
 <wire x1="101.6" y1="157.48" x2="101.6" y2="147.32" width="0.6096" layer="91"/>
 <junction x="101.6" y="157.48"/>
+</segment>
+<segment>
+<pinref part="U11" gate="G$1" pin="CONTACT1"/>
+<pinref part="U$29" gate="G$1" pin="TS-FUSED"/>
+<wire x1="124.46" y1="116.84" x2="121.92" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">

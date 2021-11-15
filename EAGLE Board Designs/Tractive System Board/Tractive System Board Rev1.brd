@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -445,6 +445,8 @@ Designed by Cody Kaminsky</text>
 <wire x1="17.97486875" y1="72.38083125" x2="16.914209375" y2="71.320159375" width="0.001" layer="120" style="shortdash"/>
 <wire x1="9.200590625" y1="71.320159375" x2="16.914209375" y2="71.320159375" width="0.001" layer="120" curve="149.246308"/>
 <wire x1="9.200590625" y1="71.320159375" x2="8.13993125" y2="72.38083125" width="0.001" layer="120" style="shortdash"/>
+<text x="48.26" y="78.74" size="1.778" layer="51" rot="R90">Tractive System Board Rev1
+Designed by Cody Kaminsky 2021</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -8039,16 +8041,16 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="VOLTAGE_CONTINUOUS" value="" x="114.554" y="82.931" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE_MAX" value="150V" x="114.554" y="82.931" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R27" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_1" x="188.722" y="17.399" smashed="yes" rot="R270">
-<attribute name="DKPN" value="P1.0DTR-ND" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOPN" value="667-ERJ-6RQF1R0V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="ERJ-6RQF1R0V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R27" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_12.4" x="188.722" y="17.399" smashed="yes" rot="R270">
+<attribute name="DKPN" value="P12.4CTR-ND" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="  Panasonic Electronic Components" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="667-ERJ-6ENF12R4V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="ERJ-6ENF12R4V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="189.572" y="17.399" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="POWER" value="0.125W" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="RESISTANCE" value="1" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="POWER" value=".125W" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="RESISTANCE" value="12.4" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1.24V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE_MAX" value="150V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="TP1" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="12.446" y="7.493" smashed="yes">
@@ -10075,6 +10077,9 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="189.454596875" y1="56.4124625" x2="198.671275" y2="56.4124625" width="0.254" layer="16"/>
 <wire x1="87.376" y1="70.866" x2="85.717259375" y2="70.866" width="0.762" layer="1"/>
 <wire x1="85.717259375" y1="70.866" x2="83.979096875" y2="72.6041625" width="0.762" layer="1"/>
+<contactref element="U11" pad="3"/>
+<wire x1="83.69789375" y1="16.79869375" x2="83.69789375" y2="22.99189375" width="0.508" layer="16"/>
+<wire x1="83.69789375" y1="22.99189375" x2="86.741" y2="26.035" width="0.508" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
