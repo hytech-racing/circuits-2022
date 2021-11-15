@@ -8335,6 +8335,50 @@ visible on the PCB.</text>
 <wire x1="180.34" y1="167.64" x2="167.64" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="THERMAL" class="0">
+<segment>
+<pinref part="D4" gate="G$1" pin="THERMAL"/>
+<wire x1="31.75" y1="134.62" x2="31.75" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="132.08" x2="30.48" y2="132.08" width="0.1524" layer="91"/>
+<label x="30.48" y="132.08" size="1.27" layer="95" rot="R180"/>
+</segment>
+<segment>
+<wire x1="31.75" y1="116.84" x2="31.75" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<label x="30.48" y="114.3" size="1.27" layer="95" rot="R180"/>
+<pinref part="D13" gate="G$1" pin="THERMAL"/>
+</segment>
+<segment>
+<wire x1="31.75" y1="99.06" x2="31.75" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
+<label x="30.48" y="96.52" size="1.27" layer="95" rot="R180"/>
+<pinref part="D8" gate="G$1" pin="THERMAL"/>
+</segment>
+<segment>
+<wire x1="31.75" y1="81.28" x2="31.75" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
+<label x="30.48" y="78.74" size="1.27" layer="95" rot="R180"/>
+<pinref part="D10" gate="G$1" pin="THERMAL"/>
+</segment>
+<segment>
+<wire x1="31.75" y1="63.5" x2="31.75" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
+<label x="30.48" y="60.96" size="1.27" layer="95" rot="R180"/>
+<pinref part="D11" gate="G$1" pin="THERMAL"/>
+</segment>
+<segment>
+<wire x1="31.75" y1="45.72" x2="31.75" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
+<label x="30.48" y="43.18" size="1.27" layer="95" rot="R180"/>
+<pinref part="D9" gate="G$1" pin="THERMAL"/>
+</segment>
+<segment>
+<wire x1="31.75" y1="20.32" x2="31.75" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
+<label x="30.48" y="17.78" size="1.27" layer="95" rot="R180"/>
+<pinref part="D12" gate="G$1" pin="THERMAL"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

@@ -843,7 +843,7 @@
 <rectangle x1="13.6125" y1="-27.7849" x2="14.0697" y2="-27.7087" layer="52" rot="R180"/>
 <rectangle x1="13.6125" y1="-27.9373" x2="14.0697" y2="-27.8611" layer="52" rot="R180"/>
 <text x="-99.8112" y="11.4708" size="1.016" layer="25" font="vector">HyTech Racing
-Dashboard rev2</text>
+Dashboard rev3</text>
 <rectangle x1="17.6511" y1="-31.5949" x2="18.0321" y2="-31.5187" layer="52" rot="R180"/>
 <wire x1="-98.67651875" y1="30.16151875" x2="-102.60948125" y2="25.11001875" width="0.001" layer="20" curve="88.193411" locked="yes"/>
 <wire x1="-100.36861875" y1="4.46056875" x2="-95.3978" y2="0" width="0.001" layer="20" curve="83.806522"/>
@@ -855,7 +855,6 @@ Dashboard rev2</text>
 <wire x1="104.9872625" y1="4.64331875" x2="106.42481875" y2="24.744059375" width="0.001" layer="20" locked="yes"/>
 <wire x1="-95.3978" y1="0" x2="100" y2="0" width="0.001" layer="20" locked="yes"/>
 <wire x1="-102.60948125" y1="25.11001875" x2="-100.36861875" y2="4.46056875" width="0.001" layer="20"/>
-<hole x="-98.03631875" y="25.606290625" drill="1.6" locked="yes"/>
 <hole x="101.83653125" y="25.072209375" drill="1.6" locked="yes"/>
 </plain>
 <libraries>
@@ -2434,7 +2433,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_MAX" value="75V" x="20.955" y="33.02" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$2" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="102.87" y="21.59" smashed="yes"/>
-<element name="U$3" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="-95.25" y="21.59" smashed="yes"/>
+<element name="U$3" library="HyTechAesthetics" package="MOUNTING_M3" value="" x="-98.03631875" y="25.606290625" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3979,6 +3978,19 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <vertex x="-8.3058" y="11.557"/>
 <vertex x="-8.3058" y="18.161"/>
 </polygon>
+<contactref element="D4" pad="X"/>
+<contactref element="D13" pad="X"/>
+<contactref element="D8" pad="X"/>
+<contactref element="D10" pad="X"/>
+<contactref element="D11" pad="X"/>
+<contactref element="D9" pad="X"/>
+<contactref element="D12" pad="X"/>
+<wire x1="15.24" y1="15.875" x2="0" y2="15.875" width="0" layer="19" extent="16-16"/>
+<wire x1="30.48" y1="15.875" x2="15.24" y2="15.875" width="0" layer="19" extent="16-16"/>
+<wire x1="45.72" y1="15.875" x2="30.48" y2="15.875" width="0" layer="19" extent="16-16"/>
+<wire x1="60.96" y1="15.875" x2="45.72" y2="15.875" width="0" layer="19" extent="16-16"/>
+<wire x1="73.66" y1="24.765" x2="60.96" y2="15.875" width="0" layer="19" extent="16-16"/>
+<wire x1="73.66" y1="5.715" x2="60.96" y2="15.875" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
