@@ -2803,9 +2803,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="59.56" y1="15.875" x2="59.563" y2="15.878" width="0.254" layer="16"/>
 <wire x1="59.563" y1="19.2024" x2="59.563" y2="15.878" width="0.254" layer="16"/>
 <via x="59.563" y="19.2024" extent="1-16" drill="0.35"/>
-<wire x1="44.32" y1="15.875" x2="44.2946" y2="15.9004" width="0.254" layer="16"/>
-<wire x1="44.2946" y1="15.9004" x2="37.7444" y2="15.9004" width="0.254" layer="16"/>
-<via x="37.7444" y="15.9004" extent="1-16" drill="0.35"/>
+<wire x1="49.4792" y1="13.462" x2="44.9804" y2="13.462" width="0.254" layer="16"/>
+<wire x1="44.9804" y1="13.462" x2="44.32" y2="14.1224" width="0.254" layer="16"/>
+<wire x1="44.32" y1="15.875" x2="44.32" y2="14.1224" width="0.254" layer="16"/>
+<via x="49.4792" y="13.462" extent="1-16" drill="0.35"/>
 <wire x1="29.08" y1="15.875" x2="27.88413125" y2="15.875" width="0.254" layer="16"/>
 <wire x1="27.88413125" y1="15.875" x2="27.531065625" y2="16.228065625" width="0.254" layer="16"/>
 <wire x1="13.84" y1="15.875" x2="13.84" y2="13.465" width="0.254" layer="16"/>
@@ -3932,6 +3933,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <vertex x="80.4418" y="20.2692"/>
 <vertex x="69.9008" y="20.2692"/>
 <vertex x="69.9008" y="27.2542"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="37.465" y="20.0406"/>
+<vertex x="37.465" y="13.0556"/>
+<vertex x="26.924" y="13.0556"/>
+<vertex x="26.924" y="20.0406"/>
 </polygon>
 </signal>
 </signals>
