@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -3896,6 +3896,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="22.225" y1="32.6" x2="22.225" y2="32.385" width="0.254" layer="1"/>
 <wire x1="22.225" y1="32.385" x2="22.595" y2="32.015" width="0.254" layer="1"/>
 <wire x1="22.595" y1="32.015" x2="23.26" y2="32.015" width="0.254" layer="1"/>
+</signal>
+<signal name="THERMAL">
+<polygon width="0.1524" layer="16">
+<vertex x="67.31" y="18.7706"/>
+<vertex x="67.31" y="12.4206"/>
+<vertex x="58.039" y="12.4206"/>
+<vertex x="58.039" y="18.7706"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
