@@ -6678,11 +6678,8 @@ ISO224B: High-Grade
 <part name="U$24" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$25" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$28" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
-<part name="U$29" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$3" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$30" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
-<part name="R56" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="D14" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="U$31" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="6_SPACED"/>
 <part name="U$33" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="7_SPACED"/>
 <part name="P18" library="HyTechSupplies" deviceset="+5V" device=""/>
@@ -6691,6 +6688,7 @@ ISO224B: High-Grade
 <part name="U$70" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$71" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$72" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
+<part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7783,19 +7781,13 @@ Undervoltage: 56V</text>
 <instance part="U$28" gate="G$1" x="43.18" y="144.78" smashed="yes">
 <attribute name="VALUE" x="43.18" y="142.24" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="U$29" gate="G$1" x="121.92" y="111.76" smashed="yes">
-<attribute name="VALUE" x="121.92" y="109.22" size="1.27" layer="96" align="top-center"/>
+<instance part="P18" gate="1" x="175.26" y="121.92" smashed="yes" rot="R90">
+<attribute name="VALUE" x="172.72" y="121.92" size="1.27" layer="96" rot="R90" align="bottom-center"/>
 </instance>
-<instance part="R56" gate="G$1" x="109.22" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="107.95" y="120.65" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="110.49" y="120.65" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="D14" gate="LED" x="116.84" y="116.84" smashed="yes">
-<attribute name="COLOR" x="115.57" y="115.062" size="1.27" layer="95" align="top-center"/>
-<attribute name="NAME" x="115.57" y="120.396" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="P18" gate="1" x="185.42" y="121.92" smashed="yes" rot="R90">
-<attribute name="VALUE" x="182.88" y="121.92" size="1.27" layer="96" rot="R90" align="bottom-center"/>
+<instance part="C10" gate="G$1" x="180.34" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="177.8" y="115.57" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="182.88" y="115.57" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="184.658" y="115.57" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -7932,11 +7924,8 @@ Undervoltage: 56V</text>
 </segment>
 <segment>
 <pinref part="U11" gate="G$1" pin="CONTACT2"/>
-<wire x1="124.46" y1="124.46" x2="109.22" y2="124.46" width="0.6096" layer="91"/>
+<wire x1="124.46" y1="124.46" x2="106.68" y2="124.46" width="0.6096" layer="91"/>
 <label x="106.68" y="124.46" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="R56" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="124.46" x2="106.68" y2="124.46" width="0.6096" layer="91"/>
-<junction x="109.22" y="124.46"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -7975,9 +7964,8 @@ Undervoltage: 56V</text>
 <net name="GND" class="0">
 <segment>
 <pinref part="R46" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="106.68" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="106.68" x2="215.9" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="R51" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="106.68" x2="215.9" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="106.68" x2="215.9" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="215.9" y1="114.3" x2="213.36" y2="114.3" width="0.1524" layer="91"/>
@@ -7989,11 +7977,15 @@ Undervoltage: 56V</text>
 <junction x="190.5" y="106.68"/>
 <pinref part="P1" gate="1" pin="GND"/>
 <pinref part="D2" gate="LED" pin="C"/>
-<wire x1="162.56" y1="106.68" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="106.68" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
 <junction x="162.56" y="106.68"/>
 <pinref part="D3" gate="LED" pin="C"/>
+<wire x1="180.34" y1="106.68" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="106.68" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
 <junction x="215.9" y="106.68"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="111.76" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
+<junction x="180.34" y="106.68"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -8053,31 +8045,19 @@ Undervoltage: 56V</text>
 <wire x1="101.6" y1="157.48" x2="101.6" y2="147.32" width="0.6096" layer="91"/>
 <junction x="101.6" y="157.48"/>
 </segment>
-<segment>
-<pinref part="U11" gate="G$1" pin="CONTACT1"/>
-<pinref part="U$29" gate="G$1" pin="TS-FUSED"/>
-<wire x1="124.46" y1="116.84" x2="121.92" y2="116.84" width="0.6096" layer="91"/>
-<wire x1="121.92" y1="116.84" x2="121.92" y2="114.3" width="0.6096" layer="91"/>
-<pinref part="D14" gate="LED" pin="C"/>
-<wire x1="119.38" y1="116.84" x2="121.92" y2="116.84" width="0.6096" layer="91"/>
-<junction x="121.92" y="116.84"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R56" gate="G$1" pin="1"/>
-<pinref part="D14" gate="LED" pin="A"/>
-<wire x1="109.22" y1="116.84" x2="111.76" y2="116.84" width="0.6096" layer="91"/>
-</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="V+"/>
 <pinref part="R44" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="121.92" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
 <junction x="190.5" y="121.92"/>
 <pinref part="P18" gate="1" pin="+5V"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="121.92" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="119.38" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
+<junction x="180.34" y="121.92"/>
 </segment>
 </net>
 </nets>
