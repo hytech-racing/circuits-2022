@@ -445,7 +445,7 @@ Designed by Cody Kaminsky</text>
 <wire x1="17.97486875" y1="72.38083125" x2="16.914209375" y2="71.320159375" width="0.001" layer="120" style="shortdash"/>
 <wire x1="9.200590625" y1="71.320159375" x2="16.914209375" y2="71.320159375" width="0.001" layer="120" curve="149.246308"/>
 <wire x1="9.200590625" y1="71.320159375" x2="8.13993125" y2="72.38083125" width="0.001" layer="120" style="shortdash"/>
-<text x="48.26" y="78.74" size="1.778" layer="51" rot="R90">Tractive System Board Rev1
+<text x="48.26" y="78.74" size="1.778" layer="21" rot="R90">Tractive System Board Rev1
 Designed by Cody Kaminsky 2021</text>
 </plain>
 <libraries>
@@ -6908,53 +6908,55 @@ Toshiba
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="HyTech Default (4 Layer)">
-<description language="en">
-&lt;b&gt;HyTech Default Design Rules (4 Layer)&lt;/b&gt;
+<designrules name="JLCPCB (4 Layer)">
+<description language="en">&lt;b&gt;JLCPCB Design Rules (4 Layers)&lt;/b&gt;
 &lt;p&gt;
-These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, OshPark, Sunstone Circuits) the team uses.
-</description>
+The default Design Rules have been set to cover
+a wide range of applications.
+&lt;p&gt;
+Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;JLCPCB&lt;/a&gt;
+&lt;/p&gt;</description>
 <param name="layerSetup" value="(1+2*15+16)"/>
 <param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
 <param name="mtIsolate" value="0.2mm 1.065mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
 <param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="6mil"/>
+<param name="mdPadPad" value="5mil"/>
 <param name="mdPadVia" value="10mil"/>
 <param name="mdViaVia" value="20mil"/>
-<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdPad" value="5mil"/>
 <param name="mdSmdVia" value="10mil"/>
-<param name="mdSmdSmd" value="6mil"/>
-<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mdSmdSmd" value="5mil"/>
+<param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="20mil"/>
+<param name="mdCopperDimension" value="0.2mm"/>
 <param name="mdDrill" value="21mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="10mil"/>
-<param name="msMicroVia" value="10mil"/>
+<param name="msWidth" value="5mil"/>
+<param name="msDrill" value="0.2mm"/>
+<param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
 <param name="rvPadBottom" value="0.25"/>
 <param name="rvViaOuter" value="0.25"/>
 <param name="rvViaInner" value="0.25"/>
-<param name="rvMicroViaOuter" value="0.25"/>
-<param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="8mil"/>
+<param name="rvMicroViaOuter" value="0"/>
+<param name="rvMicroViaInner" value="0"/>
+<param name="rlMinPadTop" value="6mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="8mil"/>
+<param name="rlMinPadInner" value="6mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="8mil"/>
+<param name="rlMinPadBottom" value="6mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
-<param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
-<param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="5mil"/>
+<param name="rlMaxViaOuter" value="10mil"/>
+<param name="rlMinViaInner" value="5mil"/>
+<param name="rlMaxViaInner" value="10mil"/>
+<param name="rlMinMicroViaOuter" value="6mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="8mil"/>
+<param name="rlMinMicroViaInner" value="6mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -6963,8 +6965,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="3mil"/>
-<param name="mlMaxStopFrame" value="3mil"/>
+<param name="mlMinStopFrame" value="2mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="30mil"/>
@@ -7458,7 +7460,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Pulse Electonics Company" x="-110.5904875" y="-25.41206875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="" x="-110.5904875" y="-25.41206875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="-110.5904875" y="-25.41206875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="47.2705125" y="76.82293125" size="1.27" layer="21" rot="R270"/>
+<attribute name="NAME" x="47.2705125" y="76.82293125" size="1.27" layer="51" rot="R270"/>
 <attribute name="TOLERANCE" value="" x="-110.5904875" y="-25.41206875" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="L5" library="HyTechDevices" package="WE-LMHI" value="INDUCTOR_WELMHI_" x="52.021846875" y="71.837184375" smashed="yes" rot="R270">
@@ -10094,49 +10096,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <approved hash="22,2,1d625d625c251c25"/>
 <approved hash="22,15,1d625d625c251c25"/>
 <approved hash="22,16,1d625d625c251c25"/>
-<approved hash="4,1,6e76610db143be38"/>
-<approved hash="4,1,e7d17f10c5e7c21c"/>
-<approved hash="4,1,10c21eceadd4a3d8"/>
-<approved hash="4,1,5841c7bf18c61802"/>
-<approved hash="4,1,405134e0e3369787"/>
-<approved hash="4,1,fbb46b944736895d"/>
-<approved hash="4,1,4cf338bbbd482cb1"/>
-<approved hash="4,1,0a72028966e36e18"/>
-<approved hash="4,1,006ef937918f0a11"/>
-<approved hash="4,1,6a0e147704fb590c"/>
-<approved hash="4,1,beab3ba209df58fc"/>
-<approved hash="4,1,2c5f34e3c5d8c51c"/>
-<approved hash="4,1,d87ad70677487834"/>
-<approved hash="4,1,b495ccb5ac80aa49"/>
-<approved hash="4,1,045170d8ad0ed987"/>
-<approved hash="4,1,ca52c28fc6e5ce38"/>
-<approved hash="4,1,74308bbf3e905c7d"/>
-<approved hash="4,1,d6c2d8f5adefa3d8"/>
-<approved hash="4,1,5240cdbae6c3e603"/>
-<approved hash="4,1,307d19e3e288ef26"/>
-<approved hash="4,1,96de8d5f409f7714"/>
-<approved hash="4,16,6e76610db143be38"/>
-<approved hash="4,16,045170d8ad0ed987"/>
-<approved hash="4,16,d87ad70677487834"/>
-<approved hash="4,16,d6c2d8f5adefa3d8"/>
-<approved hash="4,16,ca52c28fc6e5ce38"/>
-<approved hash="4,16,5240cdbae6c3e603"/>
-<approved hash="4,16,3e8b86e73bd2a43f"/>
-<approved hash="4,16,04a5fdca7e8c4139"/>
-<approved hash="4,16,307d19e3e288ef26"/>
-<approved hash="4,16,96de8d5f409f7714"/>
-<approved hash="4,16,6a0e147704fb590c"/>
-<approved hash="4,16,10c21eceadd4a3d8"/>
-<approved hash="4,16,5841c7bf18c61802"/>
-<approved hash="4,16,74308bbf3e905c7d"/>
-<approved hash="4,16,006ef937918f0a11"/>
-<approved hash="4,16,405134e0e3369787"/>
-<approved hash="4,16,4cf338bbbd482cb1"/>
-<approved hash="4,16,fbb46b944736895d"/>
-<approved hash="4,16,0a72028966e36e18"/>
-<approved hash="4,16,beab3ba209df58fc"/>
-<approved hash="4,16,2c5f34e3c5d8c51c"/>
-<approved hash="4,16,b495ccb5ac80aa49"/>
 <approved hash="6,1,3981d6779b967f31"/>
 <approved hash="6,1,8e34b409c78b577d"/>
 </errors>
