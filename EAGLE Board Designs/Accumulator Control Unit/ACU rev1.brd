@@ -7836,7 +7836,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="U17" pad="3"/>
 <contactref element="C9" pad="1"/>
 <wire x1="128.46729375" y1="30.46411875" x2="128.46729375" y2="29.01270625" width="0.508" layer="1"/>
-<wire x1="130.1252" y1="18.0982" x2="129.9604" y2="18.263" width="0.508" layer="1"/>
 <wire x1="129.9604" y1="18.263" x2="129.9604" y2="27.5196" width="0.508" layer="1"/>
 <wire x1="129.9604" y1="27.5196" x2="128.46729375" y2="29.01270625" width="0.508" layer="1"/>
 <wire x1="129.9604" y1="18.263" x2="132.22" y2="18.263" width="0.508" layer="1"/>
