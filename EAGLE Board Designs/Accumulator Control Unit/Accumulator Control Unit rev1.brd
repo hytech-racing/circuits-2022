@@ -3,10 +3,10 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="GND" color="16" fill="1" visible="no" active="yes"/>
@@ -5688,7 +5688,9 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 </pass>
 </autorouter>
 <elements>
-<element name="A1" library="HyTechDevices" package="TEENSY_SHORT" value="TEENSY_4.0" x="175.58068125" y="30.88049375" smashed="yes" rot="R90"/>
+<element name="A1" library="HyTechDevices" package="TEENSY_SHORT" value="TEENSY_4.0" x="175.58068125" y="30.88049375" smashed="yes" rot="R90">
+<attribute name="TEENSY" value="4.0" x="174.69168125" y="38.50049375" size="2.032" layer="21" font="vector" ratio="12" rot="R270" align="center"/>
+</element>
 <element name="C1" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_25V_10UF" x="121.3358" y="33.4264" smashed="yes" rot="R270">
 <attribute name="CAPACITANCE" value="10µF" x="41.3258" y="5.4864" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DKPN" value="490-7202-1-ND" x="41.3258" y="5.4864" size="1.778" layer="27" rot="R270" display="off"/>
