@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -280,20 +280,18 @@ CM200DZ</text>
 </symbol>
 <symbol name="MOTOR_AC">
 <circle x="0" y="0" radius="20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="12.7" y2="-20.32" width="0.1524" layer="94"/>
-<wire x1="-10.16" y1="-17.78" x2="-12.7" y2="-20.32" width="0.1524" layer="94"/>
 <pin name="B" x="0" y="-27.94" visible="off" rot="R90"/>
-<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="-22.86" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-20.32" x2="12.7" y2="-22.86" width="0.1524" layer="94"/>
-<pin name="A" x="-12.7" y="-27.94" visible="off" length="middle" rot="R90"/>
-<pin name="C" x="12.7" y="-27.94" visible="off" length="middle" rot="R90"/>
+<pin name="A" x="-5.08" y="-27.94" visible="off" rot="R90"/>
+<pin name="C" x="5.08" y="-27.94" visible="off" rot="R90"/>
 <text x="0" y="10.16" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 <text x="0" y="0" size="12.7" layer="94" align="center">M</text>
-<text x="-10.16" y="-25.4" size="1.778" layer="94">A</text>
-<text x="2.54" y="-25.4" size="1.778" layer="94">B</text>
-<text x="15.24" y="-25.4" size="1.778" layer="94">C</text>
+<text x="-2.54" y="-25.4" size="1.778" layer="94" align="bottom-right">A</text>
+<text x="2.54" y="-25.4" size="1.778" layer="94" align="bottom-right">B</text>
+<text x="7.62" y="-25.4" size="1.778" layer="94" align="bottom-right">C</text>
 <pin name="RESOLVER" x="-17.78" y="-12.7" length="point"/>
 <wire x1="-17.78" y1="-12.7" x2="-15.875" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-20.32" x2="-5.08" y2="-19.812" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-20.32" x2="5.08" y2="-19.812" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -582,7 +580,7 @@ accumulator:
 <net name="N$9" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A"/>
-<wire x1="-50.8" y1="5.08" x2="-55.88" y2="-2.54" width="0.889" layer="91"/>
+<wire x1="-50.8" y1="5.08" x2="-55.88" y2="5.08" width="0.889" layer="91"/>
 <pinref part="EMRAX_208_MV" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -596,7 +594,7 @@ accumulator:
 <net name="N$11" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="C"/>
-<wire x1="-50.8" y1="15.24" x2="-55.88" y2="22.86" width="0.889" layer="91"/>
+<wire x1="-50.8" y1="15.24" x2="-55.88" y2="15.24" width="0.889" layer="91"/>
 <pinref part="EMRAX_208_MV" gate="G$1" pin="C"/>
 </segment>
 </net>
