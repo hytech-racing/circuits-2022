@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -245,6 +245,11 @@ CM200DZ</text>
 <devices>
 <device name="">
 <technologies>
+<technology name="104742-2">
+<attribute name="MANUFACTURER" value="TE"/>
+<attribute name="MPN" value="104742-2"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="HPK">
 <attribute name="MANUFACTURER" value="Rosenberger"/>
 <attribute name="MPN" value="HPK"/>
@@ -3036,8 +3041,6 @@ Layer: 94 Symbol</description>
 <part name="U$1" library="HyTechSymbolsTemp" deviceset="CASCADIA_CM200DZ_SIMPLE" device=""/>
 <part name="U$2" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HPK"/>
 <part name="U$3" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HPK"/>
-<part name="U$4" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
-<part name="U$5" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
 <part name="AIR1" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
 <part name="AIR2" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
 <part name="TSMP_RES+" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10k"/>
@@ -3045,15 +3048,19 @@ Layer: 94 Symbol</description>
 <part name="TSMP+" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TSMP-" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="EMRAX_208_MV" library="HyTechSymbols" deviceset="MOTOR_AC" device=""/>
-<part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
+<part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESIGNER_SCHEMATIC" value="Zekun Li"/>
+</part>
+<part name="U$6" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
+<part name="U$7" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<wire x1="193.04" y1="134.62" x2="193.04" y2="96.52" width="0.8128" layer="97"/>
-<wire x1="193.04" y1="134.62" x2="231.14" y2="134.62" width="0.8128" layer="97"/>
-<wire x1="231.14" y1="134.62" x2="231.14" y2="96.52" width="0.8128" layer="97"/>
-<wire x1="231.14" y1="96.52" x2="193.04" y2="96.52" width="0.8128" layer="97"/>
+<wire x1="185.42" y1="134.62" x2="185.42" y2="91.44" width="0.8128" layer="97"/>
+<wire x1="185.42" y1="134.62" x2="231.14" y2="134.62" width="0.8128" layer="97"/>
+<wire x1="231.14" y1="134.62" x2="231.14" y2="91.44" width="0.8128" layer="97"/>
+<wire x1="231.14" y1="91.44" x2="185.42" y2="91.44" width="0.8128" layer="97"/>
 <text x="193.04" y="137.16" size="2.54" layer="97">Accumulator</text>
 <text x="195.58" y="129.54" size="1.27" layer="97" rot="MR180">HV Fuse in 
 accumulator:
@@ -3067,6 +3074,8 @@ accumulator:
 <text x="175.26" y="106.68" size="1.27" layer="97">35mm^2</text>
 <text x="205.74" y="104.14" size="1.27" layer="97">35mm^2</text>
 <text x="210.82" y="127" size="1.27" layer="97">22AWG</text>
+<text x="175.26" y="93.98" size="1.27" layer="97">35mm^2</text>
+<text x="144.78" y="96.52" size="1.778" layer="95">HVD</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="142.24" y="101.6" smashed="yes" rot="R180"/>
@@ -3077,14 +3086,6 @@ accumulator:
 <instance part="U$3" gate="G$1" x="165.1" y="114.3" smashed="yes">
 <attribute name="MPN" x="165.1" y="106.045" size="1.27" layer="96" align="top-left"/>
 <attribute name="MANUFACTURER" x="165.1" y="115.062" size="1.27" layer="95"/>
-</instance>
-<instance part="U$4" gate="G$1" x="190.5" y="114.3" smashed="yes" rot="MR0">
-<attribute name="MPN" x="190.5" y="106.045" size="1.27" layer="96" rot="MR0" align="top-left"/>
-<attribute name="MANUFACTURER" x="190.5" y="115.062" size="1.27" layer="95" rot="MR0"/>
-</instance>
-<instance part="U$5" gate="G$1" x="195.58" y="114.3" smashed="yes">
-<attribute name="MPN" x="195.58" y="106.045" size="1.27" layer="96" align="top-left"/>
-<attribute name="MANUFACTURER" x="195.58" y="115.062" size="1.27" layer="95"/>
 </instance>
 <instance part="AIR1" gate="SPST" x="218.44" y="114.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="213.36" y="109.22" size="1.778" layer="96"/>
@@ -3123,6 +3124,14 @@ accumulator:
 <attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
 </instance>
+<instance part="U$6" gate="G$1" x="165.1" y="101.6" smashed="yes">
+<attribute name="MPN" x="165.1" y="93.345" size="1.27" layer="96" align="top-left"/>
+<attribute name="MANUFACTURER" x="165.1" y="102.362" size="1.27" layer="95"/>
+</instance>
+<instance part="U$7" gate="G$1" x="162.56" y="101.6" smashed="yes" rot="MR0">
+<attribute name="MPN" x="162.56" y="93.345" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<attribute name="MANUFACTURER" x="162.56" y="102.362" size="1.27" layer="95" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3143,24 +3152,8 @@ accumulator:
 <wire x1="144.78" y1="109.22" x2="144.78" y2="106.68" width="0.889" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="111.76" x2="180.34" y2="111.76" width="0.889" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="2"/>
-<pinref part="U$3" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="109.22" x2="175.26" y2="109.22" width="0.889" layer="91"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="111.76" x2="205.74" y2="114.3" width="0.889" layer="91"/>
 <pinref part="AIR1" gate="SPST" pin="P"/>
 <wire x1="205.74" y1="114.3" x2="208.28" y2="114.3" width="0.889" layer="91"/>
 <wire x1="208.28" y1="114.3" x2="213.36" y2="114.3" width="0.889" layer="91"/>
@@ -3168,19 +3161,9 @@ accumulator:
 <junction x="208.28" y="114.3"/>
 <wire x1="208.28" y1="129.54" x2="215.9" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="TSMP_RES+" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="109.22" x2="205.74" y2="106.68" width="0.889" layer="91"/>
-<pinref part="AIR2" gate="SPST" pin="P"/>
-<wire x1="205.74" y1="106.68" x2="210.82" y2="106.68" width="0.889" layer="91"/>
-<wire x1="210.82" y1="106.68" x2="213.36" y2="106.68" width="0.889" layer="91"/>
-<wire x1="210.82" y1="106.68" x2="210.82" y2="121.92" width="0.1524" layer="91"/>
-<junction x="210.82" y="106.68"/>
-<wire x1="210.82" y1="121.92" x2="215.9" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="TSMP_RES-" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="114.3" x2="205.74" y2="111.76" width="0.889" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="111.76" x2="175.26" y2="111.76" width="0.889" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -3226,6 +3209,38 @@ accumulator:
 <net name="N$13" class="0">
 <segment>
 <wire x1="120.904" y1="130.81" x2="128.524" y2="130.81" width="0.889" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="99.06" x2="187.96" y2="99.06" width="0.889" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="109.22" x2="187.96" y2="109.22" width="0.889" layer="91"/>
+<wire x1="187.96" y1="99.06" x2="187.96" y2="109.22" width="0.889" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="96.52" x2="190.5" y2="96.52" width="0.889" layer="91"/>
+<wire x1="190.5" y1="96.52" x2="190.5" y2="109.22" width="0.889" layer="91"/>
+<pinref part="AIR2" gate="SPST" pin="P"/>
+<wire x1="205.74" y1="106.68" x2="210.82" y2="106.68" width="0.889" layer="91"/>
+<wire x1="210.82" y1="106.68" x2="213.36" y2="106.68" width="0.889" layer="91"/>
+<wire x1="210.82" y1="106.68" x2="210.82" y2="121.92" width="0.1524" layer="91"/>
+<junction x="210.82" y="106.68"/>
+<wire x1="210.82" y1="121.92" x2="215.9" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="TSMP_RES-" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="109.22" x2="205.74" y2="106.68" width="0.889" layer="91"/>
+<wire x1="190.5" y1="109.22" x2="205.74" y2="109.22" width="0.889" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="2"/>
+<pinref part="U$7" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="96.52" x2="152.4" y2="99.06" width="0.889" layer="91"/>
 </segment>
 </net>
 </nets>
