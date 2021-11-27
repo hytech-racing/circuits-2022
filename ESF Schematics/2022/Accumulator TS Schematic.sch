@@ -3119,12 +3119,13 @@ METER</text>
 <wire x1="30.48" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
 <text x="27.94" y="-2.54" size="1.778" layer="95" align="top-right">PRECHARGE
 LOGIC</text>
-<pin name="OUTPA" x="-2.54" y="-2.54" length="short"/>
-<pin name="OUTNA" x="-2.54" y="-7.62" length="short"/>
-<pin name="OUTPB" x="-2.54" y="-12.7" length="short"/>
-<pin name="OUTNB" x="-2.54" y="-17.78" length="short"/>
-<pin name="RELAY_CTRL" x="33.02" y="-17.78" length="short" rot="R180"/>
-<pin name="PRECHARGE_OK" x="33.02" y="-15.24" length="short" rot="R180"/>
+<pin name="OUTPA" x="-2.54" y="-2.54" length="short" direction="in"/>
+<pin name="OUTNA" x="-2.54" y="-7.62" length="short" direction="in"/>
+<pin name="OUTPB" x="-2.54" y="-12.7" length="short" direction="in"/>
+<pin name="OUTNB" x="-2.54" y="-17.78" length="short" direction="in"/>
+<pin name="RELAY_CTRL" x="33.02" y="-12.7" length="short" direction="out" rot="R180"/>
+<pin name="PRECHARGE_OK" x="33.02" y="-10.16" length="short" direction="out" rot="R180"/>
+<pin name="60V_INDICATOR" x="33.02" y="-17.78" length="short" direction="out" rot="R180"/>
 </symbol>
 <symbol name="RELAY_SOLIDSTATE_NO">
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
@@ -3570,6 +3571,22 @@ LOGIC</text>
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
 </package>
+<package name="0603-LED">
+<description>0603 LED
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SURCK-41133.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-0.825" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="2" x="0.825" y="0" dx="0.8" dy="0.8" layer="1"/>
+<rectangle x1="-0.45" y1="-0.2" x2="-0.05" y2="0.2" layer="21"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
+<text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
+<rectangle x1="-1.025" y1="0.5" x2="-0.625" y2="0.75" layer="21"/>
+<rectangle x1="-1.025" y1="-0.75" x2="-0.625" y2="-0.5" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR_VALUE">
@@ -3592,6 +3609,28 @@ LOGIC</text>
 <pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-2.54" y="1.778" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-1.778" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="DIODE_LED">
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="1.778" x2="-0.127" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.651" x2="1.016" y2="3.048" width="0.1524" layer="94"/>
+<text x="-1.27" y="-1.778" size="1.27" layer="95" align="top-center">&gt;COLOR</text>
+<text x="-1.27" y="3.556" size="1.27" layer="96" align="bottom-center">&gt;NAME</text>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.127" y="3.175"/>
+<vertex x="-1.016" y="2.794"/>
+<vertex x="-0.508" y="2.286"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.016" y="3.048"/>
+<vertex x="0.127" y="2.667"/>
+<vertex x="0.635" y="2.159"/>
+</polygon>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3629,6 +3668,73 @@ LOGIC</text>
 <attribute name="MANUFACTURER" value="Keystone Electronics"/>
 <attribute name="MOPN" value="534-5015"/>
 <attribute name="MPN" value="5015"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_?_*" prefix="D">
+<description>LED
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608VBC_D-246010.pdf"&gt;Blue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608ZGCK-1173388.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-6197.pdf"&gt;Orange&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-J3-PRV-1173336.pdf"&gt;Red&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/SM0603UWC-880813.pdf"&gt;White&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SYCK-J3-PRV-1173311.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
+&lt;\ul&gt;</description>
+<gates>
+<gate name="LED" symbol="DIODE_LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="0603-LED">
+<connects>
+<connect gate="LED" pin="A" pad="2"/>
+<connect gate="LED" pin="C" pad="1"/>
+</connects>
+<technologies>
+<technology name="BLUE">
+<attribute name="COLOR" value="Blue"/>
+<attribute name="DKPN" value="754-1789-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608VBC/D"/>
+<attribute name="MPN" value="APT1608VBC/D"/>
+</technology>
+<technology name="GREEN">
+<attribute name="COLOR" value="Green"/>
+<attribute name="DKPN" value="754-1790-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608ZGCK"/>
+<attribute name="MPN" value="APT1608ZGCK"/>
+</technology>
+<technology name="ORANGE">
+<attribute name="COLOR" value="Orange"/>
+<attribute name="DKPN" value="754-1120-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608SECK"/>
+<attribute name="MPN" value="APT1608SECK"/>
+</technology>
+<technology name="RED">
+<attribute name="COLOR" value="Red"/>
+<attribute name="DKPN" value="754-1786-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608SECKJ3PRV"/>
+<attribute name="MPN" value="APT1608SECK/J3-PRV"/>
+</technology>
+<technology name="WHITE">
+<attribute name="COLOR" value="White"/>
+<attribute name="DKPN" value="SM0603UWC-ND"/>
+<attribute name="MANUFACTURER" value="Bivar Inc."/>
+<attribute name="MOPN" value="749-SM0603UWC"/>
+<attribute name="MPN" value="SM0603UWC"/>
+</technology>
+<technology name="YELLOW">
+<attribute name="COLOR" value="Yellow"/>
+<attribute name="DKPN" value="754-1788-1-ND"/>
+<attribute name="MANUFACTURER" value="Kingbright"/>
+<attribute name="MOPN" value="604-APT1608SYCK/J3-PRV"/>
+<attribute name="MPN" value="APT1608SYCK/J3-PRV"/>
 </technology>
 </technologies>
 </device>
@@ -3726,6 +3832,9 @@ LOGIC</text>
 <part name="RV22" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="1k"/>
 <part name="RV21" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="12.4"/>
 <part name="P10" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="RV23" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="1k"/>
+<part name="ACCUMULATOR_INDICATOR" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
+<part name="P11" library="HyTechSupplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3748,6 +3857,11 @@ LOGIC</text>
 <text x="7.62" y="45.72" size="1.778" layer="97" align="top-left">35mm^2:</text>
 <text x="7.62" y="35.56" size="1.778" layer="97" align="top-left">22AWG:</text>
 <text x="7.62" y="40.64" size="1.778" layer="97" align="top-left">20mm^2</text>
+<wire x1="241.3" y1="101.6" x2="269.24" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="269.24" y1="101.6" x2="269.24" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="269.24" y1="86.36" x2="241.3" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="241.3" y1="86.36" x2="241.3" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
+<text x="269.24" y="83.82" size="2.54" layer="97" align="top-right">Accumulator Indicator</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="O" x="0" y="0" smashed="yes">
@@ -4017,6 +4131,17 @@ LOGIC</text>
 <instance part="P10" gate="1" x="124.46" y="200.66" smashed="yes">
 <attribute name="VALUE" x="124.46" y="199.39" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="RV23" gate="G$1" x="251.46" y="106.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="250.19" y="105.41" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="252.73" y="105.41" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="ACCUMULATOR_INDICATOR" gate="LED" x="256.54" y="93.98" smashed="yes">
+<attribute name="COLOR" x="255.27" y="92.202" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="255.27" y="97.536" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P11" gate="1" x="261.62" y="91.44" smashed="yes">
+<attribute name="VALUE" x="261.62" y="90.17" size="1.27" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4061,6 +4186,11 @@ LOGIC</text>
 <wire x1="121.92" y1="203.2" x2="124.46" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="P10" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="ACCUMULATOR_INDICATOR" gate="LED" pin="C"/>
+<wire x1="259.08" y1="93.98" x2="261.62" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="P11" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="SHDN" class="0">
 <segment>
@@ -4092,8 +4222,8 @@ LOGIC</text>
 </segment>
 <segment>
 <pinref part="U$30" gate="G$1" pin="PRECHARGE_OK"/>
-<wire x1="251.46" y1="114.3" x2="254" y2="114.3" width="0.1524" layer="91"/>
-<label x="254" y="114.3" size="1.27" layer="95" xref="yes"/>
+<wire x1="251.46" y1="119.38" x2="254" y2="119.38" width="0.1524" layer="91"/>
+<label x="254" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -4588,8 +4718,8 @@ LOGIC</text>
 </segment>
 <segment>
 <pinref part="U$30" gate="G$1" pin="RELAY_CTRL"/>
-<wire x1="251.46" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
-<label x="254" y="111.76" size="1.27" layer="95" xref="yes"/>
+<wire x1="251.46" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
+<label x="254" y="116.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -4619,6 +4749,20 @@ LOGIC</text>
 <net name="N$42" class="0">
 <segment>
 <wire x1="20.32" y1="40.64" x2="30.48" y2="40.64" width="0.508" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="U$30" gate="G$1" pin="60V_INDICATOR"/>
+<wire x1="251.46" y1="111.76" x2="251.46" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="RV23" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="RV23" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="101.6" x2="251.46" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="ACCUMULATOR_INDICATOR" gate="LED" pin="A"/>
 </segment>
 </net>
 </nets>
