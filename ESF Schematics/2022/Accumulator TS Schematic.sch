@@ -901,6 +901,14 @@ LOGIC</text>
 <wire x1="2.032" y1="0.762" x2="2.286" y2="0.762" width="0.254" layer="94"/>
 <wire x1="3.81" y1="0.762" x2="3.556" y2="0.762" width="0.254" layer="94"/>
 </symbol>
+<symbol name="+5V">
+<text x="0" y="2.54" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="P">
@@ -968,6 +976,19 @@ LOGIC</text>
 <deviceset name="TS-FUSED">
 <gates>
 <gate name="G$1" symbol="TS-FUSED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" prefix="P">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -3787,7 +3808,7 @@ Layer: 94 Symbol</description>
 <part name="U$13" library="HyTechSymbolsTemp" deviceset="MOSFET_N-CHANNEL" device=""/>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P3" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="PRECHARGE_RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="1.5K"/>
+<part name="PRECHARGE_RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="1.5k"/>
 <part name="P4" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
 <part name="TSMP-RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10K"/>
 <part name="TSMP+RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10K"/>
@@ -3797,7 +3818,7 @@ Layer: 94 Symbol</description>
 <part name="P5" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P6" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
 <part name="P7" library="HyTechSupplies" deviceset="TS-UNFUSED" device=""/>
-<part name="DISCHARGE_RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10K"/>
+<part name="DISCHARGE_RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10k"/>
 <part name="U$14" library="HyTechSymbolsTemp" deviceset="ENERGY_METER" device=""/>
 <part name="F1" library="HyTechSymbolsTemp" deviceset="FUSE" device="" value="10A"/>
 <part name="P8" library="HyTechSupplies" deviceset="+12V" device=""/>
@@ -3858,6 +3879,9 @@ Layer: 94 Symbol</description>
 <attribute name="ENGINEER" value="Zekun Li"/>
 </part>
 <part name="P12" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="P13" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
+<part name="P14" library="HyTechSupplies" deviceset="TS-UNFUSED" device=""/>
+<part name="P15" library="HyTechSupplies" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3887,14 +3911,13 @@ Layer: 94 Symbol</description>
 <text x="12.7" y="40.64" size="1.778" layer="97" align="top-left">16AWG:</text>
 <text x="17.78" y="144.78" size="1.27" layer="97" align="top-left">20mm^2</text>
 <text x="17.78" y="154.94" size="1.27" layer="97" align="top-left">20mm^2</text>
-<text x="83.82" y="132.08" size="1.27" layer="97" align="top-left">20mm^2</text>
 <text x="147.32" y="154.94" size="1.27" layer="97" align="top-left">20mm^2</text>
 <text x="129.54" y="142.24" size="1.27" layer="97">20mm^2</text>
 <text x="116.84" y="142.24" size="1.27" layer="97">20mm^2</text>
 <text x="104.14" y="142.24" size="1.27" layer="97">20mm^2</text>
 <text x="91.44" y="142.24" size="1.27" layer="97">20mm^2</text>
 <text x="55.88" y="111.76" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="17.78" y="119.38" size="1.27" layer="97" align="top-left">22AWG</text>
+<text x="17.78" y="81.28" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="40.64" y="139.7" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="33.02" y="162.56" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="20.32" y="185.42" size="1.27" layer="97" align="top-left">22AWG</text>
@@ -3916,6 +3939,16 @@ Layer: 94 Symbol</description>
 <text x="121.92" y="205.74" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="88.9" y="193.04" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="50.8" y="76.2" size="1.27" layer="97" align="top-left">16AWG</text>
+<text x="228.6" y="198.12" size="1.778" layer="88" align="top-left">Add HVD panduits
+fix resistor dividers
+fix busbar labelling and gauges
+rename relay_ctrl as precharge_ok
+fix maintenance plug symbol
+fix TSMPs
+add isolation for DCDC
+prechargeOK same as relay_ctrl
+show all microfit connectors
+ring terminals between fused and unfused and pack plus</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="152.4" y="81.28" smashed="yes" rot="MR0"/>
@@ -3961,19 +3994,19 @@ Layer: 94 Symbol</description>
 <instance part="P4" gate="G$1" x="101.6" y="104.14" smashed="yes">
 <attribute name="VALUE" x="101.6" y="109.22" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="TSMP-RES" gate="G$1" x="27.94" y="114.3" smashed="yes">
-<attribute name="NAME" x="26.67" y="115.57" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="26.67" y="113.03" size="1.27" layer="96" align="top-center"/>
+<instance part="TSMP-RES" gate="G$1" x="27.94" y="76.2" smashed="yes">
+<attribute name="NAME" x="26.67" y="77.47" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="26.67" y="74.93" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TSMP+RES" gate="G$1" x="27.94" y="121.92" smashed="yes">
-<attribute name="NAME" x="26.67" y="123.19" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="26.67" y="120.65" size="1.27" layer="96" align="top-center"/>
+<instance part="TSMP+RES" gate="G$1" x="27.94" y="83.82" smashed="yes">
+<attribute name="NAME" x="26.67" y="85.09" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="26.67" y="82.55" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TSMP+" gate="G$1" x="17.78" y="121.92" smashed="yes">
-<attribute name="NAME" x="15.24" y="123.698" size="1.27" layer="95"/>
+<instance part="TSMP+" gate="G$1" x="17.78" y="83.82" smashed="yes">
+<attribute name="NAME" x="15.24" y="85.598" size="1.27" layer="95"/>
 </instance>
-<instance part="TSMP-" gate="G$1" x="17.78" y="114.3" smashed="yes">
-<attribute name="NAME" x="15.24" y="116.078" size="1.27" layer="95"/>
+<instance part="TSMP-" gate="G$1" x="17.78" y="76.2" smashed="yes">
+<attribute name="NAME" x="15.24" y="77.978" size="1.27" layer="95"/>
 </instance>
 <instance part="DISCHARGE" gate="G$1" x="139.7" y="116.84" smashed="yes">
 <attribute name="MPN" x="139.7" y="93.218" size="1.27" layer="96" align="top-left"/>
@@ -4199,6 +4232,15 @@ Layer: 94 Symbol</description>
 <instance part="P12" gate="1" x="71.12" y="182.88" smashed="yes">
 <attribute name="VALUE" x="71.12" y="181.61" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="P13" gate="G$1" x="33.02" y="86.36" smashed="yes">
+<attribute name="VALUE" x="33.02" y="91.44" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P14" gate="G$1" x="33.02" y="73.66" smashed="yes">
+<attribute name="VALUE" x="33.02" y="71.12" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P15" gate="1" x="71.12" y="190.5" smashed="yes">
+<attribute name="VALUE" x="71.12" y="193.04" size="1.27" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4275,11 +4317,6 @@ Layer: 94 Symbol</description>
 <wire x1="132.08" y1="195.58" x2="134.62" y2="195.58" width="0.1524" layer="91"/>
 <label x="134.62" y="195.58" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U$11" gate="G$1" pin="VCC"/>
-<wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
-<label x="71.12" y="187.96" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="PRECHARGE_OK" class="0">
 <segment>
@@ -4340,8 +4377,8 @@ Layer: 94 Symbol</description>
 </segment>
 <segment>
 <pinref part="TSMP+RES" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
-<label x="33.02" y="121.92" size="1.27" layer="95" xref="yes"/>
+<wire x1="30.48" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="P13" gate="G$1" pin="TS+UNFUSED"/>
 </segment>
 <segment>
 <pinref part="DISCHARGE" gate="G$1" pin="CONTACT1"/>
@@ -4373,22 +4410,15 @@ Layer: 94 Symbol</description>
 <net name="N$9" class="0">
 <segment>
 <pinref part="TSMP+RES" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="121.92" x2="20.32" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="83.82" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="TSMP+" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="TSMP-RES" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="114.3" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="TSMP-" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="TS_UNFUSED" class="0">
-<segment>
-<pinref part="TSMP-RES" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="114.3" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
-<label x="33.02" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -4453,6 +4483,11 @@ Layer: 94 Symbol</description>
 <wire x1="200.66" y1="73.66" x2="200.66" y2="71.12" width="0.0762" layer="91"/>
 <junction x="200.66" y="73.66"/>
 <pinref part="U$28" gate="G$1" pin="TS-UNFUSED"/>
+</segment>
+<segment>
+<pinref part="TSMP-RES" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="76.2" x2="33.02" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="P14" gate="G$1" pin="TS-UNFUSED"/>
 </segment>
 </net>
 <net name="PACK+FUSED" class="0">
@@ -4835,6 +4870,13 @@ Layer: 94 Symbol</description>
 <net name="N$39" class="0">
 <segment>
 <wire x1="25.4" y1="30.48" x2="35.56" y2="30.48" width="0.0762" layer="91"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="VCC"/>
+<wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="P15" gate="1" pin="+5V"/>
 </segment>
 </net>
 </nets>

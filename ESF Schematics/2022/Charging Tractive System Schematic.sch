@@ -3238,8 +3238,6 @@ Layer: 94 Symbol</description>
 <part name="U$2" library="HyTechSymbolsTemp" deviceset="CHARGER_*" device="" technology="G4-0017-01"/>
 <part name="U$3" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device="" technology="HV02-M3S(40A)"/>
 <part name="U$4" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HPK"/>
-<part name="F1" library="HyTechSymbolsTemp" deviceset="FUSE" device="" value="20A"/>
-<part name="F2" library="HyTechSymbolsTemp" deviceset="FUSE" device="" value="20A"/>
 <part name="TSMP+RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10k"/>
 <part name="TSMP-RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10k"/>
 <part name="U$5" library="HyTechSymbols" deviceset="BENDER_IR155-3204" device=""/>
@@ -3310,6 +3308,11 @@ Power</text>
 <text x="172.72" y="93.98" size="1.27" layer="97" align="bottom-right">22AWG</text>
 <text x="215.9" y="93.98" size="1.27" layer="97">22AWG</text>
 <text x="101.6" y="144.78" size="1.27" layer="97" align="top-left">22AWG</text>
+<text x="116.84" y="101.6" size="1.778" layer="88" align="top-left">add powertail
+HVD connectors
+fix wire gauges
+fix TSMP jacks
+</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="137.16" y="134.62" smashed="yes">
@@ -3327,14 +3330,6 @@ Power</text>
 <instance part="U$4" gate="G$1" x="134.62" y="134.62" smashed="yes" rot="MR0">
 <attribute name="MPN" x="134.62" y="126.365" size="1.27" layer="96" rot="MR0" align="top-left"/>
 <attribute name="MANUFACTURER" x="134.62" y="135.382" size="1.27" layer="95" rot="MR0"/>
-</instance>
-<instance part="F1" gate="G$1" x="111.76" y="132.08" smashed="yes">
-<attribute name="NAME" x="110.49" y="133.35" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="110.49" y="130.81" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="F2" gate="G$1" x="116.84" y="127" smashed="yes">
-<attribute name="NAME" x="115.57" y="128.27" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="115.57" y="125.73" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="TSMP+RES" gate="G$1" x="116.84" y="119.38" smashed="yes">
 <attribute name="NAME" x="115.57" y="120.65" size="1.27" layer="95" align="bottom-center"/>
@@ -3457,31 +3452,27 @@ Power</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TS+"/>
-<pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="132.08" x2="104.14" y2="132.08" width="0.889" layer="91"/>
 <wire x1="104.14" y1="132.08" x2="106.68" y2="132.08" width="0.889" layer="91"/>
 <wire x1="104.14" y1="132.08" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
 <junction x="104.14" y="132.08"/>
 <wire x1="104.14" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="TSMP+RES" gate="G$1" pin="1"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="132.08" x2="124.46" y2="132.08" width="0.889" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TS-"/>
-<pinref part="F2" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="127" x2="111.76" y2="127" width="0.889" layer="91"/>
 <wire x1="101.6" y1="127" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
 <junction x="101.6" y="127"/>
 <wire x1="101.6" y1="111.76" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="TSMP-RES" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="F1" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="132.08" x2="124.46" y2="132.08" width="0.889" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="129.54" x2="124.46" y2="127" width="0.889" layer="91"/>
+<wire x1="124.46" y1="127" x2="111.76" y2="127" width="0.889" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -3636,14 +3627,6 @@ Power</text>
 <pinref part="U$1" gate="G$1" pin="1"/>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="132.08" x2="152.4" y2="132.08" width="0.889" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="129.54" x2="124.46" y2="127" width="0.889" layer="91"/>
-<pinref part="F2" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="127" x2="119.38" y2="127" width="0.889" layer="91"/>
 </segment>
 </net>
 <net name="CHARGER_CONTROLLER_CANH" class="0">

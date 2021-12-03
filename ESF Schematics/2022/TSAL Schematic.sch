@@ -5205,6 +5205,11 @@ Rules say 2-5Hz</text>
 <text x="195.58" y="106.68" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="160.02" y="162.56" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="203.2" y="139.7" size="1.27" layer="97" align="top-left">22AWG</text>
+<text x="83.82" y="152.4" size="1.27" layer="88">wait for josh
+Thru hole LEDS good!
+use power switching mosfets on board
+low side switch the LEDs
+fix wiring values</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">

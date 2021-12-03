@@ -3058,8 +3058,8 @@ Layer: 94 Symbol</description>
 <part name="U$1" library="HyTechSymbolsTemp" deviceset="CASCADIA_CM200DZ_SIMPLE" device=""/>
 <part name="U$2" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HPK"/>
 <part name="U$3" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HPK"/>
-<part name="AIR1" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
-<part name="AIR2" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
+<part name="AIR+" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
+<part name="AIR-" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
 <part name="TSMP_RES+" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10k"/>
 <part name="TSMP_RES-" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10k"/>
 <part name="TSMP+" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
@@ -3086,10 +3086,10 @@ Layer: 94 Symbol</description>
 <sheets>
 <sheet>
 <plain>
-<wire x1="203.2" y1="134.62" x2="203.2" y2="91.44" width="0.8128" layer="97"/>
+<wire x1="203.2" y1="134.62" x2="203.2" y2="63.5" width="0.8128" layer="97"/>
 <wire x1="203.2" y1="134.62" x2="248.92" y2="134.62" width="0.8128" layer="97"/>
-<wire x1="248.92" y1="134.62" x2="248.92" y2="91.44" width="0.8128" layer="97"/>
-<wire x1="248.92" y1="91.44" x2="203.2" y2="91.44" width="0.8128" layer="97"/>
+<wire x1="248.92" y1="134.62" x2="248.92" y2="63.5" width="0.8128" layer="97"/>
+<wire x1="248.92" y1="63.5" x2="203.2" y2="63.5" width="0.8128" layer="97"/>
 <text x="210.82" y="137.16" size="2.54" layer="97">Accumulator</text>
 <text x="213.36" y="129.54" size="1.27" layer="97" rot="MR180">HV Fuse in 
 accumulator:
@@ -3097,7 +3097,6 @@ accumulator:
 500VDC</text>
 <text x="101.6" y="91.44" size="3.048" layer="97" align="top-left">Wire Gauge Key</text>
 <text x="101.6" y="83.82" size="1.778" layer="97" align="top-left">35mm^2:</text>
-<text x="101.6" y="78.74" size="1.778" layer="97" align="top-left">20mm^2:</text>
 <text x="58.42" y="109.22" size="1.27" layer="97">35mm^2</text>
 <text x="147.32" y="106.68" size="1.27" layer="97">35mm^2</text>
 <text x="175.26" y="106.68" size="1.27" layer="97">35mm^2</text>
@@ -3105,13 +3104,17 @@ accumulator:
 <text x="228.6" y="127" size="1.27" layer="97">22AWG</text>
 <text x="175.26" y="93.98" size="1.27" layer="97">35mm^2</text>
 <text x="162.56" y="88.9" size="1.778" layer="95">HVD</text>
-<wire x1="99.06" y1="93.98" x2="99.06" y2="68.58" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="99.06" y1="68.58" x2="137.16" y2="68.58" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="137.16" y1="68.58" x2="137.16" y2="93.98" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="99.06" y1="93.98" x2="99.06" y2="78.74" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="99.06" y1="78.74" x2="137.16" y2="78.74" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="137.16" y1="78.74" x2="137.16" y2="93.98" width="0.8128" layer="97" style="shortdash"/>
 <wire x1="137.16" y1="93.98" x2="99.06" y2="93.98" width="0.8128" layer="97" style="shortdash"/>
-<text x="101.6" y="73.66" size="1.778" layer="97" align="top-left">22AWG:</text>
 <text x="215.9" y="111.76" size="1.27" layer="97">20mm^2</text>
 <text x="144.78" y="96.52" size="1.27" layer="97">35mm^2</text>
+<text x="154.94" y="73.66" size="1.778" layer="88">Fix the HVD connectors
+Get rid of accumulator internals
+label busbars
+use one pin connector for TSMPs
+fix motor symbol if time allows</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="142.24" y="101.6" smashed="yes" rot="R180"/>
@@ -3123,10 +3126,10 @@ accumulator:
 <attribute name="MPN" x="165.1" y="106.045" size="1.27" layer="96" align="top-left"/>
 <attribute name="MANUFACTURER" x="165.1" y="115.062" size="1.27" layer="95"/>
 </instance>
-<instance part="AIR1" gate="SPST" x="236.22" y="114.3" smashed="yes" rot="R270">
+<instance part="AIR+" gate="SPST" x="236.22" y="114.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="231.14" y="109.22" size="1.778" layer="96"/>
 </instance>
-<instance part="AIR2" gate="SPST" x="236.22" y="106.68" smashed="yes" rot="R270">
+<instance part="AIR-" gate="SPST" x="236.22" y="106.68" smashed="yes" rot="R270">
 <attribute name="NAME" x="231.14" y="101.6" size="1.778" layer="96"/>
 </instance>
 <instance part="TSMP_RES+" gate="G$1" x="238.76" y="129.54" smashed="yes">
@@ -3226,7 +3229,7 @@ accumulator:
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="AIR1" gate="SPST" pin="P"/>
+<pinref part="AIR+" gate="SPST" pin="P"/>
 <wire x1="215.9" y1="114.3" x2="226.06" y2="114.3" width="0.508" layer="91"/>
 <wire x1="226.06" y1="114.3" x2="231.14" y2="114.3" width="0.508" layer="91"/>
 <wire x1="226.06" y1="114.3" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
@@ -3250,11 +3253,6 @@ accumulator:
 <wire x1="241.3" y1="121.92" x2="248.92" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
-<segment>
-<wire x1="114.3" y1="78.74" x2="124.46" y2="78.74" width="0.508" layer="91"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <wire x1="114.3" y1="83.82" x2="124.46" y2="83.82" width="0.889" layer="91"/>
@@ -3262,9 +3260,6 @@ accumulator:
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="109.22" x2="198.12" y2="109.22" width="0.889" layer="91"/>
-<wire x1="198.12" y1="109.22" x2="198.12" y2="101.6" width="0.8128" layer="91"/>
 <wire x1="198.12" y1="101.6" x2="175.26" y2="101.6" width="0.8128" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="101.6" x2="175.26" y2="99.06" width="0.8128" layer="91"/>
@@ -3272,7 +3267,7 @@ accumulator:
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="AIR2" gate="SPST" pin="P"/>
+<pinref part="AIR-" gate="SPST" pin="P"/>
 <wire x1="223.52" y1="106.68" x2="228.6" y2="106.68" width="0.508" layer="91"/>
 <wire x1="228.6" y1="106.68" x2="231.14" y2="106.68" width="0.508" layer="91"/>
 <wire x1="228.6" y1="106.68" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
@@ -3289,11 +3284,6 @@ accumulator:
 <pinref part="U$7" gate="G$1" pin="2"/>
 <pinref part="U$7" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="96.52" x2="152.4" y2="99.06" width="0.889" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<wire x1="114.3" y1="73.66" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -3363,6 +3353,12 @@ accumulator:
 <wire x1="58.42" y1="116.84" x2="58.42" y2="121.92" width="0.889" layer="91"/>
 <pinref part="J8" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="121.92" x2="66.04" y2="121.92" width="0.889" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="109.22" x2="198.12" y2="109.22" width="0.889" layer="91"/>
 </segment>
 </net>
 </nets>

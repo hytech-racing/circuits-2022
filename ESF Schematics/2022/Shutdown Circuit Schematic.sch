@@ -3722,7 +3722,7 @@ Layer: 94 Symbol</description>
 <part name="P4" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P3" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="LATCHING" library="HyTechSymbolsTemp" deviceset="BUTTON_NO" device=""/>
-<part name="K1" library="HyTechSymbolsTemp" deviceset="RELAY_DPDT_?*" device="" technology="RT424009"/>
+<part name="BSPD_RELAY" library="HyTechSymbolsTemp" deviceset="RELAY_DPDT_?*" device="" technology="RT424009"/>
 <part name="U$7" library="HyTechSymbolsTemp" deviceset="DIODE" device=""/>
 <part name="U$8" library="HyTechSymbolsTemp" deviceset="DIODE" device=""/>
 <part name="INERTIA_SWITCH" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
@@ -3852,6 +3852,14 @@ Layer: 94 Symbol</description>
 <text x="114.3" y="88.9" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="114.3" y="63.5" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="76.2" y="162.56" size="1.27" layer="97" align="top-left">22AWG</text>
+<text x="289.56" y="203.2" size="1.778" layer="88">HVD connectors
+Move interlocks outside
+put actual battery symbol
+Fix power switching circuit relay and add to datasheet
+Make TSMS after interlocks
+also reference accumulator notes
+ring terminals
+</text>
 </plain>
 <instances>
 <instance part="IMD_RELAY" gate="G$1" x="121.92" y="175.26" smashed="yes">
@@ -3905,7 +3913,7 @@ Layer: 94 Symbol</description>
 <instance part="LATCHING" gate="G$1" x="157.48" y="200.66" smashed="yes">
 <attribute name="NAME" x="157.48" y="203.962" size="1.27" layer="95" align="bottom-center"/>
 </instance>
-<instance part="K1" gate="G$1" x="203.2" y="175.26" smashed="yes">
+<instance part="BSPD_RELAY" gate="G$1" x="203.2" y="175.26" smashed="yes">
 <attribute name="MPN" x="203.2" y="141.478" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="203.2" y="176.022" size="1.27" layer="95"/>
 </instance>
@@ -4294,6 +4302,8 @@ Layer: 94 Symbol</description>
 <segment>
 <pinref part="AMS_RELAY" gate="G$1" pin="5"/>
 <wire x1="175.26" y1="149.86" x2="175.26" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="BSPD_RELAY" gate="G$1" pin="6"/>
+<wire x1="175.26" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -4331,8 +4341,8 @@ Layer: 94 Symbol</description>
 <wire x1="200.66" y1="182.88" x2="203.2" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="A"/>
 <wire x1="200.66" y1="167.64" x2="198.12" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="K1" gate="G$1" pin="COIL-"/>
-<pinref part="K1" gate="G$1" pin="3"/>
+<pinref part="BSPD_RELAY" gate="G$1" pin="COIL-"/>
+<pinref part="BSPD_RELAY" gate="G$1" pin="3"/>
 <wire x1="200.66" y1="167.64" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
 <junction x="200.66" y="167.64"/>
 </segment>
@@ -4342,7 +4352,7 @@ Layer: 94 Symbol</description>
 <wire x1="215.9" y1="167.64" x2="215.9" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="C"/>
 <wire x1="210.82" y1="182.88" x2="215.9" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="K1" gate="G$1" pin="COIL+"/>
+<pinref part="BSPD_RELAY" gate="G$1" pin="COIL+"/>
 <wire x1="215.9" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="91"/>
 <junction x="215.9" y="167.64"/>
 <label x="218.44" y="167.64" size="1.27" layer="95" xref="yes"/>
@@ -4834,6 +4844,14 @@ Layer: 94 Symbol</description>
 <net name="N$41" class="0">
 <segment>
 <wire x1="60.96" y1="200.66" x2="71.12" y2="200.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="BSPD_RELAY" gate="G$1" pin="5"/>
+<wire x1="215.9" y1="149.86" x2="215.9" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="SOFTWARE_SHDN_RELAY" gate="G$1" pin="6"/>
+<wire x1="215.9" y1="147.32" x2="241.3" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

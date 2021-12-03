@@ -3297,7 +3297,6 @@ Layer: 94 Symbol</description>
 <text x="210.82" y="114.3" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="238.76" y="142.24" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="248.92" y="124.46" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="246.38" y="96.52" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="208.28" y="99.06" size="1.27" layer="97" align="top-left">22AWG</text>
 <wire x1="35.56" y1="86.36" x2="35.56" y2="68.58" width="0.8128" layer="97" style="shortdash"/>
 <wire x1="35.56" y1="68.58" x2="78.74" y2="68.58" width="0.8128" layer="97" style="shortdash"/>
@@ -3305,6 +3304,11 @@ Layer: 94 Symbol</description>
 <wire x1="78.74" y1="86.36" x2="35.56" y2="86.36" width="0.8128" layer="97" style="shortdash"/>
 <text x="38.1" y="83.82" size="3.048" layer="97" align="top-left">Wire Gauge Key</text>
 <text x="38.1" y="76.2" size="2.032" layer="97" align="top-left">22AWG:</text>
+<text x="101.6" y="76.2" size="1.27" layer="88">fix gauge to trace
+zener diode symbol
+show latching button
+show signal_current gain op amp
+show BSE and current sensor</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="43.18" y="144.78" smashed="yes" rot="R90">
@@ -3755,16 +3759,16 @@ Layer: 94 Symbol</description>
 <label x="223.52" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SHDN_D" class="0">
-<segment>
-<pinref part="K1" gate="G$1" pin="7"/>
-<wire x1="241.3" y1="99.06" x2="243.84" y2="99.06" width="0.1524" layer="91"/>
-<label x="243.84" y="99.06" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <wire x1="50.8" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SHUTDOWN_D" class="0">
+<segment>
+<pinref part="K1" gate="G$1" pin="5"/>
+<wire x1="241.3" y1="104.14" x2="243.84" y2="104.14" width="0.1524" layer="91"/>
+<label x="243.84" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
