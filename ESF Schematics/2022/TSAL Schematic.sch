@@ -5152,7 +5152,8 @@ LOGIC</text>
 </classes>
 <parts>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
-<attribute name="DESCRIPTION_1" value="ESF Compliant TSAL Circuitry Schematic"/>
+<attribute name="DESCRIPTION_1" value="ESF compliant representation of the TSAL"/>
+<attribute name="DESCRIPTION_2" value="circuitry."/>
 <attribute name="ENGINEER" value="Zekun Li"/>
 </part>
 <part name="U2" library="HyTechDevices" deviceset="ADG1423" device=""/>
