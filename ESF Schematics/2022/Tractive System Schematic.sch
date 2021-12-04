@@ -224,7 +224,7 @@ CM200DZ</text>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
 <text x="0" y="-5.715" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;MANUFACTURER</text>
+<text x="0" y="0.762" size="1.27" layer="96">&gt;MANUFACTURER</text>
 <pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
@@ -291,47 +291,14 @@ CM200DZ</text>
 <attribute name="MPN" value="104742-2"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="CT2242-2">
+<attribute name="MANUFACTURER" value="Cal Test Electronics"/>
+<attribute name="MPN" value="CT2242-2"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="LCAX2-14F-E">
 <attribute name="MANUFACTURER" value="Panduit Corp"/>
 <attribute name="MPN" value="LCAX2-14F-E"/>
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="HyTechSymbols">
-<packages>
-</packages>
-<symbols>
-<symbol name="MOTOR_AC">
-<circle x="0" y="0" radius="20.32" width="0.254" layer="94"/>
-<pin name="B" x="0" y="-27.94" visible="off" rot="R90"/>
-<pin name="A" x="-5.08" y="-27.94" visible="off" rot="R90"/>
-<pin name="C" x="5.08" y="-27.94" visible="off" rot="R90"/>
-<text x="0" y="10.16" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="0" y="0" size="12.7" layer="94" align="center">M</text>
-<text x="-2.54" y="-25.4" size="1.778" layer="94" align="bottom-right">A</text>
-<text x="2.54" y="-25.4" size="1.778" layer="94" align="bottom-right">B</text>
-<text x="7.62" y="-25.4" size="1.778" layer="94" align="bottom-right">C</text>
-<pin name="RESOLVER" x="-17.78" y="-12.7" length="point"/>
-<wire x1="-17.78" y1="-12.7" x2="-15.875" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="-20.32" x2="-5.08" y2="-19.812" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-20.32" x2="5.08" y2="-19.812" width="0.1524" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MOTOR_AC">
-<description>Generic three-phase AC electric motor</description>
-<gates>
-<gate name="G$1" symbol="MOTOR_AC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -2926,6 +2893,52 @@ Layer: 94 Symbol</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="HyTechSymbols">
+<packages>
+</packages>
+<symbols>
+<symbol name="MOTOR_AC">
+<circle x="0" y="0" radius="20.32" width="0.254" layer="94"/>
+<pin name="B" x="0" y="-27.94" visible="off" rot="R90"/>
+<pin name="A" x="-10.16" y="-27.94" visible="off" length="middle" rot="R90"/>
+<pin name="C" x="10.16" y="-27.94" visible="off" length="middle" rot="R90"/>
+<text x="0" y="12.7" size="1.778" layer="95" align="bottom-center">&gt;MANUFACTURER</text>
+<text x="0" y="0" size="12.7" layer="94" align="center">M</text>
+<text x="-12.7" y="-25.4" size="1.778" layer="94">A</text>
+<text x="-2.54" y="-25.4" size="1.778" layer="94">B</text>
+<text x="7.62" y="-25.4" size="1.778" layer="94" align="bottom-right">C</text>
+<pin name="RESOLVER" x="-17.78" y="-12.7" length="point"/>
+<wire x1="-17.78" y1="-12.7" x2="-15.875" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-22.86" x2="-5.08" y2="-19.812" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="5.08" y2="-19.812" width="0.1524" layer="94"/>
+<text x="0" y="7.62" size="1.778" layer="95" align="bottom-center">&gt;MPN</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MOTOR_AC">
+<description>Generic three-phase AC electric motor</description>
+<gates>
+<gate name="G$1" symbol="MOTOR_AC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="EMRAX_208">
+<attribute name="MANUFACTURER" value="EMRAX"/>
+<attribute name="MPN" value="208MV" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2939,7 +2952,6 @@ Layer: 94 Symbol</description>
 <part name="U$1" library="HyTechSymbolsTemp" deviceset="CASCADIA_CM200DZ_SIMPLE" device=""/>
 <part name="U$2" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HPK"/>
 <part name="U$3" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HPK"/>
-<part name="EMRAX_208_MV" library="HyTechSymbols" deviceset="MOTOR_AC" device=""/>
 <part name="U$6" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
 <part name="U$7" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
 <part name="J2" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
@@ -2957,6 +2969,9 @@ Layer: 94 Symbol</description>
 </part>
 <part name="J12" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
 <part name="J14" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
+<part name="J1" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="CT2242-2"/>
+<part name="J3" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="CT2242-2"/>
+<part name="U$5" library="HyTechSymbols" deviceset="MOTOR_AC" device="" technology="EMRAX_208"/>
 </parts>
 <sheets>
 <sheet>
@@ -2973,16 +2988,19 @@ Layer: 94 Symbol</description>
 <text x="175.26" y="101.6" size="1.27" layer="97">35mm^2</text>
 <text x="175.26" y="81.28" size="1.27" layer="97">35mm^2</text>
 <text x="162.56" y="76.2" size="1.778" layer="95">HVD</text>
-<wire x1="99.06" y1="93.98" x2="99.06" y2="78.74" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="99.06" y1="78.74" x2="137.16" y2="78.74" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="137.16" y1="78.74" x2="137.16" y2="93.98" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="99.06" y1="93.98" x2="99.06" y2="73.66" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="99.06" y1="73.66" x2="137.16" y2="73.66" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="137.16" y1="73.66" x2="137.16" y2="93.98" width="0.8128" layer="97" style="shortdash"/>
 <wire x1="137.16" y1="93.98" x2="99.06" y2="93.98" width="0.8128" layer="97" style="shortdash"/>
 <text x="144.78" y="83.82" size="1.27" layer="97">35mm^2</text>
 <text x="142.24" y="48.26" size="1.778" layer="88">Fix the HVD connectors-done
 Get rid of accumulator internals-done
-label busbars
-use one pin connector for TSMPs
-fix motor symbol if time allows</text>
+label busbars- N/A
+use one pin connector for TSMPs-done
+fix motor symbol if time allows-done</text>
+<text x="101.6" y="78.74" size="1.778" layer="97" align="top-left">22AWG:</text>
+<text x="254" y="99.06" size="1.27" layer="97">22AWG</text>
+<text x="254" y="109.22" size="1.27" layer="97">22AWG</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="142.24" y="101.6" smashed="yes" rot="R180"/>
@@ -2993,9 +3011,6 @@ fix motor symbol if time allows</text>
 <instance part="U$3" gate="G$1" x="165.1" y="114.3" smashed="yes">
 <attribute name="MPN" x="165.1" y="106.045" size="1.27" layer="96" align="top-left"/>
 <attribute name="MANUFACTURER" x="165.1" y="115.062" size="1.27" layer="95"/>
-</instance>
-<instance part="EMRAX_208_MV" gate="G$1" x="30.48" y="111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.32" y="111.76" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
 <instance part="U$6" gate="G$1" x="165.1" y="88.9" smashed="yes">
 <attribute name="MPN" x="165.1" y="80.645" size="1.27" layer="96" align="top-left"/>
@@ -3055,6 +3070,18 @@ fix motor symbol if time allows</text>
 <attribute name="MPN" x="200.66" y="90.805" size="1.27" layer="96" rot="MR0" align="top-left"/>
 <attribute name="MANUFACTURER" x="200.66" y="97.282" size="1.27" layer="95" rot="MR0"/>
 </instance>
+<instance part="J1" gate="G$1" x="269.24" y="114.3" smashed="yes" rot="MR0">
+<attribute name="MPN" x="269.24" y="108.585" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<attribute name="MANUFACTURER" x="269.24" y="115.062" size="1.27" layer="96" rot="MR0"/>
+</instance>
+<instance part="J3" gate="G$1" x="269.24" y="104.14" smashed="yes" rot="MR0">
+<attribute name="MPN" x="269.24" y="98.425" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<attribute name="MANUFACTURER" x="269.24" y="104.902" size="1.27" layer="96" rot="MR0"/>
+</instance>
+<instance part="U$5" gate="G$1" x="30.48" y="111.76" smashed="yes" rot="R90">
+<attribute name="MANUFACTURER" x="17.78" y="111.76" size="1.778" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="MPN" x="22.86" y="111.76" size="1.778" layer="95" rot="R90" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3105,9 +3132,9 @@ fix motor symbol if time allows</text>
 </net>
 <net name="TO_CONTROLLER" class="0">
 <segment>
-<pinref part="EMRAX_208_MV" gate="G$1" pin="RESOLVER"/>
 <wire x1="43.18" y1="93.98" x2="43.18" y2="91.44" width="0.889" layer="91"/>
 <label x="43.18" y="91.44" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$5" gate="G$1" pin="RESOLVER"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -3135,25 +3162,23 @@ fix motor symbol if time allows</text>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="EMRAX_208_MV" gate="G$1" pin="A"/>
-<wire x1="58.42" y1="106.68" x2="58.42" y2="101.6" width="0.889" layer="91"/>
 <pinref part="J10" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="101.6" x2="66.04" y2="101.6" width="0.889" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="1"/>
-<pinref part="EMRAX_208_MV" gate="G$1" pin="B"/>
 <wire x1="66.04" y1="111.76" x2="58.42" y2="111.76" width="0.889" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="B"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="EMRAX_208_MV" gate="G$1" pin="C"/>
-<wire x1="58.42" y1="116.84" x2="58.42" y2="121.92" width="0.889" layer="91"/>
 <pinref part="J8" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="121.92" x2="66.04" y2="121.92" width="0.889" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -3170,6 +3195,23 @@ fix motor symbol if time allows</text>
 <wire x1="175.26" y1="86.36" x2="175.26" y2="93.98" width="0.889" layer="91"/>
 <pinref part="J14" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="93.98" x2="190.5" y2="93.98" width="0.889" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="101.6" x2="251.46" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="111.76" x2="251.46" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<wire x1="114.3" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

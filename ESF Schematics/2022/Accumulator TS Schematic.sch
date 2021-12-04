@@ -798,6 +798,11 @@ LOGIC</text>
 <attribute name="MPN" value="104742-2"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="CT2242-2">
+<attribute name="MANUFACTURER" value="Cal Test Electronics"/>
+<attribute name="MPN" value="CT2242-2"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="LCAX2-14F-E">
 <attribute name="MANUFACTURER" value="Panduit Corp"/>
 <attribute name="MPN" value="LCAX2-14F-E"/>
@@ -3926,8 +3931,8 @@ Layer: 94 Symbol</description>
 <part name="J8" library="HyTechSymbolsTemp" deviceset="CONNECTOR-5_*" device="" technology="MICROFIT"/>
 <part name="P19" library="HyTechSupplies" deviceset="TS-UNFUSED" device=""/>
 <part name="U$40" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
-<part name="J5" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device=""/>
-<part name="J7" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device=""/>
+<part name="J5" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="CT2242-2" value="CONNECTOR-1_CT2242-2"/>
+<part name="J7" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="CT2242-2" value="CONNECTOR-1_CT2242-2"/>
 </parts>
 <sheets>
 <sheet>

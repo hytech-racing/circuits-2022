@@ -379,6 +379,11 @@
 <attribute name="MPN" value="104742-2"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
+<technology name="CT2242-2">
+<attribute name="MANUFACTURER" value="Cal Test Electronics"/>
+<attribute name="MPN" value="CT2242-2"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 <technology name="LCAX2-14F-E">
 <attribute name="MANUFACTURER" value="Panduit Corp"/>
 <attribute name="MPN" value="LCAX2-14F-E"/>
@@ -3271,12 +3276,12 @@ Layer: 94 Symbol</description>
 <attribute name="ENGINEER" value="Zekun Li"/>
 </part>
 <part name="J5" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device="" technology="HV02-M3S(40A)"/>
-<part name="J6" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device=""/>
-<part name="J7" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device=""/>
+<part name="J6" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="CT2242-2" value="CONNECTOR-1_CT2242-2"/>
+<part name="J7" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="CT2242-2" value="CONNECTOR-1_CT2242-2"/>
 <part name="U$8" library="HyTechSymbolsTemp" deviceset="POWER_RELAY" device=""/>
 <part name="J8" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device="" technology="NEMA-5-15"/>
-<part name="J9" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device=""/>
-<part name="J10" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device=""/>
+<part name="J9" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="CT2242-2" value="CONNECTOR-1_CT2242-2"/>
+<part name="J10" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="CT2242-2" value="CONNECTOR-1_CT2242-2"/>
 <part name="J11" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
 <part name="J12" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
 <part name="J13" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
