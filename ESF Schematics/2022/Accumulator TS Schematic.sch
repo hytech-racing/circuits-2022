@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -587,6 +587,24 @@ LOGIC</text>
 <text x="-2.54" y="1.778" size="1.27" layer="96">&gt;MANUFACTURER</text>
 <text x="-2.54" y="-1.778" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
+<symbol name="CONNECTOR_05">
+<wire x1="7.62" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;MANUFACTURER</text>
+<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="10.16" y="-12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0" y="-15.875" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RELAY_SPST_NO_?*" prefix="K">
@@ -825,6 +843,27 @@ LOGIC</text>
 <technology name="19054-0042">
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MPN" value="19054-0042" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-5_*" prefix="J">
+<gates>
+<gate name="G$1" symbol="CONNECTOR_05" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="MICROFIT">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="Microfit 3.0"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -3881,6 +3920,14 @@ Layer: 94 Symbol</description>
 <part name="U$36" library="HyTechSymbolsTemp" deviceset="RING_TERMINAL_*" device="" technology="19054-0042"/>
 <part name="U$37" library="HyTechSymbolsTemp" deviceset="RING_TERMINAL_*" device="" technology="19054-0042"/>
 <part name="U$38" library="HyTechSymbolsTemp" deviceset="RING_TERMINAL_*" device="" technology="19054-0042"/>
+<part name="J6" library="HyTechSymbolsTemp" deviceset="CONNECTOR-5_*" device="" technology="MICROFIT"/>
+<part name="P18" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
+<part name="U$39" library="HyTechSupplies" deviceset="TS+FUSED" device=""/>
+<part name="J8" library="HyTechSymbolsTemp" deviceset="CONNECTOR-5_*" device="" technology="MICROFIT"/>
+<part name="P19" library="HyTechSupplies" deviceset="TS-UNFUSED" device=""/>
+<part name="U$40" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
+<part name="J5" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device=""/>
+<part name="J7" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3895,47 +3942,46 @@ Layer: 94 Symbol</description>
 <wire x1="271.78" y1="63.5" x2="271.78" y2="198.12" width="0.4572" layer="95" style="longdash"/>
 <wire x1="271.78" y1="198.12" x2="180.34" y2="198.12" width="0.4572" layer="95" style="longdash"/>
 <text x="180.34" y="200.66" size="5.08" layer="95">Precharger Internals</text>
-<wire x1="165.1" y1="58.42" x2="165.1" y2="45.72" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="165.1" y1="45.72" x2="274.32" y2="45.72" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="274.32" y1="45.72" x2="274.32" y2="58.42" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="274.32" y1="58.42" x2="165.1" y2="58.42" width="0.8128" layer="97" style="shortdash"/>
-<text x="167.64" y="55.88" size="3.048" layer="97" align="top-left">Wire Gauge Key</text>
-<text x="223.52" y="50.8" size="1.778" layer="97" align="top-left">22AWG:</text>
-<text x="167.64" y="50.8" size="1.778" layer="97" align="top-left">17.5mm^2:</text>
+<wire x1="81.28" y1="58.42" x2="81.28" y2="45.72" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="81.28" y1="45.72" x2="198.12" y2="45.72" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="198.12" y1="45.72" x2="198.12" y2="58.42" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="198.12" y1="58.42" x2="81.28" y2="58.42" width="0.8128" layer="97" style="shortdash"/>
+<text x="83.82" y="55.88" size="3.048" layer="97" align="top-left">Wire Gauge Key</text>
+<text x="139.7" y="50.8" size="1.778" layer="97" align="top-left">22AWG:</text>
+<text x="83.82" y="50.8" size="1.778" layer="97" align="top-left">17.5mm^2:</text>
 <wire x1="241.3" y1="101.6" x2="269.24" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="269.24" y1="101.6" x2="269.24" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="269.24" y1="86.36" x2="241.3" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="241.3" y1="86.36" x2="241.3" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
 <text x="269.24" y="83.82" size="2.54" layer="97" align="top-right">Accumulator Indicator</text>
-<text x="195.58" y="50.8" size="1.778" layer="97" align="top-left">16AWG:</text>
+<text x="111.76" y="50.8" size="1.778" layer="97" align="top-left">16AWG:</text>
 <text x="20.32" y="139.7" size="1.27" layer="97">17.5mm^2</text>
 <text x="20.32" y="149.86" size="1.27" layer="97">17.5mm^2</text>
 <text x="129.54" y="142.24" size="1.27" layer="97">17.5mm^2</text>
 <text x="116.84" y="142.24" size="1.27" layer="97">17.5mm^2</text>
 <text x="104.14" y="142.24" size="1.27" layer="97">17.5mm^2</text>
 <text x="88.9" y="142.24" size="1.27" layer="97">17.5mm^2</text>
-<text x="55.88" y="111.76" size="1.27" layer="97" align="top-left">22AWG</text>
+<text x="55.88" y="111.76" size="1.27" layer="97" align="top-left">PCB Trace</text>
 <text x="40.64" y="142.24" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="35.56" y="162.56" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="20.32" y="185.42" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="71.12" y="177.8" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="124.46" y="101.6" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="152.4" y="111.76" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="167.64" y="96.52" size="1.27" layer="97" align="top-left">22AWG</text>
+<text x="17.78" y="180.34" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="68.58" y="177.8" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="124.46" y="101.6" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="152.4" y="111.76" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="167.64" y="96.52" size="1.27" layer="97" align="top-left">PCB Trace</text>
 <text x="160.02" y="76.2" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="111.76" y="78.74" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="93.98" y="76.2" size="1.27" layer="97" align="top-left">22AWG</text>
+<text x="93.98" y="76.2" size="1.27" layer="97">PCB Trace</text>
 <text x="83.82" y="175.26" size="1.27" layer="97" align="top-left">17.5mm^2</text>
-<text x="251.46" y="50.8" size="1.778" layer="97" align="top-left">10 mil:</text>
-<text x="195.58" y="175.26" size="1.27" layer="97" align="top-left">10 mil</text>
-<text x="233.68" y="172.72" size="1.27" layer="97" align="top-left">10 mil</text>
-<text x="210.82" y="114.3" size="1.27" layer="97" align="top-left">10 mil</text>
-<text x="205.74" y="104.14" size="1.27" layer="97" align="top-left">10 mil</text>
-<text x="203.2" y="73.66" size="1.27" layer="97" align="top-left">10 mil</text>
-<text x="251.46" y="93.98" size="1.27" layer="97" align="top-right">10 mil</text>
+<text x="195.58" y="175.26" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="243.84" y="154.94" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="208.28" y="109.22" size="1.27" layer="97">PCB Trace</text>
+<text x="205.74" y="104.14" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="203.2" y="73.66" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="251.46" y="93.98" size="1.27" layer="97" align="top-right">PCB Trace</text>
 <text x="121.92" y="205.74" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="88.9" y="198.12" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="50.8" y="76.2" size="1.27" layer="97" align="top-left">16AWG</text>
+<text x="43.18" y="76.2" size="1.27" layer="97" align="top-left">16AWG</text>
 <text x="299.72" y="187.96" size="1.778" layer="88" align="top-left">Add HVD panduits-done
 fix resistor dividers-done
 fix busbar labelling and gauges-done
@@ -3944,11 +3990,22 @@ fix maintenance plug symbol-done
 fix TSMPs
 add isolation for DCDC-done
 prechargeOK same as relay_ctrl-done
-show all microfit connectors
+show all microfit connectors-done
 ring terminals between fused and unfused and pack plus-done</text>
 <text x="30.48" y="119.38" size="1.27" layer="97">17.5mm^2</text>
 <text x="30.48" y="127" size="1.27" layer="97" align="top-left">17.5mm^2</text>
-<text x="180.34" y="48.26" size="1.778" layer="97">(Busbar)</text>
+<text x="96.52" y="48.26" size="1.778" layer="97">(Busbar)</text>
+<wire x1="5.08" y1="58.42" x2="5.08" y2="22.86" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="5.08" y1="22.86" x2="78.74" y2="22.86" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="78.74" y1="58.42" x2="5.08" y2="58.42" width="0.8128" layer="97" style="shortdash"/>
+<text x="7.62" y="55.88" size="3.048" layer="97" align="top-left">Accumulator Internal TS Connectors</text>
+<wire x1="78.74" y1="58.42" x2="78.74" y2="22.86" width="0.8128" layer="97" style="shortdash"/>
+<text x="167.64" y="50.8" size="1.778" layer="97" align="top-left">PCB Trace:</text>
+<text x="182.88" y="48.26" size="1.778" layer="97">(&gt;= 20 mil)</text>
+<text x="27.94" y="81.28" size="1.27" layer="97">22AWG</text>
+<text x="30.48" y="76.2" size="1.27" layer="97" align="top-left">22AWG</text>
+<text x="96.52" y="99.06" size="1.27" layer="97">PCB Trace</text>
+<text x="190.5" y="187.96" size="1.27" layer="97" align="top-left">PCB Trace</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="152.4" y="81.28" smashed="yes" rot="MR0"/>
@@ -3994,13 +4051,13 @@ ring terminals between fused and unfused and pack plus-done</text>
 <instance part="P4" gate="G$1" x="101.6" y="104.14" smashed="yes">
 <attribute name="VALUE" x="101.6" y="109.22" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="TSMP-RES" gate="G$1" x="27.94" y="76.2" smashed="yes">
-<attribute name="NAME" x="26.67" y="77.47" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="26.67" y="74.93" size="1.27" layer="96" align="top-center"/>
+<instance part="TSMP-RES" gate="G$1" x="25.4" y="73.66" smashed="yes">
+<attribute name="NAME" x="24.13" y="74.93" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="24.13" y="72.39" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TSMP+RES" gate="G$1" x="27.94" y="83.82" smashed="yes">
-<attribute name="NAME" x="26.67" y="85.09" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="26.67" y="82.55" size="1.27" layer="96" align="top-center"/>
+<instance part="TSMP+RES" gate="G$1" x="25.4" y="83.82" smashed="yes">
+<attribute name="NAME" x="24.13" y="85.09" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="24.13" y="82.55" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="DISCHARGE" gate="G$1" x="139.7" y="116.84" smashed="yes">
 <attribute name="MPN" x="139.7" y="93.218" size="1.27" layer="96" align="top-left"/>
@@ -4206,11 +4263,11 @@ ring terminals between fused and unfused and pack plus-done</text>
 <instance part="P12" gate="1" x="71.12" y="182.88" smashed="yes">
 <attribute name="VALUE" x="71.12" y="181.61" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P13" gate="G$1" x="33.02" y="86.36" smashed="yes">
-<attribute name="VALUE" x="33.02" y="91.44" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P13" gate="G$1" x="30.48" y="86.36" smashed="yes">
+<attribute name="VALUE" x="30.48" y="91.44" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P14" gate="G$1" x="33.02" y="73.66" smashed="yes">
-<attribute name="VALUE" x="33.02" y="71.12" size="1.27" layer="96" align="top-center"/>
+<instance part="P14" gate="G$1" x="30.48" y="71.12" smashed="yes">
+<attribute name="VALUE" x="30.48" y="68.58" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P15" gate="1" x="71.12" y="190.5" smashed="yes">
 <attribute name="VALUE" x="71.12" y="193.04" size="1.27" layer="96" align="bottom-center"/>
@@ -4283,6 +4340,34 @@ ring terminals between fused and unfused and pack plus-done</text>
 <attribute name="MANUFACTURER" x="71.12" y="169.418" size="1.27" layer="96"/>
 <attribute name="MPN" x="71.12" y="165.862" size="1.27" layer="96" align="top-left"/>
 </instance>
+<instance part="J6" gate="G$1" x="7.62" y="45.72" smashed="yes">
+<attribute name="MANUFACTURER" x="7.62" y="46.482" size="1.27" layer="95"/>
+<attribute name="MPN" x="7.62" y="29.845" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="P18" gate="G$1" x="20.32" y="45.72" smashed="yes">
+<attribute name="VALUE" x="20.32" y="50.8" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="U$39" gate="G$1" x="30.48" y="43.18" smashed="yes">
+<attribute name="VALUE" x="30.48" y="48.26" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="J8" gate="G$1" x="40.64" y="45.72" smashed="yes">
+<attribute name="MANUFACTURER" x="40.64" y="46.482" size="1.27" layer="95"/>
+<attribute name="MPN" x="40.64" y="29.845" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="P19" gate="G$1" x="53.34" y="30.48" smashed="yes">
+<attribute name="VALUE" x="53.34" y="27.94" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="U$40" gate="G$1" x="68.58" y="40.64" smashed="yes">
+<attribute name="VALUE" x="68.58" y="38.1" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="J5" gate="G$1" x="7.62" y="86.36" smashed="yes">
+<attribute name="MPN" x="7.62" y="80.645" size="1.27" layer="96" align="top-left"/>
+<attribute name="MANUFACTURER" x="7.62" y="87.122" size="1.27" layer="96"/>
+</instance>
+<instance part="J7" gate="G$1" x="7.62" y="76.2" smashed="yes">
+<attribute name="MPN" x="7.62" y="70.485" size="1.27" layer="96" align="top-left"/>
+<attribute name="MANUFACTURER" x="7.62" y="76.962" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4295,7 +4380,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="U$13" gate="G$1" pin="S"/>
-<wire x1="50.8" y1="99.06" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="99.06" x2="50.8" y2="96.52" width="0.0762" layer="91"/>
 <pinref part="P2" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4305,7 +4390,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="DISCHARGE" gate="G$1" pin="COIL-"/>
-<wire x1="152.4" y1="109.22" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="109.22" x2="154.94" y2="109.22" width="0.0762" layer="91"/>
 <pinref part="P5" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4325,14 +4410,14 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="U$11" gate="G$1" pin="GND"/>
-<wire x1="68.58" y1="185.42" x2="71.12" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="185.42" x2="71.12" y2="185.42" width="0.0762" layer="91"/>
 <pinref part="P12" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SHDN" class="0">
 <segment>
 <pinref part="PRECHARGE" gate="G$1" pin="COIL-"/>
-<wire x1="83.82" y1="109.22" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="109.22" x2="86.36" y2="109.22" width="0.0762" layer="91"/>
 <label x="86.36" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
@@ -4342,7 +4427,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="DISCHARGE" gate="G$1" pin="COIL+"/>
-<wire x1="137.16" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="109.22" x2="134.62" y2="109.22" width="0.0762" layer="91"/>
 <label x="134.62" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -4354,7 +4439,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 <net name="PRECHARGE_OK" class="0">
 <segment>
 <pinref part="U$12" gate="G$1" pin="IN"/>
-<wire x1="27.94" y1="101.6" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="101.6" x2="25.4" y2="101.6" width="0.0762" layer="91"/>
 <label x="25.4" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -4365,27 +4450,27 @@ ring terminals between fused and unfused and pack plus-done</text>
 <segment>
 <pinref part="U$11" gate="G$1" pin="PRECHARGE_OK"/>
 <pinref part="AIR+" gate="G$1" pin="COIL-"/>
-<wire x1="68.58" y1="177.8" x2="68.58" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="177.8" x2="68.58" y2="162.56" width="0.0762" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="U$12" gate="G$1" pin="!IN"/>
 <pinref part="U$13" gate="G$1" pin="G"/>
-<wire x1="39.37" y1="101.6" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="39.37" y1="101.6" x2="40.64" y2="101.6" width="0.0762" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="U$13" gate="G$1" pin="D"/>
 <pinref part="PRECHARGE" gate="G$1" pin="COIL+"/>
-<wire x1="50.8" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="109.22" x2="68.58" y2="109.22" width="0.0762" layer="91"/>
 </segment>
 </net>
 <net name="PACK+" class="0">
 <segment>
 <pinref part="PRECHARGE" gate="G$1" pin="CONTACT1"/>
-<wire x1="68.58" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="99.06" x2="66.04" y2="99.06" width="0.0762" layer="91"/>
 <label x="66.04" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -4403,11 +4488,16 @@ ring terminals between fused and unfused and pack plus-done</text>
 <wire x1="78.74" y1="167.64" x2="76.2" y2="167.64" width="0.1524" layer="91"/>
 <label x="78.74" y="195.58" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="5"/>
+<wire x1="17.78" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
+<label x="20.32" y="33.02" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="TS+UNFUSED" class="0">
 <segment>
 <pinref part="PRECHARGE_RES" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="101.6" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="101.6" x2="101.6" y2="101.6" width="0.0762" layer="91"/>
 <pinref part="P4" gate="G$1" pin="TS+UNFUSED"/>
 </segment>
 <segment>
@@ -4417,12 +4507,12 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="TSMP+RES" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="83.82" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="P13" gate="G$1" pin="TS+UNFUSED"/>
 </segment>
 <segment>
 <pinref part="DISCHARGE" gate="G$1" pin="CONTACT1"/>
-<wire x1="137.16" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="99.06" x2="119.38" y2="99.06" width="0.0762" layer="91"/>
 <pinref part="P6" gate="G$1" pin="TS+UNFUSED"/>
 </segment>
 <segment>
@@ -4439,11 +4529,20 @@ ring terminals between fused and unfused and pack plus-done</text>
 <pinref part="U$37" gate="G$1" pin="P$2"/>
 <wire x1="30.48" y1="160.02" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="40.64" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="P18" gate="G$1" pin="TS+UNFUSED"/>
+<junction x="20.32" y="43.18"/>
+</segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="PRECHARGE" gate="G$1" pin="CONTACT2"/>
-<wire x1="83.82" y1="101.6" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="101.6" x2="86.36" y2="101.6" width="0.0762" layer="91"/>
 <pinref part="PRECHARGE_RES" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -4451,14 +4550,14 @@ ring terminals between fused and unfused and pack plus-done</text>
 <segment>
 <pinref part="DISCHARGE" gate="G$1" pin="CONTACT2"/>
 <pinref part="DISCHARGE_RES" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="96.52" x2="154.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="96.52" x2="154.94" y2="96.52" width="0.0762" layer="91"/>
 </segment>
 </net>
 <net name="TS-UNFUSED" class="0">
 <segment>
 <pinref part="DISCHARGE_RES" gate="G$1" pin="2"/>
 <pinref part="P7" gate="G$1" pin="TS-UNFUSED"/>
-<wire x1="162.56" y1="96.52" x2="165.1" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="96.52" x2="165.1" y2="96.52" width="0.0762" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$14" gate="G$1" pin="HV-OUT"/>
@@ -4474,7 +4573,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="U$11" gate="G$1" pin="TS-"/>
-<wire x1="25.4" y1="177.8" x2="20.32" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="177.8" x2="20.32" y2="177.8" width="0.0762" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="TS-UNFUSED"/>
 </segment>
 <segment>
@@ -4484,7 +4583,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="-IN"/>
-<wire x1="91.44" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="71.12" x2="93.98" y2="71.12" width="0.0762" layer="91"/>
 <pinref part="U$21" gate="G$1" pin="TS-UNFUSED"/>
 </segment>
 <segment>
@@ -4512,14 +4611,29 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="TSMP-RES" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="76.2" x2="33.02" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="73.66" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="P14" gate="G$1" pin="TS-UNFUSED"/>
+</segment>
+<segment>
+<pinref part="J8" gate="G$1" pin="5"/>
+<wire x1="50.8" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="P19" gate="G$1" pin="TS-UNFUSED"/>
+</segment>
+<segment>
+<pinref part="J8" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="43.18" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="J8" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="40.64" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="43.18" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
+<junction x="53.34" y="43.18"/>
+<pinref part="U$40" gate="G$1" pin="TS-UNFUSED"/>
+<wire x1="53.34" y1="43.18" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PACK+FUSED" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="PACK+"/>
-<wire x1="25.4" y1="182.88" x2="20.32" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="182.88" x2="20.32" y2="182.88" width="0.0762" layer="91"/>
 <label x="20.32" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -4617,7 +4731,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 <net name="TS+" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="TS+"/>
-<wire x1="25.4" y1="187.96" x2="20.32" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="187.96" x2="20.32" y2="187.96" width="0.0762" layer="91"/>
 <pinref part="U$17" gate="G$1" pin="TS+"/>
 </segment>
 <segment>
@@ -4627,7 +4741,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="+IN"/>
-<wire x1="91.44" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="78.74" x2="93.98" y2="78.74" width="0.0762" layer="91"/>
 <pinref part="U$22" gate="G$1" pin="TS+"/>
 </segment>
 <segment>
@@ -4639,6 +4753,12 @@ ring terminals between fused and unfused and pack plus-done</text>
 <pinref part="U$25" gate="G$1" pin="TS+"/>
 <wire x1="187.96" y1="187.96" x2="187.96" y2="185.42" width="0.0762" layer="91"/>
 <pinref part="RV1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="4"/>
+<wire x1="17.78" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="35.56" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$39" gate="G$1" pin="TS+"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -4750,7 +4870,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 <junction x="203.2" y="83.82"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="OUTNB" class="0">
 <segment>
 <pinref part="U$29" gate="G$1" pin="OUTN"/>
 <wire x1="233.68" y1="152.4" x2="233.68" y2="142.24" width="0.0762" layer="91"/>
@@ -4758,9 +4878,10 @@ ring terminals between fused and unfused and pack plus-done</text>
 <wire x1="208.28" y1="142.24" x2="208.28" y2="111.76" width="0.0762" layer="91"/>
 <pinref part="U$30" gate="G$1" pin="OUTNB"/>
 <wire x1="208.28" y1="111.76" x2="215.9" y2="111.76" width="0.0762" layer="91"/>
+<label x="226.06" y="142.24" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="OUTPB" class="0">
 <segment>
 <pinref part="U$29" gate="G$1" pin="OUTP"/>
 <wire x1="233.68" y1="157.48" x2="236.22" y2="157.48" width="0.0762" layer="91"/>
@@ -4769,9 +4890,10 @@ ring terminals between fused and unfused and pack plus-done</text>
 <wire x1="210.82" y1="139.7" x2="210.82" y2="116.84" width="0.0762" layer="91"/>
 <pinref part="U$30" gate="G$1" pin="OUTPB"/>
 <wire x1="210.82" y1="116.84" x2="215.9" y2="116.84" width="0.0762" layer="91"/>
+<label x="228.6" y="139.7" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="OUTNA" class="0">
 <segment>
 <pinref part="U$27" gate="G$1" pin="OUTN"/>
 <wire x1="233.68" y1="170.18" x2="238.76" y2="170.18" width="0.0762" layer="91"/>
@@ -4780,9 +4902,10 @@ ring terminals between fused and unfused and pack plus-done</text>
 <pinref part="U$30" gate="G$1" pin="OUTNA"/>
 <wire x1="213.36" y1="137.16" x2="213.36" y2="121.92" width="0.0762" layer="91"/>
 <wire x1="213.36" y1="121.92" x2="215.9" y2="121.92" width="0.0762" layer="91"/>
+<label x="233.68" y="170.18" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="OUTPA" class="0">
 <segment>
 <pinref part="U$27" gate="G$1" pin="OUTP"/>
 <wire x1="233.68" y1="175.26" x2="241.3" y2="175.26" width="0.0762" layer="91"/>
@@ -4790,6 +4913,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 <wire x1="241.3" y1="134.62" x2="215.9" y2="134.62" width="0.0762" layer="91"/>
 <wire x1="215.9" y1="134.62" x2="215.9" y2="127" width="0.0762" layer="91"/>
 <pinref part="U$30" gate="G$1" pin="OUTPA"/>
+<label x="233.68" y="175.26" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -4808,12 +4932,12 @@ ring terminals between fused and unfused and pack plus-done</text>
 </net>
 <net name="N$41" class="0">
 <segment>
-<wire x1="236.22" y1="50.8" x2="246.38" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="50.8" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
-<wire x1="180.34" y1="50.8" x2="190.5" y2="50.8" width="0.4445" layer="91"/>
+<wire x1="96.52" y1="50.8" x2="106.68" y2="50.8" width="0.4445" layer="91"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -4832,18 +4956,13 @@ ring terminals between fused and unfused and pack plus-done</text>
 </net>
 <net name="N$46" class="0">
 <segment>
-<wire x1="208.28" y1="50.8" x2="218.44" y2="50.8" width="0.254" layer="91"/>
-</segment>
-</net>
-<net name="N$39" class="0">
-<segment>
-<wire x1="261.62" y1="50.8" x2="271.78" y2="50.8" width="0.0762" layer="91"/>
+<wire x1="124.46" y1="50.8" x2="134.62" y2="50.8" width="0.254" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="VCC"/>
-<wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.0762" layer="91"/>
 <pinref part="P15" gate="1" pin="+5V"/>
 </segment>
 </net>
@@ -4981,6 +5100,35 @@ ring terminals between fused and unfused and pack plus-done</text>
 <pinref part="F2" gate="G$1" pin="2"/>
 <pinref part="U$37" gate="G$1" pin="P$1"/>
 <wire x1="22.86" y1="160.02" x2="25.4" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TSMP+" class="0">
+<segment>
+<pinref part="TSMP+RES" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="3"/>
+<wire x1="17.78" y1="38.1" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
+<label x="20.32" y="38.1" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TSMP-" class="0">
+<segment>
+<pinref part="TSMP-RES" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="73.66" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="J7" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="J8" gate="G$1" pin="4"/>
+<wire x1="50.8" y1="35.56" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
+<label x="53.34" y="35.56" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<wire x1="182.88" y1="50.8" x2="193.04" y2="50.8" width="0.0762" layer="91"/>
 </segment>
 </net>
 </nets>
