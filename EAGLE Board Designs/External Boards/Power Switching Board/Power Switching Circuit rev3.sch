@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -614,25 +615,25 @@ chip</description>
 <package name="MICRO_MINIATURE">
 <smd name="P$1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
 </package>
-<package name="TO-252-3">
-<description>Toshiba TK100S04N1L or ON Semiconductor FDD9407-F085
+<package name="DPAK(2-7K1S)">
+<description>DPAK(2-7K1S)
 &lt;br&gt;
-&lt;a href="file:///C:/Users/sathy/AppData/Local/Temp/TK100S04N1L_datasheet_en_20200624-2.pdf"&gt;Toshiba Datasheet&lt;/a&gt;
+Toshiba
 &lt;br&gt;
-
-&lt;a href="https://www.onsemi.com/pdf/datasheet/fdd9407_f085-d.pdf"&gt;ON Semiconductor Datasheet&lt;/a&gt;
-&lt;br&gt;</description>
-<smd name="1" x="-2.28" y="-4.23" dx="1.2" dy="2.2" layer="1"/>
-<smd name="3" x="2.28" y="-4.23" dx="1.2" dy="2.2" layer="1"/>
-<smd name="2" x="0" y="2.07" dx="5.8" dy="6.4" layer="1"/>
-<wire x1="-2.0066" y1="-1.4732" x2="-2.5908" y2="-1.4732" width="0.1524" layer="51"/>
-<wire x1="2.5908" y1="-1.4732" x2="2.0066" y2="-1.4732" width="0.1524" layer="51"/>
-<wire x1="0.4572" y1="-1.4732" x2="-0.4572" y2="-1.4732" width="0.1524" layer="51"/>
-<wire x1="-3.2512" y1="-1.4732" x2="3.2512" y2="-1.4732" width="0.1524" layer="51"/>
-<wire x1="3.2512" y1="-1.4732" x2="3.2512" y2="4.0132" width="0.1524" layer="51"/>
-<wire x1="3.2512" y1="4.0132" x2="-3.2512" y2="4.0132" width="0.1524" layer="51"/>
-<wire x1="-3.2512" y1="4.0132" x2="-3.2512" y2="-1.4732" width="0.1524" layer="51"/>
-<text x="-2.8956" y="6.858" size="0.762" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+&lt;a href="https://toshiba.semicon-storage.com/us/semiconductor/design-development/package/detail.DPAK.html"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-2.3" y="-3.5" dx="1.6" dy="3" layer="1"/>
+<smd name="3" x="2.3" y="-3.5" dx="1.6" dy="3" layer="1"/>
+<smd name="2" x="0" y="3" dx="6" dy="6" layer="1" rot="R90"/>
+<wire x1="-3.3" y1="-1" x2="3.3" y2="-1" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-1" x2="-3.3" y2="5.1" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-1" x2="3.3" y2="5.1" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="5.1" x2="-2.67" y2="5.1" width="0.127" layer="21"/>
+<wire x1="2.67" y1="5.1" x2="3.3" y2="5.1" width="0.127" layer="21"/>
+<wire x1="-2.67" y1="5.1" x2="-2.67" y2="6.18" width="0.127" layer="21"/>
+<wire x1="-2.67" y1="6.18" x2="2.67" y2="6.18" width="0.127" layer="21"/>
+<wire x1="2.67" y1="6.18" x2="2.67" y2="5.1" width="0.127" layer="21"/>
+<text x="0" y="6.858" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.81" y1="-5.588" x2="3.81" y2="6.858" layer="39"/>
 </package>
 <package name="1206-RES">
 <description>YC/TC164
@@ -658,6 +659,28 @@ Note: Also works for CAT/CAY16 Series.
 <wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
 <text x="-1.905" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
+</package>
+<package name="POWERPAK_SO-8">
+<description>PowerPak SO-8
+&lt;br&gt;
+&lt;a href="https://www.vishay.com/docs/72599/landpatternpowerpakso-8single.pdf"&gt;Landing Pattern&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.vishay.com/docs/71655/powerpak.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="D@PAD" x="0.6858" y="0" dx="3.81" dy="3.9116" layer="1"/>
+<smd name="1" x="-2.667" y="1.905" dx="1.27" dy="0.6096" layer="1"/>
+<smd name="2" x="-2.667" y="0.635" dx="1.27" dy="0.6096" layer="1"/>
+<smd name="3" x="-2.667" y="-0.635" dx="1.27" dy="0.6096" layer="1"/>
+<smd name="4" x="-2.667" y="-1.905" dx="1.27" dy="0.6096" layer="1"/>
+<smd name="D@5" x="2.794" y="-1.905" dx="1.016" dy="0.6096" layer="1"/>
+<smd name="D@6" x="2.794" y="-0.635" dx="1.016" dy="0.6096" layer="1"/>
+<smd name="D@7" x="2.794" y="0.635" dx="1.016" dy="0.6096" layer="1"/>
+<smd name="D@8" x="2.794" y="1.905" dx="1.016" dy="0.6096" layer="1"/>
+<wire x1="-3.1242" y1="2.6289" x2="3.1242" y2="2.6289" width="0.127" layer="22"/>
+<wire x1="3.1242" y1="2.6289" x2="3.1242" y2="-2.6289" width="0.127" layer="22"/>
+<wire x1="3.1242" y1="-2.6289" x2="-3.1242" y2="-2.6289" width="0.127" layer="22"/>
+<wire x1="-3.1242" y1="-2.6289" x2="-3.1242" y2="2.6289" width="0.127" layer="22"/>
+<rectangle x1="-3.556" y1="-2.794" x2="3.556" y2="2.794" layer="39"/>
+<text x="0" y="2.794" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -810,10 +833,23 @@ Note: Also works for CAT/CAY16 Series.
 <wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
 <wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
 <text x="0" y="5.08" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<pin name="D" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="D" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
 <text x="0" y="-5.08" size="1.27" layer="95" align="top-center">&gt;MPN</text>
+<wire x1="6.35" y1="1.27" x2="7.62" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="1.27" x2="8.89" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-3.81" x2="7.62" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="7.62" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="3.81" x2="7.62" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-1.27" x2="7.62" y2="-3.81" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="7.62" y="1.27"/>
+<vertex x="6.35" y="-1.27"/>
+<vertex x="8.89" y="-1.27"/>
+</polygon>
 </symbol>
 <symbol name="DIODE_TVS_UNIDIRECTIONAL">
 <wire x1="0" y1="1.016" x2="0" y2="-0.762" width="0.1524" layer="94"/>
@@ -1329,21 +1365,65 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="TK100S04N1L">
-<description>Toshiba TK100S04N1L or ON Semiconductor FDD9407-F085</description>
+<deviceset name="TRANSISTOR_N_MOS_?_*" prefix="Q">
+<description>N-MOSFET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/916/PMV15ENEA-1604828.pdf"&gt;PMV15ENEA Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/408/TK6P65W_datasheet_en_20151225-1916290.pdf"&gt;TK6P65W Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/408/TK100S04N1L_datasheet_en_20200624-1840137.pdf"&gt;TK100S04N1L Datasheet&lt;/a&gt;&lt;/li&gt;</description>
 <gates>
-<gate name="G$1" symbol="MOSFET_N-CHANNEL" x="-2.54" y="0"/>
+<gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO-252-3">
+<device name="" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="PMV15ENEA">
+<attribute name="DKPN" value="1727-8588-1-ND"/>
+<attribute name="MANUFACTURER" value="Nexperia USA Inc."/>
+<attribute name="MOPN" value="771-PMV15ENEAR"/>
+<attribute name="MPN" value="PMV15ENEAR"/>
+</technology>
+</technologies>
+</device>
+<device name="2-7K1S" package="DPAK(2-7K1S)">
 <connects>
 <connect gate="G$1" pin="D" pad="2"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MPN" value="TK100S04N1L,LQ" constant="no"/>
+<technology name="TK100S04N1L,LQ">
+<attribute name="DKPN" value="TK100S04N1LLQ"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
+<attribute name="MOPN" value="757-TK100S04N1LLQ"/>
+<attribute name="MPN" value="TK100S04N1L,LQ"/>
+</technology>
+<technology name="TK6P65W">
+<attribute name="DKPN" value="TK6P65WRQCT-ND"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
+<attribute name="MOPN" value="757-TK6P65WRQ"/>
+<attribute name="MPN" value="TK6P65W,RQ"/>
+</technology>
+</technologies>
+</device>
+<device name="POWERPAK" package="POWERPAK_SO-8">
+<connects>
+<connect gate="G$1" pin="D" pad="D@5 D@6 D@7 D@8 D@PAD"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name="SIR638ADP">
+<attribute name="DKPN" value="SIR638ADP-T1-RE3CT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Siliconix"/>
+<attribute name="MOPN" value="Vishay Siliconix"/>
+<attribute name="MPN" value="SIR638ADP-T1-RE3"/>
 </technology>
 </technologies>
 </device>
@@ -4328,10 +4408,10 @@ Layer: 94 Symbol</description>
 <part name="LED8" library="HyTechDevices" deviceset="LED" device="-0603" value="RED"/>
 <part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0603" value="10k"/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR_SENSE" device=""/>
-<part name="Q1" library="HyTechDevices" deviceset="TK100S04N1L" device=""/>
-<part name="Q2" library="HyTechDevices" deviceset="TK100S04N1L" device=""/>
-<part name="Q4" library="HyTechDevices" deviceset="TK100S04N1L" device=""/>
-<part name="Q3" library="HyTechDevices" deviceset="TK100S04N1L" device=""/>
+<part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
+<part name="Q2" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
+<part name="Q4" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
+<part name="Q3" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
 <part name="RN2" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10K"/>
 <part name="U$11" library="HyTechDevices" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
 </parts>
@@ -4779,7 +4859,6 @@ OV Falling: 14.4 V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="V1"/>
 <wire x1="-20.828" y1="5.588" x2="-20.828" y2="45.974" width="0.1524" layer="91"/>
-<wire x1="-20.828" y1="45.974" x2="-18.288" y2="45.974" width="0.1524" layer="91"/>
 <wire x1="-20.828" y1="45.974" x2="-33.528" y2="45.974" width="0.1524" layer="91"/>
 <junction x="-20.828" y="45.974"/>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -5077,8 +5156,7 @@ OV Falling: 14.4 V</text>
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="SOURCE2"/>
 <wire x1="19.812" y1="5.842" x2="19.812" y2="5.588" width="0.1524" layer="91"/>
-<wire x1="12.192" y1="24.892" x2="19.812" y2="24.892" width="0.1524" layer="91"/>
-<wire x1="19.812" y1="24.892" x2="22.352" y2="24.892" width="0.1524" layer="91"/>
+<wire x1="14.732" y1="24.892" x2="19.812" y2="24.892" width="0.1524" layer="91"/>
 <wire x1="19.812" y1="5.842" x2="19.812" y2="24.892" width="0.1524" layer="91"/>
 <junction x="19.812" y="5.842"/>
 <junction x="19.812" y="24.892"/>
@@ -5101,7 +5179,6 @@ OV Falling: 14.4 V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="V2"/>
 <wire x1="4.572" y1="5.588" x2="4.572" y2="24.892" width="0.1524" layer="91"/>
-<wire x1="4.572" y1="24.892" x2="7.112" y2="24.892" width="0.1524" layer="91"/>
 <wire x1="4.572" y1="24.892" x2="-38.354" y2="24.892" width="0.1524" layer="91"/>
 <junction x="4.572" y="24.892"/>
 <pinref part="K1" gate="G$1" pin="S"/>
@@ -5150,8 +5227,8 @@ OV Falling: 14.4 V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="SOURCE1"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-13.208" y1="45.974" x2="-5.588" y2="45.974" width="0.1524" layer="91"/>
-<wire x1="-5.588" y1="45.974" x2="-0.508" y2="45.974" width="0.1524" layer="91"/>
+<wire x1="-10.668" y1="45.974" x2="-5.588" y2="45.974" width="0.1524" layer="91"/>
+<wire x1="-5.588" y1="45.974" x2="-3.048" y2="45.974" width="0.1524" layer="91"/>
 <wire x1="-5.588" y1="5.588" x2="-5.588" y2="45.974" width="0.1524" layer="91"/>
 <junction x="-5.588" y="5.588"/>
 <junction x="-5.588" y="45.974"/>
@@ -5278,7 +5355,7 @@ OV Falling: 14.4 V</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="27.432" y1="24.892" x2="33.528" y2="24.892" width="0.1524" layer="91"/>
+<wire x1="29.972" y1="24.892" x2="33.528" y2="24.892" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="Q4" gate="G$1" pin="D"/>
 </segment>
@@ -5305,7 +5382,7 @@ OV Falling: 14.4 V</text>
 <net name="N$8" class="0">
 <segment>
 <wire x1="32.512" y1="46.228" x2="4.572" y2="46.228" width="0.1524" layer="91"/>
-<wire x1="4.572" y1="46.228" x2="4.572" y2="45.974" width="0.1524" layer="91"/>
+<wire x1="4.572" y1="46.228" x2="7.112" y2="45.974" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
 </segment>
