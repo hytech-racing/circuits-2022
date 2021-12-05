@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -375,13 +375,13 @@
 <text x="0" y="3.302" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.048" size="1.27" layer="95" align="top-center">BUTTON</text>
 </symbol>
-<symbol name="ACCEL_SENSOR">
+<symbol name="CURRENT_SENSOR">
 <wire x1="0" y1="0" x2="0" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="0" y1="-10.16" x2="20.32" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="20.32" y1="-10.16" x2="20.32" y2="0" width="0.1524" layer="94"/>
 <wire x1="20.32" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<pin name="ACCEL" x="22.86" y="-7.62" length="short" direction="out" rot="R180"/>
-<text x="2.54" y="-1.27" size="1.778" layer="95" align="top-left">Accel.
+<pin name="CURRENT" x="22.86" y="-7.62" length="short" direction="out" rot="R180"/>
+<text x="2.54" y="-1.27" size="1.778" layer="95" align="top-left">Current
 Sensor</text>
 <pin name="VCC" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="-2.54" y="-7.62" length="short" direction="pwr"/>
@@ -517,9 +517,9 @@ Sensor</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ACCEL_SENSOR">
+<deviceset name="CURRENT_SENSOR">
 <gates>
-<gate name="G$1" symbol="ACCEL_SENSOR" x="0" y="0"/>
+<gate name="G$1" symbol="CURRENT_SENSOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -3357,7 +3357,7 @@ Layer: 94 Symbol</description>
 </part>
 <part name="LATCHING" library="HyTechSymbolsTemp" deviceset="BUTTON_NO" device=""/>
 <part name="P13" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="U$6" library="HyTechSymbolsTemp" deviceset="ACCEL_SENSOR" device=""/>
+<part name="U$6" library="HyTechSymbolsTemp" deviceset="CURRENT_SENSOR" device=""/>
 <part name="U$7" library="HyTechSymbolsTemp" deviceset="BSE" device=""/>
 <part name="P14" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P16" library="HyTechSupplies" deviceset="+12V" device=""/>
@@ -3601,7 +3601,7 @@ show BSE and current sensor-done</text>
 <label x="53.34" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="ACCEL"/>
+<pinref part="U$6" gate="G$1" pin="CURRENT"/>
 <wire x1="45.72" y1="160.02" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
 <label x="48.26" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
