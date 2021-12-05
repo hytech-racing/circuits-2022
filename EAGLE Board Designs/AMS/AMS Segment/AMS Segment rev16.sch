@@ -7778,6 +7778,95 @@ Layer: 94 Symbol</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="HyTechOrdering">
+<packages>
+</packages>
+<symbols>
+<symbol name="ORDERING">
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<text x="0" y="-3.302" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="THERMISTOR" prefix="O">
+<description>Thermistor
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/ntcalug02a-105180.pdf"&gt;NTC Lug Series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="B" value="3984K"/>
+<attribute name="B_RANGE" value="25/85"/>
+<attribute name="DKPN" value="56-NTCALUG02A103F161A-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Beyschlag/Draloric/BC Components"/>
+<attribute name="MOPN" value="594-NTLUG02A103F161A"/>
+<attribute name="MPN" value="NTCALUG02A103F161A"/>
+<attribute name="TOLERANCE_B" value="0.5%"/>
+<attribute name="TOLERANCE_RESISTANCE" value="1%"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PLUG-2_*" prefix="O">
+<description>Plug, 2 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0436450200_CRIMP_HOUSINGS-2866614.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT_HORIZONTAL">
+<attribute name="DKPN" value="WM1845-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="Molex"/>
+<attribute name="MPN" value="436450200"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRIMP_*" prefix="O">
+<description>Crimp
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430300003_CRIMP_TERMINALS-2845469.pdf"&gt;Microfit, 20-24&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT_20-24">
+<attribute name="DKPN" value="WM2776CT-ND"/>
+<attribute name="GAUGE" value="20-24"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43030-0003"/>
+<attribute name="MPN" value="0430300003"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="ENGINEER" value="Arvind Srinivasan"/>
@@ -8236,6 +8325,30 @@ derating</text>
 <part name="P91" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="P92" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P93" library="HyTechSupplies" deviceset="VREGL" device=""/>
+<part name="O1" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
+<part name="O2" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
+<part name="O3" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
+<part name="O4" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
+<part name="O5" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
+<part name="O6" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
+<part name="O7" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
+<part name="O8" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
+<part name="O9" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O10" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O11" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O12" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O13" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O14" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O15" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O16" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O17" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O18" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O19" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O20" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O21" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O22" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O23" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O24" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 </parts>
 <sheets>
 <sheet>
@@ -8261,7 +8374,7 @@ centertap.</text>
 around 0.8A and it was recommended in the datasheet that the
 fuse be 1.5 times the peak current. With durating due to higher
 temperatures the 1.6A fuse fits perfectly.</text>
-<text x="223.52" y="205.74" size="1.27" layer="97">The 2.74kOhm resister selection was done in order to maximize the
+<text x="224.282" y="207.264" size="1.27" layer="97">The 2.74kOhm resister selection was done in order to maximize the
 coverage on our ADC.</text>
 <text x="119.38" y="205.74" size="1.27" layer="97">These are 0 Ohm resisters that we may or 
 may not decide to solder in based on the address
@@ -9282,6 +9395,83 @@ requirement of EV.8.3.2.</text>
 </instance>
 <instance part="P93" gate="G$1" x="71.12" y="7.62" smashed="yes">
 <attribute name="VALUE" x="71.12" y="8.89" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="O1" gate="G$1" x="54.864" y="6.604" smashed="yes">
+<attribute name="MPN" x="54.864" y="3.302" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="54.864" y="7.366" size="1.27" layer="95"/>
+</instance>
+<instance part="O2" gate="G$1" x="57.658" y="6.604" smashed="yes">
+<attribute name="NAME" x="57.658" y="7.366" size="1.27" layer="95"/>
+</instance>
+<instance part="O3" gate="G$1" x="60.452" y="6.604" smashed="yes">
+<attribute name="NAME" x="60.452" y="7.366" size="1.27" layer="95"/>
+</instance>
+<instance part="O4" gate="G$1" x="63.246" y="6.604" smashed="yes">
+<attribute name="NAME" x="63.246" y="7.366" size="1.27" layer="95"/>
+</instance>
+<instance part="O5" gate="G$1" x="42.418" y="199.644" smashed="yes">
+<attribute name="MPN" x="38.608" y="196.85" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="42.418" y="200.406" size="1.27" layer="95"/>
+</instance>
+<instance part="O6" gate="G$1" x="45.212" y="199.644" smashed="yes">
+<attribute name="NAME" x="45.212" y="200.406" size="1.27" layer="95"/>
+</instance>
+<instance part="O7" gate="G$1" x="48.006" y="199.644" smashed="yes">
+<attribute name="NAME" x="48.006" y="200.406" size="1.27" layer="95"/>
+</instance>
+<instance part="O8" gate="G$1" x="50.8" y="199.644" smashed="yes">
+<attribute name="NAME" x="50.8" y="200.406" size="1.27" layer="95"/>
+</instance>
+<instance part="O9" gate="G$1" x="208.534" y="209.804" smashed="yes">
+<attribute name="MPN" x="211.074" y="206.756" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="208.534" y="210.566" size="1.27" layer="95"/>
+</instance>
+<instance part="O10" gate="G$1" x="212.09" y="209.804" smashed="yes">
+<attribute name="NAME" x="212.09" y="210.566" size="1.27" layer="95"/>
+</instance>
+<instance part="O11" gate="G$1" x="215.646" y="209.804" smashed="yes">
+<attribute name="NAME" x="215.646" y="210.566" size="1.27" layer="95"/>
+</instance>
+<instance part="O12" gate="G$1" x="219.202" y="209.804" smashed="yes">
+<attribute name="NAME" x="219.202" y="210.566" size="1.27" layer="95"/>
+</instance>
+<instance part="O13" gate="G$1" x="208.534" y="203.2" smashed="yes">
+<attribute name="MPN" x="210.82" y="200.152" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="208.534" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O14" gate="G$1" x="212.09" y="203.2" smashed="yes">
+<attribute name="NAME" x="212.09" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O15" gate="G$1" x="215.646" y="203.2" smashed="yes">
+<attribute name="NAME" x="215.646" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O16" gate="G$1" x="219.202" y="203.2" smashed="yes">
+<attribute name="NAME" x="219.202" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O17" gate="G$1" x="223.012" y="203.2" smashed="yes">
+<attribute name="MPN" x="223.012" y="199.898" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="223.012" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O18" gate="G$1" x="226.314" y="203.2" smashed="yes">
+<attribute name="NAME" x="226.314" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O19" gate="G$1" x="229.616" y="203.2" smashed="yes">
+<attribute name="NAME" x="229.616" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O20" gate="G$1" x="232.918" y="203.2" smashed="yes">
+<attribute name="NAME" x="232.918" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O21" gate="G$1" x="236.22" y="203.2" smashed="yes">
+<attribute name="NAME" x="236.22" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O22" gate="G$1" x="239.522" y="203.2" smashed="yes">
+<attribute name="NAME" x="239.522" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O23" gate="G$1" x="242.57" y="203.2" smashed="yes">
+<attribute name="NAME" x="242.57" y="203.962" size="1.27" layer="95"/>
+</instance>
+<instance part="O24" gate="G$1" x="245.618" y="203.2" smashed="yes">
+<attribute name="NAME" x="245.618" y="203.962" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
