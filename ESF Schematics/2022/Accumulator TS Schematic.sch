@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -393,45 +393,6 @@ Converter</text>
 <pin name="VCC" x="40.64" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="40.64" y="-5.08" length="short" direction="pwr" rot="R180"/>
 </symbol>
-<symbol name="LOGICGATE_INVERTER">
-<description>Inverter</description>
-<text x="2.413" y="3.048" size="1.27" layer="95">NOT</text>
-<pin name="IN" x="-2.54" y="0" visible="pad" length="short" direction="in"/>
-<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="0" y1="-3.81" x2="6.35" y2="0" width="0.254" layer="94"/>
-<wire x1="6.35" y1="0" x2="0" y2="3.81" width="0.254" layer="94"/>
-<pin name="!IN" x="8.89" y="0" visible="pad" length="short" direction="out" function="dot" rot="R180"/>
-</symbol>
-<symbol name="MOSFET_N-CHANNEL">
-<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0" y1="3.683" x2="0" y2="1.397" width="0.254" layer="94"/>
-<wire x1="1.905" y1="0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
-<wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
-<text x="-5.08" y="5.08" size="1.27" layer="95">N-MOSFET</text>
-<pin name="D" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
-<wire x1="6.35" y1="1.27" x2="7.62" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="1.27" x2="8.89" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-3.81" x2="7.62" y2="-3.81" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="3.81" x2="7.62" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="3.81" x2="7.62" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-1.27" x2="7.62" y2="-3.81" width="0.1524" layer="94"/>
-<polygon width="0.1524" layer="94">
-<vertex x="7.62" y="1.27"/>
-<vertex x="6.35" y="-1.27"/>
-<vertex x="8.89" y="-1.27"/>
-</polygon>
-</symbol>
 <symbol name="RELAY_SPST_NC">
 <description>Single pole, single throw normally closed relay</description>
 <circle x="2.54" y="-17.78" radius="0.635" width="0.1524" layer="94"/>
@@ -663,34 +624,6 @@ LOGIC</text>
 <deviceset name="PRECHARGER">
 <gates>
 <gate name="G$1" symbol="PRECHARGER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LOGICGATE_INVERTER">
-<gates>
-<gate name="G$1" symbol="LOGICGATE_INVERTER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MOSFET_N-CHANNEL" prefix="Q">
-<gates>
-<gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -3849,9 +3782,6 @@ Layer: 94 Symbol</description>
 <part name="U$11" library="HyTechSymbolsTemp" deviceset="PRECHARGER" device=""/>
 <part name="P1" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="PRECHARGE" library="HyTechSymbolsTemp" deviceset="RELAY_SPST_NO_?*" device="" technology="3350-1275-126"/>
-<part name="U$12" library="HyTechSymbolsTemp" deviceset="LOGICGATE_INVERTER" device=""/>
-<part name="U$13" library="HyTechSymbolsTemp" deviceset="MOSFET_N-CHANNEL" device=""/>
-<part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P3" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="PRECHARGE_RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="7.5k"/>
 <part name="P4" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
@@ -3980,7 +3910,7 @@ Layer: 94 Symbol</description>
 <text x="116.84" y="142.24" size="1.27" layer="97">17.5mm^2</text>
 <text x="104.14" y="142.24" size="1.27" layer="97">17.5mm^2</text>
 <text x="88.9" y="142.24" size="1.27" layer="97">17.5mm^2</text>
-<text x="55.88" y="111.76" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="60.96" y="111.76" size="1.27" layer="97" align="top-left">PCB Trace</text>
 <text x="40.64" y="142.24" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="35.56" y="162.56" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="17.78" y="180.34" size="1.27" layer="97" align="top-left">PCB Trace</text>
@@ -4044,13 +3974,6 @@ Layer: 94 Symbol</description>
 <instance part="PRECHARGE" gate="G$1" x="71.12" y="116.84" smashed="yes">
 <attribute name="MPN" x="71.12" y="93.218" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="71.12" y="117.602" size="1.27" layer="95"/>
-</instance>
-<instance part="U$12" gate="G$1" x="30.48" y="101.6" smashed="yes"/>
-<instance part="U$13" gate="G$1" x="45.72" y="104.14" smashed="yes">
-<attribute name="NAME" x="45.72" y="109.22" size="1.27" layer="95" align="bottom-center"/>
-</instance>
-<instance part="P2" gate="1" x="50.8" y="93.98" smashed="yes">
-<attribute name="VALUE" x="50.8" y="92.71" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P3" gate="1" x="152.4" y="160.02" smashed="yes">
 <attribute name="VALUE" x="152.4" y="158.75" size="1.27" layer="96" align="top-center"/>
@@ -4390,11 +4313,6 @@ Layer: 94 Symbol</description>
 <pinref part="P1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="S"/>
-<wire x1="50.8" y1="99.06" x2="50.8" y2="96.52" width="0.0762" layer="91"/>
-<pinref part="P2" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="AIR-" gate="G$1" pin="COIL+"/>
 <wire x1="154.94" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="P3" gate="1" pin="GND"/>
@@ -4449,11 +4367,6 @@ Layer: 94 Symbol</description>
 </net>
 <net name="PRECHARGE_OK" class="0">
 <segment>
-<pinref part="U$12" gate="G$1" pin="IN"/>
-<wire x1="27.94" y1="101.6" x2="25.4" y2="101.6" width="0.0762" layer="91"/>
-<label x="25.4" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$30" gate="G$1" pin="PRECHARGE_OK"/>
 <wire x1="251.46" y1="119.38" x2="254" y2="119.38" width="0.0762" layer="91"/>
 <label x="254" y="119.38" size="1.27" layer="95" xref="yes"/>
@@ -4463,19 +4376,10 @@ Layer: 94 Symbol</description>
 <pinref part="AIR+" gate="G$1" pin="COIL-"/>
 <wire x1="68.58" y1="177.8" x2="68.58" y2="162.56" width="0.0762" layer="91"/>
 </segment>
-</net>
-<net name="N$11" class="0">
 <segment>
-<pinref part="U$12" gate="G$1" pin="!IN"/>
-<pinref part="U$13" gate="G$1" pin="G"/>
-<wire x1="39.37" y1="101.6" x2="40.64" y2="101.6" width="0.0762" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U$13" gate="G$1" pin="D"/>
 <pinref part="PRECHARGE" gate="G$1" pin="COIL+"/>
-<wire x1="50.8" y1="109.22" x2="68.58" y2="109.22" width="0.0762" layer="91"/>
+<wire x1="68.58" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
+<label x="60.96" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PACK+" class="0">
@@ -4686,7 +4590,7 @@ Layer: 94 Symbol</description>
 <pinref part="P8" gate="1" pin="+12V"/>
 </segment>
 </net>
-<net name="OKHS" class="0">
+<net name="IMD_OK" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="OKHS"/>
 <wire x1="154.94" y1="71.12" x2="160.02" y2="71.12" width="0.1524" layer="91"/>

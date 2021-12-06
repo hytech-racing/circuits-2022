@@ -3335,7 +3335,7 @@ Layer: 94 Symbol</description>
 <part name="P8" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="U$2" library="HyTechSymbolsTemp" deviceset="LOGICGATE_OR" device=""/>
 <part name="U$3" library="HyTechSymbolsTemp" deviceset="LOGICGATE_AND_OPENDRAIN" device=""/>
-<part name="RV5" library="HyTechDevices" deviceset="RESISTOR_VALUE" device=""/>
+<part name="RV5" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="330"/>
 <part name="CV3" library="HyTechDevices" deviceset="CAPACITOR_VALUE" device="" value="0.47uF"/>
 <part name="RV6" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="680k"/>
 <part name="P9" library="HyTechSupplies" deviceset="+5V" device=""/>
@@ -3345,24 +3345,30 @@ Layer: 94 Symbol</description>
 <part name="U$4" library="HyTechSymbolsTemp" deviceset="MOSFET_P-CHANNEL" device=""/>
 <part name="P11" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="RV8" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="68"/>
-<part name="K1" library="HyTechSymbolsTemp" deviceset="RELAY_DPDT_?*" device="" technology="RT424009"/>
+<part name="BSPD_RELAY" library="HyTechSymbolsTemp" deviceset="RELAY_DPDT_?*" device="" technology="RT424009"/>
 <part name="D4" library="HyTechSymbolsTemp" deviceset="DIODE" device=""/>
 <part name="D5" library="HyTechSymbolsTemp" deviceset="DIODE" device=""/>
-<part name="RV9" library="HyTechDevices" deviceset="RESISTOR_VALUE" device=""/>
+<part name="RV9" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="2k"/>
 <part name="P12" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="U$5" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
 <attribute name="DESCRIPTION_1" value="ESF compliant representation of the BSPD"/>
 <attribute name="DESCRIPTION_2" value="circuit."/>
+<attribute name="DESIGNER_SCHEMATIC" value="Zekun Li"/>
 <attribute name="ENGINEER" value="Zekun Li"/>
+<attribute name="REVIEWER_SCHEMATIC" value="Arvind Srinivasan"/>
 </part>
 <part name="LATCHING" library="HyTechSymbolsTemp" deviceset="BUTTON_NO" device=""/>
 <part name="P13" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="U$6" library="HyTechSymbolsTemp" deviceset="CURRENT_SENSOR" device=""/>
 <part name="U$7" library="HyTechSymbolsTemp" deviceset="BSE" device=""/>
-<part name="P14" library="HyTechSupplies" deviceset="+12V" device=""/>
-<part name="P16" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P15" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P17" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="P16" library="HyTechSupplies" deviceset="+5V" device=""/>
+<part name="P14" library="HyTechSupplies" deviceset="+5V" device=""/>
+<part name="U6" library="HyTechSymbolsTemp" deviceset="OPAMP" device=""/>
+<part name="RV10" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="14k"/>
+<part name="RV11" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10k"/>
+<part name="P18" library="HyTechSupplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3377,7 +3383,7 @@ Layer: 94 Symbol</description>
 <text x="180.34" y="116.84" size="1.27" layer="97" align="top-left">PCB Trace</text>
 <text x="180.34" y="134.62" size="1.27" layer="97" align="top-left">PCB Trace</text>
 <text x="223.52" y="114.3" size="1.27" layer="97" align="top-left">PCB Trace</text>
-<text x="251.46" y="142.24" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="251.46" y="144.78" size="1.27" layer="97" align="top-left">PCB Trace</text>
 <text x="261.62" y="124.46" size="1.27" layer="97" align="top-left">PCB Trace</text>
 <text x="220.98" y="99.06" size="1.27" layer="97" align="top-left">PCB Trace</text>
 <wire x1="35.56" y1="86.36" x2="35.56" y2="63.5" width="0.8128" layer="97" style="shortdash"/>
@@ -3386,15 +3392,12 @@ Layer: 94 Symbol</description>
 <wire x1="78.74" y1="86.36" x2="35.56" y2="86.36" width="0.8128" layer="97" style="shortdash"/>
 <text x="38.1" y="83.82" size="3.048" layer="97" align="top-left">Wire Gauge Key</text>
 <text x="38.1" y="71.12" size="2.032" layer="97" align="top-left">PCB Trace:</text>
-<text x="101.6" y="76.2" size="1.27" layer="88">fix gauge to trace-done
-zener diode symbol-done
-show latching button-done
-show signal_current gain op amp- don't think it's needed for circuit after showing blocks for brake and current signals
-show BSE and current sensor-done</text>
 <text x="55.88" y="68.58" size="1.778" layer="97">(&gt;= 6 mil)</text>
 <text x="38.1" y="76.2" size="2.032" layer="97" align="top-left">22AWG:</text>
 <text x="15.24" y="119.38" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="45.72" y="119.38" size="1.27" layer="97">22AWG</text>
+<text x="45.72" y="162.56" size="1.27" layer="97">22 AWG</text>
+<text x="30.48" y="149.86" size="1.27" layer="97" align="top-left">PCB Trace</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="55.88" y="144.78" smashed="yes" rot="R90">
@@ -3498,7 +3501,7 @@ show BSE and current sensor-done</text>
 <attribute name="NAME" x="214.63" y="113.03" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="214.63" y="110.49" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="K1" gate="G$1" x="241.3" y="129.54" smashed="yes">
+<instance part="BSPD_RELAY" gate="G$1" x="241.3" y="129.54" smashed="yes">
 <attribute name="MPN" x="241.3" y="95.758" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="241.3" y="130.302" size="1.27" layer="95"/>
 </instance>
@@ -3506,9 +3509,9 @@ show BSE and current sensor-done</text>
 <attribute name="NAME" x="232.41" y="120.015" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="232.41" y="123.825" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="D5" gate="G$1" x="248.92" y="134.62" smashed="yes">
-<attribute name="NAME" x="247.65" y="136.525" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="247.65" y="132.715" size="1.27" layer="96" align="top-center"/>
+<instance part="D5" gate="G$1" x="248.92" y="137.16" smashed="yes">
+<attribute name="NAME" x="247.65" y="139.065" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="247.65" y="135.255" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="RV9" gate="G$1" x="259.08" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="257.81" y="118.11" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -3527,25 +3530,37 @@ show BSE and current sensor-done</text>
 <attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
 </instance>
-<instance part="LATCHING" gate="G$1" x="246.38" y="152.4" smashed="yes">
-<attribute name="NAME" x="246.38" y="155.702" size="1.27" layer="95" align="bottom-center"/>
+<instance part="LATCHING" gate="G$1" x="246.38" y="154.94" smashed="yes">
+<attribute name="NAME" x="246.38" y="158.242" size="1.27" layer="95" align="bottom-center"/>
 </instance>
-<instance part="P13" gate="1" x="254" y="147.32" smashed="yes">
-<attribute name="VALUE" x="254" y="146.05" size="1.27" layer="96" align="top-center"/>
+<instance part="P13" gate="1" x="254" y="149.86" smashed="yes">
+<attribute name="VALUE" x="254" y="148.59" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="U$6" gate="G$1" x="22.86" y="167.64" smashed="yes"/>
 <instance part="U$7" gate="G$1" x="22.86" y="124.46" smashed="yes"/>
-<instance part="P14" gate="1" x="48.26" y="167.64" smashed="yes">
-<attribute name="VALUE" x="48.26" y="171.45" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="P16" gate="1" x="48.26" y="124.46" smashed="yes">
-<attribute name="VALUE" x="48.26" y="128.27" size="1.27" layer="96" align="bottom-center"/>
-</instance>
 <instance part="P15" gate="1" x="17.78" y="114.3" smashed="yes">
 <attribute name="VALUE" x="17.78" y="113.03" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P17" gate="1" x="17.78" y="157.48" smashed="yes">
 <attribute name="VALUE" x="17.78" y="156.21" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P16" gate="1" x="48.26" y="124.46" smashed="yes">
+<attribute name="VALUE" x="48.26" y="127" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P14" gate="1" x="48.26" y="167.64" smashed="yes">
+<attribute name="VALUE" x="48.26" y="170.18" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="U6" gate="G$1" x="40.64" y="149.86" smashed="yes"/>
+<instance part="RV10" gate="G$1" x="45.72" y="142.24" smashed="yes">
+<attribute name="NAME" x="44.45" y="143.51" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="44.45" y="140.97" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="RV11" gate="G$1" x="33.02" y="142.24" smashed="yes">
+<attribute name="NAME" x="31.75" y="143.51" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="31.75" y="140.97" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P18" gate="1" x="25.4" y="139.7" smashed="yes">
+<attribute name="VALUE" x="25.4" y="138.43" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -3598,12 +3613,21 @@ show BSE and current sensor-done</text>
 <wire x1="55.88" y1="147.32" x2="55.88" y2="149.86" width="0.0762" layer="91"/>
 <wire x1="55.88" y1="149.86" x2="53.34" y2="149.86" width="0.0762" layer="91"/>
 <junction x="55.88" y="149.86"/>
-<label x="53.34" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U6" gate="G$1" pin="VOUT"/>
+<pinref part="RV10" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="149.86" x2="48.26" y2="142.24" width="0.0762" layer="91"/>
+<wire x1="48.26" y1="149.86" x2="53.34" y2="149.86" width="0.0762" layer="91"/>
+<junction x="48.26" y="149.86"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="CURRENT"/>
 <wire x1="45.72" y1="160.02" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
 <label x="48.26" y="160.02" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VIN+"/>
+<wire x1="38.1" y1="152.4" x2="35.56" y2="152.4" width="0.0762" layer="91"/>
+<label x="35.56" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3643,7 +3667,7 @@ show BSE and current sensor-done</text>
 <pinref part="P10" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="K1" gate="G$1" pin="4"/>
+<pinref part="BSPD_RELAY" gate="G$1" pin="4"/>
 <pinref part="RV9" gate="G$1" pin="1"/>
 <wire x1="254" y1="114.3" x2="259.08" y2="114.3" width="0.0762" layer="91"/>
 <wire x1="259.08" y1="114.3" x2="259.08" y2="111.76" width="0.0762" layer="91"/>
@@ -3652,7 +3676,7 @@ show BSE and current sensor-done</text>
 </segment>
 <segment>
 <pinref part="LATCHING" gate="G$1" pin="P$2"/>
-<wire x1="251.46" y1="149.86" x2="254" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="152.4" x2="254" y2="152.4" width="0.0762" layer="91"/>
 <pinref part="P13" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -3664,6 +3688,11 @@ show BSE and current sensor-done</text>
 <pinref part="U$6" gate="G$1" pin="GND"/>
 <wire x1="20.32" y1="160.02" x2="17.78" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="P17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="RV11" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="142.24" x2="25.4" y2="142.24" width="0.0762" layer="91"/>
+<pinref part="P18" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -3717,6 +3746,16 @@ show BSE and current sensor-done</text>
 <pinref part="RV6" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="109.22" x2="137.16" y2="109.22" width="0.0762" layer="91"/>
 <pinref part="P9" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="VCC"/>
+<wire x1="48.26" y1="121.92" x2="45.72" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="P16" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="VCC"/>
+<wire x1="45.72" y1="165.1" x2="48.26" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="P14" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="SIGNAL_BRAKE" class="0">
@@ -3835,16 +3874,6 @@ show BSE and current sensor-done</text>
 <pinref part="P11" gate="1" pin="+12V"/>
 <junction x="203.2" y="132.08"/>
 </segment>
-<segment>
-<pinref part="U$6" gate="G$1" pin="VCC"/>
-<wire x1="45.72" y1="165.1" x2="48.26" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="P14" gate="1" pin="+12V"/>
-</segment>
-<segment>
-<pinref part="U$7" gate="G$1" pin="VCC"/>
-<wire x1="48.26" y1="121.92" x2="45.72" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="P16" gate="1" pin="+12V"/>
-</segment>
 </net>
 <net name="N$12" class="0">
 <segment>
@@ -3855,50 +3884,47 @@ show BSE and current sensor-done</text>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="K1" gate="G$1" pin="COIL-"/>
+<pinref part="BSPD_RELAY" gate="G$1" pin="COIL-"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="238.76" y1="121.92" x2="236.22" y2="121.92" width="0.0762" layer="91"/>
 <pinref part="D5" gate="G$1" pin="A"/>
-<wire x1="238.76" y1="121.92" x2="238.76" y2="134.62" width="0.0762" layer="91"/>
-<wire x1="238.76" y1="134.62" x2="243.84" y2="134.62" width="0.0762" layer="91"/>
+<wire x1="238.76" y1="121.92" x2="238.76" y2="137.16" width="0.0762" layer="91"/>
+<wire x1="238.76" y1="137.16" x2="243.84" y2="137.16" width="0.0762" layer="91"/>
 <junction x="238.76" y="121.92"/>
-<pinref part="K1" gate="G$1" pin="3"/>
+<pinref part="BSPD_RELAY" gate="G$1" pin="3"/>
 <wire x1="238.76" y1="121.92" x2="238.76" y2="111.76" width="0.0762" layer="91"/>
 </segment>
 </net>
 <net name="BSPD_OK" class="0">
 <segment>
-<pinref part="K1" gate="G$1" pin="COIL+"/>
+<pinref part="BSPD_RELAY" gate="G$1" pin="COIL+"/>
 <pinref part="RV9" gate="G$1" pin="2"/>
 <wire x1="254" y1="121.92" x2="259.08" y2="121.92" width="0.0762" layer="91"/>
 <pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="259.08" y1="121.92" x2="259.08" y2="134.62" width="0.0762" layer="91"/>
-<wire x1="259.08" y1="134.62" x2="251.46" y2="134.62" width="0.0762" layer="91"/>
+<wire x1="259.08" y1="121.92" x2="259.08" y2="137.16" width="0.0762" layer="91"/>
+<wire x1="259.08" y1="137.16" x2="251.46" y2="137.16" width="0.0762" layer="91"/>
 <junction x="259.08" y="121.92"/>
-<wire x1="259.08" y1="134.62" x2="259.08" y2="139.7" width="0.0762" layer="91"/>
-<wire x1="259.08" y1="139.7" x2="220.98" y2="139.7" width="0.0762" layer="91"/>
-<junction x="259.08" y="134.62"/>
+<wire x1="259.08" y1="137.16" x2="259.08" y2="142.24" width="0.0762" layer="91"/>
+<wire x1="259.08" y1="142.24" x2="220.98" y2="142.24" width="0.0762" layer="91"/>
+<junction x="259.08" y="137.16"/>
 <pinref part="RV8" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="111.76" x2="220.98" y2="111.76" width="0.0762" layer="91"/>
-<wire x1="220.98" y1="139.7" x2="220.98" y2="111.76" width="0.0762" layer="91"/>
-<label x="233.68" y="139.7" size="1.27" layer="95"/>
+<wire x1="220.98" y1="142.24" x2="220.98" y2="111.76" width="0.0762" layer="91"/>
+<label x="233.68" y="142.24" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="LATCH_BUTTON" class="0">
 <segment>
 <pinref part="D4" gate="G$1" pin="C"/>
 <wire x1="228.6" y1="121.92" x2="226.06" y2="121.92" width="0.0762" layer="91"/>
-<label x="226.06" y="121.92" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
+<wire x1="226.06" y1="121.92" x2="226.06" y2="152.4" width="0.0762" layer="91"/>
 <pinref part="LATCHING" gate="G$1" pin="P$1"/>
-<wire x1="241.3" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
-<label x="238.76" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="226.06" y1="152.4" x2="241.3" y2="152.4" width="0.0762" layer="91"/>
 </segment>
 </net>
 <net name="SHUTDOWN_C" class="0">
 <segment>
-<pinref part="K1" gate="G$1" pin="6"/>
+<pinref part="BSPD_RELAY" gate="G$1" pin="6"/>
 <wire x1="238.76" y1="101.6" x2="236.22" y2="101.6" width="0.0762" layer="91"/>
 <label x="236.22" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -3910,7 +3936,7 @@ show BSE and current sensor-done</text>
 </net>
 <net name="SHUTDOWN_D" class="0">
 <segment>
-<pinref part="K1" gate="G$1" pin="5"/>
+<pinref part="BSPD_RELAY" gate="G$1" pin="5"/>
 <wire x1="254" y1="104.14" x2="256.54" y2="104.14" width="0.0762" layer="91"/>
 <label x="256.54" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -3918,6 +3944,17 @@ show BSE and current sensor-done</text>
 <net name="N$13" class="0">
 <segment>
 <wire x1="55.88" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U6" gate="G$1" pin="VIN-"/>
+<wire x1="38.1" y1="147.32" x2="38.1" y2="142.24" width="0.0762" layer="91"/>
+<pinref part="RV10" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="142.24" x2="40.64" y2="142.24" width="0.0762" layer="91"/>
+<pinref part="RV11" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="142.24" x2="35.56" y2="142.24" width="0.0762" layer="91"/>
+<junction x="38.1" y="142.24"/>
 </segment>
 </net>
 </nets>

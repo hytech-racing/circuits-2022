@@ -274,6 +274,7 @@
 <pin name="NEUTRAL_IN" x="-2.54" y="-20.32" length="short" direction="pwr"/>
 <pin name="GND_IN" x="-2.54" y="-25.4" length="short" direction="pwr"/>
 <text x="0" y="0.762" size="1.778" layer="95">Remote Power Control</text>
+<text x="0" y="-28.702" size="1.778" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="INLINE_GFCI">
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
@@ -286,7 +287,18 @@
 <pin name="HOTIN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
 <pin name="NEUTRAL_IN" x="-2.54" y="-7.62" length="short" direction="pwr"/>
 <pin name="GND_IN" x="-2.54" y="-12.7" length="short" direction="pwr"/>
-<text x="0" y="0.762" size="1.778" layer="95">Inline GFCI 20 Amp</text>
+<text x="0" y="0.762" size="1.778" layer="95">Inline 20A GFCI</text>
+<text x="0" y="-16.002" size="1.778" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="CHARGER_CONTROLLER">
+<wire x1="0" y1="0" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="22.86" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-7.62" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="CANH" x="-2.54" y="-2.54" length="short"/>
+<pin name="CANL" x="-2.54" y="-5.08" length="short"/>
+<text x="10.16" y="-1.524" size="1.778" layer="95" align="top-left">Charger 
+Controller</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -439,7 +451,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="REMOTE_POWER_CONTROL">
+<deviceset name="REMOTE_POWER_CONTROL_*">
 <gates>
 <gate name="G$1" symbol="REMOTE_POWER_CONTROL" x="0" y="0"/>
 </gates>
@@ -447,15 +459,43 @@
 <device name="">
 <technologies>
 <technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="RPC-20-SCD">
+<attribute name="MANUFACTURER" value="Lowell Manufacturing"/>
+<attribute name="MPN" value="RPC-20-SCD"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="INLINE_GFCI">
+<deviceset name="INLINE_GFCI_*">
 <gates>
 <gate name="G$1" symbol="INLINE_GFCI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="MANFUACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="GFM20-3WC">
+<attribute name="MANFUACTURER" value="Leviton"/>
+<attribute name="MPN" value="GFM20-3WC"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CHARGER_CONTROLLER">
+<gates>
+<gate name="G$1" symbol="CHARGER_CONTROLLER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -3349,28 +3389,29 @@ Layer: 94 Symbol</description>
 <part name="J14" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
 <part name="U$6" library="HyTechSymbolsTemp" deviceset="RING_TERMINAL_*" device="" technology="19054-0042"/>
 <part name="U$7" library="HyTechSymbolsTemp" deviceset="RING_TERMINAL_*" device="" technology="19054-0042"/>
-<part name="U$8" library="HyTechSymbolsTemp" deviceset="REMOTE_POWER_CONTROL" device=""/>
-<part name="U$9" library="HyTechSymbolsTemp" deviceset="INLINE_GFCI" device=""/>
 <part name="J15" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device="" technology="NEMA-5-20" value="CONNECTOR-3_NEMA-5-20"/>
 <part name="J16" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device="" technology="NEMA-5-20" value="CONNECTOR-3_NEMA-5-20"/>
+<part name="U$8" library="HyTechSymbolsTemp" deviceset="REMOTE_POWER_CONTROL_*" device="" technology="RPC-20-SCD"/>
+<part name="U$9" library="HyTechSymbolsTemp" deviceset="INLINE_GFCI_*" device="" technology="GFM20-3WC"/>
+<part name="U$15" library="HyTechSymbolsTemp" deviceset="CHARGER_CONTROLLER" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<wire x1="185.42" y1="162.56" x2="185.42" y2="71.12" width="0.8128" layer="97"/>
-<wire x1="185.42" y1="71.12" x2="256.54" y2="71.12" width="0.8128" layer="97"/>
-<wire x1="256.54" y1="71.12" x2="256.54" y2="162.56" width="0.8128" layer="97"/>
+<wire x1="185.42" y1="162.56" x2="185.42" y2="68.58" width="0.8128" layer="97"/>
+<wire x1="185.42" y1="68.58" x2="256.54" y2="68.58" width="0.8128" layer="97"/>
+<wire x1="256.54" y1="68.58" x2="256.54" y2="162.56" width="0.8128" layer="97"/>
 <wire x1="256.54" y1="162.56" x2="185.42" y2="162.56" width="0.8128" layer="97"/>
-<wire x1="121.92" y1="99.06" x2="121.92" y2="66.04" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="121.92" y1="66.04" x2="157.48" y2="66.04" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="157.48" y1="66.04" x2="157.48" y2="99.06" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="157.48" y1="99.06" x2="121.92" y2="99.06" width="0.8128" layer="97" style="shortdash"/>
-<text x="124.46" y="96.52" size="2.54" layer="97" align="top-left">Wire Gauge Key</text>
+<wire x1="121.92" y1="101.6" x2="121.92" y2="68.58" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="121.92" y1="68.58" x2="157.48" y2="68.58" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="157.48" y1="68.58" x2="157.48" y2="101.6" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="157.48" y1="101.6" x2="121.92" y2="101.6" width="0.8128" layer="97" style="shortdash"/>
+<text x="124.46" y="99.06" size="2.54" layer="97" align="top-left">Wire Gauge Key</text>
 <text x="187.96" y="160.02" size="5.08" layer="97" align="top-left">Accumulator</text>
-<text x="124.46" y="91.44" size="1.778" layer="97" align="top-left">35mm^2:</text>
-<text x="124.46" y="81.28" size="1.778" layer="97" align="top-left">6mm^2:</text>
-<text x="124.46" y="71.12" size="1.778" layer="97" align="top-left">22AWG:</text>
-<text x="124.46" y="86.36" size="1.778" layer="97" align="top-left">17.5mm^2:</text>
+<text x="124.46" y="93.98" size="1.778" layer="97" align="top-left">35mm^2:</text>
+<text x="124.46" y="83.82" size="1.778" layer="97" align="top-left">6mm^2:</text>
+<text x="124.46" y="73.66" size="1.778" layer="97" align="top-left">22AWG:</text>
+<text x="124.46" y="88.9" size="1.778" layer="97" align="top-left">17.5mm^2:</text>
 <text x="121.92" y="137.16" size="1.27" layer="97" align="top-left">35mm^2</text>
 <text x="144.78" y="137.16" size="1.27" layer="97" align="top-right">35mm^2</text>
 <text x="205.74" y="129.54" size="1.27" layer="97" align="top-left">17.5mm^2</text>
@@ -3391,11 +3432,11 @@ AC Power</text>
 <text x="220.98" y="109.22" size="1.27" layer="97">17.5mm^2</text>
 <text x="205.74" y="114.3" size="1.27" layer="97" align="top-left">17.5mm^2</text>
 <text x="165.1" y="121.92" size="1.27" layer="97">35mm^2</text>
-<text x="124.46" y="76.2" size="1.778" layer="97" align="top-left">12AWG:</text>
+<text x="124.46" y="78.74" size="1.778" layer="97" align="top-left">12AWG:</text>
 <text x="17.78" y="129.54" size="1.27" layer="97" align="top-left">12AWG</text>
 <text x="17.78" y="124.46" size="1.27" layer="97" align="top-left">12AWG</text>
-<text x="81.28" y="93.98" size="1.27" layer="97" align="top-left">12AWG</text>
-<text x="38.1" y="93.98" size="1.27" layer="97" align="top-left">12AWG</text>
+<text x="81.28" y="96.52" size="1.27" layer="97" align="top-left">12AWG</text>
+<text x="35.56" y="96.52" size="1.27" layer="97" align="top-left">12AWG</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="157.48" y="137.16" smashed="yes">
@@ -3541,8 +3582,6 @@ AC Power</text>
 <attribute name="MANUFACTURER" x="124.46" y="121.158" size="1.27" layer="96"/>
 <attribute name="MPN" x="124.46" y="117.602" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="U$8" gate="G$1" x="27.94" y="147.32" smashed="yes"/>
-<instance part="U$9" gate="G$1" x="43.18" y="111.76" smashed="yes"/>
 <instance part="J15" gate="G$1" x="25.4" y="109.22" smashed="yes" rot="MR0">
 <attribute name="MPN" x="25.4" y="98.425" size="1.27" layer="96" rot="MR0" align="top-left"/>
 <attribute name="MANUFACTURER" x="25.4" y="109.982" size="1.27" layer="96" rot="MR0"/>
@@ -3551,6 +3590,13 @@ AC Power</text>
 <attribute name="MPN" x="93.98" y="98.425" size="1.27" layer="96" rot="MR0" align="top-left"/>
 <attribute name="MANUFACTURER" x="93.98" y="109.982" size="1.27" layer="96" rot="MR0"/>
 </instance>
+<instance part="U$8" gate="G$1" x="27.94" y="147.32" smashed="yes">
+<attribute name="MPN" x="27.94" y="118.618" size="1.778" layer="95" align="top-left"/>
+</instance>
+<instance part="U$9" gate="G$1" x="43.18" y="111.76" smashed="yes">
+<attribute name="MPN" x="43.18" y="95.758" size="1.778" layer="95" align="top-left"/>
+</instance>
+<instance part="U$15" gate="G$1" x="129.54" y="147.32" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -3716,22 +3762,22 @@ AC Power</text>
 </net>
 <net name="N$13" class="0">
 <segment>
-<wire x1="137.16" y1="91.44" x2="144.78" y2="91.44" width="0.889" layer="91"/>
+<wire x1="137.16" y1="93.98" x2="144.78" y2="93.98" width="0.889" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="137.16" y1="81.28" x2="144.78" y2="81.28" width="0.3048" layer="91"/>
+<wire x1="137.16" y1="83.82" x2="144.78" y2="83.82" width="0.3048" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<wire x1="137.16" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="73.66" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<wire x1="137.16" y1="86.36" x2="144.78" y2="86.36" width="0.4445" layer="91"/>
+<wire x1="137.16" y1="88.9" x2="144.78" y2="88.9" width="0.4445" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -3753,14 +3799,14 @@ AC Power</text>
 <segment>
 <pinref part="U$2" gate="G$1" pin="CANH"/>
 <wire x1="121.92" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
-<label x="127" y="144.78" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$15" gate="G$1" pin="CANH"/>
 </segment>
 </net>
 <net name="CHARGER_CONTROLLER_CANL" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="CANL"/>
 <wire x1="121.92" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
-<label x="127" y="142.24" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$15" gate="G$1" pin="CANL"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3840,64 +3886,64 @@ AC Power</text>
 <net name="N$23" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="2"/>
-<pinref part="U$9" gate="G$1" pin="NEUTRAL_IN"/>
 <wire x1="38.1" y1="104.14" x2="40.64" y2="104.14" width="0.254" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="NEUTRAL_IN"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="HOTIN"/>
 <wire x1="40.64" y1="109.22" x2="40.64" y2="106.68" width="0.254" layer="91"/>
 <pinref part="J8" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="106.68" x2="38.1" y2="106.68" width="0.254" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="HOTIN"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="3"/>
 <wire x1="38.1" y1="101.6" x2="40.64" y2="101.6" width="0.254" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="GND_IN"/>
 <wire x1="40.64" y1="101.6" x2="40.64" y2="99.06" width="0.254" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="GND_IN"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="J16" gate="G$1" pin="3"/>
 <wire x1="83.82" y1="101.6" x2="81.28" y2="101.6" width="0.254" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="GND_OUT"/>
 <wire x1="81.28" y1="101.6" x2="81.28" y2="99.06" width="0.254" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="GND_OUT"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="NEUTRAL_OUT"/>
 <pinref part="J16" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="104.14" x2="83.82" y2="104.14" width="0.254" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="NEUTRAL_OUT"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="J16" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="106.68" x2="81.28" y2="106.68" width="0.254" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="HOT_OUT"/>
 <wire x1="81.28" y1="106.68" x2="81.28" y2="109.22" width="0.254" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="HOT_OUT"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="HOTIN"/>
 <wire x1="25.4" y1="132.08" x2="15.24" y2="132.08" width="0.254" layer="91"/>
 <pinref part="J15" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="132.08" x2="15.24" y2="106.68" width="0.254" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="HOTIN"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="NEUTRAL_IN"/>
 <wire x1="25.4" y1="127" x2="12.7" y2="127" width="0.254" layer="91"/>
 <wire x1="12.7" y1="127" x2="12.7" y2="104.14" width="0.254" layer="91"/>
 <pinref part="J15" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="104.14" x2="15.24" y2="104.14" width="0.254" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="NEUTRAL_IN"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -3905,13 +3951,13 @@ AC Power</text>
 <pinref part="J15" gate="G$1" pin="3"/>
 <wire x1="15.24" y1="101.6" x2="10.16" y2="101.6" width="0.254" layer="91"/>
 <wire x1="10.16" y1="101.6" x2="10.16" y2="121.92" width="0.254" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="GND_IN"/>
 <wire x1="10.16" y1="121.92" x2="25.4" y2="121.92" width="0.254" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="GND_IN"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
-<wire x1="137.16" y1="76.2" x2="144.78" y2="76.2" width="0.254" layer="91"/>
+<wire x1="137.16" y1="78.74" x2="144.78" y2="78.74" width="0.254" layer="91"/>
 </segment>
 </net>
 </nets>
