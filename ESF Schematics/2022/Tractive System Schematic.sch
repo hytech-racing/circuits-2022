@@ -2965,7 +2965,9 @@ Layer: 94 Symbol</description>
 <part name="U$4" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
 <attribute name="DESCRIPTION_1" value="ESF compliant representation of the HT06 "/>
 <attribute name="DESCRIPTION_2" value="tractive system"/>
+<attribute name="DESIGNER_SCHEMATIC" value="Zekun Li"/>
 <attribute name="ENGINEER" value="Zekun Li"/>
+<attribute name="REVIEWER_SCHEMATIC" value="Arvind Srinivasan"/>
 </part>
 <part name="J12" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
 <part name="J14" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
@@ -2987,20 +2989,17 @@ Layer: 94 Symbol</description>
 <text x="147.32" y="106.68" size="1.27" layer="97">35mm^2</text>
 <text x="175.26" y="101.6" size="1.27" layer="97">35mm^2</text>
 <text x="175.26" y="81.28" size="1.27" layer="97">35mm^2</text>
-<text x="162.56" y="76.2" size="1.778" layer="95">HVD</text>
-<wire x1="99.06" y1="93.98" x2="99.06" y2="73.66" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="99.06" y1="73.66" x2="137.16" y2="73.66" width="0.8128" layer="97" style="shortdash"/>
-<wire x1="137.16" y1="73.66" x2="137.16" y2="93.98" width="0.8128" layer="97" style="shortdash"/>
+<text x="144.78" y="76.2" size="1.778" layer="95">HVD</text>
+<wire x1="99.06" y1="93.98" x2="99.06" y2="78.74" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="99.06" y1="78.74" x2="137.16" y2="78.74" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="137.16" y1="78.74" x2="137.16" y2="93.98" width="0.8128" layer="97" style="shortdash"/>
 <wire x1="137.16" y1="93.98" x2="99.06" y2="93.98" width="0.8128" layer="97" style="shortdash"/>
-<text x="144.78" y="83.82" size="1.27" layer="97">35mm^2</text>
-<text x="142.24" y="48.26" size="1.778" layer="88">Fix the HVD connectors-done
-Get rid of accumulator internals-done
-label busbars- N/A
-use one pin connector for TSMPs-done
-fix motor symbol if time allows-done</text>
-<text x="101.6" y="78.74" size="1.778" layer="97" align="top-left">22AWG:</text>
-<text x="254" y="99.06" size="1.27" layer="97">22AWG</text>
-<text x="254" y="109.22" size="1.27" layer="97">22AWG</text>
+<text x="144.78" y="81.28" size="1.27" layer="97">35mm^2</text>
+<text x="91.44" y="99.06" size="1.27" layer="97">35mm^2</text>
+<wire x1="142.24" y1="93.98" x2="162.56" y2="93.98" width="0.8128" layer="97"/>
+<wire x1="162.56" y1="93.98" x2="162.56" y2="73.66" width="0.8128" layer="97"/>
+<wire x1="162.56" y1="73.66" x2="142.24" y2="73.66" width="0.8128" layer="97"/>
+<wire x1="142.24" y1="73.66" x2="142.24" y2="93.98" width="0.8128" layer="97"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="142.24" y="101.6" smashed="yes" rot="R180"/>
@@ -3016,9 +3015,9 @@ fix motor symbol if time allows-done</text>
 <attribute name="MPN" x="165.1" y="80.645" size="1.27" layer="96" align="top-left"/>
 <attribute name="MANUFACTURER" x="165.1" y="89.662" size="1.27" layer="95"/>
 </instance>
-<instance part="U$7" gate="G$1" x="162.56" y="88.9" smashed="yes" rot="MR0">
-<attribute name="MPN" x="162.56" y="80.645" size="1.27" layer="96" rot="MR0" align="top-left"/>
-<attribute name="MANUFACTURER" x="162.56" y="89.662" size="1.27" layer="95" rot="MR0"/>
+<instance part="U$7" gate="G$1" x="160.02" y="88.9" smashed="yes" rot="MR0">
+<attribute name="MPN" x="160.02" y="80.645" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<attribute name="MANUFACTURER" x="160.02" y="89.662" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="J2" gate="G$1" x="200.66" y="116.84" smashed="yes" rot="MR0">
 <attribute name="MPN" x="200.66" y="111.125" size="1.27" layer="96" rot="MR0" align="top-left"/>
@@ -3070,12 +3069,12 @@ fix motor symbol if time allows-done</text>
 <attribute name="MPN" x="200.66" y="90.805" size="1.27" layer="96" rot="MR0" align="top-left"/>
 <attribute name="MANUFACTURER" x="200.66" y="97.282" size="1.27" layer="95" rot="MR0"/>
 </instance>
-<instance part="J1" gate="G$1" x="269.24" y="114.3" smashed="yes" rot="MR0">
-<attribute name="MPN" x="269.24" y="108.585" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<instance part="J1" gate="G$1" x="261.62" y="114.3" smashed="yes" rot="MR0">
+<attribute name="MPN" x="261.62" y="108.585" size="1.27" layer="96" rot="MR0" align="top-left"/>
 <attribute name="MANUFACTURER" x="269.24" y="115.062" size="1.27" layer="96" rot="MR0"/>
 </instance>
-<instance part="J3" gate="G$1" x="269.24" y="104.14" smashed="yes" rot="MR0">
-<attribute name="MPN" x="269.24" y="98.425" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<instance part="J3" gate="G$1" x="261.62" y="104.14" smashed="yes" rot="MR0">
+<attribute name="MPN" x="261.62" y="98.425" size="1.27" layer="96" rot="MR0" align="top-left"/>
 <attribute name="MANUFACTURER" x="269.24" y="104.902" size="1.27" layer="96" rot="MR0"/>
 </instance>
 <instance part="U$5" gate="G$1" x="30.48" y="111.76" smashed="yes" rot="R90">
@@ -3111,7 +3110,7 @@ fix motor symbol if time allows-done</text>
 <segment>
 <pinref part="U$7" gate="G$1" pin="2"/>
 <pinref part="U$7" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="83.82" x2="152.4" y2="86.36" width="0.889" layer="91"/>
+<wire x1="149.86" y1="83.82" x2="149.86" y2="86.36" width="0.889" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -3195,23 +3194,6 @@ fix motor symbol if time allows-done</text>
 <wire x1="175.26" y1="86.36" x2="175.26" y2="93.98" width="0.889" layer="91"/>
 <pinref part="J14" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="93.98" x2="190.5" y2="93.98" width="0.889" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="259.08" y1="101.6" x2="251.46" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="259.08" y1="111.76" x2="251.46" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<wire x1="114.3" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

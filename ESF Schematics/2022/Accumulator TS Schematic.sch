@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -207,8 +207,8 @@
 <pin name="XLA-(HV-)" x="30.48" y="-5.08" length="short" rot="R180"/>
 <pin name="XLA+(HV+)" x="30.48" y="-2.54" length="short" rot="R180"/>
 <text x="0" y="0.762" size="1.27" layer="95">BENDER IR155-3204</text>
-<wire x1="10.16" y1="0" x2="10.16" y2="-12.7" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="12.7" y1="-12.7" x2="12.7" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-12.7" width="0.254" layer="94" style="shortdash"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="0" width="0.254" layer="94" style="shortdash"/>
 </symbol>
 <symbol name="DC-DC_CONVERTER">
 <wire x1="25.4" y1="0" x2="25.4" y2="-12.7" width="0.254" layer="94"/>
@@ -387,9 +387,9 @@ Converter</text>
 <text x="35.56" y="-7.62" size="2.54" layer="95" align="top-right">Precharger</text>
 <wire x1="12.7" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
 <wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.254" layer="94" style="shortdash"/>
 <wire x1="10.16" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="12.7" y1="-15.24" x2="12.7" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="0" width="0.254" layer="94" style="shortdash"/>
 <pin name="VCC" x="40.64" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="40.64" y="-5.08" length="short" direction="pwr" rot="R180"/>
 </symbol>
@@ -414,11 +414,10 @@ Converter</text>
 <wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
 <wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
-<text x="0" y="5.08" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-5.08" y="5.08" size="1.27" layer="95">N-MOSFET</text>
 <pin name="D" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
-<text x="0" y="-5.08" size="1.27" layer="95" align="top-center">&gt;MPN</text>
 <wire x1="6.35" y1="1.27" x2="7.62" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="1.27" x2="8.89" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
@@ -531,7 +530,7 @@ LOGIC</text>
 <wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
 <wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
 <wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;MANUFACTURER</text>
 <pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
 <pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
 <polygon width="0.1524" layer="94">
@@ -560,6 +559,7 @@ LOGIC</text>
 <wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
+<text x="0" y="-13.462" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="CONNECTOR_01">
 <wire x1="7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
@@ -619,13 +619,18 @@ LOGIC</text>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value=""/>
-<attribute name="MPN" value=""/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="3350-1275-126">
 <attribute name="MANUFACTURER" value="Comus"/>
 <attribute name="MPN" value="3350-1275-126"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="CMX60D20">
+<attribute name="MANUFACTURER" value="Crydom"/>
+<attribute name="MPN" value="CMX60D20"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="GX23BA">
@@ -775,6 +780,13 @@ LOGIC</text>
 <device name="">
 <technologies>
 <technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="CMX60D20">
+<attribute name="MANUFACTURER" value="Crydom"/>
+<attribute name="MPN" value="CMX60D20"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -3841,7 +3853,7 @@ Layer: 94 Symbol</description>
 <part name="U$13" library="HyTechSymbolsTemp" deviceset="MOSFET_N-CHANNEL" device=""/>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P3" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="PRECHARGE_RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="1.5k"/>
+<part name="PRECHARGE_RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="7.5k"/>
 <part name="P4" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
 <part name="TSMP-RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10K"/>
 <part name="TSMP+RES" library="HyTechDevices" deviceset="RESISTOR_VALUE" device="" value="10K"/>
@@ -3902,7 +3914,9 @@ Layer: 94 Symbol</description>
 <part name="U$10" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
 <attribute name="DESCRIPTION_1" value="ESF compliant representation of the accumulator "/>
 <attribute name="DESCRIPTION_2" value="internals"/>
+<attribute name="DESIGNER_SCHEMATIC" value="Zekun Li"/>
 <attribute name="ENGINEER" value="Zekun Li"/>
+<attribute name="REVIEWER_SCHEMATIC" value="Arvind Srinivasan"/>
 </part>
 <part name="P12" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P13" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
@@ -3976,7 +3990,7 @@ Layer: 94 Symbol</description>
 <text x="167.64" y="96.52" size="1.27" layer="97" align="top-left">PCB Trace</text>
 <text x="160.02" y="76.2" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="111.76" y="78.74" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="93.98" y="76.2" size="1.27" layer="97">PCB Trace</text>
+<text x="53.34" y="76.2" size="1.27" layer="97" rot="MR0">PCB Trace</text>
 <text x="83.82" y="175.26" size="1.27" layer="97" align="top-left">17.5mm^2</text>
 <text x="195.58" y="175.26" size="1.27" layer="97" align="top-left">PCB Trace</text>
 <text x="243.84" y="154.94" size="1.27" layer="97" align="top-left">PCB Trace</text>
@@ -3986,17 +4000,7 @@ Layer: 94 Symbol</description>
 <text x="251.46" y="93.98" size="1.27" layer="97" align="top-right">PCB Trace</text>
 <text x="121.92" y="205.74" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="88.9" y="198.12" size="1.27" layer="97" align="top-left">22AWG</text>
-<text x="43.18" y="76.2" size="1.27" layer="97" align="top-left">16AWG</text>
-<text x="299.72" y="187.96" size="1.778" layer="88" align="top-left">Add HVD panduits-done
-fix resistor dividers-done
-fix busbar labelling and gauges-done
-rename relay_ctrl as precharge_ok-done
-fix maintenance plug symbol-done
-fix TSMPs
-add isolation for DCDC-done
-prechargeOK same as relay_ctrl-done
-show all microfit connectors-done
-ring terminals between fused and unfused and pack plus-done</text>
+<text x="104.14" y="76.2" size="1.27" layer="97" rot="MR0" align="top-left">16AWG</text>
 <text x="30.48" y="119.38" size="1.27" layer="97">17.5mm^2</text>
 <text x="30.48" y="127" size="1.27" layer="97" align="top-left">17.5mm^2</text>
 <text x="96.52" y="48.26" size="1.778" layer="97">(Busbar)</text>
@@ -4011,10 +4015,12 @@ ring terminals between fused and unfused and pack plus-done</text>
 <text x="30.48" y="76.2" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="96.52" y="99.06" size="1.27" layer="97">PCB Trace</text>
 <text x="190.5" y="187.96" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="147.32" y="165.1" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="7.62" y="137.16" size="1.27" layer="97" align="top-left">22AWG</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="152.4" y="81.28" smashed="yes" rot="MR0"/>
-<instance part="U$2" gate="G$1" x="88.9" y="81.28" smashed="yes" rot="MR0"/>
+<instance part="U$2" gate="G$1" x="58.42" y="81.28" smashed="yes"/>
 <instance part="U$3" gate="G$1" x="88.9" y="144.78" smashed="yes" rot="R90"/>
 <instance part="U$4" gate="G$1" x="101.6" y="144.78" smashed="yes" rot="R90"/>
 <instance part="U$5" gate="G$1" x="116.84" y="144.78" smashed="yes" rot="R90"/>
@@ -4082,9 +4088,9 @@ ring terminals between fused and unfused and pack plus-done</text>
 <attribute name="VALUE" x="158.75" y="95.25" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="U$14" gate="G$1" x="55.88" y="142.24" smashed="yes"/>
-<instance part="F1" gate="G$1" x="55.88" y="78.74" smashed="yes">
-<attribute name="NAME" x="54.61" y="80.01" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="54.61" y="77.47" size="1.27" layer="96" align="top-center"/>
+<instance part="F1" gate="G$1" x="91.44" y="78.74" smashed="yes" rot="MR0">
+<attribute name="NAME" x="92.71" y="80.01" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="VALUE" x="92.71" y="77.47" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="P8" gate="1" x="157.48" y="81.28" smashed="yes">
 <attribute name="VALUE" x="157.48" y="85.09" size="1.27" layer="96" align="bottom-center"/>
@@ -4112,11 +4118,11 @@ ring terminals between fused and unfused and pack plus-done</text>
 <instance part="U$20" gate="G$1" x="10.16" y="132.08" smashed="yes">
 <attribute name="VALUE" x="10.16" y="129.54" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="U$21" gate="G$1" x="93.98" y="68.58" smashed="yes">
-<attribute name="VALUE" x="93.98" y="66.04" size="1.27" layer="96" align="top-center"/>
+<instance part="U$21" gate="G$1" x="53.34" y="68.58" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="53.34" y="66.04" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="U$22" gate="G$1" x="93.98" y="81.28" smashed="yes">
-<attribute name="VALUE" x="93.98" y="86.36" size="1.27" layer="96" align="bottom-center"/>
+<instance part="U$22" gate="G$1" x="53.34" y="81.28" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="53.34" y="86.36" size="1.27" layer="96" rot="MR0" align="bottom-center"/>
 </instance>
 <instance part="U$23" gate="G$1" x="119.38" y="81.28" smashed="yes">
 <attribute name="VALUE" x="119.38" y="86.36" size="1.27" layer="96" align="bottom-center"/>
@@ -4588,7 +4594,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="-IN"/>
-<wire x1="91.44" y1="71.12" x2="93.98" y2="71.12" width="0.0762" layer="91"/>
+<wire x1="55.88" y1="71.12" x2="53.34" y2="71.12" width="0.0762" layer="91"/>
 <pinref part="U$21" gate="G$1" pin="TS-UNFUSED"/>
 </segment>
 <segment>
@@ -4655,22 +4661,22 @@ ring terminals between fused and unfused and pack plus-done</text>
 <net name="N$18" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="+OUT"/>
-<wire x1="60.96" y1="78.74" x2="58.42" y2="78.74" width="0.254" layer="91"/>
+<wire x1="86.36" y1="78.74" x2="88.9" y2="78.74" width="0.254" layer="91"/>
 <pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="DCDC-" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="-OUT"/>
-<wire x1="60.96" y1="71.12" x2="58.42" y2="71.12" width="0.254" layer="91"/>
-<label x="58.42" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="86.36" y1="71.12" x2="88.9" y2="71.12" width="0.254" layer="91"/>
+<label x="88.9" y="71.12" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="DCDC+" class="0">
 <segment>
 <pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="78.74" x2="48.26" y2="78.74" width="0.254" layer="91"/>
-<label x="48.26" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="96.52" y1="78.74" x2="99.06" y2="78.74" width="0.254" layer="91"/>
+<label x="99.06" y="78.74" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -4746,7 +4752,7 @@ ring terminals between fused and unfused and pack plus-done</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="+IN"/>
-<wire x1="91.44" y1="78.74" x2="93.98" y2="78.74" width="0.0762" layer="91"/>
+<wire x1="55.88" y1="78.74" x2="53.34" y2="78.74" width="0.0762" layer="91"/>
 <pinref part="U$22" gate="G$1" pin="TS+"/>
 </segment>
 <segment>
