@@ -10995,6 +10995,8 @@ derating</text>
 <part name="O36" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O37" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O38" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="P96" library="HyTechSupplies" deviceset="V-U" device=""/>
+<part name="P97" library="HyTechSupplies" deviceset="VREGU" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11008,11 +11010,10 @@ transactions.</text>
 <text x="114.3" y="101.6" size="1.27" layer="97">Address pin 3 is pulled down to V- because 
 we only have 4 segments which means
 8 ICs. There is no need for the option
-to expand. Address pin 0 of the top ic is
+to expand. Address pin 0 of the upper ic is
 pulled up because it will always be an odd
-address and the bottom one down
-because it will 
-always be an even address.</text>
+address and the lower one down
+because it will always be an even address.</text>
 <text x="154.94" y="172.72" size="1.27" layer="97">These transformers are chosen based on a list in the LTC6811
 datasheet and because they are common mode choke with
 centertap.</text>
@@ -11477,9 +11478,9 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="NAME" x="252.73" y="95.25" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
 <attribute name="RESISTANCE" x="255.27" y="95.25" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="R51" gate="G$1" x="254" y="81.28" smashed="yes" rot="MR270">
-<attribute name="NAME" x="252.73" y="82.55" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="255.27" y="82.55" size="1.27" layer="96" rot="MR270" align="top-center"/>
+<instance part="R51" gate="G$1" x="254" y="83.82" smashed="yes" rot="MR90">
+<attribute name="NAME" x="255.27" y="82.55" size="1.27" layer="95" rot="MR90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="252.73" y="82.55" size="1.27" layer="96" rot="MR90" align="top-center"/>
 </instance>
 <instance part="R47" gate="G$1" x="246.38" y="86.36" smashed="yes" rot="MR0">
 <attribute name="NAME" x="247.65" y="87.63" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
@@ -11512,10 +11513,10 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="VOLTAGE" x="241.3" y="95.25" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="243.078" y="95.25" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="C32" gate="G$1" x="238.76" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="236.22" y="82.55" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="241.3" y="82.55" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="243.078" y="82.55" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C32" gate="G$1" x="238.76" y="81.28" smashed="yes" rot="R270">
+<attribute name="NAME" x="241.3" y="82.55" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VOLTAGE" x="236.22" y="82.55" size="1.27" layer="96" rot="R270" align="top-center"/>
+<attribute name="CAPACITANCE" x="234.442" y="82.55" size="1.27" layer="96" rot="R270" align="top-center"/>
 </instance>
 <instance part="P58" gate="G$1" x="238.76" y="76.2" smashed="yes">
 <attribute name="VALUE" x="238.76" y="74.93" size="1.27" layer="96" align="top-center"/>
@@ -12063,6 +12064,12 @@ because this is the critical range for AMS fault detection.</text>
 </instance>
 <instance part="P95" gate="G$1" x="55.88" y="7.62" smashed="yes">
 <attribute name="VALUE" x="55.88" y="8.89" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P96" gate="G$1" x="205.74" y="203.2" smashed="yes">
+<attribute name="VALUE" x="205.74" y="201.93" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P97" gate="G$1" x="182.88" y="200.66" smashed="yes">
+<attribute name="VALUE" x="182.88" y="201.93" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -12898,10 +12905,10 @@ because this is the critical range for AMS fault detection.</text>
 <segment>
 <pinref part="R51" gate="G$1" pin="2"/>
 <pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="86.36" x2="254" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="86.36" x2="254" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="2"/>
-<wire x1="254" y1="78.74" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
-<junction x="254" y="78.74"/>
+<wire x1="254" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
+<junction x="254" y="86.36"/>
 </segment>
 </net>
 <net name="GPIO5L" class="0">
@@ -13204,7 +13211,6 @@ because this is the critical range for AMS fault detection.</text>
 <segment>
 <pinref part="R51" gate="G$1" pin="1"/>
 <pinref part="P42" gate="G$1" pin="V-L"/>
-<wire x1="254" y1="78.74" x2="254" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R50" gate="G$1" pin="2"/>
@@ -13343,7 +13349,6 @@ because this is the critical range for AMS fault detection.</text>
 <segment>
 <pinref part="P58" gate="G$1" pin="V-L"/>
 <pinref part="C32" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="78.74" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
@@ -13643,22 +13648,23 @@ because this is the critical range for AMS fault detection.</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="D4" gate="LED" pin="C"/>
-<wire x1="203.2" y1="205.74" x2="205.74" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="P90" gate="G$1" pin="V-U"/>
-<wire x1="205.74" y1="205.74" x2="205.74" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="D2" gate="LED" pin="C"/>
+<pinref part="P90" gate="G$1" pin="V-U"/>
 <wire x1="205.74" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
-<junction x="205.74" y="198.12"/>
+</segment>
+<segment>
+<pinref part="D4" gate="LED" pin="C"/>
+<pinref part="P96" gate="G$1" pin="V-U"/>
+<wire x1="203.2" y1="205.74" x2="205.74" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO4L" class="0">
 <segment>
 <pinref part="R47" gate="G$1" pin="2"/>
-<wire x1="238.76" y1="78.74" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="86.36" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C32" gate="G$1" pin="2"/>
-<wire x1="238.76" y1="78.74" x2="233.68" y2="86.36" width="0.1524" layer="91"/>
-<junction x="238.76" y="78.74"/>
+<wire x1="238.76" y1="86.36" x2="233.68" y2="86.36" width="0.1524" layer="91"/>
+<junction x="238.76" y="86.36"/>
 <pinref part="U2" gate="G$1" pin="GPI04"/>
 <wire x1="104.14" y1="81.28" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="86.36" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
@@ -13889,10 +13895,11 @@ because this is the critical range for AMS fault detection.</text>
 <pinref part="R43" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="205.74" x2="182.88" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="P91" gate="G$1" pin="VREGU"/>
+</segment>
+<segment>
 <pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="P97" gate="G$1" pin="VREGU"/>
 <wire x1="185.42" y1="198.12" x2="182.88" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="205.74" x2="182.88" y2="198.12" width="0.1524" layer="91"/>
-<junction x="182.88" y="205.74"/>
 </segment>
 </net>
 <net name="CC12" class="1">
@@ -14130,12 +14137,12 @@ because this is the critical range for AMS fault detection.</text>
 </sheet>
 <sheet>
 <plain>
-<text x="118.872" y="116.078" size="1.27" layer="97">4x Thermisters for Upper IC</text>
-<text x="118.618" y="102.87" size="1.27" layer="97">4x Thermisters for Lower IC</text>
+<text x="121.412" y="116.078" size="1.27" layer="97">4x Thermistors for Upper IC</text>
+<text x="121.158" y="102.87" size="1.27" layer="97">4x Thermistors for Lower IC</text>
 <text x="160.02" y="139.7" size="1.27" layer="97">10x Male Microfit Connectors
 8x for Cell Thermistors
-2x for ISOspi</text>
-<text x="190.246" y="128.016" size="1.27" layer="97">20x Microfit Crimps</text>
+2x for isoSPI</text>
+<text x="159.766" y="133.096" size="1.27" layer="97">20x Microfit Crimps</text>
 </plain>
 <instances>
 <instance part="U$30" gate="G$1" x="0" y="0" smashed="yes">
