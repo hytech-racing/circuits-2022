@@ -10000,19 +10000,19 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5015" x="86.9442" y="-20.0025" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="89.1286" y="-20.0533" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="TP1" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="113.4872" y="-84.3534" smashed="yes">
-<attribute name="DKPN" value="36-5015CT-ND" x="113.4872" y="-84.3534" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="Keystone Electronics" x="113.4872" y="-84.3534" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="534-5015" x="113.4872" y="-84.3534" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="5015" x="113.4872" y="-84.3534" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="NAME" x="113.4872" y="-83.0834" size="0.7112" layer="25" font="vector" align="bottom-center"/>
+<element name="TP1" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="117.7544" y="-71.1454" smashed="yes">
+<attribute name="DKPN" value="36-5015CT-ND" x="117.7544" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics" x="117.7544" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MOPN" value="534-5015" x="117.7544" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MPN" value="5015" x="117.7544" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="NAME" x="117.7544" y="-69.8754" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="TP2" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="160.4772" y="-84.3534" smashed="yes">
-<attribute name="DKPN" value="36-5015CT-ND" x="160.4772" y="-84.3534" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="Keystone Electronics" x="160.4772" y="-84.3534" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="534-5015" x="160.4772" y="-84.3534" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="5015" x="160.4772" y="-84.3534" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="NAME" x="160.4772" y="-83.0834" size="0.7112" layer="25" font="vector" align="bottom-center"/>
+<element name="TP2" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="159.8676" y="-71.0692" smashed="yes">
+<attribute name="DKPN" value="36-5015CT-ND" x="159.8676" y="-71.0692" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics" x="159.8676" y="-71.0692" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MOPN" value="534-5015" x="159.8676" y="-71.0692" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MPN" value="5015" x="159.8676" y="-71.0692" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="NAME" x="159.8676" y="-69.7992" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="U3" library="HyTechDevices" package="DFN-8" value="SHT31-ARP-B" x="49.6062" y="-46.3804" smashed="yes">
 <attribute name="DKPN" value="1649-1012-1-ND" x="49.6062" y="-46.3804" size="0.7112" layer="27" font="vector" display="off"/>
@@ -14164,8 +14164,10 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="141.3376875" y1="-71.1644" x2="135.0397125" y2="-71.1644" width="0.1524" layer="1"/>
 <wire x1="143.4973" y1="-79.2226" x2="143.6808875" y2="-79.2226" width="0.1524" layer="1"/>
 <wire x1="145.4912" y1="-77.4122875" x2="143.6808875" y2="-79.2226" width="0.1524" layer="1"/>
-<wire x1="160.4772" y1="-84.3534" x2="151.3897875" y2="-84.3534" width="0.1524" layer="1"/>
-<wire x1="151.3897875" y1="-84.3534" x2="150.5261875" y2="-85.217" width="0.1524" layer="1"/>
+<wire x1="160.6804" y1="-71.3994" x2="160.3502" y2="-71.0692" width="0.1524" layer="1"/>
+<wire x1="159.8676" y1="-71.0692" x2="160.3502" y2="-71.0692" width="0.1524" layer="1"/>
+<wire x1="160.6804" y1="-71.3994" x2="160.6804" y2="-75.0627875" width="0.1524" layer="1"/>
+<wire x1="160.6804" y1="-75.0627875" x2="150.5261875" y2="-85.217" width="0.1524" layer="1"/>
 <wire x1="150.5261875" y1="-85.217" x2="146.5834" y2="-85.217" width="0.1524" layer="1"/>
 <wire x1="146.5834" y1="-85.217" x2="143.4973" y2="-82.1309" width="0.1524" layer="1"/>
 </signal>
@@ -14176,7 +14178,6 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <contactref element="J1" pad="1"/>
 <contactref element="R15" pad="1"/>
 <contactref element="TP1" pad="1"/>
-<wire x1="130.4163" y1="-82.2579" x2="130.4163" y2="-79.2226" width="0.1524" layer="1"/>
 <wire x1="130.4163" y1="-79.2226" x2="132.3213" y2="-77.3176" width="0.1524" layer="1"/>
 <wire x1="132.3213" y1="-77.3176" x2="135.9798" y2="-77.3176" width="0.1524" layer="1"/>
 <wire x1="143.4973" y1="-76.2254" x2="140.3604" y2="-73.0885" width="0.1524" layer="1"/>
@@ -14188,10 +14189,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="139.6286875" y1="-72.1478" x2="140.3604" y2="-72.1478" width="0.1524" layer="1"/>
 <wire x1="136.5455125" y1="-72.1478" x2="137.2241125" y2="-71.4692" width="0.1524" layer="1"/>
 <wire x1="138.9500875" y1="-71.4692" x2="139.6286875" y2="-72.1478" width="0.1524" layer="1"/>
-<wire x1="113.4872" y1="-84.3534" x2="121.9904125" y2="-84.3534" width="0.1524" layer="1"/>
-<wire x1="121.9904125" y1="-84.3534" x2="122.8794125" y2="-85.2424" width="0.1524" layer="1"/>
-<wire x1="122.8794125" y1="-85.2424" x2="127.4318" y2="-85.2424" width="0.1524" layer="1"/>
-<wire x1="127.4318" y1="-85.2424" x2="130.4163" y2="-82.2579" width="0.1524" layer="1"/>
+<wire x1="130.4163" y1="-79.2226" x2="125.8316" y2="-79.2226" width="0.1524" layer="1"/>
+<wire x1="125.8316" y1="-79.2226" x2="117.7544" y2="-71.1454" width="0.1524" layer="1"/>
 </signal>
 <signal name="SENSE12" class="4">
 <contactref element="F11" pad="2"/>
