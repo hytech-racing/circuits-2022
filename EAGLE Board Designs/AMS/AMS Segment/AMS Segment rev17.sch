@@ -479,6 +479,8 @@ Dashed line is edge of mated connector.</description>
 <vertex x="-4.4704" y="-10.033"/>
 <vertex x="4.4704" y="-10.033"/>
 </polygon>
+<rectangle x1="-5.08" y1="-26.162" x2="5.08" y2="-5.08" layer="39"/>
+<rectangle x1="-5.08" y1="-26.162" x2="5.08" y2="-9.525" layer="40"/>
 </package>
 <package name="HM2102NLT">
 <description>HM2102NL Transformer
@@ -2195,10 +2197,10 @@ Pins tied to VREG: ISOMD, DTEN
 </connects>
 <technologies>
 <technology name="BLACK">
-<attribute name="DKPN" value="436500214"/>
+<attribute name="DKPN" value="WM14310CT-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43650-0214"/>
-<attribute name="MPN" value="436500214"/>
+<attribute name="MPN" value="0436500214"/>
 </technology>
 </technologies>
 </device>
@@ -11421,14 +11423,14 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="NAME" x="247.65" y="186.69" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 <attribute name="RESISTANCE" x="247.65" y="184.15" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R44" gate="G$1" x="246.38" y="198.12" smashed="yes" rot="MR0">
-<attribute name="NAME" x="247.65" y="199.39" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="247.65" y="196.85" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R44" gate="G$1" x="248.92" y="198.12" smashed="yes">
+<attribute name="NAME" x="247.65" y="199.39" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="196.85" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="C30" gate="G$1" x="238.76" y="195.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="236.22" y="194.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="241.3" y="194.31" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="243.078" y="194.31" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C30" gate="G$1" x="238.76" y="193.04" smashed="yes" rot="MR270">
+<attribute name="NAME" x="236.22" y="194.31" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="VOLTAGE" x="241.3" y="194.31" size="1.27" layer="96" rot="MR270" align="top-center"/>
+<attribute name="CAPACITANCE" x="243.078" y="194.31" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
 <instance part="C29" gate="G$1" x="238.76" y="182.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="236.22" y="181.61" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -12728,7 +12730,7 @@ because this is the critical range for AMS fault detection.</text>
 <segment>
 <pinref part="R49" gate="G$1" pin="1"/>
 <pinref part="R44" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="254" y1="198.12" x2="264.16" y2="198.12" width="0.1524" layer="91"/>
 <junction x="254" y="198.12"/>
@@ -12736,9 +12738,9 @@ because this is the critical range for AMS fault detection.</text>
 </net>
 <net name="GPIO1U" class="0">
 <segment>
-<wire x1="238.76" y1="190.5" x2="251.46" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="198.12" x2="238.76" y2="190.5" width="0.1524" layer="91"/>
-<junction x="238.76" y="190.5"/>
+<wire x1="238.76" y1="198.12" x2="243.84" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="198.12" x2="238.76" y2="198.12" width="0.1524" layer="91"/>
+<junction x="238.76" y="198.12"/>
 <pinref part="R44" gate="G$1" pin="1"/>
 <pinref part="C30" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="GPI01"/>
@@ -13619,7 +13621,6 @@ because this is the critical range for AMS fault detection.</text>
 <segment>
 <pinref part="P37" gate="G$1" pin="V-U"/>
 <pinref part="C30" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="190.5" x2="238.76" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P38" gate="G$1" pin="V-U"/>
@@ -14295,10 +14296,10 @@ because this is the critical range for AMS fault detection.</text>
 <approved hash="104,1,269.24,147.32,U3,VDD,VREGU,,,"/>
 <approved hash="104,1,254,63.5,U4,GND,V-L,,,"/>
 <approved hash="104,1,269.24,73.66,U4,VDD,VREGL,,,"/>
-<approved hash="104,1,180.34,111.76,U5,VIN,VINU,,,"/>
-<approved hash="104,1,180.34,93.98,U5,GND,V-U,,,"/>
-<approved hash="104,1,137.16,73.66,U6,VIN,VINL,,,"/>
-<approved hash="104,1,137.16,55.88,U6,GND,V-L,,,"/>
+<approved hash="104,1,180.34,111.76,U6,VIN,VINU,,,"/>
+<approved hash="104,1,180.34,93.98,U6,GND,V-U,,,"/>
+<approved hash="104,1,137.16,73.66,U5,VIN,VINL,,,"/>
+<approved hash="104,1,137.16,55.88,U5,GND,V-L,,,"/>
 <approved hash="208,1,236.22,63.5,V-L,sup,,,,"/>
 <approved hash="208,1,271.78,66.04,V-L,sup,,,,"/>
 <approved hash="208,1,106.68,101.6,V-L,sup,,,,"/>
@@ -14336,6 +14337,8 @@ because this is the critical range for AMS fault detection.</text>
 <approved hash="208,1,160.02,119.38,V-L,sup,,,,"/>
 <approved hash="208,1,132.08,55.88,V-L,sup,,,,"/>
 <approved hash="208,1,167.64,55.88,V-L,sup,,,,"/>
+<approved hash="208,1,104.14,5.08,V-L,sup,,,,"/>
+<approved hash="208,1,78.74,5.08,V-L,sup,,,,"/>
 <approved hash="208,1,236.22,137.16,V-U,sup,,,,"/>
 <approved hash="208,1,271.78,139.7,V-U,sup,,,,"/>
 <approved hash="208,1,71.12,198.12,V-U,sup,,,,"/>
@@ -14369,6 +14372,8 @@ because this is the critical range for AMS fault detection.</text>
 <approved hash="208,1,160.02,144.78,V-U,sup,,,,"/>
 <approved hash="208,1,175.26,93.98,V-U,sup,,,,"/>
 <approved hash="208,1,213.36,93.98,V-U,sup,,,,"/>
+<approved hash="208,1,205.74,198.12,V-U,sup,,,,"/>
+<approved hash="208,1,205.74,205.74,V-U,sup,,,,"/>
 </errors>
 </schematic>
 </drawing>
