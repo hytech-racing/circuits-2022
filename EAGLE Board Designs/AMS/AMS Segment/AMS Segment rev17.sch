@@ -12893,8 +12893,8 @@ because this is the critical range for AMS fault detection.</text>
 <net name="N$90" class="0">
 <segment>
 <pinref part="R51" gate="G$1" pin="2"/>
-<pinref part="R47" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="86.36" x2="254" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R47" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="86.36" x2="254" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="2"/>
 <wire x1="254" y1="78.74" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
 <junction x="254" y="78.74"/>
@@ -13649,8 +13649,8 @@ because this is the critical range for AMS fault detection.</text>
 </net>
 <net name="GPIO4L" class="0">
 <segment>
-<pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="78.74" x2="251.46" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R47" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="78.74" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C32" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="78.74" x2="233.68" y2="86.36" width="0.1524" layer="91"/>
 <junction x="238.76" y="78.74"/>
