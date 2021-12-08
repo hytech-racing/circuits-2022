@@ -233,7 +233,7 @@ by Arvind Srinivasan
 <wire x1="118.491" y1="-0.127" x2="118.364" y2="0" width="0.508" layer="22" style="shortdash"/>
 <text x="157.226" y="-46.609" size="3.81" layer="22" font="vector" rot="MR0">Lower</text>
 <text x="106.68" y="-46.609" size="3.81" layer="22" font="vector" rot="MR0">Upper</text>
-<wire x1="105.664" y1="-70.5358" x2="105.664" y2="-67.437" width="0.635" layer="21"/>
+<wire x1="105.664" y1="-70.5358" x2="105.664" y2="-67.437" width="0.508" layer="21"/>
 <wire x1="168.6052" y1="-70.4596" x2="168.6052" y2="-67.437" width="0.508" layer="21"/>
 <text x="100.076" y="-69.7738" size="1.27" layer="21" font="vector">0</text>
 <text x="106.934" y="-69.7738" size="1.27" layer="21" font="vector">0</text>
@@ -9881,7 +9881,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="" x="136.8298" y="-77.3176" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="" x="136.8298" y="-77.3176" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="136.8298" y="-77.3176" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
-<attribute name="NAME" x="136.8298" y="-78.0796" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="136.8298" y="-76.5302" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 <attribute name="POWER" value="" x="136.8298" y="-77.3176" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="RESISTANCE" value="DNP" x="136.8298" y="-77.3176" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="TOLERANCE" value="" x="136.8298" y="-77.3176" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -10208,9 +10208,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <element name="U$7" library="HyTechAesthetics" package="NUMBER" value="" x="105.41" y="-66.04" smashed="yes"/>
 <element name="U$4" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="38.862" y="-72.39" smashed="yes"/>
 <element name="U$5" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="65.913" y="-72.39" smashed="yes"/>
-<element name="U$18" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="18.415" y="-8.255" smashed="yes"/>
-<element name="U$19" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="89.916" y="-8.255" smashed="yes"/>
-<element name="U$20" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="196.342" y="-8.255" smashed="yes"/>
+<element name="U$18" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="18.415" y="-9.525" smashed="yes"/>
+<element name="U$19" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="89.916" y="-9.525" smashed="yes"/>
+<element name="U$20" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="196.342" y="-9.525" smashed="yes"/>
 <element name="U$21" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="270.256" y="-5.715" smashed="yes"/>
 <element name="U$13" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="232.791" y="-44.45" smashed="yes"/>
 <element name="U$6" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="235.077" y="-72.39" smashed="yes"/>
