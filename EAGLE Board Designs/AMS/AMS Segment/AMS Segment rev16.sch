@@ -9,34 +9,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
-<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
-<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
-<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
-<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
-<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
-<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
-<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
-<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
-<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
-<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
-<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
-<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -45,8 +45,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -54,19 +54,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -1109,6 +1109,15 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
+<technology name="10V_0.22UF">
+<attribute name="CAPACITANCE" value="0.22µF"/>
+<attribute name="DKPN" value="720-VJ0603Y224JXQCW1BCTR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Vitramon"/>
+<attribute name="MOPN" value="77-VJ0603Y224JXQCBC"/>
+<attribute name="MPN" value="VJ0603Y224JXQCW1BC"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
 <technology name="10V_10NF">
 <attribute name="CAPACITANCE" value="10nF"/>
 <attribute name="DKPN" value="311-4054-1-ND"/>
@@ -1270,6 +1279,15 @@ Pins tied to VREG: ISOMD, DTEN
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="250V_1UF">
+<attribute name="CAPACITANCE" value="1µF"/>
+<attribute name="DKPN" value="445-2304-2-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C5750X7R2E105K"/>
+<attribute name="MPN" value="C5750X7R2E105K230KA"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="250V"/>
+</technology>
 <technology name="630V_1UF">
 <attribute name="CAPACITANCE" value="1µF"/>
 <attribute name="DKPN" value="1608-2220Y6300105KXTWS2CT-ND"/>
@@ -1684,6 +1702,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE_CONTINUOUS" value="14.14V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="3.32K">
+<attribute name="DKPN" value="YAG1651TR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRD073K32L"/>
+<attribute name="MPN" value="RT0603BRD073K32L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="3.32k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="18.22V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="3.3K">
 <attribute name="DKPN" value="311-3.30KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1825,6 +1854,39 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="RESISTANCE" value="73.2k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="75K">
+<attribute name="DKPN" value="RT0603BRE0775KL-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRE0775KL"/>
+<attribute name="MPN" value="RT0603BRE0775KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="75k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="8.35K">
+<attribute name="DKPN" value="764-1461-2-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
+<attribute name="MOPN" value="71-PTN0603E8351BST1"/>
+<attribute name="MPN" value="PTN0603E8351BST1"/>
+<attribute name="POWER" value="0.15W"/>
+<attribute name="RESISTANCE" value="8.35k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="28.90V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="8.66K">
+<attribute name="DKPN" value="YAG4603TR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRD078K66L"/>
+<attribute name="MPN" value="RT0603BRD078K66L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="8.66k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="29.43V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="84.5K">
@@ -2025,6 +2087,14 @@ Pins tied to VREG: ISOMD, DTEN
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="1">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="F10985CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0885001.DR"/>
+<attribute name="MPN" value="0885001.DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
 <technology name="1.25">
 <attribute name="CURRENT" value="1.25A"/>
 <attribute name="DKPN" value="F10986CT-ND"/>
@@ -2449,40 +2519,6 @@ SHT31: High Grade
 <attribute name="MPN" value="SRU1048-331Y"/>
 <attribute name="TOLERANCE" value="30%"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="supply2" urn="urn:adsk.eagle:library:372">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
-GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
-Please keep in mind, that these devices are necessary for the
-automatic wiring of the supply signals.&lt;p&gt;
-The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
-In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="V-" urn="urn:adsk.eagle:symbol:27027/1" library_version="2">
-<wire x1="-1.27" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="1.27" y2="1.905" width="0.254" layer="94"/>
-<text x="-1.27" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="V-" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="V-" urn="urn:adsk.eagle:component:27075/1" prefix="SUPPLY" library_version="2">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="V-" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -10644,25 +10680,25 @@ derating</text>
 <parts>
 <part name="P-4" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P+1" library="HyTechSupplies" deviceset="V+U" device=""/>
-<part name="F12" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F21" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F10" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F20" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F9" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F23" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F8" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F19" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F7" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F18" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F17" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F5" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F15" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F4" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F22" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F14" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
+<part name="F12" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F21" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F10" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F20" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F9" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F23" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F8" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F19" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F7" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F18" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F17" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F5" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F15" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F4" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F22" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F14" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
 <part name="J101" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
 <part name="J100" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
 <part name="J112" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
@@ -10685,9 +10721,9 @@ derating</text>
 <part name="J110" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
 <part name="J121" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
 <part name="J111" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="F13" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
-<part name="F16" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
+<part name="F13" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
+<part name="F16" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
@@ -10786,14 +10822,16 @@ derating</text>
 <attribute name="DESCRIPTION_1" value="Uses two LTC6811s to measure 21 cell voltages,"/>
 <attribute name="DESCRIPTION_2" value=" temperatures of 8 cells, and two humidity/temperature sensors."/>
 <attribute name="DESIGNER_BOARD" value="Noah Bruckner"/>
+<attribute name="DESIGNER_FURTHER" value="Cody Kaminsky"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
 <attribute name="REVIEWER_BOARD" value="Zekun Li"/>
+<attribute name="REVIEWER_FURTHER" value="Arvind Srinivasan"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Ethan Weinstock"/>
 </part>
-<part name="R27" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
-<part name="R28" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
-<part name="R30" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
+<part name="R27" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
+<part name="R28" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
+<part name="R30" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100" value="RESISTOR_0603_100"/>
 <part name="C16" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_3.3NF"/>
 <part name="C21" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_3.3NF"/>
 <part name="P36" library="HyTechSupplies" deviceset="V-L" device=""/>
@@ -10810,7 +10848,7 @@ derating</text>
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_0.1UF"/>
 <part name="T1" library="HyTechDevices" deviceset="TRANSFORMER" device="_HM2112ZNLT"/>
-<part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
+<part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100" value="RESISTOR_0603_100"/>
 <part name="P42" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P43" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P44" library="HyTechSupplies" deviceset="V-L" device=""/>
@@ -10827,7 +10865,7 @@ derating</text>
 <part name="P64" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="P65" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="P66" library="HyTechSupplies" deviceset="VREGU" device=""/>
-<part name="F11" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25" value="FUSE_0885_1.25"/>
+<part name="F11" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
 <part name="TP6" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP7" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
@@ -10903,7 +10941,12 @@ derating</text>
 <part name="P91" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="P92" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P93" library="HyTechSupplies" deviceset="VREGL" device=""/>
-<part name="U$30" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device=""/>
+<part name="U$30" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
+<attribute name="DESCRIPTION_1" value="Ordering Information for off board components"/>
+<attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
+<attribute name="ENGINEER" value="Cody Kaminsky"/>
+<attribute name="REVIEWER_SCHEMATIC" value="Ethan Weinstock"/>
+</part>
 <part name="O9" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
 <part name="O10" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
 <part name="O11" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
@@ -10942,6 +10985,12 @@ derating</text>
 <part name="D1" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
 <part name="P94" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P95" library="HyTechSupplies" deviceset="VREGL" device=""/>
+<part name="O33" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O34" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O35" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O36" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O37" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O38" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 </parts>
 <sheets>
 <sheet>
@@ -10963,10 +11012,9 @@ always be an even address.</text>
 <text x="154.94" y="172.72" size="1.27" layer="97">These transformers are chosen based on a list in the LTC6811
 datasheet and because they are common mode choke with
 centertap.</text>
-<text x="5.08" y="0.762" size="1.27" layer="97">These 1.6A fuses are chosen because we have a peak current
-around 0.8A and it was recommended in the datasheet that the
-fuse be 1.5 times the peak current. With durating due to higher
-temperatures the 1.6A fuse fits perfectly.</text>
+<text x="5.08" y="0.762" size="1.27" layer="97">These 1A fuses are chosen because we have a peak current
+around 0.6 (0.564 for balancing and aroun 40 mA for VREG).
+The datasheet recommends 0.675x derating. The 1A fuse fits perfectly.</text>
 <text x="119.38" y="205.74" size="1.27" layer="97">These are 0 Ohm resisters that we may or 
 may not decide to solder in based on the address
 of the given LTC6811 chip.</text>
@@ -10989,8 +11037,9 @@ met for the footprint.
 The transformer is used to
 meet the galvanic isolation
 requirement of EV.8.3.2.</text>
-<text x="209.042" y="204.724" size="1.27" layer="97">The 2.74kOhm resister selection was done in order to maximize the
-coverage on our ADC.</text>
+<text x="209.042" y="202.184" size="1.27" layer="97">The 2.74kOhm resister selection was done in order to maximize the
+coverage on our ADC in the range of 55 to 60C. This was chosen
+because this is the critical range for AMS fault detection.</text>
 </plain>
 <moduleinsts>
 <moduleinst name="CELL1" module="CELL" x="48.26" y="20.32">
@@ -11263,9 +11312,9 @@ coverage on our ADC.</text>
 <attribute name="NAME" x="135.89" y="95.25" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 <attribute name="RESISTANCE" x="135.89" y="92.71" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R5" gate="G$1" x="129.54" y="96.52" smashed="yes" rot="MR0">
-<attribute name="NAME" x="130.81" y="97.79" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="130.81" y="95.25" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R5" gate="G$1" x="132.08" y="96.52" smashed="yes">
+<attribute name="NAME" x="130.81" y="97.79" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="130.81" y="95.25" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="R6" gate="G$1" x="154.94" y="96.52" smashed="yes" rot="MR0">
 <attribute name="NAME" x="156.21" y="97.79" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
@@ -12843,12 +12892,12 @@ coverage on our ADC.</text>
 </net>
 <net name="N$90" class="0">
 <segment>
-<pinref part="R51" gate="G$1" pin="1"/>
-<pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="86.36" x2="254" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R51" gate="G$1" pin="2"/>
+<pinref part="R47" gate="G$1" pin="2"/>
+<wire x1="243.84" y1="86.36" x2="254" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="2"/>
-<wire x1="254" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
-<junction x="254" y="86.36"/>
+<wire x1="254" y1="78.74" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
+<junction x="254" y="78.74"/>
 </segment>
 </net>
 <net name="GPIO5L" class="0">
@@ -13067,7 +13116,7 @@ coverage on our ADC.</text>
 <net name="N$67" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="A1"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="96.52" x2="127" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="127" y1="96.52" x2="127" y2="93.98" width="0.1524" layer="91"/>
 <junction x="127" y="96.52"/>
@@ -13149,8 +13198,9 @@ coverage on our ADC.</text>
 <pinref part="P32" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
-<pinref part="R51" gate="G$1" pin="2"/>
+<pinref part="R51" gate="G$1" pin="1"/>
 <pinref part="P42" gate="G$1" pin="V-L"/>
+<wire x1="254" y1="78.74" x2="254" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R50" gate="G$1" pin="2"/>
@@ -13288,7 +13338,8 @@ coverage on our ADC.</text>
 </segment>
 <segment>
 <pinref part="P58" gate="G$1" pin="V-L"/>
-<pinref part="C32" gate="G$1" pin="2"/>
+<pinref part="C32" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="78.74" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
@@ -13598,11 +13649,11 @@ coverage on our ADC.</text>
 </net>
 <net name="GPIO4L" class="0">
 <segment>
-<pinref part="R47" gate="G$1" pin="2"/>
-<wire x1="238.76" y1="86.36" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C32" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="86.36" x2="233.68" y2="86.36" width="0.1524" layer="91"/>
-<junction x="238.76" y="86.36"/>
+<pinref part="R47" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="78.74" x2="251.46" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C32" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="78.74" x2="233.68" y2="86.36" width="0.1524" layer="91"/>
+<junction x="238.76" y="78.74"/>
 <pinref part="U2" gate="G$1" pin="GPI04"/>
 <wire x1="104.14" y1="81.28" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="86.36" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
@@ -13711,7 +13762,7 @@ coverage on our ADC.</text>
 <junction x="119.38" y="53.34"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="P78" gate="G$1" pin="VREGL"/>
 </segment>
@@ -14076,8 +14127,10 @@ coverage on our ADC.</text>
 <plain>
 <text x="118.872" y="116.078" size="1.27" layer="97">4x Thermisters for Upper IC</text>
 <text x="118.618" y="102.87" size="1.27" layer="97">4x Thermisters for Lower IC</text>
-<text x="137.16" y="139.7" size="1.27" layer="97">8x Male Microfit Connectors</text>
-<text x="164.846" y="128.016" size="1.27" layer="97">16x Microfit Crimps</text>
+<text x="160.02" y="139.7" size="1.27" layer="97">10x Male Microfit Connectors
+8x for Cell Thermistors
+2x for ISOspi</text>
+<text x="190.246" y="128.016" size="1.27" layer="97">20x Microfit Crimps</text>
 </plain>
 <instances>
 <instance part="U$30" gate="G$1" x="0" y="0" smashed="yes">
@@ -14190,6 +14243,24 @@ coverage on our ADC.</text>
 <instance part="O32" gate="G$1" x="160.274" y="129.794" smashed="yes">
 <attribute name="NAME" x="160.274" y="130.556" size="1.27" layer="95"/>
 </instance>
+<instance part="O33" gate="G$1" x="135.89" y="141.224" smashed="yes">
+<attribute name="NAME" x="135.89" y="141.986" size="1.27" layer="95"/>
+</instance>
+<instance part="O34" gate="G$1" x="139.446" y="141.224" smashed="yes">
+<attribute name="NAME" x="139.446" y="141.986" size="1.27" layer="95"/>
+</instance>
+<instance part="O35" gate="G$1" x="164.338" y="129.794" smashed="yes">
+<attribute name="NAME" x="164.338" y="130.556" size="1.27" layer="95"/>
+</instance>
+<instance part="O36" gate="G$1" x="167.894" y="129.794" smashed="yes">
+<attribute name="NAME" x="167.894" y="130.556" size="1.27" layer="95"/>
+</instance>
+<instance part="O37" gate="G$1" x="171.958" y="129.794" smashed="yes">
+<attribute name="NAME" x="171.958" y="130.556" size="1.27" layer="95"/>
+</instance>
+<instance part="O38" gate="G$1" x="175.514" y="129.794" smashed="yes">
+<attribute name="NAME" x="175.514" y="130.556" size="1.27" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14293,16 +14364,6 @@ coverage on our ADC.</text>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
-</note>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
 </note>
 <note version="9.0" severity="warning">
 Since Version 9.0, EAGLE supports the align property for labels. 
