@@ -11274,27 +11274,27 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="NAME" x="21.59" y="194.31" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="21.59" y="191.77" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R8" gate="G$1" x="134.62" y="198.12" smashed="yes" rot="MR0">
-<attribute name="NAME" x="135.89" y="199.39" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="135.89" y="196.85" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R8" gate="G$1" x="137.16" y="198.12" smashed="yes">
+<attribute name="NAME" x="135.89" y="199.39" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="135.89" y="196.85" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="R9" gate="G$1" x="129.54" y="200.66" smashed="yes" rot="MR0">
 <attribute name="NAME" x="130.81" y="201.93" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 <attribute name="RESISTANCE" x="130.81" y="199.39" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R10" gate="G$1" x="154.94" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="156.21" y="201.93" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="156.21" y="199.39" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R10" gate="G$1" x="157.48" y="200.66" smashed="yes">
+<attribute name="NAME" x="156.21" y="201.93" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="156.21" y="199.39" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="R11" gate="G$1" x="149.86" y="203.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="151.13" y="204.47" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 <attribute name="RESISTANCE" x="151.13" y="201.93" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="P23" gate="G$1" x="142.24" y="198.12" smashed="yes" rot="R90">
-<attribute name="VALUE" x="143.51" y="198.12" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P23" gate="G$1" x="144.78" y="198.12" smashed="yes" rot="R90">
+<attribute name="VALUE" x="146.05" y="198.12" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P24" gate="G$1" x="162.56" y="200.66" smashed="yes" rot="R90">
-<attribute name="VALUE" x="163.83" y="200.66" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P24" gate="G$1" x="165.1" y="200.66" smashed="yes" rot="R90">
+<attribute name="VALUE" x="166.37" y="200.66" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="P25" gate="G$1" x="109.22" y="205.74" smashed="yes" rot="R90">
 <attribute name="VALUE" x="110.49" y="205.74" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -11315,17 +11315,17 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="VOLTAGE" x="121.666" y="40.386" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="121.666" y="43.688" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R4" gate="G$1" x="134.62" y="93.98" smashed="yes" rot="MR0">
+<instance part="R4" gate="G$1" x="137.16" y="93.98" smashed="yes">
 <attribute name="NAME" x="135.89" y="95.25" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="135.89" y="92.71" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<attribute name="RESISTANCE" x="135.89" y="92.71" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R5" gate="G$1" x="132.08" y="96.52" smashed="yes">
-<attribute name="NAME" x="130.81" y="97.79" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="130.81" y="95.25" size="1.27" layer="96" align="top-center"/>
+<instance part="R5" gate="G$1" x="129.54" y="96.52" smashed="yes" rot="MR0">
+<attribute name="NAME" x="130.81" y="97.79" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="130.81" y="95.25" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R6" gate="G$1" x="154.94" y="96.52" smashed="yes" rot="MR0">
-<attribute name="NAME" x="156.21" y="97.79" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="156.21" y="95.25" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R6" gate="G$1" x="157.48" y="96.52" smashed="yes">
+<attribute name="NAME" x="156.21" y="97.79" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="156.21" y="95.25" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="R7" gate="G$1" x="149.86" y="99.06" smashed="yes" rot="MR0">
 <attribute name="NAME" x="151.13" y="100.33" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
@@ -11337,8 +11337,8 @@ because this is the critical range for AMS fault detection.</text>
 <instance part="P30" gate="G$1" x="142.24" y="93.98" smashed="yes" rot="R90">
 <attribute name="VALUE" x="143.51" y="93.98" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P31" gate="G$1" x="162.56" y="96.52" smashed="yes" rot="R90">
-<attribute name="VALUE" x="163.83" y="96.52" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P31" gate="G$1" x="165.1" y="96.52" smashed="yes" rot="R90">
+<attribute name="VALUE" x="166.37" y="96.52" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="P32" gate="G$1" x="109.22" y="101.6" smashed="yes" rot="R90">
 <attribute name="VALUE" x="110.49" y="101.6" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -11724,9 +11724,9 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="NAME" x="182.88" y="143.002" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="182.88" y="120.65" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R25" gate="G$1" x="248.92" y="144.78" smashed="yes">
-<attribute name="NAME" x="247.65" y="146.05" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="247.65" y="143.51" size="1.27" layer="96" align="top-center"/>
+<instance part="R25" gate="G$1" x="246.38" y="144.78" smashed="yes" rot="MR0">
+<attribute name="NAME" x="247.65" y="146.05" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="247.65" y="143.51" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="P42" gate="G$1" x="254" y="76.2" smashed="yes">
 <attribute name="VALUE" x="254" y="74.93" size="1.27" layer="96" align="top-center"/>
@@ -12811,7 +12811,7 @@ because this is the critical range for AMS fault detection.</text>
 <wire x1="223.52" y1="182.88" x2="104.14" y2="182.88" width="0.1524" layer="91"/>
 <label x="106.68" y="182.88" size="1.27" layer="95"/>
 <pinref part="R27" gate="G$1" pin="1"/>
-<pinref part="R25" gate="G$1" pin="1"/>
+<pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="144.78" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
 <junction x="243.84" y="144.78"/>
 <pinref part="C16" gate="G$1" pin="1"/>
@@ -13065,7 +13065,7 @@ because this is the critical range for AMS fault detection.</text>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="127" y1="200.66" x2="127" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="127" y1="198.12" x2="132.08" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="A1"/>
 <wire x1="104.14" y1="200.66" x2="127" y2="200.66" width="0.1524" layer="91"/>
@@ -13079,7 +13079,7 @@ because this is the critical range for AMS fault detection.</text>
 <wire x1="104.14" y1="203.2" x2="147.32" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="203.2" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
 <junction x="147.32" y="203.2"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="200.66" x2="152.4" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13129,17 +13129,17 @@ because this is the critical range for AMS fault detection.</text>
 <net name="N$67" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="A1"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="96.52" x2="127" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="127" y1="96.52" x2="127" y2="93.98" width="0.1524" layer="91"/>
 <junction x="127" y="96.52"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="127" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$68" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="96.52" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
@@ -13312,12 +13312,13 @@ because this is the critical range for AMS fault detection.</text>
 <pinref part="C14" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="P30" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="P31" gate="G$1" pin="V-L"/>
+<wire x1="162.56" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
@@ -13599,12 +13600,14 @@ because this is the critical range for AMS fault detection.</text>
 <wire x1="78.74" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="P23" gate="G$1" pin="V-U"/>
+<wire x1="142.24" y1="198.12" x2="139.7" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="P24" gate="G$1" pin="V-U"/>
+<wire x1="162.56" y1="200.66" x2="160.02" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P28" gate="G$1" pin="V-U"/>
@@ -13742,9 +13745,9 @@ because this is the critical range for AMS fault detection.</text>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="144.78" x2="254" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="1"/>
 <pinref part="U3" gate="G$1" pin="T"/>
+<wire x1="251.46" y1="144.78" x2="254" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREGL" class="4">
@@ -13774,7 +13777,7 @@ because this is the critical range for AMS fault detection.</text>
 <junction x="119.38" y="53.34"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="P78" gate="G$1" pin="VREGL"/>
 </segment>
@@ -14327,7 +14330,7 @@ because this is the critical range for AMS fault detection.</text>
 <approved hash="208,1,106.68,10.16,V-L,sup,,,,"/>
 <approved hash="208,1,81.28,17.78,V-L,sup,,,,"/>
 <approved hash="208,1,139.7,93.98,V-L,sup,,,,"/>
-<approved hash="208,1,160.02,96.52,V-L,sup,,,,"/>
+<approved hash="208,1,162.56,96.52,V-L,sup,,,,"/>
 <approved hash="208,1,116.84,38.1,V-L,sup,,,,"/>
 <approved hash="208,1,76.2,104.14,V-L,sup,,,,"/>
 <approved hash="208,1,238.76,116.84,V-L,sup,,,,"/>
@@ -14363,8 +14366,8 @@ because this is the critical range for AMS fault detection.</text>
 <approved hash="208,1,254,137.16,V-U,sup,,,,"/>
 <approved hash="208,1,106.68,114.3,V-U,sup,,,,"/>
 <approved hash="208,1,81.28,121.92,V-U,sup,,,,"/>
-<approved hash="208,1,139.7,198.12,V-U,sup,,,,"/>
-<approved hash="208,1,160.02,200.66,V-U,sup,,,,"/>
+<approved hash="208,1,142.24,198.12,V-U,sup,,,,"/>
+<approved hash="208,1,162.56,200.66,V-U,sup,,,,"/>
 <approved hash="208,1,116.84,142.24,V-U,sup,,,,"/>
 <approved hash="208,1,238.76,190.5,V-U,sup,,,,"/>
 <approved hash="208,1,238.76,177.8,V-U,sup,,,,"/>
