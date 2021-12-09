@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -12893,7 +12893,6 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <via x="260.0452" y="-36.449" extent="1-16" drill="0.254"/>
 <via x="244.6274" y="-44.8564" extent="1-16" drill="0.6096"/>
 <wire x1="248.2088" y1="-5.9808" x2="248.2088" y2="-7.3018" width="0.1524" layer="1"/>
-<wire x1="248.2088" y1="-7.3018" x2="247.9428" y2="-7.3018" width="0.1524" layer="1"/>
 <wire x1="253.1738" y1="-65.8876" x2="252.15309375" y2="-65.8876" width="0.1524" layer="1"/>
 <wire x1="237.0675125" y1="-66.1416" x2="236.8924" y2="-66.1416" width="0.1524" layer="1"/>
 <wire x1="237.8731125" y1="-66.9472" x2="237.0675125" y2="-66.1416" width="0.1524" layer="1"/>
