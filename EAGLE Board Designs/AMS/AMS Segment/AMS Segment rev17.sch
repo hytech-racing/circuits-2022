@@ -10539,9 +10539,11 @@ Layer: 94 Symbol</description>
 <attribute name="DESCRIPTION_1" value="This module is responsible for filtering the cell "/>
 <attribute name="DESCRIPTION_2" value="reading as well as discharging the cell when necessary."/>
 <attribute name="DESIGNER_BOARD" value="Noah Bruckner"/>
+<attribute name="DESIGNER_FURTHER" value="Cody Kaminsky"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
 <attribute name="REVIEWER_BOARD" value="Zekun Li"/>
+<attribute name="REVIEWER_FURTHER" value="Arvind Srinivasan"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Arvind Srinivasan"/>
 </part>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_P_MOS_?_*" device="SOT23" technology="SI2369DS-T1-GE3"/>
@@ -11026,8 +11028,8 @@ The datasheet recommends 0.675x derating. The 1A fuse fits perfectly.</text>
 may not decide to solder in based on the address
 of the given LTC6811 chip.</text>
 <text x="30.48" y="114.3" size="1.27" layer="97">We chose to have two fuses here 
-instead of one to isolate the top 
-ic from the bottom in a situation 
+instead of one to isolate the upper 
+IC from the lower IC in a situation 
 where a fuse blows.</text>
 <wire x1="182.88" y1="172.72" x2="182.88" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="182.88" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
@@ -14141,8 +14143,8 @@ because this is the critical range for AMS fault detection.</text>
 </sheet>
 <sheet>
 <plain>
-<text x="121.412" y="116.078" size="1.27" layer="97">4x Thermistors for Upper IC</text>
-<text x="121.158" y="102.87" size="1.27" layer="97">4x Thermistors for Lower IC</text>
+<text x="123.952" y="116.078" size="1.27" layer="97">4x Thermistors for Upper IC</text>
+<text x="123.698" y="102.87" size="1.27" layer="97">4x Thermistors for Lower IC</text>
 <text x="160.02" y="139.7" size="1.27" layer="97">10x Male Microfit Connectors
 8x for Cell Thermistors
 2x for isoSPI</text>
@@ -14213,27 +14215,27 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="MPN" x="106.934" y="114.554" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="106.934" y="118.618" size="1.27" layer="95"/>
 </instance>
-<instance part="O2" gate="G$1" x="109.728" y="117.856" smashed="yes">
-<attribute name="NAME" x="109.728" y="118.618" size="1.27" layer="95"/>
+<instance part="O2" gate="G$1" x="110.49" y="117.856" smashed="yes">
+<attribute name="NAME" x="110.49" y="118.618" size="1.27" layer="95"/>
 </instance>
-<instance part="O3" gate="G$1" x="112.522" y="117.856" smashed="yes">
-<attribute name="NAME" x="112.522" y="118.618" size="1.27" layer="95"/>
+<instance part="O3" gate="G$1" x="114.046" y="117.856" smashed="yes">
+<attribute name="NAME" x="114.046" y="118.618" size="1.27" layer="95"/>
 </instance>
-<instance part="O4" gate="G$1" x="115.316" y="117.856" smashed="yes">
-<attribute name="NAME" x="115.316" y="118.618" size="1.27" layer="95"/>
+<instance part="O4" gate="G$1" x="117.602" y="117.856" smashed="yes">
+<attribute name="NAME" x="117.602" y="118.618" size="1.27" layer="95"/>
 </instance>
 <instance part="O5" gate="G$1" x="106.934" y="104.648" smashed="yes">
 <attribute name="MPN" x="106.934" y="101.6" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="106.934" y="105.41" size="1.27" layer="95"/>
 </instance>
-<instance part="O6" gate="G$1" x="109.728" y="104.648" smashed="yes">
-<attribute name="NAME" x="109.728" y="105.41" size="1.27" layer="95"/>
+<instance part="O6" gate="G$1" x="110.49" y="104.648" smashed="yes">
+<attribute name="NAME" x="110.49" y="105.41" size="1.27" layer="95"/>
 </instance>
-<instance part="O7" gate="G$1" x="112.522" y="104.648" smashed="yes">
-<attribute name="NAME" x="112.522" y="105.41" size="1.27" layer="95"/>
+<instance part="O7" gate="G$1" x="114.046" y="104.648" smashed="yes">
+<attribute name="NAME" x="114.046" y="105.41" size="1.27" layer="95"/>
 </instance>
-<instance part="O8" gate="G$1" x="115.316" y="104.648" smashed="yes">
-<attribute name="NAME" x="115.316" y="105.41" size="1.27" layer="95"/>
+<instance part="O8" gate="G$1" x="117.602" y="104.648" smashed="yes">
+<attribute name="NAME" x="117.602" y="105.41" size="1.27" layer="95"/>
 </instance>
 <instance part="O25" gate="G$1" x="135.382" y="129.794" smashed="yes">
 <attribute name="NAME" x="135.382" y="130.556" size="1.27" layer="95"/>
@@ -14259,23 +14261,23 @@ because this is the critical range for AMS fault detection.</text>
 <instance part="O32" gate="G$1" x="160.274" y="129.794" smashed="yes">
 <attribute name="NAME" x="160.274" y="130.556" size="1.27" layer="95"/>
 </instance>
-<instance part="O33" gate="G$1" x="135.89" y="141.224" smashed="yes">
-<attribute name="NAME" x="135.89" y="141.986" size="1.27" layer="95"/>
+<instance part="O33" gate="G$1" x="135.382" y="141.224" smashed="yes">
+<attribute name="NAME" x="135.382" y="141.986" size="1.27" layer="95"/>
 </instance>
-<instance part="O34" gate="G$1" x="139.446" y="141.224" smashed="yes">
-<attribute name="NAME" x="139.446" y="141.986" size="1.27" layer="95"/>
+<instance part="O34" gate="G$1" x="138.938" y="141.224" smashed="yes">
+<attribute name="NAME" x="138.938" y="141.986" size="1.27" layer="95"/>
 </instance>
-<instance part="O35" gate="G$1" x="164.338" y="129.794" smashed="yes">
-<attribute name="NAME" x="164.338" y="130.556" size="1.27" layer="95"/>
+<instance part="O35" gate="G$1" x="163.83" y="129.794" smashed="yes">
+<attribute name="NAME" x="163.83" y="130.556" size="1.27" layer="95"/>
 </instance>
-<instance part="O36" gate="G$1" x="167.894" y="129.794" smashed="yes">
-<attribute name="NAME" x="167.894" y="130.556" size="1.27" layer="95"/>
+<instance part="O36" gate="G$1" x="167.386" y="129.794" smashed="yes">
+<attribute name="NAME" x="167.386" y="130.556" size="1.27" layer="95"/>
 </instance>
-<instance part="O37" gate="G$1" x="171.958" y="129.794" smashed="yes">
-<attribute name="NAME" x="171.958" y="130.556" size="1.27" layer="95"/>
+<instance part="O37" gate="G$1" x="170.942" y="129.794" smashed="yes">
+<attribute name="NAME" x="170.942" y="130.556" size="1.27" layer="95"/>
 </instance>
-<instance part="O38" gate="G$1" x="175.514" y="129.794" smashed="yes">
-<attribute name="NAME" x="175.514" y="130.556" size="1.27" layer="95"/>
+<instance part="O38" gate="G$1" x="174.498" y="129.794" smashed="yes">
+<attribute name="NAME" x="174.498" y="130.556" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
