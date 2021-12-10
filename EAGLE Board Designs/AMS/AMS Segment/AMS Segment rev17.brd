@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -7385,13 +7385,15 @@ Dashed line is edge of mated connector.</description>
 <description>1mm fiducial for &lt;a href="https://www.screamingcircuits.com/resource-center/tutorials/panelizing-pcb"&gt;Screaming Circuits&lt;/a&gt;</description>
 <circle x="0" y="0" radius="0.5" width="0" layer="1"/>
 <circle x="0" y="0" radius="0.5" width="0" layer="16"/>
-<circle x="0" y="0" radius="3.5" width="0" layer="29"/>
-<circle x="0" y="0" radius="3.5" width="0" layer="30"/>
-<circle x="0" y="0" radius="4.5" width="0" layer="39"/>
-<circle x="0" y="0" radius="4.5" width="0" layer="40"/>
-<circle x="0" y="0" radius="4.5" width="0" layer="41"/>
-<circle x="0" y="0" radius="4.5" width="0" layer="40"/>
-<circle x="0" y="0" radius="4.5" width="0" layer="43"/>
+<circle x="0" y="0" radius="1" width="0" layer="29"/>
+<circle x="0" y="0" radius="1" width="0" layer="30"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="39"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="40"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="41"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="40"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="43"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.5" width="0" layer="42"/>
 </package>
 </packages>
 </library>
@@ -10633,7 +10635,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <element name="U$15" library="HyTechAesthetics" package="NUMBER" value="" x="105.41" y="-64.77" smashed="yes"/>
 <element name="U$23" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="38.862" y="-72.39" smashed="yes"/>
 <element name="U$20" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="65.913" y="-72.39" smashed="yes"/>
-<element name="U$25" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="18.415" y="-9.525" smashed="yes"/>
+<element name="U$25" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="2.413" y="-9.525" smashed="yes"/>
 <element name="U$18" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="89.916" y="-9.525" smashed="yes"/>
 <element name="U$7" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="196.342" y="-9.525" smashed="yes"/>
 <element name="U$1" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="270.256" y="-5.715" smashed="yes"/>
@@ -10729,9 +10731,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <element name="U$101" library="HyTechAesthetics" package="HV_LARGE" value="" x="217.424" y="-44.577" smashed="yes" rot="MR0"/>
 <element name="U$103" library="HyTechAesthetics" package="HV_LARGE" value="" x="54.991" y="-43.434" smashed="yes" rot="MR0"/>
 <element name="U$26" library="HyTechAesthetics" package="LOGO_HYTECH_SQUARE_EXTRA_LARGE" value="" x="171.45" y="-44.196" smashed="yes" rot="MR0"/>
-<element name="U$27" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="278.511" y="3.81" smashed="yes"/>
-<element name="U$28" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="-4.318" y="3.81" smashed="yes"/>
-<element name="U$29" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="12.827" y="-89.789" smashed="yes"/>
+<element name="U$27" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="18.288" y="-10.16" smashed="yes"/>
+<element name="U$28" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="65.786" y="-79.248" smashed="yes"/>
+<element name="U$29" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="262.382" y="-9.906" smashed="yes"/>
 </elements>
 <signals>
 <signal name="IMU">
@@ -11362,8 +11364,9 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <via x="56.5658" y="-84.8487" extent="1-16" drill="0.6858"/>
 <wire x1="98.298" y1="-63.246" x2="89.535" y2="-72.009" width="0.6096" layer="16"/>
 <wire x1="98.298" y1="-63.246" x2="102.362" y2="-63.246" width="0.6096" layer="16"/>
-<wire x1="69.4055" y1="-72.009" x2="56.5658" y2="-84.8487" width="0.6096" layer="16"/>
-<wire x1="89.535" y1="-72.009" x2="69.4055" y2="-72.009" width="0.6096" layer="16"/>
+<wire x1="64.5795" y1="-72.009" x2="56.5658" y2="-80.0227" width="0.6096" layer="16"/>
+<wire x1="56.5658" y1="-80.0227" x2="56.5658" y2="-84.8487" width="0.6096" layer="16"/>
+<wire x1="89.535" y1="-72.009" x2="64.5795" y2="-72.009" width="0.6096" layer="16"/>
 <wire x1="56.582728125" y1="-81.2341" x2="56.582728125" y2="-84.831771875" width="0.6096" layer="1"/>
 <wire x1="56.582728125" y1="-84.831771875" x2="56.5658" y2="-84.8487" width="0.6096" layer="1"/>
 </signal>
