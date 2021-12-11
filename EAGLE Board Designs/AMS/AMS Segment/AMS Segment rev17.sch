@@ -10394,7 +10394,7 @@ Layer: 94 Symbol</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="HyTechOrdering">
+<library name="HyTechExternal">
 <packages>
 </packages>
 <symbols>
@@ -10955,50 +10955,50 @@ derating</text>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Ethan Weinstock"/>
 </part>
-<part name="O9" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O10" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O11" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O12" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O13" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O14" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O15" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O16" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O17" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O18" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O19" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O20" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O21" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O22" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O23" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O24" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O1" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O2" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O3" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O4" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O5" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O6" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O7" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O8" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O25" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O26" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O27" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O28" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O29" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O30" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O31" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O32" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O9" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O10" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O11" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O12" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O13" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O14" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O15" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O16" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O17" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O18" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O19" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O20" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O21" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O22" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O23" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O24" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O1" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
+<part name="O2" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
+<part name="O3" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
+<part name="O4" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
+<part name="O5" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
+<part name="O6" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
+<part name="O7" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
+<part name="O8" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
+<part name="O25" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O26" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O27" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O28" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O29" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O30" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O31" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O32" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="R32" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="D3" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
 <part name="R21" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="D2" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
 <part name="P94" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P95" library="HyTechSupplies" deviceset="VREGL" device=""/>
-<part name="O33" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O34" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O35" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O36" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O37" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O38" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O33" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O34" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O35" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O36" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O37" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O38" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="P96" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P97" library="HyTechSupplies" deviceset="VREGU" device=""/>
 </parts>
@@ -11677,10 +11677,10 @@ because this is the critical range for AMS fault detection.</text>
 <instance part="P41" gate="G$1" x="254" y="60.96" smashed="yes">
 <attribute name="VALUE" x="254" y="59.69" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="C1" gate="G$1" x="271.78" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="269.24" y="69.85" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="274.066" y="67.564" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="274.066" y="71.628" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="C1" gate="G$1" x="271.78" y="68.58" smashed="yes" rot="MR270">
+<attribute name="NAME" x="269.24" y="69.85" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="VOLTAGE" x="274.066" y="72.136" size="1.27" layer="96" rot="MR270" align="top-center"/>
+<attribute name="CAPACITANCE" x="274.066" y="68.072" size="1.27" layer="96" rot="MR270" align="top-center"/>
 </instance>
 <instance part="P46" gate="G$1" x="271.78" y="63.5" smashed="yes">
 <attribute name="VALUE" x="271.78" y="62.23" size="1.27" layer="96" align="top-center"/>
@@ -13204,7 +13204,7 @@ because this is the critical range for AMS fault detection.</text>
 <pinref part="P36" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="P46" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
@@ -13794,7 +13794,7 @@ because this is the critical range for AMS fault detection.</text>
 <label x="213.36" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="P52" gate="G$1" pin="VREGL"/>
 <junction x="271.78" y="73.66"/>
 <junction x="271.78" y="73.66"/>
