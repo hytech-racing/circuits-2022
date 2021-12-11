@@ -210,8 +210,8 @@ Ethan Weinstock
 Based on rev15
 by Arvind Srinivasan
 </text>
-<text x="158.115" y="-71.7042" size="1.1684" layer="21" font="vector">IM</text>
-<text x="115.6462" y="-72.0598" size="1.1684" layer="21" font="vector" align="bottom-right">IP</text>
+<text x="156.083" y="-69.8754" size="1.1684" layer="21" font="vector" align="bottom-center">IM</text>
+<text x="117.856" y="-69.8754" size="1.1684" layer="21" font="vector" align="bottom-center">IP</text>
 <text x="76.327" y="-42.799" size="1.1684" layer="21" font="vector">DRVU</text>
 <text x="71.755" y="-44.704" size="1.1684" layer="21" font="vector">V+U</text>
 <text x="200.025" y="-60.706" size="1.1684" layer="21" font="vector">DRVL</text>
@@ -223,9 +223,7 @@ by Arvind Srinivasan
 <rectangle x1="269.8496" y1="-34.4424" x2="271.1196" y2="-28.0924" layer="22" rot="R90"/>
 <rectangle x1="0" y1="-38.1" x2="6.35" y2="-36.83" layer="22" rot="R180"/>
 <rectangle x1="2.54" y1="-40.64" x2="3.81" y2="-34.29" layer="21"/>
-<wire x1="125.476" y1="-35.179" x2="134.112" y2="-26.543" width="0.508" layer="21" style="shortdash"/>
-<wire x1="134.112" y1="-26.543" x2="134.112" y2="-0.254" width="0.508" layer="21" style="shortdash"/>
-<wire x1="119.888" y1="-85.852" x2="119.888" y2="-63.5" width="0.508" layer="21" style="shortdash"/>
+<wire x1="134.112" y1="-26.162" x2="134.112" y2="-0.254" width="0.508" layer="21" style="shortdash"/>
 <text x="82.55" y="-43.561" size="2.54" layer="21" font="vector">Upper</text>
 <text x="184.658" y="-43.561" size="2.54" layer="21" font="vector">Lower</text>
 <wire x1="118.491" y1="-31.369" x2="118.491" y2="-0.127" width="0.508" layer="22" style="shortdash"/>
@@ -247,9 +245,9 @@ by Arvind Srinivasan
 <text x="171.831" y="-68.58" size="1.27" layer="21" font="vector" align="bottom-center">x2</text>
 <text x="165.227" y="-68.58" size="1.27" layer="21" font="vector" align="bottom-center">x4</text>
 <wire x1="121.6865125" y1="-34.5645125" x2="118.491" y2="-31.369" width="0.508" layer="22" style="shortdash"/>
-<wire x1="126.619" y1="-39.497" x2="125.4554875" y2="-38.3334875" width="0.508" layer="22" style="shortdash"/>
-<wire x1="126.619" y1="-51.7398" x2="126.619" y2="-39.497" width="0.508" layer="22" style="shortdash"/>
-<wire x1="126.619" y1="-85.852" x2="126.619" y2="-54.9402" width="0.508" layer="22" style="shortdash"/>
+<wire x1="127.254" y1="-40.132" x2="125.4554875" y2="-38.3334875" width="0.508" layer="22" style="shortdash"/>
+<wire x1="127.254" y1="-51.7398" x2="127.254" y2="-40.132" width="0.508" layer="22" style="shortdash"/>
+<wire x1="127.254" y1="-85.852" x2="127.254" y2="-54.9402" width="0.508" layer="22" style="shortdash"/>
 <rectangle x1="0" y1="-38.1" x2="6.35" y2="-36.83" layer="21"/>
 <rectangle x1="2.54" y1="-40.64" x2="3.81" y2="-34.29" layer="22"/>
 <rectangle x1="269.8496" y1="-34.4424" x2="271.1196" y2="-28.0924" layer="21" rot="R90"/>
@@ -598,6 +596,21 @@ by Arvind Srinivasan
 <wire x1="261.8846" y1="-29.05536875" x2="262.81454375" y2="-31.3004375" width="0.001" layer="50" curve="45.00016" grouprefs="PEI_PLATE"/>
 <wire x1="261.8846" y1="-29.05536875" x2="261.8846" y2="-16.68563125" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
 <wire x1="262.814540625" y1="-14.440559375" x2="261.884603125" y2="-16.68563125" width="0.001" layer="50" curve="45.000193" grouprefs="PEI_PLATE"/>
+<wire x1="158.496" y1="-69.596" x2="158.496" y2="-77.216" width="0.508" layer="21" style="shortdash"/>
+<wire x1="121.412" y1="-85.852" x2="121.412" y2="-83.058" width="0.508" layer="21" style="shortdash"/>
+<wire x1="134.112" y1="-26.162" x2="127.254" y2="-33.02" width="0.508" layer="21" style="shortdash"/>
+<wire x1="127.254" y1="-33.02" x2="127.254" y2="-35.306" width="0.508" layer="21" style="shortdash"/>
+<wire x1="127.254" y1="-54.864" x2="127.254" y2="-66.294" width="0.508" layer="21" style="shortdash"/>
+<text x="119.634" y="-68.834" size="1.778" layer="21">isoSPI </text>
+<wire x1="121.412" y1="-83.058" x2="115.57" y2="-77.216" width="0.508" layer="21" style="shortdash"/>
+<wire x1="158.496" y1="-77.216" x2="152.4" y2="-83.312" width="0.508" layer="21" style="shortdash"/>
+<wire x1="152.4" y1="-83.312" x2="152.4" y2="-85.598" width="0.508" layer="21" style="shortdash"/>
+<wire x1="115.57" y1="-77.216" x2="115.57" y2="-69.342" width="0.508" layer="21" style="shortdash"/>
+<wire x1="115.57" y1="-69.342" x2="118.618" y2="-66.294" width="0.508" layer="21" style="shortdash"/>
+<wire x1="118.618" y1="-66.294" x2="127.254" y2="-66.294" width="0.508" layer="21" style="shortdash"/>
+<wire x1="127.254" y1="-66.294" x2="131.318" y2="-66.294" width="0.508" layer="21" style="shortdash"/>
+<wire x1="147.32" y1="-66.294" x2="155.194" y2="-66.294" width="0.508" layer="21" style="shortdash"/>
+<wire x1="155.194" y1="-66.294" x2="158.496" y2="-69.596" width="0.508" layer="21" style="shortdash"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -10769,19 +10782,19 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5015" x="86.9442" y="-20.0025" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="89.1286" y="-20.0533" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="TP6" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="117.8306" y="-71.1454" smashed="yes">
-<attribute name="DKPN" value="36-5015CT-ND" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="Keystone Electronics" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="534-5015" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="5015" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="NAME" x="117.8306" y="-69.8754" size="0.7112" layer="25" font="vector" align="bottom-center"/>
+<element name="TP6" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="117.8306" y="-71.1454" smashed="yes" rot="R180">
+<attribute name="DKPN" value="36-5015CT-ND" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MOPN" value="534-5015" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MPN" value="5015" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="NAME" x="117.8306" y="-72.4154" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="TP5" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="156.083" y="-71.1454" smashed="yes">
-<attribute name="DKPN" value="36-5015CT-ND" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="Keystone Electronics" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="534-5015" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="5015" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="NAME" x="156.083" y="-69.8754" size="0.7112" layer="25" font="vector" align="bottom-center"/>
+<element name="TP5" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="156.083" y="-71.1454" smashed="yes" rot="R180">
+<attribute name="DKPN" value="36-5015CT-ND" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MOPN" value="534-5015" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MPN" value="5015" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="NAME" x="156.083" y="-72.4154" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="U6" library="HyTechDevices" package="DFN-8" value="SHT31-ARP-B" x="49.6062" y="-46.3804" smashed="yes">
 <attribute name="DKPN" value="1649-1012-1-ND" x="49.6062" y="-46.3804" size="0.7112" layer="27" font="vector" display="off"/>
@@ -10973,7 +10986,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="TOLERANCE" value="10%" x="88.265" y="-36.576" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="88.265" y="-36.576" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 </element>
-<element name="U$15" library="HyTechAesthetics" package="NUMBER" value="" x="105.41" y="-64.77" smashed="yes"/>
+<element name="U$15" library="HyTechAesthetics" package="NUMBER" value="" x="103.124" y="-64.77" smashed="yes"/>
 <element name="U$23" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="38.862" y="-72.39" smashed="yes"/>
 <element name="U$20" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="65.913" y="-72.39" smashed="yes"/>
 <element name="U$25" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="2.413" y="-9.525" smashed="yes"/>
