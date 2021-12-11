@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,18 +22,18 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -46,19 +46,19 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -255,6 +255,349 @@ by Arvind Srinivasan
 <rectangle x1="269.8496" y1="-34.4424" x2="271.1196" y2="-28.0924" layer="21" rot="R90"/>
 <dimension x1="-0.508" y1="0" x2="274.7264" y2="0" x3="137.1092" y3="2.54" textsize="2.032" layer="47" width="0.1524" visible="yes"/>
 <dimension x1="-0.508" y1="0" x2="-0.508" y2="-85.979" x3="-3.048" y3="-42.9895" textsize="2.032" layer="47" width="0.1524"/>
+<circle x="92.583" y="-3.937" radius="1.65" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<circle x="193.802" y="-3.937" radius="1.65" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<circle x="41.402" y="-42.926" radius="1.65" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<circle x="140.081" y="-42.926" radius="1.65" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<circle x="238.633" y="-42.926" radius="1.65" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<circle x="38.989" y="-81.915" radius="1.65" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<circle x="136.906" y="-81.915" radius="1.65" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<circle x="20.4978" y="-3.937" radius="1.65" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<circle x="235.204" y="-81.915" radius="1.65" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<circle x="263.4488" y="-3.937" radius="1.65" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="262.814540625" y1="-14.440559375" x2="262.954659375" y2="-14.300440625" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="262.954659375" y1="-14.300440625" x2="263.884596875" y2="-12.05536875" width="0.001" layer="50" curve="45.000193" grouprefs="PEI_PLATE"/>
+<wire x1="263.8846" y1="-12.05536875" x2="263.8846" y2="-9.251390625" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="265.27526875" y1="-6.625209375" x2="263.88459375" y2="-9.251390625" width="0.001" layer="50" curve="55.806311" grouprefs="PEI_PLATE"/>
+<wire x1="265.27526875" y1="-6.625209375" x2="265.263578125" y2="-1.240884375" width="0.001" layer="50" curve="111.861535" grouprefs="PEI_PLATE"/>
+<wire x1="263.95438125" y1="0.63056875" x2="265.26358125" y2="-1.24088125" width="0.001" layer="50" curve="42.160364" grouprefs="PEI_PLATE"/>
+<wire x1="263.95438125" y1="0.63056875" x2="263.469009375" y2="1.010503125" width="0.001" layer="50" curve="76.105411" grouprefs="PEI_PLATE"/>
+<wire x1="261.3846" y1="1.0105" x2="263.469009375" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="261.3846" y1="1.0105" x2="260.8846" y2="0.5105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="260.8846" y1="-1.048709375" x2="260.8846" y2="0.5105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="260.5457" y1="-2.476" x2="260.884596875" y2="-1.048709375" width="0.001" layer="50" curve="26.714214" grouprefs="PEI_PLATE"/>
+<wire x1="260.5457" y1="-2.476" x2="260.5457" y2="-5.398" width="0.001" layer="50" curve="53.428123" grouprefs="PEI_PLATE"/>
+<wire x1="260.8846" y1="-6.825290625" x2="260.5457" y2="-5.398" width="0.001" layer="50" curve="26.714202" grouprefs="PEI_PLATE"/>
+<wire x1="260.8846" y1="-36.33055" x2="260.8846" y2="-6.825290625" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="259.954659375" y1="-38.57561875" x2="260.884596875" y2="-36.33055" width="0.001" layer="50" curve="45.000113" grouprefs="PEI_PLATE"/>
+<wire x1="259.9089" y1="-38.62138125" x2="259.954659375" y2="-38.57561875" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="259.9089" y1="-38.62138125" x2="259.195559375" y2="-39.71385" width="0.001" layer="50" curve="23.714101" grouprefs="PEI_PLATE"/>
+<wire x1="252.459890625" y1="-42.14013125" x2="259.195559375" y2="-39.71385" width="0.001" layer="50" curve="97.80886" grouprefs="PEI_PLATE"/>
+<wire x1="252.459890625" y1="-42.14013125" x2="250.91603125" y2="-41.7395" width="0.001" layer="50" curve="29.094747" grouprefs="PEI_PLATE"/>
+<wire x1="246.3646" y1="-41.7395" x2="250.91603125" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="243.1896" y1="-38.5645" x2="246.3646" y2="-41.7395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="243.1896" y1="0.5105" x2="243.1896" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="243.1896" y1="0.5105" x2="242.6896" y2="1.0105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="241.1896" y1="1.0105" x2="242.6896" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="241.1896" y1="1.0105" x2="240.6896" y2="0.5105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="240.6896" y1="0.5105" x2="240.6896" y2="-36.599090625" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="238.06726875" y1="-39.72561875" x2="240.6896" y2="-36.599090625" width="0.001" layer="50" curve="79.975464" grouprefs="PEI_PLATE"/>
+<wire x1="238.06726875" y1="-39.72561875" x2="236.246459375" y2="-40.719890625" width="0.001" layer="50" curve="37.225207" grouprefs="PEI_PLATE"/>
+<wire x1="233.93908125" y1="-41.739590625" x2="236.24645625" y2="-40.7198875" width="0.001" layer="50" curve="46.814972" grouprefs="PEI_PLATE"/>
+<wire x1="233.93908125" y1="-41.739590625" x2="232.419309375" y2="-42.14013125" width="0.001" layer="50" curve="28.660041" grouprefs="PEI_PLATE"/>
+<wire x1="227.799890625" y1="-42.14013125" x2="232.419309375" y2="-42.14013125" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="227.799890625" y1="-42.14013125" x2="226.25603125" y2="-41.7395" width="0.001" layer="50" curve="29.094747" grouprefs="PEI_PLATE"/>
+<wire x1="221.7046" y1="-41.7395" x2="226.25603125" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="218.5296" y1="-38.5645" x2="221.7046" y2="-41.7395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="218.5296" y1="0.5105" x2="218.5296" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="218.5296" y1="0.5105" x2="218.0296" y2="1.0105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="216.5296" y1="1.0105" x2="218.0296" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="216.5296" y1="1.0105" x2="216.0296" y2="0.5105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="216.0296" y1="0.5105" x2="216.0296" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="212.8546" y1="-41.7395" x2="216.0296" y2="-38.5645" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="209.30316875" y1="-41.7395" x2="212.8546" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="209.30316875" y1="-41.7395" x2="207.759309375" y2="-42.14013125" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="203.139890625" y1="-42.14013125" x2="207.759309375" y2="-42.14013125" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="203.139890625" y1="-42.14013125" x2="201.59603125" y2="-41.7395" width="0.001" layer="50" curve="29.094747" grouprefs="PEI_PLATE"/>
+<wire x1="197.0446" y1="-41.7395" x2="201.59603125" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="193.8696" y1="-38.5645" x2="197.0446" y2="-41.7395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="193.8696" y1="-9.48373125" x2="193.8696" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="195.44223125" y1="-6.742740625" x2="193.8696" y2="-9.48373125" width="0.001" layer="50" curve="59.689716" grouprefs="PEI_PLATE"/>
+<wire x1="195.44223125" y1="-6.742740625" x2="195.3377" y2="-1.072709375" width="0.001" layer="50" curve="121.491367" grouprefs="PEI_PLATE"/>
+<wire x1="193.84148125" y1="0.6758" x2="195.337696875" y2="-1.07271875" width="0.001" layer="50" curve="42.496429" grouprefs="PEI_PLATE"/>
+<wire x1="193.84148125" y1="0.6758" x2="193.3696" y2="1.010496875" width="0.001" layer="50" curve="70.694643" grouprefs="PEI_PLATE"/>
+<wire x1="191.8696" y1="1.0105" x2="193.3696" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="191.8696" y1="1.0105" x2="191.3696" y2="0.5105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="191.3696" y1="0.5105" x2="191.3696" y2="-0.800490625" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="190.96556875" y1="-2.350440625" x2="191.369596875" y2="-0.800490625" width="0.001" layer="50" curve="29.220603" grouprefs="PEI_PLATE"/>
+<wire x1="190.96556875" y1="-2.350440625" x2="190.96556875" y2="-5.523559375" width="0.001" layer="50" curve="58.440982" grouprefs="PEI_PLATE"/>
+<wire x1="191.3696" y1="-7.073509375" x2="190.965571875" y2="-5.523559375" width="0.001" layer="50" curve="29.220576" grouprefs="PEI_PLATE"/>
+<wire x1="191.3696" y1="-7.073509375" x2="191.3696" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="188.1946" y1="-41.7395" x2="191.3696" y2="-38.5645" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="184.64316875" y1="-41.7395" x2="188.1946" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="184.64316875" y1="-41.7395" x2="183.099309375" y2="-42.14013125" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="178.479890625" y1="-42.14013125" x2="183.099309375" y2="-42.14013125" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="178.479890625" y1="-42.14013125" x2="176.93603125" y2="-41.7395" width="0.001" layer="50" curve="29.094747" grouprefs="PEI_PLATE"/>
+<wire x1="172.3846" y1="-41.7395" x2="176.93603125" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="169.2096" y1="-38.5645" x2="172.3846" y2="-41.7395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="169.2096" y1="0.5105" x2="169.2096" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="169.2096" y1="0.5105" x2="168.7096" y2="1.0105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="167.2096" y1="1.0105" x2="168.7096" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="167.2096" y1="1.0105" x2="166.7096" y2="0.5105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="166.7096" y1="0.5105" x2="166.7096" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="163.5346" y1="-41.7395" x2="166.7096" y2="-38.5645" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="159.98316875" y1="-41.7395" x2="163.5346" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="159.98316875" y1="-41.7395" x2="158.439309375" y2="-42.14013125" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="153.819890625" y1="-42.14013125" x2="158.439309375" y2="-42.14013125" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="153.819890625" y1="-42.14013125" x2="152.27603125" y2="-41.7395" width="0.001" layer="50" curve="29.094747" grouprefs="PEI_PLATE"/>
+<wire x1="147.7246" y1="-41.7395" x2="152.27603125" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="144.5496" y1="-38.5645" x2="147.7246" y2="-41.7395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="144.5496" y1="0.5105" x2="144.5496" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="144.5496" y1="0.5105" x2="144.0496" y2="1.0105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="142.5496" y1="1.0105" x2="144.0496" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="142.5496" y1="1.0105" x2="142.0496" y2="0.5105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="142.0496" y1="0.5105" x2="142.0496" y2="-36.61528125" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="139.470759375" y1="-39.733809375" x2="142.0496" y2="-36.61528125" width="0.001" layer="50" curve="79.177462" grouprefs="PEI_PLATE"/>
+<wire x1="139.470759375" y1="-39.733809375" x2="137.694553125" y2="-40.71979375" width="0.001" layer="50" curve="36.424971" grouprefs="PEI_PLATE"/>
+<wire x1="135.36316875" y1="-41.7395" x2="137.69455" y2="-40.719790625" width="0.001" layer="50" curve="47.247562" grouprefs="PEI_PLATE"/>
+<wire x1="135.32316875" y1="-41.7395" x2="135.36316875" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="135.32316875" y1="-41.7395" x2="133.779309375" y2="-42.14013125" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="129.159890625" y1="-42.14013125" x2="133.779309375" y2="-42.14013125" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="129.159890625" y1="-42.14013125" x2="127.61603125" y2="-41.7395" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="123.0646" y1="-41.7395" x2="127.61603125" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="119.8896" y1="-38.5645" x2="123.0646" y2="-41.7395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="119.8896" y1="0.5105" x2="119.8896" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="119.8896" y1="0.5105" x2="119.3896" y2="1.0105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="117.8896" y1="1.0105" x2="119.3896" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="117.8896" y1="1.0105" x2="117.3896" y2="0.5105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="117.3896" y1="0.5105" x2="117.3896" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="114.2146" y1="-41.7395" x2="117.3896" y2="-38.5645" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="110.66316875" y1="-41.7395" x2="114.2146" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="110.66316875" y1="-41.7395" x2="109.119309375" y2="-42.14013125" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="104.499890625" y1="-42.14013125" x2="109.119309375" y2="-42.14013125" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="104.499890625" y1="-42.14013125" x2="102.95603125" y2="-41.7395" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="98.4046" y1="-41.7395" x2="102.95603125" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="95.2296" y1="-38.5645" x2="98.4046" y2="-41.7395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="95.2296" y1="-6.65538125" x2="95.2296" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="95.52778125" y1="-5.312059375" x2="95.229603125" y2="-6.65538125" width="0.001" layer="50" curve="25.030076" grouprefs="PEI_PLATE"/>
+<wire x1="95.52778125" y1="-5.312059375" x2="95.52778125" y2="-2.561940625" width="0.001" layer="50" curve="50.060246" grouprefs="PEI_PLATE"/>
+<wire x1="95.2296" y1="-1.21861875" x2="95.527778125" y2="-2.56194375" width="0.001" layer="50" curve="25.030109" grouprefs="PEI_PLATE"/>
+<wire x1="95.2296" y1="0.5105" x2="95.2296" y2="-1.21861875" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="95.2296" y1="0.5105" x2="94.7296" y2="1.0105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="93.2296" y1="1.0105" x2="94.7296" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="93.2296" y1="1.0105" x2="92.76449375" y2="0.694009375" width="0.001" layer="50" curve="68.468105" grouprefs="PEI_PLATE"/>
+<wire x1="91.18085" y1="-1.00501875" x2="92.7644875" y2="0.694009375" width="0.001" layer="50" curve="42.90982" grouprefs="PEI_PLATE"/>
+<wire x1="91.18085" y1="-1.00501875" x2="91.051115625" y2="-6.803334375" width="0.001" layer="50" curve="126.319816" grouprefs="PEI_PLATE"/>
+<wire x1="92.7296" y1="-9.60351875" x2="91.05111875" y2="-6.80333125" width="0.001" layer="50" curve="61.878384" grouprefs="PEI_PLATE"/>
+<wire x1="92.7296" y1="-9.60351875" x2="92.7296" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="89.5546" y1="-41.7395" x2="92.7296" y2="-38.5645" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="86.00316875" y1="-41.7395" x2="89.5546" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="86.00316875" y1="-41.7395" x2="84.459309375" y2="-42.14013125" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="79.839890625" y1="-42.14013125" x2="84.459309375" y2="-42.14013125" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="79.839890625" y1="-42.14013125" x2="78.29603125" y2="-41.7395" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="73.7446" y1="-41.7395" x2="78.29603125" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="70.5696" y1="-38.5645" x2="73.7446" y2="-41.7395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="70.5696" y1="0.5105" x2="70.5696" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="70.5696" y1="0.5105" x2="70.0696" y2="1.0105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="68.5696" y1="1.0105" x2="70.0696" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="68.5696" y1="1.0105" x2="68.0696" y2="0.5105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="68.0696" y1="0.5105" x2="68.0696" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="64.8946" y1="-41.7395" x2="68.0696" y2="-38.5645" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="61.34316875" y1="-41.7395" x2="64.8946" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="61.34316875" y1="-41.7395" x2="59.799309375" y2="-42.14013125" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="55.179890625" y1="-42.14013125" x2="59.799309375" y2="-42.14013125" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="55.179890625" y1="-42.14013125" x2="53.63603125" y2="-41.7395" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="49.0846" y1="-41.7395" x2="53.63603125" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="45.9096" y1="-38.5645" x2="49.0846" y2="-41.7395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="45.9096" y1="0.5105" x2="45.9096" y2="-38.5645" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="45.9096" y1="0.5105" x2="45.4096" y2="1.0105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="43.9096" y1="1.0105" x2="45.4096" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="43.9096" y1="1.0105" x2="43.4096" y2="0.5105" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="43.4096" y1="0.5105" x2="43.4096" y2="-36.60795" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="40.811490625" y1="-39.7301" x2="43.4096" y2="-36.60795" width="0.001" layer="50" curve="79.53133" grouprefs="PEI_PLATE"/>
+<wire x1="40.811490625" y1="-39.7301" x2="39.015553125" y2="-40.71979375" width="0.001" layer="50" curve="36.778917" grouprefs="PEI_PLATE"/>
+<wire x1="36.68416875" y1="-41.7395" x2="39.01555" y2="-40.719790625" width="0.001" layer="50" curve="47.247562" grouprefs="PEI_PLATE"/>
+<wire x1="36.68316875" y1="-41.7395" x2="36.68416875" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="36.68316875" y1="-41.7395" x2="35.139309375" y2="-42.14013125" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="30.519890625" y1="-42.14013125" x2="35.139309375" y2="-42.14013125" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="30.519890625" y1="-42.14013125" x2="28.97603125" y2="-41.7395" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="25.08585" y1="-41.7395" x2="28.97603125" y2="-41.7395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="21.91085" y1="-38.5645" x2="25.08585" y2="-41.7395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="21.91085" y1="-38.5645" x2="21.91085" y2="-8.43481875" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="22.8186" y1="-6.212159375" x2="21.910846875" y2="-8.43481875" width="0.001" layer="50" curve="44.430981" grouprefs="PEI_PLATE"/>
+<wire x1="22.8186" y1="-6.212159375" x2="22.8186" y2="-1.661840625" width="0.001" layer="50" curve="88.862075" grouprefs="PEI_PLATE"/>
+<wire x1="21.91115" y1="0.51735" x2="22.81860625" y2="-1.661834375" width="0.001" layer="50" curve="43.646505" grouprefs="PEI_PLATE"/>
+<wire x1="21.91115" y1="0.51735" x2="21.411190625" y2="1.0105" width="0.001" layer="50" curve="89.215381" grouprefs="PEI_PLATE"/>
+<wire x1="19.89313125" y1="1.0105" x2="21.411190625" y2="1.0105" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="19.89313125" y1="1.0105" x2="19.395540625" y2="0.559540625" width="0.001" layer="50" curve="84.371325" grouprefs="PEI_PLATE"/>
+<wire x1="18.34195" y1="-1.504959375" x2="19.395540625" y2="0.559540625" width="0.001" layer="50" curve="42.816215" grouprefs="PEI_PLATE"/>
+<wire x1="18.34195" y1="-1.504959375" x2="18.34195" y2="-6.369040625" width="0.001" layer="50" curve="96.890087" grouprefs="PEI_PLATE"/>
+<wire x1="19.41085" y1="-8.74495" x2="18.341953125" y2="-6.3690375" width="0.001" layer="50" curve="48.444947" grouprefs="PEI_PLATE"/>
+<wire x1="19.41085" y1="-39.65708125" x2="19.41085" y2="-8.74495" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="18.03771875" y1="-42.27125" x2="19.41084375" y2="-39.65708125" width="0.001" layer="50" curve="55.422684" grouprefs="PEI_PLATE"/>
+<wire x1="18.03773125" y1="-42.27125" x2="16.8588125" y2="-43.79201875" width="0.001" layer="50" curve="35.278797" grouprefs="PEI_PLATE"/>
+<wire x1="16.858809375" y1="-43.79201875" x2="17.1099125" y2="-45.03165625" width="0.001" layer="50" curve="63.189301" grouprefs="PEI_PLATE"/>
+<wire x1="17.9646" y1="-47.198859375" x2="17.1099125" y2="-45.03165625" width="0.001" layer="50" curve="43.045886" grouprefs="PEI_PLATE"/>
+<wire x1="17.9646" y1="-55.85226875" x2="17.9646" y2="-47.198859375" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="16.6646" y1="-58.4145" x2="17.9646" y2="-55.85226875" width="0.001" layer="50" curve="53.803975" grouprefs="PEI_PLATE"/>
+<wire x1="16.6646" y1="-86.4895" x2="16.6646" y2="-58.4145" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="16.6646" y1="-86.4895" x2="17.1646" y2="-86.9895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="17.1646" y1="-86.9895" x2="18.6646" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="18.6646" y1="-86.9895" x2="19.1646" y2="-86.4895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="19.1646" y1="-86.4895" x2="19.1646" y2="-47.4145" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="22.3396" y1="-44.2395" x2="19.1646" y2="-47.4145" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="22.3396" y1="-44.2395" x2="24.018140625" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="24.018140625" y1="-44.2395" x2="25.562" y2="-43.83886875" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="30.18141875" y1="-43.83886875" x2="25.562" y2="-43.83886875" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="30.18141875" y1="-43.83886875" x2="31.72528125" y2="-44.2395" width="0.001" layer="50" curve="29.094803" grouprefs="PEI_PLATE"/>
+<wire x1="31.72528125" y1="-44.2395" x2="33.8996" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="37.0746" y1="-47.4145" x2="33.8996" y2="-44.2395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="37.0746" y1="-47.4145" x2="37.0746" y2="-77.993440625" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="36.4146" y1="-79.93133125" x2="37.074603125" y2="-77.993440625" width="0.001" layer="50" curve="37.61544" grouprefs="PEI_PLATE"/>
+<wire x1="36.4146" y1="-79.93133125" x2="36.4146" y2="-83.89866875" width="0.001" layer="50" curve="75.231116" grouprefs="PEI_PLATE"/>
+<wire x1="37.0746" y1="-85.836559375" x2="36.414596875" y2="-83.898671875" width="0.001" layer="50" curve="37.61543" grouprefs="PEI_PLATE"/>
+<wire x1="37.0746" y1="-85.836559375" x2="37.0746" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="37.0746" y1="-86.4895" x2="37.5746" y2="-86.9895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="39.0746" y1="-86.9895" x2="37.5746" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="39.0746" y1="-86.9895" x2="39.565959375" y2="-86.58205" width="0.001" layer="50" curve="79.333027" grouprefs="PEI_PLATE"/>
+<wire x1="40.85913125" y1="-84.57303125" x2="39.565965625" y2="-86.58205" width="0.001" layer="50" curve="44.204096" grouprefs="PEI_PLATE"/>
+<wire x1="40.85913125" y1="-84.57303125" x2="40.89125" y2="-79.279859375" width="0.001" layer="50" curve="109.045951" grouprefs="PEI_PLATE"/>
+<wire x1="39.5746" y1="-76.705540625" x2="40.891246875" y2="-79.279865625" width="0.001" layer="50" curve="54.175244" grouprefs="PEI_PLATE"/>
+<wire x1="39.5746" y1="-49.208090625" x2="39.5746" y2="-76.705540625" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="42.08366875" y1="-46.103709375" x2="39.574603125" y2="-49.208090625" width="0.001" layer="50" curve="77.892862" grouprefs="PEI_PLATE"/>
+<wire x1="42.08366875" y1="-46.103709375" x2="43.72741875" y2="-45.19645" width="0.001" layer="50" curve="33.577893" grouprefs="PEI_PLATE"/>
+<wire x1="45.99916875" y1="-44.2395" x2="43.727415625" y2="-45.196446875" width="0.001" layer="50" curve="45.685249" grouprefs="PEI_PLATE"/>
+<wire x1="45.99916875" y1="-44.2395" x2="48.678140625" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="48.678140625" y1="-44.2395" x2="50.222" y2="-43.83886875" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="54.84141875" y1="-43.83886875" x2="50.222" y2="-43.83886875" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="54.84141875" y1="-43.83886875" x2="56.38528125" y2="-44.2395" width="0.001" layer="50" curve="29.094803" grouprefs="PEI_PLATE"/>
+<wire x1="56.38528125" y1="-44.2395" x2="58.5596" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="61.7346" y1="-47.4145" x2="58.5596" y2="-44.2395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="61.7346" y1="-47.4145" x2="61.7346" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="61.7346" y1="-86.4895" x2="62.2346" y2="-86.9895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="63.7346" y1="-86.9895" x2="62.2346" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="63.7346" y1="-86.9895" x2="64.2346" y2="-86.4895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="64.2346" y1="-47.4145" x2="64.2346" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="67.4096" y1="-44.2395" x2="64.2346" y2="-47.4145" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="67.4096" y1="-44.2395" x2="73.338140625" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="73.338140625" y1="-44.2395" x2="74.882" y2="-43.83886875" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="79.50141875" y1="-43.83886875" x2="74.882" y2="-43.83886875" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="79.50141875" y1="-43.83886875" x2="81.04528125" y2="-44.2395" width="0.001" layer="50" curve="29.094803" grouprefs="PEI_PLATE"/>
+<wire x1="81.04528125" y1="-44.2395" x2="83.2196" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="86.3946" y1="-47.4145" x2="83.2196" y2="-44.2395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="86.3946" y1="-47.4145" x2="86.3946" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="86.3946" y1="-86.4895" x2="86.8946" y2="-86.9895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="88.3946" y1="-86.9895" x2="86.8946" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="88.3946" y1="-86.9895" x2="88.8946" y2="-86.4895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="88.8946" y1="-47.4145" x2="88.8946" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="92.0696" y1="-44.2395" x2="88.8946" y2="-47.4145" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="92.0696" y1="-44.2395" x2="97.998140625" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="97.998140625" y1="-44.2395" x2="99.542" y2="-43.83886875" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="104.16141875" y1="-43.83886875" x2="99.542" y2="-43.83886875" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="104.16141875" y1="-43.83886875" x2="105.70528125" y2="-44.2395" width="0.001" layer="50" curve="29.094803" grouprefs="PEI_PLATE"/>
+<wire x1="105.70528125" y1="-44.2395" x2="107.8796" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="111.0546" y1="-47.4145" x2="107.8796" y2="-44.2395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="111.0546" y1="-47.4145" x2="111.0546" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="111.0546" y1="-86.4895" x2="111.5546" y2="-86.9895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="113.0546" y1="-86.9895" x2="111.5546" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="113.0546" y1="-86.9895" x2="113.5546" y2="-86.4895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="113.5546" y1="-47.4145" x2="113.5546" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="116.7296" y1="-44.2395" x2="113.5546" y2="-47.4145" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="116.7296" y1="-44.2395" x2="122.658140625" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="122.658140625" y1="-44.2395" x2="124.202" y2="-43.83886875" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="128.82141875" y1="-43.83886875" x2="124.202" y2="-43.83886875" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="128.82141875" y1="-43.83886875" x2="130.36528125" y2="-44.2395" width="0.001" layer="50" curve="29.094803" grouprefs="PEI_PLATE"/>
+<wire x1="130.36528125" y1="-44.2395" x2="132.5396" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="135.7146" y1="-47.4145" x2="132.5396" y2="-44.2395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="135.7146" y1="-47.4145" x2="135.7146" y2="-77.2017" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="134.69731875" y1="-79.530840625" x2="135.714603125" y2="-77.2017" width="0.001" layer="50" curve="47.187939" grouprefs="PEI_PLATE"/>
+<wire x1="134.69731875" y1="-79.530840625" x2="134.698690625" y2="-84.30043125" width="0.001" layer="50" curve="94.409038" grouprefs="PEI_PLATE"/>
+<wire x1="135.71496875" y1="-86.50873125" x2="134.6986875" y2="-84.300434375" width="0.001" layer="50" curve="45.017357" grouprefs="PEI_PLATE"/>
+<wire x1="135.71496875" y1="-86.50873125" x2="136.2146" y2="-86.9895" width="0.001" layer="50" curve="87.795723" grouprefs="PEI_PLATE"/>
+<wire x1="137.7146" y1="-86.9895" x2="136.2146" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="137.7146" y1="-86.9895" x2="138.2145875" y2="-86.49325" width="0.001" layer="50" curve="89.570279" grouprefs="PEI_PLATE"/>
+<wire x1="139.17391875" y1="-84.242890625" x2="138.214590625" y2="-86.49325" width="0.001" layer="50" curve="45.317988" grouprefs="PEI_PLATE"/>
+<wire x1="139.17391875" y1="-84.242890625" x2="139.17396875" y2="-79.587159375" width="0.001" layer="50" curve="91.494003" grouprefs="PEI_PLATE"/>
+<wire x1="138.2146" y1="-77.31305" x2="139.173965625" y2="-79.5871625" width="0.001" layer="50" curve="45.746225" grouprefs="PEI_PLATE"/>
+<wire x1="138.2146" y1="-49.21633125" x2="138.2146" y2="-77.31305" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="140.742940625" y1="-46.10788125" x2="138.21460625" y2="-49.21633125" width="0.001" layer="50" curve="78.248308" grouprefs="PEI_PLATE"/>
+<wire x1="140.742940625" y1="-46.10788125" x2="142.406421875" y2="-45.196453125" width="0.001" layer="50" curve="33.93338" grouprefs="PEI_PLATE"/>
+<wire x1="144.67816875" y1="-44.2395" x2="142.406415625" y2="-45.196446875" width="0.001" layer="50" curve="45.685249" grouprefs="PEI_PLATE"/>
+<wire x1="144.67816875" y1="-44.2395" x2="147.318140625" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="147.318140625" y1="-44.2395" x2="148.862" y2="-43.83886875" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="153.48141875" y1="-43.83886875" x2="148.862" y2="-43.83886875" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="153.48141875" y1="-43.83886875" x2="155.02528125" y2="-44.2395" width="0.001" layer="50" curve="29.094783" grouprefs="PEI_PLATE"/>
+<wire x1="155.02528125" y1="-44.2395" x2="157.1996" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="160.3746" y1="-47.4145" x2="157.1996" y2="-44.2395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="160.3746" y1="-47.4145" x2="160.3746" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="160.3746" y1="-86.4895" x2="160.8746" y2="-86.9895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="162.3746" y1="-86.9895" x2="160.8746" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="162.3746" y1="-86.9895" x2="162.8746" y2="-86.4895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="162.8746" y1="-47.4145" x2="162.8746" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="166.0496" y1="-44.2395" x2="162.8746" y2="-47.4145" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="166.0496" y1="-44.2395" x2="171.978140625" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="171.978140625" y1="-44.2395" x2="173.522" y2="-43.83886875" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="178.14141875" y1="-43.83886875" x2="173.522" y2="-43.83886875" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="178.14141875" y1="-43.83886875" x2="179.68528125" y2="-44.2395" width="0.001" layer="50" curve="29.094783" grouprefs="PEI_PLATE"/>
+<wire x1="179.68528125" y1="-44.2395" x2="181.8596" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="185.0346" y1="-47.4145" x2="181.8596" y2="-44.2395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="185.0346" y1="-47.4145" x2="185.0346" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="185.0346" y1="-86.4895" x2="185.5346" y2="-86.9895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="187.0346" y1="-86.9895" x2="185.5346" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="187.0346" y1="-86.9895" x2="187.5346" y2="-86.4895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="187.5346" y1="-47.4145" x2="187.5346" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="190.7096" y1="-44.2395" x2="187.5346" y2="-47.4145" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="190.7096" y1="-44.2395" x2="196.638140625" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="196.638140625" y1="-44.2395" x2="198.182" y2="-43.83886875" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="202.80141875" y1="-43.83886875" x2="198.182" y2="-43.83886875" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="202.80141875" y1="-43.83886875" x2="204.34528125" y2="-44.2395" width="0.001" layer="50" curve="29.094783" grouprefs="PEI_PLATE"/>
+<wire x1="204.34528125" y1="-44.2395" x2="206.5196" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="209.6946" y1="-47.4145" x2="206.5196" y2="-44.2395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="209.6946" y1="-47.4145" x2="209.6946" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="209.6946" y1="-86.4895" x2="210.1946" y2="-86.9895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="211.6946" y1="-86.9895" x2="210.1946" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="211.6946" y1="-86.9895" x2="212.1946" y2="-86.4895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="212.1946" y1="-47.4145" x2="212.1946" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="215.3696" y1="-44.2395" x2="212.1946" y2="-47.4145" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="215.3696" y1="-44.2395" x2="221.298140625" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="221.298140625" y1="-44.2395" x2="222.842" y2="-43.83886875" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="227.46141875" y1="-43.83886875" x2="222.842" y2="-43.83886875" width="0.001" layer="50" curve="58.189411" grouprefs="PEI_PLATE"/>
+<wire x1="227.46141875" y1="-43.83886875" x2="229.00528125" y2="-44.2395" width="0.001" layer="50" curve="29.094783" grouprefs="PEI_PLATE"/>
+<wire x1="229.00528125" y1="-44.2395" x2="231.1796" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="234.3546" y1="-47.4145" x2="231.1796" y2="-44.2395" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="234.3546" y1="-47.4145" x2="234.3546" y2="-76.90651875" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="233.168309375" y1="-79.38153125" x2="234.3546" y2="-76.90651875" width="0.001" layer="50" curve="51.217647" grouprefs="PEI_PLATE"/>
+<wire x1="233.168309375" y1="-79.38153125" x2="233.18271875" y2="-84.45998125" width="0.001" layer="50" curve="102.760065" grouprefs="PEI_PLATE"/>
+<wire x1="234.35848125" y1="-86.551640625" x2="233.182721875" y2="-84.459975" width="0.001" layer="50" curve="44.403582" grouprefs="PEI_PLATE"/>
+<wire x1="234.35848125" y1="-86.551640625" x2="234.8546" y2="-86.98949375" width="0.001" layer="50" curve="82.860681" grouprefs="PEI_PLATE"/>
+<wire x1="236.3546" y1="-86.9895" x2="234.8546" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="236.3546" y1="-86.9895" x2="236.8546" y2="-86.4895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="236.8546" y1="-86.156959375" x2="236.8546" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="237.644959375" y1="-84.060740625" x2="236.854596875" y2="-86.156959375" width="0.001" layer="50" curve="41.317093" grouprefs="PEI_PLATE"/>
+<wire x1="237.644959375" y1="-84.060740625" x2="237.644959375" y2="-79.769259375" width="0.001" layer="50" curve="82.634579" grouprefs="PEI_PLATE"/>
+<wire x1="236.8546" y1="-77.673040625" x2="237.6449625" y2="-79.76925625" width="0.001" layer="50" curve="41.317087" grouprefs="PEI_PLATE"/>
+<wire x1="236.8546" y1="-49.19736875" x2="236.8546" y2="-77.673040625" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="239.33945" y1="-46.098290625" x2="236.8546" y2="-49.19736875" width="0.001" layer="50" curve="77.445279" grouprefs="PEI_PLATE"/>
+<wire x1="239.33945" y1="-46.098290625" x2="240.958415625" y2="-45.196446875" width="0.001" layer="50" curve="33.13069" grouprefs="PEI_PLATE"/>
+<wire x1="243.23016875" y1="-44.2395" x2="240.958415625" y2="-45.196446875" width="0.001" layer="50" curve="45.685249" grouprefs="PEI_PLATE"/>
+<wire x1="243.23016875" y1="-44.2395" x2="245.958140625" y2="-44.2395" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="245.958140625" y1="-44.2395" x2="247.502" y2="-43.83886875" width="0.001" layer="50" curve="29.094726" grouprefs="PEI_PLATE"/>
+<wire x1="252.587690625" y1="-44.1351" x2="247.501996875" y2="-43.838865625" width="0.001" layer="50" curve="64.856604" grouprefs="PEI_PLATE"/>
+<wire x1="252.587690625" y1="-44.1351" x2="253.215159375" y2="-44.48661875" width="0.001" layer="50" curve="13.006954" grouprefs="PEI_PLATE"/>
+<wire x1="255.1621" y1="-47.4145" x2="253.215159375" y2="-44.48661875" width="0.001" layer="50" curve="67.245059" grouprefs="PEI_PLATE"/>
+<wire x1="255.1621" y1="-47.4145" x2="255.1621" y2="-74.95063125" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="253.57876875" y1="-78.49106875" x2="255.1621" y2="-74.95063125" width="0.001" layer="50" curve="48.189626" grouprefs="PEI_PLATE"/>
+<wire x1="253.57876875" y1="-78.49106875" x2="252.912103125" y2="-79.98178125" width="0.001" layer="50" curve="48.189769" grouprefs="PEI_PLATE"/>
+<wire x1="252.9121" y1="-79.98178125" x2="252.9121" y2="-86.4895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="252.9121" y1="-86.4895" x2="253.4121" y2="-86.9895" width="0.001" layer="50" curve="90" grouprefs="PEI_PLATE"/>
+<wire x1="253.4121" y1="-86.9895" x2="255.52501875" y2="-86.9895" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="255.52501875" y1="-86.9895" x2="255.879740625" y2="-86.13711875" width="0.001" layer="50" curve="134.810342" grouprefs="PEI_PLATE"/>
+<wire x1="256.3951" y1="-78.99288125" x2="255.879740625" y2="-86.13711875" width="0.001" layer="50" curve="97.872509" grouprefs="PEI_PLATE"/>
+<wire x1="256.3951" y1="-78.99288125" x2="257.6621" y2="-76.45513125" width="0.001" layer="50" curve="53.062453" grouprefs="PEI_PLATE"/>
+<wire x1="257.6621" y1="-76.45513125" x2="257.6621" y2="-58.4145" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="256.3621" y1="-55.85226875" x2="257.662103125" y2="-58.414496875" width="0.001" layer="50" curve="53.803941" grouprefs="PEI_PLATE"/>
+<wire x1="256.3621" y1="-47.72595" x2="256.3621" y2="-55.85226875" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="257.292040625" y1="-45.48088125" x2="256.362103125" y2="-47.72595" width="0.001" layer="50" curve="45.000153" grouprefs="PEI_PLATE"/>
+<wire x1="257.292040625" y1="-45.48088125" x2="261.590759375" y2="-41.182159375" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="261.590759375" y1="-41.182159375" x2="262.512240625" y2="-39.168609375" width="0.001" layer="50" curve="40.818373" grouprefs="PEI_PLATE"/>
+<wire x1="263.32973125" y1="-36.832240625" x2="262.51225" y2="-39.168609375" width="0.001" layer="50" curve="30.205836" grouprefs="PEI_PLATE"/>
+<wire x1="263.32973125" y1="-36.832240625" x2="263.8846" y2="-35.039040625" width="0.001" layer="50" curve="34.387461" grouprefs="PEI_PLATE"/>
+<wire x1="263.8846" y1="-35.039040625" x2="263.8846" y2="-33.68563125" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="263.8846" y1="-33.68563125" x2="262.95465625" y2="-31.4405625" width="0.001" layer="50" curve="45.00016" grouprefs="PEI_PLATE"/>
+<wire x1="262.814540625" y1="-31.300440625" x2="262.954659375" y2="-31.440559375" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="261.8846" y1="-29.05536875" x2="262.81454375" y2="-31.3004375" width="0.001" layer="50" curve="45.00016" grouprefs="PEI_PLATE"/>
+<wire x1="261.8846" y1="-29.05536875" x2="261.8846" y2="-16.68563125" width="0.001" layer="50" grouprefs="PEI_PLATE"/>
+<wire x1="262.814540625" y1="-14.440559375" x2="261.884603125" y2="-16.68563125" width="0.001" layer="50" curve="45.000193" grouprefs="PEI_PLATE"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -7609,6 +7952,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 </autorouter>
 <groups>
 <board_group name="CELL12"/>
+<board_group name="PEI_PLATE"/>
 </groups>
 <elements>
 <element name="C6" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="199.4154" y="-47.1297" smashed="yes" rot="R90">
@@ -10733,8 +11077,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <element name="U$101" library="HyTechAesthetics" package="HV_LARGE" value="" x="217.424" y="-44.577" smashed="yes" rot="MR0"/>
 <element name="U$103" library="HyTechAesthetics" package="HV_LARGE" value="" x="54.991" y="-43.434" smashed="yes" rot="MR0"/>
 <element name="U$26" library="HyTechAesthetics" package="LOGO_HYTECH_SQUARE_EXTRA_LARGE" value="" x="171.45" y="-44.196" smashed="yes" rot="MR0"/>
-<element name="U$27" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="18.288" y="-10.16" smashed="yes"/>
-<element name="U$28" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="65.786" y="-79.248" smashed="yes"/>
+<element name="U$27" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="20.574" y="-10.16" smashed="yes"/>
+<element name="U$28" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="62.992" y="-80.01" smashed="yes"/>
 <element name="U$29" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="262.382" y="-9.906" smashed="yes"/>
 </elements>
 <signals>
