@@ -3023,23 +3023,6 @@ MOPN: 534-3568</description>
 <rectangle x1="-1.025" y1="0.5" x2="-0.625" y2="0.75" layer="21"/>
 <rectangle x1="-1.025" y1="-0.75" x2="-0.625" y2="-0.5" layer="21"/>
 </package>
-<package name="DCM4623">
-<pad name="6" x="23.19" y="8.25" drill="2.03" diameter="2.79"/>
-<pad name="7" x="23.19" y="2.75" drill="2.03" diameter="2.79"/>
-<pad name="8" x="23.19" y="-2.75" drill="2.03" diameter="2.79"/>
-<pad name="9" x="23.19" y="-8.25" drill="2.03" diameter="2.79"/>
-<pad name="1" x="-23.19" y="8" drill="2.03" diameter="2.79"/>
-<pad name="2" x="-23.19" y="1.38" drill="1.52" diameter="2.02"/>
-<pad name="3" x="-23.19" y="-1.38" drill="1.52" diameter="2.02"/>
-<pad name="4" x="-23.19" y="-4.13" drill="1.52" diameter="2.02"/>
-<pad name="5" x="-23.19" y="-8" drill="2.03" diameter="2.79"/>
-<wire x1="-23.955" y1="11.4" x2="-23.955" y2="-11.4" width="0.127" layer="21"/>
-<wire x1="-23.955" y1="-11.4" x2="23.955" y2="-11.4" width="0.127" layer="21"/>
-<wire x1="23.955" y1="-11.4" x2="23.955" y2="11.4" width="0.127" layer="21"/>
-<wire x1="23.955" y1="11.4" x2="-23.955" y2="11.4" width="0.127" layer="21"/>
-<text x="-24.13" y="11.684" size="1.27" layer="21">&gt;NAME</text>
-<rectangle x1="-25.4" y1="-12.7" x2="25.4" y2="12.7" layer="39"/>
-</package>
 <package name="EKYC*MM">
 <description>EKYC*MM 18mm Capacitor
 &lt;br&gt;
@@ -3067,36 +3050,6 @@ MOPN: 534-3568</description>
 <smd name="3" x="0" y="1.0033" dx="0.7112" dy="0.889" layer="1"/>
 <text x="0" y="1.778" size="0.635" layer="25" font="vector" rot="R180" align="top-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
-</package>
-<package name="DIP-4_AIRGAP">
-<smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
-<smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
-<smd name="1" x="-1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
-<smd name="2" x="1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
-<wire x1="-2.39" y1="3.2" x2="-2.39" y2="-3.2" width="0.1524" layer="21"/>
-<wire x1="-2.39" y1="-3.2" x2="2.39" y2="-3.2" width="0.1524" layer="21"/>
-<wire x1="2.39" y1="-3.2" x2="2.39" y2="3.2" width="0.1524" layer="21"/>
-<wire x1="2.39" y1="3.2" x2="-2.39" y2="3.2" width="0.1524" layer="21"/>
-<text x="-3.175" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
-<rectangle x1="-3.048" y1="-6.223" x2="3.048" y2="5.969" layer="39"/>
-<wire x1="-3.048" y1="3.048" x2="-3.048" y2="-3.048" width="0.0508" layer="46"/>
-<wire x1="-3.048" y1="-3.048" x2="3.048" y2="-3.048" width="0.0508" layer="46"/>
-<wire x1="3.048" y1="-3.048" x2="3.048" y2="3.048" width="0.0508" layer="46"/>
-<wire x1="3.048" y1="3.048" x2="-3.048" y2="3.048" width="0.0508" layer="46"/>
-</package>
-<package name="DIP-4">
-<smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
-<smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
-<smd name="1" x="-1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
-<smd name="2" x="1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
-<wire x1="-2.39" y1="3.2" x2="-2.39" y2="-3.2" width="0.1524" layer="21"/>
-<wire x1="-2.39" y1="-3.2" x2="2.39" y2="-3.2" width="0.1524" layer="21"/>
-<wire x1="2.39" y1="-3.2" x2="2.39" y2="3.2" width="0.1524" layer="21"/>
-<wire x1="2.39" y1="3.2" x2="-2.39" y2="3.2" width="0.1524" layer="21"/>
-<text x="-2.54" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
-<rectangle x1="-3.556" y1="-6.096" x2="3.556" y2="6.096" layer="39"/>
 </package>
 <package name="SC-70-5">
 <description>SC-70-5
@@ -3393,24 +3346,6 @@ visible on the PCB.</text>
 <rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="41"/>
 <rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="43"/>
 </package>
-<package name="B20">
-<wire x1="-25.4" y1="5.555" x2="-25.4" y2="-5.555" width="0.127" layer="21"/>
-<wire x1="-25.4" y1="-5.555" x2="25.4" y2="-5.555" width="0.127" layer="21"/>
-<wire x1="25.4" y1="-5.555" x2="25.4" y2="5.555" width="0.127" layer="21"/>
-<wire x1="25.4" y1="5.555" x2="-25.4" y2="5.555" width="0.127" layer="21"/>
-<rectangle x1="-38.1" y1="-6.35" x2="38.1" y2="6.35" layer="39"/>
-<text x="-25.527" y="5.715" size="1.27" layer="21">&gt;NAME</text>
-<pad name="2" x="-27.94" y="-8.89" drill="1.35"/>
-<pad name="1" x="27.94" y="-8.89" drill="1.35"/>
-<rectangle x1="-30.48" y1="-11.43" x2="-25.4" y2="-6.35" layer="39"/>
-<rectangle x1="25.4" y1="-11.43" x2="30.48" y2="-6.35" layer="39"/>
-<hole x="-32.51" y="0" drill="3.74"/>
-<smd name="4" x="-32.51" y="0" dx="6.35" dy="6.35" layer="16" roundness="100"/>
-<smd name="3" x="-32.51" y="0" dx="6.35" dy="6.35" layer="1" roundness="100"/>
-<hole x="32.51" y="0" drill="3.74"/>
-<smd name="5" x="32.51" y="0" dx="6.35" dy="6.35" layer="1" roundness="100"/>
-<smd name="6" x="32.51" y="0" dx="6.35" dy="6.35" layer="16" roundness="100"/>
-</package>
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_08_DUAL">
 <description>8 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
@@ -3563,42 +3498,10 @@ visible on the PCB.</text>
 <text x="-2" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-2.286" x2="1.778" y2="2.286" layer="39"/>
 </package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL">
-<description>10 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451014"&gt;Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430451014_sd.pdf"&gt;Footprint&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/430251000_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<hole x="8.9916" y="0.9398" drill="1.0668"/>
-<hole x="-8.9916" y="0.9398" drill="1.0668"/>
-<wire x1="-9.3218" y1="-1.905" x2="9.3218" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="9.3218" y1="-1.905" x2="9.3218" y2="1.905" width="0.127" layer="21"/>
-<wire x1="9.3218" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-9.3218" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-9.3218" y1="1.905" x2="-9.3218" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
-<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
-<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-10.0584" y1="-2.286" x2="10.0584" y2="2.286" layer="39"/>
-<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
-<rectangle x1="-10.0584" y1="-2.286" x2="10.0584" y2="2.286" layer="40"/>
-<text x="0" y="-2.413" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<pad name="5" x="5.9944" y="0" drill="1.0668"/>
-<pad name="4" x="2.9972" y="0" drill="1.0668"/>
-<pad name="3" x="0" y="0" drill="1.0668"/>
-<pad name="2" x="-2.9972" y="0" drill="1.0668"/>
-<pad name="1" x="-5.9944" y="0" drill="1.0668"/>
-</package>
 <package name="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED">
-<description>12 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+<description>6 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451214"&gt;Part&lt;/a&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500617"&gt;Part&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430451214_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
@@ -3627,10 +3530,10 @@ visible on the PCB.</text>
 <pad name="2" x="-4.4958" y="0" drill="1.0668"/>
 <pad name="1" x="-7.493" y="0" drill="1.0668"/>
 </package>
-<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
-<description>14 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE_SPACED">
+<description>7 Pin Micro-Fit Vertical Header, Through-Hole, Dual Row
 &lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430451414"&gt;Part&lt;/a&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500717"&gt;Part&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
@@ -3659,6 +3562,38 @@ visible on the PCB.</text>
 <pad name="1" x="-8.9916" y="0" drill="1.0668"/>
 <pad name="2" x="-5.9944" y="0" drill="1.0668"/>
 </package>
+<package name="MOLEX_MICROFIT_PTH_VERTICAL_05_SINGLE">
+<description>5 Pin Micro-Fit Vertical Header, Through-Hole, Single Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0436500517"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430451014_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430251000_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
+<hole x="8.9916" y="0.9398" drill="1.0668"/>
+<hole x="-8.9916" y="0.9398" drill="1.0668"/>
+<wire x1="-9.3218" y1="-1.905" x2="9.3218" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="9.3218" y1="-1.905" x2="9.3218" y2="1.905" width="0.127" layer="21"/>
+<wire x1="9.3218" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="1.905" x2="-1.9304" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-9.3218" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-9.3218" y1="1.905" x2="-9.3218" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.9304" y1="1.905" x2="-1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="1.9304" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.9304" y1="3.302" x2="1.9304" y2="1.905" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="3.302" x2="-1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.9304" y1="5.969" x2="1.9304" y2="5.969" width="0.127" layer="21" style="shortdash"/>
+<wire x1="1.9304" y1="5.969" x2="1.9304" y2="3.302" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-10.0584" y1="-2.286" x2="10.0584" y2="2.286" layer="39"/>
+<rectangle x1="-2.54" y1="2.286" x2="2.54" y2="6.35" layer="39"/>
+<rectangle x1="-10.0584" y1="-2.286" x2="10.0584" y2="2.286" layer="40"/>
+<text x="0" y="-2.413" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<pad name="5" x="5.9944" y="0" drill="1.0668"/>
+<pad name="4" x="2.9972" y="0" drill="1.0668"/>
+<pad name="3" x="0" y="0" drill="1.0668"/>
+<pad name="2" x="-2.9972" y="0" drill="1.0668"/>
+<pad name="1" x="-5.9944" y="0" drill="1.0668"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FUSE">
@@ -3685,23 +3620,6 @@ visible on the PCB.</text>
 <wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
 <wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94" curve="-180" cap="flat"/>
-</symbol>
-<symbol name="RESISTOR_GND">
-<description>Resistor with sense connections</description>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
-<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<text x="1.27" y="2.794" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="1.27" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;RESISTANCE</text>
-<wire x1="3.175" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.9525" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-0.3175" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="2.2225" y1="1.016" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="0.9525" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="2.2225" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-0.3175" y1="1.016" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.175" y1="0" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="RESISTOR">
 <pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
@@ -3751,28 +3669,6 @@ visible on the PCB.</text>
 <wire x1="-2.54" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="DCM4623">
-<pin name="TR" x="-5.08" y="-7.62" length="middle" direction="out"/>
-<pin name="FLT" x="-5.08" y="-12.7" length="middle" direction="out"/>
-<pin name="EN" x="-5.08" y="-17.78" length="middle" direction="in"/>
-<pin name="+IN" x="-5.08" y="-2.54" length="middle" direction="pwr"/>
-<pin name="-IN" x="-5.08" y="-22.86" length="middle" direction="pwr"/>
-<pin name="+OUT" x="25.4" y="-2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="-OUT" x="25.4" y="-22.86" length="middle" direction="pwr" rot="R180"/>
-<wire x1="0" y1="0" x2="8.89" y2="0" width="0.1524" layer="94"/>
-<wire x1="8.89" y1="0" x2="11.684" y2="0" width="0.1524" layer="94"/>
-<wire x1="11.684" y1="0" x2="20.32" y2="0" width="0.1524" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="-25.4" width="0.1524" layer="94"/>
-<wire x1="20.32" y1="-25.4" x2="11.684" y2="-25.4" width="0.1524" layer="94"/>
-<wire x1="11.684" y1="-25.4" x2="9.144" y2="-25.4" width="0.1524" layer="94"/>
-<wire x1="9.144" y1="-25.4" x2="0" y2="-25.4" width="0.1524" layer="94"/>
-<wire x1="0" y1="-25.4" x2="0" y2="0" width="0.1524" layer="94"/>
-<text x="0" y="0.254" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-25.654" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
-<wire x1="8.89" y1="0" x2="8.89" y2="-25.4" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="8.89" y1="-25.4" x2="9.144" y2="-25.4" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="11.684" y1="-25.4" x2="11.684" y2="0" width="0.1524" layer="94" style="shortdash"/>
-</symbol>
 <symbol name="CAPACITOR_POLARIZED">
 <wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
@@ -3784,51 +3680,6 @@ visible on the PCB.</text>
 <text x="-3.175" y="1.27" size="1.778" layer="94" rot="R90" align="center">+</text>
 <text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
 <text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;CAPACITANCE</text>
-</symbol>
-<symbol name="RELAY_SOLIDSTATE_NC">
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
-<wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
-<wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
-<polygon width="0.1524" layer="94">
-<vertex x="9.398" y="-5.842"/>
-<vertex x="8.89" y="-6.604"/>
-<vertex x="10.414" y="-7.112"/>
-</polygon>
-<circle x="12.7" y="-8.89" radius="0.635" width="0.1524" layer="94"/>
-<circle x="15.24" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
-<circle x="10.16" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="12.7" y2="-9.525" width="0.1524" layer="94"/>
-<wire x1="15.24" y1="-2.54" x2="15.24" y2="-3.175" width="0.1524" layer="94"/>
-<pin name="CONTACT1" x="20.32" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
-<pin name="CONTACT2" x="20.32" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
-<wire x1="13.0175" y1="-8.255" x2="14.9225" y2="-4.445" width="0.1524" layer="94"/>
-<polygon width="0.0254" layer="94">
-<vertex x="14.986" y="-5.334"/>
-<vertex x="14.224" y="-4.826"/>
-<vertex x="14.986" y="-4.318"/>
-</polygon>
-<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="15.24" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="LOGICGATE_INVERTER">
 <description>Inverter</description>
@@ -4070,51 +3921,6 @@ visible on the PCB.</text>
 <pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="RELAY_SOLIDSTATE_NO">
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
-<wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
-<wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
-<polygon width="0.1524" layer="94">
-<vertex x="9.398" y="-5.842"/>
-<vertex x="8.89" y="-6.604"/>
-<vertex x="10.414" y="-7.112"/>
-</polygon>
-<circle x="12.7" y="-8.89" radius="0.635" width="0.1524" layer="94"/>
-<circle x="15.24" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
-<circle x="10.16" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="12.7" y2="-9.525" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="10.16" y2="-3.175" width="0.1524" layer="94"/>
-<pin name="CONTACT1" x="20.32" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
-<pin name="CONTACT2" x="20.32" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
-<wire x1="13.0175" y1="-8.255" x2="14.9225" y2="-4.445" width="0.1524" layer="94"/>
-<polygon width="0.0254" layer="94">
-<vertex x="14.986" y="-5.334"/>
-<vertex x="14.224" y="-4.826"/>
-<vertex x="14.986" y="-4.318"/>
-</polygon>
-<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
-</symbol>
 <symbol name="DIODE_TVS_UNIDIRECTIONAL">
 <wire x1="0" y1="1.016" x2="0" y2="-0.762" width="0.1524" layer="94"/>
 <pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
@@ -4226,13 +4032,13 @@ visible on the PCB.</text>
 </technology>
 </technologies>
 </device>
-<device name="" package="MINI-BLADE_FUSE_HOLDER">
+<device name="MB" package="MINI-BLADE_FUSE_HOLDER">
 <connects>
 <connect gate="G$1" pin="1" pad="L1 L2"/>
 <connect gate="G$1" pin="2" pad="R1 R2"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name="10">
 <attribute name="CURRENT" value="10A" constant="no"/>
 <attribute name="DKPN" value="F991-ND" constant="no"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc." constant="no"/>
@@ -4249,6 +4055,8 @@ visible on the PCB.</text>
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Inductor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/336/plei_s_a0002827602_1-2281222.pdf"&gt;PA4334 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/445/74437349560-1721693.pdf"&gt;WE-LMHI Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
@@ -4320,16 +4128,16 @@ visible on the PCB.</text>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CURRENT_RATED" value="" constant="no"/>
-<attribute name="CURRENT_SATURATION" value="" constant="no"/>
-<attribute name="DCR" value="" constant="no"/>
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="INDUCTANCE" value="56uH" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
+<technology name="56UH">
+<attribute name="CURRENT_RATED" value="1.4A"/>
+<attribute name="CURRENT_SATURATION" value="1.4A"/>
+<attribute name="DCR" value="342m"/>
+<attribute name="DKPN" value="732-11454-2-ND"/>
+<attribute name="INDUCTANCE" value="56uH"/>
+<attribute name="MANUFACTURER" value="Wurth Elektronik"/>
+<attribute name="MOPN" value="710-74437349560"/>
+<attribute name="MPN" value="74437349560"/>
+<attribute name="TOLERANCE" value="20%"/>
 </technology>
 </technologies>
 </device>
@@ -4339,41 +4147,16 @@ visible on the PCB.</text>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CURRENT_RATED" value="1.6A" constant="no"/>
-<attribute name="CURRENT_SATURATION" value="1A" constant="no"/>
-<attribute name="DCR" value="0.13" constant="no"/>
-<attribute name="DKPN" value="553-3508-2-ND" constant="no"/>
-<attribute name="INDUCTANCE" value="3.6uH" constant="no"/>
-<attribute name="MANUFACTURER" value="Pulse Electonics Company" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RESISTOR_GND_*">
-<gates>
-<gate name="G$1" symbol="RESISTOR_GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="B20">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3 4 5 6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="RESISTANCE" value="" constant="no"/>
-</technology>
-<technology name="1.24K">
-<attribute name="RESISTANCE" value="1.24k" constant="no"/>
-</technology>
-<technology name="10K">
-<attribute name="RESISTANCE" value="10k" constant="no"/>
+<technology name="3.6UH">
+<attribute name="CURRENT_RATED" value="1.6A"/>
+<attribute name="CURRENT_SATURATION" value="1A"/>
+<attribute name="DCR" value="0.13"/>
+<attribute name="DKPN" value="553-3508-2-ND"/>
+<attribute name="INDUCTANCE" value="3.6uH"/>
+<attribute name="MANUFACTURER" value="Pulse Electonics Company"/>
+<attribute name="MOPN" value="673-PA4334362NLT"/>
+<attribute name="MPN" value="PA4334.362NLT"/>
+<attribute name="TOLERANCE" value="20%"/>
 </technology>
 </technologies>
 </device>
@@ -4454,15 +4237,15 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="1.62">
-<attribute name="DKPN" value="1712-CPF0603B1R62E1TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="TE Conductivity Passive Product" constant="no"/>
-<attribute name="MOPN" value="279-CPF0603B1R62E1" constant="no"/>
-<attribute name="MPN" value="CPF0603B1R62E1" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="1.62" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="0.51V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="50V" constant="no"/>
+<attribute name="DKPN" value="1712-CPF0603B1R62E1TR-ND"/>
+<attribute name="MANUFACTURER" value="TE Conductivity Passive Product"/>
+<attribute name="MOPN" value="279-CPF0603B1R62E1"/>
+<attribute name="MPN" value="CPF0603B1R62E1"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.62"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.51V"/>
+<attribute name="VOLTAGE_MAX" value="50V"/>
 </technology>
 <technology name="1.65K">
 <attribute name="DKPN" value="311-1.65KHRCT-ND"/>
@@ -4575,15 +4358,15 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="13K">
-<attribute name="DKPN" value="P20098TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB3B1302V" constant="no"/>
-<attribute name="MPN" value=" ERJ-PB3B1302V" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="13k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
+<attribute name="DKPN" value="P20098TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B1302V"/>
+<attribute name="MPN" value=" ERJ-PB3B1302V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="13k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="36V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="154K">
 <attribute name="DKPN" value="P154KDBCT-ND"/>
@@ -4784,15 +4567,15 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="33.2K">
-<attribute name="DKPN" value="P20144TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB3B3322V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB3B3322V" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="33.2k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
+<attribute name="DKPN" value="P20144TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B3322V"/>
+<attribute name="MPN" value="ERJ-PB3B3322V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="33.2k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="57.6V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="330K">
 <attribute name="DKPN" value="P330KDBCT-ND"/>
@@ -4998,15 +4781,15 @@ visible on the PCB.</text>
 </connects>
 <technologies>
 <technology name="1">
-<attribute name="DKPN" value="P1.0DTR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-6RQF1R0V" constant="no"/>
-<attribute name="MPN" value="ERJ-6RQF1R0V" constant="no"/>
-<attribute name="POWER" value="0.125W" constant="no"/>
-<attribute name="RESISTANCE" value="1" constant="no"/>
-<attribute name="TOLERANCE" value="1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="P1.0DTR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-6RQF1R0V"/>
+<attribute name="MPN" value="ERJ-6RQF1R0V"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="1"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.35V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="12.4">
 <attribute name="DKPN" value="P12.4CTR-ND"/>
@@ -5031,15 +4814,15 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="1M">
-<attribute name="DKPN" value="P20936TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB6B1004V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB6B1004V" constant="no"/>
-<attribute name="POWER" value="0.25W" constant="no"/>
-<attribute name="RESISTANCE" value="1M" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="P20936TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB6B1004V"/>
+<attribute name="MPN" value="ERJ-PB6B1004V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="1M"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="200">
 <attribute name="DKPN" value="311-200CRCT-ND"/>
@@ -5064,37 +4847,37 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="5.9K">
-<attribute name="DKPN" value="P20174TR-ND " constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB3B5902V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB3B5902V" constant="no"/>
-<attribute name="POWER" value="0.2W" constant="no"/>
-<attribute name="RESISTANCE" value="5.9k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="P20174TR-ND "/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B5902V"/>
+<attribute name="MPN" value="ERJ-PB3B5902V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="5.9k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="34.3V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="523K">
-<attribute name="DKPN" value="P20904TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB6B5233V" constant="no"/>
-<attribute name="MPN" value="ERJ-PB6B5233V" constant="no"/>
-<attribute name="POWER" value="0.25W" constant="no"/>
-<attribute name="RESISTANCE" value="523k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="P20904TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB6B5233V"/>
+<attribute name="MPN" value="ERJ-PB6B5233V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="523k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="976K">
-<attribute name="DKPN" value="P20935TR-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" constant="no"/>
-<attribute name="MOPN" value="667-ERJ-PB6B9763V" constant="no"/>
-<attribute name="MPN" value="  ERJ-PB6B9763V" constant="no"/>
-<attribute name="POWER" value="0.25W" constant="no"/>
-<attribute name="RESISTANCE" value="976k" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="150V" constant="no"/>
+<attribute name="DKPN" value="P20935TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB6B9763V"/>
+<attribute name="MPN" value="  ERJ-PB6B9763V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="976k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 </technologies>
 </device>
@@ -5125,20 +4908,6 @@ visible on the PCB.</text>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="5.123V"/>
 <attribute name="VOLTAGE_MAX" value="5.123V"/>
-</technology>
-</technologies>
-</device>
-<device name="B20" package="B20">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="1.25K">
-<attribute name="RESISTANCE" value="1.25k" constant="no"/>
-</technology>
-<technology name="10K">
-<attribute name="RESISTANCE" value="10k" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5526,30 +5295,6 @@ visible on the PCB.</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DCM4623TD2J13D0T70" prefix="U">
-<description>400W 300V to 12V step-down DC-DC converter
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/685/DCM4623xD2J13D0y7z_ds-1144763.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DCM4623" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DCM4623">
-<connects>
-<connect gate="G$1" pin="+IN" pad="1"/>
-<connect gate="G$1" pin="+OUT" pad="6 8"/>
-<connect gate="G$1" pin="-IN" pad="5"/>
-<connect gate="G$1" pin="-OUT" pad="7 9"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="FLT" pad="4"/>
-<connect gate="G$1" pin="TR" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CAPACITOR_POLAR_?_*" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
@@ -5561,45 +5306,14 @@ visible on the PCB.</text>
 <connect gate="G$1" pin="PLUS" pad="+"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CAPACITANCE" value="3600uF" constant="no"/>
-<attribute name="DKPN" value="  565-EKYC250ELL362ML20S-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="United Chemi-con" constant="no"/>
-<attribute name="MOPN" value="661-YC250ELL362ML20S" constant="no"/>
-<attribute name="MPN" value="EKYC250ELL362ML20S" constant="no"/>
-<attribute name="VOLTAGE" value="25V" constant="no"/>
+<technology name="3600UF">
+<attribute name="CAPACITANCE" value="3600uF"/>
+<attribute name="DKPN" value="  565-EKYC250ELL362ML20S-ND"/>
+<attribute name="MANUFACTURER" value="United Chemi-con"/>
+<attribute name="MOPN" value="661-YC250ELL362ML20S"/>
+<attribute name="MPN" value="EKYC250ELL362ML20S"/>
+<attribute name="VOLTAGE" value="25V"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RELAY_SOLIDSTATE_NC_?" prefix="U">
-<gates>
-<gate name="G$1" symbol="RELAY_SOLIDSTATE_NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIP-4">
-<connects>
-<connect gate="G$1" pin="CONTACT1" pad="3"/>
-<connect gate="G$1" pin="CONTACT2" pad="4"/>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="AQY414EHA" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="AG" package="DIP-4_AIRGAP">
-<connects>
-<connect gate="G$1" pin="CONTACT1" pad="3"/>
-<connect gate="G$1" pin="CONTACT2" pad="4"/>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6003,7 +5717,10 @@ ISO224B: High-Grade
 <connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6033,39 +5750,6 @@ ISO224B: High-Grade
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RELAY_SOLIDSTATE_NO_?" prefix="U">
-<description>AQY214EH Normally Open Solid State Relay&lt;br&gt;
-&lt;a href=https://www.datasheetq.com/datasheet-download/287654/1/Panasonic/AQY214EH&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIP-4">
-<connects>
-<connect gate="G$1" pin="CONTACT1" pad="3"/>
-<connect gate="G$1" pin="CONTACT2" pad="4"/>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="AQY214EHA"/>
-</technology>
-</technologies>
-</device>
-<device name="AG" package="DIP-4_AIRGAP">
-<connects>
-<connect gate="G$1" pin="CONTACT1" pad="3"/>
-<connect gate="G$1" pin="CONTACT2" pad="4"/>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6215,7 +5899,7 @@ ISO224B: High-Grade
 <gate name="G$1" symbol="CONNECTOR_05" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MOLEX_MICROFIT_PTH_VERTICAL_5_DUAL">
+<device name="MICRO_VS" package="MOLEX_MICROFIT_PTH_VERTICAL_05_SINGLE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -6227,7 +5911,7 @@ ISO224B: High-Grade
 <technology name=""/>
 </technologies>
 </device>
-<device name="6_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED">
+<device name="MICRO_V6S" package="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -6236,10 +5920,13 @@ ISO224B: High-Grade
 <connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="7_SPACED" package="MOLEX_MICROFIT_PTH_VERTICAL_07_DUAL_SPACED">
+<device name="MICRO_V7S" package="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE_SPACED">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -6248,7 +5935,10 @@ ISO224B: High-Grade
 <connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6478,6 +6168,365 @@ ISO224B: High-Grade
 </deviceset>
 </devicesets>
 </library>
+<library name="HyTechDevicesTempTSB">
+<packages>
+<package name="DIP-4_AIRGAP">
+<smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="1" x="-1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="2" x="1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
+<wire x1="-2.39" y1="3.2" x2="-2.39" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="-2.39" y1="-3.2" x2="2.39" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="2.39" y1="-3.2" x2="2.39" y2="3.2" width="0.1524" layer="21"/>
+<wire x1="2.39" y1="3.2" x2="-2.39" y2="3.2" width="0.1524" layer="21"/>
+<text x="-3.175" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
+<rectangle x1="-3.048" y1="-6.223" x2="3.048" y2="5.969" layer="39"/>
+<wire x1="-3.048" y1="3.048" x2="-3.048" y2="-3.048" width="0.0508" layer="46"/>
+<wire x1="-3.048" y1="-3.048" x2="3.048" y2="-3.048" width="0.0508" layer="46"/>
+<wire x1="3.048" y1="-3.048" x2="3.048" y2="3.048" width="0.0508" layer="46"/>
+<wire x1="3.048" y1="3.048" x2="-3.048" y2="3.048" width="0.0508" layer="46"/>
+</package>
+<package name="DIP-4">
+<smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="1" x="-1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="2" x="1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
+<wire x1="-2.39" y1="3.2" x2="-2.39" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="-2.39" y1="-3.2" x2="2.39" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="2.39" y1="-3.2" x2="2.39" y2="3.2" width="0.1524" layer="21"/>
+<wire x1="2.39" y1="3.2" x2="-2.39" y2="3.2" width="0.1524" layer="21"/>
+<text x="-2.54" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
+<rectangle x1="-3.556" y1="-6.096" x2="3.556" y2="6.096" layer="39"/>
+</package>
+<package name="DCM4623">
+<pad name="6" x="23.19" y="8.25" drill="2.03" diameter="2.79"/>
+<pad name="7" x="23.19" y="2.75" drill="2.03" diameter="2.79"/>
+<pad name="8" x="23.19" y="-2.75" drill="2.03" diameter="2.79"/>
+<pad name="9" x="23.19" y="-8.25" drill="2.03" diameter="2.79"/>
+<pad name="1" x="-23.19" y="8" drill="2.03" diameter="2.79"/>
+<pad name="2" x="-23.19" y="1.38" drill="1.52" diameter="2.02"/>
+<pad name="3" x="-23.19" y="-1.38" drill="1.52" diameter="2.02"/>
+<pad name="4" x="-23.19" y="-4.13" drill="1.52" diameter="2.02"/>
+<pad name="5" x="-23.19" y="-8" drill="2.03" diameter="2.79"/>
+<wire x1="-23.955" y1="11.4" x2="-23.955" y2="-11.4" width="0.127" layer="21"/>
+<wire x1="-23.955" y1="-11.4" x2="23.955" y2="-11.4" width="0.127" layer="21"/>
+<wire x1="23.955" y1="-11.4" x2="23.955" y2="11.4" width="0.127" layer="21"/>
+<wire x1="23.955" y1="11.4" x2="-23.955" y2="11.4" width="0.127" layer="21"/>
+<text x="-24.13" y="11.684" size="1.27" layer="21">&gt;NAME</text>
+<rectangle x1="-25.4" y1="-12.7" x2="25.4" y2="12.7" layer="39"/>
+</package>
+<package name="B20">
+<wire x1="-25.4" y1="5.555" x2="-25.4" y2="-5.555" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="-5.555" x2="25.4" y2="-5.555" width="0.127" layer="21"/>
+<wire x1="25.4" y1="-5.555" x2="25.4" y2="5.555" width="0.127" layer="21"/>
+<wire x1="25.4" y1="5.555" x2="-25.4" y2="5.555" width="0.127" layer="21"/>
+<rectangle x1="-38.1" y1="-6.35" x2="38.1" y2="6.35" layer="39"/>
+<text x="-25.527" y="5.715" size="1.27" layer="21">&gt;NAME</text>
+<pad name="2" x="-27.94" y="-8.89" drill="1.35"/>
+<pad name="1" x="27.94" y="-8.89" drill="1.35"/>
+<rectangle x1="-30.48" y1="-11.43" x2="-25.4" y2="-6.35" layer="39"/>
+<rectangle x1="25.4" y1="-11.43" x2="30.48" y2="-6.35" layer="39"/>
+<hole x="-32.51" y="0" drill="3.74"/>
+<smd name="4" x="-32.51" y="0" dx="6.35" dy="6.35" layer="16" roundness="100"/>
+<smd name="3" x="-32.51" y="0" dx="6.35" dy="6.35" layer="1" roundness="100"/>
+<hole x="32.51" y="0" drill="3.74"/>
+<smd name="5" x="32.51" y="0" dx="6.35" dy="6.35" layer="1" roundness="100"/>
+<smd name="6" x="32.51" y="0" dx="6.35" dy="6.35" layer="16" roundness="100"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RELAY_SOLIDSTATE_NC">
+<description>Normally Closed Solid-State Relay</description>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="9.398" y="-5.842"/>
+<vertex x="8.89" y="-6.604"/>
+<vertex x="10.414" y="-7.112"/>
+</polygon>
+<circle x="12.7" y="-8.89" radius="0.635" width="0.1524" layer="94"/>
+<circle x="15.24" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<circle x="10.16" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="-9.525" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-2.54" x2="15.24" y2="-3.175" width="0.1524" layer="94"/>
+<pin name="CONTACT1" x="20.32" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="CONTACT2" x="20.32" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<wire x1="13.0175" y1="-8.255" x2="14.9225" y2="-4.445" width="0.1524" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="14.986" y="-5.334"/>
+<vertex x="14.224" y="-4.826"/>
+<vertex x="14.986" y="-4.318"/>
+</polygon>
+<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="RELAY_SOLIDSTATE_NO">
+<description>Normally Open Solid-State Relay</description>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="9.398" y="-5.842"/>
+<vertex x="8.89" y="-6.604"/>
+<vertex x="10.414" y="-7.112"/>
+</polygon>
+<circle x="12.7" y="-8.89" radius="0.635" width="0.1524" layer="94"/>
+<circle x="15.24" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<circle x="10.16" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="-9.525" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="-3.175" width="0.1524" layer="94"/>
+<pin name="CONTACT1" x="20.32" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="CONTACT2" x="20.32" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<wire x1="13.0175" y1="-8.255" x2="14.9225" y2="-4.445" width="0.1524" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="14.986" y="-5.334"/>
+<vertex x="14.224" y="-4.826"/>
+<vertex x="14.986" y="-4.318"/>
+</polygon>
+<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="DCM4623">
+<description>Vicor DCM4623 Style DCDC Converter</description>
+<pin name="TR" x="-2.54" y="-7.62" length="short" direction="out"/>
+<pin name="FLT" x="-2.54" y="-12.7" length="short" direction="out"/>
+<pin name="EN" x="-2.54" y="-17.78" length="short" direction="in"/>
+<pin name="+IN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="-IN" x="-2.54" y="-22.86" length="short" direction="pwr"/>
+<pin name="+OUT" x="22.86" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="-OUT" x="22.86" y="-22.86" length="short" direction="pwr" rot="R180"/>
+<wire x1="0" y1="0" x2="8.89" y2="0" width="0.1524" layer="94"/>
+<wire x1="8.89" y1="0" x2="11.684" y2="0" width="0.1524" layer="94"/>
+<wire x1="11.684" y1="0" x2="20.32" y2="0" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="-25.4" x2="11.684" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="11.684" y1="-25.4" x2="9.144" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="9.144" y1="-25.4" x2="0" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="0" y1="-25.4" x2="0" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="0.254" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-25.654" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="8.89" y1="0" x2="8.89" y2="-25.4" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="8.89" y1="-25.4" x2="9.144" y2="-25.4" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="11.684" y1="-25.4" x2="11.684" y2="0" width="0.1524" layer="94" style="shortdash"/>
+</symbol>
+<symbol name="RESISTOR_GND">
+<description>Grounded Resistor</description>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<text x="1.27" y="2.794" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="1.27" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;RESISTANCE</text>
+<wire x1="3.175" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.3175" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.2225" y1="1.016" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.2225" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.3175" y1="1.016" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="0" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RELAY_SOLIDSTATE_NC_?" prefix="U">
+<description>Normally Closed Solid-State Relay
+&lt;br&gt;
+&lt;a href="file:///C:/Users/kamin/Downloads/semi_eng_ge1b_aqy41_e%20(1).pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_SOLIDSTATE_NC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP-4">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="255-2897-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Industrial Devices" constant="no"/>
+<attribute name="MOPN" value="769-AQY414EHA" constant="no"/>
+<attribute name="MPN" value="AQY414EHA" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="AG" package="DIP-4_AIRGAP">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="255-2897-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Industrial Devices" constant="no"/>
+<attribute name="MOPN" value="769-AQY414EHA" constant="no"/>
+<attribute name="MPN" value="AQY414EHA" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_SOLIDSTATE_NO_?" prefix="U">
+<description>Normally Open Solid-State Relay
+&lt;br&gt;
+&lt;a href="file:///C:/Users/kamin/Downloads/semi_eng_ge1a_aqy21_e.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP-4">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="AG" package="DIP-4_AIRGAP">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="255-1436-5-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Panasonic Inustrial Devices" constant="no"/>
+<attribute name="MOPN" value="769-AQY214EHA" constant="no"/>
+<attribute name="MPN" value="AQY214EHA" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCM4623TD2J13D0T70" prefix="U">
+<description>400W 300V to 12V step-down DC-DC converter
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/685/DCM4623xD2J13D0y7z_ds-1144763.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DCM4623" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DCM4623">
+<connects>
+<connect gate="G$1" pin="+IN" pad="1"/>
+<connect gate="G$1" pin="+OUT" pad="6 8"/>
+<connect gate="G$1" pin="-IN" pad="5"/>
+<connect gate="G$1" pin="-OUT" pad="7 9"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FLT" pad="4"/>
+<connect gate="G$1" pin="TR" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR_GND_*" prefix="R">
+<description>20W Axial Through Hole Resistor
+&lt;br&gt;
+&lt;a href="https://www.ohmite.com/assets/docs/res_200.pdf?r=false"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B20">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3 4 5 6"/>
+</connects>
+<technologies>
+<technology name="1.25K">
+<attribute name="DKPN" value="B20J1K25E-ND"/>
+<attribute name="MANUFACTURER" value="Ohmite"/>
+<attribute name="MOPN" value="588-B20J1K25E"/>
+<attribute name="MPN" value="B20J1K25E"/>
+<attribute name="POWER" value="20W"/>
+<attribute name="RESISTANCE" value="1.25k"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="157V"/>
+<attribute name="VOLTAGE_MAX" value="750V"/>
+</technology>
+<technology name="10K">
+<attribute name="DKPN" value="B20J10KE-ND"/>
+<attribute name="MANUFACTURER" value="Ohmite"/>
+<attribute name="MOPN" value="588-B20J10KE"/>
+<attribute name="MPN" value="B20J10KE"/>
+<attribute name="POWER" value="20W"/>
+<attribute name="RESISTANCE" value="10k"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="447V"/>
+<attribute name="VOLTAGE_MAX" value="750V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6493,22 +6542,22 @@ ISO224B: High-Grade
 <attribute name="DESCRIPTION_2" value="Control Circuitry"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
 </part>
-<part name="U10" library="HyTechDevices" deviceset="DCM4623TD2J13D0T70" device=""/>
+<part name="U10" library="HyTechDevicesTempTSB" deviceset="DCM4623TD2J13D0T70" device=""/>
 <part name="C24" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="2220" technology="630V_1UF"/>
 <part name="C25" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="2220" technology="630V_1UF"/>
-<part name="C26" library="HyTechDevices" deviceset="CAPACITOR_POLAR_?_*" device=""/>
+<part name="C26" library="HyTechDevices" deviceset="CAPACITOR_POLAR_?_*" device="" technology="3600UF"/>
 <part name="C27" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
 <part name="C28" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF"/>
 <part name="C29" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="35V_0.1UF"/>
 <part name="R31" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.62"/>
 <part name="R32" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R33" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
-<part name="L4" library="HyTechDevices" deviceset="INDUCTOR_?_*" device="PA4334"/>
-<part name="L5" library="HyTechDevices" deviceset="INDUCTOR_?_*" device="WELMHI"/>
+<part name="L4" library="HyTechDevices" deviceset="INDUCTOR_?_*" device="PA4334" technology="3.6UH"/>
+<part name="L5" library="HyTechDevices" deviceset="INDUCTOR_?_*" device="WELMHI" technology="56UH"/>
 <part name="D6" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
-<part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device=""/>
+<part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10"/>
 <part name="U$27" library="HyTechSupplies" deviceset="TS+FUSED" device=""/>
-<part name="U11" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NC_?" device="AG"/>
+<part name="U11" library="HyTechDevicesTempTSB" deviceset="RELAY_SOLIDSTATE_NC_?" device="AG"/>
 <part name="R34" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="FRAME4" library="HyTechFrames" deviceset="FRAME" device="">
 <attribute name="DESCRIPTION_1" value="Relays and connectors"/>
@@ -6527,16 +6576,16 @@ ISO224B: High-Grade
 <part name="P33" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P34" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P35" library="HyTechSupplies" deviceset="+5V" device=""/>
-<part name="R39" library="HyTechDevices" deviceset="RESISTOR_GND_*" device="" technology="1.24K"/>
-<part name="R40" library="HyTechDevices" deviceset="RESISTOR_GND_*" device="" technology="10K" value="RESISTOR_GND_10K"/>
+<part name="R39" library="HyTechDevicesTempTSB" deviceset="RESISTOR_GND_*" device="" technology="1.25K"/>
+<part name="R40" library="HyTechDevicesTempTSB" deviceset="RESISTOR_GND_*" device="" technology="10K" value="RESISTOR_GND_10K"/>
 <part name="P36" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
 <part name="P37" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="J3" library="HyTechDevices" deviceset="CONNECTOR-8_?_*" device="MF_T_V"/>
 <part name="P39" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="U$32" library="HyTechSupplies" deviceset="TS+FUSED" device=""/>
 <part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25"/>
-<part name="R41" library="HyTechDevices" deviceset="RESISTOR_GND_*" device="" technology="10K"/>
-<part name="R42" library="HyTechDevices" deviceset="RESISTOR_GND_*" device="" technology="10K"/>
+<part name="R41" library="HyTechDevicesTempTSB" deviceset="RESISTOR_GND_*" device="" technology="10K"/>
+<part name="R42" library="HyTechDevicesTempTSB" deviceset="RESISTOR_GND_*" device="" technology="10K"/>
 <part name="P44" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
 <part name="U$36" library="HyTechSupplies" deviceset="TS+FUSED" device=""/>
 <part name="U16" library="HyTechDevices" deviceset="LTC3639" device=""/>
@@ -6585,7 +6634,7 @@ ISO224B: High-Grade
 <part name="C3" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="1206" technology="250V_0.1UF"/>
 <part name="C4" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="1206" technology="250V_0.1UF"/>
 <part name="J5" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device=""/>
-<part name="U$1" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO_?" device="AG"/>
+<part name="U$1" library="HyTechDevicesTempTSB" deviceset="RELAY_SOLIDSTATE_NO_?" device="AG"/>
 <part name="U$2" library="HyTechSupplies" deviceset="TS+FUSED" device=""/>
 <part name="D1" library="HyTechDevices" deviceset="TVS_*" device="" technology="8V" value="TVS_8V"/>
 <part name="C5" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
@@ -6691,8 +6740,8 @@ ISO224B: High-Grade
 <part name="U$28" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$3" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$30" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
-<part name="U$31" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="6_SPACED"/>
-<part name="U$33" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="7_SPACED"/>
+<part name="U$31" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="MICRO_V6S"/>
+<part name="U$33" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="MICRO_V7S"/>
 <part name="P18" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="TP16" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="U$42" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
@@ -7833,7 +7882,7 @@ Undervoltage: 56V</text>
 <pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="167.64" x2="81.28" y2="167.64" width="0.6096" layer="91"/>
 <wire x1="81.28" y1="167.64" x2="91.44" y2="167.64" width="0.6096" layer="91"/>
-<wire x1="91.44" y1="167.64" x2="121.92" y2="167.64" width="0.6096" layer="91"/>
+<wire x1="91.44" y1="167.64" x2="124.46" y2="167.64" width="0.6096" layer="91"/>
 <wire x1="71.12" y1="167.64" x2="71.12" y2="160.02" width="0.6096" layer="91"/>
 <junction x="71.12" y="167.64"/>
 <pinref part="C25" gate="G$1" pin="1"/>
@@ -7867,21 +7916,21 @@ Undervoltage: 56V</text>
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
 <pinref part="U10" gate="G$1" pin="FLT"/>
-<wire x1="119.38" y1="157.48" x2="121.92" y2="157.48" width="0.6096" layer="91"/>
+<wire x1="119.38" y1="157.48" x2="124.46" y2="157.48" width="0.6096" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="TR"/>
 <pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="162.56" x2="114.3" y2="162.56" width="0.6096" layer="91"/>
+<wire x1="124.46" y1="162.56" x2="114.3" y2="162.56" width="0.6096" layer="91"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="+OUT"/>
 <pinref part="C26" gate="G$1" pin="PLUS"/>
-<wire x1="152.4" y1="167.64" x2="162.56" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="167.64" x2="162.56" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="167.64" x2="162.56" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="C27" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="167.64" x2="172.72" y2="167.64" width="0.1524" layer="91"/>
@@ -7915,7 +7964,7 @@ Undervoltage: 56V</text>
 <segment>
 <pinref part="U10" gate="G$1" pin="-OUT"/>
 <pinref part="C26" gate="G$1" pin="MINUS"/>
-<wire x1="152.4" y1="147.32" x2="162.56" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="147.32" x2="162.56" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="147.32" x2="162.56" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C27" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="147.32" x2="172.72" y2="147.32" width="0.1524" layer="91"/>
@@ -7940,7 +7989,7 @@ Undervoltage: 56V</text>
 <net name="ENABLE" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="EN"/>
-<wire x1="121.92" y1="152.4" x2="119.38" y2="152.4" width="0.6096" layer="91"/>
+<wire x1="124.46" y1="152.4" x2="119.38" y2="152.4" width="0.6096" layer="91"/>
 <label x="119.38" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -8054,7 +8103,7 @@ Undervoltage: 56V</text>
 <wire x1="71.12" y1="147.32" x2="81.28" y2="147.32" width="0.6096" layer="91"/>
 <wire x1="81.28" y1="147.32" x2="91.44" y2="147.32" width="0.6096" layer="91"/>
 <wire x1="91.44" y1="147.32" x2="101.6" y2="147.32" width="0.6096" layer="91"/>
-<wire x1="101.6" y1="147.32" x2="121.92" y2="147.32" width="0.6096" layer="91"/>
+<wire x1="101.6" y1="147.32" x2="124.46" y2="147.32" width="0.6096" layer="91"/>
 <wire x1="71.12" y1="152.4" x2="71.12" y2="147.32" width="0.6096" layer="91"/>
 <junction x="71.12" y="147.32"/>
 <pinref part="C25" gate="G$1" pin="2"/>
