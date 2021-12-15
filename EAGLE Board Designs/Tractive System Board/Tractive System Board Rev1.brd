@@ -7093,7 +7093,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="CAPACITANCE" value="0.1uF" x="-86.614" y="35.814" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DKPN" value="445-11980-2-ND" x="-86.614" y="35.814" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Coporation" x="-86.614" y="35.814" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOPN" value="" x="-86.614" y="35.814" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="810-C5750CH2J104K2KC" x="-86.614" y="35.814" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C5750CH2J104K280KC" x="-86.614" y="35.814" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="73.816" y="70.104" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="-86.614" y="35.814" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7103,7 +7103,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="CAPACITANCE" value="0.1uF" x="-50.038" y="36.322" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DKPN" value="445-11980-2-ND" x="-50.038" y="36.322" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Coporation" x="-50.038" y="36.322" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOPN" value="" x="-50.038" y="36.322" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="810-C5750CH2J104K2KC" x="-50.038" y="36.322" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C5750CH2J104K280KC" x="-50.038" y="36.322" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="106.807" y="81.944" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="-50.038" y="36.322" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7172,7 +7172,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="CAPACITANCE" value="0.1uF" x="123.825" y="-86.233" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="445-6079-2-ND" x="123.825" y="-86.233" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="123.825" y="-86.233" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="" x="123.825" y="-86.233" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="810-C3216X7R2E104KT5" x="123.825" y="-86.233" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="C3216X7R2E104K160AM" x="123.825" y="-86.233" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="100.965" y="78.847" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="123.825" y="-86.233" size="1.778" layer="27" display="off"/>
@@ -7282,7 +7282,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="CAPACITANCE" value="0.1uF" x="129.032" y="-100.838" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="445-6079-2-ND" x="129.032" y="-100.838" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="129.032" y="-100.838" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="" x="129.032" y="-100.838" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="810-C3216X7R2E104KT5" x="129.032" y="-100.838" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="C3216X7R2E104K160AM" x="129.032" y="-100.838" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="98.298" y="62.464" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="129.032" y="-100.838" size="1.778" layer="27" display="off"/>
@@ -7436,11 +7436,13 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE" value="500V" x="37.592" y="231.267" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="J3" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_08_DUAL" value="CONNECTOR-8_MF_T_V_" x="41.34529375" y="5.715" smashed="yes">
-<attribute name="MANUFACTURER" value="" x="41.34529375" y="5.715" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="41.34529375" y="5.715" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Molex" x="41.34529375" y="5.715" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="2068320823" x="41.34529375" y="5.715" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="41.34529375" y="-0.762" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="J5" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_04_DUAL" value="CONNECTOR-4__" x="112.1336125" y="121.56795" smashed="yes" rot="R270">
+<attribute name="MANUFACTURER" value="Molex" x="112.1336125" y="121.56795" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="2068320423" x="112.1336125" y="121.56795" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="105.6566125" y="121.56795" size="0.8128" layer="25" rot="R90" align="bottom-center"/>
 </element>
 <element name="K4" library="HyTechDevices" package="335X" value="RELAY_SPST_NC_POLARIZED_3550_12" x="101.226115625" y="31.045925" smashed="yes">
@@ -7712,10 +7714,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="186.944" y="8.255" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
 <element name="U10" library="HyTechDevicesTempTSB" package="DCM4623" value="DCM4623TD2J13D0T70" x="74.49091875" y="99.004" smashed="yes" rot="R90">
-<attribute name="DKPN" value="" x="74.49091875" y="99.004" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="" x="74.49091875" y="99.004" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOPN" value="" x="74.49091875" y="99.004" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="74.49091875" y="99.004" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DKPN" value="1102-DCM4623TD2J13D0T70-ND" x="74.49091875" y="99.004" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Vicor" x="74.49091875" y="99.004" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOPN" value="492-DCM4623D2J13D0T7" x="74.49091875" y="99.004" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="DCM4623TD2J13D0T70" x="74.49091875" y="99.004" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="62.80691875" y="74.874" size="1.27" layer="21" rot="R90"/>
 </element>
 <element name="U11" library="HyTechDevicesTempTSB" package="DIP-4_AIRGAP" value="RELAY_SOLIDSTATE_NC_AG" x="82.42789375" y="12.64869375" smashed="yes" rot="MR0">
@@ -8274,6 +8276,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="128.02615625" y="94.361" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
 <element name="U1" library="HyTechDevices" package="SOT-23-6" value="LTC6994_1" x="75.44815625" y="5.46556875" smashed="yes" rot="MR270">
+<attribute name="DKPN" value="505-LTC6994CS6-1#TRMPBFTR-ND" x="75.44815625" y="5.46556875" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MANUFACTURER" value="Analog Electronics" x="75.44815625" y="5.46556875" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MOPN" value="584-C6994CS6-1TRMPBF" x="75.44815625" y="5.46556875" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MPN" value="LTC6994CS6-1#TRMPBF" x="75.44815625" y="5.46556875" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="NAME" x="77.96146875" y="6.907025" size="0.8128" layer="22" font="vector" rot="MR0" align="bottom-center"/>
 </element>
 <element name="R44" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_1M" x="72.2644125" y="5.520109375" smashed="yes" rot="MR90">
@@ -8507,13 +8513,13 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE" value="500V" x="125.3255" y="70.62036875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
 </element>
 <element name="U$31" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED" value="CONNECTOR-5_MICRO_V6S_" x="198.671275" y="51.9166625" smashed="yes" rot="R270">
-<attribute name="MANUFACTURER" value="" x="198.671275" y="51.9166625" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="198.671275" y="51.9166625" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Molex" x="198.671275" y="51.9166625" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="2165713006" x="198.671275" y="51.9166625" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="196.385275" y="51.9166625" size="0.8128" layer="25" rot="R90" align="bottom-center"/>
 </element>
 <element name="U$33" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE_SPACED" value="CONNECTOR-5_MICRO_V7S_" x="198.65894375" y="26.361103125" smashed="yes" rot="R270">
-<attribute name="MANUFACTURER" value="" x="198.65894375" y="26.361103125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="198.65894375" y="26.361103125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Molex" x="198.65894375" y="26.361103125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="2165713007" x="198.65894375" y="26.361103125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="196.11894375" y="26.361103125" size="0.8128" layer="25" rot="R90" align="bottom-center"/>
 </element>
 <element name="U$26" library="HyTechDevices" package="MOUNTING_M3" value="" x="182.17231875" y="14.872146875" smashed="yes"/>

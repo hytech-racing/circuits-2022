@@ -5146,13 +5146,13 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE" value="250V"/>
 </technology>
 <technology name="630V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1uF" constant="no"/>
-<attribute name="DKPN" value="445-11980-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="TDK Coporation" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="C5750CH2J104K280KC" constant="no"/>
-<attribute name="TOLERANCE" value="10%" constant="no"/>
-<attribute name="VOLTAGE" value="630V" constant="no"/>
+<attribute name="CAPACITANCE" value="0.1uF"/>
+<attribute name="DKPN" value="445-11980-2-ND"/>
+<attribute name="MANUFACTURER" value="TDK Coporation"/>
+<attribute name="MOPN" value="810-C5750CH2J104K2KC"/>
+<attribute name="MPN" value="C5750CH2J104K280KC"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="630V"/>
 </technology>
 <technology name="630V_1UF">
 <attribute name="CAPACITANCE" value="1µF"/>
@@ -5207,13 +5207,13 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
 <technology name="250V_0.1UF">
-<attribute name="CAPACITANCE" value="0.1uF" constant="no"/>
-<attribute name="DKPN" value="445-6079-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="TDK Corporation" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="C3216X7R2E104K160AM" constant="no"/>
-<attribute name="TOLERANCE" value="10%" constant="no"/>
-<attribute name="VOLTAGE" value="250V" constant="no"/>
+<attribute name="CAPACITANCE" value="0.1uF"/>
+<attribute name="DKPN" value="445-6079-2-ND"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="MOPN" value="810-C3216X7R2E104KT5"/>
+<attribute name="MPN" value="C3216X7R2E104K160AM"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="250V"/>
 </technology>
 <technology name="35V_22UF">
 <attribute name="CAPACITANCE" value="22µF"/>
@@ -5718,8 +5718,8 @@ ISO224B: High-Grade
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2068320823"/>
 </technology>
 </technologies>
 </device>
@@ -5752,7 +5752,10 @@ ISO224B: High-Grade
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2068320423"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5874,6 +5877,9 @@ ISO224B: High-Grade
 </devices>
 </deviceset>
 <deviceset name="LTC6994_*" prefix="U">
+<description>Analog Electronics Delay IC
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/609/LTC6994_1_6994_2-1270043.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LTC6994" x="0" y="0"/>
 </gates>
@@ -5888,8 +5894,18 @@ ISO224B: High-Grade
 <connect gate="G$1" pin="V+" pad="5"/>
 </connects>
 <technologies>
-<technology name="1"/>
-<technology name="2"/>
+<technology name="1">
+<attribute name="DKPN" value="505-LTC6994CS6-1#TRMPBFTR-ND"/>
+<attribute name="MANUFACTURER" value="Analog Electronics"/>
+<attribute name="MOPN" value="584-C6994CS6-1TRMPBF"/>
+<attribute name="MPN" value="LTC6994CS6-1#TRMPBF" constant="no"/>
+</technology>
+<technology name="2">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5921,8 +5937,8 @@ ISO224B: High-Grade
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2165713006"/>
 </technology>
 </technologies>
 </device>
@@ -5936,8 +5952,8 @@ ISO224B: High-Grade
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MPN" value="2165713007"/>
 </technology>
 </technologies>
 </device>
@@ -6475,10 +6491,10 @@ ISO224B: High-Grade
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DKPN" value="1102-DCM4623TD2J13D0T70-ND"/>
+<attribute name="MANUFACTURER" value="Vicor"/>
+<attribute name="MOPN" value="492-DCM4623D2J13D0T7"/>
+<attribute name="MPN" value="DCM4623TD2J13D0T70"/>
 </technology>
 </technologies>
 </device>
