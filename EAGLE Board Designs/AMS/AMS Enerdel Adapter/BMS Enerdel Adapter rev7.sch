@@ -3048,10 +3048,6 @@ Layer: 94 Symbol</description>
 <part name="A-CONNECTOR-14-LOWER-OUT" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="MINIFIT"/>
 <part name="A-CONNECTOR-14-UPPER-IN" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="NANOFIT"/>
 <part name="A-CONNECTOR-14-UPPER-OUT" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="NANOFIT"/>
-<part name="B-CONNECTOR-14-LOWER-IN" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="MINIFIT"/>
-<part name="B-CONNECTOR-14-LOWER-OUT" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="MINIFIT"/>
-<part name="B-CONNECTOR-14-UPPER-IN" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="NANOFIT"/>
-<part name="B-CONNECTOR-14-UPPER-OUT" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="NANOFIT"/>
 </parts>
 <sheets>
 <sheet>
@@ -3177,18 +3173,6 @@ Layer: 94 Symbol</description>
 <instance part="A-CONNECTOR-14-UPPER-OUT" gate="G$1" x="22.86" y="142.24" smashed="yes" rot="MR180">
 <attribute name="NAME" x="30.48" y="141.478" size="1.27" layer="95" rot="MR180" align="bottom-right"/>
 </instance>
-<instance part="B-CONNECTOR-14-LOWER-IN" gate="G$1" x="142.24" y="58.42" smashed="yes" rot="R180">
-<attribute name="NAME" x="134.62" y="57.658" size="1.27" layer="95" rot="R180" align="bottom-right"/>
-</instance>
-<instance part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" x="101.6" y="58.42" smashed="yes" rot="MR180">
-<attribute name="NAME" x="109.22" y="57.658" size="1.27" layer="95" rot="MR180" align="bottom-right"/>
-</instance>
-<instance part="B-CONNECTOR-14-UPPER-IN" gate="G$1" x="63.5" y="58.42" smashed="yes" rot="R180">
-<attribute name="NAME" x="55.88" y="57.658" size="1.27" layer="95" rot="R180" align="bottom-right"/>
-</instance>
-<instance part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" x="22.86" y="58.42" smashed="yes" rot="MR180">
-<attribute name="NAME" x="30.48" y="57.658" size="1.27" layer="95" rot="MR180" align="bottom-right"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -3208,15 +3192,6 @@ Layer: 94 Symbol</description>
 <junction x="121.92" y="152.4"/>
 <label x="121.92" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="7"/>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="7"/>
-<wire x1="132.08" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="76.2" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="76.2" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
-<junction x="114.3" y="76.2"/>
-<label x="114.3" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="A5-B11" class="0">
 <segment>
@@ -3232,15 +3207,6 @@ Layer: 94 Symbol</description>
 <wire x1="119.38" y1="154.94" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
 <junction x="119.38" y="154.94"/>
 <label x="119.38" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="8"/>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="8"/>
-<wire x1="111.76" y1="78.74" x2="129.54" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="78.74" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="78.74" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
-<junction x="129.54" y="78.74"/>
-<label x="129.54" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="A6-B12" class="0">
@@ -3258,15 +3224,6 @@ Layer: 94 Symbol</description>
 <junction x="116.84" y="157.48"/>
 <label x="116.84" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="9"/>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="9"/>
-<wire x1="132.08" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="127" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="127" y1="81.28" x2="127" y2="101.6" width="0.1524" layer="91"/>
-<junction x="127" y="81.28"/>
-<label x="127" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="A7-B13" class="0">
 <segment>
@@ -3282,15 +3239,6 @@ Layer: 94 Symbol</description>
 <wire x1="114.3" y1="160.02" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
 <junction x="114.3" y="160.02"/>
 <label x="114.3" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="10"/>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="10"/>
-<wire x1="111.76" y1="83.82" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="83.82" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="83.82" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
-<junction x="124.46" y="83.82"/>
-<label x="124.46" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="A8-B14" class="0">
@@ -3308,15 +3256,6 @@ Layer: 94 Symbol</description>
 <junction x="129.54" y="162.56"/>
 <label x="129.54" y="185.42" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="11"/>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="11"/>
-<wire x1="132.08" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="86.36" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
-<junction x="121.92" y="86.36"/>
-<label x="121.92" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="A9-B15" class="0">
 <segment>
@@ -3332,15 +3271,6 @@ Layer: 94 Symbol</description>
 <wire x1="127" y1="165.1" x2="127" y2="185.42" width="0.1524" layer="91"/>
 <junction x="127" y="165.1"/>
 <label x="127" y="185.42" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="12"/>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="12"/>
-<wire x1="111.76" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="88.9" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<junction x="119.38" y="88.9"/>
-<label x="119.38" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="A10-B16" class="0">
@@ -3358,24 +3288,6 @@ Layer: 94 Symbol</description>
 <junction x="124.46" y="167.64"/>
 <label x="124.46" y="185.42" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="13"/>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="13"/>
-<wire x1="132.08" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="91.44" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
-<junction x="116.84" y="91.44"/>
-<label x="116.84" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="1"/>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="60.96" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="60.96" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
-<junction x="50.8" y="60.96"/>
-<label x="50.8" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="A11-B17" class="0">
 <segment>
@@ -3392,30 +3304,12 @@ Layer: 94 Symbol</description>
 <junction x="121.92" y="170.18"/>
 <label x="121.92" y="185.42" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="2"/>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="63.5" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="63.5" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
-<junction x="48.26" y="63.5"/>
-<label x="48.26" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="A22-B28" class="0">
 <segment>
 <pinref part="J22" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="88.9" x2="231.14" y2="88.9" width="0.1524" layer="91"/>
 <label x="231.14" y="88.9" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="13"/>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="13"/>
-<wire x1="33.02" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="91.44" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
-<junction x="38.1" y="91.44"/>
-<label x="38.1" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="A-CONNECTOR-14-UPPER-IN" gate="G$1" pin="10"/>
@@ -3434,15 +3328,6 @@ Layer: 94 Symbol</description>
 <label x="231.14" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="12"/>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="12"/>
-<wire x1="53.34" y1="88.9" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="88.9" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
-<junction x="40.64" y="88.9"/>
-<label x="40.64" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="A-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="9"/>
 <pinref part="A-CONNECTOR-14-UPPER-IN" gate="G$1" pin="9"/>
 <wire x1="33.02" y1="165.1" x2="48.26" y2="165.1" width="0.1524" layer="91"/>
@@ -3459,15 +3344,6 @@ Layer: 94 Symbol</description>
 <label x="231.14" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="11"/>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="11"/>
-<wire x1="33.02" y1="86.36" x2="43.18" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="86.36" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="86.36" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
-<junction x="43.18" y="86.36"/>
-<label x="43.18" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="A-CONNECTOR-14-UPPER-IN" gate="G$1" pin="8"/>
 <pinref part="A-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="8"/>
 <wire x1="53.34" y1="162.56" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
@@ -3482,15 +3358,6 @@ Layer: 94 Symbol</description>
 <pinref part="J19" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="119.38" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
 <label x="231.14" y="119.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="10"/>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="10"/>
-<wire x1="53.34" y1="83.82" x2="45.72" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="83.82" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
-<junction x="45.72" y="83.82"/>
-<label x="45.72" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="A-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="7"/>
@@ -3517,15 +3384,6 @@ Layer: 94 Symbol</description>
 <junction x="38.1" y="157.48"/>
 <label x="38.1" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="9"/>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="9"/>
-<wire x1="33.02" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="81.28" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="81.28" x2="48.26" y2="101.6" width="0.1524" layer="91"/>
-<junction x="48.26" y="81.28"/>
-<label x="48.26" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="A17-B23" class="0">
 <segment>
@@ -3541,15 +3399,6 @@ Layer: 94 Symbol</description>
 <wire x1="40.64" y1="154.94" x2="40.64" y2="137.16" width="0.1524" layer="91"/>
 <junction x="40.64" y="154.94"/>
 <label x="40.64" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="8"/>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="8"/>
-<wire x1="53.34" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="78.74" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
-<junction x="50.8" y="78.74"/>
-<label x="50.8" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="A16-B22" class="0">
@@ -3567,15 +3416,6 @@ Layer: 94 Symbol</description>
 <junction x="43.18" y="152.4"/>
 <label x="43.18" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="7"/>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="7"/>
-<wire x1="33.02" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="76.2" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
-<junction x="35.56" y="76.2"/>
-<label x="35.56" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="A15-B21" class="0">
 <segment>
@@ -3592,15 +3432,6 @@ Layer: 94 Symbol</description>
 <junction x="45.72" y="149.86"/>
 <label x="45.72" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="6"/>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="6"/>
-<wire x1="53.34" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="73.66" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
-<junction x="38.1" y="73.66"/>
-<label x="38.1" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="A14-B20" class="0">
 <segment>
@@ -3616,15 +3447,6 @@ Layer: 94 Symbol</description>
 <wire x1="48.26" y1="147.32" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
 <junction x="48.26" y="147.32"/>
 <label x="48.26" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="5"/>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="5"/>
-<wire x1="33.02" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="71.12" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="71.12" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
-<junction x="40.64" y="71.12"/>
-<label x="40.64" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="A13-B19" class="0">
@@ -3651,15 +3473,6 @@ Layer: 94 Symbol</description>
 <junction x="50.8" y="144.78"/>
 <label x="50.8" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="4"/>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="4"/>
-<wire x1="53.34" y1="68.58" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="68.58" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="68.58" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
-<junction x="43.18" y="68.58"/>
-<label x="43.18" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="A12-B18" class="0">
 <segment>
@@ -3675,15 +3488,6 @@ Layer: 94 Symbol</description>
 <wire x1="119.38" y1="172.72" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
 <junction x="119.38" y="172.72"/>
 <label x="119.38" y="185.42" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="B-CONNECTOR-14-UPPER-OUT" gate="G$1" pin="3"/>
-<pinref part="B-CONNECTOR-14-UPPER-IN" gate="G$1" pin="3"/>
-<wire x1="33.02" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="66.04" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
-<junction x="45.72" y="66.04"/>
-<label x="45.72" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -3709,15 +3513,6 @@ Layer: 94 Symbol</description>
 </net>
 <net name="A3-B9" class="0">
 <segment>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="6"/>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="6"/>
-<wire x1="111.76" y1="73.66" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="73.66" x2="132.08" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="73.66" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
-<junction x="116.84" y="73.66"/>
-<label x="116.84" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
 <pinref part="A-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="3"/>
 <pinref part="A-CONNECTOR-14-LOWER-IN" gate="G$1" pin="3"/>
 <wire x1="111.76" y1="149.86" x2="124.46" y2="149.86" width="0.1524" layer="91"/>
@@ -3733,15 +3528,6 @@ Layer: 94 Symbol</description>
 </segment>
 </net>
 <net name="A2-B8" class="0">
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="5"/>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="5"/>
-<wire x1="132.08" y1="71.12" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="71.12" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
-<junction x="119.38" y="71.12"/>
-<label x="119.38" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
 <segment>
 <pinref part="A-CONNECTOR-14-LOWER-IN" gate="G$1" pin="2"/>
 <pinref part="A-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="2"/>
@@ -3759,15 +3545,6 @@ Layer: 94 Symbol</description>
 </net>
 <net name="A1-B7" class="0">
 <segment>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="4"/>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="4"/>
-<wire x1="111.76" y1="68.58" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="68.58" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
-<junction x="121.92" y="68.58"/>
-<label x="121.92" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
 <pinref part="A-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="1"/>
 <pinref part="A-CONNECTOR-14-LOWER-IN" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="144.78" x2="129.54" y2="144.78" width="0.1524" layer="91"/>
@@ -3780,27 +3557,6 @@ Layer: 94 Symbol</description>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="190.5" x2="200.66" y2="190.5" width="0.1524" layer="91"/>
 <label x="200.66" y="190.5" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="B-PASS1" class="0">
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="3"/>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="3"/>
-<wire x1="132.08" y1="66.04" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="B-PASS2" class="0">
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="2"/>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="B-PASS3" class="0">
-<segment>
-<pinref part="B-CONNECTOR-14-LOWER-IN" gate="G$1" pin="1"/>
-<pinref part="B-CONNECTOR-14-LOWER-OUT" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="60.96" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
