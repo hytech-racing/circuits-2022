@@ -7586,16 +7586,16 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="-114.554" y="-64.262" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="-114.554" y="-64.262" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R39" library="HyTechDevicesTempTSB" package="B20" value="RESISTOR_GND_1.25K" x="40.02410625" y="41.5621" smashed="yes" rot="R180">
-<attribute name="DKPN" value="B20J1K25E-ND" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R39" library="HyTechDevicesTempTSB" package="B20" value="RESISTOR_GND_750" x="40.02410625" y="41.5621" smashed="yes" rot="R180">
+<attribute name="DKPN" value="B20J750E-ND" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Ohmite" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOPN" value="588-B20J1K25E" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="B20J1K25E" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="588-B20J750E" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="B20J750E" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="65.55110625" y="35.8471" size="1.27" layer="21" rot="R180"/>
 <attribute name="POWER" value="20W" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="RESISTANCE" value="1.25k" x="-9.50589375" y="134.2721" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RESISTANCE" value="750" x="-9.50589375" y="134.2721" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="157V" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="122V" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE_MAX" value="750V" x="40.02410625" y="41.5621" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R40" library="HyTechDevicesTempTSB" package="B20" value="RESISTOR_GND_10K" x="145.9133125" y="39.21395625" smashed="yes" rot="R180">
