@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4479,6 +4479,7 @@ Layer: 94 Symbol</description>
 <part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
 <part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
 <part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
+<part name="F4" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
 </parts>
 <sheets>
 <sheet>
@@ -4805,6 +4806,10 @@ OV Falling: 14.4 V</text>
 <attribute name="NAME" x="-69.85" y="46.99" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="-69.85" y="44.45" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="F4" gate="G$1" x="101.6" y="45.72" smashed="yes">
+<attribute name="NAME" x="100.33" y="46.99" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="CURRENT" x="100.33" y="44.45" size="1.27" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4979,7 +4984,7 @@ OV Falling: 14.4 V</text>
 <pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<label x="93.98" y="-55.88" size="1.016" layer="95" xref="yes"/>
+<label x="93.98" y="-55.88" size="1.27" layer="95" xref="yes"/>
 <wire x1="93.98" y1="-55.88" x2="91.44" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 </segment>
@@ -5016,7 +5021,7 @@ OV Falling: 14.4 V</text>
 <junction x="73.66" y="45.72"/>
 <wire x1="91.44" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
 <junction x="91.44" y="45.72"/>
-<label x="96.52" y="45.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="F4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-99.06" y1="83.82" x2="-96.52" y2="83.82" width="0.1524" layer="91"/>
@@ -5025,6 +5030,11 @@ OV Falling: 14.4 V</text>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="-99.06" y1="83.82" x2="-99.06" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-99.06" y="83.82"/>
+</segment>
+<segment>
+<pinref part="F4" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<label x="106.68" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">

@@ -4707,6 +4707,15 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="-19.05" y="-108.11" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-19.05" y="-111.76" size="1.778" layer="27" display="off"/>
 </element>
+<element name="F4" library="HyTechDevices" package="0885" value="FUSE_0885_1.6" x="-19.05" y="-121.92" smashed="yes">
+<attribute name="CURRENT" value="1.6A" x="-19.05" y="-121.92" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="F10987CT-ND" x="-19.05" y="-121.92" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc." x="-19.05" y="-121.92" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="576-088501.6DR" x="-19.05" y="-121.92" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="088501.6DR" x="-19.05" y="-121.92" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-19.05" y="-118.27" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="VOLTAGE" value="500V" x="-19.05" y="-121.92" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -4919,15 +4928,19 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="24.284496875" y1="21.552028125" x2="26.479628125" y2="21.552028125" width="0.4064" layer="1"/>
 <wire x1="25.133428125" y1="20.205828125" x2="26.479628125" y2="21.552028125" width="0.4064" layer="1"/>
 <wire x1="25.133428125" y1="20.205828125" x2="25.310975" y2="20.205828125" width="0.4064" layer="1"/>
-<wire x1="43.423021875" y1="24.6961375" x2="47.176846875" y2="27.558528125" width="0" layer="19" extent="1-1"/>
-<wire x1="31.3944" y1="15.4178" x2="43.423021875" y2="24.6961375" width="0" layer="19" extent="1-1"/>
-<wire x1="21.327440625" y1="16.399840625" x2="31.3944" y2="15.4178" width="0" layer="19" extent="1-1"/>
+<contactref element="F4" pad="1"/>
+<contactref element="F4" pad="2"/>
+<wire x1="-13.8" y1="-121.92" x2="-24.3" y2="-121.92" width="0" layer="19" extent="1-1"/>
+<wire x1="15.56425" y1="6.219278125" x2="-13.8" y2="-121.92" width="0" layer="19" extent="1-1"/>
+<wire x1="14.392496875" y1="11.609228125" x2="14.392496875" y2="11.660028125" width="0" layer="19" extent="1-1"/>
+<wire x1="12.72788125" y1="9.9446125" x2="14.392496875" y2="11.609228125" width="0" layer="19" extent="1-1"/>
+<wire x1="21.327440625" y1="16.399840625" x2="14.392496875" y2="11.660028125" width="0" layer="19" extent="1-1"/>
 <wire x1="24.5098" y1="23.824003125" x2="21.327440625" y2="16.399840625" width="0" layer="19" extent="1-16"/>
 <wire x1="24.509803125" y1="23.824" x2="24.5098" y2="23.824003125" width="0" layer="19" extent="16-16"/>
 <wire x1="21.6916" y1="26.162" x2="24.5098" y2="23.824003125" width="0" layer="19" extent="1-16"/>
-<wire x1="14.392496875" y1="11.660028125" x2="21.327440625" y2="16.399840625" width="0" layer="19" extent="1-1"/>
-<wire x1="14.392496875" y1="11.609228125" x2="14.392496875" y2="11.660028125" width="0" layer="19" extent="1-1"/>
-<wire x1="12.72788125" y1="9.9446125" x2="14.392496875" y2="11.609228125" width="0" layer="19" extent="1-1"/>
+<wire x1="31.3944" y1="15.4178" x2="21.327440625" y2="16.399840625" width="0" layer="19" extent="1-1"/>
+<wire x1="43.423021875" y1="24.6961375" x2="31.3944" y2="15.4178" width="0" layer="19" extent="1-1"/>
+<wire x1="47.176846875" y1="27.558528125" x2="43.423021875" y2="24.6961375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="C10" pad="1"/>
