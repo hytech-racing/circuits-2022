@@ -876,6 +876,88 @@ Toshiba
 <circle x="14.162" y="8.051" radius="2.2" width="0" layer="40"/>
 <circle x="0" y="-16.29" radius="2.2" width="0" layer="40"/>
 </package>
+<package name="2X03">
+<description>0.1" Pitch Pin Header</description>
+<pad name="1" x="-2.54" y="-1.27" drill="1.016" first="yes"/>
+<pad name="2" x="-2.54" y="1.27" drill="1.016"/>
+<pad name="3" x="0" y="-1.27" drill="1.016"/>
+<pad name="4" x="0" y="1.27" drill="1.016"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.016"/>
+<pad name="6" x="2.54" y="1.27" drill="1.016"/>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.905" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.175" y2="0" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="0" x2="-3.175" y2="0" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="0.635" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0" x2="-0.635" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<text x="0" y="2.667" size="0.8128" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<circle x="-3.81" y="-2.54" radius="0.254" width="0" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.175" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="0" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="0" x2="1.905" y2="0" width="0.1524" layer="21"/>
+<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
+<wire x1="-1.905" y1="0" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="0" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<wire x1="3.175" y1="0" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="0" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
+<rectangle x1="-3.81" y1="-2.54" x2="3.81" y2="2.54" layer="39"/>
+<rectangle x1="-3.81" y1="-2.54" x2="3.81" y2="2.54" layer="40"/>
+</package>
+<package name="2X05_SMD">
+<description>&lt;p&gt;AVR ISP 10-pin Header&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://s3.amazonaws.com/catalogspreads-pdf/PAGE112-113%20.100%20MALE%20HDR.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drawings-pdf.s3.amazonaws.com/C10059.pdf"&gt;Footprint&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="6" x="0" y="3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
+<smd name="8" x="2.54" y="3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
+<smd name="7" x="2.54" y="-3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
+<smd name="9" x="5.08" y="-3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
+<smd name="10" x="5.08" y="3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
+<smd name="4" x="-2.54" y="3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
+<smd name="3" x="-2.54" y="-3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="-5.08" y="3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
+<smd name="1" x="-5.08" y="-3.175" dx="5.08" dy="1.27" layer="1" rot="R90"/>
+<wire x1="-6.35" y1="-2.54" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="2.54" x2="6.35" y2="2.54" width="0.127" layer="21"/>
+<wire x1="6.35" y1="2.54" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-2.54" x2="-6.35" y2="2.54" width="0.127" layer="21"/>
+<rectangle x1="-6.604" y1="-6.096" x2="6.604" y2="6.096" layer="39"/>
+<circle x="-7.366" y="-3.175" radius="0.635" width="0" layer="21"/>
+<text x="-6.604" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -1329,6 +1411,23 @@ Toshiba
 <pin name="G" x="-2.54" y="-7.62" length="short" direction="pwr"/>
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="-10.668" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-10.668" x2="8.636" y2="-10.668" width="0.254" layer="94"/>
+</symbol>
+<symbol name="CONNECTOR_AVR_ISP">
+<description>Connector for ISP Header
+&lt;br&gt;
+Note: This is implemented as a mirrored peripheral.</description>
+<wire x1="10.16" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.635" size="1.27" layer="95">&gt;NAME</text>
+<pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
+<pin name="SDI" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="+5V" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="RESET" x="-2.54" y="-12.7" length="short" direction="out"/>
+<pin name="CLK" x="-2.54" y="-5.08" length="short" function="clk"/>
+<pin name="SDO" x="-2.54" y="-7.62" length="short" direction="out"/>
+<text x="0" y="-18.415" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3206,6 +3305,51 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <attribute name="MPN" value="CPT-3011C-120" constant="no"/>
 <attribute name="VOLTAGE" value="12V" constant="no"/>
 <attribute name="VOLUME" value="85dB" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-AVR-ISP_?_*" prefix="J">
+<description>&lt;p&gt;AVR ISP 6-pin Header&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/In-system_programming"&gt;Reference&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_AVR_ISP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X03">
+<connects>
+<connect gate="G$1" pin="+5V" pad="2"/>
+<connect gate="G$1" pin="CLK" pad="3"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="RESET" pad="5"/>
+<connect gate="G$1" pin="SDI" pad="1"/>
+<connect gate="G$1" pin="SDO" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="S2011EC-03-ND"/>
+<attribute name="DPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="2X05_SMD" package="2X05_SMD">
+<connects>
+<connect gate="G$1" pin="+5V" pad="2"/>
+<connect gate="G$1" pin="CLK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4 6 8 10"/>
+<connect gate="G$1" pin="RESET" pad="5"/>
+<connect gate="G$1" pin="SDI" pad="9"/>
+<connect gate="G$1" pin="SDO" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="S2351E-05-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions" constant="no"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="GBC05DABN-M30" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6471,6 +6615,7 @@ visible on the PCB.</text>
 <part name="U5" library="HyTechDevices" deviceset="MCP32S17" device=""/>
 <part name="U4" library="HyTechDevices" deviceset="RE46C100" device=""/>
 <part name="LS1" library="HyTechDevices" deviceset="BUZZER_3_PIN_" device="" technology="CPT-3011C-120"/>
+<part name="J4" library="HyTechDevices" deviceset="CONNECTOR-AVR-ISP_?_*" device="2X05_SMD"/>
 </parts>
 <sheets>
 <sheet>
@@ -7067,6 +7212,10 @@ visible on the PCB.</text>
 <attribute name="NAME" x="162.56" y="71.882" size="1.27" layer="95"/>
 <attribute name="MPN" x="162.56" y="60.198" size="1.27" layer="96" align="top-left"/>
 </instance>
+<instance part="J4" gate="G$1" x="182.88" y="205.74" smashed="yes">
+<attribute name="NAME" x="182.88" y="206.375" size="1.27" layer="95"/>
+<attribute name="MPN" x="182.88" y="187.325" size="1.27" layer="96" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7264,6 +7413,7 @@ visible on the PCB.</text>
 <segment>
 <pinref part="P11" gate="1" pin="GND"/>
 <wire x1="177.8" y1="190.5" x2="180.34" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="P9" gate="1" pin="GND"/>
@@ -7374,6 +7524,7 @@ visible on the PCB.</text>
 <wire x1="180.34" y1="203.2" x2="177.8" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="177.8" y1="203.2" x2="177.8" y2="203.962" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="+5V"/>
 </segment>
 <segment>
 <wire x1="233.68" y1="198.12" x2="236.22" y2="198.12" width="0.1524" layer="91"/>
@@ -8015,6 +8166,7 @@ visible on the PCB.</text>
 <junction x="170.18" y="177.8"/>
 <pinref part="U3" gate="G$1" pin="CLK"/>
 <pinref part="U5" gate="G$1" pin="CLK"/>
+<pinref part="J4" gate="G$1" pin="CLK"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -8031,6 +8183,7 @@ visible on the PCB.</text>
 <junction x="172.72" y="175.26"/>
 <pinref part="U3" gate="G$1" pin="SDO"/>
 <pinref part="U5" gate="G$1" pin="SDO"/>
+<pinref part="J4" gate="G$1" pin="SDO"/>
 </segment>
 </net>
 <net name="N$56" class="0">
@@ -8047,6 +8200,7 @@ visible on the PCB.</text>
 <junction x="175.26" y="172.72"/>
 <pinref part="U3" gate="G$1" pin="SDI"/>
 <pinref part="U5" gate="G$1" pin="SDI"/>
+<pinref part="J4" gate="G$1" pin="SDI"/>
 </segment>
 </net>
 <net name="N$57" class="0">
@@ -8077,6 +8231,7 @@ visible on the PCB.</text>
 <segment>
 <wire x1="180.34" y1="193.04" x2="167.64" y2="193.04" width="0.1524" layer="91"/>
 <label x="167.64" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="G$1" pin="RESET"/>
 </segment>
 </net>
 <net name="N$60" class="0">
@@ -8439,6 +8594,7 @@ visible on the PCB.</text>
 <approved hash="208,1,198.12,137.16,+5V,sup,,,,"/>
 <approved hash="206,1,180.34,175.26,N$23,,,,,"/>
 <approved hash="206,1,180.34,88.9,N$23,,,,,"/>
+<approved hash="206,1,180.34,198.12,N$23,,,,,"/>
 </errors>
 </schematic>
 </drawing>
