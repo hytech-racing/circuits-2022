@@ -9,7 +9,7 @@
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,20 +22,20 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -47,8 +47,8 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -12451,17 +12451,6 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="70.47054375" y1="-55.0926" x2="69.53386875" y2="-54.155925" width="0.1524" layer="1"/>
 <wire x1="69.53386875" y1="-54.155925" x2="69.53386875" y2="-53.848" width="0.1524" layer="1"/>
 <wire x1="70.47054375" y1="-55.0926" x2="71.9546875" y2="-55.0926" width="0.1524" layer="1"/>
-<wire x1="69.53386875" y1="-53.848" x2="69.215" y2="-53.848" width="0.1524" layer="15"/>
-<wire x1="69.215" y1="-53.848" x2="68.4276" y2="-53.0606" width="0.1524" layer="15"/>
-<wire x1="68.4276" y1="-53.0606" x2="68.4276" y2="-46.28970625" width="0.1524" layer="15"/>
-<wire x1="68.4276" y1="-46.28970625" x2="68.9164" y2="-45.80090625" width="0.1524" layer="15"/>
-<via x="68.9164" y="-45.80090625" extent="1-16" drill="0.254"/>
-<wire x1="70.58548125" y1="-43.79071875" x2="68.9164" y2="-45.4598" width="0.1524" layer="1"/>
-<wire x1="68.9164" y1="-45.80090625" x2="68.9164" y2="-45.4598" width="0.1524" layer="1"/>
-<wire x1="70.58548125" y1="-43.79071875" x2="70.58548125" y2="-43.02871875" width="0.1524" layer="1"/>
-<via x="70.58548125" y="-43.02871875" extent="1-16" drill="0.254"/>
-<wire x1="85.0392" y1="-28.575" x2="70.58548125" y2="-43.02871875" width="0.1524" layer="15"/>
-<wire x1="85.0392" y1="-28.575" x2="98.552" y2="-28.575" width="0.1524" layer="15"/>
 <via x="98.552" y="-28.575" extent="1-16" drill="0.254"/>
 <wire x1="102.2865" y1="-26.035" x2="102.2865" y2="-26.3932875" width="0.1524" layer="1"/>
 <wire x1="102.2865" y1="-26.3932875" x2="101.3565875" y2="-27.3232" width="0.1524" layer="1"/>
@@ -12471,6 +12460,15 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="71.9546875" y1="-55.0926" x2="72.9072" y2="-56.0451125" width="0.1524" layer="1"/>
 <wire x1="100.4263" y1="-27.3232" x2="99.1745" y2="-28.575" width="0.1524" layer="1"/>
 <wire x1="98.552" y1="-28.575" x2="99.1745" y2="-28.575" width="0.1524" layer="1"/>
+<wire x1="98.552" y1="-28.575" x2="98.552" y2="-33.528" width="0.1524" layer="15"/>
+<wire x1="71.12" y1="-48.26" x2="83.82" y2="-48.26" width="0.1524" layer="15"/>
+<wire x1="98.552" y1="-33.528" x2="83.82" y2="-48.26" width="0.1524" layer="15"/>
+<wire x1="69.53386875" y1="-53.848" x2="69.53386875" y2="-52.95926875" width="0.1524" layer="15"/>
+<wire x1="69.53386875" y1="-52.95926875" x2="69.55666875" y2="-52.93646875" width="0.1524" layer="15"/>
+<wire x1="69.55666875" y1="-52.93646875" x2="69.55666875" y2="-51.16993125" width="0.1524" layer="15"/>
+<wire x1="69.55666875" y1="-51.16993125" x2="69.5285375" y2="-51.1418" width="0.1524" layer="15"/>
+<wire x1="69.5285375" y1="-51.1418" x2="69.5285375" y2="-49.8514625" width="0.1524" layer="15"/>
+<wire x1="69.5285375" y1="-49.8514625" x2="71.12" y2="-48.26" width="0.1524" layer="15"/>
 </signal>
 <signal name="N$78">
 <contactref element="R38" pad="1"/>
@@ -12560,8 +12558,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="73.2409" y1="-8.5734" x2="73.2409" y2="-8.4836" width="0.1524" layer="1"/>
 <wire x1="73.2409" y1="-8.4836" x2="73.2409" y2="-7.2651" width="0.1524" layer="1"/>
 <via x="68.99786875" y="-52.705" extent="1-16" drill="0.254"/>
-<wire x1="68.99786875" y1="-52.705" x2="68.99786875" y2="-46.80073125" width="0.1524" layer="15"/>
-<wire x1="70.2056" y1="-45.593" x2="68.99786875" y2="-46.80073125" width="0.1524" layer="15"/>
+<wire x1="68.99786875" y1="-52.705" x2="68.99786875" y2="-48.006" width="0.1524" layer="15"/>
+<wire x1="69.0626" y1="-48.006" x2="68.99786875" y2="-48.006" width="0.1524" layer="15"/>
 <wire x1="74.4474" y1="-10.7696" x2="74.4474" y2="-7.9756" width="0.1524" layer="15"/>
 <wire x1="74.4474" y1="-10.7696" x2="67.0306" y2="-18.1864" width="0.1524" layer="15"/>
 <via x="74.4474" y="-7.9756" extent="1-16" drill="0.254"/>
@@ -12575,12 +12573,12 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="70.21243125" y1="-55.3974" x2="71.7594875" y2="-55.3974" width="0.1524" layer="1"/>
 <wire x1="68.99786875" y1="-52.705" x2="68.87346875" y2="-52.8294" width="0.1524" layer="1"/>
 <wire x1="68.87346875" y1="-52.8294" x2="68.87346875" y2="-54.0584375" width="0.1524" layer="1"/>
-<via x="70.2056" y="-45.593" extent="1-16" drill="0.254"/>
+<via x="69.0626" y="-48.006" extent="1-16" drill="0.254"/>
 <via x="70.381965625" y="-42.137165625" extent="1-16" drill="0.254"/>
 <wire x1="71.14428125" y1="-42.79725" x2="70.484196875" y2="-42.137165625" width="0.1524" layer="1"/>
 <wire x1="70.484196875" y1="-42.137165625" x2="70.381965625" y2="-42.137165625" width="0.1524" layer="1"/>
-<wire x1="71.14428125" y1="-44.678975" x2="70.23025625" y2="-45.593" width="0.1524" layer="1"/>
-<wire x1="70.2056" y1="-45.593" x2="70.23025625" y2="-45.593" width="0.1524" layer="1"/>
+<wire x1="71.14428125" y1="-44.678975" x2="69.0626" y2="-46.76065625" width="0.1524" layer="1"/>
+<wire x1="69.0626" y1="-48.006" x2="69.0626" y2="-46.76065625" width="0.1524" layer="1"/>
 <wire x1="71.14428125" y1="-44.678975" x2="71.14428125" y2="-42.79725" width="0.1524" layer="1"/>
 <wire x1="70.381965625" y1="-42.137165625" x2="70.357309375" y2="-42.112509375" width="0.1524" layer="15"/>
 <wire x1="70.357309375" y1="-42.112509375" x2="70.356565625" y2="-42.112509375" width="0.1524" layer="15"/>
