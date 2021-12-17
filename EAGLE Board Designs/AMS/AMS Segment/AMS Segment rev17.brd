@@ -3,36 +3,36 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
 <layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
-<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="yes"/>
 <layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
 <layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
 <layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
-<layer number="11" name="Route11" color="30" fill="1" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="yes"/>
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -210,40 +210,40 @@ Ethan Weinstock
 Based on rev15
 by Arvind Srinivasan
 </text>
-<text x="156.083" y="-69.8754" size="1.1684" layer="21" font="vector" align="bottom-center">IM</text>
-<text x="117.856" y="-69.8754" size="1.1684" layer="21" font="vector" align="bottom-center">IP</text>
-<text x="76.327" y="-42.799" size="1.1684" layer="21" font="vector">DRVU</text>
-<text x="71.755" y="-44.704" size="1.1684" layer="21" font="vector">V+U</text>
-<text x="200.025" y="-60.706" size="1.1684" layer="21" font="vector">DRVL</text>
-<text x="196.088" y="-59.055" size="1.1684" layer="21" font="vector">V+L</text>
-<text x="196.088" y="-17.78" size="1.1684" layer="21" font="vector">V-L</text>
-<text x="194.564" y="-25.273" size="1.1684" layer="21" font="vector">VREGL</text>
-<text x="85.725" y="-18.542" size="1.1684" layer="21" font="vector">V-U</text>
-<text x="84.709" y="-25.273" size="1.1684" layer="21" font="vector">VREGU</text>
+<text x="156.083" y="-69.8754" size="1.016" layer="21" font="vector" align="bottom-center">IM</text>
+<text x="117.856" y="-69.8754" size="1.016" layer="21" font="vector" align="bottom-center">IP</text>
+<text x="76.327" y="-42.799" size="1.016" layer="21" font="vector">DRVU</text>
+<text x="71.755" y="-44.704" size="1.016" layer="21" font="vector">V+U</text>
+<text x="200.025" y="-60.706" size="1.016" layer="21" font="vector">DRVL</text>
+<text x="196.088" y="-59.055" size="1.016" layer="21" font="vector">V+L</text>
+<text x="196.088" y="-17.78" size="1.016" layer="21" font="vector">V-L</text>
+<text x="194.564" y="-25.273" size="1.016" layer="21" font="vector">VREGL</text>
+<text x="85.725" y="-18.542" size="1.016" layer="21" font="vector">V-U</text>
+<text x="84.709" y="-25.273" size="1.016" layer="21" font="vector">VREGU</text>
 <rectangle x1="269.8496" y1="-34.4424" x2="271.1196" y2="-28.0924" layer="22" rot="R90"/>
 <rectangle x1="0" y1="-38.1" x2="6.35" y2="-36.83" layer="22" rot="R180"/>
 <rectangle x1="2.54" y1="-40.64" x2="3.81" y2="-34.29" layer="21"/>
 <wire x1="134.112" y1="-26.162" x2="134.112" y2="-0.254" width="0.508" layer="21" style="shortdash"/>
-<text x="82.55" y="-43.561" size="2.54" layer="21" font="vector">Upper</text>
-<text x="184.658" y="-43.561" size="2.54" layer="21" font="vector">Lower</text>
+<text x="82.55" y="-43.561" size="2.032" layer="21" font="vector">Upper</text>
+<text x="184.658" y="-43.561" size="2.032" layer="21" font="vector">Lower</text>
 <wire x1="118.491" y1="-31.369" x2="118.491" y2="-0.127" width="0.508" layer="22" style="shortdash"/>
 <wire x1="118.491" y1="-0.127" x2="118.364" y2="0" width="0.508" layer="22" style="shortdash"/>
-<text x="157.226" y="-46.609" size="3.81" layer="22" font="vector" rot="MR0">Lower</text>
-<text x="106.68" y="-46.609" size="3.81" layer="22" font="vector" rot="MR0">Upper</text>
+<text x="157.226" y="-46.609" size="2.032" layer="22" font="vector" rot="MR0">Lower</text>
+<text x="99.06" y="-46.609" size="2.032" layer="22" font="vector" rot="MR0">Upper</text>
 <wire x1="105.283" y1="-70.5358" x2="105.283" y2="-67.437" width="0.508" layer="21"/>
 <wire x1="168.529" y1="-70.5358" x2="168.529" y2="-67.437" width="0.508" layer="21"/>
-<text x="110.236" y="-69.85" size="1.27" layer="21" font="vector" align="bottom-center">0</text>
-<text x="103.632" y="-69.85" size="1.27" layer="21" font="vector" align="bottom-center">0</text>
-<text x="173.482" y="-69.85" size="1.27" layer="21" font="vector" align="bottom-center">0</text>
-<text x="166.878" y="-69.85" size="1.27" layer="21" font="vector" align="bottom-center">0</text>
-<text x="170.18" y="-69.85" size="1.27" layer="21" font="vector" align="bottom-center">1</text>
-<text x="163.576" y="-69.85" size="1.27" layer="21" font="vector" align="bottom-center">1</text>
-<text x="106.934" y="-69.85" size="1.27" layer="21" font="vector" align="bottom-center">1</text>
-<text x="100.33" y="-69.85" size="1.27" layer="21" font="vector" align="bottom-center">1</text>
-<text x="108.585" y="-68.58" size="1.27" layer="21" font="vector" align="bottom-center">x2</text>
-<text x="101.981" y="-68.58" size="1.27" layer="21" font="vector" align="bottom-center">x4</text>
-<text x="171.831" y="-68.58" size="1.27" layer="21" font="vector" align="bottom-center">x2</text>
-<text x="165.227" y="-68.58" size="1.27" layer="21" font="vector" align="bottom-center">x4</text>
+<text x="110.236" y="-69.85" size="1.016" layer="21" font="vector" align="bottom-center">0</text>
+<text x="103.632" y="-69.85" size="1.016" layer="21" font="vector" align="bottom-center">0</text>
+<text x="173.482" y="-69.85" size="1.016" layer="21" font="vector" align="bottom-center">0</text>
+<text x="166.878" y="-69.85" size="1.016" layer="21" font="vector" align="bottom-center">0</text>
+<text x="170.18" y="-69.85" size="1.016" layer="21" font="vector" align="bottom-center">1</text>
+<text x="163.576" y="-69.85" size="1.016" layer="21" font="vector" align="bottom-center">1</text>
+<text x="106.934" y="-69.85" size="1.016" layer="21" font="vector" align="bottom-center">1</text>
+<text x="100.33" y="-69.85" size="1.016" layer="21" font="vector" align="bottom-center">1</text>
+<text x="108.585" y="-68.58" size="1.016" layer="21" font="vector" align="bottom-center">x2</text>
+<text x="101.981" y="-68.58" size="1.016" layer="21" font="vector" align="bottom-center">x4</text>
+<text x="171.831" y="-68.58" size="1.016" layer="21" font="vector" align="bottom-center">x2</text>
+<text x="165.227" y="-68.58" size="1.016" layer="21" font="vector" align="bottom-center">x4</text>
 <wire x1="121.6865125" y1="-34.5645125" x2="118.491" y2="-31.369" width="0.508" layer="22" style="shortdash"/>
 <wire x1="127.254" y1="-40.132" x2="125.4554875" y2="-38.3334875" width="0.508" layer="22" style="shortdash"/>
 <wire x1="127.254" y1="-51.7398" x2="127.254" y2="-40.132" width="0.508" layer="22" style="shortdash"/>
@@ -601,7 +601,7 @@ by Arvind Srinivasan
 <wire x1="134.112" y1="-26.162" x2="127.254" y2="-33.02" width="0.508" layer="21" style="shortdash"/>
 <wire x1="127.254" y1="-33.02" x2="127.254" y2="-35.306" width="0.508" layer="21" style="shortdash"/>
 <wire x1="127.254" y1="-54.864" x2="127.254" y2="-66.294" width="0.508" layer="21" style="shortdash"/>
-<text x="119.634" y="-68.834" size="1.778" layer="21" font="vector">isoSPI </text>
+<text x="119.634" y="-68.834" size="2.032" layer="21" font="vector">isoSPI </text>
 <wire x1="121.412" y1="-83.058" x2="115.57" y2="-77.216" width="0.508" layer="21" style="shortdash"/>
 <wire x1="158.496" y1="-77.216" x2="152.4" y2="-83.312" width="0.508" layer="21" style="shortdash"/>
 <wire x1="152.4" y1="-83.312" x2="152.4" y2="-85.598" width="0.508" layer="21" style="shortdash"/>
@@ -611,6 +611,7 @@ by Arvind Srinivasan
 <wire x1="127.254" y1="-66.294" x2="131.318" y2="-66.294" width="0.508" layer="21" style="shortdash"/>
 <wire x1="147.32" y1="-66.294" x2="155.194" y2="-66.294" width="0.508" layer="21" style="shortdash"/>
 <wire x1="155.194" y1="-66.294" x2="158.496" y2="-69.596" width="0.508" layer="21" style="shortdash"/>
+<text x="147.447" y="-68.834" size="2.032" layer="21" font="vector">isoSPI </text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -10996,7 +10997,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <element name="U$6" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="232.791" y="-44.45" smashed="yes"/>
 <element name="U$5" library="HyTechAesthetics" package="HV_0.50&quot;" value="" x="235.077" y="-72.39" smashed="yes"/>
 <element name="U$16" library="HyTechAesthetics" package="HV_1.00&quot;" value="" x="96.52" y="-58.42" smashed="yes"/>
-<element name="U$9" library="HyTechAesthetics" package="HV_1.00&quot;" value="" x="152.4" y="-58.42" smashed="yes"/>
+<element name="U$9" library="HyTechAesthetics" package="HV_1.00&quot;" value="" x="153.67" y="-58.42" smashed="yes"/>
 <element name="U$13" library="HyTechAesthetics" package="DANGER_HIGH_VOLTAGE" value="" x="115.697" y="-36.7665" smashed="yes"/>
 <element name="U$14" library="HyTechAesthetics" package="DANGER_HIGH_VOLTAGE" value="" x="115.57" y="-53.34" smashed="yes"/>
 <element name="R9" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_1K" x="195.326" y="-26.924" smashed="yes">
@@ -11082,8 +11083,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <element name="U$19" library="HyTechAesthetics" package="LOGO_HYTECH_LARGE" value="" x="87.884" y="-51.689" smashed="yes"/>
 <element name="U$10" library="HyTechAesthetics" package="LOGO_GT_MEDIUM" value="" x="151.257" y="-45.085" smashed="yes"/>
 <element name="U$102" library="HyTechAesthetics" package="HV_LARGE" value="" x="115.824" y="-44.196" smashed="yes" rot="MR0"/>
-<element name="U$101" library="HyTechAesthetics" package="HV_LARGE" value="" x="217.424" y="-44.577" smashed="yes" rot="MR0"/>
-<element name="U$103" library="HyTechAesthetics" package="HV_LARGE" value="" x="54.991" y="-43.434" smashed="yes" rot="MR0"/>
+<element name="U$101" library="HyTechAesthetics" package="HV_LARGE" value="" x="217.424" y="-44.196" smashed="yes" rot="MR0"/>
+<element name="U$103" library="HyTechAesthetics" package="HV_LARGE" value="" x="54.991" y="-44.196" smashed="yes" rot="MR0"/>
 <element name="U$26" library="HyTechAesthetics" package="LOGO_HYTECH_SQUARE_EXTRA_LARGE" value="" x="171.45" y="-44.196" smashed="yes" rot="MR0"/>
 <element name="U$27" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="20.574" y="-10.16" smashed="yes" rot="MR0"/>
 <element name="U$28" library="HyTechManufacturing" package="FIDUCIAL_1MM" value="" x="62.992" y="-80.01" smashed="yes" rot="MR0"/>
@@ -14999,7 +15000,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8000000"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
 <mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
