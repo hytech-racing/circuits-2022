@@ -1013,6 +1013,82 @@ visible on the PCB.</text>
 <rectangle x1="-4.445" y1="-4.445" x2="4.445" y2="1.905" layer="39" rot="R180"/>
 <text x="0" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="0885">
+<description>0885 Fuse
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
+<smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
+<smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
+<wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
+<wire x1="-5.43" y1="-2.39" x2="5.43" y2="-2.39" width="0.127" layer="21"/>
+<wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>
+<wire x1="5.43" y1="2.39" x2="-5.43" y2="2.39" width="0.127" layer="21"/>
+<text x="0" y="3.65" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-8.85" y1="-4.415" x2="8.85" y2="4.415" layer="39"/>
+<rectangle x1="-2.45" y1="-4.415" x2="2.45" y2="4.415" layer="43"/>
+<rectangle x1="-2.45" y1="-4.415" x2="2.45" y2="4.415" layer="41"/>
+</package>
+<package name="0603-FUSE">
+<description>0603 Fuse Footprint
+&lt;br&gt;
+&lt;a href="https://datasheets.avx.com/AccuGuard2.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
+<smd name="1" x="-0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
+<text x="0" y="0.635" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
+<rectangle x1="-1.45" y1="-0.75" x2="1.45" y2="0.75" layer="39"/>
+</package>
+<package name="TQFP-32">
+<description>TQFP 32 7x7 mm
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-tqfp/TQFP_32_05-08-1735.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<text x="-5.5" y="5.5" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<circle x="-4.5" y="3.75" radius="0.254" width="0" layer="21"/>
+<smd name="1" x="-4.2" y="2.8" dx="1.55" dy="0.55" layer="1"/>
+<smd name="2" x="-4.2" y="2" dx="1.55" dy="0.55" layer="1"/>
+<smd name="3" x="-4.2" y="1.2" dx="1.55" dy="0.55" layer="1"/>
+<smd name="4" x="-4.2" y="0.4" dx="1.55" dy="0.55" layer="1"/>
+<smd name="5" x="-4.2" y="-0.4" dx="1.55" dy="0.55" layer="1"/>
+<smd name="6" x="-4.2" y="-1.2" dx="1.55" dy="0.55" layer="1"/>
+<smd name="7" x="-4.2" y="-2" dx="1.55" dy="0.55" layer="1"/>
+<smd name="8" x="-4.2" y="-2.8" dx="1.55" dy="0.55" layer="1"/>
+<smd name="9" x="-2.8" y="-4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="10" x="-2" y="-4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="11" x="-1.2" y="-4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="12" x="-0.4" y="-4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="13" x="0.4" y="-4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="14" x="1.2" y="-4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="15" x="2" y="-4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="16" x="2.8" y="-4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="17" x="4.2" y="-2.8" dx="1.55" dy="0.55" layer="1"/>
+<smd name="18" x="4.2" y="-2" dx="1.55" dy="0.55" layer="1"/>
+<smd name="19" x="4.2" y="-1.2" dx="1.55" dy="0.55" layer="1"/>
+<smd name="20" x="4.2" y="-0.4" dx="1.55" dy="0.55" layer="1"/>
+<smd name="21" x="4.2" y="0.4" dx="1.55" dy="0.55" layer="1"/>
+<smd name="22" x="4.2" y="1.2" dx="1.55" dy="0.55" layer="1"/>
+<smd name="23" x="4.2" y="2" dx="1.55" dy="0.55" layer="1"/>
+<smd name="24" x="4.2" y="2.8" dx="1.55" dy="0.55" layer="1"/>
+<smd name="25" x="2.8" y="4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="26" x="2" y="4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="27" x="1.2" y="4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="28" x="0.4" y="4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="29" x="-0.4" y="4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="30" x="-1.2" y="4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="31" x="-2" y="4.2" dx="0.55" dy="1.55" layer="1"/>
+<smd name="32" x="-2.8" y="4.2" dx="0.55" dy="1.55" layer="1"/>
+<rectangle x1="-5.5" y1="-5.5" x2="5.5" y2="5.5" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -1503,6 +1579,56 @@ Note: This is implemented as a mirrored peripheral.</description>
 <pin name="5" x="10.16" y="-12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="6" x="10.16" y="-15.24" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <text x="0" y="-18.415" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="FUSE">
+<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;CURRENT</text>
+<wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="ATMEGA328P-AU">
+<description>ATMEGA328P-TQFP32
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/ATmega48A_PA_88A_PA_168A_PA_328_P_DS_DS40002061B-1900559.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="27.94" y1="0" x2="27.94" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-45.72" x2="0" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="0" y1="-45.72" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="27.94" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-46.482" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="VDD" x="30.48" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="-2.54" y="-43.18" length="short" direction="pwr"/>
+<pin name="8" x="30.48" y="-22.86" length="short" rot="R180"/>
+<pin name="(PWM)9" x="30.48" y="-20.32" length="short" rot="R180"/>
+<pin name="(PWM/CS)10" x="30.48" y="-17.78" length="short" rot="R180"/>
+<pin name="(PWM/SDO)11" x="30.48" y="-15.24" length="short" rot="R180"/>
+<pin name="(SDI)12" x="30.48" y="-12.7" length="short" rot="R180"/>
+<pin name="(CLK)13" x="30.48" y="-10.16" length="short" rot="R180"/>
+<pin name="(XTAL1)14" x="30.48" y="-30.48" length="short" rot="R180"/>
+<pin name="(XTAL2)15" x="30.48" y="-27.94" length="short" rot="R180"/>
+<pin name="14(A0)" x="-2.54" y="-25.4" length="short"/>
+<pin name="15(A1)" x="-2.54" y="-27.94" length="short"/>
+<pin name="16(A2)" x="-2.54" y="-30.48" length="short"/>
+<pin name="17(A3)" x="-2.54" y="-33.02" length="short"/>
+<pin name="18(A4)" x="-2.54" y="-35.56" length="short"/>
+<pin name="19(A5)" x="-2.54" y="-38.1" length="short"/>
+<pin name="22(!RESET!)" x="-2.54" y="-40.64" length="short"/>
+<pin name="0" x="-2.54" y="-2.54" length="short"/>
+<pin name="1" x="-2.54" y="-5.08" length="short"/>
+<pin name="2" x="-2.54" y="-7.62" length="short"/>
+<pin name="3(PWM)" x="-2.54" y="-10.16" length="short"/>
+<pin name="4" x="-2.54" y="-12.7" length="short"/>
+<pin name="5(PWM)" x="-2.54" y="-15.24" length="short"/>
+<pin name="6(PWM)" x="-2.54" y="-17.78" length="short"/>
+<pin name="7" x="-2.54" y="-20.32" length="short"/>
+<pin name="AREF" x="30.48" y="-40.64" length="short" direction="in" rot="R180"/>
+<pin name="AVDD" x="30.48" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="A6" x="30.48" y="-35.56" length="short" rot="R180"/>
+<pin name="A7" x="30.48" y="-38.1" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3465,6 +3591,117 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 <technology name="BLACK">
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MPN" value="105310-1306 "/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE_?_*" prefix="F">
+<description>Fuse
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://datasheets.avx.com/AccuGuard2.pdf"&gt;F0603E Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;0885 Series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0885" package="0885">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="1">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="F10985CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0885001.DR"/>
+<attribute name="MPN" value="0885001.DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
+<technology name="1.25">
+<attribute name="CURRENT" value="1.25A"/>
+<attribute name="DKPN" value="F10986CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-08851.25DR"/>
+<attribute name="MPN" value="08851.25DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
+<technology name="1.6">
+<attribute name="CURRENT" value="1.6A"/>
+<attribute name="DKPN" value="F10987CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-088501.6DR"/>
+<attribute name="MPN" value="088501.6DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
+</technologies>
+</device>
+<device name="0603" package="0603-FUSE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="1.5A" constant="no"/>
+<attribute name="DKPN" value="478-2864-2-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="KYOCERA AVX" constant="no"/>
+<attribute name="MOPN" value="581-F0603E1R50FSTR " constant="no"/>
+<attribute name="MPN" value="F0603E1R50FSTR" constant="no"/>
+<attribute name="VOLTAGE" value="32V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATMEGA328P-AU" prefix="U">
+<description>ATmega328P
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/268/ATmega48A_PA_88A_PA_168A_PA_328_P_DS_DS40002061B-1900559.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ATMEGA328P-AU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFP-32">
+<connects>
+<connect gate="G$1" pin="(CLK)13" pad="17"/>
+<connect gate="G$1" pin="(PWM)9" pad="13"/>
+<connect gate="G$1" pin="(PWM/CS)10" pad="14"/>
+<connect gate="G$1" pin="(PWM/SDO)11" pad="15"/>
+<connect gate="G$1" pin="(SDI)12" pad="16"/>
+<connect gate="G$1" pin="(XTAL1)14" pad="7"/>
+<connect gate="G$1" pin="(XTAL2)15" pad="8"/>
+<connect gate="G$1" pin="0" pad="30"/>
+<connect gate="G$1" pin="1" pad="31"/>
+<connect gate="G$1" pin="14(A0)" pad="23"/>
+<connect gate="G$1" pin="15(A1)" pad="24"/>
+<connect gate="G$1" pin="16(A2)" pad="25"/>
+<connect gate="G$1" pin="17(A3)" pad="26"/>
+<connect gate="G$1" pin="18(A4)" pad="27"/>
+<connect gate="G$1" pin="19(A5)" pad="28"/>
+<connect gate="G$1" pin="2" pad="32"/>
+<connect gate="G$1" pin="22(!RESET!)" pad="29"/>
+<connect gate="G$1" pin="3(PWM)" pad="1"/>
+<connect gate="G$1" pin="4" pad="2"/>
+<connect gate="G$1" pin="5(PWM)" pad="9"/>
+<connect gate="G$1" pin="6(PWM)" pad="10"/>
+<connect gate="G$1" pin="7" pad="11"/>
+<connect gate="G$1" pin="8" pad="12"/>
+<connect gate="G$1" pin="A6" pad="19"/>
+<connect gate="G$1" pin="A7" pad="22"/>
+<connect gate="G$1" pin="AREF" pad="20"/>
+<connect gate="G$1" pin="AVDD" pad="18"/>
+<connect gate="G$1" pin="GND" pad="3 5 21"/>
+<connect gate="G$1" pin="VDD" pad="4 6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="ATMEGA328P-AURCT-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="556-ATMEGA328P-AU"/>
+<attribute name="MPN" value="ATMEGA328P-AU"/>
 </technology>
 </technologies>
 </device>
@@ -6377,66 +6614,6 @@ Layer: 94 Symbol</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="HyTechDevicesTemp">
-<packages>
-<package name="0603-FUSE">
-<description>0603 Fuse (Borrowed Cap datasheets)
-&lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"&gt;Size&lt;/a&gt;</description>
-<smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
-<smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
-<text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FUSE">
-<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94" curve="-180"/>
-<wire x1="-1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-3.81" y="-1.27" size="1.27" layer="96" align="top-right">&gt;CURRENT</text>
-<wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;I2T</text>
-<text x="1.27" y="-1.27" size="1.27" layer="96" align="top-left">&gt;VOLTAGE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FUSE0603" prefix="F">
-<description>0603 Surface Mount Fuse
-&lt;br&gt;&lt;a href="https://datasheets.avx.com/AccuGuard2.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603-FUSE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CURRENT" value="1.5A" constant="no"/>
-<attribute name="DKPN" value="478-2864-2-ND" constant="no"/>
-<attribute name="I2T" value="0.03" constant="no"/>
-<attribute name="MOPN" value="581-F0603E1R50FSTR " constant="no"/>
-<attribute name="MPN" value="F0603E1R50FSTR" constant="no"/>
-<attribute name="VOLTAGE" value="32V" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6563,7 +6740,6 @@ Layer: 94 Symbol</description>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="P23" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="J1" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603"/>
-<part name="F1" library="HyTechDevicesTemp" deviceset="FUSE0603" device=""/>
 <part name="P25" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R18" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -6580,6 +6756,8 @@ Layer: 94 Symbol</description>
 <part name="DN2" library="HyTechDevices" deviceset="TVS_ARRAY_*" device="" technology="5V"/>
 <part name="TH1" library="HyTechSupplies" deviceset="THERMAL" device=""/>
 <part name="RN5" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="100"/>
+<part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="0603"/>
+<part name="U6" library="HyTechDevices" deviceset="ATMEGA328P-AU" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7110,12 +7288,6 @@ Layer: 94 Symbol</description>
 <instance part="J1" gate="G$1" x="226.06" y="160.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="223.52" y="160.02" size="1.27" layer="95" rot="R90"/>
 </instance>
-<instance part="F1" gate="G$1" x="205.74" y="198.12" smashed="yes">
-<attribute name="NAME" x="204.47" y="199.39" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="CURRENT" x="201.93" y="196.85" size="1.27" layer="96" align="top-right"/>
-<attribute name="I2T" x="204.47" y="196.85" size="1.27" layer="96" align="top-center"/>
-<attribute name="VOLTAGE" x="207.01" y="196.85" size="1.27" layer="96" align="top-left"/>
-</instance>
 <instance part="P25" gate="1" x="238.76" y="185.42" smashed="yes">
 <attribute name="VALUE" x="238.76" y="184.15" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -7188,6 +7360,14 @@ Layer: 94 Symbol</description>
 <instance part="RN5" gate="C" x="157.48" y="152.4" smashed="yes">
 <attribute name="NAME" x="156.21" y="153.67" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="156.21" y="151.13" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="F1" gate="G$1" x="205.74" y="198.12" smashed="yes">
+<attribute name="NAME" x="204.47" y="199.39" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="CURRENT" x="204.47" y="196.85" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="U6" gate="G$1" x="104.14" y="241.3" smashed="yes">
+<attribute name="NAME" x="104.14" y="242.062" size="1.27" layer="95"/>
+<attribute name="MPN" x="104.14" y="194.818" size="1.27" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -8212,11 +8392,11 @@ Layer: 94 Symbol</description>
 <pinref part="A1" gate="G$1" pin="TRIM"/>
 </segment>
 </net>
-<net name="N$62" class="0">
+<net name="REG_12V" class="0">
 <segment>
 <wire x1="210.82" y1="198.12" x2="208.28" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="A1" gate="G$1" pin="IN"/>
+<pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$69" class="0">
@@ -8314,7 +8494,7 @@ Layer: 94 Symbol</description>
 <pinref part="RN3" gate="D" pin="2"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="F" class="0">
 <segment>
 <wire x1="99.06" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="1"/>
@@ -8340,7 +8520,7 @@ Layer: 94 Symbol</description>
 <pinref part="LS1" gate="G$1" pin="F"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="G" class="0">
 <segment>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="127" y1="60.96" x2="127" y2="63.5" width="0.1524" layer="91"/>
@@ -8351,7 +8531,7 @@ Layer: 94 Symbol</description>
 <pinref part="LS1" gate="G$1" pin="G"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="M" class="0">
 <segment>
 <pinref part="C14" gate="G$1" pin="1"/>
 <pinref part="C13" gate="G$1" pin="1"/>
@@ -8365,7 +8545,7 @@ Layer: 94 Symbol</description>
 <pinref part="LS1" gate="G$1" pin="M"/>
 </segment>
 </net>
-<net name="N$43" class="0">
+<net name="STATUS_TEENSY" class="0">
 <segment>
 <pinref part="RN11" gate="C" pin="2"/>
 <pinref part="D19" gate="LED" pin="C"/>
@@ -8431,7 +8611,7 @@ Layer: 94 Symbol</description>
 <wire x1="35.56" y1="144.78" x2="38.1" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="STATUS_12V" class="0">
 <segment>
 <pinref part="D17" gate="LED" pin="C"/>
 <pinref part="RN11" gate="B" pin="1"/>
