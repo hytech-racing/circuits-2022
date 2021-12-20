@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -4328,7 +4328,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="31" y1="30.48" x2="29.845" y2="30.48" width="0.254" layer="1"/>
 <via x="29.845" y="30.48" extent="1-16" drill="0.35"/>
 <wire x1="-2.805" y1="17.075" x2="-2.805" y2="16.275" width="0.254" layer="1"/>
-<wire x1="20.56" y1="21.235" x2="20.32" y2="21.475" width="0.254" layer="1"/>
 <wire x1="6.28" y1="21.96" x2="6.35" y2="21.89" width="0.254" layer="1"/>
 <via x="19.685" y="36.83" extent="1-16" drill="0.35"/>
 <via x="27.305" y="37.465" extent="1-16" drill="0.35"/>
@@ -4417,7 +4416,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="18.415" y1="21.475" x2="17.665" y2="21.475" width="0.254" layer="1"/>
 <wire x1="17.665" y1="21.475" x2="17.145" y2="20.955" width="0.254" layer="1"/>
 <via x="17.145" y="20.955" extent="1-16" drill="0.35"/>
-<wire x1="20.32" y1="21.475" x2="19.59365" y2="22.20135" width="0.254" layer="1"/>
 <wire x1="19.59365" y1="22.20135" x2="19.38195" y2="22.20135" width="0.254" layer="1"/>
 <via x="19.38195" y="22.20135" extent="1-16" drill="0.35"/>
 <wire x1="19.685" y1="37.985" x2="19.685" y2="36.83" width="0.254" layer="1"/>
@@ -4534,6 +4532,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="57.725" y1="24.51" x2="57.725" y2="26.476" width="0.254" layer="1"/>
 <wire x1="57.725" y1="26.476" x2="57.7088" y2="26.4922" width="0.254" layer="1"/>
 <via x="57.7088" y="26.4922" extent="1-16" drill="0.35"/>
+<wire x1="20.32" y1="21.475" x2="19.59365" y2="22.20135" width="0.254" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="R9" pad="1"/>
@@ -5917,6 +5916,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <approved hash="21,19,45b447b5c7b5c5b4"/>
 <approved hash="21,19,f0ccf2cef2cef0cc"/>
 <approved hash="21,19,b64ab448b448b64a"/>
+<approved hash="21,19,c62ec42d442d462e"/>
 </errors>
 </board>
 </drawing>

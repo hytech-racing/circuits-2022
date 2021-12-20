@@ -7196,8 +7196,8 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="43.815" y="36.83" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="47.625" y="36.83" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="TH1" gate="G$1" x="26.67" y="12.7" smashed="yes">
-<attribute name="VALUE" x="27.94" y="10.795" size="1.27" layer="96" align="top-center"/>
+<instance part="TH1" gate="G$1" x="25.4" y="12.7" smashed="yes">
+<attribute name="VALUE" x="26.67" y="10.795" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="RN5" gate="A" x="142.24" y="157.48" smashed="yes">
 <attribute name="NAME" x="140.97" y="158.75" size="1.27" layer="95" align="bottom-center"/>
@@ -8483,38 +8483,38 @@ Layer: 94 Symbol</description>
 <wire x1="31.75" y1="45.72" x2="31.75" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="D9" gate="G$1" pin="THERMAL"/>
 <pinref part="TH1" gate="G$1" pin="TH"/>
-<wire x1="27.94" y1="15.24" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="17.78" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="43.18" x2="31.75" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="43.18" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
-<junction x="27.94" y="43.18"/>
+<wire x1="26.67" y1="15.24" x2="26.67" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="17.78" x2="26.67" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="43.18" x2="31.75" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="43.18" x2="26.67" y2="60.96" width="0.1524" layer="91"/>
+<junction x="26.67" y="43.18"/>
 <wire x1="31.75" y1="63.5" x2="31.75" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="D11" gate="G$1" pin="THERMAL"/>
-<wire x1="27.94" y1="60.96" x2="31.75" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="60.96" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
-<junction x="27.94" y="60.96"/>
+<wire x1="26.67" y1="60.96" x2="31.75" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="60.96" x2="26.67" y2="78.74" width="0.1524" layer="91"/>
+<junction x="26.67" y="60.96"/>
 <wire x1="31.75" y1="81.28" x2="31.75" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="D10" gate="G$1" pin="THERMAL"/>
-<wire x1="27.94" y1="78.74" x2="31.75" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="78.74" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
-<junction x="27.94" y="78.74"/>
+<wire x1="26.67" y1="78.74" x2="31.75" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="78.74" x2="26.67" y2="96.52" width="0.1524" layer="91"/>
+<junction x="26.67" y="78.74"/>
 <wire x1="31.75" y1="99.06" x2="31.75" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="D8" gate="G$1" pin="THERMAL"/>
-<wire x1="27.94" y1="96.52" x2="31.75" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="96.52" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
-<junction x="27.94" y="96.52"/>
+<wire x1="26.67" y1="96.52" x2="31.75" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="96.52" x2="26.67" y2="114.3" width="0.1524" layer="91"/>
+<junction x="26.67" y="96.52"/>
 <wire x1="31.75" y1="116.84" x2="31.75" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="D13" gate="G$1" pin="THERMAL"/>
-<wire x1="27.94" y1="114.3" x2="31.75" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="114.3" x2="27.94" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="132.08" x2="31.75" y2="132.08" width="0.1524" layer="91"/>
-<junction x="27.94" y="114.3"/>
+<wire x1="26.67" y1="114.3" x2="31.75" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="114.3" x2="26.67" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="132.08" x2="31.75" y2="132.08" width="0.1524" layer="91"/>
+<junction x="26.67" y="114.3"/>
 <pinref part="D4" gate="G$1" pin="THERMAL"/>
 <wire x1="31.75" y1="134.62" x2="31.75" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="31.75" y1="20.32" x2="31.75" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="D12" gate="G$1" pin="THERMAL"/>
-<wire x1="31.75" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
-<junction x="27.94" y="17.78"/>
+<wire x1="31.75" y1="17.78" x2="26.67" y2="17.78" width="0.1524" layer="91"/>
+<junction x="26.67" y="17.78"/>
 </segment>
 </net>
 <net name="N$45" class="0">
@@ -8566,8 +8566,6 @@ Layer: 94 Symbol</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,134.62,167.64,U1,VDD,+5V,,,"/>
-<approved hash="104,1,134.62,170.18,U1,AVDD,N$60,,,"/>
 <approved hash="104,1,264.16,116.84,D1,VDD,+5V,,,"/>
 <approved hash="104,1,264.16,180.34,U2,VDD,+5V,,,"/>
 <approved hash="104,1,264.16,177.8,U2,VIO,+5V,,,"/>
@@ -8577,9 +8575,7 @@ Layer: 94 Symbol</description>
 <approved hash="202,1,180.34,154.94,U3,!TX2RTS,,,,"/>
 <approved hash="104,1,205.74,119.38,U5,VDD,+5V,,,"/>
 <approved hash="104,1,124.46,73.66,U4,VDD,+12V,,,"/>
-<approved hash="104,1,160.02,68.58,LS1,M,N$30,,,"/>
-<approved hash="104,1,160.02,63.5,LS1,G,N$29,,,"/>
-<approved hash="208,1,86.36,134.62,+5V,sup,,,,"/>
+<approved hash="208,1,78.74,129.54,+5V,sup,,,,"/>
 <approved hash="208,1,264.16,203.2,+5V,sup,,,,"/>
 <approved hash="208,1,256.54,142.24,+5V,sup,,,,"/>
 <approved hash="208,1,210.82,93.98,+5V,sup,,,,"/>
