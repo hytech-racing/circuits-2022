@@ -569,12 +569,13 @@ chip</description>
 <wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
 <rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
 </package>
-<package name="TEST_POINT">
-<circle x="0" y="0" radius="1.5875" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.6002" rot="R90"/>
-</package>
 <package name="MICRO_MINIATURE">
-<smd name="P$1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
+<description>Keystone Micro-Miniature SMD Test Point
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/215/015-744075.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
 </package>
 <package name="DPAK(2-7K1S)">
 <description>DPAK(2-7K1S)
@@ -1026,8 +1027,10 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <text x="-4.318" y="-2.286" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="TEST_POINT">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
+<circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.54" y="1.778" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-1.778" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="RESISTOR">
 <pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
@@ -2137,26 +2140,24 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEST_POINT">
-<description>Keystone Electronics Test Point 5005</description>
+<deviceset name="TEST_POINT" prefix="TP">
+<description>Test Point
+&lt;br&gt;</description>
 <gates>
-<gate name="G$1" symbol="TEST_POINT" x="-5.08" y="0"/>
+<gate name="G$1" symbol="TEST_POINT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TEST_POINT">
+<device name="" package="MICRO_MINIATURE">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MICRO_MINIATURE" package="MICRO_MINIATURE">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="36-5015CT-ND"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics"/>
+<attribute name="MOPN" value="534-5015"/>
+<attribute name="MPN" value="5015"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5529,10 +5530,9 @@ Layer: 94 Symbol</description>
 <part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR_SENSE" device=""/>
 <part name="C1" library="HyTechDevices" deviceset="CAPACITOR_POLARIZED" device=""/>
-<part name="U$7" library="HyTechDevices" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
-<part name="U$8" library="HyTechDevices" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
-<part name="U$9" library="HyTechDevices" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
-<part name="U$10" library="HyTechDevices" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
+<part name="U$7" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="U$8" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="U$9" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="LED9" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED" value="RED"/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="0603" value="10k"/>
 <part name="LED7" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED" value="RED"/>
@@ -5547,7 +5547,7 @@ Layer: 94 Symbol</description>
 <part name="Q4" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
 <part name="Q3" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
 <part name="RN2" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10K"/>
-<part name="U$11" library="HyTechDevices" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
+<part name="U$11" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
 <part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
 <part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
@@ -5563,6 +5563,7 @@ Layer: 94 Symbol</description>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
 <part name="C6" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_68NF"/>
 <part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_68NF"/>
+<part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5760,10 +5761,9 @@ OV Rising: 15.96 V</text>
 <instance part="C1" gate="G$1" x="83.82" y="38.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="86.36" y="39.37" size="1.27" layer="95" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="U$7" gate="G$1" x="10.16" y="10.16" smashed="yes" rot="R270"/>
-<instance part="U$8" gate="G$1" x="53.34" y="-55.88" smashed="yes" rot="R270"/>
-<instance part="U$9" gate="G$1" x="60.96" y="5.08" smashed="yes"/>
-<instance part="U$10" gate="G$1" x="-17.78" y="10.16" smashed="yes" rot="R270"/>
+<instance part="U$7" gate="G$1" x="10.16" y="10.16" smashed="yes" rot="R90"/>
+<instance part="U$8" gate="G$1" x="53.34" y="-55.88" smashed="yes" rot="R90"/>
+<instance part="U$9" gate="G$1" x="60.96" y="5.08" smashed="yes" rot="R180"/>
 <instance part="LED9" gate="LED" x="-60.96" y="10.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-59.436" y="14.732" size="1.27" layer="95" rot="R270" align="top-center"/>
 <attribute name="NAME" x="-60.452" y="7.874" size="1.27" layer="96" rot="R270" align="bottom-center"/>
@@ -5827,7 +5827,7 @@ OV Rising: 15.96 V</text>
 <attribute name="NAME" x="100.33" y="-8.89" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="100.33" y="-11.43" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="U$11" gate="G$1" x="-25.4" y="-58.42" smashed="yes" rot="R270"/>
+<instance part="U$11" gate="G$1" x="-25.4" y="-55.88" smashed="yes" rot="R90"/>
 <instance part="F1" gate="G$1" x="-109.22" y="27.94" smashed="yes">
 <attribute name="NAME" x="-110.49" y="29.21" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="-110.49" y="26.67" size="1.27" layer="96" align="top-center"/>
@@ -5897,6 +5897,10 @@ OV Rising: 15.96 V</text>
 <attribute name="NAME" x="22.86" y="-52.07" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="27.94" y="-52.07" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="29.718" y="-52.07" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="TP1" gate="G$1" x="-17.78" y="10.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="-19.558" y="7.62" size="1.27" layer="95" rot="R90"/>
+<attribute name="MPN" x="-16.002" y="7.62" size="1.27" layer="95" rot="R90" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -5968,7 +5972,7 @@ OV Rising: 15.96 V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="U$11" gate="G$1" pin="P$1"/>
-<wire x1="-25.4" y1="-55.88" x2="-25.4" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-53.34" x2="-25.4" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="-50.8" x2="-20.32" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="-50.8" x2="-20.32" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -6310,11 +6314,11 @@ OV Rising: 15.96 V</text>
 <junction x="-12.7" y="7.366"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
-<pinref part="U$10" gate="G$1" pin="P$1"/>
 <wire x1="-17.78" y1="12.7" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="15.24" x2="-12.7" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-12.7" y="15.24"/>
 <pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="TP1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="SENSE" class="0">
