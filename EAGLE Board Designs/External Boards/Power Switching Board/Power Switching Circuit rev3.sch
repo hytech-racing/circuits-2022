@@ -516,12 +516,16 @@ chip</description>
 &lt;br&gt;
 &lt;a href="https://www.vishay.com/docs/30131/wsl2726.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;</description>
-<smd name="1" x="-2.4638" y="-1.524" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
-<smd name="2" x="2.4638" y="-1.524" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
-<smd name="3" x="-2.4638" y="2.6035" dx="2.4384" dy="0.889" layer="1" rot="R180"/>
-<smd name="4" x="2.4638" y="2.6035" dx="2.4384" dy="0.889" layer="1" rot="R180"/>
-<text x="-3.81" y="3.429" size="1.143" layer="21">&gt;NAME</text>
-<text x="-3.81" y="-5.842" size="1.143" layer="21">&gt;VALUE</text>
+<smd name="1" x="-2.4638" y="-0.9525" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
+<smd name="2" x="2.4638" y="-0.9525" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
+<smd name="3" x="-2.4638" y="3.175" dx="2.4384" dy="0.889" layer="1" rot="R180"/>
+<smd name="4" x="2.4638" y="3.175" dx="2.4384" dy="0.889" layer="1" rot="R180"/>
+<text x="0" y="4.064" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-3.4544" y1="3.302" x2="3.4544" y2="3.302" width="0.127" layer="21"/>
+<wire x1="3.4544" y1="3.302" x2="3.4544" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="3.4544" y1="-3.302" x2="-3.4544" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-3.4544" y1="-3.302" x2="-3.4544" y2="3.302" width="0.127" layer="21"/>
+<rectangle x1="-4.064" y1="-4.064" x2="4.064" y2="4.064" layer="39"/>
 </package>
 <package name="EEE-FK1H681AM">
 <smd name="P$1" x="0" y="6.5000125" dx="6.499859375" dy="2.49986875" layer="1" rot="R90"/>
@@ -980,10 +984,11 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="RESISTOR_SENSE">
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<text x="1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;RESISTANCE</text>
+<description>Resistor with sense connections</description>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<text x="1.27" y="2.794" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="1.27" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;RESISTANCE</text>
 <wire x1="3.175" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
 <wire x1="0.9525" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
 <wire x1="-0.3175" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
@@ -993,9 +998,8 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <wire x1="-0.3175" y1="1.016" x2="-0.635" y2="0" width="0.1524" layer="94"/>
 <wire x1="3.175" y1="0" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<text x="1.27" y="-3.302" size="1.27" layer="96" align="top-center">&gt;MPN</text>
-<pin name="3" x="-1.016" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="4" x="3.556" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="4" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="CAPACITOR_POLARIZED">
 <wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
@@ -2128,8 +2132,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR_SENSE">
-<description>Sense Resistor</description>
+<deviceset name="RESISTOR_SENSE_*" prefix="R">
+<description>Sense Resistor
+&lt;br&gt;
+&lt;a href="https://www.vishay.com/docs/30131/wsl2726.pdf"&gt;Vishay WSL2726&lt;/a&gt;
+&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR_SENSE" x="0" y="0"/>
 </gates>
@@ -2142,9 +2149,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MPN" value="WSL2726" constant="no"/>
-<attribute name="RESISTANCE" value="0.0013" constant="no"/>
+<technology name="0.0013">
+<attribute name="DKPN" value="541-WSL27261L300FEACT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale"/>
+<attribute name="MOPN" value="71-WSL27261L300FEA"/>
+<attribute name="MPN" value="WSL27261L300FEA"/>
+<attribute name="POWER" value="3W"/>
+<attribute name="RESISTANCE" value="1.3mΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="0.0624V"/>
 </technology>
 </technologies>
 </device>
@@ -5619,7 +5632,7 @@ Layer: 94 Symbol</description>
 <part name="J3" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="SOURIAU"/>
 <part name="J1" library="HyTechDevices" deviceset="CONNECTOR-3_?" device=""/>
 <part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR_SENSE" device=""/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR_SENSE_*" device="" technology="0.0013"/>
 <part name="C1" library="HyTechDevices" deviceset="CAPACITOR_POLARIZED" device=""/>
 <part name="U$7" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="U$8" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
@@ -5632,7 +5645,7 @@ Layer: 94 Symbol</description>
 <part name="GND14" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED8" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED" value="RED"/>
 <part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0603" value="10k"/>
-<part name="R19" library="HyTechDevices" deviceset="RESISTOR_SENSE" device=""/>
+<part name="R19" library="HyTechDevices" deviceset="RESISTOR_SENSE_*" device="" technology="0.0013"/>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
 <part name="Q2" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
 <part name="Q4" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
@@ -6456,7 +6469,7 @@ OV Rising: 15.96 V</text>
 <pinref part="U1" gate="G$1" pin="SENSE1"/>
 <wire x1="30.48" y1="5.08" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="4"/>
-<wire x1="34.544" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6536,7 +6549,7 @@ OV Rising: 15.96 V</text>
 <pinref part="U1" gate="G$1" pin="SENSE2"/>
 <wire x1="33.02" y1="5.08" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="3"/>
-<wire x1="33.02" y1="22.86" x2="34.544" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -6544,7 +6557,7 @@ OV Rising: 15.96 V</text>
 <pinref part="U1" gate="G$1" pin="OUT2"/>
 <wire x1="40.64" y1="5.08" x2="40.64" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="4"/>
-<wire x1="40.64" y1="22.86" x2="39.116" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -6554,7 +6567,7 @@ OV Rising: 15.96 V</text>
 <wire x1="38.1" y1="40.64" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="40.64" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="3"/>
-<wire x1="40.64" y1="48.26" x2="39.116" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
