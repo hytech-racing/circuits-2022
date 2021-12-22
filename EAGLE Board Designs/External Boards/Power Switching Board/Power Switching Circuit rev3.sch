@@ -757,6 +757,26 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="1/8_BRICK">
+<description>1/8 Brick footprint as used by UWE-12/10-Q48NB-C DC/DC converter
+&lt;br&gt;
+&lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="1" x="-25.4" y="7.62" drill="1.2192" first="yes"/>
+<pad name="2" x="-25.4" y="0" drill="1.2192"/>
+<pad name="3" x="-25.4" y="-7.62" drill="1.2192"/>
+<pad name="4" x="25.4" y="-7.62" drill="1.778"/>
+<pad name="5" x="25.4" y="-3.81" drill="1.2192"/>
+<pad name="6" x="25.4" y="0" drill="1.2192"/>
+<pad name="7" x="25.4" y="3.81" drill="1.2192"/>
+<pad name="8" x="25.4" y="7.62" drill="1.778"/>
+<wire x1="-29.21" y1="11.684" x2="-29.21" y2="-11.176" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-29.21" y1="-11.176" x2="29.21" y2="-11.176" width="0.127" layer="21" style="shortdash"/>
+<wire x1="29.21" y1="-11.176" x2="29.21" y2="11.684" width="0.127" layer="21" style="shortdash"/>
+<wire x1="29.21" y1="11.684" x2="-29.21" y2="11.684" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-27.94" y1="-10.16" x2="27.94" y2="10.16" layer="39"/>
+<rectangle x1="-27.94" y1="-10.16" x2="27.94" y2="10.16" layer="40"/>
+<text x="0" y="12.7" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC4421">
@@ -1074,6 +1094,25 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="UWE-100-120W">
+<description>UWE-100-120W Wide Input, Isolated Eighth-Brick DC/DC Converters
+&lt;br&gt;
+&lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
+<pin name="+VIN" x="-2.54" y="-2.54" length="short" direction="in"/>
+<pin name="!ON/OFF" x="-2.54" y="-17.78" length="short" direction="in"/>
+<pin name="-VIN" x="-2.54" y="-10.16" length="short" direction="in"/>
+<pin name="-VOUT" x="25.4" y="-22.86" length="short" direction="out" rot="R180"/>
+<pin name="-SENSE" x="25.4" y="-17.78" length="short" direction="in" rot="R180"/>
+<pin name="TRIM" x="25.4" y="-12.7" length="short" direction="in" rot="R180"/>
+<pin name="+SENSE" x="25.4" y="-7.62" length="short" direction="in" rot="R180"/>
+<pin name="+VOUT" x="25.4" y="-2.54" length="short" direction="out" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="22.86" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-25.4" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-26.162" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2319,6 +2358,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="1">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="F10985CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0885001.DR"/>
+<attribute name="MPN" value="0885001.DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
 <technology name="1.25">
 <attribute name="CURRENT" value="1.25A"/>
 <attribute name="DKPN" value="F10986CT-ND"/>
@@ -2675,6 +2722,36 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <attribute name="MANUFACTURER" value="Crydom"/>
 <attribute name="MOPN" value="558-CMX60D20"/>
 <attribute name="MPN" value="CMX60D20"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UWE-*">
+<description>UWE-100-120W Series Wide Input, Isolated Eighth-Brick DCDC Converters
+&lt;br&gt;
+&lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
+<gates>
+<gate name="G$1" symbol="UWE-100-120W" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1/8_BRICK">
+<connects>
+<connect gate="G$1" pin="!ON/OFF" pad="2"/>
+<connect gate="G$1" pin="+SENSE" pad="7"/>
+<connect gate="G$1" pin="+VIN" pad="1"/>
+<connect gate="G$1" pin="+VOUT" pad="8"/>
+<connect gate="G$1" pin="-SENSE" pad="5"/>
+<connect gate="G$1" pin="-VIN" pad="3"/>
+<connect gate="G$1" pin="-VOUT" pad="4"/>
+<connect gate="G$1" pin="TRIM" pad="6"/>
+</connects>
+<technologies>
+<technology name="12/10-Q48NB-C">
+<attribute name="DKPN" value="811-2616-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-UWE-12/10-Q48NBC"/>
+<attribute name="MPN" value="UWE-12/10-Q48NB-C"/>
 </technology>
 </technologies>
 </device>
@@ -5579,6 +5656,10 @@ Layer: 94 Symbol</description>
 <part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_68NF"/>
 <part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="U$10" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO_?*" device="" technology="CMX60D20"/>
+<part name="U$12" library="HyTechDevices" deviceset="UWE-*" device="" technology="12/10-Q48NB-C"/>
+<part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
+<part name="GND15" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.1UF"/>
 </parts>
 <sheets>
 <sheet>
@@ -5917,6 +5998,22 @@ OV Rising: 15.96 V</text>
 <attribute name="NAME" x="-111.76" y="28.702" size="1.27" layer="95"/>
 <attribute name="MPN" x="-111.76" y="14.478" size="1.27" layer="96" align="top-left"/>
 </instance>
+<instance part="U$12" gate="G$1" x="48.26" y="93.98" smashed="yes">
+<attribute name="NAME" x="48.26" y="94.742" size="1.27" layer="95"/>
+<attribute name="MPN" x="48.26" y="67.818" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="F6" gate="G$1" x="35.56" y="91.44" smashed="yes">
+<attribute name="NAME" x="34.29" y="92.71" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="CURRENT" x="34.29" y="90.17" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="GND15" gate="1" x="58.42" y="60.96" smashed="yes">
+<attribute name="VALUE" x="55.88" y="58.42" size="1.778" layer="96"/>
+</instance>
+<instance part="C11" gate="G$1" x="43.18" y="86.36" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.72" y="87.63" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VOLTAGE" x="40.64" y="87.63" size="1.27" layer="96" rot="R270" align="top-center"/>
+<attribute name="CAPACITANCE" x="38.862" y="87.63" size="1.27" layer="96" rot="R270" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6018,6 +6115,25 @@ OV Rising: 15.96 V</text>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="-114.3" y1="17.78" x2="-121.92" y2="17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$12" gate="G$1" pin="-VIN"/>
+<pinref part="U$12" gate="G$1" pin="!ON/OFF"/>
+<wire x1="45.72" y1="76.2" x2="45.72" y2="83.82" width="0.1524" layer="91"/>
+<junction x="45.72" y="83.82"/>
+<wire x1="45.72" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="43.18" y1="83.82" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="63.5" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
+<junction x="43.18" y="83.82"/>
+<pinref part="U$12" gate="G$1" pin="-VOUT"/>
+<pinref part="U$12" gate="G$1" pin="-SENSE"/>
+<wire x1="73.66" y1="71.12" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="63.5" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="63.5" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
+<junction x="58.42" y="63.5"/>
+<junction x="73.66" y="71.12"/>
+</segment>
 </net>
 <net name="BATTERY" class="0">
 <segment>
@@ -6029,9 +6145,9 @@ OV Rising: 15.96 V</text>
 <junction x="-99.06" y="78.74"/>
 </segment>
 <segment>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="-91.44" y1="7.62" x2="-91.44" y2="5.08" width="0.1524" layer="91"/>
-<label x="-91.44" y="5.08" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="F6" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="91.44" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
+<label x="27.94" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DCDC" class="0">
@@ -6585,6 +6701,31 @@ OV Rising: 15.96 V</text>
 <pinref part="U$10" gate="G$1" pin="CONTACT1"/>
 <pinref part="F1" gate="G$1" pin="2"/>
 <wire x1="-91.44" y1="15.24" x2="-91.44" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U$12" gate="G$1" pin="+VIN"/>
+<wire x1="45.72" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="F6" gate="G$1" pin="2"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+<junction x="43.18" y="91.44"/>
+</segment>
+</net>
+<net name="CONVERTER" class="0">
+<segment>
+<pinref part="U$12" gate="G$1" pin="+VOUT"/>
+<wire x1="73.66" y1="91.44" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
+<label x="83.82" y="91.44" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$12" gate="G$1" pin="+SENSE"/>
+<wire x1="73.66" y1="86.36" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
+<junction x="73.66" y="91.44"/>
+</segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="-91.44" y1="7.62" x2="-91.44" y2="5.08" width="0.1524" layer="91"/>
+<label x="-91.44" y="5.08" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>

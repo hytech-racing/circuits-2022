@@ -562,6 +562,26 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="39"/>
 <text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="1/8_BRICK">
+<description>1/8 Brick footprint as used by UWE-12/10-Q48NB-C DC/DC converter
+&lt;br&gt;
+&lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="1" x="-25.4" y="7.62" drill="1.2192" first="yes"/>
+<pad name="2" x="-25.4" y="0" drill="1.2192"/>
+<pad name="3" x="-25.4" y="-7.62" drill="1.2192"/>
+<pad name="4" x="25.4" y="-7.62" drill="1.778"/>
+<pad name="5" x="25.4" y="-3.81" drill="1.2192"/>
+<pad name="6" x="25.4" y="0" drill="1.2192"/>
+<pad name="7" x="25.4" y="3.81" drill="1.2192"/>
+<pad name="8" x="25.4" y="7.62" drill="1.778"/>
+<wire x1="-29.21" y1="11.684" x2="-29.21" y2="-11.176" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-29.21" y1="-11.176" x2="29.21" y2="-11.176" width="0.127" layer="21" style="shortdash"/>
+<wire x1="29.21" y1="-11.176" x2="29.21" y2="11.684" width="0.127" layer="21" style="shortdash"/>
+<wire x1="29.21" y1="11.684" x2="-29.21" y2="11.684" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-27.94" y1="-10.16" x2="27.94" y2="10.16" layer="39"/>
+<rectangle x1="-27.94" y1="-10.16" x2="27.94" y2="10.16" layer="40"/>
+<text x="0" y="12.7" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="HyTechDevices - Copy">
@@ -4961,6 +4981,32 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="MPN" value="CMX60D20" x="-10.16" y="-471.17" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-10.16" y="-467.36" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
+<element name="U$12" library="HyTechDevices" package="1/8_BRICK" value="UWE-12/10-Q48NB-C" x="1.27" y="-488.95" smashed="yes">
+<attribute name="DKPN" value="811-2616-ND" x="1.27" y="-488.95" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc." x="1.27" y="-488.95" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="580-UWE-12/10-Q48NBC" x="1.27" y="-488.95" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="UWE-12/10-Q48NB-C" x="1.27" y="-488.95" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="1.27" y="-476.25" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+</element>
+<element name="F6" library="HyTechDevices" package="0885" value="FUSE_0885_1.6" x="-19.05" y="-505.46" smashed="yes">
+<attribute name="CURRENT" value="1.6A" x="-19.05" y="-505.46" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="F10987CT-ND" x="-19.05" y="-505.46" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc." x="-19.05" y="-505.46" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="576-088501.6DR" x="-19.05" y="-505.46" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="088501.6DR" x="-19.05" y="-505.46" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-19.05" y="-501.81" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="VOLTAGE" value="500V" x="-19.05" y="-505.46" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C11" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_25V_0.1UF" x="-25.4" y="-511.81" smashed="yes">
+<attribute name="CAPACITANCE" value="0.1µF" x="-25.4" y="-511.81" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="1276-1006-1-ND" x="-25.4" y="-511.81" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics" x="-25.4" y="-511.81" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="187-CL10B104KA8NNNC" x="-25.4" y="-511.81" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CL10B104KA8NNNC" x="-25.4" y="-511.81" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-25.4" y="-511.06" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="TOLERANCE" value="10%" x="-25.4" y="-511.81" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="25V" x="-25.4" y="-511.81" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -5035,7 +5081,17 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C6" pad="2"/>
 <contactref element="C9" pad="2"/>
 <contactref element="U$10" pad="4"/>
+<contactref element="U$12" pad="3"/>
+<contactref element="C11" pad="1"/>
+<contactref element="U$12" pad="2"/>
+<contactref element="U$12" pad="4"/>
+<contactref element="U$12" pad="5"/>
+<wire x1="-24.13" y1="-488.95" x2="-20.32" y2="-471.17" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.13" y1="-496.57" x2="-24.13" y2="-488.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.15" y1="-511.81" x2="-24.13" y2="-496.57" width="0" layer="19" extent="1-1"/>
 <wire x1="0" y1="-461.01" x2="-20.32" y2="-471.17" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="-492.76" x2="0" y2="-461.01" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="-496.57" x2="26.67" y2="-492.76" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.65" y1="-422.91" x2="0" y2="-461.01" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.65" y1="-419.1" x2="-24.65" y2="-422.91" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.65" y1="-415.29" x2="-24.65" y2="-419.1" width="0" layer="19" extent="1-1"/>
@@ -5065,9 +5121,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </polygon>
 <contactref element="J2" pad="4"/>
 <contactref element="J2" pad="3"/>
-<contactref element="F1" pad="1"/>
-<wire x1="47.0838875" y1="21.641059375" x2="-24.3" y2="-91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="50.838909375" y1="24.579640625" x2="47.0838875" y2="21.641059375" width="0" layer="19" extent="1-1"/>
+<contactref element="F6" pad="1"/>
+<wire x1="47.0838875" y1="21.641059375" x2="50.838909375" y2="24.579640625" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.3" y1="-505.46" x2="47.0838875" y2="21.641059375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC">
 <contactref element="U1" pad="7"/>
@@ -5615,6 +5671,20 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="U$10" pad="1"/>
 <contactref element="F1" pad="2"/>
 <wire x1="-13.8" y1="-91.44" x2="5.588" y2="-471.17" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$29">
+<contactref element="U$12" pad="1"/>
+<contactref element="F6" pad="2"/>
+<contactref element="C11" pad="2"/>
+<wire x1="-13.8" y1="-505.46" x2="-24.13" y2="-481.33" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.65" y1="-511.81" x2="-13.8" y2="-505.46" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CONVERTER">
+<contactref element="U$12" pad="8"/>
+<contactref element="F1" pad="1"/>
+<contactref element="U$12" pad="7"/>
+<wire x1="26.67" y1="-481.33" x2="26.67" y2="-485.14" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.3" y1="-91.44" x2="26.67" y2="-481.33" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
