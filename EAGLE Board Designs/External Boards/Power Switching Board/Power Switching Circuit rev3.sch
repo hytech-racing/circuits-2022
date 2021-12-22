@@ -430,25 +430,6 @@ chip</description>
 <rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
 <rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
 </package>
-<package name="J115F11A*6*">
-<description>J11F51 No Pin 6 Normally Open Relay
-&lt;br&gt;
-&lt;a href="https://www.citrelay.com/Catalog%20Pages/RelayCatalog/J115F1.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="COIL1" x="-5.1" y="0" drill="1.1"/>
-<pad name="COIL2" x="5.1" y="0" drill="1.1"/>
-<pad name="CONTACT1" x="8.9" y="15.3" drill="2.1"/>
-<pad name="CONTACT2" x="-8.9" y="12.8" drill="2.1"/>
-<wire x1="-11.7" y1="24.906" x2="-11.7" y2="8.295" width="0.127" layer="21"/>
-<wire x1="-11.7" y1="8.295" x2="-9.7" y2="8.295" width="0.127" layer="21"/>
-<wire x1="-9.7" y1="8.295" x2="-9.7" y2="-6.54" width="0.127" layer="21"/>
-<wire x1="-9.7" y1="-6.54" x2="9.7" y2="-6.54" width="0.127" layer="21"/>
-<wire x1="9.7" y1="-6.54" x2="9.7" y2="12" width="0.127" layer="21"/>
-<wire x1="9.7" y1="12" x2="15.2" y2="12" width="0.127" layer="21"/>
-<wire x1="15.2" y1="12" x2="15.2" y2="24.906" width="0.127" layer="21"/>
-<wire x1="15.2" y1="24.906" x2="-11.7" y2="24.906" width="0.127" layer="21"/>
-<rectangle x1="-12.7" y1="-7.62" x2="16.51" y2="26.67" layer="39"/>
-<text x="-12.573" y="27.051" size="0.8128" layer="21" font="vector">&gt;NAME</text>
-</package>
 <package name="SOT-23">
 <description>SOT-23
 &lt;br&gt;
@@ -760,6 +741,22 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <rectangle x1="-5.6025" y1="10.7625" x2="5.6025" y2="14.9875" layer="29"/>
 <rectangle x1="-4.1025" y1="4.2625" x2="4.1025" y2="10.865" layer="29"/>
 </package>
+<package name="CRYDOM_CMX">
+<description>Crydom CMX series solid state relays SIP-4
+&lt;br&gt;
+&lt;a href=https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="1" x="15.748" y="0" drill="2.1082" first="yes"/>
+<pad name="2" x="5.588" y="0" drill="2.1082"/>
+<pad name="3" x="-5.08" y="0" drill="2.1082"/>
+<pad name="4" x="-10.16" y="0" drill="2.1082"/>
+<wire x1="-17.78" y1="3.81" x2="-17.78" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-17.78" y1="-3.81" x2="22.86" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="22.86" y1="-3.81" x2="22.86" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="22.86" y1="3.81" x2="-17.78" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="40"/>
+<rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="39"/>
+<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC4421">
@@ -864,41 +861,6 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
-</symbol>
-<symbol name="RELAY_SPST_NO">
-<description>Single pole, single throw normally open relay</description>
-<circle x="2.54" y="-17.78" radius="0.635" width="0.1524" layer="94"/>
-<circle x="7.62" y="-20.32" radius="0.635" width="0.1524" layer="94"/>
-<circle x="7.62" y="-15.24" radius="0.635" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="2.54" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-12.7" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="12.7" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-17.78" x2="1.778" y2="-17.78" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-20.32" x2="8.382" y2="-20.32" width="0.1524" layer="94"/>
-<wire x1="3.175" y1="-17.4625" x2="6.985" y2="-15.5575" width="0.1524" layer="94"/>
-<pin name="P" x="-2.54" y="-17.78" visible="off" length="point" swaplevel="2" rot="R270"/>
-<pin name="S" x="12.7" y="-20.32" visible="off" length="point" swaplevel="2" rot="R270"/>
-<pin name="COIL+" x="12.7" y="-7.62" visible="off" length="point" rot="R90"/>
-<pin name="COIL-" x="-2.54" y="-7.62" visible="off" length="point" swaplevel="1" rot="R90"/>
-<polygon width="0.1524" layer="94">
-<vertex x="6.096" y="-15.494"/>
-<vertex x="6.604" y="-16.256"/>
-<vertex x="7.112" y="-15.494"/>
-</polygon>
-<wire x1="10.16" y1="0" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="-22.86" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-23.622" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MOSFET_N-CHANNEL">
 <wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
@@ -1067,6 +1029,51 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;CAPACITANCE</text>
+</symbol>
+<symbol name="RELAY_SOLIDSTATE_NO">
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="9.398" y="-5.842"/>
+<vertex x="8.89" y="-6.604"/>
+<vertex x="10.414" y="-7.112"/>
+</polygon>
+<circle x="12.7" y="-8.89" radius="0.635" width="0.1524" layer="94"/>
+<circle x="15.24" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<circle x="10.16" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="-9.525" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="-3.175" width="0.1524" layer="94"/>
+<pin name="CONTACT1" x="20.32" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="CONTACT2" x="20.32" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<wire x1="13.0175" y1="-8.255" x2="14.9225" y2="-4.445" width="0.1524" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="14.986" y="-5.334"/>
+<vertex x="14.224" y="-4.826"/>
+<vertex x="14.986" y="-4.318"/>
+</polygon>
+<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1987,24 +1994,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="J115F11A*6*">
-<gates>
-<gate name="G$1" symbol="RELAY_SPST_NO" x="-5.08" y="10.16"/>
-</gates>
-<devices>
-<device name="" package="J115F11A*6*">
-<connects>
-<connect gate="G$1" pin="COIL+" pad="COIL1"/>
-<connect gate="G$1" pin="COIL-" pad="COIL2"/>
-<connect gate="G$1" pin="P" pad="CONTACT1"/>
-<connect gate="G$1" pin="S" pad="CONTACT2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TVS_*" prefix="D">
 <description>TVS Diode
 &lt;br&gt;
@@ -2660,6 +2649,32 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <attribute name="MPN" value="C3216X5R1V226M160AC"/>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VOLTAGE" value="35V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY_SOLIDSTATE_NO_?*">
+<description>Solid State Normally Open Relay
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Crydom CMX Series&lt;a/&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYDOM_CMX">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="1"/>
+<connect gate="G$1" pin="CONTACT2" pad="2"/>
+<connect gate="G$1" pin="CONTROL+" pad="3"/>
+<connect gate="G$1" pin="CONTROL-" pad="4"/>
+</connects>
+<technologies>
+<technology name="CMX60D20">
+<attribute name="DKPN" value="CC1666-ND"/>
+<attribute name="MANUFACTURER" value="Crydom"/>
+<attribute name="MOPN" value="558-CMX60D20"/>
+<attribute name="MPN" value="CMX60D20"/>
 </technology>
 </technologies>
 </device>
@@ -5499,7 +5514,6 @@ Layer: 94 Symbol</description>
 <part name="LED5" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN" value="GREEN"/>
 <part name="LED2" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN" value="GREEN"/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="K1" library="HyTechDevices" deviceset="J115F11A*6*" device=""/>
 <part name="GND4" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="30.9K" value="30.9k"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="19.1K" value="19.1k"/>
@@ -5564,6 +5578,7 @@ Layer: 94 Symbol</description>
 <part name="C6" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_68NF"/>
 <part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_68NF"/>
 <part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="U$10" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO_?*" device="" technology="CMX60D20"/>
 </parts>
 <sheets>
 <sheet>
@@ -5635,12 +5650,8 @@ OV Rising: 15.96 V</text>
 <instance part="GND3" gate="1" x="83.82" y="-2.54" smashed="yes">
 <attribute name="VALUE" x="81.28" y="-5.08" size="1.778" layer="96"/>
 </instance>
-<instance part="K1" gate="G$1" x="-99.06" y="45.72" smashed="yes">
-<attribute name="NAME" x="-98.806" y="46.482" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="-94.488" y="20.574" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="GND4" gate="1" x="-104.14" y="33.02" smashed="yes">
-<attribute name="VALUE" x="-106.68" y="30.48" size="1.778" layer="96"/>
+<instance part="GND4" gate="1" x="-121.92" y="15.24" smashed="yes">
+<attribute name="VALUE" x="-124.46" y="12.7" size="1.778" layer="96"/>
 </instance>
 <instance part="R10" gate="G$1" x="-38.1" y="-50.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="-39.37" y="-52.07" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -5828,9 +5839,9 @@ OV Rising: 15.96 V</text>
 <attribute name="RESISTANCE" x="100.33" y="-11.43" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="U$11" gate="G$1" x="-25.4" y="-55.88" smashed="yes" rot="R90"/>
-<instance part="F1" gate="G$1" x="-109.22" y="27.94" smashed="yes">
-<attribute name="NAME" x="-110.49" y="29.21" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="CURRENT" x="-110.49" y="26.67" size="1.27" layer="96" align="top-center"/>
+<instance part="F1" gate="G$1" x="-91.44" y="12.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="-92.71" y="11.43" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="CURRENT" x="-90.17" y="11.43" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="F2" gate="G$1" x="-81.28" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="-82.55" y="19.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -5902,6 +5913,10 @@ OV Rising: 15.96 V</text>
 <attribute name="NAME" x="-19.558" y="7.62" size="1.27" layer="95" rot="R90"/>
 <attribute name="MPN" x="-16.002" y="7.62" size="1.27" layer="95" rot="R90" align="top-left"/>
 </instance>
+<instance part="U$10" gate="G$1" x="-111.76" y="27.94" smashed="yes">
+<attribute name="NAME" x="-111.76" y="28.702" size="1.27" layer="95"/>
+<attribute name="MPN" x="-111.76" y="14.478" size="1.27" layer="96" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5951,12 +5966,6 @@ OV Rising: 15.96 V</text>
 <wire x1="48.26" y1="-66.04" x2="48.26" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="K1" gate="G$1" pin="COIL-"/>
-<wire x1="-104.14" y1="35.56" x2="-104.14" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="38.1" x2="-101.6" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="LED7" gate="LED" pin="C"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="-53.34" y1="30.48" x2="-63.5" y2="30.48" width="0.1524" layer="91"/>
@@ -6004,6 +6013,11 @@ OV Rising: 15.96 V</text>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="CONTROL-"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="-114.3" y1="17.78" x2="-121.92" y2="17.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="BATTERY" class="0">
 <segment>
@@ -6016,8 +6030,8 @@ OV Rising: 15.96 V</text>
 </segment>
 <segment>
 <pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="-114.3" y1="27.94" x2="-116.84" y2="27.94" width="0.1524" layer="91"/>
-<label x="-116.84" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-91.44" y1="7.62" x2="-91.44" y2="5.08" width="0.1524" layer="91"/>
+<label x="-91.44" y="5.08" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="DCDC" class="0">
@@ -6269,8 +6283,6 @@ OV Rising: 15.96 V</text>
 <net name="RELAY" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
-<pinref part="K1" gate="G$1" pin="S"/>
-<wire x1="-86.36" y1="25.4" x2="-81.28" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="-81.28" y1="25.4" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="25.4" x2="-60.96" y2="25.4" width="0.1524" layer="91"/>
@@ -6295,6 +6307,8 @@ OV Rising: 15.96 V</text>
 <junction x="-38.1" y="25.4"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <junction x="5.08" y="5.08"/>
+<pinref part="U$10" gate="G$1" pin="CONTACT2"/>
+<wire x1="-81.28" y1="25.4" x2="-91.44" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="F2" gate="G$1" pin="1"/>
@@ -6371,23 +6385,14 @@ OV Rising: 15.96 V</text>
 <pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="K1" gate="G$1" pin="P"/>
-<pinref part="F1" gate="G$1" pin="2"/>
-<wire x1="-101.6" y1="27.94" x2="-106.68" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="!SHDN"/>
 <wire x1="68.58" y1="-35.56" x2="71.12" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-35.56" x2="76.2" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-35.56" x2="81.28" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="K1" gate="G$1" pin="COIL+"/>
 <wire x1="81.28" y1="-35.56" x2="121.92" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="38.1" x2="-86.36" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="50.8" x2="121.92" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="!DISABLE2"/>
 <wire x1="68.58" y1="-33.02" x2="71.12" y2="-33.02" width="0.1524" layer="91"/>
@@ -6406,6 +6411,8 @@ OV Rising: 15.96 V</text>
 <junction x="81.28" y="-55.88"/>
 <pinref part="D4" gate="G$1" pin="C"/>
 <wire x1="78.74" y1="-55.88" x2="81.28" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="CONTROL+"/>
+<wire x1="-114.3" y1="50.8" x2="-114.3" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -6571,6 +6578,13 @@ OV Rising: 15.96 V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="TMR2"/>
 <pinref part="C9" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$10" gate="G$1" pin="CONTACT1"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<wire x1="-91.44" y1="15.24" x2="-91.44" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
