@@ -781,6 +781,25 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <rectangle x1="-27.94" y1="-10.16" x2="27.94" y2="10.16" layer="40"/>
 <text x="0" y="12.7" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="MINI-BLADE_FUSE_HOLDER">
+<description>Mini-Blade Fuse Holder
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/215/3568-742601.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+MOPN: 534-3568</description>
+<wire x1="-8.001" y1="-3.3655" x2="-8.001" y2="3.3655" width="0.127" layer="21"/>
+<wire x1="-8.001" y1="3.3655" x2="8.001" y2="3.3655" width="0.127" layer="21"/>
+<wire x1="8.001" y1="-3.3655" x2="8.001" y2="3.3655" width="0.127" layer="21"/>
+<wire x1="-8.001" y1="-3.3655" x2="8.001" y2="-3.3655" width="0.127" layer="21"/>
+<pad name="L1" x="-4.953" y="1.7018" drill="1.6002"/>
+<pad name="L2" x="-4.953" y="-1.7018" drill="1.6002"/>
+<pad name="R1" x="4.953" y="1.7018" drill="1.6002"/>
+<pad name="R2" x="4.953" y="-1.7018" drill="1.6002"/>
+<rectangle x1="-8.382" y1="-3.81" x2="8.382" y2="3.81" layer="39"/>
+<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-6.35" y1="-3.3655" x2="-3.556" y2="3.3655" layer="40"/>
+<rectangle x1="3.556" y1="-3.3655" x2="6.35" y2="3.3655" layer="40"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC4421">
@@ -2406,6 +2425,22 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <attribute name="MOPN" value="576-088501.6DR"/>
 <attribute name="MPN" value="088501.6DR"/>
 <attribute name="VOLTAGE" value="500V"/>
+</technology>
+</technologies>
+</device>
+<device name="MB" package="MINI-BLADE_FUSE_HOLDER">
+<connects>
+<connect gate="G$1" pin="1" pad="L1 L2"/>
+<connect gate="G$1" pin="2" pad="R1 R2"/>
+</connects>
+<technologies>
+<technology name="10">
+<attribute name="CURRENT" value="10A"/>
+<attribute name="DKPN" value="F991-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0297010.WXNV"/>
+<attribute name="MPN" value="0297010.WXNV"/>
+<attribute name="VOLTAGE" value="32V"/>
 </technology>
 </technologies>
 </device>
@@ -5662,16 +5697,16 @@ Layer: 94 Symbol</description>
 <part name="Q3" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
 <part name="RN2" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10K"/>
 <part name="U$11" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
-<part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
-<part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
-<part name="F4" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
+<part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
+<part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
+<part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
+<part name="F4" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
 <part name="C12" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_680PF"/>
 <part name="C7" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
 <part name="C5" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.1UF" value="CAPACITOR_0603_25V_0.1UF"/>
 <part name="C3" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="35V_1UF"/>
 <part name="C4" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
-<part name="F5" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
+<part name="F5" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
 <part name="C2" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_47NF"/>
 <part name="C8" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_47NF"/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
@@ -5680,7 +5715,7 @@ Layer: 94 Symbol</description>
 <part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="U$10" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO_?*" device="" technology="CMX60D20"/>
 <part name="U$12" library="HyTechDevices" deviceset="UWE-*" device="" technology="12/10-Q48NB-C"/>
-<part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.6"/>
+<part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
 <part name="GND15" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.1UF"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="0.62"/>
