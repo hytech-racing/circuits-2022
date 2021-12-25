@@ -3746,7 +3746,7 @@
 <sheet>
 <plain>
 <text x="2.54" y="-76.2" size="2.54" layer="94"></text>
-<text x="91.44" y="-60.96" size="2.54" layer="94">TSAL Rev 3 Schematic</text>
+<text x="91.44" y="-60.96" size="2.54" layer="94">TSAL Rev 4 Schematic</text>
 <frame x1="-50.8" y1="-76.2" x2="170.18" y2="20.32" columns="8" rows="5" layer="94" border-bottom="no"/>
 </plain>
 <instances>
