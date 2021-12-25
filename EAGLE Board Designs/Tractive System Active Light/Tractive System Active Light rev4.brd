@@ -542,13 +542,6 @@ design rules under a new name.</description>
 </element>
 </elements>
 <signals>
-<signal name="GND">
-<contactref element="U$4" pad="GREEN-"/>
-<contactref element="U$4" pad="RED-"/>
-<contactref element="J1" pad="4"/>
-<wire x1="-29.8725" y1="29.575" x2="-19.2786" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.2225" y1="29.575" x2="-29.8725" y2="29.575" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$1">
 <contactref element="U$3" pad="RED-"/>
 <contactref element="U$4" pad="RED+"/>
@@ -586,22 +579,29 @@ design rules under a new name.</description>
 <wire x1="-18" y1="38.1" x2="-14.19" y2="38.1" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.6825" y1="5.985" x2="-18" y2="38.1" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="12V_RED">
-<contactref element="J1" pad="1"/>
-<contactref element="R1" pad="1"/>
-<contactref element="R2" pad="1"/>
-<wire x1="-20.1" y1="38.1" x2="-16.29" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.2814" y1="19.8628" x2="-16.29" y2="38.1" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="12V_GREEN">
-<contactref element="J1" pad="2"/>
-<contactref element="R3" pad="1"/>
-<wire x1="-19.2786" y1="19.8628" x2="-30.06" y2="-2.54" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$9">
 <contactref element="R3" pad="2"/>
 <contactref element="U$1" pad="GREEN+"/>
 <wire x1="-27.3325" y1="5.985" x2="-28.36" y2="-2.54" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GND_RED">
+<contactref element="J1" pad="1"/>
+<contactref element="U$4" pad="RED-"/>
+<wire x1="-31.2225" y1="29.575" x2="-16.2814" y2="19.8628" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GND_GREEN">
+<contactref element="J1" pad="2"/>
+<contactref element="U$4" pad="GREEN-"/>
+<wire x1="-29.8725" y1="29.575" x2="-19.2786" y2="19.8628" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="+12V">
+<contactref element="R1" pad="1"/>
+<contactref element="R2" pad="1"/>
+<contactref element="R3" pad="1"/>
+<contactref element="J1" pad="4"/>
+<wire x1="-19.2786" y1="22.86" x2="-30.06" y2="-2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.1" y1="38.1" x2="-19.2786" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.29" y1="38.1" x2="-20.1" y2="38.1" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
