@@ -995,20 +995,6 @@ Toshiba
 <rectangle x1="-3.556" y1="-2.794" x2="3.556" y2="2.794" layer="39"/>
 <text x="0" y="2.794" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="SOD-323F">
-<description>SOD-323F
-&lt;br&gt;
-&lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-1.05" y="0" dx="0.6" dy="0.6" layer="1"/>
-<smd name="2" x="1.05" y="0" dx="0.6" dy="0.6" layer="1"/>
-<wire x1="1.05" y1="0.825" x2="-1.05" y2="0.825" width="0.127" layer="21"/>
-<wire x1="1.05" y1="-0.825" x2="-1.05" y2="-0.825" width="0.127" layer="21"/>
-<rectangle x1="-1.651" y1="-1.016" x2="1.651" y2="1.016" layer="39"/>
-<wire x1="1.05" y1="0.825" x2="1.05" y2="-0.825" width="0.127" layer="21"/>
-<wire x1="-1.05" y1="0.825" x2="-1.05" y2="-0.825" width="0.127" layer="21"/>
-<text x="0" y="1.27" size="0.8128" layer="21" align="bottom-center">&gt;NAME</text>
-<text x="1.524" y="-0.254" size="0.508" layer="21">K</text>
-</package>
 <package name="MICRO_MINIATURE">
 <description>Keystone Micro-Miniature SMD Test Point
 &lt;br&gt;
@@ -1016,6 +1002,20 @@ Toshiba
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
+</package>
+<package name="CUS08F30">
+<description>CUS08F30 Toshiba Diode Package
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A" x="-1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
+<smd name="K" x="1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
+<text x="0" y="1" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-0.85" y1="0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
+<rectangle x1="-1.778" y1="-0.762" x2="1.778" y2="0.762" layer="39"/>
+<text x="2.286" y="0" size="0.6096" layer="25" font="vector" align="center">K</text>
 </package>
 </packages>
 <symbols>
@@ -3164,31 +3164,6 @@ MAX current: 8.0A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SCHOTTKY_PMEG2020EJ" prefix="D">
-<description>PMEG2020EJ Schottky Rectifier Diode
-&lt;br&gt;
-&lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOD-323F">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="1727-3863-2-ND"/>
-<attribute name="MANUFACTURER" value="Nexperia"/>
-<attribute name="MOPN" value="771-PMEG2020EJ-T/R"/>
-<attribute name="MPN" value="PMEG2020EJ"/>
-<attribute name="VOLTAGE" value="20"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TEST_POINT" prefix="TP">
 <description>Test Point
 &lt;br&gt;</description>
@@ -3206,6 +3181,31 @@ MAX current: 8.0A</description>
 <attribute name="MANUFACTURER" value="Keystone Electronics"/>
 <attribute name="MOPN" value="534-5015"/>
 <attribute name="MPN" value="5015"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCHOTTKY_CUS08F30" prefix="D">
+<description>PMEG2020EJ Schottky Rectifier Diode
+&lt;br&gt;
+&lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CUS08F30">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="CUS08F30H3FTR-ND"/>
+<attribute name="MANUFACTURER" value="Toshiba"/>
+<attribute name="MOPN" value="757-CUS08F30H3F"/>
+<attribute name="MPN" value="CUS08F30"/>
+<attribute name="VOLTAGE" value="30"/>
 </technology>
 </technologies>
 </device>
@@ -6064,18 +6064,6 @@ Layer: 94 Symbol</description>
 <part name="STATUS_4.1" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="P26" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="D10" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D4" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D3" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D5" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D7" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D8" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D11" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D12" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D13" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D14" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D15" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
-<part name="D9" library="HyTechDevices" deviceset="SCHOTTKY_PMEG2020EJ" device=""/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="360"/>
 <part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
@@ -6093,6 +6081,18 @@ Layer: 94 Symbol</description>
 <part name="TP12" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="P29" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P51" library="HyTechSupplies" deviceset="+3V3" device=""/>
+<part name="D8" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D11" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D12" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D13" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D14" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D15" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D3" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D4" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D5" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D7" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D9" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
+<part name="D10" library="HyTechDevices" deviceset="SCHOTTKY_CUS08F30" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7308,54 +7308,6 @@ Layer: 94 Symbol</description>
 <instance part="P26" gate="1" x="134.62" y="68.58" smashed="yes">
 <attribute name="VALUE" x="134.62" y="67.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="D10" gate="G$1" x="55.88" y="195.58" smashed="yes">
-<attribute name="NAME" x="54.61" y="197.485" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="54.61" y="193.675" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D4" gate="G$1" x="119.38" y="195.58" smashed="yes">
-<attribute name="NAME" x="118.11" y="197.485" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="118.11" y="193.675" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D3" gate="G$1" x="180.34" y="195.58" smashed="yes">
-<attribute name="NAME" x="179.07" y="197.485" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="179.07" y="193.675" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D5" gate="G$1" x="165.1" y="170.18" smashed="yes" rot="R180">
-<attribute name="NAME" x="166.37" y="168.275" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="MPN" x="166.37" y="172.085" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
-<instance part="D7" gate="G$1" x="38.1" y="170.18" smashed="yes" rot="R180">
-<attribute name="NAME" x="39.37" y="168.275" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="MPN" x="39.37" y="172.085" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
-<instance part="D8" gate="G$1" x="33.02" y="104.14" smashed="yes">
-<attribute name="NAME" x="31.75" y="106.045" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="31.75" y="102.235" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D11" gate="G$1" x="33.02" y="83.82" smashed="yes">
-<attribute name="NAME" x="31.75" y="85.725" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="31.75" y="81.915" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D12" gate="G$1" x="33.02" y="63.5" smashed="yes">
-<attribute name="NAME" x="31.75" y="65.405" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="31.75" y="61.595" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D13" gate="G$1" x="33.02" y="45.72" smashed="yes">
-<attribute name="NAME" x="31.75" y="47.625" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="31.75" y="43.815" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D14" gate="G$1" x="38.1" y="27.94" smashed="yes">
-<attribute name="NAME" x="36.83" y="29.845" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="36.83" y="26.035" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D15" gate="G$1" x="33.02" y="12.7" smashed="yes">
-<attribute name="NAME" x="31.75" y="14.605" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="31.75" y="10.795" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D9" gate="G$1" x="101.6" y="170.18" smashed="yes" rot="R180">
-<attribute name="NAME" x="102.87" y="168.275" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="MPN" x="102.87" y="172.085" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
 <instance part="R1" gate="G$1" x="238.76" y="205.74" smashed="yes">
 <attribute name="NAME" x="237.49" y="207.01" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="237.49" y="204.47" size="1.27" layer="96" align="top-center"/>
@@ -7419,6 +7371,54 @@ Layer: 94 Symbol</description>
 </instance>
 <instance part="P51" gate="G$1" x="203.2" y="114.3" smashed="yes">
 <attribute name="VALUE" x="203.2" y="115.57" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D8" gate="G$1" x="33.02" y="104.14" smashed="yes">
+<attribute name="NAME" x="31.75" y="106.045" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="31.75" y="102.235" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D11" gate="G$1" x="33.02" y="83.82" smashed="yes">
+<attribute name="NAME" x="31.75" y="85.725" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="31.75" y="81.915" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D12" gate="G$1" x="33.02" y="63.5" smashed="yes">
+<attribute name="NAME" x="31.75" y="65.405" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="31.75" y="61.595" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D13" gate="G$1" x="33.02" y="45.72" smashed="yes">
+<attribute name="NAME" x="31.75" y="47.625" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="31.75" y="43.815" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D14" gate="G$1" x="38.1" y="27.94" smashed="yes">
+<attribute name="NAME" x="36.83" y="29.845" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="36.83" y="26.035" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D15" gate="G$1" x="33.02" y="12.7" smashed="yes">
+<attribute name="NAME" x="31.75" y="14.605" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="31.75" y="10.795" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D3" gate="G$1" x="38.1" y="170.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="39.37" y="168.275" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="MPN" x="39.37" y="172.085" size="1.27" layer="96" rot="R180" align="top-center"/>
+</instance>
+<instance part="D4" gate="G$1" x="101.6" y="170.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="102.87" y="168.275" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="MPN" x="102.87" y="172.085" size="1.27" layer="96" rot="R180" align="top-center"/>
+</instance>
+<instance part="D5" gate="G$1" x="165.1" y="170.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="166.37" y="168.275" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="MPN" x="166.37" y="172.085" size="1.27" layer="96" rot="R180" align="top-center"/>
+</instance>
+<instance part="D7" gate="G$1" x="180.34" y="195.58" smashed="yes">
+<attribute name="NAME" x="179.07" y="197.485" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="179.07" y="193.675" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D9" gate="G$1" x="119.38" y="195.58" smashed="yes">
+<attribute name="NAME" x="118.11" y="197.485" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="118.11" y="193.675" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D10" gate="G$1" x="55.88" y="195.58" smashed="yes">
+<attribute name="NAME" x="54.61" y="197.485" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="54.61" y="193.675" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -7625,9 +7625,9 @@ Layer: 94 Symbol</description>
 <junction x="43.18" y="180.34"/>
 <pinref part="K1" gate="G$1" pin="3"/>
 <pinref part="K1" gate="G$1" pin="COIL-"/>
-<pinref part="D10" gate="G$1" pin="A"/>
-<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="D3" gate="G$1" pin="A"/>
 <junction x="43.18" y="170.18"/>
+<pinref part="D10" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -7641,8 +7641,8 @@ Layer: 94 Symbol</description>
 <pinref part="K2" gate="G$1" pin="3"/>
 <pinref part="K2" gate="G$1" pin="COIL-"/>
 <pinref part="D4" gate="G$1" pin="A"/>
-<pinref part="D9" gate="G$1" pin="A"/>
 <junction x="106.68" y="170.18"/>
+<pinref part="D9" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -7664,7 +7664,7 @@ Layer: 94 Symbol</description>
 <wire x1="127" y1="195.58" x2="127" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="K2" gate="G$1" pin="COIL+"/>
 <junction x="127" y="180.34"/>
-<pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="D9" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -7675,7 +7675,7 @@ Layer: 94 Symbol</description>
 <wire x1="187.96" y1="195.58" x2="187.96" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="K3" gate="G$1" pin="COIL+"/>
 <junction x="187.96" y="180.34"/>
-<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="D7" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -7745,9 +7745,9 @@ Layer: 94 Symbol</description>
 <junction x="170.18" y="180.34"/>
 <pinref part="K3" gate="G$1" pin="3"/>
 <pinref part="K3" gate="G$1" pin="COIL-"/>
-<pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="D5" gate="G$1" pin="A"/>
 <junction x="170.18" y="170.18"/>
+<pinref part="D7" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -7772,12 +7772,12 @@ Layer: 94 Symbol</description>
 <wire x1="33.02" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="142.24" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
 <junction x="48.26" y="137.16"/>
-<pinref part="D7" gate="G$1" pin="C"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="170.18" x2="96.52" y2="170.18" width="0.1524" layer="91"/>
 <label x="96.52" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="D9" gate="G$1" pin="C"/>
+<pinref part="D4" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="162.56" y1="170.18" x2="160.02" y2="170.18" width="0.1524" layer="91"/>
