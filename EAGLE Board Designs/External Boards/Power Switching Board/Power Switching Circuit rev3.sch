@@ -5235,10 +5235,6 @@ Layer: 94 Symbol</description>
 <part name="LED2" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN" value="GREEN"/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="30.9K" value="30.9k"/>
-<part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="19.1K" value="19.1k"/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12.4K" value="12.4k"/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="931K" value="931k"/>
 <part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="31.6K" value="31.6k"/>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="14.3K" value="14.3k"/>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="10k"/>
@@ -5313,6 +5309,10 @@ Layer: 94 Symbol</description>
 <part name="R23" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
 <part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
+<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="953K"/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="14.3K"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="31.6K"/>
 </parts>
 <sheets>
 <sheet>
@@ -5326,9 +5326,9 @@ Layer: 94 Symbol</description>
 <text x="58.674" y="-92.456" size="2.54" layer="94">Circuit is used to switch the active power source of 
 the vehicle from the GLV battery to the accumulator</text>
 <text x="-58.42" y="-2.54" size="1.778" layer="97" rot="R180">GLVB:
-UV Falling: 7.95 V
-UV Rising: 9.93 V
-OV Rising: 16.07 V
+UV Falling: 9.02 V
+UV Rising: 10.99 V
+OV Rising: 15.96 V
 
 DCDC:
 UV Falling: 9.02 V
@@ -5382,22 +5382,6 @@ OV Rising: 15.96 V</text>
 </instance>
 <instance part="GND4" gate="1" x="-121.92" y="15.24" smashed="yes">
 <attribute name="VALUE" x="-124.46" y="12.7" size="1.778" layer="96"/>
-</instance>
-<instance part="R10" gate="G$1" x="-38.1" y="-50.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="-39.37" y="-52.07" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-36.83" y="-52.07" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R11" gate="G$1" x="-38.1" y="-40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="-39.37" y="-41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-36.83" y="-41.91" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R9" gate="G$1" x="-38.1" y="-30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="-39.37" y="-31.75" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-36.83" y="-31.75" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R8" gate="G$1" x="-38.1" y="-20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="-39.37" y="-21.59" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-36.83" y="-21.59" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="R7" gate="G$1" x="-45.72" y="-25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-46.99" y="-26.67" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -5681,6 +5665,22 @@ OV Rising: 15.96 V</text>
 <attribute name="NAME" x="92.71" y="-29.21" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="92.71" y="-26.67" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
+<instance part="R8" gate="G$1" x="-38.1" y="-20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="-39.37" y="-21.59" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-36.83" y="-21.59" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R9" gate="G$1" x="-38.1" y="-30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-39.37" y="-31.75" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-36.83" y="-31.75" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R11" gate="G$1" x="-38.1" y="-40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="-39.37" y="-41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-36.83" y="-41.91" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R10" gate="G$1" x="-38.1" y="-50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="-39.37" y="-52.07" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-36.83" y="-52.07" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5738,9 +5738,9 @@ OV Rising: 15.96 V</text>
 <junction x="-63.5" y="30.48"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="-38.1" y1="-55.88" x2="-38.1" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -6065,7 +6065,6 @@ OV Rising: 15.96 V</text>
 <pinref part="U1" gate="G$1" pin="V2"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
 <junction x="5.08" y="25.4"/>
-<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-17.78" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-38.1" y="25.4"/>
@@ -6076,6 +6075,7 @@ OV Rising: 15.96 V</text>
 <pinref part="R12" gate="G$1" pin="2"/>
 <junction x="-40.64" y="25.4"/>
 <pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="F2" gate="G$1" pin="1"/>
@@ -6220,34 +6220,34 @@ OV Rising: 15.96 V</text>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="-27.94" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="UVF2"/>
 <wire x1="-33.02" y1="-25.4" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <junction x="-38.1" y="-25.4"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="-38.1" x2="-38.1" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="UVR2"/>
 <wire x1="-33.02" y1="-33.02" x2="-33.02" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-35.56" x2="-38.1" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <junction x="-38.1" y="-35.56"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="-45.72" x2="-38.1" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="OV2"/>
 <wire x1="-33.02" y1="-40.64" x2="-33.02" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-45.72" x2="-38.1" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <junction x="-38.1" y="-45.72"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$30" class="0">
