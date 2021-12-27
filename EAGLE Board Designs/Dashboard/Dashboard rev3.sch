@@ -6831,7 +6831,7 @@ Layer: 94 Symbol</description>
 <sheets>
 <sheet>
 <plain>
-<text x="127" y="22.86" size="2.54" layer="97">Youssef Jaafar</text>
+<text x="129.54" y="22.86" size="2.54" layer="97">Youssef Jaafar</text>
 <text x="195.58" y="15.24" size="2.54" layer="97">Schematic of the Dashboard PCB for HT05</text>
 <text x="236.22" y="121.92" size="1.778" layer="97">Error Codes</text>
 </plain>
