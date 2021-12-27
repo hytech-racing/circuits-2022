@@ -4712,7 +4712,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="-4.953" y="-530.1818" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="VOLTAGE" value="32V" x="-4.953" y="-533.8318" size="1.778" layer="27" display="off"/>
 </element>
-<<<<<<< Updated upstream
 <element name="F2" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="FUSE_MB_10" x="-4.953" y="-549.9354" smashed="yes">
 <attribute name="CURRENT" value="10A" x="-4.953" y="-549.9354" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="F991-ND" x="-4.953" y="-549.9354" size="1.778" layer="27" display="off"/>
@@ -4722,8 +4721,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="-4.953" y="-546.2854" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="VOLTAGE" value="32V" x="-4.953" y="-549.9354" size="1.778" layer="27" display="off"/>
 </element>
-=======
->>>>>>> Stashed changes
 <element name="F3" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="FUSE_MB_10" x="-4.953" y="-566.039" smashed="yes">
 <attribute name="CURRENT" value="10A" x="-4.953" y="-566.039" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="F991-ND" x="-4.953" y="-566.039" size="1.778" layer="27" display="off"/>
@@ -5067,7 +5064,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="-25.4" y="-670.56" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="-25.4" y="-670.56" size="1.778" layer="27" display="off"/>
 </element>
-<<<<<<< Updated upstream
 <element name="R24" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="-25.4" y="-674.37" smashed="yes">
 <attribute name="DKPN" value="" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
@@ -5092,8 +5088,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_MAX" value="" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
 </element>
-=======
->>>>>>> Stashed changes
 <element name="R8" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_953K" x="-25.4" y="-681.99" smashed="yes">
 <attribute name="DKPN" value="P953KHCT-ND" x="-25.4" y="-681.99" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="-25.4" y="-681.99" size="1.778" layer="27" display="off"/>
@@ -5217,13 +5211,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C14" pad="2"/>
 <contactref element="C13" pad="2"/>
 <contactref element="R15" pad="1"/>
-<<<<<<< Updated upstream
 <contactref element="R24" pad="2"/>
 <contactref element="R10" pad="1"/>
-=======
-<contactref element="R10" pad="1"/>
-<contactref element="U1" pad="20"/>
->>>>>>> Stashed changes
 <wire x1="0" y1="-461.01" x2="-20.32" y2="-471.17" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="-492.76" x2="0" y2="-461.01" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="-496.57" x2="26.67" y2="-492.76" width="0" layer="19" extent="1-1"/>
@@ -5235,10 +5224,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-13.8938" y1="4.8387" x2="-13.8938" y2="3.4163" width="0" layer="19" extent="1-1"/>
 <wire x1="-8.0264" y1="3.363" x2="-11.1252" y2="0.8738" width="0" layer="19" extent="1-1"/>
 <wire x1="18.8459625" y1="12.726234375" x2="15.3174" y2="14.631596875" width="0" layer="19" extent="1-16"/>
-<<<<<<< Updated upstream
-=======
-<wire x1="8.2103375" y1="-1.134628125" x2="7.239" y2="-5.288215625" width="0" layer="19" extent="1-1"/>
->>>>>>> Stashed changes
 <wire x1="-24.65" y1="-205.74" x2="-1.7" y2="-251.99" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.15" y1="-198.12" x2="-24.65" y2="-205.74" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.65" y1="-194.31" x2="-26.15" y2="-198.12" width="0" layer="19" extent="1-1"/>
@@ -5248,12 +5233,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-24.65" y1="-621.03" x2="26.67" y2="-496.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.65" y1="-624.84" x2="-24.65" y2="-621.03" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.25" y1="-666.75" x2="-24.65" y2="-624.84" width="0" layer="19" extent="1-1"/>
-<<<<<<< Updated upstream
 <wire x1="-24.55" y1="-674.37" x2="-26.25" y2="-666.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.25" y1="-693.42" x2="-24.55" y2="-674.37" width="0" layer="19" extent="1-1"/>
-=======
-<wire x1="-26.25" y1="-693.42" x2="-26.25" y2="-666.75" width="0" layer="19" extent="1-1"/>
->>>>>>> Stashed changes
 </signal>
 <signal name="DCDC">
 <contactref element="U1" pad="7"/>
@@ -5543,7 +5524,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <vertex x="26.924" y="-11.9888"/>
 </polygon>
 <contactref element="D2" pad="3"/>
-<<<<<<< Updated upstream
 <contactref element="F2" pad="R1"/>
 <contactref element="Q3" pad="2"/>
 <contactref element="F2" pad="L1"/>
@@ -5551,24 +5531,15 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="R12" pad="2"/>
 <contactref element="F2" pad="L2"/>
 <contactref element="F2" pad="R2"/>
-=======
-<contactref element="Q3" pad="2"/>
-<contactref element="U$10" pad="2"/>
-<contactref element="R12" pad="2"/>
->>>>>>> Stashed changes
 <contactref element="R13" pad="2"/>
 <contactref element="R8" pad="2"/>
 <contactref element="U1" pad="30"/>
 <wire x1="-24.35" y1="-519.43" x2="-4.572" y2="-471.17" width="0" layer="19" extent="1-1"/>
-<<<<<<< Updated upstream
 <wire x1="-9.906" y1="-548.2336" x2="-24.35" y2="-519.43" width="0" layer="19" extent="1-1"/>
 <wire x1="-9.906" y1="-551.6372" x2="-9.906" y2="-548.2336" width="0" layer="19" extent="1-1"/>
 <wire x1="0" y1="-551.6372" x2="-9.906" y2="-551.6372" width="0" layer="19" extent="1-1"/>
 <wire x1="0" y1="-548.2336" x2="0" y2="-551.6372" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.55" y1="-636.27" x2="-9.906" y2="-551.6372" width="0" layer="19" extent="1-1"/>
-=======
-<wire x1="-24.55" y1="-636.27" x2="-24.35" y2="-519.43" width="0" layer="19" extent="1-1"/>
->>>>>>> Stashed changes
 <wire x1="-24.55" y1="-681.99" x2="-24.55" y2="-636.27" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.3" y1="-58.0206" x2="-4.572" y2="-471.17" width="0" layer="19" extent="1-1"/>
 <wire x1="24.13" y1="-10.9347" x2="-2.3" y2="-58.0206" width="0" layer="19" extent="1-1"/>
@@ -5680,13 +5651,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="D4" pad="2"/>
 <contactref element="U$10" pad="3"/>
 <contactref element="R15" pad="2"/>
-<<<<<<< Updated upstream
 <contactref element="R25" pad="1"/>
 <wire x1="-24.55" y1="-666.75" x2="-15.24" y2="-471.17" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.25" y1="-678.18" x2="-24.55" y2="-666.75" width="0" layer="19" extent="1-1"/>
-=======
-<wire x1="-24.55" y1="-666.75" x2="-15.24" y2="-471.17" width="0" layer="19" extent="1-1"/>
->>>>>>> Stashed changes
 <wire x1="11.850728125" y1="-13.16826875" x2="-15.24" y2="-471.17" width="0" layer="19" extent="1-1"/>
 <wire x1="10.275928125" y1="-11.59346875" x2="11.850728125" y2="-13.16826875" width="0" layer="19" extent="1-1"/>
 <wire x1="8.66995625" y1="-0.675009375" x2="10.275928125" y2="-11.59346875" width="0" layer="19" extent="1-1"/>
@@ -5876,7 +5843,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="R14" pad="1"/>
 <wire x1="17.679234375" y1="13.8929625" x2="-26.25" y2="-640.08" width="0" layer="19" extent="1-1"/>
 </signal>
-<<<<<<< Updated upstream
 <signal name="N$31">
 <contactref element="U1" pad="20"/>
 <contactref element="R24" pad="1"/>
@@ -5884,8 +5850,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-26.25" y1="-674.37" x2="-24.55" y2="-678.18" width="0" layer="19" extent="1-1"/>
 <wire x1="8.2103375" y1="-1.134628125" x2="-26.25" y2="-674.37" width="0" layer="19" extent="1-1"/>
 </signal>
-=======
->>>>>>> Stashed changes
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
