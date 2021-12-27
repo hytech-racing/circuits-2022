@@ -459,57 +459,6 @@ Note: Also works for CAT/CAY16 Series.
 <rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="39"/>
 <rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="40"/>
 </package>
-<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
-<description>4 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051204"&gt;Part&lt;\a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/1054051204_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
-<smd name="2" x="-1.25" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="3" x="1.25" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="1" x="1.25" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="4" x="-1.25" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="PAD1" x="-3.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
-<smd name="PAD@1" x="3.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
-<wire x1="-1.27" y1="2.6" x2="1.27" y2="2.6" width="0.127" layer="21"/>
-<wire x1="1.27" y1="2.6" x2="1.27" y2="-1.99" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-1.99" x2="4.37" y2="-1.99" width="0.127" layer="21"/>
-<wire x1="4.37" y1="-1.99" x2="4.37" y2="-10.68" width="0.127" layer="21"/>
-<wire x1="4.37" y1="-10.68" x2="-4.37" y2="-10.68" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-10.68" x2="-4.37" y2="-1.99" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-1.99" x2="-1.27" y2="-1.99" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.99" x2="-1.27" y2="2.6" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-19.48" x2="4.37" y2="-19.48" width="0.1524" layer="51"/>
-<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
-visible on the PCB.</text>
-<rectangle x1="-5.08" y1="-19.43" x2="5.08" y2="3.81" layer="39"/>
-<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
-<package name="MOLEX_NANOFIT_PTH_04">
-<description>4 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101204"&gt;Part&lt;\a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/1053101204_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
-<pad name="1" x="1.25" y="0" drill="1.2" rot="R180" first="yes"/>
-<pad name="2" x="-1.25" y="0" drill="1.2" rot="R180"/>
-<pad name="3" x="1.25" y="-2.5" drill="1.2" rot="R180"/>
-<pad name="4" x="-1.25" y="-2.5" drill="1.2" rot="R180"/>
-<wire x1="2.97" y1="-4.24" x2="-2.97" y2="-4.24" width="0.127" layer="21"/>
-<wire x1="2.97" y1="-4.24" x2="2.97" y2="1.74" width="0.127" layer="21"/>
-<wire x1="2.97" y1="1.74" x2="2.6" y2="1.74" width="0.127" layer="21"/>
-<wire x1="2.6" y1="1.74" x2="-2.6" y2="1.74" width="0.127" layer="21"/>
-<wire x1="-2.6" y1="1.74" x2="-2.97" y2="1.74" width="0.127" layer="21"/>
-<wire x1="-2.97" y1="1.74" x2="-2.97" y2="-4.24" width="0.127" layer="21"/>
-<wire x1="2.6" y1="1.74" x2="2.6" y2="4.6" width="0.127" layer="21"/>
-<wire x1="2.6" y1="4.6" x2="-2.6" y2="4.6" width="0.127" layer="21"/>
-<wire x1="-2.6" y1="4.6" x2="-2.6" y2="1.74" width="0.127" layer="21"/>
-<hole x="0" y="1.34" drill="1.3"/>
-<rectangle x1="-3.175" y1="1.905" x2="3.175" y2="5.08" layer="39" rot="R180"/>
-<rectangle x1="-3.175" y1="-4.445" x2="3.175" y2="1.905" layer="40" rot="R180"/>
-<rectangle x1="-3.175" y1="-4.445" x2="3.175" y2="1.905" layer="39" rot="R180"/>
-<text x="0" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="SOT363">
 <description>SOT363
 &lt;br&gt;
@@ -1040,6 +989,57 @@ visible on the PCB.</text>
 <rectangle x1="-8.636" y1="-4.826" x2="8.636" y2="4.826" layer="39"/>
 <text x="-8.636" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
+<description>4 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051204"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054051204_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="2" x="-1.25" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="3" x="1.25" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="1" x="1.25" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="4" x="-1.25" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="PAD1" x="-3.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD@1" x="3.52" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-1.27" y1="2.6" x2="1.27" y2="2.6" width="0.127" layer="21"/>
+<wire x1="1.27" y1="2.6" x2="1.27" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.99" x2="4.37" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="4.37" y1="-1.99" x2="4.37" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="4.37" y1="-10.68" x2="-4.37" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-10.68" x2="-4.37" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-1.99" x2="-1.27" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.99" x2="-1.27" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-19.48" x2="4.37" y2="-19.48" width="0.1524" layer="51"/>
+<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
+visible on the PCB.</text>
+<rectangle x1="-5.08" y1="-19.43" x2="5.08" y2="3.81" layer="39"/>
+<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="MOLEX_NANOFIT_PTH_04">
+<description>4 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101204"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053101204_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<pad name="1" x="1.25" y="0" drill="1.2" rot="R180" first="yes"/>
+<pad name="2" x="-1.25" y="0" drill="1.2" rot="R180"/>
+<pad name="3" x="1.25" y="-2.5" drill="1.2" rot="R180"/>
+<pad name="4" x="-1.25" y="-2.5" drill="1.2" rot="R180"/>
+<wire x1="2.97" y1="-4.24" x2="-2.97" y2="-4.24" width="0.127" layer="21"/>
+<wire x1="2.97" y1="-4.24" x2="2.97" y2="1.74" width="0.127" layer="21"/>
+<wire x1="2.97" y1="1.74" x2="2.6" y2="1.74" width="0.127" layer="21"/>
+<wire x1="2.6" y1="1.74" x2="-2.6" y2="1.74" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="1.74" x2="-2.97" y2="1.74" width="0.127" layer="21"/>
+<wire x1="-2.97" y1="1.74" x2="-2.97" y2="-4.24" width="0.127" layer="21"/>
+<wire x1="2.6" y1="1.74" x2="2.6" y2="4.6" width="0.127" layer="21"/>
+<wire x1="2.6" y1="4.6" x2="-2.6" y2="4.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="4.6" x2="-2.6" y2="1.74" width="0.127" layer="21"/>
+<hole x="0" y="1.34" drill="1.3"/>
+<rectangle x1="-3.175" y1="1.905" x2="3.175" y2="5.08" layer="39" rot="R180"/>
+<rectangle x1="-3.175" y1="-4.445" x2="3.175" y2="1.905" layer="40" rot="R180"/>
+<rectangle x1="-3.175" y1="-4.445" x2="3.175" y2="1.905" layer="39" rot="R180"/>
+<text x="0" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -1248,19 +1248,6 @@ visible on the PCB.</text>
 <text x="0" y="0.508" size="1.27" layer="94">JUMP</text>
 <text x="0" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-3.302" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
-<symbol name="CONNECTOR_CAN">
-<description>Standard CAN Connector</description>
-<wire x1="10.16" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
-<text x="0" y="0.635" size="1.27" layer="95">&gt;NAME</text>
-<pin name="GND" x="12.7" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="CANL" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="CANH" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="+12V" x="12.7" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<text x="0" y="-13.335" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="DIODE_TVS_UNIDIRECTIONAL_SINGLE_ENDED">
 <wire x1="0" y1="1.016" x2="0" y2="-0.762" width="0.1524" layer="94"/>
@@ -1537,6 +1524,19 @@ visible on the PCB.</text>
 <text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;CURRENT</text>
 <wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="CONNECTOR_CAN">
+<description>Standard CAN Connector</description>
+<wire x1="10.16" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.635" size="1.27" layer="95">&gt;NAME</text>
+<pin name="GND" x="12.7" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="CANL" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="CANH" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="+12V" x="12.7" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<text x="0" y="-13.335" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2909,11 +2909,15 @@ visible on the PCB.</text>
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="900-1054291304TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105429-1304"/>
 <attribute name="MPN" value="1054291304"/>
 </technology>
 <technology name="NATURAL">
+<attribute name="DKPN" value="900-1054312302TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105431-2302"/>
 <attribute name="MPN" value="1054312302"/>
 </technology>
 </technologies>
@@ -2934,42 +2938,6 @@ visible on the PCB.</text>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONNECTOR-CAN_?_*" prefix="J">
-<description>HyTech CAN Connector</description>
-<gates>
-<gate name="G$1" symbol="CONNECTOR_CAN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="NF_S_RA" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
-<connects>
-<connect gate="G$1" pin="+12V" pad="1"/>
-<connect gate="G$1" pin="CANH" pad="4"/>
-<connect gate="G$1" pin="CANL" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-</connects>
-<technologies>
-<technology name="BLACK">
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="105405-1304"/>
-</technology>
-</technologies>
-</device>
-<device name="NF_T_V" package="MOLEX_NANOFIT_PTH_04">
-<connects>
-<connect gate="G$1" pin="+12V" pad="1"/>
-<connect gate="G$1" pin="CANH" pad="4"/>
-<connect gate="G$1" pin="CANL" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-</connects>
-<technologies>
-<technology name="BLACK">
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="105429-1304"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -3097,7 +3065,9 @@ visible on the PCB.</text>
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="1054051308-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105405-1308"/>
 <attribute name="MPN" value="105405-1308"/>
 </technology>
 </technologies>
@@ -3115,11 +3085,15 @@ visible on the PCB.</text>
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="WM15063-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105310-1308"/>
 <attribute name="MPN" value="105310-1308"/>
 </technology>
 <technology name="NATURAL">
+<attribute name="DKPN" value="WM15077-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105310-2308"/>
 <attribute name="MPN" value="105310-2308"/>
 </technology>
 </technologies>
@@ -3338,7 +3312,9 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR: VJ0603A150FXQPW1BC</des
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="1054051306-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105405-1306"/>
 <attribute name="MPN" value="105405-1306"/>
 </technology>
 </technologies>
@@ -3549,6 +3525,46 @@ All PNs for the holder; if fuse needed, order separately
 <attribute name="MOPN" value="534-3588"/>
 <attribute name="MPN" value="3588"/>
 <attribute name="VOLTAGE" value="32V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-CAN_?_*" prefix="J">
+<description>HyTech CAN Connector</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_CAN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="NF_S_RA" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
+<connects>
+<connect gate="G$1" pin="+12V" pad="1"/>
+<connect gate="G$1" pin="CANH" pad="4"/>
+<connect gate="G$1" pin="CANL" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="DKPN" value="1054051304-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105405-1304"/>
+<attribute name="MPN" value="105405-1304"/>
+</technology>
+</technologies>
+</device>
+<device name="NF_T_V" package="MOLEX_NANOFIT_PTH_04">
+<connects>
+<connect gate="G$1" pin="+12V" pad="1"/>
+<connect gate="G$1" pin="CANH" pad="4"/>
+<connect gate="G$1" pin="CANL" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="DKPN" value="900-1054291304TR-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105429-1304"/>
+<attribute name="MPN" value="105429-1304"/>
 </technology>
 </technologies>
 </device>
@@ -6745,7 +6761,6 @@ Layer: 94 Symbol</description>
 <part name="R15" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="60.4" value="RESISTOR_0603_60.4"/>
 <part name="C8" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_4.7NF" value="CAPACITOR_0603_10V_4.7NF"/>
 <part name="GND12" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="J3" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="NF_S_RA" technology="BLACK"/>
 <part name="Q2" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="" technology="PMV15ENEA"/>
 <part name="Q3" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="" technology="PMV15ENEA"/>
 <part name="Q4" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="" technology="PMV15ENEA"/>
@@ -6827,6 +6842,7 @@ Layer: 94 Symbol</description>
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="60.4"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="60.4"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="22"/>
+<part name="J3" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="NF_S_RA" technology="BLACK"/>
 </parts>
 <sheets>
 <sheet>
@@ -7057,9 +7073,6 @@ Layer: 94 Symbol</description>
 </instance>
 <instance part="GND12" gate="1" x="231.14" y="134.62" smashed="yes">
 <attribute name="VALUE" x="231.14" y="133.35" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="J3" gate="G$1" x="10.16" y="208.28" smashed="yes">
-<attribute name="NAME" x="10.16" y="208.915" size="1.27" layer="95"/>
 </instance>
 <instance part="Q2" gate="G$1" x="62.992" y="114.3" smashed="yes">
 <attribute name="NAME" x="62.992" y="119.38" size="1.27" layer="95" align="bottom-center"/>
@@ -7439,6 +7452,10 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="41.91" y="138.43" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="41.91" y="135.89" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="J3" gate="G$1" x="10.16" y="208.28" smashed="yes">
+<attribute name="NAME" x="10.16" y="208.915" size="1.27" layer="95"/>
+<attribute name="MPN" x="10.16" y="194.945" size="1.27" layer="96" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7644,8 +7661,8 @@ Layer: 94 Symbol</description>
 </segment>
 <segment>
 <pinref part="P17" gate="1" pin="GND"/>
-<pinref part="J3" gate="G$1" pin="GND"/>
 <wire x1="27.94" y1="198.12" x2="22.86" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="P23" gate="1" pin="GND"/>
@@ -7861,9 +7878,9 @@ Layer: 94 Symbol</description>
 <pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="+12V"/>
 <wire x1="22.86" y1="205.74" x2="27.94" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="P37" gate="1" pin="+12V"/>
+<pinref part="J3" gate="G$1" pin="+12V"/>
 </segment>
 </net>
 <net name="BUZZER_CTRL" class="0">
