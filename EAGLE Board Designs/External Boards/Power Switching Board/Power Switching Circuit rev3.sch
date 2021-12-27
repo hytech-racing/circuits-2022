@@ -5551,10 +5551,10 @@ OV Rising: 15.96 V</text>
 <attribute name="VOLTAGE" x="-8.89" y="2.54" size="1.27" layer="96" align="top-center"/>
 <attribute name="CAPACITANCE" x="-8.89" y="0.762" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="C8" gate="G$1" x="10.16" y="5.08" smashed="yes">
-<attribute name="NAME" x="8.89" y="7.62" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VOLTAGE" x="8.89" y="2.54" size="1.27" layer="96" align="top-center"/>
-<attribute name="CAPACITANCE" x="8.89" y="0.762" size="1.27" layer="96" align="top-center"/>
+<instance part="C8" gate="G$1" x="17.78" y="5.08" smashed="yes">
+<attribute name="NAME" x="16.51" y="7.62" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VOLTAGE" x="16.51" y="2.54" size="1.27" layer="96" align="top-center"/>
+<attribute name="CAPACITANCE" x="16.51" y="0.762" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="C10" gate="G$1" x="-40.64" y="15.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="-43.18" y="13.97" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -5661,9 +5661,9 @@ OV Rising: 15.96 V</text>
 <attribute name="NAME" x="80.01" y="-26.67" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="80.01" y="-29.21" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R25" gate="G$1" x="91.44" y="-27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="92.71" y="-29.21" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="92.71" y="-26.67" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R25" gate="G$1" x="86.36" y="-25.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="87.63" y="-26.67" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="87.63" y="-24.13" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
 <instance part="R8" gate="G$1" x="-38.1" y="-20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="-39.37" y="-21.59" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -5796,9 +5796,6 @@ OV Rising: 15.96 V</text>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="83.82" y1="-27.94" x2="86.36" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="-27.94" x2="88.9" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="86.36" y="-27.94"/>
 </segment>
 </net>
 <net name="DCDC" class="0">
@@ -6013,18 +6010,18 @@ OV Rising: 15.96 V</text>
 <segment>
 <wire x1="12.7" y1="15.24" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="12.7" x2="12.7" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GATE2"/>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <pinref part="U$7" gate="G$1" pin="P$1"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="12.7" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
 <junction x="12.7" y="12.7"/>
 <pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="22.86" y1="15.24" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="7.62" x2="12.7" y2="7.62" width="0.1524" layer="91"/>
-<junction x="12.7" y="7.62"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="GATE2"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="7.62" width="0.1524" layer="91"/>
 <junction x="12.7" y="5.08"/>
+<junction x="12.7" y="7.62"/>
 </segment>
 </net>
 <net name="SOURCE2" class="0">
@@ -6035,6 +6032,8 @@ OV Rising: 15.96 V</text>
 <junction x="20.32" y="25.4"/>
 <pinref part="Q4" gate="G$1" pin="S"/>
 <pinref part="Q3" gate="G$1" pin="S"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<junction x="20.32" y="5.08"/>
 </segment>
 </net>
 <net name="CPO" class="0">
@@ -6062,20 +6061,18 @@ OV Rising: 15.96 V</text>
 <wire x1="-81.28" y1="22.86" x2="-81.28" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-81.28" y="25.4"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
-<pinref part="U1" gate="G$1" pin="V2"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
-<junction x="5.08" y="25.4"/>
 <wire x1="-38.1" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-17.78" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-38.1" y="25.4"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<junction x="5.08" y="5.08"/>
 <pinref part="U$10" gate="G$1" pin="CONTACT2"/>
 <wire x1="-81.28" y1="25.4" x2="-91.44" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <junction x="-40.64" y="25.4"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="V2"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
+<junction x="5.08" y="25.4"/>
 </segment>
 <segment>
 <pinref part="F2" gate="G$1" pin="1"/>
@@ -6140,8 +6137,8 @@ OV Rising: 15.96 V</text>
 <wire x1="68.58" y1="-35.56" x2="71.12" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-35.56" x2="76.2" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-35.56" x2="81.28" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-35.56" x2="96.52" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="-35.56" x2="121.92" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-35.56" x2="91.44" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-35.56" x2="121.92" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-114.3" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="50.8" x2="121.92" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="!DISABLE2"/>
@@ -6164,8 +6161,8 @@ OV Rising: 15.96 V</text>
 <wire x1="-114.3" y1="50.8" x2="-114.3" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="-27.94" x2="96.52" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="96.52" y="-35.56"/>
+<wire x1="91.44" y1="-25.4" x2="91.44" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="91.44" y="-35.56"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -6431,7 +6428,12 @@ OV Rising: 15.96 V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="RETRY"/>
 <pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="-27.94" x2="76.2" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-27.94" x2="73.66" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="-27.94" x2="76.2" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="-25.4" x2="73.66" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-25.4" x2="73.66" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="73.66" y="-27.94"/>
 </segment>
 </net>
 </nets>
