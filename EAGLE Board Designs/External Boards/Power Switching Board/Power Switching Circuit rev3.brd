@@ -4712,15 +4712,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="-4.953" y="-530.1818" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="VOLTAGE" value="32V" x="-4.953" y="-533.8318" size="1.778" layer="27" display="off"/>
 </element>
-<element name="F2" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="FUSE_MB_10" x="-4.953" y="-549.9354" smashed="yes">
-<attribute name="CURRENT" value="10A" x="-4.953" y="-549.9354" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="F991-ND" x="-4.953" y="-549.9354" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Littelfuse Inc." x="-4.953" y="-549.9354" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="576-0297010.WXNV" x="-4.953" y="-549.9354" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="0297010.WXNV" x="-4.953" y="-549.9354" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-4.953" y="-546.2854" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="VOLTAGE" value="32V" x="-4.953" y="-549.9354" size="1.778" layer="27" display="off"/>
-</element>
 <element name="F3" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="FUSE_MB_10" x="-4.953" y="-566.039" smashed="yes">
 <attribute name="CURRENT" value="10A" x="-4.953" y="-566.039" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="F991-ND" x="-4.953" y="-566.039" size="1.778" layer="27" display="off"/>
@@ -5498,22 +5489,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <vertex x="26.924" y="-11.9888"/>
 </polygon>
 <contactref element="D2" pad="3"/>
-<contactref element="F2" pad="R1"/>
 <contactref element="Q3" pad="2"/>
-<contactref element="F2" pad="L1"/>
 <contactref element="U$10" pad="2"/>
 <contactref element="R12" pad="2"/>
-<contactref element="F2" pad="L2"/>
-<contactref element="F2" pad="R2"/>
 <contactref element="R13" pad="2"/>
 <contactref element="R8" pad="2"/>
 <contactref element="U1" pad="30"/>
 <wire x1="-24.35" y1="-519.43" x2="-4.572" y2="-471.17" width="0" layer="19" extent="1-1"/>
-<wire x1="-9.906" y1="-548.2336" x2="-24.35" y2="-519.43" width="0" layer="19" extent="1-1"/>
-<wire x1="-9.906" y1="-551.6372" x2="-9.906" y2="-548.2336" width="0" layer="19" extent="1-1"/>
-<wire x1="0" y1="-551.6372" x2="-9.906" y2="-551.6372" width="0" layer="19" extent="1-1"/>
-<wire x1="0" y1="-548.2336" x2="0" y2="-551.6372" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.55" y1="-636.27" x2="-9.906" y2="-551.6372" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.55" y1="-636.27" x2="-24.35" y2="-519.43" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.55" y1="-681.99" x2="-24.55" y2="-636.27" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.3" y1="-58.0206" x2="-4.572" y2="-471.17" width="0" layer="19" extent="1-1"/>
 <wire x1="24.13" y1="-10.9347" x2="-2.3" y2="-58.0206" width="0" layer="19" extent="1-1"/>

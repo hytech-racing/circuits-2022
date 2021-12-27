@@ -5272,7 +5272,6 @@ Layer: 94 Symbol</description>
 <part name="Q3" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
 <part name="U$11" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
-<part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
 <part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
 <part name="F4" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
 <part name="C12" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_680PF"/>
@@ -5502,10 +5501,6 @@ OV Rising: 15.96 V</text>
 <instance part="F1" gate="G$1" x="-91.44" y="12.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="-92.71" y="11.43" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="CURRENT" x="-90.17" y="11.43" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="F2" gate="G$1" x="-81.28" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="-82.55" y="19.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="CURRENT" x="-80.01" y="19.05" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="F3" gate="G$1" x="-68.58" y="45.72" smashed="yes">
 <attribute name="NAME" x="-69.85" y="46.99" size="1.27" layer="95" align="bottom-center"/>
@@ -6033,7 +6028,7 @@ OV Rising: 15.96 V</text>
 </net>
 <net name="RELAY" class="0">
 <segment>
-<wire x1="-81.28" y1="25.4" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="25.4" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="25.4" x2="-60.96" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="25.4" x2="-40.64" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="25.4" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
@@ -6042,15 +6037,11 @@ OV Rising: 15.96 V</text>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="-68.58" y1="22.86" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-68.58" y="25.4"/>
-<pinref part="F2" gate="G$1" pin="2"/>
-<wire x1="-81.28" y1="22.86" x2="-81.28" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-81.28" y="25.4"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
 <wire x1="-38.1" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-17.78" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-38.1" y="25.4"/>
 <pinref part="U$10" gate="G$1" pin="CONTACT2"/>
-<wire x1="-81.28" y1="25.4" x2="-91.44" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <junction x="-40.64" y="25.4"/>
 <pinref part="R13" gate="G$1" pin="2"/>
@@ -6058,11 +6049,6 @@ OV Rising: 15.96 V</text>
 <pinref part="U1" gate="G$1" pin="V2"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
 <junction x="5.08" y="25.4"/>
-</segment>
-<segment>
-<pinref part="F2" gate="G$1" pin="1"/>
-<wire x1="-81.28" y1="15.24" x2="-81.28" y2="12.7" width="0.1524" layer="91"/>
-<label x="-81.28" y="12.7" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="GATE1" class="0">
