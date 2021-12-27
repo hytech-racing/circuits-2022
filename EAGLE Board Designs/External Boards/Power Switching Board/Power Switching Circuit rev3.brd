@@ -5064,30 +5064,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="31.62V" x="-25.4" y="-670.56" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="-25.4" y="-670.56" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R24" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="-25.4" y="-674.37" smashed="yes">
-<attribute name="DKPN" value="" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-25.4" y="-673.735" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
-<attribute name="RESISTANCE" value="DNP" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="-25.4" y="-674.37" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R25" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="-25.4" y="-678.18" smashed="yes">
-<attribute name="DKPN" value="" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-25.4" y="-677.545" size="0.8128" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
-<attribute name="RESISTANCE" value="DNP" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="-25.4" y="-678.18" size="1.778" layer="27" display="off"/>
-</element>
 <element name="R8" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_953K" x="-25.4" y="-681.99" smashed="yes">
 <attribute name="DKPN" value="P953KHCT-ND" x="-25.4" y="-681.99" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="-25.4" y="-681.99" size="1.778" layer="27" display="off"/>
@@ -5211,7 +5187,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C14" pad="2"/>
 <contactref element="C13" pad="2"/>
 <contactref element="R15" pad="1"/>
-<contactref element="R24" pad="2"/>
 <contactref element="R10" pad="1"/>
 <wire x1="0" y1="-461.01" x2="-20.32" y2="-471.17" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="-492.76" x2="0" y2="-461.01" width="0" layer="19" extent="1-1"/>
@@ -5233,8 +5208,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-24.65" y1="-621.03" x2="26.67" y2="-496.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.65" y1="-624.84" x2="-24.65" y2="-621.03" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.25" y1="-666.75" x2="-24.65" y2="-624.84" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.55" y1="-674.37" x2="-26.25" y2="-666.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.25" y1="-693.42" x2="-24.55" y2="-674.37" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.25" y1="-693.42" x2="-26.25" y2="-666.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC">
 <contactref element="U1" pad="7"/>
@@ -5651,9 +5625,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="D4" pad="2"/>
 <contactref element="U$10" pad="3"/>
 <contactref element="R15" pad="2"/>
-<contactref element="R25" pad="1"/>
 <wire x1="-24.55" y1="-666.75" x2="-15.24" y2="-471.17" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.25" y1="-678.18" x2="-24.55" y2="-666.75" width="0" layer="19" extent="1-1"/>
 <wire x1="11.850728125" y1="-13.16826875" x2="-15.24" y2="-471.17" width="0" layer="19" extent="1-1"/>
 <wire x1="10.275928125" y1="-11.59346875" x2="11.850728125" y2="-13.16826875" width="0" layer="19" extent="1-1"/>
 <wire x1="8.66995625" y1="-0.675009375" x2="10.275928125" y2="-11.59346875" width="0" layer="19" extent="1-1"/>
@@ -5845,10 +5817,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$31">
 <contactref element="U1" pad="20"/>
-<contactref element="R24" pad="1"/>
-<contactref element="R25" pad="2"/>
-<wire x1="-26.25" y1="-674.37" x2="-24.55" y2="-678.18" width="0" layer="19" extent="1-1"/>
-<wire x1="8.2103375" y1="-1.134628125" x2="-26.25" y2="-674.37" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
