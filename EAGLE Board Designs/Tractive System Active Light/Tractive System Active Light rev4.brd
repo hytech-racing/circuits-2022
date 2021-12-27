@@ -246,14 +246,14 @@
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
 <smd name="THERMAL" x="0" y="0" dx="5" dy="2.9" layer="1"/>
-<smd name="RED+" x="-2.0125" y="2.175" dx="0.975" dy="0.65" layer="1"/>
-<smd name="WHITE+" x="2.0125" y="2.175" dx="0.975" dy="0.65" layer="1"/>
-<smd name="WHITE-" x="2.0125" y="-2.175" dx="0.975" dy="0.65" layer="1"/>
-<smd name="RED-" x="-2.0125" y="-2.175" dx="0.975" dy="0.65" layer="1"/>
-<smd name="GREEN+" x="-0.6625" y="2.175" dx="0.925" dy="0.65" layer="1"/>
-<smd name="BLUE+" x="0.6625" y="2.175" dx="0.925" dy="0.65" layer="1"/>
-<smd name="GREEN-" x="-0.6625" y="-2.175" dx="0.925" dy="0.65" layer="1"/>
-<smd name="BLUE-" x="0.6625" y="-2.175" dx="0.925" dy="0.65" layer="1"/>
+<smd name="A+" x="-2.0125" y="2.175" dx="0.975" dy="0.65" layer="1"/>
+<smd name="D+" x="2.0125" y="2.175" dx="0.975" dy="0.65" layer="1"/>
+<smd name="D-" x="2.0125" y="-2.175" dx="0.975" dy="0.65" layer="1"/>
+<smd name="A-" x="-2.0125" y="-2.175" dx="0.975" dy="0.65" layer="1"/>
+<smd name="B+" x="-0.6625" y="2.175" dx="0.925" dy="0.65" layer="1"/>
+<smd name="C+" x="0.6625" y="2.175" dx="0.925" dy="0.65" layer="1"/>
+<smd name="B-" x="-0.6625" y="-2.175" dx="0.925" dy="0.65" layer="1"/>
+<smd name="C-" x="0.6625" y="-2.175" dx="0.925" dy="0.65" layer="1"/>
 <wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
@@ -547,55 +547,55 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="N$1">
-<contactref element="U$3" pad="RED-"/>
-<contactref element="U$4" pad="RED+"/>
+<contactref element="U$3" pad="A-"/>
+<contactref element="U$4" pad="A+"/>
 <wire x1="-31.2225" y1="33.925" x2="-24.8725" y2="29.575" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
-<contactref element="U$3" pad="GREEN-"/>
-<contactref element="U$4" pad="GREEN+"/>
+<contactref element="U$3" pad="B-"/>
+<contactref element="U$4" pad="B+"/>
 <wire x1="-29.8725" y1="33.925" x2="-23.5225" y2="29.575" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
-<contactref element="U$2" pad="RED-"/>
-<contactref element="U$3" pad="RED+"/>
+<contactref element="U$2" pad="A-"/>
+<contactref element="U$3" pad="A+"/>
 <wire x1="-24.8725" y1="33.925" x2="-18.5225" y2="29.575" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
-<contactref element="U$2" pad="GREEN-"/>
-<contactref element="U$3" pad="GREEN+"/>
+<contactref element="U$2" pad="B-"/>
+<contactref element="U$3" pad="B+"/>
 <wire x1="-23.5225" y1="33.925" x2="-17.1725" y2="29.575" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
-<contactref element="U$1" pad="RED-"/>
-<contactref element="U$2" pad="RED+"/>
+<contactref element="U$1" pad="A-"/>
+<contactref element="U$2" pad="A+"/>
 <wire x1="-18.5225" y1="33.925" x2="-28.6825" y2="1.635" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
-<contactref element="U$1" pad="GREEN-"/>
-<contactref element="U$2" pad="GREEN+"/>
+<contactref element="U$1" pad="B-"/>
+<contactref element="U$2" pad="B+"/>
 <wire x1="-17.1725" y1="33.925" x2="-27.3325" y2="1.635" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="2"/>
-<contactref element="U$1" pad="RED+"/>
+<contactref element="U$1" pad="A+"/>
 <wire x1="-18" y1="38.1" x2="-14.19" y2="38.1" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.6825" y1="5.985" x2="-18" y2="38.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="R3" pad="2"/>
-<contactref element="U$1" pad="GREEN+"/>
+<contactref element="U$1" pad="B+"/>
 <wire x1="-27.3325" y1="5.985" x2="-28.36" y2="-2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_RED">
 <contactref element="J1" pad="3"/>
-<contactref element="U$4" pad="RED-"/>
+<contactref element="U$4" pad="A-"/>
 <wire x1="-31.2225" y1="29.575" x2="-16.2814" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_GREEN">
 <contactref element="J1" pad="4"/>
-<contactref element="U$4" pad="GREEN-"/>
+<contactref element="U$4" pad="B-"/>
 <wire x1="-29.8725" y1="29.575" x2="-19.2786" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
