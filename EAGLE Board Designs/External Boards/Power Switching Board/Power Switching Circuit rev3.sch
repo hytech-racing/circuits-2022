@@ -5272,7 +5272,10 @@ Layer: 94 Symbol</description>
 <part name="Q3" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
 <part name="U$11" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
+<<<<<<< Updated upstream
 <part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
+=======
+>>>>>>> Stashed changes
 <part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
 <part name="F4" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10" value="FUSE_MB_10"/>
 <part name="C12" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_680PF"/>
@@ -5307,8 +5310,11 @@ Layer: 94 Symbol</description>
 <part name="R22" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R15" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R23" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<<<<<<< Updated upstream
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
 <part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
+=======
+>>>>>>> Stashed changes
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="953K"/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="14.3K"/>
@@ -5420,8 +5426,13 @@ OV Rising: 15.96 V</text>
 <instance part="GND12" gate="1" x="-33.02" y="27.94" smashed="yes">
 <attribute name="VALUE" x="-35.56" y="25.4" size="1.778" layer="96"/>
 </instance>
+<<<<<<< Updated upstream
 <instance part="GND13" gate="1" x="86.36" y="-30.48" smashed="yes">
 <attribute name="VALUE" x="83.82" y="-32.512" size="1.778" layer="96"/>
+=======
+<instance part="GND13" gate="1" x="81.28" y="-30.48" smashed="yes">
+<attribute name="VALUE" x="78.74" y="-32.512" size="1.778" layer="96"/>
+>>>>>>> Stashed changes
 </instance>
 <instance part="D2" gate="G$1" x="-68.58" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="-70.485" y="19.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -5505,10 +5516,13 @@ OV Rising: 15.96 V</text>
 <attribute name="NAME" x="-92.71" y="11.43" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="CURRENT" x="-90.17" y="11.43" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
+<<<<<<< Updated upstream
 <instance part="F2" gate="G$1" x="-81.28" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="-82.55" y="19.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="CURRENT" x="-80.01" y="19.05" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
+=======
+>>>>>>> Stashed changes
 <instance part="F3" gate="G$1" x="-68.58" y="45.72" smashed="yes">
 <attribute name="NAME" x="-69.85" y="46.99" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="-69.85" y="44.45" size="1.27" layer="96" align="top-center"/>
@@ -5657,6 +5671,7 @@ OV Rising: 15.96 V</text>
 <attribute name="NAME" x="46.99" y="-52.07" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="49.53" y="-52.07" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
+<<<<<<< Updated upstream
 <instance part="R24" gate="G$1" x="81.28" y="-27.94" smashed="yes">
 <attribute name="NAME" x="80.01" y="-26.67" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="80.01" y="-29.21" size="1.27" layer="96" align="top-center"/>
@@ -5665,6 +5680,8 @@ OV Rising: 15.96 V</text>
 <attribute name="NAME" x="87.63" y="-26.67" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="87.63" y="-24.13" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
+=======
+>>>>>>> Stashed changes
 <instance part="R8" gate="G$1" x="-38.1" y="-20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="-39.37" y="-21.59" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="-36.83" y="-21.59" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -5793,9 +5810,15 @@ OV Rising: 15.96 V</text>
 <junction x="81.28" y="71.12"/>
 </segment>
 <segment>
+<<<<<<< Updated upstream
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="83.82" y1="-27.94" x2="86.36" y2="-27.94" width="0.1524" layer="91"/>
+=======
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="RETRY"/>
+<wire x1="68.58" y1="-27.94" x2="81.28" y2="-27.94" width="0.1524" layer="91"/>
+>>>>>>> Stashed changes
 </segment>
 </net>
 <net name="DCDC" class="0">
@@ -6048,7 +6071,11 @@ OV Rising: 15.96 V</text>
 </net>
 <net name="RELAY" class="0">
 <segment>
+<<<<<<< Updated upstream
 <wire x1="-81.28" y1="25.4" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
+=======
+<wire x1="-91.44" y1="25.4" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
+>>>>>>> Stashed changes
 <wire x1="-68.58" y1="25.4" x2="-60.96" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="25.4" x2="-40.64" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="25.4" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
@@ -6057,15 +6084,21 @@ OV Rising: 15.96 V</text>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="-68.58" y1="22.86" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-68.58" y="25.4"/>
+<<<<<<< Updated upstream
 <pinref part="F2" gate="G$1" pin="2"/>
 <wire x1="-81.28" y1="22.86" x2="-81.28" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-81.28" y="25.4"/>
+=======
+>>>>>>> Stashed changes
 <pinref part="Q3" gate="G$1" pin="D"/>
 <wire x1="-38.1" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-17.78" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-38.1" y="25.4"/>
 <pinref part="U$10" gate="G$1" pin="CONTACT2"/>
+<<<<<<< Updated upstream
 <wire x1="-81.28" y1="25.4" x2="-91.44" y2="25.4" width="0.1524" layer="91"/>
+=======
+>>>>>>> Stashed changes
 <pinref part="R12" gate="G$1" pin="2"/>
 <junction x="-40.64" y="25.4"/>
 <pinref part="R13" gate="G$1" pin="2"/>
@@ -6074,11 +6107,14 @@ OV Rising: 15.96 V</text>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
 <junction x="5.08" y="25.4"/>
 </segment>
+<<<<<<< Updated upstream
 <segment>
 <pinref part="F2" gate="G$1" pin="1"/>
 <wire x1="-81.28" y1="15.24" x2="-81.28" y2="12.7" width="0.1524" layer="91"/>
 <label x="-81.28" y="12.7" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+=======
+>>>>>>> Stashed changes
 </net>
 <net name="GATE1" class="0">
 <segment>
@@ -6137,8 +6173,12 @@ OV Rising: 15.96 V</text>
 <wire x1="68.58" y1="-35.56" x2="71.12" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-35.56" x2="76.2" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-35.56" x2="81.28" y2="-35.56" width="0.1524" layer="91"/>
+<<<<<<< Updated upstream
 <wire x1="81.28" y1="-35.56" x2="91.44" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-35.56" x2="121.92" y2="-35.56" width="0.1524" layer="91"/>
+=======
+<wire x1="81.28" y1="-35.56" x2="121.92" y2="-35.56" width="0.1524" layer="91"/>
+>>>>>>> Stashed changes
 <wire x1="-114.3" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="50.8" x2="121.92" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="!DISABLE2"/>
@@ -6160,9 +6200,12 @@ OV Rising: 15.96 V</text>
 <pinref part="U$10" gate="G$1" pin="CONTROL+"/>
 <wire x1="-114.3" y1="50.8" x2="-114.3" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
+<<<<<<< Updated upstream
 <pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="-25.4" x2="91.44" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="91.44" y="-35.56"/>
+=======
+>>>>>>> Stashed changes
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -6424,6 +6467,7 @@ OV Rising: 15.96 V</text>
 <pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
+<<<<<<< Updated upstream
 <net name="N$31" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="RETRY"/>
@@ -6436,6 +6480,8 @@ OV Rising: 15.96 V</text>
 <junction x="73.66" y="-27.94"/>
 </segment>
 </net>
+=======
+>>>>>>> Stashed changes
 </nets>
 </sheet>
 </sheets>
