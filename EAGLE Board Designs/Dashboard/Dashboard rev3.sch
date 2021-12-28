@@ -7276,7 +7276,7 @@ Layer: 94 Symbol</description>
 </instance>
 <instance part="A1" gate="G$1" x="213.36" y="200.66" smashed="yes">
 <attribute name="NAME" x="213.36" y="201.422" size="1.27" layer="95"/>
-<attribute name="MPN" x="213.36" y="187.198" size="1.27" layer="96" align="top-left"/>
+<attribute name="MPN" x="213.36" y="184.658" size="1.27" layer="96" align="top-left"/>
 </instance>
 <instance part="R12" gate="G$1" x="132.08" y="111.76" smashed="yes">
 <attribute name="NAME" x="130.81" y="113.03" size="1.27" layer="95" align="bottom-center"/>
