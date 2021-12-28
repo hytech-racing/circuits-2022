@@ -9,34 +9,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
-<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
-<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
-<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
-<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
-<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
-<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
-<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
-<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
-<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
-<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
-<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
-<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -45,8 +45,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -54,19 +54,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -10544,19 +10544,27 @@ Layer: 94 Symbol</description>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
 <attribute name="REVIEWER_BOARD" value="Zekun Li"/>
 <attribute name="REVIEWER_FURTHER" value="Arvind Srinivasan"/>
-<attribute name="REVIEWER_SCHEMATIC" value="Arvind Srinivasan"/>
+<attribute name="REVIEWER_SCHEMATIC" value="Ethan Weinstock"/>
 </part>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_P_MOS_?_*" device="SOT23" technology="SI2369DS-T1-GE3"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="106.68" y="142.24" size="1.27" layer="97">RC Filter Determined by one shown on page 70 of the datasheet.
-1k gate resister for the mosfet determined by the ltc6811-2 demo circuit.</text>
-<text x="142.24" y="96.52" size="1.27" layer="97">7.5 ohm resistor chosen to optimize power
-during discharge while also meeting resistor
-derating</text>
+<text x="106.68" y="142.24" size="1.27" layer="97">RC Filter Determined by one shown on page 70 of the datasheet. This maximizes accuracy of the cell measurement.</text>
 <text x="137.16" y="119.38" size="1.27" layer="97">QS</text>
+<text x="142.24" y="83.82" size="1.27" layer="97">At 60°C, the PWR263 derates to 73.077% maximum power.
+We choose 60°C as this as the maximum allowed temperature
+at which the accumulator can maintain normal operation. The
+PWR263 is rated to 3.5W on a copper board without heatsink.
+At 60°C, we derate to 2.55W. Assuming maximum cell voltage
+of 4.23V, we need over 6.99Ω to be under 2.55W. 7.5Ω is the
+smallest resistor over 6.99Ω in the PWR263 series. The smallest
+resistor value is chosen to speed up balancing as larger currents
+allow more energy to be discharged.</text>
+<text x="157.48" y="106.68" size="1.27" layer="97">The LTC6811-2 datasheet recommends a 3.3kΩ gate resistor.
+The LTC6811-2 demo circuit uses a 1kΩ gate resistor.
+We choose to use a 1kΩ for part commonality.</text>
 </plain>
 <instances>
 <instance part="D1" gate="LED" x="119.38" y="101.6" smashed="yes" rot="MR270">
@@ -10828,7 +10836,7 @@ derating</text>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
 <attribute name="DESCRIPTION_1" value="Uses two LTC6811s to measure 21 cell voltages,"/>
-<attribute name="DESCRIPTION_2" value=" temperatures of 8 cells, and two humidity/temperature sensors."/>
+<attribute name="DESCRIPTION_2" value="temperatures of 8 cells, and two humidity/temperature sensors."/>
 <attribute name="DESIGNER_BOARD" value="Noah Bruckner"/>
 <attribute name="DESIGNER_FURTHER" value="Cody Kaminsky"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
@@ -11005,50 +11013,74 @@ derating</text>
 <sheets>
 <sheet>
 <plain>
-<text x="6.858" y="199.39" size="1.27" layer="97">Page 86 of the LTC6811-2 datasheet says
+<text x="9.398" y="196.85" size="1.27" layer="97">Page 86 of the LTC6811-2 datasheet says
 we can configure the cell measurements
 such that all of the unused cell reading pins
-are shorted on the pins 10 through 12
-which decreases the amount of ISOSPI
-transactions.</text>
+are shorted on the pins 10 through 12.
+This decreases the amount of ISOSPI
+transactions as internal register D
+does not need to be read.</text>
 <text x="114.3" y="101.6" size="1.27" layer="97">Address pin 3 is pulled down to V- because 
 we only have 4 segments which means
 8 ICs. There is no need for the option
-to expand. Address pin 0 of the upper ic is
-pulled up because it will always be an odd
-address and the lower one down
-because it will always be an even address.</text>
-<text x="154.94" y="172.72" size="1.27" layer="97">These transformers are chosen based on a list in the LTC6811
-datasheet and because they are common mode choke with
-centertap.</text>
+to expand. Address pin 0 of the upper IC
+is pulled up because it will always be
+an odd address and the lower one down
+because it will always be an even address.
+The idea is that the installed address
+resistors are identical on both ICs reducing errors.</text>
+<text x="139.7" y="170.18" size="1.27" layer="97">This transformer was chosen based on a list in
+the LTC6811 datasheet. It is the widest (to meet
+spacing) automotive qualified transformer with a
+common mode choke and centertap that was in stock.</text>
 <text x="5.08" y="0.762" size="1.27" layer="97">These 1A fuses are chosen because we have a peak current
-around 0.6 (0.564 for balancing and aroun 40 mA for VREG).
+of 0.604A (0.564A for balancing and around 40 mA for VREG).
 The datasheet recommends 0.675x derating. The 1A fuse fits perfectly.</text>
-<text x="119.38" y="205.74" size="1.27" layer="97">These are 0 Ohm resisters that we may or 
-may not decide to solder in based on the address
-of the given LTC6811 chip.</text>
-<text x="30.48" y="114.3" size="1.27" layer="97">We chose to have two fuses here 
-instead of one to isolate the upper 
-IC from the lower IC in a situation 
-where a fuse blows.</text>
+<text x="114.3" y="205.74" size="1.27" layer="97">These are 0 Ohm resisters that are used to determine
+the address of the given LTC6811 chip.</text>
+<text x="30.48" y="114.3" size="1.27" layer="97">We have two fuses here instead
+of one to isolate the upper IC from
+the lower IC in a situation where a
+fuse blows. The behavior of floating voltage is unknown.</text>
 <wire x1="182.88" y1="172.72" x2="182.88" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="182.88" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="223.52" y1="116.84" x2="223.52" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="223.52" y1="172.72" x2="182.88" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
 <text x="119.38" y="119.38" size="1.27" layer="97">The parts inside the dotted
 line box are galvanically
-isolated from the cell
-voltages, but is still considered
-tractive system because the FSAE
+isolated from the cell voltages,
+but is still considered tractive
+system because the FSAE
 spacing requirements are not
 met for the footprint.
-
 The transformer is used to
 meet the galvanic isolation
-requirement of EV.8.3.2.</text>
-<text x="209.042" y="202.184" size="1.27" layer="97">The 2.74kOhm resister selection was done in order to maximize the
-coverage on our ADC in the range of 55 to 60C. This was chosen
-because this is the critical range for AMS fault detection.</text>
+requirement of EV.8.3.2.
+We skip an air-gap footprint to
+avoid exposed conductor.</text>
+<text x="226.06" y="127" size="1.27" layer="97">The thermistors are done on the
+pull-up side as to not overload
+the GPIO pins when they are not present.</text>
+<text x="198.12" y="193.04" size="1.27" layer="97">Maximizing the range of a voltage divider across a variable resistor involves selecting the square root
+of the product of the two desired resistance extremes. We choose to maximize the resolution
+between 55°C and 60°C as this is the critical range for determining whether the accumulator can
+safely operate. At 55°C the terhmistor resistance is 2982Ω. At 60°C is it 2484Ω. 
+This would ideally result in using a resistance of 2721Ω. Due to E96 limitations, the
+closest options are 2.67kΩ and 2.74kΩ. 2.74kΩ is both closer
+to the desired resistance and maximizes the
+total dynamic range. The resistance at 
+25°C is 10kΩ, favoring a larger resistor. 
+</text>
+<text x="157.48" y="198.12" size="1.27" layer="97">Blue is chosen to
+distinquish the
+power LEDs
+from the red
+discharging LEDs.</text>
+<text x="182.88" y="175.26" size="1.27" layer="97">The 100Ω resistor, 10pF capcitor filter is selected
+per the datasheet to maximize GPIO analog accuracy.</text>
+<text x="172.72" y="71.12" size="1.27" layer="97">The LT3990-5 implementation
+precisely follows the LTC6811-2
+datasheet recommendation.</text>
 </plain>
 <moduleinsts>
 <moduleinst name="CELL1" module="CELL" x="48.26" y="20.32">
@@ -11276,27 +11308,27 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="NAME" x="21.59" y="194.31" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="21.59" y="191.77" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R33" gate="G$1" x="137.16" y="198.12" smashed="yes">
-<attribute name="NAME" x="135.89" y="199.39" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="135.89" y="196.85" size="1.27" layer="96" align="top-center"/>
+<instance part="R33" gate="G$1" x="124.46" y="198.12" smashed="yes">
+<attribute name="NAME" x="123.19" y="199.39" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="123.19" y="196.85" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R34" gate="G$1" x="129.54" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="130.81" y="201.93" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="130.81" y="199.39" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R34" gate="G$1" x="116.84" y="200.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="118.11" y="201.93" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="118.11" y="199.39" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R36" gate="G$1" x="157.48" y="200.66" smashed="yes">
-<attribute name="NAME" x="156.21" y="201.93" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="156.21" y="199.39" size="1.27" layer="96" align="top-center"/>
+<instance part="R36" gate="G$1" x="144.78" y="200.66" smashed="yes">
+<attribute name="NAME" x="143.51" y="201.93" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="143.51" y="199.39" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R37" gate="G$1" x="149.86" y="203.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="151.13" y="204.47" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="151.13" y="201.93" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R37" gate="G$1" x="137.16" y="203.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="138.43" y="204.47" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
+<attribute name="RESISTANCE" x="138.43" y="201.93" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="P23" gate="G$1" x="144.78" y="198.12" smashed="yes" rot="R90">
-<attribute name="VALUE" x="146.05" y="198.12" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P23" gate="G$1" x="132.08" y="198.12" smashed="yes" rot="R90">
+<attribute name="VALUE" x="133.35" y="198.12" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P24" gate="G$1" x="165.1" y="200.66" smashed="yes" rot="R90">
-<attribute name="VALUE" x="166.37" y="200.66" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P24" gate="G$1" x="152.4" y="200.66" smashed="yes" rot="R90">
+<attribute name="VALUE" x="153.67" y="200.66" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="P25" gate="G$1" x="109.22" y="205.74" smashed="yes" rot="R90">
 <attribute name="VALUE" x="110.49" y="205.74" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -11782,46 +11814,46 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="NAME" x="26.67" y="113.03" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="26.67" y="110.49" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TP9" gate="G$1" x="111.76" y="167.64" smashed="yes">
-<attribute name="NAME" x="109.22" y="169.418" size="1.27" layer="95"/>
-<attribute name="MPN" x="109.22" y="165.862" size="1.27" layer="95" align="top-left"/>
+<instance part="TP9" gate="G$1" x="109.22" y="167.64" smashed="yes">
+<attribute name="NAME" x="106.68" y="169.418" size="1.27" layer="95"/>
+<attribute name="MPN" x="106.68" y="165.862" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP8" gate="G$1" x="129.54" y="175.26" smashed="yes">
-<attribute name="NAME" x="127" y="177.038" size="1.27" layer="95"/>
-<attribute name="MPN" x="127" y="173.482" size="1.27" layer="95" align="top-left"/>
+<instance part="TP8" gate="G$1" x="124.46" y="175.26" smashed="yes">
+<attribute name="NAME" x="121.92" y="177.038" size="1.27" layer="95"/>
+<attribute name="MPN" x="121.92" y="173.482" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP1" gate="G$1" x="190.5" y="66.04" smashed="yes">
-<attribute name="NAME" x="187.96" y="67.818" size="1.27" layer="95"/>
-<attribute name="MPN" x="187.96" y="64.262" size="1.27" layer="95" align="top-left"/>
+<instance part="TP1" gate="G$1" x="200.66" y="66.04" smashed="yes">
+<attribute name="NAME" x="198.12" y="67.818" size="1.27" layer="95"/>
+<attribute name="MPN" x="198.12" y="64.262" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP4" gate="G$1" x="208.28" y="73.66" smashed="yes">
-<attribute name="NAME" x="205.74" y="75.438" size="1.27" layer="95"/>
-<attribute name="MPN" x="205.74" y="71.882" size="1.27" layer="95" align="top-left"/>
+<instance part="TP4" gate="G$1" x="218.44" y="73.66" smashed="yes">
+<attribute name="NAME" x="215.9" y="75.438" size="1.27" layer="95"/>
+<attribute name="MPN" x="215.9" y="71.882" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP2" gate="G$1" x="190.5" y="73.66" smashed="yes">
-<attribute name="NAME" x="187.96" y="75.438" size="1.27" layer="95"/>
-<attribute name="MPN" x="187.96" y="71.882" size="1.27" layer="95" align="top-left"/>
+<instance part="TP2" gate="G$1" x="200.66" y="73.66" smashed="yes">
+<attribute name="NAME" x="198.12" y="75.438" size="1.27" layer="95"/>
+<attribute name="MPN" x="198.12" y="71.882" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP3" gate="G$1" x="208.28" y="66.04" smashed="yes">
-<attribute name="NAME" x="205.74" y="67.818" size="1.27" layer="95"/>
-<attribute name="MPN" x="205.74" y="64.262" size="1.27" layer="95" align="top-left"/>
+<instance part="TP3" gate="G$1" x="218.44" y="66.04" smashed="yes">
+<attribute name="NAME" x="215.9" y="67.818" size="1.27" layer="95"/>
+<attribute name="MPN" x="215.9" y="64.262" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP10" gate="G$1" x="111.76" y="175.26" smashed="yes">
-<attribute name="NAME" x="109.22" y="177.038" size="1.27" layer="95"/>
-<attribute name="MPN" x="109.22" y="173.482" size="1.27" layer="95" align="top-left"/>
+<instance part="TP10" gate="G$1" x="109.22" y="175.26" smashed="yes">
+<attribute name="NAME" x="106.68" y="177.038" size="1.27" layer="95"/>
+<attribute name="MPN" x="106.68" y="173.482" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="P27" gate="G$1" x="116.84" y="177.8" smashed="yes">
-<attribute name="VALUE" x="116.84" y="179.07" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P27" gate="G$1" x="114.3" y="177.8" smashed="yes">
+<attribute name="VALUE" x="114.3" y="179.07" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P51" gate="G$1" x="195.58" y="76.2" smashed="yes">
-<attribute name="VALUE" x="195.58" y="77.47" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P51" gate="G$1" x="205.74" y="76.2" smashed="yes">
+<attribute name="VALUE" x="205.74" y="77.47" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P75" gate="G$1" x="213.36" y="63.5" smashed="yes">
-<attribute name="VALUE" x="213.36" y="62.23" size="1.27" layer="96" align="top-center"/>
+<instance part="P75" gate="G$1" x="223.52" y="63.5" smashed="yes">
+<attribute name="VALUE" x="223.52" y="62.23" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TP7" gate="G$1" x="129.54" y="167.64" smashed="yes">
-<attribute name="NAME" x="127" y="169.418" size="1.27" layer="95"/>
-<attribute name="MPN" x="127" y="165.862" size="1.27" layer="95" align="top-left"/>
+<instance part="TP7" gate="G$1" x="124.46" y="167.64" smashed="yes">
+<attribute name="NAME" x="121.92" y="169.418" size="1.27" layer="95"/>
+<attribute name="MPN" x="121.92" y="165.862" size="1.27" layer="95" align="top-left"/>
 </instance>
 <instance part="TP6" gate="G$1" x="213.36" y="167.64" smashed="yes">
 <attribute name="NAME" x="210.82" y="169.418" size="1.27" layer="95"/>
@@ -11831,8 +11863,8 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="NAME" x="210.82" y="123.698" size="1.27" layer="95"/>
 <attribute name="MPN" x="210.82" y="120.142" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="P76" gate="G$1" x="139.7" y="165.1" smashed="yes">
-<attribute name="VALUE" x="139.7" y="163.83" size="1.27" layer="96" align="top-center"/>
+<instance part="P76" gate="G$1" x="134.62" y="165.1" smashed="yes">
+<attribute name="VALUE" x="134.62" y="163.83" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P40" gate="G$1" x="238.76" y="149.86" smashed="yes">
 <attribute name="VALUE" x="238.76" y="148.59" size="1.27" layer="96" align="top-center"/>
@@ -11912,11 +11944,11 @@ because this is the critical range for AMS fault detection.</text>
 <instance part="P80" gate="G$1" x="109.22" y="198.12" smashed="yes" rot="R270">
 <attribute name="VALUE" x="110.49" y="198.12" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="P81" gate="G$1" x="139.7" y="200.66" smashed="yes" rot="R270">
-<attribute name="VALUE" x="143.256" y="200.152" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P81" gate="G$1" x="127" y="200.66" smashed="yes" rot="R270">
+<attribute name="VALUE" x="130.556" y="200.152" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P82" gate="G$1" x="160.02" y="203.2" smashed="yes" rot="R270">
-<attribute name="VALUE" x="163.83" y="202.692" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P82" gate="G$1" x="147.32" y="203.2" smashed="yes" rot="R270">
+<attribute name="VALUE" x="151.13" y="202.692" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="P83" gate="G$1" x="121.92" y="160.02" smashed="yes">
 <attribute name="VALUE" x="121.92" y="161.29" size="1.27" layer="96" align="bottom-center"/>
@@ -12023,23 +12055,23 @@ because this is the critical range for AMS fault detection.</text>
 <attribute name="NAME" x="87.63" y="3.81" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="87.63" y="6.35" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="R39" gate="G$1" x="187.96" y="205.74" smashed="yes" rot="R180">
-<attribute name="NAME" x="189.23" y="204.47" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="189.23" y="207.01" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R39" gate="G$1" x="177.8" y="205.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="179.07" y="204.47" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="179.07" y="207.01" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="D4" gate="LED" x="200.66" y="205.74" smashed="yes">
-<attribute name="COLOR" x="199.39" y="203.962" size="1.27" layer="95" align="top-center"/>
-<attribute name="NAME" x="199.39" y="209.296" size="1.27" layer="96" align="bottom-center"/>
+<instance part="D4" gate="LED" x="190.5" y="205.74" smashed="yes">
+<attribute name="COLOR" x="189.23" y="203.962" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="189.23" y="209.296" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="D1" gate="LED" x="99.06" y="5.08" smashed="yes">
 <attribute name="COLOR" x="97.79" y="3.302" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="97.79" y="8.636" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P90" gate="G$1" x="205.74" y="195.58" smashed="yes">
-<attribute name="VALUE" x="205.74" y="194.31" size="1.27" layer="96" align="top-center"/>
+<instance part="P90" gate="G$1" x="195.58" y="195.58" smashed="yes">
+<attribute name="VALUE" x="195.58" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P91" gate="G$1" x="182.88" y="208.28" smashed="yes">
-<attribute name="VALUE" x="182.88" y="209.55" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P91" gate="G$1" x="172.72" y="208.28" smashed="yes">
+<attribute name="VALUE" x="172.72" y="209.55" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="P92" gate="G$1" x="104.14" y="2.54" smashed="yes">
 <attribute name="VALUE" x="104.14" y="1.27" size="1.27" layer="96" align="top-center"/>
@@ -12047,13 +12079,13 @@ because this is the critical range for AMS fault detection.</text>
 <instance part="P93" gate="G$1" x="81.28" y="7.62" smashed="yes">
 <attribute name="VALUE" x="81.28" y="8.89" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R32" gate="G$1" x="187.96" y="198.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="189.23" y="196.85" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="RESISTANCE" x="189.23" y="199.39" size="1.27" layer="96" rot="R180" align="top-center"/>
+<instance part="R32" gate="G$1" x="177.8" y="198.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="179.07" y="196.85" size="1.27" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="RESISTANCE" x="179.07" y="199.39" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="D3" gate="LED" x="200.66" y="198.12" smashed="yes">
-<attribute name="COLOR" x="199.39" y="196.342" size="1.27" layer="95" align="top-center"/>
-<attribute name="NAME" x="199.39" y="201.676" size="1.27" layer="96" align="bottom-center"/>
+<instance part="D3" gate="LED" x="190.5" y="198.12" smashed="yes">
+<attribute name="COLOR" x="189.23" y="196.342" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="189.23" y="201.676" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="R21" gate="G$1" x="60.96" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.23" y="3.81" size="1.27" layer="95" rot="R180" align="bottom-center"/>
@@ -12069,11 +12101,11 @@ because this is the critical range for AMS fault detection.</text>
 <instance part="P95" gate="G$1" x="55.88" y="7.62" smashed="yes">
 <attribute name="VALUE" x="55.88" y="8.89" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P96" gate="G$1" x="205.74" y="203.2" smashed="yes">
-<attribute name="VALUE" x="205.74" y="201.93" size="1.27" layer="96" align="top-center"/>
+<instance part="P96" gate="G$1" x="195.58" y="203.2" smashed="yes">
+<attribute name="VALUE" x="195.58" y="201.93" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P97" gate="G$1" x="182.88" y="200.66" smashed="yes">
-<attribute name="VALUE" x="182.88" y="201.93" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P97" gate="G$1" x="172.72" y="200.66" smashed="yes">
+<attribute name="VALUE" x="172.72" y="201.93" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -12632,8 +12664,8 @@ because this is the critical range for AMS fault detection.</text>
 </segment>
 <segment>
 <pinref part="TP1" gate="G$1" pin="P$1"/>
-<wire x1="193.04" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
-<label x="195.58" y="66.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="203.2" y1="66.04" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
+<label x="205.74" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="EN/UVLO"/>
@@ -13066,23 +13098,23 @@ because this is the critical range for AMS fault detection.</text>
 <net name="N$25" class="0">
 <segment>
 <pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="127" y1="200.66" x2="127" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="200.66" x2="114.3" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="127" y1="198.12" x2="132.08" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="A1"/>
-<wire x1="104.14" y1="200.66" x2="127" y2="200.66" width="0.1524" layer="91"/>
-<junction x="127" y="200.66"/>
+<wire x1="104.14" y1="200.66" x2="114.3" y2="200.66" width="0.1524" layer="91"/>
+<junction x="114.3" y="200.66"/>
 </segment>
 </net>
 <net name="N$54" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="A2"/>
 <pinref part="R37" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="203.2" x2="147.32" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="203.2" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
-<junction x="147.32" y="203.2"/>
+<wire x1="104.14" y1="203.2" x2="134.62" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="203.2" x2="134.62" y2="200.66" width="0.1524" layer="91"/>
+<junction x="134.62" y="203.2"/>
 <pinref part="R36" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="200.66" x2="152.4" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="200.66" x2="139.7" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREF1U" class="3">
@@ -13102,8 +13134,8 @@ because this is the critical range for AMS fault detection.</text>
 </segment>
 <segment>
 <pinref part="TP9" gate="G$1" pin="P$1"/>
-<wire x1="114.3" y1="167.64" x2="116.84" y2="167.64" width="0.1524" layer="91"/>
-<label x="116.84" y="167.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="111.76" y1="167.64" x2="114.3" y2="167.64" width="0.1524" layer="91"/>
+<label x="114.3" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="EN/UVLO"/>
@@ -13230,7 +13262,7 @@ because this is the critical range for AMS fault detection.</text>
 </segment>
 <segment>
 <pinref part="TP3" gate="G$1" pin="P$1"/>
-<wire x1="210.82" y1="66.04" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="P75" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
@@ -13531,7 +13563,7 @@ because this is the critical range for AMS fault detection.</text>
 </segment>
 <segment>
 <pinref part="TP7" gate="G$1" pin="P$1"/>
-<wire x1="132.08" y1="167.64" x2="139.7" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="127" y1="167.64" x2="134.62" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="P76" gate="G$1" pin="V-U"/>
 </segment>
 <segment>
@@ -13604,12 +13636,12 @@ because this is the critical range for AMS fault detection.</text>
 <segment>
 <pinref part="R33" gate="G$1" pin="2"/>
 <pinref part="P23" gate="G$1" pin="V-U"/>
-<wire x1="142.24" y1="198.12" x2="139.7" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="198.12" x2="127" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R36" gate="G$1" pin="2"/>
 <pinref part="P24" gate="G$1" pin="V-U"/>
-<wire x1="162.56" y1="200.66" x2="160.02" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="200.66" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P28" gate="G$1" pin="V-U"/>
@@ -13656,12 +13688,12 @@ because this is the critical range for AMS fault detection.</text>
 <segment>
 <pinref part="D3" gate="LED" pin="C"/>
 <pinref part="P90" gate="G$1" pin="V-U"/>
-<wire x1="205.74" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="198.12" x2="193.04" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D4" gate="LED" pin="C"/>
 <pinref part="P96" gate="G$1" pin="V-U"/>
-<wire x1="203.2" y1="205.74" x2="205.74" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="205.74" x2="195.58" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO4L" class="0">
@@ -13790,8 +13822,8 @@ because this is the critical range for AMS fault detection.</text>
 </segment>
 <segment>
 <pinref part="TP4" gate="G$1" pin="P$1"/>
-<wire x1="210.82" y1="73.66" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
-<label x="213.36" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="220.98" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
+<label x="223.52" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -13856,18 +13888,18 @@ because this is the critical range for AMS fault detection.</text>
 </segment>
 <segment>
 <pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="200.66" x2="137.16" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="200.66" x2="124.46" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="P81" gate="G$1" pin="VREGU"/>
 </segment>
 <segment>
 <pinref part="R37" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="203.2" x2="157.48" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="203.2" x2="144.78" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="P82" gate="G$1" pin="VREGU"/>
 </segment>
 <segment>
 <pinref part="TP8" gate="G$1" pin="P$1"/>
-<wire x1="132.08" y1="175.26" x2="134.62" y2="175.26" width="0.1524" layer="91"/>
-<label x="134.62" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="127" y1="175.26" x2="129.54" y2="175.26" width="0.1524" layer="91"/>
+<label x="129.54" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
@@ -13899,13 +13931,13 @@ because this is the critical range for AMS fault detection.</text>
 </segment>
 <segment>
 <pinref part="R39" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="205.74" x2="182.88" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="205.74" x2="172.72" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="P91" gate="G$1" pin="VREGU"/>
 </segment>
 <segment>
 <pinref part="R32" gate="G$1" pin="2"/>
 <pinref part="P97" gate="G$1" pin="VREGU"/>
-<wire x1="185.42" y1="198.12" x2="182.88" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="198.12" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CC12" class="1">
@@ -13923,7 +13955,7 @@ because this is the critical range for AMS fault detection.</text>
 <net name="V+L" class="4">
 <segment>
 <pinref part="TP2" gate="G$1" pin="P$1"/>
-<wire x1="193.04" y1="73.66" x2="195.58" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="73.66" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="P51" gate="G$1" pin="V+L"/>
 </segment>
 <segment>
@@ -13940,7 +13972,7 @@ because this is the critical range for AMS fault detection.</text>
 <net name="V+U" class="3">
 <segment>
 <pinref part="TP10" gate="G$1" pin="P$1"/>
-<wire x1="114.3" y1="175.26" x2="116.84" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="175.26" x2="114.3" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="P27" gate="G$1" pin="V+U"/>
 </segment>
 <segment>
@@ -14122,14 +14154,14 @@ because this is the critical range for AMS fault detection.</text>
 <segment>
 <pinref part="R39" gate="G$1" pin="1"/>
 <pinref part="D4" gate="LED" pin="A"/>
-<wire x1="193.04" y1="205.74" x2="195.58" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="205.74" x2="185.42" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
 <pinref part="D3" gate="LED" pin="A"/>
-<wire x1="193.04" y1="198.12" x2="195.58" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="198.12" x2="185.42" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
