@@ -14175,12 +14175,25 @@ datasheet recommendation.</text>
 </sheet>
 <sheet>
 <plain>
-<text x="123.952" y="116.078" size="1.27" layer="97">4x Thermistors for Upper IC</text>
-<text x="123.698" y="102.87" size="1.27" layer="97">4x Thermistors for Lower IC</text>
-<text x="160.02" y="139.7" size="1.27" layer="97">10x Male Microfit Connectors
+<text x="55.372" y="98.298" size="1.27" layer="97">4x Thermistors for Upper IC</text>
+<text x="55.118" y="85.09" size="1.27" layer="97">4x Thermistors for Lower IC</text>
+<text x="91.44" y="121.92" size="1.27" layer="97">10x Male Microfit Connectors
 8x for Cell Thermistors
 2x for isoSPI</text>
-<text x="159.766" y="133.096" size="1.27" layer="97">20x Microfit Crimps</text>
+<text x="91.186" y="115.316" size="1.27" layer="97">20x Microfit Crimps
+This provides for 10, 2-pin connectors.</text>
+<text x="38.1" y="182.88" size="1.27" layer="97">Layer usage:
+Layer 1: All components, component interconnects, some routing.
+Layer 2: "Ground plane" split across V-L on the Lower side and V-U on the Upper side.
+Layer 3: Additional interconnects.
+Layer 4: Springs for cell tabs plus routing of unfused traces. Traces are miinimized on this layer to reduce the risk of copper becoming exposed next to the cell tabs.</text>
+<text x="38.1" y="154.94" size="1.27" layer="97">Trace Sizing:
+CC: Outer Layer 24 mil, Via 27 mil. Sized for 1A.
+Discharge path (SENSE, CELL:QD, select V-U, V-L): Outer 16, Inner 24, Via 24. Sized for 1A.
+VREG: Outer Lauer 6mil; Inner Layer 15 mi, Via 22.5mil. Max current 40 mA
+All others: Inner and Outer Layer, 6mil; Via: 10 mil. Max current 2 mA.
+
+Due to concerns for thermals, all traces were sized to produce no more than a 5˚C temperature rise.</text>
 </plain>
 <instances>
 <instance part="U$30" gate="G$1" x="0" y="0" smashed="yes">
@@ -14193,123 +14206,123 @@ datasheet recommendation.</text>
 <attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
 </instance>
-<instance part="O9" gate="G$1" x="106.934" y="141.224" smashed="yes">
-<attribute name="MPN" x="106.934" y="138.176" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="106.934" y="141.986" size="1.27" layer="95"/>
+<instance part="O9" gate="G$1" x="38.354" y="123.444" smashed="yes">
+<attribute name="MPN" x="38.354" y="120.396" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="38.354" y="124.206" size="1.27" layer="95"/>
 </instance>
-<instance part="O10" gate="G$1" x="110.49" y="141.224" smashed="yes">
-<attribute name="NAME" x="110.49" y="141.986" size="1.27" layer="95"/>
+<instance part="O10" gate="G$1" x="41.91" y="123.444" smashed="yes">
+<attribute name="NAME" x="41.91" y="124.206" size="1.27" layer="95"/>
 </instance>
-<instance part="O11" gate="G$1" x="114.046" y="141.224" smashed="yes">
-<attribute name="NAME" x="114.046" y="141.986" size="1.27" layer="95"/>
+<instance part="O11" gate="G$1" x="45.466" y="123.444" smashed="yes">
+<attribute name="NAME" x="45.466" y="124.206" size="1.27" layer="95"/>
 </instance>
-<instance part="O12" gate="G$1" x="117.602" y="141.224" smashed="yes">
-<attribute name="NAME" x="117.602" y="141.986" size="1.27" layer="95"/>
+<instance part="O12" gate="G$1" x="49.022" y="123.444" smashed="yes">
+<attribute name="NAME" x="49.022" y="124.206" size="1.27" layer="95"/>
 </instance>
-<instance part="O13" gate="G$1" x="121.158" y="141.224" smashed="yes">
-<attribute name="NAME" x="121.158" y="141.986" size="1.27" layer="95"/>
+<instance part="O13" gate="G$1" x="52.578" y="123.444" smashed="yes">
+<attribute name="NAME" x="52.578" y="124.206" size="1.27" layer="95"/>
 </instance>
-<instance part="O14" gate="G$1" x="124.714" y="141.224" smashed="yes">
-<attribute name="NAME" x="124.714" y="141.986" size="1.27" layer="95"/>
+<instance part="O14" gate="G$1" x="56.134" y="123.444" smashed="yes">
+<attribute name="NAME" x="56.134" y="124.206" size="1.27" layer="95"/>
 </instance>
-<instance part="O15" gate="G$1" x="128.27" y="141.224" smashed="yes">
-<attribute name="NAME" x="128.27" y="141.986" size="1.27" layer="95"/>
+<instance part="O15" gate="G$1" x="59.69" y="123.444" smashed="yes">
+<attribute name="NAME" x="59.69" y="124.206" size="1.27" layer="95"/>
 </instance>
-<instance part="O16" gate="G$1" x="131.826" y="141.224" smashed="yes">
-<attribute name="NAME" x="131.826" y="141.986" size="1.27" layer="95"/>
+<instance part="O16" gate="G$1" x="63.246" y="123.444" smashed="yes">
+<attribute name="NAME" x="63.246" y="124.206" size="1.27" layer="95"/>
 </instance>
-<instance part="O17" gate="G$1" x="106.934" y="129.794" smashed="yes">
-<attribute name="MPN" x="106.934" y="126.492" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="106.934" y="130.556" size="1.27" layer="95"/>
+<instance part="O17" gate="G$1" x="38.354" y="112.014" smashed="yes">
+<attribute name="MPN" x="38.354" y="108.712" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="38.354" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O18" gate="G$1" x="110.49" y="129.794" smashed="yes">
-<attribute name="NAME" x="110.49" y="130.556" size="1.27" layer="95"/>
+<instance part="O18" gate="G$1" x="41.91" y="112.014" smashed="yes">
+<attribute name="NAME" x="41.91" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O19" gate="G$1" x="114.046" y="129.794" smashed="yes">
-<attribute name="NAME" x="114.046" y="130.556" size="1.27" layer="95"/>
+<instance part="O19" gate="G$1" x="45.466" y="112.014" smashed="yes">
+<attribute name="NAME" x="45.466" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O20" gate="G$1" x="117.602" y="129.794" smashed="yes">
-<attribute name="NAME" x="117.602" y="130.556" size="1.27" layer="95"/>
+<instance part="O20" gate="G$1" x="49.022" y="112.014" smashed="yes">
+<attribute name="NAME" x="49.022" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O21" gate="G$1" x="121.158" y="129.794" smashed="yes">
-<attribute name="NAME" x="121.158" y="130.556" size="1.27" layer="95"/>
+<instance part="O21" gate="G$1" x="52.578" y="112.014" smashed="yes">
+<attribute name="NAME" x="52.578" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O22" gate="G$1" x="124.714" y="129.794" smashed="yes">
-<attribute name="NAME" x="124.714" y="130.556" size="1.27" layer="95"/>
+<instance part="O22" gate="G$1" x="56.134" y="112.014" smashed="yes">
+<attribute name="NAME" x="56.134" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O23" gate="G$1" x="128.27" y="129.794" smashed="yes">
-<attribute name="NAME" x="128.27" y="130.556" size="1.27" layer="95"/>
+<instance part="O23" gate="G$1" x="59.69" y="112.014" smashed="yes">
+<attribute name="NAME" x="59.69" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O24" gate="G$1" x="131.826" y="129.794" smashed="yes">
-<attribute name="NAME" x="131.826" y="130.556" size="1.27" layer="95"/>
+<instance part="O24" gate="G$1" x="63.246" y="112.014" smashed="yes">
+<attribute name="NAME" x="63.246" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O1" gate="G$1" x="106.934" y="117.856" smashed="yes">
-<attribute name="MPN" x="106.934" y="114.554" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="106.934" y="118.618" size="1.27" layer="95"/>
+<instance part="O1" gate="G$1" x="38.354" y="100.076" smashed="yes">
+<attribute name="MPN" x="38.354" y="96.774" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="38.354" y="100.838" size="1.27" layer="95"/>
 </instance>
-<instance part="O2" gate="G$1" x="110.49" y="117.856" smashed="yes">
-<attribute name="NAME" x="110.49" y="118.618" size="1.27" layer="95"/>
+<instance part="O2" gate="G$1" x="41.91" y="100.076" smashed="yes">
+<attribute name="NAME" x="41.91" y="100.838" size="1.27" layer="95"/>
 </instance>
-<instance part="O3" gate="G$1" x="114.046" y="117.856" smashed="yes">
-<attribute name="NAME" x="114.046" y="118.618" size="1.27" layer="95"/>
+<instance part="O3" gate="G$1" x="45.466" y="100.076" smashed="yes">
+<attribute name="NAME" x="45.466" y="100.838" size="1.27" layer="95"/>
 </instance>
-<instance part="O4" gate="G$1" x="117.602" y="117.856" smashed="yes">
-<attribute name="NAME" x="117.602" y="118.618" size="1.27" layer="95"/>
+<instance part="O4" gate="G$1" x="49.022" y="100.076" smashed="yes">
+<attribute name="NAME" x="49.022" y="100.838" size="1.27" layer="95"/>
 </instance>
-<instance part="O5" gate="G$1" x="106.934" y="104.648" smashed="yes">
-<attribute name="MPN" x="106.934" y="101.6" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="106.934" y="105.41" size="1.27" layer="95"/>
+<instance part="O5" gate="G$1" x="38.354" y="86.868" smashed="yes">
+<attribute name="MPN" x="38.354" y="83.82" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="38.354" y="87.63" size="1.27" layer="95"/>
 </instance>
-<instance part="O6" gate="G$1" x="110.49" y="104.648" smashed="yes">
-<attribute name="NAME" x="110.49" y="105.41" size="1.27" layer="95"/>
+<instance part="O6" gate="G$1" x="41.91" y="86.868" smashed="yes">
+<attribute name="NAME" x="41.91" y="87.63" size="1.27" layer="95"/>
 </instance>
-<instance part="O7" gate="G$1" x="114.046" y="104.648" smashed="yes">
-<attribute name="NAME" x="114.046" y="105.41" size="1.27" layer="95"/>
+<instance part="O7" gate="G$1" x="45.466" y="86.868" smashed="yes">
+<attribute name="NAME" x="45.466" y="87.63" size="1.27" layer="95"/>
 </instance>
-<instance part="O8" gate="G$1" x="117.602" y="104.648" smashed="yes">
-<attribute name="NAME" x="117.602" y="105.41" size="1.27" layer="95"/>
+<instance part="O8" gate="G$1" x="49.022" y="86.868" smashed="yes">
+<attribute name="NAME" x="49.022" y="87.63" size="1.27" layer="95"/>
 </instance>
-<instance part="O25" gate="G$1" x="135.382" y="129.794" smashed="yes">
-<attribute name="NAME" x="135.382" y="130.556" size="1.27" layer="95"/>
+<instance part="O25" gate="G$1" x="66.802" y="112.014" smashed="yes">
+<attribute name="NAME" x="66.802" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O26" gate="G$1" x="138.938" y="129.794" smashed="yes">
-<attribute name="NAME" x="138.938" y="130.556" size="1.27" layer="95"/>
+<instance part="O26" gate="G$1" x="70.358" y="112.014" smashed="yes">
+<attribute name="NAME" x="70.358" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O27" gate="G$1" x="142.494" y="129.794" smashed="yes">
-<attribute name="NAME" x="142.494" y="130.556" size="1.27" layer="95"/>
+<instance part="O27" gate="G$1" x="73.914" y="112.014" smashed="yes">
+<attribute name="NAME" x="73.914" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O28" gate="G$1" x="146.05" y="129.794" smashed="yes">
-<attribute name="NAME" x="146.05" y="130.556" size="1.27" layer="95"/>
+<instance part="O28" gate="G$1" x="77.47" y="112.014" smashed="yes">
+<attribute name="NAME" x="77.47" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O29" gate="G$1" x="149.606" y="129.794" smashed="yes">
-<attribute name="NAME" x="149.606" y="130.556" size="1.27" layer="95"/>
+<instance part="O29" gate="G$1" x="81.026" y="112.014" smashed="yes">
+<attribute name="NAME" x="81.026" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O30" gate="G$1" x="153.162" y="129.794" smashed="yes">
-<attribute name="NAME" x="153.162" y="130.556" size="1.27" layer="95"/>
+<instance part="O30" gate="G$1" x="84.582" y="112.014" smashed="yes">
+<attribute name="NAME" x="84.582" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O31" gate="G$1" x="156.718" y="129.794" smashed="yes">
-<attribute name="NAME" x="156.718" y="130.556" size="1.27" layer="95"/>
+<instance part="O31" gate="G$1" x="88.138" y="112.014" smashed="yes">
+<attribute name="NAME" x="88.138" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O32" gate="G$1" x="160.274" y="129.794" smashed="yes">
-<attribute name="NAME" x="160.274" y="130.556" size="1.27" layer="95"/>
+<instance part="O32" gate="G$1" x="91.694" y="112.014" smashed="yes">
+<attribute name="NAME" x="91.694" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O33" gate="G$1" x="135.382" y="141.224" smashed="yes">
-<attribute name="NAME" x="135.382" y="141.986" size="1.27" layer="95"/>
+<instance part="O33" gate="G$1" x="66.802" y="123.444" smashed="yes">
+<attribute name="NAME" x="66.802" y="124.206" size="1.27" layer="95"/>
 </instance>
-<instance part="O34" gate="G$1" x="138.938" y="141.224" smashed="yes">
-<attribute name="NAME" x="138.938" y="141.986" size="1.27" layer="95"/>
+<instance part="O34" gate="G$1" x="70.358" y="123.444" smashed="yes">
+<attribute name="NAME" x="70.358" y="124.206" size="1.27" layer="95"/>
 </instance>
-<instance part="O35" gate="G$1" x="163.83" y="129.794" smashed="yes">
-<attribute name="NAME" x="163.83" y="130.556" size="1.27" layer="95"/>
+<instance part="O35" gate="G$1" x="95.25" y="112.014" smashed="yes">
+<attribute name="NAME" x="95.25" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O36" gate="G$1" x="167.386" y="129.794" smashed="yes">
-<attribute name="NAME" x="167.386" y="130.556" size="1.27" layer="95"/>
+<instance part="O36" gate="G$1" x="98.806" y="112.014" smashed="yes">
+<attribute name="NAME" x="98.806" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O37" gate="G$1" x="170.942" y="129.794" smashed="yes">
-<attribute name="NAME" x="170.942" y="130.556" size="1.27" layer="95"/>
+<instance part="O37" gate="G$1" x="102.362" y="112.014" smashed="yes">
+<attribute name="NAME" x="102.362" y="112.776" size="1.27" layer="95"/>
 </instance>
-<instance part="O38" gate="G$1" x="174.498" y="129.794" smashed="yes">
-<attribute name="NAME" x="174.498" y="130.556" size="1.27" layer="95"/>
+<instance part="O38" gate="G$1" x="105.918" y="112.014" smashed="yes">
+<attribute name="NAME" x="105.918" y="112.776" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
