@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -193,19 +193,21 @@
 </packages>
 <symbols>
 <symbol name="CASCADIA_CM200DZ-SIMPLE">
+<description>Block representation of the CM200DZ motor controller used on HT06.</description>
 <wire x1="48.26" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="48.26" y2="0" width="0.254" layer="94"/>
 <wire x1="48.26" y1="-20.32" x2="48.26" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="-20.32" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="A" x="50.8" y="-5.08" length="short" rot="R180"/>
-<pin name="B" x="50.8" y="-10.16" length="short" rot="R180"/>
-<pin name="C" x="50.8" y="-15.24" length="short" rot="R180"/>
-<pin name="DC+" x="-2.54" y="-12.7" length="short"/>
-<pin name="DC-" x="-2.54" y="-5.08" length="short"/>
+<pin name="A" x="50.8" y="-5.08" length="short" direction="out" rot="R180"/>
+<pin name="B" x="50.8" y="-10.16" length="short" direction="out" rot="R180"/>
+<pin name="C" x="50.8" y="-15.24" length="short" direction="out" rot="R180"/>
+<pin name="DC+" x="-2.54" y="-12.7" length="short" direction="in"/>
+<pin name="DC-" x="-2.54" y="-5.08" length="short" direction="in"/>
 <text x="40.64" y="-3.81" size="5.08" layer="95" rot="R180">Cascadia
 CM200DZ</text>
 </symbol>
 <symbol name="CONNECTOR_02">
+<description>Two pin connector.</description>
 <wire x1="7.62" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
@@ -213,11 +215,12 @@ CM200DZ</text>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
 <text x="0" y="-8.255" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;MANUFACTURER</text>
+<text x="0" y="0.762" size="1.27" layer="96">&gt;MANUFACTURER</text>
 <pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="CONNECTOR_01">
+<description>Single pin connector.</description>
 <wire x1="7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-5.08" width="0.254" layer="94"/>
@@ -229,7 +232,7 @@ CM200DZ</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CASCADIA_CM200DZ_SIMPLE" prefix="M">
+<deviceset name="CASCADIA_CM200DZ_SIMPLE" prefix="A">
 <description>Cascaida Motion CM200DZ Motor Inverter
 &lt;br&gt;
 &lt;a href="https://www.cascadiamotion.com/productlist/8-inverters/pm-inverters/49-cm200"&gt;Product Page&lt;/a&gt;
@@ -249,15 +252,21 @@ CM200DZ</text>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-2_*" prefix="J">
+<description>Two pin connector
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://drive.google.com/file/d/1gQfuywpa-Tm7bohh-tcSjjxbyqcnD_h9/view"&gt;EVH2-N2TK-TDA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://drive.google.com/file/d/1jTQMZ26zoHotHQHZYMoMT2jUzRt664sO/view"&gt;HPK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://drive.google.com/file/d/1j-HswfqYHj8usJ9E3bf8NWBzB-X0BKJ4/view"&gt;HVP800&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_02" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
 <technologies>
-<technology name="104742-2">
-<attribute name="MANUFACTURER" value="TE"/>
-<attribute name="MPN" value="104742-2"/>
+<technology name="EVH2-N2TK-TDA">
+<attribute name="MANUFACTURER" value="Jonhon"/>
+<attribute name="MPN" value="EVH2-N2TK-TDA" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="HPK">
@@ -275,6 +284,11 @@ CM200DZ</text>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-1_*" prefix="J">
+<description>Single pin connector
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://drive.google.com/file/d/1rFz1F44pFGMLks1TuzNftb-wQBk0xWUD/view"&gt;CT2242-2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://drive.google.com/file/d/1bbvHAAOUtBwm4fAPUWES_iBsARNVuAgN/view"&gt;LCAX2-14F-E&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_01" x="0" y="0"/>
 </gates>
@@ -284,11 +298,6 @@ CM200DZ</text>
 <technology name="">
 <attribute name="MANUFACTURER" value=""/>
 <attribute name="MPN" value=""/>
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-<technology name="104742-2">
-<attribute name="MANUFACTURER" value="TE"/>
-<attribute name="MPN" value="104742-2"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="CT2242-2">
@@ -2915,7 +2924,7 @@ Layer: 94 Symbol</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MOTOR_AC">
+<deviceset name="MOTOR_AC_*">
 <description>Generic three-phase AC electric motor</description>
 <gates>
 <gate name="G$1" symbol="MOTOR_AC" x="0" y="0"/>
@@ -2973,7 +2982,7 @@ Layer: 94 Symbol</description>
 <part name="J14" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
 <part name="J1" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="CT2242-2"/>
 <part name="J3" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="CT2242-2"/>
-<part name="U$5" library="HyTechSymbols" deviceset="MOTOR_AC" device="" technology="EMRAX_208"/>
+<part name="U$5" library="HyTechSymbols" deviceset="MOTOR_AC_*" device="" technology="EMRAX_208"/>
 </parts>
 <sheets>
 <sheet>

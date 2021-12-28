@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -5262,6 +5262,7 @@ Toshiba
 </packages>
 <symbols>
 <symbol name="60V_THRESHOLD">
+<description>Block reprentation of the logic that indicates when the accumulator has reached 60V.</description>
 <wire x1="0" y1="0" x2="0" y2="-22.86" width="0.1524" layer="94"/>
 <wire x1="0" y1="-22.86" x2="10.16" y2="-22.86" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="35.56" y2="-22.86" width="0.1524" layer="94"/>
@@ -5271,7 +5272,7 @@ Toshiba
 <pin name="PACK+" x="-2.54" y="-15.24" length="short" direction="in"/>
 <pin name="TS-" x="-2.54" y="-20.32" length="short" direction="in"/>
 <pin name="GND" x="38.1" y="-20.32" length="short" direction="pwr" rot="R180"/>
-<pin name="VCC" x="38.1" y="-12.7" length="short" direction="pwr" rot="R180"/>
+<pin name="VDD" x="38.1" y="-12.7" length="short" direction="pwr" rot="R180"/>
 <wire x1="12.7" y1="0" x2="10.16" y2="0" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="-22.86" width="0.1524" layer="94" style="shortdash"/>
@@ -5284,7 +5285,8 @@ LOGIC</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="60V_THRESHOLD">
+<deviceset name="60V_THRESHOLD" prefix="A">
+<description>Block reprentation of the logic that indicates when the accumulator has reached 60V.</description>
 <gates>
 <gate name="G$1" symbol="60V_THRESHOLD" x="0" y="0"/>
 </gates>
@@ -5672,7 +5674,7 @@ Rules say 2-5Hz</text>
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="U$1" gate="G$1" pin="VDD"/>
 <wire x1="66.04" y1="144.78" x2="68.58" y2="144.78" width="0.0762" layer="91"/>
 <pinref part="P2" gate="1" pin="+12V"/>
 </segment>
