@@ -4041,13 +4041,14 @@ Layer: 94 Symbol</description>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="GREEN+"/>
 <wire x1="60.96" y1="170.18" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="170.18" x2="71.12" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="165.1" x2="66.04" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="165.1" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
-<junction x="66.04" y="170.18"/>
+<pinref part="U$1" gate="G$1" pin="GREEN+"/>
+<wire x1="66.04" y1="165.1" x2="71.12" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="165.1" x2="71.12" y2="170.18" width="0.1524" layer="91"/>
+<junction x="66.04" y="165.1"/>
 </segment>
 </net>
 <net name="GND_RED" class="0">
@@ -4101,6 +4102,34 @@ Layer: 94 Symbol</description>
 <pinref part="P2" gate="1" pin="+12V"/>
 <wire x1="38.1" y1="152.4" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="152.4" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="THERMAL"/>
+<wire x1="80.01" y1="144.78" x2="80.01" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="139.7" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="THERMAL"/>
+<wire x1="100.33" y1="144.78" x2="100.33" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="139.7" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="THERMAL"/>
+<wire x1="120.65" y1="144.78" x2="120.65" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="120.65" y1="139.7" x2="121.92" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="THERMAL"/>
+<wire x1="140.97" y1="144.78" x2="140.97" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="140.97" y1="139.7" x2="142.24" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
