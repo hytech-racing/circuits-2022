@@ -552,7 +552,7 @@ Dashed line is edge of mated connector.</description>
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
 <text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
-<text x="0" y="1.905" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
+<text x="0" y="1.27" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="DFN-8">
 <description>DFN-8
@@ -1991,6 +1991,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE_CONTINUOUS" value="10.84V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="5.1">
+<attribute name="DKPN" value="P16039TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P03J5R1V"/>
+<attribute name="MPN" value="ERJ-P03J5R1V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="5.1"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1.13V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="5.1K">
 <attribute name="DKPN" value="311-5.10KHRTR-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -2160,6 +2171,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="56">
+<attribute name="DKPN" value="P16053TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P06D56R0V"/>
+<attribute name="MPN" value="ERJ-P06D56R0V"/>
+<attribute name="POWER" value="0.5W"/>
+<attribute name="RESISTANCE" value="56"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="5.29V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
 </technologies>
 </device>
@@ -11118,19 +11140,39 @@ We choose to use a 1kΩ for part commonality.</text>
 <part name="P65" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="P66" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="F12" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
-<part name="TP9" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP8" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP3" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP10" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="TP9" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="DRVU"/>
+</part>
+<part name="TP8" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="VREGU"/>
+</part>
+<part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="DRVL"/>
+</part>
+<part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="VREGL"/>
+</part>
+<part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="V+L"/>
+</part>
+<part name="TP3" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="V-L"/>
+</part>
+<part name="TP10" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="V+U"/>
+</part>
 <part name="P27" library="HyTechSupplies" deviceset="V+U" device=""/>
 <part name="P51" library="HyTechSupplies" deviceset="V+L" device=""/>
 <part name="P75" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="TP7" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP6" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP5" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="TP7" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="V-U"/>
+</part>
+<part name="TP6" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="IP"/>
+</part>
+<part name="TP5" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="IM"/>
+</part>
 <part name="P76" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P40" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P1" library="HyTechSupplies" deviceset="V-L" device=""/>
@@ -12050,30 +12092,37 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <instance part="TP9" gate="G$1" x="109.22" y="167.64" smashed="yes">
 <attribute name="NAME" x="106.68" y="169.418" size="1.27" layer="95"/>
 <attribute name="MPN" x="106.68" y="165.862" size="1.27" layer="95" align="top-left"/>
+<attribute name="SIGNAL" x="109.22" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP8" gate="G$1" x="124.46" y="175.26" smashed="yes">
 <attribute name="NAME" x="121.92" y="177.038" size="1.27" layer="95"/>
 <attribute name="MPN" x="121.92" y="173.482" size="1.27" layer="95" align="top-left"/>
+<attribute name="SIGNAL" x="124.46" y="175.26" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP1" gate="G$1" x="200.66" y="66.04" smashed="yes">
 <attribute name="NAME" x="198.12" y="67.818" size="1.27" layer="95"/>
 <attribute name="MPN" x="198.12" y="64.262" size="1.27" layer="95" align="top-left"/>
+<attribute name="SIGNAL" x="200.66" y="66.04" size="1.778" layer="96"/>
 </instance>
 <instance part="TP4" gate="G$1" x="218.44" y="73.66" smashed="yes">
 <attribute name="NAME" x="215.9" y="75.438" size="1.27" layer="95"/>
 <attribute name="MPN" x="215.9" y="71.882" size="1.27" layer="95" align="top-left"/>
+<attribute name="SIGNAL" x="218.44" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP2" gate="G$1" x="200.66" y="73.66" smashed="yes">
 <attribute name="NAME" x="198.12" y="75.438" size="1.27" layer="95"/>
 <attribute name="MPN" x="198.12" y="71.882" size="1.27" layer="95" align="top-left"/>
+<attribute name="SIGNAL" x="200.66" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP3" gate="G$1" x="218.44" y="66.04" smashed="yes">
 <attribute name="NAME" x="215.9" y="67.818" size="1.27" layer="95"/>
 <attribute name="MPN" x="215.9" y="64.262" size="1.27" layer="95" align="top-left"/>
+<attribute name="SIGNAL" x="218.44" y="66.04" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP10" gate="G$1" x="109.22" y="175.26" smashed="yes">
 <attribute name="NAME" x="106.68" y="177.038" size="1.27" layer="95"/>
 <attribute name="MPN" x="106.68" y="173.482" size="1.27" layer="95" align="top-left"/>
+<attribute name="SIGNAL" x="109.22" y="175.26" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P27" gate="G$1" x="114.3" y="177.8" smashed="yes">
 <attribute name="VALUE" x="114.3" y="179.07" size="1.27" layer="96" align="bottom-center"/>
@@ -12087,14 +12136,17 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <instance part="TP7" gate="G$1" x="124.46" y="167.64" smashed="yes">
 <attribute name="NAME" x="121.92" y="169.418" size="1.27" layer="95"/>
 <attribute name="MPN" x="121.92" y="165.862" size="1.27" layer="95" align="top-left"/>
+<attribute name="SIGNAL" x="124.46" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP6" gate="G$1" x="213.36" y="167.64" smashed="yes">
 <attribute name="NAME" x="210.82" y="169.418" size="1.27" layer="95"/>
 <attribute name="MPN" x="210.82" y="165.862" size="1.27" layer="95" align="top-left"/>
+<attribute name="SIGNAL" x="213.36" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP5" gate="G$1" x="213.36" y="121.92" smashed="yes">
 <attribute name="NAME" x="210.82" y="123.698" size="1.27" layer="95"/>
 <attribute name="MPN" x="210.82" y="120.142" size="1.27" layer="95" align="top-left"/>
+<attribute name="SIGNAL" x="213.36" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P76" gate="G$1" x="134.62" y="165.1" smashed="yes">
 <attribute name="VALUE" x="134.62" y="163.83" size="1.27" layer="96" align="top-center"/>

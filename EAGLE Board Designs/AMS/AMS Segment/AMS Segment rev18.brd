@@ -210,8 +210,6 @@ Ethan Weinstock
 Based on rev15
 by Arvind Srinivasan
 </text>
-<text x="156.083" y="-69.8754" size="1.016" layer="21" font="vector" align="bottom-center">IM</text>
-<text x="117.856" y="-69.8754" size="1.016" layer="21" font="vector" align="bottom-center">IP</text>
 <rectangle x1="0" y1="-38.1" x2="6.35" y2="-36.83" layer="22" rot="R180"/>
 <rectangle x1="2.54" y1="-40.64" x2="3.81" y2="-34.29" layer="21"/>
 <wire x1="134.112" y1="-26.162" x2="134.112" y2="-0.254" width="0.508" layer="21" style="shortdash"/>
@@ -852,7 +850,7 @@ Dashed line is edge of mated connector.</description>
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
 <text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
-<text x="0" y="1.905" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
+<text x="0" y="1.27" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="DFN-8">
 <description>DFN-8
@@ -14016,6 +14014,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MOPN" value="534-5015" x="78.5368" y="-44.8056" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="78.5368" y="-44.8056" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="78.5622" y="-43.7134" size="0.7112" layer="25" font="vector" align="bottom-center"/>
+<attribute name="SIGNAL" value="DRVU" x="78.5368" y="-44.8056" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SIGNAL" value="DRVU" x="78.5368" y="-46.0756" size="0.7112" layer="21" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="TP8" library="HyTechDevices" package="5015" value="TEST_POINT" x="86.9442" y="-22.6695" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="86.9442" y="-22.6695" size="0.7112" layer="27" font="vector" display="off"/>
@@ -14023,6 +14023,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MOPN" value="534-5015" x="86.9442" y="-22.6695" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MPN" value="5015" x="86.9442" y="-22.6695" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="89.1286" y="-22.5933" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="SIGNAL" value="VREGU" x="86.9442" y="-22.6695" size="1.778" layer="27" display="off"/>
+<attribute name="SIGNAL" value="VREGU" x="86.9442" y="-21.3995" size="0.7112" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP1" library="HyTechDevices" package="5015" value="TEST_POINT" x="205.3336" y="-60.0202" smashed="yes" rot="R270">
 <attribute name="DKPN" value="36-5015CT-ND" x="205.3336" y="-60.0202" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
@@ -14030,6 +14032,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MOPN" value="534-5015" x="205.3336" y="-60.0202" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MPN" value="5015" x="205.3336" y="-60.0202" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="NAME" x="205.3082" y="-58.0644" size="0.7112" layer="25" font="vector" align="bottom-center"/>
+<attribute name="SIGNAL" value="DRVL" x="205.3336" y="-60.0202" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SIGNAL" value="DRVL" x="206.6036" y="-60.0202" size="0.7112" layer="21" font="vector" rot="R270" align="bottom-center"/>
 </element>
 <element name="TP4" library="HyTechDevices" package="5015" value="TEST_POINT" x="197.2818" y="-22.5425" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="197.2818" y="-22.5425" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -14037,6 +14041,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MOPN" value="534-5015" x="197.2818" y="-22.5425" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="197.2818" y="-22.5425" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="195.2244" y="-22.4917" size="0.7112" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="VREGL" x="197.2818" y="-22.5425" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SIGNAL" value="VREGL" x="197.2818" y="-23.8125" size="0.7112" layer="21" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="TP2" library="HyTechDevices" package="5015" value="TEST_POINT" x="197.5866" y="-60.1726" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="197.5866" y="-60.1726" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -14044,6 +14050,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MOPN" value="534-5015" x="197.5866" y="-60.1726" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="197.5866" y="-60.1726" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="197.5866" y="-61.4426" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="SIGNAL" value="V+L" x="197.5866" y="-60.1726" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SIGNAL" value="V+L" x="197.5866" y="-61.4426" size="0.7112" layer="21" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="TP3" library="HyTechDevices" package="5015" value="TEST_POINT" x="197.2818" y="-19.8755" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="197.2818" y="-19.8755" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -14051,6 +14059,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MOPN" value="534-5015" x="197.2818" y="-19.8755" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="197.2818" y="-19.8755" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="195.2244" y="-19.9517" size="0.7112" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="V-L" x="197.2818" y="-19.8755" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SIGNAL" value="V-L" x="197.2818" y="-21.1455" size="0.7112" layer="21" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="TP10" library="HyTechDevices" package="5015" value="TEST_POINT" x="72.3646" y="-47.0662" smashed="yes" rot="R270">
 <attribute name="DKPN" value="36-5015CT-ND" x="72.3646" y="-47.0662" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
@@ -14058,6 +14068,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MOPN" value="534-5015" x="72.3646" y="-47.0662" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MPN" value="5015" x="72.3646" y="-47.0662" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="NAME" x="73.6346" y="-47.0662" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="SIGNAL" value="V+U" x="72.3646" y="-47.0662" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SIGNAL" value="V+U" x="73.6346" y="-47.0662" size="0.7112" layer="21" font="vector" rot="R270" align="bottom-center"/>
 </element>
 <element name="TP7" library="HyTechDevices" package="5015" value="TEST_POINT" x="86.9442" y="-20.0025" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="86.9442" y="-20.0025" size="0.7112" layer="27" font="vector" display="off"/>
@@ -14065,6 +14077,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MOPN" value="534-5015" x="86.9442" y="-20.0025" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MPN" value="5015" x="86.9442" y="-20.0025" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="89.1286" y="-20.0533" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="SIGNAL" value="V-U" x="86.9442" y="-20.0025" size="1.778" layer="27" display="off"/>
+<attribute name="SIGNAL" value="V-U" x="86.9442" y="-18.7325" size="0.7112" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP6" library="HyTechDevices" package="5015" value="TEST_POINT" x="117.8306" y="-71.1454" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -14072,6 +14086,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MOPN" value="534-5015" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="117.8306" y="-72.4154" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="SIGNAL" value="IP" x="117.8306" y="-71.1454" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SIGNAL" value="IP" x="117.8306" y="-72.4154" size="0.7112" layer="21" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="TP5" library="HyTechDevices" package="5015" value="TEST_POINT" x="156.083" y="-71.1454" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -14079,6 +14095,8 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MOPN" value="534-5015" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="156.083" y="-72.4154" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="SIGNAL" value="IM" x="156.083" y="-71.1454" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SIGNAL" value="IM" x="156.083" y="-72.4154" size="0.7112" layer="21" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="U6" library="HyTechDevices" package="DFN-8" value="SHT31-ARP-B" x="49.6062" y="-46.3804" smashed="yes">
 <attribute name="DKPN" value="1649-1012-1-ND" x="49.6062" y="-46.3804" size="0.7112" layer="27" font="vector" display="off"/>
@@ -14328,7 +14346,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="Yageo" x="108.839" y="-87.884" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="603-RC0603FR-071KL" x="108.839" y="-87.884" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="RC0603FR-071KL" x="108.839" y="-87.884" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="110.109" y="-84.709" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="110.109" y="-84.709" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="POWER" value="0.1W" x="108.839" y="-87.884" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RESISTANCE" value="1k" x="108.839" y="-87.884" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="108.839" y="-87.884" size="1.778" layer="27" rot="R180" display="off"/>
@@ -14341,14 +14359,14 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="Kingbright" x="111.887" y="-80.264" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="604-APT1608VBC/D" x="111.887" y="-80.264" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="APT1608VBC/D" x="111.887" y="-80.264" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="113.157" y="-84.824" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="113.157" y="-84.824" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="R21" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_1K" x="163.83" y="-84.074" smashed="yes">
 <attribute name="DKPN" value="311-1.00KHRCT-ND" x="165.1" y="-80.264" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="165.1" y="-80.264" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="603-RC0603FR-071KL" x="165.1" y="-80.264" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0603FR-071KL" x="165.1" y="-80.264" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="163.83" y="-84.709" size="0.8128" layer="25" font="vector" align="top-center"/>
+<attribute name="NAME" x="163.83" y="-84.709" size="0.7112" layer="25" font="vector" align="top-center"/>
 <attribute name="POWER" value="0.1W" x="165.1" y="-80.264" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="1k" x="165.1" y="-80.264" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="165.1" y="-80.264" size="1.778" layer="27" display="off"/>
@@ -14361,7 +14379,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="Kingbright" x="161.925" y="-87.884" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="604-APT1608VBC/D" x="161.925" y="-87.884" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="APT1608VBC/D" x="161.925" y="-87.884" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="160.655" y="-84.824" size="0.8128" layer="25" font="vector" align="top-center"/>
+<attribute name="NAME" x="160.655" y="-84.824" size="0.7112" layer="25" font="vector" align="top-center"/>
 </element>
 <element name="U$19" library="HyTechAesthetics" package="LOGO_HYTECH_LARGE" value="" x="87.884" y="-51.689" smashed="yes"/>
 <element name="U$10" library="HyTechAesthetics" package="LOGO_GT_MEDIUM" value="" x="151.257" y="-45.085" smashed="yes"/>
