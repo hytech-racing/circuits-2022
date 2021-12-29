@@ -6921,6 +6921,7 @@ Layer: 94 Symbol</description>
 <part name="O4" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_2"/>
 <part name="O5" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="NANOFIT_20-22"/>
 <part name="J1" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603"/>
+<part name="O6" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 </parts>
 <sheets>
 <sheet>
@@ -8915,6 +8916,10 @@ Layer: 94 Symbol</description>
 <instance part="O5" gate="G$1" x="48.26" y="187.96" smashed="yes">
 <attribute name="MPN" x="48.26" y="184.658" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="48.26" y="188.722" size="1.27" layer="95"/>
+</instance>
+<instance part="O6" gate="G$1" x="48.26" y="180.34" smashed="yes">
+<attribute name="MPN" x="48.26" y="177.038" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="48.26" y="181.102" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
