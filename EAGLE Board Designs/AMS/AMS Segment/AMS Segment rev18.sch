@@ -464,13 +464,8 @@ Dashed line is edge of mated connector.</description>
 <wire x1="2.9972" y1="-4.4323" x2="4.826" y2="-2.6035" width="0.127" layer="21"/>
 <wire x1="4.826" y1="-2.6035" x2="4.826" y2="5.4737" width="0.127" layer="21"/>
 <rectangle x1="-7.8486" y1="-5.08" x2="7.8486" y2="7.62" layer="39"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="51"/>
 <wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="51" style="shortdash"/>
-=======
-<wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="49"/>
-<wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="49" style="shortdash"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <text x="0.2286" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-5.588" y1="1.8034" x2="-3.1496" y2="3.4036" layer="41"/>
 <rectangle x1="3.1496" y1="1.8034" x2="5.588" y2="3.4036" layer="41"/>
@@ -484,11 +479,8 @@ Dashed line is edge of mated connector.</description>
 <vertex x="-4.4704" y="-10.033"/>
 <vertex x="4.4704" y="-10.033"/>
 </polygon>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <rectangle x1="-5.08" y1="-26.162" x2="5.08" y2="-5.08" layer="39"/>
 <rectangle x1="-5.08" y1="-26.162" x2="5.08" y2="-9.525" layer="40"/>
-=======
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </package>
 <package name="HM2102NLT">
 <description>HM2102NL Transformer
@@ -675,7 +667,6 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="5.5908" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-5.842" y1="-5.588" x2="5.842" y2="5.588" layer="39"/>
 </package>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <package name="HM2112ZNLT_AIRGAP">
 <description>HM2112ZNL Transformer
 &lt;br&gt;
@@ -710,8 +701,6 @@ Dashed line is edge of mated connector.</description>
 <vertex x="8.382" y="5.76"/>
 </polygon>
 </package>
-=======
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_02_DUAL">
 <description>2 Pin Micro-Fit Right Angle Header, SMD, Dual Row
 &lt;br&gt;
@@ -740,13 +729,8 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-4.6101" y1="1.8034" x2="-2.1717" y2="3.4036" layer="41"/>
 <rectangle x1="2.1717" y1="1.8034" x2="4.6101" y2="3.4036" layer="41"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="51"/>
 <wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="51" style="shortdash"/>
-=======
-<wire x1="-6.35" y1="-10.033" x2="6.35" y2="-10.033" width="0.127" layer="49"/>
-<wire x1="-6.35" y1="-12.3698" x2="6.35" y2="-12.3698" width="0.127" layer="49" style="shortdash"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <rectangle x1="-2.54" y1="-25.527" x2="2.54" y2="-10.033" layer="41"/>
 <wire x1="-2.54" y1="-10.033" x2="2.54" y2="-10.033" width="0" layer="46"/>
 <wire x1="2.54" y1="-10.033" x2="2.54" y2="-25.527" width="0" layer="46"/>
@@ -760,43 +744,6 @@ Dashed line is edge of mated connector.</description>
 <vertex x="2.54" y="-10.033"/>
 </polygon>
 </package>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
-=======
-<package name="HM2112ZNLT_AIRGAP">
-<description>HM2112ZNL Transformer
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="12" x="-4.77951875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="11" x="-2.889759375" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="10" x="-0.999996875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="9" x="0.999996875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="8" x="2.889759375" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="7" x="4.77951875" y="7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="1" x="-4.77951875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="2" x="-2.889759375" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="3" x="-0.999996875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="4" x="0.999996875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="5" x="2.87451875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<smd name="6" x="4.77951875" y="-7.145" dx="1.89" dy="1.02" layer="1" rot="R90"/>
-<wire x1="-7.35" y1="6.075" x2="7.35" y2="6.075" width="0.1524" layer="21"/>
-<wire x1="7.35" y1="6.075" x2="7.35" y2="-6.075" width="0.1524" layer="21"/>
-<wire x1="7.35" y1="-6.075" x2="-7.35" y2="-6.075" width="0.1524" layer="21"/>
-<wire x1="-7.35" y1="-6.075" x2="-7.35" y2="6.075" width="0.1524" layer="21"/>
-<circle x="-6.477" y="-7.14501875" radius="0.635" width="0.1524" layer="21"/>
-<text x="-8.382" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-8.382" y1="-8.382" x2="8.382" y2="8.382" layer="39"/>
-<wire x1="-8.382" y1="-5.76" x2="8.382" y2="-5.76" width="0" layer="46"/>
-<wire x1="8.382" y1="-5.76" x2="8.382" y2="5.76" width="0" layer="46"/>
-<wire x1="8.382" y1="5.76" x2="-8.382" y2="5.76" width="0" layer="46"/>
-<wire x1="-8.382" y1="5.76" x2="-8.382" y2="-5.76" width="0" layer="46"/>
-<polygon width="0" layer="20">
-<vertex x="-8.382" y="5.76"/>
-<vertex x="-8.382" y="-5.76"/>
-<vertex x="8.382" y="-5.76"/>
-<vertex x="8.382" y="5.76"/>
-</polygon>
-</package>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -1926,19 +1873,11 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="DKPN" value="764-1461-2-ND"/>
 <attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
 <attribute name="MOPN" value="71-PTN0603E8351BST1"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <attribute name="MPN" value="PTN0603E8351BST1"/>
 <attribute name="POWER" value="0.15W"/>
 <attribute name="RESISTANCE" value="8.35k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="28.90V"/>
-=======
-<attribute name="MPN" value=" PTN0603E8351BST1"/>
-<attribute name="POWER" value="0.15W"/>
-<attribute name="RESISTANCE" value="8.35k"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="28.90W"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="8.66K">
@@ -10455,11 +10394,7 @@ Layer: 94 Symbol</description>
 </deviceset>
 </devicesets>
 </library>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <library name="HyTechExternal">
-=======
-<library name="HyTechOrdering">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <packages>
 </packages>
 <symbols>
@@ -10557,19 +10492,11 @@ Layer: 94 Symbol</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <class number="1" name="Upper_Unfused" width="0.6096" drill="0.6858">
 <clearance class="0" value="1.6"/>
 <clearance class="1" value="1.6"/>
 </class>
 <class number="2" name="Lower_Unfused" width="0.6096" drill="0.6858">
-=======
-<class number="1" name="Upper_Unfused" width="0.508" drill="0.6858">
-<clearance class="0" value="1.6"/>
-<clearance class="1" value="1.6"/>
-</class>
-<class number="2" name="Lower_Unfused" width="0.508" drill="0.6858">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <clearance class="0" value="1.6"/>
 <clearance class="1" value="1.6"/>
 <clearance class="2" value="1.6"/>
@@ -10612,26 +10539,18 @@ Layer: 94 Symbol</description>
 <attribute name="DESCRIPTION_1" value="This module is responsible for filtering the cell "/>
 <attribute name="DESCRIPTION_2" value="reading as well as discharging the cell when necessary."/>
 <attribute name="DESIGNER_BOARD" value="Noah Bruckner"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <attribute name="DESIGNER_FURTHER" value="Cody Kaminsky"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
 <attribute name="REVIEWER_BOARD" value="Zekun Li"/>
 <attribute name="REVIEWER_FURTHER" value="Arvind Srinivasan"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Ethan Weinstock"/>
-=======
-<attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
-<attribute name="ENGINEER" value="Cody Kaminsky"/>
-<attribute name="REVIEWER_BOARD" value="Zekun Li"/>
-<attribute name="REVIEWER_SCHEMATIC" value="Arvind Srinivasan"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </part>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_P_MOS_?_*" device="SOT23" technology="SI2369DS-T1-GE3"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <text x="106.68" y="142.24" size="1.27" layer="97">RC Filter Determined by one shown on page 70 of the datasheet. This maximizes accuracy of the cell measurement.</text>
 <text x="137.16" y="119.38" size="1.27" layer="97">QS</text>
 <text x="142.24" y="83.82" size="1.27" layer="97">At 60°C, the PWR263 derates to 73.077% maximum power.
@@ -10646,13 +10565,6 @@ allow more energy to be discharged.</text>
 <text x="157.48" y="106.68" size="1.27" layer="97">The LTC6811-2 datasheet recommends a 3.3kΩ gate resistor.
 The LTC6811-2 demo circuit uses a 1kΩ gate resistor.
 We choose to use a 1kΩ for part commonality.</text>
-=======
-<text x="106.68" y="142.24" size="1.27" layer="97">RC Filter Determined by one shown on page 70 of the datasheet.
-1k gate resister for the mosfet determined by the ltc6811-2 demo circuit.</text>
-<text x="142.24" y="96.52" size="1.27" layer="97">7.5 ohm resistor chosen to optimize power
-during discharge while also meeting resistor
-derating</text>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </plain>
 <instances>
 <instance part="D1" gate="LED" x="119.38" y="101.6" smashed="yes" rot="MR270">
@@ -10837,15 +10749,10 @@ derating</text>
 <part name="P25" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P26" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P28" library="HyTechSupplies" deviceset="V-U" device=""/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <part name="C6" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
 <part name="C7" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
-=======
-<part name="C1" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
-<part name="C2" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <part name="R18" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
 <part name="P29" library="HyTechSupplies" deviceset="V-L" device=""/>
@@ -10855,7 +10762,6 @@ derating</text>
 <part name="P33" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P34" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P35" library="HyTechSupplies" deviceset="V+L" device=""/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_0.1UF"/>
 <part name="C28" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
 <part name="R43" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
@@ -10865,17 +10771,6 @@ derating</text>
 <part name="C27" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
 <part name="C26" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
 <part name="R47" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
-=======
-<part name="C13" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_0.1UF"/>
-<part name="C14" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="100V_10NF"/>
-<part name="R27" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R28" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R29" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R30" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="C4" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
-<part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <part name="P20" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="R50" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2.74K" value="RESISTOR_0603_2.74K"/>
 <part name="R45" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2.74K" value="RESISTOR_0603_2.74K"/>
@@ -10941,7 +10836,6 @@ derating</text>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
 <attribute name="DESCRIPTION_1" value="Uses two LTC6811s to measure 21 cell voltages,"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <attribute name="DESCRIPTION_2" value="temperatures of 8 cells, and two humidity/temperature sensors."/>
 <attribute name="DESIGNER_BOARD" value="Noah Bruckner"/>
 <attribute name="DESIGNER_FURTHER" value="Cody Kaminsky"/>
@@ -10949,13 +10843,6 @@ derating</text>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
 <attribute name="REVIEWER_BOARD" value="Zekun Li"/>
 <attribute name="REVIEWER_FURTHER" value="Arvind Srinivasan"/>
-=======
-<attribute name="DESCRIPTION_2" value=" temperatures of 8 cells, and two humidity/temperature sensors."/>
-<attribute name="DESIGNER_BOARD" value="Noah Bruckner"/>
-<attribute name="DESIGNER_SCHEMATIC" value="Cody Kaminsky"/>
-<attribute name="ENGINEER" value="Cody Kaminsky"/>
-<attribute name="REVIEWER_BOARD" value="Zekun Li"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="REVIEWER_SCHEMATIC" value="Ethan Weinstock"/>
 </part>
 <part name="R48" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
@@ -11038,7 +10925,6 @@ derating</text>
 <part name="P81" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="P82" library="HyTechSupplies" deviceset="VREGU" device=""/>
 <part name="P83" library="HyTechSupplies" deviceset="VREGU" device=""/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <part name="U6" library="HyTechDevices" deviceset="SHT3*-ARP-B" device="" technology="1"/>
 <part name="U1" library="HyTechDevices" deviceset="SHT3*-ARP-B" device="" technology="1"/>
 <part name="U4" library="HyTechDevices" deviceset="LT3990-5" device=""/>
@@ -11053,27 +10939,10 @@ derating</text>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="374K"/>
 <part name="L1" library="HyTechDevices" deviceset="INDUCTOR_?_*" device="74451133" technology="33UH"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470"/>
-=======
-<part name="U3" library="HyTechDevices" deviceset="SHT3*-ARP-B" device="" technology="1"/>
-<part name="U4" library="HyTechDevices" deviceset="SHT3*-ARP-B" device="" technology="1"/>
-<part name="U5" library="HyTechDevices" deviceset="LT3990-5" device=""/>
-<part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0805" technology="100V_0.22UF"/>
-<part name="C12" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="1206" technology="100V_2.2UF"/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="374K"/>
-<part name="L1" library="HyTechDevices" deviceset="INDUCTOR_?_*" device="74451133" technology="33UH"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470"/>
-<part name="U6" library="HyTechDevices" deviceset="LT3990-5" device=""/>
-<part name="C29" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0805" technology="100V_0.22UF"/>
-<part name="C30" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="1206" technology="100V_2.2UF"/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="374K"/>
-<part name="L2" library="HyTechDevices" deviceset="INDUCTOR_?_*" device="74451133" technology="33UH"/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <part name="P84" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P85" library="HyTechSupplies" deviceset="VREGL" device=""/>
 <part name="P86" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P87" library="HyTechSupplies" deviceset="VREGU" device=""/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_22UF" value="CAPACITOR_0603_10V_22UF"/>
 <part name="P88" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="C25" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_22UF" value="CAPACITOR_0603_10V_22UF"/>
@@ -11140,71 +11009,18 @@ derating</text>
 <part name="O38" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="P96" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P97" library="HyTechSupplies" deviceset="VREGU" device=""/>
-=======
-<part name="C3" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_22UF" value="CAPACITOR_0603_10V_22UF"/>
-<part name="P88" library="HyTechSupplies" deviceset="V-L" device=""/>
-<part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_22UF" value="CAPACITOR_0603_10V_22UF"/>
-<part name="P89" library="HyTechSupplies" deviceset="V-U" device=""/>
-<part name="C31" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
-<part name="C32" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
-<part name="U$30" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
-<attribute name="DESCRIPTION_1" value="Ordering Information"/>
-<attribute name="DESIGNER_SCHEMATIC" value="Ethan Weinstock"/>
-<attribute name="ENGINEER" value="Ethan Weinstock"/>
-</part>
-<part name="O1" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O2" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O3" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O4" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O5" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O6" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O7" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O8" library="HyTechOrdering" deviceset="THERMISTOR" device=""/>
-<part name="O9" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O10" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O11" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O12" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O13" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O14" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O15" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O16" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O17" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O18" library="HyTechOrdering" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O19" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O20" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O21" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O22" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O23" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O24" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O25" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O26" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O27" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O28" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O29" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O30" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O31" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O32" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O33" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O34" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O35" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O36" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O37" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O38" library="HyTechOrdering" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </parts>
 <sheets>
 <sheet>
-<description>Schematic</description>
 <plain>
 <text x="9.398" y="196.85" size="1.27" layer="97">Page 86 of the LTC6811-2 datasheet says
 we can configure the cell measurements
 such that all of the unused cell reading pins
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 are shorted on the pins 10 through 12.
 This decreases the amount of ISOSPI
 transactions as internal register D
 does not need to be read.</text>
-<text x="114.3" y="101.6" size="1.27" layer="97">Address pin 3 is pulled down to V- because 
+<text x="114.3" y="101.6" size="1.27" layer="97">Address pin 3 is pulled down to V- because
 we only have 4 segments which means
 8 ICs. There is no need for the option
 to expand. Address pin 0 of the upper IC
@@ -11226,42 +11042,12 @@ the address of the given LTC6811 chip.</text>
 of one to isolate the upper IC from
 the lower IC in a situation where a
 fuse blows. The behavior of floating voltage is unknown.</text>
-=======
-are shorted on the pins 10 through 12
-which decreases the amount of ISOSPI
-transactions.</text>
-<text x="114.3" y="101.6" size="1.27" layer="97">Address pin 3 is pulled down to V- because 
-we only have 4 segments which means
-8 ICs. There is no need for the option
-to expand. Address pin 0 of the top ic is
-pulled up because it will always be an odd
-address and the bottom one down
-because it will 
-always be an even address.</text>
-<text x="154.94" y="172.72" size="1.27" layer="97">These transformers are chosen based on a list in the LTC6811
-datasheet and because they are common mode choke with
-centertap.</text>
-<text x="5.08" y="0.762" size="1.27" layer="97">These 1.6A fuses are chosen because we have a peak current
-around 0.8A and it was recommended in the datasheet that the
-fuse be 1.5 times the peak current. With durating due to higher
-temperatures the 1.6A fuse fits perfectly.</text>
-<text x="223.52" y="205.74" size="1.27" layer="97">The 2.74kOhm resister selection was done in order to maximize the
-coverage on our ADC.</text>
-<text x="119.38" y="205.74" size="1.27" layer="97">These are 0 Ohm resisters that we may or 
-may not decide to solder in based on the address
-of the given LTC6811 chip.</text>
-<text x="30.48" y="114.3" size="1.27" layer="97">We chose to have two fuses here 
-instead of one to isolate the top 
-ic from the bottom in a situation 
-where a fuse blows.</text>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="182.88" y1="172.72" x2="182.88" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="182.88" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="223.52" y1="116.84" x2="223.52" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="223.52" y1="172.72" x2="182.88" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
 <text x="119.38" y="119.38" size="1.27" layer="97">The parts inside the dotted
 line box are galvanically
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 isolated from the cell voltages,
 but is still considered tractive
 system because the FSAE
@@ -11278,12 +11064,12 @@ the GPIO pins when they are not present.</text>
 <text x="198.12" y="193.04" size="1.27" layer="97">Maximizing the range of a voltage divider across a variable resistor involves selecting the square root
 of the product of the two desired resistance extremes. We choose to maximize the resolution
 between 55°C and 60°C as this is the critical range for determining whether the accumulator can
-safely operate. At 55°C the terhmistor resistance is 2982Ω. At 60°C is it 2484Ω. 
+safely operate. At 55°C the terhmistor resistance is 2982Ω. At 60°C is it 2484Ω.
 This would ideally result in using a resistance of 2721Ω. Due to E96 limitations, the
 closest options are 2.67kΩ and 2.74kΩ. 2.74kΩ is both closer
 to the desired resistance and maximizes the
-total dynamic range. The resistance at 
-25°C is 10kΩ, favoring a larger resistor. 
+total dynamic range. The resistance at
+25°C is 10kΩ, favoring a larger resistor.
 </text>
 <text x="157.48" y="198.12" size="1.27" layer="97">Blue is chosen to
 distinquish the
@@ -11295,17 +11081,6 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <text x="172.72" y="71.12" size="1.27" layer="97">The LT3990-5 implementation
 precisely follows the LTC6811-2
 datasheet recommendation.</text>
-=======
-isolated from the cell
-voltages, but is still considered
-tractive system because the FSAE
-spacing requirements are not
-met for the footprint.
-
-The transformer is used to
-meet the galvanic isolation
-requirement of EV.8.3.2.</text>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </plain>
 <moduleinsts>
 <moduleinst name="CELL1" module="CELL" x="48.26" y="20.32">
@@ -11563,7 +11338,6 @@ requirement of EV.8.3.2.</text>
 </instance>
 <instance part="P28" gate="G$1" x="116.84" y="139.7" smashed="yes">
 <attribute name="VALUE" x="116.84" y="138.43" size="1.27" layer="96" align="top-center"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 </instance>
 <instance part="C6" gate="G$1" x="111.76" y="43.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="109.22" y="41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -11571,24 +11345,11 @@ requirement of EV.8.3.2.</text>
 <attribute name="CAPACITANCE" x="114.046" y="43.688" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="C7" gate="G$1" x="119.38" y="43.18" smashed="yes" rot="R90">
-=======
-</instance>
-<instance part="C1" gate="G$1" x="111.76" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="109.22" y="41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="114.046" y="40.386" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="114.046" y="43.688" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="C2" gate="G$1" x="119.38" y="43.18" smashed="yes" rot="R90">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="NAME" x="116.84" y="41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="121.666" y="40.386" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="121.666" y="43.688" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="R16" gate="G$1" x="137.16" y="93.98" smashed="yes">
-=======
-<instance part="R18" gate="G$1" x="134.62" y="93.98" smashed="yes" rot="MR0">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="NAME" x="135.89" y="95.25" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 <attribute name="RESISTANCE" x="135.89" y="92.71" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11651,20 +11412,12 @@ requirement of EV.8.3.2.</text>
 <attribute name="NAME" x="105.41" y="21.59" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="107.95" y="21.59" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="C27" gate="G$1" x="111.76" y="147.32" smashed="yes" rot="R90">
-=======
-<instance part="C4" gate="G$1" x="111.76" y="147.32" smashed="yes" rot="R90">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="NAME" x="109.22" y="146.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="114.046" y="144.272" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="114.046" y="147.574" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="C26" gate="G$1" x="119.38" y="147.32" smashed="yes" rot="R90">
-=======
-<instance part="C9" gate="G$1" x="119.38" y="147.32" smashed="yes" rot="R90">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="NAME" x="116.84" y="146.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="121.666" y="144.272" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="121.666" y="148.082" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -11737,7 +11490,6 @@ requirement of EV.8.3.2.</text>
 <instance part="P39" gate="G$1" x="238.76" y="162.56" smashed="yes">
 <attribute name="VALUE" x="238.76" y="161.29" size="1.27" layer="96" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="J10" gate="G$1" x="274.32" y="203.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="274.32" y="203.962" size="1.27" layer="95" rot="MR0"/>
 </instance>
@@ -11748,18 +11500,6 @@ requirement of EV.8.3.2.</text>
 <attribute name="NAME" x="274.32" y="178.562" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="J6" gate="G$1" x="274.32" y="165.1" smashed="yes" rot="MR0">
-=======
-<instance part="J27" gate="G$1" x="274.32" y="203.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="274.32" y="203.962" size="1.27" layer="95" rot="MR0"/>
-</instance>
-<instance part="J28" gate="G$1" x="274.32" y="190.5" smashed="yes" rot="MR0">
-<attribute name="NAME" x="274.32" y="191.262" size="1.27" layer="95" rot="MR0"/>
-</instance>
-<instance part="J32" gate="G$1" x="274.32" y="177.8" smashed="yes" rot="MR0">
-<attribute name="NAME" x="274.32" y="178.562" size="1.27" layer="95" rot="MR0"/>
-</instance>
-<instance part="J33" gate="G$1" x="274.32" y="165.1" smashed="yes" rot="MR0">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="NAME" x="274.32" y="165.862" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="R20" gate="G$1" x="254" y="119.38" smashed="yes" rot="MR270">
@@ -11826,7 +11566,6 @@ requirement of EV.8.3.2.</text>
 <instance part="P61" gate="G$1" x="238.76" y="114.3" smashed="yes">
 <attribute name="VALUE" x="238.76" y="113.03" size="1.27" layer="96" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="J4" gate="G$1" x="274.32" y="129.54" smashed="yes" rot="MR0">
 <attribute name="NAME" x="274.32" y="130.302" size="1.27" layer="95" rot="MR0"/>
 </instance>
@@ -11837,18 +11576,6 @@ requirement of EV.8.3.2.</text>
 <attribute name="NAME" x="274.32" y="104.902" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="J1" gate="G$1" x="274.32" y="91.44" smashed="yes" rot="MR0">
-=======
-<instance part="J37" gate="G$1" x="274.32" y="129.54" smashed="yes" rot="MR0">
-<attribute name="NAME" x="274.32" y="130.302" size="1.27" layer="95" rot="MR0"/>
-</instance>
-<instance part="J38" gate="G$1" x="274.32" y="116.84" smashed="yes" rot="MR0">
-<attribute name="NAME" x="274.32" y="117.602" size="1.27" layer="95" rot="MR0"/>
-</instance>
-<instance part="J39" gate="G$1" x="274.32" y="104.14" smashed="yes" rot="MR0">
-<attribute name="NAME" x="274.32" y="104.902" size="1.27" layer="95" rot="MR0"/>
-</instance>
-<instance part="J40" gate="G$1" x="274.32" y="91.44" smashed="yes" rot="MR0">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="NAME" x="274.32" y="92.202" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="C17" gate="G$1" x="162.56" y="144.78" smashed="yes" rot="R180">
@@ -11856,11 +11583,7 @@ requirement of EV.8.3.2.</text>
 <attribute name="VOLTAGE" x="163.83" y="147.32" size="1.27" layer="96" rot="R180" align="top-center"/>
 <attribute name="CAPACITANCE" x="163.83" y="149.098" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="J5" gate="G$1" x="218.44" y="162.56" smashed="yes" rot="MR0">
-=======
-<instance part="J34" gate="G$1" x="218.44" y="162.56" smashed="yes" rot="MR0">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="NAME" x="218.44" y="163.322" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="C15" gate="G$1" x="162.56" y="119.38" smashed="yes" rot="R180">
@@ -11868,11 +11591,7 @@ requirement of EV.8.3.2.</text>
 <attribute name="VOLTAGE" x="163.83" y="121.92" size="1.27" layer="96" rot="R180" align="top-center"/>
 <attribute name="CAPACITANCE" x="163.83" y="123.698" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="J7" gate="G$1" x="218.44" y="137.16" smashed="yes" rot="MR0">
-=======
-<instance part="J35" gate="G$1" x="218.44" y="137.16" smashed="yes" rot="MR0">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="NAME" x="218.44" y="137.922" size="1.27" layer="95" rot="MR0"/>
 </instance>
 <instance part="R25" gate="G$1" x="149.86" y="162.56" smashed="yes" rot="R90">
@@ -11883,7 +11602,6 @@ requirement of EV.8.3.2.</text>
 <attribute name="NAME" x="148.59" y="135.89" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="151.13" y="135.89" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="R29" gate="G$1" x="200.66" y="147.32" smashed="yes" rot="MR0">
 <attribute name="NAME" x="201.93" y="148.59" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 <attribute name="RESISTANCE" x="201.93" y="146.05" size="1.27" layer="96" rot="MR0" align="top-center"/>
@@ -11901,25 +11619,6 @@ requirement of EV.8.3.2.</text>
 <attribute name="RESISTANCE" x="201.93" y="140.97" size="1.27" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="R27" gate="G$1" x="205.74" y="160.02" smashed="yes" rot="R90">
-=======
-<instance part="R6" gate="G$1" x="200.66" y="147.32" smashed="yes" rot="MR0">
-<attribute name="NAME" x="201.93" y="148.59" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="201.93" y="146.05" size="1.27" layer="96" rot="MR0" align="top-center"/>
-</instance>
-<instance part="R7" gate="G$1" x="200.66" y="167.64" smashed="yes" rot="MR0">
-<attribute name="NAME" x="201.93" y="168.91" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="201.93" y="166.37" size="1.27" layer="96" rot="MR0" align="top-center"/>
-</instance>
-<instance part="R49" gate="G$1" x="200.66" y="121.92" smashed="yes" rot="MR0">
-<attribute name="NAME" x="201.93" y="123.19" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="201.93" y="120.65" size="1.27" layer="96" rot="MR0" align="top-center"/>
-</instance>
-<instance part="R50" gate="G$1" x="200.66" y="142.24" smashed="yes" rot="MR0">
-<attribute name="NAME" x="201.93" y="143.51" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="201.93" y="140.97" size="1.27" layer="96" rot="MR0" align="top-center"/>
-</instance>
-<instance part="R52" gate="G$1" x="205.74" y="160.02" smashed="yes" rot="R90">
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <attribute name="NAME" x="204.47" y="158.75" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="207.01" y="158.75" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
@@ -12115,7 +11814,6 @@ requirement of EV.8.3.2.</text>
 <attribute name="NAME" x="26.67" y="113.03" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="26.67" y="110.49" size="1.27" layer="96" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="TP9" gate="G$1" x="109.22" y="167.64" smashed="yes">
 <attribute name="NAME" x="106.68" y="169.418" size="1.27" layer="95"/>
 <attribute name="MPN" x="106.68" y="165.862" size="1.27" layer="95" align="top-left"/>
@@ -12156,48 +11854,6 @@ requirement of EV.8.3.2.</text>
 <instance part="TP7" gate="G$1" x="124.46" y="167.64" smashed="yes">
 <attribute name="NAME" x="121.92" y="169.418" size="1.27" layer="95"/>
 <attribute name="MPN" x="121.92" y="165.862" size="1.27" layer="95" align="top-left"/>
-=======
-<instance part="TP1" gate="G$1" x="111.76" y="167.64" smashed="yes">
-<attribute name="NAME" x="109.22" y="169.418" size="1.27" layer="95"/>
-<attribute name="MPN" x="109.22" y="165.862" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP2" gate="G$1" x="129.54" y="175.26" smashed="yes">
-<attribute name="NAME" x="127" y="177.038" size="1.27" layer="95"/>
-<attribute name="MPN" x="127" y="173.482" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP4" gate="G$1" x="190.5" y="66.04" smashed="yes">
-<attribute name="NAME" x="187.96" y="67.818" size="1.27" layer="95"/>
-<attribute name="MPN" x="187.96" y="64.262" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP5" gate="G$1" x="208.28" y="73.66" smashed="yes">
-<attribute name="NAME" x="205.74" y="75.438" size="1.27" layer="95"/>
-<attribute name="MPN" x="205.74" y="71.882" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP7" gate="G$1" x="190.5" y="73.66" smashed="yes">
-<attribute name="NAME" x="187.96" y="75.438" size="1.27" layer="95"/>
-<attribute name="MPN" x="187.96" y="71.882" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP8" gate="G$1" x="208.28" y="66.04" smashed="yes">
-<attribute name="NAME" x="205.74" y="67.818" size="1.27" layer="95"/>
-<attribute name="MPN" x="205.74" y="64.262" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP9" gate="G$1" x="111.76" y="175.26" smashed="yes">
-<attribute name="NAME" x="109.22" y="177.038" size="1.27" layer="95"/>
-<attribute name="MPN" x="109.22" y="173.482" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="P27" gate="G$1" x="116.84" y="177.8" smashed="yes">
-<attribute name="VALUE" x="116.84" y="179.07" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="P51" gate="G$1" x="195.58" y="76.2" smashed="yes">
-<attribute name="VALUE" x="195.58" y="77.47" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="P75" gate="G$1" x="213.36" y="63.5" smashed="yes">
-<attribute name="VALUE" x="213.36" y="62.23" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="TP10" gate="G$1" x="129.54" y="167.64" smashed="yes">
-<attribute name="NAME" x="127" y="169.418" size="1.27" layer="95"/>
-<attribute name="MPN" x="127" y="165.862" size="1.27" layer="95" align="top-left"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </instance>
 <instance part="TP6" gate="G$1" x="213.36" y="167.64" smashed="yes">
 <attribute name="NAME" x="210.82" y="169.418" size="1.27" layer="95"/>
@@ -12207,13 +11863,8 @@ requirement of EV.8.3.2.</text>
 <attribute name="NAME" x="210.82" y="123.698" size="1.27" layer="95"/>
 <attribute name="MPN" x="210.82" y="120.142" size="1.27" layer="95" align="top-left"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="P76" gate="G$1" x="134.62" y="165.1" smashed="yes">
 <attribute name="VALUE" x="134.62" y="163.83" size="1.27" layer="96" align="top-center"/>
-=======
-<instance part="P76" gate="G$1" x="139.7" y="165.1" smashed="yes">
-<attribute name="VALUE" x="139.7" y="163.83" size="1.27" layer="96" align="top-center"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </instance>
 <instance part="P40" gate="G$1" x="238.76" y="149.86" smashed="yes">
 <attribute name="VALUE" x="238.76" y="148.59" size="1.27" layer="96" align="top-center"/>
@@ -12425,13 +12076,8 @@ requirement of EV.8.3.2.</text>
 <instance part="P92" gate="G$1" x="104.14" y="2.54" smashed="yes">
 <attribute name="VALUE" x="104.14" y="1.27" size="1.27" layer="96" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="P93" gate="G$1" x="81.28" y="7.62" smashed="yes">
 <attribute name="VALUE" x="81.28" y="8.89" size="1.27" layer="96" align="bottom-center"/>
-=======
-<instance part="P77" gate="G$1" x="119.38" y="55.88" smashed="yes">
-<attribute name="VALUE" x="119.38" y="57.15" size="1.27" layer="96" align="bottom-center"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </instance>
 <instance part="R32" gate="G$1" x="177.8" y="198.12" smashed="yes" rot="R180">
 <attribute name="NAME" x="179.07" y="196.85" size="1.27" layer="95" rot="R180" align="bottom-center"/>
@@ -12452,109 +12098,14 @@ requirement of EV.8.3.2.</text>
 <instance part="P94" gate="G$1" x="78.74" y="2.54" smashed="yes">
 <attribute name="VALUE" x="78.74" y="1.27" size="1.27" layer="96" align="top-center"/>
 </instance>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <instance part="P95" gate="G$1" x="55.88" y="7.62" smashed="yes">
 <attribute name="VALUE" x="55.88" y="8.89" size="1.27" layer="96" align="bottom-center"/>
-=======
-<instance part="P83" gate="G$1" x="121.92" y="160.02" smashed="yes">
-<attribute name="VALUE" x="121.92" y="161.29" size="1.27" layer="96" align="bottom-center"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </instance>
 <instance part="P96" gate="G$1" x="195.58" y="203.2" smashed="yes">
 <attribute name="VALUE" x="195.58" y="201.93" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P97" gate="G$1" x="172.72" y="200.66" smashed="yes">
 <attribute name="VALUE" x="172.72" y="201.93" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="U5" gate="G$1" x="182.88" y="114.3" smashed="yes">
-<attribute name="NAME" x="182.88" y="115.062" size="1.27" layer="95"/>
-<attribute name="MPN" x="182.88" y="90.678" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="C11" gate="G$1" x="208.28" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="205.74" y="107.95" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="210.82" y="107.95" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="212.598" y="107.95" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="C12" gate="G$1" x="170.18" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="167.64" y="107.95" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="172.72" y="107.95" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="174.498" y="107.95" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R1" gate="G$1" x="175.26" y="99.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="173.99" y="97.79" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="176.53" y="97.79" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="L1" gate="G$1" x="218.44" y="104.14" smashed="yes">
-<attribute name="NAME" x="217.17" y="105.41" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="INDUCTANCE" x="217.17" y="103.505" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R2" gate="G$1" x="165.1" y="111.76" smashed="yes">
-<attribute name="NAME" x="163.83" y="113.03" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="163.83" y="110.49" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="U6" gate="G$1" x="139.7" y="76.2" smashed="yes">
-<attribute name="NAME" x="139.7" y="76.962" size="1.27" layer="95"/>
-<attribute name="MPN" x="139.7" y="52.578" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="C29" gate="G$1" x="165.1" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="162.56" y="69.85" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="167.64" y="69.85" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="169.418" y="69.85" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="C30" gate="G$1" x="127" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="124.46" y="69.85" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="129.54" y="69.85" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="131.318" y="69.85" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R8" gate="G$1" x="132.08" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="130.81" y="59.69" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="133.35" y="59.69" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="L2" gate="G$1" x="175.26" y="66.04" smashed="yes">
-<attribute name="NAME" x="173.99" y="67.31" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="INDUCTANCE" x="173.99" y="65.405" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R9" gate="G$1" x="121.92" y="73.66" smashed="yes">
-<attribute name="NAME" x="120.65" y="74.93" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="120.65" y="72.39" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="P84" gate="G$1" x="132.08" y="53.34" smashed="yes">
-<attribute name="VALUE" x="132.08" y="52.07" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="P85" gate="G$1" x="180.34" y="68.58" smashed="yes">
-<attribute name="VALUE" x="180.34" y="69.85" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="P86" gate="G$1" x="175.26" y="91.44" smashed="yes">
-<attribute name="VALUE" x="175.26" y="90.17" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="P87" gate="G$1" x="220.98" y="106.68" smashed="yes">
-<attribute name="VALUE" x="220.98" y="107.95" size="1.27" layer="96" align="bottom-center"/>
-</instance>
-<instance part="C3" gate="G$1" x="167.64" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="165.1" y="59.69" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="170.18" y="57.404" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="170.18" y="61.214" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P88" gate="G$1" x="167.64" y="53.34" smashed="yes">
-<attribute name="VALUE" x="167.64" y="52.578" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="C10" gate="G$1" x="213.36" y="99.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="210.82" y="97.79" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="215.646" y="96.012" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="215.646" y="99.568" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="P89" gate="G$1" x="213.36" y="91.44" smashed="yes">
-<attribute name="VALUE" x="213.36" y="90.17" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="C31" gate="G$1" x="127" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="124.46" y="41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="129.286" y="40.386" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="129.286" y="43.688" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="C32" gate="G$1" x="127" y="147.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="124.46" y="146.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VOLTAGE" x="129.286" y="144.526" size="1.27" layer="96" rot="R90" align="top-center"/>
-<attribute name="CAPACITANCE" x="129.286" y="147.828" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -13112,32 +12663,19 @@ requirement of EV.8.3.2.</text>
 <label x="106.68" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="TP1" gate="G$1" pin="P$1"/>
 <wire x1="203.2" y1="66.04" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
 <label x="205.74" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="EN/UVLO"/>
-=======
-<pinref part="TP4" gate="G$1" pin="P$1"/>
-<wire x1="193.04" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
-<label x="195.58" y="66.04" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U6" gate="G$1" pin="EN/UVLO"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="137.16" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 <label x="134.62" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VREF1L" class="4">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C7" gate="G$1" pin="1"/>
-=======
-<pinref part="C2" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="104.14" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="50.8" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="VREF1"/>
@@ -13224,17 +12762,10 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="N$71" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R50" gate="G$1" pin="1"/>
 <pinref part="R51" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="2"/>
-=======
-<pinref part="R25" gate="G$1" pin="1"/>
-<pinref part="R48" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="J27" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="254" y1="198.12" x2="264.16" y2="198.12" width="0.1524" layer="91"/>
 <junction x="254" y="198.12"/>
 </segment>
@@ -13254,17 +12785,10 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="N$76" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R45" gate="G$1" pin="1"/>
 <pinref part="R46" gate="G$1" pin="1"/>
 <wire x1="251.46" y1="185.42" x2="254" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="J9" gate="G$1" pin="2"/>
-=======
-<pinref part="R26" gate="G$1" pin="1"/>
-<pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="185.42" x2="254" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="J28" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="254" y1="185.42" x2="264.16" y2="185.42" width="0.1524" layer="91"/>
 <junction x="254" y="185.42"/>
 </segment>
@@ -13284,17 +12808,10 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="N$78" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R38" gate="G$1" pin="1"/>
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="251.46" y1="172.72" x2="254" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="J8" gate="G$1" pin="2"/>
-=======
-<pinref part="R31" gate="G$1" pin="1"/>
-<pinref part="R46" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="172.72" x2="254" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="J32" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="254" y1="172.72" x2="264.16" y2="172.72" width="0.1524" layer="91"/>
 <junction x="254" y="172.72"/>
 </segment>
@@ -13314,17 +12831,10 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="N$80" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R30" gate="G$1" pin="1"/>
 <pinref part="R31" gate="G$1" pin="1"/>
 <wire x1="251.46" y1="160.02" x2="254" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="J6" gate="G$1" pin="2"/>
-=======
-<pinref part="R32" gate="G$1" pin="1"/>
-<pinref part="R45" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="160.02" x2="254" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="J33" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="254" y1="160.02" x2="264.16" y2="160.02" width="0.1524" layer="91"/>
 <junction x="254" y="160.02"/>
 </segment>
@@ -13360,17 +12870,10 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="N$84" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="251.46" y1="124.46" x2="254" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="2"/>
-=======
-<pinref part="R34" gate="G$1" pin="1"/>
-<pinref part="R43" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="124.46" x2="254" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="J37" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="254" y1="124.46" x2="264.16" y2="124.46" width="0.1524" layer="91"/>
 <junction x="254" y="124.46"/>
 </segment>
@@ -13390,17 +12893,10 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="N$86" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="251.46" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="2"/>
-=======
-<pinref part="R35" gate="G$1" pin="1"/>
-<pinref part="R42" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="J38" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="254" y1="111.76" x2="264.16" y2="111.76" width="0.1524" layer="91"/>
 <junction x="254" y="111.76"/>
 </segment>
@@ -13420,17 +12916,10 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="N$88" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="251.46" y1="99.06" x2="254" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="2"/>
-=======
-<pinref part="R36" gate="G$1" pin="1"/>
-<pinref part="R41" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="99.06" x2="254" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="J39" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="254" y1="99.06" x2="264.16" y2="99.06" width="0.1524" layer="91"/>
 <junction x="254" y="99.06"/>
 </segment>
@@ -13450,17 +12939,10 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="N$90" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="251.46" y1="86.36" x2="254" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
-=======
-<pinref part="R37" gate="G$1" pin="1"/>
-<pinref part="R39" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="86.36" x2="254" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="J40" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="254" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
 <junction x="254" y="86.36"/>
 </segment>
@@ -13637,45 +13119,26 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="VREF1U" class="3">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="U5" gate="G$1" pin="VREF1"/>
 <wire x1="104.14" y1="154.94" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C26" gate="G$1" pin="1"/>
-=======
-<pinref part="U1" gate="G$1" pin="VREF1"/>
-<wire x1="104.14" y1="154.94" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="119.38" y1="154.94" x2="119.38" y2="149.86" width="0.1524" layer="91"/>
 <label x="106.68" y="154.94" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="DRVU" class="3">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="U5" gate="G$1" pin="DRIVE"/>
-=======
-<pinref part="U1" gate="G$1" pin="DRIVE"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="104.14" y1="162.56" x2="106.68" y2="162.56" width="0.1524" layer="91"/>
 <label x="106.68" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="TP9" gate="G$1" pin="P$1"/>
 <wire x1="111.76" y1="167.64" x2="114.3" y2="167.64" width="0.1524" layer="91"/>
 <label x="114.3" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="EN/UVLO"/>
-=======
-<pinref part="TP1" gate="G$1" pin="P$1"/>
-<wire x1="114.3" y1="167.64" x2="116.84" y2="167.64" width="0.1524" layer="91"/>
-<label x="116.84" y="167.64" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="EN/UVLO"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="180.34" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
 <label x="177.8" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -13722,11 +13185,7 @@ requirement of EV.8.3.2.</text>
 <net name="N$73" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="IBIAS"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R12" gate="G$1" pin="2"/>
-=======
-<pinref part="R30" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="106.68" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13802,13 +13261,8 @@ requirement of EV.8.3.2.</text>
 <pinref part="P45" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="TP3" gate="G$1" pin="P$1"/>
 <wire x1="220.98" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
-=======
-<pinref part="TP8" gate="G$1" pin="P$1"/>
-<wire x1="210.82" y1="66.04" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <pinref part="P75" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
@@ -13882,18 +13336,13 @@ requirement of EV.8.3.2.</text>
 <pinref part="U1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R11" gate="G$1" pin="1"/>
-=======
-<pinref part="R29" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <pinref part="P70" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="V-"/>
 <pinref part="P71" gate="G$1" pin="V-L"/>
 <junction x="81.28" y="17.78"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C5" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -13908,46 +13357,22 @@ requirement of EV.8.3.2.</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-=======
-<pinref part="C7" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="P30" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<pinref part="R20" gate="G$1" pin="1"/>
-<pinref part="P31" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="C2" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <junction x="116.84" y="38.1"/>
 <junction x="116.84" y="38.1"/>
 <pinref part="P33" gate="G$1" pin="V-L"/>
 <junction x="116.84" y="38.1"/>
 <wire x1="116.84" y1="38.1" x2="111.76" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="38.1" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C8" gate="G$1" pin="2"/>
-=======
-<pinref part="C31" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="119.38" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="91"/>
 <junction x="119.38" y="38.1"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C10" gate="G$1" pin="2"/>
-=======
-<pinref part="C13" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <pinref part="P34" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
 <pinref part="P61" gate="G$1" pin="V-L"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C14" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -13971,31 +13396,6 @@ requirement of EV.8.3.2.</text>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-=======
-<pinref part="C20" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P60" gate="G$1" pin="V-L"/>
-<pinref part="C21" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P59" gate="G$1" pin="V-L"/>
-<pinref part="C22" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P58" gate="G$1" pin="V-L"/>
-<pinref part="C23" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="C28" gate="G$1" pin="1"/>
-<pinref part="P62" gate="G$1" pin="V-L"/>
-</segment>
-<segment>
-<pinref part="U6" gate="G$1" pin="GND"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="127" y1="66.04" x2="127" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="127" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
 <junction x="132.08" y="55.88"/>
@@ -14003,7 +13403,6 @@ requirement of EV.8.3.2.</text>
 </segment>
 <segment>
 <pinref part="P88" gate="G$1" pin="V-L"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C9" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -14015,9 +13414,6 @@ requirement of EV.8.3.2.</text>
 <pinref part="D2" gate="LED" pin="C"/>
 <wire x1="76.2" y1="5.08" x2="78.74" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="P94" gate="G$1" pin="V-L"/>
-=======
-<pinref part="C3" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </segment>
 </net>
 <net name="C6L" class="4">
@@ -14125,13 +13521,8 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="VREF2U" class="3">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C27" gate="G$1" pin="1"/>
 <pinref part="U5" gate="G$1" pin="VREF2"/>
-=======
-<pinref part="C4" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="VREF2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="104.14" y1="149.86" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
 <label x="106.68" y="149.86" size="1.27" layer="95"/>
 </segment>
@@ -14171,13 +13562,8 @@ requirement of EV.8.3.2.</text>
 <pinref part="P56" gate="G$1" pin="V-U"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="TP7" gate="G$1" pin="P$1"/>
 <wire x1="127" y1="167.64" x2="134.62" y2="167.64" width="0.1524" layer="91"/>
-=======
-<pinref part="TP10" gate="G$1" pin="P$1"/>
-<wire x1="132.08" y1="167.64" x2="139.7" y2="167.64" width="0.1524" layer="91"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <pinref part="P76" gate="G$1" pin="V-U"/>
 </segment>
 <segment>
@@ -14309,67 +13695,6 @@ requirement of EV.8.3.2.</text>
 <pinref part="P96" gate="G$1" pin="V-U"/>
 <wire x1="193.04" y1="205.74" x2="195.58" y2="205.74" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R27" gate="G$1" pin="1"/>
-<pinref part="P68" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="V-"/>
-<pinref part="P69" gate="G$1" pin="V-U"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<junction x="81.28" y="121.92"/>
-<wire x1="78.74" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="P23" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<pinref part="R12" gate="G$1" pin="1"/>
-<pinref part="P24" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<pinref part="P28" gate="G$1" pin="V-U"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<junction x="116.84" y="142.24"/>
-<pinref part="C9" gate="G$1" pin="2"/>
-<junction x="116.84" y="142.24"/>
-<wire x1="116.84" y1="142.24" x2="111.76" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="142.24" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="C32" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
-<junction x="119.38" y="142.24"/>
-</segment>
-<segment>
-<pinref part="P37" gate="G$1" pin="V-U"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P38" gate="G$1" pin="V-U"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P39" gate="G$1" pin="V-U"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="C26" gate="G$1" pin="1"/>
-<pinref part="P67" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="GND"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="104.14" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
-<junction x="175.26" y="93.98"/>
-<pinref part="P86" gate="G$1" pin="V-U"/>
-</segment>
-<segment>
-<pinref part="P89" gate="G$1" pin="V-U"/>
-<pinref part="C10" gate="G$1" pin="2"/>
-</segment>
 </net>
 <net name="GPIO4L" class="0">
 <segment>
@@ -14480,11 +13805,7 @@ requirement of EV.8.3.2.</text>
 <wire x1="104.14" y1="53.34" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="VREG"/>
 <pinref part="P77" gate="G$1" pin="VREGL"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C8" gate="G$1" pin="1"/>
-=======
-<pinref part="C31" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="127" y1="45.72" x2="127" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="127" y1="53.34" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
 <junction x="119.38" y="53.34"/>
@@ -14500,26 +13821,16 @@ requirement of EV.8.3.2.</text>
 <pinref part="P79" gate="G$1" pin="VREGL"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="TP4" gate="G$1" pin="P$1"/>
 <wire x1="220.98" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
 <label x="223.52" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-=======
-<pinref part="TP5" gate="G$1" pin="P$1"/>
-<wire x1="210.82" y1="73.66" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
-<label x="213.36" y="73.66" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="C24" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <pinref part="P52" gate="G$1" pin="VREGL"/>
 <junction x="271.78" y="73.66"/>
 <junction x="271.78" y="73.66"/>
 <wire x1="271.78" y1="73.66" x2="269.24" y2="73.66" width="0.1524" layer="91"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="U1" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
@@ -14532,26 +13843,11 @@ requirement of EV.8.3.2.</text>
 <wire x1="162.56" y1="60.96" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
 <junction x="162.56" y="60.96"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-=======
-<pinref part="U4" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="L2" gate="G$1" pin="2"/>
-<pinref part="P85" gate="G$1" pin="VREGL"/>
-<wire x1="180.34" y1="66.04" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U6" gate="G$1" pin="VOUT"/>
-<pinref part="U6" gate="G$1" pin="BD"/>
-<wire x1="162.56" y1="60.96" x2="162.56" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="60.96" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
-<junction x="162.56" y="60.96"/>
-<pinref part="C3" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="162.56" y1="63.5" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="63.5" x2="180.34" y2="63.5" width="0.1524" layer="91"/>
 <junction x="167.64" y="63.5"/>
 <wire x1="180.34" y1="63.5" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
 <junction x="180.34" y="66.04"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
@@ -14562,8 +13858,6 @@ requirement of EV.8.3.2.</text>
 <pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="5.08" x2="55.88" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="P95" gate="G$1" pin="VREGL"/>
-=======
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </segment>
 </net>
 <net name="VREGU" class="3">
@@ -14584,17 +13878,10 @@ requirement of EV.8.3.2.</text>
 <pinref part="P66" gate="G$1" pin="VREGU"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="U5" gate="G$1" pin="VREG"/>
 <wire x1="104.14" y1="157.48" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="P83" gate="G$1" pin="VREGU"/>
 <pinref part="C23" gate="G$1" pin="1"/>
-=======
-<pinref part="U1" gate="G$1" pin="VREG"/>
-<wire x1="104.14" y1="157.48" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="P83" gate="G$1" pin="VREGU"/>
-<pinref part="C32" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="127" y1="149.86" x2="127" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="127" y1="157.48" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
 <junction x="121.92" y="157.48"/>
@@ -14610,15 +13897,9 @@ requirement of EV.8.3.2.</text>
 <pinref part="P82" gate="G$1" pin="VREGU"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="TP8" gate="G$1" pin="P$1"/>
 <wire x1="127" y1="175.26" x2="129.54" y2="175.26" width="0.1524" layer="91"/>
 <label x="129.54" y="175.26" size="1.27" layer="95" xref="yes"/>
-=======
-<pinref part="TP2" gate="G$1" pin="P$1"/>
-<wire x1="132.08" y1="175.26" x2="134.62" y2="175.26" width="0.1524" layer="91"/>
-<label x="134.62" y="175.26" size="1.27" layer="95" xref="yes"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </segment>
 <segment>
 <wire x1="104.14" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
@@ -14627,7 +13908,6 @@ requirement of EV.8.3.2.</text>
 </segment>
 <segment>
 <pinref part="P57" gate="G$1" pin="VREGU"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C30" gate="G$1" pin="1"/>
 <junction x="271.78" y="147.32"/>
 <junction x="271.78" y="147.32"/>
@@ -14643,30 +13923,12 @@ requirement of EV.8.3.2.</text>
 <wire x1="205.74" y1="99.06" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
 <junction x="205.74" y="99.06"/>
 <pinref part="C25" gate="G$1" pin="1"/>
-=======
-<pinref part="C25" gate="G$1" pin="1"/>
-<junction x="271.78" y="147.32"/>
-<junction x="271.78" y="147.32"/>
-<wire x1="271.78" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="L1" gate="G$1" pin="2"/>
-<pinref part="P87" gate="G$1" pin="VREGU"/>
-<pinref part="U5" gate="G$1" pin="VOUT"/>
-<pinref part="U5" gate="G$1" pin="BD"/>
-<wire x1="205.74" y1="99.06" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="99.06" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
-<junction x="205.74" y="99.06"/>
-<pinref part="C10" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="205.74" y1="101.6" x2="213.36" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="101.6" x2="220.98" y2="101.6" width="0.1524" layer="91"/>
 <junction x="213.36" y="101.6"/>
 <wire x1="220.98" y1="101.6" x2="220.98" y2="104.14" width="0.1524" layer="91"/>
 <junction x="220.98" y="104.14"/>
 </segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <segment>
 <pinref part="R39" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="205.74" x2="172.72" y2="205.74" width="0.1524" layer="91"/>
@@ -14677,8 +13939,6 @@ requirement of EV.8.3.2.</text>
 <pinref part="P97" gate="G$1" pin="VREGU"/>
 <wire x1="175.26" y1="198.12" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
 </segment>
-=======
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </net>
 <net name="CC12" class="1">
 <segment>
@@ -14694,60 +13954,35 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="V+L" class="4">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="TP2" gate="G$1" pin="P$1"/>
 <wire x1="203.2" y1="73.66" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
-=======
-<pinref part="TP7" gate="G$1" pin="P$1"/>
-<wire x1="193.04" y1="73.66" x2="195.58" y2="73.66" width="0.1524" layer="91"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <pinref part="P51" gate="G$1" pin="V+L"/>
 </segment>
 <segment>
 <pinref part="P35" gate="G$1" pin="V+L"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
 <junction x="76.2" y="111.76"/>
 <wire x1="76.2" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
-=======
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
-<junction x="76.2" y="111.76"/>
-<wire x1="76.2" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <pinref part="U2" gate="G$1" pin="V+"/>
 <wire x1="81.28" y1="111.76" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V+U" class="3">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="TP10" gate="G$1" pin="P$1"/>
 <wire x1="111.76" y1="175.26" x2="114.3" y2="175.26" width="0.1524" layer="91"/>
-=======
-<pinref part="TP9" gate="G$1" pin="P$1"/>
-<wire x1="114.3" y1="175.26" x2="116.84" y2="175.26" width="0.1524" layer="91"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <pinref part="P27" gate="G$1" pin="V+U"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="G$1" pin="V+U"/>
 <wire x1="66.04" y1="205.74" x2="71.12" y2="205.74" width="0.1524" layer="91"/>
 <junction x="71.12" y="205.74"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="U5" gate="G$1" pin="V+"/>
 <wire x1="71.12" y1="205.74" x2="81.28" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="R44" gate="G$1" pin="2"/>
 <pinref part="C24" gate="G$1" pin="1"/>
-=======
-<pinref part="U1" gate="G$1" pin="V+"/>
-<wire x1="71.12" y1="205.74" x2="81.28" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="R44" gate="G$1" pin="2"/>
-<pinref part="C27" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </segment>
 </net>
 <net name="SENSE21" class="3">
@@ -14762,41 +13997,25 @@ requirement of EV.8.3.2.</text>
 <wire x1="45.72" y1="205.74" x2="58.42" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R41" gate="G$1" pin="1"/>
-=======
-<pinref part="R2" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="160.02" y1="111.76" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
 <label x="157.48" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="IM" class="5">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R29" gate="G$1" pin="1"/>
 <pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="147.32" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="2"/>
-=======
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="R52" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="147.32" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="J34" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="208.28" y1="157.48" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
 <junction x="205.74" y="147.32"/>
 <label x="205.74" y="147.32" size="1.27" layer="95"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="J7" gate="G$1" pin="2"/>
-=======
-<pinref part="R49" gate="G$1" pin="1"/>
-<pinref part="J35" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="205.74" y1="121.92" x2="208.28" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="121.92" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
 <label x="205.74" y="121.92" size="1.27" layer="95"/>
@@ -14809,17 +14028,10 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="IP" class="5">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R27" gate="G$1" pin="2"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="162.56" x2="205.74" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="1"/>
-=======
-<pinref part="R52" gate="G$1" pin="2"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="162.56" x2="205.74" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="J34" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="205.74" y1="167.64" x2="208.28" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="167.64" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
 <junction x="205.74" y="167.64"/>
@@ -14850,22 +14062,14 @@ requirement of EV.8.3.2.</text>
 <junction x="33.02" y="111.76"/>
 </segment>
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R8" gate="G$1" pin="1"/>
-=======
-<pinref part="R9" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="116.84" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
 <label x="114.3" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VREF2L" class="4">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C6" gate="G$1" pin="1"/>
-=======
-<pinref part="C1" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <pinref part="U2" gate="G$1" pin="VREF2"/>
 <wire x1="111.76" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
 <label x="106.68" y="45.72" size="1.27" layer="95"/>
@@ -14873,67 +14077,40 @@ requirement of EV.8.3.2.</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R40" gate="G$1" pin="2"/>
 <pinref part="U4" gate="G$1" pin="RT"/>
-=======
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U5" gate="G$1" pin="RT"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="175.26" y1="101.6" x2="180.34" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C21" gate="G$1" pin="2"/>
 <pinref part="U4" gate="G$1" pin="SW"/>
 <wire x1="208.28" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="L2" gate="G$1" pin="1"/>
-=======
-<pinref part="C11" gate="G$1" pin="2"/>
-<pinref part="U5" gate="G$1" pin="SW"/>
-<wire x1="208.28" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="1"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="208.28" y1="104.14" x2="213.36" y2="104.14" width="0.1524" layer="91"/>
 <junction x="208.28" y="104.14"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="BOOST"/>
-=======
-<pinref part="C11" gate="G$1" pin="1"/>
-<pinref part="U5" gate="G$1" pin="BOOST"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <wire x1="208.28" y1="111.76" x2="205.74" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VINU" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="U4" gate="G$1" pin="VIN"/>
 <wire x1="180.34" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="111.76" x2="167.64" y2="111.76" width="0.1524" layer="91"/>
 <junction x="170.18" y="111.76"/>
 <pinref part="R41" gate="G$1" pin="2"/>
-=======
-<pinref part="U5" gate="G$1" pin="VIN"/>
-<wire x1="180.34" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="111.76" x2="167.64" y2="111.76" width="0.1524" layer="91"/>
-<junction x="170.18" y="111.76"/>
-<pinref part="R2" gate="G$1" pin="2"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="U3" gate="G$1" pin="RT"/>
 <wire x1="132.08" y1="63.5" x2="137.16" y2="63.5" width="0.1524" layer="91"/>
@@ -14992,218 +14169,8 @@ requirement of EV.8.3.2.</text>
 <pinref part="R21" gate="G$1" pin="1"/>
 <pinref part="D2" gate="LED" pin="A"/>
 <wire x1="66.04" y1="5.08" x2="68.58" y2="5.08" width="0.1524" layer="91"/>
-=======
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="U6" gate="G$1" pin="RT"/>
-<wire x1="132.08" y1="63.5" x2="137.16" y2="63.5" width="0.1524" layer="91"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="C29" gate="G$1" pin="2"/>
-<pinref part="U6" gate="G$1" pin="SW"/>
-<wire x1="165.1" y1="66.04" x2="162.56" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="66.04" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
-<junction x="165.1" y="66.04"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="C29" gate="G$1" pin="1"/>
-<pinref part="U6" gate="G$1" pin="BOOST"/>
-<wire x1="165.1" y1="73.66" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VINL" class="0">
-<segment>
-<pinref part="U6" gate="G$1" pin="VIN"/>
-<wire x1="137.16" y1="73.66" x2="127" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="1"/>
-<wire x1="127" y1="73.66" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
-<junction x="127" y="73.66"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-</segment>
-</net>
-</nets>
-</sheet>
-<sheet>
-<plain>
-<text x="50.8" y="175.26" size="1.27" layer="97">8 thermistors to go
-into the connectors</text>
-<text x="81.28" y="175.26" size="1.27" layer="97">10 plugs for the 
-10 microfit connectors</text>
-<text x="116.84" y="175.26" size="1.27" layer="97">20 crimps for the 
-10 microfit plugs</text>
-</plain>
-<instances>
-<instance part="U$30" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="186.69" y="2.54" size="2.54" layer="95"/>
-<attribute name="DRAWING_NAME" x="207.01" y="22.86" size="2.54" layer="95"/>
-<attribute name="SHEET" x="259.08" y="2.54" size="2.54" layer="95"/>
-<attribute name="ENGINEER" x="129.54" y="22.86" size="2.54" layer="95"/>
-<attribute name="DESIGNER_SCHEMATIC" x="176.53" y="30.48" size="2.54" layer="95"/>
-<attribute name="REVIEWER_SCHEMATIC" x="227.33" y="30.48" size="2.54" layer="95"/>
-<attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
-<attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
-</instance>
-<instance part="O1" gate="G$1" x="50.8" y="167.64" smashed="yes">
-<attribute name="MPN" x="50.8" y="164.338" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="50.8" y="168.402" size="1.27" layer="95"/>
-</instance>
-<instance part="O2" gate="G$1" x="50.8" y="160.02" smashed="yes">
-<attribute name="MPN" x="50.8" y="156.718" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="50.8" y="160.782" size="1.27" layer="95"/>
-</instance>
-<instance part="O3" gate="G$1" x="50.8" y="152.4" smashed="yes">
-<attribute name="MPN" x="50.8" y="149.098" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="50.8" y="153.162" size="1.27" layer="95"/>
-</instance>
-<instance part="O4" gate="G$1" x="50.8" y="144.78" smashed="yes">
-<attribute name="MPN" x="50.8" y="141.478" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="50.8" y="145.542" size="1.27" layer="95"/>
-</instance>
-<instance part="O5" gate="G$1" x="50.8" y="137.16" smashed="yes">
-<attribute name="MPN" x="50.8" y="133.858" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="50.8" y="137.922" size="1.27" layer="95"/>
-</instance>
-<instance part="O6" gate="G$1" x="50.8" y="129.54" smashed="yes">
-<attribute name="MPN" x="50.8" y="126.238" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="50.8" y="130.302" size="1.27" layer="95"/>
-</instance>
-<instance part="O7" gate="G$1" x="50.8" y="121.92" smashed="yes">
-<attribute name="MPN" x="50.8" y="118.618" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="50.8" y="122.682" size="1.27" layer="95"/>
-</instance>
-<instance part="O8" gate="G$1" x="50.8" y="114.3" smashed="yes">
-<attribute name="MPN" x="50.8" y="110.998" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="50.8" y="115.062" size="1.27" layer="95"/>
-</instance>
-<instance part="O9" gate="G$1" x="81.28" y="167.64" smashed="yes">
-<attribute name="MPN" x="81.28" y="164.338" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="81.28" y="168.402" size="1.27" layer="95"/>
-</instance>
-<instance part="O10" gate="G$1" x="81.28" y="160.02" smashed="yes">
-<attribute name="MPN" x="81.28" y="156.718" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="81.28" y="160.782" size="1.27" layer="95"/>
-</instance>
-<instance part="O11" gate="G$1" x="81.28" y="152.4" smashed="yes">
-<attribute name="MPN" x="81.28" y="149.098" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="81.28" y="153.162" size="1.27" layer="95"/>
-</instance>
-<instance part="O12" gate="G$1" x="81.28" y="144.78" smashed="yes">
-<attribute name="MPN" x="81.28" y="141.478" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="81.28" y="145.542" size="1.27" layer="95"/>
-</instance>
-<instance part="O13" gate="G$1" x="81.28" y="137.16" smashed="yes">
-<attribute name="MPN" x="81.28" y="133.858" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="81.28" y="137.922" size="1.27" layer="95"/>
-</instance>
-<instance part="O14" gate="G$1" x="81.28" y="129.54" smashed="yes">
-<attribute name="MPN" x="81.28" y="126.238" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="81.28" y="130.302" size="1.27" layer="95"/>
-</instance>
-<instance part="O15" gate="G$1" x="81.28" y="121.92" smashed="yes">
-<attribute name="MPN" x="81.28" y="118.618" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="81.28" y="122.682" size="1.27" layer="95"/>
-</instance>
-<instance part="O16" gate="G$1" x="81.28" y="114.3" smashed="yes">
-<attribute name="MPN" x="81.28" y="110.998" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="81.28" y="115.062" size="1.27" layer="95"/>
-</instance>
-<instance part="O17" gate="G$1" x="81.28" y="106.68" smashed="yes">
-<attribute name="MPN" x="81.28" y="103.378" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="81.28" y="107.442" size="1.27" layer="95"/>
-</instance>
-<instance part="O18" gate="G$1" x="81.28" y="99.06" smashed="yes">
-<attribute name="MPN" x="81.28" y="95.758" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="81.28" y="99.822" size="1.27" layer="95"/>
-</instance>
-<instance part="O19" gate="G$1" x="116.84" y="167.64" smashed="yes">
-<attribute name="MPN" x="116.84" y="164.338" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="116.84" y="168.402" size="1.27" layer="95"/>
-</instance>
-<instance part="O20" gate="G$1" x="116.84" y="160.02" smashed="yes">
-<attribute name="MPN" x="116.84" y="156.718" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="116.84" y="160.782" size="1.27" layer="95"/>
-</instance>
-<instance part="O21" gate="G$1" x="116.84" y="152.4" smashed="yes">
-<attribute name="MPN" x="116.84" y="149.098" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="116.84" y="153.162" size="1.27" layer="95"/>
-</instance>
-<instance part="O22" gate="G$1" x="116.84" y="144.78" smashed="yes">
-<attribute name="MPN" x="116.84" y="141.478" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="116.84" y="145.542" size="1.27" layer="95"/>
-</instance>
-<instance part="O23" gate="G$1" x="116.84" y="137.16" smashed="yes">
-<attribute name="MPN" x="116.84" y="133.858" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="116.84" y="137.922" size="1.27" layer="95"/>
-</instance>
-<instance part="O24" gate="G$1" x="116.84" y="129.54" smashed="yes">
-<attribute name="MPN" x="116.84" y="126.238" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="116.84" y="130.302" size="1.27" layer="95"/>
-</instance>
-<instance part="O25" gate="G$1" x="116.84" y="121.92" smashed="yes">
-<attribute name="MPN" x="116.84" y="118.618" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="116.84" y="122.682" size="1.27" layer="95"/>
-</instance>
-<instance part="O26" gate="G$1" x="116.84" y="114.3" smashed="yes">
-<attribute name="MPN" x="116.84" y="110.998" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="116.84" y="115.062" size="1.27" layer="95"/>
-</instance>
-<instance part="O27" gate="G$1" x="116.84" y="106.68" smashed="yes">
-<attribute name="MPN" x="116.84" y="103.378" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="116.84" y="107.442" size="1.27" layer="95"/>
-</instance>
-<instance part="O28" gate="G$1" x="116.84" y="99.06" smashed="yes">
-<attribute name="MPN" x="116.84" y="95.758" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="116.84" y="99.822" size="1.27" layer="95"/>
-</instance>
-<instance part="O29" gate="G$1" x="129.54" y="167.64" smashed="yes">
-<attribute name="MPN" x="129.54" y="164.338" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="129.54" y="168.402" size="1.27" layer="95"/>
-</instance>
-<instance part="O30" gate="G$1" x="129.54" y="160.02" smashed="yes">
-<attribute name="MPN" x="129.54" y="156.718" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="129.54" y="160.782" size="1.27" layer="95"/>
-</instance>
-<instance part="O31" gate="G$1" x="129.54" y="152.4" smashed="yes">
-<attribute name="MPN" x="129.54" y="149.098" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="129.54" y="153.162" size="1.27" layer="95"/>
-</instance>
-<instance part="O32" gate="G$1" x="129.54" y="144.78" smashed="yes">
-<attribute name="MPN" x="129.54" y="141.478" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="129.54" y="145.542" size="1.27" layer="95"/>
-</instance>
-<instance part="O33" gate="G$1" x="129.54" y="137.16" smashed="yes">
-<attribute name="MPN" x="129.54" y="133.858" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="129.54" y="137.922" size="1.27" layer="95"/>
-</instance>
-<instance part="O34" gate="G$1" x="129.54" y="129.54" smashed="yes">
-<attribute name="MPN" x="129.54" y="126.238" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="129.54" y="130.302" size="1.27" layer="95"/>
-</instance>
-<instance part="O35" gate="G$1" x="129.54" y="121.92" smashed="yes">
-<attribute name="MPN" x="129.54" y="118.618" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="129.54" y="122.682" size="1.27" layer="95"/>
-</instance>
-<instance part="O36" gate="G$1" x="129.54" y="114.3" smashed="yes">
-<attribute name="MPN" x="129.54" y="110.998" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="129.54" y="115.062" size="1.27" layer="95"/>
-</instance>
-<instance part="O37" gate="G$1" x="129.54" y="106.68" smashed="yes">
-<attribute name="MPN" x="129.54" y="103.378" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="129.54" y="107.442" size="1.27" layer="95"/>
-</instance>
-<instance part="O38" gate="G$1" x="129.54" y="99.06" smashed="yes">
-<attribute name="MPN" x="129.54" y="95.758" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="129.54" y="99.822" size="1.27" layer="95"/>
-</instance>
-</instances>
-<busses>
-</busses>
-<nets>
 </nets>
 </sheet>
 <sheet>
@@ -15365,25 +14332,16 @@ Due to concerns for thermals, all traces were sized to produce no more than a 5�
 </sheet>
 </sheets>
 <errors>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <approved hash="104,1,104.14,157.48,U5,VREG,VREGU,,,"/>
 <approved hash="104,1,104.14,154.94,U5,VREF1,VREF1U,,,"/>
 <approved hash="104,1,104.14,149.86,U5,VREF2,VREF2U,,,"/>
 <approved hash="104,1,81.28,121.92,U5,V-,V-U,,,"/>
 <approved hash="104,1,81.28,205.74,U5,V+,V+U,,,"/>
-=======
-<approved hash="104,1,104.14,157.48,U1,VREG,VREGU,,,"/>
-<approved hash="104,1,104.14,154.94,U1,VREF1,VREF1U,,,"/>
-<approved hash="104,1,104.14,149.86,U1,VREF2,VREF2U,,,"/>
-<approved hash="104,1,81.28,121.92,U1,V-,V-U,,,"/>
-<approved hash="104,1,81.28,205.74,U1,V+,V+U,,,"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <approved hash="104,1,104.14,53.34,U2,VREG,VREGL,,,"/>
 <approved hash="104,1,104.14,50.8,U2,VREF1,VREF1L,,,"/>
 <approved hash="104,1,104.14,45.72,U2,VREF2,VREF2L,,,"/>
 <approved hash="104,1,81.28,17.78,U2,V-,V-L,,,"/>
 <approved hash="104,1,81.28,101.6,U2,V+,V+L,,,"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <approved hash="104,1,254,137.16,U6,GND,V-U,,,"/>
 <approved hash="104,1,269.24,147.32,U6,VDD,VREGU,,,"/>
 <approved hash="104,1,254,63.5,U1,GND,V-L,,,"/>
@@ -15392,16 +14350,6 @@ Due to concerns for thermals, all traces were sized to produce no more than a 5�
 <approved hash="104,1,180.34,93.98,U4,GND,V-U,,,"/>
 <approved hash="104,1,137.16,73.66,U3,VIN,VINL,,,"/>
 <approved hash="104,1,137.16,55.88,U3,GND,V-L,,,"/>
-=======
-<approved hash="104,1,254,137.16,U3,GND,V-U,,,"/>
-<approved hash="104,1,269.24,147.32,U3,VDD,VREGU,,,"/>
-<approved hash="104,1,254,63.5,U4,GND,V-L,,,"/>
-<approved hash="104,1,269.24,73.66,U4,VDD,VREGL,,,"/>
-<approved hash="104,1,180.34,111.76,U5,VIN,VINU,,,"/>
-<approved hash="104,1,180.34,93.98,U5,GND,V-U,,,"/>
-<approved hash="104,1,137.16,73.66,U6,VIN,VINL,,,"/>
-<approved hash="104,1,137.16,55.88,U6,GND,V-L,,,"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <approved hash="208,1,236.22,63.5,V-L,sup,,,,"/>
 <approved hash="208,1,271.78,66.04,V-L,sup,,,,"/>
 <approved hash="208,1,106.68,101.6,V-L,sup,,,,"/>
@@ -15429,11 +14377,7 @@ Due to concerns for thermals, all traces were sized to produce no more than a 5�
 <approved hash="208,1,106.68,10.16,V-L,sup,,,,"/>
 <approved hash="208,1,81.28,17.78,V-L,sup,,,,"/>
 <approved hash="208,1,139.7,93.98,V-L,sup,,,,"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <approved hash="208,1,162.56,96.52,V-L,sup,,,,"/>
-=======
-<approved hash="208,1,160.02,96.52,V-L,sup,,,,"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <approved hash="208,1,116.84,38.1,V-L,sup,,,,"/>
 <approved hash="208,1,76.2,104.14,V-L,sup,,,,"/>
 <approved hash="208,1,238.76,116.84,V-L,sup,,,,"/>
@@ -15443,11 +14387,8 @@ Due to concerns for thermals, all traces were sized to produce no more than a 5�
 <approved hash="208,1,160.02,119.38,V-L,sup,,,,"/>
 <approved hash="208,1,132.08,55.88,V-L,sup,,,,"/>
 <approved hash="208,1,167.64,55.88,V-L,sup,,,,"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <approved hash="208,1,104.14,5.08,V-L,sup,,,,"/>
 <approved hash="208,1,78.74,5.08,V-L,sup,,,,"/>
-=======
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <approved hash="208,1,236.22,137.16,V-U,sup,,,,"/>
 <approved hash="208,1,271.78,139.7,V-U,sup,,,,"/>
 <approved hash="208,1,71.12,198.12,V-U,sup,,,,"/>
@@ -15472,13 +14413,8 @@ Due to concerns for thermals, all traces were sized to produce no more than a 5�
 <approved hash="208,1,254,137.16,V-U,sup,,,,"/>
 <approved hash="208,1,106.68,114.3,V-U,sup,,,,"/>
 <approved hash="208,1,81.28,121.92,V-U,sup,,,,"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <approved hash="208,1,142.24,198.12,V-U,sup,,,,"/>
 <approved hash="208,1,162.56,200.66,V-U,sup,,,,"/>
-=======
-<approved hash="208,1,139.7,198.12,V-U,sup,,,,"/>
-<approved hash="208,1,160.02,200.66,V-U,sup,,,,"/>
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 <approved hash="208,1,116.84,142.24,V-U,sup,,,,"/>
 <approved hash="208,1,238.76,190.5,V-U,sup,,,,"/>
 <approved hash="208,1,238.76,177.8,V-U,sup,,,,"/>
@@ -15486,11 +14422,8 @@ Due to concerns for thermals, all traces were sized to produce no more than a 5�
 <approved hash="208,1,160.02,144.78,V-U,sup,,,,"/>
 <approved hash="208,1,175.26,93.98,V-U,sup,,,,"/>
 <approved hash="208,1,213.36,93.98,V-U,sup,,,,"/>
-<<<<<<< HEAD:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev18.sch
 <approved hash="208,1,205.74,198.12,V-U,sup,,,,"/>
 <approved hash="208,1,205.74,205.74,V-U,sup,,,,"/>
-=======
->>>>>>> 7a0ccc8fd45442ed609ab314f9ff75ba199c86ef:EAGLE Board Designs/AMS/AMS Segment/AMS Segment rev16.sch
 </errors>
 </schematic>
 </drawing>
@@ -15500,9 +14433,9 @@ Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
 </note>
 <note version="9.0" severity="warning">
-Since Version 9.0, EAGLE supports the align property for labels. 
-Labels in schematic will not be understood with this version. Update EAGLE to the latest version 
-for full support of labels. 
+Since Version 9.0, EAGLE supports the align property for labels.
+Labels in schematic will not be understood with this version. Update EAGLE to the latest version
+for full support of labels.
 </note>
 </compatibility>
 </eagle>
