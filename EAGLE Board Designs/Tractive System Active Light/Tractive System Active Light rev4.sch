@@ -208,6 +208,7 @@
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
 <rectangle x1="-2.794" y1="-2.794" x2="2.794" y2="2.794" layer="39"/>
 <text x="-3.048" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="3.81" y="-2.175" radius="0.635" width="0" layer="21"/>
 </package>
 <package name="PWR163">
 <description>PWR163 Resistor
@@ -365,6 +366,9 @@ Dashed line is edge of mated connector.</description>
 </packages>
 <symbols>
 <symbol name="DIODE_LED_RGBW">
+<description>Inolux IN-505FCHWV RGBW LED
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
 <pin name="RED+" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
 <pin name="GREEN+" x="-2.54" y="-17.78" visible="off" length="short" direction="pas"/>
 <pin name="BLUE+" x="-2.54" y="-27.94" visible="off" length="short" direction="pas"/>
@@ -566,7 +570,7 @@ Dashed line is edge of mated connector.</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED_RGBW_?_*">
+<deviceset name="LED_RGBW_*">
 <description>Inolux IN-505FCHWV RGBW LED
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
@@ -574,7 +578,7 @@ Dashed line is edge of mated connector.</description>
 <gate name="G$1" symbol="DIODE_LED_RGBW" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="IN-505FCHWV">
+<device name="IN-505FCHWV" package="IN-505FCHWV">
 <connects>
 <connect gate="G$1" pin="BLUE+" pad="C+"/>
 <connect gate="G$1" pin="BLUE-" pad="C-"/>
@@ -4078,10 +4082,10 @@ Layer: 94 Symbol</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="HyTechDevices" deviceset="LED_RGBW_?_*" device=""/>
-<part name="U$2" library="HyTechDevices" deviceset="LED_RGBW_?_*" device=""/>
-<part name="U$3" library="HyTechDevices" deviceset="LED_RGBW_?_*" device=""/>
-<part name="U$4" library="HyTechDevices" deviceset="LED_RGBW_?_*" device=""/>
+<part name="U$1" library="HyTechDevices" deviceset="LED_RGBW_*" device="IN-505FCHWV"/>
+<part name="U$2" library="HyTechDevices" deviceset="LED_RGBW_*" device="IN-505FCHWV"/>
+<part name="U$3" library="HyTechDevices" deviceset="LED_RGBW_*" device="IN-505FCHWV"/>
+<part name="U$4" library="HyTechDevices" deviceset="LED_RGBW_*" device="IN-505FCHWV"/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="56" value="RESISTOR_0805_56"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="56" value="RESISTOR_0805_56"/>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.1" value="RESISTOR_0603_5.1"/>
