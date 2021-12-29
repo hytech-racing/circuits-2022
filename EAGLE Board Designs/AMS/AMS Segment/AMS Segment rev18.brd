@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -212,14 +212,6 @@ by Arvind Srinivasan
 </text>
 <text x="156.083" y="-69.8754" size="1.016" layer="21" font="vector" align="bottom-center">IM</text>
 <text x="117.856" y="-69.8754" size="1.016" layer="21" font="vector" align="bottom-center">IP</text>
-<text x="76.327" y="-42.799" size="1.016" layer="21" font="vector">DRVU</text>
-<text x="71.755" y="-44.704" size="1.016" layer="21" font="vector">V+U</text>
-<text x="200.025" y="-60.706" size="1.016" layer="21" font="vector">DRVL</text>
-<text x="196.088" y="-59.055" size="1.016" layer="21" font="vector">V+L</text>
-<text x="196.088" y="-17.78" size="1.016" layer="21" font="vector">V-L</text>
-<text x="194.564" y="-25.273" size="1.016" layer="21" font="vector">VREGL</text>
-<text x="85.725" y="-18.542" size="1.016" layer="21" font="vector">V-U</text>
-<text x="84.709" y="-25.273" size="1.016" layer="21" font="vector">VREGU</text>
 <rectangle x1="0" y1="-38.1" x2="6.35" y2="-36.83" layer="22" rot="R180"/>
 <rectangle x1="2.54" y1="-40.64" x2="3.81" y2="-34.29" layer="21"/>
 <wire x1="134.112" y1="-26.162" x2="134.112" y2="-0.254" width="0.508" layer="21" style="shortdash"/>
@@ -656,6 +648,7 @@ by Arvind Srinivasan
 <smd name="3" x="0" y="1.0033" dx="0.7112" dy="0.889" layer="1"/>
 <text x="0" y="1.778" size="0.635" layer="25" font="vector" rot="R180" align="top-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
+<circle x="-1.778" y="-1.0033" radius="0.15875" width="0" layer="21"/>
 </package>
 <package name="0603-RES">
 <description>0603 Resistor Footprint
@@ -704,7 +697,7 @@ by Arvind Srinivasan
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
+Keepout is 0.8 mm around fuse to get 1.6 mm between fuses.</description>
 <smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
@@ -737,7 +730,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 Solid line must not be visible on PCB if no cutout is desired.
 &lt;br&gt;
 Dashed line is edge of mated connector.</description>
-<smd name="PAD" x="5.3721" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="PAD1" x="5.3721" y="0" dx="3.429" dy="1.651" layer="1"/>
 <smd name="PAD2" x="-5.3721" y="0" dx="3.429" dy="1.651" layer="1"/>
 <smd name="1" x="1.4986" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
 <smd name="2" x="-1.4986" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
@@ -793,7 +786,7 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="-8.382" y1="-8.382" x2="8.382" y2="8.382" layer="39"/>
 </package>
 <package name="SSOP-48">
-<description>SSOP 48 Package
+<description>SSOP-48
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/05081887_A_G48.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="8" x="-2.25" y="-3.37" dx="0.25" dy="1.25" layer="1" rot="R180"/>
@@ -852,13 +845,14 @@ Dashed line is edge of mated connector.</description>
 <text x="-7.62" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="center">&gt;NAME</text>
 <rectangle x1="-6.985" y1="-4.445" x2="6.985" y2="4.445" layer="39"/>
 </package>
-<package name="MICRO_MINIATURE">
+<package name="5015">
 <description>Keystone Micro-Miniature SMD Test Point
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/015-744075.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
-<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
+<text x="0" y="1.905" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="DFN-8">
 <description>DFN-8
@@ -892,7 +886,7 @@ Dashed line is edge of mated connector.</description>
 <circle x="0" y="0" radius="3.75" width="0" layer="42"/>
 </package>
 <package name="MSOP-16(MSE)">
-<description>MSOP 16
+<description>MSOP-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -917,7 +911,7 @@ Dashed line is edge of mated connector.</description>
 <wire x1="-2.0195" y1="1.5" x2="-2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-2.0195" y1="-1.5" x2="2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2.0195" y1="-1.5" x2="2.0195" y2="1.5" width="0.127" layer="21"/>
-<circle x="-2.286" y="-2.1082" radius="0.127" width="0.127" layer="21"/>
+<circle x="-2.286" y="-2.1082" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.54" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <smd name="17" x="0" y="0" dx="2.845" dy="1.651" layer="1"/>
@@ -11511,7 +11505,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="178.4096" y="-64.4652" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="NAME" x="179.1596" y="-64.4652" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="CELL10:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="182.7784" y="-64.3128" smashed="yes" rot="R90">
+<element name="CELL10:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="182.7784" y="-64.3128" smashed="yes" rot="R90">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="182.7784" y="-64.3128" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="182.7784" y="-64.3128" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="182.7784" y="-64.3128" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
@@ -11584,7 +11578,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="161.3408" y="-32.1056" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="161.3408" y="-32.8556" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="CELL11:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="161.4932" y="-36.2204" smashed="yes">
+<element name="CELL11:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="161.4932" y="-36.2204" smashed="yes">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="161.4932" y="-36.2204" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="161.4932" y="-36.2204" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="161.4932" y="-36.2204" size="0.7112" layer="27" font="vector" display="off"/>
@@ -11657,7 +11651,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="162.9156" y="-64.4652" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="NAME" x="163.6656" y="-64.4652" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="CELL12:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="167.2844" y="-64.3128" smashed="yes" rot="R90">
+<element name="CELL12:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="167.2844" y="-64.3128" smashed="yes" rot="R90">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="167.2844" y="-64.3128" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="167.2844" y="-64.3128" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="167.2844" y="-64.3128" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
@@ -11730,7 +11724,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="86.2838" y="-49.5046" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="84.1636" y="-50.2412" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="CELL13:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="87.7062" y="-53.6194" smashed="yes">
+<element name="CELL13:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="87.7062" y="-53.6194" smashed="yes">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="87.7062" y="-53.6194" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="87.7062" y="-53.6194" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="87.7062" y="-53.6194" size="0.7112" layer="27" font="vector" display="off"/>
@@ -11803,7 +11797,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="72.1106" y="-64.0842" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="NAME" x="72.6066" y="-64.0842" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="CELL14:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="76.3524" y="-63.9318" smashed="yes" rot="R90">
+<element name="CELL14:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="76.3524" y="-63.9318" smashed="yes" rot="R90">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="76.3524" y="-63.9318" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="76.3524" y="-63.9318" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="76.3524" y="-63.9318" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
@@ -11876,7 +11870,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="56.8198" y="-28.8036" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="56.8198" y="-29.5536" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="CELL15:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="56.9722" y="-33.1724" smashed="yes">
+<element name="CELL15:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="56.9722" y="-33.1724" smashed="yes">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="56.9722" y="-33.1724" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="56.9722" y="-33.1724" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="56.9722" y="-33.1724" size="0.7112" layer="27" font="vector" display="off"/>
@@ -11949,7 +11943,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="54.1782" y="-64.4144" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="54.1782" y="-63.6644" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="CELL16:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="54.0258" y="-60.1726" smashed="yes" rot="R180">
+<element name="CELL16:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="54.0258" y="-60.1726" smashed="yes" rot="R180">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="54.0258" y="-60.1726" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="54.0258" y="-60.1726" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="54.0258" y="-60.1726" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -12022,7 +12016,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="40.3098" y="-22.8092" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="40.3098" y="-23.5592" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="CELL17:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="40.4622" y="-26.6954" smashed="yes">
+<element name="CELL17:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="40.4622" y="-26.6954" smashed="yes">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="40.4622" y="-26.6954" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="40.4622" y="-26.6954" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="40.4622" y="-26.6954" size="0.7112" layer="27" font="vector" display="off"/>
@@ -12095,7 +12089,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="37.6682" y="-64.4144" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="37.6682" y="-63.6644" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="CELL18:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="37.5158" y="-60.0456" smashed="yes" rot="R180">
+<element name="CELL18:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="37.5158" y="-60.0456" smashed="yes" rot="R180">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="37.5158" y="-60.0456" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="37.5158" y="-60.0456" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="37.5158" y="-60.0456" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -12168,7 +12162,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="21.0058" y="-30.0736" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="21.0058" y="-30.8236" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="CELL19:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="21.1582" y="-34.3662" smashed="yes">
+<element name="CELL19:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="21.1582" y="-34.3662" smashed="yes">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="21.1582" y="-34.3662" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="21.1582" y="-34.3662" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="21.1582" y="-34.3662" size="0.7112" layer="27" font="vector" display="off"/>
@@ -12241,7 +12235,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="258.1402" y="-30.3784" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="258.1402" y="-29.6284" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="CELL1:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="258.4704" y="-33.3248" smashed="yes" rot="R90">
+<element name="CELL1:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="258.4704" y="-33.3248" smashed="yes" rot="R90">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="258.4704" y="-33.3248" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="258.4704" y="-33.3248" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="258.4704" y="-33.3248" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
@@ -12314,7 +12308,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="21.0312" y="-64.4144" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="21.0312" y="-63.6644" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="CELL20:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="20.8788" y="-60.0456" smashed="yes" rot="R180">
+<element name="CELL20:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="20.8788" y="-60.0456" smashed="yes" rot="R180">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="20.8788" y="-60.0456" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="20.8788" y="-60.0456" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="20.8788" y="-60.0456" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -12387,7 +12381,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="2.8702" y="-24.6634" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="2.8702" y="-23.9134" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="CELL21:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="2.7178" y="-20.2946" smashed="yes" rot="R180">
+<element name="CELL21:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="2.7178" y="-20.2946" smashed="yes" rot="R180">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="2.7178" y="-20.2946" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="2.7178" y="-20.2946" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="2.7178" y="-20.2946" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -12460,7 +12454,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="253.7968" y="-55.9816" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="253.7968" y="-56.7316" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="CELL2:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="253.9492" y="-60.2234" smashed="yes">
+<element name="CELL2:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="253.9492" y="-60.2234" smashed="yes">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="253.9492" y="-60.2234" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="253.9492" y="-60.2234" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="253.9492" y="-60.2234" size="0.7112" layer="27" font="vector" display="off"/>
@@ -12533,7 +12527,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="241.8334" y="-30.5308" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="NAME" x="241.0834" y="-30.5308" size="0.7112" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
-<element name="CELL3:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="243.8908" y="-26.5176" smashed="yes" rot="R180">
+<element name="CELL3:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="243.8908" y="-26.5176" smashed="yes" rot="R180">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="243.8908" y="-26.5176" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="243.8908" y="-26.5176" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="243.8908" y="-26.5176" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -12606,7 +12600,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="237.4138" y="-55.7276" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="237.4138" y="-56.4776" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="CELL4:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="237.5662" y="-60.0964" smashed="yes">
+<element name="CELL4:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="237.5662" y="-60.0964" smashed="yes">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="237.5662" y="-60.0964" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="237.5662" y="-60.0964" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="237.5662" y="-60.0964" size="0.7112" layer="27" font="vector" display="off"/>
@@ -12679,7 +12673,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="227.5078" y="-45.8216" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="227.6348" y="-44.5396" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="CELL5:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="227.5078" y="-42.2656" smashed="yes" rot="R180">
+<element name="CELL5:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="227.5078" y="-42.2656" smashed="yes" rot="R180">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="227.5078" y="-42.2656" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="227.5078" y="-42.2656" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="227.5078" y="-42.2656" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -12752,7 +12746,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="221.0308" y="-55.7276" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="221.0308" y="-56.4776" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="CELL6:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="221.1832" y="-60.0964" smashed="yes">
+<element name="CELL6:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="221.1832" y="-60.0964" smashed="yes">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="221.1832" y="-60.0964" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="221.1832" y="-60.0964" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="221.1832" y="-60.0964" size="0.7112" layer="27" font="vector" display="off"/>
@@ -12825,7 +12819,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="211.3026" y="-43.7896" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="211.3026" y="-44.5396" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="CELL7:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="210.9216" y="-40.7162" smashed="yes" rot="R270">
+<element name="CELL7:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="210.9216" y="-40.7162" smashed="yes" rot="R270">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="210.9216" y="-40.7162" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="210.9216" y="-40.7162" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="210.9216" y="-40.7162" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
@@ -12898,7 +12892,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="201.9554" y="-64.1858" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="NAME" x="201.2054" y="-64.1858" size="0.7112" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
-<element name="CELL8:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="197.5866" y="-64.3382" smashed="yes" rot="R270">
+<element name="CELL8:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="197.5866" y="-64.3382" smashed="yes" rot="R270">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="197.5866" y="-64.3382" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="197.5866" y="-64.3382" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="197.5866" y="-64.3382" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
@@ -12971,7 +12965,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="189.1538" y="-49.2506" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="189.1538" y="-50.0006" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="CELL9:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT23_SI2369DS-T1-GE3" x="189.1792" y="-53.6194" smashed="yes">
+<element name="CELL9:Q1" library="HyTechDevices" package="SOT-23" value="TRANSISTOR_P_MOS_SOT-23_SI2369DS-T1-GE3" x="189.1792" y="-53.6194" smashed="yes">
 <attribute name="DKPN" value="SI2369DS-T1-GE3CT-ND" x="189.1792" y="-53.6194" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Siliconix" x="189.1792" y="-53.6194" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="78-SI2369DS-T1-GE3" x="189.1792" y="-53.6194" size="0.7112" layer="27" font="vector" display="off"/>
@@ -13233,7 +13227,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="NAME" x="152.7986" y="-9.4615" size="0.7112" layer="25" font="vector" rot="R270" align="top-center"/>
 <attribute name="VOLTAGE" value="500V" x="147.8026" y="-9.4615" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 </element>
-<element name="J100" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="268.478" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J100" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="268.478" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="268.478" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="268.478" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="268.478" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13241,7 +13235,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="268.478" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="268.478" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J101" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="254.254" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J101" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="254.254" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="254.254" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="254.254" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="254.254" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13249,7 +13243,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="254.254" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="254.254" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J110" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="151.638" y="-63.246" locked="yes" smashed="yes" rot="MR0">
+<element name="J110" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="151.638" y="-63.246" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="151.638" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="151.638" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="151.638" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13257,7 +13251,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="151.638" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="151.638" y="-55.88" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J111" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="131.064" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J111" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="131.064" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="131.064" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="131.064" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="131.064" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13265,7 +13259,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="131.064" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="131.064" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J112" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="127" y="-63.246" locked="yes" smashed="yes" rot="MR0">
+<element name="J112" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="127" y="-63.246" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="127" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="127" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="127" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13273,7 +13267,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="127" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="127" y="-55.88" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J113" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="106.172" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J113" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="106.172" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="106.172" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="106.172" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="106.172" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13281,7 +13275,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="106.172" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="106.172" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J114" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="102.362" y="-63.246" locked="yes" smashed="yes" rot="MR0">
+<element name="J114" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="102.362" y="-63.246" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="102.362" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="102.362" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="102.362" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13289,7 +13283,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="102.362" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="102.362" y="-55.88" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J115" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="81.534" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J115" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="81.534" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="81.534" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="81.534" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="81.534" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13297,7 +13291,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="81.534" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="81.534" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J116" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="77.724" y="-63.246" locked="yes" smashed="yes" rot="MR0">
+<element name="J116" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="77.724" y="-63.246" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="77.724" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="77.724" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="77.724" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13305,7 +13299,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="77.724" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="77.724" y="-55.88" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J117" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="56.896" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J117" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="56.896" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="56.896" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="56.896" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="56.896" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13313,7 +13307,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="56.896" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="56.896" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J118" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="53.086" y="-63.246" locked="yes" smashed="yes" rot="MR0">
+<element name="J118" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="53.086" y="-63.246" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="53.086" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="53.086" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="53.086" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13321,7 +13315,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="53.086" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="53.086" y="-55.88" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J102" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="249.174" y="-63.246" locked="yes" smashed="yes" rot="MR0">
+<element name="J102" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="249.174" y="-63.246" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="249.174" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="249.174" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="249.174" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13343,7 +13337,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="0436500214" x="63.973078125" y="-17.653" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="63.744478125" y="-12.446" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="J119" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="32.258" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J119" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="32.258" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="32.258" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="32.258" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="32.258" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13351,7 +13345,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="32.258" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="32.258" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J103" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="229.616" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J103" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="229.616" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="229.616" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="229.616" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="229.616" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13359,7 +13353,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="229.616" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="229.616" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J120" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="28.448" y="-63.246" locked="yes" smashed="yes" rot="MR0">
+<element name="J120" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="28.448" y="-63.246" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="28.448" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="28.448" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="28.448" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13367,7 +13361,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="28.448" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="28.448" y="-55.88" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J121" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="5.842" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J121" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="5.842" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="5.842" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="5.842" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="5.842" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13424,7 +13418,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="0436500214" x="220.252921875" y="-17.526" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="220.024321875" y="-12.319" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="J104" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="225.552" y="-63.246" locked="yes" smashed="yes" rot="MR0">
+<element name="J104" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="225.552" y="-63.246" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="225.552" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="225.552" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="225.552" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13439,7 +13433,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="0436500214" x="254.5842" y="-17.526" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="254.3556" y="-12.319" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="J105" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="204.978" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J105" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="204.978" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="204.978" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="204.978" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="204.978" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13447,7 +13441,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="204.978" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="204.978" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J106" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="200.914" y="-63.246" locked="yes" smashed="yes" rot="MR0">
+<element name="J106" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="200.914" y="-63.246" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="200.914" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="200.914" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="200.914" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13455,7 +13449,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="200.914" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="200.914" y="-55.88" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J107" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="180.34" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J107" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="180.34" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="180.34" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="180.34" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="180.34" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13463,7 +13457,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="180.34" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="180.34" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J108" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="176.276" y="-63.246" locked="yes" smashed="yes" rot="MR0">
+<element name="J108" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="176.276" y="-63.246" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="176.276" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="176.276" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="176.276" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -13471,7 +13465,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="176.276" y="-63.246" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="176.276" y="-55.88" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="J109" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="155.702" y="-22.86" locked="yes" smashed="yes" rot="MR0">
+<element name="J109" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222" x="155.702" y="-22.86" locked="yes" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="36-5222-ND" x="155.702" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="155.702" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MODEL" value="SPRING" x="155.702" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
@@ -14016,70 +14010,70 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="LTC6811IG-2#3ZZPBF" x="199.517" y="-53.244396875" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="192.278" y="-53.244396875" size="0.7112" layer="21" font="vector" rot="R90" align="center"/>
 </element>
-<element name="TP9" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="78.5368" y="-44.8056" smashed="yes" rot="R180">
+<element name="TP9" library="HyTechDevices" package="5015" value="TEST_POINT" x="78.5368" y="-44.8056" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="78.5368" y="-44.8056" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="78.5368" y="-44.8056" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="534-5015" x="78.5368" y="-44.8056" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="78.5368" y="-44.8056" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="78.5622" y="-43.7134" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="TP8" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="86.9442" y="-22.6695" smashed="yes">
+<element name="TP8" library="HyTechDevices" package="5015" value="TEST_POINT" x="86.9442" y="-22.6695" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="86.9442" y="-22.6695" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="86.9442" y="-22.6695" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="534-5015" x="86.9442" y="-22.6695" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MPN" value="5015" x="86.9442" y="-22.6695" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="89.1286" y="-22.5933" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="TP1" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="205.3336" y="-60.0202" smashed="yes" rot="R270">
+<element name="TP1" library="HyTechDevices" package="5015" value="TEST_POINT" x="205.3336" y="-60.0202" smashed="yes" rot="R270">
 <attribute name="DKPN" value="36-5015CT-ND" x="205.3336" y="-60.0202" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="205.3336" y="-60.0202" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MOPN" value="534-5015" x="205.3336" y="-60.0202" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MPN" value="5015" x="205.3336" y="-60.0202" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="NAME" x="205.3082" y="-58.0644" size="0.7112" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="TP4" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="197.2818" y="-22.5425" smashed="yes" rot="R180">
+<element name="TP4" library="HyTechDevices" package="5015" value="TEST_POINT" x="197.2818" y="-22.5425" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="197.2818" y="-22.5425" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="197.2818" y="-22.5425" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="534-5015" x="197.2818" y="-22.5425" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="197.2818" y="-22.5425" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="195.2244" y="-22.4917" size="0.7112" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
-<element name="TP2" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="197.5866" y="-60.1726" smashed="yes" rot="R180">
+<element name="TP2" library="HyTechDevices" package="5015" value="TEST_POINT" x="197.5866" y="-60.1726" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="197.5866" y="-60.1726" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="197.5866" y="-60.1726" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="534-5015" x="197.5866" y="-60.1726" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="197.5866" y="-60.1726" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="197.5866" y="-61.4426" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="TP3" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="197.2818" y="-19.8755" smashed="yes" rot="R180">
+<element name="TP3" library="HyTechDevices" package="5015" value="TEST_POINT" x="197.2818" y="-19.8755" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="197.2818" y="-19.8755" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="197.2818" y="-19.8755" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="534-5015" x="197.2818" y="-19.8755" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="197.2818" y="-19.8755" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="195.2244" y="-19.9517" size="0.7112" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
-<element name="TP10" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="72.3646" y="-47.0662" smashed="yes" rot="R270">
+<element name="TP10" library="HyTechDevices" package="5015" value="TEST_POINT" x="72.3646" y="-47.0662" smashed="yes" rot="R270">
 <attribute name="DKPN" value="36-5015CT-ND" x="72.3646" y="-47.0662" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="72.3646" y="-47.0662" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MOPN" value="534-5015" x="72.3646" y="-47.0662" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MPN" value="5015" x="72.3646" y="-47.0662" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="NAME" x="73.6346" y="-47.0662" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="TP7" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="86.9442" y="-20.0025" smashed="yes">
+<element name="TP7" library="HyTechDevices" package="5015" value="TEST_POINT" x="86.9442" y="-20.0025" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="86.9442" y="-20.0025" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="86.9442" y="-20.0025" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MOPN" value="534-5015" x="86.9442" y="-20.0025" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="MPN" value="5015" x="86.9442" y="-20.0025" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="89.1286" y="-20.0533" size="0.7112" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="TP6" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="117.8306" y="-71.1454" smashed="yes" rot="R180">
+<element name="TP6" library="HyTechDevices" package="5015" value="TEST_POINT" x="117.8306" y="-71.1454" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="534-5015" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="5015" x="117.8306" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="117.8306" y="-72.4154" size="0.7112" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="TP5" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="156.083" y="-71.1454" smashed="yes" rot="R180">
+<element name="TP5" library="HyTechDevices" package="5015" value="TEST_POINT" x="156.083" y="-71.1454" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="534-5015" x="156.083" y="-71.1454" size="0.7112" layer="27" font="vector" rot="R180" display="off"/>
@@ -16670,6 +16664,35 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="248.92" y1="-7.62" x2="248.451" y2="-7.151" width="0.1524" layer="1"/>
 <wire x1="248.451" y1="-7.151" x2="248.2088" y2="-7.151" width="0.1524" layer="1"/>
 <wire x1="248.2088" y1="-5.83" x2="248.2088" y2="-7.151" width="0.1524" layer="1"/>
+<wire x1="244.729" y1="-19.304" x2="249.552" y2="-9.5024" width="0" layer="19" extent="1-1"/>
+<wire x1="258.9648" y1="-36.2966" x2="244.6662" y2="-20.5994" width="0" layer="19" extent="1-1"/>
+<wire x1="264.414" y1="-35.179" x2="260.0452" y2="-36.449" width="0" layer="19" extent="1-1"/>
+<wire x1="266.446" y1="-31.699" x2="264.3886" y2="-34.1002" width="0" layer="19" extent="1-1"/>
+<wire x1="267.5636" y1="-33.2098" x2="266.446" y2="-31.699" width="0" layer="19" extent="1-1"/>
+<wire x1="272.034" y1="-37.592" x2="268.605" y2="-33.274" width="0" layer="19" extent="1-1"/>
+<wire x1="247.2182" y1="-44.8564" x2="258.9648" y2="-36.2966" width="0" layer="19" extent="1-1"/>
+<wire x1="231.013" y1="-40.513" x2="244.6274" y2="-44.8564" width="0" layer="19" extent="1-1"/>
+<wire x1="253.1738" y1="-65.8876" x2="247.2182" y2="-44.8564" width="0" layer="19" extent="1-1"/>
+<wire x1="220.4078" y1="-65.8876" x2="236.8924" y2="-66.1416" width="0" layer="19" extent="1-1"/>
+<wire x1="202.767" y1="-49.864396875" x2="217.7671" y2="-67.3354" width="0" layer="19" extent="1-1"/>
+<wire x1="199.4154" y1="-46.3797" x2="201.0664" y2="-47.9543" width="0" layer="19" extent="1-1"/>
+<wire x1="195.267" y1="-49.864396875" x2="196.1896" y2="-46.367" width="0" layer="19" extent="1-1"/>
+<wire x1="192.5075" y1="-46.2534" x2="192.863396875" y2="-49.071603125" width="0" layer="19" extent="1-1"/>
+<wire x1="194.183" y1="-37.719" x2="196.1896" y2="-44.704" width="0" layer="19" extent="1-1"/>
+<wire x1="189.992" y1="-36.195" x2="192.0975" y2="-36.477" width="0" layer="19" extent="1-1"/>
+<wire x1="195.822" y1="-31.496" x2="196.049" y2="-34.798" width="0" layer="19" extent="1-1"/>
+<wire x1="191.326" y1="-26.924" x2="195.822" y2="-31.496" width="0" layer="19" extent="1-1"/>
+<wire x1="205.0034" y1="-39.9408" x2="199.4154" y2="-44.704" width="0" layer="19" extent="1-1"/>
+<wire x1="194.7418" y1="-59.0416" x2="195.267" y2="-49.864396875" width="0" layer="19" extent="1-1"/>
+<wire x1="191.7954" y1="-63.5628" x2="191.610003125" y2="-60.419003125" width="0" layer="19" extent="1-1"/>
+<wire x1="188.3918" y1="-60.579" x2="191.610003125" y2="-60.419003125" width="0" layer="19" extent="1-1"/>
+<wire x1="197.2818" y1="-19.8755" x2="191.326" y2="-26.924" width="0" layer="19" extent="1-1"/>
+<wire x1="173.2026" y1="-65.0882" x2="188.5696" y2="-65.0882" width="0" layer="19" extent="1-1"/>
+<wire x1="159.83" y1="-84.074" x2="167.728" y2="-71.374" width="0" layer="19" extent="1-1"/>
+<wire x1="211.0486" y1="-6.5786" x2="197.3455" y2="-18.161" width="0" layer="19" extent="1-1"/>
+<wire x1="163.449" y1="-28.067" x2="185.9795" y2="-26.035" width="0" layer="19" extent="1-1"/>
+<wire x1="160.7178" y1="-42.2656" x2="163.449" y2="-28.067" width="0" layer="19" extent="1-1"/>
+<wire x1="142.24" y1="-49.403" x2="158.4706" y2="-43.1038" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="C6L" class="4">
 <contactref element="U2" pad="14"/>
@@ -17097,6 +17120,29 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <wire x1="90.7034" y1="-67.056" x2="90.7034" y2="-70.7341" width="0.4064" layer="1"/>
 <wire x1="52.2478" y1="-45.3764" x2="51.9938" y2="-45.6304" width="0.1524" layer="1"/>
 <wire x1="51.9938" y1="-45.6304" x2="50.7812" y2="-45.6304" width="0.1524" layer="1"/>
+<wire x1="100.7865" y1="-26.035" x2="111.8108" y2="-31.445" width="0" layer="19" extent="1-1"/>
+<wire x1="93.98" y1="-31.496" x2="98.5774" y2="-27.4066" width="0" layer="19" extent="1-1"/>
+<wire x1="91.25" y1="-20.193" x2="99.4782" y2="-26.035" width="0" layer="19" extent="1-1"/>
+<wire x1="85.4592" y1="-47.9044" x2="88.1126" y2="-37.7698" width="0" layer="19" extent="1-1"/>
+<wire x1="80.4164" y1="-47.0528" x2="85.4592" y2="-47.9044" width="0" layer="19" extent="1-1"/>
+<wire x1="82.4072" y1="-56.9994" x2="85.6742" y2="-50.8762" width="0" layer="19" extent="1-1"/>
+<wire x1="85.3057" y1="-63.1444" x2="83.3238" y2="-60.5536" width="0" layer="19" extent="1-1"/>
+<wire x1="90.7034" y1="-67.056" x2="85.3057" y2="-63.1444" width="0" layer="19" extent="1-1"/>
+<wire x1="75.7682" y1="-34.1884" x2="87.923" y2="-34.925" width="0" layer="19" extent="1-1"/>
+<wire x1="104.482" y1="-71.374" x2="90.7034" y2="-70.7341" width="0" layer="19" extent="1-1"/>
+<wire x1="113.982" y1="-84.074" x2="113.03" y2="-71.12" width="0" layer="19" extent="1-1"/>
+<wire x1="112.2426" y1="-47.0154" x2="111.8108" y2="-31.445" width="0" layer="19" extent="1-1"/>
+<wire x1="54.8012" y1="-54.3814" x2="70.1423" y2="-60.0964" width="0" layer="19" extent="1-1"/>
+<wire x1="50.7812" y1="-46.1304" x2="54.864" y2="-53.213" width="0" layer="19" extent="1-1"/>
+<wire x1="48.641" y1="-39.7002" x2="50.3174" y2="-44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="55.118" y1="-39.116" x2="48.641" y2="-39.7002" width="0" layer="19" extent="1-1"/>
+<wire x1="39.624" y1="-33.655" x2="46.7995" y2="-39.6868" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="-52.959" x2="48.4312" y2="-46.6304" width="0" layer="19" extent="1-1"/>
+<wire x1="21.717" y1="-53.086" x2="38.1" y2="-52.959" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="-41.656" x2="21.717" y2="-53.086" width="0" layer="19" extent="1-1"/>
+<wire x1="74.3712" y1="-5.1054" x2="86.9442" y2="-20.0025" width="0" layer="19" extent="1-1"/>
+<wire x1="37.3632" y1="-8.60185625" x2="39.6868" y2="-32.6136" width="0" layer="19" extent="1-1"/>
+<wire x1="4.699" y1="-14.275" x2="20.3828" y2="-40.4876" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO4L">
 <contactref element="U2" pad="32"/>

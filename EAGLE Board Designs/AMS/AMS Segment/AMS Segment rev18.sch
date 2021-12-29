@@ -269,7 +269,7 @@
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
+Keepout is 0.8 mm around fuse to get 1.6 mm between fuses.</description>
 <smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
 <wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
@@ -380,7 +380,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 <rectangle x1="-2.2" y1="-1.25" x2="2.2" y2="1.25" layer="39"/>
 </package>
 <package name="SSOP-48">
-<description>SSOP 48 Package
+<description>SSOP-48
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/05081887_A_G48.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="8" x="-2.25" y="-3.37" dx="0.25" dy="1.25" layer="1" rot="R180"/>
@@ -451,7 +451,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mmbetween fuses.</description>
 Solid line must not be visible on PCB if no cutout is desired.
 &lt;br&gt;
 Dashed line is edge of mated connector.</description>
-<smd name="PAD" x="5.3721" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="PAD1" x="5.3721" y="0" dx="3.429" dy="1.651" layer="1"/>
 <smd name="PAD2" x="-5.3721" y="0" dx="3.429" dy="1.651" layer="1"/>
 <smd name="1" x="1.4986" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
 <smd name="2" x="-1.4986" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
@@ -543,14 +543,16 @@ Dashed line is edge of mated connector.</description>
 <smd name="3" x="0" y="1.0033" dx="0.7112" dy="0.889" layer="1"/>
 <text x="0" y="1.778" size="0.635" layer="25" font="vector" rot="R180" align="top-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
+<circle x="-1.778" y="-1.0033" radius="0.15875" width="0" layer="21"/>
 </package>
-<package name="MICRO_MINIATURE">
+<package name="5015">
 <description>Keystone Micro-Miniature SMD Test Point
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/215/015-744075.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
-<text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
+<text x="0" y="1.905" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="DFN-8">
 <description>DFN-8
@@ -574,7 +576,7 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="-1.778" y1="-1.524" x2="1.778" y2="1.524" layer="39"/>
 </package>
 <package name="MSOP-16(MSE)">
-<description>MSOP 16
+<description>MSOP-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
@@ -599,7 +601,7 @@ Dashed line is edge of mated connector.</description>
 <wire x1="-2.0195" y1="1.5" x2="-2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-2.0195" y1="-1.5" x2="2.0195" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2.0195" y1="-1.5" x2="2.0195" y2="1.5" width="0.127" layer="21"/>
-<circle x="-2.286" y="-2.1082" radius="0.127" width="0.127" layer="21"/>
+<circle x="-2.286" y="-2.1082" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-2.286" y1="-2.794" x2="2.286" y2="2.794" layer="39"/>
 <text x="-2.54" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <smd name="17" x="0" y="0" dx="2.845" dy="1.651" layer="1"/>
@@ -706,14 +708,14 @@ Dashed line is edge of mated connector.</description>
 &lt;br&gt;
 &lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430450211"&gt;Part&lt;/a&gt;
 &lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/0430450211_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430450211_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430250200_sd.pdf"&gt;Plug Size&lt;/a&gt;
 &lt;br&gt;
 Solid line must not be visible on PCB if no cutout is desired.
 &lt;br&gt;
 Dashed line is edge of mated connector.</description>
-<smd name="PAD" x="3.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="PAD1" x="3.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
 <smd name="PAD2" x="-3.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
 <smd name="1" x="0" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
 <smd name="2" x="0" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
@@ -743,6 +745,43 @@ Dashed line is edge of mated connector.</description>
 <vertex x="-2.54" y="-10.033"/>
 <vertex x="2.54" y="-10.033"/>
 </polygon>
+</package>
+<package name="MOLEX_NANOFIT_PTH_02">
+<description>2 Pin Nano-Fit Vertical Header, Through Hole, Single Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053091202"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053091202_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<pad name="1" x="1.25" y="0" drill="1.2" rot="R180" first="yes"/>
+<pad name="2" x="-1.25" y="0" drill="1.2" rot="R180"/>
+<wire x1="3" y1="-1.74" x2="-3" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.74" x2="-3" y2="1.74" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="4.6" x2="2.6" y2="4.6" width="0.127" layer="21"/>
+<wire x1="3" y1="1.74" x2="3" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="3" y1="1.74" x2="2.6" y2="1.74" width="0.127" layer="21"/>
+<wire x1="2.6" y1="1.74" x2="2.6" y2="4.6" width="0.127" layer="21"/>
+<wire x1="-3" y1="1.74" x2="-2.6" y2="1.74" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="1.74" x2="-2.6" y2="4.6" width="0.127" layer="21"/>
+<hole x="0" y="1.34" drill="1.3"/>
+<wire x1="2.6" y1="1.74" x2="-2.6" y2="1.74" width="0.127" layer="21"/>
+<rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="1.905" layer="40" rot="R180"/>
+<rectangle x1="-3.175" y1="1.905" x2="3.175" y2="5.08" layer="39" rot="R180"/>
+<rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="1.905" layer="39" rot="R180"/>
+<text x="0" y="-2.54" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="0603-IND">
+<description>0603 Inductor
+&lt;br&gt;
+&lt;a href="https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-9127.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;</description>
+<smd name="1" x="-0.675" y="0" dx="0.65" dy="0.7" layer="1"/>
+<smd name="2" x="0.675" y="0" dx="0.65" dy="0.7" layer="1"/>
+<text x="0" y="0.75" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.35" y1="-0.75" x2="1.35" y2="0.75" layer="39"/>
+<wire x1="-0.875" y1="0.475" x2="-0.875" y2="-0.475" width="0.1524" layer="21"/>
+<wire x1="-0.875" y1="0.475" x2="0.875" y2="0.475" width="0.1524" layer="21"/>
+<wire x1="0.875" y1="0.475" x2="0.875" y2="-0.475" width="0.1524" layer="21"/>
+<wire x1="-0.875" y1="-0.475" x2="0.875" y2="-0.475" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1073,6 +1112,7 @@ Pins tied to VREG: ISOMD, DTEN
 &lt;li&gt;&lt;a href="https://www.mouser.com/ProductDetail/TDK/C3216X5R1V226M160AC?qs=%2Fha2pyFadujbcx9jh7lYl%2F4NeMoXFhdc8AqVWNq4wW6M2y7zl6GzBuhgtI0ngznN"&gt;TDK C Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/AutoMLCC-777028.pdf"&gt;AVX Automotive MLCC&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf"&gt; KEMET X7R Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf"&gt;Kyocera AVX&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
@@ -1101,6 +1141,15 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="MPN" value="CC0603KRX7R0BB103"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="100V"/>
+</technology>
+<technology name="10V_0.082UF">
+<attribute name="CAPACITANCE" value="0.082µF"/>
+<attribute name="DKPN" value="399-17417-2-ND"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="MOPN" value="80-C0603C823K8R"/>
+<attribute name="MPN" value="C0603C823K8RACTU"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="10V"/>
 </technology>
 <technology name="10V_0.1UF">
 <attribute name="CAPACITANCE" value="0.1µF"/>
@@ -1192,6 +1241,15 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </technology>
+<technology name="10V_82PF">
+<attribute name="CAPACITANCE" value="82pF"/>
+<attribute name="DKPN" value="478-1025-1-ND"/>
+<attribute name="MANUFACTURER" value="Kyocera AVX"/>
+<attribute name="MOPN" value="581-0201ZA820JAT2A"/>
+<attribute name="MPN" value="0201ZA820JAT2A"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</technology>
 <technology name="25V_0.1UF">
 <attribute name="CAPACITANCE" value="0.1µF"/>
 <attribute name="DKPN" value="1276-1006-1-ND"/>
@@ -1207,6 +1265,15 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="MANUFACTURER" value="Walsin Technology Corporation"/>
 <attribute name="MOPN" value="791-0603B224K250CT"/>
 <attribute name="MPN" value="0603B224K250CT"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+<technology name="25V_1.2NF">
+<attribute name="CAPACITANCE" value="1.2NF"/>
+<attribute name="DKPN" value="311-4079-2-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-CC603KRX7R8BB122 "/>
+<attribute name="MPN" value="CC0603KRX7R8BB122"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
@@ -1429,6 +1496,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE_CONTINUOUS" value="11.53V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="1.5M">
+<attribute name="DKPN" value="311-1.50MHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-071M5L"/>
+<attribute name="MPN" value="RC0603FR-071M5L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.5M"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="1.65K">
 <attribute name="DKPN" value="311-1.65KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1484,6 +1562,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE_CONTINUOUS" value="3.16V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="100K">
+<attribute name="DKPN" value="311-100KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07100KL "/>
+<attribute name="MPN" value="RC0603FR-07100KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="100k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="10K">
 <attribute name="DKPN" value="311-10.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1528,6 +1617,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE_CONTINUOUS" value="49.8V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="120">
+<attribute name="DKPN" value="P120DBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB121V"/>
+<attribute name="MPN" value="ERA-3AEB121V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="120"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.46V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="12K">
 <attribute name="DKPN" value="311-12.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1537,6 +1637,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="RESISTANCE" value="12k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="150K">
+<attribute name="DKPN" value="P150KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB154V"/>
+<attribute name="MPN" value="ERA-3AEB154V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="150k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="154K">
@@ -1616,6 +1727,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="2.18K">
+<attribute name="DKPN" value="13-RT0805BRD072K18LTR-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-RT0805BRD072K18L"/>
+<attribute name="MPN" value="RT0805BRD072K18L"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="2.18k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="16.51V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="2.55K">
 <attribute name="DKPN" value="311-2.55KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1636,6 +1758,28 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="RESISTANCE" value="2.74k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="23.41V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="20K">
+<attribute name="DKPN" value="311-20.0KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0720KL "/>
+<attribute name="MPN" value="RC0603FR-0720KL"/>
+<attribute name="POWER" value="0.1 W"/>
+<attribute name="RESISTANCE" value="20k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="44.72V"/>
+<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
+</technology>
+<technology name="210">
+<attribute name="DKPN" value="P19892CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B2100V"/>
+<attribute name="MPN" value="ERJ-PB3B2100V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="210"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6.48V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="215K">
@@ -1726,6 +1870,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE_CONTINUOUS" value="18.17V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="3.9K">
+<attribute name="DKPN" value="311-3.90KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-073K9L"/>
+<attribute name="MPN" value="RC0603FR-073K9L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="3.9k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="19.75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="30K">
 <attribute name="DKPN" value="P30KBDCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -1757,6 +1912,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="RESISTANCE" value="36.5k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="60.42V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="360">
+<attribute name="DKPN" value="311-360HRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07360RL"/>
+<attribute name="MPN" value="RC0603FR-07360RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="360"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="374K">
@@ -1825,6 +1991,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE_CONTINUOUS" value="10.84V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="5.1K">
+<attribute name="DKPN" value="311-5.10KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-075K1L "/>
+<attribute name="MPN" value="RC0603FR-075K1L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="5.1k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="22.58V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="5.9K">
 <attribute name="DKPN" value="P5.9KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -1845,6 +2022,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="RESISTANCE" value="60.4"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="2.48V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="620">
+<attribute name="DKPN" value="311-620HRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07620RL"/>
+<attribute name="MPN" value="RC0603FR-07620RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="620"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="7.87V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="73.2K">
@@ -2117,7 +2305,7 @@ Pins tied to VREG: ISOMD, DTEN
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-1_?_*" prefix="J">
+<deviceset name="CONNECTOR-1_?" prefix="J">
 <description>1 Pin Connector
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/273/Mill-Max_03212019_807-22-001-10-020101-1545127.pdf"&gt;Pogo pin datasheet&lt;/a&gt;
@@ -2169,12 +2357,16 @@ Pins tied to VREG: ISOMD, DTEN
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="900-1054291304TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="1054291304"/>
+<attribute name="MOPN" value="538-105429-1304"/>
+<attribute name="MPN" value="105429-1304"/>
 </technology>
 <technology name="NATURAL">
+<attribute name="DKPN" value="900-1054312302TR-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="1054312302"/>
+<attribute name="MOPN" value="538-105431-2302"/>
+<attribute name="MPN" value="105431-2302"/>
 </technology>
 </technologies>
 </device>
@@ -2185,7 +2377,9 @@ Pins tied to VREG: ISOMD, DTEN
 </connects>
 <technologies>
 <technology name="BLACK">
+<attribute name="DKPN" value="23-0430450211CT-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43045-0211"/>
 <attribute name="MPN" value="0430450211"/>
 </technology>
 </technologies>
@@ -2201,6 +2395,20 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43650-0214"/>
 <attribute name="MPN" value="0436500214"/>
+</technology>
+</technologies>
+</device>
+<device name="MOLEX_NANOFIT_PTH_VERTICAL_02" package="MOLEX_NANOFIT_PTH_02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="DKPN" value="WM15036-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105309-1302 "/>
+<attribute name="MPN" value="105309-1302"/>
 </technology>
 </technologies>
 </device>
@@ -2280,8 +2488,8 @@ Turns ratio: 1CT: 1CT&lt;br/&gt;
 Isolation Voltage: 4300 VDC&lt;br/&gt;
 Inductance: 150 uH&lt;br/&gt;
 Leakage Inductance: 0.50 uH max
-&lt;p&gt;HM2102NLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2102NL-1218600.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;HM2112ZNLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;HM2102NLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2102NL-1218600.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HM2112ZNLT: &lt;a href="https://www.mouser.com/datasheet/2/336/HM2112ZNL-1224892.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="A" symbol="TRANSFORMER" x="5.08" y="17.78" swaplevel="1"/>
 <gate name="B" symbol="TRANSFORMER" x="5.08" y="-17.78" swaplevel="1"/>
@@ -2369,7 +2577,7 @@ Leakage Inductance: 0.50 uH max
 <gate name="G$1" symbol="MOSFET_P-CHANNEL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SOT23" package="SOT-23">
+<device name="SOT-23" package="SOT-23">
 <connects>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
@@ -2387,13 +2595,13 @@ Leakage Inductance: 0.50 uH max
 </devices>
 </deviceset>
 <deviceset name="TEST_POINT" prefix="TP">
-<description>Test Point
+<description>Test Point for Probing
 &lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="TEST_POINT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MICRO_MINIATURE">
+<device name="" package="5015">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
@@ -2478,7 +2686,8 @@ SHT31: High Grade
 <deviceset name="INDUCTOR_?_*" prefix="L">
 <description>Inductor
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Inductor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-9127.pdf"&gt;LQM18DH100M70 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
@@ -2520,6 +2729,25 @@ SHT31: High Grade
 <attribute name="MOPN" value="652-SRU1048-331Y"/>
 <attribute name="MPN" value="SRU1048-331Y"/>
 <attribute name="TOLERANCE" value="30%"/>
+</technology>
+</technologies>
+</device>
+<device name="LQM18DH100M70" package="0603-IND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="10UH">
+<attribute name="CURRENT_RATED" value="300mA"/>
+<attribute name="CURRENT_SATURATION" value="100mA "/>
+<attribute name="DCR" value="1.37Ω"/>
+<attribute name="DKPN" value="490-LQM18DH100M70LTR-ND"/>
+<attribute name="INDUCTANCE" value="10µH"/>
+<attribute name="MANUFACTURER" value="Murata Electronics"/>
+<attribute name="MOPN" value="81-LQM18DH100M70L "/>
+<attribute name="MPN" value="LQM18DH100M70L"/>
+<attribute name="TOLERANCE" value="20%"/>
 </technology>
 </technologies>
 </device>
@@ -10410,7 +10638,7 @@ Layer: 94 Symbol</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="THERMISTOR" prefix="O">
+<deviceset name="THERMISTOR_*" prefix="O">
 <description>Thermistor
 &lt;br&gt;
 &lt;ul&gt;
@@ -10422,7 +10650,7 @@ Layer: 94 Symbol</description>
 <devices>
 <device name="">
 <technologies>
-<technology name="">
+<technology name="NTC_LUG">
 <attribute name="B" value="3984K"/>
 <attribute name="B_RANGE" value="25/85"/>
 <attribute name="DKPN" value="56-NTCALUG02A103F161A-ND"/>
@@ -10436,8 +10664,8 @@ Layer: 94 Symbol</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PLUG-2_*" prefix="O">
-<description>Plug, 2 Pin
+<deviceset name="RECEPTACLE-2_*" prefix="O">
+<description>Receptacle, 2 Pin
 &lt;br&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0436450200_CRIMP_HOUSINGS-2866614.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
@@ -10448,11 +10676,11 @@ Layer: 94 Symbol</description>
 <devices>
 <device name="">
 <technologies>
-<technology name="MICROFIT_HORIZONTAL">
+<technology name="MICROFIT">
 <attribute name="DKPN" value="WM1845-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="Molex"/>
-<attribute name="MPN" value="436450200"/>
+<attribute name="MOPN" value="538-43645-0200"/>
+<attribute name="MPN" value="0436450200"/>
 </technology>
 </technologies>
 </device>
@@ -10463,6 +10691,7 @@ Layer: 94 Symbol</description>
 &lt;br&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430300003_CRIMP_TERMINALS-2845469.pdf"&gt;Microfit, 20-24&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/2/1053002300_CRIMP_TERMINALS-2829694.pdf"&gt;Nanofit, 20-22&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORDERING" x="0" y="0"/>
@@ -10476,6 +10705,13 @@ Layer: 94 Symbol</description>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-43030-0003"/>
 <attribute name="MPN" value="0430300003"/>
+</technology>
+<technology name="NANOFIT_20-22">
+<attribute name="DKPN" value="WM15011TR-ND"/>
+<attribute name="GAUGE" value="20-22"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105300-2300"/>
+<attribute name="MPN" value="105300-2300"/>
 </technology>
 </technologies>
 </device>
@@ -10546,7 +10782,7 @@ Layer: 94 Symbol</description>
 <attribute name="REVIEWER_FURTHER" value="Arvind Srinivasan"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Ethan Weinstock"/>
 </part>
-<part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_P_MOS_?_*" device="SOT23" technology="SI2369DS-T1-GE3"/>
+<part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_P_MOS_?_*" device="SOT-23" technology="SI2369DS-T1-GE3"/>
 </parts>
 <sheets>
 <sheet>
@@ -10715,28 +10951,28 @@ We choose to use a 1kΩ for part commonality.</text>
 <part name="F19" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
 <part name="F18" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
 <part name="F21" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
-<part name="J101" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J100" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J102" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J103" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J104" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J105" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J106" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J107" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J108" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J109" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J110" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J111" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J112" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J113" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J114" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J115" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J116" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J117" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J118" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J119" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J120" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
-<part name="J121" library="HyTechDevices" deviceset="CONNECTOR-1_?_*" device="5222"/>
+<part name="J101" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J100" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J102" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J103" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J104" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J105" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J106" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J107" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J108" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J109" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J110" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J111" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J112" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J113" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J114" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J115" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J116" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J117" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J118" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J119" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J120" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
+<part name="J121" library="HyTechDevices" deviceset="CONNECTOR-1_?" device="5222"/>
 <part name="F20" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
 <part name="F22" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
 <part name="F23" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
@@ -10963,14 +11199,14 @@ We choose to use a 1kΩ for part commonality.</text>
 <attribute name="ENGINEER" value="Cody Kaminsky"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Ethan Weinstock"/>
 </part>
-<part name="O9" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O10" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O11" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O12" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O13" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O14" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O15" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O16" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O9" library="HyTechExternal" deviceset="RECEPTACLE-2_*" device="" technology="MICROFIT"/>
+<part name="O10" library="HyTechExternal" deviceset="RECEPTACLE-2_*" device="" technology="MICROFIT"/>
+<part name="O11" library="HyTechExternal" deviceset="RECEPTACLE-2_*" device="" technology="MICROFIT"/>
+<part name="O12" library="HyTechExternal" deviceset="RECEPTACLE-2_*" device="" technology="MICROFIT"/>
+<part name="O13" library="HyTechExternal" deviceset="RECEPTACLE-2_*" device="" technology="MICROFIT"/>
+<part name="O14" library="HyTechExternal" deviceset="RECEPTACLE-2_*" device="" technology="MICROFIT"/>
+<part name="O15" library="HyTechExternal" deviceset="RECEPTACLE-2_*" device="" technology="MICROFIT"/>
+<part name="O16" library="HyTechExternal" deviceset="RECEPTACLE-2_*" device="" technology="MICROFIT"/>
 <part name="O17" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O18" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O19" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
@@ -10979,14 +11215,14 @@ We choose to use a 1kΩ for part commonality.</text>
 <part name="O22" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O23" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O24" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
-<part name="O1" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
-<part name="O2" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
-<part name="O3" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
-<part name="O4" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
-<part name="O5" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
-<part name="O6" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
-<part name="O7" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
-<part name="O8" library="HyTechExternal" deviceset="THERMISTOR" device=""/>
+<part name="O1" library="HyTechExternal" deviceset="THERMISTOR_*" device="" technology="NTC_LUG"/>
+<part name="O2" library="HyTechExternal" deviceset="THERMISTOR_*" device="" technology="NTC_LUG"/>
+<part name="O3" library="HyTechExternal" deviceset="THERMISTOR_*" device="" technology="NTC_LUG"/>
+<part name="O4" library="HyTechExternal" deviceset="THERMISTOR_*" device="" technology="NTC_LUG"/>
+<part name="O5" library="HyTechExternal" deviceset="THERMISTOR_*" device="" technology="NTC_LUG"/>
+<part name="O6" library="HyTechExternal" deviceset="THERMISTOR_*" device="" technology="NTC_LUG"/>
+<part name="O7" library="HyTechExternal" deviceset="THERMISTOR_*" device="" technology="NTC_LUG"/>
+<part name="O8" library="HyTechExternal" deviceset="THERMISTOR_*" device="" technology="NTC_LUG"/>
 <part name="O25" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O26" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O27" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
@@ -11001,8 +11237,8 @@ We choose to use a 1kΩ for part commonality.</text>
 <part name="D2" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
 <part name="P94" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P95" library="HyTechSupplies" deviceset="VREGL" device=""/>
-<part name="O33" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
-<part name="O34" library="HyTechExternal" deviceset="PLUG-2_*" device="" technology="MICROFIT_HORIZONTAL"/>
+<part name="O33" library="HyTechExternal" deviceset="RECEPTACLE-2_*" device="" technology="MICROFIT"/>
+<part name="O34" library="HyTechExternal" deviceset="RECEPTACLE-2_*" device="" technology="MICROFIT"/>
 <part name="O35" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O36" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O37" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
@@ -11078,9 +11314,6 @@ from the red
 discharging LEDs.</text>
 <text x="182.88" y="175.26" size="1.27" layer="97">The 100Ω resistor, 10pF capcitor filter is selected
 per the datasheet to maximize GPIO analog accuracy.</text>
-<text x="172.72" y="71.12" size="1.27" layer="97">The LT3990-5 implementation
-precisely follows the LTC6811-2
-datasheet recommendation.</text>
 </plain>
 <moduleinsts>
 <moduleinst name="CELL1" module="CELL" x="48.26" y="20.32">
@@ -14433,9 +14666,9 @@ Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
 </note>
 <note version="9.0" severity="warning">
-Since Version 9.0, EAGLE supports the align property for labels.
-Labels in schematic will not be understood with this version. Update EAGLE to the latest version
-for full support of labels.
+Since Version 9.0, EAGLE supports the align property for labels. 
+Labels in schematic will not be understood with this version. Update EAGLE to the latest version 
+for full support of labels. 
 </note>
 </compatibility>
 </eagle>
