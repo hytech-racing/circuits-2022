@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -6909,7 +6909,7 @@ Layer: 94 Symbol</description>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="30K"/>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="30K"/>
 <part name="R21" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="30K"/>
-<part name="F1" library="HyTechDevices" deviceset="FUSE_HOLDER_*" device="SMD" technology="MINIBLADE"/>
+<part name="XF1" library="HyTechDevices" deviceset="FUSE_HOLDER_*" device="SMD" technology="MINIBLADE"/>
 <part name="D2" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="D3" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="D5" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
@@ -7512,7 +7512,7 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="130.81" y="90.17" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="130.81" y="87.63" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="F1" gate="G$1" x="30.48" y="190.5" smashed="yes">
+<instance part="XF1" gate="G$1" x="30.48" y="190.5" smashed="yes">
 <attribute name="NAME" x="30.48" y="191.262" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="30.48" y="184.658" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -7963,7 +7963,7 @@ Layer: 94 Symbol</description>
 <wire x1="33.02" y1="170.18" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="170.18" x2="40.64" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="P36" gate="1" pin="+12V"/>
-<pinref part="F1" gate="G$1" pin="2"/>
+<pinref part="XF1" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="187.96" x2="38.1" y2="187.96" width="0.1524" layer="91"/>
 <junction x="40.64" y="187.96"/>
 </segment>
@@ -8864,7 +8864,7 @@ Layer: 94 Symbol</description>
 <net name="N$43" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="1"/>
-<pinref part="F1" gate="G$1" pin="1"/>
+<pinref part="XF1" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="187.96" x2="20.32" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
