@@ -252,7 +252,7 @@ Dashed line is edge of mated connector.</description>
 <package name="0805-RES">
 <description>0805 Resistor Footprint
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
@@ -287,7 +287,7 @@ Dashed line is edge of mated connector.</description>
 <package name="0603-RES">
 <description>0603 Resistor Footprint
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
@@ -511,8 +511,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="POWER" value="0.5W" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="RESISTANCE" value="56" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="400V" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_MAX" value="600V" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="5.29V" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_MAX" value="400V" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R2" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_56" x="16.51" y="2.54" smashed="yes" rot="R270">
 <attribute name="DKPN" value="P16053TR-ND" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
@@ -523,8 +523,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="POWER" value="0.5W" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="RESISTANCE" value="56" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="400V" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_MAX" value="600V" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="5.29V" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_MAX" value="400V" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$1" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW__" x="27.94" y="6.35" smashed="yes" rot="R180">
 <attribute name="COLOR" value="RGBW" x="27.94" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
@@ -567,11 +567,15 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="RESISTANCE" value="5.1" x="13.97" y="7.62" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="13.97" y="7.62" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="1.13V" x="13.97" y="7.62" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VOLTAGE_MAX" value="75V" x="13.97" y="7.62" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="150V" x="13.97" y="7.62" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="U$6" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="-18.542" y="11.43" smashed="yes"/>
 <element name="U$7" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="18.542" y="11.43" smashed="yes"/>
-<element name="J1" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL" value="CONNECTOR-4__" x="0" y="5.08" smashed="yes">
+<element name="J1" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL" value="CONNECTOR-4_μF_S_RA_" x="0" y="5.08" smashed="yes">
+<attribute name="DKPN" value="WM1832CT-ND" x="0" y="5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Molex" x="0" y="5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="538-0430450411" x="0" y="5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="0430450411" x="0" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="0" y="-1.397" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 </elements>

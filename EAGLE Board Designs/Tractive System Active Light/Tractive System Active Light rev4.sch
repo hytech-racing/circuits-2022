@@ -226,7 +226,7 @@
 <package name="0603-RES">
 <description>0603 Resistor Footprint
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-0.85" y="0" dx="0.9" dy="0.8" layer="1"/>
@@ -254,7 +254,7 @@
 <package name="0805-RES">
 <description>0805 Resistor Footprint
 &lt;br&gt;
-&lt;a href="http://new-web.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.yageo.com/upload/website/yageo_PYu-R_Mount_10_19050818_343.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf"&gt;Size&lt;/a&gt;</description>
 <smd name="1" x="-1.05" y="0" dx="0.9" dy="1.2" layer="1"/>
@@ -672,6 +672,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="11.53V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="1.5M">
+<attribute name="DKPN" value="311-1.50MHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-071M5L"/>
+<attribute name="MPN" value="RC0603FR-071M5L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.5M"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="1.65K">
 <attribute name="DKPN" value="311-1.65KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -684,14 +695,14 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="10">
-<attribute name="DKPN" value="764-1082-2-ND"/>
-<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
-<attribute name="MOPN" value="71-PHP00603E10R0BST1"/>
-<attribute name="MPN" value="PHP00603E10R0BST1"/>
-<attribute name="POWER" value="0.375W"/>
+<attribute name="DKPN" value="311-10.0HRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0710RL"/>
+<attribute name="MPN" value="RC0603FR-0710RL"/>
+<attribute name="POWER" value="0.1W"/>
 <attribute name="RESISTANCE" value="10"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="1.94V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="10.2K">
@@ -725,6 +736,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="RESISTANCE" value="100"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="3.16V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="100K">
+<attribute name="DKPN" value="311-100KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07100KL "/>
+<attribute name="MPN" value="RC0603FR-07100KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="100k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="10K">
@@ -771,6 +793,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="49.8V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="120">
+<attribute name="DKPN" value="P120DBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB121V"/>
+<attribute name="MPN" value="ERA-3AEB121V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="120"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.46V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="12K">
 <attribute name="DKPN" value="311-12.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -780,6 +813,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="RESISTANCE" value="12k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="150K">
+<attribute name="DKPN" value="P150KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB154V"/>
+<attribute name="MPN" value="ERA-3AEB154V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="150k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="154K">
@@ -859,6 +903,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="2.18K">
+<attribute name="DKPN" value="13-RT0805BRD072K18LTR-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-RT0805BRD072K18L"/>
+<attribute name="MPN" value="RT0805BRD072K18L"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="2.18k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="16.51V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="2.55K">
 <attribute name="DKPN" value="311-2.55KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -879,6 +934,28 @@ Dashed line is edge of mated connector.</description>
 <attribute name="RESISTANCE" value="2.74k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="23.41V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="20K">
+<attribute name="DKPN" value="311-20.0KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0720KL "/>
+<attribute name="MPN" value="RC0603FR-0720KL"/>
+<attribute name="POWER" value="0.1 W"/>
+<attribute name="RESISTANCE" value="20k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="44.72V"/>
+<attribute name="VOLTAGE_MAX" value="75V" constant="no"/>
+</technology>
+<technology name="210">
+<attribute name="DKPN" value="P19892CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B2100V"/>
+<attribute name="MPN" value="ERJ-PB3B2100V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="210"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6.48V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="215K">
@@ -947,6 +1024,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="14.14V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="3.32K">
+<attribute name="DKPN" value="YAG1651TR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRD073K32L"/>
+<attribute name="MPN" value="RT0603BRD073K32L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="3.32k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="18.22V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="3.3K">
 <attribute name="DKPN" value="311-3.30KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -956,6 +1044,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="RESISTANCE" value="3.3k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="18.17V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="3.9K">
+<attribute name="DKPN" value="311-3.90KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-073K9L"/>
+<attribute name="MPN" value="RC0603FR-073K9L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="3.9k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="19.75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="30K">
@@ -989,6 +1088,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="RESISTANCE" value="36.5k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="60.42V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="360">
+<attribute name="DKPN" value="311-360HRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07360RL"/>
+<attribute name="MPN" value="RC0603FR-07360RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="360"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="374K">
@@ -1066,6 +1176,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="RESISTANCE" value="5.1"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="1.13V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="5.1K">
+<attribute name="DKPN" value="311-5.10KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-075K1L "/>
+<attribute name="MPN" value="RC0603FR-075K1L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="5.1k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="22.58V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="5.9K">
@@ -1090,6 +1211,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="2.48V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="620">
+<attribute name="DKPN" value="311-620HRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07620RL"/>
+<attribute name="MPN" value="RC0603FR-07620RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="620"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="7.87V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="73.2K">
 <attribute name="DKPN" value="P73.2KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -1099,6 +1231,39 @@ Dashed line is edge of mated connector.</description>
 <attribute name="RESISTANCE" value="73.2k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="75K">
+<attribute name="DKPN" value="RT0603BRE0775KL-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRE0775KL"/>
+<attribute name="MPN" value="RT0603BRE0775KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="75k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="8.35K">
+<attribute name="DKPN" value="764-1461-2-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
+<attribute name="MOPN" value="71-PTN0603E8351BST1"/>
+<attribute name="MPN" value="PTN0603E8351BST1"/>
+<attribute name="POWER" value="0.15W"/>
+<attribute name="RESISTANCE" value="8.35k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="28.90V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="8.66K">
+<attribute name="DKPN" value="YAG4603TR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RT0603BRD078K66L"/>
+<attribute name="MPN" value="RT0603BRD078K66L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="8.66k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="29.43V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="84.5K">
@@ -1172,17 +1337,6 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="5V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
-<technology name="30.1">
-<attribute name="DKPN" value="764-1109-2-ND"/>
-<attribute name="MANUFACTURER" value="Vishay Dale Thin Film"/>
-<attribute name="MOPN" value="71-PHP00805E30R1BST1"/>
-<attribute name="MPN" value="PHP00805E30R1BST1"/>
-<attribute name="POWER" value="0.625W"/>
-<attribute name="RESISTANCE" value="30.1"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="100V"/>
-<attribute name="VOLTAGE_MAX" value="100V"/>
-</technology>
 <technology name="365K">
 <attribute name="DKPN" value="P20885CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -1202,8 +1356,8 @@ Dashed line is edge of mated connector.</description>
 <attribute name="POWER" value="0.5W"/>
 <attribute name="RESISTANCE" value="56"/>
 <attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="400V"/>
-<attribute name="VOLTAGE_MAX" value="600V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="5.29V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
 </technologies>
 </device>
@@ -1258,7 +1412,7 @@ Dashed line is edge of mated connector.</description>
 </technology>
 </technologies>
 </device>
-<device name="" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL">
+<device name="μF_S_RA" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1266,7 +1420,12 @@ Dashed line is edge of mated connector.</description>
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="WM1832CT-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-0430450411"/>
+<attribute name="MPN" value="0430450411"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3929,7 +4088,7 @@ Layer: 94 Symbol</description>
 <part name="P1" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P2" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
-<part name="J1" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device=""/>
+<part name="J1" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
 </parts>
 <sheets>
 <sheet>
@@ -4052,7 +4211,7 @@ Layer: 94 Symbol</description>
 <net name="GND_RED" class="0">
 <segment>
 <wire x1="38.1" y1="147.32" x2="45.72" y2="147.32" width="0.1524" layer="91"/>
-<label x="45.72" y="147.32" size="1.778" layer="95" xref="yes"/>
+<label x="45.72" y="147.32" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 <segment>
@@ -4063,9 +4222,8 @@ Layer: 94 Symbol</description>
 </net>
 <net name="GND_GREEN" class="0">
 <segment>
-<wire x1="38.1" y1="144.78" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="142.24" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
-<label x="45.72" y="142.24" size="1.778" layer="95" xref="yes"/>
+<wire x1="38.1" y1="144.78" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
+<label x="45.72" y="144.78" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 <segment>
