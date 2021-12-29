@@ -5225,7 +5225,6 @@ Layer: 94 Symbol</description>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R15" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
-<part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
 <part name="C15" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.1UF"/>
 <part name="C16" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF"/>
 <part name="C17" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.1UF"/>
@@ -5277,6 +5276,7 @@ Layer: 94 Symbol</description>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="11.8"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="43.2"/>
 <part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="MB" technology="10"/>
+<part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
 </parts>
 <sheets>
 <sheet>
@@ -5463,10 +5463,6 @@ UV Falling: 9.45V</text>
 <instance part="R24" gate="G$1" x="-68.58" y="-99.06" smashed="yes" rot="R90">
 <attribute name="NAME" x="-69.85" y="-100.33" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="-67.31" y="-100.33" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R25" gate="G$1" x="-68.58" y="-91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="-69.85" y="-92.71" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-67.31" y="-92.71" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="C15" gate="G$1" x="-40.64" y="-96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="-43.18" y="-97.79" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -5669,6 +5665,10 @@ UV Falling: 9.45V</text>
 <instance part="F2" gate="G$1" x="-119.38" y="-139.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="-120.65" y="-140.97" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="CURRENT" x="-118.11" y="-140.97" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R25" gate="G$1" x="-68.58" y="-91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="-69.85" y="-92.71" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-67.31" y="-92.71" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -6217,13 +6217,13 @@ UV Falling: 9.45V</text>
 <pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="-50.8" y1="-93.98" x2="-50.8" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="-50.8" y="-83.82"/>
-<pinref part="R25" gate="G$1" pin="2"/>
-<junction x="-68.58" y="-88.9"/>
 <wire x1="-50.8" y1="-83.82" x2="-40.64" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="-40.64" y1="-83.82" x2="-33.02" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-93.98" x2="-40.64" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="-40.64" y="-83.82"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<junction x="-68.58" y="-88.9"/>
 </segment>
 <segment>
 <wire x1="-78.74" y1="25.4" x2="-71.12" y2="25.4" width="0.1524" layer="91"/>
@@ -6362,7 +6362,6 @@ UV Falling: 9.45V</text>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="R25" gate="G$1" pin="1"/>
 <junction x="-68.58" y="-96.52"/>
-<pinref part="R25" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$29" class="0">
