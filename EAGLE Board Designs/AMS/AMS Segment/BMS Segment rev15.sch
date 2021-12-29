@@ -319,8 +319,8 @@ chip</description>
 <description>0885 Fuse
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-5" y="0" dx="5.6" dy="7.23" layer="1"/>
-<smd name="2" x="5" y="0" dx="5.6" dy="7.23" layer="1"/>
+<smd name="1" x="-5.2324" y="0" dx="5.6" dy="7.23" layer="1"/>
+<smd name="2" x="5.2324" y="0" dx="5.6" dy="7.23" layer="1"/>
 <wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
 <wire x1="-5.43" y1="-2.39" x2="5.43" y2="-2.39" width="0.127" layer="21"/>
 <wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>
@@ -5037,7 +5037,7 @@ Layer: 94 Symbol</description>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="3K3">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="PFET" library="HyTechDevices" deviceset="P-CHANNEL_MOSFET_DMP3099L-7" device=""/>
+<part name="Q1" library="HyTechDevices" deviceset="P-CHANNEL_MOSFET_DMP3099L-7" device=""/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="100R">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
@@ -5071,7 +5071,7 @@ Layer: 94 Symbol</description>
 <attribute name="VALUE" x="52.07" y="14.478" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="55.88" y="17.78" size="0.127" layer="96" display="off"/>
 </instance>
-<instance part="PFET" gate="G$1" x="43.18" y="15.24" smashed="yes" rot="MR0">
+<instance part="Q1" gate="G$1" x="43.18" y="15.24" smashed="yes" rot="MR0">
 <attribute name="NAME" x="39.37" y="10.16" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="R1" gate="G$1" x="55.88" y="43.18" smashed="yes">
@@ -5115,7 +5115,7 @@ Layer: 94 Symbol</description>
 <net name="CELL+" class="0">
 <segment>
 <wire x1="30.48" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="PFET" gate="G$1" pin="S"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
 <label x="27.94" y="43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
@@ -5128,7 +5128,7 @@ Layer: 94 Symbol</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="17.78" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="PFET" gate="G$1" pin="G"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="S(N)" class="0">
@@ -5176,7 +5176,7 @@ Layer: 94 Symbol</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="D1" gate="LED" pin="A"/>
-<pinref part="PFET" gate="G$1" pin="D"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="15.24" y1="7.62" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="12.7" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
@@ -5383,7 +5383,7 @@ Layer: 94 Symbol</description>
 <part name="RU1_B" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="100R">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="TRANSFORMER" library="HyTechDevices" deviceset="HM2102NLT" device="" value="HM2102NLT"/>
+<part name="T1" library="HyTechDevices" deviceset="HM2102NLT" device="" value="HM2102NLT"/>
 <part name="RM_B" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="100R">
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="TYPE" value="TERMINATION"/>
@@ -5633,11 +5633,9 @@ Layer: 94 Symbol</description>
 <part name="J_CELL_A" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="0R">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="AMS_CELL_TEST" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="AMS_CELL_TEST"/>
 <part name="J_THERM_A" library="HyTechDevices" deviceset="RESISTOR" device="0603-RES" value="0R">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="AMS_THERM_TEST" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="AMS_THERM_TEST"/>
 <part name="U$22" library="HyTechFrames" deviceset="FRAME_B" device="">
 <attribute name="ENGINEER" value="Arvind Srinivasan"/>
 <attribute name="FRAME_DESCRIPTION" value="Upper LTC6811 IC"/>
@@ -5654,12 +5652,12 @@ Layer: 94 Symbol</description>
 <attribute name="ENGINEER" value="Arvind Srinivasan"/>
 <attribute name="FRAME_DESCRIPTION" value="Lower 9 Cell Connections"/>
 </part>
-<part name="U$28" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
-<part name="U$5" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
-<part name="U$6" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
-<part name="U$7" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
-<part name="U$8" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
-<part name="U$29" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
+<part name="TP2" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
+<part name="TP4" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
+<part name="TP5" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
+<part name="TP6" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
+<part name="TP1" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
+<part name="TP3" library="HyTechDevices - Copy" deviceset="TEST_POINT" device="MICRO_MINIATURE"/>
 </parts>
 <sheets>
 <sheet>
@@ -5848,12 +5846,6 @@ Layer: 94 Symbol</description>
 <attribute name="VALUE" x="-300.99" y="161.798" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="-297.18" y="165.1" size="0.127" layer="96" display="off"/>
 </instance>
-<instance part="AMS_CELL_TEST" gate="-2" x="-363.22" y="177.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="-365.76" y="178.562" size="1.524" layer="95" rot="R180"/>
-</instance>
-<instance part="AMS_CELL_TEST" gate="-1" x="-363.22" y="175.26" smashed="yes" rot="R180">
-<attribute name="NAME" x="-365.76" y="176.022" size="1.524" layer="95" rot="R180"/>
-</instance>
 <instance part="U$24" gate="G$1" x="-431.8" y="0" smashed="yes"/>
 <instance part="U$24" gate="G$2" x="-168.91" y="0" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="-92.71" y="2.54" size="2.54" layer="94"/>
@@ -5862,8 +5854,8 @@ Layer: 94 Symbol</description>
 <attribute name="FRAME_DESCRIPTION" x="-102.87" y="10.16" size="2.54" layer="94"/>
 <attribute name="ENGINEER" x="-149.86" y="22.86" size="2.54" layer="94"/>
 </instance>
-<instance part="U$28" gate="G$1" x="-292.1" y="38.1" smashed="yes"/>
-<instance part="U$8" gate="G$1" x="-272.796" y="231.14" smashed="yes"/>
+<instance part="TP2" gate="G$1" x="-292.1" y="38.1" smashed="yes"/>
+<instance part="TP1" gate="G$1" x="-272.796" y="231.14" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -5891,7 +5883,7 @@ Layer: 94 Symbol</description>
 <junction x="-259.08" y="231.14"/>
 <junction x="-259.08" y="213.36"/>
 <wire x1="-259.08" y1="231.14" x2="-270.256" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="P$1"/>
+<pinref part="TP1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="V-_A" class="0">
@@ -5966,7 +5958,7 @@ Layer: 94 Symbol</description>
 <wire x1="-251.46" y1="38.1" x2="-241.3" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-289.56" y1="38.1" x2="-251.46" y2="38.1" width="0.1524" layer="91"/>
 <label x="-264.16" y="38.1" size="1.778" layer="95"/>
-<pinref part="U$28" gate="G$1" pin="P$1"/>
+<pinref part="TP2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="V+_A" class="0">
@@ -6214,10 +6206,6 @@ Layer: 94 Symbol</description>
 <wire x1="-284.48" y1="187.96" x2="-284.48" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="-284.48" y1="165.1" x2="-292.1" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="J_CELL_A" gate="G$1" pin="2"/>
-<pinref part="AMS_CELL_TEST" gate="-2" pin="S"/>
-<wire x1="-360.68" y1="177.8" x2="-292.1" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="-292.1" y1="177.8" x2="-292.1" y2="165.1" width="0.1524" layer="91"/>
-<junction x="-292.1" y="165.1"/>
 </segment>
 </net>
 <net name="SENSE16" class="0">
@@ -6333,16 +6321,12 @@ Layer: 94 Symbol</description>
 <label x="-218.44" y="248.92" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SENSE17_PRE" class="0">
+<net name="N$44" class="0">
 <segment>
 <pinref part="F17" gate="G$1" pin="2"/>
 <wire x1="-302.26" y1="165.1" x2="-332.74" y2="165.1" width="0.1524" layer="91"/>
-<label x="-322.58" y="165.1" size="1.778" layer="95"/>
 <pinref part="J_CELL_A" gate="G$1" pin="1"/>
-<wire x1="-302.26" y1="165.1" x2="-302.26" y2="175.26" width="0.1524" layer="91"/>
-<junction x="-302.26" y="165.1"/>
-<pinref part="AMS_CELL_TEST" gate="-1" pin="S"/>
-<wire x1="-302.26" y1="175.26" x2="-360.68" y2="175.26" width="0.1524" layer="91"/>
+<label x="-322.58" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -6547,8 +6531,8 @@ CIRCUIT A AND CIRCUIT B</text>
 <attribute name="FRAME_DESCRIPTION" x="-102.87" y="10.16" size="2.54" layer="94"/>
 <attribute name="ENGINEER" x="-149.86" y="22.86" size="2.54" layer="94"/>
 </instance>
-<instance part="U$5" gate="G$1" x="-281.94" y="30.48" smashed="yes"/>
-<instance part="U$29" gate="G$1" x="-283.718" y="226.06" smashed="yes"/>
+<instance part="TP4" gate="G$1" x="-281.94" y="30.48" smashed="yes"/>
+<instance part="TP3" gate="G$1" x="-283.718" y="226.06" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -6899,7 +6883,7 @@ CIRCUIT A AND CIRCUIT B</text>
 <junction x="-233.68" y="30.48"/>
 <pinref part="R2_B" gate="G$1" pin="1"/>
 <wire x1="-233.68" y1="30.48" x2="-223.52" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="P$1"/>
+<pinref part="TP4" gate="G$1" pin="P$1"/>
 <junction x="-279.4" y="30.48"/>
 </segment>
 <segment>
@@ -7011,7 +6995,7 @@ CIRCUIT A AND CIRCUIT B</text>
 <junction x="-269.24" y="246.38"/>
 <junction x="-269.24" y="226.06"/>
 <wire x1="-269.24" y1="226.06" x2="-281.178" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="U$29" gate="G$1" pin="P$1"/>
+<pinref part="TP3" gate="G$1" pin="P$1"/>
 <wire x1="-281.178" y1="226.06" x2="-281.432" y2="226.06" width="0.1524" layer="91"/>
 <junction x="-281.178" y="226.06"/>
 </segment>
@@ -7123,7 +7107,7 @@ set chip address</text>
 <instance part="SUPPLY11" gate="1" x="-116.84" y="78.74" smashed="yes">
 <attribute name="VALUE" x="-116.84" y="81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="TRANSFORMER" gate="G$1" x="-289.56" y="210.82" smashed="yes" rot="R180">
+<instance part="T1" gate="G$1" x="-289.56" y="210.82" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-284.48" y="223.647" size="1.778" layer="96" rot="R180" align="bottom-center"/>
 </instance>
 <instance part="RM_B" gate="G$1" x="-256.54" y="210.82" smashed="yes" rot="R270">
@@ -7263,7 +7247,7 @@ set chip address</text>
 <attribute name="FRAME_DESCRIPTION" x="-102.87" y="10.16" size="2.54" layer="94"/>
 <attribute name="ENGINEER" x="-149.86" y="22.86" size="2.54" layer="94"/>
 </instance>
-<instance part="U$6" gate="G$1" x="-293.878" y="66.04" smashed="yes" rot="R90"/>
+<instance part="TP5" gate="G$1" x="-293.878" y="66.04" smashed="yes" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7372,7 +7356,7 @@ set chip address</text>
 <pinref part="Q2" gate="G$1" pin="BASE"/>
 <wire x1="-287.02" y1="68.58" x2="-293.878" y2="68.58" width="0.1524" layer="91"/>
 <label x="-299.72" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$6" gate="G$1" pin="P$1"/>
+<pinref part="TP5" gate="G$1" pin="P$1"/>
 <wire x1="-293.878" y1="68.58" x2="-299.72" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-293.878" y="68.58"/>
 </segment>
@@ -7768,7 +7752,7 @@ set chip address</text>
 <net name="N$1" class="0">
 <segment>
 <pinref part="C4_B" gate="G$1" pin="1"/>
-<pinref part="TRANSFORMER" gate="G$1" pin="TCT"/>
+<pinref part="T1" gate="G$1" pin="TCT"/>
 <wire x1="-312.42" y1="195.58" x2="-312.42" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="-312.42" y1="198.12" x2="-309.88" y2="198.12" width="0.1524" layer="91"/>
 </segment>
@@ -7776,14 +7760,14 @@ set chip address</text>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R4_B" gate="G$1" pin="1"/>
-<pinref part="TRANSFORMER" gate="G$1" pin="MX-"/>
+<pinref part="T1" gate="G$1" pin="MX-"/>
 <wire x1="-269.24" y1="220.98" x2="-271.78" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R5_B" gate="G$1" pin="1"/>
-<pinref part="TRANSFORMER" gate="G$1" pin="MX+"/>
+<pinref part="T1" gate="G$1" pin="MX+"/>
 <wire x1="-269.24" y1="200.66" x2="-271.78" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7804,7 +7788,7 @@ set chip address</text>
 <wire x1="-309.88" y1="215.9" x2="-309.88" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="-309.88" y1="220.98" x2="-317.5" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="-317.5" y1="220.98" x2="-325.12" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="TRANSFORMER" gate="G$1" pin="TD-"/>
+<pinref part="T1" gate="G$1" pin="TD-"/>
 <pinref part="R3_B" gate="G$1" pin="1"/>
 <junction x="-317.5" y="220.98"/>
 <label x="-325.12" y="220.98" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -7821,7 +7805,7 @@ set chip address</text>
 <segment>
 <wire x1="-309.88" y1="205.74" x2="-309.88" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="-309.88" y1="200.66" x2="-317.5" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="TRANSFORMER" gate="G$1" pin="TD+"/>
+<pinref part="T1" gate="G$1" pin="TD+"/>
 <pinref part="C3_B" gate="G$1" pin="2"/>
 <wire x1="-317.5" y1="200.66" x2="-325.12" y2="200.66" width="0.1524" layer="91"/>
 <junction x="-317.5" y="200.66"/>
@@ -8000,7 +7984,7 @@ set chip address</text>
 </moduleinst>
 </moduleinsts>
 <instances>
-<instance part="TRANSFORMER" gate="G$2" x="-292.1" y="210.82" smashed="yes" rot="R180">
+<instance part="T1" gate="G$2" x="-292.1" y="210.82" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-287.02" y="223.647" size="1.778" layer="96" rot="R180" align="bottom-center"/>
 </instance>
 <instance part="C2_A" gate="G$1" x="-236.22" y="134.62" smashed="yes" rot="R180">
@@ -8202,12 +8186,6 @@ set chip address</text>
 <attribute name="VALUE" x="-252.73" y="108.458" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="-248.92" y="111.76" size="0.127" layer="96" display="off"/>
 </instance>
-<instance part="AMS_THERM_TEST" gate="-2" x="-238.76" y="99.06" smashed="yes">
-<attribute name="NAME" x="-236.22" y="98.298" size="1.524" layer="95"/>
-</instance>
-<instance part="AMS_THERM_TEST" gate="-1" x="-238.76" y="101.6" smashed="yes">
-<attribute name="NAME" x="-236.22" y="100.838" size="1.524" layer="95"/>
-</instance>
 <instance part="U$23" gate="G$1" x="-431.8" y="0" smashed="yes"/>
 <instance part="U$23" gate="G$2" x="-168.91" y="0" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="-92.71" y="2.54" size="2.54" layer="94"/>
@@ -8216,7 +8194,7 @@ set chip address</text>
 <attribute name="FRAME_DESCRIPTION" x="-102.87" y="10.16" size="2.54" layer="94"/>
 <attribute name="ENGINEER" x="-149.86" y="22.86" size="2.54" layer="94"/>
 </instance>
-<instance part="U$7" gate="G$1" x="-297.18" y="66.04" smashed="yes" rot="R90"/>
+<instance part="TP6" gate="G$1" x="-297.18" y="66.04" smashed="yes" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -8245,21 +8223,21 @@ set chip address</text>
 <pinref part="C4_A" gate="G$1" pin="1"/>
 <wire x1="-314.96" y1="195.58" x2="-314.96" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="-314.96" y1="198.12" x2="-312.42" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="TRANSFORMER" gate="G$2" pin="TCT"/>
+<pinref part="T1" gate="G$2" pin="TCT"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="R4_A" gate="G$1" pin="1"/>
 <wire x1="-271.78" y1="220.98" x2="-274.32" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="TRANSFORMER" gate="G$2" pin="MX-"/>
+<pinref part="T1" gate="G$2" pin="MX-"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R5_A" gate="G$1" pin="1"/>
 <wire x1="-271.78" y1="200.66" x2="-274.32" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="TRANSFORMER" gate="G$2" pin="MX+"/>
+<pinref part="T1" gate="G$2" pin="MX+"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -8733,7 +8711,7 @@ set chip address</text>
 <pinref part="Q1" gate="G$1" pin="BASE"/>
 <label x="-302.26" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="-289.56" y1="68.58" x2="-297.18" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="P$1"/>
+<pinref part="TP6" gate="G$1" pin="P$1"/>
 <wire x1="-297.18" y1="68.58" x2="-302.26" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-297.18" y="68.58"/>
 </segment>
@@ -8804,10 +8782,6 @@ set chip address</text>
 <wire x1="-281.94" y1="111.76" x2="-254" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GPI03"/>
 <pinref part="J_THERM_A" gate="G$1" pin="1"/>
-<pinref part="AMS_THERM_TEST" gate="-2" pin="S"/>
-<wire x1="-241.3" y1="99.06" x2="-254" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-254" y1="99.06" x2="-254" y2="111.76" width="0.1524" layer="91"/>
-<junction x="-254" y="111.76"/>
 </segment>
 </net>
 <net name="GPIO2_A" class="0">
@@ -8830,7 +8804,7 @@ set chip address</text>
 <pinref part="R3_A" gate="G$1" pin="1"/>
 <junction x="-320.04" y="220.98"/>
 <label x="-327.66" y="220.98" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="TRANSFORMER" gate="G$2" pin="TD-"/>
+<pinref part="T1" gate="G$2" pin="TD-"/>
 </segment>
 <segment>
 <wire x1="-251.46" y1="147.32" x2="-251.46" y2="144.78" width="0.1524" layer="91"/>
@@ -8848,7 +8822,7 @@ set chip address</text>
 <wire x1="-320.04" y1="200.66" x2="-327.66" y2="200.66" width="0.1524" layer="91"/>
 <junction x="-320.04" y="200.66"/>
 <label x="-327.66" y="200.66" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="TRANSFORMER" gate="G$2" pin="TD+"/>
+<pinref part="T1" gate="G$2" pin="TD+"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="CSB(IMA)"/>
@@ -8926,10 +8900,6 @@ set chip address</text>
 <net name="GPIO3_A_PRE" class="0">
 <segment>
 <pinref part="J_THERM_A" gate="G$1" pin="2"/>
-<junction x="-243.84" y="111.76"/>
-<wire x1="-243.84" y1="101.6" x2="-243.84" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-241.3" y1="101.6" x2="-243.84" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="AMS_THERM_TEST" gate="-1" pin="S"/>
 <wire x1="-243.84" y1="111.76" x2="-233.68" y2="111.76" width="0.1524" layer="91"/>
 <label x="-233.68" y="111.76" size="1.778" layer="95" font="vector" xref="yes"/>
 </segment>
