@@ -5637,6 +5637,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="NAME" x="31.75" y="33.655" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="U$4" library="HyTechManufacturing" package="LOGO_GT_LARGE" value="" x="-84.455" y="15.875" smashed="yes" rot="MR0"/>
+<element name="U$5" library="HyTechManufacturing" package="LOGO_GT_LARGE" value="" x="-87.63" y="9.525" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
