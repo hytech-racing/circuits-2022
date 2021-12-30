@@ -1207,6 +1207,15 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="1.524" size="0.8128" layer="21" font="vector" align="bottom-center">+ -</text>
 <circle x="-2.032" y="1.778" radius="0.127" width="0" layer="21"/>
 </package>
+<package name="5015">
+<description>Keystone Micro-Miniature SMD Test Point
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/215/015-744075.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
+<text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
+<text x="0" y="1.27" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -1726,6 +1735,12 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="0.508" size="1.27" layer="94">JUMP</text>
 <text x="0" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-3.302" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="TEST_POINT">
+<circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.54" y="1.778" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-1.778" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3914,6 +3929,28 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <attribute name="MANUFACTURER" value="YAGEO"/>
 <attribute name="MOPN" value="603-RC0603FR-130RL"/>
 <attribute name="MPN" value="RC0603FR-130RL"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST_POINT" prefix="TP">
+<description>Test Point for Probing
+&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="TEST_POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="5015">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="36-5015CT-ND"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics"/>
+<attribute name="MOPN" value="534-5015"/>
+<attribute name="MPN" value="5015"/>
 </technology>
 </technologies>
 </device>
@@ -6882,6 +6919,35 @@ Layer: 94 Symbol</description>
 <part name="O5" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="NANOFIT_20-22"/>
 <part name="J5" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603"/>
 <part name="O6" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O7" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O8" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O9" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O10" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O11" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O12" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O13" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O14" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O15" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O16" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O17" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O18" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O19" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O20" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O21" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O22" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O23" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="SSOK"/>
+</part>
+<part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="+12V"/>
+</part>
+<part name="TP3" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="+5V"/>
+</part>
+<part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<attribute name="SIGNAL" value="GND"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -6889,6 +6955,8 @@ Layer: 94 Symbol</description>
 <text x="129.54" y="22.86" size="2.54" layer="97">Youssef Jaafar</text>
 <text x="195.58" y="15.24" size="2.54" layer="97">Schematic of the Dashboard PCB for HT05</text>
 <text x="236.22" y="121.92" size="1.778" layer="97">Error Codes</text>
+<text x="205.74" y="205.74" size="1.778" layer="97">5V converter is enabled 
+when enable pin is open.</text>
 </plain>
 <instances>
 <instance part="D101" gate="G$1" x="236.22" y="119.38" smashed="yes">
@@ -7493,6 +7561,26 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="223.52" y="160.02" size="1.27" layer="95" rot="R90"/>
 <attribute name="MPN" x="229.362" y="160.02" size="1.27" layer="96" rot="R90" align="top-left"/>
 </instance>
+<instance part="TP1" gate="G$1" x="30.48" y="15.24" smashed="yes" rot="MR0">
+<attribute name="NAME" x="33.02" y="17.018" size="1.27" layer="95" rot="MR0"/>
+<attribute name="MPN" x="33.02" y="13.462" size="1.27" layer="95" rot="MR0" align="top-left"/>
+<attribute name="SIGNAL" x="30.48" y="15.24" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="TP2" gate="G$1" x="203.2" y="190.5" smashed="yes" rot="MR0">
+<attribute name="NAME" x="205.74" y="192.278" size="1.27" layer="95" rot="MR0"/>
+<attribute name="MPN" x="205.74" y="188.722" size="1.27" layer="95" rot="MR0" align="top-left"/>
+<attribute name="SIGNAL" x="203.2" y="190.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="TP3" gate="G$1" x="248.92" y="193.04" smashed="yes" rot="MR0">
+<attribute name="NAME" x="251.46" y="194.818" size="1.27" layer="95" rot="MR0"/>
+<attribute name="MPN" x="251.46" y="191.262" size="1.27" layer="95" rot="MR0" align="top-left"/>
+<attribute name="SIGNAL" x="248.92" y="193.04" size="1.778" layer="96"/>
+</instance>
+<instance part="TP4" gate="G$1" x="248.92" y="185.42" smashed="yes" rot="MR0">
+<attribute name="NAME" x="251.46" y="187.198" size="1.27" layer="95" rot="MR0"/>
+<attribute name="MPN" x="251.46" y="183.642" size="1.27" layer="95" rot="MR0" align="top-left"/>
+<attribute name="SIGNAL" x="248.92" y="185.42" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7739,6 +7827,10 @@ Layer: 94 Symbol</description>
 <pinref part="P25" gate="1" pin="GND"/>
 <wire x1="236.22" y1="185.42" x2="236.22" y2="187.96" width="0.1524" layer="91"/>
 <junction x="236.22" y="187.96"/>
+<wire x1="236.22" y1="187.96" x2="241.3" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="TP4" gate="G$1" pin="P$1"/>
+<wire x1="241.3" y1="187.96" x2="241.3" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="185.42" x2="246.38" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -7859,6 +7951,11 @@ Layer: 94 Symbol</description>
 <pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="205.74" x2="236.22" y2="205.74" width="0.1524" layer="91"/>
 <junction x="236.22" y="205.74"/>
+<wire x1="236.22" y1="198.12" x2="241.3" y2="198.12" width="0.1524" layer="91"/>
+<junction x="236.22" y="198.12"/>
+<wire x1="241.3" y1="198.12" x2="241.3" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="TP3" gate="G$1" pin="P$1"/>
+<wire x1="241.3" y1="193.04" x2="246.38" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -7901,6 +7998,9 @@ Layer: 94 Symbol</description>
 <wire x1="210.82" y1="198.12" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="P40" gate="1" pin="+12V"/>
 <pinref part="A1" gate="G$1" pin="IN"/>
+<pinref part="TP2" gate="G$1" pin="P$1"/>
+<wire x1="200.66" y1="190.5" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
+<junction x="200.66" y="198.12"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VDD"/>
@@ -8015,9 +8115,14 @@ Layer: 94 Symbol</description>
 </net>
 <net name="SSOK" class="0">
 <segment>
-<wire x1="27.94" y1="22.86" x2="21.844" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="22.86" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
 <label x="21.844" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="D106" gate="LED" pin="A"/>
+<wire x1="25.4" y1="22.86" x2="21.844" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="22.86" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
+<junction x="25.4" y="22.86"/>
+<pinref part="TP1" gate="G$1" pin="P$1"/>
+<wire x1="25.4" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
@@ -8798,7 +8903,7 @@ Layer: 94 Symbol</description>
 </sheet>
 <sheet>
 <plain>
-<text x="33.02" y="200.66" size="1.778" layer="91">Crimps, nanofit receptacles, and blade fuses to order</text>
+<text x="33.02" y="200.66" size="1.778" layer="97">Crimps, nanofit receptacles, and blade fuses to order</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="O" x="0" y="0" smashed="yes">
@@ -8839,6 +8944,74 @@ Layer: 94 Symbol</description>
 <attribute name="MPN" x="48.26" y="177.038" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="48.26" y="181.102" size="1.27" layer="95"/>
 </instance>
+<instance part="O7" gate="G$1" x="48.26" y="172.72" smashed="yes">
+<attribute name="MPN" x="48.26" y="169.418" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="48.26" y="173.482" size="1.27" layer="95"/>
+</instance>
+<instance part="O8" gate="G$1" x="63.5" y="180.34" smashed="yes">
+<attribute name="MPN" x="63.5" y="177.038" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="63.5" y="181.102" size="1.27" layer="95"/>
+</instance>
+<instance part="O9" gate="G$1" x="63.5" y="172.72" smashed="yes">
+<attribute name="MPN" x="63.5" y="169.418" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="63.5" y="173.482" size="1.27" layer="95"/>
+</instance>
+<instance part="O10" gate="G$1" x="78.74" y="180.34" smashed="yes">
+<attribute name="MPN" x="78.74" y="177.038" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="78.74" y="181.102" size="1.27" layer="95"/>
+</instance>
+<instance part="O11" gate="G$1" x="78.74" y="172.72" smashed="yes">
+<attribute name="MPN" x="78.74" y="169.418" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="78.74" y="173.482" size="1.27" layer="95"/>
+</instance>
+<instance part="O12" gate="G$1" x="93.98" y="180.34" smashed="yes">
+<attribute name="MPN" x="93.98" y="177.038" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="93.98" y="181.102" size="1.27" layer="95"/>
+</instance>
+<instance part="O13" gate="G$1" x="93.98" y="172.72" smashed="yes">
+<attribute name="MPN" x="93.98" y="169.418" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="93.98" y="173.482" size="1.27" layer="95"/>
+</instance>
+<instance part="O14" gate="G$1" x="106.68" y="180.34" smashed="yes">
+<attribute name="MPN" x="106.68" y="177.038" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="106.68" y="181.102" size="1.27" layer="95"/>
+</instance>
+<instance part="O15" gate="G$1" x="106.68" y="172.72" smashed="yes">
+<attribute name="MPN" x="106.68" y="169.418" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="106.68" y="173.482" size="1.27" layer="95"/>
+</instance>
+<instance part="O16" gate="G$1" x="121.92" y="180.34" smashed="yes">
+<attribute name="MPN" x="121.92" y="177.038" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="121.92" y="181.102" size="1.27" layer="95"/>
+</instance>
+<instance part="O17" gate="G$1" x="121.92" y="172.72" smashed="yes">
+<attribute name="MPN" x="121.92" y="169.418" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="121.92" y="173.482" size="1.27" layer="95"/>
+</instance>
+<instance part="O18" gate="G$1" x="137.16" y="180.34" smashed="yes">
+<attribute name="MPN" x="137.16" y="177.038" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="137.16" y="181.102" size="1.27" layer="95"/>
+</instance>
+<instance part="O19" gate="G$1" x="137.16" y="172.72" smashed="yes">
+<attribute name="MPN" x="137.16" y="169.418" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="137.16" y="173.482" size="1.27" layer="95"/>
+</instance>
+<instance part="O20" gate="G$1" x="152.4" y="180.34" smashed="yes">
+<attribute name="MPN" x="152.4" y="177.038" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="152.4" y="181.102" size="1.27" layer="95"/>
+</instance>
+<instance part="O21" gate="G$1" x="152.4" y="172.72" smashed="yes">
+<attribute name="MPN" x="152.4" y="169.418" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="152.4" y="173.482" size="1.27" layer="95"/>
+</instance>
+<instance part="O22" gate="G$1" x="167.64" y="180.34" smashed="yes">
+<attribute name="MPN" x="167.64" y="177.038" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="167.64" y="181.102" size="1.27" layer="95"/>
+</instance>
+<instance part="O23" gate="G$1" x="167.64" y="172.72" smashed="yes">
+<attribute name="MPN" x="167.64" y="169.418" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="167.64" y="173.482" size="1.27" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8847,19 +9020,19 @@ Layer: 94 Symbol</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,264.16,116.84,D1,VDD,+5V,,,"/>
-<approved hash="104,1,208.28,177.8,U3,VDD,+5V,,,"/>
-<approved hash="202,1,180.34,160.02,U3,!TX0RTS,,,,"/>
-<approved hash="202,1,180.34,157.48,U3,!TX1RTS,,,,"/>
-<approved hash="202,1,180.34,154.94,U3,!TX2RTS,,,,"/>
-<approved hash="104,1,119.38,76.2,U4,VDD,+12V,,,"/>
+<approved hash="104,1,264.16,116.84,D101,VDD,+5V,,,"/>
+<approved hash="104,1,208.28,177.8,U5,VDD,+5V,,,"/>
+<approved hash="202,1,180.34,160.02,U5,!TX0RTS,,,,"/>
+<approved hash="202,1,180.34,157.48,U5,!TX1RTS,,,,"/>
+<approved hash="202,1,180.34,154.94,U5,!TX2RTS,,,,"/>
+<approved hash="104,1,119.38,76.2,U2,VDD,+12V,,,"/>
 <approved hash="104,1,134.62,165.1,U1,VDD,+5V,,,"/>
 <approved hash="104,1,134.62,162.56,U1,AVDD,N$60,,,"/>
-<approved hash="104,1,205.74,119.38,U5,VDD,+5V,,,"/>
-<approved hash="104,1,111.76,40.64,LS1,MAIN,N$28,,,"/>
-<approved hash="104,1,109.22,58.42,LS1,GND,N$39,,,"/>
-<approved hash="104,1,264.16,177.8,U2,VDD,+5V,,,"/>
-<approved hash="104,1,264.16,175.26,U2,VIO,+5V,,,"/>
+<approved hash="104,1,205.74,119.38,U3,VDD,+5V,,,"/>
+<approved hash="104,1,111.76,40.64,LS100,MAIN,N$28,,,"/>
+<approved hash="104,1,109.22,58.42,LS100,GND,N$39,,,"/>
+<approved hash="104,1,264.16,177.8,U4,VDD,+5V,,,"/>
+<approved hash="104,1,264.16,175.26,U4,VIO,+5V,,,"/>
 <approved hash="202,1,210.82,195.58,A1,EN,,,,"/>
 <approved hash="104,1,233.68,198.12,A1,OUT,+5V,,,"/>
 <approved hash="206,1,180.34,175.26,N$23,,,,,"/>
