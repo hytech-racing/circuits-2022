@@ -215,7 +215,7 @@ Pad height = 2x height of mounting point centered at edge
 <smd name="7" x="2.54" y="9.5" dx="2" dy="1.5" layer="1" rot="R90"/>
 <smd name="6" x="5.08" y="9.5" dx="2" dy="1.5" layer="1" rot="R90"/>
 <text x="-6.858" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<circle x="-7.493" y="-9.017" radius="0.635" width="0" layer="21"/>
+<circle x="-7.62" y="-9.5" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-6.858" y1="-11.176" x2="6.858" y2="11.176" layer="39"/>
 </package>
 <package name="PWR163">

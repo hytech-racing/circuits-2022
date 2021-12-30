@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,22 +22,22 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -253,7 +253,7 @@ Pad height = 2x height of mounting point centered at edge
 <smd name="7" x="2.54" y="9.5" dx="2" dy="1.5" layer="1" rot="R90"/>
 <smd name="6" x="5.08" y="9.5" dx="2" dy="1.5" layer="1" rot="R90"/>
 <text x="-6.858" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<circle x="-7.493" y="-9.017" radius="0.635" width="0" layer="21"/>
+<circle x="-7.62" y="-9.5" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-6.858" y1="-11.176" x2="6.858" y2="11.176" layer="39"/>
 </package>
 <package name="0805-RES">
@@ -5012,53 +5012,55 @@ Dashed line is edge of mated connector.</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="HyTech Default (4 Layer)">
-<description language="en">
-&lt;b&gt;HyTech Default Design Rules (4 Layer)&lt;/b&gt;
+<designrules name="JLCPCB (4 Layer)">
+<description language="en">&lt;b&gt;JLCPCB Design Rules (4 Layers)&lt;/b&gt;
 &lt;p&gt;
-These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, OshPark, Sunstone Circuits) the team uses.
-</description>
+The default Design Rules have been set to cover
+a wide range of applications.
+&lt;p&gt;
+Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;JLCPCB&lt;/a&gt;
+&lt;/p&gt;</description>
 <param name="layerSetup" value="(1+2*15+16)"/>
 <param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
 <param name="mtIsolate" value="0.2mm 1.065mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
 <param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="6mil"/>
+<param name="mdPadPad" value="5mil"/>
 <param name="mdPadVia" value="10mil"/>
 <param name="mdViaVia" value="20mil"/>
-<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdPad" value="5mil"/>
 <param name="mdSmdVia" value="10mil"/>
-<param name="mdSmdSmd" value="6mil"/>
-<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mdSmdSmd" value="5mil"/>
+<param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="20mil"/>
+<param name="mdCopperDimension" value="0.2mm"/>
 <param name="mdDrill" value="21mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="10mil"/>
-<param name="msMicroVia" value="10mil"/>
+<param name="msWidth" value="5mil"/>
+<param name="msDrill" value="0.2mm"/>
+<param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
 <param name="rvPadBottom" value="0.25"/>
 <param name="rvViaOuter" value="0.25"/>
 <param name="rvViaInner" value="0.25"/>
-<param name="rvMicroViaOuter" value="0.25"/>
-<param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="8mil"/>
+<param name="rvMicroViaOuter" value="0"/>
+<param name="rvMicroViaInner" value="0"/>
+<param name="rlMinPadTop" value="6mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="8mil"/>
+<param name="rlMinPadInner" value="6mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="8mil"/>
+<param name="rlMinPadBottom" value="6mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
-<param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
-<param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="5mil"/>
+<param name="rlMaxViaOuter" value="10mil"/>
+<param name="rlMinViaInner" value="5mil"/>
+<param name="rlMaxViaInner" value="10mil"/>
+<param name="rlMinMicroViaOuter" value="6mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="8mil"/>
+<param name="rlMinMicroViaInner" value="6mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -5067,8 +5069,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="3mil"/>
-<param name="mlMaxStopFrame" value="3mil"/>
+<param name="mlMinStopFrame" value="2mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="30mil"/>
@@ -5398,7 +5400,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Lumileds" x="74.93" y="23.495" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MOPN" value="997-L128RED10350" x="74.93" y="23.495" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="L128-RED1003500000" x="74.93" y="23.495" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="74.93" y="26.035" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="74.93" y="20.955" size="0.8128" layer="26" font="vector" rot="MR0" align="top-center"/>
 </element>
 <element name="D107" library="HyTechDevices" package="2835-LED" value="LED_2835_RED" x="74.93" y="4.445" smashed="yes" rot="MR0">
 <attribute name="COLOR" value="Red" x="74.93" y="4.445" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -5406,7 +5408,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Lumileds" x="74.93" y="4.445" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MOPN" value="997-L128RED10350" x="74.93" y="4.445" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="L128-RED1003500000" x="74.93" y="4.445" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="74.93" y="6.985" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="74.93" y="1.905" size="0.8128" layer="26" font="vector" rot="MR0" align="top-center"/>
 </element>
 <element name="D106" library="HyTechDevices" package="2835-LED" value="LED_2835_AMBER" x="0" y="15.24" smashed="yes" rot="MR0">
 <attribute name="COLOR" value="Amber" x="0" y="15.24" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -5793,7 +5795,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Molex" x="88.265" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="538-43045-0611" x="88.265" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0430450611" x="88.265" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="88.265" y="20.955" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="88.265" y="12.065" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="DN2" library="HyTechDevices" package="SOT-363" value="TVS_ARRAY_5V" x="-1.905" y="12.7" smashed="yes" rot="R90">
 <attribute name="DKPN" value="112-VESD05A5-06G-G3-08CT-ND" x="-1.905" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5819,7 +5821,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Molex" x="57.15" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="538-43045-0811" x="57.15" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0430450811" x="57.15" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="57.15" y="25.4" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="57.15" y="16.51" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="U1" library="HyTechDevices" package="TQFP-32" value="ATMEGA328P-AU" x="8.255" y="12.7" smashed="yes" rot="R90">
 <attribute name="DKPN" value="ATMEGA328P-AURCT-ND" x="8.255" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5940,7 +5942,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Molex" x="-71.755" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="538-43045-0411" x="-71.755" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0430450411" x="-71.755" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-71.755" y="21.59" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="-71.755" y="12.7" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="LS100" library="HyTechDevices" package="CPT-3011C-120" value="BUZZER_3_PIN_CPT-3011C-120" x="-45.72" y="19.685" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="102-3762-ND" x="-45.72" y="19.685" size="1.778" layer="28" rot="MR0" display="off"/>
