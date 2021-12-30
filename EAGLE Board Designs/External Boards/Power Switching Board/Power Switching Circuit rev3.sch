@@ -1022,8 +1022,8 @@ Toshiba
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf"&gt;RC Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C328-1530132.pdf"&gt;ERJ PB3, PB6 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C331-1141874.pdf"&gt;ERJ  PA2, P03, PA3, P06, P08, P14 Series&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf"&gt;ERJ XG, 1G, 1R, 2R, 3R, 6R, 3E, 6E Series&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RL_Group_521_RoHS_L_2.pdf"&gt;RL Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/418/4/NG_DS_1773270_M-604713.pdf"&gt;TE Connectivity/Holsworthy RN73 Series&lt;a/&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1098,6 +1098,17 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="11.53V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="1.5M">
+<attribute name="DKPN" value="311-1.50MHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-071M5L"/>
+<attribute name="MPN" value="RC0603FR-071M5L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.5M"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="1.65K">
 <attribute name="DKPN" value="311-1.65KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1153,6 +1164,17 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="3.16V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="100K">
+<attribute name="DKPN" value="311-100KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07100KL "/>
+<attribute name="MPN" value="RC0603FR-07100KL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="100k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="10K">
 <attribute name="DKPN" value="311-10.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1186,17 +1208,6 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="33.91V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-<technology name="11.8">
-<attribute name="DKPN" value="P11.8HCT-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERJ-3EKF11R8V"/>
-<attribute name="MPN" value="ERJ-3EKF11R8V"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="11.8"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
-<attribute name="VOLTAGE_MAX" value="150V"/>
-</technology>
 <technology name="12.4K">
 <attribute name="DKPN" value="P20096CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -1207,6 +1218,17 @@ Toshiba
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="49.8V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="120">
+<attribute name="DKPN" value="P120DBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB121V"/>
+<attribute name="MPN" value="ERA-3AEB121V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="120"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.46V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="12K">
 <attribute name="DKPN" value="311-12.0KHRCT-ND"/>
@@ -1219,16 +1241,38 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-<technology name="14.3K">
-<attribute name="DKPN" value="P20413CT-ND"/>
+<technology name="13">
+<attribute name="DKPN" value="P122724CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERJ-PB3D1432V"/>
-<attribute name="MPN" value="ERJ-PB3D1432V"/>
-<attribute name="POWER" value="0.2W"/>
-<attribute name="RESISTANCE" value="14.3k"/>
-<attribute name="TOLERANCE" value="0.5%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
-<attribute name="VOLTAGE_MAX" value="200V"/>
+<attribute name="MOPN" value="667-ERJ-1GNF13R0C"/>
+<attribute name="MPN" value="ERJ-1GNF13R0C"/>
+<attribute name="POWER" value="0.05W"/>
+<attribute name="RESISTANCE" value="13"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="25V"/>
+<attribute name="VOLTAGE_MAX" value="50V"/>
+</technology>
+<technology name="15">
+<attribute name="DKPN" value="541-15.0STR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale"/>
+<attribute name="MOPN" value="71-CRCW060315R0FKEAH"/>
+<attribute name="MPN" value="CRCW060315R0FKEAHP"/>
+<attribute name="POWER" value="0.33W"/>
+<attribute name="RESISTANCE" value="15"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="2.22V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="150K">
+<attribute name="DKPN" value="P150KDBCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3AEB154V"/>
+<attribute name="MPN" value="ERA-3AEB154V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="150k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="154K">
 <attribute name="DKPN" value="P154KDBCT-ND"/>
@@ -1285,17 +1329,6 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="4.24V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-<technology name="19.1K">
-<attribute name="DKPN" value="P19.1KHCT-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERJ-3EKF1912V"/>
-<attribute name="MPN" value="ERJ-3EKF1912V"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="19.1k"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
-<attribute name="VOLTAGE_MAX" value="100V"/>
-</technology>
 <technology name="1K">
 <attribute name="DKPN" value="311-1.00KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1318,6 +1351,17 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="2.18K">
+<attribute name="DKPN" value="13-RT0805BRD072K18LTR-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-RT0805BRD072K18L"/>
+<attribute name="MPN" value="RT0805BRD072K18L"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="2.18k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="16.51V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
 <technology name="2.55K">
 <attribute name="DKPN" value="311-2.55KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1338,6 +1382,28 @@ Toshiba
 <attribute name="RESISTANCE" value="2.74k"/>
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="23.41V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="20K">
+<attribute name="DKPN" value="311-20.0KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-0720KL "/>
+<attribute name="MPN" value="RC0603FR-0720KL"/>
+<attribute name="POWER" value="0.1 W"/>
+<attribute name="RESISTANCE" value="20k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="44.72V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="210">
+<attribute name="DKPN" value="P19892CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B2100V"/>
+<attribute name="MPN" value="ERJ-PB3B2100V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="210"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6.48V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="215K">
@@ -1428,16 +1494,16 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="18.17V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-<technology name="30.9K">
-<attribute name="DKPN" value="P30.9KDBCT-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERA-3AEB3092V"/>
-<attribute name="MPN" value="ERA-3AEB3092V"/>
+<technology name="3.9K">
+<attribute name="DKPN" value="311-3.90KHRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-073K9L"/>
+<attribute name="MPN" value="RC0603FR-073K9L"/>
 <attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="30.9k"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
-<attribute name="VOLTAGE_MAX" value="150V"/>
+<attribute name="RESISTANCE" value="3.9k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="19.75V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="30K">
 <attribute name="DKPN" value="P30KBDCT-ND"/>
@@ -1449,17 +1515,6 @@ Toshiba
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="54.77V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
-<technology name="31.6K">
-<attribute name="DKPN" value="P31.6KDBCT-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERA-3AEB3162V"/>
-<attribute name="MPN" value="ERA-3AEB3162V"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="31.6k"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
-<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="330K">
 <attribute name="DKPN" value="P330KDBCT-ND"/>
@@ -1481,6 +1536,17 @@ Toshiba
 <attribute name="RESISTANCE" value="36.5k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="60.42V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="360">
+<attribute name="DKPN" value="311-360HRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07360RL"/>
+<attribute name="MPN" value="RC0603FR-07360RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="360"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="6V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="374K">
@@ -1527,16 +1593,16 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="6.34V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
-<technology name="43.2">
-<attribute name="DKPN" value="P43.2HCT-ND"/>
+<technology name="41.2">
+<attribute name="DKPN" value="P123000CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERJ-3EKF43R2V"/>
-<attribute name="MPN" value="ERJ-3EKF43R2V"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="43.2"/>
+<attribute name="MOPN" value="667-ERJ-1GNF41R2C"/>
+<attribute name="MPN" value="ERJ-1GNF41R2C"/>
+<attribute name="POWER" value="0.05W"/>
+<attribute name="RESISTANCE" value="41.2"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
-<attribute name="VOLTAGE_MAX" value="150V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="25V"/>
+<attribute name="VOLTAGE_MAX" value="50V"/>
 </technology>
 <technology name="43K">
 <attribute name="DKPN" value="311-43.0KHRCT-ND"/>
@@ -1560,16 +1626,38 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="10.84V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
-<technology name="5.6">
-<attribute name="DKPN" value="10-ERJ-U03F5R60VCT-ND"/>
+<technology name="5.1">
+<attribute name="DKPN" value="P16039TR-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERJ-U03F5R60V"/>
-<attribute name="MPN" value="ERJ-U03F5R60V"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="5.6"/>
+<attribute name="MOPN" value="667-ERJ-P03J5R1V"/>
+<attribute name="MPN" value="ERJ-P03J5R1V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="5.1"/>
 <attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1.13V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="5.1K">
+<attribute name="DKPN" value="311-5.10KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-075K1L "/>
+<attribute name="MPN" value="RC0603FR-075K1L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="5.1k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="22.58V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="5.49">
+<attribute name="DKPN" value="A124665CT-ND"/>
+<attribute name="MANUFACTURER" value="TE Connectivity Passive Product"/>
+<attribute name="MOPN" value="279-RN73C1J5R49BTD"/>
+<attribute name="MPN" value="RN73C1J5R49BTD"/>
+<attribute name="POWER" value="0.0625W"/>
+<attribute name="RESISTANCE" value="5.49"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="50V"/>
+<attribute name="VOLTAGE_MAX" value="100V"/>
 </technology>
 <technology name="5.9K">
 <attribute name="DKPN" value="P5.9KDBCT-ND"/>
@@ -1591,6 +1679,17 @@ Toshiba
 <attribute name="RESISTANCE" value="60.4"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="2.48V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="620">
+<attribute name="DKPN" value="311-620HRCT-ND"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="MOPN" value="603-RC0603FR-07620RL"/>
+<attribute name="MPN" value="RC0603FR-07620RL"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="620"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="7.87V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="73.2K">
@@ -1647,28 +1746,6 @@ Toshiba
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
-</technology>
-<technology name="931K">
-<attribute name="DKPN" value="P931KHCT-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERJ-3EKF9313V"/>
-<attribute name="MPN" value="ERJ-3EKF9313V"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="931k"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
-<attribute name="VOLTAGE_MAX" value="150V"/>
-</technology>
-<technology name="953K">
-<attribute name="DKPN" value="P953KHCT-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="MOPN" value="667-ERJ-3EKF9533V"/>
-<attribute name="MPN" value="ERJ-3EKF9533V"/>
-<attribute name="POWER" value="0.1W"/>
-<attribute name="RESISTANCE" value="953k"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
-<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="DNP">
 <attribute name="DKPN" value=""/>
@@ -1741,6 +1818,17 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="5V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="22">
+<attribute name="DKPN" value="P16066TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P06F22R0V"/>
+<attribute name="MPN" value="ERJ-P06F22R0V"/>
+<attribute name="POWER" value="0.5W"/>
+<attribute name="RESISTANCE" value="22"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.32V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
+</technology>
 <technology name="365K">
 <attribute name="DKPN" value="P20885CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -1751,6 +1839,17 @@ Toshiba
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="56">
+<attribute name="DKPN" value="P16053TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P06D56R0V"/>
+<attribute name="MPN" value="ERJ-P06D56R0V"/>
+<attribute name="POWER" value="0.5W"/>
+<attribute name="RESISTANCE" value="56"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="5.29V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
 </technologies>
 </device>
@@ -5295,13 +5394,7 @@ Layer: 94 Symbol</description>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR_SENSE_?_*" device="4026" technology="0.002"/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR_SENSE_?_*" device="4026" technology="0.002"/>
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13K"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.6"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="11.8"/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="43.2"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13K"/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.6"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="11.8"/>
-<part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="43.2"/>
 <part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
 <part name="XF1" library="HyTechDevices" deviceset="FUSE_HOLDER_*" device="SMD" technology="MINIBLADE"/>
 <part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
@@ -5316,6 +5409,12 @@ Layer: 94 Symbol</description>
 <part name="O4" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_10"/>
 <part name="D3" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="D4" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.49"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.49"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="13"/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="13"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2"/>
+<part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2"/>
 </parts>
 <sheets>
 <sheet>
@@ -5324,16 +5423,16 @@ Layer: 94 Symbol</description>
 <text x="48.514" y="-145.796" size="2.54" layer="95">Circuit is used to switch the active power source of 
 the vehicle from the GLV battery to the accumulator</text>
 <text x="-66.04" y="-17.78" size="1.778" layer="97" rot="R180">GLVB:
-OV Rising: 13.25V
-OV Falling: 11.02V
-UV Rising: 10.41V
-UV Falling: 9.45V
+OV Rising: 14.44V
+OV Falling: 12.34V
+UV Rising: 10.98V
+UV Falling: 9.97V
 
 DCDC:
-OV Rising: 13.25V
-OV Falling: 11.02V
-UV Rising: 10.41V
-UV Falling: 9.45V</text>
+OV Rising: 14.44V
+OV Falling: 12.34V
+UV Rising: 10.98V
+UV Falling: 9.97V</text>
 <text x="80.518" y="36.83" size="1.27" layer="96" rot="R90">680 uF</text>
 <text x="-20.32" y="-66.04" size="1.27" layer="97">tValid = 10.88ms</text>
 <text x="0" y="-66.04" size="1.27" layer="97">tTMR,FLT = 5.644ms</text>
@@ -5656,33 +5755,9 @@ UV Falling: 9.45V</text>
 <attribute name="NAME" x="-57.15" y="-1.27" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="-54.61" y="-1.27" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R3" gate="G$1" x="-55.88" y="-7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="-57.15" y="-8.89" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-54.61" y="-8.89" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R5" gate="G$1" x="-55.88" y="-15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="-57.15" y="-16.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-54.61" y="-16.51" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R7" gate="G$1" x="-55.88" y="-25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="-54.61" y="-24.13" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-57.15" y="-24.13" size="1.27" layer="96" rot="R270" align="top-center"/>
-</instance>
 <instance part="R8" gate="G$1" x="-48.26" y="-25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-49.53" y="-26.67" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="-46.99" y="-26.67" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R9" gate="G$1" x="-48.26" y="-33.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="-49.53" y="-34.29" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-46.99" y="-34.29" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R10" gate="G$1" x="-48.26" y="-40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="-49.53" y="-41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-46.99" y="-41.91" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R11" gate="G$1" x="-48.26" y="-48.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="-49.53" y="-49.53" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-46.99" y="-49.53" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="R25" gate="G$1" x="-68.58" y="-86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="-69.85" y="-87.63" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -5719,6 +5794,30 @@ UV Falling: 9.45V</text>
 <instance part="D4" gate="G$1" x="99.06" y="-63.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="100.33" y="-65.405" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="MPN" x="100.33" y="-61.595" size="1.27" layer="96" rot="R180" align="top-center"/>
+</instance>
+<instance part="R3" gate="G$1" x="-55.88" y="-7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="-57.15" y="-8.89" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-54.61" y="-8.89" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R5" gate="G$1" x="-48.26" y="-33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="-49.53" y="-34.29" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-46.99" y="-34.29" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R7" gate="G$1" x="-55.88" y="-15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="-57.15" y="-16.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-54.61" y="-16.51" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R9" gate="G$1" x="-48.26" y="-40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="-49.53" y="-41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-46.99" y="-41.91" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R10" gate="G$1" x="-55.88" y="-22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="-57.15" y="-24.13" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-54.61" y="-24.13" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R11" gate="G$1" x="-48.26" y="-48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="-49.53" y="-49.53" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-46.99" y="-49.53" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -5849,7 +5948,7 @@ UV Falling: 9.45V</text>
 <segment>
 <wire x1="-55.88" y1="-27.94" x2="-55.88" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="P15" gate="1" pin="GND"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-119.38" y1="27.94" x2="-119.38" y2="30.48" width="0.1524" layer="91"/>
@@ -6132,7 +6231,7 @@ UV Falling: 9.45V</text>
 <pinref part="U1" gate="G$1" pin="UVR1"/>
 <wire x1="-43.18" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <junction x="-55.88" y="-12.7"/>
 </segment>
 </net>
@@ -6140,8 +6239,8 @@ UV Falling: 9.45V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="OV1"/>
 <wire x1="-43.18" y1="-20.32" x2="-55.88" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <junction x="-55.88" y="-20.32"/>
 </segment>
 </net>
@@ -6150,7 +6249,7 @@ UV Falling: 9.45V</text>
 <pinref part="U1" gate="G$1" pin="UVF2"/>
 <wire x1="-43.18" y1="-30.48" x2="-48.26" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <junction x="-48.26" y="-30.48"/>
 </segment>
 </net>
@@ -6158,8 +6257,8 @@ UV Falling: 9.45V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="UVR2"/>
 <wire x1="-43.18" y1="-38.1" x2="-48.26" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <junction x="-48.26" y="-38.1"/>
 </segment>
 </net>
@@ -6167,7 +6266,7 @@ UV Falling: 9.45V</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="OV2"/>
 <wire x1="-43.18" y1="-45.72" x2="-48.26" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <junction x="-48.26" y="-45.72"/>
 </segment>
