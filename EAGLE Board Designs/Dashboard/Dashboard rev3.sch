@@ -6649,72 +6649,6 @@ Layer: 94 Symbol</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PLUG-4_*" prefix="O">
-<description>Plug, 4 Pin
-&lt;br&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/1053081204_CRIMP_HOUSINGS-2868911.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="NANOFIT_HORIZONTAL">
-<attribute name="DKPN" value="WM14962-ND"/>
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="538-105308-1204"/>
-<attribute name="MPN" value="1053081204"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PLUG-6_*" prefix="O">
-<description>Plug, 6 Pin
-&lt;br&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/4/1053081206_CRIMP_HOUSINGS-2883231.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="NANOFIT_HORIZONTAL">
-<attribute name="DKPN" value="WM14963-ND"/>
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="538-105308-1206"/>
-<attribute name="MPN" value="1053081206"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PLUG-8_*" prefix="O">
-<description>Plug, 8 Pin
-&lt;br&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/4/1053081208_CRIMP_HOUSINGS-2883437.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="NANOFIT_HORIZONTAL">
-<attribute name="DKPN" value="WM14964-ND"/>
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="538-105308-1208"/>
-<attribute name="MPN" value="105308-1208"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FUSE_*" prefix="O">
 <description>Fuse
 &lt;br&gt;
@@ -6763,6 +6697,93 @@ Layer: 94 Symbol</description>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105300-2300"/>
 <attribute name="MPN" value="105300-2300"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-4_*" prefix="O">
+<description>Receptacle, 4 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430250408_CRIMP_HOUSINGS-2845587.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/1053081204_CRIMP_HOUSINGS-2868911.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM11225-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-0408"/>
+<attribute name="MPN" value="0430250408"/>
+</technology>
+<technology name="NANOFIT">
+<attribute name="DKPN" value="WM14962-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105308-1204"/>
+<attribute name="MPN" value="105308-1204"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-6_*" prefix="O">
+<description>Receptacle, 6 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430250608_CRIMP_HOUSINGS-2876899.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/4/1053081206_CRIMP_HOUSINGS-2883231.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM13209-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-0608"/>
+<attribute name="MPN" value="0430250608"/>
+</technology>
+<technology name="NANOFIT">
+<attribute name="DKPN" value="WM14963-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105308-1206"/>
+<attribute name="MPN" value="105308-1206"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-8_*" prefix="O">
+<description>Receptacle, 8 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430250808_CRIMP_HOUSINGS-2845567.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/4/1053081208_CRIMP_HOUSINGS-2883437.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM13210-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-0808" constant="no"/>
+<attribute name="MPN" value="0430250808" constant="no"/>
+</technology>
+<technology name="NANOFIT">
+<attribute name="DKPN" value="WM14964-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105308-1208"/>
+<attribute name="MPN" value="105308-1208"/>
 </technology>
 </technologies>
 </device>
@@ -6912,11 +6933,7 @@ Layer: 94 Symbol</description>
 <part name="D1" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="P25" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="FRAME2" library="HyTechFrames" deviceset="FRAME" device=""/>
-<part name="O1" library="HyTechExternal" deviceset="PLUG-4_*" device="" technology="NANOFIT_HORIZONTAL"/>
-<part name="O2" library="HyTechExternal" deviceset="PLUG-6_*" device="" technology="NANOFIT_HORIZONTAL"/>
-<part name="O3" library="HyTechExternal" deviceset="PLUG-8_*" device="" technology="NANOFIT_HORIZONTAL"/>
 <part name="O4" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_2"/>
-<part name="O5" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="NANOFIT_20-22"/>
 <part name="J5" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603"/>
 <part name="O6" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O7" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
@@ -6948,6 +6965,9 @@ Layer: 94 Symbol</description>
 <part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="GND"/>
 </part>
+<part name="O1" library="HyTechExternal" deviceset="RECEPTACLE-4_*" device="" technology="MICROFIT"/>
+<part name="O2" library="HyTechExternal" deviceset="RECEPTACLE-6_*" device="" technology="MICROFIT"/>
+<part name="O3" library="HyTechExternal" deviceset="RECEPTACLE-8_*" device="" technology="MICROFIT"/>
 </parts>
 <sheets>
 <sheet>
@@ -8920,25 +8940,9 @@ when enable pin is open.</text>
 <attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
 </instance>
-<instance part="O1" gate="G$1" x="33.02" y="195.58" smashed="yes">
-<attribute name="MPN" x="33.02" y="192.278" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="33.02" y="196.342" size="1.27" layer="95"/>
-</instance>
-<instance part="O2" gate="G$1" x="33.02" y="187.96" smashed="yes">
-<attribute name="MPN" x="33.02" y="184.658" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="33.02" y="188.722" size="1.27" layer="95"/>
-</instance>
-<instance part="O3" gate="G$1" x="33.02" y="180.34" smashed="yes">
-<attribute name="MPN" x="33.02" y="177.038" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="33.02" y="181.102" size="1.27" layer="95"/>
-</instance>
 <instance part="O4" gate="G$1" x="48.26" y="195.58" smashed="yes">
 <attribute name="MPN" x="48.26" y="192.278" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="48.26" y="196.342" size="1.27" layer="95"/>
-</instance>
-<instance part="O5" gate="G$1" x="48.26" y="187.96" smashed="yes">
-<attribute name="MPN" x="48.26" y="184.658" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="48.26" y="188.722" size="1.27" layer="95"/>
 </instance>
 <instance part="O6" gate="G$1" x="48.26" y="180.34" smashed="yes">
 <attribute name="MPN" x="48.26" y="177.038" size="1.27" layer="96" align="top-left"/>
@@ -9011,6 +9015,18 @@ when enable pin is open.</text>
 <instance part="O23" gate="G$1" x="167.64" y="172.72" smashed="yes">
 <attribute name="MPN" x="167.64" y="169.418" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="167.64" y="173.482" size="1.27" layer="95"/>
+</instance>
+<instance part="O1" gate="G$1" x="35.56" y="195.58" smashed="yes">
+<attribute name="MPN" x="35.56" y="192.278" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="35.56" y="196.342" size="1.27" layer="95"/>
+</instance>
+<instance part="O2" gate="G$1" x="35.56" y="187.96" smashed="yes">
+<attribute name="MPN" x="35.56" y="184.658" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="35.56" y="188.722" size="1.27" layer="95"/>
+</instance>
+<instance part="O3" gate="G$1" x="48.26" y="187.96" smashed="yes">
+<attribute name="MPN" x="48.26" y="184.658" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="48.26" y="188.722" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
