@@ -324,24 +324,6 @@ Designed by Sathya Gummadi</text>
 <text x="0" y="1.778" size="0.635" layer="25" font="vector" rot="R180" align="top-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
 </package>
-<package name="CLP1608-2L">
-<description>CLP1608-2L Yageo 0603 VSKY Diode Package
-&lt;br&gt;
-&lt;a href="https://www.vishay.com/docs/85917/soldrecclp.pdf"&gt;Landing Pattern&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.vishay.com/docs/85892/vsky20401608.pdf"&gt;Size&lt;/a&gt;</description>
-<smd name="1" x="-0.295" y="0" dx="0.88" dy="0.62" layer="1"/>
-<smd name="2" x="0.595" y="0" dx="0.28" dy="0.62" layer="1"/>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-0.9" y1="0.5" x2="0.9" y2="0.5" width="0.0508" layer="39"/>
-<wire x1="0.9" y1="0.5" x2="0.9" y2="-0.5" width="0.0508" layer="39"/>
-<wire x1="0.9" y1="-0.5" x2="-0.9" y2="-0.5" width="0.0508" layer="39"/>
-<wire x1="-0.9" y1="-0.5" x2="-0.9" y2="0.5" width="0.0508" layer="39"/>
-<text x="0" y="0.508" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="MOUNTING_M3">
 <description>M3 Mounting Hole
 &lt;br&gt;
@@ -538,6 +520,21 @@ Toshiba
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
 <text x="0" y="1.27" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
+</package>
+<package name="SOD-323">
+<description>SOD-323 Diode Package
+&lt;br&gt;
+&lt;a href="https://www.diodes.com/assets/Package-Files/SOD323.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A" x="-1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
+<smd name="C" x="1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
+<text x="0" y="1" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-0.85" y1="0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
+<rectangle x1="-1.778" y1="-0.762" x2="1.778" y2="0.762" layer="39"/>
+<rectangle x1="1.261" y1="0.5" x2="1.661" y2="0.75" layer="21"/>
+<rectangle x1="1.261" y1="-0.75" x2="1.661" y2="-0.5" layer="21"/>
 </package>
 </packages>
 </library>
@@ -4453,20 +4450,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="MPN" value="GSOT15-E3-08" x="-12.954" y="5.842" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="15V" x="-12.954" y="5.842" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D4" library="HyTechDevices" package="CLP1608-2L" value="SCHOTTKY" x="11.43" y="-13.589" smashed="yes" rot="R45">
-<attribute name="DKPN" value="112-VSKY20401608-G4-08CT-ND" x="11.43" y="-13.589" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division" x="11.43" y="-13.589" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MOPN" value="78-VSKY20401608G408" x="11.43" y="-13.589" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MPN" value="VSKY20401608-G4-08" x="11.43" y="-13.589" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="NAME" x="11.070790625" y="-13.22979375" size="0.762" layer="25" font="vector" rot="R45" align="bottom-center"/>
-</element>
-<element name="D3" library="HyTechDevices" package="CLP1608-2L" value="SCHOTTKY" x="9.8552" y="-12.0142" smashed="yes" rot="R45">
-<attribute name="DKPN" value="112-VSKY20401608-G4-08CT-ND" x="9.8552" y="-12.0142" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MANUFACTURER" value="Vishay General Semiconductor - Diodes Division" x="9.8552" y="-12.0142" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MOPN" value="78-VSKY20401608G408" x="9.8552" y="-12.0142" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MPN" value="VSKY20401608-G4-08" x="9.8552" y="-12.0142" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="NAME" x="9.4959875" y="-11.6549875" size="0.762" layer="25" font="vector" rot="R45" align="bottom-center"/>
-</element>
 <element name="U$1" library="HyTechDevices" package="MOUNTING_M3" value="" x="-24.511" y="-13.97" smashed="yes"/>
 <element name="U$3" library="HyTechDevices" package="MOUNTING_M3" value="" x="-24.511" y="5.08" smashed="yes"/>
 <element name="U$4" library="HyTechDevices" package="MOUNTING_M3" value="" x="61.722" y="36.068" smashed="yes"/>
@@ -5163,6 +5146,24 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="MPN" value="5015" x="-22.86" y="-971.55" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-22.86" y="-970.28" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
+<element name="D3" library="HyTechDevices" package="SOD-323" value="SCHOTTKY_SOD323_30V" x="-25.4" y="-975.36" smashed="yes">
+<attribute name="CURRENT" value="0.8A" x="-25.4" y="-975.36" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="CUS08F30H3FTR-ND" x="-25.4" y="-975.36" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage" x="-25.4" y="-975.36" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="757-CUS08F30H3F" x="-25.4" y="-975.36" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CUS08F30" x="-25.4" y="-975.36" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-25.4" y="-974.36" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="VOLTAGE" value="30V" x="-25.4" y="-975.36" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D4" library="HyTechDevices" package="SOD-323" value="SCHOTTKY_SOD323_30V" x="-25.4" y="-979.17" smashed="yes">
+<attribute name="CURRENT" value="0.8A" x="-25.4" y="-979.17" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="CUS08F30H3FTR-ND" x="-25.4" y="-979.17" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage" x="-25.4" y="-979.17" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="757-CUS08F30H3F" x="-25.4" y="-979.17" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CUS08F30" x="-25.4" y="-979.17" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-25.4" y="-978.17" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="VOLTAGE" value="30V" x="-25.4" y="-979.17" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -5302,9 +5303,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="START">
 <contactref element="J1" pad="C"/>
-<contactref element="D3" pad="1"/>
-<wire x1="9.646603125" y1="-12.22279375" x2="4.129128125" y2="-17.74026875" width="0.6096" layer="1"/>
 <wire x1="4.129128125" y1="-17.74026875" x2="3.974496875" y2="-17.74026875" width="0.6096" layer="1"/>
+<contactref element="D4" pad="A"/>
+<wire x1="3.974496875" y1="-17.74026875" x2="-26.55" y2="-979.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUT">
 <wire x1="24.5098" y1="23.824003125" x2="26.067734375" y2="25.3819375" width="1.016" layer="16"/>
@@ -5776,25 +5777,25 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="U1" pad="21"/>
 <contactref element="U1" pad="25"/>
 <contactref element="U1" pad="12"/>
-<contactref element="D3" pad="2"/>
-<contactref element="D4" pad="2"/>
 <contactref element="R15" pad="2"/>
 <contactref element="U$12" pad="2"/>
 <contactref element="D5" pad="1"/>
+<contactref element="D3" pad="C"/>
+<contactref element="D4" pad="C"/>
+<wire x1="-24.25" y1="-975.36" x2="-24.25" y2="-979.17" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.225" y1="-716.28" x2="-24.25" y2="-975.36" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.55" y1="-666.75" x2="-26.225" y2="-716.28" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.13" y1="-488.95" x2="-24.55" y2="-666.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.24" y1="-471.17" x2="-24.13" y2="-488.95" width="0" layer="19" extent="1-1"/>
-<wire x1="11.850728125" y1="-13.16826875" x2="-15.24" y2="-471.17" width="0" layer="19" extent="1-1"/>
-<wire x1="10.275928125" y1="-11.59346875" x2="11.850728125" y2="-13.16826875" width="0" layer="19" extent="1-1"/>
-<wire x1="8.66995625" y1="-0.675009375" x2="10.275928125" y2="-11.59346875" width="0" layer="19" extent="1-1"/>
+<wire x1="8.66995625" y1="-0.675009375" x2="-15.24" y2="-471.17" width="0" layer="19" extent="1-1"/>
 <wire x1="10.508434375" y1="1.163465625" x2="8.66995625" y2="-0.675009375" width="0" layer="19" extent="1-1"/>
 <wire x1="5.735465625" y1="5.936434375" x2="10.508434375" y2="1.163465625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GLVMS">
-<contactref element="D4" pad="1"/>
 <contactref element="J1" pad="B"/>
 <wire x1="4.881634375" y1="-20.1373625" x2="4.617965625" y2="-20.1373625" width="0.6096" layer="1"/>
-<wire x1="11.221403125" y1="-13.79759375" x2="4.881634375" y2="-20.1373625" width="0" layer="19" extent="1-1"/>
+<contactref element="D3" pad="A"/>
+<wire x1="4.617965625" y1="-20.1373625" x2="-26.55" y2="-975.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="U$12" pad="6"/>
