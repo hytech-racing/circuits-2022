@@ -330,26 +330,6 @@ Note: Also works for CAT/CAY16 Series.
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
 <circle x="-1.778" y="-1.0033" radius="0.15875" width="0" layer="21"/>
 </package>
-<package name="XP-E2">
-<description>Cree XP-E2 LED
-&lt;br&gt;
-&lt;a href="https://www.cree.com/led-components/media/documents/XLampXPE2.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<circle x="2.0574" y="2.0574" radius="0.1524" width="0" layer="51"/>
-<wire x1="-1.725" y1="1.725" x2="1.725" y2="1.725" width="0.127" layer="51"/>
-<wire x1="1.725" y1="1.725" x2="1.725" y2="-1.725" width="0.127" layer="51"/>
-<wire x1="1.725" y1="-1.725" x2="-1.725" y2="-1.725" width="0.127" layer="51"/>
-<wire x1="-1.725" y1="-1.725" x2="-1.725" y2="1.725" width="0.127" layer="51"/>
-<rectangle x1="-0.5005" y1="-0.375" x2="0.5005" y2="0.375" layer="31"/>
-<rectangle x1="-1.65" y1="-1.65" x2="-1.15" y2="1.65" layer="31"/>
-<rectangle x1="1.15" y1="-1.65" x2="1.65" y2="1.65" layer="31"/>
-<rectangle x1="-0.5005" y1="0.625" x2="0.5005" y2="1.375" layer="31"/>
-<rectangle x1="-0.5005" y1="-1.375" x2="0.5005" y2="-0.625" layer="31"/>
-<smd name="CATHODE" x="-1.4" y="0" dx="0.5" dy="3.3" layer="1" cream="no"/>
-<smd name="ANODE" x="1.4" y="0" dx="0.5" dy="3.3" layer="1" cream="no"/>
-<smd name="X" x="0" y="0" dx="1.3" dy="3.3" layer="1" cream="no"/>
-<text x="0" y="2.54" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="2.032" layer="39"/>
-</package>
 <package name="POWERPAK_SO-8">
 <description>PowerPak SO-8
 &lt;br&gt;
@@ -1213,6 +1193,20 @@ Dashed line is edge of mated connector.</description>
 <smd name="7" x="-1.5" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
 <smd name="8" x="-4.5" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
 </package>
+<package name="2835-LED">
+<description>LUXEON 2835 LED&lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/602/DS236_luxeon_2835_color_line_datasheet-1596094.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A" x="-0.735" y="0" dx="1.93" dy="1.8" layer="1" roundness="11"/>
+<smd name="C" x="1.265" y="0" dx="0.87" dy="1.8" layer="1" roundness="22"/>
+<wire x1="-1.75" y1="1.4" x2="1.75" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="1.4" x2="1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-1.4" x2="-1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-1.4" x2="-1.75" y2="1.4" width="0.127" layer="21"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.032" y1="-1.778" x2="2.032" y2="1.778" layer="39"/>
+<text x="0" y="1.524" size="0.8128" layer="21" font="vector" align="bottom-center">+ -</text>
+<circle x="-2.032" y="1.778" radius="0.127" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -1369,31 +1363,6 @@ Dashed line is edge of mated connector.</description>
 <vertex x="6.35" y="-1.27"/>
 <vertex x="8.89" y="-1.27"/>
 </polygon>
-</symbol>
-<symbol name="DIODE_LED_THERMAL">
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="THERMAL" x="-1.27" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="1.778" x2="-0.127" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.651" x2="1.016" y2="3.048" width="0.1524" layer="94"/>
-<text x="0" y="-1.778" size="1.27" layer="95" align="top-left">&gt;COLOR</text>
-<text x="-1.27" y="3.556" size="1.27" layer="96" align="bottom-center">&gt;NAME</text>
-<polygon width="0.1524" layer="94">
-<vertex x="-0.127" y="3.175"/>
-<vertex x="-1.016" y="2.794"/>
-<vertex x="-0.508" y="2.286"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="1.016" y="3.048"/>
-<vertex x="0.127" y="2.667"/>
-<vertex x="0.635" y="2.159"/>
-</polygon>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-0.635" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="DIODE_TVS_UNIDIRECTIONAL">
 <wire x1="0" y1="1.016" x2="0" y2="-0.762" width="0.1524" layer="94"/>
@@ -2021,6 +1990,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="15">
+<attribute name="DKPN" value="541-15.0STR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale"/>
+<attribute name="MOPN" value="71-CRCW060315R0FKEAH"/>
+<attribute name="MPN" value="CRCW060315R0FKEAHP"/>
+<attribute name="POWER" value="0.33W"/>
+<attribute name="RESISTANCE" value="15"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="2.22V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="150K">
 <attribute name="DKPN" value="P150KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -2543,6 +2523,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="5V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="22">
+<attribute name="DKPN" value="P16066TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P06F22R0V"/>
+<attribute name="MPN" value="ERJ-P06F22R0V"/>
+<attribute name="POWER" value="0.5W"/>
+<attribute name="RESISTANCE" value="22"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.32V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
+</technology>
 <technology name="365K">
 <attribute name="DKPN" value="P20885CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -2860,7 +2851,7 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
 <technology name="25V_1.2NF">
-<attribute name="CAPACITANCE" value="1.2NF"/>
+<attribute name="CAPACITANCE" value="1.2nF"/>
 <attribute name="DKPN" value="311-4079-2-ND"/>
 <attribute name="MANUFACTURER" value="YAGEO"/>
 <attribute name="MOPN" value="603-CC603KRX7R8BB122 "/>
@@ -3070,53 +3061,6 @@ Dashed line is edge of mated connector.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED_THERMAL_?_*" prefix="D">
-<description>LED with Thermal Pad
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/90/XLampXPE2-253473.pdf"&gt;Cree XP-E2 Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_LED_THERMAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="XPE2" package="XP-E2">
-<connects>
-<connect gate="G$1" pin="A" pad="ANODE"/>
-<connect gate="G$1" pin="C" pad="CATHODE"/>
-<connect gate="G$1" pin="THERMAL" pad="X"/>
-</connects>
-<technologies>
-<technology name="BLUE">
-<attribute name="COLOR" value="Blue"/>
-<attribute name="DKPN" value="XPEBBL-L1-0000-00305CT-ND"/>
-<attribute name="MANUFACTURER" value="Cree Inc."/>
-<attribute name="MOPN" value="941-XPEBBLL10000305"/>
-<attribute name="MPN" value="XPEBBL-L1-0000-00305"/>
-</technology>
-<technology name="GREEN">
-<attribute name="COLOR" value="Green"/>
-<attribute name="DKPN" value="XPEBGR-L1-0000-00F02CT-ND"/>
-<attribute name="MANUFACTURER" value="Cree Inc."/>
-<attribute name="MOPN" value="941-XPEBGRL10000F02"/>
-<attribute name="MPN" value="XPEBGR-L1-0000-00F02"/>
-</technology>
-<technology name="RED">
-<attribute name="COLOR" value="Red"/>
-<attribute name="DKPN" value="XPEBRD-L1-0000-00902CT-ND"/>
-<attribute name="MANUFACTURER" value="Cree Inc."/>
-<attribute name="MOPN" value="941-XPEBRDL100000902"/>
-<attribute name="MPN" value="XPEBRD-L1-0000-00902"/>
-</technology>
-<technology name="YELLOW">
-<attribute name="COLOR" value="Yellow"/>
-<attribute name="DKPN" value="XPEBAM-L1-0000-00903CT-ND"/>
-<attribute name="MANUFACTURER" value="Cree Inc."/>
-<attribute name="MOPN" value="941-XPEBAML10000903"/>
-<attribute name="MPN" value="XPEBAM-L1-0000-00903"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TVS_*" prefix="D">
 <description>TVS Diode
 &lt;br&gt;
@@ -3305,15 +3249,17 @@ Dashed line is edge of mated connector.</description>
 </deviceset>
 <deviceset name="LED_?_*" prefix="D">
 <description>LED
-&lt;br&gt;
-&lt;ul&gt;
+&lt;ul&gt;0603
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608VBC_D-246010.pdf"&gt;Blue&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608ZGCK-1173388.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-6197.pdf"&gt;Orange&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-J3-PRV-1173336.pdf"&gt;Red&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/SM0603UWC-880813.pdf"&gt;White&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SYCK-J3-PRV-1173311.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
-&lt;\ul&gt;</description>
+&lt;/ul&gt;
+&lt;ul&gt;2835 (Series not on Digikey)
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/602/DS236_luxeon_2835_color_line_datasheet-1596094.pdf"&gt;Lumiled LUXEON 2835 Color Line&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="LED" symbol="DIODE_LED" x="0" y="0"/>
 </gates>
@@ -3365,6 +3311,42 @@ Dashed line is edge of mated connector.</description>
 <attribute name="MANUFACTURER" value="Kingbright"/>
 <attribute name="MOPN" value="604-APT1608SYCK/J3-PRV"/>
 <attribute name="MPN" value="APT1608SYCK/J3-PRV"/>
+</technology>
+</technologies>
+</device>
+<device name="2835" package="2835-LED">
+<connects>
+<connect gate="LED" pin="A" pad="A"/>
+<connect gate="LED" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="AMBER">
+<attribute name="COLOR" value="Amber"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128PCA10350"/>
+<attribute name="MPN" value="L128-PCA1003500000"/>
+</technology>
+<technology name="BLUE">
+<attribute name="COLOR" value="Blue"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128BLU10350"/>
+<attribute name="MPN" value="L128-BLU1003500000"/>
+</technology>
+<technology name="GREEN">
+<attribute name="COLOR" value="Green"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128GRN10350"/>
+<attribute name="MPN" value="L128-GRN1003500000"/>
+</technology>
+<technology name="RED">
+<attribute name="COLOR" value="Red"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128RED10350"/>
+<attribute name="MPN" value="L128-RED1003500000"/>
 </technology>
 </technologies>
 </device>
@@ -6553,15 +6535,6 @@ Layer: 94 Symbol</description>
 <text x="0" y="-1.27" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="THERMAL">
-<wire x1="-0.635" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="3.175" y2="0" width="0.254" layer="94"/>
-<wire x1="-0.635" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="3.175" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<text x="1.27" y="-1.905" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
-<pin name="TH" x="1.27" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="+5V">
 <text x="0" y="2.54" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
@@ -6586,18 +6559,6 @@ Layer: 94 Symbol</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="THERMAL" prefix="TH">
-<gates>
-<gate name="G$1" symbol="THERMAL" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -6783,8 +6744,8 @@ Layer: 94 Symbol</description>
 </classes>
 <parts>
 <part name="D101" library="HyTechDevices" deviceset="LED_7_SEGMENT_" device="DSM7TA" technology="BLUE_"/>
-<part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="180"/>
-<part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="180"/>
+<part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="15" value="RESISTOR_0603_15"/>
+<part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="15" value="RESISTOR_0603_15"/>
 <part name="RN1" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10K"/>
 <part name="RN4" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10K"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
@@ -6799,12 +6760,12 @@ Layer: 94 Symbol</description>
 <part name="C2" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_15PF"/>
 <part name="C7" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="Q2" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="" technology="PMV15ENEA"/>
-<part name="D105" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="BLUE"/>
-<part name="D104" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="GREEN"/>
-<part name="D103" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="GREEN"/>
-<part name="D100" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="RED"/>
-<part name="D107" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="RED"/>
-<part name="D106" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="YELLOW"/>
+<part name="D105" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="BLUE"/>
+<part name="D104" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="GREEN"/>
+<part name="D103" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="GREEN"/>
+<part name="D100" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="RED"/>
+<part name="D107" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="RED"/>
+<part name="D106" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="AMBER"/>
 <part name="D4" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P3" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -6852,7 +6813,7 @@ Layer: 94 Symbol</description>
 <part name="D6" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
 <part name="D5" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="RN6" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="1K"/>
-<part name="D102" library="HyTechDevices" deviceset="LED_THERMAL_?_*" device="XPE2" technology="YELLOW"/>
+<part name="D102" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="AMBER"/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P1" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -6872,7 +6833,6 @@ Layer: 94 Symbol</description>
 <part name="U2" library="HyTechDevices" deviceset="RE46C100" device=""/>
 <part name="J2" library="HyTechDevices" deviceset="CONNECTOR-6_?_*" device="μF_S_RA" value="CONNECTOR-6_μF_S_RA_"/>
 <part name="DN2" library="HyTechDevices" deviceset="TVS_ARRAY_*" device="" technology="5V"/>
-<part name="TH1" library="HyTechSupplies" deviceset="THERMAL" device=""/>
 <part name="RN3" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="100"/>
 <part name="J4" library="HyTechDevices" deviceset="CONNECTOR-8_?_*" device="μF_S_RA" value="CONNECTOR-8_μF_S_RA_"/>
 <part name="U1" library="HyTechDevices" deviceset="ATMEGA328P-AU" device=""/>
@@ -6897,11 +6857,11 @@ Layer: 94 Symbol</description>
 <part name="P39" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P40" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P41" library="HyTechSupplies" deviceset="+5V" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="60.4"/>
-<part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="60.4"/>
-<part name="R22" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="60.4"/>
-<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="60.4"/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="22"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="15" value="RESISTOR_0603_15"/>
+<part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="22" value="RESISTOR_0805_22"/>
+<part name="R22" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="22" value="RESISTOR_0805_22"/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="15" value="RESISTOR_0603_15"/>
+<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="15" value="RESISTOR_0603_15"/>
 <part name="J3" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="μF_S_RA" value="CONNECTOR-CAN_μF_S_RA_"/>
 <part name="LS100" library="HyTechDevices" deviceset="BUZZER_3_PIN_" device="" technology="CPT-3011C-120"/>
 <part name="U4" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
@@ -7023,27 +6983,27 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="62.992" y="137.16" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="62.992" y="127" size="1.27" layer="95" align="top-center"/>
 </instance>
-<instance part="D105" gate="G$1" x="33.02" y="137.16" smashed="yes">
+<instance part="D105" gate="LED" x="33.02" y="137.16" smashed="yes">
 <attribute name="COLOR" x="33.02" y="135.382" size="1.27" layer="95" align="top-left"/>
 <attribute name="NAME" x="31.75" y="140.716" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="D104" gate="G$1" x="33.02" y="101.6" smashed="yes">
+<instance part="D104" gate="LED" x="33.02" y="101.6" smashed="yes">
 <attribute name="COLOR" x="33.02" y="99.822" size="1.27" layer="95" align="top-left"/>
 <attribute name="NAME" x="31.75" y="105.156" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="D103" gate="G$1" x="33.02" y="48.26" smashed="yes">
+<instance part="D103" gate="LED" x="33.02" y="48.26" smashed="yes">
 <attribute name="COLOR" x="33.02" y="46.482" size="1.27" layer="95" align="top-left"/>
 <attribute name="NAME" x="31.75" y="51.816" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="D100" gate="G$1" x="33.02" y="83.82" smashed="yes">
+<instance part="D100" gate="LED" x="33.02" y="83.82" smashed="yes">
 <attribute name="COLOR" x="33.02" y="82.042" size="1.27" layer="95" align="top-left"/>
 <attribute name="NAME" x="31.75" y="87.376" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="D107" gate="G$1" x="33.02" y="66.04" smashed="yes">
+<instance part="D107" gate="LED" x="33.02" y="66.04" smashed="yes">
 <attribute name="COLOR" x="33.02" y="64.262" size="1.27" layer="95" align="top-left"/>
 <attribute name="NAME" x="31.75" y="69.596" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="D106" gate="G$1" x="33.02" y="22.86" smashed="yes">
+<instance part="D106" gate="LED" x="33.02" y="22.86" smashed="yes">
 <attribute name="COLOR" x="33.02" y="21.082" size="1.27" layer="95" align="top-left"/>
 <attribute name="NAME" x="31.75" y="26.416" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -7266,7 +7226,7 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="77.47" y="143.51" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="77.47" y="140.97" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="D102" gate="G$1" x="33.02" y="119.38" smashed="yes">
+<instance part="D102" gate="LED" x="33.02" y="119.38" smashed="yes">
 <attribute name="COLOR" x="33.02" y="117.602" size="1.27" layer="95" align="top-left"/>
 <attribute name="NAME" x="31.75" y="122.936" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -7367,9 +7327,6 @@ Layer: 94 Symbol</description>
 <instance part="DN2" gate="A" x="45.72" y="38.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.815" y="36.83" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="47.625" y="36.83" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="TH1" gate="G$1" x="25.4" y="12.7" smashed="yes">
-<attribute name="VALUE" x="26.67" y="10.795" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="RN3" gate="A" x="142.24" y="157.48" smashed="yes">
 <attribute name="NAME" x="140.97" y="158.75" size="1.27" layer="95" align="bottom-center"/>
@@ -7867,14 +7824,14 @@ Layer: 94 Symbol</description>
 <junction x="25.4" y="137.16"/>
 <wire x1="27.94" y1="119.38" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
 <junction x="25.4" y="119.38"/>
-<pinref part="D105" gate="G$1" pin="A"/>
-<pinref part="D104" gate="G$1" pin="A"/>
-<pinref part="D103" gate="G$1" pin="A"/>
-<pinref part="D100" gate="G$1" pin="A"/>
+<pinref part="D105" gate="LED" pin="A"/>
+<pinref part="D104" gate="LED" pin="A"/>
+<pinref part="D103" gate="LED" pin="A"/>
+<pinref part="D100" gate="LED" pin="A"/>
 <wire x1="25.4" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="D6" gate="LED" pin="A"/>
-<pinref part="D102" gate="G$1" pin="A"/>
-<pinref part="D107" gate="G$1" pin="A"/>
+<pinref part="D102" gate="LED" pin="A"/>
+<pinref part="D107" gate="LED" pin="A"/>
 <wire x1="27.94" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 <junction x="25.4" y="66.04"/>
 <wire x1="25.4" y1="144.78" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
@@ -8060,7 +8017,7 @@ Layer: 94 Symbol</description>
 <segment>
 <wire x1="27.94" y1="22.86" x2="21.844" y2="22.86" width="0.1524" layer="91"/>
 <label x="21.844" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="D106" gate="G$1" pin="A"/>
+<pinref part="D106" gate="LED" pin="A"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
@@ -8225,34 +8182,34 @@ Layer: 94 Symbol</description>
 <segment>
 <wire x1="35.56" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<pinref part="D104" gate="G$1" pin="C"/>
+<pinref part="D104" gate="LED" pin="C"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <wire x1="38.1" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="D100" gate="G$1" pin="C"/>
+<pinref part="D100" gate="LED" pin="C"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <wire x1="38.1" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="D106" gate="G$1" pin="C"/>
+<pinref part="D106" gate="LED" pin="C"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <wire x1="38.1" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="D107" gate="G$1" pin="C"/>
+<pinref part="D107" gate="LED" pin="C"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <wire x1="35.56" y1="137.16" x2="38.1" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="D105" gate="G$1" pin="C"/>
+<pinref part="D105" gate="LED" pin="C"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -8274,13 +8231,13 @@ Layer: 94 Symbol</description>
 <segment>
 <wire x1="38.1" y1="48.26" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="D103" gate="G$1" pin="C"/>
+<pinref part="D103" gate="LED" pin="C"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <wire x1="38.1" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="D102" gate="G$1" pin="C"/>
+<pinref part="D102" gate="LED" pin="C"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -8715,45 +8672,6 @@ Layer: 94 Symbol</description>
 <pinref part="U5" gate="G$1" pin="!RESET"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="167.64" x2="167.64" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TH" class="0">
-<segment>
-<wire x1="31.75" y1="45.72" x2="31.75" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="D103" gate="G$1" pin="THERMAL"/>
-<pinref part="TH1" gate="G$1" pin="TH"/>
-<wire x1="26.67" y1="15.24" x2="26.67" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="17.78" x2="26.67" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="43.18" x2="31.75" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="43.18" x2="26.67" y2="60.96" width="0.1524" layer="91"/>
-<junction x="26.67" y="43.18"/>
-<wire x1="31.75" y1="63.5" x2="31.75" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="D107" gate="G$1" pin="THERMAL"/>
-<wire x1="26.67" y1="60.96" x2="31.75" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="60.96" x2="26.67" y2="78.74" width="0.1524" layer="91"/>
-<junction x="26.67" y="60.96"/>
-<wire x1="31.75" y1="81.28" x2="31.75" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="D100" gate="G$1" pin="THERMAL"/>
-<wire x1="26.67" y1="78.74" x2="31.75" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="78.74" x2="26.67" y2="96.52" width="0.1524" layer="91"/>
-<junction x="26.67" y="78.74"/>
-<wire x1="31.75" y1="99.06" x2="31.75" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="D104" gate="G$1" pin="THERMAL"/>
-<wire x1="26.67" y1="96.52" x2="31.75" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="96.52" x2="26.67" y2="114.3" width="0.1524" layer="91"/>
-<junction x="26.67" y="96.52"/>
-<wire x1="31.75" y1="116.84" x2="31.75" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="D102" gate="G$1" pin="THERMAL"/>
-<wire x1="26.67" y1="114.3" x2="31.75" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="114.3" x2="26.67" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="132.08" x2="31.75" y2="132.08" width="0.1524" layer="91"/>
-<junction x="26.67" y="114.3"/>
-<pinref part="D105" gate="G$1" pin="THERMAL"/>
-<wire x1="31.75" y1="134.62" x2="31.75" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="31.75" y1="20.32" x2="31.75" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="D106" gate="G$1" pin="THERMAL"/>
-<wire x1="31.75" y1="17.78" x2="26.67" y2="17.78" width="0.1524" layer="91"/>
-<junction x="26.67" y="17.78"/>
 </segment>
 </net>
 <net name="N$45" class="0">
