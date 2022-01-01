@@ -883,7 +883,7 @@ Dashed line is edge of mated connector.</description>
 <circle x="0" y="0" radius="3.75" width="0" layer="41"/>
 <circle x="0" y="0" radius="3.75" width="0" layer="42"/>
 </package>
-<package name="MSOP-16(MSE)">
+<package name="MSE16">
 <description>MSOP-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf"&gt;Datasheet&lt;/a&gt;
@@ -13471,101 +13471,61 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MPN" value="5222" x="155.702" y="-22.86" locked="yes" size="0.7112" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="155.702" y="-15.494" locked="yes" size="0.7112" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="R33" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="110.236" y="-71.374" smashed="yes">
-<attribute name="DKPN" value="" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<element name="R33" library="HyTechDevices" package="0603-RES" value="JUMPER_0603_" x="110.236" y="-71.374" smashed="yes">
+<attribute name="DKPN" value="13-RC0603FR-130RLTR-ND" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER" value="YAGEO" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-130RL" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MPN" value="RC0603FR-130RL" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="110.236" y="-70.739" size="0.7112" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="RESISTANCE" value="DNP" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="TOLERANCE" value="" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="110.236" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 </element>
-<element name="R34" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="106.934" y="-71.374" smashed="yes">
-<attribute name="DKPN" value="" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<element name="R34" library="HyTechDevices" package="0603-RES" value="JUMPER_0603_" x="106.934" y="-71.374" smashed="yes">
+<attribute name="DKPN" value="13-RC0603FR-130RLTR-ND" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER" value="YAGEO" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-130RL" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MPN" value="RC0603FR-130RL" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="106.934" y="-70.739" size="0.7112" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="RESISTANCE" value="DNP" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="TOLERANCE" value="" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="106.934" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 </element>
-<element name="R36" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="103.632" y="-71.374" smashed="yes">
-<attribute name="DKPN" value="" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<element name="R36" library="HyTechDevices" package="0603-RES" value="JUMPER_0603_" x="103.632" y="-71.374" smashed="yes">
+<attribute name="DKPN" value="13-RC0603FR-130RLTR-ND" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER" value="YAGEO" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-130RL" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MPN" value="RC0603FR-130RL" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="103.632" y="-70.739" size="0.7112" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="RESISTANCE" value="DNP" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="TOLERANCE" value="" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="103.632" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 </element>
-<element name="R37" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="100.33" y="-71.374" smashed="yes">
-<attribute name="DKPN" value="" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<element name="R37" library="HyTechDevices" package="0603-RES" value="JUMPER_0603_" x="100.33" y="-71.374" smashed="yes">
+<attribute name="DKPN" value="13-RC0603FR-130RLTR-ND" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER" value="YAGEO" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-130RL" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MPN" value="RC0603FR-130RL" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="100.33" y="-70.739" size="0.7112" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="RESISTANCE" value="DNP" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="TOLERANCE" value="" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="100.33" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 </element>
-<element name="R16" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="173.482" y="-71.374" smashed="yes">
-<attribute name="DKPN" value="" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<element name="R16" library="HyTechDevices" package="0603-RES" value="JUMPER_0603_" x="173.482" y="-71.374" smashed="yes">
+<attribute name="DKPN" value="13-RC0603FR-130RLTR-ND" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER" value="YAGEO" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-130RL" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MPN" value="RC0603FR-130RL" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="173.482" y="-70.739" size="0.7112" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="RESISTANCE" value="DNP" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="TOLERANCE" value="" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="173.482" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 </element>
-<element name="R17" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="170.18" y="-71.374" smashed="yes">
-<attribute name="DKPN" value="" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<element name="R17" library="HyTechDevices" package="0603-RES" value="JUMPER_0603_" x="170.18" y="-71.374" smashed="yes">
+<attribute name="DKPN" value="13-RC0603FR-130RLTR-ND" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER" value="YAGEO" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-130RL" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MPN" value="RC0603FR-130RL" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="170.18" y="-70.739" size="0.7112" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="RESISTANCE" value="DNP" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="TOLERANCE" value="" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="170.18" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 </element>
-<element name="R18" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="166.878" y="-71.374" smashed="yes">
-<attribute name="DKPN" value="" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<element name="R18" library="HyTechDevices" package="0603-RES" value="JUMPER_0603_" x="166.878" y="-71.374" smashed="yes">
+<attribute name="DKPN" value="13-RC0603FR-130RLTR-ND" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER" value="YAGEO" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-130RL" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MPN" value="RC0603FR-130RL" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="166.878" y="-70.739" size="0.7112" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="RESISTANCE" value="DNP" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="TOLERANCE" value="" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="166.878" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 </element>
-<element name="R19" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_DNP" x="163.576" y="-71.374" smashed="yes">
-<attribute name="DKPN" value="" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MANUFACTURER" value="" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MOPN" value="" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="MPN" value="" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<element name="R19" library="HyTechDevices" package="0603-RES" value="JUMPER_0603_" x="163.576" y="-71.374" smashed="yes">
+<attribute name="DKPN" value="13-RC0603FR-130RLTR-ND" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER" value="YAGEO" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MOPN" value="603-RC0603FR-130RL" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
+<attribute name="MPN" value="RC0603FR-130RL" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="163.576" y="-70.739" size="0.7112" layer="25" font="vector" align="bottom-center"/>
-<attribute name="POWER" value="" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="RESISTANCE" value="DNP" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="TOLERANCE" value="" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="163.576" y="-71.374" size="0.7112" layer="27" font="vector" display="off"/>
 </element>
 <element name="R13" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_100" x="193.1162" y="-59.69" smashed="yes" rot="R90">
 <attribute name="DKPN" value="311-100HRCT-ND" x="193.1162" y="-59.69" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
@@ -14122,7 +14082,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <element name="U$4" library="HyTechDevices" package="MOUNTING_M4" value="" x="235.204" y="-81.915" smashed="yes"/>
 <element name="U$12" library="HyTechDevices" package="MOUNTING_M4" value="" x="136.906" y="-81.915" smashed="yes"/>
 <element name="U$22" library="HyTechDevices" package="MOUNTING_M4" value="" x="38.989" y="-81.915" smashed="yes"/>
-<element name="U4" library="HyTechDevices" package="MSOP-16(MSE)" value="LT3990-5" x="93.98" y="-31.496" smashed="yes" rot="R270">
+<element name="U4" library="HyTechDevices" package="MSE16" value="LT3990-5" x="93.98" y="-31.496" smashed="yes" rot="R270">
 <attribute name="DKPN" value="LT3990EMSE-5#PBF-ND" x="93.98" y="-31.496" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Analog Devices Inc." x="93.98" y="-31.496" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MOPN" value="584-LT3990EMSE-5#PBF" x="93.98" y="-31.496" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
@@ -14185,7 +14145,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="VOLTAGE_CONTINUOUS" value="10.84V" x="87.63" y="-32.385" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="VOLTAGE_MAX" value="150V" x="87.63" y="-32.385" size="0.7112" layer="27" font="vector" rot="R270" display="off"/>
 </element>
-<element name="U3" library="HyTechDevices" package="MSOP-16(MSE)" value="LT3990-5" x="189.992" y="-38.227" smashed="yes" rot="R90">
+<element name="U3" library="HyTechDevices" package="MSE16" value="LT3990-5" x="189.992" y="-38.227" smashed="yes" rot="R90">
 <attribute name="DKPN" value="LT3990EMSE-5#PBF-ND" x="183.388" y="-38.227" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Analog Devices Inc." x="183.388" y="-38.227" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MOPN" value="584-LT3990EMSE-5#PBF" x="183.388" y="-38.227" size="0.7112" layer="27" font="vector" rot="R90" display="off"/>

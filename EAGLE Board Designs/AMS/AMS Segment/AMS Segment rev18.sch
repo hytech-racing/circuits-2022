@@ -575,7 +575,7 @@ Dashed line is edge of mated connector.</description>
 <circle x="-1.905" y="1.27" radius="0.127" width="0" layer="21"/>
 <rectangle x1="-1.778" y1="-1.524" x2="1.778" y2="1.524" layer="39"/>
 </package>
-<package name="MSOP-16(MSE)">
+<package name="MSE16">
 <description>MSOP-16
 &lt;br&gt;
 &lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf"&gt;Datasheet&lt;/a&gt;
@@ -783,6 +783,20 @@ Dashed line is edge of mated connector.</description>
 <wire x1="0.875" y1="0.475" x2="0.875" y2="-0.475" width="0.1524" layer="21"/>
 <wire x1="-0.875" y1="-0.475" x2="0.875" y2="-0.475" width="0.1524" layer="21"/>
 </package>
+<package name="2835-LED">
+<description>LUXEON 2835 LED&lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/602/DS236_luxeon_2835_color_line_datasheet-1596094.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A" x="-0.735" y="0" dx="1.93" dy="1.8" layer="1" roundness="11"/>
+<smd name="C" x="1.265" y="0" dx="0.87" dy="1.8" layer="1" roundness="22"/>
+<wire x1="-1.75" y1="1.4" x2="1.75" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="1.4" x2="1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-1.4" x2="-1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-1.4" x2="-1.75" y2="1.4" width="0.127" layer="21"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.032" y1="-1.778" x2="2.032" y2="1.778" layer="39"/>
+<text x="0" y="1.524" size="0.8128" layer="21" font="vector" align="bottom-center">+ -</text>
+<circle x="-2.032" y="1.778" radius="0.127" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -795,6 +809,14 @@ Dashed line is edge of mated connector.</description>
 <pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;CAPACITANCE</text>
+</symbol>
+<symbol name="JUMPER">
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="2" x="5.08" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<text x="0" y="0.508" size="1.27" layer="94">JUMP</text>
+<text x="0" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-3.302" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="RESISTOR">
 <pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
@@ -1041,7 +1063,7 @@ Pins tied to VREG: ISOMD, DTEN
 </symbol>
 <symbol name="TEST_POINT">
 <circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-2.54" y="1.778" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-1.778" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
@@ -1061,7 +1083,7 @@ Pins tied to VREG: ISOMD, DTEN
 <text x="0" y="-15.875" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="LT3990-5">
-<description>LT3990-5 DC-DC Converter
+<description>LT3990-5 DC-DC Regulator
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/3990fa-1270774.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pin name="VIN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
@@ -1269,7 +1291,7 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE" value="25V"/>
 </technology>
 <technology name="25V_1.2NF">
-<attribute name="CAPACITANCE" value="1.2NF"/>
+<attribute name="CAPACITANCE" value="1.2nF"/>
 <attribute name="DKPN" value="311-4079-2-ND"/>
 <attribute name="MANUFACTURER" value="YAGEO"/>
 <attribute name="MOPN" value="603-CC603KRX7R8BB122 "/>
@@ -1417,6 +1439,48 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="MPN" value="C3216X5R1V226M160AC"/>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VOLTAGE" value="35V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER_?_*" prefix="J">
+<description>2 Pin Connector</description>
+<gates>
+<gate name="G$1" symbol="JUMPER" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="NANOFIT_SMD_VERTICAL" package="MOLEX_NANOFIT_SMD_VERTICAL_02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="DKPN" value="900-1054291304TR-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105429-1304"/>
+<attribute name="MPN" value="105429-1304"/>
+</technology>
+<technology name="NATURAL">
+<attribute name="DKPN" value="900-1054312302TR-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105431-2302"/>
+<attribute name="MPN" value="105431-2302"/>
+</technology>
+</technologies>
+</device>
+<device name="0603" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="13-RC0603FR-130RLTR-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-RC0603FR-130RL"/>
+<attribute name="MPN" value="RC0603FR-130RL"/>
 </technology>
 </technologies>
 </device>
@@ -1637,6 +1701,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="RESISTANCE" value="12k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="15">
+<attribute name="DKPN" value="541-15.0STR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale"/>
+<attribute name="MOPN" value="71-CRCW060315R0FKEAH"/>
+<attribute name="MPN" value="CRCW060315R0FKEAHP"/>
+<attribute name="POWER" value="0.33W"/>
+<attribute name="RESISTANCE" value="15"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="2.22V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="150K">
@@ -2161,6 +2236,17 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="VOLTAGE_CONTINUOUS" value="5V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="22">
+<attribute name="DKPN" value="P16066TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P06F22R0V"/>
+<attribute name="MPN" value="ERJ-P06F22R0V"/>
+<attribute name="POWER" value="0.5W"/>
+<attribute name="RESISTANCE" value="22"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.32V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
+</technology>
 <technology name="365K">
 <attribute name="DKPN" value="P20885CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -2219,15 +2305,17 @@ Pins tied to VREG: ISOMD, DTEN
 </deviceset>
 <deviceset name="LED_?_*" prefix="D">
 <description>LED
-&lt;br&gt;
-&lt;ul&gt;
+&lt;ul&gt;0603
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608VBC_D-246010.pdf"&gt;Blue&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608ZGCK-1173388.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-6197.pdf"&gt;Orange&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-J3-PRV-1173336.pdf"&gt;Red&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/SM0603UWC-880813.pdf"&gt;White&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SYCK-J3-PRV-1173311.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
-&lt;\ul&gt;</description>
+&lt;/ul&gt;
+&lt;ul&gt;2835 (Series not on Digikey)
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/602/DS236_luxeon_2835_color_line_datasheet-1596094.pdf"&gt;Lumiled LUXEON 2835 Color Line&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="LED" symbol="DIODE_LED" x="0" y="0"/>
 </gates>
@@ -2279,6 +2367,42 @@ Pins tied to VREG: ISOMD, DTEN
 <attribute name="MANUFACTURER" value="Kingbright"/>
 <attribute name="MOPN" value="604-APT1608SYCK/J3-PRV"/>
 <attribute name="MPN" value="APT1608SYCK/J3-PRV"/>
+</technology>
+</technologies>
+</device>
+<device name="2835" package="2835-LED">
+<connects>
+<connect gate="LED" pin="A" pad="A"/>
+<connect gate="LED" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="AMBER">
+<attribute name="COLOR" value="Amber"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128PCA10350"/>
+<attribute name="MPN" value="L128-PCA1003500000"/>
+</technology>
+<technology name="BLUE">
+<attribute name="COLOR" value="Blue"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128BLU10350"/>
+<attribute name="MPN" value="L128-BLU1003500000"/>
+</technology>
+<technology name="GREEN">
+<attribute name="COLOR" value="Green"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128GRN10350"/>
+<attribute name="MPN" value="L128-GRN1003500000"/>
+</technology>
+<technology name="RED">
+<attribute name="COLOR" value="Red"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128RED10350"/>
+<attribute name="MPN" value="L128-RED1003500000"/>
 </technology>
 </technologies>
 </device>
@@ -2625,7 +2749,7 @@ Leakage Inductance: 0.50 uH max
 <devices>
 <device name="" package="5015">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2675,14 +2799,14 @@ SHT31: High Grade
 </devices>
 </deviceset>
 <deviceset name="LT3990-5" prefix="U">
-<description>LT3990-5 DC-DC Converter
+<description>LT3990-5 DC-DC Regulator
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/609/3990fa-1270774.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LT3990-5" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MSOP-16(MSE)">
+<device name="" package="MSE16">
 <connects>
 <connect gate="G$1" pin="BD" pad="13"/>
 <connect gate="G$1" pin="BOOST" pad="11"/>
@@ -10998,10 +11122,10 @@ We choose to use a 1kΩ for part commonality.</text>
 <part name="F20" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
 <part name="F22" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
 <part name="F23" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1" value="FUSE_0885_1"/>
-<part name="R33" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
-<part name="R34" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
-<part name="R36" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
-<part name="R37" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
+<part name="R33" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603" value="JUMPER_0603_"/>
+<part name="R34" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603" value="JUMPER_0603_"/>
+<part name="R36" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603" value="JUMPER_0603_"/>
+<part name="R37" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603" value="JUMPER_0603_"/>
 <part name="P23" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P24" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="P25" library="HyTechSupplies" deviceset="V-U" device=""/>
@@ -11009,10 +11133,10 @@ We choose to use a 1kΩ for part commonality.</text>
 <part name="P28" library="HyTechSupplies" deviceset="V-U" device=""/>
 <part name="C6" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
 <part name="C7" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
-<part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
-<part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
-<part name="R18" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
-<part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP" value="RESISTOR_0603_DNP"/>
+<part name="R16" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603" value="JUMPER_0603_"/>
+<part name="R17" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603" value="JUMPER_0603_"/>
+<part name="R18" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603" value="JUMPER_0603_"/>
+<part name="R19" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603" value="JUMPER_0603_"/>
 <part name="P29" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P30" library="HyTechSupplies" deviceset="V-L" device=""/>
 <part name="P31" library="HyTechSupplies" deviceset="V-L" device=""/>
@@ -11298,10 +11422,9 @@ are shorted on the pins 10 through 12.
 This decreases the amount of ISOSPI
 transactions as internal register D
 does not need to be read.</text>
-<text x="114.3" y="101.6" size="1.27" layer="97">Address pin 3 is pulled down to V- because
+<text x="111.76" y="104.14" size="1.27" layer="97">Address pin 3 is pulled down to V- because
 we only have 4 segments which means
-8 ICs. There is no need for the option
-to expand. Address pin 0 of the upper IC
+8 ICs total. Address pin 0 of the upper IC
 is pulled up because it will always be
 an odd address and the lower one down
 because it will always be an even address.
@@ -11314,7 +11437,7 @@ common mode choke and centertap that was in stock.</text>
 <text x="5.08" y="0.762" size="1.27" layer="97">These 1A fuses are chosen because we have a peak current
 of 0.604A (0.564A for balancing and around 40 mA for VREG).
 The datasheet recommends 0.675x derating. The 1A fuse fits perfectly.</text>
-<text x="114.3" y="205.74" size="1.27" layer="97">These are 0 Ohm resisters that are used to determine
+<text x="106.68" y="208.28" size="1.27" layer="97">These are 0 Ohm jumpers that are used to determine
 the address of the given LTC6811 chip.</text>
 <text x="30.48" y="114.3" size="1.27" layer="97">We have two fuses here instead
 of one to isolate the upper IC from
@@ -11583,27 +11706,23 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <attribute name="NAME" x="21.59" y="194.31" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="CURRENT" x="21.59" y="191.77" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R33" gate="G$1" x="124.46" y="198.12" smashed="yes">
-<attribute name="NAME" x="123.19" y="199.39" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="123.19" y="196.85" size="1.27" layer="96" align="top-center"/>
+<instance part="R33" gate="G$1" x="121.92" y="198.12" smashed="yes">
+<attribute name="NAME" x="120.65" y="199.39" size="1.27" layer="95" align="bottom-center"/>
 </instance>
-<instance part="R34" gate="G$1" x="116.84" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="118.11" y="201.93" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="118.11" y="199.39" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R34" gate="G$1" x="119.38" y="203.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="120.65" y="204.47" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="R36" gate="G$1" x="144.78" y="200.66" smashed="yes">
-<attribute name="NAME" x="143.51" y="201.93" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="143.51" y="199.39" size="1.27" layer="96" align="top-center"/>
+<instance part="R36" gate="G$1" x="142.24" y="198.12" smashed="yes">
+<attribute name="NAME" x="140.97" y="199.39" size="1.27" layer="95" align="bottom-center"/>
 </instance>
-<instance part="R37" gate="G$1" x="137.16" y="203.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="138.43" y="204.47" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="138.43" y="201.93" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R37" gate="G$1" x="139.7" y="205.74" smashed="yes" rot="MR0">
+<attribute name="NAME" x="140.97" y="207.01" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="P23" gate="G$1" x="132.08" y="198.12" smashed="yes" rot="R90">
-<attribute name="VALUE" x="133.35" y="198.12" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P23" gate="G$1" x="132.08" y="195.58" smashed="yes" rot="R90">
+<attribute name="VALUE" x="133.35" y="195.58" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P24" gate="G$1" x="152.4" y="200.66" smashed="yes" rot="R90">
-<attribute name="VALUE" x="153.67" y="200.66" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P24" gate="G$1" x="152.4" y="195.58" smashed="yes" rot="R90">
+<attribute name="VALUE" x="153.67" y="195.58" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="P25" gate="G$1" x="109.22" y="205.74" smashed="yes" rot="R90">
 <attribute name="VALUE" x="110.49" y="205.74" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -11624,30 +11743,26 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <attribute name="VOLTAGE" x="121.666" y="40.386" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="121.666" y="43.688" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R16" gate="G$1" x="137.16" y="93.98" smashed="yes">
-<attribute name="NAME" x="135.89" y="95.25" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="135.89" y="92.71" size="1.27" layer="96" align="top-center"/>
+<instance part="R16" gate="G$1" x="134.62" y="93.98" smashed="yes">
+<attribute name="NAME" x="133.35" y="95.25" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="R17" gate="G$1" x="129.54" y="96.52" smashed="yes" rot="MR0">
-<attribute name="NAME" x="130.81" y="97.79" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="130.81" y="95.25" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R17" gate="G$1" x="132.08" y="99.06" smashed="yes" rot="MR0">
+<attribute name="NAME" x="133.35" y="100.33" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="R18" gate="G$1" x="157.48" y="96.52" smashed="yes">
-<attribute name="NAME" x="156.21" y="97.79" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="156.21" y="95.25" size="1.27" layer="96" align="top-center"/>
+<instance part="R18" gate="G$1" x="154.94" y="93.98" smashed="yes">
+<attribute name="NAME" x="153.67" y="95.25" size="1.27" layer="95" align="bottom-center"/>
 </instance>
-<instance part="R19" gate="G$1" x="149.86" y="99.06" smashed="yes" rot="MR0">
-<attribute name="NAME" x="151.13" y="100.33" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
-<attribute name="RESISTANCE" x="151.13" y="97.79" size="1.27" layer="96" rot="MR0" align="top-center"/>
+<instance part="R19" gate="G$1" x="154.94" y="101.6" smashed="yes" rot="MR0">
+<attribute name="NAME" x="156.21" y="102.87" size="1.27" layer="95" rot="MR0" align="bottom-center"/>
 </instance>
 <instance part="P29" gate="G$1" x="109.22" y="93.98" smashed="yes" rot="R90">
 <attribute name="VALUE" x="110.49" y="93.98" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P30" gate="G$1" x="142.24" y="93.98" smashed="yes" rot="R90">
-<attribute name="VALUE" x="143.51" y="93.98" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P30" gate="G$1" x="144.78" y="91.44" smashed="yes" rot="R90">
+<attribute name="VALUE" x="146.05" y="91.44" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P31" gate="G$1" x="165.1" y="96.52" smashed="yes" rot="R90">
-<attribute name="VALUE" x="166.37" y="96.52" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="P31" gate="G$1" x="165.1" y="91.44" smashed="yes" rot="R90">
+<attribute name="VALUE" x="166.37" y="91.44" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="P32" gate="G$1" x="109.22" y="101.6" smashed="yes" rot="R90">
 <attribute name="VALUE" x="110.49" y="101.6" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -12948,7 +13063,7 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <label x="106.68" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TP1" gate="G$1" pin="P$1"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="66.04" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
 <label x="205.74" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -13383,9 +13498,9 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <net name="N$25" class="0">
 <segment>
 <pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="200.66" x2="114.3" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="200.66" x2="114.3" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="195.58" x2="121.92" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="A1"/>
 <wire x1="104.14" y1="200.66" x2="114.3" y2="200.66" width="0.1524" layer="91"/>
 <junction x="114.3" y="200.66"/>
@@ -13395,11 +13510,15 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="A2"/>
 <pinref part="R37" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="203.2" x2="134.62" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="203.2" x2="134.62" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="203.2" x2="111.76" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="203.2" x2="111.76" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="205.74" x2="124.46" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="205.74" x2="124.46" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="203.2" x2="134.62" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="203.2" x2="134.62" y2="195.58" width="0.1524" layer="91"/>
 <junction x="134.62" y="203.2"/>
 <pinref part="R36" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="200.66" x2="139.7" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="195.58" x2="142.24" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREF1U" class="3">
@@ -13418,7 +13537,7 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <label x="106.68" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TP9" gate="G$1" pin="P$1"/>
+<pinref part="TP9" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="167.64" x2="114.3" y2="167.64" width="0.1524" layer="91"/>
 <label x="114.3" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -13450,20 +13569,24 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <pinref part="U2" gate="G$1" pin="A1"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="96.52" x2="127" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="127" y1="96.52" x2="127" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="127" y1="96.52" x2="127" y2="91.44" width="0.1524" layer="91"/>
 <junction x="127" y="96.52"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="127" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="127" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$68" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="96.52" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
-<junction x="147.32" y="99.06"/>
+<wire x1="149.86" y1="91.44" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="99.06" x2="137.16" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="99.06" x2="137.16" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="101.6" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="101.6" x2="124.46" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
+<junction x="149.86" y="99.06"/>
 <pinref part="U2" gate="G$1" pin="A2"/>
 </segment>
 </net>
@@ -13546,7 +13669,7 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <pinref part="P45" gate="G$1" pin="V-L"/>
 </segment>
 <segment>
-<pinref part="TP3" gate="G$1" pin="P$1"/>
+<pinref part="TP3" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="P75" gate="G$1" pin="V-L"/>
 </segment>
@@ -13633,11 +13756,12 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="P30" gate="G$1" pin="V-L"/>
+<wire x1="139.7" y1="91.44" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="P31" gate="G$1" pin="V-L"/>
-<wire x1="162.56" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -13847,7 +13971,7 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <pinref part="P56" gate="G$1" pin="V-U"/>
 </segment>
 <segment>
-<pinref part="TP7" gate="G$1" pin="P$1"/>
+<pinref part="TP7" gate="G$1" pin="1"/>
 <wire x1="127" y1="167.64" x2="134.62" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="P76" gate="G$1" pin="V-U"/>
 </segment>
@@ -13921,12 +14045,12 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <segment>
 <pinref part="R33" gate="G$1" pin="2"/>
 <pinref part="P23" gate="G$1" pin="V-U"/>
-<wire x1="129.54" y1="198.12" x2="127" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="195.58" x2="127" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R36" gate="G$1" pin="2"/>
 <pinref part="P24" gate="G$1" pin="V-U"/>
-<wire x1="149.86" y1="200.66" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="195.58" x2="147.32" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P28" gate="G$1" pin="V-U"/>
@@ -14097,7 +14221,7 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="P78" gate="G$1" pin="VREGL"/>
 </segment>
 <segment>
@@ -14106,7 +14230,7 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <pinref part="P79" gate="G$1" pin="VREGL"/>
 </segment>
 <segment>
-<pinref part="TP4" gate="G$1" pin="P$1"/>
+<pinref part="TP4" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
 <label x="223.52" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -14173,16 +14297,16 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 </segment>
 <segment>
 <pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="200.66" x2="124.46" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="200.66" x2="124.46" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="P81" gate="G$1" pin="VREGU"/>
 </segment>
 <segment>
 <pinref part="R37" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="203.2" x2="144.78" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="203.2" x2="144.78" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="P82" gate="G$1" pin="VREGU"/>
 </segment>
 <segment>
-<pinref part="TP8" gate="G$1" pin="P$1"/>
+<pinref part="TP8" gate="G$1" pin="1"/>
 <wire x1="127" y1="175.26" x2="129.54" y2="175.26" width="0.1524" layer="91"/>
 <label x="129.54" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -14239,7 +14363,7 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 </net>
 <net name="V+L" class="4">
 <segment>
-<pinref part="TP2" gate="G$1" pin="P$1"/>
+<pinref part="TP2" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="73.66" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="P51" gate="G$1" pin="V+L"/>
 </segment>
@@ -14256,7 +14380,7 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 </net>
 <net name="V+U" class="3">
 <segment>
-<pinref part="TP10" gate="G$1" pin="P$1"/>
+<pinref part="TP10" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="175.26" x2="114.3" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="P27" gate="G$1" pin="V+U"/>
 </segment>
@@ -14306,7 +14430,7 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <label x="205.74" y="121.92" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="TP5" gate="G$1" pin="P$1"/>
+<pinref part="TP5" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="121.92" x2="218.44" y2="121.92" width="0.1524" layer="91"/>
 <label x="218.44" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -14330,7 +14454,7 @@ per the datasheet to maximize GPIO analog accuracy.</text>
 <label x="205.74" y="142.24" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="TP6" gate="G$1" pin="P$1"/>
+<pinref part="TP6" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="91"/>
 <label x="218.44" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
