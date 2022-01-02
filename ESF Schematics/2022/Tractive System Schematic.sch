@@ -3009,6 +3009,8 @@ Layer: 94 Symbol</description>
 <wire x1="162.56" y1="93.98" x2="162.56" y2="73.66" width="0.8128" layer="97"/>
 <wire x1="162.56" y1="73.66" x2="142.24" y2="73.66" width="0.8128" layer="97"/>
 <wire x1="142.24" y1="73.66" x2="142.24" y2="93.98" width="0.8128" layer="97"/>
+<text x="254" y="116.84" size="1.27" layer="97">TSMP+</text>
+<text x="254" y="96.52" size="1.27" layer="97" align="top-left">TSMP-</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="142.24" y="101.6" smashed="yes" rot="R180"/>

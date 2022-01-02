@@ -3411,6 +3411,8 @@ Layer: 94 Symbol</description>
 <part name="A3" library="HyTechSymbolsTemp" deviceset="INLINE_GFCI_*" device="" technology="GFM20-3WC"/>
 <part name="TSMP+RES" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="10k"/>
 <part name="TSMP-RES" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="10k"/>
+<part name="J19" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
+<part name="J20" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
 </parts>
 <sheets>
 <sheet>
@@ -3454,6 +3456,12 @@ AC Power</text>
 <text x="5.08" y="99.06" size="1.27" layer="97" align="top-left">12AWG</text>
 <text x="78.74" y="96.52" size="1.27" layer="97" align="top-left">12AWG</text>
 <text x="33.02" y="96.52" size="1.27" layer="97" align="top-left">12AWG</text>
+<wire x1="152.4" y1="106.68" x2="152.4" y2="86.36" width="0.8128" layer="97"/>
+<wire x1="152.4" y1="86.36" x2="180.34" y2="86.36" width="0.8128" layer="97"/>
+<wire x1="180.34" y1="86.36" x2="180.34" y2="106.68" width="0.8128" layer="97"/>
+<wire x1="180.34" y1="106.68" x2="152.4" y2="106.68" width="0.8128" layer="97"/>
+<text x="154.94" y="88.9" size="1.778" layer="97">HVD</text>
+<text x="177.8" y="109.22" size="1.27" layer="97">35mm^2</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="170.18" y="137.16" smashed="yes">
@@ -3615,6 +3623,14 @@ AC Power</text>
 <instance part="TSMP-RES" gate="G$1" x="251.46" y="142.24" smashed="yes">
 <attribute name="NAME" x="250.19" y="143.51" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="250.19" y="140.97" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="J19" gate="G$1" x="167.64" y="101.6" smashed="yes">
+<attribute name="MPN" x="167.64" y="93.345" size="1.27" layer="96" align="top-left"/>
+<attribute name="MANUFACTURER" x="167.64" y="102.362" size="1.27" layer="96"/>
+</instance>
+<instance part="J20" gate="G$1" x="165.1" y="101.6" smashed="yes" rot="MR0">
+<attribute name="MPN" x="165.1" y="93.345" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<attribute name="MANUFACTURER" x="165.1" y="102.362" size="1.27" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -3859,15 +3875,18 @@ AC Power</text>
 <net name="HVD+" class="0">
 <segment>
 <pinref part="J11" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="106.68" x2="180.34" y2="106.68" width="0.889" layer="91"/>
-<label x="180.34" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="185.42" y1="106.68" x2="182.88" y2="106.68" width="0.889" layer="91"/>
+<wire x1="182.88" y1="106.68" x2="182.88" y2="99.06" width="0.889" layer="91"/>
+<pinref part="J19" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="99.06" x2="177.8" y2="99.06" width="0.889" layer="91"/>
 </segment>
 </net>
 <net name="HVD-" class="0">
 <segment>
 <pinref part="J13" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="96.52" x2="180.34" y2="96.52" width="0.889" layer="91"/>
-<label x="180.34" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J19" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="96.52" x2="180.34" y2="96.52" width="0.889" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -3987,6 +4006,13 @@ AC Power</text>
 <pinref part="U$4" gate="G$1" pin="2"/>
 <pinref part="J18" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="132.08" x2="139.7" y2="132.08" width="0.3048" layer="91"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="J20" gate="G$1" pin="1"/>
+<pinref part="J20" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="99.06" x2="154.94" y2="96.52" width="0.889" layer="91"/>
 </segment>
 </net>
 </nets>
