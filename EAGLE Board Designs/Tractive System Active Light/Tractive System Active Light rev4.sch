@@ -363,6 +363,18 @@ Dashed line is edge of mated connector.</description>
 <smd name="1" x="1.5" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
 <smd name="3" x="1.5" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
 </package>
+<package name="MOUNTING_M3">
+<description>M3 Mounting Hole
+&lt;br&gt;
+&lt;a href="https://www.engineersedge.com/iso_socket_head_screw.htm"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
+&lt;a href = "https://pcbartists.com/uncategorized/pcb-drill-size-for-standard-screws-fasteners/"&gt;Drill Sizes&lt;/a&gt;</description>
+<circle x="0" y="0" radius="3.2" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.2" width="0" layer="40"/>
+<circle x="0" y="0" radius="3.2" width="0" layer="43"/>
+<pad name="P$1" x="0" y="0" drill="3.4" diameter="6"/>
+<text x="0" y="3.5" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.5" size="0.8128" layer="27" font="vector" align="top-center">M3</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE_LED_RGBW">
@@ -567,6 +579,14 @@ Dashed line is edge of mated connector.</description>
 <pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="MOUNTING_HEATSINK">
+<description>&lt;a href = "https://my.altium.com/altium-designer/getting-started/creating-pcb-mounting-holes"&gt;Mounting hole&lt;/a&gt; with exposed copper for heatsinking.</description>
+<circle x="0" y="0" radius="1.905" width="0.1524" layer="94"/>
+<pin name="P$1" x="-3.81" y="0" visible="off" length="point" direction="pas"/>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="2.54" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1430,6 +1450,25 @@ Dashed line is edge of mated connector.</description>
 <attribute name="MOPN" value="538-0430450411"/>
 <attribute name="MPN" value="0430450411"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNTING_HEATSINK_*" prefix="H">
+<description>M3 Mounting Hole
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.engineersedge.com/iso_socket_head_screw.htm"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="MOUNTING_HEATSINK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M3" package="MOUNTING_M3">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4093,6 +4132,8 @@ Layer: 94 Symbol</description>
 <part name="P2" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
 <part name="J1" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
+<part name="H1" library="HyTechDevices" deviceset="MOUNTING_HEATSINK_*" device="M3"/>
+<part name="H2" library="HyTechDevices" deviceset="MOUNTING_HEATSINK_*" device="M3"/>
 </parts>
 <sheets>
 <sheet>
@@ -4146,6 +4187,12 @@ Layer: 94 Symbol</description>
 </instance>
 <instance part="J1" gate="G$1" x="27.94" y="154.94" smashed="yes">
 <attribute name="NAME" x="27.94" y="155.702" size="1.27" layer="95"/>
+</instance>
+<instance part="H1" gate="G$1" x="101.6" y="132.08" smashed="yes">
+<attribute name="NAME" x="101.6" y="134.62" size="1.27" layer="95" align="bottom-center"/>
+</instance>
+<instance part="H2" gate="G$1" x="142.24" y="132.08" smashed="yes">
+<attribute name="NAME" x="142.24" y="134.62" size="1.27" layer="95" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -4262,29 +4309,26 @@ Layer: 94 Symbol</description>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="THERMAL"/>
-<wire x1="76.2" y1="144.78" x2="76.2" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="139.7" x2="77.47" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
+<wire x1="76.2" y1="144.78" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="132.08" x2="77.47" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="THERMAL"/>
-<wire x1="96.52" y1="144.78" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="139.7" x2="97.79" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="H1" gate="G$1" pin="P$1"/>
+<wire x1="96.52" y1="144.78" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="132.08" x2="97.79" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
+<junction x="96.52" y="132.08"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="THERMAL"/>
-<wire x1="116.84" y1="144.78" x2="116.84" y2="139.954" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="139.954" x2="118.11" y2="139.954" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
+<net name="N$13" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="THERMAL"/>
-<wire x1="137.16" y1="144.78" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="139.7" x2="138.43" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="H2" gate="G$1" pin="P$1"/>
+<wire x1="137.16" y1="144.78" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="132.08" x2="138.43" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="THERMAL"/>
+<wire x1="116.84" y1="144.78" x2="116.84" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
+<junction x="137.16" y="132.08"/>
 </segment>
 </net>
 </nets>
