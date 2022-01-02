@@ -327,33 +327,31 @@ Dashed line is edge of mated connector.</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="JLCPCB (2 Layer)">
-<description language="en">&lt;b&gt;JLCPCB Design Rules (2 Layers)&lt;/b&gt;
+<designrules name="HyTech Default (2 Layer)">
+<description language="en">
+&lt;b&gt;HyTech Default Design Rules (2 Layer)&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications.
-&lt;p&gt;
-Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;JLCPCB&lt;/a&gt;
-&lt;/p&gt;</description>
+These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, OshPark, Sunstone Circuits) the team uses.
+</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.53mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="5mil"/>
-<param name="mdWirePad" value="5mil"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="5mil"/>
+<param name="mdPadPad" value="6mil"/>
 <param name="mdPadVia" value="10mil"/>
 <param name="mdViaVia" value="20mil"/>
-<param name="mdSmdPad" value="5mil"/>
+<param name="mdSmdPad" value="6mil"/>
 <param name="mdSmdVia" value="10mil"/>
-<param name="mdSmdSmd" value="5mil"/>
-<param name="mdViaViaSameLayer" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
+<param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="0.2mm"/>
+<param name="mdCopperDimension" value="20mil"/>
 <param name="mdDrill" value="21mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="5mil"/>
-<param name="msDrill" value="0.3mm"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="14mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -361,21 +359,21 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <param name="rvPadBottom" value="0.25"/>
 <param name="rvViaOuter" value="0.25"/>
 <param name="rvViaInner" value="0.25"/>
-<param name="rvMicroViaOuter" value="0"/>
-<param name="rvMicroViaInner" value="0"/>
-<param name="rlMinPadTop" value="6mil"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="6mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="6mil"/>
+<param name="rlMinPadBottom" value="8mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="6mil"/>
-<param name="rlMaxViaOuter" value="12mil"/>
-<param name="rlMinViaInner" value="6mil"/>
-<param name="rlMaxViaInner" value="12mil"/>
-<param name="rlMinMicroViaOuter" value="6mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="8mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="6mil"/>
+<param name="rlMinMicroViaInner" value="8mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -571,12 +569,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="1.13V" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VOLTAGE_MAX" value="150V" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="J1" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL" value="CONNECTOR-4_μF_S_RA_" x="0" y="5.08" smashed="yes">
-<attribute name="DKPN" value="WM1832CT-ND" x="0" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Molex" x="0" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="538-0430450411" x="0" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="0430450411" x="0" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="0" y="-1.397" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
+<element name="J1" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL" value="CONNECTOR-4_μF_S_RA_" x="0" y="5.08" smashed="yes" rot="MR0">
+<attribute name="DKPN" value="WM1832CT-ND" x="0" y="5.08" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER" value="Molex" x="0" y="5.08" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MOPN" value="538-0430450411" x="0" y="5.08" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="0430450411" x="0" y="5.08" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="0" y="-1.397" size="0.8128" layer="26" rot="MR180" align="bottom-center"/>
 </element>
 <element name="H1" library="HyTechDevices" package="MOUNTING_M3" value="MOUNTING_HEATSINK_M3" x="18.542" y="11.43" smashed="yes">
 <attribute name="NAME" x="18.542" y="14.93" size="0.8128" layer="25" font="vector" align="bottom-center"/>
@@ -598,27 +596,27 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="N$2">
 <contactref element="U$3" pad="B-"/>
 <contactref element="U$4" pad="B+"/>
-<wire x1="-13.3625" y1="18.685" x2="-13.39710625" y2="18.685" width="0.4064" layer="16"/>
-<wire x1="-13.39710625" y1="18.685" x2="-14.691365625" y2="19.979259375" width="0.4064" layer="16"/>
+<wire x1="-13.3625" y1="18.685" x2="-13.3625" y2="19.15839375" width="0.4064" layer="16"/>
+<wire x1="-13.3625" y1="19.15839375" x2="-14.183365625" y2="19.979259375" width="0.4064" layer="16"/>
 <wire x1="-15.580740625" y1="19.979259375" x2="-19.05" y2="16.51" width="0.4064" layer="16"/>
 <via x="-19.05" y="16.51" extent="1-16" drill="0.35"/>
 <wire x1="-19.05" y1="16.51" x2="-20.6175" y2="16.51" width="0.4064" layer="1"/>
 <wire x1="-20.6175" y1="16.51" x2="-28.6025" y2="8.525" width="0.4064" layer="1"/>
-<wire x1="-14.691365625" y1="19.979259375" x2="-15.580740625" y2="19.979259375" width="0.4064" layer="16"/>
+<wire x1="-14.183365625" y1="19.979259375" x2="-15.580740625" y2="19.979259375" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="U$2" pad="A-"/>
 <contactref element="U$3" pad="A+"/>
-<wire x1="-14.7125" y1="14.335" x2="-11.8075" y2="11.43" width="0.4064" layer="16"/>
-<wire x1="11.8075" y1="11.43" x2="14.7125" y2="14.335" width="0.4064" layer="16"/>
-<wire x1="-11.8075" y1="11.43" x2="11.8075" y2="11.43" width="0.4064" layer="16"/>
+<wire x1="-14.7125" y1="14.335" x2="-12.8235" y2="12.446" width="0.4064" layer="16"/>
+<wire x1="12.8235" y1="12.446" x2="14.7125" y2="14.335" width="0.4064" layer="16"/>
+<wire x1="-12.8235" y1="12.446" x2="12.8235" y2="12.446" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="U$2" pad="B-"/>
 <contactref element="U$3" pad="B+"/>
-<wire x1="-13.3625" y1="14.335" x2="-11.7275" y2="12.7" width="0.4064" layer="16"/>
-<wire x1="11.7275" y1="12.7" x2="13.3625" y2="14.335" width="0.4064" layer="16"/>
-<wire x1="-11.7275" y1="12.7" x2="11.7275" y2="12.7" width="0.4064" layer="16"/>
+<wire x1="-13.3625" y1="14.335" x2="-12.2355" y2="13.208" width="0.4064" layer="16"/>
+<wire x1="12.2355" y1="13.208" x2="13.3625" y2="14.335" width="0.4064" layer="16"/>
+<wire x1="-12.2355" y1="13.208" x2="12.2355" y2="13.208" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$1" pad="A-"/>
@@ -663,21 +661,24 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-29.9525" y1="4.175" x2="-29.9525" y2="3.2825" width="0.4064" layer="1"/>
 <wire x1="-29.9525" y1="3.2825" x2="-27.94" y2="1.27" width="0.4064" layer="1"/>
 <contactref element="J1" pad="3"/>
-<wire x1="-27.94" y1="1.27" x2="-15.24" y2="1.27" width="0.4064" layer="1"/>
-<wire x1="-15.24" y1="1.27" x2="-3.81" y2="12.7" width="0.4064" layer="1"/>
-<wire x1="-3.81" y1="12.7" x2="0" y2="12.7" width="0.4064" layer="1"/>
-<wire x1="0" y1="12.7" x2="1.5" y2="14.2" width="0.4064" layer="1"/>
-<wire x1="1.5" y1="14.2" x2="1.5" y2="15.1765" width="0.4064" layer="1"/>
+<wire x1="-27.94" y1="1.27" x2="-16.51" y2="1.27" width="0.4064" layer="1"/>
+<wire x1="-3.58" y1="14.2" x2="-16.51" y2="1.27" width="0.4064" layer="1"/>
+<wire x1="-1.5" y1="15.1765" x2="-2.6035" y2="15.1765" width="0.4064" layer="16"/>
+<wire x1="-2.6035" y1="15.1765" x2="-3.58" y2="14.2" width="0.4064" layer="16"/>
+<via x="-3.58" y="14.2" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="GND_GREEN">
 <contactref element="U$4" pad="B-"/>
 <wire x1="-28.6025" y1="4.175" x2="-28.6025" y2="3.2025" width="0.4064" layer="1"/>
 <wire x1="-28.6025" y1="3.2025" x2="-27.94" y2="2.54" width="0.4064" layer="1"/>
 <contactref element="J1" pad="4"/>
-<wire x1="-27.94" y1="2.54" x2="-16.51" y2="2.54" width="0.4064" layer="1"/>
-<wire x1="-16.51" y1="2.54" x2="-3.81" y2="15.24" width="0.4064" layer="1"/>
-<wire x1="-3.81" y1="15.24" x2="-1.5635" y2="15.24" width="0.4064" layer="1"/>
-<wire x1="-1.5635" y1="15.24" x2="-1.5" y2="15.1765" width="0.4064" layer="1"/>
+<wire x1="-27.94" y1="2.54" x2="-17.78" y2="2.54" width="0.4064" layer="1"/>
+<wire x1="-1.5635" y1="17.78" x2="-2.54" y2="17.78" width="0.4064" layer="1"/>
+<wire x1="-2.54" y1="17.78" x2="-17.78" y2="2.54" width="0.4064" layer="1"/>
+<wire x1="0.1665" y1="17.78" x2="-1.5635" y2="17.78" width="0.4064" layer="16"/>
+<wire x1="1.5" y1="16.4465" x2="1.5" y2="15.1765" width="0.4064" layer="16"/>
+<wire x1="1.5" y1="16.4465" x2="0.1665" y2="17.78" width="0.4064" layer="16"/>
+<via x="-1.5635" y="17.78" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="+12V">
 <contactref element="R1" pad="1"/>
@@ -685,11 +686,16 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="R3" pad="1"/>
 <wire x1="11.43" y1="3.59" x2="16.51" y2="3.59" width="0.4064" layer="1"/>
 <contactref element="J1" pad="1"/>
-<wire x1="1.5" y1="10.5537" x2="7.2263" y2="10.5537" width="0.4064" layer="1"/>
+<wire x1="-0.23" y1="8.0137" x2="-1.5" y2="9.2837" width="0.4064" layer="16"/>
+<wire x1="-1.5" y1="10.5537" x2="-1.5" y2="9.2837" width="0.4064" layer="16"/>
+<wire x1="2.1463" y1="8.0137" x2="-0.23" y2="8.0137" width="0.4064" layer="16"/>
+<wire x1="4.6863" y1="10.5537" x2="7.2263" y2="10.5537" width="0.4064" layer="16"/>
+<wire x1="4.6863" y1="10.5537" x2="2.1463" y2="8.0137" width="0.4064" layer="16"/>
 <wire x1="7.2263" y1="10.5537" x2="11.43" y2="6.35" width="0.4064" layer="1"/>
 <wire x1="11.43" y1="6.35" x2="11.43" y2="3.59" width="0.4064" layer="1"/>
 <via x="11.43" y="6.35" extent="1-16" drill="0.35"/>
 <wire x1="11.43" y1="6.35" x2="13.12" y2="6.35" width="0.4064" layer="16"/>
+<via x="7.2263" y="10.5537" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$8">
 <contactref element="U$1" pad="THERMAL"/>
