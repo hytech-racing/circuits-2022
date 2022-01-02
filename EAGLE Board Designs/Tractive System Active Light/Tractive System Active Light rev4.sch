@@ -4150,7 +4150,11 @@ Layer: 94 Symbol</description>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.1" value="RESISTOR_0603_5.1"/>
 <part name="P1" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P2" library="HyTechSupplies" deviceset="+12V" device=""/>
-<part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
+<part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESIGNER_SCHEMATIC" value="Liwei Sun"/>
+<attribute name="ENGINEER" value="Liwei Sun"/>
+<attribute name="REVIEWER_SCHEMATIC" value="Zekun Li"/>
+</part>
 <part name="J1" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
 <part name="H1" library="HyTechDevices" deviceset="MOUNTING_HEATSINK_*" device="M3"/>
 <part name="H2" library="HyTechDevices" deviceset="MOUNTING_HEATSINK_*" device="M3"/>
