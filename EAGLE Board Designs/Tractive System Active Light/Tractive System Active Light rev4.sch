@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -202,13 +202,17 @@
 <smd name="C+" x="0.6625" y="2.175" dx="0.925" dy="0.65" layer="1"/>
 <smd name="B-" x="-0.6625" y="-2.175" dx="0.925" dy="0.65" layer="1"/>
 <smd name="C-" x="0.6625" y="-2.175" dx="0.925" dy="0.65" layer="1"/>
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
 <rectangle x1="-2.794" y1="-2.794" x2="2.794" y2="2.794" layer="39"/>
-<text x="-3.048" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<circle x="3.81" y="-2.175" radius="0.635" width="0" layer="21"/>
+<text x="0" y="2.794" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="3.048" y="-2.175" radius="0.127" width="0" layer="21"/>
+<text x="-3.048" y="0" size="0.8128" layer="21" align="center">+
+
+
+-</text>
 </package>
 <package name="PWR163">
 <description>PWR163 Resistor
@@ -410,7 +414,7 @@ Dashed line is edge of mated connector.</description>
 <wire x1="7.62" y1="-7.62" x2="5.08" y2="-8.89" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.1524" layer="94"/>
-<pin name="THERMAL" x="2.54" y="-43.18" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="THERMAL" x="1.27" y="-43.18" visible="off" length="short" direction="pas" rot="R90"/>
 <text x="3.302" y="-41.148" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 <wire x1="5.08" y1="-3.302" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
 <polygon width="0.1524" layer="94">
@@ -590,7 +594,7 @@ Dashed line is edge of mated connector.</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED_RGBW_*">
+<deviceset name="LED_RGBW_*" prefix="D">
 <description>Inolux IN-505FCHWV RGBW LED
 &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/180/IN-505FCHWV-1488542.pdf"&gt; Datasheet&lt; /a&gt;</description>
@@ -837,6 +841,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="RESISTANCE" value="12k"/>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
+<technology name="15">
+<attribute name="DKPN" value="541-15.0STR-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale"/>
+<attribute name="MOPN" value="71-CRCW060315R0FKEAH"/>
+<attribute name="MPN" value="CRCW060315R0FKEAHP"/>
+<attribute name="POWER" value="0.33W"/>
+<attribute name="RESISTANCE" value="15"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="2.22V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
 <technology name="150K">
@@ -1360,6 +1375,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="5V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="22">
+<attribute name="DKPN" value="P16066TR-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-P06F22R0V"/>
+<attribute name="MPN" value="ERJ-P06F22R0V"/>
+<attribute name="POWER" value="0.5W"/>
+<attribute name="RESISTANCE" value="22"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="3.32V"/>
+<attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
 <technology name="365K">
 <attribute name="DKPN" value="P20885CT-ND"/>
@@ -4188,11 +4214,11 @@ Layer: 94 Symbol</description>
 <instance part="J1" gate="G$1" x="27.94" y="154.94" smashed="yes">
 <attribute name="NAME" x="27.94" y="155.702" size="1.27" layer="95"/>
 </instance>
-<instance part="H1" gate="G$1" x="101.6" y="132.08" smashed="yes">
-<attribute name="NAME" x="101.6" y="134.62" size="1.27" layer="95" align="bottom-center"/>
+<instance part="H1" gate="G$1" x="100.33" y="132.08" smashed="yes">
+<attribute name="NAME" x="100.33" y="134.62" size="1.27" layer="95" align="bottom-center"/>
 </instance>
-<instance part="H2" gate="G$1" x="142.24" y="132.08" smashed="yes">
-<attribute name="NAME" x="142.24" y="134.62" size="1.27" layer="95" align="bottom-center"/>
+<instance part="H2" gate="G$1" x="140.97" y="132.08" smashed="yes">
+<attribute name="NAME" x="140.97" y="134.62" size="1.27" layer="95" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -4309,26 +4335,25 @@ Layer: 94 Symbol</description>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="THERMAL"/>
-<wire x1="76.2" y1="144.78" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="132.08" x2="77.47" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="74.93" y1="144.78" x2="74.93" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="THERMAL"/>
 <pinref part="H1" gate="G$1" pin="P$1"/>
-<wire x1="96.52" y1="144.78" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="132.08" x2="97.79" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="77.47" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
-<junction x="96.52" y="132.08"/>
+<wire x1="95.25" y1="144.78" x2="95.25" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="74.93" y1="132.08" x2="95.25" y2="132.08" width="0.1524" layer="91"/>
+<junction x="95.25" y="132.08"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="THERMAL"/>
 <pinref part="H2" gate="G$1" pin="P$1"/>
-<wire x1="137.16" y1="144.78" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="132.08" x2="138.43" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="135.89" y1="144.78" x2="135.89" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="135.89" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="THERMAL"/>
-<wire x1="116.84" y1="144.78" x2="116.84" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
-<junction x="137.16" y="132.08"/>
+<wire x1="115.57" y1="144.78" x2="115.57" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="132.08" x2="135.89" y2="132.08" width="0.1524" layer="91"/>
+<junction x="135.89" y="132.08"/>
 </segment>
 </net>
 </nets>
@@ -4336,4 +4361,10 @@ Layer: 94 Symbol</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
