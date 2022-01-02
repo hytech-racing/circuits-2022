@@ -283,9 +283,11 @@ Dashed line is edge of mated connector.</description>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
 <rectangle x1="-2.794" y1="-2.794" x2="2.794" y2="2.794" layer="39"/>
 <text x="0" y="2.794" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="3.048" y="-2.175" locked="yes" radius="0.127" width="0" layer="21"/>
-<text x="-3.048" y="1.778" size="0.762" layer="21" align="center">+</text>
-<text x="-3.048" y="-1.778" size="1.016" layer="21" align="center">-</text>
+<circle x="3.048" y="-2.175" radius="0.127" width="0" layer="21"/>
+<text x="-3.048" y="0" size="0.8128" layer="21" align="center">+
+
+
+-</text>
 </package>
 <package name="0603-RES">
 <description>0603 Resistor Footprint
@@ -526,13 +528,13 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="5.29V" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE_MAX" value="400V" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$1" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="27.94" y="6.35" smashed="yes" rot="R180">
-<attribute name="COLOR" value="RGBW" x="27.94" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DKPN" value="1830-1097-2-ND" x="1.27" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="INOLUX" x="1.27" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOPN" value="743-IN-505FCHWV" x="1.27" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="IN-505FCHWV" x="1.27" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="28.956" y="3.302" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<element name="U$1" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="27.94" y="6.35" smashed="yes" rot="SR180">
+<attribute name="COLOR" value="RGBW" x="27.94" y="6.35" size="1.778" layer="27" rot="SR180" display="off"/>
+<attribute name="DKPN" value="1830-1097-2-ND" x="1.27" y="10.16" size="1.778" layer="27" rot="SR180" display="off"/>
+<attribute name="MANUFACTURER" value="INOLUX" x="1.27" y="10.16" size="1.778" layer="27" rot="SR180" display="off"/>
+<attribute name="MOPN" value="743-IN-505FCHWV" x="1.27" y="10.16" size="1.778" layer="27" rot="SR180" display="off"/>
+<attribute name="MPN" value="IN-505FCHWV" x="1.27" y="10.16" size="1.778" layer="27" rot="SR180" display="off"/>
+<attribute name="NAME" x="28.956" y="3.302" size="0.8128" layer="25" font="vector" rot="SR180" align="bottom-center"/>
 </element>
 <element name="U$2" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="12.7" y="16.51" smashed="yes" rot="MR0">
 <attribute name="COLOR" value="RGBW" x="12.7" y="16.51" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -541,13 +543,13 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="MOPN" value="743-IN-505FCHWV" x="-3.81" y="-15.24" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="IN-505FCHWV" x="-3.81" y="-15.24" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="U$3" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="-12.7" y="16.51" smashed="yes" rot="MR180">
-<attribute name="COLOR" value="RGBW" x="-12.7" y="16.51" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DKPN" value="1830-1097-2-ND" x="10.16" y="48.26" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER" value="INOLUX" x="10.16" y="48.26" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MOPN" value="743-IN-505FCHWV" x="10.16" y="48.26" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="IN-505FCHWV" x="10.16" y="48.26" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="-13.716" y="13.462" size="0.8128" layer="26" font="vector" rot="MR180" align="bottom-center"/>
+<element name="U$3" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="-12.7" y="16.51" smashed="yes" rot="SMR180">
+<attribute name="COLOR" value="RGBW" x="-12.7" y="16.51" size="1.778" layer="28" rot="SMR180" display="off"/>
+<attribute name="DKPN" value="1830-1097-2-ND" x="10.16" y="48.26" size="1.778" layer="28" rot="SMR180" display="off"/>
+<attribute name="MANUFACTURER" value="INOLUX" x="10.16" y="48.26" size="1.778" layer="28" rot="SMR180" display="off"/>
+<attribute name="MOPN" value="743-IN-505FCHWV" x="10.16" y="48.26" size="1.778" layer="28" rot="SMR180" display="off"/>
+<attribute name="MPN" value="IN-505FCHWV" x="10.16" y="48.26" size="1.778" layer="28" rot="SMR180" display="off"/>
+<attribute name="NAME" x="-13.716" y="13.462" size="0.8128" layer="26" font="vector" rot="SMR180" align="bottom-center"/>
 </element>
 <element name="U$4" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="-27.94" y="6.35" smashed="yes">
 <attribute name="COLOR" value="RGBW" x="-27.94" y="6.35" size="1.778" layer="27" display="off"/>
@@ -737,4 +739,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
