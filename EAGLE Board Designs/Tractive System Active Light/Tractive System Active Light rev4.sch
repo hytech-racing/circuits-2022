@@ -208,11 +208,9 @@
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
 <rectangle x1="-2.794" y1="-2.794" x2="2.794" y2="2.794" layer="39"/>
 <text x="0" y="2.794" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="3.048" y="-2.175" radius="0.127" width="0" layer="21"/>
-<text x="-3.048" y="0" size="0.8128" layer="21" align="center">+
-
-
--</text>
+<circle x="3.048" y="-2.175" locked="yes" radius="0.127" width="0" layer="21"/>
+<text x="-3.048" y="1.778" size="0.762" layer="21" align="center">+</text>
+<text x="-3.048" y="-1.778" size="1.016" layer="21" align="center">-</text>
 </package>
 <package name="PWR163">
 <description>PWR163 Resistor
@@ -4361,10 +4359,4 @@ Layer: 94 Symbol</description>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
