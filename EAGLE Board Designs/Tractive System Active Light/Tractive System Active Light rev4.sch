@@ -4151,6 +4151,8 @@ Layer: 94 Symbol</description>
 <part name="P1" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P2" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESCRIPTION_1" value="TSAL rev 4 Schematic"/>
+<attribute name="DESIGNER_BOARD" value="Liwei Sun"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Liwei Sun"/>
 <attribute name="ENGINEER" value="Liwei Sun"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Zekun Li"/>

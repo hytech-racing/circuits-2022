@@ -3,12 +3,12 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -204,9 +204,9 @@
 <text x="0" y="1.27" size="1.016" layer="21" align="bottom-center">Tractive System 
 Active Light rev 4
 HyTech Racing 2022
-Designed by XXXX
-Based on revX by 
-XXXX</text>
+Designed by Liwei Sun
+Based on rev3 by 
+Arvind Srinivasan</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -4617,41 +4617,41 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 </pass>
 </autorouter>
 <elements>
-<element name="R1" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_56" x="11.43" y="2.54" smashed="yes" rot="R270">
-<attribute name="DKPN" value="P16053TR-ND" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOPN" value="667-ERJ-P06D56R0V" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="ERJ-P06D56R0V" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="12.28" y="2.54" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="POWER" value="0.5W" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="RESISTANCE" value="56" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TOLERANCE" value="5%" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="5.29V" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_MAX" value="400V" x="-26.67" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R1" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_56" x="7.62" y="2.54" smashed="yes" rot="R270">
+<attribute name="DKPN" value="P16053TR-ND" x="-30.48" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="-30.48" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="667-ERJ-P06D56R0V" x="-30.48" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="ERJ-P06D56R0V" x="-30.48" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="8.47" y="2.54" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="POWER" value="0.5W" x="-30.48" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="RESISTANCE" value="56" x="-30.48" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TOLERANCE" value="5%" x="-30.48" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="5.29V" x="-30.48" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_MAX" value="400V" x="-30.48" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R2" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_56" x="16.51" y="2.54" smashed="yes" rot="R270">
-<attribute name="DKPN" value="P16053TR-ND" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOPN" value="667-ERJ-P06D56R0V" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="ERJ-P06D56R0V" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="17.36" y="2.54" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="POWER" value="0.5W" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="RESISTANCE" value="56" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TOLERANCE" value="5%" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="5.29V" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_MAX" value="400V" x="-21.59" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R2" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_56" x="12.7" y="2.54" smashed="yes" rot="R270">
+<attribute name="DKPN" value="P16053TR-ND" x="-25.4" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="-25.4" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="667-ERJ-P06D56R0V" x="-25.4" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="ERJ-P06D56R0V" x="-25.4" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="13.55" y="2.54" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="POWER" value="0.5W" x="-25.4" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="RESISTANCE" value="56" x="-25.4" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TOLERANCE" value="5%" x="-25.4" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="5.29V" x="-25.4" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_MAX" value="400V" x="-25.4" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R3" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_5.1" x="13.97" y="6.35" smashed="yes" rot="MR180">
-<attribute name="DKPN" value="P16039TR-ND" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MOPN" value="667-ERJ-P03J5R1V" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="ERJ-P03J5R1V" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="13.97" y="5.715" size="0.8128" layer="26" font="vector" rot="MR180" align="bottom-center"/>
-<attribute name="POWER" value="0.25W" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="RESISTANCE" value="5.1" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="TOLERANCE" value="1%" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="1.13V" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VOLTAGE_MAX" value="150V" x="13.97" y="6.35" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="R3" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_5.1" x="19.05" y="2.54" smashed="yes" rot="MR180">
+<attribute name="DKPN" value="P16039TR-ND" x="19.05" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="19.05" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MOPN" value="667-ERJ-P03J5R1V" x="19.05" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="ERJ-P03J5R1V" x="19.05" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="19.05" y="1.905" size="0.8128" layer="26" font="vector" rot="MR180" align="bottom-center"/>
+<attribute name="POWER" value="0.25W" x="19.05" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="RESISTANCE" value="5.1" x="19.05" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="19.05" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="1.13V" x="19.05" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="150V" x="19.05" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="J1" library="HyTechDevices" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL" value="CONNECTOR-4_μF_S_RA_" x="0" y="14.478" smashed="yes" rot="MR180">
 <attribute name="DKPN" value="WM1832CT-ND" x="0" y="14.478" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -4660,11 +4660,11 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MPN" value="0430450411" x="0" y="14.478" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="0" y="0.127" size="0.8128" layer="26" rot="MR0" align="bottom-center"/>
 </element>
-<element name="H1" library="HyTechDevices" package="MOUNTING_M3" value="MOUNTING_HEATSINK_M3" x="18.542" y="11.43" smashed="yes">
-<attribute name="NAME" x="18.542" y="14.93" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<element name="H1" library="HyTechDevices" package="MOUNTING_M3" value="MOUNTING_HEATSINK_M3" x="17.272" y="8.89" smashed="yes">
+<attribute name="NAME" x="17.272" y="12.39" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="H2" library="HyTechDevices" package="MOUNTING_M3" value="MOUNTING_HEATSINK_M3" x="-18.542" y="11.43" smashed="yes">
-<attribute name="NAME" x="-18.542" y="14.93" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<element name="H2" library="HyTechDevices" package="MOUNTING_M3" value="MOUNTING_HEATSINK_M3" x="-17.272" y="8.89" smashed="yes">
+<attribute name="NAME" x="-17.272" y="12.39" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="D1" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="27.94" y="6.35" smashed="yes" rot="R180">
 <attribute name="COLOR" value="RGBW" x="27.94" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4740,26 +4740,20 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <signal name="N$7">
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="2"/>
-<wire x1="11.43" y1="1.49" x2="16.51" y2="1.49" width="0.4064" layer="1"/>
-<wire x1="16.51" y1="1.49" x2="26.67" y2="1.49" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="1.49" x2="12.7" y2="1.49" width="0.4064" layer="1"/>
+<wire x1="12.7" y1="1.49" x2="28.16" y2="1.49" width="0.4064" layer="1"/>
 <contactref element="D1" pad="A+"/>
-<wire x1="26.67" y1="1.49" x2="27.2675" y2="1.49" width="0.4064" layer="1"/>
-<wire x1="27.2675" y1="1.49" x2="28.16" y2="1.49" width="0.4064" layer="1"/>
 <wire x1="29.9525" y1="3.2825" x2="29.9525" y2="4.175" width="0.4064" layer="1"/>
 <wire x1="28.16" y1="1.49" x2="29.9525" y2="3.2825" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="R3" pad="2"/>
-<wire x1="14.82" y1="6.35" x2="19.05" y2="6.35" width="0.4064" layer="16"/>
-<wire x1="19.05" y1="6.35" x2="20.32" y2="5.08" width="0.4064" layer="16"/>
-<via x="20.32" y="5.08" extent="1-16" drill="0.381"/>
-<wire x1="20.32" y1="5.08" x2="22.86" y2="2.54" width="0.4064" layer="1"/>
-<wire x1="22.86" y1="2.54" x2="26.67" y2="2.54" width="0.4064" layer="1"/>
 <contactref element="D1" pad="B+"/>
-<wire x1="26.9675" y1="2.54" x2="26.67" y2="2.54" width="0.4064" layer="1"/>
-<wire x1="26.9675" y1="2.54" x2="27.94" y2="2.54" width="0.4064" layer="1"/>
 <wire x1="27.94" y1="2.54" x2="28.6025" y2="3.2025" width="0.4064" layer="1"/>
 <wire x1="28.6025" y1="3.2025" x2="28.6025" y2="4.175" width="0.4064" layer="1"/>
+<wire x1="19.9" y1="2.54" x2="22.86" y2="2.54" width="0.4064" layer="16"/>
+<via x="22.86" y="2.54" extent="1-16" drill="0.381"/>
+<wire x1="22.86" y1="2.54" x2="27.94" y2="2.54" width="0.4064" layer="1"/>
 </signal>
 <signal name="GND_RED">
 <wire x1="-29.9525" y1="3.2825" x2="-27.94" y2="1.27" width="0.4064" layer="1"/>
@@ -4788,30 +4782,33 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="R1" pad="1"/>
 <contactref element="R2" pad="1"/>
 <contactref element="R3" pad="1"/>
-<wire x1="11.43" y1="3.59" x2="16.51" y2="3.59" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="3.59" x2="12.7" y2="3.59" width="0.4064" layer="1"/>
 <contactref element="J1" pad="1"/>
-<wire x1="11.43" y1="6.35" x2="11.43" y2="3.59" width="0.4064" layer="1"/>
-<via x="11.43" y="6.35" extent="1-16" drill="0.381"/>
-<wire x1="11.43" y1="6.35" x2="13.12" y2="6.35" width="0.4064" layer="16"/>
-<via x="6.35" y="11.43" extent="1-16" drill="0.381"/>
-<wire x1="11.43" y1="6.35" x2="6.35" y2="11.43" width="0.4064" layer="1"/>
-<wire x1="6.35" y1="11.43" x2="3.9257" y2="11.43" width="0.4064" layer="16"/>
-<wire x1="3.9257" y1="11.43" x2="1.5" y2="9.0043" width="0.4064" layer="16"/>
+<wire x1="1.5" y1="9.0043" x2="4.9657" y2="9.0043" width="0.4064" layer="16"/>
+<wire x1="4.9657" y1="9.0043" x2="5.08" y2="8.89" width="0.4064" layer="16"/>
+<via x="5.08" y="8.89" extent="1-16" drill="0.381"/>
+<wire x1="5.08" y1="8.89" x2="7.62" y2="6.35" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="3.59" x2="7.62" y2="6.35" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="6.35" x2="12.7" y2="6.35" width="0.4064" layer="1"/>
+<wire x1="12.7" y1="6.35" x2="15.24" y2="3.81" width="0.4064" layer="1"/>
+<wire x1="15.24" y1="3.81" x2="15.24" y2="2.54" width="0.4064" layer="1"/>
+<via x="15.24" y="2.54" extent="1-16" drill="0.381"/>
+<wire x1="15.24" y1="2.54" x2="18.2" y2="2.54" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$8">
 <polygon width="0.4064" layer="1" thermals="no">
-<vertex x="13.97" y="15.24"/>
-<vertex x="33.02" y="15.24"/>
+<vertex x="12.7" y="13.97"/>
+<vertex x="33.02" y="13.97"/>
 <vertex x="33.02" y="1.27"/>
-<vertex x="21.59" y="1.27"/>
-<vertex x="13.97" y="8.89"/>
+<vertex x="19.05" y="1.27"/>
+<vertex x="12.7" y="7.62"/>
 </polygon>
 <contactref element="H1" pad="P$1"/>
 <polygon width="0.4064" layer="16" thermals="no">
 <vertex x="6.35" y="21.59"/>
-<vertex x="22.86" y="21.59"/>
-<vertex x="22.86" y="7.62"/>
-<vertex x="12.7" y="7.62"/>
+<vertex x="21.59" y="21.59"/>
+<vertex x="21.59" y="5.08"/>
+<vertex x="15.24" y="5.08"/>
 <vertex x="6.35" y="13.97"/>
 </polygon>
 <contactref element="D1" pad="THERMAL"/>
@@ -4820,18 +4817,18 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <signal name="N$13">
 <contactref element="H2" pad="P$1"/>
 <polygon width="0.4064" layer="1" thermals="no" rank="5">
-<vertex x="-33.02" y="15.24"/>
-<vertex x="-13.97" y="15.24"/>
-<vertex x="-13.97" y="8.89"/>
-<vertex x="-21.59" y="1.27"/>
+<vertex x="-33.02" y="13.97"/>
+<vertex x="-12.7" y="13.97"/>
+<vertex x="-12.7" y="7.62"/>
+<vertex x="-19.05" y="1.27"/>
 <vertex x="-33.02" y="1.27"/>
 </polygon>
 <polygon width="0.4064" layer="16" thermals="no">
 <vertex x="-6.35" y="21.59"/>
 <vertex x="-6.35" y="13.97"/>
-<vertex x="-12.7" y="7.62"/>
-<vertex x="-22.86" y="7.62"/>
-<vertex x="-22.86" y="21.59"/>
+<vertex x="-15.24" y="5.08"/>
+<vertex x="-21.59" y="5.08"/>
+<vertex x="-21.59" y="21.59"/>
 </polygon>
 <contactref element="D3" pad="THERMAL"/>
 <contactref element="D4" pad="THERMAL"/>
