@@ -4155,6 +4155,7 @@ Layer: 94 Symbol</description>
 <attribute name="DESIGNER_BOARD" value="Liwei Sun"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Liwei Sun"/>
 <attribute name="ENGINEER" value="Liwei Sun"/>
+<attribute name="REVIEWER_BOARD" value="Zekun Li"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Zekun Li"/>
 </part>
 <part name="J1" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
