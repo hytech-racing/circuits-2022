@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -6115,10 +6115,10 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="NAME" x="143.772859375" y="79.786734375" size="0.8128" layer="25" font="vector" rot="R225" align="bottom-center"/>
 </element>
 <element name="D13" library="HyTechDevices - Copy" package="SOT-23" value="TVS_8V" x="121.387759375" y="80.280834375" smashed="yes">
-<attribute name="DKPN" value="GSOT08C-E3-08CT-ND" x="167.107759375" y="5.350834375" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="GSOT08-E3-08-ND" x="167.107759375" y="5.350834375" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="  Vishay General Semiconductor - Diodes Division" x="167.107759375" y="5.350834375" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="78-GSOT08C-E3-08" x="167.107759375" y="5.350834375" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="GSOT08C-E3-08" x="167.107759375" y="5.350834375" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="78-GSOT08-E3-08" x="167.107759375" y="5.350834375" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GSOT08-E3-08" x="167.107759375" y="5.350834375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="121.387759375" y="82.058834375" size="0.635" layer="25" font="vector" rot="R180" align="top-center"/>
 <attribute name="VOLTAGE" value="8V" x="167.107759375" y="5.350834375" size="1.778" layer="27" display="off"/>
 </element>
@@ -6139,10 +6139,10 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="NAME" x="78.232" y="81.208815625" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="D4" library="HyTechDevices - Copy" package="SOT-23" value="TVS_8V" x="69.97109375" y="69.73251875" smashed="yes">
-<attribute name="DKPN" value="GSOT08C-E3-08CT-ND" x="111.88109375" y="-5.19748125" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="GSOT08-E3-08-ND" x="111.88109375" y="-5.19748125" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="  Vishay General Semiconductor - Diodes Division" x="111.88109375" y="-5.19748125" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="78-GSOT08C-E3-08" x="111.88109375" y="-5.19748125" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="GSOT08C-E3-08" x="111.88109375" y="-5.19748125" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="78-GSOT08-E3-08" x="111.88109375" y="-5.19748125" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GSOT08-E3-08" x="111.88109375" y="-5.19748125" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="69.97109375" y="71.51051875" size="0.635" layer="25" font="vector" rot="R180" align="top-center"/>
 <attribute name="VOLTAGE" value="8V" x="111.88109375" y="-5.19748125" size="1.778" layer="27" display="off"/>
 </element>

@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -5267,10 +5267,10 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VOLTAGE" value="4V"/>
 </technology>
 <technology name="8V">
-<attribute name="DKPN" value="GSOT08C-E3-08CT-ND"/>
+<attribute name="DKPN" value="GSOT08-E3-08-ND"/>
 <attribute name="MANUFACTURER" value="  Vishay General Semiconductor - Diodes Division"/>
-<attribute name="MOPN" value="78-GSOT08C-E3-08"/>
-<attribute name="MPN" value="GSOT08C-E3-08"/>
+<attribute name="MOPN" value="78-GSOT08-E3-08"/>
+<attribute name="MPN" value="GSOT08-E3-08"/>
 <attribute name="VOLTAGE" value="8V"/>
 </technology>
 </technologies>
