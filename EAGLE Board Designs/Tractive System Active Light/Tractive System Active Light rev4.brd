@@ -28,8 +28,8 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -4660,82 +4660,95 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MPN" value="0430450411" x="0" y="14.478" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="0" y="0.127" size="0.8128" layer="26" rot="MR0" align="bottom-center"/>
 </element>
-<element name="H1" library="HyTechDevices" package="MOUNTING_M3" value="MOUNTING_HEATSINK_M3" x="17.272" y="8.89" smashed="yes">
-<attribute name="NAME" x="17.272" y="12.39" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<element name="H1" library="HyTechDevices" package="MOUNTING_M3" value="MOUNTING_HEATSINK_M3" x="12.7" y="16.51" smashed="yes">
+<attribute name="NAME" x="12.7" y="20.01" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="H2" library="HyTechDevices" package="MOUNTING_M3" value="MOUNTING_HEATSINK_M3" x="-17.272" y="8.89" smashed="yes">
-<attribute name="NAME" x="-17.272" y="12.39" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<element name="H2" library="HyTechDevices" package="MOUNTING_M3" value="MOUNTING_HEATSINK_M3" x="-12.7" y="16.51" smashed="yes">
+<attribute name="NAME" x="-12.7" y="20.01" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="D1" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="27.94" y="6.35" smashed="yes" rot="R180">
-<attribute name="COLOR" value="RGBW" x="27.94" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DKPN" value="1830-1097-2-ND" x="27.94" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="INOLUX" x="27.94" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOPN" value="743-IN-505FCHWV" x="27.94" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="IN-505FCHWV" x="27.94" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="27.94" y="3.556" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<element name="D1" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="27.94" y="8.89" smashed="yes" rot="R180">
+<attribute name="COLOR" value="RGBW" x="27.94" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DKPN" value="1830-1097-2-ND" x="27.94" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="INOLUX" x="27.94" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="743-IN-505FCHWV" x="27.94" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="IN-505FCHWV" x="27.94" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="27.94" y="6.096" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="D2" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="12.7" y="16.51" smashed="yes" rot="MR0">
-<attribute name="COLOR" value="RGBW" x="12.7" y="16.51" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DKPN" value="1830-1097-2-ND" x="12.7" y="16.51" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MANUFACTURER" value="INOLUX" x="12.7" y="16.51" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MOPN" value="743-IN-505FCHWV" x="12.7" y="16.51" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="IN-505FCHWV" x="12.7" y="16.51" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="12.7" y="19.304" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
+<element name="D2" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="17.272" y="8.89" smashed="yes" rot="MR0">
+<attribute name="COLOR" value="RGBW" x="17.272" y="8.89" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DKPN" value="1830-1097-2-ND" x="17.272" y="8.89" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER" value="INOLUX" x="17.272" y="8.89" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MOPN" value="743-IN-505FCHWV" x="17.272" y="8.89" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="IN-505FCHWV" x="17.272" y="8.89" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="17.272" y="11.684" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="D3" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="-12.7" y="16.51" smashed="yes" rot="MR180">
-<attribute name="COLOR" value="RGBW" x="-12.7" y="16.51" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DKPN" value="1830-1097-2-ND" x="-12.7" y="16.51" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER" value="INOLUX" x="-12.7" y="16.51" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MOPN" value="743-IN-505FCHWV" x="-12.7" y="16.51" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="IN-505FCHWV" x="-12.7" y="16.51" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="-12.7" y="13.716" size="0.8128" layer="26" font="vector" rot="MR180" align="bottom-center"/>
+<element name="D3" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="-17.272" y="8.89" smashed="yes" rot="MR180">
+<attribute name="COLOR" value="RGBW" x="-17.272" y="8.89" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DKPN" value="1830-1097-2-ND" x="-17.272" y="8.89" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANUFACTURER" value="INOLUX" x="-17.272" y="8.89" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MOPN" value="743-IN-505FCHWV" x="-17.272" y="8.89" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="IN-505FCHWV" x="-17.272" y="8.89" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="-17.272" y="6.096" size="0.8128" layer="26" font="vector" rot="MR180" align="bottom-center"/>
 </element>
-<element name="D4" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="-27.94" y="6.35" smashed="yes">
-<attribute name="COLOR" value="RGBW" x="-27.94" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="DKPN" value="1830-1097-2-ND" x="-27.94" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="INOLUX" x="-27.94" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="743-IN-505FCHWV" x="-27.94" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="IN-505FCHWV" x="-27.94" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-27.94" y="9.144" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<element name="D4" library="HyTechDevices" package="IN-505FCHWV" value="LED_RGBW_IN-505FCHWV" x="-27.94" y="8.89" smashed="yes">
+<attribute name="COLOR" value="RGBW" x="-27.94" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="1830-1097-2-ND" x="-27.94" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="INOLUX" x="-27.94" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="743-IN-505FCHWV" x="-27.94" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="IN-505FCHWV" x="-27.94" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-27.94" y="11.684" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="U$1" library="HyTechManufacturing" package="LOGO_HYTECH_SQUARE_EXTRA_LARGE" value="" x="-25.4" y="7.62" smashed="yes" rot="MR0"/>
 <element name="U$3" library="HyTechManufacturing" package="LOGO_GT_MEDIUM" value="" x="26.67" y="7.62" smashed="yes" rot="MR0"/>
-<element name="U$2" library="HyTechManufacturing" package="LOGO_HYTECH_MEDIUM" value="" x="-11.43" y="13.97" smashed="yes"/>
+<element name="U$2" library="HyTechManufacturing" package="LOGO_HYTECH_MEDIUM" value="" x="-12.7" y="6.35" smashed="yes"/>
 </elements>
 <signals>
 <signal name="N$3">
 <contactref element="D2" pad="A-"/>
-<wire x1="-14.7125" y1="14.335" x2="-6.7275" y2="6.35" width="0.4064" layer="16"/>
-<wire x1="6.7275" y1="6.35" x2="-6.7275" y2="6.35" width="0.4064" layer="16"/>
-<wire x1="6.7275" y1="6.35" x2="14.7125" y2="14.335" width="0.4064" layer="16"/>
 <contactref element="D3" pad="A+"/>
+<wire x1="-19.2845" y1="6.715" x2="-19.2845" y2="6.0765" width="0.4064" layer="16"/>
+<wire x1="-19.2845" y1="6.0765" x2="-18.034" y2="4.826" width="0.4064" layer="16"/>
+<wire x1="-3.65389375" y1="4.826" x2="-2.12989375" y2="6.35" width="0.4064" layer="16"/>
+<wire x1="-18.034" y1="4.826" x2="-3.65389375" y2="4.826" width="0.4064" layer="16"/>
+<wire x1="2.54" y1="6.35" x2="4.064" y2="4.826" width="0.4064" layer="16"/>
+<wire x1="4.064" y1="4.826" x2="18.161" y2="4.826" width="0.4064" layer="16"/>
+<wire x1="18.161" y1="4.826" x2="19.304" y2="5.969" width="0.4064" layer="16"/>
+<wire x1="19.304" y1="5.969" x2="19.304" y2="6.6955" width="0.4064" layer="16"/>
+<wire x1="19.304" y1="6.6955" x2="19.2845" y2="6.715" width="0.4064" layer="16"/>
+<wire x1="-2.12989375" y1="6.35" x2="2.54" y2="6.35" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$4">
-<wire x1="6.1395" y1="7.112" x2="-6.1395" y2="7.112" width="0.4064" layer="16"/>
 <contactref element="D2" pad="B-"/>
-<wire x1="6.1395" y1="7.112" x2="13.3625" y2="14.335" width="0.4064" layer="16"/>
 <contactref element="D3" pad="B+"/>
-<wire x1="-6.1395" y1="7.112" x2="-13.3625" y2="14.335" width="0.4064" layer="16"/>
+<wire x1="-16.8583" y1="5.6388" x2="-17.9345" y2="6.715" width="0.4064" layer="16"/>
+<wire x1="-4.5212" y1="5.6388" x2="-3.048" y2="7.112" width="0.4064" layer="16"/>
+<wire x1="-4.5212" y1="5.6388" x2="-16.8583" y2="5.6388" width="0.4064" layer="16"/>
+<wire x1="4.6482" y1="5.6388" x2="17.4498" y2="5.6388" width="0.4064" layer="16"/>
+<wire x1="17.4498" y1="5.6388" x2="17.9345" y2="6.1235" width="0.4064" layer="16"/>
+<wire x1="17.9345" y1="6.1235" x2="17.9345" y2="6.715" width="0.4064" layer="16"/>
+<wire x1="3.175" y1="7.112" x2="4.6482" y2="5.6388" width="0.4064" layer="16"/>
+<wire x1="-3.048" y1="7.112" x2="3.175" y2="7.112" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$5">
-<wire x1="15.605" y1="18.685" x2="16.51" y2="17.78" width="0.4064" layer="16"/>
-<via x="16.51" y="17.78" extent="1-16" drill="0.381"/>
-<wire x1="16.51" y1="17.78" x2="20.6975" y2="17.78" width="0.4064" layer="1"/>
+<wire x1="22.0625" y1="13.335" x2="22.352" y2="13.335" width="0.4064" layer="16"/>
+<via x="22.352" y="13.335" extent="1-16" drill="0.381"/>
 <contactref element="D1" pad="A-"/>
-<wire x1="20.6975" y1="17.78" x2="29.9525" y2="8.525" width="0.4064" layer="1"/>
 <contactref element="D2" pad="A+"/>
-<wire x1="14.7125" y1="18.685" x2="15.605" y2="18.685" width="0.4064" layer="16"/>
+<wire x1="19.2845" y1="11.065" x2="19.7925" y2="11.065" width="0.4064" layer="16"/>
+<wire x1="22.0625" y1="13.335" x2="19.7925" y2="11.065" width="0.4064" layer="16"/>
+<wire x1="22.352" y1="13.335" x2="27.6825" y2="13.335" width="0.4064" layer="1"/>
+<wire x1="27.6825" y1="13.335" x2="29.9525" y2="11.065" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$6">
-<wire x1="14.148759375" y1="19.979259375" x2="13.3625" y2="19.193" width="0.4064" layer="16"/>
-<via x="19.05" y="16.51" extent="1-16" drill="0.381"/>
-<wire x1="19.05" y1="16.51" x2="20.6175" y2="16.51" width="0.4064" layer="1"/>
-<wire x1="14.148759375" y1="19.979259375" x2="15.580740625" y2="19.979259375" width="0.4064" layer="16"/>
-<wire x1="15.580740625" y1="19.979259375" x2="19.05" y2="16.51" width="0.4064" layer="16"/>
+<via x="24.384" y="12.446" extent="1-16" drill="0.381"/>
+<wire x1="20.706915625" y1="14.264259375" x2="22.565740625" y2="14.264259375" width="0.4064" layer="16"/>
+<wire x1="22.565740625" y1="14.264259375" x2="24.384" y2="12.446" width="0.4064" layer="16"/>
 <contactref element="D1" pad="B-"/>
-<wire x1="20.6175" y1="16.51" x2="28.6025" y2="8.525" width="0.4064" layer="1"/>
 <contactref element="D2" pad="B+"/>
-<wire x1="13.3625" y1="19.193" x2="13.3625" y2="18.685" width="0.4064" layer="16"/>
+<wire x1="20.706915625" y1="14.264259375" x2="17.9345" y2="11.49184375" width="0.4064" layer="16"/>
+<wire x1="17.9345" y1="11.49184375" x2="17.9345" y2="11.065" width="0.4064" layer="16"/>
+<wire x1="28.6025" y1="11.065" x2="27.2215" y2="12.446" width="0.4064" layer="1"/>
+<wire x1="27.2215" y1="12.446" x2="24.384" y2="12.446" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R1" pad="2"/>
@@ -4743,14 +4756,14 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="7.62" y1="1.49" x2="12.7" y2="1.49" width="0.4064" layer="1"/>
 <wire x1="12.7" y1="1.49" x2="28.16" y2="1.49" width="0.4064" layer="1"/>
 <contactref element="D1" pad="A+"/>
-<wire x1="29.9525" y1="3.2825" x2="29.9525" y2="4.175" width="0.4064" layer="1"/>
+<wire x1="29.9525" y1="3.2825" x2="29.9525" y2="6.715" width="0.4064" layer="1"/>
 <wire x1="28.16" y1="1.49" x2="29.9525" y2="3.2825" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="R3" pad="2"/>
 <contactref element="D1" pad="B+"/>
 <wire x1="27.94" y1="2.54" x2="28.6025" y2="3.2025" width="0.4064" layer="1"/>
-<wire x1="28.6025" y1="3.2025" x2="28.6025" y2="4.175" width="0.4064" layer="1"/>
+<wire x1="28.6025" y1="3.2025" x2="28.6025" y2="6.715" width="0.4064" layer="1"/>
 <wire x1="19.9" y1="2.54" x2="22.86" y2="2.54" width="0.4064" layer="16"/>
 <via x="22.86" y="2.54" extent="1-16" drill="0.381"/>
 <wire x1="22.86" y1="2.54" x2="27.94" y2="2.54" width="0.4064" layer="1"/>
@@ -4759,7 +4772,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="-29.9525" y1="3.2825" x2="-27.94" y2="1.27" width="0.4064" layer="1"/>
 <contactref element="J1" pad="3"/>
 <contactref element="D4" pad="A-"/>
-<wire x1="-29.9525" y1="3.2825" x2="-29.9525" y2="4.175" width="0.4064" layer="1"/>
+<wire x1="-29.9525" y1="3.2825" x2="-29.9525" y2="6.715" width="0.4064" layer="1"/>
 <wire x1="-8.9154" y1="1.27" x2="-8.89" y2="1.2446" width="0.4064" layer="1"/>
 <via x="-8.89" y="1.2446" extent="1-16" drill="0.381"/>
 <wire x1="-27.94" y1="1.27" x2="-8.9154" y2="1.27" width="0.4064" layer="1"/>
@@ -4771,7 +4784,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="-28.6025" y1="3.2025" x2="-27.94" y2="2.54" width="0.4064" layer="1"/>
 <contactref element="J1" pad="4"/>
 <contactref element="D4" pad="B-"/>
-<wire x1="-28.6025" y1="3.2025" x2="-28.6025" y2="4.175" width="0.4064" layer="1"/>
+<wire x1="-28.6025" y1="3.2025" x2="-28.6025" y2="6.715" width="0.4064" layer="1"/>
 <via x="-8.89" y="2.54" extent="1-16" drill="0.381"/>
 <wire x1="-27.94" y1="2.54" x2="-8.89" y2="2.54" width="0.4064" layer="1"/>
 <wire x1="-8.89" y1="2.54" x2="-3.81" y2="2.54" width="0.4064" layer="16"/>
@@ -4797,16 +4810,16 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 </signal>
 <signal name="N$8">
 <polygon width="0.4064" layer="1" thermals="no">
-<vertex x="12.7" y="13.97"/>
-<vertex x="33.02" y="13.97"/>
-<vertex x="33.02" y="1.27"/>
-<vertex x="19.05" y="1.27"/>
-<vertex x="12.7" y="7.62"/>
+<vertex x="6.35" y="20.32"/>
+<vertex x="31.75" y="20.32"/>
+<vertex x="31.75" y="5.08"/>
+<vertex x="15.24" y="5.08"/>
+<vertex x="6.35" y="13.97"/>
 </polygon>
 <contactref element="H1" pad="P$1"/>
 <polygon width="0.4064" layer="16" thermals="no">
-<vertex x="6.35" y="21.59"/>
-<vertex x="21.59" y="21.59"/>
+<vertex x="6.35" y="20.32"/>
+<vertex x="21.59" y="20.32"/>
 <vertex x="21.59" y="5.08"/>
 <vertex x="15.24" y="5.08"/>
 <vertex x="6.35" y="13.97"/>
@@ -4817,18 +4830,18 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <signal name="N$13">
 <contactref element="H2" pad="P$1"/>
 <polygon width="0.4064" layer="1" thermals="no" rank="5">
-<vertex x="-33.02" y="13.97"/>
-<vertex x="-12.7" y="13.97"/>
-<vertex x="-12.7" y="7.62"/>
-<vertex x="-19.05" y="1.27"/>
-<vertex x="-33.02" y="1.27"/>
+<vertex x="-31.75" y="20.32"/>
+<vertex x="-6.35" y="20.32"/>
+<vertex x="-6.35" y="13.97"/>
+<vertex x="-15.24" y="5.08"/>
+<vertex x="-31.75" y="5.08"/>
 </polygon>
 <polygon width="0.4064" layer="16" thermals="no">
-<vertex x="-6.35" y="21.59"/>
+<vertex x="-6.35" y="20.32"/>
 <vertex x="-6.35" y="13.97"/>
 <vertex x="-15.24" y="5.08"/>
 <vertex x="-21.59" y="5.08"/>
-<vertex x="-21.59" y="21.59"/>
+<vertex x="-21.59" y="20.32"/>
 </polygon>
 <contactref element="D3" pad="THERMAL"/>
 <contactref element="D4" pad="THERMAL"/>
@@ -4836,22 +4849,22 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <signal name="N$1">
 <contactref element="D3" pad="A-"/>
 <contactref element="D4" pad="A+"/>
-<wire x1="-14.7125" y1="18.685" x2="-15.605" y2="18.685" width="0.4064" layer="16"/>
-<wire x1="-15.605" y1="18.685" x2="-16.51" y2="17.78" width="0.4064" layer="16"/>
-<via x="-16.51" y="17.78" extent="1-16" drill="0.381"/>
-<wire x1="-16.51" y1="17.78" x2="-20.6975" y2="17.78" width="0.4064" layer="1"/>
-<wire x1="-20.6975" y1="17.78" x2="-29.9525" y2="8.525" width="0.4064" layer="1"/>
+<wire x1="-19.2845" y1="11.065" x2="-20.082" y2="11.065" width="0.4064" layer="16"/>
+<wire x1="-20.082" y1="11.065" x2="-22.352" y2="13.335" width="0.4064" layer="16"/>
+<via x="-22.352" y="13.335" extent="1-16" drill="0.381"/>
+<wire x1="-22.352" y1="13.335" x2="-27.6825" y2="13.335" width="0.4064" layer="1"/>
+<wire x1="-27.6825" y1="13.335" x2="-29.9525" y2="11.065" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D3" pad="B-"/>
 <contactref element="D4" pad="B+"/>
-<via x="-19.05" y="16.51" extent="1-16" drill="0.381"/>
-<wire x1="-19.05" y1="16.51" x2="-20.6175" y2="16.51" width="0.4064" layer="1"/>
-<wire x1="-20.6175" y1="16.51" x2="-28.6025" y2="8.525" width="0.4064" layer="1"/>
-<wire x1="-13.3625" y1="18.685" x2="-13.3625" y2="18.9505" width="0.4064" layer="16"/>
-<wire x1="-13.3625" y1="18.9505" x2="-14.351" y2="19.939" width="0.4064" layer="16"/>
-<wire x1="-14.351" y1="19.939" x2="-15.621" y2="19.939" width="0.4064" layer="16"/>
-<wire x1="-15.621" y1="19.939" x2="-19.05" y2="16.51" width="0.4064" layer="16"/>
+<via x="-24.384" y="12.446" extent="1-16" drill="0.381"/>
+<wire x1="-24.384" y1="12.446" x2="-27.2215" y2="12.446" width="0.4064" layer="1"/>
+<wire x1="-27.2215" y1="12.446" x2="-28.6025" y2="11.065" width="0.4064" layer="1"/>
+<wire x1="-24.384" y1="12.446" x2="-22.606" y2="14.224" width="0.4064" layer="16"/>
+<wire x1="-20.574" y1="14.224" x2="-22.606" y2="14.224" width="0.4064" layer="16"/>
+<wire x1="-17.9345" y1="11.065" x2="-17.9345" y2="11.5845" width="0.4064" layer="16"/>
+<wire x1="-17.9345" y1="11.5845" x2="-20.574" y2="14.224" width="0.4064" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
