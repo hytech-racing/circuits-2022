@@ -5366,7 +5366,6 @@ Layer: 94 Symbol</description>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="D6" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
-<part name="D7" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="D8" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="D9" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="YELLOW"/>
 <part name="D10" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="YELLOW"/>
@@ -5645,10 +5644,6 @@ UV Falling: 9.97V</text>
 <attribute name="RESISTANCE" x="-62.23" y="41.91" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="D6" gate="LED" x="88.9" y="-25.4" smashed="yes" rot="R180">
-<attribute name="COLOR" x="90.17" y="-23.622" size="1.27" layer="95" rot="R180" align="top-center"/>
-<attribute name="NAME" x="90.17" y="-28.956" size="1.27" layer="96" rot="R180" align="bottom-center"/>
-</instance>
-<instance part="D7" gate="LED" x="88.9" y="-25.4" smashed="yes" rot="R180">
 <attribute name="COLOR" x="90.17" y="-23.622" size="1.27" layer="95" rot="R180" align="top-center"/>
 <attribute name="NAME" x="90.17" y="-28.956" size="1.27" layer="96" rot="R180" align="bottom-center"/>
 </instance>
@@ -6024,11 +6019,6 @@ UV Falling: 9.97V</text>
 <pinref part="R19" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="F4" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="45.72" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
-<label x="111.76" y="45.72" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <wire x1="-124.46" y1="-144.78" x2="-116.84" y2="-144.78" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 <pinref part="J2" gate="G$1" pin="3"/>
@@ -6041,23 +6031,24 @@ UV Falling: 9.97V</text>
 <wire x1="-119.38" y1="-121.92" x2="-119.38" y2="-119.38" width="0.1524" layer="91"/>
 <label x="-119.38" y="-119.38" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="F4" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="45.72" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
+<label x="111.76" y="45.72" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="!FAULT2" class="0">
 <segment>
 <pinref part="D6" gate="LED" pin="C"/>
-<pinref part="D7" gate="LED" pin="C"/>
 <pinref part="U1" gate="G$1" pin="!FAULT2"/>
 <wire x1="86.36" y1="-25.4" x2="71.12" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="86.36" y="-25.4"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="D6" gate="LED" pin="A"/>
-<pinref part="D7" gate="LED" pin="A"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="-25.4" x2="109.22" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="93.98" y="-25.4"/>
 </segment>
 </net>
 <net name="!FAULT1" class="0">
@@ -6484,7 +6475,6 @@ UV Falling: 9.97V</text>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="-40.64" x2="96.52" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="93.98" y="-40.64"/>
-<label x="116.84" y="-40.64" size="1.27" layer="95" xref="yes"/>
 <pinref part="D5" gate="LED" pin="C"/>
 <pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="D4" gate="G$1" pin="C"/>
@@ -6493,6 +6483,11 @@ UV Falling: 9.97V</text>
 <pinref part="U$12" gate="G$1" pin="ON/OFF"/>
 <wire x1="-96.52" y1="-99.06" x2="-99.06" y2="-99.06" width="0.1524" layer="91"/>
 <label x="-99.06" y="-99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="-40.64" x2="116.84" y2="-40.64" width="0.1524" layer="91"/>
+<label x="116.84" y="-40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GLVMS" class="0">
@@ -6520,12 +6515,6 @@ UV Falling: 9.97V</text>
 <pinref part="D5" gate="LED" pin="A"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="-40.64" x2="104.14" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="-40.64" x2="116.84" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
