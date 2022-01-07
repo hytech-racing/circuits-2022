@@ -5488,8 +5488,8 @@ UV Falling: 9.97V</text>
 <instance part="F3" gate="G$1" x="-81.28" y="48.26" smashed="yes">
 <attribute name="NAME" x="-82.55" y="49.53" size="1.27" layer="95" align="bottom-center"/>
 </instance>
-<instance part="F4" gate="G$1" x="101.6" y="48.26" smashed="yes">
-<attribute name="NAME" x="100.33" y="49.53" size="1.27" layer="95" align="bottom-center"/>
+<instance part="F4" gate="G$1" x="104.14" y="48.26" smashed="yes">
+<attribute name="NAME" x="102.87" y="49.53" size="1.27" layer="95" align="bottom-center"/>
 </instance>
 <instance part="C12" gate="G$1" x="-15.24" y="-58.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="-17.78" y="-59.69" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -5986,7 +5986,7 @@ UV Falling: 9.97V</text>
 <pinref part="D4" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="OUT" class="0">
+<net name="NET" class="0">
 <segment>
 <wire x1="83.82" y1="45.72" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
@@ -6006,7 +6006,7 @@ UV Falling: 9.97V</text>
 <wire x1="71.12" y1="-5.08" x2="73.66" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-5.08" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <junction x="73.66" y="45.72"/>
-<wire x1="91.44" y1="45.72" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
 <junction x="91.44" y="45.72"/>
 <pinref part="F4" gate="G$1" pin="1"/>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -6030,11 +6030,6 @@ UV Falling: 9.97V</text>
 <pinref part="XF1" gate="G$1" pin="2"/>
 <wire x1="-119.38" y1="-121.92" x2="-119.38" y2="-119.38" width="0.1524" layer="91"/>
 <label x="-119.38" y="-119.38" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="F4" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="45.72" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
-<label x="111.76" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!FAULT2" class="0">
@@ -6568,6 +6563,13 @@ UV Falling: 9.97V</text>
 <wire x1="-93.98" y1="-139.7" x2="-91.44" y2="-139.7" width="0.1524" layer="91"/>
 <junction x="-93.98" y="-139.7"/>
 <label x="-91.44" y="-139.7" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="OUT" class="0">
+<segment>
+<pinref part="F4" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="45.72" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
+<label x="114.3" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
