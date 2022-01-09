@@ -28,8 +28,8 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -201,7 +201,7 @@
 <wire x1="-33.7566" y1="-2.794" x2="-33.7566" y2="14.412834375" width="0" layer="20"/>
 <wire x1="33.7566" y1="14.412834375" x2="-33.7566" y2="14.412834375" width="0" layer="20" curve="57.798736"/>
 <wire x1="23.175759375" y1="0" x2="23.894178125" y2="-0.297578125" width="0" layer="20" curve="-44.999875"/>
-<text x="0" y="1.27" size="1.016" layer="21" align="bottom-center">Tractive System 
+<text x="0" y="12.7" size="1.016" layer="21" align="bottom-center">Tractive System 
 Active Light rev 4
 HyTech Racing 2022
 Designed by Liwei Sun
@@ -4700,7 +4700,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 </element>
 <element name="U$1" library="HyTechManufacturing" package="LOGO_HYTECH_SQUARE_EXTRA_LARGE" value="" x="-25.4" y="7.62" smashed="yes" rot="MR0"/>
 <element name="U$3" library="HyTechManufacturing" package="LOGO_GT_MEDIUM" value="" x="26.67" y="7.62" smashed="yes" rot="MR0"/>
-<element name="U$2" library="HyTechManufacturing" package="LOGO_HYTECH_MEDIUM" value="" x="-12.7" y="6.35" smashed="yes"/>
+<element name="U$2" library="HyTechManufacturing" package="LOGO_HYTECH_MEDIUM" value="" x="-12.7" y="5.08" smashed="yes"/>
 </elements>
 <signals>
 <signal name="N$3">
