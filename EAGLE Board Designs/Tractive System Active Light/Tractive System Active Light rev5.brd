@@ -3173,14 +3173,14 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="D1" pad="THERMAL"/>
 <contactref element="D2" pad="THERMAL"/>
 <polygon width="0.4064" layer="1" thermals="no">
-<vertex x="12.7" y="17.78"/>
-<vertex x="22.86" y="17.78"/>
+<vertex x="12.7" y="19.05"/>
+<vertex x="22.86" y="19.05"/>
 <vertex x="22.86" y="1.27"/>
 <vertex x="12.7" y="1.27"/>
 </polygon>
 <polygon width="0.4064" layer="16" thermals="no">
-<vertex x="12.7" y="17.78"/>
-<vertex x="22.86" y="17.78"/>
+<vertex x="12.7" y="19.05"/>
+<vertex x="22.86" y="19.05"/>
 <vertex x="22.86" y="1.27"/>
 <vertex x="12.7" y="1.27"/>
 </polygon>
@@ -3190,14 +3190,14 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="D3" pad="THERMAL"/>
 <contactref element="D4" pad="THERMAL"/>
 <polygon width="0.4064" layer="16" thermals="no">
-<vertex x="-22.86" y="17.78"/>
-<vertex x="-12.7" y="17.78"/>
+<vertex x="-22.86" y="19.05"/>
+<vertex x="-12.7" y="19.05"/>
 <vertex x="-12.7" y="1.27"/>
 <vertex x="-22.86" y="1.27"/>
 </polygon>
 <polygon width="0.4064" layer="1" thermals="no">
-<vertex x="-22.86" y="17.78"/>
-<vertex x="-12.7" y="17.78"/>
+<vertex x="-22.86" y="19.05"/>
+<vertex x="-12.7" y="19.05"/>
 <vertex x="-12.7" y="1.27"/>
 <vertex x="-22.86" y="1.27"/>
 </polygon>
