@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -10047,11 +10047,9 @@ current across precharge relay</text>
 <attribute name="NAME" x="102.87" y="171.45" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="105.41" y="171.45" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="P+13" gate="1" x="231.14" y="137.16" smashed="yes">
-<attribute name="VALUE" x="231.14" y="139.7" size="1.27" layer="96" align="bottom-center"/>
-</instance>
 <instance part="GND34" gate="1" x="104.14" y="165.1" smashed="yes">
 <attribute name="VALUE" x="104.14" y="163.83" size="1.27" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
