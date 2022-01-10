@@ -3372,6 +3372,8 @@ Layer: 94 Symbol</description>
 <part name="C2" library="HyTechSymbolsTemp" deviceset="CAPACITOR" device="" value="2.2uF"/>
 <part name="C3" library="HyTechSymbolsTemp" deviceset="CAPACITOR" device="" value="0.47uF"/>
 <part name="LATCHING_BUTTON" library="HyTechSymbolsTemp" deviceset="BUTTON_NO_*" device="" technology="LP9"/>
+<part name="R12" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="10k"/>
+<part name="P19" library="HyTechSupplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3400,7 +3402,7 @@ Layer: 94 Symbol</description>
 <text x="15.24" y="119.38" size="1.27" layer="97" align="top-left">22AWG</text>
 <text x="45.72" y="119.38" size="1.27" layer="97">22AWG</text>
 <text x="45.72" y="162.56" size="1.27" layer="97">22 AWG</text>
-<text x="30.48" y="149.86" size="1.27" layer="97" align="top-left">PCB Trace</text>
+<text x="27.94" y="154.94" size="1.27" layer="97" align="top-left">PCB Trace</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="55.88" y="144.78" smashed="yes" rot="R90">
@@ -3501,12 +3503,12 @@ Layer: 94 Symbol</description>
 <attribute name="VALUE" x="48.26" y="170.18" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="U6" gate="G$1" x="40.64" y="149.86" smashed="yes"/>
-<instance part="P18" gate="1" x="25.4" y="139.7" smashed="yes">
-<attribute name="VALUE" x="25.4" y="138.43" size="1.27" layer="96" align="top-center"/>
+<instance part="P18" gate="1" x="38.1" y="129.54" smashed="yes">
+<attribute name="VALUE" x="38.1" y="128.27" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R1" gate="G$1" x="33.02" y="142.24" smashed="yes">
-<attribute name="NAME" x="31.75" y="143.51" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="31.75" y="140.97" size="1.27" layer="96" align="top-center"/>
+<instance part="R1" gate="G$1" x="38.1" y="139.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.83" y="138.43" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="39.37" y="138.43" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="R2" gate="G$1" x="45.72" y="142.24" smashed="yes">
 <attribute name="NAME" x="44.45" y="143.51" size="1.27" layer="95" align="bottom-center"/>
@@ -3572,6 +3574,13 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="246.38" y="158.242" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="246.38" y="151.892" size="1.27" layer="97" align="top-center"/>
 </instance>
+<instance part="R12" gate="G$1" x="30.48" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.21" y="146.05" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="31.75" y="146.05" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P19" gate="1" x="30.48" y="137.16" smashed="yes">
+<attribute name="VALUE" x="30.48" y="135.89" size="1.27" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3635,8 +3644,12 @@ Layer: 94 Symbol</description>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="VIN+"/>
-<wire x1="38.1" y1="152.4" x2="35.56" y2="152.4" width="0.0762" layer="91"/>
-<label x="35.56" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="38.1" y1="152.4" x2="30.48" y2="152.4" width="0.0762" layer="91"/>
+<label x="25.4" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="30.48" y1="152.4" x2="25.4" y2="152.4" width="0.0762" layer="91"/>
+<wire x1="30.48" y1="152.4" x2="30.48" y2="149.86" width="0.0762" layer="91"/>
+<junction x="30.48" y="152.4"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3699,9 +3712,14 @@ Layer: 94 Symbol</description>
 <pinref part="A1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="27.94" y1="142.24" x2="25.4" y2="142.24" width="0.0762" layer="91"/>
+<wire x1="38.1" y1="134.62" x2="38.1" y2="132.08" width="0.0762" layer="91"/>
 <pinref part="P18" gate="1" pin="GND"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="P19" gate="1" pin="GND"/>
+<wire x1="30.48" y1="142.24" x2="30.48" y2="139.7" width="0.0762" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -3960,7 +3978,6 @@ Layer: 94 Symbol</description>
 <pinref part="U6" gate="G$1" pin="VIN-"/>
 <wire x1="38.1" y1="147.32" x2="38.1" y2="142.24" width="0.0762" layer="91"/>
 <wire x1="38.1" y1="142.24" x2="40.64" y2="142.24" width="0.0762" layer="91"/>
-<wire x1="38.1" y1="142.24" x2="35.56" y2="142.24" width="0.0762" layer="91"/>
 <junction x="38.1" y="142.24"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="1"/>

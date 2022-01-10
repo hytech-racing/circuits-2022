@@ -878,7 +878,7 @@ LOGIC</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE_LED">
+<deviceset name="DIODE_LED" prefix="D">
 <gates>
 <gate name="G$1" symbol="DIODE_LED" x="0" y="0"/>
 </gates>
