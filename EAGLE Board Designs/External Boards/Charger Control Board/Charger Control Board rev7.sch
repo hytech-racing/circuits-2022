@@ -6625,16 +6625,16 @@ Layer: 94 Symbol</description>
 <part name="R15" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="P37" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="SHUTDOWN_E" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
+<part name="SHDN_E" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="P38" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="SHUTDOWN_D" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
+<part name="SHDN_D" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="P39" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R18" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="SHUTDOWN_C" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
+<part name="SHDN_C" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="P40" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="SHUTDOWN_B" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
+<part name="SHDN_B" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="P41" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R20" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="43K"/>
 <part name="R21" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
@@ -6739,6 +6739,7 @@ Layer: 94 Symbol</description>
 <part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP5" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP11" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="TP13" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7688,7 +7689,7 @@ Layer: 94 Symbol</description>
 <text x="152.4" y="129.54" size="2.54" layer="95">Power LED</text>
 <text x="17.78" y="116.84" size="2.54" layer="95">Voltage Dividers</text>
 <text x="133.858" y="207.772" size="2.54" layer="95">Shutdown Circuit</text>
-<text x="195.58" y="119.38" size="2.54" layer="95">Testpoints</text>
+<text x="195.58" y="127" size="2.54" layer="95">Testpoints</text>
 <text x="5.08" y="203.2" size="1.778" layer="97">The relays close when the latch button is pressed, and remain closed until IMD_OK, BMS_OK, or SW_SHDN goes low</text>
 <text x="5.08" y="200.66" size="1.778" layer="97">Series configuration means any one relay opening (or the shudown button is pressed) breaks the connection between SHDN_A and SHDN_E</text>
 </plain>
@@ -7775,7 +7776,7 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="234.95" y="140.97" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="234.95" y="138.43" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="SHUTDOWN_E" gate="LED" x="246.38" y="139.7" smashed="yes">
+<instance part="SHDN_E" gate="LED" x="246.38" y="139.7" smashed="yes">
 <attribute name="COLOR" x="245.11" y="137.922" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="245.11" y="143.256" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -7786,7 +7787,7 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="196.85" y="140.97" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="196.85" y="138.43" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="SHUTDOWN_D" gate="LED" x="208.28" y="139.7" smashed="yes">
+<instance part="SHDN_D" gate="LED" x="208.28" y="139.7" smashed="yes">
 <attribute name="COLOR" x="207.01" y="137.922" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="207.01" y="143.256" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -7797,7 +7798,7 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="148.59" y="153.67" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="148.59" y="151.13" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="SHUTDOWN_C" gate="LED" x="160.02" y="152.4" smashed="yes">
+<instance part="SHDN_C" gate="LED" x="160.02" y="152.4" smashed="yes">
 <attribute name="COLOR" x="158.75" y="150.622" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="158.75" y="155.956" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -7808,7 +7809,7 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="82.55" y="153.67" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="82.55" y="151.13" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="SHUTDOWN_B" gate="LED" x="93.98" y="152.4" smashed="yes">
+<instance part="SHDN_B" gate="LED" x="93.98" y="152.4" smashed="yes">
 <attribute name="COLOR" x="92.71" y="150.622" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="92.71" y="155.956" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -7969,17 +7970,17 @@ Layer: 94 Symbol</description>
 <instance part="P26" gate="1" x="134.62" y="68.58" smashed="yes">
 <attribute name="VALUE" x="134.62" y="67.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P27" gate="1" x="208.28" y="106.68" smashed="yes">
-<attribute name="VALUE" x="208.28" y="109.22" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P27" gate="1" x="208.28" y="114.3" smashed="yes">
+<attribute name="VALUE" x="208.28" y="116.84" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P28" gate="1" x="213.36" y="99.06" smashed="yes">
-<attribute name="VALUE" x="213.36" y="102.87" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P28" gate="1" x="213.36" y="106.68" smashed="yes">
+<attribute name="VALUE" x="213.36" y="110.49" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="P29" gate="1" x="231.14" y="66.04" smashed="yes">
 <attribute name="VALUE" x="231.14" y="64.77" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P51" gate="G$1" x="203.2" y="114.3" smashed="yes">
-<attribute name="VALUE" x="203.2" y="115.57" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P51" gate="G$1" x="203.2" y="121.92" smashed="yes">
+<attribute name="VALUE" x="203.2" y="123.19" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="D7" gate="G$1" x="55.88" y="195.58" smashed="yes">
 <attribute name="NAME" x="54.61" y="197.485" size="1.27" layer="95" align="bottom-center"/>
@@ -8039,13 +8040,13 @@ Layer: 94 Symbol</description>
 <instance part="P64" gate="1" x="134.62" y="55.88" smashed="yes">
 <attribute name="VALUE" x="134.62" y="54.61" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TP6" gate="G$1" x="223.52" y="109.22" smashed="yes">
+<instance part="TP6" gate="G$1" x="223.52" y="116.84" smashed="yes">
+<attribute name="NAME" x="220.98" y="118.618" size="1.27" layer="95"/>
+<attribute name="MPN" x="220.98" y="115.062" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="TP7" gate="G$1" x="223.52" y="109.22" smashed="yes">
 <attribute name="NAME" x="220.98" y="110.998" size="1.27" layer="95"/>
 <attribute name="MPN" x="220.98" y="107.442" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP7" gate="G$1" x="223.52" y="101.6" smashed="yes">
-<attribute name="NAME" x="220.98" y="103.378" size="1.27" layer="95"/>
-<attribute name="MPN" x="220.98" y="99.822" size="1.27" layer="95" align="top-left"/>
 </instance>
 <instance part="TP8" gate="G$1" x="223.52" y="93.98" smashed="yes">
 <attribute name="NAME" x="220.98" y="95.758" size="1.27" layer="95"/>
@@ -8063,29 +8064,33 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="220.98" y="72.898" size="1.27" layer="95"/>
 <attribute name="MPN" x="220.98" y="69.342" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP1" gate="G$1" x="198.12" y="101.6" smashed="yes">
+<instance part="TP1" gate="G$1" x="198.12" y="109.22" smashed="yes">
+<attribute name="NAME" x="195.58" y="110.998" size="1.27" layer="95"/>
+<attribute name="MPN" x="195.58" y="107.442" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="TP2" gate="G$1" x="198.12" y="101.6" smashed="yes">
 <attribute name="NAME" x="195.58" y="103.378" size="1.27" layer="95"/>
 <attribute name="MPN" x="195.58" y="99.822" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP2" gate="G$1" x="198.12" y="93.98" smashed="yes">
+<instance part="TP3" gate="G$1" x="198.12" y="93.98" smashed="yes">
 <attribute name="NAME" x="195.58" y="95.758" size="1.27" layer="95"/>
 <attribute name="MPN" x="195.58" y="92.202" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP3" gate="G$1" x="198.12" y="86.36" smashed="yes">
+<instance part="TP4" gate="G$1" x="198.12" y="86.36" smashed="yes">
 <attribute name="NAME" x="195.58" y="88.138" size="1.27" layer="95"/>
 <attribute name="MPN" x="195.58" y="84.582" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP4" gate="G$1" x="198.12" y="78.74" smashed="yes">
+<instance part="TP5" gate="G$1" x="198.12" y="78.74" smashed="yes">
 <attribute name="NAME" x="195.58" y="80.518" size="1.27" layer="95"/>
 <attribute name="MPN" x="195.58" y="76.962" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP5" gate="G$1" x="198.12" y="71.12" smashed="yes">
-<attribute name="NAME" x="195.58" y="72.898" size="1.27" layer="95"/>
-<attribute name="MPN" x="195.58" y="69.342" size="1.27" layer="95" align="top-left"/>
+<instance part="TP11" gate="G$1" x="198.12" y="116.84" smashed="yes">
+<attribute name="NAME" x="195.58" y="118.618" size="1.27" layer="95"/>
+<attribute name="MPN" x="195.58" y="115.062" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="TP11" gate="G$1" x="198.12" y="109.22" smashed="yes">
-<attribute name="NAME" x="195.58" y="110.998" size="1.27" layer="95"/>
-<attribute name="MPN" x="195.58" y="107.442" size="1.27" layer="95" align="top-left"/>
+<instance part="TP13" gate="G$1" x="223.52" y="101.6" smashed="yes">
+<attribute name="NAME" x="220.98" y="103.378" size="1.27" layer="95"/>
+<attribute name="MPN" x="220.98" y="99.822" size="1.27" layer="95" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -8160,24 +8165,24 @@ Layer: 94 Symbol</description>
 <pinref part="S1" gate="G$1" pin="S"/>
 </segment>
 <segment>
-<pinref part="SHUTDOWN_E" gate="LED" pin="C"/>
+<pinref part="SHDN_E" gate="LED" pin="C"/>
 <wire x1="248.92" y1="139.7" x2="251.46" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="139.7" x2="251.46" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="P38" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SHUTDOWN_D" gate="LED" pin="C"/>
+<pinref part="SHDN_D" gate="LED" pin="C"/>
 <wire x1="210.82" y1="139.7" x2="210.82" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="P39" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SHUTDOWN_C" gate="LED" pin="C"/>
+<pinref part="SHDN_C" gate="LED" pin="C"/>
 <wire x1="162.56" y1="152.4" x2="165.1" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="152.4" x2="165.1" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="P40" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SHUTDOWN_B" gate="LED" pin="C"/>
+<pinref part="SHDN_B" gate="LED" pin="C"/>
 <wire x1="96.52" y1="152.4" x2="99.06" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="152.4" x2="99.06" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="P41" gate="1" pin="GND"/>
@@ -8289,8 +8294,8 @@ Layer: 94 Symbol</description>
 </segment>
 <segment>
 <pinref part="P28" gate="1" pin="+12V"/>
-<wire x1="200.66" y1="93.98" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="93.98" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="101.6" x2="213.36" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="101.6" x2="213.36" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="TP2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
@@ -8485,9 +8490,9 @@ Layer: 94 Symbol</description>
 <wire x1="149.86" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="109.22" x2="208.28" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="P27" gate="1" pin="+5V"/>
-<wire x1="208.28" y1="104.14" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="111.76" x2="208.28" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="TP1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
@@ -8503,8 +8508,8 @@ Layer: 94 Symbol</description>
 <pinref part="R20" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="86.36" x2="203.2" y2="86.36" width="0.1524" layer="91"/>
-<label x="203.2" y="86.36" size="1.27" layer="95" xref="yes"/>
+<wire x1="200.66" y1="93.98" x2="203.2" y2="93.98" width="0.1524" layer="91"/>
+<label x="203.2" y="93.98" size="1.27" layer="95" xref="yes"/>
 <pinref part="TP3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
@@ -8527,8 +8532,8 @@ Layer: 94 Symbol</description>
 <pinref part="R22" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="78.74" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
-<label x="203.2" y="78.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="200.66" y1="86.36" x2="203.2" y2="86.36" width="0.1524" layer="91"/>
+<label x="203.2" y="86.36" size="1.27" layer="95" xref="yes"/>
 <pinref part="TP4" gate="G$1" pin="P$1"/>
 </segment>
 </net>
@@ -8551,8 +8556,8 @@ Layer: 94 Symbol</description>
 <pinref part="R24" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="71.12" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
-<label x="203.2" y="71.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="200.66" y1="78.74" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
+<label x="203.2" y="78.74" size="1.27" layer="95" xref="yes"/>
 <pinref part="TP5" gate="G$1" pin="P$1"/>
 </segment>
 </net>
@@ -8574,22 +8579,22 @@ Layer: 94 Symbol</description>
 <pinref part="R35" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="226.06" y1="101.6" x2="228.6" y2="101.6" width="0.1524" layer="91"/>
-<label x="228.6" y="101.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="226.06" y1="109.22" x2="228.6" y2="109.22" width="0.1524" layer="91"/>
+<label x="228.6" y="109.22" size="1.27" layer="95" xref="yes"/>
 <pinref part="TP7" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
-<pinref part="SHUTDOWN_E" gate="LED" pin="A"/>
+<pinref part="SHDN_E" gate="LED" pin="A"/>
 <wire x1="238.76" y1="139.7" x2="241.3" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
-<pinref part="SHUTDOWN_D" gate="LED" pin="A"/>
+<pinref part="SHDN_D" gate="LED" pin="A"/>
 <wire x1="203.2" y1="139.7" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8612,22 +8617,22 @@ Layer: 94 Symbol</description>
 <pinref part="R26" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="226.06" y1="109.22" x2="228.6" y2="109.22" width="0.1524" layer="91"/>
-<label x="228.6" y="109.22" size="1.27" layer="95" xref="yes"/>
+<wire x1="226.06" y1="116.84" x2="228.6" y2="116.84" width="0.1524" layer="91"/>
+<label x="228.6" y="116.84" size="1.27" layer="95" xref="yes"/>
 <pinref part="TP6" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
-<pinref part="SHUTDOWN_C" gate="LED" pin="A"/>
+<pinref part="SHDN_C" gate="LED" pin="A"/>
 <wire x1="152.4" y1="152.4" x2="154.94" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
-<pinref part="SHUTDOWN_B" gate="LED" pin="A"/>
+<pinref part="SHDN_B" gate="LED" pin="A"/>
 <wire x1="86.36" y1="152.4" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8769,9 +8774,9 @@ Layer: 94 Symbol</description>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<wire x1="200.66" y1="109.22" x2="203.2" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="116.84" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="P51" gate="G$1" pin="+3V3"/>
-<wire x1="203.2" y1="111.76" x2="203.2" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="119.38" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="TP11" gate="G$1" pin="P$1"/>
 </segment>
 </net>
@@ -8797,6 +8802,11 @@ Layer: 94 Symbol</description>
 <pinref part="SHUTDOWN_F" gate="LED" pin="A"/>
 <wire x1="111.76" y1="60.96" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
 <label x="109.22" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP13" gate="G$1" pin="P$1"/>
+<wire x1="226.06" y1="101.6" x2="228.6" y2="101.6" width="0.1524" layer="91"/>
+<label x="228.6" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
