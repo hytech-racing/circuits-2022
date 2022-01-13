@@ -5433,7 +5433,7 @@ Layer: 94 Symbol</description>
 <sheets>
 <sheet>
 <plain>
-<text x="-17.78" y="-134.62" size="2.54" layer="95">Sathya Gummadi</text>
+<text x="-17.78" y="-134.62" size="2.54" layer="95">Steven Elias</text>
 <text x="48.514" y="-145.796" size="2.54" layer="95">Circuit is used to switch the active power source of 
 the vehicle from the GLV battery to the accumulator</text>
 <text x="-66.04" y="-17.78" size="1.778" layer="97" rot="R180">GLVB:
@@ -5449,6 +5449,7 @@ UV Rising: 10.98V
 UV Falling: 9.97V</text>
 <text x="-20.32" y="-66.04" size="1.27" layer="97">tValid = 10.88ms</text>
 <text x="0" y="-66.04" size="1.27" layer="97">tTMR,FLT = 5.644ms</text>
+<text x="38.1" y="-111.76" size="2.54" layer="95">Steven Elias</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="-40.64" y="-2.54" smashed="yes">
@@ -5967,7 +5968,7 @@ UV Falling: 9.97V</text>
 <pinref part="TP5" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="DCDC" class="0">
+<net name="NET2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="V1"/>
 <wire x1="-30.48" y1="0" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
