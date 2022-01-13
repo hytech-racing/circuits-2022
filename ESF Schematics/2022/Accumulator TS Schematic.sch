@@ -3808,7 +3808,7 @@ Layer: 94 Symbol</description>
 <part name="R22" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="5.9k"/>
 <part name="DISCHARGE_RES" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="10k"/>
 <part name="R23" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="1k"/>
-<part name="PRECHARGE_RES" library="HyTechSymbolsTemp" deviceset="RESISTOR" device=""/>
+<part name="PRECHARGE_RES" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="750"/>
 <part name="TSMP+RES" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="10k"/>
 <part name="TSMP-RES" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="10k"/>
 <part name="R24" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="12.4"/>
