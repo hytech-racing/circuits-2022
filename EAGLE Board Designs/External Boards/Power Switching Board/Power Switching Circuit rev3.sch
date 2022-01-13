@@ -363,18 +363,6 @@
 <wire x1="-3.4544" y1="-3.302" x2="-3.4544" y2="3.302" width="0.127" layer="21"/>
 <rectangle x1="-4.064" y1="-4.064" x2="4.064" y2="4.064" layer="39"/>
 </package>
-<package name="EEE-FK1H681AM">
-<smd name="P$1" x="0" y="6.5000125" dx="6.499859375" dy="2.49986875" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="-6.5000125" dx="6.499859375" dy="2.49986875" layer="1" rot="R90"/>
-<wire x1="-8.500009375" y1="8.500009375" x2="-8.500009375" y2="-8.500009375" width="0.1524" layer="21"/>
-<wire x1="-8.500009375" y1="-8.500009375" x2="8.500009375" y2="-8.500009375" width="0.1524" layer="21"/>
-<wire x1="8.500009375" y1="-8.500009375" x2="8.500009375" y2="8.500009375" width="0.1524" layer="21"/>
-<wire x1="8.500009375" y1="8.500009375" x2="-8.500009375" y2="8.500009375" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="10.16" x2="5.334" y2="10.16" width="0.1524" layer="21"/>
-<wire x1="4.572" y1="10.922" x2="4.572" y2="9.398" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="6.096" x2="-5.969" y2="8.382" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="5.969" x2="6.223" y2="8.382" width="0.1524" layer="21"/>
-</package>
 <package name="0603-CAP">
 <description>0603 Cap
 &lt;br&gt;
@@ -808,17 +796,6 @@ Toshiba
 <wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
 <pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="4" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
-<symbol name="CAPACITOR_POLARIZED">
-<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
-<text x="-1.27" y="2.54" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-3.81" y1="-0.254" x2="0.254" y2="0.254" layer="94" rot="R270"/>
-<rectangle x1="-2.794" y1="-0.254" x2="1.27" y2="0.254" layer="94" rot="R270"/>
-<pin name="MINUS" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="PLUS" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<text x="-3.175" y="1.27" size="1.778" layer="94" rot="R90" align="center">+</text>
-<text x="-4.318" y="-2.286" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="RESISTOR">
 <pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
@@ -2019,24 +1996,6 @@ Toshiba
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CAPACITOR_POLARIZED">
-<gates>
-<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="1.524" y="0"/>
-</gates>
-<devices>
-<device name="" package="EEE-FK1H681AM">
-<connects>
-<connect gate="G$1" pin="MINUS" pad="P$2"/>
-<connect gate="G$1" pin="PLUS" pad="P$1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="RESISTANCE" value="680 uF" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -5306,6 +5265,62 @@ Layer: 94 Symbol</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="HyTechDevicesTemp">
+<packages>
+<package name="EEUFP1E*">
+<description>EEUFP1E Aluminum Electrolytic Capacitor &lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/315/RDF0000C1260-1391675.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="P$1" x="-2.49999375" y="0" drill="0.6" first="yes"/>
+<pad name="P$2" x="2.49999375" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="4.99871875" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="5.6796125" width="0" layer="39"/>
+<circle x="0" y="0" radius="5.6796125" width="0" layer="40"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CAPACITOR_POLARIZED">
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
+<text x="-1.27" y="2.54" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.81" y1="-0.254" x2="0.254" y2="0.254" layer="94" rot="R270"/>
+<pin name="MINUS" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="PLUS" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<text x="-3.175" y="1.27" size="1.778" layer="94" rot="R90" align="center">+</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
+<text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;CAPACITANCE</text>
+<wire x1="1.0414" y1="1.778" x2="1.016" y2="-1.778" width="0.508" layer="94" curve="180" cap="flat"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="EEUFP1E*" prefix="C">
+<description>EEUFP1E Aluminum Electrolytic Capacitor &lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/315/RDF0000C1260-1391675.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EEUFP1E*">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="P$2"/>
+<connect gate="G$1" pin="PLUS" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="681">
+<attribute name="CAPACITANCE" value="680uF"/>
+<attribute name="DKPN" value="P123947-ND"/>
+<attribute name="ESR" value="0.068"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-EEU-FP1E681"/>
+<attribute name="MPN" value="EEU-FP1E681"/>
+<attribute name="TOLERANCE" value="20%"/>
+<attribute name="VOLTAGE" value="25V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5322,7 +5337,6 @@ Layer: 94 Symbol</description>
 <part name="J2" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="SOURIAU"/>
 <part name="J3" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="SOURIAU"/>
 <part name="J1" library="HyTechDevices" deviceset="CONNECTOR-3_?" device=""/>
-<part name="C1" library="HyTechDevices" deviceset="CAPACITOR_POLARIZED" device=""/>
 <part name="LED8" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED" value="RED"/>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
 <part name="Q2" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
@@ -5414,6 +5428,7 @@ Layer: 94 Symbol</description>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="13"/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2"/>
+<part name="C1" library="HyTechDevicesTemp" deviceset="EEUFP1E*" device="" technology="681"/>
 </parts>
 <sheets>
 <sheet>
@@ -5432,7 +5447,6 @@ OV Rising: 14.44V
 OV Falling: 12.34V
 UV Rising: 10.98V
 UV Falling: 9.97V</text>
-<text x="80.518" y="36.83" size="1.27" layer="96" rot="R90">680 uF</text>
 <text x="-20.32" y="-66.04" size="1.27" layer="97">tValid = 10.88ms</text>
 <text x="0" y="-66.04" size="1.27" layer="97">tTMR,FLT = 5.644ms</text>
 </plain>
@@ -5458,9 +5472,6 @@ UV Falling: 9.97V</text>
 </instance>
 <instance part="J1" gate="G$1" x="-73.66" y="-134.62" smashed="yes">
 <attribute name="NAME" x="-73.66" y="-133.858" size="1.778" layer="95"/>
-</instance>
-<instance part="C1" gate="G$1" x="83.82" y="38.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="86.36" y="39.37" size="1.27" layer="95" rot="R270" align="bottom-center"/>
 </instance>
 <instance part="LED8" gate="LED" x="91.44" y="30.48" smashed="yes" rot="R270">
 <attribute name="VALUE" x="92.964" y="35.052" size="1.27" layer="95" rot="R270" align="top-center"/>
@@ -5814,6 +5825,11 @@ UV Falling: 9.97V</text>
 <attribute name="NAME" x="-49.53" y="-49.53" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="-46.99" y="-49.53" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
+<instance part="C1" gate="G$1" x="83.82" y="38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="86.36" y="39.37" size="1.27" layer="95" rot="R270" align="bottom-center"/>
+<attribute name="VOLTAGE" x="81.28" y="39.37" size="1.27" layer="96" rot="R270" align="top-center"/>
+<attribute name="CAPACITANCE" x="79.502" y="39.37" size="1.27" layer="96" rot="R270" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5864,13 +5880,13 @@ UV Falling: 9.97V</text>
 <junction x="-81.28" y="-111.76"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="MINUS"/>
 <wire x1="83.82" y1="25.4" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="25.4" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="LED8" gate="LED" pin="C"/>
 <wire x1="91.44" y1="25.4" x2="91.44" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="P4" gate="1" pin="GND"/>
 <junction x="91.44" y="25.4"/>
+<pinref part="C1" gate="G$1" pin="MINUS"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
@@ -5998,7 +6014,6 @@ UV Falling: 9.97V</text>
 <wire x1="55.88" y1="25.4" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="25.4" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
 <junction x="68.58" y="45.72"/>
-<pinref part="C1" gate="G$1" pin="PLUS"/>
 <wire x1="83.82" y1="43.18" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
 <junction x="83.82" y="45.72"/>
 <wire x1="91.44" y1="43.18" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
@@ -6017,6 +6032,7 @@ UV Falling: 9.97V</text>
 <wire x1="15.24" y1="0" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="PLUS"/>
 </segment>
 <segment>
 <wire x1="-124.46" y1="-144.78" x2="-116.84" y2="-144.78" width="0.1524" layer="91"/>
@@ -6570,6 +6586,14 @@ UV Falling: 9.97V</text>
 <pinref part="F4" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="45.72" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
 <label x="114.3" y="45.72" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="3"/>
+<pinref part="J3" gate="G$1" pin="4"/>
+<wire x1="-93.98" y1="-142.24" x2="-93.98" y2="-144.78" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="-144.78" x2="-91.44" y2="-144.78" width="0.1524" layer="91"/>
+<junction x="-93.98" y="-144.78"/>
+<label x="-91.44" y="-144.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
