@@ -191,7 +191,7 @@
 <wire x1="160" y1="0" x2="160" y2="98.73" width="0" layer="20"/>
 <wire x1="160" y1="98.73" x2="0" y2="98.73" width="0" layer="20"/>
 <wire x1="0" y1="98.73" x2="0" y2="0" width="0" layer="20"/>
-<text x="19.05" y="5.08" size="1.778" layer="21" align="bottom-center">HyTech Racing 2022
+<text x="19.05" y="5.08" size="1.778" layer="21" font="vector" align="bottom-center">HyTech Racing 2022
 Power Switching Board rev3
 Designed by Steven Elias</text>
 </plain>
