@@ -549,6 +549,20 @@ Designed by Cody Kaminsky</text>
 <rectangle x1="1.261" y1="0.5" x2="1.661" y2="0.75" layer="21"/>
 <rectangle x1="1.261" y1="-0.75" x2="1.661" y2="-0.5" layer="21"/>
 </package>
+<package name="2835-LED">
+<description>LUXEON 2835 LED&lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/602/DS236_luxeon_2835_color_line_datasheet-1596094.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A" x="-0.735" y="0" dx="1.93" dy="1.8" layer="1" roundness="11"/>
+<smd name="C" x="1.265" y="0" dx="0.87" dy="1.8" layer="1" roundness="22"/>
+<wire x1="-1.75" y1="1.4" x2="1.75" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="1.4" x2="1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-1.4" x2="-1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-1.4" x2="-1.75" y2="1.4" width="0.127" layer="21"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.032" y1="-1.778" x2="2.032" y2="1.778" layer="39"/>
+<text x="0" y="1.524" size="0.8128" layer="21" font="vector" align="bottom-center">+ -</text>
+<circle x="-2.032" y="1.778" radius="0.127" width="0" layer="21"/>
+</package>
 <package name="0603-LED">
 <description>0603 LED
 &lt;br&gt;
@@ -8676,29 +8690,29 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="150V" x="101.473" y="60.579" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VOLTAGE_MAX" value="150V" x="101.473" y="60.579" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="R26" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_1" x="114.554" y="85.09" smashed="yes" rot="R180">
-<attribute name="DKPN" value="P1.0DTR-ND" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R26" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_3.3" x="114.554" y="85.09" smashed="yes" rot="R180">
+<attribute name="DKPN" value="P3.3AJTR-ND" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOPN" value="667-ERJ-6RQF1R0V" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="ERJ-6RQF1R0V" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="667-ERJ-3RQF3R3V" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="ERJ-3RQF3R3V" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="114.554" y="87.161" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="POWER" value="0.125W" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="RESISTANCE" value="1" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="0.1W" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RESISTANCE" value="3.3" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="0.35V" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE_MAX" value="150V" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.57V" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="114.554" y="85.09" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R27" library="HyTechDevices" package="0805-RES" value="RESISTOR_0805_12.4" x="188.722" y="17.399" smashed="yes" rot="R270">
-<attribute name="DKPN" value="P12.4CTR-ND" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER" value="  Panasonic Electronic Components" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOPN" value="667-ERJ-6ENF12R4V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="ERJ-6ENF12R4V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R27" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_3.3" x="188.722" y="17.399" smashed="yes" rot="R270">
+<attribute name="DKPN" value="P3.3AJTR-ND" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="667-ERJ-3RQF3R3V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="ERJ-3RQF3R3V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="189.572" y="17.399" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="POWER" value=".125W" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="RESISTANCE" value="12.4" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="POWER" value="0.1W" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="RESISTANCE" value="3.3" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_CONTINUOUS" value="1.24V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE_MAX" value="150V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="0.57V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE_MAX" value="75V" x="188.722" y="17.399" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="TP1" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="12.446" y="7.493" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="12.446" y="7.493" size="1.778" layer="27" display="off"/>
@@ -8789,12 +8803,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="10.00V" x="98.933" y="125.857" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="98.933" y="125.857" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D5" library="HyTechDevices" package="0603-LED" value="LED_0603_WHITE" x="98.933" y="121.539" smashed="yes" rot="R90">
-<attribute name="COLOR" value="White" x="98.933" y="121.539" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DKPN" value="SM0603UWC-ND" x="98.933" y="121.539" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Bivar Inc." x="98.933" y="121.539" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOPN" value="749-SM0603UWC" x="98.933" y="121.539" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="SM0603UWC" x="98.933" y="121.539" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="D5" library="HyTechDevices" package="2835-LED" value="LED_2835_BLUE" x="98.933" y="121.539" smashed="yes" rot="R90">
+<attribute name="COLOR" value="Blue" x="98.933" y="121.539" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DKPN" value="" x="98.933" y="121.539" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Lumileds" x="98.933" y="121.539" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOPN" value="997-L128BLU10350" x="98.933" y="121.539" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="L128-BLU1003500000" x="98.933" y="121.539" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="98.183" y="121.539" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
 <element name="D9" library="HyTechDevices" package="0603-LED" value="LED_0603_BLUE" x="29.337" y="0.762" smashed="yes" rot="R90">
@@ -8923,12 +8937,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="10.00V" x="21.94074375" y="3.615109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="21.94074375" y="3.615109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
 </element>
-<element name="D2" library="HyTechDevices" package="0603-LED" value="LED_0603_ORANGE" x="21.956175" y="0.694109375" smashed="yes" rot="R90">
-<attribute name="COLOR" value="Orange" x="21.956175" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="DKPN" value="754-1120-1-ND" x="21.956175" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Kingbright" x="21.956175" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="MOPN" value="604-APT1608SECK" x="21.956175" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="MPN" value="APT1608SECK" x="21.956175" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<element name="D2" library="HyTechDevices" package="0603-LED" value="LED_0603_WHITE" x="21.956175" y="0.694109375" smashed="yes" rot="R90">
+<attribute name="COLOR" value="White" x="21.956175" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="DKPN" value="SM0603UWC-ND" x="21.956175" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Bivar Inc." x="21.956175" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="MOPN" value="749-SM0603UWC" x="21.956175" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="MPN" value="SM0603UWC" x="21.956175" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="NAME" x="21.206175" y="0.694109375" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
 <element name="R29" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_1K" x="26.68260625" y="3.609" smashed="yes" rot="R90">
@@ -8943,12 +8957,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="10.00V" x="26.68260625" y="4.250109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="26.68260625" y="4.250109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
 </element>
-<element name="D3" library="HyTechDevices" package="0603-LED" value="LED_0603_YELLOW" x="26.6980375" y="0.694109375" smashed="yes" rot="R90">
-<attribute name="COLOR" value="Yellow" x="26.6980375" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="DKPN" value="754-1788-1-ND" x="26.6980375" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<element name="D3" library="HyTechDevices" package="0603-LED" value="LED_0603_GREEN" x="26.6980375" y="0.694109375" smashed="yes" rot="R90">
+<attribute name="COLOR" value="Green" x="26.6980375" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="DKPN" value="754-1790-1-ND" x="26.6980375" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Kingbright" x="26.6980375" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="MOPN" value="604-APT1608SYCK/J3-PRV" x="26.6980375" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="MPN" value="APT1608SYCK/J3-PRV" x="26.6980375" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="MOPN" value="604-APT1608ZGCK" x="26.6980375" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="MPN" value="APT1608ZGCK" x="26.6980375" y="0.694109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="NAME" x="25.9480375" y="0.694109375" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
 <element name="R52" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_1K" x="24.31246875" y="3.609" smashed="yes" rot="R90">
@@ -9003,12 +9017,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE_CONTINUOUS" value="10.00V" x="19.69919375" y="4.123109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="19.69919375" y="4.123109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
 </element>
-<element name="D12" library="HyTechDevices" package="0603-LED" value="LED_0603_WHITE" x="19.714625" y="0.567109375" smashed="yes" rot="R90">
-<attribute name="COLOR" value="White" x="19.714625" y="0.567109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="DKPN" value="SM0603UWC-ND" x="19.714625" y="0.567109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Bivar Inc." x="19.714625" y="0.567109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="MOPN" value="749-SM0603UWC" x="19.714625" y="0.567109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="MPN" value="SM0603UWC" x="19.714625" y="0.567109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<element name="D12" library="HyTechDevices" package="0603-LED" value="LED_0603_ORANGE" x="19.714625" y="0.567109375" smashed="yes" rot="R90">
+<attribute name="COLOR" value="Orange" x="19.714625" y="0.567109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="DKPN" value="754-1120-1-ND" x="19.714625" y="0.567109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Kingbright" x="19.714625" y="0.567109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="MOPN" value="604-APT1608SECK" x="19.714625" y="0.567109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="MPN" value="APT1608SECK" x="19.714625" y="0.567109375" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="NAME" x="18.964625" y="0.567109375" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
 <element name="TP18" library="HyTechDevices" package="MICRO_MINIATURE" value="TEST_POINT" x="130.361109375" y="97.80508125" smashed="yes">
@@ -9775,7 +9789,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="PACK+FUSED">
 <contactref element="R27" pad="1"/>
 <contactref element="TP13" pad="1"/>
-<wire x1="188.722" y1="18.449" x2="188.722" y2="22.86" width="0.508" layer="1"/>
+<wire x1="188.722" y1="18.249" x2="188.722" y2="22.86" width="0.508" layer="1"/>
 <wire x1="188.722" y1="22.86" x2="188.341" y2="23.241" width="0.508" layer="1"/>
 <via x="188.341" y="23.241" extent="1-16" drill="0.762"/>
 <via x="103.886" y="24.765" extent="1-16" drill="0.762"/>
@@ -9950,12 +9964,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C29" pad="1"/>
 <contactref element="J5" pad="4"/>
 <contactref element="TP10" pad="1"/>
-<contactref element="D5" pad="1"/>
+<contactref element="D5" pad="C"/>
 <contactref element="J5" pad="2"/>
 <wire x1="70.374571875" y1="132.973165625" x2="70.366190625" y2="132.964784375" width="0.762" layer="16"/>
-<wire x1="98.933" y1="120.714" x2="93.789" y2="120.714" width="0.254" layer="1"/>
+<wire x1="98.933" y1="122.804" x2="93.789" y2="120.714" width="0.254" layer="1"/>
 <wire x1="93.789" y1="120.714" x2="93.472" y2="121.031" width="0.254" layer="1"/>
-<wire x1="98.933" y1="120.714" x2="98.996" y2="120.714" width="0.254" layer="1"/>
+<wire x1="98.933" y1="122.804" x2="98.996" y2="120.714" width="0.254" layer="1"/>
 <wire x1="98.996" y1="120.714" x2="97.79" y2="119.508" width="0.254" layer="1"/>
 <wire x1="97.79" y1="119.508" x2="97.79" y2="119.253" width="0.254" layer="1"/>
 <via x="97.79" y="119.253" extent="1-16" drill="0.381"/>
@@ -9991,7 +10005,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <vertex x="54.483" y="119.888"/>
 </polygon>
 <wire x1="109.1364125" y1="123.06655" x2="112.1336125" y2="123.06655" width="0" layer="19" extent="1-1"/>
-<wire x1="98.933" y1="120.714" x2="109.1364125" y2="123.06655" width="0" layer="19" extent="1-1"/>
+<wire x1="98.933" y1="122.804" x2="109.1364125" y2="123.06655" width="0" layer="19" extent="1-1"/>
 <wire x1="77.24091875" y1="122.194" x2="93.472" y2="121.031" width="0" layer="19" extent="1-1"/>
 <wire x1="66.24091875" y1="122.194" x2="77.24091875" y2="122.194" width="0" layer="19" extent="1-1"/>
 <wire x1="70.366190625" y1="132.964784375" x2="66.24091875" y2="122.194" width="0" layer="19" extent="16-16"/>
@@ -10210,7 +10224,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="U$1" pad="3"/>
 <contactref element="R27" pad="2"/>
 <wire x1="188.976" y1="12.151" x2="188.976" y2="16.095" width="0.508" layer="1"/>
-<wire x1="188.976" y1="16.095" x2="188.722" y2="16.349" width="0.254" layer="1"/>
+<wire x1="188.976" y1="16.095" x2="188.722" y2="16.549" width="0.254" layer="1"/>
 </signal>
 <signal name="TSMP+">
 <contactref element="TP18" pad="1"/>
@@ -10330,10 +10344,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C2" pad="1"/>
 <contactref element="U17" pad="1"/>
 <wire x1="108.147" y1="82.423" x2="107.202" y2="83.368" width="0.254" layer="16"/>
-<wire x1="113.504" y1="85.09" x2="113.411" y2="84.997" width="0.254" layer="1"/>
+<wire x1="113.704" y1="85.09" x2="113.411" y2="84.997" width="0.254" layer="1"/>
 <wire x1="113.411" y1="84.997" x2="113.411" y2="80.88" width="0.254" layer="1"/>
 <wire x1="108.147" y1="82.423" x2="109.10265" y2="82.423" width="0.254" layer="16"/>
-<wire x1="113.504" y1="85.09" x2="113.123" y2="84.709" width="0.254" layer="1"/>
+<wire x1="113.704" y1="85.09" x2="113.123" y2="84.709" width="0.254" layer="1"/>
 <wire x1="113.123" y1="84.709" x2="111.36" y2="84.709" width="0.254" layer="1"/>
 <wire x1="111.36" y1="84.709" x2="111.36" y2="82.931" width="0.254" layer="1"/>
 <wire x1="111.36" y1="82.931" x2="113.411" y2="80.88" width="0.254" layer="1"/>
@@ -10349,8 +10363,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$18">
 <contactref element="R30" pad="1"/>
-<contactref element="D5" pad="2"/>
-<wire x1="98.933" y1="123.737" x2="98.933" y2="122.364" width="0.254" layer="1"/>
+<contactref element="D5" pad="A"/>
+<wire x1="98.933" y1="123.737" x2="98.933" y2="120.804" width="0.254" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="R35" pad="1"/>
@@ -10541,7 +10555,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="119.972" y1="83.947" x2="120.0785" y2="83.8405" width="0.508" layer="1"/>
 <wire x1="120.0785" y1="83.8405" x2="120.0785" y2="83.82" width="0.508" layer="1"/>
 <wire x1="119.972" y1="83.947" x2="119.38" y2="83.947" width="0.508" layer="1"/>
-<wire x1="115.604" y1="85.09" x2="116.874" y2="83.82" width="0.254" layer="1"/>
+<wire x1="115.404" y1="85.09" x2="116.874" y2="83.82" width="0.254" layer="1"/>
 <wire x1="116.874" y1="83.82" x2="120.0785" y2="83.82" width="0.254" layer="1"/>
 <wire x1="120.8405" y1="89.8525" x2="120.904" y2="89.916" width="0.762" layer="1"/>
 <wire x1="119.972" y1="83.947" x2="120.8405" y2="84.8155" width="0.508" layer="1"/>
