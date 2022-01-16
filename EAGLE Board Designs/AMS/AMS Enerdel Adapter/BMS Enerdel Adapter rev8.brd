@@ -4082,14 +4082,14 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <element name="F2" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="296.4307" y="-14.851640625" smashed="yes"/>
 <element name="F3" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="296.4307" y="-67.060509375" smashed="yes"/>
 <element name="F4" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="296.4307" y="-32.254596875" smashed="yes"/>
-<element name="F5" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="278.8031" y="-54.508953125" smashed="yes"/>
+<element name="F5" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="278.9809" y="-54.508953125" smashed="yes"/>
 <element name="F6" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="296.4307" y="-40.956075" smashed="yes"/>
 <element name="F7" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="296.4307" y="-49.657553125" smashed="yes"/>
 <element name="F8" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="296.4307" y="-6.1501625" smashed="yes"/>
 <element name="F9" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="296.4307" y="-75.7619875" smashed="yes"/>
 <element name="F10" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="296.4307" y="-23.55311875" smashed="yes"/>
 <element name="F11" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="296.4307" y="-58.35903125" smashed="yes"/>
-<element name="F12" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="279.1587" y="-36.714275" smashed="yes"/>
+<element name="F12" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="278.9809" y="-36.714275" smashed="yes"/>
 <element name="F13" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="-5.2832" y="-46.460059375" smashed="yes" rot="R180"/>
 <element name="F14" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="-5.2832" y="-29.016221875" smashed="yes" rot="R180"/>
 <element name="F15" library="HyTechDevices" package="MINI-BLADE_FUSE_HOLDER" value="" x="-5.2832" y="-63.903896875" smashed="yes" rot="R180"/>
@@ -4129,13 +4129,13 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="329.1918" y1="-51.16635" x2="330.5466" y2="-49.81155" width="0.2032" layer="1"/>
 <contactref element="F5" pad="R2"/>
 <contactref element="F5" pad="R1"/>
-<wire x1="288.7091" y1="-51.105353125" x2="288.7091" y2="-54.508953125" width="0.2032" layer="1"/>
+<wire x1="288.8869" y1="-51.105353125" x2="288.8869" y2="-54.508953125" width="0.2032" layer="1"/>
 <wire x1="330.5466" y1="-57.8426" x2="328.87765" y2="-57.8426" width="0.2032" layer="1"/>
 <wire x1="328.87765" y1="-57.8426" x2="327.52285" y2="-59.1974" width="0.2032" layer="1"/>
 <wire x1="313.87438125" y1="-59.1974" x2="327.52285" y2="-59.1974" width="0.2032" layer="1"/>
 <wire x1="307.4226125" y1="-52.74563125" x2="313.87438125" y2="-59.1974" width="0.2032" layer="1"/>
-<wire x1="288.7091" y1="-54.508953125" x2="290.472421875" y2="-52.74563125" width="0.2032" layer="1"/>
-<wire x1="290.472421875" y1="-52.74563125" x2="307.4226125" y2="-52.74563125" width="0.2032" layer="1"/>
+<wire x1="288.8869" y1="-54.508953125" x2="290.650221875" y2="-52.74563125" width="0.2032" layer="1"/>
+<wire x1="290.650221875" y1="-52.74563125" x2="307.4226125" y2="-52.74563125" width="0.2032" layer="1"/>
 </signal>
 <signal name="A6-B12">
 <contactref element="A-CONNECTOR-14-LOWER-OUT" pad="6"/>
@@ -4456,12 +4456,12 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="331.9014" y1="-49.0314875" x2="331.9014" y2="-34.92395" width="0.2032" layer="1"/>
 <contactref element="F12" pad="R2"/>
 <contactref element="F12" pad="R1"/>
-<wire x1="289.0647" y1="-33.310675" x2="289.0647" y2="-36.714275" width="0.2032" layer="1"/>
+<wire x1="288.8869" y1="-33.310675" x2="288.8869" y2="-36.714275" width="0.2032" layer="1"/>
 <wire x1="330.5466" y1="-30.6002" x2="328.87765" y2="-30.6002" width="0.2032" layer="1"/>
 <wire x1="328.87765" y1="-30.6002" x2="327.52285" y2="-29.2454" width="0.2032" layer="1"/>
 <wire x1="327.52285" y1="-29.2454" x2="312.918" y2="-29.2454" width="0.2032" layer="1"/>
-<wire x1="289.0647" y1="-36.714275" x2="290.650775" y2="-35.1282" width="0.2032" layer="1"/>
-<wire x1="290.650775" y1="-35.1282" x2="307.0352" y2="-35.1282" width="0.2032" layer="1"/>
+<wire x1="288.8869" y1="-36.714275" x2="290.472975" y2="-35.1282" width="0.2032" layer="1"/>
+<wire x1="290.472975" y1="-35.1282" x2="307.0352" y2="-35.1282" width="0.2032" layer="1"/>
 <wire x1="307.0352" y1="-35.1282" x2="312.918" y2="-29.2454" width="0.2032" layer="1"/>
 </signal>
 <signal name="A3-B9">
@@ -4569,11 +4569,11 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <contactref element="J5" pad="1"/>
 <contactref element="F5" pad="L2"/>
 <contactref element="F5" pad="L1"/>
-<wire x1="278.8031" y1="-51.105353125" x2="278.8031" y2="-54.508953125" width="0.2032" layer="1"/>
+<wire x1="278.9809" y1="-51.105353125" x2="278.9809" y2="-54.508953125" width="0.2032" layer="1"/>
 <wire x1="225.425" y1="-63.246" x2="230.2764" y2="-63.246" width="0.2032" layer="1"/>
 <wire x1="230.2764" y1="-63.246" x2="238.454646875" y2="-55.067753125" width="0.2032" layer="1"/>
-<wire x1="278.8031" y1="-54.508953125" x2="278.2443" y2="-55.067753125" width="0.2032" layer="1"/>
-<wire x1="278.2443" y1="-55.067753125" x2="238.454646875" y2="-55.067753125" width="0.2032" layer="1"/>
+<wire x1="278.9809" y1="-54.508953125" x2="278.4221" y2="-55.067753125" width="0.2032" layer="1"/>
+<wire x1="278.4221" y1="-55.067753125" x2="238.454646875" y2="-55.067753125" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="J6" pad="1"/>
@@ -4760,10 +4760,10 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <contactref element="J12" pad="1"/>
 <contactref element="F12" pad="L2"/>
 <contactref element="F12" pad="L1"/>
-<wire x1="279.1587" y1="-33.310675" x2="279.1587" y2="-36.714275" width="0.2032" layer="1"/>
+<wire x1="278.9809" y1="-33.310675" x2="278.9809" y2="-36.714275" width="0.2032" layer="1"/>
 <wire x1="222.5167" y1="-29.59025" x2="222.5167" y2="-26.0985" width="0.2032" layer="1"/>
-<wire x1="279.1587" y1="-33.310675" x2="279.0317" y2="-33.437675" width="0.2032" layer="1"/>
-<wire x1="279.0317" y1="-33.437675" x2="226.364125" y2="-33.437675" width="0.2032" layer="1"/>
+<wire x1="278.9809" y1="-33.310675" x2="278.8539" y2="-33.437675" width="0.2032" layer="1"/>
+<wire x1="278.8539" y1="-33.437675" x2="226.364125" y2="-33.437675" width="0.2032" layer="1"/>
 <wire x1="226.364125" y1="-33.437675" x2="222.5167" y2="-29.59025" width="0.2032" layer="1"/>
 <wire x1="212.0138" y1="-15.5956" x2="194.4878" y2="-15.5956" width="0.2032" layer="1"/>
 <wire x1="194.4878" y1="-15.5956" x2="185.8518" y2="-24.2316" width="0.2032" layer="1"/>
