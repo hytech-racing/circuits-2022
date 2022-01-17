@@ -3413,6 +3413,8 @@ Layer: 94 Symbol</description>
 <part name="TSMP-RES" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="10k"/>
 <part name="J19" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
 <part name="J20" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
+<part name="R1" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="10k"/>
+<part name="R2" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -3632,6 +3634,14 @@ AC Power</text>
 <attribute name="MPN" x="165.1" y="93.345" size="1.27" layer="96" rot="MR0" align="top-left"/>
 <attribute name="MANUFACTURER" x="165.1" y="102.362" size="1.27" layer="96" rot="MR0"/>
 </instance>
+<instance part="R1" gate="G$1" x="129.54" y="119.38" smashed="yes">
+<attribute name="NAME" x="128.27" y="120.65" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="128.27" y="118.11" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R2" gate="G$1" x="129.54" y="109.22" smashed="yes">
+<attribute name="NAME" x="128.27" y="110.49" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="128.27" y="107.95" size="1.27" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3685,12 +3695,14 @@ AC Power</text>
 <segment>
 <wire x1="132.08" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="J9" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <wire x1="132.08" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -3909,12 +3921,14 @@ AC Power</text>
 <segment>
 <pinref part="U$7" gate="G$1" pin="P$2"/>
 <wire x1="119.38" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="P$2"/>
 <wire x1="116.84" y1="109.22" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$23" class="0">
