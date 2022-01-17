@@ -289,6 +289,9 @@
 <wire x1="8.08253125" y1="72.39" x2="1.5" y2="72.39" width="0.001" layer="20" grouprefs="BOARD_OUTLINE"/>
 <wire x1="1.5" y1="72.39" x2="0" y2="70.89" width="0.001" layer="20" grouprefs="BOARD_OUTLINE"/>
 <circle x="57.40469375" y="114.9856375" radius="2" width="0.001" layer="20"/>
+<text x="52.324" y="8.128" size="1.778" layer="21">HyTech Racing 2022
+Accumulator Control Unit Rev2
+Designed by Joshua Kirshenbaum</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -6156,11 +6159,11 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MPN" value="430450814" x="132.91229375" y="151.408365625" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="NAME" x="127.332221875" y="81.17045" size="0.8128" layer="25" rot="R315" align="bottom-center"/>
 </element>
-<element name="J3" library="HyTechDevices" package="FLEX_STACK_PTH_08_DUAL" value="CONNECTOR-8_FS_S" x="41.2" y="5.7" smashed="yes" rot="MR0">
-<attribute name="DKPN" value="A32935-ND" x="41.2" y="5.7" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MANUFACTURER" value="TE Connectivity" x="-22.3" y="-40.02" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MOPN" value="571-5-534206-4 " x="41.2" y="5.7" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="5-534206-4" x="-22.3" y="-40.02" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="J3" library="HyTechDevices" package="FLEX_STACK_PTH_08_DUAL" value="CONNECTOR-8_S_S" x="41.2" y="5.7" smashed="yes" rot="MR0">
+<attribute name="DKPN" value="S7107-ND" x="41.2" y="5.7" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions" x="-22.3" y="-40.02" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MOPN" value="" x="41.2" y="5.7" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="PPPC042LFBN-RC" x="-22.3" y="-40.02" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="41.2" y="2.8298" size="0.8128" layer="26" rot="MR180" align="bottom-center"/>
 </element>
 <element name="J4" library="HyTechDevices - Copy" package="MOLEX_MICROFIT_PTH_VERTICAL_02_SINGLE" value="CONNECTOR-2_MF_T_V_" x="81.33670625" y="127.52388125" smashed="yes">
@@ -7447,7 +7450,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <element name="U$5" library="HyTechAesthetics" package="GLV" value="" x="55.88" y="127" smashed="yes" rot="R90"/>
 <element name="U$9" library="HyTechAesthetics" package="TS" value="" x="60.96" y="128.27" smashed="yes" rot="R90"/>
 <element name="U$10" library="HyTechAesthetics" package="TS" value="" x="97.79" y="115.57" smashed="yes" rot="R180"/>
-<element name="U$16" library="HyTechAesthetics" package="LOGO_GT_0.50&quot;" value="" x="62.484" y="11.43" smashed="yes"/>
+<element name="U$16" library="HyTechAesthetics" package="LOGO_GT_0.50&quot;" value="" x="96.774" y="12.446" smashed="yes"/>
 <element name="R55" library="HyTechDevices - Copy" package="0603-RES" value="RESISTOR_0603_10K" x="32.0294" y="15.5702" smashed="yes" rot="R90">
 <attribute name="DKPN" value="311-10.0KHRCT-ND" x="32.0294" y="15.5702" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="32.0294" y="15.5702" size="1.778" layer="27" rot="R90" display="off"/>
@@ -10410,6 +10413,10 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="9.5" severity="warning">
 Since Version 9.5, EAGLE supports persistent groups with
 schematics, and board files. Those persistent groups

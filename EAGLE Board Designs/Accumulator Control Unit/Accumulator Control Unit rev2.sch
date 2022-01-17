@@ -8290,7 +8290,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 </technology>
 </technologies>
 </device>
-<device name="FS" package="FLEX_STACK_PTH_08_DUAL">
+<device name="S" package="FLEX_STACK_PTH_08_DUAL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -8303,10 +8303,10 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 </connects>
 <technologies>
 <technology name="S">
-<attribute name="DKPN" value="A32935-ND"/>
-<attribute name="MANUFACTURER" value="TE Connectivity"/>
-<attribute name="MOPN" value="571-5-534206-4 "/>
-<attribute name="MPN" value="5-534206-4"/>
+<attribute name="DKPN" value="S7107-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="PPPC042LFBN-RC"/>
 </technology>
 </technologies>
 </device>
@@ -8548,7 +8548,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
 <part name="FRAME2" library="HyTechFrames" deviceset="FRAME" device=""/>
 <part name="FRAME4" library="HyTechFrames" deviceset="FRAME" device=""/>
-<part name="J3" library="HyTechDevices" deviceset="CONNECTOR-8_?_*" device="FS" technology="S"/>
+<part name="J3" library="HyTechDevices" deviceset="CONNECTOR-8_?_*" device="S" technology="S"/>
 <part name="P1" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P6" library="HyTechSupplies" deviceset="+12V" device=""/>
@@ -9187,8 +9187,8 @@ Accumulator GND, both AIR+ and -</text>
 <attribute name="NAME" x="255.27" y="110.49" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="255.27" y="113.03" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="P5" gate="1" x="22.86" y="144.78" smashed="yes">
-<attribute name="VALUE" x="22.86" y="143.51" size="1.27" layer="96" align="top-center"/>
+<instance part="P5" gate="1" x="27.94" y="144.78" smashed="yes">
+<attribute name="VALUE" x="27.94" y="143.51" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="J1" gate="G$1" x="10.16" y="195.58" smashed="yes">
 <attribute name="NAME" x="10.16" y="196.215" size="1.27" layer="95"/>
@@ -9643,7 +9643,7 @@ Accumulator GND, both AIR+ and -</text>
 </segment>
 <segment>
 <pinref part="P5" gate="1" pin="GND"/>
-<wire x1="22.86" y1="147.32" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="147.32" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="8"/>
 </segment>
 </net>
