@@ -5876,8 +5876,6 @@ Based on page 10.</description>
 <wire x1="-3.3" y1="-3.3" x2="-3.3" y2="0" width="0.127" layer="21"/>
 <text x="-3.429" y="3.429" size="1.27" layer="21" font="vector">&gt;NAME</text>
 <rectangle x1="-5.08" y1="-3.81" x2="5.08" y2="3.81" layer="39"/>
-<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="3.81" layer="41"/>
-<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="3.81" layer="43"/>
 </package>
 <package name="PA4334">
 <smd name="1" x="-1.15" y="0" dx="2.7" dy="0.8" layer="1" rot="R90"/>
@@ -5888,8 +5886,6 @@ Based on page 10.</description>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <text x="-3.175" y="1.651" size="1.27" layer="21">&gt;NAME</text>
 <rectangle x1="-2.54" y1="-2.54" x2="2.54" y2="2.54" layer="39"/>
-<rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="41"/>
-<rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="43"/>
 </package>
 <package name="FLEX_STACK_PTH_08_DUAL">
 <pad name="1" x="-3.81" y="1.27" drill="1.016"/>
@@ -6745,7 +6741,8 @@ Dashed line is edge of mated connector.</description>
 <deviceset name="INDUCTOR_?_*" prefix="L">
 <description>Inductor
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Inductor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-9127.pdf"&gt;LQM18DH100M70 Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.we-online.com/catalog/datasheet/74451133.pdf"&gt; 74451133 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/54/SRU1048-1391431.pdf"&gt;SRU1408 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/336/plei_s_a0002827602_1-2281222.pdf"&gt;PA4334 Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/445/74437349560-1721693.pdf"&gt;WE-LMHI Datasheet&lt;/a&gt;&lt;/li&gt;
@@ -6822,10 +6819,10 @@ Dashed line is edge of mated connector.</description>
 <technologies>
 <technology name="56UH">
 <attribute name="CURRENT_RATED" value="1.4A"/>
-<attribute name="CURRENT_SATURATION" value="1.4A"/>
-<attribute name="DCR" value="342m"/>
+<attribute name="CURRENT_SATURATION" value="2A"/>
+<attribute name="DCR" value="342mΩ"/>
 <attribute name="DKPN" value="732-11454-2-ND"/>
-<attribute name="INDUCTANCE" value="56uH"/>
+<attribute name="INDUCTANCE" value="56µH"/>
 <attribute name="MANUFACTURER" value="Wurth Elektronik"/>
 <attribute name="MOPN" value="710-74437349560"/>
 <attribute name="MPN" value="74437349560"/>
@@ -6839,16 +6836,26 @@ Dashed line is edge of mated connector.</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="10UH">
+<attribute name="CURRENT_RATED" value="300mA"/>
+<attribute name="CURRENT_SATURATION" value="100mA "/>
+<attribute name="DCR" value="1.37Ω"/>
+<attribute name="DKPN" value="490-LQM18DH100M70LTR-ND"/>
+<attribute name="INDUCTANCE" value="10µH"/>
+<attribute name="MANUFACTURER" value="Murata Electronics"/>
+<attribute name="MOPN" value="81-LQM18DH100M70L "/>
+<attribute name="MPN" value="LQM18DH100M70L"/>
+<attribute name="TOLERANCE" value="20%"/>
+</technology>
 <technology name="3.6UH">
 <attribute name="CURRENT_RATED" value="1.6A"/>
 <attribute name="CURRENT_SATURATION" value="1A"/>
-<attribute name="DCR" value="0.13"/>
+<attribute name="DCR" value="0.13Ω"/>
 <attribute name="DKPN" value="553-3508-2-ND"/>
-<attribute name="INDUCTANCE" value="3.6uH"/>
+<attribute name="INDUCTANCE" value="3.6µH"/>
 <attribute name="MANUFACTURER" value="Pulse Electonics Company"/>
 <attribute name="MOPN" value="673-PA4334362NLT"/>
 <attribute name="MPN" value="PA4334.362NLT"/>
-<attribute name="TOLERANCE" value="20%"/>
 </technology>
 </technologies>
 </device>
@@ -8742,7 +8749,7 @@ ISO224B: High-Grade
 </technology>
 </technologies>
 </device>
-<device name="" package="FLEX_STACK_PTH_08_DUAL">
+<device name="S" package="FLEX_STACK_PTH_08_DUAL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -8754,7 +8761,12 @@ ISO224B: High-Grade
 <connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="S">
+<attribute name="DKPN" value="S7107-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MOPN" value=""/>
+<attribute name="MPN" value="PPPC042LFBN-RC"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9043,7 +9055,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <symbols>
 <symbol name="TS+FUSED">
 <text x="0" y="5.08" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
-<pin name="TS+" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="TS+FUSED" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 <wire x1="2.54" y1="3.556" x2="2.032" y2="2.794" width="0.254" layer="94"/>
 <wire x1="2.032" y1="2.794" x2="2.667" y2="2.286" width="0.254" layer="94"/>
 <wire x1="2.667" y1="2.286" x2="2.286" y2="1.524" width="0.254" layer="94"/>
@@ -9665,40 +9677,6 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 </device>
 </devices>
 </deviceset>
-<deviceset name="RECEPTACLE-6_SINGLE_*">
-<gates>
-<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="MICROFIT">
-<attribute name="DKPN" value="WM13217-ND"/>
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="538-43645-0608"/>
-<attribute name="MPN" value="0436450608"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RECEPTACLE-7_*">
-<gates>
-<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="MICROFIT">
-<attribute name="DKPN" value="WM2405-ND"/>
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="538-43645-0700"/>
-<attribute name="MPN" value="0436450700"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FUSE_*" prefix="O">
 <description>Fuse
 &lt;br&gt;
@@ -9722,6 +9700,75 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-0297002.WXNV"/>
 <attribute name="MPN" value="0297002.WXNV"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-8_*" prefix="O">
+<description>Receptacle, 8 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430250808_CRIMP_HOUSINGS-2845567.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/4/1053081208_CRIMP_HOUSINGS-2883437.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="FLEXSTACK">
+<attribute name="DKPN" value="ZW-04-11-G-D-522-158-ND"/>
+<attribute name="MANUFACTURER" value="Samtec Inc"/>
+<attribute name="MOPN" value="200-ZW0411GD522158"/>
+<attribute name="MPN" value="ZW-04-11-G-D-522-158"/>
+</technology>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM13210-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-0808"/>
+<attribute name="MPN" value="0430250808"/>
+</technology>
+<technology name="NANOFIT">
+<attribute name="DKPN" value="WM14964-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105308-1208"/>
+<attribute name="MPN" value="105308-1208"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-7_*" prefix="O">
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM2405-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43645-0700"/>
+<attribute name="MPN" value="0436450700"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-6_SINGLE_*" prefix="O">
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM13217-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43645-0608"/>
+<attribute name="MPN" value="0436450608"/>
 </technology>
 </technologies>
 </device>
@@ -9754,7 +9801,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="R31" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.62"/>
 <part name="R32" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R33" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
-<part name="L4" library="HyTechDevices" deviceset="INDUCTOR_?_*" device="PA4334" technology="3.6UH"/>
+<part name="L4" library="HyTechDevices" deviceset="INDUCTOR_?_*" device="74451133" technology="3.6UH" value="INDUCTOR_74451133_3.6UH"/>
 <part name="L5" library="HyTechDevices" deviceset="INDUCTOR_?_*" device="WELMHI" technology="56UH"/>
 <part name="D6" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="U$27" library="HyTechSupplies" deviceset="TS+FUSED" device=""/>
@@ -9779,7 +9826,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="P35" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P36" library="HyTechSupplies" deviceset="TS+UNFUSED" device=""/>
 <part name="P37" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="J3" library="HyTechDevices" deviceset="CONNECTOR-8_?_*" device=""/>
+<part name="J3" library="HyTechDevices" deviceset="CONNECTOR-8_?_*" device="S" technology="S"/>
 <part name="P39" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="U$32" library="HyTechSupplies" deviceset="TS+FUSED" device=""/>
 <part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1.25"/>
@@ -9886,7 +9933,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="R29" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="D3" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN" value="LED_0603_GREEN"/>
 <part name="R52" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="D4" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
+<part name="D4" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="YELLOW" value="LED_0603_YELLOW"/>
 <part name="D11" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
 <part name="R53" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R54" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
@@ -9937,7 +9984,10 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="R18" library="HyTechDevices" deviceset="RESISTOR_?_*" device="B20" technology="10K"/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="B20" technology="750"/>
 <part name="D14" library="HyTechDevicesTempTSB" deviceset="RECTIFIER_*_?" device="SOD123" technology="400V"/>
-<part name="U$49" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device=""/>
+<part name="U$49" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
+<attribute name="DESCRIPTION_1" value="Externals Sheet"/>
+<attribute name="ENGINEER" value="Cody Kaminsky"/>
+</part>
 <part name="O9" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O10" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O11" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
@@ -9953,9 +10003,10 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="O21" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O22" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O23" library="HyTechExternal" deviceset="RECEPTACLE-4_*" device="" technology="MICROFIT"/>
-<part name="U$50" library="HyTechExternal" deviceset="RECEPTACLE-6_SINGLE_*" device="" technology="MICROFIT"/>
-<part name="U$51" library="HyTechExternal" deviceset="RECEPTACLE-7_*" device="" technology="MICROFIT"/>
 <part name="O25" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_10"/>
+<part name="O1" library="HyTechExternal" deviceset="RECEPTACLE-8_*" device="" technology="FLEXSTACK"/>
+<part name="O2" library="HyTechExternal" deviceset="RECEPTACLE-7_*" device="" technology="MICROFIT"/>
+<part name="O3" library="HyTechExternal" deviceset="RECEPTACLE-6_SINGLE_*" device="" technology="MICROFIT"/>
 </parts>
 <sheets>
 <sheet>
@@ -10465,12 +10516,12 @@ Undervoltage: 56V</text>
 </net>
 <net name="TS+FUSED" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="TS+"/>
+<pinref part="U$2" gate="G$1" pin="TS+FUSED"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="198.12" x2="68.58" y2="198.12" width="0.6096" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$40" gate="G$1" pin="TS+"/>
+<pinref part="U$40" gate="G$1" pin="TS+FUSED"/>
 <wire x1="50.8" y1="149.86" x2="50.8" y2="152.4" width="0.6096" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 </segment>
@@ -10962,7 +11013,7 @@ Undervoltage: 56V</text>
 <wire x1="48.26" y1="167.64" x2="55.88" y2="167.64" width="0.6096" layer="91"/>
 <wire x1="48.26" y1="167.64" x2="43.18" y2="167.64" width="0.6096" layer="91"/>
 <junction x="48.26" y="167.64"/>
-<pinref part="U$27" gate="G$1" pin="TS+"/>
+<pinref part="U$27" gate="G$1" pin="TS+FUSED"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -12050,10 +12101,10 @@ Undervoltage: 56V</text>
 <segment>
 <pinref part="F6" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="101.6" x2="246.38" y2="101.6" width="0.6096" layer="91"/>
-<pinref part="U$36" gate="G$1" pin="TS+"/>
+<pinref part="U$36" gate="G$1" pin="TS+FUSED"/>
 </segment>
 <segment>
-<pinref part="U$32" gate="G$1" pin="TS+"/>
+<pinref part="U$32" gate="G$1" pin="TS+FUSED"/>
 <wire x1="241.3" y1="170.18" x2="256.54" y2="170.18" width="0.6096" layer="91"/>
 <pinref part="U$33" gate="G$1" pin="4"/>
 </segment>
@@ -12114,6 +12165,7 @@ Undervoltage: 56V</text>
 <text x="104.14" y="198.12" size="1.778" layer="97">Molex Microfit 4-pin</text>
 <text x="152.4" y="198.12" size="1.778" layer="97">Molex Microfit 6-pin, spaced</text>
 <text x="193.04" y="198.12" size="1.778" layer="97">Molex Microfit 7-pin, spaced</text>
+<text x="63.5" y="190.5" size="1.778" layer="97">Flex Stack Board Connector</text>
 </plain>
 <instances>
 <instance part="U$49" gate="G$1" x="0" y="0" smashed="yes">
@@ -12131,15 +12183,12 @@ Undervoltage: 56V</text>
 <attribute name="NAME" x="104.14" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O10" gate="G$1" x="109.22" y="182.88" smashed="yes">
-<attribute name="MPN" x="109.22" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="109.22" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O11" gate="G$1" x="114.3" y="182.88" smashed="yes">
-<attribute name="MPN" x="114.3" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="114.3" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O12" gate="G$1" x="119.38" y="182.88" smashed="yes">
-<attribute name="MPN" x="119.38" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="119.38" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O13" gate="G$1" x="152.4" y="182.88" smashed="yes">
@@ -12147,19 +12196,15 @@ Undervoltage: 56V</text>
 <attribute name="NAME" x="152.4" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O14" gate="G$1" x="157.48" y="182.88" smashed="yes">
-<attribute name="MPN" x="157.48" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="157.48" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O15" gate="G$1" x="162.56" y="182.88" smashed="yes">
-<attribute name="MPN" x="162.56" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="162.56" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O16" gate="G$1" x="167.64" y="182.88" smashed="yes">
-<attribute name="MPN" x="167.64" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="167.64" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O17" gate="G$1" x="172.72" y="182.88" smashed="yes">
-<attribute name="MPN" x="172.72" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="172.72" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O18" gate="G$1" x="193.04" y="182.88" smashed="yes">
@@ -12167,36 +12212,36 @@ Undervoltage: 56V</text>
 <attribute name="NAME" x="193.04" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O19" gate="G$1" x="198.12" y="182.88" smashed="yes">
-<attribute name="MPN" x="198.12" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="198.12" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O20" gate="G$1" x="203.2" y="182.88" smashed="yes">
-<attribute name="MPN" x="203.2" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="203.2" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O21" gate="G$1" x="208.28" y="182.88" smashed="yes">
-<attribute name="MPN" x="208.28" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="208.28" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O22" gate="G$1" x="213.36" y="182.88" smashed="yes">
-<attribute name="MPN" x="213.36" y="179.578" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="213.36" y="183.642" size="1.27" layer="95"/>
 </instance>
 <instance part="O23" gate="G$1" x="104.14" y="190.5" smashed="yes">
 <attribute name="MPN" x="104.14" y="187.198" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="104.14" y="191.262" size="1.27" layer="95"/>
 </instance>
-<instance part="U$50" gate="G$1" x="152.4" y="190.5" smashed="yes">
-<attribute name="MPN" x="152.4" y="187.198" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="152.4" y="191.262" size="1.27" layer="95"/>
+<instance part="O25" gate="G$1" x="38.1" y="182.88" smashed="yes">
+<attribute name="MPN" x="38.1" y="179.578" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="38.1" y="183.642" size="1.27" layer="95"/>
 </instance>
-<instance part="U$51" gate="G$1" x="193.04" y="190.5" smashed="yes">
+<instance part="O1" gate="G$1" x="71.12" y="182.88" smashed="yes">
+<attribute name="MPN" x="71.12" y="179.578" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="71.12" y="183.642" size="1.27" layer="95"/>
+</instance>
+<instance part="O2" gate="G$1" x="193.04" y="190.5" smashed="yes">
 <attribute name="MPN" x="193.04" y="187.198" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="193.04" y="191.262" size="1.27" layer="95"/>
 </instance>
-<instance part="O25" gate="G$1" x="38.1" y="180.34" smashed="yes">
-<attribute name="MPN" x="38.1" y="177.038" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="38.1" y="181.102" size="1.27" layer="95"/>
+<instance part="O3" gate="G$1" x="152.4" y="190.5" smashed="yes">
+<attribute name="MPN" x="152.4" y="187.198" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="152.4" y="191.262" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -12206,15 +12251,10 @@ Undervoltage: 56V</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,17.78,180.34,TS+,TS+FUSED,,,,"/>
-<approved hash="102,1,66.04,198.12,TS+,TS+FUSED,,,,"/>
-<approved hash="102,2,43.18,167.64,TS+,TS+FUSED,,,,"/>
-<approved hash="102,3,256.54,170.18,TS+,TS+FUSED,,,,"/>
-<approved hash="102,3,246.38,101.6,TS+,TS+FUSED,,,,"/>
-<approved hash="104,2,121.92,167.64,U10,+IN,N$39,,,"/>
-<approved hash="104,2,121.92,147.32,U10,-IN,TS-FUSED,,,"/>
-<approved hash="104,2,152.4,167.64,U10,+OUT,N$46,,,"/>
-<approved hash="104,2,152.4,147.32,U10,-OUT,DCDC-,,,"/>
+<approved hash="104,2,124.46,167.64,U10,+IN,N$39,,,"/>
+<approved hash="104,2,124.46,147.32,U10,-IN,TS-FUSED,,,"/>
+<approved hash="104,2,149.86,167.64,U10,+OUT,N$46,,,"/>
+<approved hash="104,2,149.86,147.32,U10,-OUT,DCDC-,,,"/>
 <approved hash="104,3,129.54,154.94,U15P,VDD,+5V,,,"/>
 <approved hash="104,1,182.88,198.12,U16,VDD,N$61,,,"/>
 <approved hash="104,1,208.28,198.12,U16,SW,N$65,,,"/>
