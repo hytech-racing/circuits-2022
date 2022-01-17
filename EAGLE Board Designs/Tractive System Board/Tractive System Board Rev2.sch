@@ -135,6 +135,7 @@
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
 <layer number="156" name="HVSpacing" color="12" fill="1" visible="no" active="yes"/>
+<layer number="157" name="HIGH_VOLTAGE_WIRES" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
@@ -5791,10 +5792,16 @@ Based on page 10.</description>
 <rectangle x1="-3.556" y1="-6.858" x2="3.556" y2="6.858" layer="39"/>
 <text x="-3.556" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <circle x="-3.556" y="-5.08" radius="0.254" width="0" layer="21"/>
-<wire x1="-3.556" y1="4.11" x2="3.556" y2="4.11" width="0" layer="46"/>
-<wire x1="3.556" y1="4.11" x2="3.556" y2="-4.11" width="0" layer="46"/>
-<wire x1="3.556" y1="-4.11" x2="-3.556" y2="-4.11" width="0" layer="46"/>
-<wire x1="-3.556" y1="-4.11" x2="-3.556" y2="4.11" width="0" layer="46"/>
+<wire x1="-3.556" y1="4.0386" x2="3.556" y2="4.0386" width="0" layer="46"/>
+<wire x1="3.556" y1="4.0386" x2="3.556" y2="-4.0386" width="0" layer="46"/>
+<wire x1="3.556" y1="-4.0386" x2="-3.556" y2="-4.0386" width="0" layer="46"/>
+<wire x1="-3.556" y1="-4.0386" x2="-3.556" y2="4.0386" width="0" layer="46"/>
+<polygon width="0" layer="20">
+<vertex x="3.556" y="-4.0386"/>
+<vertex x="-3.556" y="-4.0386"/>
+<vertex x="-3.556" y="4.0386"/>
+<vertex x="3.556" y="4.0386"/>
+</polygon>
 </package>
 <package name="335X">
 <description>335x Reed Relay
@@ -6264,6 +6271,19 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="1.524" size="0.8128" layer="21" font="vector" align="bottom-center">+ -</text>
 <circle x="-2.032" y="1.778" radius="0.127" width="0" layer="21"/>
 </package>
+<package name="DIP-4">
+<smd name="3" x="-1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="4" x="1.27" y="4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="1" x="-1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
+<smd name="2" x="1.27" y="-4.15" dx="1.5" dy="1.9" layer="1"/>
+<wire x1="-2.39" y1="3.2" x2="-2.39" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="-2.39" y1="-3.2" x2="2.39" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="2.39" y1="-3.2" x2="2.39" y2="3.2" width="0.1524" layer="21"/>
+<wire x1="2.39" y1="3.2" x2="-2.39" y2="3.2" width="0.1524" layer="21"/>
+<text x="-2.54" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<circle x="-3.175" y="-3.81" radius="0.381" width="0" layer="21"/>
+<rectangle x1="-3.556" y1="-6.096" x2="3.556" y2="6.096" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FUSE">
@@ -6676,6 +6696,51 @@ Dashed line is edge of mated connector.</description>
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="RELAY_SOLIDSTATE_NO">
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="9.398" y="-5.842"/>
+<vertex x="8.89" y="-6.604"/>
+<vertex x="10.414" y="-7.112"/>
+</polygon>
+<circle x="12.7" y="-8.89" radius="0.635" width="0.1524" layer="94"/>
+<circle x="15.24" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<circle x="10.16" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="-9.525" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="-3.175" width="0.1524" layer="94"/>
+<pin name="CONTACT1" x="20.32" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="CONTACT2" x="20.32" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<wire x1="13.0175" y1="-8.255" x2="14.9225" y2="-4.445" width="0.1524" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="14.986" y="-5.334"/>
+<vertex x="14.224" y="-4.826"/>
+<vertex x="14.986" y="-4.318"/>
+</polygon>
+<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9047,6 +9112,31 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 </device>
 </devices>
 </deviceset>
+<deviceset name="RELAY_SOLIDSTATE_NO">
+<description>AQY214EH Normally Open Solid State Relay&lt;br&gt;
+&lt;a href=https://www.datasheetq.com/datasheet-download/287654/1/Panasonic/AQY214EH&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP-4">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="3"/>
+<connect gate="G$1" pin="CONTACT2" pad="4"/>
+<connect gate="G$1" pin="CONTROL+" pad="1"/>
+<connect gate="G$1" pin="CONTROL-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="255-1436-5-ND"/>
+<attribute name="MANUFACTURER" value="AQY214EHA"/>
+<attribute name="MOPN" value="769-AQY214EHA"/>
+<attribute name="MPN" value="AQY214EHA"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSupplies">
@@ -9380,52 +9470,6 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <wire x1="15.24" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="RELAY_SOLIDSTATE_NO">
-<description>Normally Open Solid-State Relay</description>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
-<wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
-<wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
-<polygon width="0.1524" layer="94">
-<vertex x="9.398" y="-5.842"/>
-<vertex x="8.89" y="-6.604"/>
-<vertex x="10.414" y="-7.112"/>
-</polygon>
-<circle x="12.7" y="-8.89" radius="0.635" width="0.1524" layer="94"/>
-<circle x="15.24" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
-<circle x="10.16" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="12.7" y2="-9.525" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="10.16" y2="-3.175" width="0.1524" layer="94"/>
-<pin name="CONTACT1" x="20.32" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
-<pin name="CONTACT2" x="20.32" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
-<wire x1="13.0175" y1="-8.255" x2="14.9225" y2="-4.445" width="0.1524" layer="94"/>
-<polygon width="0.0254" layer="94">
-<vertex x="14.986" y="-5.334"/>
-<vertex x="14.224" y="-4.826"/>
-<vertex x="14.986" y="-4.318"/>
-</polygon>
-<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
-</symbol>
 <symbol name="DCM4623">
 <description>Vicor DCM4623 Style DCDC Converter</description>
 <pin name="TR" x="-2.54" y="-7.62" length="short" direction="out"/>
@@ -9500,48 +9544,6 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <attribute name="MANUFACTURER" value="Panasonic Industrial Devices" constant="no"/>
 <attribute name="MOPN" value="769-AQY414EHA" constant="no"/>
 <attribute name="MPN" value="AQY414EHA" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RELAY_SOLIDSTATE_NO_?" prefix="U">
-<description>Normally Open Solid-State Relay
-&lt;br&gt;
-&lt;a href="file:///C:/Users/kamin/Downloads/semi_eng_ge1a_aqy21_e.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIP-4">
-<connects>
-<connect gate="G$1" pin="CONTACT1" pad="3"/>
-<connect gate="G$1" pin="CONTACT2" pad="4"/>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="" constant="no"/>
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="AG" package="DIP-4_AIRGAP">
-<connects>
-<connect gate="G$1" pin="CONTACT1" pad="3"/>
-<connect gate="G$1" pin="CONTACT2" pad="4"/>
-<connect gate="G$1" pin="CONTROL+" pad="1"/>
-<connect gate="G$1" pin="CONTROL-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="255-1436-5-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Panasonic Inustrial Devices" constant="no"/>
-<attribute name="MOPN" value="769-AQY214EHA" constant="no"/>
-<attribute name="MPN" value="AQY214EHA" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9878,7 +9880,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="C3" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="1206" technology="250V_0.1UF"/>
 <part name="C4" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="1206" technology="250V_0.1UF"/>
 <part name="J5" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device=""/>
-<part name="U$1" library="HyTechDevicesTempTSB" deviceset="RELAY_SOLIDSTATE_NO_?" device="AG"/>
+<part name="U$1" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO" device=""/>
 <part name="U$2" library="HyTechSupplies" deviceset="TS+FUSED" device=""/>
 <part name="D1" library="HyTechDevices" deviceset="TVS_*" device="" technology="8V" value="TVS_8V"/>
 <part name="C5" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
