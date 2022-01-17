@@ -1201,6 +1201,10 @@ Dashed line is edge of mated connector.</description>
 <pad name="P$1" x="-1.27" y="0" drill="1.016"/>
 <pad name="P$2" x="1.27" y="0" drill="1.016"/>
 <rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="39"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6709,7 +6713,7 @@ Layer: 94 Symbol</description>
 <part name="U4" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
 <part name="U2" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
 <part name="P17" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="S1" library="HyTechDevices" deviceset="BUTTON" device=""/>
+<part name="LATCH_BUTTON" library="HyTechDevices" deviceset="BUTTON" device=""/>
 <part name="P59" library="HyTechSupplies" deviceset="+3V3" device=""/>
 <part name="U3" library="HyTechDevices" deviceset="LOGICGATE_BUFFER" device=""/>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
@@ -8006,7 +8010,7 @@ Layer: 94 Symbol</description>
 <attribute name="NAME" x="166.37" y="168.275" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="MPN" x="166.37" y="172.085" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="S1" gate="G$1" x="68.58" y="132.08" smashed="yes">
+<instance part="LATCH_BUTTON" gate="G$1" x="68.58" y="132.08" smashed="yes">
 <attribute name="NAME" x="71.12" y="137.16" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="71.12" y="130.81" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -8162,7 +8166,7 @@ Layer: 94 Symbol</description>
 <pinref part="P36" gate="1" pin="GND"/>
 <wire x1="76.2" y1="132.08" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="132.08" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="S"/>
+<pinref part="LATCH_BUTTON" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="SHDN_E" gate="LED" pin="C"/>
@@ -8446,17 +8450,16 @@ Layer: 94 Symbol</description>
 <wire x1="66.04" y1="132.08" x2="48.26" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="132.08" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="132.08" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="132.08" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
 <junction x="48.26" y="132.08"/>
-<wire x1="48.26" y1="137.16" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
-<label x="50.8" y="137.16" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
+<label x="50.8" y="142.24" size="1.27" layer="95" xref="yes"/>
 <wire x1="33.02" y1="170.18" x2="35.56" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="170.18" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="142.24" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
-<junction x="48.26" y="137.16"/>
+<junction x="48.26" y="142.24"/>
 <pinref part="D3" gate="G$1" pin="C"/>
-<pinref part="S1" gate="G$1" pin="P"/>
+<pinref part="LATCH_BUTTON" gate="G$1" pin="P"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="170.18" x2="96.52" y2="170.18" width="0.1524" layer="91"/>
