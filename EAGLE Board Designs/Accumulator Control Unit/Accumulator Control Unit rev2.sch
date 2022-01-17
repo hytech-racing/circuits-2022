@@ -7027,6 +7027,17 @@ visible on the PCB.</text>
 <attribute name="VOLTAGE_CONTINUOUS" value="54.77V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="31.6K">
+<attribute name="DKPN" value="311-31.6KHRTR-ND"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="MOPN" value="603-RC0603FR-0731K6L"/>
+<attribute name="MPN" value="RC0603FR-0731K6L"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="31.6k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="56.21V"/>
+<attribute name="VOLTAGE_MAX" value="75V"/>
+</technology>
 <technology name="330K">
 <attribute name="DKPN" value="P330KDBCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -8449,16 +8460,16 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="C26" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P58" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P59" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R14" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="43K"/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="31.6K" value="RESISTOR_0603_31.6K"/>
 <part name="R15" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P66" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P67" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R39" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="43K"/>
+<part name="R39" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="31.6K" value="RESISTOR_0603_31.6K"/>
 <part name="P68" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R44" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="43K"/>
+<part name="R44" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="31.6K" value="RESISTOR_0603_31.6K"/>
 <part name="P69" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P70" library="HyTechSupplies" deviceset="+12V" device=""/>
-<part name="R30" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
+<part name="R30" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="20K" value="RESISTOR_0603_20K"/>
 <part name="R23" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="P72" library="HyTechSupplies" deviceset="+3V3" device=""/>
 <part name="P73" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -8489,7 +8500,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="C40" library="HyTechDevices - Copy" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P82" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="C43" library="HyTechDevices - Copy" deviceset="CAPACITOR_?_*" device="0603" technology="10V_680PF"/>
-<part name="R52" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
+<part name="R52" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="15K" value="RESISTOR_0603_15K"/>
 <part name="P87" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R51" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="30K"/>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="" technology="PMV15ENEA"/>
