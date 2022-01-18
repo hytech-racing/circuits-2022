@@ -3,10 +3,10 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="0.000123031496" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -905,8 +905,8 @@ Toshiba
 &lt;a href="https://www.molex.com/pdm_docs/sd/430451214_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430251200_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<hole x="10.4902" y="-1.96" drill="1.0668"/>
-<hole x="-10.4902" y="-1.96" drill="1.0668"/>
+<hole x="10.5029" y="-1.9558" drill="1.27"/>
+<hole x="-10.5029" y="-1.9558" drill="1.27"/>
 <wire x1="-10.8204" y1="-1.905" x2="10.8204" y2="-1.905" width="0.127" layer="21"/>
 <wire x1="10.8204" y1="-1.905" x2="10.8204" y2="1.905" width="0.127" layer="21"/>
 <wire x1="10.8204" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
@@ -937,8 +937,8 @@ Toshiba
 &lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<hole x="11.9888" y="-1.9558" drill="1.0668"/>
-<hole x="-11.9888" y="-1.9558" drill="1.0668"/>
+<hole x="12.0015" y="-1.9558" drill="1.27"/>
+<hole x="-12.0015" y="-1.9558" drill="1.27"/>
 <wire x1="-12.319" y1="-1.905" x2="12.319" y2="-1.905" width="0.127" layer="21"/>
 <wire x1="12.319" y1="-1.905" x2="12.319" y2="1.905" width="0.127" layer="21"/>
 <wire x1="12.319" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
@@ -12822,12 +12822,12 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="NAME" x="125.5795" y="66.84336875" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="125.3255" y="70.62036875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
 </element>
-<element name="U$31" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED" value="CONNECTOR-5_MICRO_V6S_" x="198.671275" y="51.9166625" smashed="yes" rot="R270">
+<element name="J1" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED" value="CONNECTOR-5_MICRO_V6S_" x="198.671275" y="51.9166625" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Molex" x="198.671275" y="51.9166625" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="2165713006" x="198.671275" y="51.9166625" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="196.385275" y="51.9166625" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
-<element name="U$33" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE_SPACED" value="CONNECTOR-5_MICRO_V7S_" x="198.65894375" y="26.361103125" smashed="yes" rot="R270">
+<element name="J2" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_07_SINGLE_SPACED" value="CONNECTOR-5_MICRO_V7S_" x="198.65894375" y="26.361103125" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Molex" x="198.65894375" y="26.361103125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="2165713007" x="198.65894375" y="26.361103125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="196.11894375" y="26.361103125" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
@@ -13539,7 +13539,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 </signal>
 <signal name="LED+">
 <contactref element="R63" pad="2"/>
-<contactref element="U$31" pad="3"/>
+<contactref element="J1" pad="3"/>
 <wire x1="108.624" y1="54.356" x2="108.585" y2="54.395" width="0.762" layer="1"/>
 <wire x1="198.671275" y1="53.4152625" x2="196.5640125" y2="51.308" width="0.508" layer="15"/>
 <wire x1="110.617" y1="51.308" x2="109.093" y2="52.832" width="0.508" layer="15"/>
@@ -13865,8 +13865,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="K4" pad="1"/>
 <contactref element="F6" pad="1"/>
 <contactref element="TP14" pad="1"/>
-<contactref element="U$33" pad="1"/>
-<contactref element="U$33" pad="2"/>
+<contactref element="J2" pad="1"/>
+<contactref element="J2" pad="2"/>
 <wire x1="198.65894375" y1="32.355503125" x2="198.65894375" y2="35.352703125" width="1.3716" layer="2"/>
 <wire x1="198.65894375" y1="32.355503125" x2="194.356009375" y2="36.6584375" width="1.3716" layer="2"/>
 <wire x1="194.356009375" y1="36.6584375" x2="194.356009375" y2="60.024990625" width="1.3716" layer="2"/>
@@ -13911,7 +13911,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="U$1" pad="4"/>
 <contactref element="K5" pad="1"/>
 <contactref element="TP12" pad="1"/>
-<contactref element="U$33" pad="5"/>
+<contactref element="J2" pad="5"/>
 <wire x1="191.516" y1="12.151" x2="196.734503125" y2="17.369503125" width="0.508" layer="1"/>
 <wire x1="196.734503125" y1="17.369503125" x2="198.65894375" y2="17.369503125" width="0.508" layer="1"/>
 <wire x1="198.65894375" y1="17.369503125" x2="188.799646875" y2="27.2288" width="0.762" layer="2"/>
@@ -13942,7 +13942,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 </signal>
 <signal name="TSMP+">
 <contactref element="TP18" pad="1"/>
-<contactref element="U$33" pad="3"/>
+<contactref element="J2" pad="3"/>
 <wire x1="75.438" y1="33.147" x2="36.068" y2="33.147" width="0.508" layer="2"/>
 <wire x1="198.65894375" y1="29.358303125" x2="179.07" y2="29.358303125" width="0.508" layer="2"/>
 <wire x1="78.591696875" y1="29.993303125" x2="75.438" y2="33.147" width="0.508" layer="2"/>
@@ -13965,7 +13965,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 </signal>
 <signal name="TSMP-">
 <contactref element="TP19" pad="1"/>
-<contactref element="U$31" pad="4"/>
+<contactref element="J1" pad="4"/>
 <wire x1="198.671275" y1="47.4208625" x2="196.000921875" y2="50.091215625" width="0.508" layer="15"/>
 <wire x1="196.000921875" y1="50.091215625" x2="130.375228125" y2="50.091215625" width="0.508" layer="15"/>
 <wire x1="130.375228125" y1="50.091215625" x2="130.208915625" y2="49.924903125" width="0.508" layer="15"/>
@@ -14245,7 +14245,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="R31" pad="2"/>
 <contactref element="L5" pad="2"/>
 <contactref element="R26" pad="1"/>
-<contactref element="U$33" pad="4"/>
+<contactref element="J2" pad="4"/>
 <wire x1="119.38" y1="83.947" x2="120.0785" y2="83.2485" width="0.508" layer="1"/>
 <wire x1="198.65894375" y1="23.363903125" x2="203.2" y2="27.904959375" width="0.508" layer="2"/>
 <wire x1="203.2" y1="27.904959375" x2="203.2" y2="66.548" width="0.508" layer="2"/>
@@ -14290,7 +14290,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <signal name="TS-UNFUSED">
 <contactref element="TP15" pad="1"/>
 <contactref element="F2" pad="1"/>
-<contactref element="U$31" pad="5"/>
+<contactref element="J1" pad="5"/>
 <wire x1="198.671275" y1="44.4236625" x2="194.56525625" y2="48.52968125" width="1.3716" layer="15"/>
 <via x="138.684" y="70.231" extent="1-16" drill="0.762"/>
 <wire x1="138.684" y1="70.231" x2="130.96486875" y2="70.231" width="0.508" layer="1"/>
@@ -14345,8 +14345,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="R33" pad="2"/>
 <contactref element="D6" pad="1"/>
 <contactref element="F2" pad="2"/>
-<contactref element="U$31" pad="1"/>
-<contactref element="U$31" pad="2"/>
+<contactref element="J1" pad="1"/>
+<contactref element="J1" pad="2"/>
 <wire x1="108.585" y1="59.551" x2="106.934" y2="59.551" width="0.254" layer="1"/>
 <wire x1="106.934" y1="59.551" x2="106.632" y2="59.853" width="0.254" layer="1"/>
 <wire x1="106.632" y1="59.853" x2="105.029" y2="59.853" width="0.254" layer="1"/>

@@ -6036,8 +6036,8 @@ Based on page 10.</description>
 &lt;a href="https://www.molex.com/pdm_docs/sd/430451214_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430251200_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<hole x="10.4902" y="-1.96" drill="1.0668"/>
-<hole x="-10.4902" y="-1.96" drill="1.0668"/>
+<hole x="10.5029" y="-1.9558" drill="1.27"/>
+<hole x="-10.5029" y="-1.9558" drill="1.27"/>
 <wire x1="-10.8204" y1="-1.905" x2="10.8204" y2="-1.905" width="0.127" layer="21"/>
 <wire x1="10.8204" y1="-1.905" x2="10.8204" y2="1.905" width="0.127" layer="21"/>
 <wire x1="10.8204" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
@@ -6068,8 +6068,8 @@ Based on page 10.</description>
 &lt;a href="https://www.molex.com/pdm_docs/sd/430451414_sd.pdf"&gt;Footprint&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="https://www.molex.com/pdm_docs/sd/430251400_sd.pdf"&gt;Plug Size&lt;/a&gt;</description>
-<hole x="11.9888" y="-1.9558" drill="1.0668"/>
-<hole x="-11.9888" y="-1.9558" drill="1.0668"/>
+<hole x="12.0015" y="-1.9558" drill="1.27"/>
+<hole x="-12.0015" y="-1.9558" drill="1.27"/>
 <wire x1="-12.319" y1="-1.905" x2="12.319" y2="-1.905" width="0.127" layer="21"/>
 <wire x1="12.319" y1="-1.905" x2="12.319" y2="1.905" width="0.127" layer="21"/>
 <wire x1="12.319" y1="1.905" x2="1.9304" y2="1.905" width="0.127" layer="21"/>
@@ -9964,8 +9964,8 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="U$28" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$3" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="U$30" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
-<part name="U$31" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="MICRO_V6S"/>
-<part name="U$33" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="MICRO_V7S"/>
+<part name="J1" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="MICRO_V6S"/>
+<part name="J2" library="HyTechDevices" deviceset="CONNECTOR-5_?_*" device="MICRO_V7S"/>
 <part name="P18" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="TP16" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="U$42" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
@@ -11570,10 +11570,10 @@ Undervoltage: 56V</text>
 <instance part="U$30" gate="G$1" x="256.54" y="149.86" smashed="yes">
 <attribute name="VALUE" x="256.54" y="147.32" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="U$31" gate="G$1" x="231.14" y="154.94" smashed="yes">
+<instance part="J1" gate="G$1" x="231.14" y="154.94" smashed="yes">
 <attribute name="NAME" x="231.14" y="155.702" size="1.27" layer="95"/>
 </instance>
-<instance part="U$33" gate="G$1" x="231.14" y="180.34" smashed="yes">
+<instance part="J2" gate="G$1" x="231.14" y="180.34" smashed="yes">
 <attribute name="NAME" x="231.14" y="181.102" size="1.27" layer="95"/>
 </instance>
 <instance part="TP16" gate="G$1" x="203.2" y="137.16" smashed="yes">
@@ -11846,8 +11846,8 @@ Undervoltage: 56V</text>
 <segment>
 <pinref part="P14" gate="G$1" pin="TS+UNFUSED"/>
 <wire x1="241.3" y1="177.8" x2="246.38" y2="177.8" width="0.6096" layer="91"/>
-<pinref part="U$33" gate="G$1" pin="1"/>
-<pinref part="U$33" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="175.26" x2="246.38" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="175.26" x2="246.38" y2="177.8" width="0.1524" layer="91"/>
 <junction x="246.38" y="177.8"/>
@@ -11888,7 +11888,7 @@ Undervoltage: 56V</text>
 <segment>
 <wire x1="241.3" y1="167.64" x2="243.84" y2="167.64" width="0.6096" layer="91"/>
 <label x="243.84" y="167.64" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$33" gate="G$1" pin="5"/>
+<pinref part="J2" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="K5" gate="G$1" pin="CONTACT1"/>
@@ -11994,7 +11994,7 @@ Undervoltage: 56V</text>
 <segment>
 <wire x1="241.3" y1="172.72" x2="243.84" y2="172.72" width="0.6096" layer="91"/>
 <label x="243.84" y="172.72" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$33" gate="G$1" pin="3"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <label x="243.84" y="93.98" size="1.27" layer="95" xref="yes"/>
@@ -12008,7 +12008,7 @@ Undervoltage: 56V</text>
 <segment>
 <wire x1="241.3" y1="144.78" x2="243.84" y2="144.78" width="0.6096" layer="91"/>
 <label x="243.84" y="144.78" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$31" gate="G$1" pin="4"/>
+<pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <label x="243.84" y="76.2" size="1.27" layer="95" xref="yes"/>
@@ -12022,7 +12022,7 @@ Undervoltage: 56V</text>
 <segment>
 <wire x1="241.3" y1="147.32" x2="243.84" y2="147.32" width="0.6096" layer="91"/>
 <label x="243.84" y="147.32" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$31" gate="G$1" pin="3"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="R63" gate="G$1" pin="2"/>
@@ -12108,7 +12108,7 @@ Undervoltage: 56V</text>
 <segment>
 <pinref part="U$32" gate="G$1" pin="TS+FUSED"/>
 <wire x1="241.3" y1="170.18" x2="256.54" y2="170.18" width="0.6096" layer="91"/>
-<pinref part="U$33" gate="G$1" pin="4"/>
+<pinref part="J2" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="TS-UNFUSED" class="0">
@@ -12125,7 +12125,7 @@ Undervoltage: 56V</text>
 <segment>
 <wire x1="241.3" y1="142.24" x2="243.84" y2="142.24" width="0.6096" layer="91"/>
 <pinref part="P17" gate="G$1" pin="TS-UNFUSED"/>
-<pinref part="U$31" gate="G$1" pin="5"/>
+<pinref part="J1" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <wire x1="236.22" y1="76.2" x2="233.68" y2="76.2" width="0.6096" layer="91"/>
@@ -12146,8 +12146,8 @@ Undervoltage: 56V</text>
 <segment>
 <wire x1="241.3" y1="152.4" x2="243.84" y2="152.4" width="0.6096" layer="91"/>
 <pinref part="U$30" gate="G$1" pin="TS-FUSED"/>
-<pinref part="U$31" gate="G$1" pin="1"/>
-<pinref part="U$31" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="152.4" x2="256.54" y2="152.4" width="0.6096" layer="91"/>
 <wire x1="241.3" y1="149.86" x2="243.84" y2="149.86" width="0.6096" layer="91"/>
 <wire x1="243.84" y1="149.86" x2="243.84" y2="152.4" width="0.6096" layer="91"/>
