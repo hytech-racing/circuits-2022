@@ -6035,19 +6035,6 @@ UV Falling: 9.97V</text>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="C1" gate="G$1" pin="PLUS"/>
 </segment>
-<segment>
-<wire x1="-124.46" y1="-144.78" x2="-116.84" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="4"/>
-<pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="-124.46" y1="-142.24" x2="-124.46" y2="-144.78" width="0.1524" layer="91"/>
-<junction x="-124.46" y="-144.78"/>
-<label x="-116.84" y="-144.78" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="XF1" gate="G$1" pin="2"/>
-<wire x1="-119.38" y1="-121.92" x2="-119.38" y2="-119.38" width="0.1524" layer="91"/>
-<label x="-119.38" y="-119.38" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="!FAULT2" class="0">
 <segment>
@@ -6589,12 +6576,17 @@ UV Falling: 9.97V</text>
 <label x="114.3" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="3"/>
-<pinref part="J3" gate="G$1" pin="4"/>
-<wire x1="-93.98" y1="-142.24" x2="-93.98" y2="-144.78" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="-144.78" x2="-91.44" y2="-144.78" width="0.1524" layer="91"/>
-<junction x="-93.98" y="-144.78"/>
-<label x="-91.44" y="-144.78" size="1.27" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="-124.46" y1="-142.24" x2="-124.46" y2="-144.78" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="-144.78" x2="-119.38" y2="-144.78" width="0.1524" layer="91"/>
+<junction x="-124.46" y="-144.78"/>
+<label x="-119.38" y="-144.78" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="XF1" gate="G$1" pin="2"/>
+<wire x1="-119.38" y1="-121.92" x2="-119.38" y2="-119.38" width="0.1524" layer="91"/>
+<label x="-119.38" y="-119.38" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
