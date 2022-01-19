@@ -1,0 +1,15 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"CAPACITANCE";"COLOR";"DKPN";"MANUFACTURER";"MOPN";"MPN";"POWER";"RESISTANCE";"TOLERANCE";"VOLTAGE";"VOLTAGE_CONTINUOUS";"VOLTAGE_MAX";
+"2";"CAPACITOR_0603_10V_0.1UF";"CAPACITOR_0603_10V_0.1UF";"0603-CAP";"C1, C15";"Capacitor, Non-Polarized";"0.1µF";"";"720-1688-1-ND";"Vishay Vitramon";"77-VJ0603Y104JXQPBC";"VJ0603Y104JXQPW1BC";"";"";"5%";"10V";"";"";
+"2";"CAPACITOR_0603_10V_1UF";"CAPACITOR_0603_10V_1UF";"0603-CAP";"C3, C14";"Capacitor, Non-Polarized";"1µF";"";"311-1796-1-ND";"Yageo";"603-CC603KRX7R6BB105";"CC0603KRX7R6BB105";"";"";"10%";"10V";"";"";
+"1";"CAPACITOR_0603_10V_4.7UF";"CAPACITOR_0603_10V_4.7UF";"0603-CAP";"C2";"Capacitor, Non-Polarized";"4.7µF";"";"1276-1044-1-ND";"Samsung Electro-Mechanics";"187-CL10A475KP8NNNC";"CL10A475KP8NNNC";"";"";"10%";"10V";"";"";
+"1";"CAPACITOR_0603_25V_1UF";"CAPACITOR_0603_25V_1UF";"0603-CAP";"C11";"Capacitor, Non-Polarized";"1µF";"";"1276-1184-1-ND";"Samsung Electro-Mechanics";"187-CL10B105KA8NNNC";"CL10B105KA8NNNC";"";"";"10%";"25V";"";"";
+"2";"CONNECTOR-CAN_NF_S_RA_BLACK";"CONNECTOR-CAN_NF_S_RA_BLACK";"MOLEX_NANOFIT_SMD_RIGHTANGLE_04";"J1, J2";"HyTech CAN Connector";"";"";"";"Molex";"";"105405-1304";"";"";"";"";"";"";
+"2";"JUMPER_1X02_";"JUMPER_1X02_";"1X02";"J3, J4";"2 Pin Connector";"";"";"";"";"";"";"";"";"";"";"";"";
+"3";"LED_0603_RED";"LED_0603_RED";"0603-LED";"D1, D2, D3";"LED";"";"Red";"754-1786-1-ND";"Kingbright";"604-APT1608SECKJ3PRV";"APT1608SECK/J3-PRV";"";"";"";"";"";"";
+"2";"RESISTOR_0603_10K";"RESISTOR_0603_10K";"0603-RES";"R8, R9";"Resistor";"";"";"311-10.0KHRCT-ND";"Yageo";"603-RC0603FR-0710KL";"RC0603FR-0710KL";"0.1W";"10k";"1%";"";"31.62V";"75V";
+"1";"RESISTOR_0603_1K";"RESISTOR_0603_1K";"0603-RES";"R5";"Resistor";"";"";"311-1.00KHRCT-ND";"Yageo";"603-RC0603FR-071KL";"RC0603FR-071KL";"0.1W";"1k";"1%";"";"10.00V";"75V";
+"4";"RESISTOR_0603_240";"RESISTOR_0603_240";"0603-RES";"R1, R2, R3, R4";"Resistor";"";"";"311-240HRCT-ND";"Yageo";"603-RC0603FR-07240RL";"RC0603FR-07240RL";"0.1W";"240";"1%";"";"4.90V";"75V";
+"2";"RESISTOR_0603_470";"RESISTOR_0603_470";"0603-RES";"R6, R7";"Resistor";"";"";"P470BYCT-ND";"Panasonic Electronic Components";"667-ERJ-PA3F4700V";"ERJ-PA3F4700V";"0.25W";"470";"1%";"";"10.84V";"150V";
+"2";"TCAN1051HQV-Q1";"TCAN1051HQV-Q1";"SOIC-08(NARROW,0.15")";"U2, U3";"TCAN1051*V Can Tranciever";"";"";"296-49935-1-ND";"Texas Instruments";"595-TCAN1051HGVDQ1";"TCAN1051HGVDRQ1";"";"";"";"";"";"";
+"1";"TEENSY_4.0";"TEENSY_4.0";"TEENSY_SHORT";"A1";"Teensy 4.0";"";"";"";"";"";"";"";"";"";"";"";"";
+"1";"VOLTAGE_REGULATOR_SOT223_5V";"VOLTAGE_REGULATOR_SOT223_5V";"SOT223";"U1";"Voltage Regulators";"";"";"497-17240-1-ND";"STMicroelectronics";"511-LDL1117S50R";"LDL1117S50R";"";"";"";"";"";"";
