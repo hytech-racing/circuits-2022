@@ -10325,6 +10325,8 @@ Layer: 94 Symbol</description>
 <attribute name="DESCRIPTION_1" value="Facilitates and monitors battery charging"/>
 <attribute name="DESIGNER_BOARD" value="Daniel Vail"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Daniel Vail"/>
+<attribute name="REVIEWER_BOARD" value="Cody Kaminsky"/>
+<attribute name="REVIEWER_SCHEMATIC" value="Cody Kaminsky"/>
 </part>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P1" library="HyTechSupplies" deviceset="+12V" device=""/>
@@ -10366,7 +10368,10 @@ Layer: 94 Symbol</description>
 <part name="P24" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="FRAME2" library="HyTechFrames" deviceset="FRAME" device="">
 <attribute name="DESCRIPTION_1" value="Facilitates and monitors battery charging"/>
+<attribute name="DESIGNER_BOARD" value="Daniel Vail"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Daniel Vail"/>
+<attribute name="REVIEWER_BOARD" value="Cody Kaminsky"/>
+<attribute name="REVIEWER_SCHEMATIC" value="Cody Kaminsky"/>
 </part>
 <part name="P30" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P31" library="HyTechSupplies" deviceset="+12V" device=""/>
@@ -10540,7 +10545,9 @@ Layer: 94 Symbol</description>
 <part name="O29" library="HyTechExternal" deviceset="RECEPTACLE-4_*" device="" technology="NANOFIT"/>
 <part name="O30" library="HyTechExternal_temp" deviceset="RECEPTACLE-2_*" device="" technology="NANOFIT"/>
 <part name="U$8" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
+<attribute name="DESCRIPTION_1" value="Facilitates and monitors battery charging"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Daniel Vail"/>
+<attribute name="REVIEWER_SCHEMATIC" value="Cody Kaminsky"/>
 </part>
 <part name="O24" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_2"/>
 </parts>
