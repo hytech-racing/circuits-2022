@@ -10533,7 +10533,6 @@ Layer: 94 Symbol</description>
 <part name="O21" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="NANOFIT_20-22"/>
 <part name="O22" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="NANOFIT_20-22"/>
 <part name="O23" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_1"/>
-<part name="O24" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_1"/>
 <part name="O25" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_2"/>
 <part name="O26" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_2"/>
 <part name="O27" library="HyTechExternal" deviceset="RECEPTACLE-8_*" device="" technology="NANOFIT"/>
@@ -10543,6 +10542,7 @@ Layer: 94 Symbol</description>
 <part name="U$8" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
 <attribute name="DESIGNER_SCHEMATIC" value="Daniel Vail"/>
 </part>
+<part name="O24" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_2"/>
 </parts>
 <sheets>
 <sheet>
@@ -12818,10 +12818,6 @@ to gnd on wiring harness</text>
 <attribute name="MPN" x="40.64" y="199.898" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="40.64" y="203.962" size="1.27" layer="95"/>
 </instance>
-<instance part="O24" gate="G$1" x="53.34" y="203.2" smashed="yes">
-<attribute name="MPN" x="53.34" y="199.898" size="1.27" layer="96" align="top-left"/>
-<attribute name="NAME" x="53.34" y="203.962" size="1.27" layer="95"/>
-</instance>
 <instance part="O25" gate="G$1" x="40.64" y="195.58" smashed="yes">
 <attribute name="MPN" x="40.64" y="192.278" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="40.64" y="196.342" size="1.27" layer="95"/>
@@ -12855,6 +12851,10 @@ to gnd on wiring harness</text>
 <attribute name="REVIEWER_SCHEMATIC" x="227.33" y="30.48" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
+</instance>
+<instance part="O24" gate="G$1" x="53.34" y="203.2" smashed="yes">
+<attribute name="MPN" x="53.34" y="199.898" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="53.34" y="203.962" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
