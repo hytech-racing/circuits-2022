@@ -4487,7 +4487,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="CAPACITANCE" value="47nF" x="-44.45" y="-44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DKPN" value="478-6340-1-ND" x="-44.45" y="-44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Kyocera AVX" x="-44.45" y="-44.45" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOPN" value="581-06033C473K4Z2A" x="-44.45" y="-44.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="581-06033C473K42ZA" x="-44.45" y="-44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="06033C473K4Z2A" x="-44.45" y="-44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="52.82" y="34.29" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="-44.45" y="-44.45" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4547,7 +4547,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="CAPACITANCE" value="47nF" x="-60.96" y="45.72" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DKPN" value="478-6340-1-ND" x="-60.96" y="45.72" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Kyocera AVX" x="-60.96" y="45.72" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOPN" value="581-06033C473K4Z2A" x="-60.96" y="45.72" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOPN" value="581-06033C473K42ZA" x="-60.96" y="45.72" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="06033C473K4Z2A" x="-60.96" y="45.72" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="41.39" y="64.77" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="-60.96" y="45.72" size="1.778" layer="27" rot="R270" display="off"/>
@@ -5334,11 +5334,9 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="F4" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C3" pad="1"/>
-<contactref element="R14" pad="2"/>
 <contactref element="U1" pad="2"/>
 <contactref element="R1" pad="2"/>
 <contactref element="R19" pad="2"/>
-<contactref element="C1" pad="P$1"/>
 <wire x1="58.625" y1="44.885" x2="58.5406" y2="44.8006" width="0.4064" layer="1"/>
 <wire x1="58.5406" y1="44.8006" x2="58.5406" y2="44.11270625" width="0.4064" layer="1"/>
 <wire x1="58.5406" y1="44.11270625" x2="51.98229375" y2="37.5544" width="0.4064" layer="1"/>
@@ -5366,7 +5364,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="55.88" y1="60.96" x2="58.42" y2="63.5" width="0.4064" layer="16"/>
 <via x="58.42" y="63.5" extent="1-16" drill="0.6096"/>
 <wire x1="128.7653" y1="57.277" x2="128.7653" y2="43.63529375" width="1.524" layer="1"/>
-<wire x1="128.7653" y1="43.63529375" x2="128.27" y2="43.13999375" width="1.524" layer="1"/>
 <wire x1="122.6947" y1="57.277" x2="120.0277" y2="54.61" width="0.4064" layer="1"/>
 <wire x1="120.0277" y1="54.61" x2="110.49" y2="54.61" width="0.4064" layer="1"/>
 <via x="110.49" y="54.61" extent="1-16" drill="0.6096"/>
@@ -5389,8 +5386,11 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="58.42" y1="63.5" x2="58.42" y2="72.3668375" width="0.4064" layer="1"/>
 <wire x1="58.42" y1="72.3668375" x2="57.5056" y2="73.2812375" width="0.4064" layer="1"/>
 <wire x1="57.5056" y1="73.2812375" x2="57.5056" y2="78.2456" width="0.4064" layer="1"/>
-<wire x1="57.5056" y1="78.2456" x2="59.27" y2="80.01" width="0.4064" layer="1"/>
 <wire x1="128.7653" y1="57.277" x2="122.6947" y2="57.277" width="1.524" layer="1"/>
+<contactref element="C1" pad="P$1"/>
+<contactref element="R14" pad="2"/>
+<wire x1="128.7653" y1="43.63529375" x2="128.27" y2="43.13999375" width="0" layer="19" extent="1-1"/>
+<wire x1="59.27" y1="80.01" x2="57.5056" y2="78.2456" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!FAULT2">
 <contactref element="D6" pad="1"/>
