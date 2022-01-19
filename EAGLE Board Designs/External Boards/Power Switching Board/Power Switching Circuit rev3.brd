@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -241,6 +241,7 @@ Designed by Steven Elias</text>
 <smd name="3" x="0" y="1.0033" dx="0.7112" dy="0.889" layer="1"/>
 <text x="0" y="1.778" size="0.635" layer="25" font="vector" rot="R180" align="top-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
+<circle x="-1.778" y="-1.0033" radius="0.15875" width="0" layer="21"/>
 </package>
 <package name="0603-LED">
 <description>0603 LED
@@ -357,22 +358,6 @@ Toshiba
 <text x="0" y="6.858" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-3.81" y1="-5.588" x2="3.81" y2="6.858" layer="39"/>
 </package>
-<package name="4026">
-<description>Vishay Dale Sense Resistor
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/427/VISH_S_A0011243377_1-2572030.pdf"&gt;Datasheet&lt;a/&gt;</description>
-<smd name="1" x="-4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
-<smd name="3" x="-4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90"/>
-<smd name="4" x="4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90"/>
-<smd name="2" x="4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
-<wire x1="-5.08" y1="-3.302" x2="5.08" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-3.302" x2="5.08" y2="3.302" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.302" x2="-5.08" y2="3.302" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="3.302" x2="-5.08" y2="-3.302" width="0.127" layer="21"/>
-<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="39"/>
-<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="40"/>
-<text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="0603-RES">
 <description>0603 Resistor Footprint
 &lt;br&gt;
@@ -411,22 +396,6 @@ Toshiba
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
 <text x="0" y="1.27" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
-</package>
-<package name="CRYDOM_CMX">
-<description>Crydom CMX series solid state relays SIP-4
-&lt;br&gt;
-&lt;a href=https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;</description>
-<pad name="1" x="15.748" y="0" drill="2.1082" first="yes"/>
-<pad name="2" x="5.588" y="0" drill="2.1082"/>
-<pad name="3" x="-5.08" y="0" drill="2.1082"/>
-<pad name="4" x="-10.16" y="0" drill="2.1082"/>
-<wire x1="-17.78" y1="3.81" x2="-17.78" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-17.78" y1="-3.81" x2="22.86" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="22.86" y1="-3.81" x2="22.86" y2="3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="22.86" y1="3.81" x2="-17.78" y2="3.81" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="40"/>
-<rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="39"/>
-<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="1/8_BRICK">
 <description>1/8 Brick footprint as used by UWE-12/10-Q48NB-C DC/DC converter
@@ -508,6 +477,41 @@ Toshiba
 <circle x="0" y="0" radius="4.99871875" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="5.6796125" width="0" layer="39"/>
 <circle x="0" y="0" radius="5.6796125" width="0" layer="40"/>
+</package>
+<package name="CRYDOM_CMX">
+<description>Crydom CMX series solid state relays SIP-4
+&lt;br&gt;
+&lt;a href=https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="1" x="15.748" y="0" drill="2.1082" first="yes"/>
+<pad name="2" x="5.588" y="0" drill="2.1082"/>
+<pad name="3" x="-5.08" y="0" drill="2.1082"/>
+<pad name="4" x="-10.16" y="0" drill="2.1082"/>
+<wire x1="-17.78" y1="3.81" x2="-17.78" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-17.78" y1="-3.81" x2="22.86" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="22.86" y1="-3.81" x2="22.86" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="22.86" y1="3.81" x2="-17.78" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-10.16" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="-5.08" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="5.588" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="15.748" y="0" radius="1.79605" width="0" layer="40"/>
+<rectangle x1="-19.05" y1="-5.08" x2="24.13" y2="5.08" layer="39"/>
+</package>
+<package name="4026">
+<description>Vishay Dale Sense Resistor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/427/VISH_S_A0011243377_1-2572030.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<smd name="1" x="-4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
+<smd name="3" x="-4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90"/>
+<smd name="4" x="4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90"/>
+<smd name="2" x="4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
+<wire x1="-5.08" y1="-3.302" x2="5.08" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-3.302" x2="5.08" y2="3.302" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.302" x2="-5.08" y2="3.302" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="3.302" x2="-5.08" y2="-3.302" width="0.127" layer="21"/>
+<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="39"/>
+<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="40"/>
+<text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -4720,35 +4724,35 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MPN" value="APT1608SECK/J3-PRV" x="129.54" y="-16.51" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="54.61" y="80.76" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="Q1" library="HyTechDevices" package="DPAK(2-7K1S)" value="TRANSISTOR_N_MOS_2-7K1S_TK100S04N1L,LQ" x="46.99" y="21.59" smashed="yes" rot="R180">
-<attribute name="DKPN" value="TK100S04N1LLQ" x="10.16" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="Q1" library="HyTechDevices" package="DPAK(2-7K1S)" value="TRANSISTOR_N_MOS_2-7K1S_TK100S04N1LLQ" x="46.99" y="21.59" smashed="yes" rot="R180">
+<attribute name="DKPN" value="TK100S04N1LLQCT-ND" x="10.16" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage" x="10.16" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="757-TK100S04N1LLQ" x="10.16" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TK100S04N1L,LQ" x="10.16" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="46.99" y="14.732" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="Q2" library="HyTechDevices" package="DPAK(2-7K1S)" value="TRANSISTOR_N_MOS_2-7K1S_TK100S04N1L,LQ" x="57.15" y="21.59" smashed="yes" rot="R180">
-<attribute name="DKPN" value="TK100S04N1LLQ" x="12.7" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="Q2" library="HyTechDevices" package="DPAK(2-7K1S)" value="TRANSISTOR_N_MOS_2-7K1S_TK100S04N1LLQ" x="57.15" y="21.59" smashed="yes" rot="R180">
+<attribute name="DKPN" value="TK100S04N1LLQCT-ND" x="12.7" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage" x="12.7" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="757-TK100S04N1LLQ" x="12.7" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TK100S04N1L,LQ" x="12.7" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="57.15" y="14.732" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="Q3" library="HyTechDevices" package="DPAK(2-7K1S)" value="TRANSISTOR_N_MOS_2-7K1S_TK100S04N1L,LQ" x="48.26" y="64.77" smashed="yes">
-<attribute name="DKPN" value="TK100S04N1LLQ" x="100.33" y="3.81" size="1.778" layer="27" display="off"/>
+<element name="Q3" library="HyTechDevices" package="DPAK(2-7K1S)" value="TRANSISTOR_N_MOS_2-7K1S_TK100S04N1LLQ" x="48.26" y="64.77" smashed="yes">
+<attribute name="DKPN" value="TK100S04N1LLQCT-ND" x="100.33" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage" x="100.33" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="757-TK100S04N1LLQ" x="100.33" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="TK100S04N1L,LQ" x="100.33" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="48.26" y="72.898" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="Q4" library="HyTechDevices" package="DPAK(2-7K1S)" value="TRANSISTOR_N_MOS_2-7K1S_TK100S04N1L,LQ" x="31.75" y="63.5" smashed="yes" rot="R90">
-<attribute name="DKPN" value="TK100S04N1LLQ" x="92.71" y="123.19" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q4" library="HyTechDevices" package="DPAK(2-7K1S)" value="TRANSISTOR_N_MOS_2-7K1S_TK100S04N1LLQ" x="31.75" y="63.5" smashed="yes" rot="R90">
+<attribute name="DKPN" value="TK100S04N1LLQCT-ND" x="92.71" y="123.19" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage" x="92.71" y="123.19" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOPN" value="757-TK100S04N1LLQ" x="92.71" y="123.19" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TK100S04N1L,LQ" x="92.71" y="123.19" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="24.892" y="63.5" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
-<element name="R1" library="HyTechDevices" package="4026" value="RESISTOR_SENSE_4026_0.002" x="40.64" y="52.07" smashed="yes" rot="R270">
+<element name="R1" library="HyTechDevicesTemp" package="4026" value="RESISTOR_SENSE__WSL40262L000FEB" x="40.64" y="52.07" smashed="yes" rot="R270">
 <attribute name="DKPN" value="WSLR-.002CT-ND" x="-19.05" y="-17.78" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Dale" x="-19.05" y="-17.78" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="71-WSL40262L000FEB" x="-19.05" y="-17.78" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4867,7 +4871,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="VOLTAGE_CONTINUOUS" value="10.00V" x="151.13" y="-63.5" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="151.13" y="-63.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R19" library="HyTechDevices" package="4026" value="RESISTOR_SENSE_4026_0.002" x="44.45" y="38.1" smashed="yes" rot="R270">
+<element name="R19" library="HyTechDevicesTemp" package="4026" value="RESISTOR_SENSE__WSL40262L000FEB" x="44.45" y="38.1" smashed="yes" rot="R270">
 <attribute name="DKPN" value="WSLR-.002CT-ND" x="-15.24" y="-44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Vishay Dale" x="-15.24" y="-44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="71-WSL40262L000FEB" x="-15.24" y="-44.45" size="1.778" layer="27" rot="R270" display="off"/>
@@ -5093,7 +5097,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MPN" value="5015" x="66.04" y="-41.91" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="27.94" y="55.88" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="U$10" library="HyTechDevices" package="CRYDOM_CMX" value="RELAY_SOLIDSTATE_NO_CMX60D20" x="144.78" y="22.86" smashed="yes" rot="R90">
+<element name="U$10" library="HyTechDevicesTemp" package="CRYDOM_CMX" value="RELAY_SOLIDSTATE_NO_CMX60D20" x="144.78" y="22.86" smashed="yes" rot="R90">
 <attribute name="DKPN" value="CC1666-ND" x="233.68" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Crydom" x="233.68" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOPN" value="558-CMX60D20" x="233.68" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5266,6 +5270,9 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="66.04" y1="55.88" x2="67.3331625" y2="55.88" width="0.4064" layer="1"/>
 <wire x1="69.85" y1="60.11" x2="67.64" y2="60.11" width="0.4064" layer="1"/>
 <wire x1="67.64" y1="60.11" x2="67.31" y2="60.44" width="0.4064" layer="1"/>
+<wire x1="128.27" y1="25.4" x2="137.16" y2="24.65" width="0" layer="19" extent="1-1"/>
+<wire x1="68.375" y1="51.635" x2="64.77" y2="39.89" width="0" layer="19" extent="1-1"/>
+<wire x1="128.27" y1="38.14000625" x2="128.27" y2="25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="NET2">
 <contactref element="U1" pad="7"/>

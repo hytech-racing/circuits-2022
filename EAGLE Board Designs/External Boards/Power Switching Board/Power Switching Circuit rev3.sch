@@ -297,6 +297,7 @@
 <smd name="3" x="0" y="1.0033" dx="0.7112" dy="0.889" layer="1"/>
 <text x="0" y="1.778" size="0.635" layer="25" font="vector" rot="R180" align="top-center">&gt;NAME</text>
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
+<circle x="-1.778" y="-1.0033" radius="0.15875" width="0" layer="21"/>
 </package>
 <package name="SOURIAU_12-04">
 <description>SOURIAU 4 Pin
@@ -346,22 +347,6 @@
 <circle x="-5.9999875" y="-5.9999875" radius="3" width="0" layer="39"/>
 <circle x="5.9999875" y="5.9999875" radius="3" width="0" layer="40"/>
 <circle x="5.9999875" y="5.9999875" radius="3" width="0" layer="39"/>
-</package>
-<package name="WSL2726">
-<description>Vishay Sense Resistor
-&lt;br&gt;
-&lt;a href="https://www.vishay.com/docs/30131/wsl2726.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;</description>
-<smd name="1" x="-2.4638" y="-0.9525" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
-<smd name="2" x="2.4638" y="-0.9525" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
-<smd name="3" x="-2.4638" y="3.175" dx="2.4384" dy="0.889" layer="1" rot="R180"/>
-<smd name="4" x="2.4638" y="3.175" dx="2.4384" dy="0.889" layer="1" rot="R180"/>
-<text x="0" y="4.064" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-3.4544" y1="3.302" x2="3.4544" y2="3.302" width="0.127" layer="21"/>
-<wire x1="3.4544" y1="3.302" x2="3.4544" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="3.4544" y1="-3.302" x2="-3.4544" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="-3.4544" y1="-3.302" x2="-3.4544" y2="3.302" width="0.127" layer="21"/>
-<rectangle x1="-4.064" y1="-4.064" x2="4.064" y2="4.064" layer="39"/>
 </package>
 <package name="0603-CAP">
 <description>0603 Cap
@@ -519,22 +504,6 @@ Toshiba
 <rectangle x1="-5.6025" y1="10.7625" x2="5.6025" y2="14.9875" layer="29"/>
 <rectangle x1="-4.1025" y1="4.2625" x2="4.1025" y2="10.865" layer="29"/>
 </package>
-<package name="CRYDOM_CMX">
-<description>Crydom CMX series solid state relays SIP-4
-&lt;br&gt;
-&lt;a href=https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;</description>
-<pad name="1" x="15.748" y="0" drill="2.1082" first="yes"/>
-<pad name="2" x="5.588" y="0" drill="2.1082"/>
-<pad name="3" x="-5.08" y="0" drill="2.1082"/>
-<pad name="4" x="-10.16" y="0" drill="2.1082"/>
-<wire x1="-17.78" y1="3.81" x2="-17.78" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-17.78" y1="-3.81" x2="22.86" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="22.86" y1="-3.81" x2="22.86" y2="3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="22.86" y1="3.81" x2="-17.78" y2="3.81" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="40"/>
-<rectangle x1="-13.97" y1="-2.54" x2="19.05" y2="2.54" layer="39"/>
-<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="1/8_BRICK">
 <description>1/8 Brick footprint as used by UWE-12/10-Q48NB-C DC/DC converter
 &lt;br&gt;
@@ -569,22 +538,6 @@ Toshiba
 <wire x1="8.001" y1="3.3655" x2="8.001" y2="-3.3655" width="0.127" layer="21"/>
 <rectangle x1="-8.636" y1="-4.826" x2="8.636" y2="4.826" layer="39"/>
 <text x="0" y="4.826" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
-<package name="4026">
-<description>Vishay Dale Sense Resistor
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/427/VISH_S_A0011243377_1-2572030.pdf"&gt;Datasheet&lt;a/&gt;</description>
-<smd name="1" x="-4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
-<smd name="3" x="-4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90"/>
-<smd name="4" x="4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90"/>
-<smd name="2" x="4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
-<wire x1="-5.08" y1="-3.302" x2="5.08" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-3.302" x2="5.08" y2="3.302" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.302" x2="-5.08" y2="3.302" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="3.302" x2="-5.08" y2="-3.302" width="0.127" layer="21"/>
-<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="39"/>
-<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="40"/>
-<text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="3568">
 <description>Mini-Blade Fuse Holder
@@ -779,24 +732,6 @@ Toshiba
 <pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="RESISTOR_SENSE">
-<description>Resistor with sense connections</description>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
-<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<text x="1.27" y="2.794" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="1.27" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;RESISTANCE</text>
-<wire x1="3.175" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.9525" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-0.3175" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="2.2225" y1="1.016" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="0.9525" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="2.2225" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-0.3175" y1="1.016" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.175" y1="0" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="4" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
 <symbol name="RESISTOR">
 <pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
@@ -840,51 +775,6 @@ Toshiba
 <pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;CAPACITANCE</text>
-</symbol>
-<symbol name="RELAY_SOLIDSTATE_NO">
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
-<wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
-<wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-<pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
-<polygon width="0.1524" layer="94">
-<vertex x="9.398" y="-5.842"/>
-<vertex x="8.89" y="-6.604"/>
-<vertex x="10.414" y="-7.112"/>
-</polygon>
-<circle x="12.7" y="-8.89" radius="0.635" width="0.1524" layer="94"/>
-<circle x="15.24" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
-<circle x="10.16" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="12.7" y2="-9.525" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="10.16" y2="-3.175" width="0.1524" layer="94"/>
-<pin name="CONTACT1" x="20.32" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
-<pin name="CONTACT2" x="20.32" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
-<wire x1="13.0175" y1="-8.255" x2="14.9225" y2="-4.445" width="0.1524" layer="94"/>
-<polygon width="0.0254" layer="94">
-<vertex x="14.986" y="-5.334"/>
-<vertex x="14.224" y="-4.826"/>
-<vertex x="14.986" y="-4.318"/>
-</polygon>
-<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="UWE-100-120W">
 <description>UWE-100-120W Wide Input, Isolated Eighth-Brick DC/DC Converters
@@ -2005,8 +1895,7 @@ Toshiba
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/916/PMV15ENEA-1604828.pdf"&gt;PMV15ENEA Datasheet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/408/TK6P65W_datasheet_en_20151225-1916290.pdf"&gt;TK6P65W Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/408/TK100S04N1L_datasheet_en_20200624-1840137.pdf"&gt;TK100S04N1L Datasheet&lt;/a&gt;&lt;/li&gt;</description>
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/sir638adp-1766131.pdf"&gt;SIR638ADP Datasheet&lt;/a&gt;&lt;/li&gt;</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_N-CHANNEL" x="0" y="0"/>
 </gates>
@@ -2033,8 +1922,8 @@ Toshiba
 <connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
-<technology name="TK100S04N1L,LQ">
-<attribute name="DKPN" value="TK100S04N1LLQ"/>
+<technology name="TK100S04N1LLQ">
+<attribute name="DKPN" value="TK100S04N1LLQCT-ND"/>
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
 <attribute name="MOPN" value="757-TK100S04N1LLQ"/>
 <attribute name="MPN" value="TK100S04N1L,LQ"/>
@@ -2430,32 +2319,6 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 </device>
 </devices>
 </deviceset>
-<deviceset name="RELAY_SOLIDSTATE_NO_?*">
-<description>Solid State Normally Open Relay
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Crydom CMX Series&lt;a/&gt;</description>
-<gates>
-<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CRYDOM_CMX">
-<connects>
-<connect gate="G$1" pin="CONTACT1" pad="1"/>
-<connect gate="G$1" pin="CONTACT2" pad="2"/>
-<connect gate="G$1" pin="CONTROL+" pad="3"/>
-<connect gate="G$1" pin="CONTROL-" pad="4"/>
-</connects>
-<technologies>
-<technology name="CMX60D20">
-<attribute name="DKPN" value="CC1666-ND"/>
-<attribute name="MANUFACTURER" value="Crydom"/>
-<attribute name="MOPN" value="558-CMX60D20"/>
-<attribute name="MPN" value="CMX60D20"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="UWE-*">
 <description>UWE-100-120W Series Wide Input, Isolated Eighth-Brick DCDC Converters
 &lt;br&gt;
@@ -2481,58 +2344,6 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
 <attribute name="MOPN" value="580-UWE-12/10Q12PBC"/>
 <attribute name="MPN" value="UWE-12/10-Q12PB-C"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RESISTOR_SENSE_?_*" prefix="R">
-<description>Sense Resistor
-&lt;br&gt;
-&lt;a href="https://www.vishay.com/docs/30131/wsl2726.pdf"&gt;Vishay WSL2726&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/427/VISH_S_A0011243377_1-2572030.pdf"&gt;Vishay WSL4026&lt;a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR_SENSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="WSL2726" package="WSL2726">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="0.0013">
-<attribute name="DKPN" value="541-WSL27261L300FEACT-ND"/>
-<attribute name="MANUFACTURER" value="Vishay Dale"/>
-<attribute name="MOPN" value="71-WSL27261L300FEA"/>
-<attribute name="MPN" value="WSL27261L300FEA"/>
-<attribute name="POWER" value="3W"/>
-<attribute name="RESISTANCE" value="1.3mΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="0.0624V"/>
-</technology>
-</technologies>
-</device>
-<device name="4026" package="4026">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="0.002">
-<attribute name="DKPN" value="WSLR-.002CT-ND"/>
-<attribute name="MANUFACTURER" value="Vishay Dale"/>
-<attribute name="MOPN" value="71-WSL40262L000FEB"/>
-<attribute name="MPN" value="WSL40262L000FEB"/>
-<attribute name="POWER" value="3W"/>
-<attribute name="RESISTANCE" value="2.0mΩ"/>
-<attribute name="TOLERANCE" value="1%"/>
-<attribute name="VOLTAGE" value="0.077V"/>
 </technology>
 </technologies>
 </device>
@@ -5276,6 +5087,41 @@ Layer: 94 Symbol</description>
 <circle x="0" y="0" radius="5.6796125" width="0" layer="39"/>
 <circle x="0" y="0" radius="5.6796125" width="0" layer="40"/>
 </package>
+<package name="CRYDOM_CMX">
+<description>Crydom CMX series solid state relays SIP-4
+&lt;br&gt;
+&lt;a href=https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="1" x="15.748" y="0" drill="2.1082" first="yes"/>
+<pad name="2" x="5.588" y="0" drill="2.1082"/>
+<pad name="3" x="-5.08" y="0" drill="2.1082"/>
+<pad name="4" x="-10.16" y="0" drill="2.1082"/>
+<wire x1="-17.78" y1="3.81" x2="-17.78" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-17.78" y1="-3.81" x2="22.86" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="22.86" y1="-3.81" x2="22.86" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="22.86" y1="3.81" x2="-17.78" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-10.16" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="-5.08" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="5.588" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="15.748" y="0" radius="1.79605" width="0" layer="40"/>
+<rectangle x1="-19.05" y1="-5.08" x2="24.13" y2="5.08" layer="39"/>
+</package>
+<package name="4026">
+<description>Vishay Dale Sense Resistor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/427/VISH_S_A0011243377_1-2572030.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<smd name="1" x="-4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
+<smd name="3" x="-4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90"/>
+<smd name="4" x="4.1148" y="3.2385" dx="0.889" dy="2.4384" layer="1" rot="R90"/>
+<smd name="2" x="4.1148" y="-0.889" dx="5.588" dy="2.4384" layer="1" rot="R90"/>
+<wire x1="-5.08" y1="-3.302" x2="5.08" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-3.302" x2="5.08" y2="3.302" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.302" x2="-5.08" y2="3.302" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="3.302" x2="-5.08" y2="-3.302" width="0.127" layer="21"/>
+<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="39"/>
+<rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="40"/>
+<text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR_POLARIZED">
@@ -5289,6 +5135,69 @@ Layer: 94 Symbol</description>
 <text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
 <text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;CAPACITANCE</text>
 <wire x1="1.0414" y1="1.778" x2="1.016" y2="-1.778" width="0.508" layer="94" curve="180" cap="flat"/>
+</symbol>
+<symbol name="RELAY_SOLIDSTATE_NO">
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.588" x2="7.366" y2="-6.858" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-6.858" x2="7.366" y2="-5.08" width="0.2032" layer="94"/>
+<wire x1="7.366" y1="-5.08" x2="10.414" y2="-7.112" width="0.2032" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-13.462" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<pin name="CONTROL+" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="CONTROL-" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="9.398" y="-5.842"/>
+<vertex x="8.89" y="-6.604"/>
+<vertex x="10.414" y="-7.112"/>
+</polygon>
+<circle x="12.7" y="-8.89" radius="0.635" width="0.1524" layer="94"/>
+<circle x="15.24" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<circle x="10.16" y="-3.81" radius="0.635" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="-9.525" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="-3.175" width="0.1524" layer="94"/>
+<pin name="CONTACT1" x="20.32" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="CONTACT2" x="20.32" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<wire x1="13.0175" y1="-8.255" x2="14.9225" y2="-4.445" width="0.1524" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="14.986" y="-5.334"/>
+<vertex x="14.224" y="-4.826"/>
+<vertex x="14.986" y="-4.318"/>
+</polygon>
+<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="RESISTOR_SENSE">
+<description>Resistor with sense connections</description>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<text x="1.27" y="2.794" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="1.27" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;RESISTANCE</text>
+<wire x1="3.175" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.3175" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.2225" y1="1.016" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="1.016" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.2225" y1="1.016" x2="1.5875" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.3175" y1="1.016" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="0" x2="2.8575" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="4" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5319,6 +5228,62 @@ Layer: 94 Symbol</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="RELAY_SOLIDSTATE_NO_?*" prefix="K">
+<description>Solid State Normally Open Relay
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Crydom CMX Series&lt;a/&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_SOLIDSTATE_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYDOM_CMX">
+<connects>
+<connect gate="G$1" pin="CONTACT1" pad="1"/>
+<connect gate="G$1" pin="CONTACT2" pad="2"/>
+<connect gate="G$1" pin="CONTROL+" pad="3"/>
+<connect gate="G$1" pin="CONTROL-" pad="4"/>
+</connects>
+<technologies>
+<technology name="CMX60D20">
+<attribute name="DKPN" value="CC1666-ND"/>
+<attribute name="MANUFACTURER" value="Crydom"/>
+<attribute name="MOPN" value="558-CMX60D20"/>
+<attribute name="MPN" value="CMX60D20"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR_SENSE_?_*" prefix="R">
+<description>Vishay Dale Current Sense Resistor
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/427/VISH_S_A0011243377_1-2572030.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR_SENSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="4026">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="WSL40262L000FEB">
+<attribute name="DKPN" value="WSLR-.002CT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale"/>
+<attribute name="MOPN" value="71-WSL40262L000FEB"/>
+<attribute name="MPN" value="WSL40262L000FEB"/>
+<attribute name="POWER" value="3W"/>
+<attribute name="RESISTANCE" value="2.0mΩ"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="0.077V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -5338,10 +5303,10 @@ Layer: 94 Symbol</description>
 <part name="J3" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="SOURIAU"/>
 <part name="J1" library="HyTechDevices" deviceset="CONNECTOR-3_?" device=""/>
 <part name="LED8" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED" value="RED"/>
-<part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
-<part name="Q2" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
-<part name="Q4" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
-<part name="Q3" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1L,LQ"/>
+<part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1LLQ"/>
+<part name="Q2" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1LLQ"/>
+<part name="Q4" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1LLQ"/>
+<part name="Q3" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1LLQ"/>
 <part name="F1" library="HyTechDevices" deviceset="FUSE_HOLDER_*" device="SMD" technology="MINIBLADE" value="FUSE_HOLDER_SMD"/>
 <part name="F3" library="HyTechDevices" deviceset="FUSE_HOLDER_*" device="SMD" technology="MINIBLADE" value="FUSE_HOLDER_SMD"/>
 <part name="F4" library="HyTechDevices" deviceset="FUSE_HOLDER_*" device="SMD" technology="MINIBLADE" value="FUSE_HOLDER_SMD"/>
@@ -5355,7 +5320,7 @@ Layer: 94 Symbol</description>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
 <part name="C6" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_68NF"/>
 <part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_68NF"/>
-<part name="U$10" library="HyTechDevices" deviceset="RELAY_SOLIDSTATE_NO_?*" device="" technology="CMX60D20"/>
+<part name="U$10" library="HyTechDevicesTemp" deviceset="RELAY_SOLIDSTATE_NO_?*" device="" technology="CMX60D20"/>
 <part name="U$12" library="HyTechDevices" deviceset="UWE-*" device="" technology="12/10-Q12PB-C" value="UWE-12/10-Q12PB-C"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="0.62"/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="0.62"/>
@@ -5404,8 +5369,8 @@ Layer: 94 Symbol</description>
 <part name="P14" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P15" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR_SENSE_?_*" device="4026" technology="0.002"/>
-<part name="R19" library="HyTechDevices" deviceset="RESISTOR_SENSE_?_*" device="4026" technology="0.002"/>
+<part name="R1" library="HyTechDevicesTemp" deviceset="RESISTOR_SENSE_?_*" device="" technology="WSL40262L000FEB"/>
+<part name="R19" library="HyTechDevicesTemp" deviceset="RESISTOR_SENSE_?_*" device="" technology="WSL40262L000FEB"/>
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13K"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13K"/>
 <part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
