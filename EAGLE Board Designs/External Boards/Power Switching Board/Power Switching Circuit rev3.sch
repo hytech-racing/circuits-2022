@@ -504,26 +504,6 @@ Toshiba
 <rectangle x1="-5.6025" y1="10.7625" x2="5.6025" y2="14.9875" layer="29"/>
 <rectangle x1="-4.1025" y1="4.2625" x2="4.1025" y2="10.865" layer="29"/>
 </package>
-<package name="1/8_BRICK">
-<description>1/8 Brick footprint as used by UWE-12/10-Q48NB-C DC/DC converter
-&lt;br&gt;
-&lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
-<pad name="1" x="-25.4" y="7.62" drill="1.2192" first="yes"/>
-<pad name="2" x="-25.4" y="0" drill="1.2192"/>
-<pad name="3" x="-25.4" y="-7.62" drill="1.2192"/>
-<pad name="4" x="25.4" y="-7.62" drill="1.778"/>
-<pad name="5" x="25.4" y="-3.81" drill="1.2192"/>
-<pad name="6" x="25.4" y="0" drill="1.2192"/>
-<pad name="7" x="25.4" y="3.81" drill="1.2192"/>
-<pad name="8" x="25.4" y="7.62" drill="1.778"/>
-<wire x1="-29.21" y1="11.684" x2="-29.21" y2="-11.176" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-29.21" y1="-11.176" x2="29.21" y2="-11.176" width="0.127" layer="21" style="shortdash"/>
-<wire x1="29.21" y1="-11.176" x2="29.21" y2="11.684" width="0.127" layer="21" style="shortdash"/>
-<wire x1="29.21" y1="11.684" x2="-29.21" y2="11.684" width="0.127" layer="21" style="shortdash"/>
-<rectangle x1="-27.94" y1="-10.16" x2="27.94" y2="10.16" layer="39"/>
-<rectangle x1="-27.94" y1="-10.16" x2="27.94" y2="10.16" layer="40"/>
-<text x="0" y="12.7" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="3588">
 <description>Keystone Electronics 3588 Mini Fuse Holder SMD
 &lt;br&gt;
@@ -580,6 +560,20 @@ Toshiba
 <rectangle x1="-1.778" y1="-0.762" x2="1.778" y2="0.762" layer="39"/>
 <rectangle x1="1.261" y1="0.5" x2="1.661" y2="0.75" layer="21"/>
 <rectangle x1="1.261" y1="-0.75" x2="1.661" y2="-0.5" layer="21"/>
+</package>
+<package name="2835-LED">
+<description>LUXEON 2835 LED&lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/602/DS236_luxeon_2835_color_line_datasheet-1596094.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A" x="-0.735" y="0" dx="1.93" dy="1.8" layer="1" roundness="11"/>
+<smd name="C" x="1.265" y="0" dx="0.87" dy="1.8" layer="1" roundness="22"/>
+<wire x1="-1.75" y1="1.4" x2="1.75" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="1.4" x2="1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-1.4" x2="-1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-1.4" x2="-1.75" y2="1.4" width="0.127" layer="21"/>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-2.032" y1="-1.778" x2="2.032" y2="1.778" layer="39"/>
+<text x="0" y="1.524" size="0.8128" layer="21" font="vector" align="bottom-center">+ -</text>
+<circle x="-2.032" y="1.778" radius="0.127" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -775,25 +769,6 @@ Toshiba
 <pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;CAPACITANCE</text>
-</symbol>
-<symbol name="UWE-100-120W">
-<description>UWE-100-120W Wide Input, Isolated Eighth-Brick DC/DC Converters
-&lt;br&gt;
-&lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
-<pin name="+VIN" x="-2.54" y="-7.62" length="short" direction="in"/>
-<pin name="ON/OFF" x="-2.54" y="-22.86" length="short" direction="in"/>
-<pin name="-VIN" x="-2.54" y="-15.24" length="short" direction="in"/>
-<pin name="-VOUT" x="25.4" y="-27.94" length="short" direction="out" rot="R180"/>
-<pin name="-SENSE" x="25.4" y="-22.86" length="short" direction="in" rot="R180"/>
-<pin name="TRIM" x="25.4" y="-15.24" length="short" direction="in" rot="R180"/>
-<pin name="+SENSE" x="25.4" y="-7.62" length="short" direction="in" rot="R180"/>
-<pin name="+VOUT" x="25.4" y="-2.54" length="short" direction="out" rot="R180"/>
-<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="0" y1="-30.48" x2="22.86" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-30.48" x2="22.86" y2="0" width="0.254" layer="94"/>
-<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-31.242" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="TEST_POINT">
 <circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
@@ -1754,15 +1729,17 @@ Toshiba
 </deviceset>
 <deviceset name="LED_?_*" prefix="D">
 <description>LED
-&lt;br&gt;
-&lt;ul&gt;
+&lt;ul&gt;0603
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608VBC_D-246010.pdf"&gt;Blue&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608ZGCK-1173388.pdf"&gt;Green&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-6197.pdf"&gt;Orange&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SECK-J3-PRV-1173336.pdf"&gt;Red&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/50/SM0603UWC-880813.pdf"&gt;White&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/216/APT1608SYCK-J3-PRV-1173311.pdf"&gt;Yellow&lt;/a&gt;&lt;/li&gt;
-&lt;\ul&gt;</description>
+&lt;/ul&gt;
+&lt;ul&gt;2835 (Series not on Digikey)
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/602/DS236_luxeon_2835_color_line_datasheet-1596094.pdf"&gt;Lumiled LUXEON 2835 Color Line&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="LED" symbol="DIODE_LED" x="0" y="0"/>
 </gates>
@@ -1814,6 +1791,42 @@ Toshiba
 <attribute name="MANUFACTURER" value="Kingbright"/>
 <attribute name="MOPN" value="604-APT1608SYCK/J3-PRV"/>
 <attribute name="MPN" value="APT1608SYCK/J3-PRV"/>
+</technology>
+</technologies>
+</device>
+<device name="2835" package="2835-LED">
+<connects>
+<connect gate="LED" pin="A" pad="A"/>
+<connect gate="LED" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="AMBER">
+<attribute name="COLOR" value="Amber"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128PCA10350"/>
+<attribute name="MPN" value="L128-PCA1003500000"/>
+</technology>
+<technology name="BLUE">
+<attribute name="COLOR" value="Blue"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128BLU10350"/>
+<attribute name="MPN" value="L128-BLU1003500000"/>
+</technology>
+<technology name="GREEN">
+<attribute name="COLOR" value="Green"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128GRN10350"/>
+<attribute name="MPN" value="L128-GRN1003500000"/>
+</technology>
+<technology name="RED">
+<attribute name="COLOR" value="Red"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128RED10350"/>
+<attribute name="MPN" value="L128-RED1003500000"/>
 </technology>
 </technologies>
 </device>
@@ -2342,36 +2355,6 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <attribute name="MPN" value="C3216X5R1V226M160AC"/>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VOLTAGE" value="35V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="UWE-*">
-<description>UWE-100-120W Series Wide Input, Isolated Eighth-Brick DCDC Converters
-&lt;br&gt;
-&lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
-<gates>
-<gate name="G$1" symbol="UWE-100-120W" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1/8_BRICK">
-<connects>
-<connect gate="G$1" pin="+SENSE" pad="7"/>
-<connect gate="G$1" pin="+VIN" pad="1"/>
-<connect gate="G$1" pin="+VOUT" pad="8"/>
-<connect gate="G$1" pin="-SENSE" pad="5"/>
-<connect gate="G$1" pin="-VIN" pad="3"/>
-<connect gate="G$1" pin="-VOUT" pad="4"/>
-<connect gate="G$1" pin="ON/OFF" pad="2"/>
-<connect gate="G$1" pin="TRIM" pad="6"/>
-</connects>
-<technologies>
-<technology name="12/10-Q12PB-C">
-<attribute name="DKPN" value="811-3061-ND"/>
-<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
-<attribute name="MOPN" value="580-UWE-12/10Q12PBC"/>
-<attribute name="MPN" value="UWE-12/10-Q12PB-C"/>
 </technology>
 </technologies>
 </device>
@@ -5150,6 +5133,33 @@ Layer: 94 Symbol</description>
 <rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="5.08" layer="40"/>
 <text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="UWE-*">
+<description>1/8 Brick footprint as used by UWE-12/10-Q12PB-C converter
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/281/uwe-57928.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="1" x="-25.4" y="7.62" drill="1.2192" first="yes"/>
+<pad name="2" x="-25.4" y="0" drill="1.2192"/>
+<pad name="3" x="-25.4" y="-7.62" drill="1.2192"/>
+<pad name="4" x="25.4" y="-7.62" drill="1.778"/>
+<pad name="5" x="25.4" y="-3.81" drill="1.2192"/>
+<pad name="6" x="25.4" y="0" drill="1.2192"/>
+<pad name="7" x="25.4" y="3.81" drill="1.2192"/>
+<pad name="8" x="25.4" y="7.62" drill="1.778"/>
+<wire x1="-29.21" y1="11.684" x2="-29.21" y2="-11.176" width="0.127" layer="21"/>
+<wire x1="-29.21" y1="-11.176" x2="29.21" y2="-11.176" width="0.127" layer="21"/>
+<wire x1="29.21" y1="-11.176" x2="29.21" y2="11.684" width="0.127" layer="21"/>
+<wire x1="29.21" y1="11.684" x2="-29.21" y2="11.684" width="0.127" layer="21"/>
+<text x="0" y="12.7" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-25.4" y="7.62" radius="1.27" width="0" layer="40"/>
+<circle x="-25.4" y="0" radius="1.27" width="0" layer="40"/>
+<circle x="-25.4" y="-7.62" radius="1.27" width="0" layer="40"/>
+<circle x="25.4" y="3.81" radius="1.27" width="0" layer="40"/>
+<circle x="25.4" y="0" radius="1.27" width="0" layer="40"/>
+<circle x="25.4" y="-3.81" radius="1.27" width="0" layer="40"/>
+<circle x="25.4" y="7.62" radius="1.79605" width="0" layer="40"/>
+<circle x="25.4" y="-7.62" radius="1.79605" width="0" layer="40"/>
+<rectangle x1="-30.48" y1="-12.7" x2="30.48" y2="12.7" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR_POLARIZED">
@@ -5226,6 +5236,25 @@ Layer: 94 Symbol</description>
 <wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
 <pin name="3" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="4" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="UWE-*">
+<description>UWE-* Wide Input, Isolated Eighth-Brick DC/DC Converters
+&lt;br&gt;
+&lt;a href="https://www.murata.com/-/media/webrenewal/products/power/datasheet/uwe-100-120.ashx?la=en&amp;cvid=20200224054012000000"&gt;Datasheet&lt;a/&gt;</description>
+<pin name="+VIN" x="-2.54" y="-7.62" length="short" direction="in"/>
+<pin name="ON/OFF" x="-2.54" y="-22.86" length="short" direction="in"/>
+<pin name="-VIN" x="-2.54" y="-15.24" length="short" direction="in"/>
+<pin name="-VOUT" x="25.4" y="-27.94" length="short" direction="out" rot="R180"/>
+<pin name="-SENSE" x="25.4" y="-22.86" length="short" direction="in" rot="R180"/>
+<pin name="TRIM" x="25.4" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="+SENSE" x="25.4" y="-7.62" length="short" direction="in" rot="R180"/>
+<pin name="+VOUT" x="25.4" y="-2.54" length="short" direction="out" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="-30.48" x2="22.86" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-30.48" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-31.242" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5312,6 +5341,36 @@ Layer: 94 Symbol</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="UWE-*" prefix="A">
+<description>UWE-Q12 Series Wide Input, Isolated Eighth-Brick DCDC Converters
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/281/uwe_q12-1919447.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<gates>
+<gate name="G$1" symbol="UWE-*" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UWE-*">
+<connects>
+<connect gate="G$1" pin="+SENSE" pad="7"/>
+<connect gate="G$1" pin="+VIN" pad="1"/>
+<connect gate="G$1" pin="+VOUT" pad="8"/>
+<connect gate="G$1" pin="-SENSE" pad="5"/>
+<connect gate="G$1" pin="-VIN" pad="3"/>
+<connect gate="G$1" pin="-VOUT" pad="4"/>
+<connect gate="G$1" pin="ON/OFF" pad="2"/>
+<connect gate="G$1" pin="TRIM" pad="6"/>
+</connects>
+<technologies>
+<technology name="12/10-Q12PB-C">
+<attribute name="DKPN" value="811-3061-ND"/>
+<attribute name="MANUFACTURER" value="Murata Power Solutions Inc."/>
+<attribute name="MOPN" value="580-UWE-12/10Q12PBC"/>
+<attribute name="MPN" value="UWE-12/10-Q12PB-C"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -5349,7 +5408,7 @@ Layer: 94 Symbol</description>
 <part name="C6" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_68NF"/>
 <part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_68NF"/>
 <part name="U$10" library="HyTechDevicesTemp" deviceset="RELAY_SOLIDSTATE_NO_?*" device="" technology="CMX60D20"/>
-<part name="U$12" library="HyTechDevices" deviceset="UWE-*" device="" technology="12/10-Q12PB-C" value="UWE-12/10-Q12PB-C"/>
+<part name="U$12" library="HyTechDevicesTemp" deviceset="UWE-*" device="" technology="12/10-Q12PB-C" value="UWE-12/10-Q12PB-C"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="0.62"/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="0.62"/>
 <part name="C13" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
@@ -5380,7 +5439,7 @@ Layer: 94 Symbol</description>
 <part name="D12" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
 <part name="D13" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="D14" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
-<part name="D15" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="D15" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE" value="LED_0603_BLUE"/>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P1" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P3" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -5422,6 +5481,10 @@ Layer: 94 Symbol</description>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2"/>
 <part name="C1" library="HyTechDevicesTemp" deviceset="EEUFP1E*" device="" technology="681"/>
+<part name="C18" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
+<part name="C19" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF"/>
+<part name="R27" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="R28" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -5581,9 +5644,9 @@ UV Falling: 9.97V</text>
 <attribute name="NAME" x="102.87" y="39.37" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="105.41" y="39.37" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R15" gate="G$1" x="93.98" y="-68.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="92.71" y="-69.85" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="95.25" y="-69.85" size="1.27" layer="96" rot="R90" align="top-center"/>
+<instance part="R15" gate="G$1" x="93.98" y="-66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="92.71" y="-67.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="95.25" y="-67.31" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="R24" gate="G$1" x="-68.58" y="-93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="-69.85" y="-95.25" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -5824,6 +5887,24 @@ UV Falling: 9.97V</text>
 <attribute name="VOLTAGE" x="93.98" y="39.37" size="1.27" layer="96" rot="R270" align="top-center"/>
 <attribute name="CAPACITANCE" x="92.202" y="39.37" size="1.27" layer="96" rot="R270" align="top-center"/>
 </instance>
+<instance part="C18" gate="G$1" x="88.9" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="86.36" y="39.37" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="91.44" y="39.37" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="93.218" y="39.37" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="C19" gate="G$1" x="81.28" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="78.74" y="39.37" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VOLTAGE" x="83.82" y="39.37" size="1.27" layer="96" rot="R90" align="top-center"/>
+<attribute name="CAPACITANCE" x="85.598" y="39.37" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R27" gate="G$1" x="81.28" y="-66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="80.01" y="-67.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="82.55" y="-67.31" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R28" gate="G$1" x="106.68" y="-66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="105.41" y="-67.31" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="107.95" y="-67.31" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5881,6 +5962,12 @@ UV Falling: 9.97V</text>
 <pinref part="P4" gate="1" pin="GND"/>
 <junction x="104.14" y="25.4"/>
 <pinref part="C1" gate="G$1" pin="MINUS"/>
+<pinref part="C19" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="35.56" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
+<junction x="96.52" y="35.56"/>
+<pinref part="C18" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="35.56" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
+<junction x="88.9" y="35.56"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
@@ -5923,9 +6010,14 @@ UV Falling: 9.97V</text>
 <pinref part="P11" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="-76.2" x2="93.98" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-76.2" x2="93.98" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="P12" gate="1" pin="GND"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="-71.12" x2="93.98" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="93.98" y="-71.12"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="-71.12" x2="106.68" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -5957,8 +6049,8 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-119.38" y1="27.94" x2="-119.38" y2="30.48" width="0.1524" layer="91"/>
-<label x="-119.38" y="30.48" size="1.27" layer="95" rot="R90"/>
 <pinref part="TP5" gate="G$1" pin="P$1"/>
+<label x="-119.38" y="30.48" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="NET2" class="0">
@@ -5991,9 +6083,12 @@ UV Falling: 9.97V</text>
 <pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<wire x1="104.14" y1="-63.5" x2="109.22" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-63.5" x2="106.68" y2="-63.5" width="0.1524" layer="91"/>
 <label x="109.22" y="-63.5" size="1.27" layer="95" xref="yes"/>
 <pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="-63.5" x2="109.22" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="106.68" y="-63.5"/>
 </segment>
 </net>
 <net name="NET" class="0">
@@ -6026,6 +6121,12 @@ UV Falling: 9.97V</text>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="43.18" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
 <junction x="104.14" y="45.72"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
+<junction x="96.52" y="43.18"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="43.18" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
+<junction x="88.9" y="43.18"/>
 </segment>
 </net>
 <net name="!FAULT2" class="0">
@@ -6138,8 +6239,8 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-129.54" y1="15.24" x2="-129.54" y2="17.78" width="0.1524" layer="91"/>
-<label x="-129.54" y="17.78" size="1.27" layer="95" rot="R90"/>
 <pinref part="TP3" gate="G$1" pin="P$1"/>
+<label x="-129.54" y="17.78" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="SOURCE2" class="0">
@@ -6163,8 +6264,8 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-129.54" y1="27.94" x2="-129.54" y2="30.48" width="0.1524" layer="91"/>
-<label x="-129.54" y="30.48" size="1.27" layer="95" rot="R90"/>
 <pinref part="TP2" gate="G$1" pin="P$1"/>
+<label x="-129.54" y="30.48" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="GATE1" class="0">
@@ -6183,8 +6284,8 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-129.54" y1="38.1" x2="-129.54" y2="40.64" width="0.1524" layer="91"/>
-<label x="-129.54" y="40.64" size="1.27" layer="95" rot="R90"/>
 <pinref part="TP1" gate="G$1" pin="P$1"/>
+<label x="-129.54" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -6291,8 +6392,8 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-119.38" y1="38.1" x2="-119.38" y2="40.64" width="0.1524" layer="91"/>
-<label x="-119.38" y="40.64" size="1.27" layer="95" rot="R90"/>
 <pinref part="TP4" gate="G$1" pin="P$1"/>
+<label x="-119.38" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6462,7 +6563,6 @@ UV Falling: 9.97V</text>
 <wire x1="96.52" y1="-63.5" x2="93.98" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="93.98" y="-63.5"/>
 <wire x1="91.44" y1="-63.5" x2="93.98" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="-66.04" x2="93.98" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="-40.64" x2="96.52" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="93.98" y="-40.64"/>
@@ -6484,8 +6584,11 @@ UV Falling: 9.97V</text>
 <net name="GLVMS" class="0">
 <segment>
 <wire x1="83.82" y1="-63.5" x2="81.28" y2="-63.5" width="0.1524" layer="91"/>
-<label x="81.28" y="-63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="78.74" y="-63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="-63.5" x2="78.74" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="81.28" y="-63.5"/>
 </segment>
 <segment>
 <wire x1="-63.5" y1="-139.7" x2="-60.96" y2="-139.7" width="0.1524" layer="91"/>
