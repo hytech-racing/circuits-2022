@@ -9463,8 +9463,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="VOLTAGE_CONTINUOUS" value="4.90V" x="51.0032" y="7.8232" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="51.0032" y="7.8232" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="U$9" library="HyTechManufacturing" package="LOGO_HYTECH_LARGE" value="" x="-60.325" y="29.845" smashed="yes" rot="MR0"/>
-<element name="U$10" library="HyTechManufacturing" package="LOGO_GT_LARGE" value="" x="-41.9862" y="56.3626" smashed="yes" rot="MR0"/>
+<element name="U$9" library="HyTechManufacturing" package="LOGO_HYTECH_LARGE" value="" x="51.435" y="29.845" smashed="yes" rot="MR0"/>
+<element name="U$10" library="HyTechManufacturing" package="LOGO_GT_LARGE" value="" x="69.7738" y="56.3626" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND" airwireshidden="yes">
