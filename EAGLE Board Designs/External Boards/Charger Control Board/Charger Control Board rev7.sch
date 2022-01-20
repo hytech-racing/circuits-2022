@@ -592,21 +592,6 @@ Note: Based on page 14 and 15.</description>
 <rectangle x1="-5.6025" y1="10.7625" x2="5.6025" y2="14.9875" layer="29"/>
 <rectangle x1="-4.1025" y1="4.2625" x2="4.1025" y2="10.865" layer="29"/>
 </package>
-<package name="BR-1632A/HAN">
-<description>BR-1632A/HAN RTC Battery
-&lt;br&gt;
-&lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Batteries%20PDFS/BR-1632A_HAN_Dwg.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="-" x="-7.6" y="0" drill="0.8"/>
-<pad name="+" x="7.6" y="0" drill="0.8"/>
-<circle x="-1.3" y="0" radius="8.75" width="0.127" layer="21"/>
-<text x="9.525" y="0" size="1.27" layer="21" font="vector" rot="R180" align="center">+</text>
-<text x="-10.795" y="0" size="1.27" layer="21" font="vector" rot="R180" align="center">-</text>
-<text x="-1.27" y="8.89" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="-7.6" y="0" radius="0.889" width="0.127" layer="39"/>
-<circle x="-7.6" y="0" radius="0.889" width="0.127" layer="40"/>
-<circle x="7.6" y="0" radius="0.889" width="0.127" layer="39"/>
-<circle x="7.6" y="0" radius="0.889" width="0.127" layer="40"/>
-</package>
 <package name="SOT-23-5">
 <description>SOT-23-5
 &lt;br&gt;
@@ -976,6 +961,21 @@ Based on page 10.</description>
 <rectangle x1="-4.064" y1="-5.842" x2="4.064" y2="2.286" layer="40"/>
 <text x="0" y="-6.477" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="498">
+<description>Keystone 498 SMT 1/3N Battery Holder &lt;br&gt;
+&lt;a href = "https://www.mouser.com/datasheet/2/215/98-745913.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-7.5184" y="0" dx="3.9624" dy="3.175" layer="1"/>
+<smd name="2" x="7.5184" y="0" dx="3.9624" dy="3.175" layer="1"/>
+<hole x="-6.4262" y="6.096" drill="1.3462"/>
+<wire x1="-7.239" y1="6.858" x2="-7.239" y2="-6.858" width="0.127" layer="21"/>
+<wire x1="-7.239" y1="-6.858" x2="7.239" y2="-6.858" width="0.127" layer="21"/>
+<wire x1="7.239" y1="-6.858" x2="7.239" y2="6.858" width="0.127" layer="21"/>
+<wire x1="7.239" y1="6.858" x2="-7.239" y2="6.858" width="0.127" layer="21"/>
+<text x="-11.43" y="0" size="0.8128" layer="21" align="center">+</text>
+<text x="11.43" y="0" size="0.8128" layer="21" align="center">–</text>
+<text x="0" y="7.62" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-10.16" y1="-7.366" x2="10.16" y2="7.366" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONNECTOR_02">
@@ -1204,18 +1204,6 @@ Based on page 10.</description>
 <wire x1="0.635" y1="0" x2="0.3175" y2="-1.016" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="BATTERY">
-<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
-<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="2.54" width="0.4064" layer="94"/>
-<pin name="PLUS" x="-5.08" y="0" visible="off" length="short" direction="pwr"/>
-<pin name="MINUS" x="2.54" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
-<text x="-1.27" y="3.302" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
-<text x="-1.905" y="-5.08" size="1.27" layer="96" align="top-center">&gt;MPN</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
-<text x="-3.175" y="1.27" size="1.778" layer="94" rot="R270" align="center">+</text>
-</symbol>
 <symbol name="DIODE_SCHOTTKY">
 <wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-1.27" width="0.1524" layer="94"/>
@@ -1425,6 +1413,21 @@ Based on page 10.</description>
 <wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="BATTERY_HOLDER">
+<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="2.54" width="0.4064" layer="94"/>
+<pin name="PLUS" x="-10.16" y="0" visible="off" length="short" direction="pwr"/>
+<pin name="MINUS" x="7.62" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
+<text x="-7.62" y="5.842" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="2.54" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.032" y2="0" width="0.1524" layer="94"/>
+<text x="-7.62" y="-5.842" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="-3.175" y="1.27" size="1.778" layer="94" rot="R270" align="center">+</text>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3222,31 +3225,6 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
-<deviceset name="BATTERY" prefix="BT">
-<description>Battery
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/315/panasonic-lithium-coin-hightemp-br1632a-datasheet-876746.pdf"&gt;BR1632A/HAN&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="BATTERY" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="BR-1632A/HAN">
-<connects>
-<connect gate="G$1" pin="MINUS" pad="-"/>
-<connect gate="G$1" pin="PLUS" pad="+"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="P023-ND"/>
-<attribute name="MANUFACTURER" value="Panasonic - BSG"/>
-<attribute name="MOPN" value="658-BR1632A/HAN"/>
-<attribute name="MPN" value="BR-1632A/HAN"/>
-<attribute name="VOLTAGE" value=" 3V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RELAY_DPDT" prefix="K">
 <description>Dual Pole, Dual Throw Relay
 &lt;br&gt;
@@ -3503,6 +3481,34 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <attribute name="MANUFACTURER" value="AQY214EHA"/>
 <attribute name="MOPN" value="769-AQY214EHA"/>
 <attribute name="MPN" value="AQY214EHA"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATTERY_HOLDER_*" prefix="XB">
+<description>Keystone 498 1/3N Cell Holder
+&lt;p&gt;
+PN for the holder; if 1/3N batteries needed, order separately.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://www.mouser.com/datasheet/2/215/98-745913.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="BATTERY_HOLDER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="KEYSTONE_498" package="498">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="2"/>
+<connect gate="G$1" pin="PLUS" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BATTERY_TYPE" value="1/3N"/>
+<attribute name="DKPN" value="36-498-ND"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics"/>
+<attribute name="MOPN" value="534-498"/>
+<attribute name="MPN" value="498"/>
 </technology>
 </technologies>
 </device>
@@ -9848,14 +9854,10 @@ Layer: 94 Symbol</description>
 <devices>
 <device name="">
 <technologies>
-<technology name="MINI_BLADE_1">
-<attribute name="DKPN" value="2298-ANM58-1A-ND"/>
-<attribute name="MANUFACTURER" value="OptiFuse"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="ANM58-1A"/>
-</technology>
 <technology name="MINI_BLADE_2">
+<attribute name="CURRENT" value="2A"/>
 <attribute name="DKPN" value="F986-ND"/>
+<attribute name="FUSE_TYPE" value="MINI 297"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-0297002.WXNV"/>
 <attribute name="MPN" value="0297002.WXNV"/>
@@ -9999,6 +10001,30 @@ Layer: 94 Symbol</description>
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-105308-1208"/>
 <attribute name="MPN" value="105308-1208"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATTERY_*" prefix="O">
+<description>Battery
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.fdk.com/battery/lithium_e/data_sheet/CR1_3N_spec-sheet.pdf"&gt;CR-1/3N&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="CR-1/3N">
+<attribute name="BATTERY_TYPE" value="1/3N"/>
+<attribute name="DKPN" value="SY100-ND"/>
+<attribute name="MANUFACTURER" value="FDK America, Inc., a member of Fujitsu Group"/>
+<attribute name="MOPN" value="639-CR1/3N"/>
+<attribute name="MPN" value="CR-1-3N"/>
+<attribute name="VOLTAGE" value="3V"/>
 </technology>
 </technologies>
 </device>
@@ -10551,7 +10577,6 @@ visible on the PCB.</text>
 <part name="P18" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P22" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P23" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="BT100" library="HyTechDevices" deviceset="BATTERY" device=""/>
 <part name="C100" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P19" library="HyTechSupplies" deviceset="+3V3" device=""/>
 <part name="P20" library="HyTechSupplies" deviceset="+5V" device=""/>
@@ -10630,7 +10655,7 @@ visible on the PCB.</text>
 <part name="P54" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="OKHS" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="YELLOW"/>
 <part name="BMS_OK" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
-<part name="STATUS_4.2" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="STATUS_4.0" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="5V_PWR" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
 <part name="P55" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="K1" library="HyTechDevices" deviceset="RELAY_DPDT" device=""/>
@@ -10737,7 +10762,7 @@ visible on the PCB.</text>
 <part name="R100" library="HyTechDevices_Jumper" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
 <part name="P67" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P68" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="O23" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_1"/>
+<part name="O23" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_2"/>
 <part name="U$8" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
 <attribute name="DESCRIPTION_1" value="Facilitates and monitors battery charging"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Daniel Vail"/>
@@ -10771,6 +10796,8 @@ visible on the PCB.</text>
 <part name="O27" library="HyTechExternal" deviceset="RECEPTACLE-4_*" device="" technology="MICROFIT"/>
 <part name="O28" library="HyTechExternal" deviceset="RECEPTACLE-6_*" device="" technology="MICROFIT"/>
 <part name="O29" library="HyTechExternal" deviceset="RECEPTACLE-8_*" device="" technology="MICROFIT"/>
+<part name="O30" library="HyTechExternal" deviceset="BATTERY_*" device="" technology="CR-1/3N"/>
+<part name="XB1" library="HyTechDevices" deviceset="BATTERY_HOLDER_*" device="KEYSTONE_498"/>
 </parts>
 <sheets>
 <sheet>
@@ -10889,13 +10916,8 @@ to gnd on wiring harness</text>
 <instance part="P22" gate="1" x="180.34" y="104.14" smashed="yes">
 <attribute name="VALUE" x="180.34" y="102.87" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P23" gate="1" x="218.44" y="162.56" smashed="yes">
-<attribute name="VALUE" x="218.44" y="161.29" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="BT100" gate="G$1" x="218.44" y="170.18" smashed="yes" rot="R270">
-<attribute name="NAME" x="221.742" y="171.45" size="1.27" layer="95" rot="R270" align="bottom-center"/>
-<attribute name="MPN" x="213.36" y="172.085" size="1.27" layer="96" rot="R270" align="top-center"/>
-<attribute name="VOLTAGE" x="215.265" y="172.085" size="1.27" layer="96" rot="R270" align="top-center"/>
+<instance part="P23" gate="1" x="218.44" y="152.4" smashed="yes">
+<attribute name="VALUE" x="218.44" y="151.13" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="C100" gate="G$1" x="157.48" y="154.94" smashed="yes" rot="MR270">
 <attribute name="NAME" x="154.94" y="156.21" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
@@ -11086,6 +11108,10 @@ to gnd on wiring harness</text>
 <instance part="P68" gate="1" x="114.3" y="53.34" smashed="yes">
 <attribute name="VALUE" x="114.3" y="52.07" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="XB1" gate="G$1" x="218.44" y="165.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="224.282" y="172.72" size="1.27" layer="95" rot="R270"/>
+<attribute name="MPN" x="212.598" y="172.72" size="1.27" layer="96" rot="R270" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11146,8 +11172,8 @@ to gnd on wiring harness</text>
 </segment>
 <segment>
 <pinref part="P23" gate="1" pin="GND"/>
-<pinref part="BT100" gate="G$1" pin="MINUS"/>
-<wire x1="218.44" y1="167.64" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="154.94" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="XB1" gate="G$1" pin="MINUS"/>
 </segment>
 <segment>
 <pinref part="P22" gate="1" pin="GND"/>
@@ -11485,10 +11511,10 @@ to gnd on wiring harness</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="BT100" gate="G$1" pin="PLUS"/>
 <wire x1="218.44" y1="175.26" x2="218.44" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="A1" gate="G$1" pin="VBAT"/>
 <wire x1="218.44" y1="177.8" x2="208.28" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="XB1" gate="G$1" pin="PLUS"/>
 </segment>
 </net>
 <net name="4.0_CTX" class="0">
@@ -12062,7 +12088,7 @@ to gnd on wiring harness</text>
 <attribute name="COLOR" x="115.57" y="109.982" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="115.57" y="115.316" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="STATUS_4.2" gate="LED" x="116.84" y="86.36" smashed="yes">
+<instance part="STATUS_4.0" gate="LED" x="116.84" y="86.36" smashed="yes">
 <attribute name="COLOR" x="115.57" y="84.582" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="115.57" y="89.916" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -12867,14 +12893,14 @@ to gnd on wiring harness</text>
 <segment>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="STATUS_4.2" gate="LED" pin="C"/>
+<pinref part="STATUS_4.0" gate="LED" pin="C"/>
 </segment>
 </net>
 <net name="STATUS_4.0" class="0">
 <segment>
 <wire x1="111.76" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
 <label x="109.22" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="STATUS_4.2" gate="LED" pin="A"/>
+<pinref part="STATUS_4.0" gate="LED" pin="A"/>
 </segment>
 </net>
 <net name="SHDN_E_READ" class="0">
@@ -13094,6 +13120,10 @@ to gnd on wiring harness</text>
 <instance part="O29" gate="G$1" x="35.56" y="180.34" smashed="yes">
 <attribute name="MPN" x="35.56" y="177.038" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="35.56" y="181.102" size="1.27" layer="95"/>
+</instance>
+<instance part="O30" gate="G$1" x="35.56" y="172.72" smashed="yes">
+<attribute name="MPN" x="35.56" y="169.418" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="35.56" y="173.482" size="1.27" layer="95"/>
 </instance>
 </instances>
 <busses>
