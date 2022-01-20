@@ -10393,7 +10393,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="69.596" y1="5.6896" x2="67.056" y2="5.6896" width="0.889" layer="1"/>
 <wire x1="67.056" y1="5.6896" x2="51.308" y2="5.6896" width="0.889" layer="1"/>
 <wire x1="51.308" y1="5.6896" x2="48.1838" y2="5.6896" width="0.889" layer="1"/>
-<wire x1="69.2404" y1="5.6896" x2="69.596" y2="5.6896" width="0.254" layer="1"/>
 <wire x1="59.436" y1="15.494" x2="59.436" y2="15.24" width="0.254" layer="1"/>
 <wire x1="59.436" y1="15.24" x2="67.056" y2="7.62" width="0.254" layer="1"/>
 <wire x1="67.056" y1="7.62" x2="67.056" y2="5.6896" width="0.254" layer="1"/>
