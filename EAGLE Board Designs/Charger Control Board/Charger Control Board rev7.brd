@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -195,7 +195,7 @@
 <text x="85.8774" y="15.6718" size="1.016" layer="25" font="vector" rot="R90">HyTech Racing 2022
 Charger Control Unit rev7
 Designed by Daniel Vail</text>
-<text x="56.515" y="62.865" size="0.7112" layer="25" align="bottom-center">SHDN_C</text>
+<text x="56.515" y="62.865" size="0.8128" layer="25" font="vector" align="bottom-center">SHDN_C</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -8073,35 +8073,35 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="60.96" y="71.755" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="534-5015" x="60.96" y="71.755" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="60.96" y="71.755" size="1.778" layer="27" display="off"/>
-<attribute name="SIGNAL" value="SHDN_D" x="60.96" y="62.865" size="0.7112" layer="21" font="vector" align="bottom-center"/>
+<attribute name="SIGNAL" value="SHDN_D" x="60.96" y="62.865" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP5" library="HyTechDevices" package="5015" value="TEST_POINT" x="65.405" y="61.595" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="65.405" y="71.755" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="65.405" y="71.755" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="534-5015" x="65.405" y="71.755" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="65.405" y="71.755" size="1.778" layer="27" display="off"/>
-<attribute name="SIGNAL" value="SHDN_E" x="65.405" y="62.865" size="0.7112" layer="21" font="vector" align="bottom-center"/>
+<attribute name="SIGNAL" value="SHDN_E" x="65.405" y="62.865" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP9" library="HyTechDevices" package="5015" value="TEST_POINT" x="83.693" y="55.499" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="83.693" y="65.659" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="83.693" y="65.659" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="534-5015" x="83.693" y="65.659" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="83.693" y="65.659" size="1.778" layer="27" display="off"/>
-<attribute name="SIGNAL" value="CCU_OK" x="83.693" y="56.769" size="0.7112" layer="21" font="vector" align="bottom-center"/>
+<attribute name="SIGNAL" value="CCU_OK" x="83.693" y="56.769" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP8" library="HyTechDevices" package="5015" value="TEST_POINT" x="79.6036" y="55.4736" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="79.6036" y="65.6336" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="79.6036" y="65.6336" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="534-5015" x="79.6036" y="65.6336" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="79.6036" y="65.6336" size="1.778" layer="27" display="off"/>
-<attribute name="SIGNAL" value="IMD_OK" x="79.6036" y="56.7436" size="0.7112" layer="21" font="vector" align="bottom-center"/>
+<attribute name="SIGNAL" value="IMD_OK" x="79.6036" y="56.7436" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP7" library="HyTechDevices" package="5015" value="TEST_POINT" x="73.787" y="55.499" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="73.787" y="35.179" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="73.787" y="35.179" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="534-5015" x="73.787" y="35.179" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="73.787" y="35.179" size="1.778" layer="27" display="off"/>
-<attribute name="SIGNAL" value="BMS_OK" x="73.787" y="56.769" size="0.7112" layer="21" font="vector" align="bottom-center"/>
+<attribute name="SIGNAL" value="BMS_OK" x="73.787" y="56.769" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP1" library="HyTechDevices" package="5015" value="TEST_POINT" x="18.669" y="24.257" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="18.669" y="44.577" size="1.778" layer="27" rot="R180" display="off"/>
@@ -8137,7 +8137,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="52.07" y="66.675" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="534-5015" x="52.07" y="66.675" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="52.07" y="66.675" size="1.778" layer="27" display="off"/>
-<attribute name="SIGNAL" value="SHDN_B" x="52.07" y="62.865" size="0.7112" layer="21" font="vector" align="bottom-center"/>
+<attribute name="SIGNAL" value="SHDN_B" x="52.07" y="62.865" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP3" library="HyTechDevices" package="5015" value="TEST_POINT" x="56.515" y="61.595" smashed="yes" rot="R180">
 <attribute name="DKPN" value="36-5015CT-ND" x="56.515" y="56.515" size="1.778" layer="27" rot="R180" display="off"/>
@@ -8158,7 +8158,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="69.342" y="55.499" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="534-5015" x="69.342" y="55.499" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="69.342" y="55.499" size="1.778" layer="27" display="off"/>
-<attribute name="SIGNAL" value="SHDN_F" x="69.342" y="56.769" size="0.7112" layer="21" font="vector" align="bottom-center"/>
+<attribute name="SIGNAL" value="SHDN_F" x="69.342" y="56.769" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="U$5" library="HyTechManufacturing" package="LOGO_HYTECH_MEDIUM" value="" x="8.128" y="20.2692" smashed="yes" rot="R90"/>
 <element name="U$4" library="HyTechDevices" package="DIP-4" value="RELAY_SOLIDSTATE_NO" x="35.8902" y="34.1376" smashed="yes" rot="R270">
