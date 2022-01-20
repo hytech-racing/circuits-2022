@@ -4084,6 +4084,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="304.6857" y="-16.390615625" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="304.6857" y="-16.390615625" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="304.6857" y="-16.390615625" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="313.598584375" y="-16.4211" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="304.6857" y="-16.390615625" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F2" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="304.6857" y="-27.31686875" smashed="yes">
@@ -4092,6 +4093,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="304.6857" y="-27.31686875" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="304.6857" y="-27.31686875" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="304.6857" y="-27.31686875" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="313.56893125" y="-27.3431" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="304.6857" y="-27.31686875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F3" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="304.6857" y="-71.02188125" smashed="yes">
@@ -4100,6 +4102,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="304.6857" y="-71.02188125" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="304.6857" y="-71.02188125" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="304.6857" y="-71.02188125" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="313.62811875" y="-71.0819" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="304.6857" y="-71.02188125" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F4" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="304.6857" y="-38.243121875" smashed="yes">
@@ -4108,6 +4111,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="304.6857" y="-38.243121875" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="304.6857" y="-38.243121875" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="304.6857" y="-38.243121875" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="313.666278125" y="-38.3159" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="304.6857" y="-38.243121875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F5" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="304.6857" y="-60.095628125" smashed="yes">
@@ -4116,6 +4120,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="304.6857" y="-60.095628125" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="304.6857" y="-60.095628125" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="304.6857" y="-60.095628125" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="313.581571875" y="-60.0837" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="304.6857" y="-60.095628125" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F6" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="285.8262" y="-49.014621875" smashed="yes">
@@ -4124,6 +4129,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="285.8262" y="-49.014621875" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="285.8262" y="-49.014621875" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="285.8262" y="-49.014621875" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="276.885621875" y="-49.022" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="285.8262" y="-49.014621875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F7" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="304.6857" y="-49.169375" smashed="yes">
@@ -4132,6 +4138,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="304.6857" y="-49.169375" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="304.6857" y="-49.169375" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="304.6857" y="-49.169375" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="313.560425" y="-49.0855" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="304.6857" y="-49.169375" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F8" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="304.6857" y="-5.4643625" smashed="yes">
@@ -4140,6 +4147,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="304.6857" y="-5.4643625" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="304.6857" y="-5.4643625" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="304.6857" y="-5.4643625" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="313.5266375" y="-5.3721" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="304.6857" y="-5.4643625" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F9" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="304.6857" y="-81.948134375" smashed="yes">
@@ -4148,6 +4156,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="304.6857" y="-81.948134375" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="304.6857" y="-81.948134375" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="304.6857" y="-81.948134375" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="313.598465625" y="-81.9023" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="304.6857" y="-81.948134375" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F10" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="285.8262" y="-28.921321875" smashed="yes">
@@ -4156,6 +4165,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="285.8262" y="-28.921321875" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="285.8262" y="-28.921321875" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="285.8262" y="-28.921321875" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="276.934521875" y="-28.9306" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="285.8262" y="-28.921321875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F11" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="285.8262" y="-59.061271875" smashed="yes">
@@ -4164,6 +4174,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="285.8262" y="-59.061271875" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="285.8262" y="-59.061271875" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="285.8262" y="-59.061271875" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="276.899271875" y="-59.0042" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="285.8262" y="-59.061271875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F12" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="285.8262" y="-38.967971875" smashed="yes">
@@ -4172,6 +4183,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="285.8262" y="-38.967971875" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="285.8262" y="-38.967971875" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="285.8262" y="-38.967971875" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="276.871971875" y="-38.9382" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="285.8262" y="-38.967971875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F13" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="-13.4366" y="-48.771459375" smashed="yes" rot="R180">
@@ -4180,6 +4192,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="-13.4366" y="-48.771459375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="-13.4366" y="-48.771459375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="-13.4366" y="-48.771459375" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-4.550740625" y="-48.7934" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-13.4366" y="-48.771459375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="F14" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="-32.9565" y="-38.306446875" smashed="yes" rot="R180">
@@ -4188,6 +4201,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="-32.9565" y="-38.306446875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="-32.9565" y="-38.306446875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="-32.9565" y="-38.306446875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-41.854846875" y="-38.3667" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-32.9565" y="-38.306446875" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="F15" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="-32.9565" y="-60.284290625" smashed="yes" rot="R180">
@@ -4196,6 +4210,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="-32.9565" y="-60.284290625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="-32.9565" y="-60.284290625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="-32.9565" y="-60.284290625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-41.861690625" y="-60.2869" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-32.9565" y="-60.284290625" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="F16" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="-32.9565" y="-16.328603125" smashed="yes" rot="R180">
@@ -4204,6 +4219,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="-32.9565" y="-16.328603125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="-32.9565" y="-16.328603125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="-32.9565" y="-16.328603125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-42.733996875" y="-16.3957" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-32.9565" y="-16.328603125" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="F17" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="-32.9565" y="-71.2732125" smashed="yes" rot="R180">
@@ -4212,6 +4228,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="-32.9565" y="-71.2732125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="-32.9565" y="-71.2732125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="-32.9565" y="-71.2732125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-41.8016125" y="-71.2343" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-32.9565" y="-71.2732125" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="F18" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="-32.9565" y="-5.33968125" smashed="yes" rot="R180">
@@ -4220,6 +4237,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="-32.9565" y="-5.33968125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="-32.9565" y="-5.33968125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="-32.9565" y="-5.33968125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-41.93348125" y="-5.3721" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-32.9565" y="-5.33968125" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="F19" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="-32.9565" y="-82.262134375" smashed="yes" rot="R180">
@@ -4228,6 +4246,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="-32.9565" y="-82.262134375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="-32.9565" y="-82.262134375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="-32.9565" y="-82.262134375" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-41.893934375" y="-82.2833" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-32.9565" y="-82.262134375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="F20" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="-13.4366" y="-38.804940625" smashed="yes" rot="R180">
@@ -4236,6 +4255,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="-13.4366" y="-38.804940625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="-13.4366" y="-38.804940625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="-13.4366" y="-38.804940625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-4.611259375" y="-38.9128" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-13.4366" y="-38.804940625" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="F21" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="-32.9565" y="-49.29536875" smashed="yes" rot="R180">
@@ -4244,6 +4264,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="-32.9565" y="-49.29536875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="-32.9565" y="-49.29536875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="-32.9565" y="-49.29536875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-41.89636875" y="-49.2379" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-32.9565" y="-49.29536875" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="F22" library="HyTechDevices" package="0885" value="FUSE_0885_1" x="-32.9565" y="-27.317525" smashed="yes" rot="R180">
@@ -4252,6 +4273,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="-32.9565" y="-27.317525" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-0885001.DR" x="-32.9565" y="-27.317525" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0885001.DR" x="-32.9565" y="-27.317525" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-42.743275" y="-27.3177" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="-32.9565" y="-27.317525" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U$1" library="HyTechManufacturing" package="HV_LARGE" value="" x="83.312" y="-5.7277" smashed="yes"/>
@@ -4273,8 +4295,8 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <element name="U$19" library="HyTechManufacturing" package="HV_LARGE" value="" x="32.8676" y="-42.86885" smashed="yes"/>
 <element name="U$20" library="HyTechManufacturing" package="HV_LARGE" value="" x="-62.7888" y="-5.7277" smashed="yes"/>
 <element name="U$21" library="HyTechManufacturing" package="HV_LARGE" value="" x="-62.7888" y="-80.1624" smashed="yes"/>
-<element name="U$22" library="HyTechManufacturing" package="HV_LARGE" value="" x="350.4438" y="-5.7277" smashed="yes"/>
-<element name="U$23" library="HyTechManufacturing" package="HV_LARGE" value="" x="350.4438" y="-80.1624" smashed="yes"/>
+<element name="U$22" library="HyTechManufacturing" package="HV_LARGE" value="" x="350.9772" y="-5.7277" smashed="yes"/>
+<element name="U$23" library="HyTechManufacturing" package="HV_LARGE" value="" x="350.9772" y="-80.1624" smashed="yes"/>
 </elements>
 <signals>
 <signal name="A4-B10">
