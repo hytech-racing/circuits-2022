@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -4765,6 +4765,11 @@ Leakage Inductance: 0.50 uH max
 <wire x1="195.58" y1="88.9" x2="238.76" y2="88.9" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="238.76" y1="88.9" x2="238.76" y2="139.7" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="238.76" y1="139.7" x2="195.58" y2="139.7" width="0.1524" layer="97" style="shortdash"/>
+<text x="139.7" y="137.16" size="1.778" layer="97">Note:
+Transformer is flipped in this circuit creating
+two isoSPI crosses. While functional, it makes 
+debugging harder so do not duplicate. Refer
+to Accumulator Control Unit rev2 for correct circuit.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="O" x="0" y="0" smashed="yes">
@@ -5094,6 +5099,10 @@ Leakage Inductance: 0.50 uH max
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="9.0" severity="warning">
 Since Version 9.0, EAGLE supports the align property for labels. 
 Labels in schematic will not be understood with this version. Update EAGLE to the latest version 

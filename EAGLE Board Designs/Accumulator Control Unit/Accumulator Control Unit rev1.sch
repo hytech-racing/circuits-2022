@@ -11600,6 +11600,11 @@ current across precharge relay</text>
 <wire x1="271.78" y1="137.16" x2="271.78" y2="187.96" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="271.78" y1="187.96" x2="228.6" y2="187.96" width="0.1524" layer="97" style="shortdash"/>
 <text x="20.32" y="38.1" size="1.778" layer="97">10V to 3.3V</text>
+<text x="178.054" y="189.484" size="1.778" layer="97">Note:
+Transformer is flipped in this circuit creating
+two isoSPI crosses. While functional, it makes 
+debugging harder so do not duplicate. Refer
+to Accumulator Control Unit rev2 for correct circuit.</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="O" x="0" y="-2.54" smashed="yes">
