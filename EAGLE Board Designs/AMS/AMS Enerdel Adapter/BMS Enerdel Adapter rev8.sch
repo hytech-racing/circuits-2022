@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -280,20 +280,22 @@
 <rectangle x1="-9.525" y1="-4.445" x2="9.525" y2="1.905" layer="39" rot="R180"/>
 <text x="0" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="MINI-BLADE_FUSE_HOLDER">
-<description>MOUSER PART NUMBER
-&lt;BR&gt;
-534-3568</description>
-<wire x1="-3.302" y1="-2.54" x2="-3.302" y2="5.842" width="0.127" layer="21"/>
-<wire x1="-3.302" y1="5.842" x2="13.208" y2="5.842" width="0.127" layer="21"/>
-<wire x1="13.208" y1="-2.54" x2="13.208" y2="5.842" width="0.127" layer="21"/>
-<wire x1="-3.302" y1="-2.54" x2="13.208" y2="-2.54" width="0.127" layer="21"/>
-<pad name="L1" x="0" y="3.4036" drill="1.6129" diameter="2.794"/>
-<pad name="L2" x="0" y="0" drill="1.6129" diameter="2.794"/>
-<pad name="R1" x="9.906" y="3.4036" drill="1.6129" diameter="2.794"/>
-<pad name="R2" x="9.906" y="0" drill="1.6129" diameter="2.794"/>
-<text x="5.08" y="1.27" size="1.016" layer="21" align="center">Mini-Blade
-FUSE</text>
+<package name="0885">
+<description>0885 Fuse
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Keepout is 0.8 mm around fuse to get 1.6 mm between fuses.</description>
+<smd name="1" x="-5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
+<smd name="2" x="5.25" y="0" dx="5.6" dy="7.23" layer="1"/>
+<wire x1="-5.43" y1="2.39" x2="-5.43" y2="-2.39" width="0.127" layer="21"/>
+<wire x1="-5.43" y1="-2.39" x2="5.43" y2="-2.39" width="0.127" layer="21"/>
+<wire x1="5.43" y1="-2.39" x2="5.43" y2="2.39" width="0.127" layer="21"/>
+<wire x1="5.43" y1="2.39" x2="-5.43" y2="2.39" width="0.127" layer="21"/>
+<text x="0" y="3.65" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-8.85" y1="-4.415" x2="8.85" y2="4.415" layer="39"/>
+<rectangle x1="-2.45" y1="-4.415" x2="2.45" y2="4.415" layer="43"/>
+<rectangle x1="-2.45" y1="-4.415" x2="2.45" y2="4.415" layer="41"/>
 </package>
 </packages>
 <symbols>
@@ -344,12 +346,12 @@ FUSE</text>
 <text x="0" y="-38.735" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="FUSE">
-<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="-1.27" y1="0" x2="0.635" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-1.27" y="1.27" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
+<text x="-1.27" y="-1.27" size="1.27" layer="96" align="top-center">&gt;CURRENT</text>
 <wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
 </symbol>
@@ -443,45 +445,45 @@ FUSE</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE" prefix="F" uservalue="yes">
-<description>Fuse/Fuseclips
-&lt;br&gt;
-Keystone Electronics 3568 Fuse
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ProductDetail/Keystone-Electronics/3568"&gt;Mouser Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/215/568-742601.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Bussman/Eaton Midget Fuse Clip
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ProductDetail/Bussmann-Eaton/BK-1A3400-09-R/?qs=sGAEpiMZZMuG%252bgnN5hGYGzzlAelq2OxnKqVSMVjq8I4%3d"&gt;1A3400&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Schurter 0751.0110 Brass Fuse Clip
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/358/typ_OG__Clip__5x20-2553.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Bel Fuse 0ZCF Series Surface Mount PTC (resettable) Fuse
-&lt;br&gt;
-&lt;a href="https://belfuse.com/resources/CircuitProtection/datasheets/0ZCF%20Nov2016.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Littelfuse 1812L Series Surface Mount PTC (resettable) Fuse
-&lt;br&gt;
-&lt;a href="https://m.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_1812l_datasheet.pdf.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<deviceset name="FUSE_?_*" prefix="F">
+<description>Fuse
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/240/Littelfuse_Fuse_885_Datasheet_pdf-1371443.pdf"&gt;0885 Series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_MINIBLADE" package="MINI-BLADE_FUSE_HOLDER">
+<device name="0885" package="0885">
 <connects>
-<connect gate="G$1" pin="1" pad="L1 L2"/>
-<connect gate="G$1" pin="2" pad="R1 R2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="1">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="DKPN" value="F10985CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-0885001.DR"/>
+<attribute name="MPN" value="0885001.DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
+<technology name="1.25">
+<attribute name="CURRENT" value="1.25A"/>
+<attribute name="DKPN" value="F10986CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-08851.25DR"/>
+<attribute name="MPN" value="08851.25DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
+<technology name="1.6">
+<attribute name="CURRENT" value="1.6A"/>
+<attribute name="DKPN" value="F10987CT-ND"/>
+<attribute name="MANUFACTURER" value="Littelfuse Inc."/>
+<attribute name="MOPN" value="576-088501.6DR"/>
+<attribute name="MPN" value="088501.6DR"/>
+<attribute name="VOLTAGE" value="500V"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3130,33 +3132,33 @@ Layer: 94 Symbol</description>
 <part name="A-CONNECTOR-14-LOWER-OUT" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="MINIFIT"/>
 <part name="A-CONNECTOR-14-UPPER-IN" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="NANOFIT"/>
 <part name="A-CONNECTOR-14-UPPER-OUT" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="NANOFIT"/>
-<part name="F1" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F2" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F3" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F4" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F5" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F6" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F7" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F8" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F9" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F10" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F11" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F12" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F13" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F14" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F15" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F16" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F17" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F18" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F19" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F20" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F21" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="F22" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
+<part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F4" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F5" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F7" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F8" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F9" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F10" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F11" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F12" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F13" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F14" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F15" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F16" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F17" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F18" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F19" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F20" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F21" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F22" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="129.54" y="22.86" size="2.54" layer="95">Stephen Noh</text>
+<text x="129.54" y="22.86" size="2.54" layer="95">Noah Bruckner</text>
 <text x="187.96" y="198.12" size="5.08" layer="95">AMS Contacts</text>
 <text x="55.88" y="203.2" size="5.08" layer="95">A Mode</text>
 <text x="177.8" y="10.16" size="2.54" layer="95">Enderdel Adapter for testing AMS Boards</text>
@@ -3889,10 +3891,4 @@ Layer: 94 Symbol</description>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
