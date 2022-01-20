@@ -10119,7 +10119,7 @@ Corner Frequency (kHz) = fclk / 100 = 0.5 kHz</text>
 Thin wires: Grounded Low Voltage</text>
 <text x="134.62" y="137.16" size="1.778" layer="97">Capacitor used
 for Precharge</text>
-<text x="33.02" y="71.12" size="1.778" layer="97">~4.5V Gate threshold
+<text x="33.02" y="71.12" size="1.778" layer="97">~3.5V Gate threshold
  corresponds to 60V
  on tractive system</text>
 </plain>
