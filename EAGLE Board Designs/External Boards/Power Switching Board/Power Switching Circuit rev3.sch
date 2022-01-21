@@ -544,7 +544,7 @@ Toshiba
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
 <text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
-<text x="0" y="1.27" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
+<text x="0" y="1.27" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="SOD-323">
 <description>SOD-323 Diode Package
@@ -772,7 +772,7 @@ Toshiba
 </symbol>
 <symbol name="TEST_POINT">
 <circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-2.54" y="1.778" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-1.778" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
@@ -866,6 +866,8 @@ Toshiba
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/315/AOA0000C331-1141874.pdf"&gt;ERJ  PA2, P03, PA3, P06, P08, P14 Series&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/418/4/NG_DS_1773270_M-604713.pdf"&gt;TE Connectivity/Holsworthy RN73 Series&lt;a/&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/427/dcrcwe3-1762152.pdf"&gt;Vishay Dale D/CRCW e3&lt;a/&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -917,6 +919,17 @@ Toshiba
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
+</technology>
+<technology name="1.13M">
+<attribute name="DKPN" value="541-1.13MHCT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale"/>
+<attribute name="MOPN" value="71-CRCW06031M13FKEA"/>
+<attribute name="MPN" value="CRCW06031M13FKEA"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="1.13M"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="100V"/>
 </technology>
 <technology name="1.24K">
 <attribute name="DKPN" value="311-1.24KHRCT-ND"/>
@@ -1093,6 +1106,17 @@ Toshiba
 <attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="25V"/>
 <attribute name="VOLTAGE_MAX" value="50V"/>
+</technology>
+<technology name="13K">
+<attribute name="DKPN" value="P13KBECT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERA-3ARW133V"/>
+<attribute name="MPN" value="ERA-3ARW133V"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="13k"/>
+<attribute name="TOLERANCE" value="0.05%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="75V"/>
+<attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
 <technology name="15">
 <attribute name="DKPN" value="541-15.0STR-ND"/>
@@ -1446,6 +1470,17 @@ Toshiba
 <attribute name="VOLTAGE_CONTINUOUS" value="25V"/>
 <attribute name="VOLTAGE_MAX" value="50V"/>
 </technology>
+<technology name="41.2K">
+<attribute name="DKPN" value="P20155CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B4122V"/>
+<attribute name="MPN" value=" ERJ-PB3B4122V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="41.2k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
 <technology name="43K">
 <attribute name="DKPN" value="311-43.0KHRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1500,6 +1535,17 @@ Toshiba
 <attribute name="TOLERANCE" value="0.1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="50V"/>
 <attribute name="VOLTAGE_MAX" value="100V"/>
+</technology>
+<technology name="5.49K">
+<attribute name="DKPN" value="P20367CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3D5491V"/>
+<attribute name="MPN" value="ERJ-PB3D5491V"/>
+<attribute name="POWER" value="0.2W"/>
+<attribute name="RESISTANCE" value="5.49k"/>
+<attribute name="TOLERANCE" value="0.5%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
 </technology>
 <technology name="5.9K">
 <attribute name="DKPN" value="P5.9KDBCT-ND"/>
@@ -2371,7 +2417,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <devices>
 <device name="" package="5015">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -5455,8 +5501,8 @@ Layer: 94 Symbol</description>
 <part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
 <part name="R1" library="HyTechDevicesTemp" deviceset="RESISTOR_SENSE_?_*" device="" technology="WSL40262L000FEB"/>
 <part name="R19" library="HyTechDevicesTemp" deviceset="RESISTOR_SENSE_?_*" device="" technology="WSL40262L000FEB"/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13K"/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13K"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13M" value="RESISTOR_0603_1.13M"/>
+<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13M" value="RESISTOR_0603_1.13M"/>
 <part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="DNP"/>
 <part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
@@ -5470,12 +5516,12 @@ Layer: 94 Symbol</description>
 <part name="O4" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_10"/>
 <part name="D3" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="D4" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.49"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.49"/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="13"/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="13"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2"/>
-<part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.49K" value="RESISTOR_0603_5.49K"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.49K" value="RESISTOR_0603_5.49K"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="13K" value="RESISTOR_0603_13K"/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="13K" value="RESISTOR_0603_13K"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2K" value="RESISTOR_0603_41.2K"/>
+<part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2K" value="RESISTOR_0603_41.2K"/>
 <part name="C1" library="HyTechDevicesTemp" deviceset="EEUFP1E*" device="" technology="681"/>
 <part name="C18" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
 <part name="C19" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF"/>
@@ -6091,7 +6137,7 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-119.38" y1="25.4" x2="-119.38" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="TP5" gate="G$1" pin="1"/>
+<pinref part="TP5" gate="G$1" pin="P$1"/>
 <label x="-119.38" y="27.94" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
@@ -6281,7 +6327,7 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-129.54" y1="10.16" x2="-129.54" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="TP3" gate="G$1" pin="1"/>
+<pinref part="TP3" gate="G$1" pin="P$1"/>
 <label x="-129.54" y="12.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
@@ -6297,7 +6343,7 @@ UV Falling: 9.97V</text>
 <junction x="38.1" y="0"/>
 </segment>
 <segment>
-<pinref part="TP6" gate="G$1" pin="1"/>
+<pinref part="TP6" gate="G$1" pin="P$1"/>
 <wire x1="-119.38" y1="10.16" x2="-119.38" y2="12.7" width="0.1524" layer="91"/>
 <label x="-119.38" y="12.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6311,7 +6357,7 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-129.54" y1="25.4" x2="-129.54" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="TP2" gate="G$1" pin="1"/>
+<pinref part="TP2" gate="G$1" pin="P$1"/>
 <label x="-129.54" y="27.94" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
@@ -6331,7 +6377,7 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-129.54" y1="38.1" x2="-129.54" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="TP1" gate="G$1" pin="1"/>
+<pinref part="TP1" gate="G$1" pin="P$1"/>
 <label x="-129.54" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
@@ -6439,7 +6485,7 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-119.38" y1="38.1" x2="-119.38" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="TP4" gate="G$1" pin="1"/>
+<pinref part="TP4" gate="G$1" pin="P$1"/>
 <label x="-119.38" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
@@ -6530,7 +6576,7 @@ UV Falling: 9.97V</text>
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TP11" gate="G$1" pin="1"/>
+<pinref part="TP11" gate="G$1" pin="P$1"/>
 <wire x1="-119.38" y1="-10.16" x2="-119.38" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-119.38" y="-7.62" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6571,7 +6617,7 @@ UV Falling: 9.97V</text>
 <pinref part="XF2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TP7" gate="G$1" pin="1"/>
+<pinref part="TP7" gate="G$1" pin="P$1"/>
 <wire x1="-109.22" y1="10.16" x2="-109.22" y2="12.7" width="0.1524" layer="91"/>
 <label x="-109.22" y="12.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6623,7 +6669,7 @@ UV Falling: 9.97V</text>
 <pinref part="D4" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="TP8" gate="G$1" pin="1"/>
+<pinref part="TP8" gate="G$1" pin="P$1"/>
 <wire x1="-109.22" y1="25.4" x2="-109.22" y2="27.94" width="0.1524" layer="91"/>
 <label x="-109.22" y="27.94" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6711,7 +6757,7 @@ UV Falling: 9.97V</text>
 <label x="-91.44" y="-139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TP12" gate="G$1" pin="1"/>
+<pinref part="TP12" gate="G$1" pin="P$1"/>
 <wire x1="-109.22" y1="-10.16" x2="-109.22" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-109.22" y="-7.62" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6736,7 +6782,7 @@ UV Falling: 9.97V</text>
 <pinref part="XF1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TP9" gate="G$1" pin="1"/>
+<pinref part="TP9" gate="G$1" pin="P$1"/>
 <wire x1="-109.22" y1="38.1" x2="-109.22" y2="40.64" width="0.1524" layer="91"/>
 <label x="-109.22" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6760,7 +6806,7 @@ UV Falling: 9.97V</text>
 </net>
 <net name="SOURCE1" class="0">
 <segment>
-<pinref part="TP10" gate="G$1" pin="1"/>
+<pinref part="TP10" gate="G$1" pin="P$1"/>
 <wire x1="-129.54" y1="-10.16" x2="-129.54" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-129.54" y="-7.62" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
