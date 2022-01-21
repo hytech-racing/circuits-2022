@@ -10026,11 +10026,6 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <text x="53.34" y="193.04" size="1.27" layer="97">Shunt resistor rated to 174 mA</text>
 <text x="175.26" y="205.74" size="1.27" layer="97">Overvoltage: 140V
 Undervoltage: 56V</text>
-<text x="38.1" y="66.04" size="2.54" layer="97">Info</text>
-<text x="58.42" y="134.62" size="2.54" layer="97">Info</text>
-<text x="152.4" y="129.54" size="2.54" layer="97">Info</text>
-<text x="149.86" y="63.5" size="2.54" layer="97">Info</text>
-<text x="60.96" y="187.96" size="2.54" layer="97">Info</text>
 </plain>
 <instances>
 <instance part="U16" gate="G$1" x="185.42" y="200.66" smashed="yes">
@@ -10815,9 +10810,7 @@ Undervoltage: 56V</text>
 <wire x1="33.02" y1="96.52" x2="33.02" y2="193.04" width="0.254" layer="97" style="longdash"/>
 <wire x1="33.02" y1="193.04" x2="137.16" y2="193.04" width="0.254" layer="97" style="longdash"/>
 <text x="104.14" y="101.6" size="2.54" layer="97">Opto-isolator with a cutout</text>
-<text x="58.42" y="177.8" size="2.54" layer="97">Info</text>
 <text x="162.56" y="172.72" size="2.54" layer="97">Info</text>
-<text x="203.2" y="172.72" size="2.54" layer="97">Info</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="O" x="0" y="0" smashed="yes">
