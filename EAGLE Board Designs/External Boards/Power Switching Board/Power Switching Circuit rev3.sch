@@ -6649,7 +6649,6 @@ UV Falling: 9.97V</text>
 <pinref part="R25" gate="G$1" pin="1"/>
 <pinref part="A1" gate="G$1" pin="TRIM"/>
 <junction x="-68.58" y="-91.44"/>
-<pinref part="A1" gate="G$1" pin="TRIM"/>
 </segment>
 </net>
 <net name="N$29" class="0">
