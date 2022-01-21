@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -297,6 +297,14 @@ Keepout is 0.8 mm around fuse to get 1.6 mm between fuses.</description>
 <rectangle x1="-2.45" y1="-4.415" x2="2.45" y2="4.415" layer="43"/>
 <rectangle x1="-2.45" y1="-4.415" x2="2.45" y2="4.415" layer="41"/>
 </package>
+<package name="0034">
+<pad name="1" x="0" y="0" drill="1"/>
+<pad name="2" x="5.08" y="0" drill="1"/>
+<text x="2.54" y="4.445" size="0.8128" layer="21">&gt;NAME</text>
+<circle x="2.54" y="0" radius="4.2418" width="0.127" layer="21"/>
+<circle x="2.54" y="0" radius="4.2418" width="0" layer="39"/>
+<circle x="2.54" y="0" radius="4.2418" width="0" layer="40"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONNECTOR_01">
@@ -463,6 +471,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mm between fuses.</description>
 <technology name="1">
 <attribute name="CURRENT" value="1A"/>
 <attribute name="DKPN" value="F10985CT-ND"/>
+<attribute name="FUSE_TYPE" value="SMD"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-0885001.DR"/>
 <attribute name="MPN" value="0885001.DR"/>
@@ -471,6 +480,7 @@ Keepout is 0.8 mm around fuse to get 1.6 mm between fuses.</description>
 <technology name="1.25">
 <attribute name="CURRENT" value="1.25A"/>
 <attribute name="DKPN" value="F10986CT-ND"/>
+<attribute name="FUSE_TYPE" value="SMD"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-08851.25DR"/>
 <attribute name="MPN" value="08851.25DR"/>
@@ -479,10 +489,28 @@ Keepout is 0.8 mm around fuse to get 1.6 mm between fuses.</description>
 <technology name="1.6">
 <attribute name="CURRENT" value="1.6A"/>
 <attribute name="DKPN" value="F10987CT-ND"/>
+<attribute name="FUSE_TYPE" value="SMD"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-088501.6DR"/>
 <attribute name="MPN" value="088501.6DR"/>
 <attribute name="VOLTAGE" value="500V"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="0034">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=".8">
+<attribute name="CURRENT" value="800mA" constant="no"/>
+<attribute name="DKPN" value="486-1470-ND" constant="no"/>
+<attribute name="FUSE_TYPE" value="THT" constant="no"/>
+<attribute name="MANUFACTURER" value="Schurter Inc." constant="no"/>
+<attribute name="MOPN" value="693-0034.6614" constant="no"/>
+<attribute name="MPN" value="0034.6614" constant="no"/>
+<attribute name="VOLTAGE" value="125V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3132,28 +3160,28 @@ Layer: 94 Symbol</description>
 <part name="A-CONNECTOR-14-LOWER-OUT" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="MINIFIT"/>
 <part name="A-CONNECTOR-14-UPPER-IN" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="NANOFIT"/>
 <part name="A-CONNECTOR-14-UPPER-OUT" library="HyTechDevices" deviceset="CONNECTOR-14_?_*" device="NANOFIT"/>
-<part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F4" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F5" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F7" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F8" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F9" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F10" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F11" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F12" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F13" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F14" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F15" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F16" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F17" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F18" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F19" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F20" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F21" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
-<part name="F22" library="HyTechDevices" deviceset="FUSE_?_*" device="0885" technology="1"/>
+<part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F3" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F4" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F5" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F6" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F7" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F8" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F9" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F10" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F11" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F12" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F13" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F14" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F15" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F16" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F17" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F18" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F19" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F20" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F21" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
+<part name="F22" library="HyTechDevices" deviceset="FUSE_?_*" device="" technology=".8" value="FUSE__.8"/>
 </parts>
 <sheets>
 <sheet>
