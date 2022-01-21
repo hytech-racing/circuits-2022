@@ -5462,7 +5462,6 @@ Layer: 94 Symbol</description>
 <part name="C8" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.1UF"/>
 <part name="C2" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF"/>
 <part name="C1" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.1UF"/>
-<part name="D12" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="R22" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
@@ -5479,7 +5478,6 @@ Layer: 94 Symbol</description>
 <part name="D15" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="YELLOW"/>
 <part name="D7" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
 <part name="D14" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
-<part name="D5" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="D6" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE" value="LED_0603_BLUE"/>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P1" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -5541,7 +5539,9 @@ Layer: 94 Symbol</description>
 <part name="D11" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
 <part name="D1" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
 <part name="D17" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
-<part name="D4" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
+<part name="D12" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
+<part name="D4" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
+<part name="D5" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
 </parts>
 <sheets>
 <sheet>
@@ -5705,10 +5705,6 @@ UV Falling: 9.97V</text>
 <attribute name="VOLTAGE" x="-119.38" y="-87.63" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="-117.602" y="-87.63" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="D12" gate="LED" x="99.06" y="-40.64" smashed="yes" rot="R180">
-<attribute name="COLOR" x="100.33" y="-38.862" size="1.27" layer="95" rot="R180" align="top-center"/>
-<attribute name="NAME" x="100.33" y="-44.196" size="1.27" layer="96" rot="R180" align="bottom-center"/>
-</instance>
 <instance part="R22" gate="G$1" x="111.76" y="-40.64" smashed="yes">
 <attribute name="NAME" x="110.49" y="-39.37" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="110.49" y="-41.91" size="1.27" layer="96" align="top-center"/>
@@ -5772,10 +5768,6 @@ UV Falling: 9.97V</text>
 <instance part="D14" gate="LED" x="101.6" y="-12.7" smashed="yes" rot="R180">
 <attribute name="COLOR" x="102.87" y="-10.922" size="1.27" layer="95" rot="R180" align="top-center"/>
 <attribute name="NAME" x="102.87" y="-16.256" size="1.27" layer="96" rot="R180" align="bottom-center"/>
-</instance>
-<instance part="D5" gate="LED" x="-63.5" y="33.02" smashed="yes" rot="R270">
-<attribute name="COLOR" x="-65.278" y="34.29" size="1.27" layer="95" rot="R270" align="top-center"/>
-<attribute name="NAME" x="-59.944" y="34.29" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
 <instance part="D6" gate="LED" x="40.64" y="-68.58" smashed="yes" rot="R270">
 <attribute name="COLOR" x="38.862" y="-67.31" size="1.27" layer="95" rot="R270" align="top-center"/>
@@ -5999,9 +5991,17 @@ UV Falling: 9.97V</text>
 <attribute name="COLOR" x="102.362" y="31.75" size="1.27" layer="95" rot="R270" align="top-center"/>
 <attribute name="NAME" x="107.696" y="31.75" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
+<instance part="D12" gate="LED" x="99.06" y="-40.64" smashed="yes" rot="R180">
+<attribute name="COLOR" x="100.33" y="-38.862" size="1.27" layer="95" rot="R180" align="top-center"/>
+<attribute name="NAME" x="100.33" y="-44.196" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+</instance>
 <instance part="D4" gate="LED" x="-71.12" y="10.16" smashed="yes" rot="R270">
 <attribute name="COLOR" x="-72.898" y="11.43" size="1.27" layer="95" rot="R270" align="top-center"/>
 <attribute name="NAME" x="-67.564" y="11.43" size="1.27" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="D5" gate="LED" x="-63.5" y="33.02" smashed="yes" rot="R270">
+<attribute name="COLOR" x="-65.278" y="34.29" size="1.27" layer="95" rot="R270" align="top-center"/>
+<attribute name="NAME" x="-59.944" y="34.29" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -6083,9 +6083,9 @@ UV Falling: 9.97V</text>
 <wire x1="-63.5" y1="30.48" x2="-73.66" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="-73.66" y1="35.56" x2="-73.66" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="D5" gate="LED" pin="C"/>
 <pinref part="P6" gate="1" pin="GND"/>
 <junction x="-73.66" y="30.48"/>
+<pinref part="D5" gate="LED" pin="C"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
@@ -6670,9 +6670,9 @@ UV Falling: 9.97V</text>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="-40.64" x2="96.52" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="93.98" y="-40.64"/>
-<pinref part="D12" gate="LED" pin="C"/>
 <pinref part="D10" gate="G$1" pin="C"/>
 <pinref part="D13" gate="G$1" pin="C"/>
+<pinref part="D12" gate="LED" pin="C"/>
 </segment>
 <segment>
 <pinref part="TP10" gate="G$1" pin="P$1"/>
@@ -6705,15 +6705,9 @@ UV Falling: 9.97V</text>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="D12" gate="LED" pin="A"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="-40.64" x2="104.14" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="D5" gate="LED" pin="A"/>
+<pinref part="D12" gate="LED" pin="A"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -6831,6 +6825,12 @@ UV Falling: 9.97V</text>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="D4" gate="LED" pin="A"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="D5" gate="LED" pin="A"/>
 </segment>
 </net>
 </nets>
