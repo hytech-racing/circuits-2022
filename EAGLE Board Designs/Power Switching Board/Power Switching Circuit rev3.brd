@@ -208,7 +208,7 @@ Designed by Steven Elias</text>
 <text x="31.75" y="12.7" size="0.8128" layer="21" font="vector" align="bottom-center">GATE1</text>
 <text x="31.75" y="19.05" size="0.8128" layer="21" font="vector" align="bottom-center">GND</text>
 <text x="31.75" y="25.4" size="0.8128" layer="21" font="vector" align="bottom-center">GATE2</text>
-<text x="121.158" y="82.55" size="1.524" layer="21" font="vector" rot="R180" align="bottom-center">DO NOT INSTALL XF1
+<text x="121.158" y="82.55" size="1.524" layer="21" font="vector" rot="R180" align="bottom-center">DO NOT INSTALL XF2
 unless bypassing entire 
 circuit. If so uninstall 
 all other fuses.</text>
