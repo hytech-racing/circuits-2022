@@ -5407,13 +5407,14 @@ Requires ordering of:
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="88.9" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="86.36" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="93.98" x2="198.12" y2="101.6" width="0.1524" layer="91"/>
 <junction x="198.12" y="93.98"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="101.6" x2="198.12" y2="106.68" width="0.1524" layer="91"/>
 <junction x="198.12" y="101.6"/>
+<pinref part="U3" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="VDD"/>
@@ -5429,14 +5430,14 @@ Requires ordering of:
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="152.4" x2="198.12" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="160.02" x2="198.12" y2="167.64" width="0.1524" layer="91"/>
-<junction x="198.12" y="160.02"/>
 <pinref part="P+26" gate="1" pin="+5V"/>
 <pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="167.64" x2="198.12" y2="172.72" width="0.1524" layer="91"/>
 <junction x="198.12" y="167.64"/>
 <pinref part="U2" gate="G$1" pin="VDD"/>
+<wire x1="198.12" y1="152.4" x2="198.12" y2="160.02" width="0.1524" layer="91"/>
+<junction x="198.12" y="160.02"/>
 </segment>
 <segment>
 <pinref part="D3" gate="LED" pin="A"/>
