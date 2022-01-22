@@ -388,6 +388,50 @@ visible on the PCB.</text>
 <rectangle x1="-2.794" y1="-3.556" x2="2.794" y2="3.556" layer="39"/>
 <circle x="-3.175" y="-2.54" radius="0.254" width="0" layer="21"/>
 </package>
+<package name="ULTIMATE_GPS">
+<description>Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates - Version 3
+&lt;br&gt;
+Header: 0.1" Pitch Pin Header
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/527/dw-2507303.pdf"&gt;Header&lt;/a&gt;</description>
+<pad name="3.3V" x="-10.16" y="0" drill="1.016" first="yes"/>
+<pad name="EN" x="-7.62" y="0" drill="1.016"/>
+<pad name="VBAT" x="-5.08" y="0" drill="1.016"/>
+<pad name="FIX" x="-2.54" y="0" drill="1.016"/>
+<pad name="TX" x="0" y="0" drill="1.016"/>
+<pad name="RX" x="2.54" y="0" drill="1.016"/>
+<pad name="GND" x="5.08" y="0" drill="1.016"/>
+<pad name="VIN" x="7.62" y="0" drill="1.016"/>
+<pad name="PPS" x="10.16" y="0" drill="1.016"/>
+<circle x="-10.16" y="1.905" radius="0.254" width="0" layer="21"/>
+<rectangle x1="-11.684" y1="-1.524" x2="11.684" y2="1.524" layer="40"/>
+<wire x1="-12.7" y1="-2.032" x2="12.7" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-2.032" x2="12.7" y2="29.464" width="0.127" layer="21"/>
+<wire x1="12.7" y1="29.464" x2="10.16" y2="32.004" width="0.127" layer="21" curve="90"/>
+<wire x1="10.16" y1="32.004" x2="-10.16" y2="32.004" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="32.004" x2="-12.7" y2="29.464" width="0.127" layer="21" curve="90"/>
+<wire x1="-12.7" y1="29.464" x2="-12.7" y2="-2.032" width="0.127" layer="21"/>
+<text x="0" y="-2.54" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="-11.43" y1="1.27" x2="11.43" y2="1.27" width="0.127" layer="21"/>
+<wire x1="11.43" y1="1.27" x2="11.43" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-1.27" x2="-11.43" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="-1.27" x2="-11.43" y2="1.27" width="0.127" layer="21"/>
+<rectangle x1="-13.208" y1="-2.54" x2="13.208" y2="32.512" layer="39"/>
+<hole x="-10.16" y="29.464" drill="3.4"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="39"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="40"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="41"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="42"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="43"/>
+<hole x="10.16" y="29.464" drill="3.4"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="39"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="40"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="41"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="42"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="43"/>
+</package>
 </packages>
 </library>
 <library name="HyTechAesthetics">
@@ -4603,6 +4647,13 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="VOLTAGE_MAX" value="75V" x="81.28" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$7" library="HyTechManufacturing" package="LOGO_HYTECH_MEDIUM" value="" x="7.62" y="12.7" smashed="yes" rot="R90"/>
+<element name="XA1" library="HyTechDevices" package="ULTIMATE_GPS" value="ULTIMATE_GPS" x="-13.97" y="-2.54" smashed="yes">
+<attribute name="DKPN" value="DW-09-07-G-S-200-ND" x="-13.97" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Samtec Inc." x="-13.97" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="200-DW0907GS200" x="-13.97" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="DW-09-07-G-S-200" x="-13.97" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-13.97" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -4702,6 +4753,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="78.613" y1="34.163" x2="78.613" y2="35.167" width="0.254" layer="1"/>
 <wire x1="66.04" y1="19.05" x2="72.79" y2="19.05" width="0.254" layer="1"/>
 <wire x1="72.79" y1="19.05" x2="74.95" y2="16.89" width="0.254" layer="1"/>
+<contactref element="XA1" pad="GND"/>
+<wire x1="-8.89" y1="-2.54" x2="15.26" y2="16.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="C3" pad="1"/>
@@ -4829,6 +4882,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="63.382025" y1="29.21" x2="58.42" y2="29.21" width="0.254" layer="16"/>
 <wire x1="70.1121" y1="30.7894" x2="64.961425" y2="30.7894" width="0.254" layer="1"/>
 <wire x1="58.42" y1="29.21" x2="55.88" y2="26.67" width="0.254" layer="16"/>
+<contactref element="XA1" pad="3.3V"/>
+<wire x1="-24.13" y1="-2.54" x2="21.59" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SENSOR_1">
 <contactref element="R1" pad="1"/>
@@ -5007,6 +5062,22 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="78.105" y1="26.6065" x2="78.105" y2="27.305" width="0.254" layer="1"/>
 <wire x1="79.16" y1="28.36" x2="81.28" y2="28.36" width="0.254" layer="1"/>
 <wire x1="78.105" y1="27.305" x2="79.16" y2="28.36" width="0.254" layer="1"/>
+</signal>
+<signal name="VIN">
+<contactref element="XA1" pad="VIN"/>
+</signal>
+<signal name="VBAT">
+<contactref element="XA1" pad="VBAT"/>
+</signal>
+<signal name="GPS_RX">
+<contactref element="XA1" pad="RX"/>
+<contactref element="A2" pad="D7"/>
+<wire x1="-11.43" y1="-2.54" x2="36.83" y2="30.48" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GPS_TX">
+<contactref element="XA1" pad="TX"/>
+<contactref element="A2" pad="D8"/>
+<wire x1="-13.97" y1="-2.54" x2="39.37" y2="30.48" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
