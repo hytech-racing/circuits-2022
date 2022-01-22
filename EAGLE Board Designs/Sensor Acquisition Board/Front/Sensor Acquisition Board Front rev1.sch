@@ -2888,26 +2888,6 @@ Layer: 94 Symbol</description>
 <rectangle x1="13.716" y1="-1.778" x2="16.764" y2="34.798" layer="39"/>
 <rectangle x1="-1.524" y1="-1.778" x2="1.524" y2="34.798" layer="40"/>
 </package>
-<package name="SOIC-08(NARROW,0.15&quot;)">
-<description>SOIC-8
-&lt;br&gt;
-&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/05081610_G_SO8.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="2" x="-0.635" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="7" x="-0.635" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="3" x="0.635" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="4" x="1.905" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="8" x="-1.905" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="6" x="0.635" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<smd name="5" x="1.905" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
-<text x="-3.175" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<wire x1="-2.5019" y1="1.9939" x2="2.5019" y2="1.9939" width="0.127" layer="21"/>
-<wire x1="2.5019" y1="1.9939" x2="2.5019" y2="-1.9939" width="0.127" layer="21"/>
-<wire x1="2.5019" y1="-1.9939" x2="-2.5019" y2="-1.9939" width="0.127" layer="21"/>
-<wire x1="-2.5019" y1="-1.9939" x2="-2.5019" y2="1.9939" width="0.127" layer="21"/>
-<rectangle x1="-2.794" y1="-3.556" x2="2.794" y2="3.556" layer="39"/>
-<circle x="-3.175" y="-2.54" radius="0.254" width="0" layer="21"/>
-</package>
 <package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
 <description>4 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
 &lt;br&gt;
@@ -3231,6 +3211,26 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="1.524" size="0.8128" layer="21" font="vector" align="bottom-center">+ -</text>
 <circle x="-2.032" y="1.778" radius="0.127" width="0" layer="21"/>
 </package>
+<package name="SOIC-08(NARROW,0.15&quot;)">
+<description>SOIC-8
+&lt;br&gt;
+&lt;a href="https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-soic/05081610_G_SO8.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="2" x="-0.635" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="7" x="-0.635" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="3" x="0.635" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="4" x="1.905" y="-2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="8" x="-1.905" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="6" x="0.635" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<smd name="5" x="1.905" y="2.6035" dx="0.762" dy="1.143" layer="1"/>
+<text x="-3.175" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<wire x1="-2.5019" y1="1.9939" x2="2.5019" y2="1.9939" width="0.127" layer="21"/>
+<wire x1="2.5019" y1="1.9939" x2="2.5019" y2="-1.9939" width="0.127" layer="21"/>
+<wire x1="2.5019" y1="-1.9939" x2="-2.5019" y2="-1.9939" width="0.127" layer="21"/>
+<wire x1="-2.5019" y1="-1.9939" x2="-2.5019" y2="1.9939" width="0.127" layer="21"/>
+<rectangle x1="-2.794" y1="-3.556" x2="2.794" y2="3.556" layer="39"/>
+<circle x="-3.175" y="-2.54" radius="0.254" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -3256,25 +3256,6 @@ Dashed line is edge of mated connector.</description>
 <pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <text x="-1.27" y="-4.318" size="1.27" layer="96" align="top-center">&gt;CAPACITANCE</text>
-</symbol>
-<symbol name="CAN_TRANSCIEVER_TCAN1051*V">
-<description>TCAN1051*V Can Tranciever
-&lt;br&gt;
-&lt;a href="https://www.ti.com/lit/ds/symlink/tcan1051hgv-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1610765132518&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252Ff"&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="0" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<pin name="TXD" x="-2.54" y="-10.16" length="short" direction="in"/>
-<pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
-<pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="RXD" x="-2.54" y="-12.7" length="short" direction="out"/>
-<pin name="VIO" x="20.32" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="CANL" x="20.32" y="-12.7" length="short" rot="R180"/>
-<pin name="CANH" x="20.32" y="-10.16" length="short" direction="out" rot="R180"/>
-<pin name="S" x="20.32" y="-7.62" length="short" direction="in" rot="R180"/>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 <symbol name="CONNECTOR_CAN">
 <description>Standard CAN Connector</description>
@@ -3383,6 +3364,25 @@ Dashed line is edge of mated connector.</description>
 <pin name="A8" x="-2.54" y="-33.02" visible="pin" length="short"/>
 <pin name="3.3V" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="CAN_TRANSCIEVER_MCP2562FD">
+<description>MCP2562FD Can Tranciever
+&lt;br&gt;
+&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20005284A.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<pin name="TXD" x="-2.54" y="-7.62" length="short" direction="in"/>
+<pin name="GND" x="-2.54" y="-15.24" length="short" direction="pwr"/>
+<pin name="VDD" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="RXD" x="-2.54" y="-10.16" length="short" direction="out"/>
+<pin name="VIO" x="20.32" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="CANL" x="20.32" y="-10.16" length="short" rot="R180"/>
+<pin name="CANH" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="STBY" x="-2.54" y="-12.7" length="short" direction="pas"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3761,36 +3761,6 @@ Dashed line is edge of mated connector.</description>
 <attribute name="MPN" value="C3216X5R1V226M160AC"/>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VOLTAGE" value="35V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TCAN1051*V-Q1" prefix="U">
-<description>TCAN1051*V Can Tranciever
-&lt;br&gt;
-&lt;a href="https://www.ti.com/lit/ds/symlink/tcan1051hgv-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1610765132518&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252Ff"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAN_TRANSCIEVER_TCAN1051*V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC-08(NARROW,0.15&quot;)">
-<connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="S" pad="8"/>
-<connect gate="G$1" pin="TXD" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-<connect gate="G$1" pin="VIO" pad="5"/>
-</connects>
-<technologies>
-<technology name="HQ">
-<attribute name="DKPN" value="296-49935-1-ND"/>
-<attribute name="MANUFACTURER" value="Texas Instruments"/>
-<attribute name="MOPN" value="595-TCAN1051HGVDQ1"/>
-<attribute name="MPN" value="TCAN1051HGVDRQ1"/>
 </technology>
 </technologies>
 </device>
@@ -4924,6 +4894,40 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
+<deviceset name="MCP2562FD" prefix="U">
+<description>MCP2562FD Can Tranciever
+&lt;br&gt;
+&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20005284A.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAN_TRANSCIEVER_MCP2562FD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08(NARROW,0.15&quot;)">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="STBY" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VIO" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ALT_DKPN" value="MCP2562-E/SN-ND"/>
+<attribute name="ALT_MANUFACTURER" value="Microchip Technology"/>
+<attribute name="ALT_MOPN" value="579-MCP2562-E/SN"/>
+<attribute name="ALT_MPN" value="MCP2562-E/SN"/>
+<attribute name="DKPN" value="MCP2562FD-E/SN-ND"/>
+<attribute name="MANUFACTURER" value="Microchip Technology"/>
+<attribute name="MOPN" value="579-MCP2562FD-E/SN"/>
+<attribute name="MPN" value="MCP2562FD-E/SN"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSupplies">
@@ -5023,17 +5027,14 @@ Requires ordering of:
 <part name="P+4" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P1" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="U3" library="HyTechDevices" deviceset="TCAN1051*V-Q1" device="" technology="HQ"/>
 <part name="C1" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="GND1" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P+1" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="C2" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
 <part name="P3" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="J9" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="NF_S_RA" technology="BLACK"/>
 <part name="P6" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P8" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="J10" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603"/>
-<part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="J1" library="HyTechDevices" deviceset="CONNECTOR-SENSOR_?_*" device="NF_S_RA" technology="BLACK"/>
 <part name="J2" library="HyTechDevices" deviceset="CONNECTOR-SENSOR_?_*" device="NF_S_RA" technology="BLACK"/>
 <part name="P4" library="HyTechSupplies" deviceset="+5V" device=""/>
@@ -5045,7 +5046,6 @@ Requires ordering of:
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
 <part name="A2" library="HyTechDevices" deviceset="TEENSY_4.0" device=""/>
-<part name="U4" library="HyTechDevices" deviceset="TCAN1051*V-Q1" device="" technology="HQ"/>
 <part name="C15" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="GND36" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P+26" library="HyTechSupplies" deviceset="+5V" device=""/>
@@ -5067,7 +5067,11 @@ Requires ordering of:
 <part name="P21" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
+<part name="J4" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="NF_S_RA" technology="BLACK"/>
+<part name="U2" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
+<part name="U3" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -5116,10 +5120,6 @@ Requires ordering of:
 <instance part="P2" gate="1" x="109.22" y="73.66" smashed="yes">
 <attribute name="VALUE" x="109.22" y="72.39" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="U3" gate="G$1" x="177.8" y="91.44" smashed="yes">
-<attribute name="NAME" x="177.8" y="92.202" size="1.27" layer="95"/>
-<attribute name="MPN" x="177.8" y="72.898" size="1.27" layer="95" align="top-left"/>
-</instance>
 <instance part="C1" gate="G$1" x="203.2" y="93.98" smashed="yes">
 <attribute name="NAME" x="201.93" y="96.52" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="VOLTAGE" x="201.422" y="91.44" size="1.27" layer="96" align="top-right"/>
@@ -5136,12 +5136,8 @@ Requires ordering of:
 <attribute name="VOLTAGE" x="201.422" y="99.06" size="1.27" layer="96" align="top-right"/>
 <attribute name="CAPACITANCE" x="202.438" y="99.06" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="P3" gate="1" x="167.64" y="68.58" smashed="yes">
-<attribute name="VALUE" x="167.64" y="67.31" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="J9" gate="G$1" x="248.92" y="86.36" smashed="yes" rot="MR0">
-<attribute name="NAME" x="248.92" y="86.995" size="1.27" layer="95" rot="MR0"/>
-<attribute name="MPN" x="248.92" y="73.025" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<instance part="P3" gate="1" x="165.1" y="68.58" smashed="yes">
+<attribute name="VALUE" x="165.1" y="67.31" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P6" gate="1" x="233.68" y="68.58" smashed="yes">
 <attribute name="VALUE" x="233.68" y="67.31" size="1.27" layer="96" align="top-center"/>
@@ -5151,10 +5147,6 @@ Requires ordering of:
 </instance>
 <instance part="J10" gate="G$1" x="215.9" y="86.36" smashed="yes">
 <attribute name="NAME" x="215.9" y="88.9" size="1.27" layer="95"/>
-</instance>
-<instance part="R17" gate="G$1" x="210.82" y="83.82" smashed="yes">
-<attribute name="NAME" x="212.852" y="81.788" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="209.55" y="82.55" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="J1" gate="G$1" x="96.52" y="190.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="96.52" y="191.135" size="1.27" layer="95" rot="MR0"/>
@@ -5193,10 +5185,6 @@ Requires ordering of:
 <attribute name="RESISTANCE" x="113.03" y="184.15" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="A2" gate="G$1" x="116.84" y="121.92" smashed="yes"/>
-<instance part="U4" gate="G$1" x="177.8" y="157.48" smashed="yes">
-<attribute name="NAME" x="177.8" y="158.242" size="1.27" layer="95"/>
-<attribute name="MPN" x="177.8" y="138.938" size="1.27" layer="95" align="top-left"/>
-</instance>
 <instance part="C15" gate="G$1" x="203.2" y="160.02" smashed="yes">
 <attribute name="NAME" x="201.93" y="162.56" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="VOLTAGE" x="201.422" y="157.48" size="1.27" layer="96" align="top-right"/>
@@ -5213,8 +5201,8 @@ Requires ordering of:
 <attribute name="VOLTAGE" x="201.422" y="165.1" size="1.27" layer="96" align="top-right"/>
 <attribute name="CAPACITANCE" x="202.438" y="165.1" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="P13" gate="1" x="170.18" y="132.08" smashed="yes">
-<attribute name="VALUE" x="170.18" y="130.81" size="1.27" layer="96" align="top-center"/>
+<instance part="P13" gate="1" x="165.1" y="132.08" smashed="yes">
+<attribute name="VALUE" x="165.1" y="130.81" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="J3" gate="G$1" x="251.46" y="152.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="251.46" y="153.035" size="1.27" layer="95" rot="MR0"/>
@@ -5275,9 +5263,25 @@ Requires ordering of:
 <attribute name="NAME" x="217.17" y="118.11" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="217.17" y="115.57" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R12" gate="G$1" x="213.36" y="149.86" smashed="yes">
-<attribute name="NAME" x="215.392" y="147.828" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="212.09" y="148.59" size="1.27" layer="96" align="top-center"/>
+<instance part="J4" gate="G$1" x="248.92" y="86.36" smashed="yes" rot="MR0">
+<attribute name="NAME" x="248.92" y="86.995" size="1.27" layer="95" rot="MR0"/>
+<attribute name="MPN" x="248.92" y="73.025" size="1.27" layer="96" rot="MR0" align="top-left"/>
+</instance>
+<instance part="U2" gate="G$1" x="177.8" y="154.94" smashed="yes">
+<attribute name="NAME" x="177.8" y="155.702" size="1.27" layer="95"/>
+<attribute name="MPN" x="177.8" y="136.398" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="U3" gate="G$1" x="177.8" y="88.9" smashed="yes">
+<attribute name="NAME" x="177.8" y="89.662" size="1.27" layer="95"/>
+<attribute name="MPN" x="177.8" y="70.358" size="1.27" layer="95" align="top-left"/>
+</instance>
+<instance part="R12" gate="G$1" x="170.18" y="142.24" smashed="yes">
+<attribute name="NAME" x="168.91" y="143.51" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="168.91" y="140.97" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R13" gate="G$1" x="170.18" y="76.2" smashed="yes">
+<attribute name="NAME" x="168.91" y="77.47" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="168.91" y="74.93" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -5311,22 +5315,21 @@ Requires ordering of:
 <wire x1="205.74" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="101.6" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
 <junction x="208.28" y="93.98"/>
-<wire x1="208.28" y1="93.98" x2="215.138" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="83.82" x2="215.138" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="215.138" y1="83.82" x2="215.138" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="175.26" y1="76.2" x2="167.64" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="76.2" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="76.2" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="P3" gate="1" pin="GND"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<wire x1="165.1" y1="73.66" x2="165.1" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
+<junction x="165.1" y="73.66"/>
 </segment>
 <segment>
-<pinref part="J9" gate="G$1" pin="GND"/>
 <wire x1="236.22" y1="76.2" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="76.2" x2="233.68" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="P6" gate="1" pin="GND"/>
+<pinref part="J4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="GND"/>
@@ -5356,15 +5359,6 @@ Requires ordering of:
 <wire x1="205.74" y1="167.64" x2="208.28" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="167.64" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
 <junction x="208.28" y="160.02"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="215.9" y1="149.86" x2="215.9" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="160.02" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="GND"/>
-<wire x1="175.26" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="142.24" x2="170.18" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="P13" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="GND"/>
@@ -5385,6 +5379,15 @@ Requires ordering of:
 <wire x1="63.5" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 <junction x="68.58" y="104.14"/>
 <pinref part="P20" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<wire x1="175.26" y1="139.7" x2="165.1" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="P13" gate="1" pin="GND"/>
+<wire x1="165.1" y1="134.62" x2="165.1" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="139.7" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
+<junction x="165.1" y="139.7"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5411,7 +5414,6 @@ Requires ordering of:
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="101.6" x2="198.12" y2="106.68" width="0.1524" layer="91"/>
 <junction x="198.12" y="101.6"/>
-<pinref part="U3" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="VDD"/>
@@ -5427,14 +5429,14 @@ Requires ordering of:
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="154.94" x2="198.12" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="152.4" x2="198.12" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="160.02" x2="198.12" y2="167.64" width="0.1524" layer="91"/>
 <junction x="198.12" y="160.02"/>
 <pinref part="P+26" gate="1" pin="+5V"/>
 <pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="167.64" x2="198.12" y2="172.72" width="0.1524" layer="91"/>
 <junction x="198.12" y="167.64"/>
-<pinref part="U4" gate="G$1" pin="VDD"/>
+<pinref part="U2" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="D3" gate="LED" pin="A"/>
@@ -5452,10 +5454,10 @@ Requires ordering of:
 <pinref part="P+4" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="J9" gate="G$1" pin="+12V"/>
 <wire x1="236.22" y1="83.82" x2="233.68" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="83.82" x2="233.68" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="P8" gate="1" pin="+12V"/>
+<pinref part="J4" gate="G$1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="+12V"/>
@@ -5466,33 +5468,26 @@ Requires ordering of:
 </net>
 <net name="CANH" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="CANH"/>
-<pinref part="J9" gate="G$1" pin="CANH"/>
 <label x="198.12" y="81.28" size="1.778" layer="95"/>
 <wire x1="198.12" y1="81.28" x2="215.9" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="81.28" x2="236.22" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="83.82" x2="215.9" y2="81.28" width="0.1524" layer="91"/>
 <junction x="215.9" y="81.28"/>
+<pinref part="J4" gate="G$1" pin="CANH"/>
+<pinref part="U3" gate="G$1" pin="CANH"/>
 </segment>
 </net>
 <net name="CANL" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="CANL"/>
-<pinref part="J9" gate="G$1" pin="CANL"/>
 <wire x1="198.12" y1="78.74" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
 <label x="198.12" y="78.74" size="1.778" layer="95"/>
 <wire x1="220.98" y1="78.74" x2="236.22" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="83.82" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
 <junction x="220.98" y="78.74"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="S"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="83.82" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="CANL"/>
+<pinref part="U3" gate="G$1" pin="CANL"/>
 </segment>
 </net>
 <net name="TEENSY_3.3V" class="0">
@@ -5502,14 +5497,14 @@ Requires ordering of:
 <pinref part="A2" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
+<label x="200.66" y="83.82" size="1.27" layer="95" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="VIO"/>
-<wire x1="198.12" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
-<label x="200.66" y="86.36" size="1.27" layer="95" xref="yes"/>
+<wire x1="198.12" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="VIO"/>
-<wire x1="198.12" y1="152.4" x2="200.66" y2="152.4" width="0.1524" layer="91"/>
-<label x="200.66" y="152.4" size="1.27" layer="95" xref="yes"/>
+<label x="200.66" y="149.86" size="1.27" layer="95" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="VIO"/>
+<wire x1="198.12" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSOR_1" class="0">
@@ -5568,27 +5563,26 @@ Requires ordering of:
 </net>
 <net name="CANRX1" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="RXD"/>
 <wire x1="111.76" y1="144.78" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
 <label x="165.1" y="144.78" size="1.778" layer="95"/>
 <wire x1="111.76" y1="144.78" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="A2" gate="G$1" pin="A9"/>
 <wire x1="111.76" y1="86.36" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="RXD"/>
 </segment>
 </net>
 <net name="CANTX1" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="TXD"/>
 <wire x1="109.22" y1="147.32" x2="175.26" y2="147.32" width="0.1524" layer="91"/>
 <label x="165.1" y="147.32" size="1.778" layer="95"/>
 <wire x1="109.22" y1="147.32" x2="109.22" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="A2" gate="G$1" pin="A8"/>
 <wire x1="109.22" y1="88.9" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="TXD"/>
 </segment>
 </net>
 <net name="CANH1" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="CANH"/>
 <pinref part="J3" gate="G$1" pin="CANH"/>
 <wire x1="198.12" y1="147.32" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
 <label x="198.12" y="147.32" size="1.778" layer="95"/>
@@ -5615,11 +5609,11 @@ Requires ordering of:
 <junction x="210.82" y="124.46"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="116.84" x2="213.36" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="CANH"/>
 </segment>
 </net>
 <net name="CANL1" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="CANL"/>
 <pinref part="J3" gate="G$1" pin="CANL"/>
 <wire x1="198.12" y1="144.78" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
 <label x="198.12" y="144.78" size="1.778" layer="95"/>
@@ -5646,6 +5640,7 @@ Requires ordering of:
 <junction x="223.52" y="124.46"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="CANL"/>
 </segment>
 </net>
 <net name="CAN1_LED" class="0">
@@ -5693,27 +5688,34 @@ Requires ordering of:
 <wire x1="50.8" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="S"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="149.86" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="CANTX2" class="0">
 <segment>
 <pinref part="A2" gate="G$1" pin="(CTX1)D1"/>
-<pinref part="U3" gate="G$1" pin="TXD"/>
 <wire x1="139.7" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
 <label x="139.7" y="81.28" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="TXD"/>
 </segment>
 </net>
 <net name="CANRX2" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="RXD"/>
 <pinref part="A2" gate="G$1" pin="(CRX1)D0"/>
 <wire x1="175.26" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
 <label x="139.7" y="78.74" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="RXD"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="STBY"/>
+<wire x1="175.26" y1="142.24" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="STBY"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="76.2" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
