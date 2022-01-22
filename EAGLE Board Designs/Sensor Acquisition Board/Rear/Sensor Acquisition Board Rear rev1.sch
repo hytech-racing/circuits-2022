@@ -5171,13 +5171,13 @@ Requires ordering of:
 <attribute name="NAME" x="217.932" y="112.268" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="214.63" y="113.03" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="J6" gate="G$1" x="170.18" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="170.18" y="201.295" size="1.27" layer="95" rot="MR0"/>
-<attribute name="MPN" x="170.18" y="187.325" size="1.27" layer="96" rot="MR0" align="top-left"/>
-</instance>
-<instance part="J5" gate="G$1" x="215.9" y="200.66" smashed="yes" rot="MR0">
+<instance part="J6" gate="G$1" x="215.9" y="200.66" smashed="yes" rot="MR0">
 <attribute name="NAME" x="215.9" y="201.295" size="1.27" layer="95" rot="MR0"/>
 <attribute name="MPN" x="215.9" y="187.325" size="1.27" layer="96" rot="MR0" align="top-left"/>
+</instance>
+<instance part="J5" gate="G$1" x="170.18" y="200.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="170.18" y="201.295" size="1.27" layer="95" rot="MR0"/>
+<attribute name="MPN" x="170.18" y="187.325" size="1.27" layer="96" rot="MR0" align="top-left"/>
 </instance>
 <instance part="J7" gate="G$1" x="264.16" y="200.66" smashed="yes" rot="MR0">
 <attribute name="NAME" x="264.16" y="201.295" size="1.27" layer="95" rot="MR0"/>
@@ -5187,26 +5187,26 @@ Requires ordering of:
 <attribute name="NAME" x="121.92" y="201.295" size="1.27" layer="95" rot="MR0"/>
 <attribute name="MPN" x="121.92" y="187.325" size="1.27" layer="96" rot="MR0" align="top-left"/>
 </instance>
-<instance part="P7" gate="1" x="203.2" y="203.2" smashed="yes">
-<attribute name="VALUE" x="203.2" y="205.74" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P7" gate="1" x="157.48" y="203.2" smashed="yes">
+<attribute name="VALUE" x="157.48" y="205.74" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="P11" gate="1" x="251.46" y="203.2" smashed="yes">
 <attribute name="VALUE" x="251.46" y="205.74" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P13" gate="1" x="157.48" y="203.2" smashed="yes">
-<attribute name="VALUE" x="157.48" y="205.74" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P13" gate="1" x="203.2" y="203.2" smashed="yes">
+<attribute name="VALUE" x="203.2" y="205.74" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="P14" gate="1" x="109.22" y="203.2" smashed="yes">
 <attribute name="VALUE" x="109.22" y="205.74" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P18" gate="1" x="203.2" y="185.42" smashed="yes">
-<attribute name="VALUE" x="203.2" y="184.15" size="1.27" layer="96" align="top-center"/>
+<instance part="P18" gate="1" x="157.48" y="185.42" smashed="yes">
+<attribute name="VALUE" x="157.48" y="184.15" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P19" gate="1" x="251.46" y="185.42" smashed="yes">
 <attribute name="VALUE" x="251.46" y="184.15" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P21" gate="1" x="157.48" y="180.34" smashed="yes">
-<attribute name="VALUE" x="157.48" y="179.07" size="1.27" layer="96" align="top-center"/>
+<instance part="P21" gate="1" x="203.2" y="180.34" smashed="yes">
+<attribute name="VALUE" x="203.2" y="179.07" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P22" gate="1" x="109.22" y="180.34" smashed="yes">
 <attribute name="VALUE" x="109.22" y="179.07" size="1.27" layer="96" align="top-center"/>
@@ -5219,21 +5219,21 @@ Requires ordering of:
 <attribute name="NAME" x="92.71" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="92.71" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R9" gate="G$1" x="200.66" y="195.58" smashed="yes">
-<attribute name="NAME" x="199.39" y="196.85" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="199.39" y="194.31" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R10" gate="G$1" x="187.96" y="195.58" smashed="yes">
-<attribute name="NAME" x="186.69" y="196.85" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="186.69" y="194.31" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R11" gate="G$1" x="154.94" y="195.58" smashed="yes">
+<instance part="R9" gate="G$1" x="154.94" y="195.58" smashed="yes">
 <attribute name="NAME" x="153.67" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="153.67" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R12" gate="G$1" x="142.24" y="195.58" smashed="yes">
+<instance part="R10" gate="G$1" x="142.24" y="195.58" smashed="yes">
 <attribute name="NAME" x="140.97" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="140.97" y="194.31" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R11" gate="G$1" x="200.66" y="195.58" smashed="yes">
+<attribute name="NAME" x="199.39" y="196.85" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="199.39" y="194.31" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R12" gate="G$1" x="187.96" y="195.58" smashed="yes">
+<attribute name="NAME" x="186.69" y="196.85" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="186.69" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="R13" gate="G$1" x="248.92" y="195.58" smashed="yes">
 <attribute name="NAME" x="247.65" y="196.85" size="1.27" layer="95" align="bottom-center"/>
@@ -5302,13 +5302,13 @@ Requires ordering of:
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="GND"/>
-<wire x1="205.74" y1="190.5" x2="203.2" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="190.5" x2="203.2" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="190.5" x2="157.48" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="190.5" x2="157.48" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="P18" gate="1" pin="GND"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="195.58" x2="182.88" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="190.5" x2="203.2" y2="190.5" width="0.1524" layer="91"/>
-<junction x="203.2" y="190.5"/>
+<wire x1="137.16" y1="195.58" x2="137.16" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="190.5" x2="157.48" y2="190.5" width="0.1524" layer="91"/>
+<junction x="157.48" y="190.5"/>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="GND"/>
@@ -5322,13 +5322,13 @@ Requires ordering of:
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="GND"/>
-<wire x1="160.02" y1="190.5" x2="157.48" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="190.5" x2="157.48" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="190.5" x2="203.2" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="190.5" x2="203.2" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="P21" gate="1" pin="GND"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="195.58" x2="137.16" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="190.5" x2="157.48" y2="190.5" width="0.1524" layer="91"/>
-<junction x="157.48" y="190.5"/>
+<wire x1="182.88" y1="195.58" x2="182.88" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="190.5" x2="203.2" y2="190.5" width="0.1524" layer="91"/>
+<junction x="203.2" y="190.5"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="GND"/>
@@ -5374,8 +5374,8 @@ Requires ordering of:
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="VDD"/>
-<wire x1="205.74" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="198.12" x2="203.2" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="198.12" x2="157.48" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="198.12" x2="157.48" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="P7" gate="1" pin="+5V"/>
 </segment>
 <segment>
@@ -5386,8 +5386,8 @@ Requires ordering of:
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="VDD"/>
-<wire x1="160.02" y1="198.12" x2="157.48" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="200.66" x2="157.48" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="200.66" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="P13" gate="1" pin="+5V"/>
 </segment>
 <segment>
@@ -5507,13 +5507,13 @@ Requires ordering of:
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="195.58" x2="193.04" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="195.58" x2="147.32" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="195.58" x2="190.5" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="195.58" x2="193.04" y2="200.66" width="0.1524" layer="91"/>
-<junction x="193.04" y="195.58"/>
-<wire x1="193.04" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
-<label x="190.5" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+<wire x1="147.32" y1="195.58" x2="144.78" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="195.58" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
+<junction x="147.32" y="195.58"/>
+<wire x1="147.32" y1="200.66" x2="144.78" y2="200.66" width="0.1524" layer="91"/>
+<label x="144.78" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="SENSOR_6" class="0">
@@ -5524,13 +5524,13 @@ Requires ordering of:
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="195.58" x2="147.32" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="195.58" x2="193.04" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="195.58" x2="144.78" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="195.58" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
-<junction x="147.32" y="195.58"/>
-<wire x1="147.32" y1="200.66" x2="144.78" y2="200.66" width="0.1524" layer="91"/>
-<label x="144.78" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+<wire x1="193.04" y1="195.58" x2="190.5" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="195.58" x2="193.04" y2="200.66" width="0.1524" layer="91"/>
+<junction x="193.04" y="195.58"/>
+<wire x1="193.04" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
+<label x="190.5" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="SENSOR_7" class="0">
@@ -5571,20 +5571,20 @@ Requires ordering of:
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="J5" gate="G$1" pin="CH1"/>
-<wire x1="203.2" y1="195.58" x2="205.74" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="195.58" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="CH2"/>
-<wire x1="205.74" y1="195.58" x2="205.74" y2="193.04" width="0.1524" layer="91"/>
-<junction x="205.74" y="195.58"/>
+<wire x1="160.02" y1="195.58" x2="160.02" y2="193.04" width="0.1524" layer="91"/>
+<junction x="160.02" y="195.58"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="J6" gate="G$1" pin="CH1"/>
-<wire x1="157.48" y1="195.58" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="195.58" x2="205.74" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="J6" gate="G$1" pin="CH2"/>
-<wire x1="160.02" y1="195.58" x2="160.02" y2="193.04" width="0.1524" layer="91"/>
-<junction x="160.02" y="195.58"/>
+<wire x1="205.74" y1="195.58" x2="205.74" y2="193.04" width="0.1524" layer="91"/>
+<junction x="205.74" y="195.58"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -5632,6 +5632,7 @@ Requires ordering of:
 <approved hash="206,1,160.02,195.58,N$7,,,,,"/>
 <approved hash="206,1,160.02,193.04,N$7,,,,,"/>
 <approved hash="206,1,111.76,195.58,N$9,,,,,"/>
+<approved hash="206,1,111.76,193.04,N$9,,,,,"/>
 </errors>
 </schematic>
 </drawing>

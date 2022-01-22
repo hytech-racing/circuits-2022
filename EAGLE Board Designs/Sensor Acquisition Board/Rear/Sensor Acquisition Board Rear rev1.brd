@@ -192,7 +192,7 @@
 <wire x1="92.71" y1="50.8" x2="0" y2="50.8" width="0" layer="20"/>
 <wire x1="0" y1="50.8" x2="0" y2="0" width="0" layer="20"/>
 <text x="90.424" y="12.573" size="1.016" layer="51" font="vector" rot="R90">HyTech Racing 2022
-Sensor Acquisition Board  rev4
+Sensor Acquisition Board Rear rev4
 Designed by Bo Han Zhu</text>
 <text x="71.628" y="5.715" size="0.8128" layer="51" rot="R90">Vehicle CAN-Bus</text>
 <text x="56.388" y="5.715" size="0.8128" layer="51" rot="R90">4. Ambient Air Humidity</text>
