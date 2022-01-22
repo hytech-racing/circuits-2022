@@ -5201,8 +5201,8 @@ Layer: 94 Symbol</description>
 <package name="EEUFP1E*">
 <description>EEUFP1E Aluminum Electrolytic Capacitor &lt;br&gt;
 &lt;a href="https://www.mouser.com/datasheet/2/315/RDF0000C1260-1391675.pdf"&gt;Datasheet&lt;a/&gt;</description>
-<pad name="P$1" x="-2.49999375" y="0" drill="0.6" first="yes"/>
-<pad name="P$2" x="2.49999375" y="0" drill="0.6"/>
+<pad name="P$1" x="-2.49999375" y="0" drill="0.650240625" first="yes"/>
+<pad name="P$2" x="2.49999375" y="0" drill="0.650240625"/>
 <circle x="0" y="0" radius="4.99871875" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="5.6796125" width="0" layer="39"/>
 <circle x="0" y="0" radius="5.6796125" width="0" layer="40"/>
