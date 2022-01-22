@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -197,6 +197,7 @@ Designed by Noah Bruckner</text>
 <wire x1="349.6056" y1="-0.1016" x2="349.6056" y2="-87.7316" width="0.508" layer="21"/>
 <text x="245.7704" y="-82.2198" size="1.778" layer="21">DANGER HIGH VOLTAGE</text>
 <text x="200.533" y="-6.6167" size="1.778" layer="21">DANGER HIGH VOLTAGE</text>
+<text x="201.7014" y="-30.5816" size="0.8128" layer="25" font="vector" align="top-center">J6</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -3891,7 +3892,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MPN" value="5222" x="181.8894" y="1.1684" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="226.3394" y="-30.5816" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="J17" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="223.0374" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
+<element name="J18" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="223.0374" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
 <attribute name="DKPN" value="36-5222-ND" x="165.8874" y="-39.2176" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="165.8874" y="-39.2176" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MODEL" value="SPRING" x="165.8874" y="-39.2176" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3906,7 +3907,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MOPN" value="534-5222" x="131.8514" y="1.1684" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="5222" x="131.8514" y="1.1684" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J16" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="198.3994" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
+<element name="J17" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="198.3994" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
 <attribute name="DKPN" value="36-5222-ND" x="115.8494" y="-39.2176" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="115.8494" y="-39.2176" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MODEL" value="SPRING" x="115.8494" y="-39.2176" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3922,7 +3923,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MPN" value="5222" x="81.5594" y="1.1684" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="176.8094" y="-30.5816" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="J15" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="173.7614" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
+<element name="J16" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="173.7614" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
 <attribute name="DKPN" value="36-5222-ND" x="154.7114" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="154.7114" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MODEL" value="SPRING" x="154.7114" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3938,7 +3939,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MPN" value="5222" x="120.4214" y="17.6784" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="152.1714" y="-30.5816" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="J14" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="149.1234" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
+<element name="J15" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="149.1234" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
 <attribute name="DKPN" value="36-5222-ND" x="104.6734" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="104.6734" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MODEL" value="SPRING" x="104.6734" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3954,7 +3955,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MPN" value="5222" x="70.3834" y="17.6784" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="127.5334" y="-30.5816" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="J13" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="124.4854" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
+<element name="J14" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="124.4854" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
 <attribute name="DKPN" value="36-5222-ND" x="54.6354" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="54.6354" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MODEL" value="SPRING" x="54.6354" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3978,13 +3979,13 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MPN" value="5222" x="20.2184" y="17.6784" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="102.7684" y="-30.5816" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="J22" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="99.7204" y="-63.4746" smashed="yes" rot="R180" grouprefs="PADS">
-<attribute name="DKPN" value="36-5222-ND" x="4.4704" y="-22.8346" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="Keystone Electronics" x="4.4704" y="-22.8346" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MODEL" value="SPRING" x="4.4704" y="-22.8346" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOPN" value="534-5222" x="4.4704" y="-22.8346" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="5222" x="4.4704" y="-22.8346" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="99.7204" y="-71.0946" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<element name="J13" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="99.7204" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
+<attribute name="DKPN" value="36-5222-ND" x="4.4704" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="Keystone Electronics" x="4.4704" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MODEL" value="SPRING" x="4.4704" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="534-5222" x="4.4704" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="5222" x="4.4704" y="-22.7076" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="99.7204" y="-70.9676" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="J1" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="77.4954" y="-22.9616" smashed="yes" rot="R180" grouprefs="PADS">
 <attribute name="DKPN" value="36-5222-ND" x="58.4454" y="34.1884" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3994,7 +3995,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MPN" value="5222" x="58.4454" y="34.1884" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="77.4954" y="-30.5816" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="J21" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="320.7004" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
+<element name="J22" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="320.7004" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
 <attribute name="DKPN" value="36-5222-ND" x="276.2504" y="-55.7276" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="276.2504" y="-55.7276" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MODEL" value="SPRING" x="276.2504" y="-55.7276" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4010,7 +4011,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MPN" value="5222" x="242.9764" y="-15.3416" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="300.1264" y="-30.5816" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="J20" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="297.0784" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
+<element name="J21" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="297.0784" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
 <attribute name="DKPN" value="36-5222-ND" x="227.2284" y="-55.7276" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="227.2284" y="-55.7276" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MODEL" value="SPRING" x="227.2284" y="-55.7276" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4026,7 +4027,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MPN" value="5222" x="192.9384" y="-15.3416" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="275.4884" y="-30.5816" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="J19" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="272.4404" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
+<element name="J20" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="272.4404" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
 <attribute name="DKPN" value="36-5222-ND" x="177.1904" y="-55.7276" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="177.1904" y="-55.7276" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MODEL" value="SPRING" x="177.1904" y="-55.7276" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4042,7 +4043,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="MPN" value="5222" x="231.8004" y="1.1684" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="250.8504" y="-30.5816" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="J18" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="247.6754" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
+<element name="J19" library="HyTechDevices" package="5222" value="CONNECTOR-1_5222_" x="247.6754" y="-63.3476" smashed="yes" rot="R180" grouprefs="PADS">
 <attribute name="DKPN" value="36-5222-ND" x="215.9254" y="-39.2176" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics" x="215.9254" y="-39.2176" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MODEL" value="SPRING" x="215.9254" y="-39.2176" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4051,22 +4052,22 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="NAME" x="247.6754" y="-70.9676" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="A-CONNECTOR-14-LOWER-IN" library="HyTechDevices" package="MOLEX_MINIFIT_PTH_14" value="CONNECTOR-14_MINIFIT_" x="406.4" y="-33.4518" smashed="yes" grouprefs="PADS">
-<attribute name="MPN" value="
-39-28-1143" x="406.4" y="-33.4518" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="39-28-1143" x="406.4" y="-33.4518" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="406.4" y="-38.6588" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="A-CONNECTOR-14-LOWER-OUT" library="HyTechDevices" package="MOLEX_MINIFIT_PTH_14" value="CONNECTOR-14_MINIFIT_" x="406.4" y="-55.1942" smashed="yes" grouprefs="PADS">
-<attribute name="MPN" value="
-39-28-1143" x="406.4" y="-55.1942" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="406.4" y="-60.4012" size="0.8128" layer="26" rot="R180" align="bottom-center"/>
+<attribute name="MPN" value="39-28-1143" x="406.4" y="-55.1942" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="406.4" y="-60.4012" size="0.8128" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="A-CONNECTOR-14-UPPER-IN" library="HyTechDevices" package="MOLEX_NANOFIT_PTH_14" value="CONNECTOR-14_NANOFIT_" x="13.7414" y="-32.1437" smashed="yes" grouprefs="PADS">
+<attribute name="MPN" value=" 105310-1114" x="13.7414" y="-32.1437" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="13.7414" y="-37.2237" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="A-CONNECTOR-14-UPPER-OUT" library="HyTechDevices" package="MOLEX_NANOFIT_PTH_14" value="CONNECTOR-14_NANOFIT_" x="13.6398" y="-53.8861" smashed="yes" grouprefs="PADS">
+<attribute name="MPN" value="105310-1114" x="13.6398" y="-53.8861" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="13.6398" y="-58.9661" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="U$23" library="HyTechAesthetics" package="LOGO_HYTECH_1.0&quot;" value="" x="116.5352" y="-84.9503" smashed="yes"/>
+<element name="U$32" library="HyTechAesthetics" package="LOGO_HYTECH_1.0&quot;" value="" x="116.5352" y="-84.9503" smashed="yes"/>
 <element name="F4" library="HyTechDevices" package="MST_250" value="FUSE_MST_250_.8" x="376.3391" y="-16.492215625" smashed="yes">
 <attribute name="CURRENT" value="800mA" x="376.3391" y="-16.492215625" size="1.778" layer="27" display="off"/>
 <attribute name="DKPN" value="486-1470-ND" x="376.3391" y="-16.492215625" size="1.778" layer="27" display="off"/>
@@ -4287,37 +4288,37 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <attribute name="NAME" x="34.0614" y="-27.2923" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" value="63V" x="38.6969" y="-27.419125" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$4" library="HyTechManufacturing" package="HV_LARGE" value="" x="154.9654" y="-5.8293" smashed="yes"/>
-<element name="U$5" library="HyTechManufacturing" package="HV_LARGE" value="" x="173.8122" y="-5.8293" smashed="yes"/>
-<element name="U$2" library="HyTechManufacturing" package="HV_LARGE" value="" x="83.3882" y="-5.8293" smashed="yes"/>
-<element name="U$3" library="HyTechManufacturing" package="HV_LARGE" value="" x="101.4222" y="-5.8293" smashed="yes"/>
-<element name="U$6" library="HyTechManufacturing" package="HV_LARGE" value="" x="256.286" y="-5.8293" smashed="yes"/>
-<element name="U$7" library="HyTechManufacturing" package="HV_LARGE" value="" x="274.447" y="-5.8293" smashed="yes"/>
-<element name="U$8" library="HyTechManufacturing" package="HV_LARGE" value="" x="328.1934" y="-5.8293" smashed="yes"/>
-<element name="U$18" library="HyTechManufacturing" package="HV_LARGE" value="" x="100.6094" y="-80.264" smashed="yes"/>
-<element name="U$19" library="HyTechManufacturing" package="HV_LARGE" value="" x="218.8464" y="-80.264" smashed="yes"/>
-<element name="U$21" library="HyTechManufacturing" package="HV_LARGE" value="" x="317.373" y="-80.264" smashed="yes"/>
-<element name="U$20" library="HyTechManufacturing" package="HV_LARGE" value="" x="296.3926" y="-80.264" smashed="yes"/>
-<element name="U$15" library="HyTechManufacturing" package="HV_LARGE" value="" x="320.929" y="-42.97045" smashed="yes"/>
-<element name="U$14" library="HyTechManufacturing" package="HV_LARGE" value="" x="300.3042" y="-42.97045" smashed="yes"/>
-<element name="U$13" library="HyTechManufacturing" package="HV_LARGE" value="" x="221.1832" y="-42.97045" smashed="yes"/>
-<element name="U$12" library="HyTechManufacturing" package="HV_LARGE" value="" x="202.311" y="-42.97045" smashed="yes"/>
-<element name="U$11" library="HyTechManufacturing" package="HV_LARGE" value="" x="122.174" y="-42.97045" smashed="yes"/>
-<element name="U$10" library="HyTechManufacturing" package="HV_LARGE" value="" x="104.521" y="-42.97045" smashed="yes"/>
-<element name="U$1" library="HyTechManufacturing" package="HV_LARGE" value="" x="8.8646" y="-5.8293" smashed="yes"/>
-<element name="U$17" library="HyTechManufacturing" package="HV_LARGE" value="" x="8.8646" y="-80.264" smashed="yes"/>
-<element name="U$9" library="HyTechManufacturing" package="HV_LARGE" value="" x="422.6306" y="-5.8293" smashed="yes"/>
-<element name="U$22" library="HyTechManufacturing" package="HV_LARGE" value="" x="422.6306" y="-80.264" smashed="yes"/>
-<element name="U$16" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="92.1512" y="-4.0386" smashed="yes"/>
-<element name="U$24" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="164.2364" y="-4.0386" smashed="yes"/>
-<element name="U$25" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="265.4554" y="-4.0386" smashed="yes"/>
-<element name="U$26" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="335.1022" y="-4.0386" smashed="yes"/>
-<element name="U$27" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="113.0554" y="-43.0276" smashed="yes"/>
-<element name="U$28" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="211.7344" y="-43.0276" smashed="yes"/>
-<element name="U$29" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="310.2864" y="-43.0276" smashed="yes"/>
-<element name="U$31" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="208.5594" y="-82.0166" smashed="yes"/>
-<element name="U$32" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="306.8574" y="-82.0166" smashed="yes"/>
-<element name="U$30" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="110.6424" y="-82.0166" smashed="yes"/>
+<element name="U$8" library="HyTechManufacturing" package="HV_LARGE" value="" x="154.9654" y="-5.8293" smashed="yes"/>
+<element name="U$9" library="HyTechManufacturing" package="HV_LARGE" value="" x="173.8122" y="-5.8293" smashed="yes"/>
+<element name="U$6" library="HyTechManufacturing" package="HV_LARGE" value="" x="83.3882" y="-5.8293" smashed="yes"/>
+<element name="U$7" library="HyTechManufacturing" package="HV_LARGE" value="" x="101.4222" y="-5.8293" smashed="yes"/>
+<element name="U$10" library="HyTechManufacturing" package="HV_LARGE" value="" x="256.286" y="-5.8293" smashed="yes"/>
+<element name="U$11" library="HyTechManufacturing" package="HV_LARGE" value="" x="274.447" y="-5.8293" smashed="yes"/>
+<element name="U$12" library="HyTechManufacturing" package="HV_LARGE" value="" x="328.1934" y="-5.8293" smashed="yes"/>
+<element name="U$24" library="HyTechManufacturing" package="HV_LARGE" value="" x="100.6094" y="-80.264" smashed="yes"/>
+<element name="U$25" library="HyTechManufacturing" package="HV_LARGE" value="" x="218.8464" y="-80.264" smashed="yes"/>
+<element name="U$27" library="HyTechManufacturing" package="HV_LARGE" value="" x="317.373" y="-80.264" smashed="yes"/>
+<element name="U$26" library="HyTechManufacturing" package="HV_LARGE" value="" x="296.3926" y="-80.264" smashed="yes"/>
+<element name="U$19" library="HyTechManufacturing" package="HV_LARGE" value="" x="320.929" y="-42.97045" smashed="yes"/>
+<element name="U$18" library="HyTechManufacturing" package="HV_LARGE" value="" x="300.3042" y="-42.97045" smashed="yes"/>
+<element name="U$17" library="HyTechManufacturing" package="HV_LARGE" value="" x="221.1832" y="-42.97045" smashed="yes"/>
+<element name="U$16" library="HyTechManufacturing" package="HV_LARGE" value="" x="202.311" y="-42.97045" smashed="yes"/>
+<element name="U$15" library="HyTechManufacturing" package="HV_LARGE" value="" x="122.174" y="-42.97045" smashed="yes"/>
+<element name="U$14" library="HyTechManufacturing" package="HV_LARGE" value="" x="104.521" y="-42.97045" smashed="yes"/>
+<element name="U$5" library="HyTechManufacturing" package="HV_LARGE" value="" x="8.8646" y="-5.8293" smashed="yes"/>
+<element name="U$23" library="HyTechManufacturing" package="HV_LARGE" value="" x="8.8646" y="-80.264" smashed="yes"/>
+<element name="U$13" library="HyTechManufacturing" package="HV_LARGE" value="" x="422.6306" y="-5.8293" smashed="yes"/>
+<element name="U$28" library="HyTechManufacturing" package="HV_LARGE" value="" x="422.6306" y="-80.264" smashed="yes"/>
+<element name="U$1" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="92.1512" y="-4.0386" smashed="yes"/>
+<element name="U$2" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="164.2364" y="-4.0386" smashed="yes"/>
+<element name="U$3" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="265.4554" y="-4.0386" smashed="yes"/>
+<element name="U$4" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="335.1022" y="-4.0386" smashed="yes"/>
+<element name="U$20" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="113.0554" y="-43.0276" smashed="yes"/>
+<element name="U$21" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="211.7344" y="-43.0276" smashed="yes"/>
+<element name="U$22" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="310.2864" y="-43.0276" smashed="yes"/>
+<element name="U$30" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="208.5594" y="-82.0166" smashed="yes"/>
+<element name="U$31" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="306.8574" y="-82.0166" smashed="yes"/>
+<element name="U$29" library="HyTechManufacturing" package="MOUNTING_M3" value="" x="110.6424" y="-82.0166" smashed="yes"/>
 </elements>
 <signals>
 <signal name="A4-B10">
@@ -4727,7 +4728,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="373.7991" y1="-24.87846875" x2="373.7991" y2="-27.41846875" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$3">
-<contactref element="J21" pad="1"/>
+<contactref element="J22" pad="1"/>
 <contactref element="F19" pad="1"/>
 <wire x1="320.7004" y1="-63.3476" x2="328.47628125" y2="-71.12348125" width="0.2032" layer="1"/>
 <wire x1="328.47628125" y1="-71.12348125" x2="373.7991" y2="-71.12348125" width="0.2032" layer="1"/>
@@ -4741,7 +4742,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="369.283296875" y1="-38.344721875" x2="373.7991" y2="-38.344721875" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$8">
-<contactref element="J20" pad="1"/>
+<contactref element="J21" pad="1"/>
 <contactref element="F17" pad="1"/>
 <wire x1="301.9298" y1="-63.3476" x2="297.0784" y2="-63.3476" width="0.2032" layer="1"/>
 <wire x1="370.629053125" y1="-60.197228125" x2="365.0527" y2="-54.620875" width="0.2032" layer="1"/>
@@ -4761,7 +4762,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="352.417621875" y1="-49.116221875" x2="354.9396" y2="-49.116221875" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$10">
-<contactref element="J19" pad="1"/>
+<contactref element="J20" pad="1"/>
 <contactref element="F14" pad="1"/>
 <wire x1="346.6084" y1="-54.138275" x2="347.0402" y2="-53.706475" width="0.2032" layer="1"/>
 <wire x1="346.6084" y1="-54.138275" x2="291.619975" y2="-54.138275" width="0.2032" layer="1"/>
@@ -4781,7 +4782,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="371.1819" y1="-5.5659625" x2="373.7991" y2="-5.5659625" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$12">
-<contactref element="J18" pad="1"/>
+<contactref element="J19" pad="1"/>
 <contactref element="F21" pad="1"/>
 <wire x1="265.6078" y1="-72.39" x2="256.5654" y2="-63.3476" width="0.2032" layer="1"/>
 <wire x1="256.5654" y1="-63.3476" x2="247.6754" y2="-63.3476" width="0.2032" layer="1"/>
@@ -4806,7 +4807,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="348.5039375" y1="-33.6042" x2="353.085215625" y2="-29.022921875" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$14">
-<contactref element="J17" pad="1"/>
+<contactref element="J18" pad="1"/>
 <contactref element="F16" pad="1"/>
 <wire x1="328.3204" y1="-55.88" x2="310.4642" y2="-55.88" width="0.2032" layer="1"/>
 <wire x1="310.4642" y1="-55.88" x2="304.0888" y2="-62.2554" width="0.2032" layer="1"/>
@@ -4828,11 +4829,11 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="73.037875" y1="-27.419125" x2="77.4954" y2="-22.9616" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$16">
-<contactref element="J22" pad="1"/>
+<contactref element="J13" pad="1"/>
 <contactref element="F15" pad="1"/>
-<wire x1="99.7204" y1="-63.4746" x2="99.6188" y2="-63.373" width="0.2032" layer="1"/>
-<wire x1="99.6188" y1="-63.373" x2="55.21293125" y2="-63.373" width="0.2032" layer="1"/>
 <wire x1="41.2369" y1="-49.39696875" x2="55.21293125" y2="-63.373" width="0.2032" layer="1"/>
+<wire x1="55.21293125" y1="-63.373" x2="99.695" y2="-63.373" width="0.2032" layer="1"/>
+<wire x1="99.695" y1="-63.373" x2="99.7204" y2="-63.3476" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$17">
 <contactref element="J2" pad="1"/>
@@ -4843,7 +4844,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="60.7568" y1="-38.906540625" x2="76.892059375" y2="-38.906540625" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$18">
-<contactref element="J13" pad="1"/>
+<contactref element="J14" pad="1"/>
 <contactref element="F22" pad="1"/>
 <wire x1="115.7224" y1="-63.3476" x2="124.4854" y2="-63.3476" width="0.2032" layer="1"/>
 <wire x1="105.367665625" y1="-73.702334375" x2="115.7224" y2="-63.3476" width="0.2032" layer="1"/>
@@ -4860,7 +4861,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="41.2369" y1="-5.98248125" x2="49.06191875" y2="-13.8075" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$20">
-<contactref element="J14" pad="1"/>
+<contactref element="J15" pad="1"/>
 <contactref element="F20" pad="1"/>
 <wire x1="116.0272" y1="-61.91175" x2="116.0272" y2="-57.6834" width="0.2032" layer="1"/>
 <wire x1="116.0272" y1="-57.6834" x2="118.11" y2="-55.6006" width="0.2032" layer="1"/>
@@ -4885,7 +4886,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="41.2369" y1="-16.430203125" x2="63.542446875" y2="-16.430203125" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$22">
-<contactref element="J15" pad="1"/>
+<contactref element="J16" pad="1"/>
 <contactref element="F18" pad="1"/>
 <wire x1="115.189" y1="-61.5696" x2="115.189" y2="-57.3532" width="0.2032" layer="1"/>
 <wire x1="115.189" y1="-57.3532" x2="117.7798" y2="-54.7624" width="0.2032" layer="1"/>
@@ -4928,7 +4929,7 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <wire x1="352.3234" y1="-39.069571875" x2="354.9396" y2="-39.069571875" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$25">
-<contactref element="J16" pad="1"/>
+<contactref element="J17" pad="1"/>
 <contactref element="F12" pad="1"/>
 <wire x1="198.3994" y1="-63.3476" x2="187.31155" y2="-63.3476" width="0.2032" layer="1"/>
 <wire x1="177.81195" y1="-53.848" x2="187.31155" y2="-63.3476" width="0.2032" layer="1"/>
@@ -4944,18 +4945,6 @@ These design rules are designed to pass any PCB fab (Seeed Studio, JLCPCB, ALLPC
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="4,1,33f87b5de2055724"/>
-<approved hash="4,1,2884f5171852ce9d"/>
-<approved hash="4,1,1020b64371b0f2d9"/>
-<approved hash="4,1,069aaec8ffee6278"/>
-<approved hash="4,16,2884f5171852ce9d"/>
-<approved hash="4,16,1020b64371b0f2d9"/>
-<approved hash="4,16,069aaec8ffee6278"/>
-<approved hash="4,16,33f87b5de2055724"/>
-<approved hash="2,20,2a8df6b09a445007"/>
-<approved hash="2,20,22e2f4b79bd751f8"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
