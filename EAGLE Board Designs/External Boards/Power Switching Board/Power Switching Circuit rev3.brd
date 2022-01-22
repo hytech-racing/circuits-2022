@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="2" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -191,7 +191,7 @@
 <wire x1="134.62" y1="0" x2="134.62" y2="115.2398" width="0" layer="20"/>
 <wire x1="134.62" y1="115.2398" x2="0" y2="115.2398" width="0" layer="20"/>
 <wire x1="0" y1="115.2398" x2="0" y2="0" width="0" layer="20"/>
-<text x="131.826" y="81.6356" size="1.27" layer="21" font="vector" rot="R90" align="bottom-center">HyTech Racing
+<text x="131.826" y="81.6356" size="1.016" layer="21" font="vector" rot="R90" align="bottom-center">HyTech Racing
 Power Switching Board rev3
 Designed by Steven Elias</text>
 <text x="69.088" y="12.7" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">DCDC_VICOR</text>
@@ -469,7 +469,7 @@ Toshiba
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
 <text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
-<text x="0" y="1.27" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
+<text x="0" y="1.27" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="SSOP-36">
 <description>SSOP 36
@@ -5104,6 +5104,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="66.04" y="-80.01" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="66.04" y="-80.01" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="29.21" y="15.24" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="GATE1" x="31.75" y="16.51" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP2" library="HyTechDevices" package="5015" value="TEST_POINT" x="31.75" y="8.89" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="76.2" y="-86.36" size="1.778" layer="27" display="off"/>
@@ -5111,6 +5112,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="76.2" y="-86.36" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="76.2" y="-86.36" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="29.21" y="8.89" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="CPO" x="31.75" y="10.16" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP3" library="HyTechDevices" package="5015" value="TEST_POINT" x="31.75" y="27.94" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="86.36" y="-67.31" size="1.778" layer="27" display="off"/>
@@ -5118,6 +5120,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="86.36" y="-67.31" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="86.36" y="-67.31" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="29.21" y="27.94" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="GATE2" x="31.75" y="29.21" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP5" library="HyTechDevices" package="5015" value="TEST_POINT" x="62.23" y="22.86" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="127" y="-72.39" size="1.778" layer="27" display="off"/>
@@ -5125,6 +5128,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="127" y="-72.39" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="127" y="-72.39" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="59.69" y="22.86" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="INTVDD" x="62.23" y="24.13" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP6" library="HyTechDevices" package="5015" value="TEST_POINT" x="31.75" y="21.59" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="106.68" y="-73.66" size="1.778" layer="27" display="off"/>
@@ -5132,6 +5136,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="106.68" y="-73.66" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="106.68" y="-73.66" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="29.21" y="21.59" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="GND" x="31.75" y="22.86" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="U1" library="HyTechDevices" package="SSOP-36" value="LTC4421" x="49.53" y="20.32" smashed="yes" rot="R45">
 <attribute name="DKPN" value="161-LTC4421CG#PBF-ND" x="133.94440625" y="-35.3575875" size="1.778" layer="27" rot="R45" display="off"/>
@@ -5183,6 +5188,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="22.86" y="21.59" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="22.86" y="21.59" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="20.828" y="21.59" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="SOURCE2" x="22.86" y="22.86" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP11" library="HyTechDevices" package="5015" value="TEST_POINT" x="22.86" y="27.94" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="22.86" y="27.94" size="1.778" layer="27" display="off"/>
@@ -5190,6 +5196,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="22.86" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="22.86" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="20.828" y="27.94" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="BATTERY" x="22.86" y="29.21" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP10" library="HyTechDevices" package="5015" value="TEST_POINT" x="22.86" y="8.89" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="22.86" y="8.89" size="1.778" layer="27" display="off"/>
@@ -5197,6 +5204,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="22.86" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="22.86" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="20.828" y="8.89" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="SHDN" x="22.86" y="10.16" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP9" library="HyTechDevices" package="5015" value="TEST_POINT" x="13.97" y="15.24" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="13.97" y="15.24" size="1.778" layer="27" display="off"/>
@@ -5204,6 +5212,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="13.97" y="15.24" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="13.97" y="15.24" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11.938" y="15.24" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="OUT" x="13.97" y="16.51" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP8" library="HyTechDevices" package="5015" value="TEST_POINT" x="22.86" y="15.24" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="22.86" y="15.24" size="1.778" layer="27" display="off"/>
@@ -5211,6 +5220,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="22.86" y="15.24" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="22.86" y="15.24" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="20.828" y="15.24" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="CONVOUT" x="22.86" y="16.51" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="TP12" library="HyTechDevices" package="5015" value="TEST_POINT" x="13.97" y="21.59" smashed="yes">
 <attribute name="DKPN" value="36-5015CT-ND" x="13.97" y="21.59" size="1.778" layer="27" display="off"/>
@@ -5218,6 +5228,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="13.97" y="21.59" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="13.97" y="21.59" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11.938" y="21.59" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="DCDC_VICOR" x="13.97" y="22.86" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="K1" library="HyTechDevicesTemp" package="CRYDOM_CMX" value="RELAY_SOLIDSTATE_NO_CMX60D20" x="63.5" y="78.74" smashed="yes" rot="R90">
 <attribute name="DKPN" value="CC1666-ND" x="63.5" y="78.74" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5239,6 +5250,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MOPN" value="534-5015" x="13.97" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="5015" x="13.97" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11.938" y="8.89" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="SIGNAL" value="SOURCE1" x="13.97" y="10.16" size="0.8128" layer="21" font="vector" align="bottom-center"/>
 </element>
 <element name="D11" library="HyTechDevices" package="SOT-23" value="TVS_15V" x="95.25" y="62.23" smashed="yes">
 <attribute name="DKPN" value="GSOT15-E3-08CT-ND" x="95.25" y="62.23" size="1.778" layer="27" display="off"/>

@@ -544,7 +544,7 @@ Toshiba
 <smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
 <text x="-2.032" y="0" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-2.032" y1="-1.27" x2="2.032" y2="1.27" layer="39"/>
-<text x="0" y="1.27" size="1.524" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
+<text x="0" y="1.27" size="0.8128" layer="21" font="vector" align="bottom-center">&gt;SIGNAL</text>
 </package>
 <package name="SOD-323">
 <description>SOD-323 Diode Package
@@ -772,7 +772,7 @@ Toshiba
 </symbol>
 <symbol name="TEST_POINT">
 <circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-2.54" y="1.778" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-1.778" size="1.27" layer="95" align="top-left">&gt;MPN</text>
 </symbol>
@@ -2417,7 +2417,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <devices>
 <device name="" package="5015">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -6154,7 +6154,7 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-119.38" y1="25.4" x2="-119.38" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="TP6" gate="G$1" pin="P$1"/>
+<pinref part="TP6" gate="G$1" pin="1"/>
 <label x="-119.38" y="27.94" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
@@ -6348,7 +6348,7 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-129.54" y1="10.16" x2="-129.54" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="TP3" gate="G$1" pin="P$1"/>
+<pinref part="TP3" gate="G$1" pin="1"/>
 <label x="-129.54" y="12.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
@@ -6364,7 +6364,7 @@ UV Falling: 9.97V</text>
 <junction x="38.1" y="0"/>
 </segment>
 <segment>
-<pinref part="TP7" gate="G$1" pin="P$1"/>
+<pinref part="TP7" gate="G$1" pin="1"/>
 <wire x1="-119.38" y1="10.16" x2="-119.38" y2="12.7" width="0.1524" layer="91"/>
 <label x="-119.38" y="12.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6378,7 +6378,7 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-129.54" y1="25.4" x2="-129.54" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="TP2" gate="G$1" pin="P$1"/>
+<pinref part="TP2" gate="G$1" pin="1"/>
 <label x="-129.54" y="27.94" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
@@ -6398,7 +6398,7 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-129.54" y1="38.1" x2="-129.54" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="TP1" gate="G$1" pin="P$1"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
 <label x="-129.54" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
@@ -6506,7 +6506,7 @@ UV Falling: 9.97V</text>
 </segment>
 <segment>
 <wire x1="-119.38" y1="38.1" x2="-119.38" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="TP5" gate="G$1" pin="P$1"/>
+<pinref part="TP5" gate="G$1" pin="1"/>
 <label x="-119.38" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
@@ -6585,7 +6585,7 @@ UV Falling: 9.97V</text>
 <pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TP8" gate="G$1" pin="P$1"/>
+<pinref part="TP8" gate="G$1" pin="1"/>
 <wire x1="-119.38" y1="-10.16" x2="-119.38" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-119.38" y="-7.62" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6620,7 +6620,7 @@ UV Falling: 9.97V</text>
 <pinref part="XF2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TP11" gate="G$1" pin="P$1"/>
+<pinref part="TP11" gate="G$1" pin="1"/>
 <wire x1="-109.22" y1="10.16" x2="-109.22" y2="12.7" width="0.1524" layer="91"/>
 <label x="-109.22" y="12.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6675,7 +6675,7 @@ UV Falling: 9.97V</text>
 <pinref part="D12" gate="LED" pin="C"/>
 </segment>
 <segment>
-<pinref part="TP10" gate="G$1" pin="P$1"/>
+<pinref part="TP10" gate="G$1" pin="1"/>
 <wire x1="-109.22" y1="25.4" x2="-109.22" y2="27.94" width="0.1524" layer="91"/>
 <label x="-109.22" y="27.94" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6751,7 +6751,7 @@ UV Falling: 9.97V</text>
 <label x="-91.44" y="-139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TP12" gate="G$1" pin="P$1"/>
+<pinref part="TP12" gate="G$1" pin="1"/>
 <wire x1="-109.22" y1="-10.16" x2="-109.22" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-109.22" y="-7.62" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6776,7 +6776,7 @@ UV Falling: 9.97V</text>
 <pinref part="XF1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TP9" gate="G$1" pin="P$1"/>
+<pinref part="TP9" gate="G$1" pin="1"/>
 <wire x1="-109.22" y1="38.1" x2="-109.22" y2="40.64" width="0.1524" layer="91"/>
 <label x="-109.22" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -6800,7 +6800,7 @@ UV Falling: 9.97V</text>
 </net>
 <net name="SOURCE1" class="0">
 <segment>
-<pinref part="TP4" gate="G$1" pin="P$1"/>
+<pinref part="TP4" gate="G$1" pin="1"/>
 <wire x1="-129.54" y1="-10.16" x2="-129.54" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-129.54" y="-7.62" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
