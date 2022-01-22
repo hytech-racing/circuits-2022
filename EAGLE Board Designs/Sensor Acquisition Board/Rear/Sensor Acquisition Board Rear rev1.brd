@@ -4515,7 +4515,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <element name="A2" library="HyTechDevices" package="TEENSY_SHORT" value="TEENSY_4.0" x="16.51" y="45.72" smashed="yes" rot="R270">
 <attribute name="TEENSY" value="4.0" x="16.51" y="45.72" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$7" library="HyTechManufacturing" package="LOGO_HYTECH_MEDIUM" value="" x="7.62" y="11.43" smashed="yes" rot="R90"/>
+<element name="U$7" library="HyTechManufacturing" package="LOGO_HYTECH_MEDIUM" value="" x="7.62" y="12.7" smashed="yes" rot="R90"/>
 <element name="U2" library="HyTechDevices" package="SOIC-08(NARROW,0.15&quot;)" value="MCP2562FD" x="77.47" y="27.305" smashed="yes" rot="R180">
 <attribute name="ALT_DKPN" value="MCP2562-E/SN-ND" x="77.47" y="27.305" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ALT_MANUFACTURER" value="Microchip Technology" x="77.47" y="27.305" size="1.778" layer="27" rot="R180" display="off"/>
