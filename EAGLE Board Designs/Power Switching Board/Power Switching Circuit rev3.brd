@@ -204,10 +204,6 @@ Designed by Steven Elias</text>
 <text x="99.568" y="12.7" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">CH2</text>
 <text x="103.378" y="12.7" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">FAULT2</text>
 <text x="107.188" y="12.7" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">OUT</text>
-<text x="31.75" y="6.35" size="0.8128" layer="21" font="vector" align="bottom-center">CPO</text>
-<text x="31.75" y="12.7" size="0.8128" layer="21" font="vector" align="bottom-center">GATE1</text>
-<text x="31.75" y="19.05" size="0.8128" layer="21" font="vector" align="bottom-center">GND</text>
-<text x="31.75" y="25.4" size="0.8128" layer="21" font="vector" align="bottom-center">GATE2</text>
 <text x="121.158" y="82.55" size="1.524" layer="21" font="vector" rot="R180" align="bottom-center">DO NOT INSTALL XF2
 unless bypassing entire 
 circuit. If so uninstall 
