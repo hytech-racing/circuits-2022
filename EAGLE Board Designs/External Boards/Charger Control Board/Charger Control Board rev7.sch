@@ -11778,6 +11778,9 @@ to gnd on wiring harness</text>
 <pinref part="CHG_CAN" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
 <label x="83.82" y="33.02" size="1.27" layer="95" xref="yes"/>
+<pinref part="CHG_CAN" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="35.56" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MAIN_CONNECTOR" gate="G$1" pin="7"/>
