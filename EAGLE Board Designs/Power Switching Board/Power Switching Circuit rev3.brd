@@ -363,30 +363,6 @@ all other fuses.</text>
 <rectangle x1="1.261" y1="0.5" x2="1.661" y2="0.75" layer="21"/>
 <rectangle x1="1.261" y1="-0.75" x2="1.661" y2="-0.5" layer="21"/>
 </package>
-<package name="SOURIAU_04-35">
-<description>SOURIAU 3 Pin Connector
-&lt;br&gt;
-&lt; a href="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_series_pc_tail_contacts_datasheet_0.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="A" x="1.24" y="0.72" drill="0.7"/>
-<pad name="B" x="0" y="-1.43" drill="0.7"/>
-<pad name="C" x="-1.24" y="0.72" drill="0.7"/>
-<circle x="0" y="0" radius="6" width="0.1524" layer="22"/>
-<circle x="0" y="0" radius="6.6" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="6" width="0" layer="40"/>
-<circle x="0" y="0" radius="6.6" width="0" layer="39"/>
-<hole x="5.9999875" y="5.9999875" drill="3.4"/>
-<circle x="5.9999875" y="5.9999875" radius="3" width="0" layer="41"/>
-<circle x="5.9999875" y="5.9999875" radius="3" width="0" layer="42"/>
-<hole x="-5.9999875" y="-5.9999875" drill="3.4"/>
-<circle x="-5.9999875" y="-5.9999875" radius="3" width="0" layer="41"/>
-<circle x="-5.9999875" y="-5.9999875" radius="3" width="0" layer="42"/>
-<text x="0" y="7" size="0.8128" layer="26" font="vector" rot="MR0" align="top-center">&gt;NAME</text>
-<text x="0" y="8" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
-<circle x="-5.9999875" y="-5.9999875" radius="3" width="0" layer="40"/>
-<circle x="-5.9999875" y="-5.9999875" radius="3" width="0" layer="39"/>
-<circle x="5.9999875" y="5.9999875" radius="3" width="0" layer="40"/>
-<circle x="5.9999875" y="5.9999875" radius="3" width="0" layer="39"/>
-</package>
 <package name="DPAK(2-7K1S)">
 <description>DPAK(2-7K1S)
 &lt;br&gt;
@@ -538,6 +514,30 @@ Toshiba
 <text x="0" y="13.97" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="42"/>
 <circle x="10.2884" y="10.2884" radius="3" width="0" layer="42"/>
+</package>
+<package name="SOURIAU_04-35">
+<description>SOURIAU 3 Pin Connector
+&lt;br&gt;
+&lt; a href="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_series_pc_tail_contacts_datasheet_0.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="A" x="1.24" y="0.72" drill="0.7"/>
+<pad name="B" x="0" y="-1.43" drill="0.7"/>
+<pad name="C" x="-1.24" y="0.72" drill="0.7"/>
+<circle x="0" y="0" radius="6" width="0.1524" layer="22"/>
+<circle x="0" y="0" radius="6.6" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="6" width="0" layer="40"/>
+<circle x="0" y="0" radius="6.6" width="0" layer="39"/>
+<hole x="8.1" y="8.1" drill="3.4"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="41"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="42"/>
+<hole x="-8.1" y="-8.1" drill="3.4"/>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="41"/>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="42"/>
+<text x="0" y="7" size="0.8128" layer="26" font="vector" rot="MR0" align="top-center">&gt;NAME</text>
+<text x="0" y="8" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="40"/>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="39"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="40"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="39"/>
 </package>
 </packages>
 </library>
@@ -4720,10 +4720,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MPN" value="APT1608SYCK/J3-PRV" x="205.74" y="43.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="98.31" y="12.7" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
-<element name="J2" library="HyTechDevices" package="SOURIAU_04-35" value="CONNECTOR-3_" x="20.32" y="93.98" smashed="yes" rot="R45">
-<attribute name="NAME" x="15.37025" y="98.92975" size="0.8128" layer="26" font="vector" rot="MR315" align="top-center"/>
-<attribute name="NAME" x="14.66314375" y="99.63685625" size="0.8128" layer="25" font="vector" rot="R45" align="top-center"/>
-</element>
 <element name="Q4" library="HyTechDevices" package="DPAK(2-7K1S)" value="TRANSISTOR_N_MOS_2-7K1S_TK100S04N1LLQ" x="91.44" y="41.91" smashed="yes" rot="R90">
 <attribute name="DKPN" value="TK100S04N1LLQCT-ND" x="153.67" y="58.42" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage" x="153.67" y="58.42" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5301,10 +5297,15 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="NAME" x="122.999178125" y="42.86281875" size="0.8128" layer="26" font="vector" rot="MR135" align="bottom-center"/>
 <attribute name="NAME" x="126.59128125" y="39.270715625" size="0.8128" layer="25" font="vector" rot="R225" align="bottom-center"/>
 </element>
+<element name="J2" library="HyTechDevices" package="SOURIAU_04-35" value="CONNECTOR-3_8STA20435PN" x="19.05" y="92.71" smashed="yes" rot="R45">
+<attribute name="MANUFACTURER" value="Souriau" x="19.05" y="92.71" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="MPN" value="8STA20435PN" x="19.05" y="92.71" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="NAME" x="14.10025" y="97.659746875" size="0.8128" layer="26" font="vector" rot="MR315" align="top-center"/>
+<attribute name="NAME" x="13.39314375" y="98.366853125" size="0.8128" layer="25" font="vector" rot="R45" align="top-center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="J2" pad="A"/>
 <contactref element="R101" pad="1"/>
 <contactref element="C101" pad="2"/>
 <contactref element="C100" pad="2"/>
@@ -5411,6 +5412,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="69.85" y1="11.875" x2="69.025" y2="11.875" width="0.254" layer="1"/>
 <wire x1="69.025" y1="11.875" x2="68.58" y2="11.43" width="0.254" layer="1"/>
 <via x="68.58" y="11.43" extent="1-16" drill="0.381"/>
+<contactref element="J2" pad="A"/>
 </signal>
 <signal name="DCDC_VICORPREMOS">
 <contactref element="U1" pad="7"/>
@@ -5456,15 +5458,14 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="84.6328" y1="36.5633" x2="85.09" y2="36.5633" width="0.254" layer="1"/>
 </signal>
 <signal name="START">
-<contactref element="J2" pad="C"/>
 <contactref element="D3" pad="A"/>
 <contactref element="R1" pad="2"/>
-<wire x1="27.94" y1="89.02" x2="23.526371875" y2="89.02" width="0.254" layer="1"/>
-<wire x1="23.526371875" y1="89.02" x2="18.93406875" y2="93.612303125" width="0.254" layer="1"/>
-<wire x1="18.93406875" y1="93.612303125" x2="19.05" y2="93.728234375" width="0.254" layer="1"/>
-<wire x1="19.05" y1="93.728234375" x2="19.05" y2="96.52" width="0.254" layer="1"/>
-<wire x1="19.05" y1="96.52" x2="25.4" y2="102.87" width="0.254" layer="1"/>
-<wire x1="25.4" y1="102.87" x2="29.63" y2="102.87" width="0.254" layer="1"/>
+<wire x1="29.63" y1="102.87" x2="25.4" y2="102.87" width="0.254" layer="1"/>
+<contactref element="J2" pad="C"/>
+<wire x1="17.66406875" y1="95.13406875" x2="17.66406875" y2="92.342303125" width="0.254" layer="1"/>
+<wire x1="25.4" y1="102.87" x2="17.66406875" y2="95.13406875" width="0.254" layer="1"/>
+<wire x1="27.94" y1="89.02" x2="20.986371875" y2="89.02" width="0.254" layer="1"/>
+<wire x1="20.986371875" y1="89.02" x2="17.66406875" y2="92.342303125" width="0.254" layer="1"/>
 </signal>
 <signal name="OUTPREFUSE">
 <contactref element="R5" pad="2"/>
@@ -6097,11 +6098,11 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <signal name="GLVMS">
 <contactref element="D2" pad="A"/>
 <contactref element="R2" pad="2"/>
-<contactref element="J2" pad="B"/>
 <wire x1="29.63" y1="100.33" x2="27.94" y2="98.64" width="0.254" layer="1"/>
 <wire x1="27.94" y1="97.67" x2="27.94" y2="98.64" width="0.254" layer="1"/>
-<wire x1="21.3311625" y1="92.968834375" x2="26.032328125" y2="97.67" width="0.254" layer="1"/>
 <wire x1="26.032328125" y1="97.67" x2="27.94" y2="97.67" width="0.254" layer="1"/>
+<contactref element="J2" pad="B"/>
+<wire x1="20.0611625" y1="91.698834375" x2="26.032328125" y2="97.67" width="0.254" layer="1"/>
 </signal>
 <signal name="N$16">
 <contactref element="R101" pad="2"/>

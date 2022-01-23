@@ -299,30 +299,6 @@
 <rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="1.778" layer="39"/>
 <circle x="-1.778" y="-1.0033" radius="0.15875" width="0" layer="21"/>
 </package>
-<package name="SOURIAU_04-35">
-<description>SOURIAU 3 Pin Connector
-&lt;br&gt;
-&lt; a href="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_series_pc_tail_contacts_datasheet_0.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<pad name="A" x="1.24" y="0.72" drill="0.7"/>
-<pad name="B" x="0" y="-1.43" drill="0.7"/>
-<pad name="C" x="-1.24" y="0.72" drill="0.7"/>
-<circle x="0" y="0" radius="6" width="0.1524" layer="22"/>
-<circle x="0" y="0" radius="6.6" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="6" width="0" layer="40"/>
-<circle x="0" y="0" radius="6.6" width="0" layer="39"/>
-<hole x="5.9999875" y="5.9999875" drill="3.4"/>
-<circle x="5.9999875" y="5.9999875" radius="3" width="0" layer="41"/>
-<circle x="5.9999875" y="5.9999875" radius="3" width="0" layer="42"/>
-<hole x="-5.9999875" y="-5.9999875" drill="3.4"/>
-<circle x="-5.9999875" y="-5.9999875" radius="3" width="0" layer="41"/>
-<circle x="-5.9999875" y="-5.9999875" radius="3" width="0" layer="42"/>
-<text x="0" y="7" size="0.8128" layer="26" font="vector" rot="MR0" align="top-center">&gt;NAME</text>
-<text x="0" y="8" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
-<circle x="-5.9999875" y="-5.9999875" radius="3" width="0" layer="40"/>
-<circle x="-5.9999875" y="-5.9999875" radius="3" width="0" layer="39"/>
-<circle x="5.9999875" y="5.9999875" radius="3" width="0" layer="40"/>
-<circle x="5.9999875" y="5.9999875" radius="3" width="0" layer="39"/>
-</package>
 <package name="0603-CAP">
 <description>0603 Cap
 &lt;br&gt;
@@ -621,6 +597,30 @@ Dashed line is edge of mated connector.</description>
 <smd name="1" x="1.5" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
 <smd name="3" x="1.5" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
 </package>
+<package name="SOURIAU_04-35">
+<description>SOURIAU 3 Pin Connector
+&lt;br&gt;
+&lt; a href="https://usa.souriau.com/en-en/system/files/application/downloads/8sta_series_pc_tail_contacts_datasheet_0.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="A" x="1.24" y="0.72" drill="0.7"/>
+<pad name="B" x="0" y="-1.43" drill="0.7"/>
+<pad name="C" x="-1.24" y="0.72" drill="0.7"/>
+<circle x="0" y="0" radius="6" width="0.1524" layer="22"/>
+<circle x="0" y="0" radius="6.6" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="6" width="0" layer="40"/>
+<circle x="0" y="0" radius="6.6" width="0" layer="39"/>
+<hole x="8.1" y="8.1" drill="3.4"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="41"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="42"/>
+<hole x="-8.1" y="-8.1" drill="3.4"/>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="41"/>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="42"/>
+<text x="0" y="7" size="0.8128" layer="26" font="vector" rot="MR0" align="top-center">&gt;NAME</text>
+<text x="0" y="8" size="0.8128" layer="25" font="vector" align="top-center">&gt;NAME</text>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="40"/>
+<circle x="-8.1" y="-8.1" radius="3" width="0" layer="39"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="40"/>
+<circle x="8.1" y="8.1" radius="3" width="0" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC4421">
@@ -742,20 +742,6 @@ Dashed line is edge of mated connector.</description>
 <wire x1="0" y1="-0.762" x2="0.254" y2="-1.016" width="0.1524" layer="94"/>
 <wire x1="0.254" y1="-1.016" x2="0.508" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="CONNECTOR_03">
-<wire x1="7.62" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-10.795" size="1.778" layer="96" align="top-left">&gt;MODEL</text>
-<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
 <symbol name="RESISTOR">
 <pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
@@ -838,6 +824,20 @@ Dashed line is edge of mated connector.</description>
 <pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="CONNECTOR_03">
+<wire x1="7.62" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-10.795" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1956,23 +1956,6 @@ Dashed line is edge of mated connector.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-3_?" prefix="J">
-<gates>
-<gate name="G$1" symbol="CONNECTOR_03" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOURIAU_04-35">
-<connects>
-<connect gate="G$1" pin="1" pad="A"/>
-<connect gate="G$1" pin="2" pad="B"/>
-<connect gate="G$1" pin="3" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TRANSISTOR_N_MOS_?_*" prefix="Q">
 <description>N-MOSFET
 &lt;ul&gt;
@@ -2512,6 +2495,26 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MOPN" value="538-0430450411"/>
 <attribute name="MPN" value="0430450411"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-3_?" prefix="J">
+<gates>
+<gate name="G$1" symbol="CONNECTOR_03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOURIAU_04-35">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="B"/>
+<connect gate="G$1" pin="3" pad="C"/>
+</connects>
+<technologies>
+<technology name="8STA20435PN">
+<attribute name="MANUFACTURER" value="Souriau"/>
+<attribute name="MPN" value="8STA20435PN"/>
 </technology>
 </technologies>
 </device>
@@ -8073,7 +8076,6 @@ Layer: 94 Symbol</description>
 <part name="U1" library="HyTechDevices" deviceset="LTC4421" device=""/>
 <part name="D5" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
 <part name="D6" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
-<part name="J2" library="HyTechDevices" deviceset="CONNECTOR-3_?" device=""/>
 <part name="Q4" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1LLQ"/>
 <part name="Q1" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1LLQ"/>
 <part name="Q2" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="2-7K1S" technology="TK100S04N1LLQ"/>
@@ -8190,6 +8192,7 @@ the vehicle from the GLV battery to the accumulator"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Steven Elias"/>
 <attribute name="ENGINEER" value="Steven Elias"/>
 </part>
+<part name="J2" library="HyTechDevices" deviceset="CONNECTOR-3_?" device="" technology="8STA20435PN"/>
 </parts>
 <sheets>
 <sheet>
@@ -8227,9 +8230,6 @@ FAULT2: Current limit fault on CONVOUT</text>
 <instance part="D6" gate="G$1" x="-88.9" y="33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="-90.805" y="31.75" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="-86.995" y="31.75" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="J2" gate="G$1" x="-73.66" y="-134.62" smashed="yes">
-<attribute name="NAME" x="-73.66" y="-133.858" size="1.778" layer="95"/>
 </instance>
 <instance part="Q4" gate="G$1" x="-40.64" y="33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="-45.212" y="35.56" size="1.27" layer="95" rot="R270" align="bottom-center"/>
@@ -8653,6 +8653,10 @@ FAULT2: Current limit fault on CONVOUT</text>
 <attribute name="MPN" x="-104.14" y="-147.955" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="-104.14" y="-133.858" size="1.27" layer="95"/>
 </instance>
+<instance part="J2" gate="G$1" x="-73.66" y="-134.62" smashed="yes">
+<attribute name="MPN" x="-73.66" y="-145.415" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="-73.66" y="-133.858" size="1.27" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8665,8 +8669,8 @@ FAULT2: Current limit fault on CONVOUT</text>
 </segment>
 <segment>
 <wire x1="-63.5" y1="-137.16" x2="-45.72" y2="-137.16" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
 <pinref part="P1" gate="1" pin="GND"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R101" gate="G$1" pin="1"/>
