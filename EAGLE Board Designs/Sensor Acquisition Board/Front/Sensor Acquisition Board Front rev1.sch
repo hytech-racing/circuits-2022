@@ -5176,6 +5176,8 @@ Requires ordering of:
 <part name="P7" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470" value="RESISTOR_0603_470"/>
 <part name="D1" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="R15" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="P9" library="HyTechSupplies" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5403,6 +5405,13 @@ Requires ordering of:
 <attribute name="COLOR" x="46.99" y="92.202" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="46.99" y="97.536" size="1.27" layer="96" align="bottom-center"/>
 </instance>
+<instance part="R15" gate="G$1" x="86.36" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="85.09" y="62.23" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="87.63" y="62.23" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P9" gate="1" x="91.44" y="71.12" smashed="yes">
+<attribute name="VALUE" x="91.44" y="73.66" size="1.27" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5574,6 +5583,15 @@ Requires ordering of:
 <wire x1="43.18" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="P21" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="XA1" gate="G$1" pin="VIN"/>
+<wire x1="81.28" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="66.04" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="P9" gate="1" pin="+5V"/>
+<wire x1="86.36" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<junction x="86.36" y="68.58"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -5623,11 +5641,6 @@ Requires ordering of:
 </net>
 <net name="TEENSY_3.3V" class="0">
 <segment>
-<wire x1="139.7" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
-<label x="147.32" y="114.3" size="1.27" layer="95" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
 <label x="200.66" y="83.82" size="1.27" layer="95" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="VIO"/>
 <wire x1="198.12" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
@@ -5636,11 +5649,6 @@ Requires ordering of:
 <label x="200.66" y="149.86" size="1.27" layer="95" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="VIO"/>
 <wire x1="198.12" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="XA1" gate="G$1" pin="3V3"/>
-<wire x1="81.28" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
-<label x="86.36" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SENSOR_1" class="0">
@@ -5895,6 +5903,13 @@ Requires ordering of:
 <label x="50.8" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="XA1" gate="G$1" pin="FIX"/>
 <wire x1="50.8" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="XA1" gate="G$1" pin="EN"/>
+<wire x1="81.28" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
