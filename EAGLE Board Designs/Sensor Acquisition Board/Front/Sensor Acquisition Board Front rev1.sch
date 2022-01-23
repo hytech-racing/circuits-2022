@@ -5180,6 +5180,8 @@ Requires ordering of:
 <sheets>
 <sheet>
 <plain>
+<text x="197.104" y="10.922" size="2.54" layer="95">Translates 2 Analog Voltage Sensors to CAN and
+ Supplies GPS Information</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="O" x="0" y="0" smashed="yes">
@@ -5188,7 +5190,6 @@ Requires ordering of:
 <attribute name="SHEET" x="259.08" y="2.54" size="2.54" layer="95"/>
 <attribute name="ENGINEER" x="129.54" y="22.86" size="2.54" layer="95"/>
 <attribute name="DESIGNER_FURTHER" x="176.53" y="30.48" size="2.54" layer="95"/>
-<attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
 <attribute name="REVIEWER_BOARD" x="227.33" y="38.1" size="2.54" layer="95"/>
 <attribute name="DESIGNER_BOARD" x="176.53" y="38.1" size="2.54" layer="95"/>
@@ -5877,23 +5878,23 @@ Requires ordering of:
 <label x="147.32" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPS_LED" class="0">
-<segment>
-<pinref part="A2" gate="G$1" pin="D4"/>
-<wire x1="139.7" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
-<label x="147.32" y="88.9" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="D1" gate="LED" pin="A"/>
-<wire x1="43.18" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
-<label x="33.02" y="93.98" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="D1" gate="LED" pin="C"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="93.98" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPS_LED" class="0">
+<segment>
+<pinref part="D1" gate="LED" pin="A"/>
+<wire x1="43.18" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
+<label x="33.02" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<label x="50.8" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="XA1" gate="G$1" pin="FIX"/>
+<wire x1="50.8" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

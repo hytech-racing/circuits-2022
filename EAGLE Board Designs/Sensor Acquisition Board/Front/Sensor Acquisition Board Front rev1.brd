@@ -192,7 +192,7 @@
 <wire x1="116.84" y1="50.8" x2="0" y2="50.8" width="0" layer="20"/>
 <wire x1="0" y1="50.8" x2="0" y2="0" width="0" layer="20"/>
 <text x="114.554" y="12.573" size="1.016" layer="51" font="vector" rot="R90">HyTech Racing 2022
-Sensor Acquisition Board rev4
+Sensor Acquisition Board Front rev1
 Designed by Bo Han Zhu</text>
 <text x="52.578" y="3.175" size="0.8128" layer="51" rot="R90">Vehicle CAN-Bus</text>
 <text x="10.668" y="3.175" size="0.8128" layer="51" rot="R90">1. F-L Suspension Linear Pot</text>
@@ -201,6 +201,7 @@ Designed by Bo Han Zhu</text>
 <text x="58.42" y="45.72" size="0.8128" layer="51" rot="R180">IMU CAN</text>
 <text x="38.608" y="3.175" size="0.8128" layer="51" rot="R90">IMU CAN-Bus</text>
 <text x="58.42" y="43.18" size="0.8128" layer="51" rot="R180">Vehicle CAN</text>
+<text x="58.42" y="40.64" size="0.8128" layer="51" rot="R180">GPS</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -4730,7 +4731,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="65.62" y1="46.99" x2="65.62" y2="48.26" width="0.254" layer="1"/>
 <wire x1="65.62" y1="43.18" x2="67.779" y2="43.18" width="0.254" layer="1"/>
 <wire x1="67.779" y1="43.18" x2="68.693" y2="42.266" width="0.254" layer="1"/>
-<wire x1="63.5" y1="36.31" x2="65.62" y2="38.43" width="0.254" layer="1"/>
+<wire x1="63.5" y1="36.31" x2="65.786" y2="36.31" width="0.254" layer="1"/>
+<wire x1="66.509" y1="37.033" x2="65.786" y2="36.31" width="0.254" layer="1"/>
 <wire x1="60.96" y1="36.31" x2="63.5" y2="36.31" width="0.254" layer="1"/>
 <wire x1="62.865" y1="31.8135" x2="62.865" y2="32.385" width="0.254" layer="1"/>
 <wire x1="62.865" y1="32.385" x2="64.77" y2="34.29" width="0.254" layer="1"/>
@@ -4769,7 +4771,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="57.17" y1="16.89" x2="55.01" y2="19.05" width="0.254" layer="1"/>
 <contactref element="XA1" pad="GND"/>
 <contactref element="R14" pad="2"/>
-<wire x1="65.62" y1="38.43" x2="65.62" y2="40.64" width="0.254" layer="1"/>
+<wire x1="66.509" y1="39.751" x2="65.62" y2="40.64" width="0.254" layer="1"/>
+<wire x1="66.509" y1="39.751" x2="66.509" y2="37.033" width="0.254" layer="1"/>
 <wire x1="65.62" y1="43.18" x2="65.62" y2="40.64" width="0.254" layer="1"/>
 <wire x1="55.01" y1="19.05" x2="56.6864" y2="20.7264" width="0.254" layer="1"/>
 <wire x1="62.6364" y1="20.7264" x2="68.58" y2="26.67" width="0.254" layer="1"/>
@@ -5126,22 +5129,20 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="55.2196" y1="7.62" x2="93.98" y2="7.62" width="0.254" layer="16"/>
 <wire x1="93.98" y1="7.62" x2="96.52" y2="10.16" width="0.254" layer="16"/>
 </signal>
-<signal name="GPS_LED">
-<contactref element="A2" pad="D4"/>
-<contactref element="D1" pad="2"/>
-<wire x1="30.607" y1="28.321" x2="29.21" y2="29.718" width="0.254" layer="16"/>
-<wire x1="29.21" y1="30.48" x2="29.21" y2="29.718" width="0.254" layer="16"/>
-<wire x1="48.8437625" y1="28.321" x2="57.15" y2="36.6272375" width="0.254" layer="16"/>
-<wire x1="57.15" y1="38.862" x2="58.928" y2="40.64" width="0.254" layer="16"/>
-<via x="58.928" y="40.64" extent="1-16" drill="0.3556"/>
-<wire x1="58.928" y1="40.64" x2="60.135" y2="40.64" width="0.254" layer="1"/>
-<wire x1="30.607" y1="28.321" x2="48.8437625" y2="28.321" width="0.254" layer="16"/>
-<wire x1="57.15" y1="36.6272375" x2="57.15" y2="38.862" width="0.254" layer="16"/>
-</signal>
 <signal name="N$4">
 <contactref element="D1" pad="1"/>
 <contactref element="R14" pad="1"/>
 <wire x1="61.785" y1="40.64" x2="63.92" y2="40.64" width="0.254" layer="1"/>
+</signal>
+<signal name="GPS_LED">
+<contactref element="D1" pad="2"/>
+<contactref element="XA1" pad="FIX"/>
+<wire x1="93.98" y1="10.16" x2="93.98" y2="24.13" width="0.1524" layer="16"/>
+<wire x1="93.98" y1="24.13" x2="78.74" y2="39.37" width="0.1524" layer="16"/>
+<via x="65.7978" y="39.37" extent="1-16" drill="0.3556"/>
+<wire x1="65.7978" y1="39.37" x2="61.405" y2="39.37" width="0.1524" layer="1"/>
+<wire x1="61.405" y1="39.37" x2="60.135" y2="40.64" width="0.1524" layer="1"/>
+<wire x1="78.74" y1="39.37" x2="65.7978" y2="39.37" width="0.1524" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
