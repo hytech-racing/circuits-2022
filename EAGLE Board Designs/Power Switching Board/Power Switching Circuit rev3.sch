@@ -8184,7 +8184,6 @@ the vehicle from the GLV battery to the accumulator"/>
 <part name="D10" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="D8" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
 <part name="D7" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
-<part name="P16" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="J1" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="SOURIAU"/>
 <part name="J3" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="SOURIAU"/>
 <part name="FRAME2" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
@@ -8646,9 +8645,6 @@ FAULT2: Current limit fault on CONVOUT</text>
 <attribute name="COLOR" x="-80.518" y="26.67" size="1.27" layer="95" rot="R270" align="top-center"/>
 <attribute name="NAME" x="-75.184" y="26.67" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="P16" gate="1" x="-93.98" y="-149.86" smashed="yes">
-<attribute name="VALUE" x="-93.98" y="-151.13" size="1.27" layer="96" align="top-center"/>
-</instance>
 <instance part="J1" gate="G$1" x="-134.62" y="-134.62" smashed="yes">
 <attribute name="MPN" x="-134.62" y="-147.955" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="-134.62" y="-133.858" size="1.27" layer="95"/>
@@ -8810,14 +8806,6 @@ FAULT2: Current limit fault on CONVOUT</text>
 <wire x1="-119.38" y1="-12.7" x2="-119.38" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="TP6" gate="G$1" pin="1"/>
 <label x="-119.38" y="-10.16" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="P16" gate="1" pin="GND"/>
-<wire x1="-93.98" y1="-144.78" x2="-93.98" y2="-147.32" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="4"/>
-<pinref part="J3" gate="G$1" pin="3"/>
-<wire x1="-93.98" y1="-142.24" x2="-93.98" y2="-144.78" width="0.1524" layer="91"/>
-<junction x="-93.98" y="-144.78"/>
 </segment>
 </net>
 <net name="DCDC_VICORPREMOS" class="0">

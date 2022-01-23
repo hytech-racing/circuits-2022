@@ -5411,8 +5411,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="69.85" y1="11.875" x2="69.025" y2="11.875" width="0.254" layer="1"/>
 <wire x1="69.025" y1="11.875" x2="68.58" y2="11.43" width="0.254" layer="1"/>
 <via x="68.58" y="11.43" extent="1-16" drill="0.381"/>
-<contactref element="J3" pad="4"/>
-<contactref element="J3" pad="3"/>
 </signal>
 <signal name="DCDC_VICORPREMOS">
 <contactref element="U1" pad="7"/>
