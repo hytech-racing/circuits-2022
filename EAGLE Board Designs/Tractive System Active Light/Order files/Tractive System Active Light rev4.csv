@@ -1,8 +1,0 @@
-"Board Quantity","Ordering Quantity","Value","Reference","ATTRITION","COLOR","DKPN","GAUGE","MANUFACTURER","MOPN","MPN","POWER","RESISTANCE","TOLERANCE","VOLTAGE_CONTINUOUS","VOLTAGE_MAX",
-"1","3","CONNECTOR-4_μF_S_RA_","J1","200","","WM1832CT-ND","","Molex","538-0430450411","0430450411","","","","","",
-"4","8","CRIMP_MICROFIT_20-24","O2, O3, O4, O5","100","","WM2776CT-ND","20-24","Molex","538-43030-0003","0430300003","","","","","",
-"4","6","LED_RGBW_IN-505FCHWV","D1, D2, D3, D4","50","RGBW","1830-1097-2-ND","","INOLUX","743-IN-505FCHWV","IN-505FCHWV","","","","","",
-"2","","MOUNTING_HEATSINK_M3","H1, H2","","","","","","","","","","","","",
-"1","2","RECEPTACLE-4_MICROFIT","O1","100","","WM11225-ND","","Molex","538-43025-0408","0430250408","","","","","",
-"1","11","RESISTOR_0603_5.1","R3","1000","","P16039TR-ND","","Panasonic Electronic Components","667-ERJ-P03J5R1V","ERJ-P03J5R1V","0.25W","5.1","1%","1.13V","150V",
-"2","12","RESISTOR_0805_56","R1, R2","500","","P16053TR-ND","","Panasonic Electronic Components","667-ERJ-P06D56R0V","ERJ-P06D56R0V","0.5W","56","5%","5.29V","400V",
