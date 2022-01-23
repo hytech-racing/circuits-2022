@@ -5174,6 +5174,8 @@ Requires ordering of:
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="XA1" library="HyTechDevices" deviceset="ULTIMATE_GPS" device=""/>
 <part name="P7" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470" value="RESISTOR_0603_470"/>
+<part name="D1" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 </parts>
 <sheets>
 <sheet>
@@ -5351,8 +5353,8 @@ Requires ordering of:
 <attribute name="COLOR" x="46.99" y="102.362" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="46.99" y="107.696" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P20" gate="1" x="68.58" y="96.52" smashed="yes">
-<attribute name="VALUE" x="68.58" y="95.25" size="1.27" layer="96" align="top-center"/>
+<instance part="P20" gate="1" x="68.58" y="86.36" smashed="yes">
+<attribute name="VALUE" x="68.58" y="85.09" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P21" gate="1" x="33.02" y="127" smashed="yes">
 <attribute name="VALUE" x="33.02" y="129.54" size="1.27" layer="96" align="bottom-center"/>
@@ -5391,6 +5393,14 @@ Requires ordering of:
 </instance>
 <instance part="P7" gate="1" x="53.34" y="53.34" smashed="yes">
 <attribute name="VALUE" x="53.34" y="52.07" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R14" gate="G$1" x="60.96" y="93.98" smashed="yes">
+<attribute name="NAME" x="59.69" y="95.25" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="59.69" y="92.71" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D1" gate="LED" x="48.26" y="93.98" smashed="yes">
+<attribute name="COLOR" x="46.99" y="92.202" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="46.99" y="97.536" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -5481,13 +5491,17 @@ Requires ordering of:
 <wire x1="68.58" y1="124.46" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="114.3" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="104.14" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="104.14" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="93.98" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <junction x="68.58" y="114.3"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 <junction x="68.58" y="104.14"/>
 <pinref part="P20" gate="1" pin="GND"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="93.98" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
+<junction x="68.58" y="93.98"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -5861,6 +5875,25 @@ Requires ordering of:
 <pinref part="A2" gate="G$1" pin="D8"/>
 <wire x1="139.7" y1="99.06" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
 <label x="147.32" y="99.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GPS_LED" class="0">
+<segment>
+<pinref part="A2" gate="G$1" pin="D4"/>
+<wire x1="139.7" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
+<label x="147.32" y="88.9" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="D1" gate="LED" pin="A"/>
+<wire x1="43.18" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
+<label x="33.02" y="93.98" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="D1" gate="LED" pin="C"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="93.98" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
