@@ -8131,7 +8131,13 @@ Layer: 94 Symbol</description>
 <part name="P13" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P14" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P15" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
+<part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESCRIPTION_1" value="Circuit is used to switch the active power source of 
+the vehicle from the GLV battery to the accumulator"/>
+<attribute name="DESIGNER_BOARD" value="Steven Elias"/>
+<attribute name="DESIGNER_SCHEMATIC" value="Steven Elias"/>
+<attribute name="ENGINEER" value="Steven Elias"/>
+</part>
 <part name="R5" library="HyTechDevicesTemp" deviceset="RESISTOR_SENSE_?_*" device="" technology="WSL40262L000FEB"/>
 <part name="R4" library="HyTechDevicesTemp" deviceset="RESISTOR_SENSE_?_*" device="" technology="WSL40262L000FEB"/>
 <part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13M" value="RESISTOR_0603_1.13M"/>
@@ -8181,14 +8187,14 @@ Layer: 94 Symbol</description>
 <part name="P16" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="J1" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="SOURIAU"/>
 <part name="J3" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="SOURIAU"/>
-<part name="FRAME2" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device=""/>
+<part name="FRAME2" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
+<attribute name="DESIGNER_SCHEMATIC" value="Steven Elias"/>
+<attribute name="ENGINEER" value="Steven Elias"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-17.78" y="-134.62" size="2.54" layer="95">Steven Elias</text>
-<text x="48.514" y="-145.796" size="2.54" layer="95">Circuit is used to switch the active power source of 
-the vehicle from the GLV battery to the accumulator</text>
 <text x="-76.2" y="-12.7" size="1.778" layer="97" rot="R180">DCDC_VICOR:
 OV Rising: 14.44V
 OV Falling: 12.34V
@@ -8202,9 +8208,6 @@ UV Rising: 10.98V
 UV Falling: 9.97V</text>
 <text x="-35.56" y="-73.66" size="1.27" layer="97">tValid = 10.88ms</text>
 <text x="-15.24" y="-73.66" size="1.27" layer="97">tTMR,FLT = 5.644ms</text>
-<text x="38.1" y="-111.76" size="2.54" layer="95">Steven Elias</text>
-<text x="38.1" y="-119.38" size="2.54" layer="95">Steven Elias</text>
-<text x="38.1" y="-127" size="2.54" layer="95">Steven Elias</text>
 <text x="-20.32" y="45.72" size="1.778" layer="97">ILim = 12.5A</text>
 <text x="33.02" y="25.4" size="1.778" layer="97">ILim = 12.5A</text>
 <text x="68.58" y="-10.16" size="1.778" layer="97">VALID1: DCDC_VICOR is within OV/UV for time tValid
@@ -8469,7 +8472,7 @@ FAULT2: Current limit fault on CONVOUT</text>
 <attribute name="REVIEWER_SCHEMATIC" x="80.01" y="-111.76" size="2.54" layer="95"/>
 <attribute name="REVIEWER_BOARD" x="80.01" y="-119.38" size="2.54" layer="95"/>
 <attribute name="REVIEWER_FURTHER" x="80.01" y="-127" size="2.54" layer="95"/>
-<attribute name="DESCRIPTION_1" x="49.53" y="-142.24" size="2.54" layer="95"/>
+<attribute name="DESCRIPTION_1" x="46.99" y="-147.32" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="29.21" y="-147.32" size="2.54" layer="95"/>
 </instance>
 <instance part="R5" gate="G$1" x="35.56" y="17.78" smashed="yes">
