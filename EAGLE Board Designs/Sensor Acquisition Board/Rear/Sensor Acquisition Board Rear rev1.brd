@@ -195,10 +195,10 @@
 Sensor Acquisition Board Rear rev4
 Designed by Bo Han Zhu</text>
 <text x="71.628" y="5.715" size="0.8128" layer="51" rot="R90">Vehicle CAN-Bus</text>
-<text x="56.388" y="5.715" size="0.8128" layer="51" rot="R90">4. Ambient Air Humidity</text>
-<text x="41.148" y="5.715" size="0.8128" layer="51" rot="R90">5. B-L Suspension Linear Pot</text>
-<text x="25.908" y="5.715" size="0.8128" layer="51" rot="R90">6. B-R Suspension Linear Pot</text>
-<text x="10.668" y="5.715" size="0.8128" layer="51" rot="R90">7. Ambient Air Temp</text>
+<text x="56.388" y="5.715" size="0.8128" layer="51" rot="R90">3. Ambient Air Humidity</text>
+<text x="25.908" y="5.715" size="0.8128" layer="51" rot="R90">5. B-L Suspension Linear Pot</text>
+<text x="10.668" y="5.715" size="0.8128" layer="51" rot="R90">6. B-R Suspension Linear Pot</text>
+<text x="41.148" y="5.715" size="0.8128" layer="51" rot="R90">4. Ambient Air Temp</text>
 <text x="58.166" y="42.291" size="0.8128" layer="51" rot="R180">5V</text>
 <text x="58.039" y="39.751" size="0.8128" layer="51" rot="R180">CAN</text>
 </plain>
