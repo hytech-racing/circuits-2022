@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -3231,6 +3231,50 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="-2.794" y1="-3.556" x2="2.794" y2="3.556" layer="39"/>
 <circle x="-3.175" y="-2.54" radius="0.254" width="0" layer="21"/>
 </package>
+<package name="ULTIMATE_GPS">
+<description>Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates - Version 3
+&lt;br&gt;
+Header: 0.1" Pitch Pin Header
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/527/dw-2507303.pdf"&gt;Header&lt;/a&gt;</description>
+<pad name="3.3V" x="-10.16" y="0" drill="1.016" first="yes"/>
+<pad name="EN" x="-7.62" y="0" drill="1.016"/>
+<pad name="VBAT" x="-5.08" y="0" drill="1.016"/>
+<pad name="FIX" x="-2.54" y="0" drill="1.016"/>
+<pad name="TX" x="0" y="0" drill="1.016"/>
+<pad name="RX" x="2.54" y="0" drill="1.016"/>
+<pad name="GND" x="5.08" y="0" drill="1.016"/>
+<pad name="VIN" x="7.62" y="0" drill="1.016"/>
+<pad name="PPS" x="10.16" y="0" drill="1.016"/>
+<circle x="-10.16" y="1.905" radius="0.254" width="0" layer="21"/>
+<rectangle x1="-11.684" y1="-1.524" x2="11.684" y2="1.524" layer="40"/>
+<wire x1="-12.7" y1="-2.032" x2="12.7" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-2.032" x2="12.7" y2="29.464" width="0.127" layer="21"/>
+<wire x1="12.7" y1="29.464" x2="10.16" y2="32.004" width="0.127" layer="21" curve="90"/>
+<wire x1="10.16" y1="32.004" x2="-10.16" y2="32.004" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="32.004" x2="-12.7" y2="29.464" width="0.127" layer="21" curve="90"/>
+<wire x1="-12.7" y1="29.464" x2="-12.7" y2="-2.032" width="0.127" layer="21"/>
+<text x="0" y="-2.54" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="-11.43" y1="1.27" x2="11.43" y2="1.27" width="0.127" layer="21"/>
+<wire x1="11.43" y1="1.27" x2="11.43" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-1.27" x2="-11.43" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="-1.27" x2="-11.43" y2="1.27" width="0.127" layer="21"/>
+<rectangle x1="-13.208" y1="-2.54" x2="13.208" y2="32.512" layer="39"/>
+<hole x="-10.16" y="29.464" drill="3.4"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="39"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="40"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="41"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="42"/>
+<circle x="-10.16" y="29.464" radius="3" width="0" layer="43"/>
+<hole x="10.16" y="29.464" drill="3.4"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="39"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="40"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="41"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="42"/>
+<circle x="10.16" y="29.464" radius="3" width="0" layer="43"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -3383,6 +3427,25 @@ Dashed line is edge of mated connector.</description>
 <pin name="STBY" x="-2.54" y="-12.7" length="short" direction="pas"/>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-18.542" size="1.27" layer="95" align="top-left">&gt;MPN</text>
+</symbol>
+<symbol name="ULTIMATE_GPS">
+<description>Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates - Version 3
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pin name="EN" x="22.86" y="-12.7" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="RXD" x="-2.54" y="-2.54" visible="pin" length="short" direction="in"/>
+<pin name="TXD" x="-2.54" y="-5.08" visible="pin" length="short" direction="out"/>
+<pin name="FIX" x="-2.54" y="-7.62" visible="pin" length="short" direction="out"/>
+<pin name="VIN" x="22.86" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="VBAT" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="3V3" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="PPS" x="-2.54" y="-10.16" visible="pin" length="short" direction="out"/>
+<pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short" direction="pwr"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="20.32" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-15.24" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-16.002" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4928,6 +4991,43 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
+<deviceset name="ULTIMATE_GPS" prefix="XA">
+<description>Adafruit Ultimate GPS Breakout - 66 channel w/10 Hz updates - Version 3
+&lt;br&gt;&lt;a href="https://www.mouser.com/datasheet/2/737/adafruit_ultimate_gps-779243.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Requires ordering of:
+&lt;ul&gt;
+&lt;li&gt;2: 5mm height, 3mm screw standoffs&lt;/li&gt;
+&lt;li&gt;1: Ultimate GPS&lt;/li&gt;
+&lt;li&gt;1: Antenna&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ULTIMATE_GPS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ULTIMATE_GPS">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3.3V"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="FIX" pad="FIX"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="PPS" pad="PPS"/>
+<connect gate="G$1" pin="RXD" pad="RX"/>
+<connect gate="G$1" pin="TXD" pad="TX"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="DW-09-07-G-S-200-ND"/>
+<attribute name="MANUFACTURER" value="Samtec Inc."/>
+<attribute name="MOPN" value="200-DW0907GS200"/>
+<attribute name="MPN" value="DW-09-07-G-S-200"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSupplies">
@@ -5072,10 +5172,18 @@ Requires ordering of:
 <part name="U3" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="XA1" library="HyTechDevices" deviceset="ULTIMATE_GPS" device=""/>
+<part name="P7" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470" value="RESISTOR_0603_470"/>
+<part name="D1" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="R15" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="P9" library="HyTechSupplies" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="197.104" y="10.922" size="2.54" layer="95">Translates 2 Analog Voltage Sensors to CAN and
+ Supplies GPS Information</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="O" x="0" y="0" smashed="yes">
@@ -5084,7 +5192,6 @@ Requires ordering of:
 <attribute name="SHEET" x="259.08" y="2.54" size="2.54" layer="95"/>
 <attribute name="ENGINEER" x="129.54" y="22.86" size="2.54" layer="95"/>
 <attribute name="DESIGNER_FURTHER" x="176.53" y="30.48" size="2.54" layer="95"/>
-<attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
 <attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
 <attribute name="REVIEWER_BOARD" x="227.33" y="38.1" size="2.54" layer="95"/>
 <attribute name="DESIGNER_BOARD" x="176.53" y="38.1" size="2.54" layer="95"/>
@@ -5249,8 +5356,8 @@ Requires ordering of:
 <attribute name="COLOR" x="46.99" y="102.362" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="46.99" y="107.696" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P20" gate="1" x="68.58" y="96.52" smashed="yes">
-<attribute name="VALUE" x="68.58" y="95.25" size="1.27" layer="96" align="top-center"/>
+<instance part="P20" gate="1" x="68.58" y="86.36" smashed="yes">
+<attribute name="VALUE" x="68.58" y="85.09" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P21" gate="1" x="33.02" y="127" smashed="yes">
 <attribute name="VALUE" x="33.02" y="129.54" size="1.27" layer="96" align="bottom-center"/>
@@ -5282,6 +5389,28 @@ Requires ordering of:
 <instance part="R13" gate="G$1" x="170.18" y="76.2" smashed="yes">
 <attribute name="NAME" x="168.91" y="77.47" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="168.91" y="74.93" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="XA1" gate="G$1" x="58.42" y="71.12" smashed="yes">
+<attribute name="NAME" x="58.42" y="71.882" size="1.27" layer="95"/>
+<attribute name="MPN" x="58.42" y="55.118" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="P7" gate="1" x="53.34" y="53.34" smashed="yes">
+<attribute name="VALUE" x="53.34" y="52.07" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R14" gate="G$1" x="60.96" y="93.98" smashed="yes">
+<attribute name="NAME" x="59.69" y="95.25" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="59.69" y="92.71" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="D1" gate="LED" x="48.26" y="93.98" smashed="yes">
+<attribute name="COLOR" x="46.99" y="92.202" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="46.99" y="97.536" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="R15" gate="G$1" x="86.36" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="85.09" y="62.23" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="87.63" y="62.23" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P9" gate="1" x="91.44" y="71.12" smashed="yes">
+<attribute name="VALUE" x="91.44" y="73.66" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -5372,13 +5501,17 @@ Requires ordering of:
 <wire x1="68.58" y1="124.46" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="114.3" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="104.14" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="104.14" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="93.98" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <junction x="68.58" y="114.3"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 <junction x="68.58" y="104.14"/>
 <pinref part="P20" gate="1" pin="GND"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="93.98" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
+<junction x="68.58" y="93.98"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -5388,6 +5521,12 @@ Requires ordering of:
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="139.7" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
 <junction x="165.1" y="139.7"/>
+</segment>
+<segment>
+<pinref part="XA1" gate="G$1" pin="GND"/>
+<pinref part="P7" gate="1" pin="GND"/>
+<wire x1="55.88" y1="58.42" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="58.42" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5444,6 +5583,15 @@ Requires ordering of:
 <wire x1="43.18" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="P21" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="XA1" gate="G$1" pin="VIN"/>
+<wire x1="81.28" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="66.04" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="P9" gate="1" pin="+5V"/>
+<wire x1="86.36" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<junction x="86.36" y="68.58"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -5492,11 +5640,6 @@ Requires ordering of:
 </segment>
 </net>
 <net name="TEENSY_3.3V" class="0">
-<segment>
-<wire x1="139.7" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
-<label x="147.32" y="114.3" size="1.27" layer="95" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="3.3V"/>
-</segment>
 <segment>
 <label x="200.66" y="83.82" size="1.27" layer="95" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="VIO"/>
@@ -5717,6 +5860,56 @@ Requires ordering of:
 <pinref part="U3" gate="G$1" pin="STBY"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="76.2" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPS_RX" class="0">
+<segment>
+<pinref part="XA1" gate="G$1" pin="RXD"/>
+<wire x1="55.88" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
+<label x="50.8" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="A2" gate="G$1" pin="D7"/>
+<wire x1="139.7" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
+<label x="147.32" y="96.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GPS_TX" class="0">
+<segment>
+<pinref part="XA1" gate="G$1" pin="TXD"/>
+<wire x1="55.88" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
+<label x="50.8" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="A2" gate="G$1" pin="D8"/>
+<wire x1="139.7" y1="99.06" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
+<label x="147.32" y="99.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="D1" gate="LED" pin="C"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="93.98" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPS_LED" class="0">
+<segment>
+<pinref part="D1" gate="LED" pin="A"/>
+<wire x1="43.18" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
+<label x="33.02" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<label x="50.8" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="XA1" gate="G$1" pin="FIX"/>
+<wire x1="50.8" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="XA1" gate="G$1" pin="EN"/>
+<wire x1="81.28" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
