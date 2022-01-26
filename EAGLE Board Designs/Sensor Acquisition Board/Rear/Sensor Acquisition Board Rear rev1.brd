@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -191,9 +191,10 @@
 <wire x1="92.71" y1="0" x2="92.71" y2="50.8" width="0" layer="20"/>
 <wire x1="92.71" y1="50.8" x2="0" y2="50.8" width="0" layer="20"/>
 <wire x1="0" y1="50.8" x2="0" y2="0" width="0" layer="20"/>
-<text x="90.424" y="12.573" size="1.016" layer="51" font="vector" rot="R90">HyTech Racing 2022
-Sensor Acquisition Board Rear rev4
-Designed by Bo Han Zhu</text>
+<text x="90.424" y="12.573" size="1.016" layer="21" font="vector" rot="R90">HyTech Racing 2022
+Sensor Acquisition Board Rear rev1
+Designed by Youssef Jaafar
+Based on SAB rev4 by Bo Han Zhu</text>
 <text x="71.628" y="5.715" size="0.8128" layer="51" rot="R90">Vehicle CAN-Bus</text>
 <text x="56.388" y="5.715" size="0.8128" layer="51" rot="R90">3. Ambient Air Humidity</text>
 <text x="25.908" y="5.715" size="0.8128" layer="51" rot="R90">5. B-L Suspension Linear Pot</text>
@@ -201,6 +202,7 @@ Designed by Bo Han Zhu</text>
 <text x="41.148" y="5.715" size="0.8128" layer="51" rot="R90">4. Ambient Air Temp</text>
 <text x="58.166" y="42.291" size="0.8128" layer="51" rot="R180">5V</text>
 <text x="58.039" y="39.751" size="0.8128" layer="51" rot="R180">CAN</text>
+<text x="17.399" y="38.1" size="2.032" layer="21" font="vector" rot="R90" align="center">4.0</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -4288,7 +4290,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Vishay Vitramon" x="10.16" y="-10.16" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="77-VJ0603Y104JXQPBC" x="10.16" y="-10.16" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="VJ0603Y104JXQPW1BC" x="10.16" y="-10.16" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="75.807" y="38.862" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="76.95" y="36.83" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="TOLERANCE" value="5%" x="10.16" y="-10.16" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="10.16" y="-10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -4298,7 +4300,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Samsung Electro-Mechanics" x="127.508" y="-36.449" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="187-CL10B105KA8NNNC" x="127.508" y="-36.449" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="CL10B105KA8NNNC" x="127.508" y="-36.449" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="71.501" y="29.325" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="69.088" y="30.341" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="127.508" y="-36.449" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="25V" x="127.508" y="-36.449" size="1.778" layer="27" display="off"/>
 </element>
@@ -4308,7 +4310,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Samsung Electro-Mechanics" x="119.888" y="-34.163" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="187-CL10A475KP8NNNC" x="119.888" y="-34.163" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="CL10A475KP8NNNC" x="119.888" y="-34.163" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="71.12" y="31.611" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="69.088" y="32.627" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="119.888" y="-34.163" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="119.888" y="-34.163" size="1.778" layer="27" display="off"/>
 </element>
@@ -4318,7 +4320,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Yageo" x="12.7" y="-17.78" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="603-CC603KRX7R6BB105" x="12.7" y="-17.78" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="CC0603KRX7R6BB105" x="12.7" y="-17.78" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="78.347" y="38.862" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="79.49" y="36.83" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="12.7" y="-17.78" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="12.7" y="-17.78" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -4357,7 +4359,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="YAGEO" x="77.47" y="22.86" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="603-RC0603FR-130RL" x="77.47" y="22.86" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="RC0603FR-130RL" x="77.47" y="22.86" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="77.47" y="21.463" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="77.47" y="22.098" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="J6" library="HyTechDevices" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04" value="CONNECTOR-SENSOR_NF_S_RA_BLACK" x="31.75" y="15.24" smashed="yes">
 <attribute name="DKPN" value="1054051304-ND" x="31.75" y="15.24" size="1.778" layer="27" display="off"/>
@@ -4781,7 +4783,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="74.676" y1="26.416" x2="74.041" y2="26.416" width="0.254" layer="1"/>
 <wire x1="75.565" y1="25.527" x2="74.676" y2="26.416" width="0.254" layer="1"/>
 </signal>
-<signal name="SENSOR_4">
+<signal name="SENSOR_3">
 <contactref element="R7" pad="1"/>
 <contactref element="R8" pad="2"/>
 <contactref element="A2" pad="D17"/>
@@ -4789,7 +4791,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="62.904" y1="22.186" x2="64.516" y2="22.186" width="0.254" layer="1"/>
 <wire x1="39.37" y1="45.72" x2="62.904" y2="22.186" width="0.254" layer="1"/>
 </signal>
-<signal name="SENSOR_5">
+<signal name="SENSOR_4">
 <contactref element="R9" pad="1"/>
 <contactref element="R10" pad="2"/>
 <contactref element="A2" pad="D18"/>
@@ -4798,7 +4800,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="45.72" y1="36.83" x2="45.72" y2="25.869" width="0.254" layer="1"/>
 <wire x1="51.308" y1="22.186" x2="49.403" y2="22.186" width="0.254" layer="1"/>
 </signal>
-<signal name="SENSOR_6">
+<signal name="SENSOR_5">
 <contactref element="R11" pad="1"/>
 <contactref element="R12" pad="2"/>
 <contactref element="A2" pad="D19"/>
@@ -4807,7 +4809,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="35.56" y1="44.45" x2="35.56" y2="22.694" width="0.254" layer="1"/>
 <wire x1="36.068" y1="22.186" x2="34.036" y2="22.186" width="0.254" layer="1"/>
 </signal>
-<signal name="SENSOR_7">
+<signal name="SENSOR_6">
 <contactref element="R13" pad="1"/>
 <contactref element="R14" pad="2"/>
 <contactref element="A2" pad="D20"/>
@@ -4815,9 +4817,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="18.669" y1="22.186" x2="20.32" y2="23.837" width="0.254" layer="1"/>
 <wire x1="20.32" y1="23.837" x2="20.32" y2="34.29" width="0.254" layer="1"/>
 <wire x1="20.32" y1="34.29" x2="31.75" y2="45.72" width="0.254" layer="1"/>
-</signal>
-<signal name="SENSOR_8">
-<contactref element="A2" pad="D21"/>
 </signal>
 <signal name="N$5">
 <contactref element="R13" pad="2"/>

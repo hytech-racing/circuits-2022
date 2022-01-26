@@ -5478,7 +5478,7 @@ Requires ordering of:
 <wire x1="203.2" y1="114.3" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SENSOR_4" class="0">
+<net name="SENSOR_3" class="0">
 <segment>
 <wire x1="119.38" y1="124.46" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
 <label x="111.76" y="124.46" size="1.27" layer="95" rot="MR0" xref="yes"/>
@@ -5495,7 +5495,7 @@ Requires ordering of:
 <label x="96.52" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="SENSOR_5" class="0">
+<net name="SENSOR_4" class="0">
 <segment>
 <wire x1="119.38" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <label x="111.76" y="121.92" size="1.27" layer="95" rot="MR0" xref="yes"/>
@@ -5512,7 +5512,7 @@ Requires ordering of:
 <label x="144.78" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="SENSOR_6" class="0">
+<net name="SENSOR_5" class="0">
 <segment>
 <wire x1="119.38" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
 <label x="111.76" y="119.38" size="1.27" layer="95" rot="MR0" xref="yes"/>
@@ -5529,7 +5529,7 @@ Requires ordering of:
 <label x="190.5" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="SENSOR_7" class="0">
+<net name="SENSOR_6" class="0">
 <segment>
 <wire x1="119.38" y1="116.84" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
 <label x="111.76" y="116.84" size="1.27" layer="95" rot="MR0" xref="yes"/>
@@ -5544,13 +5544,6 @@ Requires ordering of:
 <junction x="241.3" y="195.58"/>
 <wire x1="241.3" y1="200.66" x2="238.76" y2="200.66" width="0.1524" layer="91"/>
 <label x="238.76" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="SENSOR_8" class="0">
-<segment>
-<wire x1="119.38" y1="114.3" x2="111.76" y2="114.3" width="0.1524" layer="91"/>
-<label x="111.76" y="114.3" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="A7"/>
 </segment>
 </net>
 <net name="N$5" class="0">
