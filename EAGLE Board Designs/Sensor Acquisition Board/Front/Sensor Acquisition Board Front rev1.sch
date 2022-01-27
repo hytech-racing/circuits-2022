@@ -3275,6 +3275,31 @@ Header: 0.1" Pitch Pin Header
 <circle x="10.16" y="29.464" radius="3" width="0" layer="42"/>
 <circle x="10.16" y="29.464" radius="3" width="0" layer="43"/>
 </package>
+<package name="SOURIAU_12-04">
+<description>SOURIAU 4 Pin
+&lt;br&gt;
+&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1-1773721-9_as_technical&amp;DocType=DS&amp;DocLang=EN"&gt;Footprint&lt;/a&gt;</description>
+<circle x="0" y="0" radius="8.72" width="0.127" layer="22"/>
+<pad name="1" x="0" y="3.81" drill="2"/>
+<pad name="2" x="3.7084" y="0.889" drill="2"/>
+<pad name="3" x="0" y="-2.1082" drill="2"/>
+<pad name="4" x="-3.7084" y="0.889" drill="2"/>
+<circle x="0" y="0" radius="13" width="0.127" layer="21"/>
+<hole x="10.2884" y="10.2884" drill="3.4"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="39"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="40"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="41"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0" layer="42"/>
+<hole x="-10.2884" y="-10.2884" drill="3.4"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="39"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="40"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="41"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0" layer="42"/>
+<circle x="0" y="0" radius="13" width="0" layer="39"/>
+<circle x="0" y="0" radius="8.72" width="0" layer="40"/>
+<text x="0" y="8.89" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center">&gt;NAME</text>
+<text x="0" y="13.97" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -3359,18 +3384,21 @@ Header: 0.1" Pitch Pin Header
 <wire x1="-2.54" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="CONNECTOR_SENSOR_2CHANNEL">
-<description>Standard Connector for Sensors/Interface</description>
+<symbol name="CONNECTOR_04">
 <wire x1="7.62" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<text x="0" y="0.635" size="1.27" layer="95">&gt;NAME</text>
-<pin name="GND" x="10.16" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="CH2" x="10.16" y="-7.62" visible="pin" length="short" direction="out" swaplevel="1" rot="R180"/>
-<pin name="CH1" x="10.16" y="-5.08" visible="pin" length="short" direction="out" swaplevel="1" rot="R180"/>
-<pin name="VDD" x="10.16" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
 <text x="0" y="-13.335" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="TEENSY_4.0">
 <description>Teensy 4.0 Simple
@@ -4849,56 +4877,37 @@ Header: 0.1" Pitch Pin Header
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONNECTOR-SENSOR_?_*" prefix="J">
-<description>HyTech Sensor Connector</description>
+<deviceset name="CONNECTOR-4_?_*" prefix="J">
 <gates>
-<gate name="G$1" symbol="CONNECTOR_SENSOR_2CHANNEL" x="0" y="0"/>
+<gate name="G$1" symbol="CONNECTOR_04" x="0" y="0"/>
 </gates>
 <devices>
-<device name="NF_S_RA" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_04">
+<device name="SOURIAU" package="SOURIAU_12-04">
 <connects>
-<connect gate="G$1" pin="CH1" pad="3"/>
-<connect gate="G$1" pin="CH2" pad="4"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name="BLACK">
-<attribute name="DKPN" value="1054051304-ND"/>
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="538-105405-1304"/>
-<attribute name="MPN" value="105405-1304"/>
-</technology>
-</technologies>
-</device>
-<device name="NF_T_V" package="MOLEX_NANOFIT_PTH_04">
-<connects>
-<connect gate="G$1" pin="CH1" pad="3"/>
-<connect gate="G$1" pin="CH2" pad="4"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-</connects>
-<technologies>
-<technology name="BLACK">
-<attribute name="DKPN" value="900-1054291304TR-ND"/>
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="538-105429-1304"/>
-<attribute name="MPN" value="105429-1304"/>
+<technology name="">
+<attribute name="MANUFACTURER" value="Souriau"/>
+<attribute name="MPN" value="8STA21204PN"/>
 </technology>
 </technologies>
 </device>
 <device name="μF_S_RA" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_04_DUAL">
 <connects>
-<connect gate="G$1" pin="CH1" pad="3"/>
-<connect gate="G$1" pin="CH2" pad="4"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="WM1832CT-ND"/>
 <attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MOPN" value="538-43045-0411"/>
+<attribute name="MOPN" value="538-0430450411"/>
 <attribute name="MPN" value="0430450411"/>
 </technology>
 </technologies>
@@ -5135,8 +5144,8 @@ Requires ordering of:
 <part name="P6" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P8" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="J10" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603"/>
-<part name="J1" library="HyTechDevices" deviceset="CONNECTOR-SENSOR_?_*" device="NF_S_RA" technology="BLACK"/>
-<part name="J2" library="HyTechDevices" deviceset="CONNECTOR-SENSOR_?_*" device="NF_S_RA" technology="BLACK"/>
+<part name="J1" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
+<part name="J2" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
 <part name="P4" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P5" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P16" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -5151,7 +5160,7 @@ Requires ordering of:
 <part name="P+26" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="C14" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
 <part name="P13" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="J3" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="NF_S_RA" technology="BLACK"/>
+<part name="J3" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="μF_S_RA" value="CONNECTOR-CAN_μF_S_RA_"/>
 <part name="P14" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P18" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
@@ -5167,7 +5176,7 @@ Requires ordering of:
 <part name="P21" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="240"/>
-<part name="J4" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="NF_S_RA" technology="BLACK"/>
+<part name="J4" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="μF_S_RA" value="CONNECTOR-CAN_μF_S_RA_"/>
 <part name="U2" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
 <part name="U3" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
@@ -5461,7 +5470,7 @@ Requires ordering of:
 <pinref part="J4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="GND"/>
+<pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="132.08" y1="180.34" x2="129.54" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="180.34" x2="129.54" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="P17" gate="1" pin="GND"/>
@@ -5471,7 +5480,7 @@ Requires ordering of:
 <junction x="129.54" y="180.34"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="4"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="185.42" x2="63.5" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="180.34" x2="83.82" y2="180.34" width="0.1524" layer="91"/>
@@ -5556,13 +5565,13 @@ Requires ordering of:
 <pinref part="U3" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="VDD"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="187.96" x2="83.82" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="187.96" x2="83.82" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="P4" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="VDD"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="187.96" x2="129.54" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="187.96" x2="129.54" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="P5" gate="1" pin="+5V"/>
@@ -5650,6 +5659,11 @@ Requires ordering of:
 <pinref part="U2" gate="G$1" pin="VIO"/>
 <wire x1="198.12" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="A2" gate="G$1" pin="3.3V"/>
+<wire x1="139.7" y1="114.3" x2="142.24" y2="114.3" width="0.1524" layer="91"/>
+<label x="142.24" y="114.3" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SENSOR_1" class="0">
 <segment>
@@ -5688,9 +5702,9 @@ Requires ordering of:
 <net name="N$8" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="J1" gate="G$1" pin="CH1"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="185.42" x2="86.36" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="CH2"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="86.36" y1="185.42" x2="86.36" y2="182.88" width="0.1524" layer="91"/>
 <junction x="86.36" y="185.42"/>
 </segment>
@@ -5698,9 +5712,9 @@ Requires ordering of:
 <net name="N$11" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="J2" gate="G$1" pin="CH1"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="185.42" x2="132.08" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="CH2"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="132.08" y1="185.42" x2="132.08" y2="182.88" width="0.1524" layer="91"/>
 <junction x="132.08" y="185.42"/>
 </segment>
