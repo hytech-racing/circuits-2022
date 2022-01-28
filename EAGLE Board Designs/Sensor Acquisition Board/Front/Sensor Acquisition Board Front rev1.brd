@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -195,14 +195,14 @@
 Sensor Acquisition Board Front rev1
 Designed by Youssef Jaafar
 Based on SAB rev4 by Bo Han Zhu</text>
-<text x="62.738" y="3.175" size="0.8128" layer="51" rot="R90">Vehicle CAN-Bus</text>
-<text x="9.398" y="3.175" size="0.8128" layer="51" rot="R90">1. F-L Suspension Linear Pot</text>
-<text x="27.178" y="3.175" size="0.8128" layer="51" rot="R90">2. F-R Suspension Linear Pot</text>
-<text x="58.42" y="48.26" size="0.8128" layer="51" rot="R180">5V</text>
-<text x="58.42" y="45.72" size="0.8128" layer="51" rot="R180">IMU CAN</text>
-<text x="44.958" y="3.175" size="0.8128" layer="51" rot="R90">IMU CAN-Bus</text>
-<text x="58.42" y="43.18" size="0.8128" layer="51" rot="R180">Vehicle CAN</text>
-<text x="58.42" y="40.64" size="0.8128" layer="51" rot="R180">GPS</text>
+<text x="62.738" y="3.175" size="0.8128" layer="21" rot="R90">Vehicle CAN-Bus</text>
+<text x="9.398" y="3.175" size="0.8128" layer="21" rot="R90">1. F-L Suspension Linear Pot</text>
+<text x="27.178" y="3.175" size="0.8128" layer="21" rot="R90">2. F-R Suspension Linear Pot</text>
+<text x="58.42" y="48.26" size="0.8128" layer="21" rot="R180">5V</text>
+<text x="58.42" y="45.72" size="0.8128" layer="21" rot="R180">IMU CAN</text>
+<text x="44.958" y="3.175" size="0.8128" layer="21" rot="R90">IMU CAN-Bus</text>
+<text x="58.42" y="43.18" size="0.8128" layer="21" rot="R180">Vehicle CAN</text>
+<text x="58.42" y="40.64" size="0.8128" layer="21" rot="R180">GPS</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -4391,7 +4391,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Molex" x="55.88" y="-16.51" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="538-0430450411" x="17.78" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0430450411" x="55.88" y="-16.51" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="17.78" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="25.146" y="1.27" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="J10" library="HyTechDevices" package="0603-RES" value="JUMPER_0603_" x="76.2" y="24.13" smashed="yes" rot="R180">
 <attribute name="DKPN" value="13-RC0603FR-130RLTR-ND" x="76.2" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4405,7 +4405,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Molex" x="63.5" y="-53.34" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="538-0430450411" x="35.56" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0430450411" x="63.5" y="-53.34" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="35.56" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="42.926" y="1.27" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="U1" library="HyTechDevices" package="SOT-223" value="VOLTAGE_REGULATOR_SOT-223_5V" x="70.993" y="45.466" smashed="yes">
 <attribute name="DKPN" value="497-17240-1-ND" x="97.663" y="-24.384" size="1.778" layer="27" display="off"/>
@@ -4496,7 +4496,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Molex" x="-6.35" y="-2.54" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="538-43045-0411" x="53.34" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0430450411" x="-6.35" y="-2.54" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="53.34" y="-5.08" size="0.8128" layer="25" font="vector" align="top-center"/>
+<attribute name="NAME" x="60.706" y="1.27" size="0.8128" layer="25" font="vector" align="top-center"/>
 </element>
 <element name="R3" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_240" x="40.64" y="21.336" smashed="yes" rot="R90">
 <attribute name="DKPN" value="311-240HRCT-ND" x="30.48" y="-57.404" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4618,7 +4618,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Molex" x="71.12" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="538-43045-0411" x="71.12" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0430450411" x="71.12" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="71.12" y="-5.08" size="0.8128" layer="25" font="vector" align="top-center"/>
+<attribute name="NAME" x="78.486" y="1.27" size="0.8128" layer="25" font="vector" align="top-center"/>
 </element>
 <element name="U2" library="HyTechDevices" package="SOIC-08(NARROW,0.15&quot;)" value="MCP2562FD" x="62.23" y="29.21" smashed="yes" rot="R180">
 <attribute name="ALT_DKPN" value="MCP2562-E/SN-ND" x="62.23" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>

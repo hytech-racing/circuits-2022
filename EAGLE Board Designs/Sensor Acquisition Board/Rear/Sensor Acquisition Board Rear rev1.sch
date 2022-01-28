@@ -5041,20 +5041,20 @@ Requires ordering of:
 <part name="P+1" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="C2" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
 <part name="P3" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="J9" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="μF_S_RA" value="CONNECTOR-CAN_μF_S_RA_"/>
+<part name="J6" library="HyTechDevices" deviceset="CONNECTOR-CAN_?_*" device="μF_S_RA" value="CONNECTOR-CAN_μF_S_RA_"/>
 <part name="P6" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P8" library="HyTechSupplies" deviceset="+12V" device=""/>
-<part name="J10" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603"/>
-<part name="R18" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470" value="RESISTOR_0603_470"/>
+<part name="J1" library="HyTechDevices" deviceset="JUMPER_?_*" device="0603"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470" value="RESISTOR_0603_470"/>
 <part name="D1" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="D2" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="P9" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P10" library="HyTechSupplies" deviceset="+5V" device=""/>
-<part name="J6" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
-<part name="J5" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
-<part name="J7" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
+<part name="J3" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
 <part name="J4" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
+<part name="J2" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
+<part name="J5" library="HyTechDevices" deviceset="CONNECTOR-4_?_*" device="μF_S_RA"/>
 <part name="P7" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P11" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P13" library="HyTechSupplies" deviceset="+5V" device=""/>
@@ -5063,17 +5063,17 @@ Requires ordering of:
 <part name="P19" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P21" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P22" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
-<part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
-<part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
-<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
-<part name="A2" library="HyTechDevices" deviceset="TEENSY_4.0" device=""/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
+<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
+<part name="A1" library="HyTechDevices" deviceset="TEENSY_4.0" device=""/>
 <part name="U2" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -5141,7 +5141,7 @@ Requires ordering of:
 <instance part="P3" gate="1" x="170.18" y="99.06" smashed="yes">
 <attribute name="VALUE" x="170.18" y="97.79" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="J9" gate="G$1" x="254" y="116.84" smashed="yes" rot="MR0">
+<instance part="J6" gate="G$1" x="254" y="116.84" smashed="yes" rot="MR0">
 <attribute name="NAME" x="254" y="117.475" size="1.27" layer="95" rot="MR0"/>
 <attribute name="MPN" x="254" y="103.505" size="1.27" layer="96" rot="MR0" align="top-left"/>
 </instance>
@@ -5151,14 +5151,14 @@ Requires ordering of:
 <instance part="P8" gate="1" x="238.76" y="121.92" smashed="yes">
 <attribute name="VALUE" x="238.76" y="125.73" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="J10" gate="G$1" x="220.98" y="116.84" smashed="yes">
+<instance part="J1" gate="G$1" x="220.98" y="116.84" smashed="yes">
 <attribute name="NAME" x="220.98" y="119.38" size="1.27" layer="95"/>
 </instance>
-<instance part="R18" gate="G$1" x="71.12" y="124.46" smashed="yes">
+<instance part="R1" gate="G$1" x="71.12" y="124.46" smashed="yes">
 <attribute name="NAME" x="69.85" y="125.73" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="69.85" y="123.19" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R19" gate="G$1" x="71.12" y="114.3" smashed="yes">
+<instance part="R2" gate="G$1" x="71.12" y="114.3" smashed="yes">
 <attribute name="NAME" x="69.85" y="115.57" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="69.85" y="113.03" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -5176,19 +5176,19 @@ Requires ordering of:
 <instance part="P10" gate="1" x="43.18" y="127" smashed="yes">
 <attribute name="VALUE" x="43.18" y="129.54" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="J6" gate="G$1" x="215.9" y="200.66" smashed="yes" rot="MR0">
+<instance part="J3" gate="G$1" x="215.9" y="200.66" smashed="yes" rot="MR0">
 <attribute name="NAME" x="215.9" y="201.295" size="1.27" layer="95" rot="MR0"/>
 <attribute name="MPN" x="215.9" y="187.325" size="1.27" layer="96" rot="MR0" align="top-left"/>
 </instance>
-<instance part="J5" gate="G$1" x="170.18" y="200.66" smashed="yes" rot="MR0">
+<instance part="J4" gate="G$1" x="170.18" y="200.66" smashed="yes" rot="MR0">
 <attribute name="NAME" x="170.18" y="201.295" size="1.27" layer="95" rot="MR0"/>
 <attribute name="MPN" x="170.18" y="187.325" size="1.27" layer="96" rot="MR0" align="top-left"/>
 </instance>
-<instance part="J7" gate="G$1" x="264.16" y="200.66" smashed="yes" rot="MR0">
+<instance part="J2" gate="G$1" x="264.16" y="200.66" smashed="yes" rot="MR0">
 <attribute name="NAME" x="264.16" y="201.295" size="1.27" layer="95" rot="MR0"/>
 <attribute name="MPN" x="264.16" y="187.325" size="1.27" layer="96" rot="MR0" align="top-left"/>
 </instance>
-<instance part="J4" gate="G$1" x="121.92" y="200.66" smashed="yes" rot="MR0">
+<instance part="J5" gate="G$1" x="121.92" y="200.66" smashed="yes" rot="MR0">
 <attribute name="NAME" x="121.92" y="201.295" size="1.27" layer="95" rot="MR0"/>
 <attribute name="MPN" x="121.92" y="187.325" size="1.27" layer="96" rot="MR0" align="top-left"/>
 </instance>
@@ -5216,11 +5216,11 @@ Requires ordering of:
 <instance part="P22" gate="1" x="109.22" y="180.34" smashed="yes">
 <attribute name="VALUE" x="109.22" y="179.07" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R7" gate="G$1" x="106.68" y="195.58" smashed="yes">
+<instance part="R11" gate="G$1" x="106.68" y="195.58" smashed="yes">
 <attribute name="NAME" x="105.41" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="105.41" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R8" gate="G$1" x="93.98" y="195.58" smashed="yes">
+<instance part="R10" gate="G$1" x="93.98" y="195.58" smashed="yes">
 <attribute name="NAME" x="92.71" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="92.71" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -5228,32 +5228,32 @@ Requires ordering of:
 <attribute name="NAME" x="153.67" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="153.67" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R10" gate="G$1" x="142.24" y="195.58" smashed="yes">
+<instance part="R8" gate="G$1" x="142.24" y="195.58" smashed="yes">
 <attribute name="NAME" x="140.97" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="140.97" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R11" gate="G$1" x="200.66" y="195.58" smashed="yes">
+<instance part="R7" gate="G$1" x="200.66" y="195.58" smashed="yes">
 <attribute name="NAME" x="199.39" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="199.39" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R12" gate="G$1" x="187.96" y="195.58" smashed="yes">
+<instance part="R6" gate="G$1" x="187.96" y="195.58" smashed="yes">
 <attribute name="NAME" x="186.69" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="186.69" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R13" gate="G$1" x="248.92" y="195.58" smashed="yes">
+<instance part="R5" gate="G$1" x="248.92" y="195.58" smashed="yes">
 <attribute name="NAME" x="247.65" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="247.65" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R14" gate="G$1" x="236.22" y="195.58" smashed="yes">
+<instance part="R4" gate="G$1" x="236.22" y="195.58" smashed="yes">
 <attribute name="NAME" x="234.95" y="196.85" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="234.95" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="A2" gate="G$1" x="121.92" y="144.78" smashed="yes"/>
+<instance part="A1" gate="G$1" x="121.92" y="144.78" smashed="yes"/>
 <instance part="U2" gate="G$1" x="182.88" y="119.38" smashed="yes">
 <attribute name="NAME" x="182.88" y="120.142" size="1.27" layer="95"/>
 <attribute name="MPN" x="182.88" y="100.838" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="R1" gate="G$1" x="175.26" y="106.68" smashed="yes">
+<instance part="R3" gate="G$1" x="175.26" y="106.68" smashed="yes">
 <attribute name="NAME" x="173.99" y="107.95" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="173.99" y="105.41" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -5276,7 +5276,7 @@ Requires ordering of:
 <wire x1="119.38" y1="101.6" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="101.6" x2="114.3" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="P2" gate="1" pin="GND"/>
-<pinref part="A2" gate="G$1" pin="GND"/>
+<pinref part="A1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -5288,57 +5288,57 @@ Requires ordering of:
 <junction x="213.36" y="124.46"/>
 </segment>
 <segment>
-<pinref part="J9" gate="G$1" pin="GND"/>
+<pinref part="J6" gate="G$1" pin="GND"/>
 <wire x1="241.3" y1="106.68" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="106.68" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="P6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="124.46" x2="78.74" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="124.46" x2="78.74" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="114.3" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="114.3" x2="78.74" y2="114.3" width="0.1524" layer="91"/>
 <junction x="78.74" y="114.3"/>
 <pinref part="P9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="4"/>
+<pinref part="J4" gate="G$1" pin="4"/>
 <wire x1="160.02" y1="190.5" x2="157.48" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="190.5" x2="157.48" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="P18" gate="1" pin="GND"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="195.58" x2="137.16" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="190.5" x2="157.48" y2="190.5" width="0.1524" layer="91"/>
 <junction x="157.48" y="190.5"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="4"/>
+<pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="254" y1="190.5" x2="251.46" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="190.5" x2="251.46" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="P19" gate="1" pin="GND"/>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="231.14" y1="195.58" x2="231.14" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="190.5" x2="251.46" y2="190.5" width="0.1524" layer="91"/>
 <junction x="251.46" y="190.5"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="4"/>
+<pinref part="J3" gate="G$1" pin="4"/>
 <wire x1="205.74" y1="190.5" x2="203.2" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="190.5" x2="203.2" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="P21" gate="1" pin="GND"/>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="195.58" x2="182.88" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="190.5" x2="203.2" y2="190.5" width="0.1524" layer="91"/>
 <junction x="203.2" y="190.5"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="4"/>
+<pinref part="J5" gate="G$1" pin="4"/>
 <wire x1="111.76" y1="190.5" x2="109.22" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="190.5" x2="109.22" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="P22" gate="1" pin="GND"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="195.58" x2="88.9" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="190.5" x2="109.22" y2="190.5" width="0.1524" layer="91"/>
 <junction x="109.22" y="190.5"/>
@@ -5346,7 +5346,7 @@ Requires ordering of:
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="180.34" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="106.68" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="P3" gate="1" pin="GND"/>
 <wire x1="170.18" y1="104.14" x2="170.18" y2="101.6" width="0.1524" layer="91"/>
@@ -5366,7 +5366,7 @@ Requires ordering of:
 <pinref part="P1" gate="1" pin="+5V"/>
 <wire x1="147.32" y1="142.24" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="139.7" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="A2" gate="G$1" pin="VIN"/>
+<pinref part="A1" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -5385,25 +5385,25 @@ Requires ordering of:
 <pinref part="P10" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="1"/>
+<pinref part="J4" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="198.12" x2="157.48" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="198.12" x2="157.48" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="P7" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="254" y1="198.12" x2="251.46" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="198.12" x2="251.46" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="P11" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="1"/>
+<pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="200.66" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="P13" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="198.12" x2="109.22" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="198.12" x2="109.22" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="P14" gate="1" pin="+5V"/>
@@ -5419,7 +5419,7 @@ Requires ordering of:
 <pinref part="P+4" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="J9" gate="G$1" pin="+12V"/>
+<pinref part="J6" gate="G$1" pin="+12V"/>
 <wire x1="241.3" y1="114.3" x2="238.76" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="114.3" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="P8" gate="1" pin="+12V"/>
@@ -5427,11 +5427,11 @@ Requires ordering of:
 </net>
 <net name="CANH" class="0">
 <segment>
-<pinref part="J9" gate="G$1" pin="CANH"/>
+<pinref part="J6" gate="G$1" pin="CANH"/>
 <label x="203.2" y="111.76" size="1.778" layer="95"/>
 <wire x1="203.2" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="111.76" x2="241.3" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="J10" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="114.3" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
 <junction x="220.98" y="111.76"/>
 <pinref part="U2" gate="G$1" pin="CANH"/>
@@ -5439,11 +5439,11 @@ Requires ordering of:
 </net>
 <net name="CANL" class="0">
 <segment>
-<pinref part="J9" gate="G$1" pin="CANL"/>
+<pinref part="J6" gate="G$1" pin="CANL"/>
 <wire x1="203.2" y1="109.22" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
 <label x="203.2" y="109.22" size="1.778" layer="95"/>
 <wire x1="226.06" y1="109.22" x2="241.3" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="J10" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="114.3" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
 <junction x="226.06" y="109.22"/>
 <pinref part="U2" gate="G$1" pin="CANL"/>
@@ -5453,7 +5453,7 @@ Requires ordering of:
 <segment>
 <wire x1="144.78" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
 <label x="152.4" y="114.3" size="1.27" layer="95" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="D5"/>
+<pinref part="A1" gate="G$1" pin="D5"/>
 </segment>
 <segment>
 <pinref part="D2" gate="LED" pin="A"/>
@@ -5464,14 +5464,14 @@ Requires ordering of:
 <net name="N$1" class="0">
 <segment>
 <pinref part="D1" gate="LED" pin="C"/>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="D2" gate="LED" pin="C"/>
-<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5479,7 +5479,7 @@ Requires ordering of:
 <segment>
 <wire x1="144.78" y1="137.16" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
 <label x="152.4" y="137.16" size="1.27" layer="95" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="3.3V"/>
+<pinref part="A1" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <label x="205.74" y="114.3" size="1.27" layer="95" xref="yes"/>
@@ -5491,12 +5491,12 @@ Requires ordering of:
 <segment>
 <wire x1="119.38" y1="124.46" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
 <label x="111.76" y="124.46" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="A3"/>
+<pinref part="A1" gate="G$1" pin="A3"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="195.58" x2="99.06" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="195.58" x2="96.52" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="195.58" x2="99.06" y2="200.66" width="0.1524" layer="91"/>
 <junction x="99.06" y="195.58"/>
@@ -5508,12 +5508,12 @@ Requires ordering of:
 <segment>
 <wire x1="119.38" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <label x="111.76" y="121.92" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="A4"/>
+<pinref part="A1" gate="G$1" pin="A4"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="195.58" x2="147.32" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="195.58" x2="144.78" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="195.58" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
 <junction x="147.32" y="195.58"/>
@@ -5525,12 +5525,12 @@ Requires ordering of:
 <segment>
 <wire x1="119.38" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
 <label x="111.76" y="119.38" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="A5"/>
+<pinref part="A1" gate="G$1" pin="A5"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="195.58" x2="193.04" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="195.58" x2="190.5" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="195.58" x2="193.04" y2="200.66" width="0.1524" layer="91"/>
 <junction x="193.04" y="195.58"/>
@@ -5542,12 +5542,12 @@ Requires ordering of:
 <segment>
 <wire x1="119.38" y1="116.84" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
 <label x="111.76" y="116.84" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="A6"/>
+<pinref part="A1" gate="G$1" pin="A6"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="195.58" x2="241.3" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="195.58" x2="238.76" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="195.58" x2="241.3" y2="200.66" width="0.1524" layer="91"/>
 <junction x="241.3" y="195.58"/>
@@ -5557,10 +5557,10 @@ Requires ordering of:
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="J7" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="195.58" x2="254" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="J7" gate="G$1" pin="3"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="254" y1="195.58" x2="254" y2="193.04" width="0.1524" layer="91"/>
 <junction x="254" y="195.58"/>
 </segment>
@@ -5568,29 +5568,29 @@ Requires ordering of:
 <net name="N$6" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="J5" gate="G$1" pin="2"/>
+<pinref part="J4" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="195.58" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="3"/>
+<pinref part="J4" gate="G$1" pin="3"/>
 <wire x1="160.02" y1="195.58" x2="160.02" y2="193.04" width="0.1524" layer="91"/>
 <junction x="160.02" y="195.58"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="J6" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="195.58" x2="205.74" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="J6" gate="G$1" pin="3"/>
+<pinref part="J3" gate="G$1" pin="3"/>
 <wire x1="205.74" y1="195.58" x2="205.74" y2="193.04" width="0.1524" layer="91"/>
 <junction x="205.74" y="195.58"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="J4" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="195.58" x2="111.76" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="3"/>
+<pinref part="J5" gate="G$1" pin="3"/>
 <wire x1="111.76" y1="195.58" x2="111.76" y2="193.04" width="0.1524" layer="91"/>
 <junction x="111.76" y="195.58"/>
 </segment>
@@ -5599,7 +5599,7 @@ Requires ordering of:
 <segment>
 <wire x1="144.78" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 <label x="152.4" y="111.76" size="1.27" layer="95" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="D4"/>
+<pinref part="A1" gate="G$1" pin="D4"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="109.22" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
@@ -5611,7 +5611,7 @@ Requires ordering of:
 <segment>
 <wire x1="144.78" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
 <label x="152.4" y="109.22" size="1.27" layer="95" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="D3"/>
+<pinref part="A1" gate="G$1" pin="D3"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
@@ -5622,7 +5622,7 @@ Requires ordering of:
 <net name="N$3" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="STBY"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="106.68" x2="177.8" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
