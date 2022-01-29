@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -202,7 +202,7 @@ Based on SAB rev4 by Bo Han Zhu</text>
 <text x="41.021" y="19.05" size="0.8128" layer="21">4. Ambient Air Temp</text>
 <text x="58.166" y="42.291" size="0.8128" layer="21" rot="R180">5V</text>
 <text x="58.039" y="39.751" size="0.8128" layer="21" rot="R180">CAN</text>
-<text x="17.399" y="38.1" size="2.032" layer="21" font="vector" rot="R90" align="center">4.0</text>
+<text x="17.399" y="38.1" size="2.032" layer="21" font="vector" rot="R90" align="center">3.2</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -4532,8 +4532,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="VOLTAGE_CONTINUOUS" value="34.64V" x="18.669" y="21.336" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLTAGE_MAX" value="75V" x="18.669" y="21.336" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="A1" library="HyTechDevices" package="TEENSY_SHORT" value="TEENSY_4.0" x="16.51" y="45.72" smashed="yes" rot="R270">
-<attribute name="TEENSY" value="4.0" x="16.51" y="45.72" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="A1" library="HyTechDevices" package="TEENSY_SHORT" value="TEENSY_3.2" x="16.51" y="45.72" smashed="yes" rot="R270">
+<attribute name="TEENSY" value="3.2" x="16.51" y="45.72" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$4" library="HyTechManufacturing" package="LOGO_HYTECH_MEDIUM" value="" x="6.858" y="12.7" smashed="yes" rot="R90"/>
 <element name="U2" library="HyTechDevices" package="SOIC-08(NARROW,0.15&quot;)" value="MCP2562FD" x="77.47" y="27.305" smashed="yes" rot="R180">
@@ -4579,7 +4579,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="R6" pad="1"/>
 <contactref element="R4" pad="1"/>
 <contactref element="A1" pad="GND"/>
-<contactref element="A1" pad="AGND/GND"/>
 <wire x1="78.74" y1="37.58" x2="76.2" y2="37.58" width="0.254" layer="1"/>
 <wire x1="78.74" y1="37.58" x2="80.01" y2="36.31" width="0.254" layer="1"/>
 <wire x1="80.01" y1="36.31" x2="80.01" y2="35.56" width="0.254" layer="1"/>
@@ -4907,6 +4906,9 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="R3" pad="2"/>
 <wire x1="79.375" y1="24.7015" x2="80.7965" y2="24.7015" width="0.254" layer="1"/>
 <wire x1="80.7965" y1="24.7015" x2="82.55" y2="26.455" width="0.254" layer="1"/>
+</signal>
+<signal name="AGND">
+<contactref element="A1" pad="AGND/GND"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

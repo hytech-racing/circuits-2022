@@ -3356,21 +3356,21 @@ Dashed line is edge of mated connector.</description>
 <pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="TEENSY_4.0">
-<description>Teensy 4.0 Simple
+<symbol name="TEENSY_3.2">
+<description>Teensy 3.2 Simple
 &lt;br&gt;
 &lt;a href="https://www.pjrc.com/teensy/pinout.html"&gt;Datasheet&lt;/a&gt;</description>
-<pin name="(CRX1)D0" x="22.86" y="-43.18" visible="pin" length="short" rot="R180"/>
-<pin name="(CTX1)D1" x="22.86" y="-40.64" visible="pin" length="short" rot="R180"/>
+<pin name="D0" x="22.86" y="-43.18" visible="pin" length="short" rot="R180"/>
+<pin name="D1" x="22.86" y="-40.64" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="-2.54" y="-43.18" visible="pin" length="short" direction="pwr"/>
 <wire x1="0" y1="0" x2="0" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="0" y1="-45.72" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-45.72" x2="20.32" y2="0" width="0.254" layer="94"/>
 <wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="10.00125" y="-1.27" size="1.778" layer="95" rot="R180" align="bottom-center">Teensy 4.0</text>
+<text x="10.00125" y="-1.27" size="1.778" layer="95" rot="R180" align="bottom-center">Teensy 3.2</text>
 <pin name="D2" x="22.86" y="-38.1" visible="pin" length="short" rot="R180"/>
-<pin name="D3" x="22.86" y="-35.56" visible="pin" length="short" rot="R180"/>
-<pin name="D4" x="22.86" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="(CTX)D3" x="22.86" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="(CRX)D4" x="22.86" y="-33.02" visible="pin" length="short" rot="R180"/>
 <pin name="D5" x="22.86" y="-30.48" visible="pin" length="short" rot="R180"/>
 <pin name="D6" x="22.86" y="-27.94" visible="pin" length="short" rot="R180"/>
 <pin name="D7" x="22.86" y="-25.4" visible="pin" length="short" rot="R180"/>
@@ -3392,6 +3392,8 @@ Dashed line is edge of mated connector.</description>
 <pin name="A8" x="-2.54" y="-33.02" visible="pin" length="short"/>
 <pin name="3.3V" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="AGND" x="-2.54" y="-40.64" visible="pin" length="short" direction="pwr"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="CAN_TRANSCIEVER_MCP2562FD">
 <description>MCP2562FD Can Tranciever
@@ -4851,10 +4853,10 @@ Dashed line is edge of mated connector.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEENSY_4.0" prefix="A">
-<description>Teensy 4.0
+<deviceset name="TEENSY_3.2" prefix="A">
+<description>Teensy 3.2
 &lt;br&gt;
-&lt;a href="https://www.pjrc.com/store/teensy40.html"&gt;Datasheet&lt;/a&gt;
+&lt;a href="https://www.pjrc.com/store/teensy32.html"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 Requires ordering of:
 &lt;ul&gt;
@@ -4862,15 +4864,15 @@ Requires ordering of:
 &lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="TEENSY_4.0" x="0" y="0"/>
+<gate name="G$1" symbol="TEENSY_3.2" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TEENSY_SHORT">
 <connects>
 <connect gate="G$1" pin="(CLK)D13" pad="D13"/>
-<connect gate="G$1" pin="(CRX1)D0" pad="D0"/>
+<connect gate="G$1" pin="(CRX)D4" pad="D4"/>
 <connect gate="G$1" pin="(CS)D10" pad="D10"/>
-<connect gate="G$1" pin="(CTX1)D1" pad="D1"/>
+<connect gate="G$1" pin="(CTX)D3" pad="D3"/>
 <connect gate="G$1" pin="(SDI)D12" pad="D12"/>
 <connect gate="G$1" pin="(SDO)D11" pad="D11"/>
 <connect gate="G$1" pin="3.3V" pad="3.3V"/>
@@ -4884,20 +4886,21 @@ Requires ordering of:
 <connect gate="G$1" pin="A7" pad="D21"/>
 <connect gate="G$1" pin="A8" pad="D22"/>
 <connect gate="G$1" pin="A9" pad="D23"/>
+<connect gate="G$1" pin="AGND" pad="AGND/GND"/>
+<connect gate="G$1" pin="D0" pad="D0"/>
+<connect gate="G$1" pin="D1" pad="D1"/>
 <connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D3" pad="D3"/>
-<connect gate="G$1" pin="D4" pad="D4"/>
 <connect gate="G$1" pin="D5" pad="D5"/>
 <connect gate="G$1" pin="D6" pad="D6"/>
 <connect gate="G$1" pin="D7" pad="D7"/>
 <connect gate="G$1" pin="D8" pad="D8"/>
 <connect gate="G$1" pin="D9" pad="D9"/>
-<connect gate="G$1" pin="GND" pad="AGND/GND GND"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="TEENSY" value="4.0"/>
+<attribute name="TEENSY" value="3.2"/>
 </technology>
 </technologies>
 </device>
@@ -5071,13 +5074,14 @@ Requires ordering of:
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K" value="RESISTOR_0603_12K"/>
-<part name="A1" library="HyTechDevices" deviceset="TEENSY_4.0" device=""/>
+<part name="A1" library="HyTechDevices" deviceset="TEENSY_3.2" device=""/>
 <part name="U2" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="112.776" y="145.796" size="1.27" layer="91" font="vector">Ordered board has 4.0 but use a 3.2!!!</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="O" x="0" y="0" smashed="yes">
@@ -5599,7 +5603,7 @@ Requires ordering of:
 <segment>
 <wire x1="144.78" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 <label x="152.4" y="111.76" size="1.27" layer="95" xref="yes"/>
-<pinref part="A1" gate="G$1" pin="D4"/>
+<pinref part="A1" gate="G$1" pin="(CRX)D4"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="109.22" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
@@ -5611,7 +5615,7 @@ Requires ordering of:
 <segment>
 <wire x1="144.78" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
 <label x="152.4" y="109.22" size="1.27" layer="95" xref="yes"/>
-<pinref part="A1" gate="G$1" pin="D3"/>
+<pinref part="A1" gate="G$1" pin="(CTX)D3"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
