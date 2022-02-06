@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -3414,6 +3414,11 @@ Orange: HV High Current Path</text>
 <label x="213.36" y="22.86" size="1.778" layer="95"/>
 <pinref part="F3" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="7.62" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="DCDC_CONTROL_IN_2" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
+<label x="86.36" y="71.12" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="N$10" class="0">
