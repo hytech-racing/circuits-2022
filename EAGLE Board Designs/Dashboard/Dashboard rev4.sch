@@ -1018,21 +1018,6 @@ visible on the PCB.</text>
 <rectangle x1="-6.35" y1="-3.3655" x2="-3.556" y2="3.3655" layer="40"/>
 <rectangle x1="3.556" y1="-3.3655" x2="6.35" y2="3.3655" layer="40"/>
 </package>
-<package name="SOD-323">
-<description>SOD-323 Diode Package
-&lt;br&gt;
-&lt;a href="https://www.diodes.com/assets/Package-Files/SOD323.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="A" x="-1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
-<smd name="C" x="1.15" y="0" dx="0.8" dy="0.9" layer="1"/>
-<text x="0" y="1" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<wire x1="-0.85" y1="0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="0.85" y1="-0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
-<wire x1="0.85" y1="0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
-<rectangle x1="-1.778" y1="-0.762" x2="1.778" y2="0.762" layer="39"/>
-<rectangle x1="1.261" y1="0.5" x2="1.661" y2="0.75" layer="21"/>
-<rectangle x1="1.261" y1="-0.75" x2="1.661" y2="-0.5" layer="21"/>
-</package>
 <package name="MOLEX_NANOFIT_SMD_VERTICAL_02">
 <description>2 Pin Nano-Fit Vertical Header, SMD Mount, Single Row
 &lt;br&gt;
@@ -1710,23 +1695,6 @@ Dashed line is edge of mated connector.</description>
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
-</symbol>
-<symbol name="DIODE_SCHOTTKY">
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.1524" layer="94"/>
-<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="-1.27" y="1.905" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-1.27" y="-1.905" size="1.27" layer="96" align="top-center">&gt;MPN</text>
-<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
-<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="1.27" x2="-0.508" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-0.508" y1="1.27" x2="-0.508" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0.508" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="-1.27" x2="0.508" y2="-1.016" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="JUMPER">
 <wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
@@ -3861,32 +3829,6 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <attribute name="MANUFACTURER" value="Keystone"/>
 <attribute name="MOPN" value="534-3568"/>
 <attribute name="MPN" value="3568"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SCHOTTKY_?_*" prefix="D">
-<description>CUS08F30 Shottky Diode
-&lt;br&gt;
-&lt;a href="https://www.mouser.com/datasheet/2/408/CUS08F30_datasheet_en_20140414-1916097.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOD323" package="SOD-323">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="30V">
-<attribute name="CURRENT" value="0.8A"/>
-<attribute name="DKPN" value="CUS08F30H3FTR-ND"/>
-<attribute name="MANUFACTURER" value="Toshiba Semiconductor and Storage"/>
-<attribute name="MOPN" value="757-CUS08F30H3F"/>
-<attribute name="MPN" value="CUS08F30"/>
-<attribute name="VOLTAGE" value="30V"/>
 </technology>
 </technologies>
 </device>
@@ -6928,9 +6870,6 @@ Layer: 94 Symbol</description>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="30K"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="30K"/>
 <part name="XF1" library="HyTechDevices" deviceset="FUSE_HOLDER_*" device="SMD" technology="MINIBLADE"/>
-<part name="D2" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
-<part name="D3" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
-<part name="D1" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="P25" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="FRAME2" library="HyTechFrames" deviceset="FRAME" device=""/>
 <part name="O4" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_2"/>
@@ -7150,8 +7089,8 @@ when enable pin is open.</text>
 <instance part="P17" gate="1" x="35.56" y="195.58" smashed="yes">
 <attribute name="VALUE" x="35.56" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P18" gate="1" x="53.34" y="190.5" smashed="yes">
-<attribute name="VALUE" x="53.34" y="189.23" size="1.27" layer="96" align="top-center"/>
+<instance part="P18" gate="1" x="55.88" y="203.2" smashed="yes">
+<attribute name="VALUE" x="55.88" y="201.93" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P20" gate="1" x="271.78" y="180.34" smashed="yes">
 <attribute name="VALUE" x="271.78" y="179.07" size="1.27" layer="96" align="top-center"/>
@@ -7413,9 +7352,9 @@ when enable pin is open.</text>
 <attribute name="NAME" x="96.52" y="79.502" size="1.27" layer="95"/>
 <attribute name="MPN" x="96.52" y="67.818" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="J2" gate="G$1" x="91.44" y="177.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="91.44" y="177.038" size="1.27" layer="95" rot="R180"/>
-<attribute name="MPN" x="91.44" y="196.215" size="1.27" layer="96" rot="R180" align="top-left"/>
+<instance part="J2" gate="G$1" x="93.98" y="190.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="93.98" y="189.738" size="1.27" layer="95" rot="R180"/>
+<attribute name="MPN" x="93.98" y="208.915" size="1.27" layer="96" rot="R180" align="top-left"/>
 </instance>
 <instance part="DN1" gate="E" x="45.72" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.815" y="54.61" size="1.27" layer="95" rot="R90" align="bottom-center"/>
@@ -7570,18 +7509,6 @@ when enable pin is open.</text>
 <instance part="XF1" gate="G$1" x="30.48" y="193.04" smashed="yes">
 <attribute name="NAME" x="30.48" y="193.802" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="30.48" y="187.198" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D2" gate="G$1" x="104.14" y="111.76" smashed="yes">
-<attribute name="NAME" x="102.87" y="113.665" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="102.87" y="109.855" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D3" gate="G$1" x="104.14" y="101.6" smashed="yes">
-<attribute name="NAME" x="102.87" y="103.505" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="102.87" y="99.695" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="D1" gate="G$1" x="104.14" y="88.9" smashed="yes">
-<attribute name="NAME" x="102.87" y="90.805" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="102.87" y="86.995" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P25" gate="1" x="236.22" y="182.88" smashed="yes">
 <attribute name="VALUE" x="236.22" y="181.61" size="1.27" layer="96" align="top-center"/>
@@ -7770,7 +7697,7 @@ when enable pin is open.</text>
 <junction x="68.072" y="12.7"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="193.04" x2="53.34" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="205.74" x2="55.88" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="P18" gate="1" pin="GND"/>
 <pinref part="J2" gate="G$1" pin="6"/>
 </segment>
@@ -8129,8 +8056,8 @@ when enable pin is open.</text>
 </net>
 <net name="BTN_MARK_READ" class="0">
 <segment>
-<wire x1="81.28" y1="190.5" x2="78.74" y2="190.5" width="0.1524" layer="91"/>
-<label x="78.74" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="83.82" y1="203.2" x2="81.28" y2="203.2" width="0.1524" layer="91"/>
+<label x="81.28" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="5"/>
 </segment>
 <segment>
@@ -8141,8 +8068,8 @@ when enable pin is open.</text>
 </net>
 <net name="BTN_MODE_READ" class="0">
 <segment>
-<wire x1="81.28" y1="185.42" x2="78.74" y2="185.42" width="0.1524" layer="91"/>
-<label x="78.74" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="83.82" y1="198.12" x2="81.28" y2="198.12" width="0.1524" layer="91"/>
+<label x="81.28" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="3"/>
 </segment>
 <segment>
@@ -8153,8 +8080,8 @@ when enable pin is open.</text>
 </net>
 <net name="BTN_MC_CYCLE_READ" class="0">
 <segment>
-<wire x1="81.28" y1="187.96" x2="78.74" y2="187.96" width="0.1524" layer="91"/>
-<label x="78.74" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="83.82" y1="200.66" x2="81.28" y2="200.66" width="0.1524" layer="91"/>
+<label x="81.28" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 </segment>
 <segment>
@@ -8170,20 +8097,20 @@ when enable pin is open.</text>
 <pinref part="U1" gate="G$1" pin="16(A2)"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="182.88" x2="78.74" y2="182.88" width="0.1524" layer="91"/>
-<label x="78.74" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="83.82" y1="195.58" x2="81.28" y2="195.58" width="0.1524" layer="91"/>
+<label x="81.28" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SHUTDOWN_F" class="0">
 <segment>
-<wire x1="99.06" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 <label x="91.44" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="TP1" gate="G$1" pin="P$1"/>
 <wire x1="93.98" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="83.82" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 <junction x="93.98" y="88.9"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="88.9" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="172.72" x2="43.18" y2="172.72" width="0.1524" layer="91"/>
@@ -8270,8 +8197,8 @@ when enable pin is open.</text>
 <pinref part="U1" gate="G$1" pin="17(A3)"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="180.34" x2="78.74" y2="180.34" width="0.1524" layer="91"/>
-<label x="78.74" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="83.82" y1="193.04" x2="81.28" y2="193.04" width="0.1524" layer="91"/>
+<label x="81.28" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -8305,13 +8232,13 @@ when enable pin is open.</text>
 </net>
 <net name="SHUTDOWN_H" class="0">
 <segment>
-<wire x1="99.06" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
 <label x="91.44" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="TP6" gate="G$1" pin="P$1"/>
 <wire x1="93.98" y1="101.6" x2="91.44" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="93.98" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
 <junction x="93.98" y="101.6"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="101.6" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="177.8" x2="43.18" y2="177.8" width="0.1524" layer="91"/>
@@ -8362,20 +8289,6 @@ when enable pin is open.</text>
 <wire x1="35.56" y1="137.16" x2="38.1" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="D105" gate="LED" pin="C"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<wire x1="106.68" y1="88.9" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<wire x1="106.68" y1="101.6" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="D3" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -8625,22 +8538,15 @@ when enable pin is open.</text>
 <pinref part="U1" gate="G$1" pin="AVDD"/>
 </segment>
 </net>
-<net name="N$69" class="0">
-<segment>
-<wire x1="106.68" y1="111.76" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="D2" gate="G$1" pin="C"/>
-</segment>
-</net>
 <net name="SHUTDOWN_G" class="0">
 <segment>
-<wire x1="99.06" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <label x="91.44" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="TP5" gate="G$1" pin="P$1"/>
 <wire x1="93.98" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="104.14" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <junction x="93.98" y="111.76"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="111.76" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="175.26" x2="43.18" y2="175.26" width="0.1524" layer="91"/>
@@ -8980,6 +8886,20 @@ when enable pin is open.</text>
 <pinref part="XF1" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="187.96" x2="22.86" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="187.96" x2="22.86" y2="190.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="COCKPIT_BRB" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="185.42" x2="43.18" y2="185.42" width="0.1524" layer="91"/>
+<label x="43.18" y="185.42" size="1.27" layer="95" xref="yes"/>
+<label x="96.52" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="5(PWM)"/>
+<wire x1="101.6" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
