@@ -6734,7 +6734,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="U1" pad="25"/>
 <wire x1="4.055" y1="15.5" x2="5.1756" y2="15.5" width="0.254" layer="1"/>
 </signal>
-<signal name="SSOK">
+<signal name="SHUTDOWN_F">
 <contactref element="D1" pad="A"/>
 <contactref element="J4" pad="7"/>
 <wire x1="58.65" y1="18.525" x2="58.65" y2="19.1135" width="0.254" layer="1"/>
@@ -6855,7 +6855,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="4.9144" y1="14.7" x2="6.7056" y2="12.9088" width="0.254" layer="1"/>
 <wire x1="6.7056" y1="12.9088" x2="6.7056" y2="12.6294" width="0.254" layer="1"/>
 </signal>
-<signal name="SSOK_READ">
+<signal name="SHUTDOWN_F_READ">
 <contactref element="R5" pad="2"/>
 <via x="9.525" y="15.24" extent="1-16" drill="0.35"/>
 <wire x1="9.525" y1="16.83" x2="9.525" y2="15.24" width="0.254" layer="1"/>
@@ -7356,7 +7356,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="D2" pad="C"/>
 <wire x1="53.34" y1="13.455" x2="53.34" y2="12.0514" width="0.254" layer="1"/>
 </signal>
-<signal name="INERTIA">
+<signal name="SHUTDOWN_G">
 <contactref element="D2" pad="A"/>
 <contactref element="J4" pad="6"/>
 <wire x1="53.34" y1="15.755" x2="55.65" y2="18.065" width="0.254" layer="1"/>
@@ -7508,7 +7508,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="-8.89" y1="9.0193875" x2="-8.5256125" y2="8.655" width="0.254" layer="1"/>
 <wire x1="-8.5256125" y1="8.655" x2="-7.885" y2="8.655" width="0.254" layer="1"/>
 </signal>
-<signal name="INERTIA_READ">
+<signal name="SHUTDOWN_G_READ">
 <contactref element="R6" pad="2"/>
 <wire x1="6.2143875" y1="15.4928" x2="6.4937875" y2="15.4928" width="0.254" layer="1"/>
 <wire x1="6.2143875" y1="15.4928" x2="5.455" y2="16.2521875" width="0.254" layer="1"/>
@@ -7711,16 +7711,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="-59.882" y1="27.736" x2="-59.882" y2="23.6958" width="0.254" layer="1"/>
 <wire x1="-59.882" y1="23.6958" x2="-59.8932" y2="23.6846" width="0.254" layer="1"/>
 </signal>
-<signal name="N$43">
-<contactref element="J4" pad="1"/>
-<contactref element="XF1" pad="1"/>
-<contactref element="XF1" pad="2"/>
-<wire x1="70.6247" y1="19.177" x2="76.6953" y2="19.177" width="0.508" layer="1"/>
-<wire x1="54.8217" y1="21.6916" x2="52.777" y2="23.7363" width="0.508" layer="1"/>
-<wire x1="52.65" y1="23.7363" x2="52.777" y2="23.7363" width="0.508" layer="1"/>
-<wire x1="68.1101" y1="21.6916" x2="70.6247" y2="19.177" width="0.508" layer="1"/>
-<wire x1="54.8217" y1="21.6916" x2="68.1101" y2="21.6916" width="0.508" layer="1"/>
-</signal>
 <signal name="N$30">
 <contactref element="A1" pad="6"/>
 <contactref element="R19" pad="2"/>
@@ -7758,6 +7748,13 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <contactref element="Q7" pad="3"/>
 <wire x1="-13.0683" y1="32.29" x2="-16.9912" y2="32.29" width="0.254" layer="1"/>
 <wire x1="-16.9912" y1="32.29" x2="-17.145" y2="32.4438" width="0.254" layer="1"/>
+</signal>
+<signal name="N$43">
+<contactref element="J4" pad="1"/>
+<contactref element="XF1" pad="2"/>
+<contactref element="XF1" pad="1"/>
+<wire x1="70.6247" y1="19.177" x2="76.6953" y2="19.177" width="0" layer="19" extent="1-1"/>
+<wire x1="52.65" y1="23.7363" x2="70.6247" y2="19.177" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

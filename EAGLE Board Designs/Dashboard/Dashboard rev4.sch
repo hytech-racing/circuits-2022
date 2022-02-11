@@ -6984,6 +6984,8 @@ Layer: 94 Symbol</description>
 <text x="236.22" y="121.92" size="1.778" layer="97">Error Codes</text>
 <text x="205.74" y="205.74" size="1.778" layer="97">5V converter is enabled 
 when enable pin is open.</text>
+<text x="76.2" y="91.44" size="1.778" layer="97">SSOK</text>
+<text x="76.2" y="114.3" size="1.778" layer="97">INERTIA</text>
 </plain>
 <instances>
 <instance part="D101" gate="G$1" x="236.22" y="119.38" smashed="yes">
@@ -7145,8 +7147,8 @@ when enable pin is open.</text>
 <instance part="P16" gate="1" x="20.32" y="162.56" smashed="yes">
 <attribute name="VALUE" x="20.32" y="161.29" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P17" gate="1" x="27.94" y="195.58" smashed="yes">
-<attribute name="VALUE" x="27.94" y="194.31" size="1.27" layer="96" align="top-center"/>
+<instance part="P17" gate="1" x="35.56" y="195.58" smashed="yes">
+<attribute name="VALUE" x="35.56" y="194.31" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P18" gate="1" x="53.34" y="190.5" smashed="yes">
 <attribute name="VALUE" x="53.34" y="189.23" size="1.27" layer="96" align="top-center"/>
@@ -7499,8 +7501,8 @@ when enable pin is open.</text>
 <instance part="P35" gate="1" x="25.4" y="152.4" smashed="yes">
 <attribute name="VALUE" x="25.4" y="154.94" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P36" gate="1" x="40.64" y="190.5" smashed="yes">
-<attribute name="VALUE" x="40.64" y="194.31" size="1.27" layer="96" align="bottom-center"/>
+<instance part="P36" gate="1" x="40.64" y="193.04" smashed="yes">
+<attribute name="VALUE" x="40.64" y="196.85" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="P37" gate="1" x="27.94" y="208.28" smashed="yes">
 <attribute name="VALUE" x="27.94" y="212.09" size="1.27" layer="96" align="bottom-center"/>
@@ -7565,9 +7567,9 @@ when enable pin is open.</text>
 <attribute name="NAME" x="130.81" y="90.17" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="130.81" y="87.63" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="XF1" gate="G$1" x="30.48" y="190.5" smashed="yes">
-<attribute name="NAME" x="30.48" y="191.262" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="MPN" x="30.48" y="184.658" size="1.27" layer="96" align="top-center"/>
+<instance part="XF1" gate="G$1" x="30.48" y="193.04" smashed="yes">
+<attribute name="NAME" x="30.48" y="193.802" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="MPN" x="30.48" y="187.198" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="D2" gate="G$1" x="104.14" y="111.76" smashed="yes">
 <attribute name="NAME" x="102.87" y="113.665" size="1.27" layer="95" align="bottom-center"/>
@@ -7837,7 +7839,7 @@ when enable pin is open.</text>
 </segment>
 <segment>
 <pinref part="P17" gate="1" pin="GND"/>
-<wire x1="27.94" y1="198.12" x2="22.86" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="198.12" x2="22.86" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -8079,11 +8081,11 @@ when enable pin is open.</text>
 <segment>
 <pinref part="D4" gate="G$1" pin="C"/>
 <wire x1="33.02" y1="170.18" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="170.18" x2="40.64" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="170.18" x2="40.64" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="P36" gate="1" pin="+12V"/>
 <pinref part="XF1" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="187.96" x2="38.1" y2="187.96" width="0.1524" layer="91"/>
-<junction x="40.64" y="187.96"/>
+<wire x1="40.64" y1="190.5" x2="38.1" y2="190.5" width="0.1524" layer="91"/>
+<junction x="40.64" y="190.5"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="205.74" x2="27.94" y2="205.74" width="0.1524" layer="91"/>
@@ -8173,7 +8175,7 @@ when enable pin is open.</text>
 <pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="SSOK" class="0">
+<net name="SHUTDOWN_F" class="0">
 <segment>
 <wire x1="99.06" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 <label x="91.44" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -8273,7 +8275,7 @@ when enable pin is open.</text>
 <pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="SSOK_READ" class="0">
+<net name="SHUTDOWN_F_READ" class="0">
 <segment>
 <wire x1="121.92" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="88.9" x2="127" y2="88.9" width="0.1524" layer="91"/>
@@ -8630,7 +8632,7 @@ when enable pin is open.</text>
 <pinref part="D2" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="INERTIA" class="0">
+<net name="SHUTDOWN_G" class="0">
 <segment>
 <wire x1="99.06" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <label x="91.44" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -8764,7 +8766,7 @@ when enable pin is open.</text>
 <wire x1="55.88" y1="93.98" x2="57.912" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="INERTIA_READ" class="0">
+<net name="SHUTDOWN_G_READ" class="0">
 <segment>
 <label x="96.52" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="101.6" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
@@ -8944,13 +8946,6 @@ when enable pin is open.</text>
 <wire x1="106.68" y1="38.1" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="1"/>
-<pinref part="XF1" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="187.96" x2="20.32" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="A1" gate="G$1" pin="TRIM"/>
@@ -8977,6 +8972,14 @@ when enable pin is open.</text>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="Q7" gate="G$1" pin="D"/>
 <wire x1="45.72" y1="27.94" x2="68.072" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="XF1" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="187.96" x2="22.86" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="187.96" x2="22.86" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
