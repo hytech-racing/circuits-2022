@@ -6974,10 +6974,7 @@ Layer: 94 Symbol</description>
 <part name="TP6" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="SSOK"/>
 </part>
-<part name="RN9" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10K"/>
 <part name="Q7" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="" technology="PMV15ENEA"/>
-<part name="RN10" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10"/>
-<part name="DN3" library="HyTechDevices" deviceset="TVS_ARRAY_*" device="" technology="5V"/>
 </parts>
 <sheets>
 <sheet>
@@ -7621,19 +7618,19 @@ when enable pin is open.</text>
 <attribute name="MPN" x="99.06" y="92.202" size="1.27" layer="95" rot="MR0" align="top-left"/>
 <attribute name="SIGNAL" x="96.52" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="RN9" gate="A" x="35.56" y="17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.29" y="16.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="36.83" y="16.51" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
 <instance part="Q7" gate="G$1" x="62.992" y="22.86" smashed="yes">
 <attribute name="NAME" x="62.992" y="27.94" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="62.992" y="17.78" size="1.27" layer="95" align="top-center"/>
 </instance>
-<instance part="RN10" gate="B" x="53.34" y="20.32" smashed="yes">
+<instance part="RN8" gate="C" x="53.34" y="20.32" smashed="yes">
 <attribute name="NAME" x="52.07" y="21.59" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="52.07" y="19.05" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="DN3" gate="A" x="45.72" y="17.78" smashed="yes" rot="R90">
+<instance part="RN4" gate="C" x="35.56" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.29" y="16.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="36.83" y="16.51" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="DN2" gate="B" x="45.72" y="17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.815" y="16.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="47.625" y="16.51" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
@@ -7697,7 +7694,8 @@ when enable pin is open.</text>
 <junction x="256.54" y="132.08"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="10.16" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="10.16" x2="73.66" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="12.7" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="33.02" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="50.8" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="68.58" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
@@ -7717,10 +7715,9 @@ when enable pin is open.</text>
 <wire x1="35.56" y1="68.58" x2="68.072" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="68.072" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 <junction x="73.66" y="50.8"/>
-<wire x1="35.56" y1="50.8" x2="68.072" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="68.072" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
 <junction x="73.66" y="33.02"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
+<wire x1="68.072" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="33.02" x2="68.072" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="68.072" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
@@ -7731,7 +7728,6 @@ when enable pin is open.</text>
 <junction x="68.072" y="68.58"/>
 <pinref part="Q6" gate="G$1" pin="S"/>
 <wire x1="68.072" y1="55.88" x2="68.072" y2="50.8" width="0.1524" layer="91"/>
-<junction x="68.072" y="50.8"/>
 <pinref part="Q5" gate="G$1" pin="S"/>
 <wire x1="68.072" y1="38.1" x2="68.072" y2="33.02" width="0.1524" layer="91"/>
 <junction x="68.072" y="33.02"/>
@@ -7744,7 +7740,6 @@ when enable pin is open.</text>
 <junction x="45.72" y="121.92"/>
 <pinref part="RN1" gate="C" pin="1"/>
 <pinref part="RN1" gate="A" pin="1"/>
-<pinref part="RN4" gate="B" pin="1"/>
 <pinref part="RN4" gate="A" pin="1"/>
 <junction x="45.72" y="33.02"/>
 <pinref part="RN6" gate="B" pin="2"/>
@@ -7762,6 +7757,15 @@ when enable pin is open.</text>
 <pinref part="DN2" gate="A" pin="A"/>
 <pinref part="RN6" gate="C" pin="1"/>
 <junction x="73.66" y="142.24"/>
+<pinref part="RN4" gate="B" pin="1"/>
+<wire x1="35.56" y1="50.8" x2="68.072" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="68.072" y1="12.7" x2="73.66" y2="12.7" width="0.1524" layer="91"/>
+<junction x="73.66" y="12.7"/>
+<pinref part="Q7" gate="G$1" pin="S"/>
+<wire x1="68.072" y1="17.78" x2="68.072" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="C" pin="1"/>
+<wire x1="68.072" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
+<junction x="68.072" y="12.7"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="193.04" x2="53.34" y2="193.04" width="0.1524" layer="91"/>
@@ -8287,12 +8291,12 @@ when enable pin is open.</text>
 </segment>
 <segment>
 <label x="24.384" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="RN9" gate="A" pin="2"/>
 <wire x1="24.384" y1="20.32" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="RN8" gate="C" pin="1"/>
+<pinref part="RN4" gate="C" pin="2"/>
 <wire x1="35.56" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
 <junction x="35.56" y="20.32"/>
-<pinref part="RN10" gate="B" pin="1"/>
-<pinref part="DN3" gate="A" pin="C"/>
+<pinref part="DN2" gate="B" pin="C"/>
 <wire x1="45.72" y1="20.32" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
 <junction x="45.72" y="20.32"/>
 </segment>
@@ -8954,22 +8958,11 @@ when enable pin is open.</text>
 <wire x1="233.68" y1="195.58" x2="236.22" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND1" class="0">
-<segment>
-<wire x1="35.56" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="12.7" x2="68.072" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="Q7" gate="G$1" pin="S"/>
-<wire x1="68.072" y1="17.78" x2="68.072" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="RN9" gate="A" pin="1"/>
-<junction x="45.72" y="12.7"/>
-<pinref part="DN3" gate="A" pin="A"/>
-</segment>
-</net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="RN10" gate="B" pin="2"/>
 <pinref part="Q7" gate="G$1" pin="G"/>
 <wire x1="55.88" y1="20.32" x2="57.912" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="RN8" gate="C" pin="2"/>
 </segment>
 </net>
 <net name="N$49" class="0">
