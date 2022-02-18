@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -2578,9 +2578,9 @@ Orange: HV High Current Path</text>
 <attribute name="NAME" x="108.204" y="32.258" size="1.27" layer="95"/>
 <attribute name="VALUE" x="108.204" y="27.432" size="1.27" layer="96"/>
 </instance>
-<instance part="MEASURE_12V" gate="G$1" x="109.22" y="25.4" smashed="yes">
-<attribute name="NAME" x="108.204" y="27.178" size="1.27" layer="95"/>
-<attribute name="VALUE" x="108.204" y="22.352" size="1.27" layer="96"/>
+<instance part="MEASURE_12V" gate="G$1" x="109.22" y="25.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="120.396" y="28.702" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="110.236" y="28.448" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="TSMP-A" gate="G$1" x="144.78" y="215.9" smashed="yes" rot="MR270">
 <attribute name="NAME" x="143.002" y="216.916" size="1.27" layer="95" rot="MR270"/>
@@ -4763,11 +4763,15 @@ Orange: HV High Current Path</text>
 </net>
 <net name="12V_MAIN" class="0">
 <segment>
-<wire x1="132.08" y1="30.48" x2="132.08" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="30.48" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="GLVMS" gate="SPST" pin="P"/>
 <label x="152.4" y="30.48" size="1.778" layer="95"/>
 <label x="213.36" y="30.48" size="1.778" layer="95"/>
+<wire x1="132.08" y1="25.4" x2="132.08" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="MEASURE_12V" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="25.4" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
+<junction x="132.08" y="25.4"/>
 </segment>
 <segment>
 <pinref part="DCDC_IO_2" gate="G$1" pin="3"/>
@@ -5175,12 +5179,8 @@ Orange: HV High Current Path</text>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="MEASURE_12V" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="25.4" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="25.4" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="GLVMS" gate="SPST" pin="S"/>
 <wire x1="121.92" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
-<junction x="101.6" y="17.78"/>
 <wire x1="101.6" y1="17.78" x2="101.6" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="F3" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="7.62" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
