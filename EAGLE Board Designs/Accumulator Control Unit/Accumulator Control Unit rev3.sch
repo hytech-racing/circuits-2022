@@ -8927,7 +8927,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="84.5K"/>
 <part name="P30" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R31" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="D6" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="PRECHARGE_OK" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="C3" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF"/>
 <part name="P32" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P34" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -11013,7 +11013,7 @@ current across precharge relay</text>
 <attribute name="NAME" x="265.43" y="120.65" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="RESISTANCE" x="265.43" y="123.19" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="D6" gate="LED" x="271.78" y="114.3" smashed="yes" rot="R270">
+<instance part="PRECHARGE_OK" gate="LED" x="271.78" y="114.3" smashed="yes" rot="R270">
 <attribute name="COLOR" x="270.002" y="115.57" size="1.27" layer="95" rot="R270" align="top-center"/>
 <attribute name="NAME" x="275.336" y="115.57" size="1.27" layer="96" rot="R270" align="bottom-center"/>
 </instance>
@@ -11338,7 +11338,7 @@ current across precharge relay</text>
 </segment>
 <segment>
 <pinref part="P30" gate="1" pin="GND"/>
-<pinref part="D6" gate="LED" pin="C"/>
+<pinref part="PRECHARGE_OK" gate="LED" pin="C"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
@@ -11820,7 +11820,7 @@ current across precharge relay</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R31" gate="G$1" pin="1"/>
-<pinref part="D6" gate="LED" pin="A"/>
+<pinref part="PRECHARGE_OK" gate="LED" pin="A"/>
 <wire x1="269.24" y1="121.92" x2="271.78" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="121.92" x2="271.78" y2="119.38" width="0.1524" layer="91"/>
 </segment>
