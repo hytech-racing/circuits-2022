@@ -1698,8 +1698,8 @@ Dashed line is edge of mated connector.</description>
 </symbol>
 <symbol name="JUMPER">
 <wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<pin name="P$1" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="P$2" x="5.08" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="2" x="5.08" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <text x="0" y="0.508" size="1.27" layer="94">JUMP</text>
 <text x="0" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="-3.302" size="1.27" layer="96" align="top-left">&gt;MPN</text>
@@ -3331,6 +3331,13 @@ Dashed line is edge of mated connector.</description>
 <attribute name="MOPN" value="997-L128RED10350"/>
 <attribute name="MPN" value="L128-RED1003500000"/>
 </technology>
+<technology name="RED-ORANGE">
+<attribute name="COLOR" value="Red-Orange"/>
+<attribute name="DKPN" value=""/>
+<attribute name="MANUFACTURER" value="Lumileds"/>
+<attribute name="MOPN" value="997-L128RNG10350 "/>
+<attribute name="MPN" value="L128-RNG1003500000 "/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3596,10 +3603,10 @@ Recommended load capacitor for the ECS-160-10-42-CKM-TR:
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DKPN" value="S2011EC-03-ND"/>
+<attribute name="DKPN" value="S2351E-05-ND"/>
 <attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
 <attribute name="MOPN" value=""/>
-<attribute name="MPN" value="PRPC003DAAN-RC"/>
+<attribute name="MPN" value="GBC05DABN-M30"/>
 </technology>
 </technologies>
 </device>
@@ -3812,6 +3819,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <technologies>
 <technology name="MINIBLADE">
 <attribute name="DKPN" value="36-3588-ND"/>
+<attribute name="FUSE_TYPE" value="MINI 297"/>
 <attribute name="MANUFACTURER" value="Keystone Electronics"/>
 <attribute name="MOPN" value="534-3588"/>
 <attribute name="MPN" value="3588"/>
@@ -3826,6 +3834,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <technologies>
 <technology name="MINIBLADE">
 <attribute name="DKPN" value="36-3568-ND"/>
+<attribute name="FUSE_TYPE" value="MINI 297"/>
 <attribute name="MANUFACTURER" value="Keystone"/>
 <attribute name="MOPN" value="534-3568"/>
 <attribute name="MPN" value="3568"/>
@@ -3842,8 +3851,8 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <devices>
 <device name="NANOFIT_SMD_VERTICAL" package="MOLEX_NANOFIT_SMD_VERTICAL_02">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="BLACK">
@@ -3862,8 +3871,8 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 </device>
 <device name="0603" package="0603-RES">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -6604,7 +6613,9 @@ Layer: 94 Symbol</description>
 <device name="">
 <technologies>
 <technology name="MINI_BLADE_2">
+<attribute name="CURRENT" value="2A"/>
 <attribute name="DKPN" value="F986-ND"/>
+<attribute name="FUSE_TYPE" value="MINI 297"/>
 <attribute name="MANUFACTURER" value="Littelfuse Inc."/>
 <attribute name="MOPN" value="576-0297002.WXNV"/>
 <attribute name="MPN" value="0297002.WXNV"/>
@@ -6812,7 +6823,6 @@ Layer: 94 Symbol</description>
 <part name="D6" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
 <part name="D5" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="RN6" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="1K"/>
-<part name="D102" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="AMBER"/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="C11" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P1" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -6928,6 +6938,7 @@ Layer: 94 Symbol</description>
 <part name="P47" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P48" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P49" library="HyTechSupplies" deviceset="+5V" device=""/>
+<part name="D3" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="RED-ORANGE"/>
 </parts>
 <sheets>
 <sheet>
@@ -7847,7 +7858,7 @@ when enable pin is open.</text>
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="154.94" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="P$1"/>
+<pinref part="J5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$52" class="0">
@@ -8021,7 +8032,7 @@ when enable pin is open.</text>
 <wire x1="220.98" y1="160.02" x2="220.98" y2="165.1" width="0.1524" layer="91"/>
 <junction x="220.98" y="165.1"/>
 <pinref part="U4" gate="G$1" pin="RXD"/>
-<pinref part="J5" gate="G$1" pin="P$2"/>
+<pinref part="J5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$46" class="0">
@@ -8622,10 +8633,6 @@ Error and State LEDs</text>
 <attribute name="NAME" x="158.75" y="143.51" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="158.75" y="140.97" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="D102" gate="LED" x="43.18" y="124.46" smashed="yes">
-<attribute name="COLOR" x="43.18" y="122.682" size="1.27" layer="95" align="top-left"/>
-<attribute name="NAME" x="41.91" y="128.016" size="1.27" layer="96" align="bottom-center"/>
-</instance>
 <instance part="DN1" gate="E" x="55.88" y="139.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="53.975" y="138.43" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="57.785" y="138.43" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -8712,6 +8719,10 @@ Error and State LEDs</text>
 </instance>
 <instance part="P49" gate="1" x="215.9" y="182.88" smashed="yes">
 <attribute name="VALUE" x="215.9" y="185.42" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D3" gate="LED" x="43.18" y="124.46" smashed="yes">
+<attribute name="COLOR" x="41.91" y="122.682" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="41.91" y="128.016" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -8833,8 +8844,8 @@ Error and State LEDs</text>
 <net name="N$2" class="0">
 <segment>
 <wire x1="48.26" y1="124.46" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="D102" gate="LED" pin="C"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="D3" gate="LED" pin="C"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -9076,10 +9087,10 @@ Error and State LEDs</text>
 <wire x1="38.1" y1="149.86" x2="35.56" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="175.26" x2="35.56" y2="149.86" width="0.1524" layer="91"/>
 <junction x="35.56" y="175.26"/>
-<pinref part="D102" gate="LED" pin="A"/>
 <wire x1="38.1" y1="124.46" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="149.86" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
 <junction x="35.56" y="149.86"/>
+<pinref part="D3" gate="LED" pin="A"/>
 </segment>
 <segment>
 <pinref part="D106" gate="LED" pin="A"/>
