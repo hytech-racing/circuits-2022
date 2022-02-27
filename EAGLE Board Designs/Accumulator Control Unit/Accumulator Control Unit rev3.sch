@@ -8957,7 +8957,6 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="R11" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="1.4K"/>
 <part name="BSPD_CURRENT" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
 <part name="A1" library="HyTechDevices" deviceset="TEENSY_4.0" device=""/>
-<part name="P50" library="HyTechSupplies" deviceset="+3V3" device=""/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P51" library="HyTechSupplies" deviceset="+5V" device=""/>
@@ -8995,12 +8994,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="J4" library="HyTechDevices - Copy" deviceset="CONNECTOR-2_?_*" device="MF_T_V"/>
 <part name="TP6" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
 <part name="TP7" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
-<part name="C35" library="HyTechDevices - Copy" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
-<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R13" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="100K"/>
 <part name="C36" library="HyTechDevices - Copy" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
-<part name="R59" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
 <part name="P31" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R60" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="FRAME5" library="HyTechFrames" deviceset="FRAME" device=""/>
@@ -9121,8 +9115,8 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="CURRENT_REF" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
 <part name="IMD_OK" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="R72" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
-<part name="D2" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
-<part name="D3" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="TSAL_GREEN" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
+<part name="TSAL_RED" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="R73" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
 <part name="R74" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
 <part name="D10" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
@@ -9182,7 +9176,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="R92" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
 <part name="R70" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
 <part name="P85" library="HyTechSupplies" deviceset="+3V3" device=""/>
-<part name="R53" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100"/>
+<part name="R53" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="120" value="RESISTOR_0603_120"/>
 <part name="P60" library="HyTechSupplies" deviceset="+3V3" device=""/>
 <part name="C14" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="U21" library="HyTechDevices" deviceset="LOGICGATE_BUFFER" device=""/>
@@ -9235,6 +9229,8 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="J7" library="HyTechDevices" deviceset="JUMPER_?_*" device="" technology="1X02" value="JUMPER__1X02"/>
 <part name="F1" library="HyTechDevices" deviceset="FUSE_?_*" device="0603" technology=".75A"/>
 <part name="F2" library="HyTechDevices" deviceset="FUSE_?_*" device="0603" technology=".75A"/>
+<part name="R94" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="PRECHARGE_OK_TEST" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9521,13 +9517,13 @@ Accumulator GND, both AIR+ and -</text>
 <attribute name="NAME" x="17.78" y="83.058" size="1.27" layer="95"/>
 <attribute name="MPN" x="17.78" y="79.502" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="D2" gate="LED" x="142.24" y="66.04" smashed="yes">
+<instance part="TSAL_GREEN" gate="LED" x="142.24" y="66.04" smashed="yes">
 <attribute name="COLOR" x="140.97" y="64.262" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="140.97" y="69.596" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="D3" gate="LED" x="200.66" y="71.12" smashed="yes">
+<instance part="TSAL_RED" gate="LED" x="200.66" y="71.12" smashed="yes">
 <attribute name="COLOR" x="199.39" y="69.342" size="1.27" layer="95" align="top-center"/>
-<attribute name="NAME" x="201.93" y="77.216" size="1.27" layer="96" align="bottom-center"/>
+<attribute name="NAME" x="199.39" y="74.676" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="R73" gate="G$1" x="132.08" y="66.04" smashed="yes">
 <attribute name="NAME" x="130.81" y="67.31" size="1.27" layer="95" align="bottom-center"/>
@@ -10052,7 +10048,7 @@ Accumulator GND, both AIR+ and -</text>
 </segment>
 <segment>
 <label x="210.82" y="71.12" size="1.27" layer="95" xref="yes"/>
-<pinref part="D3" gate="LED" pin="C"/>
+<pinref part="TSAL_RED" gate="LED" pin="C"/>
 <wire x1="210.82" y1="71.12" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -10069,7 +10065,7 @@ Accumulator GND, both AIR+ and -</text>
 </segment>
 <segment>
 <label x="152.4" y="66.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="D2" gate="LED" pin="C"/>
+<pinref part="TSAL_GREEN" gate="LED" pin="C"/>
 <wire x1="152.4" y1="66.04" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -10258,14 +10254,14 @@ Accumulator GND, both AIR+ and -</text>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="D2" gate="LED" pin="A"/>
+<pinref part="TSAL_GREEN" gate="LED" pin="A"/>
 <wire x1="137.16" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R73" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
-<pinref part="D3" gate="LED" pin="A"/>
+<pinref part="TSAL_RED" gate="LED" pin="A"/>
 <wire x1="195.58" y1="71.12" x2="193.04" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R74" gate="G$1" pin="2"/>
 </segment>
@@ -11149,6 +11145,10 @@ current across precharge relay</text>
 <instance part="GND34" gate="1" x="104.14" y="165.1" smashed="yes">
 <attribute name="VALUE" x="104.14" y="163.83" size="1.27" layer="96" align="top-center"/>
 </instance>
+<instance part="PRECHARGE_OK_TEST" gate="G$1" x="243.84" y="134.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="256.54" y="132.842" size="1.27" layer="95" rot="R180"/>
+<attribute name="MPN" x="246.38" y="136.398" size="1.27" layer="95" rot="R180" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11708,6 +11708,9 @@ current across precharge relay</text>
 <pinref part="U40" gate="G$1" pin="CONTACT1"/>
 <wire x1="228.6" y1="121.92" x2="233.68" y2="121.92" width="0.1524" layer="91"/>
 <junction x="233.68" y="121.92"/>
+<wire x1="241.3" y1="134.62" x2="233.68" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="134.62" x2="233.68" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="PRECHARGE_OK_TEST" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="R49" gate="G$1" pin="1"/>
@@ -12691,7 +12694,7 @@ current across precharge relay</text>
 <text x="27.94" y="106.68" size="1.778" layer="97">12V to 3.3V</text>
 <text x="30.48" y="53.34" size="1.778" layer="97">5V to 3.3V</text>
 <text x="30.48" y="88.9" size="1.778" layer="97">12V to 3.3V</text>
-<text x="203.2" y="101.6" size="2.54" layer="97">Watchdog Timer</text>
+<text x="205.74" y="114.3" size="2.54" layer="97">Watchdog Timer</text>
 <text x="40.64" y="114.3" size="2.54" layer="97">Voltage Dividers</text>
 <text x="177.8" y="180.34" size="2.54" layer="97">LTC6820 and Transformer</text>
 <wire x1="228.6" y1="187.96" x2="228.6" y2="137.16" width="0.1524" layer="97" style="shortdash"/>
@@ -12716,9 +12719,6 @@ current across precharge relay</text>
 <attribute name="DESCRIPTION_2" x="176.53" y="7.62" size="2.54" layer="95"/>
 </instance>
 <instance part="A1" gate="G$1" x="50.8" y="182.88" smashed="yes"/>
-<instance part="P50" gate="G$1" x="243.84" y="111.76" smashed="yes">
-<attribute name="VALUE" x="243.84" y="113.03" size="1.27" layer="96" align="bottom-center"/>
-</instance>
 <instance part="R12" gate="G$1" x="175.26" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="173.99" y="87.63" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="176.53" y="87.63" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -12852,29 +12852,10 @@ current across precharge relay</text>
 <attribute name="NAME" x="254" y="154.178" size="1.27" layer="95"/>
 <attribute name="MPN" x="254" y="150.622" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="C35" gate="G$1" x="251.46" y="106.68" smashed="yes" rot="R180">
-<attribute name="NAME" x="252.73" y="104.14" size="1.27" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="VOLTAGE" x="252.73" y="109.22" size="1.27" layer="96" rot="R180" align="top-center"/>
-<attribute name="CAPACITANCE" x="252.73" y="110.998" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
-<instance part="GND3" gate="1" x="256.54" y="101.6" smashed="yes">
-<attribute name="VALUE" x="254" y="99.06" size="1.778" layer="96"/>
-</instance>
-<instance part="GND4" gate="1" x="241.3" y="71.12" smashed="yes">
-<attribute name="VALUE" x="238.76" y="68.58" size="1.778" layer="96"/>
-</instance>
-<instance part="R13" gate="G$1" x="241.3" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="240.03" y="82.55" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="242.57" y="82.55" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
 <instance part="C36" gate="G$1" x="208.28" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="205.74" y="87.63" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="210.82" y="87.63" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="212.598" y="87.63" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R59" gate="G$1" x="200.66" y="88.9" smashed="yes" rot="R90">
-<attribute name="NAME" x="199.39" y="87.63" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="201.93" y="87.63" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="R52" gate="G$1" x="71.12" y="33.02" smashed="yes">
 <attribute name="NAME" x="69.85" y="34.29" size="1.27" layer="95" align="bottom-center"/>
@@ -12963,10 +12944,6 @@ current across precharge relay</text>
 <attribute name="VOLTAGE" x="153.67" y="182.88" size="1.27" layer="96" align="top-center"/>
 <attribute name="CAPACITANCE" x="153.67" y="181.102" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="U21" gate="A" x="246.38" y="86.36" smashed="yes">
-<attribute name="NAME" x="248.793" y="89.408" size="1.27" layer="95"/>
-<attribute name="MPN" x="248.793" y="83.312" size="1.27" layer="96" align="top-left"/>
-</instance>
 <instance part="U21" gate="P" x="246.38" y="78.74" smashed="yes">
 <attribute name="NAME" x="246.38" y="79.502" size="1.27" layer="95"/>
 <attribute name="MPN" x="246.38" y="65.278" size="1.27" layer="95" align="top-left"/>
@@ -13031,6 +13008,10 @@ current across precharge relay</text>
 <instance part="J7" gate="G$1" x="165.1" y="111.76" smashed="yes" rot="R270">
 <attribute name="NAME" x="162.56" y="109.22" size="1.27" layer="95" rot="R270" align="bottom-center"/>
 <attribute name="MPN" x="169.418" y="111.76" size="1.27" layer="96" rot="R270" align="top-left"/>
+</instance>
+<instance part="R94" gate="G$1" x="198.12" y="91.44" smashed="yes">
+<attribute name="NAME" x="196.85" y="92.71" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="196.85" y="90.17" size="1.27" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -13112,22 +13093,9 @@ current across precharge relay</text>
 <pinref part="P75" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C35" gate="G$1" pin="2"/>
-<wire x1="256.54" y1="106.68" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="241.3" y1="78.74" x2="241.3" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="R13" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="R59" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="83.82" x2="208.28" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="83.82" x2="208.28" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="83.82" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
-<junction x="200.66" y="83.82"/>
 <pinref part="C36" gate="G$1" pin="2"/>
 <junction x="208.28" y="83.82"/>
 <pinref part="GND38" gate="1" pin="GND"/>
@@ -13218,16 +13186,6 @@ current across precharge relay</text>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<wire x1="238.76" y1="93.98" x2="243.84" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="93.98" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="P50" gate="G$1" pin="+3V3"/>
-<pinref part="C35" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="106.68" x2="243.84" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="106.68" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
-<junction x="243.84" y="106.68"/>
-<pinref part="U6" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
 <pinref part="A1" gate="G$1" pin="3.3V"/>
 <wire x1="73.66" y1="175.26" x2="81.28" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="175.26" x2="81.28" y2="180.34" width="0.1524" layer="91"/>
@@ -13281,9 +13239,9 @@ current across precharge relay</text>
 </net>
 <net name="AMS_OK_3.3V" class="0">
 <segment>
-<label x="256.54" y="86.36" size="1.27" layer="95" xref="yes"/>
-<pinref part="U21" gate="A" pin="OUT"/>
-<wire x1="255.27" y1="86.36" x2="256.54" y2="86.36" width="0.1524" layer="91"/>
+<label x="248.92" y="86.36" size="1.27" layer="95" xref="yes"/>
+<pinref part="U6" gate="G$1" pin="!RESET!"/>
+<wire x1="248.92" y1="86.36" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IMD_OK_TEENSY" class="0">
@@ -13334,10 +13292,10 @@ current across precharge relay</text>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="93.98" x2="215.9" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="93.98" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
-<label x="175.26" y="96.52" size="1.27" layer="95" xref="yes"/>
+<label x="175.26" y="104.14" size="1.27" layer="95" xref="yes"/>
 <junction x="175.26" y="93.98"/>
 <pinref part="U6" gate="G$1" pin="WDI"/>
-<wire x1="175.26" y1="93.98" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="93.98" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="88.9" y="152.4" size="1.27" layer="95" xref="yes"/>
@@ -13530,13 +13488,10 @@ current across precharge relay</text>
 <segment>
 <pinref part="U6" gate="G$1" pin="!MR!"/>
 <wire x1="215.9" y1="91.44" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R59" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="91.44" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="91.44" x2="190.5" y2="91.44" width="0.1524" layer="91"/>
-<junction x="200.66" y="91.44"/>
 <pinref part="C36" gate="G$1" pin="1"/>
 <junction x="208.28" y="91.44"/>
-<label x="190.5" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R94" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="A1" gate="G$1" pin="D6"/>
@@ -13547,6 +13502,17 @@ current across precharge relay</text>
 <wire x1="210.82" y1="66.04" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
 <label x="208.28" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R76" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R94" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="91.44" x2="190.5" y2="91.44" width="0.1524" layer="91"/>
+<label x="190.5" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="238.76" y1="93.98" x2="243.84" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="VDD"/>
+<wire x1="243.84" y1="93.98" x2="248.92" y2="93.98" width="0.1524" layer="91"/>
+<label x="248.92" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -13666,16 +13632,6 @@ current across precharge relay</text>
 <pinref part="TP7" gate="G$1" pin="P$1"/>
 <wire x1="259.08" y1="152.4" x2="261.62" y2="152.4" width="0.1524" layer="91"/>
 <label x="261.62" y="152.4" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<wire x1="238.76" y1="86.36" x2="241.3" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U6" gate="G$1" pin="!RESET!"/>
-<pinref part="U21" gate="A" pin="IN"/>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="86.36" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
-<junction x="241.3" y="86.36"/>
 </segment>
 </net>
 <net name="CANH/1.3B" class="0">
