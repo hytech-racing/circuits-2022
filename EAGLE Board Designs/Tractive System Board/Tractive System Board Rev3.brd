@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -12036,7 +12036,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="37.592" y="231.267" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-08851.25DR" x="37.592" y="231.267" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="08851.25DR" x="37.592" y="231.267" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="125.222" y="80.297" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="125.222" y="80.297" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="37.592" y="231.267" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="J3" library="HyTechDevices" package="FLEX_STACK_PTH_08_DUAL" value="CONNECTOR-8_S_S" x="41.2" y="5.7" smashed="yes" rot="R180">
@@ -12074,7 +12074,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="Pulse Electonics Company" x="-58.0124875" y="-21.47506875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="673-PA4334362NLT" x="-58.0124875" y="-21.47506875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="PA4334.362NLT" x="-58.0124875" y="-21.47506875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="95.9115125" y="81.90293125" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="97.04006875" y="80.4175125" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="L5" library="HyTechDevices" package="WE-LMHI" value="INDUCTOR_WELMHI_56UH" x="90.468815625" y="74.627846875" smashed="yes">
 <attribute name="CURRENT_RATED" value="1.4A" x="209.848815625" y="-72.692153125" size="1.778" layer="27" display="off"/>
@@ -12753,7 +12753,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="Littelfuse Inc." x="125.3255" y="70.62036875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MOPN" value="576-08851.25DR" x="125.3255" y="70.62036875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="MPN" value="08851.25DR" x="125.3255" y="70.62036875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
-<attribute name="NAME" x="125.5795" y="66.84336875" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="125.5795" y="66.84336875" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="VOLTAGE" value="500V" x="125.3255" y="70.62036875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
 </element>
 <element name="J1" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_06_SINGLE_SPACED" value="CONNECTOR-5_MICRO_V6S_" x="198.671275" y="51.9166625" smashed="yes" rot="R270">
@@ -12999,14 +12999,14 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="" x="57.658" y="4.572" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MOPN" value="" x="57.658" y="4.572" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="" x="57.658" y="4.572" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="57.658" y="6.572" size="0.8128" layer="22" font="vector" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="59.944" y="6.699" size="0.8128" layer="22" font="vector" rot="MR0" align="bottom-center"/>
 </element>
 <element name="RV1" library="HyTechDevices" package="0805-RES" value="1M" x="57.658" y="1.905" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="P20936TR-ND" x="57.658" y="1.905" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="57.658" y="1.905" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MOPN" value="667-ERJ-PB6B1004V" x="57.658" y="1.905" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="ERJ-PB6B1004V" x="57.658" y="1.905" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="57.658" y="2.54" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="60.452" y="1.27" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 <attribute name="POWER" value="0.25W" x="57.658" y="1.905" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="RESISTANCE" value="1M" x="57.658" y="1.905" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="0.1%" x="57.658" y="1.905" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -13018,7 +13018,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="57.658" y="0.127" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MOPN" value="667-ERJ-PB6B1004V" x="57.658" y="0.127" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="ERJ-PB6B1004V" x="57.658" y="0.127" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="57.658" y="-0.508" size="0.8128" layer="26" font="vector" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="60.452" y="0.508" size="0.8128" layer="26" font="vector" rot="MR180" align="bottom-center"/>
 <attribute name="POWER" value="0.25W" x="57.658" y="0.127" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="RESISTANCE" value="1M" x="57.658" y="0.127" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="0.1%" x="57.658" y="0.127" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -13040,7 +13040,7 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="54.229" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MOPN" value="755-KTR03EZPF5103" x="54.229" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="KTR03EZPF5103" x="54.229" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="54.864" y="4.445" size="0.8128" layer="26" font="vector" rot="MR90" align="bottom-center"/>
+<attribute name="NAME" x="52.578" y="4.445" size="0.8128" layer="26" font="vector" rot="MR90" align="bottom-center"/>
 <attribute name="POWER" value="0.1W" x="54.229" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="RESISTANCE" value="510k" x="54.229" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="54.229" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
