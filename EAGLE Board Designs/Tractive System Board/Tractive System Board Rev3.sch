@@ -7655,6 +7655,28 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="18.17V"/>
 <attribute name="VOLTAGE_MAX" value="350V"/>
 </technology>
+<technology name="HV750K">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="Rohm"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="RESISTANCE" value="750k" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="" constant="no"/>
+</technology>
+<technology name="HV75K">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="Rohm"/>
+<attribute name="MOPN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="RESISTANCE" value="75k" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3921" package="3921">
@@ -9909,13 +9931,13 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="U$42" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
 <part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="U$29" library="HyTechSupplies" deviceset="TS-FUSED" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="360K"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="HV750K" value="RESISTOR_0603_HV750K"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="510K"/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K"/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K"/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K"/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="360K"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="HV75K" value="RESISTOR_0603_HV75K"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="HV75K" value="RESISTOR_0603_HV75K"/>
+<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="HV75K" value="RESISTOR_0603_HV75K"/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="HV75K" value="RESISTOR_0603_HV75K"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="HV750K" value="RESISTOR_0603_HV750K"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="510K"/>
 <part name="XF1" library="HyTechDevices" deviceset="FUSE_HOLDER_*" device="PTH" technology="MINIBLADE"/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="B20" technology="10K"/>
