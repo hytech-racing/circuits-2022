@@ -7631,26 +7631,26 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_MAX" value="350V"/>
 </technology>
 <technology name="HV750K">
-<attribute name="DKPN" value="" constant="no"/>
+<attribute name="DKPN" value="RHM75KAYTR-ND"/>
 <attribute name="MANUFACTURER" value="Rohm"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="750k" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="MOPN" value="755-KTR03EZPF7502"/>
+<attribute name="MPN" value="KTR03EZPF7502"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="750k"/>
+<attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="350V"/>
 </technology>
 <technology name="HV75K">
-<attribute name="DKPN" value="" constant="no"/>
+<attribute name="DKPN" value="RHM750KAYTR-ND"/>
 <attribute name="MANUFACTURER" value="Rohm"/>
-<attribute name="MOPN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="POWER" value="0.1W" constant="no"/>
-<attribute name="RESISTANCE" value="75k" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="MOPN" value="755-KTR03EZPF7503"/>
+<attribute name="MPN" value="KTR03EZPF7503"/>
+<attribute name="POWER" value="0.1W"/>
+<attribute name="RESISTANCE" value="75k"/>
+<attribute name="TOLERANCE" value="1%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="" constant="no"/>
-<attribute name="VOLTAGE_MAX" value="" constant="no"/>
+<attribute name="VOLTAGE_MAX" value="350V"/>
 </technology>
 </technologies>
 </device>

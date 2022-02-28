@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -12776,16 +12776,16 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="VOLTAGE" value="10V" x="73.406" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R1" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_HV750K" x="97.282" y="41.91" smashed="yes" rot="R90">
-<attribute name="DKPN" value="" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DKPN" value="RHM75KAYTR-ND" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOPN" value="" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOPN" value="755-KTR03EZPF7502" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="KTR03EZPF7502" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="96.647" y="41.91" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="POWER" value="0.1W" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="RESISTANCE" value="750k" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TOLERANCE" value="" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOLTAGE_MAX" value="350V" x="97.282" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R2" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_360K" x="97.282" y="38.862" smashed="yes" rot="R90">
 <attribute name="DKPN" value="RHM360KAYTR-ND" x="97.282" y="38.862" size="1.778" layer="27" rot="R90" display="off"/>
@@ -12800,64 +12800,64 @@ Source: &lt;a href = &quot;https://www.sunstone.com/pcb-resources/cad-tools/eagl
 <attribute name="VOLTAGE_MAX" value="350V" x="97.282" y="38.862" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R6" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_HV75K" x="96.52" y="36.576" smashed="yes">
-<attribute name="DKPN" value="" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="RHM750KAYTR-ND" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="755-KTR03EZPF7503" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="KTR03EZPF7503" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="98.933" y="36.195" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="POWER" value="0.1W" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="75k" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="350V" x="96.52" y="36.576" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R7" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_HV75K" x="96.52" y="34.925" smashed="yes">
-<attribute name="DKPN" value="" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="RHM750KAYTR-ND" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
-<attribute name="MOPN" value="" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
+<attribute name="MOPN" value="755-KTR03EZPF7503" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="KTR03EZPF7503" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="98.806" y="34.798" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="POWER" value="0.1W" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
 <attribute name="RESISTANCE" value="75k" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_MAX" value="350V" x="96.52" y="34.925" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R8" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_HV75K" x="86.487" y="35.052" smashed="yes" rot="R180">
-<attribute name="DKPN" value="" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DKPN" value="RHM750KAYTR-ND" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOPN" value="" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="755-KTR03EZPF7503" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="KTR03EZPF7503" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="84.201" y="35.306" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="POWER" value="0.1W" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RESISTANCE" value="75k" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TOLERANCE" value="" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="350V" x="86.487" y="35.052" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R9" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_HV75K" x="86.487" y="36.703" smashed="yes" rot="R180">
-<attribute name="DKPN" value="" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DKPN" value="RHM750KAYTR-ND" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOPN" value="" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOPN" value="755-KTR03EZPF7503" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="KTR03EZPF7503" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="84.328" y="36.83" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="POWER" value="0.1W" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RESISTANCE" value="75k" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TOLERANCE" value="" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE_MAX" value="350V" x="86.487" y="36.703" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R10" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_HV750K" x="85.598" y="42.545" smashed="yes" rot="R90">
-<attribute name="DKPN" value="" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DKPN" value="RHM75KAYTR-ND" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOPN" value="" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOPN" value="755-KTR03EZPF7502" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="KTR03EZPF7502" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="84.963" y="42.545" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="POWER" value="0.1W" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="RESISTANCE" value="750k" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TOLERANCE" value="" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VOLTAGE_MAX" value="" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOLTAGE_MAX" value="350V" x="85.598" y="42.545" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R11" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_360K" x="85.598" y="39.243" smashed="yes" rot="R90">
 <attribute name="DKPN" value="RHM360KAYTR-ND" x="85.598" y="39.243" size="1.778" layer="27" rot="R90" display="off"/>
