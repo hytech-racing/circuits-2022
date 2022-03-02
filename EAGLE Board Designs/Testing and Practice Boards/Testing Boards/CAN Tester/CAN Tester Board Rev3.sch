@@ -651,6 +651,69 @@ Dashed line is edge of mated connector.</description>
 <rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="1.905" layer="39" rot="R180"/>
 <text x="0" y="-2.54" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="SOT-223">
+<description>SOT-223
+&lt;br&gt;
+&lt;a href="https://www.diodes.com/assets/Package-Files/SOT223.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
+<smd name="2" x="0" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
+<smd name="3" x="2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
+<smd name="4" x="0" y="3.2" dx="3.3" dy="1.6" layer="1"/>
+<text x="0" y="4.445" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="-3.275" y1="1.775" x2="3.275" y2="1.775" width="0.127" layer="21"/>
+<wire x1="3.275" y1="1.775" x2="3.275" y2="-1.775" width="0.127" layer="21"/>
+<wire x1="3.275" y1="-1.775" x2="-3.275" y2="-1.775" width="0.127" layer="21"/>
+<wire x1="-3.275" y1="-1.775" x2="-3.275" y2="1.775" width="0.127" layer="21"/>
+<rectangle x1="-3.81" y1="-4.445" x2="3.81" y2="4.445" layer="39"/>
+<circle x="-3.556" y="-3.2" radius="0.15875" width="0" layer="21"/>
+</package>
+<package name="SOT-89">
+<description>SOT-89
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/308/1/NCP785A_D-2317346.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+Based on page 10.</description>
+<smd name="2" x="0" y="-0.355" dx="0.58" dy="0.86" layer="1"/>
+<smd name="1" x="-1.5" y="0" dx="0.5" dy="1.57" layer="1"/>
+<smd name="3" x="1.5" y="0" dx="0.5" dy="1.57" layer="1"/>
+<wire x1="-2.3" y1="2.7" x2="2.3" y2="2.7" width="0.127" layer="21"/>
+<wire x1="2.3" y1="2.7" x2="2.3" y2="0.1" width="0.127" layer="21"/>
+<wire x1="2.3" y1="0.1" x2="-2.3" y2="0.1" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="0.1" x2="-2.3" y2="2.7" width="0.127" layer="21"/>
+<rectangle x1="-2.54" y1="-1.14" x2="2.54" y2="3.94" layer="39"/>
+<text x="0" y="3.94" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<polygon width="0" layer="1">
+<vertex x="-1" y="3.665"/>
+<vertex x="-1" y="0.785"/>
+<vertex x="-0.29" y="0.075"/>
+<vertex x="-0.29" y="0"/>
+<vertex x="0.29" y="0"/>
+<vertex x="0.29" y="0.075"/>
+<vertex x="1" y="0.785"/>
+<vertex x="1" y="3.665"/>
+</polygon>
+<polygon width="0" layer="31" spacing="0.05" pour="hatch">
+<vertex x="-1" y="3.665"/>
+<vertex x="-1" y="0.785"/>
+<vertex x="-0.29" y="0.075"/>
+<vertex x="-0.29" y="0"/>
+<vertex x="0.29" y="0"/>
+<vertex x="0.29" y="0.075"/>
+<vertex x="1" y="0.785"/>
+<vertex x="1" y="3.665"/>
+</polygon>
+<polygon width="0" layer="29" spacing="0.1" pour="hatch">
+<vertex x="-1.1" y="3.765"/>
+<vertex x="-1.1" y="0.714"/>
+<vertex x="-0.361" y="0.004"/>
+<vertex x="-0.29" y="0"/>
+<vertex x="0.29" y="0"/>
+<vertex x="0.361" y="0.004"/>
+<vertex x="1.1" y="0.714"/>
+<vertex x="1.1" y="3.765"/>
+</polygon>
+<circle x="-2.3" y="-0.508" radius="0.15875" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TEENSY_4.0">
@@ -759,6 +822,19 @@ Dashed line is edge of mated connector.</description>
 <text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
 <pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="VOLTAGE_REGULATOR">
+<description>This symbol is not fully style guide compliant, but it was intentionally done to be 0.3" spacing between the pins and easier reading of the small symbol.</description>
+<wire x1="0" y1="-7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<pin name="GND" x="7.62" y="-10.16" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="IN" x="-2.54" y="-2.54" length="short" direction="pwr"/>
+<pin name="OUT" x="17.78" y="-2.54" length="short" direction="sup" rot="R180"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<text x="8.89" y="-8.382" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="7.62" y="-6.35" size="1.524" layer="95" align="bottom-center">GND</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2330,6 +2406,61 @@ Requires ordering of:
 </device>
 </devices>
 </deviceset>
+<deviceset name="VOLTAGE_REGULATOR_?_*" prefix="U">
+<description>Voltage Regulators
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/389/dm00366442-1799212.pdf"&gt;LDL1117S50R Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/308/NCP785A_D-1812704.pdf"&gt;NCP785AH120T1G&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ti.com/lit/ds/symlink/lms8117a.pdf?HQS"&gt;LMS8117A Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT-223" package="SOT-223">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2 4"/>
+</connects>
+<technologies>
+<technology name="3.3V">
+<attribute name="DKPN" value="LMS8117AMP-3.3/NOPBCT-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MOPN" value="926-LMS8117AMP33NOPB"/>
+<attribute name="MPN" value="LMS8117AMP-3.3/NOPB"/>
+</technology>
+<technology name="5V">
+<attribute name="DKPN" value="497-17240-1-ND"/>
+<attribute name="MANUFACTURER" value="STMicroelectronics"/>
+<attribute name="MOPN" value="511-LDL1117S50R"/>
+<attribute name="MPN" value="LDL1117S50R"/>
+</technology>
+</technologies>
+</device>
+<device name="SOT-89" package="SOT-89">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="12V">
+<attribute name="DKPN" value="NCP785AH120T1GOSCT-ND"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor"/>
+<attribute name="MOPN" value="863-NCP785AH120T1G"/>
+<attribute name="MPN" value="NCP785AH120T1G"/>
+</technology>
+<technology name="15V">
+<attribute name="DKPN" value="NCP785AH150T1GOSTR-ND"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor"/>
+<attribute name="MOPN" value="863-NCP785AH150T1G"/>
+<attribute name="MPN" value="NCP785AH150T1G"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSupplies">
@@ -2590,6 +2721,10 @@ Requires ordering of:
 <part name="P8" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P9" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P10" library="HyTechSupplies" deviceset="+5V" device=""/>
+<part name="U3" library="HyTechDevices" deviceset="VOLTAGE_REGULATOR_?_*" device="SOT-223" technology="3.3V"/>
+<part name="P11" library="HyTechSupplies" deviceset="+12V" device=""/>
+<part name="P12" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="P13" library="HyTechSupplies" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2667,6 +2802,19 @@ Requires ordering of:
 <instance part="P10" gate="1" x="58.42" y="106.68" smashed="yes">
 <attribute name="VALUE" x="58.42" y="109.22" size="1.27" layer="96" align="bottom-center"/>
 </instance>
+<instance part="U3" gate="G$1" x="106.68" y="109.22" smashed="yes">
+<attribute name="NAME" x="106.68" y="109.982" size="1.27" layer="95"/>
+<attribute name="MPN" x="115.57" y="100.838" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="P11" gate="1" x="96.52" y="109.22" smashed="yes">
+<attribute name="VALUE" x="96.52" y="113.03" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P12" gate="1" x="114.3" y="93.98" smashed="yes">
+<attribute name="VALUE" x="114.3" y="92.71" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="P13" gate="1" x="132.08" y="109.22" smashed="yes">
+<attribute name="VALUE" x="132.08" y="111.76" size="1.27" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2725,6 +2873,11 @@ Requires ordering of:
 <pinref part="P8" gate="1" pin="GND"/>
 <wire x1="78.74" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="P12" gate="1" pin="GND"/>
+<wire x1="114.3" y1="99.06" x2="114.3" y2="96.52" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -2743,6 +2896,11 @@ Requires ordering of:
 <pinref part="A1" gate="G$1" pin="VIN"/>
 <wire x1="58.42" y1="104.14" x2="54.61" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="54.61" y1="104.14" x2="54.61" y2="100.33" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="OUT"/>
+<pinref part="P13" gate="1" pin="+5V"/>
+<wire x1="124.46" y1="106.68" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -2825,6 +2983,11 @@ Requires ordering of:
 <pinref part="P9" gate="1" pin="+12V"/>
 <wire x1="78.74" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="99.06" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P11" gate="1" pin="+12V"/>
+<pinref part="U3" gate="G$1" pin="IN"/>
+<wire x1="96.52" y1="106.68" x2="104.14" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
