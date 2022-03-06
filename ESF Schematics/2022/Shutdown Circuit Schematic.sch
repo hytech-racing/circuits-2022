@@ -1235,6 +1235,7 @@ Converter</text>
 <deviceset name="SWITCH_SPST_*" prefix="S">
 <description>Single Pull Single Throw Switch
 &lt;ul&gt;
+&lt;li&gt;&lt;a href  = "https://eao.com/fileadmin/documents/PDFs/en/03_brochures/EAO_PB_61_E-Stop_Compact_EN.pdf"&gt;EAO Series 61 27mm Illuminated Emergency Stop Swtich&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href  = "https://hmi.eao.com/p/965f6719"&gt;EAO Series 45 40mm Illuminated Emergency Stop Swtich&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href  = "https://hmi.eao.com/p/5909b34f"&gt;EAO Series 45 34mm Illuminated Emergency Stop Switch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href  = "https://www.mouser.com/datasheet/2/418/8/ENG_CD_35_210_100_R_900_5-2533843.pdf"&gt;TE Battery Disconnector Switch&lt;/a&gt;&lt;/li&gt;
@@ -1248,6 +1249,11 @@ Converter</text>
 <technology name="">
 <attribute name="MANUFACTURER" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="27MM_STOP">
+<attribute name="MANUFACTURER" value="EAO"/>
+<attribute name="MPN" value="Series 61 E-Stop"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 <technology name="34MM_STOP">
@@ -3962,13 +3968,13 @@ Layer: 94 Symbol</description>
 <part name="U$1" library="HyTechSymbols" deviceset="DC-DC_CONVERTER_*" device="" technology="DCM4623TD2J13D0T70"/>
 <part name="PACK+OPTOISOLATOR" library="HyTechSymbolsTemp" deviceset="RELAY_SOLIDSTATE_NO_*" device=""/>
 <part name="P18" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R2" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="12.4"/>
+<part name="R2" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="39"/>
 <part name="R3" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="1k"/>
 <part name="S1" library="HyTechSymbols" deviceset="SWITCH_SPST_*" device="" technology="INERTIA_SWITCH"/>
 <part name="S2" library="HyTechSymbols" deviceset="SWITCH_SPST_*" device="">
 <attribute name="MPN" value="BOTS"/>
 </part>
-<part name="S3" library="HyTechSymbols" deviceset="SWITCH_SPST_*" device="" technology="34MM_STOP"/>
+<part name="S3" library="HyTechSymbols" deviceset="SWITCH_SPST_*" device="" technology="27MM_STOP" value="SWITCH_SPST_27MM_STOP"/>
 <part name="S4" library="HyTechSymbols" deviceset="SWITCH_SPST_*" device="" technology="40MM_STOP"/>
 <part name="S5" library="HyTechSymbols" deviceset="SWITCH_SPST_*" device="" technology="40MM_STOP"/>
 <part name="S6" library="HyTechSymbols" deviceset="SWITCH_SPST_*" device="">
