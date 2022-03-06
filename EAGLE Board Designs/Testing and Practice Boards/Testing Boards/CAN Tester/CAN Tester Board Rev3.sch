@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2721,18 +2721,21 @@ Requires ordering of:
 <part name="P8" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P9" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P10" library="HyTechSupplies" deviceset="+5V" device=""/>
-<part name="U3" library="HyTechDevices" deviceset="VOLTAGE_REGULATOR_?_*" device="SOT-223" technology="3.3V"/>
 <part name="P11" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P12" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P13" library="HyTechSupplies" deviceset="+5V" device=""/>
+<part name="U2" library="HyTechDevices" deviceset="VOLTAGE_REGULATOR_?_*" device="SOT-89" technology="12V"/>
+<part name="P14" library="HyTechSupplies" deviceset="+3V3" device=""/>
+<part name="P15" library="HyTechSupplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="76.2" y="40.64" size="2.54" layer="95">CAN Termination</text>
+<frame x1="0" y1="0" x2="177.8" y2="152.4" columns="8" rows="5" layer="91"/>
 </plain>
 <instances>
-<instance part="A1" gate="G$1" x="31.75" y="105.41" smashed="yes"/>
+<instance part="A1" gate="G$1" x="30.48" y="106.68" smashed="yes"/>
 <instance part="U1" gate="G$1" x="71.12" y="73.66" smashed="yes">
 <attribute name="NAME" x="71.12" y="74.422" size="1.27" layer="95"/>
 <attribute name="MPN" x="71.12" y="55.118" size="1.27" layer="95" align="top-left"/>
@@ -2802,10 +2805,6 @@ Requires ordering of:
 <instance part="P10" gate="1" x="58.42" y="106.68" smashed="yes">
 <attribute name="VALUE" x="58.42" y="109.22" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U3" gate="G$1" x="106.68" y="109.22" smashed="yes">
-<attribute name="NAME" x="106.68" y="109.982" size="1.27" layer="95"/>
-<attribute name="MPN" x="115.57" y="100.838" size="1.27" layer="96" align="top-left"/>
-</instance>
 <instance part="P11" gate="1" x="96.52" y="109.22" smashed="yes">
 <attribute name="VALUE" x="96.52" y="113.03" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -2815,6 +2814,16 @@ Requires ordering of:
 <instance part="P13" gate="1" x="132.08" y="109.22" smashed="yes">
 <attribute name="VALUE" x="132.08" y="111.76" size="1.27" layer="96" align="bottom-center"/>
 </instance>
+<instance part="U2" gate="G$1" x="106.68" y="109.22" smashed="yes">
+<attribute name="NAME" x="106.68" y="109.982" size="1.27" layer="95"/>
+<attribute name="MPN" x="115.57" y="100.838" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="P14" gate="G$1" x="60.96" y="101.6" smashed="yes">
+<attribute name="VALUE" x="60.96" y="102.87" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P15" gate="1" x="25.4" y="58.42" smashed="yes">
+<attribute name="VALUE" x="25.4" y="57.15" size="1.27" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2823,18 +2832,16 @@ Requires ordering of:
 <segment>
 <pinref part="A1" gate="G$1" pin="(CTX1)D1"/>
 <pinref part="U1" gate="G$1" pin="TXD"/>
-<wire x1="54.61" y1="64.77" x2="68.58" y2="64.77" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="64.77" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
-<label x="58.42" y="68.58" size="1.27" layer="95" xref="yes"/>
+<wire x1="53.34" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
+<label x="55.88" y="66.04" size="1.27" layer="95" align="top-left"/>
 </segment>
 </net>
 <net name="4.0_CRX" class="0">
 <segment>
 <pinref part="A1" gate="G$1" pin="(CRX1)D0"/>
 <pinref part="U1" gate="G$1" pin="RXD"/>
-<wire x1="54.61" y1="62.23" x2="68.58" y2="62.23" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="62.23" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
-<label x="55.88" y="58.42" size="1.27" layer="95" xref="yes"/>
+<wire x1="53.34" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
+<label x="55.88" y="63.5" size="1.27" layer="95" align="top-left"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2855,7 +2862,6 @@ Requires ordering of:
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="58.42" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="60.96" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
-<junction x="114.3" y="58.42"/>
 </segment>
 <segment>
 <pinref part="P5" gate="1" pin="GND"/>
@@ -2865,8 +2871,8 @@ Requires ordering of:
 <segment>
 <pinref part="J1" gate="G$1" pin="GND"/>
 <pinref part="P7" gate="1" pin="GND"/>
-<wire x1="48.26" y1="38.1" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="38.1" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="38.1" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
@@ -2874,9 +2880,15 @@ Requires ordering of:
 <wire x1="78.74" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="P12" gate="1" pin="GND"/>
 <wire x1="114.3" y1="99.06" x2="114.3" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="A1" gate="G$1" pin="GND"/>
+<wire x1="27.94" y1="63.5" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="P15" gate="1" pin="GND"/>
+<wire x1="25.4" y1="63.5" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -2892,15 +2904,16 @@ Requires ordering of:
 <wire x1="114.3" y1="81.28" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P10" gate="1" pin="+5V"/>
-<pinref part="A1" gate="G$1" pin="VIN"/>
-<wire x1="58.42" y1="104.14" x2="54.61" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="54.61" y1="104.14" x2="54.61" y2="100.33" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="OUT"/>
 <pinref part="P13" gate="1" pin="+5V"/>
 <wire x1="124.46" y1="106.68" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="OUT"/>
+<label x="124.46" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="A1" gate="G$1" pin="VIN"/>
+<wire x1="53.34" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="P10" gate="1" pin="+5V"/>
+<wire x1="58.42" y1="101.6" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -2912,6 +2925,11 @@ Requires ordering of:
 <wire x1="101.6" y1="73.66" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
 <junction x="101.6" y="68.58"/>
+</segment>
+<segment>
+<pinref part="A1" gate="G$1" pin="3.3V"/>
+<wire x1="53.34" y1="99.06" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="P14" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="CANH" class="1">
@@ -2975,8 +2993,8 @@ Requires ordering of:
 <segment>
 <pinref part="J1" gate="G$1" pin="+12V"/>
 <pinref part="P6" gate="1" pin="+12V"/>
-<wire x1="48.26" y1="45.72" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="45.72" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -2986,8 +3004,8 @@ Requires ordering of:
 </segment>
 <segment>
 <pinref part="P11" gate="1" pin="+12V"/>
-<pinref part="U3" gate="G$1" pin="IN"/>
 <wire x1="96.52" y1="106.68" x2="104.14" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="IN"/>
 </segment>
 </net>
 </nets>
@@ -2999,6 +3017,11 @@ Requires ordering of:
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="9.0" severity="warning">
+Since Version 9.0, EAGLE supports the align property for labels. 
+Labels in schematic will not be understood with this version. Update EAGLE to the latest version 
+for full support of labels. 
 </note>
 </compatibility>
 </eagle>
