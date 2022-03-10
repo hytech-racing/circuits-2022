@@ -7011,17 +7011,17 @@ Layer: 94 Symbol</description>
 <part name="P48" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P49" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="D3" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="RED-ORANGE"/>
-<part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="15" value="RESISTOR_0603_15"/>
 <part name="D8" library="HyTechDevices" deviceset="LED_?_*" device="2835" technology="GREEN"/>
 <part name="Q9" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="" technology="PMV15ENEA"/>
-<part name="RN3" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10K"/>
-<part name="RN9" library="HyTechDevices" deviceset="RESISTOR_NETWORK_4_*" device="" technology="10"/>
 <part name="U6" library="HyTechDevices" deviceset="LOGICGATE_INVERTER_" device="" technology="DCK3"/>
 <part name="U7" library="HyTechDevices" deviceset="LOGICGATE_INVERTER_" device="" technology="DCK3"/>
 <part name="P43" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P50" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P51" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P52" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="15"/>
+<part name="R27" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10"/>
+<part name="R28" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -8814,10 +8814,6 @@ Error and State LEDs</text>
 <attribute name="COLOR" x="41.91" y="122.682" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="41.91" y="128.016" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R26" gate="G$1" x="233.68" y="172.72" smashed="yes">
-<attribute name="NAME" x="232.41" y="173.99" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="232.41" y="171.45" size="1.27" layer="96" align="top-center"/>
-</instance>
 <instance part="D8" gate="LED" x="223.52" y="172.72" smashed="yes">
 <attribute name="COLOR" x="223.52" y="170.942" size="1.27" layer="95" align="top-left"/>
 <attribute name="NAME" x="222.25" y="176.276" size="1.27" layer="96" align="bottom-center"/>
@@ -8829,14 +8825,6 @@ Error and State LEDs</text>
 <instance part="DN2" gate="D" x="236.22" y="162.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="234.315" y="161.29" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="238.125" y="161.29" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="RN3" gate="A" x="226.06" y="162.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="224.79" y="161.29" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="227.33" y="161.29" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="RN9" gate="A" x="243.84" y="165.1" smashed="yes">
-<attribute name="NAME" x="242.57" y="166.37" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="242.57" y="163.83" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="U6" gate="A" x="119.38" y="142.24" smashed="yes">
 <attribute name="NAME" x="121.793" y="145.288" size="1.27" layer="95"/>
@@ -8865,6 +8853,18 @@ Error and State LEDs</text>
 </instance>
 <instance part="P52" gate="1" x="71.12" y="193.04" smashed="yes">
 <attribute name="VALUE" x="71.12" y="191.77" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R26" gate="G$1" x="233.68" y="172.72" smashed="yes">
+<attribute name="NAME" x="232.41" y="173.99" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="232.41" y="171.45" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R27" gate="G$1" x="243.84" y="165.1" smashed="yes">
+<attribute name="NAME" x="242.57" y="166.37" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="RESISTANCE" x="242.57" y="163.83" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="R28" gate="G$1" x="226.06" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="224.79" y="161.29" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="227.33" y="161.29" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -9254,22 +9254,22 @@ Error and State LEDs</text>
 <net name="N$33" class="0">
 <segment>
 <wire x1="226.06" y1="172.72" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="D8" gate="LED" pin="C"/>
+<pinref part="R26" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
-<pinref part="R26" gate="G$1" pin="2"/>
 <pinref part="Q9" gate="G$1" pin="D"/>
 <wire x1="236.22" y1="172.72" x2="258.572" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
 <pinref part="Q9" gate="G$1" pin="G"/>
 <wire x1="246.38" y1="165.1" x2="248.412" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="RN9" gate="A" pin="2"/>
+<pinref part="R27" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND1" class="0">
@@ -9280,7 +9280,6 @@ Error and State LEDs</text>
 <junction x="258.572" y="157.48"/>
 <wire x1="226.06" y1="157.48" x2="258.572" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="157.48" x2="264.16" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="RN3" gate="A" pin="1"/>
 <wire x1="258.572" y1="111.76" x2="264.16" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="DN1" gate="A" pin="A"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
@@ -9300,19 +9299,20 @@ Error and State LEDs</text>
 <wire x1="226.06" y1="134.62" x2="258.572" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="134.62" x2="264.16" y2="111.76" width="0.1524" layer="91"/>
 <junction x="264.16" y="111.76"/>
+<pinref part="R28" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="LED_TRACTIVE" class="0">
 <segment>
-<pinref part="RN9" gate="A" pin="1"/>
 <pinref part="DN2" gate="D" pin="C"/>
 <wire x1="238.76" y1="165.1" x2="236.22" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="RN3" gate="A" pin="2"/>
-<wire x1="236.22" y1="165.1" x2="226.06" y2="165.1" width="0.1524" layer="91"/>
 <junction x="236.22" y="165.1"/>
+<wire x1="236.22" y1="165.1" x2="226.06" y2="165.1" width="0.1524" layer="91"/>
+<label x="210.82" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="165.1" x2="210.82" y2="165.1" width="0.1524" layer="91"/>
 <junction x="226.06" y="165.1"/>
-<label x="210.82" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$48" class="0">
