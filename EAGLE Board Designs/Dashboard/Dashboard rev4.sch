@@ -8948,42 +8948,42 @@ Error and State LEDs</text>
 <junction x="152.4" y="167.64"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="MODE_LED-" class="0">
 <segment>
 <wire x1="226.06" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="D104" gate="LED" pin="C"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="IMD_LED-" class="0">
 <segment>
 <wire x1="48.26" y1="175.26" x2="45.72" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="D100" gate="LED" pin="C"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="AMS_LED-" class="0">
 <segment>
 <wire x1="48.26" y1="149.86" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="D107" gate="LED" pin="C"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="START_LED-" class="0">
 <segment>
 <wire x1="226.06" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
 <pinref part="D105" gate="LED" pin="C"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="S/D_G_LED-" class="0">
 <segment>
 <wire x1="144.78" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="D2" gate="LED" pin="C"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="MCU_LED-" class="0">
 <segment>
 <wire x1="48.26" y1="124.46" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -9088,7 +9088,7 @@ Error and State LEDs</text>
 <pinref part="RN8" gate="C" pin="2"/>
 </segment>
 </net>
-<net name="N$49" class="0">
+<net name="S/D_F_LED-" class="0">
 <segment>
 <pinref part="D106" gate="LED" pin="C"/>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -9109,7 +9109,7 @@ Error and State LEDs</text>
 <pinref part="RN8" gate="D" pin="2"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="BRB_LED-" class="0">
 <segment>
 <pinref part="D1" gate="LED" pin="C"/>
 <pinref part="R23" gate="G$1" pin="1"/>
@@ -9263,8 +9263,6 @@ Error and State LEDs</text>
 <pinref part="P50" gate="1" pin="+5V"/>
 <wire x1="60.96" y1="203.2" x2="71.12" y2="203.2" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$32" class="0">
 <segment>
 <pinref part="D104" gate="LED" pin="A"/>
 <wire x1="218.44" y1="149.86" x2="215.9" y2="149.86" width="0.1524" layer="91"/>
@@ -9275,11 +9273,11 @@ Error and State LEDs</text>
 <wire x1="218.44" y1="172.72" x2="215.9" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="172.72" x2="215.9" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="P49" gate="1" pin="+5V"/>
-<wire x1="215.9" y1="180.34" x2="215.9" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="172.72" x2="215.9" y2="180.34" width="0.1524" layer="91"/>
 <junction x="215.9" y="172.72"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="TRACTIVE_LED-" class="0">
 <segment>
 <wire x1="226.06" y1="172.72" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="D8" gate="LED" pin="C"/>
