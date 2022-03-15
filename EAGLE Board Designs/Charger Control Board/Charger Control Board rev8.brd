@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -29,12 +29,12 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -4742,7 +4742,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Vishay Vitramon" x="130.81" y="32.512" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MOPN" value="77-VJ0603Y104JXQPBC" x="130.81" y="32.512" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="VJ0603Y104JXQPW1BC" x="130.81" y="32.512" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="25.92" y="74.422" size="0.8128" layer="26" font="vector" rot="MR270" align="bottom-center"/>
+<attribute name="NAME" x="25.134" y="74.422" size="0.8128" layer="26" font="vector" rot="MR90" align="bottom-center"/>
 <attribute name="TOLERANCE" value="5%" x="130.81" y="32.512" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="130.81" y="32.512" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
@@ -4772,7 +4772,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Würth Elektronik" x="-92.3036" y="-47.2948" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="710-885012206012" x="-92.3036" y="-47.2948" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="885012206012" x="-92.3036" y="-47.2948" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="14.744" y="11.6332" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="14.2748" y="12.204" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="-92.3036" y="-47.2948" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="-92.3036" y="-47.2948" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -4794,7 +4794,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <element name="MAIN_CONNECTOR" library="HyTechDevices - Copy" package="MOLEX_MICROFIT_PTH_VERTICAL_08_DUAL" value="CONNECTOR-8_MF_T_V_" x="27.305" y="4.826" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="MOLEX" x="-22.225" y="89.916" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="430450814" x="-22.225" y="89.916" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="19.2532" y="6.858" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="25.4" y="10.8458" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="R25" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_22" x="50.8" y="46.609" smashed="yes" rot="R270">
 <attribute name="DKPN" value="311-22.0HRCT-ND" x="-59.69" y="12.319" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4849,7 +4849,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Yageo" x="119.4054" y="86.0552" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOPN" value="603-RC0603FR-0760R4L" x="119.4054" y="86.0552" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0603FR-0760R4L" x="119.4054" y="86.0552" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="11.1506" y="13.6652" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="11.9634" y="13.7668" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="POWER" value="0.1W" x="119.4054" y="86.0552" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="RESISTANCE" value="60.4" x="119.4054" y="86.0552" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="119.4054" y="86.0552" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4930,7 +4930,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Kingbright" x="83.82" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECK" x="83.82" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="APT1608SECK" x="83.82" y="68.58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="84.709" y="68.5426" size="0.8128" layer="25" font="vector" align="center-left"/>
 </element>
 <element name="R5" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_1K" x="82.042" y="64.262" smashed="yes" rot="R270">
 <attribute name="DKPN" value="311-1.00KHRCT-ND" x="85.852" y="62.992" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4950,7 +4949,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Kingbright" x="80.01" y="62.992" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECK" x="80.01" y="62.992" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="APT1608SECK" x="80.01" y="62.992" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="84.709" y="64.25" size="0.8128" layer="25" font="vector" align="center-left"/>
 </element>
 <element name="R4" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_1K" x="82.042" y="59.944" smashed="yes" rot="R270">
 <attribute name="DKPN" value="311-1.00KHRCT-ND" x="85.852" y="58.674" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4970,7 +4968,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Kingbright" x="80.01" y="58.674" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECK" x="80.01" y="58.674" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="APT1608SECK" x="80.01" y="58.674" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="84.709" y="59.8304" size="0.8128" layer="25" font="vector" align="center-left"/>
 </element>
 <element name="R3" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_1K" x="82.042" y="55.626" smashed="yes" rot="R270">
 <attribute name="DKPN" value="311-1.00KHRCT-ND" x="85.852" y="54.356" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4990,7 +4987,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Kingbright" x="80.01" y="54.356" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOPN" value="604-APT1608SECK" x="80.01" y="54.356" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="APT1608SECK" x="80.01" y="54.356" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="84.709" y="55.614" size="0.8128" layer="25" font="vector" align="center-left"/>
 </element>
 <element name="R23" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_33K" x="41.402" y="55.245" smashed="yes" rot="R180">
 <attribute name="DKPN" value="311-33.0KHRTR-ND" x="41.402" y="55.245" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5245,7 +5241,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="TE Connectivity" x="74.93" y="17.018" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="655-6-1393243-2" x="74.93" y="17.018" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RT424009" x="74.93" y="17.018" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="82.042" y="11.43" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="81.788" y="22.352" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
 <element name="C5" library="HyTechDevices" package="0603-CAP" value="CAPACITOR_0603_10V_1UF" x="13.6652" y="35.306" smashed="yes">
 <attribute name="CAPACITANCE" value="1µF" x="13.6652" y="35.306" size="1.778" layer="27" display="off"/>
@@ -5270,7 +5266,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <element name="AUX_CAN" library="HyTechDevices - Copy" package="MOLEX_MICROFIT_PTH_VERTICAL_04_DUAL" value="CONNECTOR-CAN_MF_T_V_" x="12.7" y="4.826" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Molex" x="19.05" y="-7.874" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="430450414" x="19.05" y="-7.874" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="7.62" y="6.858" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="11.43" y="10.795" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="POWER" library="HyTechDevices" package="MOLEX_MICROFIT_PTH_VERTICAL_02_SINGLE" value="CONNECTOR-2_MF_T_V_" x="4.953" y="16.383" smashed="yes" rot="R90">
 <attribute name="DKPN" value="WM12762-ND" x="4.953" y="16.383" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5284,7 +5280,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Molex" x="74.676" y="4.826" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOPN" value="538-43650-0217" x="74.676" y="4.826" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0436500217" x="74.676" y="4.826" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="74.422" y="8.9662" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="74.676" y="8.0518" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="U2" library="HyTechDevices_temp" package="SOT-23-5" value="ADM8316WBX30" x="29.21" y="41.021" smashed="yes">
 <attribute name="DKPN" value="ADM8316WBX30ARJZR7TR-ND" x="29.21" y="41.021" size="1.778" layer="27" display="off"/>
@@ -5512,7 +5508,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <element name="CHG_CAN" library="HyTechDevices - Copy" package="MOLEX_MICROFIT_PTH_VERTICAL_06_DUAL" value="CONNECTOR-6_MF_T_V_" x="43.053" y="4.826" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="MOLEX" x="43.053" y="4.826" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="430450614" x="43.053" y="4.826" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="36.449" y="6.858" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="42.291" y="10.795" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="R18" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_33K" x="25.527" y="55.245" smashed="yes" rot="R180">
 <attribute name="DKPN" value="311-33.0KHRTR-ND" x="24.257" y="55.245" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5745,7 +5741,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <attribute name="MANUFACTURER" value="Murata Power Solutions Inc." x="9.398" y="28.448" size="1.778" layer="27" display="off"/>
 <attribute name="MOPN" value="580-OKI78SR5/1.5W36C" x="9.398" y="28.448" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="OKI-78SR-5/1.5-W36-C" x="9.398" y="28.448" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="9.398" y="34.163" size="0.8128" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="6.35" y="34.163" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="U$3" library="HyTechManufacturing" package="LOGO_HYTECH_LARGE" value="" x="5.842" y="87.376" smashed="yes"/>
 <element name="R38" library="HyTechDevices" package="0603-RES" value="RESISTOR_0603_10K" x="42.799" y="17.145" smashed="yes">
@@ -5879,7 +5875,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="18.669" y1="24.257" x2="16.256" y2="24.257" width="0.254" layer="1"/>
 <wire x1="16.256" y1="24.257" x2="16.002" y2="24.003" width="0.254" layer="1"/>
 <via x="16.002" y="24.003" extent="1-16" drill="0.381"/>
-<wire x1="83.82" y1="56.451" x2="83.947" y2="56.578" width="0.254" layer="1"/>
 <wire x1="42.8752" y1="58.42" x2="43.5238" y2="58.42" width="0.1524" layer="1"/>
 <wire x1="43.5238" y1="58.42" x2="44.9208" y2="59.817" width="0.1524" layer="1"/>
 <wire x1="17.311" y1="37.9984" x2="17.2094" y2="38.1" width="0.1524" layer="1"/>
@@ -5911,7 +5906,6 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <vertex x="87.63" y="-1.27"/>
 <vertex x="87.63" y="102.87"/>
 </polygon>
-<wire x1="83.82" y1="56.451" x2="85.027" y2="56.451" width="0.254" layer="1"/>
 <wire x1="85.027" y1="56.451" x2="85.09" y2="56.388" width="0.254" layer="1"/>
 <via x="85.09" y="56.388" extent="1-16" drill="0.3556"/>
 <wire x1="83.82" y1="60.769" x2="85.027" y2="60.769" width="0.254" layer="1"/>
@@ -5953,6 +5947,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="5.2578" y1="8.2169" x2="5.969" y2="8.2169" width="0.254" layer="1"/>
 <via x="5.969" y="8.2169" extent="1-16" drill="0.381"/>
 <wire x1="4.0386" y1="6.9977" x2="5.2578" y2="8.2169" width="0.254" layer="1"/>
+<wire x1="83.82" y1="56.451" x2="85.027" y2="56.451" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="D5" pad="3"/>
