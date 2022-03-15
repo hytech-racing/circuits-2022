@@ -8231,14 +8231,14 @@ when enable pin is open.</text>
 <wire x1="22.86" y1="177.8" x2="22.86" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="COCKPIT_BRB" class="0">
+<net name="SHUTDOWN_I" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="175.26" x2="43.18" y2="175.26" width="0.1524" layer="91"/>
 <label x="43.18" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="COCKPIT_BRB_READ" class="0">
+<net name="SHUTDOWN_I_READ" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="5(PWM)"/>
 <wire x1="76.2" y1="127" x2="71.12" y2="127" width="0.1524" layer="91"/>
@@ -8260,6 +8260,8 @@ when enable pin is open.</text>
 <text x="63.5" y="124.46" size="1.778" layer="97">INERTIA</text>
 <text x="195.58" y="12.7" size="2.54" layer="97">Schematic of Dashboard PCB for HT05 :
 Shutdown and Buzzer Control Circuitry</text>
+<text x="63.5" y="73.66" size="1.778" layer="97">COCKPIT_BRB</text>
+<text x="63.5" y="99.06" size="1.778" layer="97">BOTS</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="O" x="0" y="0" smashed="yes">
@@ -8559,7 +8561,7 @@ Shutdown and Buzzer Control Circuitry</text>
 <wire x1="190.5" y1="104.14" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="COCKPIT_BRB" class="0">
+<net name="SHUTDOWN_I" class="0">
 <segment>
 <label x="78.74" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R24" gate="G$1" pin="1"/>
@@ -8570,7 +8572,7 @@ Shutdown and Buzzer Control Circuitry</text>
 <junction x="81.28" y="71.12"/>
 </segment>
 </net>
-<net name="COCKPIT_BRB_READ" class="0">
+<net name="SHUTDOWN_I_READ" class="0">
 <segment>
 <wire x1="109.22" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
@@ -9123,7 +9125,7 @@ Error and State LEDs</text>
 <wire x1="152.4" y1="124.46" x2="174.752" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="COCKPIT_BRB_READ" class="0">
+<net name="SHUTDOWN_I_READ" class="0">
 <segment>
 <label x="111.76" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U7" gate="A" pin="IN"/>

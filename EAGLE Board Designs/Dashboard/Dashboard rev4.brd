@@ -211,22 +211,22 @@
 <wire x1="104.9872625" y1="4.64331875" x2="106.42481875" y2="24.744059375" width="0.001" layer="20" locked="yes"/>
 <wire x1="-95.3978" y1="0" x2="100" y2="0" width="0.001" layer="20" locked="yes"/>
 <wire x1="-102.60948125" y1="25.11001875" x2="-100.36861875" y2="4.46056875" width="0.001" layer="20"/>
-<text x="74.93" y="6.985" size="3.048" layer="26" rot="MR0" align="bottom-center">AMS</text>
-<text x="74.93" y="18.035" size="3.048" layer="26" rot="MR0" align="bottom-center">IMD</text>
-<text x="60.96" y="17.78" size="3.048" layer="26" rot="MR0" align="bottom-center">MCU</text>
-<text x="30.72" y="17.78" size="3.048" layer="26" rot="MR0" align="bottom-center">INERTIA</text>
-<text x="-15" y="18.78" size="3.048" layer="26" rot="MR0" align="bottom-center">MODE</text>
-<text x="-15.24" y="6.78" size="3.048" layer="26" rot="MR0" align="bottom-center">START</text>
-<text x="15.24" y="17.78" size="3.048" layer="26" rot="MR0" align="bottom-center">SSOK</text>
+<text x="74.93" y="6.985" size="3.048" layer="22" rot="MR0" align="bottom-center">AMS</text>
+<text x="74.93" y="18.035" size="3.048" layer="22" rot="MR0" align="bottom-center">IMD</text>
+<text x="60.96" y="17.78" size="3.048" layer="22" rot="MR0" align="bottom-center">MCU</text>
+<text x="30.72" y="17.78" size="3.048" layer="22" rot="MR0" align="bottom-center">INERTIA</text>
+<text x="-15" y="18.78" size="3.048" layer="22" rot="MR0" align="bottom-center">MODE</text>
+<text x="-15.24" y="6.78" size="3.048" layer="22" rot="MR0" align="bottom-center">START</text>
+<text x="15.24" y="17.78" size="3.048" layer="22" rot="MR0" align="bottom-center">SSOK</text>
 <text x="94.615" y="5.08" size="1.016" layer="21" font="vector" align="center">HyTech Racing 2022
 Dashboard rev4
 Designed by Youssef Jaafar
 </text>
 <text x="44" y="22.238" size="1.524" layer="21" font="vector" align="bottom-center">INERTIA</text>
 <text x="44" y="17.238" size="1.524" layer="21" font="vector" align="bottom-center">SHUTDOWN_H</text>
-<text x="45.24" y="17.78" size="3.048" layer="26" rot="MR0" align="bottom-center">BRB</text>
+<text x="45.24" y="17.78" size="3.048" layer="22" rot="MR0" align="bottom-center">BRB</text>
 <text x="44" y="12.238" size="1.524" layer="21" font="vector" align="bottom-center">COCKPIT_BRB</text>
-<text x="0" y="17.78" size="3.048" layer="26" rot="MR0" align="bottom-center">TSB</text>
+<text x="0" y="17.78" size="3.048" layer="22" rot="MR0" align="bottom-center">TSB</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -7832,7 +7832,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="53.238" y1="26" x2="52.65" y2="25.412" width="0.508" layer="1"/>
 <wire x1="52.65" y1="25.412" x2="52.65" y2="23.7363" width="0.508" layer="1"/>
 </signal>
-<signal name="COCKPIT_BRB">
+<signal name="SHUTDOWN_I">
 <contactref element="J4" pad="2"/>
 <contactref element="R24" pad="1"/>
 <wire x1="57.4093" y1="21.209" x2="55.65" y2="22.9683" width="0.254" layer="1"/>
@@ -7882,7 +7882,7 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="-23.0033" y1="35" x2="-23.1533" y2="34.85" width="0.254" layer="1"/>
 <wire x1="-23.1533" y1="34.85" x2="-25" y2="34.85" width="0.254" layer="1"/>
 </signal>
-<signal name="COCKPIT_BRB_READ">
+<signal name="SHUTDOWN_I_READ">
 <contactref element="R24" pad="2"/>
 <contactref element="U1" pad="9"/>
 <contactref element="R25" pad="1"/>
