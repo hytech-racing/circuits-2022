@@ -8931,7 +8931,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="C104" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF"/>
 <part name="P32" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P34" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R106" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R106" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
 <part name="R105" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="43K"/>
 <part name="P33" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="C100" library="HyTechDevices - Copy" deviceset="CAPACITOR_?_*" device="0603" technology="10V_10NF"/>
@@ -9124,7 +9124,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="TSAL_RED" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="R62" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
 <part name="R61" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="2K"/>
-<part name="WATCHDOG" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
+<part name="WATCHDOG" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE" value="LED_0603_BLUE"/>
 <part name="TEENSY_OK" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="P77" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P79" library="HyTechSupplies" deviceset="GND" device=""/>
