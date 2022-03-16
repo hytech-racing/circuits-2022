@@ -192,7 +192,7 @@
 <wire x1="86.36" y1="0" x2="86.36" y2="101.6" width="0" layer="20"/>
 <wire x1="86.36" y1="101.6" x2="0" y2="101.6" width="0" layer="20"/>
 <wire x1="0" y1="101.6" x2="0" y2="0" width="0" layer="20"/>
-<text x="50.8" y="57.15" size="1.016" layer="25" font="vector">HyTech Racing 2022
+<text x="53.34" y="55.118" size="1.016" layer="25" font="vector">HyTech Racing 2022
 Charger Control Unit rev 8
 Designed by Daniel Vail
 Mikhail Allen</text>
