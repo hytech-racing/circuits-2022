@@ -9599,16 +9599,16 @@ Dashed line is edge of mated connector.</description>
 </part>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P1" library="HyTechSupplies" deviceset="+12V" device=""/>
-<part name="D5" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
+<part name="D4" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
 <part name="P3" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P4" library="HyTechSupplies" deviceset="+5V" device=""/>
-<part name="C7" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
+<part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
 <part name="C6" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
 <part name="P5" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="MAIN_CONNECTOR" library="HyTechDevices" deviceset="CONNECTOR-8_?_*" device="MF_T_V" technology="BLACK"/>
 <part name="P6" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P7" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="D100" library="HyTechDevices" deviceset="TVS_BIDIRECTIONAL_DUAL" device=""/>
+<part name="D104" library="HyTechDevices" deviceset="TVS_BIDIRECTIONAL_DUAL" device=""/>
 <part name="P8" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="A2" library="HyTechDevices" deviceset="TEENSY_4.0" device=""/>
 <part name="P9" library="HyTechSupplies" deviceset="+5V" device=""/>
@@ -9631,7 +9631,7 @@ Dashed line is edge of mated connector.</description>
 <part name="C102" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="R40" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="60.4"/>
 <part name="R39" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="60.4"/>
-<part name="C8" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_4.7NF"/>
+<part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_4.7NF"/>
 <part name="P24" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="FRAME2" library="HyTechFrames" deviceset="FRAME" device="">
 <attribute name="DESCRIPTION_1" value="Facilitates and monitors battery charging"/>
@@ -9655,50 +9655,50 @@ Dashed line is edge of mated connector.</description>
 <part name="LATCH" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="WHITE"/>
 <part name="R35" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="P37" library="HyTechSupplies" deviceset="+5V" device=""/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="SHDN_E" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="P38" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="SHDN_D" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="P39" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="SHDN_C" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="P40" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="SHDN_B" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="P41" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R23" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K" value="RESISTOR_0603_33K"/>
-<part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
+<part name="R15" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P42" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R22" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K" value="RESISTOR_0603_33K"/>
-<part name="R15" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P43" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R21" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K" value="RESISTOR_0603_33K"/>
-<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
+<part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P44" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R20" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K" value="RESISTOR_0603_33K"/>
-<part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
+<part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P45" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K" value="RESISTOR_0603_33K"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P46" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P47" library="HyTechSupplies" deviceset="+12V" device=""/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="P48" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="P48" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="P49" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="P50" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R29" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="P52" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K" value="RESISTOR_0603_33K"/>
-<part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
+<part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P53" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R32" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="P54" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="OKHS" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE" value="LED_0603_ORANGE"/>
 <part name="BMS_OK" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
-<part name="STATUS_4.0" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="STATUS_4.2" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="5V_PWR" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
 <part name="P55" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="K1" library="HyTechDevices" deviceset="RELAY_DPDT" device=""/>
@@ -9712,17 +9712,17 @@ Dashed line is edge of mated connector.</description>
 <part name="POWER" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="MF_T_V" technology="BLACK" value="CONNECTOR-2_MF_T_V_"/>
 <part name="SHDN_BTN" library="HyTechDevices" deviceset="CONNECTOR-2_?_*" device="MF_T_V" technology="BLACK" value="CONNECTOR-2_MF_T_V_"/>
 <part name="U2" library="HyTechDevices_temp" deviceset="ADM8316" device="" technology="WBX30" value="ADM8316WBX30"/>
-<part name="R28" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
-<part name="R29" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
+<part name="R27" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="R28" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K" value="RESISTOR_0603_10K"/>
 <part name="C1" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P60" library="HyTechSupplies" deviceset="+3V3" device=""/>
 <part name="C3" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 <part name="P61" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P62" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R27" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100K"/>
+<part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="100K"/>
 <part name="P25" library="HyTechSupplies" deviceset="+3V3" device=""/>
 <part name="STATUS_4.1" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="P26" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P27" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="P28" library="HyTechSupplies" deviceset="+12V" device=""/>
@@ -9731,11 +9731,11 @@ Dashed line is edge of mated connector.</description>
 <part name="XF1" library="HyTechDevices" deviceset="FUSE_HOLDER_*" device="PTH" technology="MINIBLADE"/>
 <part name="XF2" library="HyTechDevices" deviceset="FUSE_HOLDER_*" device="PTH" technology="MINIBLADE"/>
 <part name="D105" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
-<part name="D104" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="D103" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
+<part name="D102" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="D1" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="D2" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
-<part name="D4" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
+<part name="D3" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="U100" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
 <part name="U101" library="HyTechDevices" deviceset="MCP2562FD" device=""/>
 <part name="P17" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -9749,57 +9749,57 @@ Dashed line is edge of mated connector.</description>
 <part name="CHG_CAN" library="HyTechDevices" deviceset="CONNECTOR-6_?_*" device="MF_T_V" technology="BLACK"/>
 <part name="P56" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R18" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="33K" value="RESISTOR_0603_33K"/>
-<part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12K"/>
 <part name="P63" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="P64" library="HyTechSupplies" deviceset="GND" device=""/>
-<part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP6" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="SHDN_D"/>
 </part>
 <part name="TP5" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="SHDN_E"/>
 </part>
-<part name="TP9" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="CCU_OK"/>
 </part>
-<part name="TP8" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="IMD_OK"/>
 </part>
-<part name="TP7" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP3" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="BMS_OK"/>
 </part>
-<part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP12" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="GND"/>
 </part>
-<part name="TP12" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP11" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="+5V"/>
 </part>
 <part name="TP13" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="+12V"/>
 </part>
-<part name="TP10" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP8" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="SHDN_A"/>
 </part>
-<part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP9" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="SHDN_B"/>
 </part>
-<part name="TP3" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP7" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="SHDN_C"/>
 </part>
-<part name="TP11" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP10" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="+3V3"/>
 </part>
-<part name="TP6" library="HyTechDevices" deviceset="TEST_POINT" device="">
+<part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device="">
 <attribute name="SIGNAL" value="SHDN_F"/>
 </part>
 <part name="U$4" library="HyTechDevices_temp" deviceset="RELAY_SOLIDSTATE_NO" device=""/>
 <part name="4.1_ONLY" library="HyTechDevices_Jumper" deviceset="JUMPER_?_*" device="" technology="1X02"/>
 <part name="CAN_TERM" library="HyTechDevices_Jumper" deviceset="JUMPER_?_*" device="" technology="1X02"/>
+<part name="D100" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
 <part name="D101" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
-<part name="D102" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
 <part name="SHDN_F" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="ORANGE"/>
 <part name="CCU_OK" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
-<part name="U$100" library="HyTechDevices_temp" deviceset="RELAY_SOLIDSTATE_NO" device=""/>
+<part name="U102" library="HyTechDevices_temp" deviceset="RELAY_SOLIDSTATE_NO" device=""/>
 <part name="E_SELECT" library="HyTechDevices_Jumper" deviceset="JUMPER_?_*" device="0603" value="JUMPER_0603_"/>
 <part name="F_SELECT" library="HyTechDevices_Jumper" deviceset="JUMPER_?_*" device="0603" value="JUMPER_0603_"/>
 <part name="R100" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K" value="RESISTOR_0603_1K"/>
@@ -9843,8 +9843,8 @@ Dashed line is edge of mated connector.</description>
 <part name="U3" library="HyTechDevices" deviceset="VOLTAGE_REGULATOR_MODULE_?_*" device="OKI-78SR" technology="5V"/>
 <part name="R38" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="O24" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_1"/>
-<part name="C9" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
-<part name="C10" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
+<part name="C8" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_1UF"/>
+<part name="C7" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="10V_0.1UF"/>
 </parts>
 <sheets>
 <sheet>
@@ -9885,7 +9885,7 @@ to gnd on wiring harness</text>
 <instance part="P1" gate="1" x="71.12" y="203.2" smashed="yes">
 <attribute name="VALUE" x="71.12" y="207.01" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="D5" gate="G$1" x="38.1" y="187.96" smashed="yes" rot="R90">
+<instance part="D4" gate="G$1" x="38.1" y="187.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.195" y="186.69" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="40.005" y="186.69" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
@@ -9895,7 +9895,7 @@ to gnd on wiring harness</text>
 <instance part="P4" gate="1" x="53.34" y="149.86" smashed="yes">
 <attribute name="VALUE" x="53.34" y="152.4" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C7" gate="G$1" x="22.86" y="139.7" smashed="yes" rot="R90">
+<instance part="C9" gate="G$1" x="22.86" y="139.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.352" y="135.89" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="25.4" y="138.43" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="27.178" y="138.43" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -9918,7 +9918,7 @@ to gnd on wiring harness</text>
 <instance part="P7" gate="1" x="50.8" y="86.36" smashed="yes">
 <attribute name="VALUE" x="50.8" y="85.09" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="D100" gate="G$1" x="33.02" y="73.66" smashed="yes" rot="R270">
+<instance part="D104" gate="G$1" x="33.02" y="73.66" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.465" y="77.47" size="1.27" layer="95" rot="R270" align="bottom-center"/>
 <attribute name="MPN" x="41.275" y="72.517" size="1.27" layer="96" rot="R270" align="top-center"/>
 </instance>
@@ -9994,7 +9994,7 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="207.01" y="85.09" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="207.01" y="82.55" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="C8" gate="G$1" x="200.66" y="76.2" smashed="yes" rot="R90">
+<instance part="C10" gate="G$1" x="200.66" y="76.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="198.12" y="74.93" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="203.2" y="74.93" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="204.978" y="74.93" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -10030,11 +10030,11 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="96.52" y="109.982" size="1.27" layer="95"/>
 <attribute name="MPN" x="96.52" y="93.218" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="R28" gate="G$1" x="76.2" y="99.06" smashed="yes" rot="R270">
+<instance part="R27" gate="G$1" x="76.2" y="99.06" smashed="yes" rot="R270">
 <attribute name="NAME" x="73.66" y="97.028" size="1.27" layer="95" rot="R270" align="bottom-center"/>
 <attribute name="RESISTANCE" x="74.676" y="101.346" size="1.27" layer="96" rot="R270" align="top-center"/>
 </instance>
-<instance part="R29" gate="G$1" x="81.28" y="101.6" smashed="yes" rot="R90">
+<instance part="R28" gate="G$1" x="81.28" y="101.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.01" y="100.33" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="82.55" y="100.33" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
@@ -10057,7 +10057,7 @@ to gnd on wiring harness</text>
 <instance part="P62" gate="1" x="88.9" y="91.44" smashed="yes">
 <attribute name="VALUE" x="88.9" y="90.17" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R27" gate="G$1" x="119.38" y="91.44" smashed="yes" rot="R270">
+<instance part="R26" gate="G$1" x="119.38" y="91.44" smashed="yes" rot="R270">
 <attribute name="NAME" x="120.65" y="92.71" size="1.27" layer="95" rot="R270" align="bottom-center"/>
 <attribute name="RESISTANCE" x="118.11" y="92.71" size="1.27" layer="96" rot="R270" align="top-center"/>
 </instance>
@@ -10121,15 +10121,15 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="210.82" y="88.9" size="1.27" layer="95"/>
 <attribute name="MPN" x="210.82" y="83.058" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="D101" gate="G$1" x="17.78" y="78.74" smashed="yes" rot="R90">
+<instance part="D100" gate="G$1" x="17.78" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="17.145" y="73.914" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="14.859" y="79.502" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="D102" gate="G$1" x="22.86" y="78.74" smashed="yes" rot="R90">
+<instance part="D101" gate="G$1" x="22.86" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.479" y="73.914" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="20.193" y="79.756" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="U$100" gate="G$1" x="91.44" y="68.58" smashed="yes">
+<instance part="U102" gate="G$1" x="91.44" y="68.58" smashed="yes">
 <attribute name="NAME" x="91.44" y="69.342" size="1.27" layer="95"/>
 <attribute name="MPN" x="91.44" y="55.118" size="1.27" layer="96" align="top-left"/>
 </instance>
@@ -10159,12 +10159,12 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="30.48" y="148.082" size="1.27" layer="95"/>
 <attribute name="MPN" x="31.75" y="136.398" size="1.27" layer="96" align="top-left"/>
 </instance>
-<instance part="C9" gate="G$1" x="7.62" y="139.7" smashed="yes" rot="R90">
+<instance part="C8" gate="G$1" x="7.62" y="139.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="6.858" y="141.224" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VOLTAGE" x="10.16" y="141.224" size="1.27" layer="96" rot="R90" align="top-center"/>
 <attribute name="CAPACITANCE" x="8.128" y="141.478" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="C10" gate="G$1" x="15.24" y="137.16" smashed="yes" rot="MR270">
+<instance part="C7" gate="G$1" x="15.24" y="137.16" smashed="yes" rot="MR270">
 <attribute name="NAME" x="14.478" y="140.97" size="1.27" layer="95" rot="MR270" align="bottom-center"/>
 <attribute name="VOLTAGE" x="16.002" y="135.636" size="1.27" layer="96" rot="MR270" align="top-center"/>
 <attribute name="CAPACITANCE" x="15.748" y="141.986" size="1.27" layer="96" rot="MR270" align="top-center"/>
@@ -10178,14 +10178,14 @@ to gnd on wiring harness</text>
 <pinref part="P2" gate="1" pin="GND"/>
 <wire x1="27.94" y1="187.96" x2="33.02" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="187.96" x2="33.02" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="33.02" y1="182.88" x2="33.02" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="182.88" x2="33.02" y2="182.88" width="0.1524" layer="91"/>
 <junction x="33.02" y="182.88"/>
 <pinref part="POWER" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="134.62" x2="22.86" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="132.08" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="P5" gate="1" pin="GND"/>
@@ -10204,10 +10204,10 @@ to gnd on wiring harness</text>
 <wire x1="63.5" y1="134.62" x2="63.5" y2="132.08" width="0.1524" layer="91"/>
 <junction x="63.5" y="132.08"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="132.08" x2="15.24" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="132.08" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="134.62" x2="7.62" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="132.08" x2="22.86" y2="132.08" width="0.1524" layer="91"/>
 <junction x="15.24" y="132.08"/>
@@ -10257,7 +10257,7 @@ to gnd on wiring harness</text>
 </segment>
 <segment>
 <pinref part="P24" gate="1" pin="GND"/>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="68.58" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -10273,7 +10273,7 @@ to gnd on wiring harness</text>
 <wire x1="119.38" y1="86.36" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="P61" gate="1" pin="GND"/>
 <junction x="119.38" y="86.36"/>
-<pinref part="R27" gate="G$1" pin="2"/>
+<pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="127" y1="86.36" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
 <junction x="127" y="86.36"/>
 <pinref part="R30" gate="G$1" pin="1"/>
@@ -10283,10 +10283,10 @@ to gnd on wiring harness</text>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R29" gate="G$1" pin="1"/>
+<pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
 <junction x="88.9" y="96.52"/>
-<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
 <junction x="81.28" y="96.52"/>
 <pinref part="P62" gate="1" pin="GND"/>
@@ -10325,11 +10325,11 @@ to gnd on wiring harness</text>
 <pinref part="CHG_CAN" gate="G$1" pin="6"/>
 </segment>
 <segment>
+<pinref part="D104" gate="G$1" pin="A"/>
 <pinref part="D100" gate="G$1" pin="A"/>
-<pinref part="D101" gate="G$1" pin="A"/>
 <wire x1="17.78" y1="73.66" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="D102" gate="G$1" pin="A"/>
+<pinref part="D101" gate="G$1" pin="A"/>
 <wire x1="22.86" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="71.12" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="73.66" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
@@ -10339,13 +10339,13 @@ to gnd on wiring harness</text>
 <junction x="27.94" y="71.12"/>
 </segment>
 <segment>
-<pinref part="U$100" gate="G$1" pin="CONTROL-"/>
+<pinref part="U102" gate="G$1" pin="CONTROL-"/>
 <wire x1="88.9" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="P67" gate="1" pin="GND"/>
 <wire x1="86.36" y1="58.42" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$100" gate="G$1" pin="CONTACT1"/>
+<pinref part="U102" gate="G$1" pin="CONTACT1"/>
 <wire x1="111.76" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="P68" gate="1" pin="GND"/>
 <wire x1="114.3" y1="58.42" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
@@ -10358,7 +10358,7 @@ to gnd on wiring harness</text>
 <wire x1="33.02" y1="198.12" x2="43.18" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="190.5" x2="38.1" y2="190.5" width="0.1524" layer="91"/>
 <junction x="33.02" y="190.5"/>
-<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="D4" gate="G$1" pin="C"/>
 <wire x1="38.1" y1="190.5" x2="33.02" y2="190.5" width="0.1524" layer="91"/>
 <junction x="38.1" y="190.5"/>
 <pinref part="POWER" gate="G$1" pin="1"/>
@@ -10386,9 +10386,9 @@ to gnd on wiring harness</text>
 <wire x1="35.56" y1="30.48" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="144.78" x2="7.62" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="144.78" x2="15.24" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="144.78" x2="15.24" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="IN"/>
@@ -10398,7 +10398,7 @@ to gnd on wiring harness</text>
 <wire x1="22.86" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="147.32" x2="22.86" y2="144.78" width="0.1524" layer="91"/>
 <junction x="22.86" y="144.78"/>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="144.78" x2="22.86" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -10466,7 +10466,7 @@ to gnd on wiring harness</text>
 <wire x1="15.24" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="MAIN_CONNECTOR" gate="G$1" pin="2"/>
 <label x="38.1" y="88.9" size="1.27" layer="95" xref="yes"/>
-<pinref part="D100" gate="G$1" pin="C2"/>
+<pinref part="D104" gate="G$1" pin="C2"/>
 <wire x1="30.48" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="81.28" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
 <junction x="30.48" y="88.9"/>
@@ -10502,7 +10502,7 @@ to gnd on wiring harness</text>
 <wire x1="15.24" y1="86.36" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="MAIN_CONNECTOR" gate="G$1" pin="1"/>
 <label x="38.1" y="86.36" size="1.27" layer="95" xref="yes"/>
-<pinref part="D100" gate="G$1" pin="C1"/>
+<pinref part="D104" gate="G$1" pin="C1"/>
 <wire x1="35.56" y1="86.36" x2="38.1" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="81.28" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
 <junction x="35.56" y="86.36"/>
@@ -10624,7 +10624,7 @@ to gnd on wiring harness</text>
 <wire x1="200.66" y1="83.82" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="83.82" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
 <junction x="200.66" y="83.82"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="WATCHDOG_IN" class="0">
@@ -10632,7 +10632,7 @@ to gnd on wiring harness</text>
 <pinref part="U2" gate="G$1" pin="WDI"/>
 <wire x1="93.98" y1="106.68" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
 <label x="73.66" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="104.14" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
 <junction x="76.2" y="106.68"/>
@@ -10650,7 +10650,7 @@ to gnd on wiring harness</text>
 </net>
 <net name="SW_SHUTDOWN" class="0">
 <segment>
-<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="R28" gate="G$1" pin="2"/>
 <pinref part="U2" gate="G$1" pin="!MR!"/>
 <wire x1="81.28" y1="104.14" x2="88.9" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -10806,7 +10806,7 @@ to gnd on wiring harness</text>
 <segment>
 <pinref part="U2" gate="G$1" pin="!RESET!"/>
 <wire x1="116.84" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="99.06" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="96.52" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
 <junction x="119.38" y="99.06"/>
@@ -10829,7 +10829,7 @@ to gnd on wiring harness</text>
 <wire x1="15.24" y1="99.06" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
 <label x="30.48" y="99.06" size="1.27" layer="95" xref="yes"/>
 <pinref part="MAIN_CONNECTOR" gate="G$1" pin="6"/>
-<pinref part="D101" gate="G$1" pin="C"/>
+<pinref part="D100" gate="G$1" pin="C"/>
 <wire x1="17.78" y1="99.06" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="81.28" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
 <junction x="17.78" y="99.06"/>
@@ -10840,7 +10840,7 @@ to gnd on wiring harness</text>
 <wire x1="15.24" y1="96.52" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
 <label x="30.48" y="96.52" size="1.27" layer="95" xref="yes"/>
 <pinref part="MAIN_CONNECTOR" gate="G$1" pin="5"/>
-<pinref part="D102" gate="G$1" pin="C"/>
+<pinref part="D101" gate="G$1" pin="C"/>
 <wire x1="22.86" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="81.28" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
 <junction x="22.86" y="96.52"/>
@@ -10891,7 +10891,7 @@ to gnd on wiring harness</text>
 <label x="30.48" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$100" gate="G$1" pin="CONTACT2"/>
+<pinref part="U102" gate="G$1" pin="CONTACT2"/>
 <wire x1="111.76" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 <label x="114.3" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -10912,7 +10912,7 @@ to gnd on wiring harness</text>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R100" gate="G$1" pin="2"/>
-<pinref part="U$100" gate="G$1" pin="CONTROL+"/>
+<pinref part="U102" gate="G$1" pin="CONTROL+"/>
 <wire x1="86.36" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -10997,7 +10997,7 @@ to gnd on wiring harness</text>
 <instance part="P37" gate="1" x="22.86" y="137.16" smashed="yes">
 <attribute name="VALUE" x="22.86" y="139.7" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R6" gate="G$1" x="236.22" y="139.7" smashed="yes">
+<instance part="R5" gate="G$1" x="236.22" y="139.7" smashed="yes">
 <attribute name="NAME" x="234.95" y="140.97" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="234.95" y="138.43" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11008,7 +11008,7 @@ to gnd on wiring harness</text>
 <instance part="P38" gate="1" x="251.46" y="132.08" smashed="yes">
 <attribute name="VALUE" x="251.46" y="130.81" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R5" gate="G$1" x="198.12" y="139.7" smashed="yes">
+<instance part="R6" gate="G$1" x="198.12" y="139.7" smashed="yes">
 <attribute name="NAME" x="196.85" y="140.97" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="196.85" y="138.43" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11019,7 +11019,7 @@ to gnd on wiring harness</text>
 <instance part="P39" gate="1" x="210.82" y="132.08" smashed="yes">
 <attribute name="VALUE" x="210.82" y="130.81" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R4" gate="G$1" x="149.86" y="152.4" smashed="yes">
+<instance part="R7" gate="G$1" x="149.86" y="152.4" smashed="yes">
 <attribute name="NAME" x="148.59" y="153.67" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="148.59" y="151.13" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11030,7 +11030,7 @@ to gnd on wiring harness</text>
 <instance part="P40" gate="1" x="165.1" y="147.32" smashed="yes">
 <attribute name="VALUE" x="165.1" y="146.05" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R3" gate="G$1" x="83.82" y="152.4" smashed="yes">
+<instance part="R16" gate="G$1" x="83.82" y="152.4" smashed="yes">
 <attribute name="NAME" x="82.55" y="153.67" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="82.55" y="151.13" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11045,7 +11045,7 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="41.91" y="105.41" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="41.91" y="102.87" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R16" gate="G$1" x="58.42" y="104.14" smashed="yes">
+<instance part="R15" gate="G$1" x="58.42" y="104.14" smashed="yes">
 <attribute name="NAME" x="57.15" y="105.41" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="57.15" y="102.87" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11056,7 +11056,7 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="41.91" y="85.09" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="41.91" y="82.55" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R15" gate="G$1" x="58.42" y="83.82" smashed="yes">
+<instance part="R14" gate="G$1" x="58.42" y="83.82" smashed="yes">
 <attribute name="NAME" x="57.15" y="85.09" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="57.15" y="82.55" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11067,7 +11067,7 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="41.91" y="64.77" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="41.91" y="62.23" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R14" gate="G$1" x="58.42" y="63.5" smashed="yes">
+<instance part="R13" gate="G$1" x="58.42" y="63.5" smashed="yes">
 <attribute name="NAME" x="57.15" y="64.77" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="57.15" y="62.23" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11078,7 +11078,7 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="41.91" y="46.99" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="41.91" y="44.45" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R13" gate="G$1" x="58.42" y="45.72" smashed="yes">
+<instance part="R12" gate="G$1" x="58.42" y="45.72" smashed="yes">
 <attribute name="NAME" x="57.15" y="46.99" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="57.15" y="44.45" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11089,7 +11089,7 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="100.33" y="44.45" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="100.33" y="41.91" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R10" gate="G$1" x="116.84" y="43.18" smashed="yes">
+<instance part="R9" gate="G$1" x="116.84" y="43.18" smashed="yes">
 <attribute name="NAME" x="115.57" y="44.45" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="115.57" y="41.91" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11099,28 +11099,28 @@ to gnd on wiring harness</text>
 <instance part="P47" gate="1" x="86.36" y="48.26" smashed="yes">
 <attribute name="VALUE" x="86.36" y="52.07" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R7" gate="G$1" x="127" y="124.46" smashed="yes">
+<instance part="R2" gate="G$1" x="127" y="124.46" smashed="yes">
 <attribute name="NAME" x="125.73" y="125.73" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="125.73" y="123.19" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P48" gate="1" x="134.62" y="119.38" smashed="yes">
 <attribute name="VALUE" x="134.62" y="118.11" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R2" gate="G$1" x="127" y="111.76" smashed="yes">
+<instance part="R3" gate="G$1" x="127" y="111.76" smashed="yes">
 <attribute name="NAME" x="125.73" y="113.03" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="125.73" y="110.49" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P49" gate="1" x="134.62" y="106.68" smashed="yes">
 <attribute name="VALUE" x="134.62" y="105.41" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R9" gate="G$1" x="127" y="99.06" smashed="yes">
+<instance part="R1" gate="G$1" x="127" y="99.06" smashed="yes">
 <attribute name="NAME" x="125.73" y="100.33" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="125.73" y="97.79" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P50" gate="1" x="134.62" y="93.98" smashed="yes">
 <attribute name="VALUE" x="134.62" y="92.71" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R26" gate="G$1" x="127" y="86.36" smashed="yes">
+<instance part="R29" gate="G$1" x="127" y="86.36" smashed="yes">
 <attribute name="NAME" x="125.73" y="87.63" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="125.73" y="85.09" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11131,7 +11131,7 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="41.91" y="29.21" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="41.91" y="26.67" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R12" gate="G$1" x="58.42" y="27.94" smashed="yes">
+<instance part="R11" gate="G$1" x="58.42" y="27.94" smashed="yes">
 <attribute name="NAME" x="57.15" y="29.21" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="57.15" y="26.67" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11153,7 +11153,7 @@ to gnd on wiring harness</text>
 <attribute name="COLOR" x="115.57" y="109.982" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="115.57" y="115.316" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="STATUS_4.0" gate="LED" x="116.84" y="86.36" smashed="yes">
+<instance part="STATUS_4.2" gate="LED" x="116.84" y="86.36" smashed="yes">
 <attribute name="COLOR" x="115.57" y="84.582" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="115.57" y="89.916" size="1.27" layer="96" align="bottom-center"/>
 </instance>
@@ -11184,7 +11184,7 @@ to gnd on wiring harness</text>
 <attribute name="COLOR" x="115.57" y="71.882" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="115.57" y="77.216" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R1" gate="G$1" x="127" y="73.66" smashed="yes">
+<instance part="R8" gate="G$1" x="127" y="73.66" smashed="yes">
 <attribute name="NAME" x="125.73" y="74.93" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="125.73" y="72.39" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11207,11 +11207,11 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="54.61" y="197.485" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="54.61" y="193.675" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="D104" gate="G$1" x="119.38" y="195.58" smashed="yes">
+<instance part="D103" gate="G$1" x="119.38" y="195.58" smashed="yes">
 <attribute name="NAME" x="118.11" y="197.485" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="118.11" y="193.675" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="D103" gate="G$1" x="180.34" y="195.58" smashed="yes">
+<instance part="D102" gate="G$1" x="180.34" y="195.58" smashed="yes">
 <attribute name="NAME" x="179.07" y="197.485" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="MPN" x="179.07" y="193.675" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -11223,7 +11223,7 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="102.87" y="168.275" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="MPN" x="102.87" y="172.085" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="D4" gate="G$1" x="165.1" y="170.18" smashed="yes" rot="R180">
+<instance part="D3" gate="G$1" x="165.1" y="170.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="166.37" y="168.275" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="MPN" x="166.37" y="172.085" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
@@ -11239,21 +11239,21 @@ to gnd on wiring harness</text>
 <attribute name="NAME" x="41.91" y="11.43" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="41.91" y="8.89" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R11" gate="G$1" x="58.42" y="10.16" smashed="yes">
+<instance part="R10" gate="G$1" x="58.42" y="10.16" smashed="yes">
 <attribute name="NAME" x="57.15" y="11.43" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="57.15" y="8.89" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P63" gate="1" x="66.04" y="5.08" smashed="yes">
 <attribute name="VALUE" x="66.04" y="3.81" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="R8" gate="G$1" x="127" y="60.96" smashed="yes">
+<instance part="R4" gate="G$1" x="127" y="60.96" smashed="yes">
 <attribute name="NAME" x="125.73" y="62.23" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="125.73" y="59.69" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="P64" gate="1" x="134.62" y="55.88" smashed="yes">
 <attribute name="VALUE" x="134.62" y="54.61" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="TP4" gate="G$1" x="223.52" y="116.84" smashed="yes">
+<instance part="TP6" gate="G$1" x="223.52" y="116.84" smashed="yes">
 <attribute name="NAME" x="220.98" y="118.618" size="1.27" layer="95"/>
 <attribute name="MPN" x="220.98" y="115.062" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="223.52" y="116.84" size="1.778" layer="96" display="off"/>
@@ -11263,27 +11263,27 @@ to gnd on wiring harness</text>
 <attribute name="MPN" x="220.98" y="107.442" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="223.52" y="109.22" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP9" gate="G$1" x="223.52" y="93.98" smashed="yes">
+<instance part="TP1" gate="G$1" x="223.52" y="93.98" smashed="yes">
 <attribute name="NAME" x="220.98" y="95.758" size="1.27" layer="95"/>
 <attribute name="MPN" x="220.98" y="92.202" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="223.52" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP8" gate="G$1" x="223.52" y="86.36" smashed="yes">
+<instance part="TP2" gate="G$1" x="223.52" y="86.36" smashed="yes">
 <attribute name="NAME" x="220.98" y="88.138" size="1.27" layer="95"/>
 <attribute name="MPN" x="220.98" y="84.582" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="223.52" y="86.36" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP7" gate="G$1" x="223.52" y="78.74" smashed="yes">
+<instance part="TP3" gate="G$1" x="223.52" y="78.74" smashed="yes">
 <attribute name="NAME" x="220.98" y="80.518" size="1.27" layer="95"/>
 <attribute name="MPN" x="220.98" y="76.962" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="223.52" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP1" gate="G$1" x="223.52" y="71.12" smashed="yes">
+<instance part="TP12" gate="G$1" x="223.52" y="71.12" smashed="yes">
 <attribute name="NAME" x="220.98" y="72.898" size="1.27" layer="95"/>
 <attribute name="MPN" x="220.98" y="69.342" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="223.52" y="71.12" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP12" gate="G$1" x="198.12" y="109.22" smashed="yes">
+<instance part="TP11" gate="G$1" x="198.12" y="109.22" smashed="yes">
 <attribute name="NAME" x="195.58" y="110.998" size="1.27" layer="95"/>
 <attribute name="MPN" x="195.58" y="107.442" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="198.12" y="109.22" size="1.778" layer="96" display="off"/>
@@ -11293,27 +11293,27 @@ to gnd on wiring harness</text>
 <attribute name="MPN" x="195.58" y="99.822" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="198.12" y="101.6" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP10" gate="G$1" x="198.12" y="93.98" smashed="yes">
+<instance part="TP8" gate="G$1" x="198.12" y="93.98" smashed="yes">
 <attribute name="NAME" x="195.58" y="95.758" size="1.27" layer="95"/>
 <attribute name="MPN" x="195.58" y="92.202" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="198.12" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP2" gate="G$1" x="198.12" y="86.36" smashed="yes">
+<instance part="TP9" gate="G$1" x="198.12" y="86.36" smashed="yes">
 <attribute name="NAME" x="195.58" y="88.138" size="1.27" layer="95"/>
 <attribute name="MPN" x="195.58" y="84.582" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="198.12" y="86.36" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP3" gate="G$1" x="198.12" y="78.74" smashed="yes">
+<instance part="TP7" gate="G$1" x="198.12" y="78.74" smashed="yes">
 <attribute name="NAME" x="195.58" y="80.518" size="1.27" layer="95"/>
 <attribute name="MPN" x="195.58" y="76.962" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="198.12" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP11" gate="G$1" x="198.12" y="116.84" smashed="yes">
+<instance part="TP10" gate="G$1" x="198.12" y="116.84" smashed="yes">
 <attribute name="NAME" x="195.58" y="118.618" size="1.27" layer="95"/>
 <attribute name="MPN" x="195.58" y="115.062" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="198.12" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP6" gate="G$1" x="223.52" y="101.6" smashed="yes">
+<instance part="TP4" gate="G$1" x="223.52" y="101.6" smashed="yes">
 <attribute name="NAME" x="220.98" y="103.378" size="1.27" layer="95"/>
 <attribute name="MPN" x="220.98" y="99.822" size="1.27" layer="95" align="top-left"/>
 <attribute name="SIGNAL" x="223.52" y="101.6" size="1.778" layer="96" display="off"/>
@@ -11352,7 +11352,7 @@ to gnd on wiring harness</text>
 <segment>
 <wire x1="226.06" y1="93.98" x2="228.6" y2="93.98" width="0.1524" layer="91"/>
 <label x="228.6" y="93.98" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP9" gate="G$1" pin="1"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11424,61 +11424,61 @@ to gnd on wiring harness</text>
 <pinref part="P41" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="104.14" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="P42" gate="1" pin="GND"/>
 <wire x1="66.04" y1="104.14" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="83.82" x2="66.04" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="P43" gate="1" pin="GND"/>
 <wire x1="66.04" y1="83.82" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="63.5" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="P44" gate="1" pin="GND"/>
 <wire x1="66.04" y1="63.5" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="P45" gate="1" pin="GND"/>
 <wire x1="66.04" y1="45.72" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="43.18" x2="124.46" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="P46" gate="1" pin="GND"/>
 <wire x1="124.46" y1="43.18" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="124.46" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="P48" gate="1" pin="GND"/>
 <wire x1="134.62" y1="124.46" x2="134.62" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="111.76" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="P49" gate="1" pin="GND"/>
 <wire x1="134.62" y1="111.76" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="99.06" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="P50" gate="1" pin="GND"/>
 <wire x1="134.62" y1="99.06" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="86.36" x2="134.62" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="P52" gate="1" pin="GND"/>
 <wire x1="134.62" y1="86.36" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="27.94" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="P53" gate="1" pin="GND"/>
 <wire x1="66.04" y1="27.94" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
@@ -11490,7 +11490,7 @@ to gnd on wiring harness</text>
 <wire x1="180.34" y1="116.84" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="P26" gate="1" pin="GND"/>
 <wire x1="134.62" y1="73.66" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
@@ -11499,16 +11499,16 @@ to gnd on wiring harness</text>
 <wire x1="226.06" y1="71.12" x2="231.14" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="P29" gate="1" pin="GND"/>
 <wire x1="231.14" y1="71.12" x2="231.14" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="TP1" gate="G$1" pin="1"/>
+<pinref part="TP12" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="P63" gate="1" pin="GND"/>
 <wire x1="66.04" y1="10.16" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="60.96" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="P64" gate="1" pin="GND"/>
 <wire x1="134.62" y1="60.96" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
@@ -11560,7 +11560,7 @@ to gnd on wiring harness</text>
 <junction x="106.68" y="180.34"/>
 <pinref part="K2" gate="G$1" pin="3"/>
 <pinref part="K2" gate="G$1" pin="COIL-"/>
-<pinref part="D104" gate="G$1" pin="A"/>
+<pinref part="D103" gate="G$1" pin="A"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <junction x="106.68" y="170.18"/>
 </segment>
@@ -11584,7 +11584,7 @@ to gnd on wiring harness</text>
 <wire x1="127" y1="195.58" x2="127" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="K2" gate="G$1" pin="COIL+"/>
 <junction x="127" y="180.34"/>
-<pinref part="D104" gate="G$1" pin="C"/>
+<pinref part="D103" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -11595,7 +11595,7 @@ to gnd on wiring harness</text>
 <wire x1="187.96" y1="195.58" x2="187.96" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="K3" gate="G$1" pin="COIL+"/>
 <junction x="187.96" y="180.34"/>
-<pinref part="D103" gate="G$1" pin="C"/>
+<pinref part="D102" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -11627,7 +11627,7 @@ to gnd on wiring harness</text>
 <segment>
 <wire x1="226.06" y1="78.74" x2="228.6" y2="78.74" width="0.1524" layer="91"/>
 <label x="228.6" y="78.74" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP7" gate="G$1" pin="1"/>
+<pinref part="TP3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="IMD_OK" class="0">
@@ -11648,7 +11648,7 @@ to gnd on wiring harness</text>
 <segment>
 <wire x1="226.06" y1="86.36" x2="228.6" y2="86.36" width="0.1524" layer="91"/>
 <label x="228.6" y="86.36" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP8" gate="G$1" pin="1"/>
+<pinref part="TP2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -11661,8 +11661,8 @@ to gnd on wiring harness</text>
 <junction x="170.18" y="180.34"/>
 <pinref part="K3" gate="G$1" pin="3"/>
 <pinref part="K3" gate="G$1" pin="COIL-"/>
-<pinref part="D103" gate="G$1" pin="A"/>
-<pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="D102" gate="G$1" pin="A"/>
+<pinref part="D3" gate="G$1" pin="A"/>
 <junction x="170.18" y="170.18"/>
 </segment>
 </net>
@@ -11693,7 +11693,7 @@ to gnd on wiring harness</text>
 <segment>
 <wire x1="162.56" y1="170.18" x2="160.02" y2="170.18" width="0.1524" layer="91"/>
 <label x="160.02" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -11724,7 +11724,7 @@ to gnd on wiring harness</text>
 <wire x1="200.66" y1="109.22" x2="208.28" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="P27" gate="1" pin="+5V"/>
 <wire x1="208.28" y1="111.76" x2="208.28" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="TP12" gate="G$1" pin="1"/>
+<pinref part="TP11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SHDN_A" class="0">
@@ -11741,7 +11741,7 @@ to gnd on wiring harness</text>
 <segment>
 <wire x1="200.66" y1="93.98" x2="203.2" y2="93.98" width="0.1524" layer="91"/>
 <label x="203.2" y="93.98" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP10" gate="G$1" pin="1"/>
+<pinref part="TP8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SHDN_B" class="0">
@@ -11751,7 +11751,7 @@ to gnd on wiring harness</text>
 <wire x1="63.5" y1="162.56" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="162.56" x2="66.04" y2="160.02" width="0.1524" layer="91"/>
 <label x="83.82" y="160.02" size="1.27" layer="95"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="152.4" x2="78.74" y2="160.02" width="0.1524" layer="91"/>
 <junction x="78.74" y="160.02"/>
 <pinref part="K1" gate="G$1" pin="5"/>
@@ -11765,7 +11765,7 @@ to gnd on wiring harness</text>
 <segment>
 <wire x1="200.66" y1="86.36" x2="203.2" y2="86.36" width="0.1524" layer="91"/>
 <label x="203.2" y="86.36" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP2" gate="G$1" pin="1"/>
+<pinref part="TP9" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SHDN_C" class="0">
@@ -11774,7 +11774,7 @@ to gnd on wiring harness</text>
 <wire x1="134.62" y1="162.56" x2="134.62" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="160.02" x2="144.78" y2="160.02" width="0.1524" layer="91"/>
 <label x="147.32" y="160.02" size="1.27" layer="95"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="160.02" x2="172.72" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="152.4" x2="144.78" y2="160.02" width="0.1524" layer="91"/>
 <junction x="144.78" y="160.02"/>
@@ -11789,7 +11789,7 @@ to gnd on wiring harness</text>
 <segment>
 <wire x1="200.66" y1="78.74" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
 <label x="203.2" y="78.74" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP3" gate="G$1" pin="1"/>
+<pinref part="TP7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SHDN_E" class="0">
@@ -11797,7 +11797,7 @@ to gnd on wiring harness</text>
 <wire x1="223.52" y1="139.7" x2="223.52" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="147.32" x2="228.6" y2="147.32" width="0.1524" layer="91"/>
 <label x="238.76" y="147.32" size="1.27" layer="95" xref="yes"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="147.32" x2="238.76" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="139.7" x2="228.6" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="139.7" x2="228.6" y2="147.32" width="0.1524" layer="91"/>
@@ -11817,21 +11817,21 @@ to gnd on wiring harness</text>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="SHDN_E" gate="LED" pin="A"/>
 <wire x1="238.76" y1="139.7" x2="241.3" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="SHDN_D" gate="LED" pin="A"/>
 <wire x1="203.2" y1="139.7" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SHDN_D" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="162.56" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="162.56" x2="193.04" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="147.32" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
@@ -11850,19 +11850,19 @@ to gnd on wiring harness</text>
 <segment>
 <wire x1="226.06" y1="116.84" x2="228.6" y2="116.84" width="0.1524" layer="91"/>
 <label x="228.6" y="116.84" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP4" gate="G$1" pin="1"/>
+<pinref part="TP6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="SHDN_C" gate="LED" pin="A"/>
 <wire x1="152.4" y1="152.4" x2="154.94" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="SHDN_B" gate="LED" pin="A"/>
 <wire x1="86.36" y1="152.4" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
 </segment>
@@ -11870,7 +11870,7 @@ to gnd on wiring harness</text>
 <net name="SHDN_A_READ" class="0">
 <segment>
 <pinref part="R23" gate="G$1" pin="2"/>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="104.14" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="104.14" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="104.14" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
@@ -11882,7 +11882,7 @@ to gnd on wiring harness</text>
 <net name="SHDN_B_READ" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="83.82" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="83.82" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
@@ -11894,7 +11894,7 @@ to gnd on wiring harness</text>
 <net name="SHDN_C_READ" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="63.5" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="63.5" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
@@ -11906,7 +11906,7 @@ to gnd on wiring harness</text>
 <net name="SHDN_D_READ" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="45.72" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
@@ -11918,7 +11918,7 @@ to gnd on wiring harness</text>
 <net name="12V_READ" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="43.18" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="43.18" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
@@ -11929,43 +11929,43 @@ to gnd on wiring harness</text>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="OKHS" gate="LED" pin="C"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="111.76" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="BMS_OK" gate="LED" pin="C"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="CCU_OK" gate="LED" pin="C"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="R29" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="STATUS_4.0" gate="LED" pin="C"/>
+<pinref part="STATUS_4.2" gate="LED" pin="C"/>
 </segment>
 </net>
 <net name="STATUS_4.0" class="0">
 <segment>
 <wire x1="111.76" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
 <label x="109.22" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="STATUS_4.0" gate="LED" pin="A"/>
+<pinref part="STATUS_4.2" gate="LED" pin="A"/>
 </segment>
 </net>
 <net name="SHDN_E_READ" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="27.94" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="27.94" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
@@ -11991,7 +11991,7 @@ to gnd on wiring harness</text>
 <net name="N$39" class="0">
 <segment>
 <pinref part="STATUS_4.1" gate="LED" pin="C"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="73.66" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12008,13 +12008,13 @@ to gnd on wiring harness</text>
 <wire x1="200.66" y1="116.84" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="P51" gate="G$1" pin="+3V3"/>
 <wire x1="203.2" y1="119.38" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="TP11" gate="G$1" pin="1"/>
+<pinref part="TP10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SHDN_F_READ" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="10.16" x2="50.8" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="10.16" x2="50.8" y2="15.24" width="0.1524" layer="91"/>
@@ -12035,14 +12035,14 @@ to gnd on wiring harness</text>
 <pinref part="SHDN_F" gate="LED" pin="A"/>
 </segment>
 <segment>
-<pinref part="TP6" gate="G$1" pin="1"/>
+<pinref part="TP4" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="101.6" x2="228.6" y2="101.6" width="0.1524" layer="91"/>
 <label x="228.6" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="SHDN_F" gate="LED" pin="C"/>
 </segment>
