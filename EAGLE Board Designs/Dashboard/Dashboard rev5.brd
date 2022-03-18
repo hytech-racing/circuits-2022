@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -219,7 +219,7 @@
 <text x="-15.24" y="17.78" size="3.048" layer="22" font="vector" rot="MR0" align="bottom-center">START</text>
 <text x="15.24" y="17.78" size="3.048" layer="22" font="vector" rot="MR0" align="bottom-center">SSOK</text>
 <text x="94.615" y="5.08" size="1.016" layer="21" font="vector" align="center">HyTech Racing 2022
-Dashboard rev4
+Dashboard rev5
 Designed by Youssef Jaafar
 </text>
 <text x="44" y="22.238" size="1.016" layer="21" font="vector" align="bottom-center">INERTIA</text>
