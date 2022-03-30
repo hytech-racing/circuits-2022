@@ -1417,6 +1417,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="19.75V"/>
 <attribute name="VOLTAGE_MAX" value="75V"/>
 </technology>
+<technology name="30.9K">
+<attribute name="DKPN" value="P20140CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB3B3092V"/>
+<attribute name="MPN" value="ERJ-PB3B3092V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="30.9k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
 <technology name="30K">
 <attribute name="DKPN" value="P30KBDCT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -1741,6 +1752,28 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="55.68V"/>
 <attribute name="VOLTAGE_MAX" value="150V"/>
 </technology>
+<technology name="14.3K">
+<attribute name="DKPN" value="P14.3KCCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-6ENF1432V"/>
+<attribute name="MPN" value="ERJ-6ENF1432V"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="14.3k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
+<technology name="19.1K">
+<attribute name="DKPN" value="P19.1KCCT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-6ENF1912V"/>
+<attribute name="MPN" value="ERJ-6ENF1912V"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="19.1k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
 <technology name="200">
 <attribute name="DKPN" value="311-200CRCT-ND"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -1763,6 +1796,17 @@ Dashed line is edge of mated connector.</description>
 <attribute name="VOLTAGE_CONTINUOUS" value="3.32V"/>
 <attribute name="VOLTAGE_MAX" value="400V"/>
 </technology>
+<technology name="31.6K">
+<attribute name="DKPN" value="541-31.6KSCT-ND"/>
+<attribute name="MANUFACTURER" value="Vishay Dale"/>
+<attribute name="MOPN" value="71-CRCW060331K6FKEAH"/>
+<attribute name="MPN" value="CRCW060331K6FKEAHP"/>
+<attribute name="POWER" value="0.33W"/>
+<attribute name="RESISTANCE" value="31.6k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
 <technology name="365K">
 <attribute name="DKPN" value="P20885CT-ND"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -1784,6 +1828,28 @@ Dashed line is edge of mated connector.</description>
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE_CONTINUOUS" value="5.29V"/>
 <attribute name="VOLTAGE_MAX" value="400V"/>
+</technology>
+<technology name="931K">
+<attribute name="DKPN" value="P20933CT-ND"/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-PB6B9313V"/>
+<attribute name="MPN" value="ERJ-PB6B9313V"/>
+<attribute name="POWER" value="0.25W"/>
+<attribute name="RESISTANCE" value="931k"/>
+<attribute name="TOLERANCE" value="0.1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
+</technology>
+<technology name="953K">
+<attribute name="DKPN" value="P953KCCT-ND "/>
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="MOPN" value="667-ERJ-6ENF9533V"/>
+<attribute name="MPN" value="ERJ-6ENF9533V"/>
+<attribute name="POWER" value="0.125W"/>
+<attribute name="RESISTANCE" value="953k"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE_CONTINUOUS" value="150V"/>
+<attribute name="VOLTAGE_MAX" value="200V"/>
 </technology>
 </technologies>
 </device>
@@ -7807,21 +7873,21 @@ Layer: 94 Symbol</description>
 <package name="CRYDOM_CMX">
 <description>Crydom CMX series solid state relays SIP-4
 &lt;br&gt;
-&lt;a href=https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;</description>
-<pad name="1" x="15.748" y="0" drill="2.1082" first="yes"/>
-<pad name="2" x="5.588" y="0" drill="2.1082"/>
-<pad name="3" x="-5.08" y="0" drill="2.1082"/>
-<pad name="4" x="-10.16" y="0" drill="2.1082"/>
-<wire x1="-17.78" y1="3.81" x2="-17.78" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-17.78" y1="-3.81" x2="22.86" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="22.86" y1="-3.81" x2="22.86" y2="3.81" width="0.127" layer="21" style="shortdash"/>
-<wire x1="22.86" y1="3.81" x2="-17.78" y2="3.81" width="0.127" layer="21" style="shortdash"/>
-<text x="0" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<circle x="-10.16" y="0" radius="1.79605" width="0" layer="40"/>
-<circle x="-5.08" y="0" radius="1.79605" width="0" layer="40"/>
-<circle x="5.588" y="0" radius="1.79605" width="0" layer="40"/>
-<circle x="15.748" y="0" radius="1.79605" width="0" layer="40"/>
-<rectangle x1="-19.05" y1="-5.08" x2="24.13" y2="5.08" layer="39"/>
+&lt;a href="https://www.mouser.com/datasheet/2/657/cmx_series_dc_pcb_mount-1370813.pdf"&gt;Datasheet&lt;a/&gt;</description>
+<pad name="1" x="13.97" y="0" drill="2.1844" first="yes"/>
+<pad name="2" x="3.81" y="0" drill="2.1844"/>
+<pad name="3" x="-8.89" y="0" drill="2.1844"/>
+<pad name="4" x="-13.97" y="0" drill="2.1844"/>
+<wire x1="-20.32" y1="3.81" x2="-20.32" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-20.32" y1="-3.81" x2="20.32" y2="-3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="20.32" y1="-3.81" x2="20.32" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<wire x1="20.32" y1="3.81" x2="-20.32" y2="3.81" width="0.127" layer="21" style="shortdash"/>
+<text x="-1.27" y="5.08" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<circle x="-13.97" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="-8.89" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="3.81" y="0" radius="1.79605" width="0" layer="40"/>
+<circle x="13.97" y="0" radius="1.79605" width="0" layer="40"/>
+<rectangle x1="-21.59" y1="-5.08" x2="21.59" y2="5.08" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -7969,8 +8035,8 @@ Layer: 94 Symbol</description>
 <devices>
 <device name="" package="CRYDOM_CMX">
 <connects>
-<connect gate="G$1" pin="CONTACT1" pad="1"/>
-<connect gate="G$1" pin="CONTACT2" pad="2"/>
+<connect gate="G$1" pin="CONTACT1" pad="2"/>
+<connect gate="G$1" pin="CONTACT2" pad="1"/>
 <connect gate="G$1" pin="CONTROL+" pad="3"/>
 <connect gate="G$1" pin="CONTROL-" pad="4"/>
 </connects>
@@ -8018,20 +8084,8 @@ Layer: 94 Symbol</description>
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="0.62"/>
 <part name="R22" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
-<part name="R21" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R20" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R19" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R18" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1K"/>
-<part name="D16" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
-<part name="D15" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
-<part name="D14" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="YELLOW"/>
-<part name="D13" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="YELLOW"/>
-<part name="D12" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
-<part name="D11" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="GREEN"/>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P1" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P4" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -8053,8 +8107,6 @@ Layer: 94 Symbol</description>
 </part>
 <part name="R5" library="HyTechDevicesTemp" deviceset="RESISTOR_SENSE_?_*" device="" technology="WSL40262L000FEB"/>
 <part name="R4" library="HyTechDevicesTemp" deviceset="RESISTOR_SENSE_?_*" device="" technology="WSL40262L000FEB"/>
-<part name="R26" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13M" value="RESISTOR_0603_1.13M"/>
-<part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="1.13M" value="RESISTOR_0603_1.13M"/>
 <part name="TP9" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP12" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
@@ -8066,12 +8118,6 @@ Layer: 94 Symbol</description>
 <part name="O4" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_10"/>
 <part name="D2" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
 <part name="D3" library="HyTechDevices" deviceset="SCHOTTKY_?_*" device="SOD323" technology="30V"/>
-<part name="R25" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.49K" value="RESISTOR_0603_5.49K"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="5.49K" value="RESISTOR_0603_5.49K"/>
-<part name="R24" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="13K" value="RESISTOR_0603_13K"/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="13K" value="RESISTOR_0603_13K"/>
-<part name="R23" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2K" value="RESISTOR_0603_41.2K"/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="41.2K" value="RESISTOR_0603_41.2K"/>
 <part name="C1" library="HyTechDevicesTemp" deviceset="EEUFP1E*" device="" technology="681"/>
 <part name="C2" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_10UF"/>
 <part name="C3" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF"/>
@@ -8087,7 +8133,6 @@ Layer: 94 Symbol</description>
 <part name="TP7" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP8" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="K1" library="HyTechDevicesTemp" deviceset="RELAY_SOLIDSTATE_NO_?*" device="" technology="CMX60D20"/>
 <part name="TP10" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="D4" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
 <part name="D17" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="BLUE"/>
@@ -8100,21 +8145,30 @@ Layer: 94 Symbol</description>
 <attribute name="ENGINEER" value="Steven Elias"/>
 </part>
 <part name="J2" library="HyTechDevices" deviceset="CONNECTOR-3_?" device="" technology="8STA20435PN"/>
+<part name="K1" library="HyTechDevicesTemp" deviceset="RELAY_SOLIDSTATE_NO_?*" device="" technology="CMX60D20"/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="12.4K"/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="953K"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="14.3K"/>
+<part name="R11" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="31.6K"/>
+<part name="R15" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="931K"/>
+<part name="R16" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0805" technology="19.1K"/>
+<part name="R17" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="30.9K"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-76.2" y="-12.7" size="1.778" layer="97" rot="R180">DCDC_VICOR:
-OV Rising: 14.44V
-OV Falling: 12.34V
-UV Rising: 10.98V
-UV Falling: 9.97V
+OV Rising: 16V
+OV Falling: 14.4V
+UV Rising: 11V
+UV Falling: 9V
 
 CONVOUT:
-OV Rising: 14.44V
-OV Falling: 12.34V
-UV Rising: 10.98V
-UV Falling: 9.97V</text>
+OV Rising: 16.2V
+OV Falling: 14.6V
+UV Rising: 10V
+UV Falling: 8V</text>
 <text x="-35.56" y="-73.66" size="1.27" layer="97">tValid = 10.88ms</text>
 <text x="-15.24" y="-73.66" size="1.27" layer="97">tTMR,FLT = 5.644ms</text>
 <text x="-20.32" y="45.72" size="1.778" layer="97">ILim = 12.5A</text>
@@ -8220,30 +8274,6 @@ FAULT2: Current limit fault on CONVOUT</text>
 <attribute name="NAME" x="77.47" y="-74.93" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="80.01" y="-74.93" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="R21" gate="G$1" x="99.06" y="-33.02" smashed="yes">
-<attribute name="NAME" x="97.79" y="-31.75" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="97.79" y="-34.29" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R20" gate="G$1" x="109.22" y="-30.48" smashed="yes">
-<attribute name="NAME" x="107.95" y="-29.21" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="107.95" y="-31.75" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R19" gate="G$1" x="99.06" y="-27.94" smashed="yes">
-<attribute name="NAME" x="97.79" y="-26.67" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="97.79" y="-29.21" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R18" gate="G$1" x="109.22" y="-25.4" smashed="yes">
-<attribute name="NAME" x="107.95" y="-24.13" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="107.95" y="-26.67" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R17" gate="G$1" x="99.06" y="-22.86" smashed="yes">
-<attribute name="NAME" x="97.79" y="-21.59" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="97.79" y="-24.13" size="1.27" layer="96" align="top-center"/>
-</instance>
-<instance part="R16" gate="G$1" x="109.22" y="-20.32" smashed="yes">
-<attribute name="NAME" x="107.95" y="-19.05" size="1.27" layer="95" align="bottom-center"/>
-<attribute name="RESISTANCE" x="107.95" y="-21.59" size="1.27" layer="96" align="top-center"/>
-</instance>
 <instance part="R13" gate="G$1" x="-86.36" y="12.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="-87.63" y="11.43" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="-85.09" y="11.43" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -8251,30 +8281,6 @@ FAULT2: Current limit fault on CONVOUT</text>
 <instance part="R12" gate="G$1" x="-78.74" y="35.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="-80.01" y="34.29" size="1.27" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="RESISTANCE" x="-77.47" y="34.29" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="D16" gate="LED" x="73.66" y="-33.02" smashed="yes" rot="R180">
-<attribute name="COLOR" x="74.93" y="-31.242" size="1.27" layer="95" rot="R180" align="top-center"/>
-<attribute name="NAME" x="74.93" y="-36.576" size="1.27" layer="96" rot="R180" align="bottom-center"/>
-</instance>
-<instance part="D15" gate="LED" x="86.36" y="-30.48" smashed="yes" rot="R180">
-<attribute name="COLOR" x="87.63" y="-28.702" size="1.27" layer="95" rot="R180" align="top-center"/>
-<attribute name="NAME" x="87.63" y="-34.036" size="1.27" layer="96" rot="R180" align="bottom-center"/>
-</instance>
-<instance part="D14" gate="LED" x="73.66" y="-27.94" smashed="yes" rot="R180">
-<attribute name="COLOR" x="74.93" y="-26.162" size="1.27" layer="95" rot="R180" align="top-center"/>
-<attribute name="NAME" x="74.93" y="-31.496" size="1.27" layer="96" rot="R180" align="bottom-center"/>
-</instance>
-<instance part="D13" gate="LED" x="86.36" y="-25.4" smashed="yes" rot="R180">
-<attribute name="COLOR" x="87.63" y="-23.622" size="1.27" layer="95" rot="R180" align="top-center"/>
-<attribute name="NAME" x="87.63" y="-28.956" size="1.27" layer="96" rot="R180" align="bottom-center"/>
-</instance>
-<instance part="D12" gate="LED" x="73.66" y="-22.86" smashed="yes" rot="R180">
-<attribute name="COLOR" x="74.93" y="-21.082" size="1.27" layer="95" rot="R180" align="top-center"/>
-<attribute name="NAME" x="74.93" y="-26.416" size="1.27" layer="96" rot="R180" align="bottom-center"/>
-</instance>
-<instance part="D11" gate="LED" x="86.36" y="-20.32" smashed="yes" rot="R180">
-<attribute name="COLOR" x="87.63" y="-18.542" size="1.27" layer="95" rot="R180" align="top-center"/>
-<attribute name="NAME" x="87.63" y="-23.876" size="1.27" layer="96" rot="R180" align="bottom-center"/>
 </instance>
 <instance part="P2" gate="1" x="-111.76" y="-83.82" smashed="yes">
 <attribute name="VALUE" x="-111.76" y="-85.09" size="1.27" layer="96" align="top-center"/>
@@ -8285,9 +8291,7 @@ FAULT2: Current limit fault on CONVOUT</text>
 <instance part="P4" gate="1" x="101.6" y="15.24" smashed="yes">
 <attribute name="VALUE" x="101.6" y="13.97" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="P5" gate="1" x="71.12" y="-15.24" smashed="yes">
-<attribute name="VALUE" x="71.12" y="-16.51" size="1.27" layer="96" align="top-center"/>
-</instance>
+<instance part="P5" gate="1" x="71.12" y="-15.24" smashed="yes"/>
 <instance part="P6" gate="1" x="-88.9" y="20.32" smashed="yes">
 <attribute name="VALUE" x="-88.9" y="19.05" size="1.27" layer="96" align="top-center"/>
 </instance>
@@ -8337,14 +8341,6 @@ FAULT2: Current limit fault on CONVOUT</text>
 <attribute name="NAME" x="-16.51" y="40.894" size="1.27" layer="95" align="bottom-center"/>
 <attribute name="RESISTANCE" x="-16.51" y="39.37" size="1.27" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R26" gate="G$1" x="-71.12" y="-7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="-72.39" y="-8.89" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-69.85" y="-8.89" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R11" gate="G$1" x="-63.5" y="-33.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="-64.77" y="-34.29" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-62.23" y="-34.29" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
 <instance part="TP9" gate="G$1" x="-132.08" y="0" smashed="yes">
 <attribute name="NAME" x="-134.62" y="1.778" size="1.27" layer="95"/>
 <attribute name="MPN" x="-134.62" y="-1.778" size="1.27" layer="95" align="top-left"/>
@@ -8372,30 +8368,6 @@ FAULT2: Current limit fault on CONVOUT</text>
 <instance part="D3" gate="G$1" x="83.82" y="-71.12" smashed="yes" rot="R180">
 <attribute name="NAME" x="85.09" y="-73.025" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="MPN" x="85.09" y="-69.215" size="1.27" layer="96" rot="R180" align="top-center"/>
-</instance>
-<instance part="R25" gate="G$1" x="-71.12" y="-15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="-72.39" y="-16.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-69.85" y="-16.51" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R10" gate="G$1" x="-63.5" y="-40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="-64.77" y="-41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-62.23" y="-41.91" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R24" gate="G$1" x="-71.12" y="-22.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="-72.39" y="-24.13" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-69.85" y="-24.13" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R9" gate="G$1" x="-63.5" y="-48.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="-64.77" y="-49.53" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-62.23" y="-49.53" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R23" gate="G$1" x="-71.12" y="-30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="-72.39" y="-31.75" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-69.85" y="-31.75" size="1.27" layer="96" rot="R90" align="top-center"/>
-</instance>
-<instance part="R7" gate="G$1" x="-63.5" y="-55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="-64.77" y="-57.15" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="RESISTANCE" x="-62.23" y="-57.15" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="C1" gate="G$1" x="86.36" y="30.48" smashed="yes" rot="R270">
 <attribute name="NAME" x="88.9" y="31.75" size="1.27" layer="95" rot="R270" align="bottom-center"/>
@@ -8460,10 +8432,6 @@ FAULT2: Current limit fault on CONVOUT</text>
 <attribute name="NAME" x="-114.3" y="-46.482" size="1.27" layer="95"/>
 <attribute name="MPN" x="-114.3" y="-50.038" size="1.27" layer="95" align="top-left"/>
 </instance>
-<instance part="K1" gate="G$1" x="-104.14" y="-71.12" smashed="yes">
-<attribute name="NAME" x="-104.14" y="-70.358" size="1.27" layer="95"/>
-<attribute name="MPN" x="-104.14" y="-84.582" size="1.27" layer="96" align="top-left"/>
-</instance>
 <instance part="TP10" gate="G$1" x="-132.08" y="-48.26" smashed="yes">
 <attribute name="NAME" x="-134.62" y="-46.482" size="1.27" layer="95"/>
 <attribute name="MPN" x="-134.62" y="-50.038" size="1.27" layer="95" align="top-left"/>
@@ -8495,6 +8463,42 @@ FAULT2: Current limit fault on CONVOUT</text>
 <instance part="J2" gate="G$1" x="-73.66" y="-134.62" smashed="yes">
 <attribute name="MPN" x="-73.66" y="-145.415" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="-73.66" y="-133.858" size="1.27" layer="95"/>
+</instance>
+<instance part="K1" gate="G$1" x="-104.14" y="-71.12" smashed="yes">
+<attribute name="NAME" x="-104.14" y="-70.358" size="1.27" layer="95"/>
+<attribute name="MPN" x="-104.14" y="-84.582" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="R14" gate="G$1" x="-71.12" y="-15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="-72.39" y="-16.51" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-69.85" y="-16.51" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R7" gate="G$1" x="-63.5" y="-40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="-64.77" y="-41.91" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-62.23" y="-41.91" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R9" gate="G$1" x="-71.12" y="-7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="-72.39" y="-8.89" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-69.85" y="-8.89" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R10" gate="G$1" x="-71.12" y="-22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="-72.39" y="-24.13" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-69.85" y="-24.13" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R11" gate="G$1" x="-71.12" y="-30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-72.39" y="-31.75" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-69.85" y="-31.75" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R15" gate="G$1" x="-63.5" y="-33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="-64.77" y="-34.29" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-62.23" y="-34.29" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R16" gate="G$1" x="-63.5" y="-48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="-64.77" y="-49.53" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-62.23" y="-49.53" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="R17" gate="G$1" x="-63.5" y="-55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="-64.77" y="-57.15" size="1.27" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="RESISTANCE" x="-62.23" y="-57.15" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -8596,12 +8600,12 @@ FAULT2: Current limit fault on CONVOUT</text>
 <segment>
 <wire x1="-63.5" y1="-60.96" x2="-63.5" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="P14" gate="1" pin="GND"/>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-71.12" y1="-35.56" x2="-71.12" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="P15" gate="1" pin="GND"/>
-<pinref part="R23" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-119.38" y1="-12.7" x2="-119.38" y2="-10.16" width="0.1524" layer="91"/>
@@ -8627,9 +8631,9 @@ FAULT2: Current limit fault on CONVOUT</text>
 <junction x="-58.42" y="38.1"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <junction x="-78.74" y="38.1"/>
-<pinref part="R26" gate="G$1" pin="2"/>
 <pinref part="XF4" gate="G$1" pin="2"/>
 <junction x="-88.9" y="38.1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="START" class="0">
@@ -8690,96 +8694,12 @@ FAULT2: Current limit fault on CONVOUT</text>
 <junction x="0" y="38.1"/>
 </segment>
 </net>
-<net name="!FAULT2" class="0">
-<segment>
-<pinref part="D16" gate="LED" pin="C"/>
-<pinref part="U1" gate="G$1" pin="!FAULT2"/>
-<wire x1="71.12" y1="-33.02" x2="55.88" y2="-33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="D16" gate="LED" pin="A"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="-33.02" x2="93.98" y2="-33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="!FAULT1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="!FAULT1"/>
-<wire x1="55.88" y1="-30.48" x2="83.82" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="D15" gate="LED" pin="C"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<wire x1="91.44" y1="-30.48" x2="104.14" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<pinref part="D15" gate="LED" pin="A"/>
-</segment>
-</net>
-<net name="!CH2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="!CH2"/>
-<wire x1="55.88" y1="-27.94" x2="71.12" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="D14" gate="LED" pin="C"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<wire x1="78.74" y1="-27.94" x2="93.98" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<pinref part="D14" gate="LED" pin="A"/>
-</segment>
-</net>
-<net name="!CH1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="!CH1"/>
-<wire x1="55.88" y1="-25.4" x2="83.82" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="D13" gate="LED" pin="C"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<wire x1="91.44" y1="-25.4" x2="104.14" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="D13" gate="LED" pin="A"/>
-</segment>
-</net>
-<net name="!VALID2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="!VALID2"/>
-<wire x1="55.88" y1="-22.86" x2="71.12" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="D12" gate="LED" pin="C"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<wire x1="78.74" y1="-22.86" x2="93.98" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="D12" gate="LED" pin="A"/>
-</segment>
-</net>
-<net name="!VALID1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="!VALID1"/>
-<wire x1="55.88" y1="-20.32" x2="83.82" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="D11" gate="LED" pin="C"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<wire x1="91.44" y1="-20.32" x2="104.14" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<pinref part="D11" gate="LED" pin="A"/>
-</segment>
-</net>
 <net name="UVF1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="UVF1"/>
 <wire x1="-58.42" y1="-12.7" x2="-71.12" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <junction x="-71.12" y="-12.7"/>
 </segment>
 </net>
@@ -8875,8 +8795,8 @@ FAULT2: Current limit fault on CONVOUT</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="UVR1"/>
 <wire x1="-58.42" y1="-20.32" x2="-71.12" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <junction x="-71.12" y="-20.32"/>
 </segment>
 </net>
@@ -8884,8 +8804,8 @@ FAULT2: Current limit fault on CONVOUT</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="OV1"/>
 <wire x1="-58.42" y1="-27.94" x2="-71.12" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <junction x="-71.12" y="-27.94"/>
 </segment>
 </net>
@@ -8893,8 +8813,8 @@ FAULT2: Current limit fault on CONVOUT</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="UVF2"/>
 <wire x1="-58.42" y1="-38.1" x2="-63.5" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 <junction x="-63.5" y="-38.1"/>
 </segment>
 </net>
@@ -8902,8 +8822,8 @@ FAULT2: Current limit fault on CONVOUT</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="UVR2"/>
 <wire x1="-58.42" y1="-45.72" x2="-63.5" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <junction x="-63.5" y="-45.72"/>
 </segment>
 </net>
@@ -8911,8 +8831,8 @@ FAULT2: Current limit fault on CONVOUT</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="OV2"/>
 <wire x1="-58.42" y1="-53.34" x2="-63.5" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 <junction x="-63.5" y="-53.34"/>
 </segment>
 </net>
@@ -9183,34 +9103,12 @@ FAULT2: Current limit fault on CONVOUT</text>
 <pinref part="U1" gate="G$1" pin="V2"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
 <junction x="7.62" y="17.78"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-83.82" y1="-73.66" x2="-81.28" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-81.28" y="-73.66" size="1.27" layer="95" xref="yes"/>
 <pinref part="K1" gate="G$1" pin="CONTACT2"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="-20.32" x2="111.76" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="-22.86" x2="111.76" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="111.76" y="-22.86"/>
-<wire x1="111.76" y1="-22.86" x2="111.76" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="2"/>
-<junction x="111.76" y="-25.4"/>
-<wire x1="111.76" y1="-25.4" x2="111.76" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="-27.94" x2="111.76" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="111.76" y="-27.94"/>
-<wire x1="111.76" y1="-27.94" x2="111.76" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="R20" gate="G$1" pin="2"/>
-<junction x="111.76" y="-30.48"/>
-<wire x1="111.76" y1="-30.48" x2="111.76" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-33.02" x2="111.76" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="R21" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
