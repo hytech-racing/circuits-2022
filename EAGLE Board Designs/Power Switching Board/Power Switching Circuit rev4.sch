@@ -8131,7 +8131,6 @@ Layer: 94 Symbol</description>
 <part name="TP1" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP11" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP7" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP8" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP4" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP10" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="D4" library="HyTechDevices" deviceset="TVS_*" device="" technology="15V"/>
@@ -8423,10 +8422,6 @@ FAULT2: Current limit fault on CONVOUT</text>
 <instance part="TP7" gate="G$1" x="-111.76" y="0" smashed="yes">
 <attribute name="NAME" x="-114.3" y="1.778" size="1.27" layer="95"/>
 <attribute name="MPN" x="-114.3" y="-1.778" size="1.27" layer="95" align="top-left"/>
-</instance>
-<instance part="TP8" gate="G$1" x="-121.92" y="-48.26" smashed="yes">
-<attribute name="NAME" x="-124.46" y="-46.482" size="1.27" layer="95"/>
-<attribute name="MPN" x="-124.46" y="-50.038" size="1.27" layer="95" align="top-left"/>
 </instance>
 <instance part="TP4" gate="G$1" x="-111.76" y="-48.26" smashed="yes">
 <attribute name="NAME" x="-114.3" y="-46.482" size="1.27" layer="95"/>
@@ -8879,13 +8874,6 @@ FAULT2: Current limit fault on CONVOUT</text>
 <wire x1="-81.28" y1="-81.28" x2="-83.82" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="XF1" gate="G$1" pin="1"/>
 <pinref part="K1" gate="G$1" pin="CONTACT1"/>
-</segment>
-</net>
-<net name="CONVOUT" class="0">
-<segment>
-<pinref part="TP8" gate="G$1" pin="1"/>
-<wire x1="-119.38" y1="-48.26" x2="-119.38" y2="-45.72" width="0.1524" layer="91"/>
-<label x="-119.38" y="-45.72" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$22" class="0">
