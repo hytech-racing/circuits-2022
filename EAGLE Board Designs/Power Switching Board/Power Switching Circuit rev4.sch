@@ -8561,8 +8561,28 @@ FAULT2: Current limit fault on CONVOUT</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="RETRY"/>
-<wire x1="55.88" y1="-40.64" x2="78.74" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-40.64" x2="60.96" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="P10" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="!VALID1"/>
+<pinref part="U1" gate="G$1" pin="!VALID2"/>
+<wire x1="60.96" y1="-40.64" x2="78.74" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-20.32" x2="55.88" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="!CH1"/>
+<wire x1="55.88" y1="-22.86" x2="55.88" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="55.88" y="-22.86"/>
+<pinref part="U1" gate="G$1" pin="!CH2"/>
+<wire x1="55.88" y1="-25.4" x2="55.88" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="55.88" y="-25.4"/>
+<pinref part="U1" gate="G$1" pin="!FAULT1"/>
+<wire x1="55.88" y1="-27.94" x2="55.88" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="55.88" y="-27.94"/>
+<pinref part="U1" gate="G$1" pin="!FAULT2"/>
+<wire x1="55.88" y1="-30.48" x2="55.88" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="55.88" y="-30.48"/>
+<wire x1="55.88" y1="-33.02" x2="60.96" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-33.02" x2="60.96" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="55.88" y="-33.02"/>
+<junction x="60.96" y="-40.64"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="-83.82" x2="78.74" y2="-78.74" width="0.1524" layer="91"/>
