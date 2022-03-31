@@ -8110,7 +8110,7 @@ Layer: 94 Symbol</description>
 <part name="TP9" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP12" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="TP2" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="TP3" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="TP3" library="HyTechDevices" deviceset="TEST_POINT" device="" value="INTVDD"/>
 <part name="TP6" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="O1" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_10"/>
 <part name="O2" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_10"/>
