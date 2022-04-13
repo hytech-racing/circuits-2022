@@ -4952,12 +4952,12 @@ See breadboard placement for pin distancing
 <pin name="A7" x="-2.54" y="-22.86" visible="pin" length="short"/>
 <pin name="A9" x="-2.54" y="-27.94" visible="pin" length="short"/>
 <pin name="A8" x="-2.54" y="-25.4" visible="pin" length="short"/>
-<pin name="3.3V" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="3.3V" x="22.86" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="A10" x="-2.54" y="-30.48" visible="pin" length="short"/>
 <pin name="A11(PD)" x="-2.54" y="-33.02" visible="pin" length="short"/>
 <pin name="A12" x="-2.54" y="-35.56" visible="pin" length="short"/>
-<pin name="(BAT)VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="USB" x="22.86" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="BAT" x="22.86" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="(USB)VIN" x="22.86" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="EN" x="22.86" y="-15.24" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="RST" x="22.86" y="-12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
@@ -4980,7 +4980,7 @@ Requires ordering of:
 <devices>
 <device name="" package="ESP32">
 <connects>
-<connect gate="G$1" pin="(BAT)VIN" pad="BAT"/>
+<connect gate="G$1" pin="(USB)VIN" pad="USB"/>
 <connect gate="G$1" pin="3.3V" pad="3.3V"/>
 <connect gate="G$1" pin="A0" pad="A0"/>
 <connect gate="G$1" pin="A1" pad="A1"/>
@@ -4995,6 +4995,7 @@ Requires ordering of:
 <connect gate="G$1" pin="A7" pad="D32"/>
 <connect gate="G$1" pin="A8" pad="D15"/>
 <connect gate="G$1" pin="A9" pad="D33"/>
+<connect gate="G$1" pin="BAT" pad="BAT"/>
 <connect gate="G$1" pin="CRX" pad="RX"/>
 <connect gate="G$1" pin="CTX" pad="TX"/>
 <connect gate="G$1" pin="D21" pad="D21"/>
@@ -5006,7 +5007,6 @@ Requires ordering of:
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="SDI" pad="CIPO"/>
 <connect gate="G$1" pin="SDO" pad="COPI"/>
-<connect gate="G$1" pin="USB" pad="USB"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5035,7 +5035,6 @@ Requires ordering of:
 <attribute name="REVIEWER_FURTHER" value=""/>
 <attribute name="REVIEWER_SCHEMATIC" value="Zekun Li"/>
 </part>
-<part name="U1" library="HyTechDevices" deviceset="VOLTAGE_REGULATOR_?_*" device="SOT-223" technology="5V"/>
 <part name="GND7" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="P+3" library="HyTechSupplies" deviceset="+5V" device=""/>
 <part name="C4" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_1UF" value="CAPACITOR_0603_25V_1UF"/>
@@ -5083,6 +5082,7 @@ Requires ordering of:
 <part name="P4" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470" value="RESISTOR_0603_470"/>
 <part name="D3" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="U3" library="HyTechDevices" deviceset="VOLTAGE_REGULATOR_?_*" device="SOT-223" technology="5V"/>
 </parts>
 <sheets>
 <sheet>
@@ -5102,9 +5102,6 @@ Requires ordering of:
 <attribute name="DESIGNER_SCHEMATIC" x="176.53" y="45.72" size="2.54" layer="95"/>
 <attribute name="REVIEWER_FURTHER" x="227.33" y="30.48" size="2.54" layer="95"/>
 <attribute name="REVIEWER_SCHEMATIC" x="227.33" y="45.72" size="2.54" layer="95"/>
-</instance>
-<instance part="U1" gate="G$1" x="25.4" y="195.58" smashed="yes">
-<attribute name="NAME" x="27.94" y="187.96" size="1.778" layer="95"/>
 </instance>
 <instance part="GND7" gate="1" x="33.02" y="180.34" smashed="yes">
 <attribute name="VALUE" x="30.48" y="177.8" size="1.778" layer="96"/>
@@ -5274,6 +5271,10 @@ Requires ordering of:
 <attribute name="COLOR" x="57.15" y="102.362" size="1.27" layer="95" align="top-center"/>
 <attribute name="NAME" x="57.15" y="107.696" size="1.27" layer="96" align="bottom-center"/>
 </instance>
+<instance part="U3" gate="G$1" x="25.4" y="195.58" smashed="yes">
+<attribute name="NAME" x="25.4" y="196.342" size="1.27" layer="95"/>
+<attribute name="MPN" x="34.29" y="187.198" size="1.27" layer="96" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5281,13 +5282,13 @@ Requires ordering of:
 <net name="GND" class="0">
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="33.02" y1="185.42" x2="45.72" y2="185.42" width="0.1524" layer="91"/>
 <junction x="33.02" y="185.42"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="185.42" x2="33.02" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="182.88" x2="33.02" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -5376,18 +5377,10 @@ Requires ordering of:
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="195.58" x2="45.72" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="OUT"/>
-<wire x1="43.18" y1="193.04" x2="45.72" y2="193.04" width="0.1524" layer="91"/>
-<junction x="45.72" y="193.04"/>
-</segment>
-<segment>
 <pinref part="P1" gate="1" pin="+5V"/>
 <wire x1="160.02" y1="142.24" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="137.16" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="A2" gate="G$1" pin="(BAT)VIN"/>
+<pinref part="A2" gate="G$1" pin="(USB)VIN"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -5429,15 +5422,23 @@ Requires ordering of:
 <wire x1="109.22" y1="198.12" x2="109.22" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="P14" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="193.04" x2="45.72" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="OUT"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="45.72" y1="193.04" x2="45.72" y2="195.58" width="0.1524" layer="91"/>
+<junction x="45.72" y="193.04"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="IN"/>
 <wire x1="22.86" y1="193.04" x2="20.32" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="193.04" x2="20.32" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <junction x="20.32" y="193.04"/>
 <pinref part="P+4" gate="1" pin="+12V"/>
+<pinref part="U3" gate="G$1" pin="IN"/>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="+12V"/>
@@ -5475,7 +5476,11 @@ Requires ordering of:
 <pinref part="D2" gate="LED" pin="A"/>
 <wire x1="53.34" y1="114.3" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
 <label x="43.18" y="114.3" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<label x="124.46" y="109.22" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<label x="124.46" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="A2" gate="G$1" pin="A12"/>
+<wire x1="124.46" y1="106.68" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5492,29 +5497,7 @@ Requires ordering of:
 <wire x1="60.96" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SENSOR_3" class="0">
-<segment>
-<label x="116.84" y="129.54" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="A3(GPI)"/>
-<wire x1="116.84" y1="129.54" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="195.58" x2="99.06" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="195.58" x2="96.52" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="195.58" x2="99.06" y2="200.66" width="0.1524" layer="91"/>
-<junction x="99.06" y="195.58"/>
-<wire x1="99.06" y1="200.66" x2="96.52" y2="200.66" width="0.1524" layer="91"/>
-<label x="96.52" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="SENSOR_4" class="0">
-<segment>
-<label x="116.84" y="132.08" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="A2(GPI)"/>
-<wire x1="116.84" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
-</segment>
+<net name="AMB_TEMP" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="195.58" x2="147.32" y2="195.58" width="0.1524" layer="91"/>
@@ -5525,13 +5508,13 @@ Requires ordering of:
 <wire x1="147.32" y1="200.66" x2="144.78" y2="200.66" width="0.1524" layer="91"/>
 <label x="144.78" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
-</net>
-<net name="SENSOR_5" class="0">
 <segment>
-<label x="116.84" y="134.62" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="A1"/>
-<wire x1="116.84" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="A2" gate="G$1" pin="A4(GPI)"/>
+<wire x1="124.46" y1="127" x2="129.54" y2="127" width="0.1524" layer="91"/>
+<label x="124.46" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+</net>
+<net name="SUSP_BL" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="195.58" x2="193.04" y2="195.58" width="0.1524" layer="91"/>
@@ -5542,13 +5525,13 @@ Requires ordering of:
 <wire x1="193.04" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
 <label x="190.5" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
-</net>
-<net name="SENSOR_6" class="0">
 <segment>
-<label x="116.84" y="137.16" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="A2" gate="G$1" pin="A0"/>
-<wire x1="116.84" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="A2" gate="G$1" pin="A3(GPI)"/>
+<wire x1="124.46" y1="129.54" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
+<label x="124.46" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+</net>
+<net name="SUSP_BR" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="195.58" x2="241.3" y2="195.58" width="0.1524" layer="91"/>
@@ -5558,6 +5541,11 @@ Requires ordering of:
 <junction x="241.3" y="195.58"/>
 <wire x1="241.3" y1="200.66" x2="238.76" y2="200.66" width="0.1524" layer="91"/>
 <label x="238.76" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="A2" gate="G$1" pin="A2(GPI)"/>
+<wire x1="124.46" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
+<label x="124.46" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -5633,33 +5621,40 @@ Requires ordering of:
 <pinref part="D3" gate="LED" pin="A"/>
 <wire x1="53.34" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
 <label x="43.18" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
-<label x="124.46" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="N$11" class="0">
 <segment>
+<label x="124.46" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="A2" gate="G$1" pin="A11(PD)"/>
-<wire x1="129.54" y1="109.22" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="A2" gate="G$1" pin="A12"/>
-<wire x1="129.54" y1="106.68" x2="124.46" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="109.22" x2="129.54" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ESP_3.3V" class="0">
 <segment>
-<wire x1="154.94" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
-<label x="160.02" y="134.62" size="1.27" layer="95" xref="yes"/>
+<label x="160.02" y="132.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="A2" gate="G$1" pin="3.3V"/>
+<wire x1="154.94" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VIO"/>
+<wire x1="208.28" y1="114.3" x2="203.2" y2="114.3" width="0.1524" layer="91"/>
 <label x="208.28" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="AMB_HUM" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="VIO"/>
-<wire x1="203.2" y1="114.3" x2="208.28" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="A2" gate="G$1" pin="A7"/>
+<wire x1="124.46" y1="119.38" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
+<label x="124.46" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="195.58" x2="99.06" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="195.58" x2="96.52" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="195.58" x2="99.06" y2="200.66" width="0.1524" layer="91"/>
+<junction x="99.06" y="195.58"/>
+<wire x1="99.06" y1="200.66" x2="96.52" y2="200.66" width="0.1524" layer="91"/>
+<label x="96.52" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
 </nets>
