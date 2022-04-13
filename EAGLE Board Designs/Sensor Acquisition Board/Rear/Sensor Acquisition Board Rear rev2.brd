@@ -192,7 +192,7 @@
 <wire x1="92.71" y1="50.8" x2="0" y2="50.8" width="0" layer="20"/>
 <wire x1="0" y1="50.8" x2="0" y2="0" width="0" layer="20"/>
 <text x="90.424" y="12.573" size="1.016" layer="21" font="vector" rot="R90">HyTech Racing 2022
-Sensor Acquisition Board Rear rev1
+Sensor Acquisition Board Rear rev2
 Designed by Youssef Jaafar
 Based on SAB rev4 by Bo Han Zhu</text>
 <text x="74.041" y="19.05" size="0.8128" layer="21">Vehicle CAN-Bus</text>
