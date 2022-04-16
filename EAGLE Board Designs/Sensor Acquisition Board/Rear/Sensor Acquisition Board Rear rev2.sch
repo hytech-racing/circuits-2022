@@ -5450,7 +5450,7 @@ Requires ordering of:
 <net name="CANH" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="CANH"/>
-<label x="203.2" y="111.76" size="1.778" layer="95"/>
+<label x="203.2" y="111.76" size="1.27" layer="95"/>
 <wire x1="203.2" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="111.76" x2="241.3" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -5463,7 +5463,7 @@ Requires ordering of:
 <segment>
 <pinref part="J6" gate="G$1" pin="CANL"/>
 <wire x1="203.2" y1="109.22" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
-<label x="203.2" y="109.22" size="1.778" layer="95"/>
+<label x="203.2" y="109.22" size="1.27" layer="95"/>
 <wire x1="226.06" y1="109.22" x2="241.3" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="114.3" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
