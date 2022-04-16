@@ -135,6 +135,7 @@
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
 <layer number="156" name="HVSpacing" color="12" fill="1" visible="no" active="yes"/>
+<layer number="157" name="HIGH_VOLTAGE_WIRES" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
@@ -5016,6 +5017,144 @@ Requires ordering of:
 </deviceset>
 </devicesets>
 </library>
+<library name="HyTechExternal">
+<packages>
+</packages>
+<symbols>
+<symbol name="ORDERING">
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<text x="0" y="-3.302" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HEADER_FEMALE_PINS_*_PITCH" prefix="O">
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="12_0.1&quot;">
+<attribute name="DKPN" value="S7045-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC121LFBN-RC"/>
+</technology>
+<technology name="13_0.1&quot;">
+<attribute name="DKPN" value="S7046-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC131LFBN-RC"/>
+</technology>
+<technology name="14_0.1&quot;">
+<attribute name="DKPN" value="S7047-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC141LFBN-RC"/>
+</technology>
+<technology name="16_0.1&quot;">
+<attribute name="DKPN" value="S7049-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC161LFBN-RC"/>
+</technology>
+<technology name="24_0.1&quot;">
+<attribute name="DKPN" value="S7057-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC241LFBN-RC"/>
+</technology>
+<technology name="2_0.1&quot;">
+<attribute name="DKPN" value="S7035-ND"/>
+<attribute name="MANUFACTURER" value="Sullins Connector Solutions"/>
+<attribute name="MPN" value="PPPC021LFBN-RC"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECEPTACLE-4_*" prefix="O">
+<description>Receptacle, 4 Pin
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430250408_CRIMP_HOUSINGS-2845587.pdf"&gt;Microfit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/1053081204_CRIMP_HOUSINGS-2868911.pdf"&gt;Nanofit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT">
+<attribute name="DKPN" value="WM11225-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43025-0408"/>
+<attribute name="MPN" value="0430250408"/>
+</technology>
+<technology name="NANOFIT">
+<attribute name="DKPN" value="WM14962-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105308-1204"/>
+<attribute name="MPN" value="105308-1204"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRIMP_*" prefix="O">
+<description>Crimp
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/3/0430300003_CRIMP_TERMINALS-2845469.pdf"&gt;Microfit, 20-24&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mouser.com/datasheet/2/276/2/1053002300_CRIMP_TERMINALS-2829694.pdf"&gt;Nanofit, 20-22&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="MICROFIT_20-24">
+<attribute name="DKPN" value="WM2776CT-ND"/>
+<attribute name="GAUGE" value="20-24"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43030-0003"/>
+<attribute name="MPN" value="0430300003"/>
+</technology>
+<technology name="NANOFIT_20-22">
+<attribute name="DKPN" value="WM15011TR-ND"/>
+<attribute name="GAUGE" value="20-22"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105300-2300"/>
+<attribute name="MPN" value="105300-2300"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP32" prefix="O">
+<description>Adafruit Huzzah32
+&lt;br&gt;
+&lt;a href="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-huzzah32-esp32-feather.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ORDERING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1528-2514-ND"/>
+<attribute name="MANUFACTURER" value="Adafruit Industries LLC"/>
+<attribute name="MPN" value="3591"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5083,6 +5222,34 @@ Requires ordering of:
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR_?_*" device="0603" technology="470" value="RESISTOR_0603_470"/>
 <part name="D3" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="U3" library="HyTechDevices" deviceset="VOLTAGE_REGULATOR_?_*" device="SOT-223" technology="5V"/>
+<part name="O1" library="HyTechExternal" deviceset="HEADER_FEMALE_PINS_*_PITCH" device="" technology="12_0.1&quot;"/>
+<part name="O2" library="HyTechExternal" deviceset="HEADER_FEMALE_PINS_*_PITCH" device="" technology="16_0.1&quot;"/>
+<part name="O3" library="HyTechExternal" deviceset="RECEPTACLE-4_*" device="" technology="MICROFIT"/>
+<part name="O4" library="HyTechExternal" deviceset="RECEPTACLE-4_*" device="" technology="MICROFIT"/>
+<part name="O5" library="HyTechExternal" deviceset="RECEPTACLE-4_*" device="" technology="MICROFIT"/>
+<part name="O6" library="HyTechExternal" deviceset="RECEPTACLE-4_*" device="" technology="MICROFIT"/>
+<part name="O7" library="HyTechExternal" deviceset="RECEPTACLE-4_*" device="" technology="MICROFIT"/>
+<part name="O8" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O9" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O10" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O11" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O12" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O13" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O14" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O15" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O16" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O17" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O18" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O19" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O20" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O21" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O22" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O23" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O24" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O25" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O26" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O27" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
+<part name="O28" library="HyTechExternal" deviceset="ESP32" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5657,6 +5824,129 @@ Requires ordering of:
 <label x="96.52" y="200.66" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="22.86" y="137.16" size="1.778" layer="97">Headers, nanofit receptacles, crimps, and esp32 to order</text>
+</plain>
+<instances>
+<instance part="O1" gate="G$1" x="22.86" y="129.54" smashed="yes">
+<attribute name="MPN" x="22.86" y="126.238" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="22.86" y="130.302" size="1.27" layer="95"/>
+</instance>
+<instance part="O2" gate="G$1" x="22.86" y="121.92" smashed="yes">
+<attribute name="MPN" x="22.86" y="118.618" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="22.86" y="122.682" size="1.27" layer="95"/>
+</instance>
+<instance part="O3" gate="G$1" x="40.64" y="129.54" smashed="yes">
+<attribute name="MPN" x="40.64" y="126.238" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="40.64" y="130.302" size="1.27" layer="95"/>
+</instance>
+<instance part="O4" gate="G$1" x="40.64" y="121.92" smashed="yes">
+<attribute name="MPN" x="40.64" y="118.618" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="40.64" y="122.682" size="1.27" layer="95"/>
+</instance>
+<instance part="O5" gate="G$1" x="40.64" y="114.3" smashed="yes">
+<attribute name="MPN" x="40.64" y="110.998" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="40.64" y="115.062" size="1.27" layer="95"/>
+</instance>
+<instance part="O6" gate="G$1" x="40.64" y="106.68" smashed="yes">
+<attribute name="MPN" x="40.64" y="103.378" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="40.64" y="107.442" size="1.27" layer="95"/>
+</instance>
+<instance part="O7" gate="G$1" x="40.64" y="99.06" smashed="yes">
+<attribute name="MPN" x="40.64" y="95.758" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="40.64" y="99.822" size="1.27" layer="95"/>
+</instance>
+<instance part="O8" gate="G$1" x="58.42" y="129.54" smashed="yes">
+<attribute name="MPN" x="58.42" y="126.238" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="58.42" y="130.302" size="1.27" layer="95"/>
+</instance>
+<instance part="O9" gate="G$1" x="58.42" y="121.92" smashed="yes">
+<attribute name="MPN" x="58.42" y="118.618" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="58.42" y="122.682" size="1.27" layer="95"/>
+</instance>
+<instance part="O10" gate="G$1" x="58.42" y="114.3" smashed="yes">
+<attribute name="MPN" x="58.42" y="110.998" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="58.42" y="115.062" size="1.27" layer="95"/>
+</instance>
+<instance part="O11" gate="G$1" x="58.42" y="106.68" smashed="yes">
+<attribute name="MPN" x="58.42" y="103.378" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="58.42" y="107.442" size="1.27" layer="95"/>
+</instance>
+<instance part="O12" gate="G$1" x="73.66" y="129.54" smashed="yes">
+<attribute name="MPN" x="73.66" y="126.238" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="73.66" y="130.302" size="1.27" layer="95"/>
+</instance>
+<instance part="O13" gate="G$1" x="73.66" y="121.92" smashed="yes">
+<attribute name="MPN" x="73.66" y="118.618" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="73.66" y="122.682" size="1.27" layer="95"/>
+</instance>
+<instance part="O14" gate="G$1" x="73.66" y="114.3" smashed="yes">
+<attribute name="MPN" x="73.66" y="110.998" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="73.66" y="115.062" size="1.27" layer="95"/>
+</instance>
+<instance part="O15" gate="G$1" x="73.66" y="106.68" smashed="yes">
+<attribute name="MPN" x="73.66" y="103.378" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="73.66" y="107.442" size="1.27" layer="95"/>
+</instance>
+<instance part="O16" gate="G$1" x="88.9" y="129.54" smashed="yes">
+<attribute name="MPN" x="88.9" y="126.238" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="88.9" y="130.302" size="1.27" layer="95"/>
+</instance>
+<instance part="O17" gate="G$1" x="88.9" y="121.92" smashed="yes">
+<attribute name="MPN" x="88.9" y="118.618" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="88.9" y="122.682" size="1.27" layer="95"/>
+</instance>
+<instance part="O18" gate="G$1" x="88.9" y="114.3" smashed="yes">
+<attribute name="MPN" x="88.9" y="110.998" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="88.9" y="115.062" size="1.27" layer="95"/>
+</instance>
+<instance part="O19" gate="G$1" x="88.9" y="106.68" smashed="yes">
+<attribute name="MPN" x="88.9" y="103.378" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="88.9" y="107.442" size="1.27" layer="95"/>
+</instance>
+<instance part="O20" gate="G$1" x="104.14" y="129.54" smashed="yes">
+<attribute name="MPN" x="104.14" y="126.238" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="104.14" y="130.302" size="1.27" layer="95"/>
+</instance>
+<instance part="O21" gate="G$1" x="104.14" y="121.92" smashed="yes">
+<attribute name="MPN" x="104.14" y="118.618" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="104.14" y="122.682" size="1.27" layer="95"/>
+</instance>
+<instance part="O22" gate="G$1" x="104.14" y="114.3" smashed="yes">
+<attribute name="MPN" x="104.14" y="110.998" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="104.14" y="115.062" size="1.27" layer="95"/>
+</instance>
+<instance part="O23" gate="G$1" x="104.14" y="106.68" smashed="yes">
+<attribute name="MPN" x="104.14" y="103.378" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="104.14" y="107.442" size="1.27" layer="95"/>
+</instance>
+<instance part="O24" gate="G$1" x="119.38" y="129.54" smashed="yes">
+<attribute name="MPN" x="119.38" y="126.238" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="119.38" y="130.302" size="1.27" layer="95"/>
+</instance>
+<instance part="O25" gate="G$1" x="119.38" y="121.92" smashed="yes">
+<attribute name="MPN" x="119.38" y="118.618" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="119.38" y="122.682" size="1.27" layer="95"/>
+</instance>
+<instance part="O26" gate="G$1" x="119.38" y="114.3" smashed="yes">
+<attribute name="MPN" x="119.38" y="110.998" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="119.38" y="115.062" size="1.27" layer="95"/>
+</instance>
+<instance part="O27" gate="G$1" x="119.38" y="106.68" smashed="yes">
+<attribute name="MPN" x="119.38" y="103.378" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="119.38" y="107.442" size="1.27" layer="95"/>
+</instance>
+<instance part="O28" gate="G$1" x="134.62" y="129.54" smashed="yes">
+<attribute name="MPN" x="134.62" y="126.238" size="1.27" layer="96" align="top-left"/>
+<attribute name="NAME" x="134.62" y="130.302" size="1.27" layer="95"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>

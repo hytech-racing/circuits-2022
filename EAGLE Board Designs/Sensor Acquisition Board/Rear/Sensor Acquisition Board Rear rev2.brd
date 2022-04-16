@@ -135,6 +135,7 @@
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
 <layer number="156" name="HVSpacing" color="12" fill="1" visible="no" active="yes"/>
+<layer number="157" name="HIGH_VOLTAGE_WIRES" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
@@ -4655,10 +4656,9 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <wire x1="57.136" y1="30.074" x2="56.526" y2="29.464" width="0.508" layer="1"/>
 <wire x1="56.526" y1="29.464" x2="53.594" y2="29.464" width="0.508" layer="1"/>
 <via x="53.594" y="29.464" extent="1-16" drill="0.762"/>
-<wire x1="29.1084" y1="16.4479" x2="29.107" y2="16.4465" width="0.254" layer="1"/>
-<wire x1="29.107" y1="16.4465" x2="29.107" y2="18.439" width="0.254" layer="1"/>
 <wire x1="29.107" y1="18.439" x2="29.21" y2="18.542" width="0.254" layer="1"/>
 <via x="29.21" y="18.542" extent="1-16" drill="0.3556"/>
+<wire x1="29.107" y1="16.4465" x2="29.107" y2="18.439" width="0.254" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="C1" pad="2"/>
