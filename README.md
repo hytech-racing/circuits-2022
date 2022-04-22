@@ -1,4 +1,4 @@
-![HyTech Logo](https://hytechracing.gatech.edu/images/hytech_logo_small.png)
+![HyTech Logo](https://hytechracing.gatech.edu/images/hytech_logo.png)
 
 # 2022 Circuits
 
