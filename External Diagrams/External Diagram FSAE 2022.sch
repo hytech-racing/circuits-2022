@@ -193,27 +193,6 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="BUZZER">
-<wire x1="-1.905" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.54" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="0" x2="1.905" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="0" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<text x="-3.556" y="0.254" size="1.778" layer="95">+</text>
-<text x="2.286" y="0.254" size="1.778" layer="95">-</text>
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
@@ -561,18 +540,6 @@
 <pin name="5" x="5.08" y="5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="6" x="5.08" y="7.62" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="DC-DC_CONVERTER">
-<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="-20.32" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-12.7" x2="-20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="+IN" x="-22.86" y="-2.54" length="short"/>
-<pin name="-IN" x="-22.86" y="-10.16" length="short"/>
-<pin name="+OUT" x="2.54" y="-2.54" length="short" rot="R180"/>
-<pin name="-OUT" x="2.54" y="-10.16" length="short" rot="R180"/>
-<text x="-14.986" y="-8.382" size="1.778" layer="95">DC-DC 
-Converter</text>
-</symbol>
 <symbol name="M08">
 <wire x1="1.27" y1="-10.16" x2="-5.08" y2="-10.16" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
@@ -664,26 +631,6 @@ Converter</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BUZZER" prefix="SP">
-<description>&lt;b&gt;SPEAKER&lt;/b&gt;&lt;p&gt;
-
-&lt;a href="http://www.alliedelec.com/icc-intervox-brp4535s-12-c/70115826/"&gt;Prouct Page&lt;/a&gt; (Ready to Drive Sound)
-&lt;br&gt;
-&lt;br&gt;
-Source: Schukat</description>
-<gates>
-<gate name="1" symbol="BUZZER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -940,20 +887,6 @@ Source: Sonnenschein</description>
 <description>Generic 6-pin connector</description>
 <gates>
 <gate name="G$1" symbol="M06" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DC-DC_CONVERTER">
-<gates>
-<gate name="G$1" symbol="DC-DC_CONVERTER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1312,6 +1245,107 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="4.064" y1="-3.6195" x2="-4.064" y2="-3.6195" width="0.127" layer="21"/>
 <wire x1="-4.064" y1="-3.6195" x2="-4.064" y2="3.6195" width="0.127" layer="21"/>
 </package>
+<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_06">
+<description>6 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054051206"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1054051206_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<smd name="2" x="0" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="4" x="2.5" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="1" x="2.5" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="3" x="-2.5" y="1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="6" x="-2.5" y="-1.65" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="PAD1" x="-4.7" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD2" x="4.7" y="-6.58" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-2.52" y1="2.6" x2="2.52" y2="2.6" width="0.127" layer="21"/>
+<wire x1="2.52" y1="2.6" x2="2.52" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="2.52" y1="-1.99" x2="5.62" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="5.62" y1="-1.99" x2="5.62" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="5.62" y1="-10.68" x2="-5.62" y2="-10.68" width="0.127" layer="21"/>
+<wire x1="-5.62" y1="-10.68" x2="-5.62" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-5.62" y1="-1.99" x2="-2.52" y2="-1.99" width="0.127" layer="21"/>
+<wire x1="-2.52" y1="-1.99" x2="-2.52" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-5.62" y1="-19.48" x2="5.62" y2="-19.48" width="0.1524" layer="51"/>
+<text x="0" y="-20.065" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
+visible on the PCB.</text>
+<rectangle x1="-6.35" y1="-19.43" x2="6.35" y2="3.81" layer="39"/>
+<text x="0" y="3.81" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="MOLEX_NANOFIT_PTH_06">
+<description>6 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101206"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053101206_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<pad name="2" x="0" y="0" drill="1.2" rot="R180"/>
+<pad name="5" x="0" y="-2.5" drill="1.2" rot="R180"/>
+<pad name="6" x="-2.5" y="-2.5" drill="1.2" rot="R180"/>
+<pad name="3" x="-2.5" y="0" drill="1.2" rot="R180"/>
+<pad name="1" x="2.5" y="0" drill="1.2" rot="R180"/>
+<pad name="4" x="2.5" y="-2.5" drill="1.2" rot="R180"/>
+<wire x1="4.25" y1="-4.25" x2="-4.25" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-4.25" x2="4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="1.75" x2="2.6" y2="1.75" width="0.127" layer="21"/>
+<wire x1="2.6" y1="1.75" x2="-2.6" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="1.75" x2="-4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="1.75" x2="-4.25" y2="-4.25" width="0.127" layer="21"/>
+<hole x="1.25" y="1.34" drill="1.3"/>
+<wire x1="-2.6" y1="4.6" x2="2.6" y2="4.6" width="0.127" layer="21"/>
+<wire x1="2.6" y1="4.6" x2="2.6" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="4.6" x2="-2.6" y2="1.75" width="0.127" layer="21"/>
+<rectangle x1="-3.175" y1="1.905" x2="3.175" y2="5.08" layer="39" rot="R180"/>
+<rectangle x1="-4.445" y1="-4.445" x2="4.445" y2="1.905" layer="40" rot="R180"/>
+<rectangle x1="-4.445" y1="-4.445" x2="4.445" y2="1.905" layer="39" rot="R180"/>
+<text x="0" y="-5.08" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="MOLEX_MICROFIT_SMD_RIGHTANGLE_06_DUAL">
+<description>6 Pin Micro-Fit Right Angle Header, SMD, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/0430450611"&gt;Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430450611_sd.pdf"&gt;Footprint&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/430250600_sd.pdf"&gt;Plug Size&lt;/a&gt;
+&lt;br&gt;
+Solid line must not be visible on PCB if no cutout is desired.
+&lt;br&gt;
+Dashed line is edge of mated connector.</description>
+<smd name="PAD1" x="6.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="PAD2" x="-6.8862" y="0" dx="3.429" dy="1.651" layer="1"/>
+<smd name="2" x="0" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<smd name="5" x="0" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
+<rectangle x1="5.1717" y1="1.8034" x2="7.6101" y2="3.4036" layer="43"/>
+<rectangle x1="-7.6101" y1="1.8034" x2="-5.1717" y2="3.4036" layer="43"/>
+<wire x1="-6.3274" y1="5.4737" x2="6.3274" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="4.4986" y1="-4.4323" x2="-4.4986" y2="-4.4323" width="0.127" layer="21"/>
+<wire x1="-6.3274" y1="-2.6035" x2="-6.3274" y2="5.4737" width="0.127" layer="21"/>
+<wire x1="-4.4986" y1="-4.4323" x2="-6.3274" y2="-2.6035" width="0.127" layer="21"/>
+<wire x1="4.4986" y1="-4.4323" x2="6.3274" y2="-2.6035" width="0.127" layer="21"/>
+<wire x1="6.3274" y1="-2.6035" x2="6.3274" y2="5.4737" width="0.127" layer="21"/>
+<rectangle x1="-9.35" y1="-5.08" x2="9.35" y2="12.7" layer="39"/>
+<text x="0" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-7.6101" y1="1.8034" x2="-5.1717" y2="3.4036" layer="41"/>
+<rectangle x1="5.1717" y1="1.8034" x2="7.6101" y2="3.4036" layer="41"/>
+<wire x1="-9.35" y1="-10.033" x2="9.35" y2="-10.033" width="0.127" layer="51"/>
+<wire x1="-9.35" y1="-12.3698" x2="9.35" y2="-12.3698" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-5.54" y1="-10.033" x2="5.54" y2="-10.033" width="0" layer="46"/>
+<wire x1="5.54" y1="-10.033" x2="5.54" y2="-25.527" width="0" layer="46"/>
+<wire x1="5.54" y1="-25.527" x2="-5.54" y2="-25.527" width="0" layer="46"/>
+<wire x1="-5.54" y1="-25.527" x2="-5.54" y2="-10.033" width="0" layer="46"/>
+<rectangle x1="-5.54" y1="-25.527" x2="5.54" y2="-10.033" layer="42"/>
+<polygon width="0" layer="20">
+<vertex x="5.54" y="-25.527"/>
+<vertex x="-5.54" y="-25.527"/>
+<vertex x="-5.54" y="-10.033"/>
+<vertex x="5.54" y="-10.033"/>
+</polygon>
+<smd name="1" x="3" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<smd name="4" x="3" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
+<smd name="3" x="-3" y="5.4737" dx="1.27" dy="2.921" layer="1"/>
+<smd name="6" x="-3" y="10.0965" dx="1.27" dy="2.921" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1328,6 +1362,26 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="CONNECTOR_06">
+<wire x1="7.62" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-12.7" x2="5.08" y2="-12.7" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-15.24" x2="5.08" y2="-15.24" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
+<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
+<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="10.16" y="-12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="6" x="10.16" y="-15.24" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0" y="-18.415" size="1.27" layer="96" align="top-left">&gt;MPN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1511,6 +1565,68 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
+<deviceset name="CONNECTOR-6_?_*" prefix="J">
+<description>6 Pin Connector</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_06" x="0" y="0"/>
+</gates>
+<devices>
+<device name="NF_S_RA" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_06">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="DKPN" value="1054051306-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105405-1306"/>
+<attribute name="MPN" value="105405-1306"/>
+</technology>
+</technologies>
+</device>
+<device name="NF_T_V" package="MOLEX_NANOFIT_PTH_06">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="BLACK">
+<attribute name="DKPN" value="WM15062-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-105310-1306"/>
+<attribute name="MPN" value="105310-1306"/>
+</technology>
+</technologies>
+</device>
+<device name="μF_S_RA" package="MOLEX_MICROFIT_SMD_RIGHTANGLE_06_DUAL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="WM1833CT-ND"/>
+<attribute name="MANUFACTURER" value="Molex"/>
+<attribute name="MOPN" value="538-43045-0611"/>
+<attribute name="MPN" value="0430450611"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSymbolsTemp">
@@ -1602,6 +1718,21 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="-2.54" y1="1.27" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="CONNECTOR_03">
+<description>Three pin connector.</description>
+<wire x1="7.62" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="5.08" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-10.795" size="1.27" layer="96" align="top-left">&gt;MPN</text>
+<text x="0" y="0.762" size="1.27" layer="96">&gt;MANUFACTURER</text>
+<pin name="1" x="10.16" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="10.16" y="-5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CASCADIA_CM200DZ" prefix="A">
@@ -1682,6 +1813,37 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <technologies>
 <technology name="">
 <attribute name="COLOR" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-3_*" prefix="J">
+<description>Three pin connector
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "https://drive.google.com/file/d/14-0BdluqhzWVuxobIuHQclYd8S9S8AFy/view"&gt;HV02-M3S(40A)-M00A-1&lt;/a&gt;&lt;li&gt;
+&lt;li&gt;&lt;a href = "https://drive.google.com/file/d/1QyRJhkZq4Jge6F64jD-5aG-LjfEdAoZD/view"&gt;NEMA-5-20&lt;/a&gt;&lt;li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONNECTOR_03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="HV02-M3S(40A)">
+<attribute name="MANUFACTURER" value="Jonhon"/>
+<attribute name="MPN" value="HV02-M3S(40A)-M00A-1"/>
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+<technology name="NEMA-5-20">
+<attribute name="MANUFACTURER" value="NEMA"/>
+<attribute name="MPN" value="NEMA 5-20"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -1833,6 +1995,32 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="HyTechSupplies">
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-1.27" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="P">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1950,12 +2138,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </sheet>
 </sheets>
 </module>
-<module name="CUR_SENSE" prefix="" dx="20.32" dy="20.32">
+<module name="CUR_SENSE" prefix="" dx="20.32" dy="35.56">
 <ports>
 <port name="CUR_GND" side="bottom" coord="-7.62" direction="pwr"/>
 <port name="CUR_SENSE" side="bottom" coord="-2.54" direction="out"/>
 <port name="REF" side="bottom" coord="-5.08" direction="out"/>
 <port name="CUR_5V" side="bottom" coord="0" direction="pwr"/>
+<port name="HV_IN" side="top" coord="-2.54" direction="io"/>
+<port name="HV_OUT" side="top" coord="2.54" direction="io"/>
+<port name="BSPD-" side="bottom" coord="2.54" direction="io"/>
+<port name="BSPD+" side="bottom" coord="5.08" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -2134,40 +2326,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </sheet>
 </sheets>
 </module>
-<module name="DASHBOARD" prefix="" dx="45.72" dy="25.4">
-<ports>
-<port name="12V_DASH" side="left" coord="7.62" direction="pwr"/>
-<port name="GND_DASH" side="left" coord="5.08" direction="pwr"/>
-<port name="SSOK" side="left" coord="2.54" direction="in"/>
-<port name="CANL_DASH" side="left" coord="0" direction="io"/>
-<port name="CANH_DASH" side="left" coord="-2.54" direction="io"/>
-<port name="SHUTDOWN_H" side="left" coord="-5.08" direction="in"/>
-<port name="12V_BUZZER" side="right" coord="10.16" direction="pwr"/>
-<port name="BTN_MARK_READ" side="right" coord="7.62" direction="in"/>
-<port name="BTN_MC_CYCLE_READ" side="right" coord="5.08" direction="in"/>
-<port name="BUZZER_OUT" side="right" coord="2.54" direction="out"/>
-<port name="BTN_MODE_READ" side="right" coord="0" direction="in"/>
-<port name="BTN_START_READ" side="right" coord="-2.54" direction="in"/>
-<port name="BTN_LAUNCH_CTRL" side="right" coord="-5.08" direction="in"/>
-<port name="GND_BTN" side="right" coord="-7.62" direction="pwr"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-</sheets>
-</module>
 <module name="POWER_SWITCHING" prefix="" dx="30.48" dy="25.4">
 <ports>
 <port name="OUT_1" side="right" coord="7.62" direction="out"/>
@@ -2254,6 +2412,65 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <port name="CANH_EM" side="left" coord="27.94" direction="io"/>
 <port name="GND_EM" side="left" coord="25.4" direction="io"/>
 <port name="12V_EM" side="left" coord="22.86" direction="io"/>
+<port name="PRECHARGE_OK" side="left" coord="20.32" direction="io"/>
+<port name="SHUTDOWN" side="left" coord="17.78" direction="io"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="DASHBOARD" prefix="" dx="45.72" dy="30.48">
+<ports>
+<port name="12V" side="left" coord="7.62" direction="io"/>
+<port name="CANL" side="left" coord="2.54" direction="io"/>
+<port name="CANH" side="left" coord="0" direction="io"/>
+<port name="SHUTDOWN_H" side="left" coord="-2.54" direction="io"/>
+<port name="SHUTDOWN_G" side="left" coord="-5.08" direction="io"/>
+<port name="SHUTDOWN_F" side="left" coord="-7.62" direction="io"/>
+<port name="GND" side="left" coord="-10.16" direction="io"/>
+<port name="BTN_GND" side="right" coord="7.62" direction="io"/>
+<port name="BTN_MARK" side="right" coord="5.08" direction="io"/>
+<port name="BTN_MC_CYCLE" side="right" coord="2.54" direction="io"/>
+<port name="BTN_MODE" side="right" coord="0" direction="io"/>
+<port name="BTN_START" side="right" coord="-2.54" direction="io"/>
+<port name="BTN_LAUNCH" side="right" coord="-5.08" direction="io"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="TSB" prefix="" dx="40.64" dy="50.8">
+<ports>
+<port name="DCDC-1" side="bottom" coord="17.78" direction="io"/>
+<port name="DCDC-2" side="bottom" coord="15.24" direction="io"/>
+<port name="DCDC+1" side="bottom" coord="12.7" direction="io"/>
+<port name="DCDC+2" side="bottom" coord="10.16" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -2274,11 +2491,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </module>
 </modules>
 <parts>
-<part name="RTDS" library="HyTechSymbols" deviceset="BUZZER" device=""/>
 <part name="LEFT_REAR_BRB" library="HyTechSymbols" deviceset="SWITCH_DPST" device=""/>
 <part name="RIGHT_REAR_BRB" library="HyTechSymbols" deviceset="SWITCH_DPST" device=""/>
 <part name="GLVMS" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
-<part name="F3" library="HyTechSymbols" deviceset="FUSE" device="" value="10A"/>
 <part name="EMRAX_207_MED" library="HyTechSymbols" deviceset="MOTOR_AC" device=""/>
 <part name="BRAKE_LIGHT" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="BOTS" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
@@ -2290,20 +2505,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="HVD_2" library="HyTechSymbols" deviceset="M02" device="" value="TE_HVP800"/>
 <part name="BUTTON_START" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
 <part name="U$2" library="HyTechSymbols" deviceset="BENDER_IR155-3204" device=""/>
-<part name="F1" library="HyTechSymbols" deviceset="FUSE" device="" value="20A"/>
 <part name="GLV_BATT" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="SEGMENT2" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="SEGMENT1" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="AIR2" library="HyTechSymbols" deviceset="RELAY" device="" value="GX23BA"/>
 <part name="AIR1" library="HyTechSymbols" deviceset="RELAY" device="" value="GX23BA"/>
-<part name="FUSE" library="HyTechSymbols" deviceset="FUSE" device="" value="175A"/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="TSMP_RES-" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="10k"/>
 <part name="TSMP_RES+" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="10k"/>
 <part name="HVD_1" library="HyTechSymbols" deviceset="M02" device="" value="TE_HVP800"/>
 <part name="SMD1" library="HyTechSymbols" deviceset="M02" device="" value="PCL01"/>
-<part name="BMS_CELL_2" library="HyTechSymbols" deviceset="M02" device="" value="105307-1202"/>
-<part name="BMS_CELL_1" library="HyTechSymbols" deviceset="M02" device="" value="200277-1202"/>
 <part name="SEGMENT3" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="SEGMENT4" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="BMS_IMD_LATCH_BTN" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
@@ -2312,7 +2523,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="MAIN_SEC_2" library="HyTechSymbols" deviceset="M04" device="" value="8STA21204PN"/>
 <part name="MAIN_SEC_1" library="HyTechSymbols" deviceset="M04" device="" value="8STA61204SN"/>
 <part name="SMD2A" library="HyTechSymbols" deviceset="M02" device="" value="PCL01"/>
-<part name="SMD2B" library="HyTechSymbols" deviceset="M02" device="" value="PCL01"/>
 <part name="SMD3" library="HyTechSymbols" deviceset="M02" device="" value="PCL01"/>
 <part name="MAINTENANCE" library="HyTechSymbols" deviceset="M13" device="" value="8STA01035PN"/>
 <part name="MOTOR_RESOLVER_1" library="HyTechSymbols" deviceset="M06" device="" value="8STA60835SN"/>
@@ -2322,34 +2532,18 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="MOTOR_TEMP_2" library="HyTechSymbols" deviceset="M03" device="" value="8STA00235PN"/>
 <part name="MOTOR_TEMP_1" library="HyTechSymbols" deviceset="M03" device="" value="8STA60235SN"/>
 <part name="MOTOR_RESOLVER_2" library="HyTechSymbols" deviceset="M06" device="" value="8STA00835PN"/>
-<part name="PED_1" library="HyTechSymbols" deviceset="M13" device="" value="8STA01035PN"/>
-<part name="PED_2" library="HyTechSymbols" deviceset="M13" device="" value="8STA61035SN"/>
 <part name="PUMP_1" library="HyTechSymbols" deviceset="M02" device="" value="ASMPP30-1X2-RK"/>
 <part name="BRL_2" library="HyTechSymbols" deviceset="M02" device="" value="ASMPP30-1X2-RK"/>
 <part name="BRL_1" library="HyTechSymbols" deviceset="M02" device="" value="ASMPP30-1X2-RK"/>
-<part name="U$8" library="HyTechSymbols" deviceset="DC-DC_CONVERTER" device=""/>
-<part name="FUSE7" library="HyTechSymbols" deviceset="FUSE" device="" value="1.25A"/>
-<part name="FUSE1" library="HyTechSymbols" deviceset="FUSE" device="" value="1.25A"/>
-<part name="DASH_COMM_2" library="HyTechSymbols" deviceset="M06" device="" value="105310-1306"/>
-<part name="DASH_IN_2" library="HyTechSymbols" deviceset="M08" device="" value="105310-1308"/>
 <part name="DCDC_IO_1" library="HyTechSymbols" deviceset="M04" device="" value="8STA21204PN"/>
-<part name="DASH_COMM_1" library="HyTechSymbols" deviceset="M06" device="" value="105308-1206"/>
-<part name="DASH_IN_1" library="HyTechSymbols" deviceset="M08" device="" value="105308-1208"/>
 <part name="FIREWALL_2" library="HyTechSymbols" deviceset="M22" device="" value="8STA61235SN"/>
 <part name="FIREWALL_1" library="HyTechSymbols" deviceset="M22" device="" value="8STA01235PN"/>
 <part name="BUTTON_MODE1" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
 <part name="BUTTON_MC_CYCLE1" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
 <part name="BUTTON_MARK1" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
 <part name="BUTTON_LAUNCH_CTRL" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
-<part name="INERTIA_SWITCH" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
-<part name="BRAKE_2" library="HyTechSymbols" deviceset="M06" device="" value="8STA60835SN"/>
-<part name="BRAKE_1" library="HyTechSymbols" deviceset="M06" device="" value="8STA00835PN"/>
-<part name="HVD" library="HyTechSymbols" deviceset="M02" device="" value="Hirose EM30MSD"/>
 <part name="DCDC_CONTROL_IN_2" library="HyTechSymbols" deviceset="M03" device="" value="8STA60435SN"/>
 <part name="DCDC_12V_IN_2" library="HyTechSymbols" deviceset="M04" device="" value="8STA61204SN"/>
-<part name="BMS_THERM_1" library="HyTechSymbols" deviceset="M02" device="" value="200277-1202"/>
-<part name="BMS_THERM_2" library="HyTechSymbols" deviceset="M02" device="" value="105307-1202"/>
-<part name="FUSE10_1A" library="HyTechSymbols" deviceset="FUSE" device=""/>
 <part name="DCDC_12V_IN_1" library="HyTechSymbols" deviceset="M04" device="" value="8STA21204PN"/>
 <part name="DCDC_CONTROL_IN_1" library="HyTechSymbols" deviceset="M03" device="" value="8STA20435PN"/>
 <part name="DCDC_IO_2" library="HyTechSymbols" deviceset="M04" device="" value="8STA61204SN"/>
@@ -2365,24 +2559,45 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="D2" library="HyTechSymbolsTemp" deviceset="DIODE_LED" device=""/>
 <part name="TSMS" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
 <part name="J4" library="HyTechDevicesTemp" deviceset="CONNECTOR-22_?_*" device="SOURIAU"/>
+<part name="BPSD-" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
+<part name="BSPD+" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
+<part name="J5" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device=""/>
+<part name="J6" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device=""/>
+<part name="J7" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device=""/>
+<part name="J8" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device=""/>
+<part name="J9" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device=""/>
+<part name="J10" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device=""/>
+<part name="J11" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device=""/>
+<part name="J12" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device=""/>
+<part name="J13" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device=""/>
+<part name="J14" library="HyTechSymbolsTemp" deviceset="CONNECTOR-3_*" device=""/>
+<part name="INERTIA_SWITCH" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
+<part name="DASH_IN_3" library="HyTechSymbols" deviceset="M08" device="" value="105308-1208"/>
+<part name="DASH_IN_4" library="HyTechSymbols" deviceset="M08" device="" value="105308-1208"/>
+<part name="J15" library="HyTechDevices" deviceset="CONNECTOR-6_?_*" device="NF_T_V" technology="BLACK"/>
+<part name="J16" library="HyTechDevices" deviceset="CONNECTOR-6_?_*" device="NF_T_V" technology="BLACK"/>
+<part name="FUSE" library="HyTechSymbols" deviceset="FUSE" device="" value="175A"/>
+<part name="HVD_3" library="HyTechSymbols" deviceset="M02" device="" value="TE_HVP800"/>
+<part name="HVD_4" library="HyTechSymbols" deviceset="M02" device="" value="TE_HVP800"/>
+<part name="HVD1" library="HyTechSymbols" deviceset="M02" device="" value="Hirose EM30MSD"/>
+<part name="SMD2" library="HyTechSymbols" deviceset="M02" device="" value="PCL01"/>
+<part name="P1" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="167.64" y="119.38" size="5.08" layer="97">Accumulator Container</text>
+<text x="160.02" y="116.84" size="5.08" layer="97">Accumulator Container</text>
 <text x="53.34" y="157.48" size="5.08" layer="97" align="top-left">Left Rear Panel</text>
 <text x="93.98" y="53.34" size="5.08" layer="97">Right Rear Panel</text>
 <text x="68.58" y="-10.16" size="1.524" layer="97" rot="R180" align="bottom-right">12AWG chassis
 grounding per
 FH EV4.1.4</text>
-<wire x1="365.76" y1="256.54" x2="368.3" y2="256.54" width="0.6096" layer="156"/>
-<wire x1="353.06" y1="254" x2="353.06" y2="246.38" width="0.6096" layer="156"/>
-<wire x1="347.98" y1="256.54" x2="347.98" y2="271.78" width="0.6096" layer="156"/>
-<wire x1="340.36" y1="271.78" x2="340.36" y2="251.46" width="0.6096" layer="156"/>
-<wire x1="340.36" y1="251.46" x2="332.74" y2="251.46" width="0.6096" layer="156"/>
-<wire x1="236.22" y1="271.78" x2="236.22" y2="261.62" width="0.6096" layer="156"/>
-<wire x1="320.04" y1="251.46" x2="330.2" y2="251.46" width="0.6096" layer="156"/>
-<wire x1="210.82" y1="264.16" x2="124.46" y2="264.16" width="0.6096" layer="156"/>
+<wire x1="353.06" y1="254" x2="353.06" y2="251.46" width="0.6096" layer="156"/>
+<wire x1="332.74" y1="271.78" x2="332.74" y2="251.46" width="0.6096" layer="156"/>
+<wire x1="332.74" y1="251.46" x2="325.12" y2="251.46" width="0.6096" layer="156"/>
+<wire x1="259.08" y1="271.78" x2="259.08" y2="261.62" width="0.6096" layer="156"/>
+<wire x1="312.42" y1="251.46" x2="322.58" y2="251.46" width="0.6096" layer="156"/>
 <wire x1="-48.26" y1="180.34" x2="-48.26" y2="144.78" width="0.6096" layer="156"/>
 <wire x1="-45.72" y1="147.32" x2="-45.72" y2="193.04" width="0.6096" layer="156"/>
 <wire x1="-45.72" y1="193.04" x2="-53.34" y2="193.04" width="0.6096" layer="156"/>
@@ -2390,19 +2605,17 @@ FH EV4.1.4</text>
 <wire x1="-43.18" y1="205.74" x2="-43.18" y2="149.86" width="0.6096" layer="156"/>
 <wire x1="-22.86" y1="264.16" x2="99.06" y2="264.16" width="0.6096" layer="156"/>
 <wire x1="99.06" y1="261.62" x2="-15.24" y2="261.62" width="0.6096" layer="156"/>
-<text x="243.84" y="91.44" size="5.08" layer="97">Wire Key
+<text x="236.22" y="86.36" size="5.08" layer="97">Wire Key
 Thin Green: GLV
 Blue: GLV Buses
 Thick Green: HV
 Orange: HV High Current Path</text>
-<wire x1="353.06" y1="246.38" x2="347.98" y2="246.38" width="0.6096" layer="156"/>
-<wire x1="228.6" y1="271.78" x2="228.6" y2="256.54" width="0.6096" layer="156"/>
-<wire x1="228.6" y1="256.54" x2="226.06" y2="256.54" width="0.6096" layer="156"/>
+<wire x1="251.46" y1="271.78" x2="251.46" y2="256.54" width="0.6096" layer="156"/>
 <text x="495.3" y="99.06" size="5.08" layer="97">Main ECU</text>
 <wire x1="111.76" y1="289.56" x2="419.1" y2="289.56" width="1.27" layer="97"/>
-<wire x1="419.1" y1="289.56" x2="419.1" y2="129.54" width="1.27" layer="97"/>
-<wire x1="419.1" y1="129.54" x2="111.76" y2="129.54" width="1.27" layer="97"/>
-<wire x1="111.76" y1="129.54" x2="111.76" y2="289.56" width="1.27" layer="97"/>
+<wire x1="419.1" y1="289.56" x2="419.1" y2="127" width="1.27" layer="97"/>
+<wire x1="419.1" y1="127" x2="111.76" y2="127" width="1.27" layer="97"/>
+<wire x1="111.76" y1="127" x2="111.76" y2="289.56" width="1.27" layer="97"/>
 <wire x1="495.3" y1="96.52" x2="586.74" y2="96.52" width="1.27" layer="97"/>
 <wire x1="586.74" y1="96.52" x2="586.74" y2="-10.16" width="1.27" layer="97"/>
 <wire x1="586.74" y1="-10.16" x2="495.3" y2="-10.16" width="1.27" layer="97"/>
@@ -2415,20 +2628,17 @@ Orange: HV High Current Path</text>
 <wire x1="101.6" y1="208.28" x2="101.6" y2="160.02" width="1.27" layer="97"/>
 <wire x1="101.6" y1="160.02" x2="53.34" y2="160.02" width="1.27" layer="97"/>
 <wire x1="53.34" y1="160.02" x2="53.34" y2="208.28" width="1.27" layer="97"/>
-<text x="124.46" y="294.64" size="10.16" layer="97">HyTech Racing 2021 FSAE Electrical Diagram</text>
-<text x="433.07" y="244.602" size="1.524" layer="97">⬅ BMS Cell Test Port</text>
-<wire x1="320.04" y1="261.62" x2="320.04" y2="271.78" width="0.6096" layer="156"/>
-<wire x1="320.04" y1="271.78" x2="312.42" y2="271.78" width="0.6096" layer="156"/>
-<wire x1="312.42" y1="271.78" x2="312.42" y2="251.46" width="0.6096" layer="156"/>
-<wire x1="312.42" y1="251.46" x2="304.8" y2="251.46" width="0.6096" layer="156"/>
-<wire x1="274.32" y1="251.46" x2="264.16" y2="251.46" width="0.6096" layer="156"/>
-<wire x1="264.16" y1="261.62" x2="264.16" y2="271.78" width="0.6096" layer="156"/>
-<wire x1="264.16" y1="271.78" x2="256.54" y2="271.78" width="0.6096" layer="156"/>
-<wire x1="256.54" y1="271.78" x2="256.54" y2="251.46" width="0.6096" layer="156"/>
-<wire x1="256.54" y1="251.46" x2="248.92" y2="251.46" width="0.6096" layer="156"/>
-<wire x1="246.38" y1="251.46" x2="236.22" y2="251.46" width="0.6096" layer="156"/>
-<wire x1="284.48" y1="251.46" x2="276.86" y2="251.46" width="0.6096" layer="156"/>
-<wire x1="302.26" y1="251.46" x2="294.64" y2="251.46" width="0.6096" layer="156"/>
+<text x="124.46" y="294.64" size="10.16" layer="97">HyTech Racing 2022 FSAE Electrical Diagram</text>
+<wire x1="312.42" y1="261.62" x2="312.42" y2="271.78" width="0.6096" layer="156"/>
+<wire x1="312.42" y1="271.78" x2="304.8" y2="271.78" width="0.6096" layer="156"/>
+<wire x1="304.8" y1="271.78" x2="304.8" y2="251.46" width="0.6096" layer="156"/>
+<wire x1="304.8" y1="251.46" x2="297.18" y2="251.46" width="0.6096" layer="156"/>
+<wire x1="287.02" y1="261.62" x2="287.02" y2="271.78" width="0.6096" layer="156"/>
+<wire x1="287.02" y1="271.78" x2="279.4" y2="271.78" width="0.6096" layer="156"/>
+<wire x1="279.4" y1="271.78" x2="279.4" y2="251.46" width="0.6096" layer="156"/>
+<wire x1="279.4" y1="251.46" x2="271.78" y2="251.46" width="0.6096" layer="156"/>
+<wire x1="269.24" y1="251.46" x2="259.08" y2="251.46" width="0.6096" layer="156"/>
+<wire x1="294.64" y1="251.46" x2="287.02" y2="251.46" width="0.6096" layer="156"/>
 <wire x1="-48.26" y1="180.34" x2="-53.34" y2="180.34" width="0.6096" layer="156"/>
 <wire x1="353.06" y1="254" x2="355.6" y2="254" width="0.6096" layer="156"/>
 <wire x1="76.2" y1="2.54" x2="88.9" y2="2.54" width="0.1524" layer="157"/>
@@ -2441,11 +2651,11 @@ Orange: HV High Current Path</text>
 <wire x1="426.72" y1="88.9" x2="426.72" y2="190.5" width="1.524" layer="97" style="shortdash"/>
 <wire x1="426.72" y1="190.5" x2="459.74" y2="223.52" width="1.524" layer="97" style="shortdash"/>
 <wire x1="459.74" y1="223.52" x2="459.74" y2="287.02" width="1.524" layer="97" style="shortdash"/>
-<wire x1="670.56" y1="127" x2="721.36" y2="127" width="1.27" layer="97"/>
-<wire x1="721.36" y1="127" x2="721.36" y2="76.2" width="1.27" layer="97"/>
-<wire x1="721.36" y1="76.2" x2="670.56" y2="76.2" width="1.27" layer="97"/>
-<wire x1="670.56" y1="76.2" x2="670.56" y2="127" width="1.27" layer="97"/>
-<text x="670.56" y="129.54" size="5.08" layer="97">Pedal Box</text>
+<wire x1="670.56" y1="160.02" x2="721.36" y2="160.02" width="1.27" layer="97"/>
+<wire x1="721.36" y1="160.02" x2="721.36" y2="109.22" width="1.27" layer="97"/>
+<wire x1="721.36" y1="109.22" x2="670.56" y2="109.22" width="1.27" layer="97"/>
+<wire x1="670.56" y1="109.22" x2="670.56" y2="160.02" width="1.27" layer="97"/>
+<text x="670.56" y="162.56" size="5.08" layer="97">Pedal Box</text>
 <text x="462.28" y="279.4" size="5.08" layer="97">Firewall</text>
 <wire x1="20.32" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="157"/>
 <wire x1="76.2" y1="0" x2="88.9" y2="0" width="0.1524" layer="157"/>
@@ -2455,14 +2665,9 @@ Orange: HV High Current Path</text>
 <wire x1="617.22" y1="213.36" x2="528.32" y2="213.36" width="1.27" layer="97"/>
 <wire x1="528.32" y1="213.36" x2="528.32" y2="251.46" width="1.27" layer="97"/>
 <text x="530.86" y="254" size="5.08" layer="97">Dashboard</text>
-<wire x1="228.6" y1="271.78" x2="236.22" y2="271.78" width="0.6096" layer="156"/>
-<wire x1="340.36" y1="271.78" x2="347.98" y2="271.78" width="0.6096" layer="156"/>
-<wire x1="292.1" y1="238.76" x2="332.74" y2="238.76" width="0.6096" layer="156"/>
-<wire x1="332.74" y1="238.76" x2="332.74" y2="243.84" width="0.6096" layer="156"/>
-<wire x1="332.74" y1="243.84" x2="368.3" y2="243.84" width="0.6096" layer="156"/>
-<wire x1="368.3" y1="243.84" x2="368.3" y2="256.54" width="0.6096" layer="156"/>
-<text x="433.07" y="229.362" size="1.524" layer="97">⬅ BMS Therm Test Port</text>
-<wire x1="213.36" y1="238.76" x2="289.56" y2="238.76" width="0.6096" layer="156"/>
+<wire x1="251.46" y1="271.78" x2="259.08" y2="271.78" width="0.6096" layer="156"/>
+<wire x1="332.74" y1="271.78" x2="340.36" y2="271.78" width="0.6096" layer="156"/>
+<wire x1="213.36" y1="238.76" x2="368.3" y2="238.76" width="0.6096" layer="156"/>
 <wire x1="177.8" y1="254" x2="177.8" y2="261.62" width="0.6096" layer="156"/>
 <wire x1="177.8" y1="261.62" x2="124.46" y2="261.62" width="0.6096" layer="156"/>
 <wire x1="215.9" y1="254" x2="215.9" y2="256.54" width="0.6096" layer="156"/>
@@ -2490,6 +2695,43 @@ Orange: HV High Current Path</text>
 <wire x1="-25.4" y1="149.86" x2="-43.18" y2="149.86" width="0.6096" layer="156"/>
 <text x="190.5" y="35.56" size="1.778" layer="95" align="top-left">USB</text>
 <text x="170.18" y="-38.1" size="1.778" layer="95">START_BUTTON</text>
+<text x="647.7" y="101.6" size="1.778" layer="95" rot="R180">8STA60435SN</text>
+<text x="647.7" y="83.82" size="1.778" layer="95" rot="R180">8STA60435SA</text>
+<text x="650.24" y="101.6" size="1.778" layer="95" rot="MR180">8STA60435PN</text>
+<text x="650.24" y="83.82" size="1.778" layer="95" rot="MR180">8STA60435PA</text>
+<text x="647.7" y="88.9" size="1.778" layer="95" rot="R180">BRAKE_1</text>
+<text x="650.24" y="88.9" size="1.778" layer="95" rot="MR180">BRAKE_1</text>
+<text x="647.7" y="71.12" size="1.778" layer="95" rot="R180">BRAKE_2</text>
+<text x="650.24" y="71.12" size="1.778" layer="95" rot="MR180">BRAKE_2</text>
+<text x="647.7" y="160.02" size="1.778" layer="95" rot="R180">8STA60435SN</text>
+<text x="647.7" y="142.24" size="1.778" layer="95" rot="R180">8STA60435SA</text>
+<text x="650.24" y="160.02" size="1.778" layer="95" rot="MR180">8STA60435PN</text>
+<text x="650.24" y="142.24" size="1.778" layer="95" rot="MR180">8STA60435PA</text>
+<text x="647.7" y="147.32" size="1.778" layer="95" rot="R180">PEDAL_1</text>
+<text x="650.24" y="147.32" size="1.778" layer="95" rot="MR180">PEDAL_1</text>
+<text x="647.7" y="129.54" size="1.778" layer="95" rot="R180">PEDAL_2</text>
+<text x="650.24" y="129.54" size="1.778" layer="95" rot="MR180">PEDAL_2</text>
+<text x="647.7" y="124.46" size="1.778" layer="95" rot="R180">8STA60435SB</text>
+<text x="650.24" y="124.46" size="1.778" layer="95" rot="MR180">8STA60435PB</text>
+<text x="647.7" y="111.76" size="1.778" layer="95" rot="R180">PEDAL_3</text>
+<text x="650.24" y="111.76" size="1.778" layer="95" rot="MR180">PEDAL_3</text>
+<wire x1="215.9" y1="254" x2="218.44" y2="254" width="0.6096" layer="156"/>
+<wire x1="228.6" y1="254" x2="231.14" y2="254" width="0.6096" layer="156"/>
+<wire x1="241.3" y1="256.54" x2="251.46" y2="256.54" width="0.6096" layer="156"/>
+<wire x1="340.36" y1="261.62" x2="340.36" y2="271.78" width="0.6096" layer="156"/>
+<wire x1="365.76" y1="256.54" x2="406.4" y2="256.54" width="0.6096" layer="156"/>
+<wire x1="431.8" y1="256.54" x2="441.96" y2="256.54" width="0.6096" layer="156"/>
+<wire x1="431.8" y1="254" x2="441.96" y2="254" width="0.6096" layer="156"/>
+<wire x1="368.3" y1="238.76" x2="368.3" y2="254" width="0.6096" layer="156"/>
+<wire x1="368.3" y1="254" x2="406.4" y2="254" width="0.6096" layer="156"/>
+<wire x1="347.98" y1="251.46" x2="340.36" y2="251.46" width="0.6096" layer="156"/>
+<wire x1="350.52" y1="251.46" x2="353.06" y2="251.46" width="0.6096" layer="156"/>
+<wire x1="210.82" y1="264.16" x2="162.56" y2="264.16" width="0.6096" layer="156"/>
+<wire x1="162.56" y1="264.16" x2="162.56" y2="274.32" width="0.6096" layer="156"/>
+<wire x1="162.56" y1="274.32" x2="165.1" y2="274.32" width="0.6096" layer="156"/>
+<wire x1="165.1" y1="279.4" x2="160.02" y2="279.4" width="0.6096" layer="156"/>
+<wire x1="160.02" y1="279.4" x2="160.02" y2="264.16" width="0.6096" layer="156"/>
+<wire x1="160.02" y1="264.16" x2="124.46" y2="264.16" width="0.6096" layer="156"/>
 </plain>
 <moduleinsts>
 <moduleinst name="BMS_SEGMENT2" module="BMS_SEGMENT" x="309.88" y="228.6">
@@ -2504,29 +2746,20 @@ Orange: HV High Current Path</text>
 <moduleinst name="RADIATOR_PUMP" module="COOLING_MODULE" x="-83.82" y="63.5">
 <attribute name="NAME" value="RADIATOR_PUMP" x="-83.82" y="66.04" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="CUR_SENSE" module="CUR_SENSE" x="391.16" y="218.44">
-<attribute name="NAME" value="CUR_SENSE" x="391.16" y="223.52" size="2.032" layer="95" align="bottom-center"/>
-</moduleinst>
-<moduleinst name="BMS_SEGMENT1" module="BMS_SEGMENT_TEST" x="347.98" y="228.6">
-<attribute name="NAME" x="347.98" y="238.76" size="2.032" layer="95" align="bottom-center"/>
-</moduleinst>
 <moduleinst name="MAIN_ECU" module="MAIN_ECU" x="541.02" y="43.18">
 <attribute name="NAME" value="MAIN_ECU" x="541.02" y="48.26" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="BEI_9360_ACCEL" module="BEI_9360" x="701.04" y="111.76">
-<attribute name="NAME" value="BEI_9360_ACCEL" x="701.04" y="102.87" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="BEI_9360_ACCEL" module="BEI_9360" x="701.04" y="144.78">
+<attribute name="NAME" value="BEI_9360_ACCEL" x="701.04" y="135.89" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="TE_M3031_BRAKE_PRESS_1" module="TE_M3031" x="698.5" y="63.5">
-<attribute name="NAME" value="TE_M3031_BRAKE_PRESS_1" x="698.5" y="58.42" size="2.032" layer="95" align="bottom-center"/>
-</moduleinst>
-<moduleinst name="DASHBOARD" module="DASHBOARD" x="574.04" y="231.14">
-<attribute name="NAME" value="DASHBOARD" x="574.04" y="219.456" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="TE_M3031_BRAKE_PRESS_1" module="TE_M3031" x="698.5" y="91.44">
+<attribute name="NAME" value="TE_M3031_BRAKE_PRESS_1" x="698.5" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="POWER_SWITCHING" module="POWER_SWITCHING" x="144.78" y="78.74">
 <attribute name="NAME" value="POWER_SWITCHING" x="144.78" y="88.9" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="TE_M3031-1_BRAKE_PRESS_2" module="TE_M3031" x="698.5" y="45.72">
-<attribute name="NAME" value="TE_M3031-1_BRAKE_PRESS_2" x="698.5" y="39.37" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="TE_M3031-1_BRAKE_PRESS_2" module="TE_M3031" x="698.5" y="73.66">
+<attribute name="NAME" value="TE_M3031-1_BRAKE_PRESS_2" x="698.5" y="67.31" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="ENERGY_METER" module="ENERGY_METER" x="195.58" y="246.38">
 <attribute name="NAME" value="ENERGY_METER" x="195.58" y="248.92" size="2.032" layer="95" align="bottom-center"/>
@@ -2534,15 +2767,23 @@ Orange: HV High Current Path</text>
 <moduleinst name="TSAL" module="TSAL" x="-66.04" y="5.08">
 <attribute name="NAME" value="TSAL" x="-66.04" y="10.16" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="ACU1" module="ACU" x="299.72" y="172.72">
-<attribute name="NAME" x="299.72" y="200.66" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="ACU" module="ACU" x="299.72" y="172.72">
+<attribute name="NAME" value="ACU" x="299.72" y="200.66" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="DASHBOARD" module="DASHBOARD" x="571.5" y="233.68">
+<attribute name="NAME" value="DASHBOARD" x="571.5" y="215.9" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="BMS_SEGMENT1" module="BMS_SEGMENT" x="347.98" y="228.6">
+<attribute name="NAME" x="347.98" y="233.68" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="CUR_SENSE" module="CUR_SENSE" x="187.96" y="276.86" rot="R90">
+<attribute name="NAME" value="CUR_SENSE" x="187.96" y="284.48" size="2.032" layer="95" rot="R180" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="TSB" module="TSB" x="165.1" y="177.8">
+<attribute name="NAME" value="TSB" x="165.1" y="198.12" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
-<instance part="RTDS" gate="1" x="655.32" y="264.16" smashed="yes">
-<attribute name="NAME" x="651.51" y="270.51" size="1.778" layer="95"/>
-<attribute name="VALUE" x="651.51" y="260.985" size="1.778" layer="96"/>
-</instance>
 <instance part="LEFT_REAR_BRB" gate="DPST" x="77.47" y="190.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="82.55" y="175.26" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="82.55" y="172.72" size="1.778" layer="96" rot="MR0"/>
@@ -2555,10 +2796,6 @@ Orange: HV High Current Path</text>
 <attribute name="NAME" x="127" y="20.32" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="127" y="22.86" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="F3" gate="G$1" x="142.24" y="7.62" smashed="yes">
-<attribute name="NAME" x="137.16" y="8.89" size="1.27" layer="95"/>
-<attribute name="VALUE" x="144.78" y="8.89" size="1.27" layer="96"/>
-</instance>
 <instance part="EMRAX_207_MED" gate="G$1" x="-81.28" y="193.04" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-101.6" y="213.36" size="1.778" layer="95" rot="MR270"/>
 </instance>
@@ -2566,9 +2803,9 @@ Orange: HV High Current Path</text>
 <attribute name="NAME" x="-52.832" y="42.291" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-52.832" y="40.005" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="BOTS" gate="SPST" x="706.12" y="91.44" smashed="yes" rot="R270">
-<attribute name="NAME" x="701.04" y="86.36" size="1.778" layer="95"/>
-<attribute name="VALUE" x="701.04" y="83.82" size="1.778" layer="96"/>
+<instance part="BOTS" gate="SPST" x="706.12" y="124.46" smashed="yes" rot="R270">
+<attribute name="NAME" x="701.04" y="119.38" size="1.778" layer="95"/>
+<attribute name="VALUE" x="701.04" y="116.84" size="1.778" layer="96"/>
 </instance>
 <instance part="COCKPIT_BRB" gate="SPST" x="528.32" y="190.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="523.24" y="185.42" size="1.778" layer="95"/>
@@ -2599,30 +2836,22 @@ Orange: HV High Current Path</text>
 <attribute name="VALUE" x="647.7" y="208.28" size="1.778" layer="96"/>
 </instance>
 <instance part="U$2" gate="G$1" x="215.9" y="139.7" smashed="yes"/>
-<instance part="F1" gate="G$1" x="60.96" y="-22.86" smashed="yes">
-<attribute name="NAME" x="55.88" y="-21.59" size="1.27" layer="95"/>
-<attribute name="VALUE" x="63.5" y="-21.59" size="1.27" layer="96"/>
-</instance>
 <instance part="GLV_BATT" gate="G$1" x="63.5" y="-7.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="64.77" y="-10.795" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="SEGMENT2" gate="G$1" x="320.04" y="256.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="316.865" y="255.27" size="1.778" layer="95" rot="R90"/>
+<instance part="SEGMENT2" gate="G$1" x="312.42" y="256.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="309.245" y="255.27" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="SEGMENT1" gate="G$1" x="347.98" y="251.46" smashed="yes" rot="R90">
-<attribute name="NAME" x="344.805" y="255.27" size="1.778" layer="95" rot="R90"/>
+<instance part="SEGMENT1" gate="G$1" x="340.36" y="256.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="337.185" y="255.27" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="AIR2" gate="1" x="220.98" y="264.16" smashed="yes" rot="R270">
-<attribute name="VALUE" x="217.17" y="245.491" size="1.778" layer="96"/>
-<attribute name="PART" x="217.17" y="247.65" size="1.778" layer="95"/>
+<instance part="AIR2" gate="1" x="236.22" y="264.16" smashed="yes" rot="R270">
+<attribute name="VALUE" x="232.41" y="245.491" size="1.778" layer="96"/>
+<attribute name="PART" x="232.41" y="247.65" size="1.778" layer="95"/>
 </instance>
 <instance part="AIR1" gate="1" x="360.68" y="264.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="356.87" y="245.491" size="1.778" layer="96"/>
 <attribute name="PART" x="356.87" y="247.65" size="1.778" layer="95"/>
-</instance>
-<instance part="FUSE" gate="G$1" x="289.56" y="251.46" smashed="yes">
-<attribute name="NAME" x="284.48" y="252.73" size="1.27" layer="95"/>
-<attribute name="VALUE" x="292.1" y="252.73" size="1.27" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="88.9" y="-12.7" smashed="yes">
 <attribute name="VALUE" x="86.36" y="-15.24" size="1.778" layer="96"/>
@@ -2639,23 +2868,15 @@ Orange: HV High Current Path</text>
 <attribute name="VALUE" x="114.3" y="257.81" size="1.778" layer="96" rot="MR180"/>
 <attribute name="NAME" x="114.3" y="267.462" size="1.778" layer="95"/>
 </instance>
-<instance part="SMD1" gate="G$1" x="332.74" y="256.54" smashed="yes" rot="R270">
-<attribute name="VALUE" x="325.12" y="261.62" size="1.778" layer="96" rot="R270"/>
-<attribute name="NAME" x="336.042" y="261.62" size="1.778" layer="95" rot="R270"/>
+<instance part="SMD1" gate="G$1" x="325.12" y="256.54" smashed="yes" rot="R270">
+<attribute name="VALUE" x="317.5" y="261.62" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="328.422" y="261.62" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="BMS_CELL_2" gate="G$1" x="426.72" y="243.84" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="421.64" y="251.46" size="1.778" layer="96" rot="MR180"/>
-<attribute name="NAME" x="421.64" y="240.538" size="1.778" layer="95" rot="MR180"/>
+<instance part="SEGMENT3" gate="G$1" x="287.02" y="256.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="283.845" y="255.27" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="BMS_CELL_1" gate="G$1" x="414.02" y="259.08" smashed="yes" rot="R180">
-<attribute name="VALUE" x="419.1" y="266.7" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="419.1" y="255.778" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="SEGMENT3" gate="G$1" x="264.16" y="256.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="260.985" y="255.27" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="SEGMENT4" gate="G$1" x="236.22" y="256.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="233.045" y="255.27" size="1.778" layer="95" rot="R90"/>
+<instance part="SEGMENT4" gate="G$1" x="259.08" y="256.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="255.905" y="255.27" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="BMS_IMD_LATCH_BTN" gate="SPST_MOM" x="116.84" y="38.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="121.92" y="43.18" size="1.778" layer="95" rot="R180"/>
@@ -2677,17 +2898,13 @@ Orange: HV High Current Path</text>
 <attribute name="VALUE" x="589.28" y="50.8" size="1.778" layer="96" rot="MR180"/>
 <attribute name="NAME" x="589.28" y="34.798" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="SMD2A" gate="G$1" x="304.8" y="256.54" smashed="yes" rot="R270">
-<attribute name="VALUE" x="297.18" y="261.62" size="1.778" layer="96" rot="R270"/>
-<attribute name="NAME" x="308.102" y="261.62" size="1.778" layer="95" rot="R270"/>
+<instance part="SMD2A" gate="G$1" x="297.18" y="256.54" smashed="yes" rot="R270">
+<attribute name="VALUE" x="289.56" y="261.62" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="300.482" y="261.62" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SMD2B" gate="G$1" x="276.86" y="256.54" smashed="yes" rot="R270">
-<attribute name="VALUE" x="269.24" y="261.62" size="1.778" layer="96" rot="R270"/>
-<attribute name="NAME" x="280.162" y="261.62" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SMD3" gate="G$1" x="248.92" y="256.54" smashed="yes" rot="R270">
-<attribute name="VALUE" x="241.3" y="261.62" size="1.778" layer="96" rot="R270"/>
-<attribute name="NAME" x="252.222" y="261.62" size="1.778" layer="95" rot="R270"/>
+<instance part="SMD3" gate="G$1" x="271.78" y="256.54" smashed="yes" rot="R270">
+<attribute name="VALUE" x="264.16" y="261.62" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="275.082" y="261.62" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="MAINTENANCE" gate="G$1" x="195.58" y="-7.62" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="190.5" y="10.16" size="1.778" layer="96" rot="MR180"/>
@@ -2720,14 +2937,6 @@ Orange: HV High Current Path</text>
 <attribute name="VALUE" x="-73.66" y="119.38" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="-73.66" y="98.298" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="PED_1" gate="G$1" x="642.62" y="106.68" smashed="yes" rot="R180">
-<attribute name="VALUE" x="647.7" y="124.46" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="647.7" y="85.598" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="PED_2" gate="G$1" x="655.32" y="106.68" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="650.24" y="124.46" size="1.778" layer="96" rot="MR180"/>
-<attribute name="NAME" x="650.24" y="85.598" size="1.778" layer="95" rot="MR180"/>
-</instance>
 <instance part="PUMP_1" gate="G$1" x="-5.08" y="58.42" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="-10.16" y="66.04" size="1.778" layer="96" rot="MR180"/>
 </instance>
@@ -2739,34 +2948,9 @@ Orange: HV High Current Path</text>
 <attribute name="VALUE" x="-25.4" y="43.18" size="1.778" layer="96" rot="MR180"/>
 <attribute name="NAME" x="-25.4" y="32.258" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="U$8" gate="G$1" x="137.16" y="208.28" smashed="yes" rot="R270"/>
-<instance part="FUSE7" gate="G$1" x="127" y="241.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="125.73" y="236.22" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="125.73" y="243.84" size="1.27" layer="96" rot="R90"/>
-</instance>
-<instance part="FUSE1" gate="G$1" x="134.62" y="241.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="133.35" y="236.22" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="133.35" y="243.84" size="1.27" layer="96" rot="R90"/>
-</instance>
-<instance part="DASH_COMM_2" gate="G$1" x="535.94" y="233.68" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="530.86" y="243.84" size="1.778" layer="96" rot="MR180"/>
-<attribute name="NAME" x="530.86" y="222.758" size="1.778" layer="95" rot="MR180"/>
-</instance>
-<instance part="DASH_IN_2" gate="G$1" x="609.6" y="233.68" smashed="yes" rot="R180">
-<attribute name="VALUE" x="614.68" y="246.38" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="614.68" y="220.218" size="1.778" layer="95" rot="R180"/>
-</instance>
 <instance part="DCDC_IO_1" gate="G$1" x="175.26" y="83.82" smashed="yes" rot="R180">
 <attribute name="VALUE" x="180.34" y="91.44" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="180.34" y="75.438" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="DASH_COMM_1" gate="G$1" x="520.7" y="233.68" smashed="yes" rot="R180">
-<attribute name="VALUE" x="525.78" y="243.84" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="525.78" y="222.758" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="DASH_IN_1" gate="G$1" x="624.84" y="233.68" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="619.76" y="246.38" size="1.778" layer="96" rot="MR180"/>
-<attribute name="NAME" x="619.76" y="220.218" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="FIREWALL_2" gate="G$1" x="378.46" y="5.08" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="378.46" y="66.04" size="1.778" layer="96" rot="MR180"/>
@@ -2792,22 +2976,6 @@ Orange: HV High Current Path</text>
 <attribute name="NAME" x="647.7" y="198.12" size="1.778" layer="95"/>
 <attribute name="VALUE" x="647.7" y="195.58" size="1.778" layer="96"/>
 </instance>
-<instance part="INERTIA_SWITCH" gate="SPST" x="683.26" y="91.44" smashed="yes" rot="R270">
-<attribute name="NAME" x="678.18" y="86.36" size="1.778" layer="95"/>
-<attribute name="VALUE" x="678.18" y="83.82" size="1.778" layer="96"/>
-</instance>
-<instance part="BRAKE_2" gate="G$1" x="655.32" y="63.5" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="650.24" y="73.66" size="1.778" layer="96" rot="MR180"/>
-<attribute name="NAME" x="650.24" y="52.578" size="1.778" layer="95" rot="MR180"/>
-</instance>
-<instance part="BRAKE_1" gate="G$1" x="642.62" y="63.5" smashed="yes" rot="R180">
-<attribute name="VALUE" x="647.7" y="73.66" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="647.7" y="52.578" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="HVD" gate="G$1" x="292.1" y="243.84" smashed="yes" rot="R270">
-<attribute name="VALUE" x="295.402" y="243.332" size="1.778" layer="96"/>
-<attribute name="NAME" x="295.402" y="247.142" size="1.778" layer="95"/>
-</instance>
 <instance part="DCDC_CONTROL_IN_2" gate="G$1" x="93.98" y="71.12" smashed="yes" rot="R180">
 <attribute name="VALUE" x="96.52" y="78.74" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="96.52" y="65.278" size="1.778" layer="95" rot="R180"/>
@@ -2815,18 +2983,6 @@ Orange: HV High Current Path</text>
 <instance part="DCDC_12V_IN_2" gate="G$1" x="91.44" y="91.44" smashed="yes" rot="R180">
 <attribute name="VALUE" x="96.52" y="99.06" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="96.52" y="83.058" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="BMS_THERM_1" gate="G$1" x="411.48" y="246.38" smashed="yes" rot="R180">
-<attribute name="VALUE" x="416.56" y="254" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="416.56" y="243.078" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="BMS_THERM_2" gate="G$1" x="426.72" y="228.6" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="421.64" y="236.22" size="1.778" layer="96" rot="MR180"/>
-<attribute name="NAME" x="421.64" y="225.298" size="1.778" layer="95" rot="MR180"/>
-</instance>
-<instance part="FUSE10_1A" gate="G$1" x="213.36" y="248.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="212.09" y="243.84" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="212.09" y="251.46" size="1.27" layer="96" rot="R90"/>
 </instance>
 <instance part="DCDC_12V_IN_1" gate="G$1" x="106.68" y="91.44" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="101.6" y="99.06" size="1.778" layer="96" rot="MR180"/>
@@ -2849,9 +3005,9 @@ Orange: HV High Current Path</text>
 <attribute name="NAME" x="-25.4" y="-0.762" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="A1" gate="G$1" x="-5.08" y="238.76" smashed="yes" rot="R270"/>
-<instance part="J1" gate="G$1" x="353.06" y="127" smashed="yes" rot="MR270">
-<attribute name="NAME" x="352.425" y="127" size="1.27" layer="95" rot="MR270"/>
-<attribute name="MPN" x="412.115" y="127" size="1.27" layer="96" rot="MR270" align="top-left"/>
+<instance part="J1" gate="G$1" x="353.06" y="124.46" smashed="yes" rot="MR270">
+<attribute name="NAME" x="352.425" y="124.46" size="1.27" layer="95" rot="MR270"/>
+<attribute name="MPN" x="412.115" y="124.46" size="1.27" layer="96" rot="MR270" align="top-left"/>
 </instance>
 <instance part="J2" gate="G$1" x="190.5" y="48.26" smashed="yes">
 <attribute name="MPN" x="190.5" y="34.925" size="1.27" layer="96" align="top-left"/>
@@ -2881,13 +3037,107 @@ Orange: HV High Current Path</text>
 <attribute name="NAME" x="149.86" y="15.24" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="149.86" y="12.7" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="J4" gate="G$1" x="353.06" y="132.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="352.425" y="132.08" size="1.27" layer="95" rot="R90"/>
-<attribute name="MPN" x="412.115" y="132.08" size="1.27" layer="96" rot="R90" align="top-left"/>
+<instance part="J4" gate="G$1" x="353.06" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="352.425" y="129.54" size="1.27" layer="95" rot="R90"/>
+<attribute name="MPN" x="412.115" y="129.54" size="1.27" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="BPSD-" gate="G$1" x="99.06" y="-22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="98.044" y="-21.082" size="1.27" layer="95"/>
+<attribute name="VALUE" x="102.108" y="-23.876" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="BSPD+" gate="G$1" x="106.68" y="-22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="105.664" y="-21.082" size="1.27" layer="95"/>
+<attribute name="VALUE" x="109.728" y="-23.876" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="J5" gate="G$1" x="650.24" y="99.06" smashed="yes">
+<attribute name="MPN" x="650.24" y="88.265" size="1.27" layer="96" align="top-left"/>
+<attribute name="MANUFACTURER" x="650.24" y="99.822" size="1.27" layer="96"/>
+</instance>
+<instance part="J6" gate="G$1" x="650.24" y="81.28" smashed="yes">
+<attribute name="MPN" x="650.24" y="70.485" size="1.27" layer="96" align="top-left"/>
+<attribute name="MANUFACTURER" x="650.24" y="82.042" size="1.27" layer="96"/>
+</instance>
+<instance part="J7" gate="G$1" x="647.7" y="99.06" smashed="yes" rot="MR0">
+<attribute name="MPN" x="647.7" y="88.265" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<attribute name="MANUFACTURER" x="647.7" y="99.822" size="1.27" layer="96" rot="MR0"/>
+</instance>
+<instance part="J8" gate="G$1" x="647.7" y="81.28" smashed="yes" rot="MR0">
+<attribute name="MPN" x="647.7" y="70.485" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<attribute name="MANUFACTURER" x="647.7" y="82.042" size="1.27" layer="96" rot="MR0"/>
+</instance>
+<instance part="J9" gate="G$1" x="650.24" y="157.48" smashed="yes">
+<attribute name="MPN" x="650.24" y="146.685" size="1.27" layer="96" align="top-left"/>
+<attribute name="MANUFACTURER" x="650.24" y="158.242" size="1.27" layer="96"/>
+</instance>
+<instance part="J10" gate="G$1" x="650.24" y="139.7" smashed="yes">
+<attribute name="MPN" x="650.24" y="128.905" size="1.27" layer="96" align="top-left"/>
+<attribute name="MANUFACTURER" x="650.24" y="140.462" size="1.27" layer="96"/>
+</instance>
+<instance part="J11" gate="G$1" x="647.7" y="157.48" smashed="yes" rot="MR0">
+<attribute name="MPN" x="647.7" y="146.685" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<attribute name="MANUFACTURER" x="647.7" y="158.242" size="1.27" layer="96" rot="MR0"/>
+</instance>
+<instance part="J12" gate="G$1" x="647.7" y="139.7" smashed="yes" rot="MR0">
+<attribute name="MPN" x="647.7" y="128.905" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<attribute name="MANUFACTURER" x="647.7" y="140.462" size="1.27" layer="96" rot="MR0"/>
+</instance>
+<instance part="J13" gate="G$1" x="650.24" y="121.92" smashed="yes">
+<attribute name="MPN" x="650.24" y="111.125" size="1.27" layer="96" align="top-left"/>
+<attribute name="MANUFACTURER" x="650.24" y="122.682" size="1.27" layer="96"/>
+</instance>
+<instance part="J14" gate="G$1" x="647.7" y="121.92" smashed="yes" rot="MR0">
+<attribute name="MPN" x="647.7" y="111.125" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<attribute name="MANUFACTURER" x="647.7" y="122.682" size="1.27" layer="96" rot="MR0"/>
+</instance>
+<instance part="INERTIA_SWITCH" gate="SPST" x="523.24" y="127" smashed="yes" rot="R270">
+<attribute name="NAME" x="518.16" y="121.92" size="1.778" layer="95"/>
+<attribute name="VALUE" x="518.16" y="119.38" size="1.778" layer="96"/>
+</instance>
+<instance part="DASH_IN_3" gate="G$1" x="535.94" y="233.68" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="530.86" y="246.38" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="530.86" y="220.218" size="1.778" layer="95" rot="MR180"/>
+</instance>
+<instance part="DASH_IN_4" gate="G$1" x="520.7" y="233.68" smashed="yes" rot="R180">
+<attribute name="VALUE" x="525.78" y="246.38" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="525.78" y="220.218" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="J15" gate="G$1" x="614.68" y="243.84" smashed="yes" rot="MR0">
+<attribute name="NAME" x="614.68" y="244.602" size="1.27" layer="95" rot="MR0"/>
+<attribute name="MPN" x="614.68" y="225.425" size="1.27" layer="96" rot="MR0" align="top-left"/>
+</instance>
+<instance part="J16" gate="G$1" x="619.76" y="243.84" smashed="yes">
+<attribute name="NAME" x="619.76" y="244.602" size="1.27" layer="95"/>
+<attribute name="MPN" x="619.76" y="225.425" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="FUSE" gate="G$1" x="223.52" y="254" smashed="yes">
+<attribute name="NAME" x="218.44" y="255.27" size="1.27" layer="95"/>
+<attribute name="VALUE" x="226.06" y="255.27" size="1.27" layer="96"/>
+</instance>
+<instance part="HVD_3" gate="G$1" x="426.72" y="254" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="421.64" y="250.19" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="421.64" y="259.842" size="1.778" layer="95"/>
+</instance>
+<instance part="HVD_4" gate="G$1" x="411.48" y="254" smashed="yes" rot="R180">
+<attribute name="VALUE" x="416.56" y="250.19" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="416.56" y="259.842" size="1.778" layer="95" align="bottom-right"/>
+</instance>
+<instance part="HVD1" gate="G$1" x="447.04" y="254" smashed="yes" rot="R180">
+<attribute name="VALUE" x="446.532" y="250.698" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="450.342" y="250.698" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SMD2" gate="G$1" x="350.52" y="256.54" smashed="yes" rot="R270">
+<attribute name="VALUE" x="342.9" y="261.62" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="353.822" y="261.62" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="P1" gate="1" x="246.38" y="264.16" smashed="yes" rot="R90">
+<attribute name="VALUE" x="247.65" y="264.16" size="1.27" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="P2" gate="1" x="350.52" y="264.16" smashed="yes" rot="R270">
+<attribute name="VALUE" x="349.25" y="264.16" size="1.27" layer="96" rot="R270" align="top-center"/>
 </instance>
 </instances>
 <busses>
-<bus name="5V_ACCEL_1,5V_ACCEL_2,5V_BRAKE,5V_BRAKE_1,5V_BRAKE_2,12V_ACCUM,12V_ACCUM_MAINT,12V_AFTER_LEFT_BRB,12V_DASH,12V_DCDC_1,12V_DCDC_2,12V_MAIN,12V_MAINT,12V_MC,12V_SUPPLY,12VSUPPLY_COOLING_FAN_1,12VSUPPLY_COOLING_FAN_2,12VSUPPLY_COOLING_FAN_3,12VSUPPLY_COOLING_PUMP_1,12VSUPPLY_COOLING_UNSWITCHED,12VSUPPLY_UNSWITCHED,12V_TSAL,12V_WHEEL_SPEED_FRONT_LEFT,12V_WHEEL_SPEED_FRONT_RIGHT,12V_WHEEL_SPEED_REAR_LEFT,12V_WHEEL_SPEED_REAR_RIGHT,60V_THRESHOLD,60V_THRESHOLD_1,60V_THRESHOLD_2,AMS_OK,BAT+,BRAKE_LIGHT,CAN_ACCUM_SHIELD,CANH_ACCUM,CANH_DASH,CANH_FRONT,CANH_MAINT,CANH_MC,CANL_ACCUM,CANL_DASH,CANL_MAINT,CANL_MC,CHARGE_ENABLE,CUR_SENSE_5V,CUR_SENSE_CUR_SENSE,CUR_SENSE_GND,CUR_SENSE_REF,DASH_1,DASH_4,DASH_5,DASH_8,DASH_9,DASH_11,DASH_12,FAN_1,FAN_2,GND,GND_ACCEL_1,GND_ACCEL_2,GND_ACCUM,GND_AUX,GND_BR,GND_BRAKE,GND_BRAKE_1,GND_BRAKE_2,GND_BR_TS,GND_CHASSIS,GND_CURRENT,GND_DASH,GND_DCDC_1,GND_DCDC1,GND_DCDC2,GND_DCDC_2,GND_DCDC_4,GND_LEFT_PANEL,GND_MAIN_ECU,GND_MAINT,GND_MC,GND_POWER_SWITCHING,GND_RADIATOR,GND_RIGHT_PANEL,GND_SHIELD,GND_TSAL_GREEN,GND_TSAL_RED,HV-,HV+,HV-FUSED,HV+FUSED,IMD_GND,IMD_HV-,IMD_HV+,IMD_OK,IMD_SUPPLY,INVERTER_SUPPLY,ISOSPI_M,ISOSPI_P,LATCH_EXT_BTN,MC_MAINT_FAULT_INDIC,MC_MAINT_GND,MC_MAINT_PROG_ENA,MC_MAINT_RXD,MC_MAINT_TXD,MC_MAINT_XDCR_PWR,MOTOR_COS-,MOTOR_COS+,MOTOR_EXC-,MOTOR_EXC+,MOTOR_SHIELD,MOTOR_SIN+,MOTOR_SIN-,MOTOR_TEMP+,MOTOR_TEMP-,RET_FAN_1,SHUTDOWN_E,SHUTDOWN_F,SHUTDOWN_G,SHUTDOWN_H,SHUTDOWN_I,SHUTDOWN_J,SHUTDOWN_K,SHUTDOWN_K_OUT,SHUTDOWN_L,SHUTDOWN_M,SHUTDOWN_N,SIGNAL_ACCEL_1,SIGNAL_ACCEL_2,SIGNAL_BRAKE,SIGNAL_BRAKE_1,SIGNAL_BRAKE_2,SIGNAL_CURRENT,SSOK,START,USB_D-,USB_D+,USB_GND,USB_VCC,WHEEL_SPEED_2,WHEEL_SPEED_3,WHEEL_SPEED_4,WHEEL_SPEED_FRONT_LEFT,WHEEL_SPEED_FRONT_RIGHT,WHEEL_SPEED_REAR_LEFT,WHEEL_SPEED_REAR_RIGHT">
+<bus name="5V_ACCEL_1,5V_ACCEL_2,5V_BRAKE,5V_BRAKE_1,5V_BRAKE_2,12V_ACCUM,12V_ACCUM_MAINT,12V_AFTER_LEFT_BRB,12V_DASH,12V_DCDC_1,12V_DCDC_2,12V_MAIN,12V_MAINT,12V_MC,12V_SUPPLY,12VSUPPLY_COOLING_FAN_1,12VSUPPLY_COOLING_FAN_2,12VSUPPLY_COOLING_FAN_3,12VSUPPLY_COOLING_PUMP_1,12VSUPPLY_COOLING_UNSWITCHED,12VSUPPLY_UNSWITCHED,12V_TSAL,12V_WHEEL_SPEED_FRONT_LEFT,12V_WHEEL_SPEED_FRONT_RIGHT,12V_WHEEL_SPEED_REAR_LEFT,12V_WHEEL_SPEED_REAR_RIGHT,60V_THRESHOLD,60V_THRESHOLD_1,60V_THRESHOLD_2,AMS_OK,BAT+,BPSD+,BRAKE_LIGHT,BSPD-,CAN_ACCUM_SHIELD,CANH_ACCUM,CANH_DASH,CANH_FRONT,CANH_MAINT,CANH_MC,CANL_ACCUM,CANL_DASH,CANL_MAINT,CANL_MC,CHARGE_ENABLE,CUR_SENSE_5V,CUR_SENSE_CUR_SENSE,CUR_SENSE_GND,CUR_SENSE_REF,DASH_1,DASH_4,DASH_5,DASH_8,DASH_9,DASH_11,DASH_12,FAN_1,FAN_2,GND,GND_ACCEL_1,GND_ACCEL_2,GND_ACCUM,GND_AUX,GND_BR,GND_BRAKE,GND_BRAKE_1,GND_BRAKE_2,GND_BR_TS,GND_CHASSIS,GND_CURRENT,GND_DASH,GND_DCDC1,GND_DCDC_1,GND_DCDC_2,GND_DCDC2,GND_DCDC_4,GND_LEFT_PANEL,GND_MAIN_ECU,GND_MAINT,GND_MC,GND_POWER_SWITCHING,GND_RADIATOR,GND_RIGHT_PANEL,GND_SHIELD,GND_TSAL_GREEN,GND_TSAL_RED,HV+,HV-,HV+FUSED,HV-FUSED,IMD_GND,IMD_HV+,IMD_HV-,IMD_OK,IMD_SUPPLY,INVERTER_SUPPLY,ISOSPI_M,ISOSPI_P,LATCH_EXT_BTN,MC_MAINT_FAULT_INDIC,MC_MAINT_GND,MC_MAINT_PROG_ENA,MC_MAINT_RXD,MC_MAINT_TXD,MC_MAINT_XDCR_PWR,MOTOR_COS-,MOTOR_COS+,MOTOR_EXC-,MOTOR_EXC+,MOTOR_SHIELD,MOTOR_SIN-,MOTOR_SIN+,MOTOR_TEMP+,MOTOR_TEMP-,RET_FAN_1,SHUTDOWN_E,SHUTDOWN_F,SHUTDOWN_G,SHUTDOWN_H,SHUTDOWN_I,SHUTDOWN_J,SHUTDOWN_K,SHUTDOWN_K_OUT,SHUTDOWN_L,SHUTDOWN_M,SHUTDOWN_N,SIGNAL_ACCEL_1,SIGNAL_ACCEL_2,SIGNAL_BRAKE,SIGNAL_BRAKE_1,SIGNAL_BRAKE_2,SIGNAL_CURRENT,SSOK,START,USB_D-,USB_D+,USB_GND,USB_VCC,WHEEL_SPEED_2,WHEEL_SPEED_3,WHEEL_SPEED_4,WHEEL_SPEED_FRONT_LEFT,WHEEL_SPEED_FRONT_RIGHT,WHEEL_SPEED_REAR_LEFT,WHEEL_SPEED_REAR_RIGHT">
 <segment>
 <wire x1="627.38" y1="17.78" x2="627.38" y2="48.26" width="0.762" layer="92"/>
 <wire x1="434.34" y1="-25.4" x2="434.34" y2="-2.54" width="0.762" layer="92"/>
@@ -2899,21 +3149,23 @@ Orange: HV High Current Path</text>
 <wire x1="439.42" y1="96.52" x2="439.42" y2="-7.62" width="0.762" layer="92"/>
 </segment>
 <segment>
+<wire x1="612.14" y1="99.06" x2="612.14" y2="93.98" width="0.762" layer="92"/>
+<wire x1="612.14" y1="93.98" x2="612.14" y2="88.9" width="0.762" layer="92"/>
+<wire x1="612.14" y1="81.28" x2="612.14" y2="76.2" width="0.762" layer="92"/>
+<wire x1="612.14" y1="76.2" x2="612.14" y2="71.12" width="0.762" layer="92"/>
 <wire x1="495.3" y1="149.86" x2="495.3" y2="245.11" width="0.762" layer="92"/>
-<wire x1="581.66" y1="137.16" x2="477.52" y2="137.16" width="0.762" layer="92"/>
+<wire x1="612.14" y1="137.16" x2="551.18" y2="137.16" width="0.762" layer="92"/>
+<wire x1="551.18" y1="137.16" x2="477.52" y2="137.16" width="0.762" layer="92"/>
 <wire x1="477.52" y1="137.16" x2="452.12" y2="137.16" width="0.762" layer="92"/>
 <wire x1="452.12" y1="137.16" x2="434.34" y2="119.38" width="0.762" layer="92"/>
 <wire x1="434.34" y1="119.38" x2="434.34" y2="2.54" width="0.762" layer="92"/>
 <wire x1="477.52" y1="137.16" x2="495.3" y2="149.86" width="0.762" layer="92"/>
-<wire x1="581.66" y1="137.16" x2="594.36" y2="124.46" width="0.762" layer="92"/>
-<wire x1="612.14" y1="66.04" x2="612.14" y2="53.34" width="0.762" layer="92"/>
-<wire x1="594.36" y1="124.46" x2="594.36" y2="78.74" width="0.762" layer="92"/>
-<wire x1="594.36" y1="78.74" x2="607.06" y2="66.04" width="0.762" layer="92"/>
-<wire x1="607.06" y1="66.04" x2="612.14" y2="66.04" width="0.762" layer="92"/>
-<wire x1="612.14" y1="66.04" x2="612.14" y2="71.12" width="0.762" layer="92"/>
-<wire x1="581.66" y1="137.16" x2="596.9" y2="137.16" width="0.762" layer="92"/>
-<wire x1="596.9" y1="137.16" x2="612.14" y2="121.92" width="0.762" layer="92"/>
-<wire x1="612.14" y1="121.92" x2="612.14" y2="83.82" width="0.762" layer="92"/>
+<wire x1="612.14" y1="160.02" x2="612.14" y2="137.16" width="0.762" layer="92"/>
+<wire x1="612.14" y1="137.16" x2="612.14" y2="116.84" width="0.762" layer="92"/>
+<wire x1="612.14" y1="76.2" x2="594.36" y2="93.98" width="0.762" layer="92"/>
+<wire x1="594.36" y1="93.98" x2="551.18" y2="137.16" width="0.762" layer="92"/>
+<wire x1="612.14" y1="93.98" x2="594.36" y2="93.98" width="0.762" layer="92"/>
+<wire x1="612.14" y1="137.16" x2="612.14" y2="109.22" width="0.762" layer="92"/>
 </segment>
 <segment>
 <wire x1="261.62" y1="-50.8" x2="261.62" y2="76.2" width="0.762" layer="92"/>
@@ -2969,6 +3221,16 @@ Orange: HV High Current Path</text>
 <pinref part="MAIN_SEC_2" gate="G$1" pin="4"/>
 <wire x1="574.04" y1="38.1" x2="571.5" y2="38.1" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="AIR2" gate="1" pin="1"/>
+<wire x1="241.3" y1="264.16" x2="243.84" y2="264.16" width="0.1524" layer="91"/>
+<pinref part="P1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="AIR1" gate="1" pin="2"/>
+<wire x1="355.6" y1="264.16" x2="353.06" y2="264.16" width="0.1524" layer="91"/>
+<pinref part="P2" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="BRAKE_LIGHT" class="0">
 <segment>
@@ -3007,15 +3269,6 @@ Orange: HV High Current Path</text>
 <pinref part="FIREWALL_1" gate="G$1" pin="19"/>
 <wire x1="320.04" y1="15.24" x2="363.22" y2="15.24" width="0.1524" layer="91"/>
 <label x="322.58" y="15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$68" class="0">
-<segment>
-<pinref part="F1" gate="G$1" pin="1"/>
-<pinref part="GLV_BATT" gate="G$1" pin="+"/>
-<wire x1="58.42" y1="-7.62" x2="50.8" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-7.62" x2="50.8" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-22.86" x2="55.88" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INVERTER_SUPPLY" class="0">
@@ -3215,10 +3468,12 @@ Orange: HV High Current Path</text>
 </net>
 <net name="BAT+" class="0">
 <segment>
-<pinref part="F1" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="-22.86" x2="78.74" y2="-22.86" width="0.1524" layer="91"/>
 <label x="73.66" y="-22.86" size="1.778" layer="95"/>
 <wire x1="78.74" y1="-22.86" x2="78.74" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="GLV_BATT" gate="G$1" pin="+"/>
+<wire x1="58.42" y1="-7.62" x2="50.8" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-7.62" x2="50.8" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-22.86" x2="78.74" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="198.12" y="83.82" size="1.778" layer="95"/>
@@ -3270,8 +3525,7 @@ Orange: HV High Current Path</text>
 </net>
 <net name="ISOSPI_M" class="0">
 <segment>
-<wire x1="368.3" y1="213.36" x2="330.2" y2="213.36" width="0.1524" layer="91"/>
-<portref moduleinst="BMS_SEGMENT1" port="ISOSPI_1M"/>
+<wire x1="368.3" y1="218.44" x2="330.2" y2="218.44" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT2" port="ISOSPI_1M"/>
 <wire x1="327.66" y1="228.6" x2="330.2" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="228.6" x2="330.2" y2="223.52" width="0.1524" layer="91"/>
@@ -3279,13 +3533,11 @@ Orange: HV High Current Path</text>
 <wire x1="327.66" y1="223.52" x2="330.2" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="223.52" x2="330.2" y2="218.44" width="0.1524" layer="91"/>
 <junction x="330.2" y="223.52"/>
-<wire x1="330.2" y1="218.44" x2="330.2" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="223.52" x2="368.3" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="228.6" x2="368.3" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="228.6" x2="368.3" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="223.52" x2="368.3" y2="218.44" width="0.1524" layer="91"/>
-<portref moduleinst="BMS_SEGMENT1" port="ISOSPI_2M"/>
-<wire x1="368.3" y1="218.44" x2="368.3" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="218.44" x2="368.3" y2="218.44" width="0.1524" layer="91"/>
-<junction x="368.3" y="218.44"/>
+<wire x1="365.76" y1="223.52" x2="368.3" y2="223.52" width="0.1524" layer="91"/>
+<junction x="368.3" y="223.52"/>
 <portref moduleinst="BMS_SEGMENT4" port="ISOSPI_2M"/>
 <portref moduleinst="BMS_SEGMENT4" port="ISOSPI_1M"/>
 <wire x1="251.46" y1="228.6" x2="254" y2="228.6" width="0.1524" layer="91"/>
@@ -3306,29 +3558,26 @@ Orange: HV High Current Path</text>
 <wire x1="292.1" y1="223.52" x2="292.1" y2="218.44" width="0.1524" layer="91"/>
 <junction x="292.1" y="223.52"/>
 <junction x="292.1" y="218.44"/>
-<portref moduleinst="ACU1" port="IM"/>
+<portref moduleinst="ACU" port="IM"/>
 <wire x1="289.56" y1="210.82" x2="289.56" y2="218.44" width="0.1524" layer="91"/>
 <junction x="289.56" y="218.44"/>
 </segment>
 </net>
 <net name="ISOSPI_P" class="0">
 <segment>
-<wire x1="370.84" y1="210.82" x2="370.84" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="220.98" x2="370.84" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="226.06" x2="365.76" y2="226.06" width="0.1524" layer="91"/>
-<portref moduleinst="BMS_SEGMENT1" port="ISOSPI_1P"/>
+<wire x1="370.84" y1="215.9" x2="370.84" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="226.06" x2="370.84" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="231.14" x2="365.76" y2="231.14" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT2" port="ISOSPI_1P"/>
-<wire x1="332.74" y1="210.82" x2="370.84" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="215.9" x2="370.84" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="231.14" x2="332.74" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="231.14" x2="332.74" y2="226.06" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT2" port="ISOSPI_2P"/>
 <wire x1="332.74" y1="226.06" x2="332.74" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="215.9" x2="332.74" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="226.06" x2="332.74" y2="226.06" width="0.1524" layer="91"/>
 <junction x="332.74" y="226.06"/>
-<portref moduleinst="BMS_SEGMENT1" port="ISOSPI_2P"/>
-<wire x1="365.76" y1="220.98" x2="370.84" y2="220.98" width="0.1524" layer="91"/>
-<junction x="370.84" y="220.98"/>
+<wire x1="365.76" y1="226.06" x2="370.84" y2="226.06" width="0.1524" layer="91"/>
+<junction x="370.84" y="226.06"/>
 <wire x1="332.74" y1="215.9" x2="294.64" y2="215.9" width="0.1524" layer="91"/>
 <junction x="332.74" y="215.9"/>
 <portref moduleinst="BMS_SEGMENT4" port="ISOSPI_1P"/>
@@ -3345,7 +3594,7 @@ Orange: HV High Current Path</text>
 <wire x1="294.64" y1="226.06" x2="294.64" y2="215.9" width="0.1524" layer="91"/>
 <junction x="294.64" y="226.06"/>
 <junction x="294.64" y="215.9"/>
-<portref moduleinst="ACU1" port="IP"/>
+<portref moduleinst="ACU" port="IP"/>
 <wire x1="292.1" y1="210.82" x2="292.1" y2="215.9" width="0.1524" layer="91"/>
 <junction x="292.1" y="215.9"/>
 </segment>
@@ -3381,11 +3630,6 @@ Orange: HV High Current Path</text>
 <wire x1="-63.5" y1="60.96" x2="-22.86" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="PUMP_2" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<label x="2.54" y="60.96" size="1.778" layer="95"/>
-<wire x1="0" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PUMP_1" gate="G$1" pin="1"/>
-</segment>
 </net>
 <net name="12V_SUPPLY" class="0">
 <segment>
@@ -3412,20 +3656,15 @@ Orange: HV High Current Path</text>
 <wire x1="261.62" y1="22.86" x2="160.02" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="22.86" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
 <label x="213.36" y="22.86" size="1.778" layer="95"/>
-<pinref part="F3" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="7.62" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="GLVMS" gate="SPST" pin="S"/>
+<wire x1="121.92" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="17.78" x2="101.6" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="7.62" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DCDC_CONTROL_IN_2" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
 <label x="86.36" y="71.12" size="1.778" layer="95" rot="MR0"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="BMS_CELL_2" gate="G$1" pin="1"/>
-<pinref part="BMS_CELL_2" gate="G$1" pin="2"/>
-<wire x1="431.8" y1="246.38" x2="431.8" y2="243.84" width="0.6096" layer="91"/>
 </segment>
 </net>
 <net name="DASH_1" class="0">
@@ -3491,8 +3730,8 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="22"/>
-<wire x1="408.94" y1="116.84" x2="408.94" y2="88.9" width="0.1524" layer="91"/>
-<label x="408.94" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="408.94" y1="114.3" x2="408.94" y2="88.9" width="0.1524" layer="91"/>
+<label x="408.94" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="GND_ACCEL_1" class="0">
@@ -3502,19 +3741,14 @@ Orange: HV High Current Path</text>
 <wire x1="510.54" y1="55.88" x2="508" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="680.72" y1="109.22" x2="660.4" y2="109.22" width="0.1524" layer="91"/>
-<portref moduleinst="BEI_9360_ACCEL" port="GND_SENSOR_1"/>
-<pinref part="PED_2" gate="G$1" pin="5"/>
-</segment>
-<segment>
 <pinref part="MAIN_PRIM_1" gate="G$1" pin="8"/>
 <wire x1="482.6" y1="71.12" x2="439.42" y2="71.12" width="0.1524" layer="91"/>
 <label x="441.96" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PED_1" gate="G$1" pin="5"/>
-<wire x1="637.54" y1="109.22" x2="612.14" y2="109.22" width="0.1524" layer="91"/>
-<label x="614.68" y="109.22" size="1.778" layer="95"/>
+<pinref part="J11" gate="G$1" pin="1"/>
+<wire x1="637.54" y1="154.94" x2="612.14" y2="154.94" width="0.1524" layer="91"/>
+<label x="614.68" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND_ACCEL_2" class="0">
@@ -3524,19 +3758,9 @@ Orange: HV High Current Path</text>
 <wire x1="510.54" y1="53.34" x2="508" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="680.72" y1="119.38" x2="660.4" y2="119.38" width="0.1524" layer="91"/>
-<portref moduleinst="BEI_9360_ACCEL" port="GND_SENSOR_2"/>
-<pinref part="PED_2" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="MAIN_PRIM_1" gate="G$1" pin="13"/>
 <wire x1="482.6" y1="58.42" x2="439.42" y2="58.42" width="0.1524" layer="91"/>
 <label x="441.96" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="PED_1" gate="G$1" pin="1"/>
-<wire x1="637.54" y1="119.38" x2="612.14" y2="119.38" width="0.1524" layer="91"/>
-<label x="614.68" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND_BRAKE" class="0">
@@ -3605,14 +3829,9 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="680.72" y1="111.76" x2="660.4" y2="111.76" width="0.1524" layer="91"/>
-<portref moduleinst="BEI_9360_ACCEL" port="SIGNAL_SENSOR_2"/>
-<pinref part="PED_2" gate="G$1" pin="4"/>
-</segment>
-<segment>
-<pinref part="BRAKE_1" gate="G$1" pin="3"/>
-<wire x1="637.54" y1="63.5" x2="612.14" y2="63.5" width="0.1524" layer="91"/>
-<label x="614.68" y="63.5" size="1.778" layer="95"/>
+<pinref part="J7" gate="G$1" pin="3"/>
+<wire x1="637.54" y1="91.44" x2="612.14" y2="91.44" width="0.1524" layer="91"/>
+<label x="614.68" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SIGNAL_BRAKE_2" class="0">
@@ -3627,14 +3846,9 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="680.72" y1="114.3" x2="660.4" y2="114.3" width="0.1524" layer="91"/>
-<portref moduleinst="BEI_9360_ACCEL" port="SIGNAL_SENSOR_1"/>
-<pinref part="PED_2" gate="G$1" pin="3"/>
-</segment>
-<segment>
-<pinref part="BRAKE_1" gate="G$1" pin="4"/>
-<wire x1="637.54" y1="60.96" x2="612.14" y2="60.96" width="0.1524" layer="91"/>
-<label x="614.68" y="60.96" size="1.778" layer="95"/>
+<pinref part="J8" gate="G$1" pin="3"/>
+<wire x1="637.54" y1="73.66" x2="612.14" y2="73.66" width="0.1524" layer="91"/>
+<label x="614.68" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANL_ACCUM" class="0">
@@ -3660,8 +3874,8 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="21"/>
-<wire x1="406.4" y1="116.84" x2="406.4" y2="88.9" width="0.1524" layer="91"/>
-<label x="406.4" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="406.4" y1="114.3" x2="406.4" y2="88.9" width="0.1524" layer="91"/>
+<label x="406.4" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="5V_ACCEL_1" class="0">
@@ -3671,19 +3885,14 @@ Orange: HV High Current Path</text>
 <wire x1="510.54" y1="22.86" x2="508" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="680.72" y1="106.68" x2="660.4" y2="106.68" width="0.1524" layer="91"/>
-<portref moduleinst="BEI_9360_ACCEL" port="5V_SENSOR_1"/>
-<pinref part="PED_2" gate="G$1" pin="6"/>
-</segment>
-<segment>
 <pinref part="MAIN_PRIM_1" gate="G$1" pin="9"/>
 <wire x1="482.6" y1="68.58" x2="439.42" y2="68.58" width="0.1524" layer="91"/>
 <label x="441.96" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PED_1" gate="G$1" pin="6"/>
-<wire x1="637.54" y1="106.68" x2="612.14" y2="106.68" width="0.1524" layer="91"/>
-<label x="614.68" y="106.68" size="1.778" layer="95"/>
+<pinref part="J11" gate="G$1" pin="2"/>
+<wire x1="637.54" y1="152.4" x2="612.14" y2="152.4" width="0.1524" layer="91"/>
+<label x="614.68" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V_ACCEL_2" class="0">
@@ -3693,19 +3902,14 @@ Orange: HV High Current Path</text>
 <wire x1="510.54" y1="20.32" x2="508" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="680.72" y1="116.84" x2="660.4" y2="116.84" width="0.1524" layer="91"/>
-<portref moduleinst="BEI_9360_ACCEL" port="5V_SENSOR_2"/>
-<pinref part="PED_2" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="MAIN_PRIM_1" gate="G$1" pin="12"/>
 <wire x1="482.6" y1="60.96" x2="439.42" y2="60.96" width="0.1524" layer="91"/>
 <label x="441.96" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PED_1" gate="G$1" pin="2"/>
-<wire x1="637.54" y1="116.84" x2="612.14" y2="116.84" width="0.1524" layer="91"/>
-<label x="614.68" y="116.84" size="1.778" layer="95"/>
+<pinref part="J12" gate="G$1" pin="2"/>
+<wire x1="637.54" y1="134.62" x2="612.14" y2="134.62" width="0.1524" layer="91"/>
+<label x="614.68" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V_BRAKE" class="0">
@@ -3738,8 +3942,8 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="20"/>
-<wire x1="403.86" y1="116.84" x2="403.86" y2="88.9" width="0.1524" layer="91"/>
-<label x="403.86" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="403.86" y1="114.3" x2="403.86" y2="88.9" width="0.1524" layer="91"/>
+<label x="403.86" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="WHEEL_SPEED_4" class="0">
@@ -3761,9 +3965,9 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DASH_COMM_1" gate="G$1" pin="1"/>
-<wire x1="495.3" y1="238.76" x2="515.62" y2="238.76" width="0.1524" layer="91"/>
-<label x="497.84" y="238.76" size="1.778" layer="95"/>
+<pinref part="DASH_IN_4" gate="G$1" pin="1"/>
+<wire x1="515.62" y1="241.3" x2="495.3" y2="241.3" width="0.1524" layer="91"/>
+<label x="497.84" y="241.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$77" class="0">
@@ -3832,8 +4036,8 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="19"/>
-<wire x1="401.32" y1="116.84" x2="401.32" y2="88.9" width="0.1524" layer="91"/>
-<label x="401.32" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="401.32" y1="114.3" x2="401.32" y2="88.9" width="0.1524" layer="91"/>
+<label x="401.32" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 <segment>
 <pinref part="A1" gate="G$1" pin="M1-KL_30_BATT"/>
@@ -3852,6 +4056,11 @@ Orange: HV High Current Path</text>
 <wire x1="82.55" y1="180.34" x2="91.44" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="238.76" x2="91.44" y2="180.34" width="0.1524" layer="91"/>
 <label x="91.44" y="220.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="PUMP_1" gate="G$1" pin="1"/>
+<wire x1="0" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
+<label x="2.54" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND_CURRENT" class="0">
@@ -3883,26 +4092,30 @@ Orange: HV High Current Path</text>
 <pinref part="FIREWALL_3" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="SSOK" class="0">
-<segment>
-<wire x1="612.14" y1="86.36" x2="632.46" y2="86.36" width="0.1524" layer="91"/>
-<label x="614.68" y="86.36" size="1.778" layer="95"/>
-<wire x1="632.46" y1="86.36" x2="635" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="DASH_COMM_1" gate="G$1" pin="3"/>
-<wire x1="495.3" y1="233.68" x2="515.62" y2="233.68" width="0.1524" layer="91"/>
-<label x="497.84" y="233.68" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SHUTDOWN_F" class="0">
 <segment>
 <pinref part="BOTS" gate="SPST" pin="P"/>
-<wire x1="695.96" y1="91.44" x2="701.04" y2="91.44" width="0.1524" layer="91"/>
+<label x="683.26" y="124.46" size="1.778" layer="95"/>
+<pinref part="J13" gate="G$1" pin="1"/>
+<wire x1="660.4" y1="119.38" x2="673.1" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="673.1" y1="119.38" x2="678.18" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="678.18" y1="124.46" x2="701.04" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J14" gate="G$1" pin="1"/>
+<wire x1="637.54" y1="119.38" x2="612.14" y2="119.38" width="0.1524" layer="91"/>
+<label x="614.68" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="INERTIA_SWITCH" gate="SPST" pin="O"/>
-<wire x1="688.34" y1="93.98" x2="695.96" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="695.96" y1="93.98" x2="695.96" y2="91.44" width="0.1524" layer="91"/>
-<label x="688.34" y="93.98" size="1.778" layer="95"/>
+<wire x1="528.32" y1="129.54" x2="538.48" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="538.48" y1="137.16" x2="538.48" y2="129.54" width="0.1524" layer="91"/>
+<label x="528.32" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DASH_IN_4" gate="G$1" pin="7"/>
+<wire x1="515.62" y1="226.06" x2="495.3" y2="226.06" width="0.1524" layer="91"/>
+<label x="497.84" y="226.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SHUTDOWN_G" class="0">
@@ -3912,19 +4125,24 @@ Orange: HV High Current Path</text>
 <label x="500.38" y="190.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PED_1" gate="G$1" pin="13"/>
-<wire x1="637.54" y1="88.9" x2="612.14" y2="88.9" width="0.1524" layer="91"/>
-<label x="614.68" y="88.9" size="1.778" layer="95"/>
+<wire x1="718.82" y1="127" x2="718.82" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="718.82" y1="111.76" x2="678.18" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="BOTS" gate="SPST" pin="O"/>
+<wire x1="711.2" y1="127" x2="718.82" y2="127" width="0.1524" layer="91"/>
+<label x="688.34" y="111.76" size="1.778" layer="95"/>
+<pinref part="J13" gate="G$1" pin="2"/>
+<wire x1="660.4" y1="116.84" x2="673.1" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="673.1" y1="116.84" x2="678.18" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="718.82" y1="93.98" x2="718.82" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="718.82" y1="78.74" x2="675.64" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="675.64" y1="78.74" x2="675.64" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="PED_2" gate="G$1" pin="13"/>
-<wire x1="675.64" y1="88.9" x2="660.4" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="BOTS" gate="SPST" pin="O"/>
-<wire x1="711.2" y1="93.98" x2="718.82" y2="93.98" width="0.1524" layer="91"/>
-<label x="688.34" y="78.74" size="1.778" layer="95"/>
+<pinref part="J14" gate="G$1" pin="2"/>
+<wire x1="637.54" y1="116.84" x2="612.14" y2="116.84" width="0.1524" layer="91"/>
+<label x="614.68" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DASH_IN_4" gate="G$1" pin="6"/>
+<wire x1="515.62" y1="228.6" x2="495.3" y2="228.6" width="0.1524" layer="91"/>
+<label x="497.84" y="228.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SHUTDOWN_H" class="0">
@@ -3936,9 +4154,9 @@ Orange: HV High Current Path</text>
 <wire x1="543.56" y1="180.34" x2="495.3" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="DASH_COMM_1" gate="G$1" pin="6"/>
-<wire x1="515.62" y1="226.06" x2="495.3" y2="226.06" width="0.1524" layer="91"/>
-<label x="497.84" y="226.06" size="1.778" layer="95"/>
+<pinref part="DASH_IN_4" gate="G$1" pin="5"/>
+<wire x1="515.62" y1="231.14" x2="495.3" y2="231.14" width="0.1524" layer="91"/>
+<label x="497.84" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANL_MAINT" class="0">
@@ -4017,9 +4235,9 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DASH_COMM_1" gate="G$1" pin="2"/>
-<wire x1="495.3" y1="236.22" x2="515.62" y2="236.22" width="0.1524" layer="91"/>
-<label x="497.84" y="236.22" size="1.778" layer="95"/>
+<pinref part="DASH_IN_4" gate="G$1" pin="8"/>
+<wire x1="515.62" y1="223.52" x2="495.3" y2="223.52" width="0.1524" layer="91"/>
+<label x="497.84" y="223.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="12V_MAINT" class="0">
@@ -4088,15 +4306,10 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PED_1" gate="G$1" pin="12"/>
-<wire x1="637.54" y1="91.44" x2="612.14" y2="91.44" width="0.1524" layer="91"/>
-<label x="614.68" y="91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="PED_2" gate="G$1" pin="12"/>
 <pinref part="INERTIA_SWITCH" gate="SPST" pin="P"/>
-<wire x1="660.4" y1="91.44" x2="678.18" y2="91.44" width="0.1524" layer="91"/>
-<label x="660.4" y="91.44" size="1.778" layer="95"/>
+<wire x1="518.16" y1="127" x2="508" y2="127" width="0.1524" layer="91"/>
+<wire x1="508" y1="137.16" x2="508" y2="127" width="0.1524" layer="91"/>
+<label x="500.38" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND_LEFT_PANEL" class="0">
@@ -4127,42 +4340,6 @@ Orange: HV High Current Path</text>
 <label x="43.18" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$38" class="0">
-<segment>
-<wire x1="127" y1="231.14" x2="127" y2="236.22" width="0.6096" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="-IN"/>
-<pinref part="FUSE7" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="134.62" y1="231.14" x2="134.62" y2="236.22" width="0.6096" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="+IN"/>
-<pinref part="FUSE1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<wire x1="134.62" y1="246.38" x2="134.62" y2="261.62" width="0.6096" layer="91"/>
-<pinref part="FUSE1" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<junction x="134.62" y="261.62"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<junction x="127" y="261.62"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<wire x1="127" y1="246.38" x2="127" y2="261.62" width="0.6096" layer="91"/>
-<pinref part="FUSE7" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="SIGNAL_CURRENT" class="0">
 <segment>
 <pinref part="MAIN_PRIM_1" gate="G$1" pin="7"/>
@@ -4183,8 +4360,8 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="16"/>
-<wire x1="393.7" y1="116.84" x2="393.7" y2="88.9" width="0.1524" layer="91"/>
-<label x="393.7" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="393.7" y1="114.3" x2="393.7" y2="88.9" width="0.1524" layer="91"/>
+<label x="393.7" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="SIGNAL_ACCEL_1" class="0">
@@ -4194,9 +4371,9 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PED_1" gate="G$1" pin="3"/>
-<wire x1="637.54" y1="114.3" x2="612.14" y2="114.3" width="0.1524" layer="91"/>
-<label x="614.68" y="114.3" size="1.778" layer="95"/>
+<pinref part="J11" gate="G$1" pin="3"/>
+<wire x1="637.54" y1="149.86" x2="612.14" y2="149.86" width="0.1524" layer="91"/>
+<label x="614.68" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SIGNAL_ACCEL_2" class="0">
@@ -4206,9 +4383,9 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PED_1" gate="G$1" pin="4"/>
-<wire x1="637.54" y1="111.76" x2="612.14" y2="111.76" width="0.1524" layer="91"/>
-<label x="614.68" y="111.76" size="1.778" layer="95"/>
+<pinref part="J12" gate="G$1" pin="3"/>
+<wire x1="637.54" y1="132.08" x2="612.14" y2="132.08" width="0.1524" layer="91"/>
+<label x="614.68" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FAN_1" class="0">
@@ -4228,120 +4405,46 @@ Orange: HV High Current Path</text>
 <label x="322.58" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="DASH_COMM_2" gate="G$1" pin="1"/>
-<portref moduleinst="DASHBOARD" port="12V_DASH"/>
-<wire x1="541.02" y1="238.76" x2="546.1" y2="238.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="DASH_COMM_2" gate="G$1" pin="2"/>
-<portref moduleinst="DASHBOARD" port="GND_DASH"/>
-<wire x1="541.02" y1="236.22" x2="546.1" y2="236.22" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="DASH_COMM_2" gate="G$1" pin="3"/>
-<portref moduleinst="DASHBOARD" port="SSOK"/>
-<wire x1="541.02" y1="233.68" x2="546.1" y2="233.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="DASH_COMM_2" gate="G$1" pin="4"/>
-<portref moduleinst="DASHBOARD" port="CANL_DASH"/>
-<wire x1="541.02" y1="231.14" x2="546.1" y2="231.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="DASH_COMM_2" gate="G$1" pin="6"/>
-<portref moduleinst="DASHBOARD" port="SHUTDOWN_H"/>
-<wire x1="541.02" y1="226.06" x2="546.1" y2="226.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="DASH_COMM_2" gate="G$1" pin="5"/>
-<portref moduleinst="DASHBOARD" port="CANH_DASH"/>
-<wire x1="541.02" y1="228.6" x2="546.1" y2="228.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="DASH_IN_2" gate="G$1" pin="1"/>
-<portref moduleinst="DASHBOARD" port="12V_BUZZER"/>
-<wire x1="601.98" y1="241.3" x2="604.52" y2="241.3" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="DASH_IN_2" gate="G$1" pin="2"/>
-<portref moduleinst="DASHBOARD" port="BTN_MARK_READ"/>
-<wire x1="604.52" y1="238.76" x2="601.98" y2="238.76" width="0.1524" layer="91"/>
+<portref moduleinst="DASHBOARD" port="BTN_GND"/>
+<wire x1="599.44" y1="241.3" x2="604.52" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="J15" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="DASH_IN_2" gate="G$1" pin="3"/>
-<portref moduleinst="DASHBOARD" port="BTN_MC_CYCLE_READ"/>
-<wire x1="601.98" y1="236.22" x2="604.52" y2="236.22" width="0.1524" layer="91"/>
+<portref moduleinst="DASHBOARD" port="BTN_MARK"/>
+<wire x1="604.52" y1="238.76" x2="599.44" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="J15" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="DASH_IN_2" gate="G$1" pin="4"/>
-<portref moduleinst="DASHBOARD" port="BUZZER_OUT"/>
-<wire x1="601.98" y1="233.68" x2="604.52" y2="233.68" width="0.1524" layer="91"/>
+<portref moduleinst="DASHBOARD" port="BTN_MC_CYCLE"/>
+<wire x1="599.44" y1="236.22" x2="604.52" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="J15" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="DASH_IN_2" gate="G$1" pin="5"/>
-<portref moduleinst="DASHBOARD" port="BTN_MODE_READ"/>
-<wire x1="604.52" y1="231.14" x2="601.98" y2="231.14" width="0.1524" layer="91"/>
+<portref moduleinst="DASHBOARD" port="BTN_MODE"/>
+<wire x1="599.44" y1="233.68" x2="604.52" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="J15" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="DASH_IN_2" gate="G$1" pin="6"/>
-<portref moduleinst="DASHBOARD" port="BTN_START_READ"/>
-<wire x1="604.52" y1="228.6" x2="601.98" y2="228.6" width="0.1524" layer="91"/>
+<portref moduleinst="DASHBOARD" port="BTN_START"/>
+<wire x1="599.44" y1="231.14" x2="604.52" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="J15" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="DASH_IN_2" gate="G$1" pin="7"/>
-<portref moduleinst="DASHBOARD" port="BTN_LAUNCH_CTRL"/>
-<wire x1="604.52" y1="226.06" x2="601.98" y2="226.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="DASH_IN_2" gate="G$1" pin="8"/>
-<portref moduleinst="DASHBOARD" port="GND_BTN"/>
-<wire x1="604.52" y1="223.52" x2="601.98" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="DASH_IN_1" gate="G$1" pin="1"/>
-<wire x1="629.92" y1="241.3" x2="635" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="RTDS" gate="1" pin="1"/>
-<wire x1="635" y1="241.3" x2="635" y2="264.16" width="0.1524" layer="91"/>
-<wire x1="635" y1="264.16" x2="650.24" y2="264.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$46" class="0">
-<segment>
-<pinref part="DASH_IN_1" gate="G$1" pin="4"/>
-<wire x1="629.92" y1="233.68" x2="675.64" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="675.64" y1="233.68" x2="675.64" y2="264.16" width="0.1524" layer="91"/>
-<pinref part="RTDS" gate="1" pin="2"/>
-<wire x1="675.64" y1="264.16" x2="660.4" y2="264.16" width="0.1524" layer="91"/>
+<portref moduleinst="DASHBOARD" port="BTN_LAUNCH"/>
+<wire x1="599.44" y1="228.6" x2="604.52" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="J15" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="12V_WHEEL_SPEED_FRONT_LEFT" class="0">
@@ -4379,9 +4482,9 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DASH_COMM_1" gate="G$1" pin="4"/>
-<wire x1="495.3" y1="231.14" x2="515.62" y2="231.14" width="0.1524" layer="91"/>
-<label x="497.84" y="231.14" size="1.778" layer="95"/>
+<pinref part="DASH_IN_4" gate="G$1" pin="3"/>
+<wire x1="515.62" y1="236.22" x2="495.3" y2="236.22" width="0.1524" layer="91"/>
+<label x="497.84" y="236.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANH_DASH" class="0">
@@ -4391,9 +4494,9 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DASH_COMM_1" gate="G$1" pin="5"/>
-<wire x1="495.3" y1="228.6" x2="515.62" y2="228.6" width="0.1524" layer="91"/>
-<label x="497.84" y="228.6" size="1.778" layer="95"/>
+<pinref part="DASH_IN_4" gate="G$1" pin="4"/>
+<wire x1="515.62" y1="233.68" x2="495.3" y2="233.68" width="0.1524" layer="91"/>
+<label x="497.84" y="233.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IMD_OK" class="0">
@@ -4414,8 +4517,8 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="18"/>
-<wire x1="398.78" y1="116.84" x2="398.78" y2="88.9" width="0.1524" layer="91"/>
-<label x="398.78" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="398.78" y1="114.3" x2="398.78" y2="88.9" width="0.1524" layer="91"/>
+<label x="398.78" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="GND_BRAKE_1" class="0">
@@ -4425,9 +4528,9 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BRAKE_1" gate="G$1" pin="1"/>
-<wire x1="637.54" y1="68.58" x2="612.14" y2="68.58" width="0.1524" layer="91"/>
-<label x="614.68" y="68.58" size="1.778" layer="95"/>
+<pinref part="J7" gate="G$1" pin="2"/>
+<wire x1="637.54" y1="93.98" x2="612.14" y2="93.98" width="0.1524" layer="91"/>
+<label x="614.68" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V_BRAKE_1" class="0">
@@ -4437,9 +4540,9 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BRAKE_1" gate="G$1" pin="2"/>
-<wire x1="637.54" y1="66.04" x2="612.14" y2="66.04" width="0.1524" layer="91"/>
-<label x="614.68" y="66.04" size="1.778" layer="95"/>
+<pinref part="J7" gate="G$1" pin="1"/>
+<wire x1="637.54" y1="96.52" x2="612.14" y2="96.52" width="0.1524" layer="91"/>
+<label x="614.68" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V_BRAKE_2" class="0">
@@ -4449,9 +4552,9 @@ Orange: HV High Current Path</text>
 <pinref part="MAIN_PRIM_1" gate="G$1" pin="26"/>
 </segment>
 <segment>
-<pinref part="BRAKE_1" gate="G$1" pin="5"/>
-<wire x1="637.54" y1="58.42" x2="612.14" y2="58.42" width="0.1524" layer="91"/>
-<label x="614.68" y="58.42" size="1.778" layer="95"/>
+<pinref part="J8" gate="G$1" pin="1"/>
+<wire x1="637.54" y1="78.74" x2="612.14" y2="78.74" width="0.1524" layer="91"/>
+<label x="614.68" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND_BRAKE_2" class="0">
@@ -4461,9 +4564,14 @@ Orange: HV High Current Path</text>
 <label x="441.96" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BRAKE_1" gate="G$1" pin="6"/>
-<wire x1="637.54" y1="55.88" x2="612.14" y2="55.88" width="0.1524" layer="91"/>
-<label x="614.68" y="55.88" size="1.778" layer="95"/>
+<pinref part="J8" gate="G$1" pin="2"/>
+<wire x1="637.54" y1="76.2" x2="612.14" y2="76.2" width="0.1524" layer="91"/>
+<label x="614.68" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J12" gate="G$1" pin="1"/>
+<wire x1="637.54" y1="137.16" x2="612.14" y2="137.16" width="0.1524" layer="91"/>
+<label x="614.68" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WHEEL_SPEED_REAR_RIGHT" class="0">
@@ -4547,11 +4655,11 @@ Orange: HV High Current Path</text>
 </net>
 <net name="N$41" class="0">
 <segment>
-<pinref part="DASH_IN_1" gate="G$1" pin="5"/>
-<wire x1="629.92" y1="231.14" x2="642.62" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="642.62" y1="231.14" x2="642.62" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="233.68" x2="642.62" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="642.62" y1="233.68" x2="642.62" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="BUTTON_MODE1" gate="SPST_MOM" pin="P"/>
 <wire x1="642.62" y1="228.6" x2="647.7" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="J16" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -4573,112 +4681,55 @@ Orange: HV High Current Path</text>
 <wire x1="657.86" y1="200.66" x2="678.18" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="678.18" y1="200.66" x2="678.18" y2="213.36" width="0.1524" layer="91"/>
 <junction x="678.18" y="213.36"/>
-<wire x1="678.18" y1="200.66" x2="678.18" y2="193.04" width="0.1524" layer="91"/>
-<junction x="678.18" y="200.66"/>
-<wire x1="678.18" y1="193.04" x2="635" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="DASH_IN_1" gate="G$1" pin="8"/>
-<wire x1="629.92" y1="223.52" x2="635" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="635" y1="223.52" x2="635" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="678.18" y1="254" x2="678.18" y2="261.62" width="0.1524" layer="91"/>
+<junction x="678.18" y="254"/>
+<wire x1="678.18" y1="261.62" x2="637.54" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="637.54" y1="261.62" x2="637.54" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="637.54" y1="241.3" x2="629.92" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="J16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="DASH_IN_1" gate="G$1" pin="6"/>
-<wire x1="629.92" y1="228.6" x2="640.08" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="640.08" y1="228.6" x2="640.08" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="231.14" x2="640.08" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="640.08" y1="231.14" x2="640.08" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="BUTTON_START" gate="SPST_MOM" pin="P"/>
 <wire x1="640.08" y1="215.9" x2="647.7" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="J16" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
-<pinref part="DASH_IN_1" gate="G$1" pin="3"/>
 <wire x1="629.92" y1="236.22" x2="642.62" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="642.62" y1="236.22" x2="642.62" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="BUTTON_MC_CYCLE1" gate="SPST_MOM" pin="P"/>
 <wire x1="642.62" y1="243.84" x2="647.7" y2="243.84" width="0.1524" layer="91"/>
+<pinref part="J16" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
-<pinref part="DASH_IN_1" gate="G$1" pin="2"/>
 <wire x1="629.92" y1="238.76" x2="640.08" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="640.08" y1="238.76" x2="640.08" y2="256.54" width="0.1524" layer="91"/>
 <pinref part="BUTTON_MARK1" gate="SPST_MOM" pin="P"/>
 <wire x1="640.08" y1="256.54" x2="647.7" y2="256.54" width="0.1524" layer="91"/>
+<pinref part="J16" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
-<pinref part="DASH_IN_1" gate="G$1" pin="7"/>
-<wire x1="629.92" y1="226.06" x2="637.54" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="637.54" y1="226.06" x2="637.54" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="228.6" x2="637.54" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="637.54" y1="228.6" x2="637.54" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="BUTTON_LAUNCH_CTRL" gate="SPST_MOM" pin="P"/>
 <wire x1="637.54" y1="203.2" x2="647.7" y2="203.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<junction x="635" y="88.9"/>
-</segment>
-</net>
-<net name="N$37" class="0">
-<segment>
-<pinref part="BRAKE_2" gate="G$1" pin="2"/>
-<wire x1="660.4" y1="66.04" x2="665.48" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="665.48" y1="66.04" x2="668.02" y2="68.58" width="0.1524" layer="91"/>
-<portref moduleinst="TE_M3031_BRAKE_PRESS_1" port="5V"/>
-<wire x1="668.02" y1="68.58" x2="670.56" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$50" class="0">
-<segment>
-<pinref part="BRAKE_2" gate="G$1" pin="1"/>
-<wire x1="660.4" y1="68.58" x2="665.48" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="665.48" y1="68.58" x2="668.02" y2="66.04" width="0.1524" layer="91"/>
-<portref moduleinst="TE_M3031_BRAKE_PRESS_1" port="GND"/>
-<wire x1="668.02" y1="66.04" x2="670.56" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$53" class="0">
-<segment>
-<pinref part="BRAKE_2" gate="G$1" pin="3"/>
-<portref moduleinst="TE_M3031_BRAKE_PRESS_1" port="SIGNAL"/>
-<wire x1="660.4" y1="63.5" x2="670.56" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$55" class="0">
-<segment>
-<portref moduleinst="TE_M3031-1_BRAKE_PRESS_2" port="5V"/>
-<wire x1="670.56" y1="50.8" x2="668.02" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="668.02" y1="50.8" x2="668.02" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="BRAKE_2" gate="G$1" pin="5"/>
-<wire x1="668.02" y1="58.42" x2="660.4" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$56" class="0">
-<segment>
-<pinref part="BRAKE_2" gate="G$1" pin="6"/>
-<wire x1="660.4" y1="55.88" x2="665.48" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="665.48" y1="55.88" x2="665.48" y2="48.26" width="0.1524" layer="91"/>
-<portref moduleinst="TE_M3031-1_BRAKE_PRESS_2" port="GND"/>
-<wire x1="665.48" y1="48.26" x2="670.56" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$57" class="0">
-<segment>
-<pinref part="BRAKE_2" gate="G$1" pin="4"/>
-<wire x1="660.4" y1="60.96" x2="662.94" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="662.94" y1="60.96" x2="662.94" y2="45.72" width="0.1524" layer="91"/>
-<portref moduleinst="TE_M3031-1_BRAKE_PRESS_2" port="SIGNAL"/>
-<wire x1="662.94" y1="45.72" x2="670.56" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="J16" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="USB_D+" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="9"/>
-<wire x1="375.92" y1="116.84" x2="375.92" y2="88.9" width="0.1524" layer="91"/>
-<label x="375.92" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="375.92" y1="114.3" x2="375.92" y2="88.9" width="0.1524" layer="91"/>
+<label x="375.92" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
@@ -4689,8 +4740,8 @@ Orange: HV High Current Path</text>
 <net name="USB_D-" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="10"/>
-<wire x1="378.46" y1="116.84" x2="378.46" y2="88.9" width="0.1524" layer="91"/>
-<label x="378.46" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="378.46" y1="114.3" x2="378.46" y2="88.9" width="0.1524" layer="91"/>
+<label x="378.46" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
@@ -4832,83 +4883,19 @@ Orange: HV High Current Path</text>
 <wire x1="111.76" y1="73.66" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$35" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT1" port="BMS_CELL_TEST_2"/>
-<wire x1="365.76" y1="233.68" x2="396.24" y2="241.3" width="0.6096" layer="91"/>
-<wire x1="396.24" y1="241.3" x2="396.24" y2="251.46" width="0.6096" layer="91"/>
-<pinref part="BMS_CELL_1" gate="G$1" pin="2"/>
-<wire x1="396.24" y1="251.46" x2="408.94" y2="259.08" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT1" port="BMS_CELL_TEST_1"/>
-<wire x1="365.76" y1="236.22" x2="393.7" y2="236.22" width="0.6096" layer="91"/>
-<wire x1="393.7" y1="236.22" x2="393.7" y2="246.38" width="0.6096" layer="91"/>
-<pinref part="BMS_CELL_1" gate="G$1" pin="1"/>
-<wire x1="393.7" y1="246.38" x2="408.94" y2="261.62" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$61" class="0">
-<segment>
-<pinref part="BMS_THERM_1" gate="G$1" pin="1"/>
-<portref moduleinst="BMS_SEGMENT1" port="BMS_THERM_TEST_2"/>
-<wire x1="365.76" y1="231.14" x2="406.4" y2="248.92" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$62" class="0">
-<segment>
-<pinref part="BMS_THERM_1" gate="G$1" pin="2"/>
-<portref moduleinst="BMS_SEGMENT1" port="BMS_THERM_TEST_1"/>
-<wire x1="365.76" y1="228.6" x2="406.4" y2="246.38" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$63" class="0">
-<segment>
-<pinref part="BMS_THERM_2" gate="G$1" pin="2"/>
-<pinref part="BMS_THERM_2" gate="G$1" pin="1"/>
-<wire x1="431.8" y1="228.6" x2="431.8" y2="231.14" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$45" class="0">
-<segment>
-<wire x1="172.72" y1="266.7" x2="213.36" y2="266.7" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="266.7" x2="213.36" y2="264.16" width="0.1524" layer="91"/>
-<pinref part="AIR2" gate="1" pin="2"/>
-<wire x1="213.36" y1="264.16" x2="215.9" y2="264.16" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$75" class="0">
 <segment>
-<pinref part="FUSE10_1A" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="254" x2="213.36" y2="256.54" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$76" class="0">
-<segment>
-<pinref part="FUSE10_1A" gate="G$1" pin="1"/>
 <portref moduleinst="ENERGY_METER" port="HV+IN"/>
 <wire x1="213.36" y1="243.84" x2="213.36" y2="241.3" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$42" class="0">
-<segment>
-<wire x1="218.44" y1="243.84" x2="228.6" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="243.84" x2="228.6" y2="256.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$72" class="0">
-<segment>
-<pinref part="AIR2" gate="1" pin="1"/>
-<wire x1="226.06" y1="271.78" x2="226.06" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="254" x2="213.36" y2="243.84" width="0.6096" layer="91"/>
 </segment>
 </net>
 <net name="12V_DCDC_1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="12"/>
-<wire x1="383.54" y1="116.84" x2="383.54" y2="88.9" width="0.1524" layer="91"/>
-<label x="383.54" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="383.54" y1="114.3" x2="383.54" y2="88.9" width="0.1524" layer="91"/>
+<label x="383.54" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 <segment>
 <pinref part="DCDC_12V_IN_2" gate="G$1" pin="1"/>
@@ -4919,8 +4906,8 @@ Orange: HV High Current Path</text>
 <net name="12V_DCDC_2" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="13"/>
-<wire x1="386.08" y1="116.84" x2="386.08" y2="88.9" width="0.1524" layer="91"/>
-<label x="386.08" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="386.08" y1="114.3" x2="386.08" y2="88.9" width="0.1524" layer="91"/>
+<label x="386.08" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 <segment>
 <pinref part="DCDC_12V_IN_2" gate="G$1" pin="2"/>
@@ -4960,8 +4947,8 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="14"/>
-<wire x1="388.62" y1="116.84" x2="388.62" y2="88.9" width="0.1524" layer="91"/>
-<label x="388.62" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="388.62" y1="114.3" x2="388.62" y2="88.9" width="0.1524" layer="91"/>
+<label x="388.62" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="N$64" class="0">
@@ -5031,8 +5018,8 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="15"/>
-<wire x1="391.16" y1="116.84" x2="391.16" y2="88.9" width="0.1524" layer="91"/>
-<label x="391.16" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="391.16" y1="114.3" x2="391.16" y2="88.9" width="0.1524" layer="91"/>
+<label x="391.16" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="12V_TSAL" class="0">
@@ -5077,8 +5064,8 @@ Orange: HV High Current Path</text>
 <net name="USB_VCC" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="363.22" y1="116.84" x2="363.22" y2="88.9" width="0.1524" layer="91"/>
-<label x="363.22" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="363.22" y1="114.3" x2="363.22" y2="88.9" width="0.1524" layer="91"/>
+<label x="363.22" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -5089,8 +5076,8 @@ Orange: HV High Current Path</text>
 <net name="USB_GND" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="365.76" y1="116.84" x2="365.76" y2="88.9" width="0.1524" layer="91"/>
-<label x="365.76" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="365.76" y1="114.3" x2="365.76" y2="88.9" width="0.1524" layer="91"/>
+<label x="365.76" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
@@ -5106,8 +5093,8 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="8"/>
-<wire x1="373.38" y1="116.84" x2="373.38" y2="88.9" width="0.1524" layer="91"/>
-<label x="373.38" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="373.38" y1="114.3" x2="373.38" y2="88.9" width="0.1524" layer="91"/>
+<label x="373.38" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="GND_TSAL_GREEN" class="0">
@@ -5118,15 +5105,15 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="370.84" y1="116.84" x2="370.84" y2="88.9" width="0.1524" layer="91"/>
-<label x="370.84" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="370.84" y1="114.3" x2="370.84" y2="88.9" width="0.1524" layer="91"/>
+<label x="370.84" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="GND_CHASSIS" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="6"/>
-<wire x1="368.3" y1="116.84" x2="368.3" y2="88.9" width="0.1524" layer="91"/>
-<label x="368.3" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="368.3" y1="114.3" x2="368.3" y2="88.9" width="0.1524" layer="91"/>
+<label x="368.3" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 <segment>
 <wire x1="342.9" y1="88.9" x2="342.9" y2="78.74" width="0.1524" layer="91"/>
@@ -5153,8 +5140,8 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="17"/>
-<wire x1="396.24" y1="116.84" x2="396.24" y2="88.9" width="0.1524" layer="91"/>
-<label x="396.24" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="396.24" y1="114.3" x2="396.24" y2="88.9" width="0.1524" layer="91"/>
+<label x="396.24" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="START" class="0">
@@ -5175,15 +5162,6 @@ Orange: HV High Current Path</text>
 <pinref part="LEFT_REAR_BRB" gate="DPST" pin="O1"/>
 <wire x1="72.39" y1="182.88" x2="68.58" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="GLVMS" gate="SPST" pin="S"/>
-<wire x1="121.92" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="17.78" x2="101.6" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="F3" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="7.62" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -5236,213 +5214,212 @@ Orange: HV High Current Path</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="11"/>
-<wire x1="381" y1="88.9" x2="381" y2="116.84" width="0.1524" layer="91"/>
-<label x="381" y="116.84" size="1.778" layer="95" rot="MR270"/>
+<wire x1="381" y1="88.9" x2="381" y2="114.3" width="0.1524" layer="91"/>
+<label x="381" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="4"/>
-<portref moduleinst="ACU1" port="USB_VCC"/>
-<wire x1="363.22" y1="142.24" x2="363.22" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="152.4" x2="327.66" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="281.94" x2="215.9" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="281.94" x2="215.9" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="287.02" x2="396.24" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="193.04" x2="396.24" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="193.04" x2="396.24" y2="287.02" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="3"/>
+<wire x1="360.68" y1="193.04" x2="360.68" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="5"/>
-<portref moduleinst="ACU1" port="USB_GND"/>
-<wire x1="365.76" y1="142.24" x2="365.76" y2="144.78" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="USB_GND"/>
+<wire x1="365.76" y1="139.7" x2="365.76" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="144.78" x2="327.66" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$54" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="9"/>
-<portref moduleinst="ACU1" port="USB_D+"/>
-<wire x1="375.92" y1="142.24" x2="375.92" y2="149.86" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="USB_D+"/>
+<wire x1="375.92" y1="139.7" x2="375.92" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="149.86" x2="327.66" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$58" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="10"/>
-<portref moduleinst="ACU1" port="USB_D-"/>
-<wire x1="378.46" y1="142.24" x2="378.46" y2="147.32" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="USB_D-"/>
+<wire x1="378.46" y1="139.7" x2="378.46" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="378.46" y1="147.32" x2="327.66" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$59" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="6"/>
-<portref moduleinst="ACU1" port="CHASSIS_GND"/>
-<wire x1="368.3" y1="142.24" x2="368.3" y2="157.48" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="CHASSIS_GND"/>
+<wire x1="368.3" y1="139.7" x2="368.3" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="157.48" x2="327.66" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$83" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="7"/>
-<portref moduleinst="ACU1" port="TSAL_GREEN"/>
-<wire x1="370.84" y1="142.24" x2="370.84" y2="162.56" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="TSAL_GREEN"/>
+<wire x1="370.84" y1="139.7" x2="370.84" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="162.56" x2="327.66" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$84" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="8"/>
-<portref moduleinst="ACU1" port="TSAL_RED"/>
-<wire x1="373.38" y1="142.24" x2="373.38" y2="165.1" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="TSAL_RED"/>
+<wire x1="373.38" y1="139.7" x2="373.38" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="165.1" x2="327.66" y2="165.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$85" class="0">
-<segment>
-<pinref part="AIR1" gate="1" pin="1"/>
-<wire x1="365.76" y1="264.16" x2="375.92" y2="264.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$74" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="11"/>
-<portref moduleinst="ACU1" port="SHDN_IN"/>
-<wire x1="381" y1="142.24" x2="381" y2="170.18" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="SHDN_IN"/>
+<wire x1="381" y1="139.7" x2="381" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="381" y1="170.18" x2="327.66" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$86" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="16"/>
-<portref moduleinst="ACU1" port="BSPD_CURRENT"/>
-<wire x1="393.7" y1="142.24" x2="393.7" y2="172.72" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="BSPD_CURRENT"/>
+<wire x1="393.7" y1="139.7" x2="393.7" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="393.7" y1="172.72" x2="327.66" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$87" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="17"/>
-<portref moduleinst="ACU1" port="AMS_OK"/>
-<wire x1="396.24" y1="142.24" x2="396.24" y2="175.26" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="AMS_OK"/>
+<wire x1="396.24" y1="139.7" x2="396.24" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="396.24" y1="175.26" x2="327.66" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$88" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="18"/>
-<portref moduleinst="ACU1" port="IMD_OK"/>
+<portref moduleinst="ACU" port="IMD_OK"/>
 <wire x1="327.66" y1="177.8" x2="398.78" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="177.8" x2="398.78" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="177.8" x2="398.78" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$89" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="19"/>
-<portref moduleinst="ACU1" port="12V"/>
-<wire x1="401.32" y1="142.24" x2="401.32" y2="190.5" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="12V"/>
+<wire x1="401.32" y1="139.7" x2="401.32" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="401.32" y1="190.5" x2="327.66" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$90" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="22"/>
-<portref moduleinst="ACU1" port="CANH"/>
-<wire x1="408.94" y1="142.24" x2="408.94" y2="187.96" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="CANH"/>
+<wire x1="408.94" y1="139.7" x2="408.94" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="408.94" y1="187.96" x2="327.66" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$91" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="21"/>
-<portref moduleinst="ACU1" port="CANL"/>
+<portref moduleinst="ACU" port="CANL"/>
 <wire x1="327.66" y1="185.42" x2="406.4" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="185.42" x2="406.4" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="185.42" x2="406.4" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$92" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="20"/>
-<portref moduleinst="ACU1" port="GND"/>
-<wire x1="403.86" y1="142.24" x2="403.86" y2="182.88" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="GND"/>
+<wire x1="403.86" y1="139.7" x2="403.86" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="182.88" x2="327.66" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$93" class="0">
 <segment>
-<portref moduleinst="ACU1" port="CUR_GND"/>
+<wire x1="383.54" y1="205.74" x2="383.54" y2="274.32" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="274.32" x2="228.6" y2="274.32" width="0.1524" layer="91"/>
 <portref moduleinst="CUR_SENSE" port="CUR_GND"/>
-<wire x1="327.66" y1="203.2" x2="383.54" y2="203.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$94" class="0">
-<segment>
-<portref moduleinst="CUR_SENSE" port="REF"/>
-<portref moduleinst="ACU1" port="CUR_REF"/>
-<wire x1="386.08" y1="203.2" x2="386.08" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="200.66" x2="327.66" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="274.32" x2="228.6" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="269.24" x2="210.82" y2="269.24" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="CUR_GND"/>
+<wire x1="327.66" y1="203.2" x2="347.98" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="203.2" x2="347.98" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="205.74" x2="383.54" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$95" class="0">
 <segment>
-<portref moduleinst="ACU1" port="CUR_SENSE"/>
 <portref moduleinst="CUR_SENSE" port="CUR_SENSE"/>
-<wire x1="327.66" y1="198.12" x2="388.62" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="198.12" x2="388.62" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="274.32" x2="210.82" y2="274.32" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="274.32" x2="223.52" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="279.4" x2="388.62" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="279.4" x2="388.62" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="200.66" x2="353.06" y2="200.66" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="CUR_SENSE"/>
+<wire x1="353.06" y1="200.66" x2="353.06" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="198.12" x2="327.66" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$96" class="0">
 <segment>
 <portref moduleinst="CUR_SENSE" port="CUR_5V"/>
-<portref moduleinst="ACU1" port="CUR_5V"/>
-<wire x1="391.16" y1="203.2" x2="391.16" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="391.16" y1="195.58" x2="327.66" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="276.86" x2="220.98" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="276.86" x2="220.98" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="281.94" x2="391.16" y2="281.94" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="CUR_5V"/>
+<wire x1="327.66" y1="195.58" x2="355.6" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="195.58" x2="355.6" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="198.12" x2="391.16" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="198.12" x2="391.16" y2="281.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$97" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P1-GND"/>
-<portref moduleinst="ACU1" port="GND_IMD"/>
+<portref moduleinst="ACU" port="GND_IMD"/>
 <wire x1="271.78" y1="160.02" x2="269.24" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$98" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P2-VIN"/>
-<portref moduleinst="ACU1" port="12V_IMD"/>
+<portref moduleinst="ACU" port="12V_IMD"/>
 <wire x1="269.24" y1="157.48" x2="271.78" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$99" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P3-GND"/>
-<portref moduleinst="ACU1" port="CHASSIS_GND_IMD"/>
+<portref moduleinst="ACU" port="CHASSIS_GND_IMD"/>
 <wire x1="271.78" y1="154.94" x2="269.24" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$100" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P4-GND"/>
-<portref moduleinst="ACU1" port="ACCUMULATOR_GND"/>
+<portref moduleinst="ACU" port="ACCUMULATOR_GND"/>
 <wire x1="271.78" y1="152.4" x2="269.24" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$101" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P5-PWM-HIGH"/>
-<portref moduleinst="ACU1" port="MHS"/>
+<portref moduleinst="ACU" port="MHS"/>
 <wire x1="269.24" y1="149.86" x2="271.78" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$102" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P8-OKHS"/>
-<portref moduleinst="ACU1" port="OKHS"/>
+<portref moduleinst="ACU" port="OKHS"/>
 <wire x1="271.78" y1="142.24" x2="269.24" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$103" class="0">
-<segment>
-<pinref part="AIR1" gate="1" pin="2"/>
-<wire x1="355.6" y1="264.16" x2="355.6" y2="269.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$104" class="0">
@@ -5452,7 +5429,7 @@ Orange: HV High Current Path</text>
 <wire x1="172.72" y1="243.84" x2="172.72" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="228.6" x2="213.36" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="228.6" x2="213.36" y2="198.12" width="0.1524" layer="91"/>
-<portref moduleinst="ACU1" port="GND_EM"/>
+<portref moduleinst="ACU" port="GND_EM"/>
 <wire x1="213.36" y1="198.12" x2="271.78" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5460,7 +5437,7 @@ Orange: HV High Current Path</text>
 <segment>
 <portref moduleinst="ENERGY_METER" port="VCC"/>
 <wire x1="177.8" y1="246.38" x2="170.18" y2="246.38" width="0.1524" layer="91"/>
-<portref moduleinst="ACU1" port="12V_EM"/>
+<portref moduleinst="ACU" port="12V_EM"/>
 <wire x1="271.78" y1="195.58" x2="210.82" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="195.58" x2="210.82" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="226.06" x2="170.18" y2="226.06" width="0.1524" layer="91"/>
@@ -5471,7 +5448,7 @@ Orange: HV High Current Path</text>
 <segment>
 <portref moduleinst="ENERGY_METER" port="CANH"/>
 <wire x1="177.8" y1="241.3" x2="175.26" y2="241.3" width="0.1524" layer="91"/>
-<portref moduleinst="ACU1" port="CANH_EM"/>
+<portref moduleinst="ACU" port="CANH_EM"/>
 <wire x1="271.78" y1="200.66" x2="215.9" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="200.66" x2="215.9" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="231.14" x2="175.26" y2="231.14" width="0.1524" layer="91"/>
@@ -5484,8 +5461,279 @@ Orange: HV High Current Path</text>
 <wire x1="177.8" y1="238.76" x2="177.8" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="233.68" x2="218.44" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="233.68" x2="218.44" y2="203.2" width="0.1524" layer="91"/>
-<portref moduleinst="ACU1" port="CANL_EM"/>
+<portref moduleinst="ACU" port="CANL_EM"/>
 <wire x1="218.44" y1="203.2" x2="271.78" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BSPD-" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="358.14" y1="114.3" x2="358.14" y2="88.9" width="0.1524" layer="91"/>
+<label x="358.14" y="114.3" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="BPSD-" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="-25.4" x2="99.06" y2="-50.8" width="0.1524" layer="91"/>
+<label x="99.06" y="-25.4" size="1.778" layer="95" rot="MR270"/>
+</segment>
+</net>
+<net name="BPSD+" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="360.68" y1="114.3" x2="360.68" y2="88.9" width="0.1524" layer="91"/>
+<label x="360.68" y="114.3" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="BSPD+" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="-25.4" x2="106.68" y2="-50.8" width="0.1524" layer="91"/>
+<label x="106.68" y="-25.4" size="1.778" layer="95" rot="MR270"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="J5" gate="G$1" pin="1"/>
+<portref moduleinst="TE_M3031_BRAKE_PRESS_1" port="5V"/>
+<wire x1="660.4" y1="96.52" x2="670.56" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="J5" gate="G$1" pin="2"/>
+<portref moduleinst="TE_M3031_BRAKE_PRESS_1" port="GND"/>
+<wire x1="670.56" y1="93.98" x2="660.4" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="J5" gate="G$1" pin="3"/>
+<portref moduleinst="TE_M3031_BRAKE_PRESS_1" port="SIGNAL"/>
+<wire x1="660.4" y1="91.44" x2="670.56" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="1"/>
+<portref moduleinst="TE_M3031-1_BRAKE_PRESS_2" port="5V"/>
+<wire x1="670.56" y1="78.74" x2="660.4" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="2"/>
+<portref moduleinst="TE_M3031-1_BRAKE_PRESS_2" port="GND"/>
+<wire x1="660.4" y1="76.2" x2="670.56" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="3"/>
+<portref moduleinst="TE_M3031-1_BRAKE_PRESS_2" port="SIGNAL"/>
+<wire x1="670.56" y1="73.66" x2="660.4" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="J9" gate="G$1" pin="1"/>
+<wire x1="660.4" y1="154.94" x2="673.1" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="673.1" y1="154.94" x2="675.64" y2="152.4" width="0.1524" layer="91"/>
+<portref moduleinst="BEI_9360_ACCEL" port="GND_SENSOR_2"/>
+<wire x1="675.64" y1="152.4" x2="680.72" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<portref moduleinst="BEI_9360_ACCEL" port="5V_SENSOR_2"/>
+<wire x1="680.72" y1="149.86" x2="675.64" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="675.64" y1="149.86" x2="673.1" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="J9" gate="G$1" pin="2"/>
+<wire x1="673.1" y1="152.4" x2="660.4" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$52" class="0">
+<segment>
+<pinref part="J9" gate="G$1" pin="3"/>
+<wire x1="660.4" y1="149.86" x2="673.1" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="673.1" y1="149.86" x2="675.64" y2="147.32" width="0.1524" layer="91"/>
+<portref moduleinst="BEI_9360_ACCEL" port="SIGNAL_SENSOR_1"/>
+<wire x1="675.64" y1="147.32" x2="680.72" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$53" class="0">
+<segment>
+<pinref part="J10" gate="G$1" pin="1"/>
+<wire x1="660.4" y1="137.16" x2="673.1" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="673.1" y1="137.16" x2="678.18" y2="142.24" width="0.1524" layer="91"/>
+<portref moduleinst="BEI_9360_ACCEL" port="GND_SENSOR_1"/>
+<wire x1="678.18" y1="142.24" x2="680.72" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<portref moduleinst="BEI_9360_ACCEL" port="5V_SENSOR_1"/>
+<wire x1="680.72" y1="139.7" x2="678.18" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="678.18" y1="139.7" x2="673.1" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="J10" gate="G$1" pin="2"/>
+<wire x1="673.1" y1="134.62" x2="660.4" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<portref moduleinst="BEI_9360_ACCEL" port="SIGNAL_SENSOR_2"/>
+<wire x1="680.72" y1="144.78" x2="678.18" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="J10" gate="G$1" pin="3"/>
+<wire x1="678.18" y1="144.78" x2="665.48" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="665.48" y1="132.08" x2="660.4" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="DASH_IN_3" gate="G$1" pin="1"/>
+<portref moduleinst="DASHBOARD" port="12V"/>
+<wire x1="541.02" y1="241.3" x2="543.56" y2="241.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="DASH_IN_3" gate="G$1" pin="3"/>
+<portref moduleinst="DASHBOARD" port="CANL"/>
+<wire x1="543.56" y1="236.22" x2="541.02" y2="236.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="DASH_IN_3" gate="G$1" pin="4"/>
+<portref moduleinst="DASHBOARD" port="CANH"/>
+<wire x1="541.02" y1="233.68" x2="543.56" y2="233.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="DASH_IN_3" gate="G$1" pin="5"/>
+<portref moduleinst="DASHBOARD" port="SHUTDOWN_H"/>
+<wire x1="543.56" y1="231.14" x2="541.02" y2="231.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="DASH_IN_3" gate="G$1" pin="6"/>
+<portref moduleinst="DASHBOARD" port="SHUTDOWN_G"/>
+<wire x1="541.02" y1="228.6" x2="543.56" y2="228.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="DASH_IN_3" gate="G$1" pin="7"/>
+<portref moduleinst="DASHBOARD" port="SHUTDOWN_F"/>
+<wire x1="543.56" y1="226.06" x2="541.02" y2="226.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="DASH_IN_3" gate="G$1" pin="8"/>
+<portref moduleinst="DASHBOARD" port="GND"/>
+<wire x1="541.02" y1="223.52" x2="543.56" y2="223.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="15"/>
+<wire x1="391.16" y1="139.7" x2="391.16" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="180.34" x2="342.9" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="180.34" x2="342.9" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="137.16" x2="292.1" y2="137.16" width="0.1524" layer="91"/>
+<portref moduleinst="TSB" port="DCDC-1"/>
+<wire x1="292.1" y1="137.16" x2="289.56" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="137.16" x2="182.88" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="12"/>
+<wire x1="383.54" y1="139.7" x2="383.54" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="154.94" x2="350.52" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="154.94" x2="350.52" y2="129.54" width="0.1524" layer="91"/>
+<portref moduleinst="TSB" port="DCDC+2"/>
+<wire x1="350.52" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="129.54" x2="175.26" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="13"/>
+<wire x1="386.08" y1="139.7" x2="386.08" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="160.02" x2="347.98" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="160.02" x2="347.98" y2="132.08" width="0.1524" layer="91"/>
+<portref moduleinst="TSB" port="DCDC+1"/>
+<wire x1="177.8" y1="147.32" x2="177.8" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="132.08" x2="347.98" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="14"/>
+<wire x1="388.62" y1="139.7" x2="388.62" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="167.64" x2="345.44" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="167.64" x2="345.44" y2="134.62" width="0.1524" layer="91"/>
+<portref moduleinst="TSB" port="DCDC-2"/>
+<wire x1="345.44" y1="134.62" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="134.62" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<wire x1="393.7" y1="284.48" x2="218.44" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="284.48" x2="218.44" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="279.4" x2="210.82" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="284.48" x2="393.7" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="195.58" x2="358.14" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="358.14" y1="195.58" x2="358.14" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PRECHARGE_OK" class="0">
+<segment>
+<pinref part="AIR2" gate="1" pin="2"/>
+<wire x1="231.14" y1="264.16" x2="228.6" y2="264.16" width="0.1524" layer="91"/>
+<label x="228.6" y="264.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<portref moduleinst="ACU" port="PRECHARGE_OK"/>
+<wire x1="271.78" y1="193.04" x2="269.24" y2="193.04" width="0.1524" layer="91"/>
+<label x="269.24" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SHDN" class="0">
+<segment>
+<pinref part="AIR1" gate="1" pin="1"/>
+<wire x1="365.76" y1="264.16" x2="368.3" y2="264.16" width="0.1524" layer="91"/>
+<label x="368.3" y="264.16" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<portref moduleinst="ACU" port="SHUTDOWN"/>
+<wire x1="271.78" y1="190.5" x2="269.24" y2="190.5" width="0.1524" layer="91"/>
+<label x="269.24" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<portref moduleinst="ACU" port="CUR_REF"/>
+<wire x1="327.66" y1="200.66" x2="350.52" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="200.66" x2="350.52" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="203.2" x2="386.08" y2="203.2" width="0.1524" layer="91"/>
+<portref moduleinst="CUR_SENSE" port="REF"/>
+<wire x1="210.82" y1="271.78" x2="226.06" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="271.78" x2="226.06" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="276.86" x2="386.08" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="203.2" x2="386.08" y2="276.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<portref moduleinst="ACU" port="USB_VCC"/>
+<pinref part="J4" gate="G$1" pin="4"/>
+<wire x1="363.22" y1="139.7" x2="363.22" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="152.4" x2="327.66" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
