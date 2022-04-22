@@ -8,7 +8,7 @@ Follow HyTech's [Github Software Guidelines](https://gtvault.sharepoint.com/:w:/
 ***Your PR should not cause any merge conflicts, so please merge the `main` branch into your branch before submitting. It is your responsibility to ensure that the merge does not break something before submitting. [Here](https://guides.github.com/features/mastering-markdown/) is a good resource for markdown formatting as you fill out this template. See this [example](https://github.com/hytech-racing/circuits-2022/pull/47). Feel free to ask any electrical lead if you have any questions!***
 
 
-## Board Description
+## Circuit Description
 *Describe the contents of the pull request. If it's a new board, what is its purpose and features. If it's a revision, what are the changes?*
 
 ## Schematic
