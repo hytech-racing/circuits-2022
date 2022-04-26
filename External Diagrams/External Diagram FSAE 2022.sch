@@ -2350,6 +2350,7 @@ Dashed line is edge of mated connector.</description>
 <part name="J21" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
 <part name="J22" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
 <part name="J23" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
+<part name="J3" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HVP800"/>
 </parts>
 <sheets>
 <sheet>
@@ -2408,25 +2409,20 @@ Telemetry Control Unit</text>
 <wire x1="76.2" y1="2.54" x2="88.9" y2="2.54" width="0.1524" layer="157"/>
 <wire x1="76.2" y1="-2.54" x2="88.9" y2="-2.54" width="0.1524" layer="157"/>
 <wire x1="76.2" y1="5.08" x2="88.9" y2="5.08" width="0.1524" layer="157"/>
-<wire x1="375.92" y1="-20.32" x2="375.92" y2="71.12" width="1.524" layer="97" style="shortdash"/>
-<wire x1="375.92" y1="71.12" x2="426.72" y2="71.12" width="1.524" layer="97" style="shortdash"/>
-<wire x1="426.72" y1="71.12" x2="426.72" y2="147.32" width="1.524" layer="97" style="shortdash"/>
-<wire x1="426.72" y1="147.32" x2="477.52" y2="147.32" width="1.524" layer="97" style="shortdash"/>
-<wire x1="477.52" y1="147.32" x2="477.52" y2="274.32" width="1.524" layer="97" style="shortdash"/>
 <wire x1="670.56" y1="160.02" x2="721.36" y2="160.02" width="1.27" layer="97"/>
 <wire x1="721.36" y1="160.02" x2="721.36" y2="109.22" width="1.27" layer="97"/>
 <wire x1="721.36" y1="109.22" x2="670.56" y2="109.22" width="1.27" layer="97"/>
 <wire x1="670.56" y1="109.22" x2="670.56" y2="160.02" width="1.27" layer="97"/>
 <text x="670.56" y="162.56" size="5.08" layer="97">Pedal Box</text>
-<text x="485.14" y="269.24" size="5.08" layer="97">Firewall</text>
+<text x="502.92" y="287.02" size="5.08" layer="97">Firewall</text>
 <wire x1="20.32" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="157"/>
 <wire x1="76.2" y1="0" x2="88.9" y2="0" width="0.1524" layer="157"/>
 <wire x1="68.58" y1="7.62" x2="71.12" y2="7.62" width="0.1524" layer="157"/>
-<wire x1="528.32" y1="251.46" x2="617.22" y2="251.46" width="1.27" layer="97"/>
-<wire x1="617.22" y1="251.46" x2="617.22" y2="213.36" width="1.27" layer="97"/>
-<wire x1="617.22" y1="213.36" x2="528.32" y2="213.36" width="1.27" layer="97"/>
-<wire x1="528.32" y1="213.36" x2="528.32" y2="251.46" width="1.27" layer="97"/>
-<text x="530.86" y="254" size="5.08" layer="97">Dashboard</text>
+<wire x1="541.02" y1="254" x2="629.92" y2="254" width="1.27" layer="97"/>
+<wire x1="629.92" y1="254" x2="629.92" y2="215.9" width="1.27" layer="97"/>
+<wire x1="629.92" y1="215.9" x2="541.02" y2="215.9" width="1.27" layer="97"/>
+<wire x1="541.02" y1="215.9" x2="541.02" y2="254" width="1.27" layer="97"/>
+<text x="543.56" y="256.54" size="5.08" layer="97">Dashboard</text>
 <wire x1="251.46" y1="271.78" x2="259.08" y2="271.78" width="0.6096" layer="156"/>
 <wire x1="327.66" y1="271.78" x2="335.28" y2="271.78" width="0.6096" layer="156"/>
 <wire x1="213.36" y1="238.76" x2="368.3" y2="238.76" width="0.6096" layer="156"/>
@@ -2517,6 +2513,21 @@ Telemetry Control Unit</text>
 <wire x1="434.34" y1="251.46" x2="431.8" y2="251.46" width="0.6096" layer="156"/>
 <wire x1="434.34" y1="261.62" x2="431.8" y2="261.62" width="0.6096" layer="156"/>
 <text x="43.18" y="20.32" size="1.778" layer="95">GND_CHASSIS</text>
+<wire x1="457.2" y1="269.24" x2="457.2" y2="238.76" width="1.27" layer="97"/>
+<wire x1="457.2" y1="238.76" x2="490.22" y2="238.76" width="1.27" layer="97"/>
+<wire x1="490.22" y1="238.76" x2="490.22" y2="269.24" width="1.27" layer="97"/>
+<wire x1="490.22" y1="269.24" x2="457.2" y2="269.24" width="1.27" layer="97"/>
+<wire x1="469.9" y1="254" x2="469.9" y2="256.54" width="0.635" layer="156"/>
+<text x="457.2" y="271.78" size="5.08" layer="95">HVD</text>
+<wire x1="375.92" y1="-20.32" x2="375.92" y2="66.04" width="1.524" layer="97" style="shortdash"/>
+<wire x1="375.92" y1="66.04" x2="393.7" y2="83.82" width="1.524" layer="97" style="shortdash"/>
+<wire x1="393.7" y1="83.82" x2="424.18" y2="83.82" width="1.524" layer="97" style="shortdash"/>
+<wire x1="424.18" y1="83.82" x2="426.72" y2="86.36" width="1.524" layer="97" style="shortdash"/>
+<wire x1="426.72" y1="86.36" x2="426.72" y2="137.16" width="1.524" layer="97" style="shortdash"/>
+<wire x1="426.72" y1="137.16" x2="436.88" y2="147.32" width="1.524" layer="97" style="shortdash"/>
+<wire x1="436.88" y1="147.32" x2="467.36" y2="147.32" width="1.524" layer="97" style="shortdash"/>
+<wire x1="467.36" y1="147.32" x2="497.84" y2="177.8" width="1.524" layer="97" style="shortdash"/>
+<wire x1="497.84" y1="177.8" x2="497.84" y2="289.56" width="1.524" layer="97" style="shortdash"/>
 </plain>
 <moduleinsts>
 <moduleinst name="BMS_SEGMENT2" module="BMS_SEGMENT" x="309.88" y="228.6">
@@ -2552,8 +2563,8 @@ Telemetry Control Unit</text>
 <moduleinst name="ACU" module="ACU" x="299.72" y="172.72">
 <attribute name="NAME" value="ACU" x="299.72" y="200.66" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DASHBOARD" module="DASHBOARD" x="571.5" y="233.68">
-<attribute name="NAME" value="DASHBOARD" x="571.5" y="243.84" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="DASHBOARD" module="DASHBOARD" x="584.2" y="236.22">
+<attribute name="NAME" value="DASHBOARD" x="584.2" y="246.38" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="BMS_SEGMENT1" module="BMS_SEGMENT" x="347.98" y="228.6">
 <attribute name="NAME" x="347.98" y="233.68" size="2.032" layer="95" align="bottom-center"/>
@@ -2592,9 +2603,9 @@ Telemetry Control Unit</text>
 <attribute name="NAME" x="701.04" y="119.38" size="1.778" layer="95"/>
 <attribute name="VALUE" x="701.04" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="COCKPIT_BRB" gate="SPST" x="528.32" y="190.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="523.24" y="185.42" size="1.778" layer="95"/>
-<attribute name="VALUE" x="523.24" y="182.88" size="1.778" layer="96"/>
+<instance part="COCKPIT_BRB" gate="SPST" x="541.02" y="193.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="535.94" y="187.96" size="1.778" layer="95"/>
+<attribute name="VALUE" x="535.94" y="185.42" size="1.778" layer="96"/>
 </instance>
 <instance part="MEASURE_GND" gate="G$1" x="109.22" y="30.48" smashed="yes">
 <attribute name="NAME" x="108.204" y="32.258" size="1.27" layer="95"/>
@@ -2604,9 +2615,9 @@ Telemetry Control Unit</text>
 <attribute name="NAME" x="120.396" y="28.702" size="1.27" layer="95" rot="R180"/>
 <attribute name="VALUE" x="110.236" y="28.448" size="1.27" layer="96" rot="R180"/>
 </instance>
-<instance part="BUTTON_START" gate="SPST_MOM" x="652.78" y="215.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="647.7" y="210.82" size="1.778" layer="95"/>
-<attribute name="VALUE" x="647.7" y="208.28" size="1.778" layer="96"/>
+<instance part="BUTTON_START" gate="SPST_MOM" x="665.48" y="218.44" smashed="yes" rot="R270">
+<attribute name="NAME" x="660.4" y="213.36" size="1.778" layer="95"/>
+<attribute name="VALUE" x="660.4" y="210.82" size="1.778" layer="96"/>
 </instance>
 <instance part="U$2" gate="G$1" x="215.9" y="139.7" smashed="yes"/>
 <instance part="GLV_BATT" gate="G$1" x="63.5" y="-7.62" smashed="yes" rot="R180">
@@ -2709,21 +2720,21 @@ Telemetry Control Unit</text>
 <attribute name="VALUE" x="373.38" y="66.04" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="373.38" y="4.318" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="BUTTON_MODE" gate="SPST_MOM" x="652.78" y="228.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="647.7" y="223.52" size="1.778" layer="95"/>
-<attribute name="VALUE" x="647.7" y="220.98" size="1.778" layer="96"/>
+<instance part="BUTTON_MODE" gate="SPST_MOM" x="665.48" y="231.14" smashed="yes" rot="R270">
+<attribute name="NAME" x="660.4" y="226.06" size="1.778" layer="95"/>
+<attribute name="VALUE" x="660.4" y="223.52" size="1.778" layer="96"/>
 </instance>
-<instance part="BUTTON_MC_CYCLE" gate="SPST_MOM" x="652.78" y="243.84" smashed="yes" rot="R270">
-<attribute name="NAME" x="647.7" y="238.76" size="1.778" layer="95"/>
-<attribute name="VALUE" x="647.7" y="236.22" size="1.778" layer="96"/>
+<instance part="BUTTON_MC_CYCLE" gate="SPST_MOM" x="665.48" y="246.38" smashed="yes" rot="R270">
+<attribute name="NAME" x="660.4" y="241.3" size="1.778" layer="95"/>
+<attribute name="VALUE" x="660.4" y="238.76" size="1.778" layer="96"/>
 </instance>
-<instance part="BUTTON_MARK" gate="SPST_MOM" x="652.78" y="256.54" smashed="yes" rot="R270">
-<attribute name="NAME" x="647.7" y="251.46" size="1.778" layer="95"/>
-<attribute name="VALUE" x="647.7" y="248.92" size="1.778" layer="96"/>
+<instance part="BUTTON_MARK" gate="SPST_MOM" x="665.48" y="259.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="660.4" y="254" size="1.778" layer="95"/>
+<attribute name="VALUE" x="660.4" y="251.46" size="1.778" layer="96"/>
 </instance>
-<instance part="BUTTON_LAUNCH_CTRL" gate="SPST_MOM" x="652.78" y="203.2" smashed="yes" rot="R270">
-<attribute name="NAME" x="647.7" y="198.12" size="1.778" layer="95"/>
-<attribute name="VALUE" x="647.7" y="195.58" size="1.778" layer="96"/>
+<instance part="BUTTON_LAUNCH_CTRL" gate="SPST_MOM" x="665.48" y="205.74" smashed="yes" rot="R270">
+<attribute name="NAME" x="660.4" y="200.66" size="1.778" layer="95"/>
+<attribute name="VALUE" x="660.4" y="198.12" size="1.778" layer="96"/>
 </instance>
 <instance part="DCDC_CONTROL_IN_2" gate="G$1" x="93.98" y="71.12" smashed="yes" rot="R180">
 <attribute name="VALUE" x="96.52" y="78.74" size="1.778" layer="96" rot="R180"/>
@@ -2838,21 +2849,21 @@ Telemetry Control Unit</text>
 <attribute name="NAME" x="518.16" y="121.92" size="1.778" layer="95"/>
 <attribute name="VALUE" x="518.16" y="119.38" size="1.778" layer="96"/>
 </instance>
-<instance part="DASH_IN_3" gate="G$1" x="535.94" y="233.68" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="530.86" y="246.38" size="1.778" layer="96" rot="MR180"/>
-<attribute name="NAME" x="530.86" y="220.218" size="1.778" layer="95" rot="MR180"/>
+<instance part="DASH_IN_3" gate="G$1" x="548.64" y="236.22" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="543.56" y="248.92" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="543.56" y="222.758" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="DASH_IN_4" gate="G$1" x="520.7" y="233.68" smashed="yes" rot="R180">
-<attribute name="VALUE" x="525.78" y="246.38" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="525.78" y="220.218" size="1.778" layer="95" rot="R180"/>
+<instance part="DASH_IN_4" gate="G$1" x="533.4" y="236.22" smashed="yes" rot="R180">
+<attribute name="VALUE" x="538.48" y="248.92" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="538.48" y="222.758" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="J15" gate="G$1" x="614.68" y="243.84" smashed="yes" rot="MR0">
-<attribute name="NAME" x="614.68" y="244.602" size="1.27" layer="95" rot="MR0"/>
-<attribute name="MPN" x="614.68" y="225.425" size="1.27" layer="96" rot="MR0" align="top-left"/>
+<instance part="J15" gate="G$1" x="627.38" y="246.38" smashed="yes" rot="MR0">
+<attribute name="NAME" x="627.38" y="247.142" size="1.27" layer="95" rot="MR0"/>
+<attribute name="MPN" x="627.38" y="227.965" size="1.27" layer="96" rot="MR0" align="top-left"/>
 </instance>
-<instance part="J16" gate="G$1" x="619.76" y="243.84" smashed="yes">
-<attribute name="NAME" x="619.76" y="244.602" size="1.27" layer="95"/>
-<attribute name="MPN" x="619.76" y="225.425" size="1.27" layer="96" align="top-left"/>
+<instance part="J16" gate="G$1" x="632.46" y="246.38" smashed="yes">
+<attribute name="NAME" x="632.46" y="247.142" size="1.27" layer="95"/>
+<attribute name="MPN" x="632.46" y="227.965" size="1.27" layer="96" align="top-left"/>
 </instance>
 <instance part="P1" gate="1" x="236.22" y="269.24" smashed="yes" rot="R90">
 <attribute name="VALUE" x="237.49" y="269.24" size="1.27" layer="96" rot="R90" align="top-center"/>
@@ -2952,6 +2963,10 @@ Telemetry Control Unit</text>
 <attribute name="MPN" x="454.66" y="250.825" size="1.27" layer="96" rot="MR0" align="top-left"/>
 <attribute name="MANUFACTURER" x="454.66" y="259.842" size="1.27" layer="96" rot="MR0"/>
 </instance>
+<instance part="J3" gate="G$1" x="459.74" y="259.08" smashed="yes">
+<attribute name="MPN" x="459.74" y="250.825" size="1.27" layer="96" align="top-left"/>
+<attribute name="MANUFACTURER" x="459.74" y="259.842" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="5V_ACCEL_1,5V_ACCEL_2,5V_BRAKE,5V_BRAKE_1,5V_BRAKE_2,12V_ACCUM_MAINT,12V_AFTER_LEFT_BRB,12V_DASH,12V_DCDC_1,12V_DCDC_2,12V_MAIN,12V_MAINT,12V_MC,12V_SUPPLY,12VSUPPLY_COOLING_FAN_1,12VSUPPLY_COOLING_FAN_2,12VSUPPLY_COOLING_FAN_3,12VSUPPLY_COOLING_PUMP_1,12VSUPPLY_COOLING_UNSWITCHED,12VSUPPLY_UNSWITCHED,12V_TSAL,12V_WHEEL_SPEED_FRONT_LEFT,12V_WHEEL_SPEED_FRONT_RIGHT,12V_WHEEL_SPEED_REAR_LEFT,12V_WHEEL_SPEED_REAR_RIGHT,60V_THRESHOLD,60V_THRESHOLD_1,60V_THRESHOLD_2,AMS_OK,BAT+,BPSD+,BRAKE_LIGHT,BSPD-,CAN_ACCUM_SHIELD,CANH_ACCUM,CANH_DASH,CANH_FRONT,CANH_MAINT,CANH_MC,CANL_ACCUM,CANL_DASH,CANL_MAINT,CANL_MC,CHARGE_ENABLE,CUR_SENSE_5V,CUR_SENSE_CUR_SENSE,CUR_SENSE_GND,CUR_SENSE_REF,DASH_1,DASH_4,DASH_5,DASH_8,DASH_9,DASH_11,DASH_12,FAN_1,FAN_2,GND,GND_ACCEL_1,GND_ACCEL_2,GND_ACCUM,GND_AUX,GND_BR,GND_BRAKE,GND_BRAKE_1,GND_BRAKE_2,GND_BR_TS,GND_CHASSIS,GND_CURRENT,GND_DASH,GND_DCDC1,GND_DCDC_1,GND_DCDC_2,GND_DCDC2,GND_DCDC_4,GND_LEFT_PANEL,GND_MAIN_ECU,GND_MAINT,GND_MC,GND_POWER_SWITCHING,GND_RIGHT_PANEL,GND_SHIELD,GND_TSAL_GREEN,GND_TSAL_RED,HV+,HV-,HV+FUSED,HV-FUSED,IMD_GND,IMD_HV+,IMD_HV-,IMD_OK,IMD_SUPPLY,INVERTER_SUPPLY,ISOSPI_M,ISOSPI_P,LATCH_EXT_BTN,MC_MAINT_FAULT_INDIC,MC_MAINT_GND,MC_MAINT_PROG_ENA,MC_MAINT_RXD,MC_MAINT_TXD,MC_MAINT_XDCR_PWR,MOTOR_COS-,MOTOR_COS+,MOTOR_EXC-,MOTOR_EXC+,MOTOR_SHIELD,MOTOR_SIN-,MOTOR_SIN+,MOTOR_TEMP+,MOTOR_TEMP-,RET_FAN_1,SHUTDOWN_E,SHUTDOWN_F,SHUTDOWN_G,SHUTDOWN_H,SHUTDOWN_I,SHUTDOWN_J,SHUTDOWN_K,SHUTDOWN_K_OUT,SHUTDOWN_L,SHUTDOWN_M,SHUTDOWN_N,SIGNAL_ACCEL_1,SIGNAL_ACCEL_2,SIGNAL_BRAKE,SIGNAL_BRAKE_1,SIGNAL_BRAKE_2,SIGNAL_CURRENT,SSOK,START,USB_D-,USB_D+,USB_GND,USB_VCC,WHEEL_SPEED_2,WHEEL_SPEED_3,WHEEL_SPEED_4,WHEEL_SPEED_FRONT_LEFT,WHEEL_SPEED_FRONT_RIGHT,WHEEL_SPEED_REAR_LEFT,WHEEL_SPEED_REAR_RIGHT">
@@ -2970,13 +2985,13 @@ Telemetry Control Unit</text>
 <wire x1="612.14" y1="93.98" x2="612.14" y2="88.9" width="0.762" layer="92"/>
 <wire x1="612.14" y1="81.28" x2="612.14" y2="76.2" width="0.762" layer="92"/>
 <wire x1="612.14" y1="76.2" x2="612.14" y2="71.12" width="0.762" layer="92"/>
-<wire x1="495.3" y1="149.86" x2="495.3" y2="245.11" width="0.762" layer="92"/>
+<wire x1="508" y1="149.86" x2="508" y2="247.65" width="0.762" layer="92"/>
 <wire x1="612.14" y1="137.16" x2="551.18" y2="137.16" width="0.762" layer="92"/>
-<wire x1="551.18" y1="137.16" x2="477.52" y2="137.16" width="0.762" layer="92"/>
-<wire x1="477.52" y1="137.16" x2="452.12" y2="137.16" width="0.762" layer="92"/>
+<wire x1="551.18" y1="137.16" x2="490.22" y2="137.16" width="0.762" layer="92"/>
+<wire x1="490.22" y1="137.16" x2="452.12" y2="137.16" width="0.762" layer="92"/>
 <wire x1="452.12" y1="137.16" x2="434.34" y2="119.38" width="0.762" layer="92"/>
 <wire x1="434.34" y1="119.38" x2="434.34" y2="2.54" width="0.762" layer="92"/>
-<wire x1="477.52" y1="137.16" x2="495.3" y2="149.86" width="0.762" layer="92"/>
+<wire x1="490.22" y1="137.16" x2="508" y2="149.86" width="0.762" layer="92"/>
 <wire x1="612.14" y1="160.02" x2="612.14" y2="137.16" width="0.762" layer="92"/>
 <wire x1="612.14" y1="137.16" x2="612.14" y2="116.84" width="0.762" layer="92"/>
 <wire x1="612.14" y1="76.2" x2="594.36" y2="93.98" width="0.762" layer="92"/>
@@ -3755,8 +3770,8 @@ Telemetry Control Unit</text>
 </segment>
 <segment>
 <pinref part="DASH_IN_4" gate="G$1" pin="1"/>
-<wire x1="515.62" y1="241.3" x2="495.3" y2="241.3" width="0.1524" layer="91"/>
-<label x="497.84" y="241.3" size="1.778" layer="95"/>
+<wire x1="528.32" y1="243.84" x2="508" y2="243.84" width="0.1524" layer="91"/>
+<label x="510.54" y="243.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$77" class="0">
@@ -3888,15 +3903,15 @@ Telemetry Control Unit</text>
 </segment>
 <segment>
 <pinref part="DASH_IN_4" gate="G$1" pin="7"/>
-<wire x1="515.62" y1="226.06" x2="495.3" y2="226.06" width="0.1524" layer="91"/>
-<label x="497.84" y="226.06" size="1.778" layer="95"/>
+<wire x1="528.32" y1="228.6" x2="508" y2="228.6" width="0.1524" layer="91"/>
+<label x="510.54" y="228.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SHUTDOWN_G" class="0">
 <segment>
-<wire x1="495.3" y1="190.5" x2="523.24" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="508" y1="193.04" x2="535.94" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="COCKPIT_BRB" gate="SPST" pin="P"/>
-<label x="500.38" y="190.5" size="1.778" layer="95"/>
+<label x="513.08" y="193.04" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="718.82" y1="127" x2="718.82" y2="111.76" width="0.1524" layer="91"/>
@@ -3915,22 +3930,22 @@ Telemetry Control Unit</text>
 </segment>
 <segment>
 <pinref part="DASH_IN_4" gate="G$1" pin="6"/>
-<wire x1="515.62" y1="228.6" x2="495.3" y2="228.6" width="0.1524" layer="91"/>
-<label x="497.84" y="228.6" size="1.778" layer="95"/>
+<wire x1="528.32" y1="231.14" x2="508" y2="231.14" width="0.1524" layer="91"/>
+<label x="510.54" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SHUTDOWN_H" class="0">
 <segment>
 <pinref part="COCKPIT_BRB" gate="SPST" pin="O"/>
-<label x="500.38" y="180.34" size="1.778" layer="95"/>
-<wire x1="533.4" y1="193.04" x2="543.56" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="543.56" y1="193.04" x2="543.56" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="543.56" y1="180.34" x2="495.3" y2="180.34" width="0.1524" layer="91"/>
+<label x="513.08" y="182.88" size="1.778" layer="95"/>
+<wire x1="546.1" y1="195.58" x2="556.26" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="556.26" y1="195.58" x2="556.26" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="556.26" y1="182.88" x2="508" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DASH_IN_4" gate="G$1" pin="5"/>
-<wire x1="515.62" y1="231.14" x2="495.3" y2="231.14" width="0.1524" layer="91"/>
-<label x="497.84" y="231.14" size="1.778" layer="95"/>
+<wire x1="528.32" y1="233.68" x2="508" y2="233.68" width="0.1524" layer="91"/>
+<label x="510.54" y="233.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANL_MAINT" class="0">
@@ -4010,8 +4025,8 @@ Telemetry Control Unit</text>
 </segment>
 <segment>
 <pinref part="DASH_IN_4" gate="G$1" pin="8"/>
-<wire x1="515.62" y1="223.52" x2="495.3" y2="223.52" width="0.1524" layer="91"/>
-<label x="497.84" y="223.52" size="1.778" layer="95"/>
+<wire x1="528.32" y1="226.06" x2="508" y2="226.06" width="0.1524" layer="91"/>
+<label x="510.54" y="226.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="12V_MAINT" class="0">
@@ -4182,42 +4197,42 @@ Telemetry Control Unit</text>
 <net name="N$27" class="0">
 <segment>
 <portref moduleinst="DASHBOARD" port="BTN_GND"/>
-<wire x1="599.44" y1="241.3" x2="604.52" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="612.14" y1="243.84" x2="617.22" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="J15" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <portref moduleinst="DASHBOARD" port="BTN_MARK"/>
-<wire x1="604.52" y1="238.76" x2="599.44" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="617.22" y1="241.3" x2="612.14" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="J15" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <portref moduleinst="DASHBOARD" port="BTN_MC_CYCLE"/>
-<wire x1="599.44" y1="236.22" x2="604.52" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="612.14" y1="238.76" x2="617.22" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="J15" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <portref moduleinst="DASHBOARD" port="BTN_MODE"/>
-<wire x1="599.44" y1="233.68" x2="604.52" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="612.14" y1="236.22" x2="617.22" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="J15" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <portref moduleinst="DASHBOARD" port="BTN_START"/>
-<wire x1="599.44" y1="231.14" x2="604.52" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="612.14" y1="233.68" x2="617.22" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="J15" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <portref moduleinst="DASHBOARD" port="BTN_LAUNCH"/>
-<wire x1="599.44" y1="228.6" x2="604.52" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="612.14" y1="231.14" x2="617.22" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="J15" gate="G$1" pin="6"/>
 </segment>
 </net>
@@ -4257,8 +4272,8 @@ Telemetry Control Unit</text>
 </segment>
 <segment>
 <pinref part="DASH_IN_4" gate="G$1" pin="3"/>
-<wire x1="515.62" y1="236.22" x2="495.3" y2="236.22" width="0.1524" layer="91"/>
-<label x="497.84" y="236.22" size="1.778" layer="95"/>
+<wire x1="528.32" y1="238.76" x2="508" y2="238.76" width="0.1524" layer="91"/>
+<label x="510.54" y="238.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANH_DASH" class="0">
@@ -4269,8 +4284,8 @@ Telemetry Control Unit</text>
 </segment>
 <segment>
 <pinref part="DASH_IN_4" gate="G$1" pin="4"/>
-<wire x1="515.62" y1="233.68" x2="495.3" y2="233.68" width="0.1524" layer="91"/>
-<label x="497.84" y="233.68" size="1.778" layer="95"/>
+<wire x1="528.32" y1="236.22" x2="508" y2="236.22" width="0.1524" layer="91"/>
+<label x="510.54" y="236.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IMD_OK" class="0">
@@ -4429,73 +4444,73 @@ Telemetry Control Unit</text>
 </net>
 <net name="N$41" class="0">
 <segment>
-<wire x1="629.92" y1="233.68" x2="642.62" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="642.62" y1="233.68" x2="642.62" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="642.62" y1="236.22" x2="655.32" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="655.32" y1="236.22" x2="655.32" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="BUTTON_MODE" gate="SPST_MOM" pin="P"/>
-<wire x1="642.62" y1="228.6" x2="647.7" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="655.32" y1="231.14" x2="660.4" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="J16" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
 <pinref part="BUTTON_MODE" gate="SPST_MOM" pin="S"/>
-<wire x1="657.86" y1="226.06" x2="678.18" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="670.56" y1="228.6" x2="690.88" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="BUTTON_START" gate="SPST_MOM" pin="S"/>
-<wire x1="657.86" y1="213.36" x2="678.18" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="678.18" y1="213.36" x2="678.18" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="670.56" y1="215.9" x2="690.88" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="215.9" x2="690.88" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="BUTTON_MC_CYCLE" gate="SPST_MOM" pin="S"/>
-<wire x1="657.86" y1="241.3" x2="678.18" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="678.18" y1="241.3" x2="678.18" y2="226.06" width="0.1524" layer="91"/>
-<junction x="678.18" y="226.06"/>
+<wire x1="670.56" y1="243.84" x2="690.88" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="243.84" x2="690.88" y2="228.6" width="0.1524" layer="91"/>
+<junction x="690.88" y="228.6"/>
 <pinref part="BUTTON_MARK" gate="SPST_MOM" pin="S"/>
-<wire x1="657.86" y1="254" x2="678.18" y2="254" width="0.1524" layer="91"/>
-<wire x1="678.18" y1="254" x2="678.18" y2="241.3" width="0.1524" layer="91"/>
-<junction x="678.18" y="241.3"/>
+<wire x1="670.56" y1="256.54" x2="690.88" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="256.54" x2="690.88" y2="243.84" width="0.1524" layer="91"/>
+<junction x="690.88" y="243.84"/>
 <pinref part="BUTTON_LAUNCH_CTRL" gate="SPST_MOM" pin="S"/>
-<wire x1="657.86" y1="200.66" x2="678.18" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="678.18" y1="200.66" x2="678.18" y2="213.36" width="0.1524" layer="91"/>
-<junction x="678.18" y="213.36"/>
-<wire x1="678.18" y1="254" x2="678.18" y2="261.62" width="0.1524" layer="91"/>
-<junction x="678.18" y="254"/>
-<wire x1="678.18" y1="261.62" x2="637.54" y2="261.62" width="0.1524" layer="91"/>
-<wire x1="637.54" y1="261.62" x2="637.54" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="637.54" y1="241.3" x2="629.92" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="670.56" y1="203.2" x2="690.88" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="203.2" x2="690.88" y2="215.9" width="0.1524" layer="91"/>
+<junction x="690.88" y="215.9"/>
+<wire x1="690.88" y1="256.54" x2="690.88" y2="264.16" width="0.1524" layer="91"/>
+<junction x="690.88" y="256.54"/>
+<wire x1="690.88" y1="264.16" x2="650.24" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="650.24" y1="264.16" x2="650.24" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="650.24" y1="243.84" x2="642.62" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="J16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="629.92" y1="231.14" x2="640.08" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="640.08" y1="231.14" x2="640.08" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="642.62" y1="233.68" x2="652.78" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="233.68" x2="652.78" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="BUTTON_START" gate="SPST_MOM" pin="P"/>
-<wire x1="640.08" y1="215.9" x2="647.7" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="218.44" x2="660.4" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="J16" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
-<wire x1="629.92" y1="236.22" x2="642.62" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="642.62" y1="236.22" x2="642.62" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="642.62" y1="238.76" x2="655.32" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="655.32" y1="238.76" x2="655.32" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="BUTTON_MC_CYCLE" gate="SPST_MOM" pin="P"/>
-<wire x1="642.62" y1="243.84" x2="647.7" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="655.32" y1="246.38" x2="660.4" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="J16" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
-<wire x1="629.92" y1="238.76" x2="640.08" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="640.08" y1="238.76" x2="640.08" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="642.62" y1="241.3" x2="652.78" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="241.3" x2="652.78" y2="259.08" width="0.1524" layer="91"/>
 <pinref part="BUTTON_MARK" gate="SPST_MOM" pin="P"/>
-<wire x1="640.08" y1="256.54" x2="647.7" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="259.08" x2="660.4" y2="259.08" width="0.1524" layer="91"/>
 <pinref part="J16" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
-<wire x1="629.92" y1="228.6" x2="637.54" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="637.54" y1="228.6" x2="637.54" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="642.62" y1="231.14" x2="650.24" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="650.24" y1="231.14" x2="650.24" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="BUTTON_LAUNCH_CTRL" gate="SPST_MOM" pin="P"/>
-<wire x1="637.54" y1="203.2" x2="647.7" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="650.24" y1="205.74" x2="660.4" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="J16" gate="G$1" pin="6"/>
 </segment>
 </net>
@@ -5305,49 +5320,49 @@ Telemetry Control Unit</text>
 <segment>
 <pinref part="DASH_IN_3" gate="G$1" pin="1"/>
 <portref moduleinst="DASHBOARD" port="12V"/>
-<wire x1="541.02" y1="241.3" x2="543.56" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="553.72" y1="243.84" x2="556.26" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="DASH_IN_3" gate="G$1" pin="3"/>
 <portref moduleinst="DASHBOARD" port="CANL"/>
-<wire x1="543.56" y1="236.22" x2="541.02" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="556.26" y1="238.76" x2="553.72" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="DASH_IN_3" gate="G$1" pin="4"/>
 <portref moduleinst="DASHBOARD" port="CANH"/>
-<wire x1="541.02" y1="233.68" x2="543.56" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="553.72" y1="236.22" x2="556.26" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="DASH_IN_3" gate="G$1" pin="5"/>
 <portref moduleinst="DASHBOARD" port="SHUTDOWN_H"/>
-<wire x1="543.56" y1="231.14" x2="541.02" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="556.26" y1="233.68" x2="553.72" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="DASH_IN_3" gate="G$1" pin="6"/>
 <portref moduleinst="DASHBOARD" port="SHUTDOWN_G"/>
-<wire x1="541.02" y1="228.6" x2="543.56" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="553.72" y1="231.14" x2="556.26" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="DASH_IN_3" gate="G$1" pin="7"/>
 <portref moduleinst="DASHBOARD" port="SHUTDOWN_F"/>
-<wire x1="543.56" y1="226.06" x2="541.02" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="556.26" y1="228.6" x2="553.72" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$57" class="0">
 <segment>
 <pinref part="DASH_IN_3" gate="G$1" pin="8"/>
 <portref moduleinst="DASHBOARD" port="GND"/>
-<wire x1="541.02" y1="223.52" x2="543.56" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="553.72" y1="226.06" x2="556.26" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
