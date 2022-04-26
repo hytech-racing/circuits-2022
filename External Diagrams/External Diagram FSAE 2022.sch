@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -974,277 +974,6 @@ Source: Sonnenschein</description>
 </library>
 <library name="HyTechDevices">
 <packages>
-<package name="0402-RES">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<rectangle x1="-0.2032" y1="-0.3556" x2="0.2032" y2="0.3556" layer="21"/>
-<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-0.889" y="0.6985" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.0795" y="-1.143" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="0603-RES">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<rectangle x1="-0.2286" y1="-0.381" x2="0.2286" y2="0.381" layer="21"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-</package>
-<package name="1206">
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.27" y="1.143" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-<package name="R2010">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="-1.662" y1="1.245" x2="1.662" y2="1.245" width="0.1524" layer="51"/>
-<wire x1="-1.637" y1="-1.245" x2="1.687" y2="-1.245" width="0.1524" layer="51"/>
-<wire x1="-3.473" y1="1.483" x2="3.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="3.473" y1="1.483" x2="3.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="3.473" y1="-1.483" x2="-3.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-3.473" y1="-1.483" x2="-3.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="-1.027" y1="1.245" x2="1.027" y2="1.245" width="0.1524" layer="21"/>
-<wire x1="-1.002" y1="-1.245" x2="1.016" y2="-1.245" width="0.1524" layer="21"/>
-<rectangle x1="-2.4892" y1="-1.3208" x2="-1.6393" y2="1.3292" layer="51"/>
-<rectangle x1="1.651" y1="-1.3208" x2="2.5009" y2="1.3292" layer="51"/>
-<smd name="1" x="-2.2" y="0" dx="1.8" dy="2.7" layer="1"/>
-<smd name="2" x="2.2" y="0" dx="1.8" dy="2.7" layer="1"/>
-<text x="-2.54" y="1.5875" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.032" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="R2512">
-<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
-<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
-<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
-<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="AXIAL-0.3">
-<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="-3.81" y="0" drill="0.9" diameter="1.8796"/>
-<pad name="P$2" x="3.81" y="0" drill="0.9" diameter="1.8796"/>
-<text x="-2.54" y="1.27" size="0.4064" layer="25" font="vector">&gt;Name</text>
-<text x="-2.032" y="-0.381" size="1.016" layer="21" font="vector" ratio="15">&gt;Value</text>
-</package>
-<package name="AXIAL-0.3EZ">
-<description>This is the "EZ" version of the standard .3" spaced resistor package.&lt;br&gt;
-It has a reduced top mask to make it harder to install upside-down.</description>
-<circle x="-3.81" y="0" radius="0.508" width="0" layer="29"/>
-<circle x="3.81" y="0" radius="0.523634375" width="0" layer="29"/>
-<circle x="-3.81" y="0" radius="1.02390625" width="0" layer="30"/>
-<circle x="3.81" y="0" radius="1.04726875" width="0" layer="30"/>
-<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="-3.81" y="0" drill="0.9" diameter="1.8796" stop="no"/>
-<pad name="P$2" x="3.81" y="0" drill="0.9" diameter="1.8796" stop="no"/>
-<text x="-2.54" y="1.27" size="0.4064" layer="25" font="vector">&gt;Name</text>
-<text x="-2.032" y="-0.381" size="1.016" layer="21" font="vector" ratio="15">&gt;Value</text>
-</package>
-<package name="AXIAL-0.3-KIT">
-<description>&lt;h3&gt;AXIAL-0.3-KIT&lt;/h3&gt;
-
-Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;br&gt;
-&lt;br&gt;
-
-&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of the AXIAL-0.3 package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
-<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="21"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="0" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.254" layer="21"/>
-<pad name="P$1" x="-3.81" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<pad name="P$2" x="3.81" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<text x="-2.54" y="1.27" size="0.4064" layer="25" font="vector">&gt;Name</text>
-<text x="-2.159" y="-0.762" size="1.27" layer="21" font="vector" ratio="15">&gt;Value</text>
-<polygon width="0.127" layer="30">
-<vertex x="3.8201" y="-0.9449" curve="-90"/>
-<vertex x="2.8652" y="-0.0152" curve="-90.011749"/>
-<vertex x="3.8176" y="0.9602" curve="-90"/>
-<vertex x="4.7676" y="-0.0178" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="3.8176" y="-0.4369" curve="-90.012891"/>
-<vertex x="3.3731" y="-0.0127" curve="-90"/>
-<vertex x="3.8176" y="0.4546" curve="-90"/>
-<vertex x="4.2595" y="-0.0025" curve="-90.012967"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="-3.8075" y="-0.9525" curve="-90"/>
-<vertex x="-4.7624" y="-0.0228" curve="-90.011749"/>
-<vertex x="-3.81" y="0.9526" curve="-90"/>
-<vertex x="-2.86" y="-0.0254" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-3.81" y="-0.4445" curve="-90.012891"/>
-<vertex x="-4.2545" y="-0.0203" curve="-90"/>
-<vertex x="-3.81" y="0.447" curve="-90"/>
-<vertex x="-3.3681" y="-0.0101" curve="-90.012967"/>
-</polygon>
-</package>
-<package name="AXIAL-0.5">
-<description>1/2W Resistor, 0.5" wide&lt;p&gt;
-
-Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf"&gt;http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf&lt;/a&gt;</description>
-<wire x1="-4.5" y1="-1.65" x2="-4.5" y2="1.65" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="1.65" x2="4.5" y2="1.65" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="1.65" x2="4.5" y2="-1.65" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="-1.65" x2="-4.5" y2="-1.65" width="0.2032" layer="21"/>
-<pad name="P$1" x="-6.35" y="0" drill="0.9" diameter="1.8796"/>
-<pad name="P$2" x="6.35" y="0" drill="0.9" diameter="1.8796"/>
-<text x="-4.445" y="2.54" size="0.8128" layer="25" font="vector" ratio="15">&gt;Name</text>
-<text x="-3.429" y="-0.381" size="0.8128" layer="21" font="vector" ratio="15">&gt;Value</text>
-</package>
-<package name="AXIAL-0.4">
-<description>1/4W Resistor, 0.4" wide&lt;p&gt;
-
-Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf"&gt;http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf&lt;/a&gt;</description>
-<wire x1="-3.15" y1="-1.2" x2="-3.15" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-3.15" y1="1.2" x2="3.15" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="3.15" y1="1.2" x2="3.15" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="3.15" y1="-1.2" x2="-3.15" y2="-1.2" width="0.2032" layer="21"/>
-<pad name="P$1" x="-5.08" y="0" drill="0.9" diameter="1.8796"/>
-<pad name="P$2" x="5.08" y="0" drill="0.9" diameter="1.8796"/>
-<text x="-3.175" y="1.905" size="0.8128" layer="25" font="vector" ratio="15">&gt;Name</text>
-<text x="-2.286" y="-0.381" size="0.8128" layer="21" font="vector" ratio="15">&gt;Value</text>
-</package>
-<package name="AXIAL-0.1">
-<wire x1="1.27" y1="-0.762" x2="1.27" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="1.524" y1="0" x2="1.27" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.016" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.9" diameter="1.8796"/>
-<pad name="P$2" x="2.54" y="0" drill="0.9" diameter="1.8796"/>
-<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="15">&gt;Name</text>
-<text x="0" y="-2.159" size="1.016" layer="21" font="vector" ratio="15">&gt;Value</text>
-</package>
-<package name="AXIAL-0.1EZ">
-<circle x="0" y="0" radius="0.4572" width="0" layer="29"/>
-<circle x="0" y="0" radius="1.016" width="0" layer="30"/>
-<circle x="2.54" y="0" radius="1.016" width="0" layer="30"/>
-<circle x="0" y="0" radius="0.4572" width="0" layer="29"/>
-<circle x="2.54" y="0" radius="0.4572" width="0" layer="29"/>
-<wire x1="1.27" y1="-0.762" x2="1.27" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="1.524" y1="0" x2="1.27" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.016" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.9" diameter="1.8796" stop="no"/>
-<pad name="P$2" x="2.54" y="0" drill="0.9" diameter="1.8796" stop="no"/>
-<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="15">&gt;Name</text>
-<text x="0" y="-2.159" size="1.016" layer="21" font="vector" ratio="15">&gt;Value</text>
-</package>
-<package name="1/6W-RES">
-<description>1/6W Thru-hole Resistor - *UNPROVEN*</description>
-<wire x1="-1.55" y1="0.85" x2="-1.55" y2="-0.85" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="-0.85" x2="1.55" y2="-0.85" width="0.2032" layer="21"/>
-<wire x1="1.55" y1="-0.85" x2="1.55" y2="0.85" width="0.2032" layer="21"/>
-<wire x1="1.55" y1="0.85" x2="-1.55" y2="0.85" width="0.2032" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="0.762" diameter="1.6764"/>
-<pad name="2" x="2.5" y="0" drill="0.762" diameter="1.6764"/>
-<text x="-1.2662" y="0.9552" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-1.423" y="-0.4286" size="0.8128" layer="21" ratio="15">&gt;VALUE</text>
-</package>
-<package name="AXIAL-0.6">
-<description>1W Resistor, 0.6" wide&lt;p&gt;
-
-Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf"&gt;http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf&lt;/a&gt;</description>
-<wire x1="-5.75" y1="-2.25" x2="-5.75" y2="2.25" width="0.2032" layer="21"/>
-<wire x1="-5.75" y1="2.25" x2="5.75" y2="2.25" width="0.2032" layer="21"/>
-<wire x1="5.75" y1="2.25" x2="5.75" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="5.75" y1="-2.25" x2="-5.75" y2="-2.25" width="0.2032" layer="21"/>
-<pad name="P$1" x="-7.62" y="0" drill="1.2" diameter="1.8796"/>
-<pad name="P$2" x="7.62" y="0" drill="1.2" diameter="1.8796"/>
-<text x="-5.715" y="3.175" size="0.8128" layer="25" font="vector" ratio="15">&gt;Name</text>
-<text x="-4.064" y="-0.381" size="0.8128" layer="21" font="vector" ratio="15">&gt;Value</text>
-</package>
-<package name="AXIAL-0.8">
-<description>2W Resistor, 0.8" wide&lt;p&gt;
-
-Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf"&gt;http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf&lt;/a&gt;</description>
-<wire x1="-7.75" y1="-2.5" x2="-7.75" y2="2.5" width="0.2032" layer="21"/>
-<wire x1="-7.75" y1="2.5" x2="7.75" y2="2.5" width="0.2032" layer="21"/>
-<wire x1="7.75" y1="2.5" x2="7.75" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="7.75" y1="-2.5" x2="-7.75" y2="-2.5" width="0.2032" layer="21"/>
-<pad name="P$1" x="-10.16" y="0" drill="1.2" diameter="1.8796"/>
-<pad name="P$2" x="10.16" y="0" drill="1.2" diameter="1.8796"/>
-<text x="-7.62" y="3.175" size="0.8128" layer="25" font="vector" ratio="15">&gt;Name</text>
-<text x="-5.969" y="-0.381" size="0.8128" layer="21" font="vector" ratio="15">&gt;Value</text>
-</package>
-<package name="10W_RESISTOR_VISHAY">
-<wire x1="0" y1="-5.08" x2="0" y2="5.08" width="0.127" layer="21"/>
-<wire x1="0" y1="5.08" x2="48.26" y2="5.08" width="0.127" layer="21"/>
-<wire x1="48.26" y1="5.08" x2="48.26" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="48.26" y1="-5.08" x2="0" y2="-5.08" width="0.127" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1.3"/>
-<pad name="2" x="52.07" y="0" drill="1.3"/>
-<text x="15.24" y="0" size="1.27" layer="21">POWER RESISTOR</text>
-</package>
-<package name="0805">
-<smd name="1" x="-1.025" y="0" dx="1.4" dy="1.5" layer="1"/>
-<smd name="2" x="1.025" y="0" dx="1.4" dy="1.5" layer="1"/>
-<text x="0" y="0.7239" size="0.3048" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.7112" size="0.3048" layer="27" align="top-center">&gt;VALUE</text>
-<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.1524" layer="21"/>
-<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.1524" layer="21"/>
-<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.1524" layer="21"/>
-<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.1524" layer="21"/>
-</package>
-<package name="PWR163">
-<smd name="PAD" x="0" y="0" dx="7.874" dy="8.509" layer="1"/>
-<smd name="1" x="-2.54" y="-7.9375" dx="3.81" dy="1.651" layer="1" rot="R90"/>
-<smd name="2" x="2.54" y="-7.9375" dx="3.81" dy="1.651" layer="1" rot="R90"/>
-<wire x1="-4.064" y1="3.6195" x2="4.064" y2="3.6195" width="0.127" layer="21"/>
-<wire x1="4.064" y1="3.6195" x2="4.064" y2="-3.6195" width="0.127" layer="21"/>
-<wire x1="4.064" y1="-3.6195" x2="-4.064" y2="-3.6195" width="0.127" layer="21"/>
-<wire x1="-4.064" y1="-3.6195" x2="-4.064" y2="3.6195" width="0.127" layer="21"/>
-</package>
 <package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_06">
 <description>6 Pin Nano-Fit Vertical Header, PCB Mount, Dual Row
 &lt;br&gt;
@@ -1364,21 +1093,6 @@ Dashed line is edge of mated connector.</description>
 </package>
 </packages>
 <symbols>
-<symbol name="RESISTOR">
-<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
 <symbol name="CONNECTOR_06">
 <wire x1="7.62" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-10.16" x2="5.08" y2="-10.16" width="0.6096" layer="94"/>
@@ -1423,186 +1137,6 @@ Dashed line is edge of mated connector.</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RESISTOR" prefix="R" uservalue="yes">
-<description>&lt;b&gt;Resistor&lt;/b&gt;
-Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0402" package="0402-RES">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0603" package="0603-RES">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0603-RES" package="0603-RES">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0805-RES" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1206" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="2010" package="R2010">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="2512" package="R2512">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="AXIAL-0.3" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="EZ" package="AXIAL-0.3EZ">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="KIT" package="AXIAL-0.3-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH-1/2W" package="AXIAL-0.5">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH-1/4W" package="AXIAL-0.4">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH-1/4W-VERT" package="AXIAL-0.1">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH-1/4W-VERT-KIT" package="AXIAL-0.1EZ">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH-1/6W" package="1/6W-RES">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH-1W" package="AXIAL-0.6">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH-2W" package="AXIAL-0.8">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="10W" package="10W_RESISTOR_VISHAY">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PWR163" package="PWR163">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CONNECTOR-6_?_*" prefix="J">
 <description>6 Pin Connector</description>
 <gates>
@@ -1794,13 +1328,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pin name="3" x="10.16" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="10.16" y="-10.16" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="RING_TERMINAL">
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-<pin name="P$1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="P$2" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="-2.54" y="1.778" size="1.27" layer="96">&gt;MANUFACTURER</text>
-<text x="-2.54" y="-1.778" size="1.27" layer="96" align="top-left">&gt;MPN</text>
-</symbol>
 <symbol name="DIODE_LED">
 <wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="-1.524" y1="1.778" x2="-0.127" y2="3.175" width="0.1524" layer="94"/>
@@ -1912,31 +1439,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <technology name="MICROFIT">
 <attribute name="MANUFACTURER" value="Molex"/>
 <attribute name="MPN" value="Micro-Fit 3.0"/>
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RING_TERMINAL_*" prefix="J">
-<description>Ring terminal
-&lt;ul&gt;
-&lt;li&gt;&lt;a href  = "https://drive.google.com/drive/folders/1JhKTbRtwaszOvYIb3y-YkBSe0CyrUopM"&gt;19054-0042&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="RING_TERMINAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-<technology name="19054-0042">
-<attribute name="MANUFACTURER" value="Molex"/>
-<attribute name="MPN" value="19054-0042" constant="no"/>
 <attribute name="_EXTERNAL_" value="" constant="no"/>
 </technology>
 </technologies>
@@ -2371,34 +1873,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </sheet>
 </sheets>
 </module>
-<module name="CUR_SENSE" prefix="" dx="20.32" dy="35.56">
-<ports>
-<port name="CUR_GND" side="bottom" coord="-7.62" direction="pwr"/>
-<port name="CUR_SENSE" side="bottom" coord="-2.54" direction="out"/>
-<port name="REF" side="bottom" coord="-5.08" direction="out"/>
-<port name="CUR_5V" side="bottom" coord="0" direction="pwr"/>
-<port name="HV_IN" side="top" coord="-2.54" direction="io"/>
-<port name="HV_OUT" side="top" coord="2.54" direction="io"/>
-<port name="BSPD-" side="bottom" coord="2.54" direction="io"/>
-<port name="BSPD+" side="bottom" coord="5.08" direction="io"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-</sheets>
-</module>
 <module name="COOLING_MODULE" prefix="" dx="30.48" dy="15.24">
 <ports>
 <port name="12V+" side="right" coord="-2.54" direction="in"/>
@@ -2588,30 +2062,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </sheet>
 </sheets>
 </module>
-<module name="TSAL" prefix="" dx="25.4" dy="15.24">
-<ports>
-<port name="VCC" side="right" coord="5.08" direction="io"/>
-<port name="GND" side="right" coord="2.54" direction="io"/>
-<port name="60V_THRESHOLD_1" side="right" coord="0" direction="io"/>
-<port name="60V_THRESHOLD_2" side="right" coord="-2.54" direction="io"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-</sheets>
-</module>
 <module name="ACU" prefix="" dx="45.72" dy="66.04">
 <ports>
 <port name="IM" side="top" coord="-10.16" direction="io"/>
@@ -2749,6 +2199,55 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </sheet>
 </sheets>
 </module>
+<module name="TSAL" prefix="" dx="25.4" dy="15.24">
+<ports>
+<port name="12V" side="right" coord="2.54" direction="io"/>
+<port name="GND_RED" side="right" coord="-2.54" direction="io"/>
+<port name="GND_GREEN" side="right" coord="-5.08" direction="io"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="CUR_SENSE" prefix="" dx="30.48" dy="20.32">
+<ports>
+<port name="GND" side="bottom" coord="-12.7" direction="io"/>
+<port name="REF" side="bottom" coord="-10.16" direction="io"/>
+<port name="SENSE" side="bottom" coord="-7.62" direction="io"/>
+<port name="5V" side="bottom" coord="-5.08" direction="io"/>
+<port name="BSPD-" side="bottom" coord="7.62" direction="io"/>
+<port name="BSPD+" side="bottom" coord="10.16" direction="io"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
 </modules>
 <parts>
 <part name="LEFT_REAR_BRB" library="HyTechSymbols" deviceset="SWITCH_DPST" device=""/>
@@ -2789,9 +2288,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="DCDC_IO_1" library="HyTechSymbols" deviceset="M04" device="" value="8STA21204PN"/>
 <part name="FIREWALL_2" library="HyTechSymbols" deviceset="M22" device="" value="8STA61235SN"/>
 <part name="FIREWALL_1" library="HyTechSymbols" deviceset="M22" device="" value="8STA01235PN"/>
-<part name="BUTTON_MODE1" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
-<part name="BUTTON_MC_CYCLE1" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
-<part name="BUTTON_MARK1" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
+<part name="BUTTON_MODE" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
+<part name="BUTTON_MC_CYCLE" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
+<part name="BUTTON_MARK" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
 <part name="BUTTON_LAUNCH_CTRL" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
 <part name="DCDC_CONTROL_IN_2" library="HyTechSymbols" deviceset="M03" device="" value="8STA60435SN"/>
 <part name="DCDC_12V_IN_2" library="HyTechSymbols" deviceset="M04" device="" value="8STA61204SN"/>
@@ -2803,7 +2302,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="A1" library="HyTechSymbolsTemp" deviceset="CASCADIA_CM200DZ" device=""/>
 <part name="J1" library="HyTechDevicesTemp" deviceset="CONNECTOR-22_?_*" device="SOURIAU"/>
 <part name="J2" library="HyTechSymbolsTemp" deviceset="CONNECTOR-4_*" device=""/>
-<part name="J3" library="HyTechSymbolsTemp" deviceset="RING_TERMINAL_*" device=""/>
 <part name="S1" library="HyTechSymbols" deviceset="SWITCH_SPST_*" device=""/>
 <part name="HVD_INTERLOCK" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
 <part name="D1" library="HyTechSymbolsTemp" deviceset="DIODE_LED" device=""/>
@@ -2831,12 +2329,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="FUSE1" library="HyTechSymbols" deviceset="FUSE" device="" value="1.25A"/>
 <part name="FUSE2" library="HyTechSymbols" deviceset="FUSE" device="" value="1.25A"/>
-<part name="TSMP_RES+" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="10k"/>
-<part name="TSMP_RES-" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="10k"/>
-<part name="TSMP+A" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
-<part name="TSMP-A" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
+<part name="TSMP+" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
+<part name="TSMP-" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
 <part name="FUSE" library="HyTechSymbols" deviceset="FUSE" device="" value="175A"/>
-<part name="INDICATOR" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
+<part name="ACCUMULATOR_INDICATOR_LIGHT" library="HyTechDevices" deviceset="LED_?_*" device="0603" technology="RED"/>
 <part name="J17" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HPK"/>
 <part name="J18" library="HyTechSymbolsTemp" deviceset="CONNECTOR-2_*" device="" technology="HPK"/>
 <part name="U$1" library="HyTechSymbolsTemp" deviceset="MAINTENANCE_PLUG_*" device="" technology="104742-2"/>
@@ -2858,8 +2354,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <sheets>
 <sheet>
 <plain>
-<text x="160.02" y="116.84" size="5.08" layer="97">Accumulator Container</text>
-<text x="53.34" y="157.48" size="5.08" layer="97" align="top-left">Left Rear Panel</text>
+<text x="111.76" y="119.38" size="5.08" layer="97">Accumulator Container</text>
+<text x="43.18" y="157.48" size="5.08" layer="97" align="top-left">Left Rear Panel</text>
 <text x="93.98" y="53.34" size="5.08" layer="97">Right Rear Panel</text>
 <text x="68.58" y="-10.16" size="1.524" layer="97" rot="R180" align="bottom-right">12AWG chassis
 grounding per
@@ -2874,13 +2370,14 @@ FH EV4.1.4</text>
 <wire x1="-43.18" y1="205.74" x2="-43.18" y2="149.86" width="0.6096" layer="156"/>
 <wire x1="-22.86" y1="264.16" x2="99.06" y2="264.16" width="0.6096" layer="156"/>
 <wire x1="99.06" y1="261.62" x2="-15.24" y2="261.62" width="0.6096" layer="156"/>
-<text x="236.22" y="86.36" size="5.08" layer="97">Wire Key
+<text x="210.82" y="88.9" size="5.08" layer="97">Wire Key
 Thin Green: GLV
 Blue: GLV Buses
 Thick Green: HV
 Orange: HV High Current Path</text>
 <wire x1="251.46" y1="271.78" x2="251.46" y2="256.54" width="0.6096" layer="156"/>
-<text x="495.3" y="99.06" size="5.08" layer="97">Main ECU</text>
+<text x="492.76" y="99.06" size="5.08" layer="97">Main Electronic/
+Telemetry Control Unit</text>
 <wire x1="111.76" y1="289.56" x2="419.1" y2="289.56" width="1.27" layer="97"/>
 <wire x1="419.1" y1="289.56" x2="419.1" y2="127" width="1.27" layer="97"/>
 <wire x1="419.1" y1="127" x2="111.76" y2="127" width="1.27" layer="97"/>
@@ -2912,18 +2409,16 @@ Orange: HV High Current Path</text>
 <wire x1="76.2" y1="-2.54" x2="88.9" y2="-2.54" width="0.1524" layer="157"/>
 <wire x1="76.2" y1="5.08" x2="88.9" y2="5.08" width="0.1524" layer="157"/>
 <wire x1="375.92" y1="-20.32" x2="375.92" y2="71.12" width="1.524" layer="97" style="shortdash"/>
-<wire x1="375.92" y1="71.12" x2="383.54" y2="78.74" width="1.524" layer="97" style="shortdash"/>
-<wire x1="383.54" y1="78.74" x2="416.56" y2="78.74" width="1.524" layer="97" style="shortdash"/>
-<wire x1="416.56" y1="78.74" x2="426.72" y2="88.9" width="1.524" layer="97" style="shortdash"/>
-<wire x1="426.72" y1="88.9" x2="426.72" y2="190.5" width="1.524" layer="97" style="shortdash"/>
-<wire x1="426.72" y1="190.5" x2="459.74" y2="223.52" width="1.524" layer="97" style="shortdash"/>
-<wire x1="459.74" y1="223.52" x2="459.74" y2="287.02" width="1.524" layer="97" style="shortdash"/>
+<wire x1="375.92" y1="71.12" x2="426.72" y2="71.12" width="1.524" layer="97" style="shortdash"/>
+<wire x1="426.72" y1="71.12" x2="426.72" y2="147.32" width="1.524" layer="97" style="shortdash"/>
+<wire x1="426.72" y1="147.32" x2="477.52" y2="147.32" width="1.524" layer="97" style="shortdash"/>
+<wire x1="477.52" y1="147.32" x2="477.52" y2="274.32" width="1.524" layer="97" style="shortdash"/>
 <wire x1="670.56" y1="160.02" x2="721.36" y2="160.02" width="1.27" layer="97"/>
 <wire x1="721.36" y1="160.02" x2="721.36" y2="109.22" width="1.27" layer="97"/>
 <wire x1="721.36" y1="109.22" x2="670.56" y2="109.22" width="1.27" layer="97"/>
 <wire x1="670.56" y1="109.22" x2="670.56" y2="160.02" width="1.27" layer="97"/>
 <text x="670.56" y="162.56" size="5.08" layer="97">Pedal Box</text>
-<text x="462.28" y="279.4" size="5.08" layer="97">Firewall</text>
+<text x="485.14" y="269.24" size="5.08" layer="97">Firewall</text>
 <wire x1="20.32" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="157"/>
 <wire x1="76.2" y1="0" x2="88.9" y2="0" width="0.1524" layer="157"/>
 <wire x1="68.58" y1="7.62" x2="71.12" y2="7.62" width="0.1524" layer="157"/>
@@ -2986,14 +2481,9 @@ Orange: HV High Current Path</text>
 <wire x1="434.34" y1="254" x2="444.5" y2="254" width="0.6096" layer="156"/>
 <wire x1="368.3" y1="238.76" x2="368.3" y2="254" width="0.6096" layer="156"/>
 <wire x1="368.3" y1="254" x2="403.86" y2="254" width="0.6096" layer="156"/>
-<wire x1="162.56" y1="264.16" x2="162.56" y2="274.32" width="0.6096" layer="156"/>
-<wire x1="162.56" y1="274.32" x2="165.1" y2="274.32" width="0.6096" layer="156"/>
-<wire x1="165.1" y1="279.4" x2="160.02" y2="279.4" width="0.6096" layer="156"/>
-<wire x1="160.02" y1="279.4" x2="160.02" y2="264.16" width="0.6096" layer="156"/>
-<wire x1="160.02" y1="264.16" x2="124.46" y2="264.16" width="0.6096" layer="156"/>
+<wire x1="187.96" y1="264.16" x2="124.46" y2="264.16" width="0.6096" layer="156"/>
 <wire x1="203.2" y1="254" x2="223.52" y2="254" width="0.6096" layer="156"/>
 <wire x1="203.2" y1="264.16" x2="198.12" y2="264.16" width="0.6096" layer="156"/>
-<wire x1="187.96" y1="264.16" x2="162.56" y2="264.16" width="0.6096" layer="156"/>
 <text x="43.18" y="17.78" size="1.778" layer="95">GND_RADIATOR</text>
 <wire x1="264.16" y1="256.54" x2="264.16" y2="259.08" width="0.6096" layer="156"/>
 <wire x1="264.16" y1="259.08" x2="271.78" y2="259.08" width="0.6096" layer="156"/>
@@ -3026,6 +2516,7 @@ Orange: HV High Current Path</text>
 <wire x1="434.34" y1="256.54" x2="434.34" y2="261.62" width="0.6096" layer="156"/>
 <wire x1="434.34" y1="251.46" x2="431.8" y2="251.46" width="0.6096" layer="156"/>
 <wire x1="434.34" y1="261.62" x2="431.8" y2="261.62" width="0.6096" layer="156"/>
+<text x="43.18" y="20.32" size="1.778" layer="95">GND_CHASSIS</text>
 </plain>
 <moduleinsts>
 <moduleinst name="BMS_SEGMENT2" module="BMS_SEGMENT" x="309.88" y="228.6">
@@ -3058,23 +2549,23 @@ Orange: HV High Current Path</text>
 <moduleinst name="ENERGY_METER" module="ENERGY_METER" x="180.34" y="246.38">
 <attribute name="NAME" value="ENERGY_METER" x="180.34" y="248.92" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="TSAL" module="TSAL" x="-66.04" y="5.08">
-<attribute name="NAME" value="TSAL" x="-66.04" y="10.16" size="2.032" layer="95" align="bottom-center"/>
-</moduleinst>
 <moduleinst name="ACU" module="ACU" x="299.72" y="172.72">
 <attribute name="NAME" value="ACU" x="299.72" y="200.66" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="DASHBOARD" module="DASHBOARD" x="571.5" y="233.68">
-<attribute name="NAME" value="DASHBOARD" x="571.5" y="215.9" size="2.032" layer="95" align="bottom-center"/>
+<attribute name="NAME" value="DASHBOARD" x="571.5" y="243.84" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="BMS_SEGMENT1" module="BMS_SEGMENT" x="347.98" y="228.6">
 <attribute name="NAME" x="347.98" y="233.68" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="CUR_SENSE" module="CUR_SENSE" x="187.96" y="276.86" rot="R90">
-<attribute name="NAME" value="CUR_SENSE" x="187.96" y="284.48" size="2.032" layer="95" rot="R180" align="bottom-center"/>
-</moduleinst>
 <moduleinst name="TSB" module="TSB" x="185.42" y="177.8">
 <attribute name="NAME" value="TSB" x="185.42" y="198.12" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="TSAL" module="TSAL" x="-66.04" y="7.62">
+<attribute name="NAME" value="TSAL" x="-66.04" y="10.16" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="CUR_SENSE" module="CUR_SENSE" x="396.24" y="228.6">
+<attribute name="NAME" value="CUR_SENSE" x="396.24" y="233.68" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
@@ -3091,7 +2582,7 @@ Orange: HV High Current Path</text>
 <attribute name="VALUE" x="127" y="22.86" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="EMRAX_207_MED" gate="G$1" x="-81.28" y="193.04" smashed="yes" rot="MR270">
-<attribute name="NAME" x="-101.6" y="213.36" size="1.778" layer="95" rot="MR270"/>
+<attribute name="NAME" x="-109.22" y="220.98" size="5.08" layer="95" rot="MR180"/>
 </instance>
 <instance part="BRAKE_LIGHT" gate="G$1" x="-53.34" y="35.56" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-52.832" y="42.291" size="1.778" layer="95" rot="MR0"/>
@@ -3218,15 +2709,15 @@ Orange: HV High Current Path</text>
 <attribute name="VALUE" x="373.38" y="66.04" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="373.38" y="4.318" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="BUTTON_MODE1" gate="SPST_MOM" x="652.78" y="228.6" smashed="yes" rot="R270">
+<instance part="BUTTON_MODE" gate="SPST_MOM" x="652.78" y="228.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="647.7" y="223.52" size="1.778" layer="95"/>
 <attribute name="VALUE" x="647.7" y="220.98" size="1.778" layer="96"/>
 </instance>
-<instance part="BUTTON_MC_CYCLE1" gate="SPST_MOM" x="652.78" y="243.84" smashed="yes" rot="R270">
+<instance part="BUTTON_MC_CYCLE" gate="SPST_MOM" x="652.78" y="243.84" smashed="yes" rot="R270">
 <attribute name="NAME" x="647.7" y="238.76" size="1.778" layer="95"/>
 <attribute name="VALUE" x="647.7" y="236.22" size="1.778" layer="96"/>
 </instance>
-<instance part="BUTTON_MARK1" gate="SPST_MOM" x="652.78" y="256.54" smashed="yes" rot="R270">
+<instance part="BUTTON_MARK" gate="SPST_MOM" x="652.78" y="256.54" smashed="yes" rot="R270">
 <attribute name="NAME" x="647.7" y="251.46" size="1.778" layer="95"/>
 <attribute name="VALUE" x="647.7" y="248.92" size="1.778" layer="96"/>
 </instance>
@@ -3270,10 +2761,6 @@ Orange: HV High Current Path</text>
 <instance part="J2" gate="G$1" x="190.5" y="48.26" smashed="yes">
 <attribute name="MPN" x="190.5" y="34.925" size="1.27" layer="96" align="top-left"/>
 <attribute name="MANUFACTURER" x="190.5" y="49.022" size="1.27" layer="96"/>
-</instance>
-<instance part="J3" gate="G$1" x="368.3" y="78.74" smashed="yes">
-<attribute name="MANUFACTURER" x="365.76" y="80.518" size="1.27" layer="96"/>
-<attribute name="MPN" x="365.76" y="76.962" size="1.27" layer="96" align="top-left"/>
 </instance>
 <instance part="S1" gate="SPST" x="177.8" y="-33.02" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" x="177.8" y="-36.322" size="1.27" layer="96" rot="R180" align="bottom-center"/>
@@ -3381,19 +2868,11 @@ Orange: HV High Current Path</text>
 <attribute name="NAME" x="133.35" y="236.22" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="133.35" y="243.84" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="TSMP_RES+" gate="G$1" x="149.86" y="177.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="153.67" y="176.3014" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="153.67" y="181.102" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="TSMP_RES-" gate="G$1" x="134.62" y="172.72" smashed="yes" rot="R180">
-<attribute name="NAME" x="138.43" y="171.2214" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="138.43" y="176.022" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="TSMP+A" gate="G$1" x="121.92" y="177.8" smashed="yes" rot="MR0">
+<instance part="TSMP+" gate="G$1" x="121.92" y="177.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="122.936" y="179.578" size="1.27" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="122.936" y="174.752" size="1.27" layer="96" rot="MR0"/>
 </instance>
-<instance part="TSMP-A" gate="G$1" x="121.92" y="172.72" smashed="yes" rot="MR0">
+<instance part="TSMP-" gate="G$1" x="121.92" y="172.72" smashed="yes" rot="MR0">
 <attribute name="NAME" x="122.936" y="174.498" size="1.27" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="122.936" y="169.672" size="1.27" layer="96" rot="MR0"/>
 </instance>
@@ -3401,9 +2880,9 @@ Orange: HV High Current Path</text>
 <attribute name="NAME" x="198.12" y="262.89" size="1.27" layer="95" rot="R180"/>
 <attribute name="VALUE" x="190.5" y="262.89" size="1.27" layer="96" rot="R180"/>
 </instance>
-<instance part="INDICATOR" gate="LED" x="147.32" y="167.64" smashed="yes" rot="R180">
-<attribute name="COLOR" x="148.59" y="169.418" size="1.27" layer="95" rot="R180" align="top-center"/>
-<attribute name="NAME" x="148.59" y="164.084" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+<instance part="ACCUMULATOR_INDICATOR_LIGHT" gate="LED" x="139.7" y="132.08" smashed="yes">
+<attribute name="COLOR" x="138.43" y="130.302" size="1.27" layer="95" align="top-center"/>
+<attribute name="NAME" x="138.43" y="135.636" size="1.27" layer="96" align="bottom-center"/>
 </instance>
 <instance part="J17" gate="G$1" x="109.22" y="266.7" smashed="yes" rot="MR0">
 <attribute name="MPN" x="109.22" y="258.445" size="1.27" layer="96" rot="MR0" align="top-left"/>
@@ -4386,16 +3865,6 @@ Orange: HV High Current Path</text>
 <wire x1="599.44" y1="40.64" x2="627.38" y2="40.64" width="0.1524" layer="91"/>
 <label x="601.98" y="40.64" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="FIREWALL_4" gate="G$1" pin="3"/>
-<wire x1="388.62" y1="-12.7" x2="434.34" y2="-12.7" width="0.1524" layer="91"/>
-<label x="391.16" y="-12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="320.04" y1="-12.7" x2="363.22" y2="-12.7" width="0.1524" layer="91"/>
-<label x="322.58" y="-12.7" size="1.778" layer="95"/>
-<pinref part="FIREWALL_3" gate="G$1" pin="3"/>
-</segment>
 </net>
 <net name="SHUTDOWN_F" class="0">
 <segment>
@@ -4709,16 +4178,6 @@ Orange: HV High Current Path</text>
 <wire x1="363.22" y1="38.1" x2="320.04" y2="38.1" width="0.1524" layer="91"/>
 <label x="322.58" y="38.1" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="FIREWALL_3" gate="G$1" pin="2"/>
-<wire x1="363.22" y1="-10.16" x2="320.04" y2="-10.16" width="0.1524" layer="91"/>
-<label x="322.58" y="-10.16" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="FIREWALL_4" gate="G$1" pin="2"/>
-<wire x1="434.34" y1="-10.16" x2="388.62" y2="-10.16" width="0.1524" layer="91"/>
-<label x="391.16" y="-10.16" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$27" class="0">
 <segment>
@@ -4972,23 +4431,23 @@ Orange: HV High Current Path</text>
 <segment>
 <wire x1="629.92" y1="233.68" x2="642.62" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="642.62" y1="233.68" x2="642.62" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="BUTTON_MODE1" gate="SPST_MOM" pin="P"/>
+<pinref part="BUTTON_MODE" gate="SPST_MOM" pin="P"/>
 <wire x1="642.62" y1="228.6" x2="647.7" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="J16" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
-<pinref part="BUTTON_MODE1" gate="SPST_MOM" pin="S"/>
+<pinref part="BUTTON_MODE" gate="SPST_MOM" pin="S"/>
 <wire x1="657.86" y1="226.06" x2="678.18" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="BUTTON_START" gate="SPST_MOM" pin="S"/>
 <wire x1="657.86" y1="213.36" x2="678.18" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="678.18" y1="213.36" x2="678.18" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="BUTTON_MC_CYCLE1" gate="SPST_MOM" pin="S"/>
+<pinref part="BUTTON_MC_CYCLE" gate="SPST_MOM" pin="S"/>
 <wire x1="657.86" y1="241.3" x2="678.18" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="678.18" y1="241.3" x2="678.18" y2="226.06" width="0.1524" layer="91"/>
 <junction x="678.18" y="226.06"/>
-<pinref part="BUTTON_MARK1" gate="SPST_MOM" pin="S"/>
+<pinref part="BUTTON_MARK" gate="SPST_MOM" pin="S"/>
 <wire x1="657.86" y1="254" x2="678.18" y2="254" width="0.1524" layer="91"/>
 <wire x1="678.18" y1="254" x2="678.18" y2="241.3" width="0.1524" layer="91"/>
 <junction x="678.18" y="241.3"/>
@@ -5017,7 +4476,7 @@ Orange: HV High Current Path</text>
 <segment>
 <wire x1="629.92" y1="236.22" x2="642.62" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="642.62" y1="236.22" x2="642.62" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="BUTTON_MC_CYCLE1" gate="SPST_MOM" pin="P"/>
+<pinref part="BUTTON_MC_CYCLE" gate="SPST_MOM" pin="P"/>
 <wire x1="642.62" y1="243.84" x2="647.7" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="J16" gate="G$1" pin="3"/>
 </segment>
@@ -5026,7 +4485,7 @@ Orange: HV High Current Path</text>
 <segment>
 <wire x1="629.92" y1="238.76" x2="640.08" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="640.08" y1="238.76" x2="640.08" y2="256.54" width="0.1524" layer="91"/>
-<pinref part="BUTTON_MARK1" gate="SPST_MOM" pin="P"/>
+<pinref part="BUTTON_MARK" gate="SPST_MOM" pin="P"/>
 <wire x1="640.08" y1="256.54" x2="647.7" y2="256.54" width="0.1524" layer="91"/>
 <pinref part="J16" gate="G$1" pin="2"/>
 </segment>
@@ -5238,6 +4697,9 @@ Orange: HV High Current Path</text>
 <label x="43.18" y="15.24" size="1.778" layer="95"/>
 <wire x1="88.9" y1="15.24" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="17.78" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="17.78" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="20.32" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
+<junction x="88.9" y="17.78"/>
 </segment>
 <segment>
 <pinref part="DCDC_CONTROL_IN_2" gate="G$1" pin="1"/>
@@ -5340,28 +4802,24 @@ Orange: HV High Current Path</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="TSAL_1" gate="G$1" pin="1"/>
-<portref moduleinst="TSAL" port="VCC"/>
 <wire x1="-48.26" y1="10.16" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="TSAL_1" gate="G$1" pin="2"/>
-<portref moduleinst="TSAL" port="GND"/>
 <wire x1="-48.26" y1="7.62" x2="-40.64" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$81" class="0">
 <segment>
 <pinref part="TSAL_1" gate="G$1" pin="3"/>
-<portref moduleinst="TSAL" port="60V_THRESHOLD_1"/>
 <wire x1="-48.26" y1="5.08" x2="-40.64" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$82" class="0">
 <segment>
 <pinref part="TSAL_1" gate="G$1" pin="4"/>
-<portref moduleinst="TSAL" port="60V_THRESHOLD_2"/>
 <wire x1="-48.26" y1="2.54" x2="-40.64" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5418,12 +4876,6 @@ Orange: HV High Current Path</text>
 <pinref part="J1" gate="G$1" pin="6"/>
 <wire x1="368.3" y1="114.3" x2="368.3" y2="88.9" width="0.1524" layer="91"/>
 <label x="368.3" y="114.3" size="1.778" layer="95" rot="MR270"/>
-</segment>
-<segment>
-<wire x1="342.9" y1="88.9" x2="342.9" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="78.74" x2="365.76" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="P$1"/>
-<label x="342.9" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AMS_OK" class="0">
@@ -5521,16 +4973,15 @@ Orange: HV High Current Path</text>
 <wire x1="381" y1="88.9" x2="381" y2="114.3" width="0.1524" layer="91"/>
 <label x="381" y="114.3" size="1.778" layer="95" rot="MR270"/>
 </segment>
-</net>
-<net name="N$24" class="0">
 <segment>
-<wire x1="210.82" y1="281.94" x2="215.9" y2="281.94" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="281.94" x2="215.9" y2="287.02" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="287.02" x2="396.24" y2="287.02" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="193.04" x2="396.24" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="396.24" y1="193.04" x2="396.24" y2="287.02" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="3"/>
-<wire x1="360.68" y1="193.04" x2="360.68" y2="139.7" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="SHUTDOWN"/>
+<wire x1="271.78" y1="190.5" x2="269.24" y2="190.5" width="0.1524" layer="91"/>
+<label x="269.24" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AIR1" gate="1" pin="1"/>
+<wire x1="365.76" y1="264.16" x2="368.3" y2="264.16" width="0.1524" layer="91"/>
+<label x="368.3" y="264.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -5643,45 +5094,6 @@ Orange: HV High Current Path</text>
 <portref moduleinst="ACU" port="GND"/>
 <wire x1="403.86" y1="139.7" x2="403.86" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="182.88" x2="327.66" y2="182.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$93" class="0">
-<segment>
-<wire x1="383.54" y1="205.74" x2="383.54" y2="274.32" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="274.32" x2="228.6" y2="274.32" width="0.1524" layer="91"/>
-<portref moduleinst="CUR_SENSE" port="CUR_GND"/>
-<wire x1="228.6" y1="274.32" x2="228.6" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="269.24" x2="210.82" y2="269.24" width="0.1524" layer="91"/>
-<portref moduleinst="ACU" port="CUR_GND"/>
-<wire x1="327.66" y1="203.2" x2="347.98" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="203.2" x2="347.98" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="205.74" x2="383.54" y2="205.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$95" class="0">
-<segment>
-<portref moduleinst="CUR_SENSE" port="CUR_SENSE"/>
-<wire x1="223.52" y1="274.32" x2="210.82" y2="274.32" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="274.32" x2="223.52" y2="279.4" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="279.4" x2="388.62" y2="279.4" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="279.4" x2="388.62" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="200.66" x2="353.06" y2="200.66" width="0.1524" layer="91"/>
-<portref moduleinst="ACU" port="CUR_SENSE"/>
-<wire x1="353.06" y1="200.66" x2="353.06" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="353.06" y1="198.12" x2="327.66" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$96" class="0">
-<segment>
-<portref moduleinst="CUR_SENSE" port="CUR_5V"/>
-<wire x1="210.82" y1="276.86" x2="220.98" y2="276.86" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="276.86" x2="220.98" y2="281.94" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="281.94" x2="391.16" y2="281.94" width="0.1524" layer="91"/>
-<portref moduleinst="ACU" port="CUR_5V"/>
-<wire x1="327.66" y1="195.58" x2="355.6" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="195.58" x2="355.6" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="198.12" x2="391.16" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="391.16" y1="198.12" x2="391.16" y2="281.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$97" class="0">
@@ -5982,17 +5394,6 @@ Orange: HV High Current Path</text>
 <wire x1="200.66" y1="134.62" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$33" class="0">
-<segment>
-<wire x1="393.7" y1="284.48" x2="218.44" y2="284.48" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="284.48" x2="218.44" y2="279.4" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="279.4" x2="210.82" y2="279.4" width="0.1524" layer="91"/>
-<wire x1="393.7" y1="284.48" x2="393.7" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="393.7" y1="195.58" x2="358.14" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="2"/>
-<wire x1="358.14" y1="195.58" x2="358.14" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PRECHARGE_OK" class="0">
 <segment>
 <pinref part="AIR2" gate="1" pin="2"/>
@@ -6003,31 +5404,6 @@ Orange: HV High Current Path</text>
 <portref moduleinst="ACU" port="PRECHARGE_OK"/>
 <wire x1="271.78" y1="193.04" x2="269.24" y2="193.04" width="0.1524" layer="91"/>
 <label x="269.24" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="SHDN" class="0">
-<segment>
-<pinref part="AIR1" gate="1" pin="1"/>
-<wire x1="365.76" y1="264.16" x2="368.3" y2="264.16" width="0.1524" layer="91"/>
-<label x="368.3" y="264.16" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<portref moduleinst="ACU" port="SHUTDOWN"/>
-<wire x1="271.78" y1="190.5" x2="269.24" y2="190.5" width="0.1524" layer="91"/>
-<label x="269.24" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<portref moduleinst="ACU" port="CUR_REF"/>
-<wire x1="327.66" y1="200.66" x2="350.52" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="200.66" x2="350.52" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="203.2" x2="386.08" y2="203.2" width="0.1524" layer="91"/>
-<portref moduleinst="CUR_SENSE" port="REF"/>
-<wire x1="210.82" y1="271.78" x2="226.06" y2="271.78" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="271.78" x2="226.06" y2="276.86" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="276.86" x2="386.08" y2="276.86" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="203.2" x2="386.08" y2="276.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6156,30 +5532,18 @@ Orange: HV High Current Path</text>
 </net>
 <net name="N$79" class="0">
 <segment>
-<pinref part="TSMP_RES+" gate="G$1" pin="1"/>
 <portref moduleinst="TSB" port="TSMP+"/>
 <wire x1="160.02" y1="177.8" x2="154.94" y2="177.8" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$85" class="0">
-<segment>
-<pinref part="TSMP_RES-" gate="G$1" pin="1"/>
-<portref moduleinst="TSB" port="TSMP-"/>
-<wire x1="160.02" y1="172.72" x2="139.7" y2="172.72" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$94" class="0">
-<segment>
-<pinref part="TSMP_RES+" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="177.8" x2="124.46" y2="177.8" width="0.6096" layer="91"/>
-<pinref part="TSMP+A" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="177.8" x2="124.46" y2="177.8" width="0.6096" layer="91"/>
+<pinref part="TSMP+" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$103" class="0">
 <segment>
-<pinref part="TSMP_RES-" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="172.72" x2="124.46" y2="172.72" width="0.6096" layer="91"/>
-<pinref part="TSMP-A" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="172.72" x2="124.46" y2="172.72" width="0.6096" layer="91"/>
+<pinref part="TSMP-" gate="G$1" pin="1"/>
+<portref moduleinst="TSB" port="TSMP-"/>
+<wire x1="160.02" y1="172.72" x2="144.78" y2="172.72" width="0.6096" layer="91"/>
 </segment>
 </net>
 <net name="TS+_UNFUSED" class="0">
@@ -6188,22 +5552,6 @@ Orange: HV High Current Path</text>
 <wire x1="160.02" y1="193.04" x2="157.48" y2="193.04" width="0.6096" layer="91"/>
 <wire x1="157.48" y1="193.04" x2="149.86" y2="193.04" width="0.6096" layer="91"/>
 <wire x1="149.86" y1="193.04" x2="149.86" y2="264.16" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="INDICATOR" gate="LED" pin="A"/>
-<portref moduleinst="TSB" port="LED+"/>
-<wire x1="160.02" y1="167.64" x2="152.4" y2="167.64" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="INDICATOR" gate="LED" pin="C"/>
-<wire x1="144.78" y1="167.64" x2="139.7" y2="167.64" width="0.6096" layer="91"/>
-<wire x1="139.7" y1="167.64" x2="139.7" y2="160.02" width="0.6096" layer="91"/>
-<portref moduleinst="TSB" port="TS-_FUSED_LED"/>
-<wire x1="139.7" y1="160.02" x2="160.02" y2="160.02" width="0.6096" layer="91"/>
 </segment>
 </net>
 <net name="PACK+" class="0">
@@ -6228,6 +5576,82 @@ Orange: HV High Current Path</text>
 <portref moduleinst="ENERGY_METER" port="HV+IN"/>
 <wire x1="198.12" y1="241.3" x2="215.9" y2="241.3" width="0.6096" layer="91"/>
 <label x="215.9" y="241.3" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="3"/>
+<wire x1="360.68" y1="193.04" x2="406.4" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="193.04" x2="360.68" y2="139.7" width="0.1524" layer="91"/>
+<portref moduleinst="CUR_SENSE" port="BSPD+"/>
+<wire x1="406.4" y1="193.04" x2="406.4" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="403.86" y1="195.58" x2="358.14" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="195.58" x2="358.14" y2="139.7" width="0.1524" layer="91"/>
+<portref moduleinst="CUR_SENSE" port="BSPD-"/>
+<wire x1="403.86" y1="195.58" x2="403.86" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<wire x1="355.6" y1="198.12" x2="391.16" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="195.58" x2="355.6" y2="198.12" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="CUR_5V"/>
+<wire x1="327.66" y1="195.58" x2="355.6" y2="195.58" width="0.1524" layer="91"/>
+<portref moduleinst="CUR_SENSE" port="5V"/>
+<wire x1="391.16" y1="213.36" x2="391.16" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$106" class="0">
+<segment>
+<portref moduleinst="ACU" port="CUR_SENSE"/>
+<wire x1="388.62" y1="200.66" x2="353.06" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="200.66" x2="353.06" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="198.12" x2="327.66" y2="198.12" width="0.1524" layer="91"/>
+<portref moduleinst="CUR_SENSE" port="SENSE"/>
+<wire x1="388.62" y1="200.66" x2="388.62" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$107" class="0">
+<segment>
+<wire x1="350.52" y1="203.2" x2="386.08" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="200.66" x2="350.52" y2="203.2" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="CUR_REF"/>
+<wire x1="327.66" y1="200.66" x2="350.52" y2="200.66" width="0.1524" layer="91"/>
+<portref moduleinst="CUR_SENSE" port="REF"/>
+<wire x1="386.08" y1="203.2" x2="386.08" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$108" class="0">
+<segment>
+<wire x1="347.98" y1="205.74" x2="383.54" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="203.2" x2="347.98" y2="205.74" width="0.1524" layer="91"/>
+<portref moduleinst="ACU" port="CUR_GND"/>
+<wire x1="327.66" y1="203.2" x2="347.98" y2="203.2" width="0.1524" layer="91"/>
+<portref moduleinst="CUR_SENSE" port="GND"/>
+<wire x1="383.54" y1="205.74" x2="383.54" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<portref moduleinst="TSB" port="LED+"/>
+<wire x1="160.02" y1="167.64" x2="116.84" y2="167.64" width="0.6096" layer="91"/>
+<wire x1="116.84" y1="167.64" x2="116.84" y2="132.08" width="0.6096" layer="91"/>
+<pinref part="ACCUMULATOR_INDICATOR_LIGHT" gate="LED" pin="A"/>
+<wire x1="116.84" y1="132.08" x2="134.62" y2="132.08" width="0.6096" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="ACCUMULATOR_INDICATOR_LIGHT" gate="LED" pin="C"/>
+<wire x1="142.24" y1="132.08" x2="157.48" y2="132.08" width="0.6096" layer="91"/>
+<wire x1="157.48" y1="132.08" x2="157.48" y2="160.02" width="0.6096" layer="91"/>
+<portref moduleinst="TSB" port="TS-_FUSED_LED"/>
+<wire x1="157.48" y1="160.02" x2="160.02" y2="160.02" width="0.6096" layer="91"/>
 </segment>
 </net>
 </nets>
