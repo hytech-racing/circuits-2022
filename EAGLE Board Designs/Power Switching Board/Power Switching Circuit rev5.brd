@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -5836,8 +5836,8 @@ These design rules are designed to pass any PCB fab (JLCPCB, Advanced Circuits, 
 <vertex x="66.04" y="43.18"/>
 <vertex x="69.85" y="39.37"/>
 <vertex x="69.85" y="37.846"/>
-<vertex x="64.2366" y="32.2326"/>
-<vertex x="64.2366" y="23.5966"/>
+<vertex x="63.9318" y="31.9278"/>
+<vertex x="63.9318" y="23.2918"/>
 <vertex x="59.69" y="19.05"/>
 <vertex x="50.8" y="19.05"/>
 <vertex x="50.8" y="27.305"/>
