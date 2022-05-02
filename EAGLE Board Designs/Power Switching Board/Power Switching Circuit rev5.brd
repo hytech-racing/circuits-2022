@@ -191,9 +191,6 @@
 <wire x1="100.31" y1="0" x2="100.31" y2="86.03" width="0" layer="20"/>
 <wire x1="100.31" y1="86.03" x2="0" y2="86.106" width="0" layer="20"/>
 <wire x1="0" y1="86.106" x2="0" y2="0" width="0" layer="20"/>
-<text x="52.07" y="6.35" size="2.032" layer="27" font="vector" align="bottom-center">Power Switching Board rev4
-Designed by
-Steven Elias</text>
 <text x="45.72" y="88.9" size="1.27" layer="51" font="vector" align="bottom-center">DO NOT INSTALL XF2 
 UNLESS BYPASSING 
 ENTIRE CIRCUIT!</text>
