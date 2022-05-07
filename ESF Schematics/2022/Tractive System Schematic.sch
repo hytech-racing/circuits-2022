@@ -2973,7 +2973,7 @@ Layer: 94 Symbol</description>
 <part name="J10" library="HyTechSymbolsTemp" deviceset="CONNECTOR-1_*" device="" technology="LCAX2-14F-E"/>
 <part name="U$4" library="HyTechFrames" deviceset="FRAME_SCHEMATIC_ONLY" device="">
 <attribute name="DESCRIPTION_1" value="ESF compliant representation of the HT06 "/>
-<attribute name="DESCRIPTION_2" value="tractive system"/>
+<attribute name="DESCRIPTION_2" value="tractive system."/>
 <attribute name="DESIGNER_SCHEMATIC" value="Zekun Li"/>
 <attribute name="ENGINEER" value="Zekun Li"/>
 <attribute name="REVIEWER_SCHEMATIC" value="Arvind Srinivasan"/>
@@ -2997,7 +2997,7 @@ Layer: 94 Symbol</description>
 <text x="58.42" y="109.22" size="1.27" layer="97">35mm^2</text>
 <text x="147.32" y="106.68" size="1.27" layer="97">35mm^2</text>
 <text x="175.26" y="101.6" size="1.27" layer="97">35mm^2</text>
-<text x="175.26" y="81.28" size="1.27" layer="97">35mm^2</text>
+<text x="182.88" y="81.28" size="1.27" layer="97">35mm^2</text>
 <text x="144.78" y="76.2" size="1.778" layer="95">HVD</text>
 <wire x1="99.06" y1="93.98" x2="99.06" y2="78.74" width="0.8128" layer="97" style="shortdash"/>
 <wire x1="99.06" y1="78.74" x2="137.16" y2="78.74" width="0.8128" layer="97" style="shortdash"/>
@@ -3005,9 +3005,9 @@ Layer: 94 Symbol</description>
 <wire x1="137.16" y1="93.98" x2="99.06" y2="93.98" width="0.8128" layer="97" style="shortdash"/>
 <text x="144.78" y="81.28" size="1.27" layer="97">35mm^2</text>
 <text x="91.44" y="99.06" size="1.27" layer="97">35mm^2</text>
-<wire x1="142.24" y1="93.98" x2="162.56" y2="93.98" width="0.8128" layer="97"/>
-<wire x1="162.56" y1="93.98" x2="162.56" y2="73.66" width="0.8128" layer="97"/>
-<wire x1="162.56" y1="73.66" x2="142.24" y2="73.66" width="0.8128" layer="97"/>
+<wire x1="142.24" y1="93.98" x2="180.34" y2="93.98" width="0.8128" layer="97"/>
+<wire x1="180.34" y1="93.98" x2="180.34" y2="73.66" width="0.8128" layer="97"/>
+<wire x1="180.34" y1="73.66" x2="142.24" y2="73.66" width="0.8128" layer="97"/>
 <wire x1="142.24" y1="73.66" x2="142.24" y2="93.98" width="0.8128" layer="97"/>
 <text x="254" y="116.84" size="1.27" layer="97">TSMP+</text>
 <text x="254" y="96.52" size="1.27" layer="97" align="top-left">TSMP-</text>
@@ -3201,10 +3201,11 @@ Layer: 94 Symbol</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="86.36" x2="175.26" y2="93.98" width="0.889" layer="91"/>
 <pinref part="J14" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="93.98" x2="190.5" y2="93.98" width="0.889" layer="91"/>
+<wire x1="190.5" y1="93.98" x2="185.42" y2="93.98" width="0.889" layer="91"/>
+<wire x1="185.42" y1="93.98" x2="185.42" y2="86.36" width="0.889" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="86.36" x2="175.26" y2="86.36" width="0.889" layer="91"/>
 </segment>
 </net>
 </nets>

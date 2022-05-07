@@ -5477,7 +5477,7 @@ LOGIC</text>
 <part name="D4" library="HyTechSymbolsTemp" deviceset="LED_RGBW_*" device="" technology="IN-505FCHWV"/>
 <part name="R3" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="56"/>
 <part name="R5" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="56"/>
-<part name="R6" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="10"/>
+<part name="R6" library="HyTechSymbolsTemp" deviceset="RESISTOR" device="" value="5.1"/>
 </parts>
 <sheets>
 <sheet>
