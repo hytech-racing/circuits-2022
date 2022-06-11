@@ -8805,9 +8805,15 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device=""/>
-<part name="FRAME2" library="HyTechFrames" deviceset="FRAME" device=""/>
-<part name="FRAME4" library="HyTechFrames" deviceset="FRAME" device=""/>
+<part name="FRAME1" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESCRIPTION_1" value="Connectors, power, fusing, TSAL"/>
+</part>
+<part name="FRAME2" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESCRIPTION_1" value="Shutdown circuitry"/>
+</part>
+<part name="FRAME4" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESCRIPTION_1" value="Analog filtering"/>
+</part>
 <part name="J100" library="HyTechDevices" deviceset="CONNECTOR-8_?_*" device="S" technology="S"/>
 <part name="P1" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="P2" library="HyTechSupplies" deviceset="GND" device=""/>
@@ -8951,6 +8957,7 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="P38" library="HyTechSupplies" deviceset="+12V" device=""/>
 <part name="C35" library="HyTechDevices" deviceset="CAPACITOR_?_*" device="0603" technology="25V_0.1UF"/>
 <part name="FRAME3" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESCRIPTION_1" value="Teensy, LTC6820, CAN, watchdog"/>
 <attribute name="DESIGNER_BOARD" value="Liwei Sun"/>
 <attribute name="DESIGNER_SCHEMATIC" value="Liwei Sun"/>
 <attribute name="ENGINEER" value="Liwei Sun"/>
@@ -9002,7 +9009,9 @@ All PNs for the holder; if &lt;a href="https://www.littelfuse.com/media?resource
 <part name="TD-" library="HyTechDevices - Copy" deviceset="TEST_POINT" device=""/>
 <part name="P31" library="HyTechSupplies" deviceset="GND" device=""/>
 <part name="R100" library="HyTechDevices - Copy" deviceset="RESISTOR_?_*" device="0603" technology="10K"/>
-<part name="FRAME5" library="HyTechFrames" deviceset="FRAME" device=""/>
+<part name="FRAME5" library="HyTechFrames" deviceset="FRAME" device="">
+<attribute name="DESCRIPTION_1" value="Precharger circuit"/>
+</part>
 <part name="OKHS" library="HyTechDevices - Copy" deviceset="LED_?_*" device="0603" technology="YELLOW"/>
 <part name="U24" library="HyTechDevices" deviceset="OPAMP_1_CHANNEL_*" device="" technology="OPA991"/>
 <part name="P76" library="HyTechSupplies" deviceset="GND" device=""/>
