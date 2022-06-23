@@ -1,0 +1,7 @@
+"Board Quantity","Ordering Quantity","Value","Reference","ATTRITION","COLOR","DKPN","GAUGE","MANUFACTURER","MOPN","MPN","POWER","RESISTANCE","TOLERANCE","VOLTAGE_CONTINUOUS","VOLTAGE_MAX",
+"1","3","CONNECTOR-4_μF_S_RA_","J1","200","","WM1832CT-ND","","Molex","538-0430450411","0430450411","","","","","",
+"4","8","CRIMP_MICROFIT_20-24","O2, O3, O4, O5","100","","WM2776CT-ND","20-24","Molex","538-43030-0003","0430300003","","","","","",
+"4","6","LED_RGB_ASMG-PT00-00001","D1, D2, D3, D4","50","RGB","516-4178-2-ND","","Broadcom Limited","630-ASMG-PT00-00001","ASMG-PT00-00001","","","","","",
+"1","2","RECEPTACLE-4_MICROFIT","O1","100","","WM11225-ND","","Molex","538-43025-0408","0430250408","","","","","",
+"1","11","RESISTOR_0805_36","R1","1000","","P36ADTR-ND","","Panasonic Electronic Components","667-ERJ-P06J360V","ERJ-P06J360V","0.5W","36","5%","4.243V","400V",
+"1","11","RESISTOR_0805_5.1","R3","1000","","P19237TR-ND","","Panasonic Electronic Components","667-ERJ-6DQJ5R1V","ERJ-6DQJ5R1V","0.5W","5.1","5%","1.597V","400V",
