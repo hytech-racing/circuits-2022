@@ -6971,7 +6971,6 @@ Layer: 94 Symbol</description>
 <attribute name="SIGNAL" value="SHUTDOWN_H"/>
 </part>
 <part name="Q7" library="HyTechDevices" deviceset="TRANSISTOR_N_MOS_?_*" device="" technology="PMV15ENEA"/>
-<part name="FRAME2" library="HyTechFrames" deviceset="FRAME" device=""/>
 <part name="O4" library="HyTechExternal" deviceset="FUSE_*" device="" technology="MINI_BLADE_2"/>
 <part name="O6" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
 <part name="O7" library="HyTechExternal" deviceset="CRIMP_*" device="" technology="MICROFIT_20-24"/>
@@ -9265,20 +9264,6 @@ Error and State LEDs</text>
 <text x="33.02" y="200.66" size="1.778" layer="97">Crimps, nanofit receptacles, and blade fuses to order</text>
 </plain>
 <instances>
-<instance part="FRAME2" gate="O" x="0" y="0" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="186.69" y="2.54" size="2.54" layer="95"/>
-<attribute name="DRAWING_NAME" x="207.01" y="22.86" size="2.54" layer="95"/>
-<attribute name="SHEET" x="259.08" y="2.54" size="2.54" layer="95"/>
-<attribute name="ENGINEER" x="129.54" y="22.86" size="2.54" layer="95"/>
-<attribute name="DESIGNER_SCHEMATIC" x="176.53" y="45.72" size="2.54" layer="95"/>
-<attribute name="DESIGNER_BOARD" x="176.53" y="38.1" size="2.54" layer="95"/>
-<attribute name="DESIGNER_FURTHER" x="176.53" y="30.48" size="2.54" layer="95"/>
-<attribute name="REVIEWER_SCHEMATIC" x="227.33" y="45.72" size="2.54" layer="95"/>
-<attribute name="REVIEWER_BOARD" x="227.33" y="38.1" size="2.54" layer="95"/>
-<attribute name="REVIEWER_FURTHER" x="227.33" y="30.48" size="2.54" layer="95"/>
-<attribute name="DESCRIPTION_1" x="196.85" y="15.24" size="2.54" layer="95"/>
-<attribute name="DESCRIPTION_2" x="176.53" y="10.16" size="2.54" layer="95"/>
-</instance>
 <instance part="O4" gate="G$1" x="48.26" y="195.58" smashed="yes">
 <attribute name="MPN" x="48.26" y="192.278" size="1.27" layer="96" align="top-left"/>
 <attribute name="NAME" x="48.26" y="196.342" size="1.27" layer="95"/>
